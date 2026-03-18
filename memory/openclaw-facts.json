@@ -1,0 +1,104 @@
+{
+  "last_verified_at": "2026-03-15",
+  "canonical_workspace": "/Users/gavin/Projects/openclaw-research",
+  "global_memory_path": "/Users/gavin/.codex/memories/openclaw-project.md",
+  "official_sources": {
+    "docs_home": "https://docs.openclaw.ai/",
+    "getting_started": "https://docs.openclaw.ai/getting-started",
+    "security": "https://docs.openclaw.ai/security",
+    "credits": "https://docs.openclaw.ai/credits",
+    "github_repo": "https://github.com/openclaw/openclaw",
+    "github_releases": "https://github.com/openclaw/openclaw/releases"
+  },
+  "product": {
+    "positioning": "Open-source personal AI assistant that runs across user-owned devices, channels, and tools.",
+    "license": "MIT",
+    "install_requirement": "Node.js >= 22",
+    "install_command": "npm install -g openclaw@latest",
+    "onboard_command": "openclaw onboard --install-daemon",
+    "gateway_model": "Gateway is the control plane and WebSocket server that coordinates sessions, agents, bindings, channels, and routing.",
+    "skills_model": "Skills are layered and can be overridden at bundled, user (~/.openclaw/skills), and workspace (./skills) scope.",
+    "macos_surface": "macOS is a menu bar companion that also carries local permissioned node capabilities.",
+    "latest_visible_release": {
+      "version": "2026.3.13",
+      "published_at": "2026-03-14",
+      "verified_at": "2026-03-15"
+    },
+    "core_capabilities": [
+      "multi-channel messaging",
+      "voice",
+      "live canvas",
+      "first-class tools",
+      "multi-agent routing",
+      "companion apps"
+    ]
+  },
+  "github_snapshot": {
+    "verified_at": "2026-03-15",
+    "repo_created_at": "2025-11-24T10:16:47Z",
+    "repo_pushed_at": "2026-03-15T11:46:07Z",
+    "stars": 314097,
+    "forks": 59965,
+    "open_issues": 13968,
+    "release_count": 68,
+    "stable_release_count": 58
+  },
+  "security_model": {
+    "trust_boundary": "One trusted operator boundary per gateway.",
+    "not_designed_for": "Hostile multi-tenant shared-agent deployments.",
+    "hardened_baseline": [
+      "bind gateway to loopback",
+      "enable token auth",
+      "deny runtime tools by default",
+      "deny filesystem tools by default",
+      "allowlist DM control surfaces"
+    ]
+  },
+  "local_environment": {
+    "cli_in_path": false,
+    "checked_at": "2026-03-15",
+    "application_support_path_exists": true,
+    "application_support_path": "/Users/gavin/Library/Application Support/OpenClaw",
+    "runtime_layout_verified": true,
+    "runtime_layout_paths": [
+      "/Users/gavin/.openclaw/agents",
+      "/Users/gavin/.openclaw/workspace",
+      "/Users/gavin/.openclaw/workspaces",
+      "/Users/gavin/.openclaw/browser",
+      "/Users/gavin/.openclaw/canvas",
+      "/Users/gavin/.openclaw/credentials",
+      "/Users/gavin/.openclaw/devices"
+    ],
+    "per_agent_session_store_verified": true,
+    "workspace_skills_path": "/Users/gavin/.openclaw/workspace/skills",
+    "local_assets": [
+      "/Users/gavin/Projects/openclaw-x-community",
+      "/Users/gavin/Desktop/02-01 OpenClaw 深度研讨会：从用户实践到未来展望.pdf",
+      "/Users/gavin/Desktop/openclaw-marketing-team-main-20260304T141036Z-1-001.zip",
+      "/Users/gavin/Desktop/openclaw"
+    ]
+  },
+  "automation": {
+    "schedule": "Sunday 20:00 Asia/Shanghai",
+    "launch_agent_label": "ai.openclaw.weekly-scan",
+    "launch_agent_path": "/Users/gavin/Library/LaunchAgents/ai.openclaw.weekly-scan.plist",
+    "launch_agent_source_path": "/Users/gavin/Projects/openclaw-research/automation/ai.openclaw.weekly-scan.plist",
+    "runner_script": "/Users/gavin/Projects/openclaw-research/scripts/run_weekly_update.sh",
+    "scanner_script": "/Users/gavin/Projects/openclaw-research/scripts/openclaw_weekly_scan.py",
+    "outputs": {
+      "snapshot_markdown": "/Users/gavin/Projects/openclaw-research/reports/current/github-snapshot.md",
+      "snapshot_json": "/Users/gavin/Projects/openclaw-research/reports/current/github-snapshot.json",
+      "weekly_latest_markdown": "/Users/gavin/Projects/openclaw-research/reports/weekly/latest.md",
+      "state_json": "/Users/gavin/Projects/openclaw-research/memory/weekly-scan-state.json"
+    }
+  },
+  "inferences": [
+    "OpenClaw appears to be the current public-facing brand.",
+    "clawdbot and clawd appear to be historically related names or adjacent subsystems, but the exact mapping still needs official evidence."
+  ],
+  "open_questions": [
+    "What is the exact boundary between desktop app, gateway, and cloud features?",
+    "Which installed local assets map to which official releases?",
+    "What is the official relationship between OpenClaw, clawdbot, clawd, clawhub, and moltbot?"
+  ]
+}

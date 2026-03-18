@@ -1,0 +1,196 @@
+{
+  "generated_at": "2026-03-16T20:00:00.956470+08:00",
+  "window": {
+    "start_local": "2026-03-15T20:00:00.956470+08:00",
+    "end_local": "2026-03-16T20:00:00.956470+08:00",
+    "start_utc": "2026-03-15T12:00:00Z",
+    "end_utc": "2026-03-16T12:00:00Z"
+  },
+  "repo": {
+    "slug": "openclaw/openclaw",
+    "stars": 316470,
+    "forks": 60614,
+    "open_issues": 14250,
+    "pushed_at": "2026-03-16T11:55:48Z"
+  },
+  "releases_in_window": [],
+  "commit_count": 445,
+  "commit_headlines": [
+    "test(telegram): cover shared parsing without registry",
+    "fix(channels): parse bundled targets without plugin registry",
+    "Bootstrap: report nested entry import misses",
+    "Plugins: preserve lazy runtime provider resolution",
+    "Tests: align media auth fixture with selection checks",
+    "Cron: isolate active-model delivery tests",
+    "test(gateway): restore agent request route mock",
+    "fix(telegram): keep silent error fallback replies quiet",
+    "fix(ui): auto load Usage tab data on navigation",
+    "feat(telegram): add configurable silent error replies (#19776)",
+    "Tests: isolate bundle surface fixtures",
+    "Tests: scope Codex bundle loader fixture",
+    "Media: avoid slow auth misses in auto-detect",
+    "Status: stabilize startup memory probes",
+    "Channels: fix surface contract plugin lookup",
+    "Plugin SDK: consolidate shared channel exports",
+    "Plugin SDK: restore scoped imports for bundled channels",
+    "BlueBubbles: lazy-load channel runtime paths",
+    "CI: add changed extension test lane",
+    "Docs: add extension test workflow",
+    "Tests: cover changed extension detection",
+    "Tests: detect changed extensions",
+    "Runtime: lazy-load Telegram and Slack channel ops",
+    "Release: trim generated docs from npm pack",
+    "Docs: use placeholders for marketplace plugin examples",
+    "Runtime: lazy-load Discord channel ops",
+    "Tests: add extension test runner",
+    "Tests: harden WhatsApp inbound contract cleanup",
+    "Tests: add contract runner",
+    "Channels: centralize inbound context contracts",
+    "Channels: centralize group policy contracts",
+    "Channels: centralize outbound payload contracts",
+    "Channels: add contract surface coverage",
+    "Channels: expand contract suites",
+    "Docs: add Claude marketplace plugin install guidance",
+    "fix(macos): restore debug build helpers (#48046)",
+    "fix: split browser-safe thinking helpers",
+    "docs: reorder unreleased changelog entries",
+    "Docs: refresh generated config baseline",
+    "Infra: restore check after gaxios compat",
+    "UI: keep thinking helpers browser-safe",
+    "Plugins: add Claude marketplace registry installs (#48058)",
+    "Gateway: cover lazy channel runtime resolution",
+    "Gateway: lazily resolve channel runtime",
+    "fix: retry runtime postbuild skill copy races",
+    "docs: add frontmatter to parallels discord skill",
+    "fix: restore effective setup wizard lazy import",
+    "refactor: add private channel sdk bridges",
+    "refactor: shrink public channel plugin sdk surfaces",
+    "fix: keep gaxios compat off the package root (#47914) (thanks @pdd-cli)"
+  ],
+  "feature_items": [
+    "feat(telegram): add configurable silent error replies (#19776)",
+    "CI: add changed extension test lane",
+    "Channels: add contract surface coverage",
+    "Plugins: add Claude marketplace registry installs (#48058)",
+    "Plugins: add auth choice contracts",
+    "Plugins: add provider discovery contracts",
+    "Plugins: add provider auth contracts",
+    "Plugins: add provider wizard contracts",
+    "Plugins: add provider catalog contracts",
+    "Plugins: add provider runtime contracts",
+    "feishu: harden media support and align capability docs (#47968)",
+    "!refactor(browser): remove Chrome extension path and add MCP doctor migration (#47893)",
+    "feishu: add structured card actions and interactive approval flows (#47873)",
+    "Channels: centralize shared interactive rendering",
+    "Channels: add message action capabilities",
+    "Slack: test shared interactive renderer",
+    "Discord: test shared interactive renderer",
+    "Plugins: update Slack interactive tests",
+    "Plugins: register Slack interactive handlers correctly",
+    "Slack: update shared interactive interaction tests",
+    "Slack: fix shared interactive registration context",
+    "Cron: treat shared interactive payloads as deliverable",
+    "Outbound: test shared interactive telegram delivery",
+    "Outbound: deliver shared interactive payloads",
+    "Reply: update shared interactive normalize tests",
+    "Reply: update shared interactive flow tests",
+    "Reply: route shared interactive payloads outbound",
+    "Reply: keep shared interactive payloads during normalization",
+    "Slack: map shared interactive sends in SDK actions",
+    "Discord: map shared interactive sends in actions"
+  ],
+  "fix_items": [
+    "fix(channels): parse bundled targets without plugin registry",
+    "fix(telegram): keep silent error fallback replies quiet",
+    "fix(ui): auto load Usage tab data on navigation",
+    "Tests: harden WhatsApp inbound contract cleanup",
+    "fix(macos): restore debug build helpers (#48046)",
+    "fix: split browser-safe thinking helpers",
+    "fix: retry runtime postbuild skill copy races",
+    "fix: restore effective setup wizard lazy import",
+    "fix: keep gaxios compat off the package root (#47914) (thanks @pdd-cli)",
+    "fix(infra): also wire gaxios-fetch-compat shim into src/index.ts (gateway entry)",
+    "fix(infra): wire gaxios-fetch-compat shim to prevent node-fetch crash on Node.js 25",
+    "fix: harden bonjour retry recovery",
+    "fix: mount CLI auth dirs in docker live tests",
+    "fix: stop bonjour before re-advertising",
+    "fix: unblock docs and registry checks",
+    "fix: unblock ci gates",
+    "fix: accept sandbox plugin id hints",
+    "fix(core): restore outbound fallbacks and gate checks",
+    "fix: make docs i18n use gpt-5.4 overrides",
+    "feishu: harden media support and align capability docs (#47968)",
+    "fix: stabilize ci gate",
+    "fix: scope localStorage settings key by basePath to prevent cross-deployment conflicts",
+    "fix: address bot nit on session route preservation (#47797) (thanks @brokemac79)",
+    "fix(session): preserve external channel route when webchat views session (#47745)",
+    "Security: split audit runtime surfaces",
+    "fix: preserve loopback gateway scopes for local auth",
+    "fix: recover bonjour advertiser from ciao announce loops",
+    "Security: lazy-load audit config snapshot IO",
+    "Security: lazy-load deep skill audit helpers",
+    "Security: trim audit policy import surfaces"
+  ],
+  "top_scopes": [
+    {
+      "scope": "plugins",
+      "count": 60
+    },
+    {
+      "scope": "fix",
+      "count": 49
+    },
+    {
+      "scope": "refactor",
+      "count": 49
+    },
+    {
+      "scope": "tests",
+      "count": 36
+    },
+    {
+      "scope": "docs",
+      "count": 25
+    },
+    {
+      "scope": "status",
+      "count": 15
+    },
+    {
+      "scope": "channels",
+      "count": 14
+    },
+    {
+      "scope": "gateway",
+      "count": 12
+    },
+    {
+      "scope": "slack",
+      "count": 11
+    },
+    {
+      "scope": "cli",
+      "count": 10
+    },
+    {
+      "scope": "telegram",
+      "count": 9
+    },
+    {
+      "scope": "discord",
+      "count": 7
+    },
+    {
+      "scope": "reply",
+      "count": 7
+    },
+    {
+      "scope": "feishu",
+      "count": 6
+    },
+    {
+      "scope": "test",
+      "count": 6
+    }
+  ]
+}

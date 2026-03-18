@@ -1,0 +1,194 @@
+{
+  "generated_at": "2026-03-15T23:31:26.385227+08:00",
+  "window": {
+    "start_local": "2026-03-14T23:31:26.385227+08:00",
+    "end_local": "2026-03-15T23:31:26.385227+08:00",
+    "start_utc": "2026-03-14T15:31:26Z",
+    "end_utc": "2026-03-15T15:31:26Z"
+  },
+  "repo": {
+    "slug": "openclaw/openclaw",
+    "stars": 314463,
+    "forks": 60082,
+    "open_issues": 14081,
+    "pushed_at": "2026-03-15T15:23:08Z"
+  },
+  "releases_in_window": [
+    {
+      "tag_name": "v2026.3.13-1",
+      "published_at": "2026-03-14T18:04:28Z",
+      "name": "openclaw 2026.3.13",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.3.13-1"
+    }
+  ],
+  "commit_count": 72,
+  "commit_headlines": [
+    "fix: harden remote cdp probes",
+    "chore(gateway): ignore `.test.ts` changes in `gateway:watch` (#36211)",
+    "test(whatsapp): fix stale append inbox expectation",
+    "fix: preserve Telegram word boundaries when rechunking HTML (#47274)",
+    "fix(gateway): skip Control UI pairing when auth.mode=none (closes #42931) (#47148)",
+    "Deduplicate repeated tool call IDs for OpenAI-compatible APIs (#40996)",
+    "fix(web): handle 515 Stream Error during WhatsApp QR pairing (#27910)",
+    "fix(whatsapp): restore append recency filter lost in extensions refactor, handle Long timestamps (#42588)",
+    "fix(android): support android node  `calllog.search` (#44073)",
+    "fix: forward forceDocument through sendPayload path (follow-up to #45111) (#47119)",
+    "fix: Disable strict mode tools for non-native openai-completions compatible APIs (#45497)",
+    "Docs: switch README logo to SVG assets (#47049)",
+    "docs: replace outdated Clawdbot references with OpenClaw in skill docs (#41563)",
+    "Docs: fix stale Clawdbot branding in agent workflow file (#46963)",
+    "fix: harden compaction timeout follow-ups",
+    "feat: make compaction timeout configurable via agents.defaults.compaction.timeoutSeconds (#46889)",
+    "macOS: restrict canvas agent actions to trusted surfaces (#46790)",
+    "Tlon: honor explicit empty allowlists and defer cite expansion (#46788)",
+    "fix(context): skip eager warmup for non-model CLI commands",
+    "fix(openrouter): silently dropped images for new OpenRouter models — runtime capability detection (#45824)",
+    "External content: sanitize wrapped metadata (#46816)",
+    "docs: reorder unreleased changelog",
+    "fix(android): theme popup surfaces",
+    "feat(android): add dark theme (#46249)",
+    "fix(gateway): harden health monitor account gating (#46749)",
+    "docker: add lsof to runtime image (#46636)",
+    "feat(gateway): make health monitor stale threshold and max restarts configurable (openclaw#42107)",
+    "fix(plugins): prefer explicit installs over bundled duplicates (#46722)",
+    "Docs: fix MDX markers blocking page refreshes (#46695)",
+    "feat(feishu): structured cards with identity header, note footer, and streaming enhancements (openclaw#29938)",
+    "Add Feishu reactions and card action support (#46692)",
+    "fix: validate edge tts output file is non-empty before reporting success (#43385) thanks @Huntterxx",
+    "feat(provider): support new model zai glm-5-turbo, performs better for  openclaw (openclaw#46670)",
+    "docs: remove dead security README nav entry (#46675)",
+    "fix(zalouser): stop inheriting dm allowlist for groups (#46663)",
+    "feat(webchat): add toggle to hide tool calls and thinking blocks (#20317) thanks @nmccready",
+    "fix(feishu): keep sender-scoped thread bootstrap across id types (#46651)",
+    "fix(gateway): remove re-introduced auth.mode=none pairing bypass",
+    "fix(zalo): use plugin-sdk export for webhook client IP resolution (openclaw#46549)",
+    "Fix Codex CLI auth profile sync (#45353)",
+    "revert: restore supportsUsageInStreaming=false default for non-native endpoints",
+    "Heartbeat: add isolatedSession option for fresh session per heartbeat run (#46634)",
+    "feat(feishu): add reasoning stream support to streaming cards (openclaw#46029)",
+    "fix: persist context-engine auto-compaction counts (#42629)",
+    "fix(feishu): fetch thread context so AI can see bot replies in topic threads (#45254)",
+    "browser: drop headless/remote MCP attach modes, simplify existing-session to autoConnect-only (#46628)",
+    "chore: regenerate config baseline (#46598)",
+    "browser: drop chrome-relay auto-creation, simplify to user profile only (#46596)",
+    "revert: 9bffa3422c4dc13f5c72ab5d2813cc287499cc14",
+    "feat(browser): add headless existing-session MCP support esp for Linux/Docker/VPS (#45769)"
+  ],
+  "feature_items": [
+    "feat(android): redesign chat settings UI by @obviyus in https://github.com/openclaw/openclaw/pull/44894 [v2026.3.13-1]",
+    "Docker: add OPENCLAW_TZ timezone support by @Lanfei in https://github.com/openclaw/openclaw/pull/34119 [v2026.3.13-1]",
+    "feat(ios): add onboarding welcome pager by @ngutman in https://github.com/openclaw/openclaw/pull/45054 [v2026.3.13-1]",
+    "ui: mobile navigation drawer & theme variant refinements by @BunsDev in https://github.com/openclaw/openclaw/pull/45107 [v2026.3.13-1]",
+    "Slack: add opt-in interactive reply directives by @vincentkoc in https://github.com/openclaw/openclaw/pull/44607 [v2026.3.13-1]",
+    "docker: add apt-get upgrade to all Dockerfiles by @jacobtomlinson in https://github.com/openclaw/openclaw/pull/45384 [v2026.3.13-1]",
+    "feat: make compaction timeout configurable via agents.defaults.compaction.timeoutSeconds (#46889)",
+    "feat(android): add dark theme (#46249)",
+    "docker: add lsof to runtime image (#46636)",
+    "feat(gateway): make health monitor stale threshold and max restarts configurable (openclaw#42107)",
+    "feat(feishu): structured cards with identity header, note footer, and streaming enhancements (openclaw#29938)",
+    "Add Feishu reactions and card action support (#46692)",
+    "feat(provider): support new model zai glm-5-turbo, performs better for  openclaw (openclaw#46670)",
+    "feat(webchat): add toggle to hide tool calls and thinking blocks (#20317) thanks @nmccready",
+    "Heartbeat: add isolatedSession option for fresh session per heartbeat run (#46634)",
+    "feat(feishu): add reasoning stream support to streaming cards (openclaw#46029)",
+    "browser: drop headless/remote MCP attach modes, simplify existing-session to autoConnect-only (#46628)",
+    "feat(browser): add headless existing-session MCP support esp for Linux/Docker/VPS (#45769)",
+    "Slack: preserve interactive reply blocks in DMs (#45890)",
+    "ci: add manual backfill support to Docker release (#46269)"
+  ],
+  "fix_items": [
+    "fix(compaction): use full-session token count for post-compaction sanity check by @efe-arv in https://github.com/openclaw/openclaw/pull/28347 [v2026.3.13-1]",
+    "fix(telegram): thread media transport policy into SSRF by @obviyus in https://github.com/openclaw/openclaw/pull/44639 [v2026.3.13-1]",
+    "fix: handle Discord gateway metadata fetch failures by @jalehman in https://github.com/openclaw/openclaw/pull/44397 [v2026.3.13-1]",
+    "fix(session): preserve `lastAccountId ` and `lastThreadId` on session reset by @Lanfei in https://github.com/openclaw/openclaw/pull/44773 [v2026.3.13-1]",
+    "fix: address delivery dedupe review follow-ups by @frankekn in https://github.com/openclaw/openclaw/pull/44666 [v2026.3.13-1]",
+    "fix(agents): drop Anthropic thinking blocks on replay by @frankekn in https://github.com/openclaw/openclaw/pull/44843 [v2026.3.13-1]",
+    "fix(agents): avoid injecting memory file twice on case-insensitive mounts by @Lanfei in https://github.com/openclaw/openclaw/pull/26054 [v2026.3.13-1]",
+    "fix(agents): respect explicit user compat overrides for non-native openai-completions by @cheapestinference in https://github.com/openclaw/openclaw/pull/44432 [v2026.3.13-1]",
+    "fix(agents): rephrase session reset prompt to avoid Azure content filter by @xingsy97 in https://github.com/openclaw/openclaw/pull/43403 [v2026.3.13-1]",
+    "fix(config): add missing params field to agents.list[] validation schema by @atian8179 in https://github.com/openclaw/openclaw/pull/41171 [v2026.3.13-1]",
+    "fix(android): use Google Code Scanner for onboarding QR by @obviyus in https://github.com/openclaw/openclaw/pull/45021 [v2026.3.13-1]",
+    "fix: restore web fetch firecrawl config in runtime zod schema by @stim64045-spec in https://github.com/openclaw/openclaw/pull/42583 [v2026.3.13-1]",
+    "fix(signal): add groups config to Signal channel schema by @unisone in https://github.com/openclaw/openclaw/pull/27199 [v2026.3.13-1]",
+    "fix(discovery): add missing domain to wideArea Zod config schema by @ingyukoh in https://github.com/openclaw/openclaw/pull/35615 [v2026.3.13-1]",
+    "fix(ui): keep shared auth on insecure control-ui connects by @velvet-shark in https://github.com/openclaw/openclaw/pull/45088 [v2026.3.13-1]",
+    "fix: preserve persona and language continuity in compaction summaries by @keepitmello in https://github.com/openclaw/openclaw/pull/10456 [v2026.3.13-1]",
+    "fix: resolve target agent workspace for cross-agent subagent spawns by @moshehbenavraham in https://github.com/openclaw/openclaw/pull/40176 [v2026.3.13-1]",
+    "fix(ollama): hide native reasoning-only output by @frankekn in https://github.com/openclaw/openclaw/pull/45330 [v2026.3.13-1]",
+    "Fix incorrect rendering of brave costs in docs by @keelanfh in https://github.com/openclaw/openclaw/pull/44989 [v2026.3.13-1]",
+    "security(docker): prevent gateway token leak in Docker build context by @xingsy97 in https://github.com/openclaw/openclaw/pull/44956 [v2026.3.13-1]",
+    "fix(ui): restore chat-new-messages class on scroll pill button by @Astro-Han in https://github.com/openclaw/openclaw/pull/44856 [v2026.3.13-1]",
+    "fix(windows): suppress visible console windows during restart and process cleanup by @MoerAI in https://github.com/openclaw/openclaw/pull/44842 [v2026.3.13-1]",
+    "fix(cron): prevent isolated cron nested lane deadlocks by @vincentkoc in https://github.com/openclaw/openclaw/pull/45459 [v2026.3.13-1]",
+    "Fix updater refresh cwd for service reinstall by @vincentkoc in https://github.com/openclaw/openclaw/pull/45452 [v2026.3.13-1]",
+    "perf(build): deduplicate plugin-sdk chunks to fix ~2x memory regression by @TarasShyn in https://github.com/openclaw/openclaw/pull/45426 [v2026.3.13-1]",
+    "fix(browser): normalize batch act dispatch for selector and batch support by @vincentkoc in https://github.com/openclaw/openclaw/pull/45457 [v2026.3.13-1]",
+    "fix(browser): follow up batch failure and limit handling by @vincentkoc in https://github.com/openclaw/openclaw/pull/45506 [v2026.3.13-1]",
+    "fix(config): avoid Anthropic startup crash by @BunsDev in https://github.com/openclaw/openclaw/pull/45520 [v2026.3.13-1]",
+    "fix(ui): stop dashboard chat history reload storm by @BunsDev in https://github.com/openclaw/openclaw/pull/45541 [v2026.3.13-1]",
+    "fix: retry Telegram inbound media downloads over IPv4 fallback by @frankekn in https://github.com/openclaw/openclaw/pull/45327 [v2026.3.13-1]"
+  ],
+  "top_scopes": [
+    {
+      "scope": "fix",
+      "count": 11
+    },
+    {
+      "scope": "docs",
+      "count": 9
+    },
+    {
+      "scope": "gateway",
+      "count": 6
+    },
+    {
+      "scope": "feishu",
+      "count": 5
+    },
+    {
+      "scope": "android",
+      "count": 3
+    },
+    {
+      "scope": "browser",
+      "count": 3
+    },
+    {
+      "scope": "ci",
+      "count": 3
+    },
+    {
+      "scope": "whatsapp",
+      "count": 2
+    },
+    {
+      "scope": "revert",
+      "count": 2
+    },
+    {
+      "scope": "deduplicate",
+      "count": 1
+    },
+    {
+      "scope": "web",
+      "count": 1
+    },
+    {
+      "scope": "feat",
+      "count": 1
+    },
+    {
+      "scope": "macos",
+      "count": 1
+    },
+    {
+      "scope": "tlon",
+      "count": 1
+    },
+    {
+      "scope": "context",
+      "count": 1
+    }
+  ]
+}

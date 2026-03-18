@@ -1,0 +1,51 @@
+name: update-daily
+
+on:
+  schedule:
+    - cron: "0 12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-daily
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Refresh OpenClaw delta and site assets
+        run: |
+          python3 scripts/openclaw_weekly_scan.py --window-days 1
+          python3 scripts/build_pr_activity_dataset.py
+          python3 scripts/build_site_assets.py
+          node scripts/build_daily_product_digest.mjs
+
+      - name: Commit generated files
+        run: |
+          if git diff --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add memory/daily-ai-product-delta.json public/daily-ai-product-delta.json public/daily-ai-product-delta.md memory/daily-pr-activity.json memory/heatmap-incremental-rows.json memory/latest-delta.json public/activity-data.js public/heatmap-incremental.js public/index.html public/latest-delta.js reports/current reports/weekly
+          git commit -m "chore: refresh daily product delta"
+          git push

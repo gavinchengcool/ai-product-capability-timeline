@@ -1,0 +1,153 @@
+# OpenClaw Research Log
+
+## 2026-03-15
+
+- 初始化 `openclaw-research` 项目，用于持续梳理 OpenClaw 产品与生态
+- 建立项目内记忆文件与全局记忆文件的双层结构
+- 核对官方在线来源：文档站、GitHub 仓库、GitHub release、安全页
+- 记录本机现状：`openclaw` CLI 当前不在 `PATH`，但存在 `~/Library/Application Support/OpenClaw`
+- 盘点本机已有资料：社区抓取项目、PDF、静态页面、营销资料压缩包
+- 明确后续研究方向：品牌关系图谱、桌面端与 gateway 边界、版本基线、资料抽取
+- 完成一轮 GitHub 扫描，补充仓库背景、release 节奏、当前能力盘点
+- 为每周日 20:00 的 GitHub 周扫描建立脚本、报告目录和 `launchd` 调度配置
+- 基于 GitHub release 历史补出一份“按阶段 + 按天”的能力时间轴，覆盖 `warelay -> clawdis -> clawdbot -> openclaw` 的命名与能力演进
+- 基于同一批 GitHub 证据补出一份“日期为竖轴、7 个能力轴为横轴”的能力热力图矩阵
+- 基于热力图矩阵补出本地静态网页 `public/timeline-heatmap.html`，支持阶段筛选、轴焦点和日期详情
+- 重新核对 `2026-03-08` 与 `2026-03-09` 的 release notes 后，将两天都提升为关键节点：
+  - `2026-03-08`：context engine / ACP durable bindings / auth SecretRef / hook lifecycle 的架构级更新
+  - `2026-03-09`：backup / remote gateway / provenance / remote discovery 的运维级关键更新
+- 新增一块“社区提交频次”图表区，按 `Asia/Shanghai` 的日历日统计 GitHub `merged PR/day`
+- 为这块图表补了日级缓存 `memory/daily-pr-activity.json` 与前端数据文件 `public/activity-data.js`
+- 新增脚本 `scripts/build_pr_activity_dataset.py`，并把它接入每周自动更新入口 `scripts/run_weekly_update.sh`
+- 截至 2026-03-15 22:12:07+08:00，这份日级 merged PR 数据覆盖 `2025-11-25` 到 `2026-03-14`，峰值日是 `2026-03-03`，当天 `209 merged PR`
+- 把 `public/` 目录部署到 Vercel，项目名是 `openclaw-capability-timeline`，稳定别名是 `https://openclaw-capability-timeline.vercel.app`
+- 把线上根路径改成直接服务主页面本体，不再要求用户访问带 `timeline-heatmap` 后缀的 URL
+- 自动更新从“每周日 20:00”切到“每天 20:00”，并把最近 24 小时增量写入网页顶部面板
+- 当前有效日更调度通过用户级 `crontab` 落地；旧的 `launchd` plist 仍保留，但在这台机器上重新装载时会返回泛化的 `Input/output error`
+- 每次日更现在会顺带做三件事：刷新 GitHub 增量、重建网页数据资产、自动重发到 Vercel
+- 追加核对官方 docs 与本机 `~/.openclaw` 目录后，补充了几条更偏技术形态的长期事实：
+  - `Gateway` 是控制面与 WebSocket server，不只是启动命令
+  - `Skills` 采用 bundled / user / workspace 三层覆盖模型
+  - macOS 端是 menu bar companion，并与本机权限和 node 能力绑定
+  - 本机目录已验证 agent / workspace / sessions / browser / canvas / credentials 等运行时分层真实存在
+
+## 2026-03-16
+
+- 重构网页里的“关键跳变日”区块：不再和主标题同排，而是独立成单独一行的面板
+- 把“关键跳变日”改成更接近坐标轴的表达：横轴是关键日期，日期下方直接展开该日的阶段名、一句话总结和具体说明
+- 保留点击联动：点击任一关键日期或详情卡，仍会弹出当天完整详情并定位到主矩阵对应日期
+- 为网页做了一轮滚动性能减负：移除大面积 glass blur 与固定噪点层，取消矩阵逐行动画，把主矩阵从嵌套纵向滚动改成页面纵向滚动 + 容器横向滚动
+- 修正“顶部有最新增量但主矩阵缺日期”的断层：新增 `heatmap-incremental` 累积层，把 `2026-03-15` 正式写入主矩阵增量缓存，并让页面自动把增量层并回下方“能力迭代矩阵”
+- 把矩阵横轴从偏技术命名切到偏产品视角命名：`入口 / 智能内核 / 工具执行 / 设备 / 平台控制 / 安全治理 / 运维`；底层归类 key 保持不变，避免历史数据断层
+- 把站点从单产品页升级成多产品导航框架：顶部新增“通用产品 / 开发者产品”导航，当前 `OpenClaw` 保持完整页，`ChatGPT / Claude / Codex CLI / Claude Code / Codex App` 先接入统一占位页
+- 按用户最新口径，`OpenClaw` 归到通用产品；`Codex CLI / Claude Code / Codex App` 归到开发者产品，其中 `Codex App` 也按开发者产品处理
+- 用用户提供凭证验证了 `https://openclaw-bustly-map.vercel.app/`
+- 从该页补充并固化了 OpenClaw 与 Bustly 的当前关系口径：
+  - OpenClaw 当前提供底座
+  - Bustly 当前提供 merchant-facing productization
+  - Bustly 对商家是完整产品，但技术上仍主要运行在 OpenClaw 之上
+  - “merchant operator layer”是价值链位置，不等于已技术独立
+- 从该页补充了 Bustly 的 phase 2 方向：把已验证过的 merchant skills 与 execution layer 抽成可迁移、可插拔能力
+- 把这些结论同步进项目内记忆 `memory/openclaw-memory.md` 和全局记忆 `/Users/gavin/.codex/memories/openclaw-project.md`
+- 把多产品站点从“只有 OpenClaw 真数据，其他是占位页”升级成真实多产品数据页：
+  - `ChatGPT / Claude / Codex CLI / Claude Code / Codex App` 全部接入正式时间轴、关键跳变日、最近一次官方增量和频次图
+  - 统一沿用产品视角的 7 轴：`入口 / 智能内核 / 工具执行 / 设备 / 平台控制 / 安全治理 / 运维`
+- 新增 `public/product-data.js`，把这 5 个产品的官方基线沉淀成可复用的前端数据资产
+- 新增 `docs/multi-product-source-map.md`，记录多产品页面的官方来源：
+  - OpenAI：ChatGPT release notes、Codex / Codex App 官方发布、model release notes、Codex plan article
+  - Anthropic：Claude release notes、Claude Code docs 和 official releases / GitHub API
+- 调整前端渲染层，让“最近增量”和“频次图”不再写死 OpenClaw：
+  - `OpenClaw` 继续展示 `最近 24 小时 GitHub 增量 + merged PR/day`
+  - 其余 5 个产品改为展示 `最近一次官方增量 + 官方更新频次`
+- 明确当前自动化边界：
+  - `OpenClaw` 仍然是唯一接入每天 20:00 自动抓取和自动发布的产品
+  - 其他 5 个产品当前是截至 2026-03-16 的官方基线快照，后续如有需要再接自动日更
+- 去掉顶部产品导航里的“已接入 / 筹备中”状态标签，导航只保留产品名和一句简介
+- 最初尝试给旧项目手工加新 alias，但该 alias 返回 `401`，不适合作为公开入口
+- 改为直接新建并切换到新的 Vercel 项目 `ai-product-capability-timeline`
+- 新项目的正式公开域名现在是 `https://ai-product-capability-timeline.vercel.app`，并已返回 `HTTP 200`
+- 同步修改自动发布脚本 `scripts/run_weekly_update.sh`：每天 20:00 发布完成后，会自动把最新正式部署重新绑定到新的通用域名
+- 给多产品页面补上产品切换 loading 过渡：
+  - `public/timeline-heatmap.html` / `public/index.html` 新增全局 loader overlay
+  - 产品导航点击时先进入 loading，再跳转到目标产品页面
+  - 新页面 render 完成后统一淡入，避免切换产品时旧内容与新内容交错闪现
+- 调整多产品时间轴的 Day One 起点，并补齐 CLI 口径：
+  - `ChatGPT` 的起点前移到 `2022-11-30`（官方 launch）
+  - `Claude` 的起点前移到 `2023-03-14`（官方 launch）
+  - `Codex CLI` 的起点前移到 `2025-04-16`
+  - `Claude Code CLI` 的起点前移到 `2025-02-24`，并把页面展示名从 `Claude Code` 改成 `Claude Code CLI`
+  - `Codex App` 去掉 app 发布前的底层预备期，改为从 `2026-02-02` 的 app 首发日开始
+- 这次除了官方 launch / release 来源外，还补用了两份本地参考资料：
+  - `/Users/gavin/codex_claude_cli_iteration_rhythm_20260305.html`
+  - `/Users/gavin/Desktop/ai-cli-evolution.html`
+- 把多产品页面的产品切换过渡继续收轻：
+  - 不再让整页内容淡出 / 位移
+  - loader 改成顶部轻量提示条，只在 tab 切换时出现
+  - 普通直接访问页面时不再默认展示 loading 过渡
+- 按用户反馈补齐 `ChatGPT / Claude` 在 `Day One -> 2025` 之间缺失的官方节点，消除时间轴大跳跃：
+  - `ChatGPT` 现在补进了 `2022-12` 到 `2024-12` 的关键产品化节点，包括历史记录、Plus、GPT-4、plugins、Code Interpreter、iOS / Android、voice / image、GPTs、Store / Team、Memory、GPT-4o、Canvas
+  - `Claude` 现在补进了 `2023-11` 到 `2025-05` 的关键节点，包括 `claude.ai` 成熟化、iOS / Team、欧洲 / 加拿大 rollout、Artifacts、Projects、Android、Enterprise、desktop apps、Research
+  - `public/product-data.js` 中对应两条时间轴当前分别拉通到 `2022-11-30 -> 2026-03-11` 和 `2023-03-14 -> 2026-03-12`
+  - 已做语法校验和日期升序校验，`rows` 与 `activity` 两层都无乱序
+- 按用户最新要求，重新定义“关键跳变日”的判断口径，明确不能再把它当成纯主观挑选：
+  - 新增 `docs/jump-date-audit.md`，把 6 个产品当前 jump dates 的可信度、疑似漏点和第二轮复核重点单独列出
+  - 从现在开始，jump date 的判断采用两层证据：`官方版本跃迁` 为主，`社交媒体 / 社区热度` 为第二证据层
+  - 已纳入首批外部热度样本：ChatGPT launch、GPT-4o、Claude 3.7 + Claude Code、Codex CLI、Claude Artifacts、Codex App
+  - 当前结论不是“已经没有遗漏”，而是 `v1 基线`；后续还要逐版本复核 `Codex CLI / Claude Code CLI / Codex App`
+- 推进了开发者产品线的第二轮 jump-date 复核，并把结果正式写回 `public/product-data.js`：
+  - `Codex CLI` 新升格 `2025-08-15 / 2025-12-02 / 2026-01-09 / 2026-03-05`
+  - `Claude Code CLI` 新升格 `2025-03-05 / 2025-08-27 / 2026-02-06`
+  - `Codex App` 没再新增 jump date，但 `2026-02-02` 首发日的可信度被显著上调
+- 这轮 developer 产品复核同时并入了第二证据层：
+  - `Codex CLI` 首发 HN：`516 points / 289 comments`
+  - `Claude 3.7 + Claude Code` HN：`2127 points / 963 comments`
+  - `Codex App` 首发 HN：`805 points / 638 comments`
+  - `Claude Code weekly rate limits` HN：`609 points / 705 comments`
+- 这轮逐版本复核也并入了更细的官方版本证据：
+  - `openai/codex` releases：补核了 `rust-v0.22.0 / v0.47.0 / v0.64.0 / v0.80.0 / v0.99.0 / v0.105.0 / v0.110.0`
+  - `anthropics/claude-code` releases：补核了 `v2.1.76 / v2.1.74 / v2.1.72 / v2.1.53 / v2.1.33 / v2.1.3 / v2.0.74`
+- 已再次校验 `public/product-data.js`：语法检查通过，`Codex CLI / Claude Code CLI / Codex App` 的 `rows / activity / jumpDates` 日期升序均通过
+- 纠正了开发者产品顶部“最近一次官方增量”窗口的口径偏差，并统一改名为“最近一波官方增量”：
+  - `Codex CLI` 不再错误停留在 `2026-02-05 -> 2026-03-06`，而是改为按最新 stable GitHub release wave 展示 `2026-03-05 -> 2026-03-11`
+  - `Claude Code CLI` 从只看 `2026-03-10 -> 2026-03-14` 的后半段，扩成最新一波 stable releases `2026-03-04 -> 2026-03-14`
+- 同步补细了矩阵中的日级行：
+  - `Codex CLI` 新增 `2026-03-08 / 2026-03-10 / 2026-03-11`
+  - `Claude Code CLI` 新增 `2026-03-04 / 2026-03-05 / 2026-03-06 / 2026-03-07`
+- 这次修正明确依赖官方 GitHub releases：
+  - `openai/codex` stable releases 最新波段为 `rust-v0.110.0 -> rust-v0.114.0`
+  - `anthropics/claude-code` stable releases 最新波段为 `v2.1.66 -> v2.1.76`
+- 为了把公开入口缩短，新增并切换到了更短的 Vercel 项目级域名：
+  - 新项目名：`aievo`
+  - 新公开地址：`https://aievo.vercel.app`
+  - 原因：直接给旧项目加短 alias 虽然能绑定成功，但会返回 `401`，不适合作为公开入口
+  - 当前自动发布脚本和本地 `.vercel/project.json` 都已经切到新项目，后续每天 20:00 会继续自动发布到 `aievo.vercel.app`
+- 根据用户最新要求，默认公开域名又切回了更可读的 `https://ai-product-capability-timeline.vercel.app`
+  - 当前真实部署仍然跑在新项目 `aievo` 上
+  - `ai-product-capability-timeline.vercel.app` 现在重新指向 `aievo` 的最新生产部署
+  - `https://aievo.vercel.app` 保留为兼容短地址，不再作为默认入口
+  - 自动发布脚本的 canonical alias 也已切回 `ai-product-capability-timeline.vercel.app`
+- 多产品页面完成了一轮真正的移动端适配，而不是只做缩放：
+  - 手机端 `关键跳变日` 从宽表改成纵向卡片流
+  - 手机端 `能力迭代矩阵` 从横向大表改成按天卡片流
+  - 手机端频次图改成可横向滑动的宽图，保留日期标签可读性
+  - 顶部产品导航在手机端改成单列栈式布局，避免 tab 过窄
+- 已做最小校验：
+  - `timeline-heatmap.html` 的内联脚本语法检查通过
+  - `index.html` 与 `timeline-heatmap.html` 已重新同步成同一份文件
+
+## 2026-03-17
+
+- 新增 `skills/daily-ai-product-delta/`，把“读取 6 产品最近增量并对外总结”沉淀成可安装 skill
+- 新增 `scripts/build_daily_product_digest.mjs`，把现有 `OpenClaw` live delta 和另外 5 个产品的官方基线整成统一 payload
+- 新增统一对外端点：
+  - `public/daily-ai-product-delta.json`
+  - `public/daily-ai-product-delta.md`
+- 同步补了本地缓存 `memory/daily-ai-product-delta.json`，方便 skill、自动化和人工复核共用
+- 把 `scripts/run_weekly_update.sh` 接上统一 digest 构建，确保每天 20:00 的本机日更会顺带刷新 skill 读的公共数据
+- 新增 `.github/workflows/update-daily.yml`，给未来公开 GitHub 仓库准备每天 `12:00 UTC = 20:00 Asia/Shanghai` 的 Actions 骨架
+- 明确并固化当前 freshness 边界：
+  - `OpenClaw` 仍是唯一 true rolling 24h feed
+  - `ChatGPT / Claude / Codex CLI / Claude Code CLI / Codex App` 暂时仍是“最近一波官方 dated update”快照
+- skill 侧新增了两份参考：
+  - `references/schema.md`：统一 digest schema 和 freshness 语义
+  - `references/source-map.md`：6 个产品的官方来源与 hosted endpoint

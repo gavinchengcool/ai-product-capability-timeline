@@ -1,0 +1,4 @@
+interface:
+  display_name: "Daily AI Product Delta"
+  short_description: "Summarize daily deltas for 6 tracked AI products."
+  default_prompt: "Use $daily-ai-product-delta to summarize the latest 24-hour changes across OpenClaw, ChatGPT, Claude, Codex CLI, Claude Code CLI, and Codex App."

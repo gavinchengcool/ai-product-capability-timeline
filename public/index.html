@@ -1,0 +1,2662 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>openclaw 的能力迭代图</title>
+    <script>
+      try {
+        if (window.sessionStorage.getItem("timeline-product-switch")) {
+          document.documentElement.classList.add("product-loading");
+        }
+      } catch (error) {
+        // Ignore storage access issues and fall back to no loader.
+      }
+    </script>
+    <style>
+      :root {
+        --paper: #f6f1e8;
+        --ink: #1f2421;
+        --muted: #6f6a62;
+        --line: rgba(31, 36, 33, 0.12);
+        --panel: rgba(255, 252, 245, 0.94);
+        --panel-strong: rgba(255, 252, 245, 0.98);
+        --accent: #cf5f38;
+        --accent-deep: #8e3a1f;
+        --green-0: #ebe4d6;
+        --green-1: #c8d9bb;
+        --green-2: #79a784;
+        --green-3: #1f6a4f;
+        --stage-warelay: #6f8ca8;
+        --stage-clawdis: #cf5f38;
+        --stage-clawdbot: #4c7d6d;
+        --stage-openclaw: #8c4f86;
+        --shadow: 0 10px 28px rgba(31, 36, 33, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+        background:
+          radial-gradient(circle at top left, rgba(207, 95, 56, 0.12), transparent 34%),
+          radial-gradient(circle at bottom right, rgba(31, 106, 79, 0.16), transparent 32%),
+          linear-gradient(180deg, #fbf7f1 0%, var(--paper) 55%, #efe7db 100%);
+        color: var(--ink);
+        font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+      }
+
+      html.product-loading {
+        overflow-y: scroll;
+      }
+
+      .app {
+        position: relative;
+        z-index: 1;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 32px 24px 48px;
+      }
+
+      .page-loader {
+        position: fixed;
+        top: 18px;
+        left: 50%;
+        transform: translateX(-50%) translateY(-10px);
+        z-index: 50;
+        width: auto;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 140ms ease, transform 140ms ease;
+      }
+
+      html.product-loading .page-loader {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+      }
+
+      .page-loader-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        padding: 10px 12px;
+        border-radius: 999px;
+        border: 1px solid rgba(31, 36, 33, 0.1);
+        background: rgba(255, 252, 245, 0.96);
+        box-shadow: 0 8px 20px rgba(31, 36, 33, 0.08);
+      }
+
+      .page-loader-indicator {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 999px;
+        border: 2px solid rgba(207, 95, 56, 0.24);
+        border-top-color: var(--accent);
+        animation: loader-spin 0.9s linear infinite;
+      }
+
+      @keyframes loader-spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .product-nav {
+        margin-bottom: 20px;
+      }
+
+      .product-nav-groups {
+        display: grid;
+        gap: 14px;
+      }
+
+      .product-group {
+        display: grid;
+        gap: 10px;
+      }
+
+      .product-group-head {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .product-group-head strong {
+        font-size: 13px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .product-group-head span {
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .product-tabs {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 10px;
+      }
+
+      .product-tab {
+        display: grid;
+        gap: 8px;
+        min-width: 0;
+        padding: 12px 14px;
+        border-radius: 18px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.72);
+        color: var(--ink);
+        text-decoration: none;
+        transition: border-color 120ms ease, background 120ms ease, transform 120ms ease;
+      }
+
+      .product-tab:hover {
+        border-color: rgba(207, 95, 56, 0.28);
+        background: rgba(255, 255, 255, 0.92);
+        transform: translateY(-1px);
+      }
+
+      .product-tab.active {
+        border-color: rgba(207, 95, 56, 0.4);
+        background: rgba(207, 95, 56, 0.1);
+      }
+
+      .product-tab-top {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .product-tab-top strong {
+        font-size: 14px;
+      }
+
+      .product-tab span {
+        display: -webkit-box;
+        overflow: hidden;
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.45;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+      }
+
+      .hero {
+        display: block;
+      }
+
+      .hero-copy,
+      .hero-side,
+      .panel,
+      .insight-card,
+      .detail-card,
+      .matrix-shell {
+        background: var(--panel);
+        border: 1px solid rgba(255, 255, 255, 0.48);
+        border-radius: 24px;
+        box-shadow: var(--shadow);
+      }
+
+      .hero-copy {
+        padding: 28px 28px 26px;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: rgba(207, 95, 56, 0.1);
+        color: var(--accent-deep);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: "Iowan Old Style", "Baskerville", "Palatino Linotype", serif;
+        letter-spacing: -0.02em;
+      }
+
+      h1 {
+        margin: 18px 0 12px;
+        font-size: clamp(34px, 6vw, 66px);
+        line-height: 0.96;
+      }
+
+      .hero-copy p {
+        margin: 0;
+        max-width: 60ch;
+        color: var(--muted);
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      .hero-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 22px;
+      }
+
+      .hero-meta span,
+      .legend-item,
+      .chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        border-radius: 999px;
+        padding: 10px 14px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.64);
+        font-size: 13px;
+      }
+
+      .jump-panel {
+        margin-top: 20px;
+      }
+
+      .jump-wrap {
+        overflow-x: auto;
+        overflow-y: visible;
+        border-radius: 18px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.56);
+      }
+
+      .jump-mobile-list,
+      .matrix-mobile-list,
+      .mobile-empty-state {
+        display: none;
+      }
+
+      .jump-table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        min-width: 1180px;
+      }
+
+      .jump-table thead th {
+        background: rgba(252, 248, 241, 0.94);
+      }
+
+      .jump-table th,
+      .jump-table td {
+        padding: 14px 12px;
+        border-bottom: 1px solid var(--line);
+        vertical-align: top;
+        text-align: left;
+      }
+
+      .jump-axis {
+        min-width: 120px;
+        position: sticky;
+        left: 0;
+        z-index: 2;
+        background: rgba(252, 248, 241, 0.94);
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      .jump-date {
+        min-width: 176px;
+        cursor: pointer;
+      }
+
+      .jump-date strong {
+        display: block;
+        font-family: Menlo, Consolas, "SFMono-Regular", monospace;
+        font-size: 13px;
+        color: var(--ink);
+      }
+
+      .jump-date span {
+        display: block;
+        margin-top: 6px;
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.4;
+      }
+
+      .jump-cell {
+        min-width: 176px;
+        cursor: pointer;
+        font-size: 13px;
+        line-height: 1.58;
+      }
+
+      .jump-detail-card {
+        display: grid;
+        gap: 10px;
+      }
+
+      .jump-stage {
+        color: var(--accent-deep);
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 1.5;
+      }
+
+      .jump-summary {
+        color: var(--ink);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.55;
+      }
+
+      .jump-blurb {
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.6;
+      }
+
+      .jump-date.active,
+      .jump-cell.active {
+        background: rgba(207, 95, 56, 0.08);
+      }
+
+      .jump-mobile-card {
+        width: 100%;
+        padding: 14px;
+        border-radius: 18px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.72);
+        text-align: left;
+        color: var(--ink);
+        cursor: pointer;
+      }
+
+      .jump-mobile-card.active {
+        border-color: rgba(207, 95, 56, 0.34);
+        background: rgba(207, 95, 56, 0.09);
+      }
+
+      .jump-mobile-meta {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+
+      .jump-mobile-date {
+        display: grid;
+        gap: 6px;
+      }
+
+      .jump-mobile-date strong {
+        font-family: Menlo, Consolas, "SFMono-Regular", monospace;
+        font-size: 13px;
+      }
+
+      .jump-mobile-date span {
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.5;
+      }
+
+      .jump-mobile-card .jump-stage {
+        font-size: 12px;
+      }
+
+      .jump-mobile-card .jump-summary {
+        font-size: 15px;
+      }
+
+      .hero-side {
+        padding: 24px;
+        display: grid;
+        gap: 14px;
+      }
+
+      .hero-side h2 {
+        margin: 0;
+        font-size: 22px;
+      }
+
+      .hero-side p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.55;
+        font-size: 14px;
+      }
+
+      .jump-list {
+        display: grid;
+        gap: 12px;
+      }
+
+      .jump-item {
+        padding: 14px 14px 12px;
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.72);
+        border: 1px solid var(--line);
+      }
+
+      .jump-item strong {
+        display: block;
+        font-size: 14px;
+      }
+
+      .jump-item span {
+        display: block;
+        margin-top: 6px;
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.45;
+      }
+
+      .controls {
+        display: grid;
+        gap: 16px;
+        margin-top: 20px;
+      }
+
+      .panel {
+        padding: 18px 20px;
+      }
+
+      .panel-head {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 14px;
+      }
+
+      .panel-head h3 {
+        margin: 0;
+        font-size: 22px;
+      }
+
+      .panel-head p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .delta-panel {
+        margin-top: 20px;
+      }
+
+      .placeholder-panel {
+        margin-top: 20px;
+      }
+
+      .placeholder-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .placeholder-copy {
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      .placeholder-list {
+        margin: 0;
+        padding-left: 18px;
+        display: grid;
+        gap: 8px;
+        color: var(--ink);
+        font-size: 13px;
+        line-height: 1.52;
+      }
+
+      .delta-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .delta-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .delta-card {
+        padding: 16px;
+        border-radius: 18px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.64);
+      }
+
+      .delta-card h4 {
+        margin: 0 0 10px;
+        font-size: 15px;
+      }
+
+      .delta-list {
+        margin: 0;
+        padding-left: 18px;
+        display: grid;
+        gap: 8px;
+        color: var(--ink);
+        font-size: 13px;
+        line-height: 1.52;
+      }
+
+      .delta-list li {
+        margin: 0;
+      }
+
+      .delta-list a {
+        color: var(--accent-deep);
+      }
+
+      .stat-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .chip-row,
+      .legend {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .activity-panel {
+        display: grid;
+        gap: 16px;
+      }
+
+      .activity-shell {
+        position: relative;
+        padding: 12px 10px 2px;
+        border-radius: 20px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.58);
+      }
+
+      .activity-chart {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .chart-axis,
+      .chart-grid {
+        fill: none;
+        stroke: rgba(31, 36, 33, 0.14);
+        stroke-width: 1;
+      }
+
+      .chart-grid {
+        stroke-dasharray: 4 6;
+      }
+
+      .chart-line {
+        fill: none;
+        stroke: var(--accent);
+        stroke-width: 2.4;
+        stroke-linejoin: round;
+        stroke-linecap: round;
+      }
+
+      .chart-area {
+        fill: rgba(207, 95, 56, 0.12);
+      }
+
+      .chart-bar {
+        fill: rgba(31, 106, 79, 0.28);
+        transition: fill 120ms ease;
+        cursor: crosshair;
+      }
+
+      .chart-bar:hover,
+      .chart-bar.active {
+        fill: rgba(31, 106, 79, 0.62);
+      }
+
+      .chart-label {
+        fill: var(--muted);
+        font-size: 11px;
+      }
+
+      .chart-label.strong {
+        fill: var(--ink);
+        font-weight: 700;
+      }
+
+      .chart-marker {
+        fill: white;
+        stroke: var(--accent-deep);
+        stroke-width: 2;
+      }
+
+      .chart-caption {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 8px;
+        margin-top: 10px;
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .chart-caption strong {
+        color: var(--ink);
+      }
+
+      .chip {
+        cursor: pointer;
+        transition: border-color 120ms ease, background 120ms ease, color 120ms ease;
+      }
+
+      .chip:hover {
+        background: rgba(255, 255, 255, 0.82);
+      }
+
+      .chip.active {
+        border-color: rgba(207, 95, 56, 0.4);
+        background: rgba(207, 95, 56, 0.14);
+        color: var(--accent-deep);
+      }
+
+      .matrix-shell {
+        overflow: hidden;
+      }
+
+      .matrix-header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        padding: 18px 20px 12px;
+        border-bottom: 1px solid var(--line);
+        background: var(--panel-strong);
+      }
+
+      .matrix-header h2 {
+        margin: 0;
+        font-size: 28px;
+      }
+
+      .matrix-header p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .matrix-wrap {
+        overflow-x: auto;
+        overflow-y: visible;
+        position: relative;
+        contain: layout paint;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        min-width: 1260px;
+      }
+
+      thead th {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        background: rgba(252, 248, 241, 0.96);
+      }
+
+      th,
+      td {
+        padding: 10px 8px;
+        border-bottom: 1px solid var(--line);
+        vertical-align: top;
+        text-align: left;
+      }
+
+      tbody tr {
+        transition: background 120ms ease;
+        cursor: pointer;
+      }
+
+      tbody tr:hover {
+        background: rgba(207, 95, 56, 0.05);
+      }
+
+      tbody tr.selected {
+        background: rgba(31, 106, 79, 0.09);
+      }
+
+      .sticky-col {
+        position: sticky;
+        left: 0;
+        z-index: 4;
+        background: rgba(252, 248, 241, 0.92);
+      }
+
+      .sticky-col.stage {
+        left: 108px;
+      }
+
+      th.sticky-col.stage,
+      td.sticky-col.stage {
+        min-width: 82px;
+      }
+
+      th.sticky-col.date,
+      td.sticky-col.date {
+        min-width: 108px;
+      }
+
+      .date-cell strong {
+        display: block;
+        font-family: Menlo, Consolas, "SFMono-Regular", monospace;
+        font-size: 12px;
+      }
+
+      .date-cell span {
+        color: var(--muted);
+        font-size: 11px;
+      }
+
+      .stage-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        color: white;
+        font-size: 11px;
+        font-weight: 700;
+      }
+
+      .stage-pill::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.92);
+      }
+
+      .stage-warelay {
+        background: var(--stage-warelay);
+      }
+
+      .stage-clawdis {
+        background: var(--stage-clawdis);
+      }
+
+      .stage-clawdbot {
+        background: var(--stage-clawdbot);
+      }
+
+      .stage-openclaw {
+        background: var(--stage-openclaw);
+      }
+
+      .summary-cell {
+        min-width: 220px;
+        max-width: 250px;
+      }
+
+      .summary-copy {
+        color: var(--ink);
+        font-size: 12px;
+        line-height: 1.5;
+      }
+
+      .summary-copy strong {
+        color: var(--accent-deep);
+      }
+
+      .summary-meta {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 12px;
+      }
+
+      .type-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 8px;
+      }
+
+      .type-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 7px 10px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.74);
+        color: var(--ink);
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .type-pill::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 999px;
+        background: var(--accent);
+      }
+
+      .axis-cell {
+        min-width: 120px;
+        max-width: 132px;
+      }
+
+      .axis-card {
+        min-height: 58px;
+        padding: 9px;
+        border-radius: 16px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.78);
+        color: var(--ink);
+        font-size: 11px;
+        line-height: 1.45;
+      }
+
+      .axis-card.empty {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--muted);
+        background: rgba(255, 255, 255, 0.28);
+        border-style: dashed;
+      }
+
+      .axis-brief {
+        display: -webkit-box;
+        overflow: hidden;
+        color: var(--ink);
+        font-size: 11px;
+        line-height: 1.35;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+      }
+
+      .axis-cell.dimmed,
+      th.axis-head.dimmed {
+        opacity: 0.28;
+      }
+
+      .axis-cell.focused .axis-card,
+      th.axis-head.focused {
+        outline: 2px solid rgba(207, 95, 56, 0.34);
+        outline-offset: 3px;
+      }
+
+      .axis-head {
+        min-width: 120px;
+        font-size: 12px;
+      }
+
+      .row-hint {
+        display: inline-flex;
+        align-items: center;
+        border-radius: 999px;
+        padding: 6px 9px;
+        background: rgba(31, 36, 33, 0.06);
+        color: var(--muted);
+        font-size: 11px;
+        font-weight: 700;
+      }
+
+      .matrix-mobile-list {
+        padding: 14px 16px 18px;
+      }
+
+      .mobile-card {
+        display: grid;
+        gap: 12px;
+        padding: 14px;
+        border-radius: 20px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.74);
+        cursor: pointer;
+      }
+
+      .mobile-card + .mobile-card {
+        margin-top: 12px;
+      }
+
+      .mobile-card.selected {
+        border-color: rgba(31, 106, 79, 0.28);
+        background: rgba(31, 106, 79, 0.08);
+      }
+
+      .mobile-card-head {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      .mobile-card-date {
+        display: grid;
+        gap: 6px;
+      }
+
+      .mobile-card-date strong {
+        display: block;
+        font-family: Menlo, Consolas, "SFMono-Regular", monospace;
+        font-size: 13px;
+      }
+
+      .mobile-card-date span {
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.45;
+      }
+
+      .mobile-card-summary {
+        color: var(--ink);
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      .mobile-axis-list {
+        display: grid;
+        gap: 8px;
+      }
+
+      .mobile-axis-item {
+        padding: 10px 12px;
+        border-radius: 14px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.82);
+      }
+
+      .mobile-axis-item strong {
+        display: block;
+        font-size: 12px;
+        margin-bottom: 4px;
+      }
+
+      .mobile-axis-item p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.5;
+      }
+
+      .mobile-card-footer {
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .modal-backdrop {
+        position: fixed;
+        inset: 0;
+        z-index: 30;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        background: rgba(31, 36, 33, 0.44);
+      }
+
+      .modal-backdrop[hidden] {
+        display: none;
+      }
+
+      .modal-panel {
+        width: min(1120px, 100%);
+        max-height: calc(100vh - 48px);
+        overflow: auto;
+        padding: 22px;
+        border-radius: 24px;
+        background: var(--panel-strong);
+        border: 1px solid rgba(255, 255, 255, 0.56);
+        box-shadow: 0 18px 48px rgba(31, 36, 33, 0.18);
+      }
+
+      .modal-head {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 14px;
+      }
+
+      .modal-head-copy {
+        display: grid;
+        gap: 8px;
+      }
+
+      .modal-head-copy h2 {
+        margin: 0;
+        font-size: 28px;
+      }
+
+      .modal-head-copy p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      .modal-close {
+        flex: 0 0 auto;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.84);
+        color: var(--ink);
+        border-radius: 999px;
+        padding: 10px 14px;
+        font: inherit;
+        cursor: pointer;
+      }
+
+      .modal-close:hover {
+        background: rgba(255, 255, 255, 1);
+      }
+
+      .detail-card {
+        display: grid;
+        gap: 16px;
+      }
+
+      .detail-card h2 {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      .detail-card p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      .detail-types {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .detail-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .detail-axis {
+        padding: 12px;
+        border-radius: 16px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.62);
+      }
+
+      .detail-axis strong {
+        display: block;
+        font-size: 13px;
+        margin-bottom: 6px;
+      }
+
+      .detail-axis span {
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .detail-axis p {
+        margin: 0;
+        color: var(--ink);
+        line-height: 1.58;
+        font-size: 13px;
+      }
+
+      .detail-axis.empty {
+        background: rgba(255, 255, 255, 0.36);
+        border-style: dashed;
+      }
+
+      .stage-note {
+        padding: 14px;
+        border-radius: 18px;
+        border: 1px dashed rgba(31, 36, 33, 0.18);
+        background: rgba(255, 255, 255, 0.56);
+      }
+
+      .stage-note strong {
+        display: block;
+        margin-bottom: 6px;
+      }
+
+      .kicker {
+        color: var(--muted);
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+      }
+
+      .empty-state {
+        display: none;
+        padding: 32px 24px;
+        color: var(--muted);
+        text-align: center;
+      }
+
+      .search-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .search-wrap input {
+        flex: 1 1 280px;
+        min-width: 0;
+        padding: 12px 14px;
+        border-radius: 14px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.82);
+        font: inherit;
+        color: var(--ink);
+      }
+
+      .search-wrap input:focus {
+        outline: 2px solid rgba(207, 95, 56, 0.26);
+        border-color: rgba(207, 95, 56, 0.36);
+      }
+
+      .footer {
+        margin-top: 18px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      @media (max-width: 1120px) {
+        .delta-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .placeholder-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .modal-panel {
+          width: min(100%, 100%);
+        }
+      }
+
+      @media (max-width: 760px) {
+        .app {
+          padding: 20px 14px 32px;
+        }
+
+        .panel-head {
+          align-items: flex-start;
+        }
+
+        .hero-copy,
+        .hero-side,
+        .panel,
+        .matrix-shell {
+          border-radius: 20px;
+        }
+
+        .hero-copy {
+          padding: 22px 20px 20px;
+        }
+
+        .hero-side {
+          padding: 18px;
+        }
+
+        .hero-meta span {
+          width: 100%;
+          justify-content: flex-start;
+        }
+
+        .product-tabs {
+          grid-template-columns: 1fr;
+        }
+
+        .product-tab {
+          padding: 12px;
+          border-radius: 16px;
+          gap: 6px;
+        }
+
+        .detail-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .delta-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .placeholder-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .matrix-header {
+          padding: 16px 16px 12px;
+        }
+
+        .jump-wrap,
+        .matrix-wrap {
+          display: none;
+        }
+
+        .jump-mobile-list {
+          display: grid;
+          gap: 12px;
+        }
+
+        .matrix-mobile-list {
+          display: block;
+        }
+
+        .mobile-empty-state {
+          padding: 18px 16px 22px;
+          text-align: center;
+        }
+
+        .activity-shell {
+          overflow-x: auto;
+          overflow-y: hidden;
+          -webkit-overflow-scrolling: touch;
+          padding-inline: 0;
+        }
+
+        .activity-chart {
+          width: 760px;
+          min-width: 760px;
+          max-width: none;
+        }
+
+        .modal-backdrop {
+          padding: 12px;
+        }
+
+        .modal-panel {
+          max-height: calc(100vh - 24px);
+          padding: 18px;
+          border-radius: 20px;
+        }
+
+        .modal-head {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-loader" id="page-loader" aria-live="polite" aria-busy="true">
+      <div class="page-loader-card">
+        <span class="page-loader-indicator" aria-hidden="true"></span>
+      </div>
+    </div>
+    <div class="app">
+      <section class="panel product-nav">
+        <div class="panel-head">
+          <div>
+            <h3>产品导航</h3>
+            <p>用同一套迭代视图并排跟踪通用产品和开发者产品，当前覆盖 6 个产品的首版基线。</p>
+          </div>
+        </div>
+        <div class="product-nav-groups" id="product-nav-groups"></div>
+      </section>
+
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow" id="hero-eyebrow">OpenClaw Timeline Atlas</div>
+          <h1 id="hero-title">openclaw 的能力迭代图</h1>
+          <p id="hero-subtitle">
+            日期做竖轴，七个能力轴做横轴。
+          </p>
+          <div class="hero-meta">
+            <span id="hero-range">时间范围：—</span>
+            <span id="hero-note">非空单元格 = 当天该轴有明确迭代</span>
+            <span id="hero-source">来源：GitHub Releases</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel placeholder-panel" id="product-placeholder" hidden>
+        <div class="panel-head">
+          <div>
+            <h3 id="placeholder-title">数据建设中</h3>
+            <p class="placeholder-copy" id="placeholder-copy"></p>
+          </div>
+        </div>
+        <div class="placeholder-grid">
+          <section class="delta-card">
+            <h4>产品定位</h4>
+            <p class="placeholder-copy" id="placeholder-audience"></p>
+          </section>
+          <section class="delta-card">
+            <h4>即将补齐</h4>
+            <ul class="placeholder-list" id="placeholder-scope"></ul>
+          </section>
+          <section class="delta-card">
+            <h4>计划来源</h4>
+            <ul class="placeholder-list" id="placeholder-sources"></ul>
+          </section>
+        </div>
+      </section>
+
+      <section class="panel jump-panel" id="jump-panel">
+        <div class="panel-head">
+          <div>
+            <h3>关键跳变日</h3>
+            <p>横轴是关键日期，纵向依次展开阶段、那天的一句话总结，以及更具体的迭代说明。</p>
+          </div>
+        </div>
+        <div class="jump-wrap">
+          <table class="jump-table">
+            <thead id="jump-head"></thead>
+            <tbody id="jump-body"></tbody>
+          </table>
+        </div>
+        <div class="jump-mobile-list" id="jump-mobile-list"></div>
+      </section>
+
+      <section class="panel delta-panel" id="delta-panel">
+        <div class="panel-head">
+          <div>
+            <h3 id="delta-title">最近 24 小时增量</h3>
+            <p id="delta-description">每天 20:00（Asia/Shanghai）自动刷新，展示最近一次 GitHub 增量并同步到线上页面。</p>
+          </div>
+          <div class="delta-meta" id="delta-meta"></div>
+        </div>
+        <div class="delta-grid">
+          <section class="delta-card">
+            <h4>新增能力信号</h4>
+            <ul class="delta-list" id="delta-features"></ul>
+          </section>
+          <section class="delta-card">
+            <h4>修复与加固</h4>
+            <ul class="delta-list" id="delta-fixes"></ul>
+          </section>
+          <section class="delta-card">
+            <h4>最近 Releases</h4>
+            <ul class="delta-list" id="delta-releases"></ul>
+          </section>
+          <section class="delta-card">
+            <h4>最活跃范围</h4>
+            <ul class="delta-list" id="delta-scopes"></ul>
+          </section>
+        </div>
+      </section>
+
+      <section class="controls" id="controls-panel">
+        <div class="panel activity-panel">
+          <div class="panel-head">
+            <div>
+              <h3 id="activity-title">社区提交频次</h3>
+              <p id="activity-description">横轴是日期，纵轴是每日 merged PR 数。它更适合表达社区协作活跃度，不等于原始 commit 数。</p>
+            </div>
+            <div class="stat-row">
+              <span class="legend-item" id="activity-range"></span>
+              <span class="legend-item" id="activity-peak"></span>
+            </div>
+          </div>
+          <div class="activity-shell">
+            <svg
+              class="activity-chart"
+              id="activity-chart"
+              viewBox="0 0 1180 300"
+              role="img"
+              aria-label="OpenClaw 每日 merged PR 数"
+            ></svg>
+            <div class="chart-caption">
+              <span id="activity-caption-left">悬浮查看当天数值；点击和时间轴日期重合的柱子，会联动下方详情。</span>
+              <span id="activity-caption-right"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <div>
+              <h3>阶段筛选</h3>
+              <p>按命名阶段筛选每天的能力迭代。</p>
+            </div>
+            <div class="search-wrap">
+              <input id="search-input" type="search" placeholder="搜索关键变化，例如 browser / Android / secrets" />
+            </div>
+          </div>
+          <div class="chip-row" id="stage-chips"></div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <div>
+              <h3>轴焦点</h3>
+              <p>点选某一轴，高亮该列并压低其他轴；列表页只保留线索，完整说明放进点击详情。</p>
+            </div>
+          </div>
+          <div class="chip-row" id="axis-chips"></div>
+        </div>
+      </section>
+
+      <section class="matrix-shell" id="matrix-panel">
+        <div class="matrix-header">
+          <div>
+            <h2>能力迭代矩阵</h2>
+            <p id="matrix-meta"></p>
+          </div>
+        </div>
+        <div class="matrix-wrap">
+          <table>
+            <thead id="matrix-head"></thead>
+            <tbody id="matrix-body"></tbody>
+          </table>
+          <div class="empty-state" id="empty-state">当前筛选没有匹配的日期。</div>
+        </div>
+        <div class="matrix-mobile-list" id="matrix-mobile-list"></div>
+        <div class="empty-state mobile-empty-state" id="mobile-empty-state">当前筛选没有匹配的日期。</div>
+      </section>
+
+      <div class="modal-backdrop" id="detail-modal" hidden aria-hidden="true">
+        <section
+          class="modal-panel detail-card"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="detail-date"
+        >
+          <div class="modal-head">
+            <div class="modal-head-copy">
+              <div class="kicker">这一天迭代了什么</div>
+              <h2 id="detail-date">2025-11-25</h2>
+              <p id="detail-summary"></p>
+            </div>
+            <button class="modal-close" id="detail-close" type="button">关闭</button>
+          </div>
+
+          <div class="stage-note">
+            <strong id="detail-stage"></strong>
+            <span id="detail-stage-note"></span>
+          </div>
+
+          <div>
+            <div class="kicker">这天属于哪些迭代类型</div>
+            <div class="detail-types" id="detail-types"></div>
+          </div>
+
+          <div>
+            <div class="kicker">七个能力轴的具体变化</div>
+            <div class="detail-grid" id="detail-grid"></div>
+          </div>
+
+          <p class="footer">
+            列表页只保留日期、阶段、一句话总结和轴命中线索；完整变化统一在这里展开。
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <script src="./heatmap-data.js"></script>
+    <script src="./heatmap-incremental.js"></script>
+    <script src="./activity-data.js"></script>
+    <script src="./latest-delta.js"></script>
+    <script src="./product-data.js"></script>
+    <script>
+      const PRODUCT_GROUPS = [
+        {
+          key: "general",
+          label: "通用产品",
+          products: ["openclaw", "chatgpt", "claude"]
+        },
+        {
+          key: "developer",
+          label: "开发者产品",
+          products: ["codex", "claude-code", "codex-app"]
+        }
+      ];
+
+      const PRODUCT_CONFIG = {
+        openclaw: {
+          navLabel: "OpenClaw",
+          title: "openclaw 的能力迭代图",
+          eyebrow: "General Product Timeline",
+          subtitle: "日期做竖轴，七个能力轴做横轴。",
+          note: "非空单元格 = 当天该轴有明确迭代",
+          sourceLabel: "来源：GitHub Releases",
+          categoryLabel: "通用产品",
+          summary: "开源个人 AI assistant / gateway / runtime / surfaces 产品。",
+          hasData: true,
+          deltaTitle: "最近 24 小时增量",
+          deltaDescription: "每天 20:00（Asia/Shanghai）自动刷新，展示最近一次 GitHub 增量并同步到线上页面。",
+          activityTitle: "社区提交频次",
+          activityDescription: "横轴是日期，纵轴是每日 merged PR 数。它更适合表达社区协作活跃度，不等于原始 commit 数。",
+          emptyAxisText: "当天没有明确 GitHub release 信号落在这一轴。",
+          plannedScope: [
+            "关键跳变日",
+            "最近 24 小时增量",
+            "社区提交频次",
+            "能力迭代矩阵"
+          ],
+          plannedSources: [
+            "GitHub releases",
+            "GitHub commits / merged PR",
+            "官方文档与安全页"
+          ]
+        },
+        chatgpt: {
+          navLabel: "ChatGPT",
+          title: "ChatGPT 的能力迭代图",
+          eyebrow: "General Product Timeline",
+          subtitle: "日期做竖轴，七个能力轴做横轴。",
+          note: "非空单元格 = 当天该轴有明确迭代",
+          sourceLabel: "来源：OpenAI ChatGPT launch / release notes / 官方产品更新",
+          categoryLabel: "通用产品",
+          summary: "面向大众用户的通用 AI 产品与多入口工作台。",
+          hasData: true,
+          deltaTitle: "最近一波官方增量",
+          deltaDescription: "展示最近一次有官方日期记录的产品更新窗口；这类产品不使用 GitHub PR 口径。",
+          activityTitle: "官方更新频次",
+          activityDescription: "横轴是日期，纵轴是当天官方更新条数，用来表达产品节奏而不是社区提交数。",
+          emptyAxisText: "当天没有明确官方更新落在这一轴。",
+          plannedScope: [
+            "Web / app / multimodal 关键跳变日",
+            "最近 24 小时产品增量",
+            "更新频次与社区热度",
+            "能力矩阵"
+          ],
+          plannedSources: [
+            "官方产品更新页",
+            "官方帮助中心与 release notes",
+            "OpenAI 公开发布"
+          ]
+        },
+        claude: {
+          navLabel: "Claude",
+          title: "Claude 的能力迭代图",
+          eyebrow: "General Product Timeline",
+          subtitle: "日期做竖轴，七个能力轴做横轴。",
+          note: "非空单元格 = 当天该轴有明确迭代",
+          sourceLabel: "来源：Anthropic Claude launch / release notes",
+          categoryLabel: "通用产品",
+          summary: "面向大众用户的通用 AI 产品，覆盖 web / app / projects / artifacts 等体验层。",
+          hasData: true,
+          deltaTitle: "最近一波官方增量",
+          deltaDescription: "展示最近一次有官方日期记录的 Claude 产品更新窗口。",
+          activityTitle: "官方更新频次",
+          activityDescription: "横轴是日期，纵轴是当天官方更新条数，用来观察 Claude 产品节奏。",
+          emptyAxisText: "当天没有明确官方更新落在这一轴。",
+          plannedScope: [
+            "Claude 产品关键跳变日",
+            "最近 24 小时产品增量",
+            "能力矩阵",
+            "频次与演进节奏"
+          ],
+          plannedSources: [
+            "Anthropic 官方发布",
+            "官方帮助中心 / changelog",
+            "产品文档"
+          ]
+        },
+        codex: {
+          navLabel: "Codex CLI",
+          title: "Codex CLI 的能力迭代图",
+          eyebrow: "Developer Product Timeline",
+          subtitle: "日期做竖轴，七个能力轴做横轴。",
+          note: "非空单元格 = 当天该轴有明确迭代",
+          sourceLabel: "来源：OpenAI Codex 更新 / model release notes / 本地 CLI 节奏整理",
+          categoryLabel: "开发者产品",
+          summary: "面向开发者的 terminal / CLI coding agent 产品。",
+          hasData: true,
+          deltaTitle: "最近一波官方增量",
+          deltaDescription: "展示最近一次有官方日期记录的 CLI 侧 Codex 增量。",
+          activityTitle: "官方更新频次",
+          activityDescription: "横轴是日期，纵轴是当天官方更新条数，用来观察 Codex CLI 的公开迭代节奏。",
+          emptyAxisText: "当天没有明确官方更新落在这一轴。",
+          plannedScope: [
+            "terminal 能力跳变",
+            "命令/工具/工作流增量",
+            "版本与发布节奏",
+            "能力矩阵"
+          ],
+          plannedSources: [
+            "官方 release notes",
+            "官方文档",
+            "公开发布与 changelog"
+          ]
+        },
+        "claude-code": {
+          navLabel: "Claude Code CLI",
+          title: "Claude Code CLI 的能力迭代图",
+          eyebrow: "Developer Product Timeline",
+          subtitle: "日期做竖轴，七个能力轴做横轴。",
+          note: "非空单元格 = 当天该轴有明确迭代",
+          sourceLabel: "来源：Anthropic docs / official releases / 本地 CLI 节奏整理",
+          categoryLabel: "开发者产品",
+          summary: "面向开发者的 terminal coding agent 产品。",
+          hasData: true,
+          deltaTitle: "最近一波官方增量",
+          deltaDescription: "展示最近一次有官方日期记录的 Claude Code CLI release 窗口。",
+          activityTitle: "官方 Release 频次",
+          activityDescription: "横轴是日期，纵轴是当天 official release 数，用来观察 Claude Code CLI 的高频发布节奏。",
+          emptyAxisText: "当天没有明确官方 release 信号落在这一轴。",
+          plannedScope: [
+            "终端工作流关键跳变日",
+            "命令 / sandbox / tools 增量",
+            "版本演进频次",
+            "能力矩阵"
+          ],
+          plannedSources: [
+            "Anthropic 官方 changelog",
+            "官方文档",
+            "公开发布"
+          ]
+        },
+        "codex-app": {
+          navLabel: "Codex App",
+          title: "Codex App 的能力迭代图",
+          eyebrow: "Developer Product Timeline",
+          subtitle: "日期做竖轴，七个能力轴做横轴。",
+          note: "非空单元格 = 当天该轴有明确迭代",
+          sourceLabel: "来源：OpenAI Codex app / Codex updates",
+          categoryLabel: "开发者产品",
+          summary: "面向开发者的 app 形态 coding / agent 产品，不归入通用消费者产品。",
+          hasData: true,
+          deltaTitle: "最近一波官方增量",
+          deltaDescription: "展示最近一次有官方日期记录的 Codex App 更新窗口。",
+          activityTitle: "官方更新频次",
+          activityDescription: "横轴是日期，纵轴是当天官方更新条数，用来观察 Codex App 的桌面产品节奏。",
+          emptyAxisText: "当天没有明确官方更新落在这一轴。",
+          plannedScope: [
+            "app 形态关键跳变日",
+            "与 CLI 共享 / 分叉能力",
+            "最近 24 小时增量",
+            "能力矩阵"
+          ],
+          plannedSources: [
+            "官方发布",
+            "官方文档",
+            "app / product changelog"
+          ]
+        }
+      };
+
+      function resolveCurrentProductKey() {
+        const value = new URLSearchParams(window.location.search).get("product") || "openclaw";
+        return PRODUCT_CONFIG[value] ? value : "openclaw";
+      }
+
+      const currentProductKey = resolveCurrentProductKey();
+      const currentProduct = PRODUCT_CONFIG[currentProductKey];
+
+      function localDateFromIso(isoText) {
+        if (!isoText) return "";
+        return String(isoText).slice(0, 10);
+      }
+
+      function buildLatestDeltaRow(delta) {
+        if (!delta) return null;
+
+        const date = localDateFromIso(delta.window?.end_local || delta.generatedAt);
+        if (!date) return null;
+
+        const featureItems = delta.featureItems || [];
+        const fixItems = delta.fixItems || [];
+        const headlineCommits = delta.headlineCommits || [];
+        const corpus = [...featureItems, ...fixItems, ...headlineCommits].join("\n").toLowerCase();
+        const axisEntries = {};
+
+        const include = (...parts) => parts.filter(Boolean).join(" ");
+
+        if (/(slack|feishu|webchat|whatsapp|telegram|zalo|signal)/.test(corpus)) {
+          axisEntries.channels = include(
+            /feishu/.test(corpus) ? "Feishu cards / reactions / reasoning stream 继续扩张。" : "",
+            /slack/.test(corpus) ? "Slack interactive replies 与 DM block 保留继续增强。" : "",
+            /webchat/.test(corpus) ? "WebChat 可切换隐藏 tool calls / thinking blocks。" : "",
+            /(whatsapp|telegram|zalo|signal)/.test(corpus) ? "WhatsApp / Telegram / Zalo / Signal 相关兼容修补继续推进。" : ""
+          );
+        }
+
+        if (/(glm-5|openrouter|openai-compatible|openai-completions|codex cli|anthropic|provider)/.test(corpus)) {
+          axisEntries.models = include(
+            /glm-5/.test(corpus) ? "GLM-5-turbo 进入 provider 支持集合。" : "",
+            /openrouter/.test(corpus) ? "OpenRouter 运行时能力探测继续修补。" : "",
+            /(openai-compatible|openai-completions)/.test(corpus) ? "OpenAI-compatible 接口兼容与 strict-tools 行为继续校正。" : "",
+            /codex cli/.test(corpus) ? "Codex CLI auth profile sync 继续补强。" : ""
+          );
+        }
+
+        if (/(browser|tool calls|thinking blocks|web fetch|plugin-sdk)/.test(corpus)) {
+          axisEntries.tools = include(
+            /browser/.test(corpus) ? "Browser existing-session / MCP attach 模式继续简化并加固。" : "",
+            /(tool calls|thinking blocks)/.test(corpus) ? "WebChat 侧工具调用与 thinking 可见性得到更细控制。" : "",
+            /plugin-sdk/.test(corpus) ? "plugin-sdk 构建与重复安装路径继续收敛。" : ""
+          );
+        }
+
+        if (/(android|ios|macos|windows)/.test(corpus)) {
+          axisEntries.devices = include(
+            /android/.test(corpus) ? "Android settings UI、dark theme 和扫码体验继续迭代。" : "",
+            /ios/.test(corpus) ? "iOS onboarding welcome pager 进入主线。" : "",
+            /macos/.test(corpus) ? "macOS canvas actions 被进一步限制到 trusted surfaces。" : "",
+            /windows/.test(corpus) ? "Windows 重启与清理过程的可见控制台问题被压下去。" : ""
+          );
+        }
+
+        if (/(gateway|heartbeat|compaction|session|plugin|config baseline|control ui|pairing)/.test(corpus)) {
+          axisEntries.control = include(
+            /gateway/.test(corpus) ? "Gateway health monitor、pairing 与 watch 链路继续打磨。" : "",
+            /heartbeat/.test(corpus) ? "Heartbeat 增加 isolatedSession，运行隔离更明确。" : "",
+            /compaction/.test(corpus) ? "Compaction timeout、计数持久化和 sanity check 继续加固。" : "",
+            /(session|plugin)/.test(corpus) ? "Session / plugin 路由与配置基线继续收敛。" : ""
+          );
+        }
+
+        if (/(security|ssrf|token leak|auth.mode=none|trusted surfaces|allowlist|sanitize)/.test(corpus)) {
+          axisEntries.security = include(
+            /ssrf/.test(corpus) ? "Telegram media transport policy 继续向 SSRF 边界对齐。" : "",
+            /token leak/.test(corpus) ? "Docker build context 的 gateway token 泄露风险被继续压住。" : "",
+            /auth.mode=none/.test(corpus) ? "auth.mode=none 相关 pairing bypass 再次被封口。" : "",
+            /(trusted surfaces|sanitize)/.test(corpus) ? "trusted surfaces 与 external content sanitize 继续收紧。" : ""
+          );
+        }
+
+        if (/(docker|health monitor|updater|runtime image|lsof|build|restart|cleanup|cron)/.test(corpus)) {
+          axisEntries.ops = include(
+            /docker/.test(corpus) ? "Docker 补上 OPENCLAW_TZ、apt-get upgrade 与 runtime lsof 等运维细节。" : "",
+            /health monitor/.test(corpus) ? "Gateway health monitor 的 stale threshold / restart controls 变得可配置。" : "",
+            /(updater|restart|cleanup)/.test(corpus) ? "服务重装、重启与 cleanup 路径继续修补。" : "",
+            /(build|cron)/.test(corpus) ? "构建内存回归与 cron 死锁等运行期问题继续收敛。" : ""
+          );
+        }
+
+        const summaryLabels = [
+          axisEntries.devices ? "移动端入口" : "",
+          axisEntries.channels ? "渠道互动" : "",
+          axisEntries.control ? "gateway / 会话控制面" : "",
+          axisEntries.ops ? "Docker / 运维" : "",
+          axisEntries.models ? "模型兼容" : "",
+          axisEntries.tools ? "browser / tools" : "",
+          axisEntries.security ? "安全边界" : ""
+        ].filter(Boolean);
+
+        return {
+          date,
+          stage: "openclaw",
+          summary: summaryLabels.length
+            ? `${summaryLabels.slice(0, 4).join("、")}继续增强，最近一天的增量也并入主矩阵。`
+            : "最近一天仍有 GitHub 增量，主矩阵已同步吸收。",
+          axisEntries
+        };
+      }
+
+      function enrichHeatmap(baseData, storedRows, delta) {
+        const merged = {
+          ...baseData,
+          rows: [...baseData.rows],
+          jumpDates: [...baseData.jumpDates]
+        };
+
+        const knownDates = new Set(merged.rows.map((row) => row.date));
+        (Array.isArray(storedRows) ? storedRows : []).forEach((row) => {
+          if (!row || !row.date || knownDates.has(row.date)) return;
+          merged.rows.push(row);
+          knownDates.add(row.date);
+        });
+
+        const latestRow = buildLatestDeltaRow(delta);
+        if (latestRow && !knownDates.has(latestRow.date)) {
+          merged.rows.push(latestRow);
+        }
+
+        merged.rows.sort((a, b) => a.date.localeCompare(b.date));
+
+        return merged;
+      }
+
+      function normalizeOpenClawActivity(raw) {
+        if (!raw) return null;
+        const rows = (raw.rows || []).map((row) => ({
+          date: row.date,
+          value: row.merged_prs || 0
+        }));
+        const maxValue = Math.max(0, ...rows.map((row) => row.value));
+        return {
+          ...raw,
+          unitLabel: "PR",
+          maxValue,
+          rows,
+          peakDays: rows.filter((row) => row.value === maxValue)
+        };
+      }
+
+      function buildOpenClawDataset() {
+        const baseData = window.OPENCLAW_HEATMAP;
+        const incrementalRows = window.OPENCLAW_HEATMAP_INCREMENTAL_ROWS || [];
+        const latestDelta = window.OPENCLAW_LATEST_DELTA || null;
+        if (!baseData) return null;
+        return {
+          ...enrichHeatmap(baseData, incrementalRows, latestDelta),
+          latestDelta,
+          activity: normalizeOpenClawActivity(window.OPENCLAW_ACTIVITY || null)
+        };
+      }
+
+      function resolveProductDataset(productKey) {
+        if (productKey === "openclaw") {
+          return buildOpenClawDataset();
+        }
+        return window.MULTI_PRODUCT_DATA?.[productKey] || null;
+      }
+
+      const currentDataset = resolveProductDataset(currentProductKey);
+      const enrichedData = currentDataset || { axes: [], stageMeta: {}, jumpDates: [], rows: [] };
+      const latestDelta = currentDataset?.latestDelta || null;
+      const activity = currentDataset?.activity || null;
+      const productHasData = Boolean(currentProduct.hasData && currentDataset && enrichedData.rows.length);
+
+      const state = {
+        stage: "all",
+        axis: "all",
+        search: "",
+        selectedDate: enrichedData.rows[0]?.date || "",
+        modalOpen: false,
+        activityDate: null
+      };
+
+      const el = {
+        pageLoader: document.getElementById("page-loader"),
+        productNavGroups: document.getElementById("product-nav-groups"),
+        heroEyebrow: document.getElementById("hero-eyebrow"),
+        heroTitle: document.getElementById("hero-title"),
+        heroSubtitle: document.getElementById("hero-subtitle"),
+        jumpHead: document.getElementById("jump-head"),
+        jumpBody: document.getElementById("jump-body"),
+        jumpMobileList: document.getElementById("jump-mobile-list"),
+        stageChips: document.getElementById("stage-chips"),
+        axisChips: document.getElementById("axis-chips"),
+        matrixHead: document.getElementById("matrix-head"),
+        matrixBody: document.getElementById("matrix-body"),
+        matrixMobileList: document.getElementById("matrix-mobile-list"),
+        matrixMeta: document.getElementById("matrix-meta"),
+        emptyState: document.getElementById("empty-state"),
+        mobileEmptyState: document.getElementById("mobile-empty-state"),
+        deltaTitle: document.getElementById("delta-title"),
+        deltaDescription: document.getElementById("delta-description"),
+        deltaMeta: document.getElementById("delta-meta"),
+        deltaFeatures: document.getElementById("delta-features"),
+        deltaFixes: document.getElementById("delta-fixes"),
+        deltaReleases: document.getElementById("delta-releases"),
+        deltaScopes: document.getElementById("delta-scopes"),
+        heroRange: document.getElementById("hero-range"),
+        heroNote: document.getElementById("hero-note"),
+        heroSource: document.getElementById("hero-source"),
+        placeholderPanel: document.getElementById("product-placeholder"),
+        placeholderTitle: document.getElementById("placeholder-title"),
+        placeholderCopy: document.getElementById("placeholder-copy"),
+        placeholderAudience: document.getElementById("placeholder-audience"),
+        placeholderScope: document.getElementById("placeholder-scope"),
+        placeholderSources: document.getElementById("placeholder-sources"),
+        jumpPanel: document.getElementById("jump-panel"),
+        deltaPanel: document.getElementById("delta-panel"),
+        controlsPanel: document.getElementById("controls-panel"),
+        matrixPanel: document.getElementById("matrix-panel"),
+        activityTitle: document.getElementById("activity-title"),
+        activityDescription: document.getElementById("activity-description"),
+        activityChart: document.getElementById("activity-chart"),
+        activityRange: document.getElementById("activity-range"),
+        activityPeak: document.getElementById("activity-peak"),
+        activityCaptionRight: document.getElementById("activity-caption-right"),
+        detailDate: document.getElementById("detail-date"),
+        detailSummary: document.getElementById("detail-summary"),
+        detailStage: document.getElementById("detail-stage"),
+        detailStageNote: document.getElementById("detail-stage-note"),
+        detailTypes: document.getElementById("detail-types"),
+        detailGrid: document.getElementById("detail-grid"),
+        searchInput: document.getElementById("search-input"),
+        detailModal: document.getElementById("detail-modal"),
+        detailClose: document.getElementById("detail-close")
+      };
+
+      function productHref(productKey) {
+        const path = window.location.pathname || "/";
+        return productKey === "openclaw" ? path : `${path}?product=${encodeURIComponent(productKey)}`;
+      }
+
+      const PRODUCT_SWITCH_STORAGE_KEY = "timeline-product-switch";
+
+      function pendingProductKey() {
+        try {
+          return window.sessionStorage.getItem(PRODUCT_SWITCH_STORAGE_KEY) || "";
+        } catch (error) {
+          return "";
+        }
+      }
+
+      function rememberPendingProduct(productKey) {
+        try {
+          window.sessionStorage.setItem(PRODUCT_SWITCH_STORAGE_KEY, productKey);
+        } catch (error) {
+          // Ignore storage access issues and keep navigation working.
+        }
+      }
+
+      function clearPendingProduct() {
+        try {
+          window.sessionStorage.removeItem(PRODUCT_SWITCH_STORAGE_KEY);
+        } catch (error) {
+          // Ignore storage access issues and keep navigation working.
+        }
+      }
+
+      function setLoadingContent() {}
+
+      function startLoadingTransition(productKey) {
+        rememberPendingProduct(productKey);
+        setLoadingContent();
+        el.pageLoader.setAttribute("aria-busy", "true");
+        document.documentElement.classList.add("product-loading");
+      }
+
+      function finishLoadingTransition() {
+        window.requestAnimationFrame(() => {
+          window.requestAnimationFrame(() => {
+            el.pageLoader.setAttribute("aria-busy", "false");
+            document.documentElement.classList.remove("product-loading");
+            clearPendingProduct();
+          });
+        });
+      }
+
+      function buildProductNav() {
+        el.productNavGroups.innerHTML = PRODUCT_GROUPS
+          .map((group) => {
+            const tabs = group.products
+              .map((productKey) => {
+                const product = PRODUCT_CONFIG[productKey];
+                const active = productKey === currentProductKey ? "active" : "";
+                return `
+                  <a
+                    class="product-tab ${active}"
+                    href="${productHref(productKey)}"
+                    data-product-key="${productKey}"
+                  >
+                    <div class="product-tab-top">
+                      <strong>${escapeHtml(product.navLabel)}</strong>
+                    </div>
+                    <span>${escapeHtml(product.summary)}</span>
+                  </a>
+                `;
+              })
+              .join("");
+
+            return `
+              <section class="product-group">
+                <div class="product-group-head">
+                  <strong>${escapeHtml(group.label)}</strong>
+                </div>
+                <div class="product-tabs">${tabs}</div>
+              </section>
+            `;
+          })
+          .join("");
+
+        el.productNavGroups.querySelectorAll(".product-tab").forEach((tab) => {
+          tab.addEventListener("click", (event) => {
+            if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) {
+              return;
+            }
+            const href = tab.getAttribute("href");
+            const nextProductKey = tab.dataset.productKey || currentProductKey;
+            if (!href) return;
+            const nextUrl = new URL(href, window.location.href).toString();
+            if (nextUrl === window.location.href) return;
+            event.preventDefault();
+            startLoadingTransition(nextProductKey);
+            window.setTimeout(() => {
+              window.location.href = href;
+            }, 70);
+          });
+        });
+      }
+
+      function dataRows() {
+        return enrichedData.rows;
+      }
+
+      function updateHeroRange() {
+        const rows = dataRows();
+        const first = rows[0]?.date || "—";
+        const last = rows[rows.length - 1]?.date || "—";
+        el.heroRange.textContent = `时间范围：${first} 至 ${last}`;
+      }
+
+      function renderProductShell() {
+        document.title = currentProduct.title;
+        el.heroEyebrow.textContent = currentProduct.eyebrow;
+        el.heroTitle.textContent = currentProduct.title;
+        el.heroSubtitle.textContent = currentProduct.subtitle;
+        el.heroNote.textContent = currentProduct.note;
+        el.heroSource.textContent = currentProduct.sourceLabel;
+        el.deltaTitle.textContent = currentProduct.deltaTitle;
+        el.deltaDescription.textContent = currentProduct.deltaDescription;
+        el.activityTitle.textContent = currentProduct.activityTitle;
+        el.activityDescription.textContent = currentProduct.activityDescription;
+        el.activityChart.setAttribute("aria-label", `${currentProduct.navLabel} 频次图`);
+
+        if (productHasData) {
+          el.placeholderPanel.hidden = true;
+          el.jumpPanel.hidden = false;
+          el.deltaPanel.hidden = false;
+          el.controlsPanel.hidden = false;
+          el.matrixPanel.hidden = false;
+          return;
+        }
+
+        el.heroRange.textContent = "时间范围：待建立";
+        el.placeholderPanel.hidden = false;
+        el.jumpPanel.hidden = true;
+        el.deltaPanel.hidden = true;
+        el.controlsPanel.hidden = true;
+        el.matrixPanel.hidden = true;
+        state.modalOpen = false;
+
+        el.placeholderTitle.textContent = `${currentProduct.navLabel} 数据建设中`;
+        el.placeholderCopy.textContent = `${currentProduct.navLabel} 当前共用统一页面框架。后续会沿用 OpenClaw 当前的关键跳变日、最近 24 小时增量、活跃频次与能力矩阵结构。`;
+        el.placeholderAudience.textContent = `${currentProduct.categoryLabel} · ${currentProduct.summary}`;
+        el.placeholderScope.innerHTML = (currentProduct.plannedScope || [])
+          .map((item) => `<li>${escapeHtml(item)}</li>`)
+          .join("");
+        el.placeholderSources.innerHTML = (currentProduct.plannedSources || [])
+          .map((item) => `<li>${escapeHtml(item)}</li>`)
+          .join("");
+      }
+
+      function escapeHtml(text) {
+        return String(text)
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;")
+          .replaceAll("'", "&#39;");
+      }
+
+      function formatLocalTime(isoText) {
+        if (!isoText) return "—";
+        if (/^\d{4}-\d{2}-\d{2}$/.test(isoText)) return isoText;
+        return new Intl.DateTimeFormat("zh-CN", {
+          timeZone: "Asia/Shanghai",
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit",
+          hour: "2-digit",
+          minute: "2-digit",
+          hour12: false
+        }).format(new Date(isoText));
+      }
+
+      function renderDeltaPanel() {
+        if (!latestDelta) {
+          el.deltaMeta.innerHTML = '<span class="legend-item">增量数据暂不可用</span>';
+          el.deltaFeatures.innerHTML = "<li>等待下一次同步。</li>";
+          el.deltaFixes.innerHTML = "<li>等待下一次同步。</li>";
+          el.deltaReleases.innerHTML = "<li>等待下一次同步。</li>";
+          el.deltaScopes.innerHTML = "<li>等待下一次同步。</li>";
+          return;
+        }
+
+        if (Array.isArray(latestDelta.meta) && latestDelta.meta.length) {
+          el.deltaMeta.innerHTML = latestDelta.meta
+            .map((item) => `<span class="legend-item">${escapeHtml(item.label)}：${escapeHtml(item.value)}</span>`)
+            .join("");
+        } else {
+          const summary = latestDelta.summary || {};
+          const windowInfo = latestDelta.window || {};
+          el.deltaMeta.innerHTML = [
+            `<span class="legend-item">窗口：${formatLocalTime(windowInfo.start_local)} - ${formatLocalTime(windowInfo.end_local)}</span>`,
+            `<span class="legend-item">Commits：${summary.commitCount ?? 0}</span>`,
+            `<span class="legend-item">Releases：${summary.releaseCount ?? 0}</span>`,
+            `<span class="legend-item">更新于：${formatLocalTime(latestDelta.generatedAt)}</span>`
+          ].join("");
+        }
+
+        const featureItems = (latestDelta.featureItems || [])
+          .slice(0, 5)
+          .map((item) => `<li>${escapeHtml(item)}</li>`)
+          .join("");
+        el.deltaFeatures.innerHTML = featureItems || "<li>这段窗口里没有提炼出明显新增能力信号。</li>";
+
+        const fixItems = (latestDelta.fixItems || [])
+          .slice(0, 5)
+          .map((item) => `<li>${escapeHtml(item)}</li>`)
+          .join("");
+        el.deltaFixes.innerHTML = fixItems || "<li>这段窗口里没有提炼出明显修复聚类。</li>";
+
+        const releaseItems = (latestDelta.releases || [])
+          .slice(0, 5)
+          .map((release) => {
+            const name = release.label || release.tag_name || release.name || "更新";
+            const url = release.html_url || release.url || "";
+            const when = release.published_at ? formatLocalTime(release.published_at) : "";
+            const label = release.type || (release.prerelease ? "beta" : "stable");
+            const prefix = url
+              ? `<a href="${escapeHtml(url)}" target="_blank" rel="noreferrer">${escapeHtml(name)}</a>`
+              : escapeHtml(name);
+            return `<li>${prefix}${label ? ` · ${escapeHtml(label)}` : ""}${when ? ` · ${when}` : ""}</li>`;
+          })
+          .join("");
+        el.deltaReleases.innerHTML = releaseItems || "<li>这段窗口里没有额外的正式更新项。</li>";
+
+        const scopeItems = (latestDelta.topScopes || [])
+          .slice(0, 5)
+          .map((item) => `<li>${escapeHtml(item.scope)} · ${item.count}</li>`)
+          .join("");
+        el.deltaScopes.innerHTML = scopeItems || "<li>这段窗口里没有明显 scope 聚类。</li>";
+      }
+
+      function briefAxisText(text) {
+        const clean = (text || "").replace(/\s+/g, " ").trim();
+        if (!clean) return "";
+        const firstClause = clean.split(/[。；]/)[0].trim();
+        return firstClause.length > 24 ? `${firstClause.slice(0, 24)}…` : firstClause;
+      }
+
+      function openDetails(date) {
+        state.selectedDate = date;
+        state.modalOpen = true;
+        render();
+      }
+
+      function closeDetails() {
+        state.modalOpen = false;
+        syncModal();
+      }
+
+      function syncModal() {
+        el.detailModal.hidden = !state.modalOpen;
+        el.detailModal.setAttribute("aria-hidden", String(!state.modalOpen));
+        document.body.style.overflow = state.modalOpen ? "hidden" : "";
+      }
+
+      function buildJumpMatrix() {
+        const items = enrichedData.jumpDates
+          .map((item) => {
+            const row = dataRows().find((candidate) => candidate.date === item.date);
+            if (!row) return null;
+            const stage = enrichedData.stageMeta[row.stage];
+            return { item, row, stage };
+          })
+          .filter(Boolean);
+
+        el.jumpHead.innerHTML = `
+          <tr>
+            <th class="jump-axis">维度</th>
+            ${items
+              .map(({ item }) => {
+                const active = state.selectedDate === item.date ? "active" : "";
+                return `
+                  <th class="jump-date ${active}" data-jump-date="${item.date}">
+                    <strong>${escapeHtml(item.date)}</strong>
+                    <span>${escapeHtml(item.title)}</span>
+                  </th>
+                `;
+              })
+              .join("")}
+          </tr>
+        `;
+
+        el.jumpBody.innerHTML = `
+          <tr>
+            <th class="jump-axis">具体迭代详情</th>
+            ${items
+              .map(({ item, row, stage }) => {
+                const active = state.selectedDate === item.date ? "active" : "";
+                return `
+                  <td class="jump-cell ${active}" data-jump-date="${item.date}">
+                    <div class="jump-detail-card">
+                      <div class="jump-stage">${escapeHtml(stage.label)} · ${escapeHtml(stage.title)}</div>
+                      <div class="jump-summary">${escapeHtml(row.summary)}</div>
+                      <div class="jump-blurb">${escapeHtml(stage.blurb)}</div>
+                    </div>
+                  </td>
+                `;
+              })
+              .join("")}
+          </tr>
+        `;
+
+        el.jumpMobileList.innerHTML = items
+          .map(({ item, row, stage }) => {
+            const active = state.selectedDate === item.date ? "active" : "";
+            return `
+              <button type="button" class="jump-mobile-card ${active}" data-jump-date="${item.date}">
+                <div class="jump-mobile-meta">
+                  <div class="jump-mobile-date">
+                    <strong>${escapeHtml(item.date)}</strong>
+                    <span>${escapeHtml(item.title)}</span>
+                  </div>
+                  <span class="row-hint">点击看详情</span>
+                </div>
+                <div class="jump-detail-card">
+                  <div class="jump-stage">${escapeHtml(stage.label)} · ${escapeHtml(stage.title)}</div>
+                  <div class="jump-summary">${escapeHtml(row.summary)}</div>
+                  <div class="jump-blurb">${escapeHtml(stage.blurb)}</div>
+                </div>
+              </button>
+            `;
+          })
+          .join("");
+
+        document.querySelectorAll("[data-jump-date]").forEach((node) => {
+          node.addEventListener("click", () => {
+            const date = node.dataset.jumpDate;
+            openDetails(date);
+            const target = document.querySelector(`tr[data-date="${date}"]`);
+            target?.scrollIntoView({ block: "center", behavior: "smooth" });
+          });
+        });
+      }
+
+      function buildChips() {
+        const stages = ["all", ...Object.keys(enrichedData.stageMeta)];
+        el.stageChips.innerHTML = "";
+        stages.forEach((stage) => {
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = `chip ${state.stage === stage ? "active" : ""}`;
+          button.textContent = stage === "all" ? "全部阶段" : enrichedData.stageMeta[stage].label;
+          button.addEventListener("click", () => {
+            state.stage = stage;
+            render();
+          });
+          el.stageChips.appendChild(button);
+        });
+
+        const axes = [{ key: "all", label: "全部轴" }, ...enrichedData.axes];
+        el.axisChips.innerHTML = "";
+        axes.forEach((axis) => {
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = `chip ${state.axis === axis.key ? "active" : ""}`;
+          button.textContent = axis.label;
+          button.addEventListener("click", () => {
+            state.axis = axis.key;
+            render();
+          });
+          el.axisChips.appendChild(button);
+        });
+
+      }
+
+      function filteredRows() {
+        return dataRows().filter((row) => {
+          const stageOk = state.stage === "all" || row.stage === state.stage;
+          const haystack = [
+            row.summary,
+            row.date,
+            row.stage,
+            ...Object.values(row.axisEntries || {})
+          ]
+            .join(" ")
+            .toLowerCase();
+          const searchOk =
+            !state.search ||
+            haystack.includes(state.search);
+          return stageOk && searchOk;
+        });
+      }
+
+      function activeAxes(row) {
+        return enrichedData.axes.filter((axis) => (row.axisEntries?.[axis.key] || "").trim());
+      }
+
+      function hasTimelineDate(date) {
+        return dataRows().some((row) => row.date === date);
+      }
+
+      function renderActivityChart() {
+        if (!activity || !Array.isArray(activity.rows) || !activity.rows.length) {
+          el.activityChart.innerHTML = "";
+          el.activityRange.textContent = "频次数据暂不可用";
+          el.activityPeak.textContent = "等待缓存";
+          el.activityCaptionRight.textContent = "";
+          return;
+        }
+
+        const rows = activity.rows;
+        const valueFor = (row) => Number(row?.value ?? row?.merged_prs ?? 0);
+        const width = 1180;
+        const height = 300;
+        const margin = { top: 18, right: 18, bottom: 42, left: 54 };
+        const innerWidth = width - margin.left - margin.right;
+        const innerHeight = height - margin.top - margin.bottom;
+        const maxCount = Math.max(activity.maxValue || 0, ...rows.map((row) => valueFor(row)));
+        const yMax = maxCount <= 5 ? Math.max(2, maxCount) : Math.ceil(maxCount / 10) * 10;
+        const stepX = innerWidth / Math.max(rows.length - 1, 1);
+        const barWidth = Math.max(3, Math.min(9, stepX * 0.72));
+        const selected = rows.find((row) => row.date === state.activityDate) || rows[rows.length - 1];
+
+        const yFor = (value) => margin.top + innerHeight - ((value || 0) / yMax) * innerHeight;
+        const xFor = (index) => margin.left + index * stepX;
+        const pathLine = rows
+          .map((row, index) => `${index === 0 ? "M" : "L"} ${xFor(index).toFixed(2)} ${yFor(valueFor(row)).toFixed(2)}`)
+          .join(" ");
+        const pathArea = [
+          `M ${xFor(0).toFixed(2)} ${(margin.top + innerHeight).toFixed(2)}`,
+          ...rows.map((row, index) => `L ${xFor(index).toFixed(2)} ${yFor(valueFor(row)).toFixed(2)}`),
+          `L ${xFor(rows.length - 1).toFixed(2)} ${(margin.top + innerHeight).toFixed(2)}`,
+          "Z"
+        ].join(" ");
+        const gridValues = [...new Set([0, yMax * 0.25, yMax * 0.5, yMax * 0.75, yMax]
+          .map((value) => Math.round(value)))];
+        const xTicks = rows
+          .map((row, index) => ({ row, index }))
+          .filter(({ index }) => index === 0 || index === rows.length - 1 || index % 14 === 0);
+
+        const grid = gridValues
+          .map((value) => {
+            const y = yFor(value);
+            return `
+              <line class="chart-grid" x1="${margin.left}" y1="${y}" x2="${width - margin.right}" y2="${y}"></line>
+              <text class="chart-label" x="${margin.left - 10}" y="${y + 4}" text-anchor="end">${value}</text>
+            `;
+          })
+          .join("");
+
+        const ticks = xTicks
+          .map(({ row, index }) => {
+            const x = xFor(index);
+            const label = row.date.slice(5);
+            return `
+              <line class="chart-axis" x1="${x}" y1="${margin.top + innerHeight}" x2="${x}" y2="${margin.top + innerHeight + 6}"></line>
+              <text class="chart-label" x="${x}" y="${height - 10}" text-anchor="middle">${label}</text>
+            `;
+          })
+          .join("");
+
+        const bars = rows
+          .map((row, index) => {
+            const x = xFor(index) - barWidth / 2;
+            const y = yFor(valueFor(row));
+            const h = margin.top + innerHeight - y;
+            const active = selected && row.date === selected.date;
+            const clickable = hasTimelineDate(row.date);
+            return `
+              <rect
+                class="chart-bar ${active ? "active" : ""}"
+                data-date="${row.date}"
+                x="${x.toFixed(2)}"
+                y="${y.toFixed(2)}"
+                width="${barWidth.toFixed(2)}"
+                height="${Math.max(h, 2).toFixed(2)}"
+                rx="2"
+                aria-label="${row.date} ${valueFor(row)} ${activity.unitLabel || activity.metricLabel}${clickable ? '，可联动详情' : ''}"
+              ></rect>
+            `;
+          })
+          .join("");
+
+        const selectedIndex = rows.findIndex((row) => row.date === selected.date);
+        const markerX = xFor(Math.max(selectedIndex, 0));
+        const markerY = yFor(valueFor(selected));
+
+        el.activityChart.innerHTML = `
+          ${grid}
+          <line class="chart-axis" x1="${margin.left}" y1="${margin.top + innerHeight}" x2="${width - margin.right}" y2="${margin.top + innerHeight}"></line>
+          <line class="chart-axis" x1="${margin.left}" y1="${margin.top}" x2="${margin.left}" y2="${margin.top + innerHeight}"></line>
+          <path class="chart-area" d="${pathArea}"></path>
+          ${bars}
+          <path class="chart-line" d="${pathLine}"></path>
+          <circle class="chart-marker" cx="${markerX}" cy="${markerY}" r="5"></circle>
+          ${ticks}
+          <text class="chart-label strong" x="${width - margin.right}" y="${margin.top + 4}" text-anchor="end">${activity.metricLabel}</text>
+        `;
+
+        el.activityRange.textContent = `${rows[0].date} 到 ${rows[rows.length - 1].date}`;
+        el.activityPeak.textContent = `峰值：${activity.peakDays?.[0]?.date || selected.date} · ${valueFor(activity.peakDays?.[0] || selected)} ${activity.unitLabel || ""}`.trim();
+        el.activityCaptionRight.innerHTML = `<strong>${selected.date}</strong> · ${valueFor(selected)} ${escapeHtml(activity.unitLabel || activity.metricLabel)}`;
+
+        el.activityChart.querySelectorAll(".chart-bar").forEach((bar) => {
+          const date = bar.dataset.date;
+          bar.addEventListener("mouseenter", () => {
+            state.activityDate = date;
+            renderActivityChart();
+          });
+          bar.addEventListener("click", () => {
+            state.activityDate = date;
+            renderActivityChart();
+            if (hasTimelineDate(date)) {
+              openDetails(date);
+              const target = document.querySelector(`tr[data-date="${date}"]`);
+              target?.scrollIntoView({ block: "center", behavior: "smooth" });
+            }
+          });
+        });
+      }
+
+      function renderTable(rows) {
+        const headCells = [
+          '<th class="sticky-col date">日期</th>',
+          '<th class="sticky-col stage">阶段</th>',
+          '<th>一句话总结</th>',
+          ...enrichedData.axes.map((axis) => {
+            const focused = state.axis === axis.key;
+            const dimmed = state.axis !== "all" && !focused;
+            return `<th class="axis-head ${focused ? "focused" : ""} ${dimmed ? "dimmed" : ""}" title="${axis.description}">${axis.label}</th>`;
+          })
+        ];
+        el.matrixHead.innerHTML = `<tr>${headCells.join("")}</tr>`;
+
+        el.matrixBody.innerHTML = "";
+        rows.forEach((row) => {
+          const tr = document.createElement("tr");
+          tr.dataset.date = row.date;
+          if (row.date === state.selectedDate) tr.classList.add("selected");
+
+          const stage = enrichedData.stageMeta[row.stage];
+          const dateCell = `
+            <td class="sticky-col date date-cell">
+              <strong>${row.date}</strong>
+              <span>${stage.title}</span>
+            </td>
+          `;
+          const stageCell = `
+            <td class="sticky-col stage">
+              <span class="stage-pill stage-${row.stage}"${stage.color ? ` style="background:${stage.color}"` : ""}>${stage.label}</span>
+            </td>
+          `;
+          const summaryCell = `
+            <td class="summary-cell">
+              <div class="summary-copy"><strong>${row.date}</strong>：${row.summary}</div>
+              <div class="summary-meta">
+                <div class="type-row">
+                  ${activeAxes(row)
+                    .map((axis) => `<span class="type-pill">${axis.label}</span>`)
+                    .join("")}
+                </div>
+                <span class="row-hint">点击查看详情</span>
+              </div>
+            </td>
+          `;
+          const axisCells = enrichedData.axes
+            .map((axis) => {
+              const text = (row.axisEntries?.[axis.key] || "").trim();
+              const focused = state.axis === axis.key;
+              const dimmed = state.axis !== "all" && !focused;
+              const brief = briefAxisText(text);
+              return `
+                <td class="axis-cell ${focused ? "focused" : ""} ${dimmed ? "dimmed" : ""}" data-axis="${axis.key}">
+                  <div class="axis-card ${text ? "" : "empty"}" title="${text || currentProduct.emptyAxisText}">
+                    ${text ? `<span class="axis-brief">${brief}</span>` : "—"}
+                  </div>
+                </td>
+              `;
+            })
+            .join("");
+
+          tr.innerHTML = dateCell + stageCell + summaryCell + axisCells;
+          tr.tabIndex = 0;
+          tr.addEventListener("click", () => openDetails(row.date));
+          tr.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+              event.preventDefault();
+              openDetails(row.date);
+            }
+          });
+          el.matrixBody.appendChild(tr);
+        });
+      }
+
+      function renderMobileCards(rows) {
+        el.matrixMobileList.innerHTML = rows
+          .map((row) => {
+            const stage = enrichedData.stageMeta[row.stage];
+            const axes = activeAxes(row);
+            const axisList = axes.length
+              ? axes
+                  .map((axis) => {
+                    const text = briefAxisText(row.axisEntries?.[axis.key] || "");
+                    return `
+                      <div class="mobile-axis-item">
+                        <strong>${escapeHtml(axis.label)}</strong>
+                        <p>${escapeHtml(text || currentProduct.emptyAxisText)}</p>
+                      </div>
+                    `;
+                  })
+                  .join("")
+              : `
+                <div class="mobile-axis-item">
+                  <strong>暂无明确轴命中</strong>
+                  <p>${escapeHtml(currentProduct.emptyAxisText)}</p>
+                </div>
+              `;
+
+            return `
+              <article class="mobile-card ${row.date === state.selectedDate ? "selected" : ""}" data-mobile-date="${row.date}" tabindex="0">
+                <div class="mobile-card-head">
+                  <div class="mobile-card-date">
+                    <strong>${escapeHtml(row.date)}</strong>
+                    <span>${escapeHtml(stage.title)}</span>
+                  </div>
+                  <span class="stage-pill stage-${row.stage}"${stage.color ? ` style="background:${stage.color}"` : ""}>${escapeHtml(stage.label)}</span>
+                </div>
+                <div class="mobile-card-summary">${escapeHtml(row.summary)}</div>
+                <div class="type-row">
+                  ${axes.map((axis) => `<span class="type-pill">${escapeHtml(axis.label)}</span>`).join("")}
+                </div>
+                <div class="mobile-axis-list">${axisList}</div>
+                <div class="mobile-card-footer">点击查看当天七个能力轴的完整详情</div>
+              </article>
+            `;
+          })
+          .join("");
+
+        el.matrixMobileList.querySelectorAll("[data-mobile-date]").forEach((node) => {
+          node.addEventListener("click", () => openDetails(node.dataset.mobileDate));
+          node.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+              event.preventDefault();
+              openDetails(node.dataset.mobileDate);
+            }
+          });
+        });
+      }
+
+      function renderDetails(rows) {
+        const fallback = rows[0] || dataRows()[0];
+        const selected =
+          rows.find((row) => row.date === state.selectedDate) ||
+          dataRows().find((row) => row.date === state.selectedDate) ||
+          fallback;
+        state.selectedDate = selected.date;
+        const stage = enrichedData.stageMeta[selected.stage];
+
+        el.detailDate.textContent = selected.date;
+        el.detailSummary.textContent = selected.summary;
+        el.detailStage.textContent = `${stage.label} · ${stage.title}`;
+        el.detailStageNote.textContent = stage.blurb;
+
+        el.detailTypes.innerHTML = activeAxes(selected)
+          .map((axis) => `<span class="type-pill">${axis.label}</span>`)
+          .join("");
+
+        el.detailGrid.innerHTML = "";
+        enrichedData.axes.forEach((axis) => {
+          const text = (selected.axisEntries?.[axis.key] || "").trim();
+          const node = document.createElement("div");
+          node.className = `detail-axis ${text ? "" : "empty"}`;
+          node.innerHTML = `
+            <strong>${axis.label}</strong>
+            <p>${text || currentProduct.emptyAxisText}</p>
+            <span>${axis.description}</span>
+          `;
+          el.detailGrid.appendChild(node);
+        });
+      }
+
+      function renderMeta(rows) {
+        const stageText =
+          state.stage === "all" ? "全部阶段" : enrichedData.stageMeta[state.stage].title;
+        const axisText = state.axis === "all"
+          ? "全部能力轴"
+          : enrichedData.axes.find((axis) => axis.key === state.axis).label;
+        el.matrixMeta.textContent = `当前展示 ${rows.length} 个日期节点 · 阶段：${stageText} · 轴焦点：${axisText} · 点击任意日期行或卡片弹出当天完整详情`;
+      }
+
+      function render() {
+        renderProductShell();
+        if (!productHasData) {
+          syncModal();
+          return;
+        }
+        updateHeroRange();
+        buildJumpMatrix();
+        buildChips();
+        const rows = filteredRows();
+        renderDeltaPanel();
+        renderActivityChart();
+        renderMeta(rows);
+        renderTable(rows);
+        renderMobileCards(rows);
+        renderDetails(rows);
+        el.emptyState.style.display = rows.length ? "none" : "block";
+        el.mobileEmptyState.style.display = rows.length ? "none" : "block";
+        syncModal();
+      }
+
+      el.searchInput.addEventListener("input", (event) => {
+        state.search = event.target.value.trim().toLowerCase();
+        render();
+      });
+
+      el.detailClose.addEventListener("click", closeDetails);
+      el.detailModal.addEventListener("click", (event) => {
+        if (event.target === el.detailModal) closeDetails();
+      });
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && state.modalOpen) closeDetails();
+      });
+
+      window.addEventListener("pageshow", () => {
+        finishLoadingTransition();
+      });
+
+      setLoadingContent();
+      buildProductNav();
+      render();
+      finishLoadingTransition();
+    </script>
+  </body>
+</html>

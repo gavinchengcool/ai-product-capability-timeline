@@ -1,0 +1,578 @@
+{
+  "generatedAt": "2026-03-17T23:59:31+08:00",
+  "timezone": "Asia/Shanghai",
+  "requestedWindow": {
+    "start_local": "2026-03-16T23:59:31+08:00",
+    "end_local": "2026-03-17T23:59:31+08:00"
+  },
+  "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
+  "summary": {
+    "productCount": 6,
+    "live24hProducts": 1,
+    "latestOfficialWaveProducts": 5
+  },
+  "products": [
+    {
+      "id": "openclaw",
+      "label": "OpenClaw",
+      "category": "general",
+      "automationStatus": "live_daily",
+      "freshness": {
+        "mode": "live_24h",
+        "is_live_24h": true,
+        "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
+      },
+      "generatedAt": "2026-03-16T20:00:00.956470+08:00",
+      "window": {
+        "start_local": "2026-03-15T20:00:00.956470+08:00",
+        "end_local": "2026-03-16T20:00:00.956470+08:00",
+        "start_utc": "2026-03-15T12:00:00Z",
+        "end_utc": "2026-03-16T12:00:00Z"
+      },
+      "meta": [
+        {
+          "label": "窗口",
+          "value": "2026-03-15 至 2026-03-16"
+        },
+        {
+          "label": "GitHub 增量",
+          "value": "445 commits / 0 releases"
+        },
+        {
+          "label": "最近 push",
+          "value": "2026-03-16"
+        },
+        {
+          "label": "来源",
+          "value": "GitHub releases / commits / merged PR"
+        },
+        {
+          "label": "自动化状态",
+          "value": "已接每天 20:00 自动刷新"
+        }
+      ],
+      "featureItems": [
+        "feat(telegram): add configurable silent error replies (#19776)",
+        "CI: add changed extension test lane",
+        "Channels: add contract surface coverage",
+        "Plugins: add Claude marketplace registry installs (#48058)",
+        "Plugins: add auth choice contracts",
+        "Plugins: add provider discovery contracts",
+        "Plugins: add provider auth contracts",
+        "Plugins: add provider wizard contracts"
+      ],
+      "fixItems": [
+        "fix(channels): parse bundled targets without plugin registry",
+        "fix(telegram): keep silent error fallback replies quiet",
+        "fix(ui): auto load Usage tab data on navigation",
+        "Tests: harden WhatsApp inbound contract cleanup",
+        "fix(macos): restore debug build helpers (#48046)",
+        "fix: split browser-safe thinking helpers",
+        "fix: retry runtime postbuild skill copy races",
+        "fix: restore effective setup wizard lazy import"
+      ],
+      "releases": [],
+      "topScopes": [
+        {
+          "scope": "plugins",
+          "count": 60
+        },
+        {
+          "scope": "fix",
+          "count": 49
+        },
+        {
+          "scope": "refactor",
+          "count": 49
+        },
+        {
+          "scope": "tests",
+          "count": 36
+        },
+        {
+          "scope": "docs",
+          "count": 25
+        },
+        {
+          "scope": "status",
+          "count": 15
+        },
+        {
+          "scope": "channels",
+          "count": 14
+        },
+        {
+          "scope": "gateway",
+          "count": 12
+        }
+      ],
+      "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
+    },
+    {
+      "id": "chatgpt",
+      "label": "ChatGPT",
+      "category": "general",
+      "automationStatus": "baseline_snapshot",
+      "freshness": {
+        "mode": "latest_official_wave",
+        "is_live_24h": false,
+        "note": "Latest official dated update window exported from the current product baseline."
+      },
+      "generatedAt": "2026-03-16T00:00:00+08:00",
+      "window": {
+        "start_local": "2026-03-05T00:00:00+08:00",
+        "end_local": "2026-03-11T23:59:00+08:00"
+      },
+      "meta": [
+        {
+          "label": "窗口",
+          "value": "2026-03-05 至 2026-03-11"
+        },
+        {
+          "label": "官方更新",
+          "value": "4 条"
+        },
+        {
+          "label": "最近日期",
+          "value": "2026-03-11"
+        },
+        {
+          "label": "来源",
+          "value": "OpenAI ChatGPT release notes"
+        },
+        {
+          "label": "自动化状态",
+          "value": "当前仍是官方基线快照，尚未接每日抓取"
+        }
+      ],
+      "featureItems": [
+        "GPT-5.4 Thinking 进入 ChatGPT，前沿推理模型继续向前台产品前移。",
+        "Interactive learning mode 开始把讲解、提问和练习做成一体化学习回路。",
+        "Codex 支持自动 top-up，长时间异步编码任务更不容易中断。",
+        "Projects 与多模态工具的工作台化趋势仍在延续。"
+      ],
+      "fixItems": [
+        "GPT-5.1 从产品面板退出，模型阵列被继续收敛。",
+        "ChatGPT 继续减少模型与工作流界面的复杂度。"
+      ],
+      "releases": [
+        {
+          "label": "2026-03-11",
+          "html_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "published_at": "2026-03-11T12:00:00+08:00",
+          "type": "official note"
+        },
+        {
+          "label": "2026-03-10",
+          "html_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "published_at": "2026-03-10T12:00:00+08:00",
+          "type": "official note"
+        },
+        {
+          "label": "2026-03-05",
+          "html_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "published_at": "2026-03-05T12:00:00+08:00",
+          "type": "official note"
+        }
+      ],
+      "topScopes": [
+        {
+          "scope": "智能内核",
+          "count": 2
+        },
+        {
+          "scope": "工具执行",
+          "count": 2
+        },
+        {
+          "scope": "平台控制",
+          "count": 2
+        }
+      ],
+      "note": "Source baseline from public/product-data.js. Latest timeline date: 2026-03-11."
+    },
+    {
+      "id": "claude",
+      "label": "Claude",
+      "category": "general",
+      "automationStatus": "baseline_snapshot",
+      "freshness": {
+        "mode": "latest_official_wave",
+        "is_live_24h": false,
+        "note": "Latest official dated update window exported from the current product baseline."
+      },
+      "generatedAt": "2026-03-16T00:00:00+08:00",
+      "window": {
+        "start_local": "2026-03-02T00:00:00+08:00",
+        "end_local": "2026-03-12T23:59:00+08:00"
+      },
+      "meta": [
+        {
+          "label": "窗口",
+          "value": "2026-03-02 至 2026-03-12"
+        },
+        {
+          "label": "官方更新",
+          "value": "3 条"
+        },
+        {
+          "label": "最近日期",
+          "value": "2026-03-12"
+        },
+        {
+          "label": "来源",
+          "value": "Anthropic Claude release notes"
+        },
+        {
+          "label": "自动化状态",
+          "value": "当前仍是官方基线快照，尚未接每日抓取"
+        }
+      ],
+      "featureItems": [
+        "Memory 扩到 free，Claude 的长期上下文开始成为更普遍的默认特性。",
+        "Excel / PowerPoint shared context、skills 与 LLM gateway 一起把 Claude 推向组织工作台。",
+        "Charts / diagrams 把 Claude 的结果形态从纯文本扩到图形输出。"
+      ],
+      "fixItems": [
+        "免费用户的记忆治理和退出机制变得更重要。",
+        "企业侧需要同时管理 skills、gateway 与 office context 的新边界。"
+      ],
+      "releases": [
+        {
+          "label": "2026-03-12",
+          "html_url": "https://support.claude.com/en/articles/12138966-release-notes",
+          "published_at": "2026-03-12T12:00:00+08:00",
+          "type": "official note"
+        },
+        {
+          "label": "2026-03-11",
+          "html_url": "https://support.claude.com/en/articles/12138966-release-notes",
+          "published_at": "2026-03-11T12:00:00+08:00",
+          "type": "official note"
+        },
+        {
+          "label": "2026-03-02",
+          "html_url": "https://support.claude.com/en/articles/12138966-release-notes",
+          "published_at": "2026-03-02T12:00:00+08:00",
+          "type": "official note"
+        }
+      ],
+      "topScopes": [
+        {
+          "scope": "工具执行",
+          "count": 3
+        },
+        {
+          "scope": "平台控制",
+          "count": 2
+        },
+        {
+          "scope": "安全治理",
+          "count": 1
+        }
+      ],
+      "note": "Source baseline from public/product-data.js. Latest timeline date: 2026-03-12."
+    },
+    {
+      "id": "codex",
+      "label": "Codex CLI",
+      "category": "developer",
+      "automationStatus": "baseline_snapshot",
+      "freshness": {
+        "mode": "latest_official_wave",
+        "is_live_24h": false,
+        "note": "Latest official dated update window exported from the current product baseline."
+      },
+      "generatedAt": "2026-03-16T00:00:00+08:00",
+      "window": {
+        "start_local": "2026-03-05T00:00:00+08:00",
+        "end_local": "2026-03-11T23:59:00+08:00"
+      },
+      "meta": [
+        {
+          "label": "窗口",
+          "value": "2026-03-05 至 2026-03-11"
+        },
+        {
+          "label": "官方 Releases",
+          "value": "5 个"
+        },
+        {
+          "label": "最近日期",
+          "value": "2026-03-11"
+        },
+        {
+          "label": "来源",
+          "value": "OpenAI Codex GitHub releases"
+        },
+        {
+          "label": "自动化状态",
+          "value": "当前仍是官方基线快照，尚未接每日抓取"
+        }
+      ],
+      "featureItems": [
+        "rust-v0.110.0 / v0.111.0 把 plugin system、multi-agent handoff、fast mode、memory guardrails 和 app-server v2 一起推上主线。",
+        "rust-v0.112.0 加入 @plugin mentions，并把模型选择面继续前台化。",
+        "rust-v0.113.0 增加 request_permissions、插件市场发现增强和带 TTY 的 streaming exec。",
+        "rust-v0.114.0 再补 experimental code mode、SessionStart / Stop hooks 与 readyz / healthz。"
+      ],
+      "fixItems": [
+        "这一波 releases 持续在 auth 错误、resume 状态、git context 和 permission handling 上补稳定性。",
+        "Linux tmux crash、插件启用边界和 reopened threads in-progress 状态也被继续修平。"
+      ],
+      "releases": [
+        {
+          "label": "rust-v0.114.0",
+          "html_url": "https://github.com/openai/codex/releases/tag/rust-v0.114.0",
+          "published_at": "2026-03-11T00:28:42Z",
+          "type": "stable"
+        },
+        {
+          "label": "rust-v0.113.0",
+          "html_url": "https://github.com/openai/codex/releases/tag/rust-v0.113.0",
+          "published_at": "2026-03-10T05:24:30Z",
+          "type": "stable"
+        },
+        {
+          "label": "rust-v0.112.0",
+          "html_url": "https://github.com/openai/codex/releases/tag/rust-v0.112.0",
+          "published_at": "2026-03-08T20:44:14Z",
+          "type": "stable"
+        },
+        {
+          "label": "rust-v0.111.0",
+          "html_url": "https://github.com/openai/codex/releases/tag/rust-v0.111.0",
+          "published_at": "2026-03-05T19:12:13Z",
+          "type": "stable"
+        },
+        {
+          "label": "rust-v0.110.0",
+          "html_url": "https://github.com/openai/codex/releases/tag/rust-v0.110.0",
+          "published_at": "2026-03-05T02:22:46Z",
+          "type": "stable"
+        }
+      ],
+      "topScopes": [
+        {
+          "scope": "工具执行",
+          "count": 4
+        },
+        {
+          "scope": "平台控制",
+          "count": 4
+        },
+        {
+          "scope": "安全治理",
+          "count": 3
+        }
+      ],
+      "note": "Source baseline from public/product-data.js. Latest timeline date: 2026-03-11."
+    },
+    {
+      "id": "claude-code",
+      "label": "Claude Code CLI",
+      "category": "developer",
+      "automationStatus": "baseline_snapshot",
+      "freshness": {
+        "mode": "latest_official_wave",
+        "is_live_24h": false,
+        "note": "Latest official dated update window exported from the current product baseline."
+      },
+      "generatedAt": "2026-03-16T00:00:00+08:00",
+      "window": {
+        "start_local": "2026-03-04T00:00:00+08:00",
+        "end_local": "2026-03-14T23:59:00+08:00"
+      },
+      "meta": [
+        {
+          "label": "窗口",
+          "value": "2026-03-04 至 2026-03-14"
+        },
+        {
+          "label": "官方 Releases",
+          "value": "10 个"
+        },
+        {
+          "label": "最近日期",
+          "value": "2026-03-14"
+        },
+        {
+          "label": "来源",
+          "value": "Anthropic Claude Code CLI official releases"
+        },
+        {
+          "label": "自动化状态",
+          "value": "当前仍是官方基线快照，尚未接每日抓取"
+        }
+      ],
+      "featureItems": [
+        "v2.1.68 / v2.1.66 把 Opus 4.6 的默认 effort 与 ultrathink 重新前台化。",
+        "v2.1.69 / v2.1.71 把 /claude-api、remote-control naming、/loop 和 cron scheduling 带进日常工作流。",
+        "v2.1.72 到 v2.1.74 把 plan mode、ExitWorktree、/context 和 autoMemoryDirectory 连成一条复杂任务主线。",
+        "v2.1.76 再把 MCP elicitation、PostCompact hook、sparse worktree 和 /effort 一次推上来。"
+      ],
+      "fixItems": [
+        "3 月这一波 releases 重点修了 proxy / gateway、permission rules、voice / Windows / VS Code 兼容，以及长会话稳定性。",
+        "企业自定义 provider、第三方网络环境和远程控制边界都被持续加固。"
+      ],
+      "releases": [
+        {
+          "label": "v2.1.76",
+          "html_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.76",
+          "published_at": "2026-03-14T01:23:58Z",
+          "type": "stable"
+        },
+        {
+          "label": "v2.1.75",
+          "html_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.75",
+          "published_at": "2026-03-13T17:09:08Z",
+          "type": "stable"
+        },
+        {
+          "label": "v2.1.74",
+          "html_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.74",
+          "published_at": "2026-03-12T00:34:23Z",
+          "type": "stable"
+        },
+        {
+          "label": "v2.1.73",
+          "html_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.73",
+          "published_at": "2026-03-11T18:26:43Z",
+          "type": "stable"
+        },
+        {
+          "label": "v2.1.72",
+          "html_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.72",
+          "published_at": "2026-03-10T00:43:03Z",
+          "type": "stable"
+        },
+        {
+          "label": "v2.1.71",
+          "html_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.71",
+          "published_at": "2026-03-07T00:12:46Z",
+          "type": "stable"
+        },
+        {
+          "label": "v2.1.70",
+          "html_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.70",
+          "published_at": "2026-03-06T01:20:02Z",
+          "type": "stable"
+        },
+        {
+          "label": "v2.1.69",
+          "html_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.69",
+          "published_at": "2026-03-05T00:26:21Z",
+          "type": "stable"
+        },
+        {
+          "label": "v2.1.68",
+          "html_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.68",
+          "published_at": "2026-03-04T10:11:14Z",
+          "type": "stable"
+        },
+        {
+          "label": "v2.1.66",
+          "html_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.66",
+          "published_at": "2026-03-04T01:19:19Z",
+          "type": "stable"
+        }
+      ],
+      "topScopes": [
+        {
+          "scope": "工具执行",
+          "count": 5
+        },
+        {
+          "scope": "平台控制",
+          "count": 5
+        },
+        {
+          "scope": "智能内核",
+          "count": 3
+        }
+      ],
+      "note": "Source baseline from public/product-data.js. Latest timeline date: 2026-03-14."
+    },
+    {
+      "id": "codex-app",
+      "label": "Codex App",
+      "category": "developer",
+      "automationStatus": "baseline_snapshot",
+      "freshness": {
+        "mode": "latest_official_wave",
+        "is_live_24h": false,
+        "note": "Latest official dated update window exported from the current product baseline."
+      },
+      "generatedAt": "2026-03-16T00:00:00+08:00",
+      "window": {
+        "start_local": "2026-03-04T00:00:00+08:00",
+        "end_local": "2026-03-10T23:59:00+08:00"
+      },
+      "meta": [
+        {
+          "label": "窗口",
+          "value": "2026-03-04 至 2026-03-10"
+        },
+        {
+          "label": "官方更新",
+          "value": "3 条"
+        },
+        {
+          "label": "最近日期",
+          "value": "2026-03-10"
+        },
+        {
+          "label": "来源",
+          "value": "OpenAI Codex app / Codex updates"
+        },
+        {
+          "label": "自动化状态",
+          "value": "当前仍是官方基线快照，尚未接每日抓取"
+        }
+      ],
+      "featureItems": [
+        "Windows 版让 Codex App 变成跨平台开发者桌面入口。",
+        "安全审查、根因分析和自动修复进入 Codex 的前台工作流。",
+        "Codex credits auto top-up 让 app 里的长任务更连续。"
+      ],
+      "fixItems": [
+        "Codex App 的账号、额度和执行 runtime 正在向统一开发者账户体系收敛。"
+      ],
+      "releases": [
+        {
+          "label": "2026-03-10",
+          "html_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "published_at": "2026-03-10T12:00:00+08:00",
+          "type": "plan update"
+        },
+        {
+          "label": "2026-03-06",
+          "html_url": "https://openai.com/index/codex-security/",
+          "published_at": "2026-03-06T12:00:00+08:00",
+          "type": "product update"
+        },
+        {
+          "label": "2026-03-04",
+          "html_url": "https://openai.com/index/the-codex-app-a-command-center-for-agents/",
+          "published_at": "2026-03-04T12:00:00+08:00",
+          "type": "app update"
+        }
+      ],
+      "topScopes": [
+        {
+          "scope": "设备",
+          "count": 1
+        },
+        {
+          "scope": "安全治理",
+          "count": 1
+        },
+        {
+          "scope": "平台控制",
+          "count": 1
+        }
+      ],
+      "note": "Source baseline from public/product-data.js. Latest timeline date: 2026-03-10."
+    }
+  ]
+}
