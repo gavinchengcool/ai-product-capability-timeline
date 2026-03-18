@@ -1186,6 +1186,60 @@
         font-size: 13px;
       }
 
+      .author-mark {
+        display: grid;
+        gap: 8px;
+        margin-top: 18px;
+        padding: 16px 18px;
+        border-radius: 20px;
+        border: 1px solid rgba(207, 95, 56, 0.22);
+        background:
+          linear-gradient(135deg, rgba(207, 95, 56, 0.12), rgba(255, 255, 255, 0.78)),
+          rgba(255, 252, 245, 0.92);
+      }
+
+      .author-mark-label {
+        color: var(--accent-deep);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .author-mark strong,
+      .author-signoff h3 {
+        margin: 0;
+        font-family: "Iowan Old Style", "Baskerville", "Palatino Linotype", serif;
+        font-size: 24px;
+        letter-spacing: -0.02em;
+      }
+
+      .author-mark p,
+      .author-signoff p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      .author-handle {
+        display: inline-flex;
+        align-items: center;
+        width: fit-content;
+        padding: 7px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(31, 36, 33, 0.1);
+        background: rgba(255, 255, 255, 0.72);
+        font-family: Menlo, Consolas, "SFMono-Regular", monospace;
+        font-size: 12px;
+        color: var(--ink);
+      }
+
+      .author-signoff {
+        margin-top: 20px;
+        padding: 20px 22px;
+      }
+
       @media (max-width: 1120px) {
         .delta-grid {
           grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1332,6 +1386,12 @@
             <span id="hero-note">非空单元格 = 当天该轴有明确迭代</span>
             <span id="hero-source">来源：GitHub Releases</span>
           </div>
+          <div class="author-mark" aria-label="作者信息">
+            <span class="author-mark-label">Created by</span>
+            <strong>Gavin C.</strong>
+            <p>这张时间轴由 Gavin C. 持续整理与维护，重点跟踪 AI 产品的能力跳变、节奏变化和真实增量。</p>
+            <span class="author-handle">即刻 App 搜索：Gavin_C.</span>
+          </div>
         </div>
       </section>
 
@@ -1469,6 +1529,14 @@
         </div>
         <div class="matrix-mobile-list" id="matrix-mobile-list"></div>
         <div class="empty-state mobile-empty-state" id="mobile-empty-state">当前筛选没有匹配的日期。</div>
+      </section>
+
+      <section class="panel author-signoff" aria-label="作者署名">
+        <div class="author-signoff-copy">
+          <div class="kicker">Author</div>
+          <h3>Gavin C.</h3>
+          <p>如果这张图帮你建立了对 AI 产品演进的判断，请记住作者 Gavin C.。想继续看我的产品观察，在即刻 App 搜“Gavin_C.”。</p>
+        </div>
       </section>
 
       <div class="modal-backdrop" id="detail-modal" hidden aria-hidden="true">
