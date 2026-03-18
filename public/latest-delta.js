@@ -1,91 +1,91 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-03-16T20:00:00.956470+08:00",
+  "generatedAt": "2026-03-18T20:39:46.435176+08:00",
   "window": {
-    "start_local": "2026-03-15T20:00:00.956470+08:00",
-    "end_local": "2026-03-16T20:00:00.956470+08:00",
-    "start_utc": "2026-03-15T12:00:00Z",
-    "end_utc": "2026-03-16T12:00:00Z"
+    "start_local": "2026-03-17T20:39:46.435176+08:00",
+    "end_local": "2026-03-18T20:39:46.435176+08:00",
+    "start_utc": "2026-03-17T12:39:46Z",
+    "end_utc": "2026-03-18T12:39:46Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 316470,
-    "forks": 60614,
-    "open_issues": 14250,
-    "pushed_at": "2026-03-16T11:55:48Z"
+    "stars": 322090,
+    "forks": 61944,
+    "open_issues": 14487,
+    "pushed_at": "2026-03-18T12:11:01Z"
   },
   "summary": {
-    "commitCount": 445,
+    "commitCount": 407,
     "releaseCount": 0,
     "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 316470,
-    "forks": 60614,
-    "openIssues": 14250
+    "stars": 322090,
+    "forks": 61944,
+    "openIssues": 14487
   },
   "releases": [],
   "featureItems": [
-    "feat(telegram): add configurable silent error replies (#19776)",
-    "CI: add changed extension test lane",
-    "Channels: add contract surface coverage",
-    "Plugins: add Claude marketplace registry installs (#48058)",
-    "Plugins: add auth choice contracts",
-    "Plugins: add provider discovery contracts",
-    "Plugins: add provider auth contracts",
-    "Plugins: add provider wizard contracts"
+    "Plugins: add LSP server runtime with stdio JSON-RPC client and agent tool bridge",
+    "Plugins: add LSP server loader and surface in inspect reports",
+    "Plugins: add Twitch runtime barrel",
+    "Doctor: add bundle plugin capability summary to workspace status",
+    "feat: expose context-engine compaction delegate helper (#49061)",
+    "Gateway: add docs hint for plugin override trust error (#49513)",
+    "xAI: add web search credential metadata (#49472)",
+    "Image generation: add fal provider (#49454)"
   ],
   "fixItems": [
-    "fix(channels): parse bundled targets without plugin registry",
-    "fix(telegram): keep silent error fallback replies quiet",
-    "fix(ui): auto load Usage tab data on navigation",
-    "Tests: harden WhatsApp inbound contract cleanup",
-    "fix(macos): restore debug build helpers (#48046)",
-    "fix: split browser-safe thinking helpers",
-    "fix: retry runtime postbuild skill copy races",
-    "fix: restore effective setup wizard lazy import"
+    "fix(security): block build-tool and glibc env injection vectors in host exec sandbox (#49702)",
+    "Plugin SDK: harden provider auth seams",
+    "fix(config): add missing qwen-chat-template to thinking format schema",
+    "fix: serialize duplicate channel starts (#49583) (thanks @sudie-codes)",
+    "Contracts: harden plugin registry loading",
+    "fix(agents): correct broken docs/testing.md path in AGENTS.md",
+    "Contracts: harden provider registry loading",
+    "Perf: skip MCP/LSP runtime spawning when no servers are configured"
   ],
   "topScopes": [
     {
-      "scope": "plugins",
-      "count": 60
+      "scope": "test",
+      "count": 101
     },
     {
-      "scope": "fix",
-      "count": 49
+      "scope": "plugins",
+      "count": 68
+    },
+    {
+      "scope": "telegram",
+      "count": 20
     },
     {
       "scope": "refactor",
-      "count": 49
+      "count": 20
     },
     {
-      "scope": "tests",
-      "count": 36
+      "scope": "plugin sdk",
+      "count": 18
     },
     {
       "scope": "docs",
-      "count": 25
+      "count": 16
     },
     {
-      "scope": "status",
-      "count": 15
+      "scope": "tests",
+      "count": 11
     },
     {
-      "scope": "channels",
-      "count": 14
-    },
-    {
-      "scope": "gateway",
-      "count": 12
+      "scope": "agents",
+      "count": 10
     }
   ],
   "headlineCommits": [
-    "test(telegram): cover shared parsing without registry",
-    "fix(channels): parse bundled targets without plugin registry",
-    "Bootstrap: report nested entry import misses",
-    "Plugins: preserve lazy runtime provider resolution",
-    "Tests: align media auth fixture with selection checks",
-    "Cron: isolate active-model delivery tests",
-    "test(gateway): restore agent request route mock",
-    "fix(telegram): keep silent error fallback replies quiet"
+    "fix(security): block build-tool and glibc env injection vectors in host exec sandbox (#49702)",
+    "test simplify zero-state boundary guards",
+    "ci enforce boundary guardrails",
+    "test: enable vmForks for targeted channel test runs",
+    "test(telegram): fix incomplete sticker-cache mocks in tests",
+    "Config: align model compat thinking format types",
+    "Tlon: pin api-beta to current known-good commit",
+    "Plugin SDK: harden provider auth seams"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

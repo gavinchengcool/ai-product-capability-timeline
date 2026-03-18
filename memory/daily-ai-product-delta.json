@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-03-17T23:59:31+08:00",
+  "generatedAt": "2026-03-18T20:40:03+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-03-16T23:59:31+08:00",
-    "end_local": "2026-03-17T23:59:31+08:00"
+    "start_local": "2026-03-17T20:40:03+08:00",
+    "end_local": "2026-03-18T20:40:03+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-03-16T20:00:00.956470+08:00",
+      "generatedAt": "2026-03-18T20:39:46.435176+08:00",
       "window": {
-        "start_local": "2026-03-15T20:00:00.956470+08:00",
-        "end_local": "2026-03-16T20:00:00.956470+08:00",
-        "start_utc": "2026-03-15T12:00:00Z",
-        "end_utc": "2026-03-16T12:00:00Z"
+        "start_local": "2026-03-17T20:39:46.435176+08:00",
+        "end_local": "2026-03-18T20:39:46.435176+08:00",
+        "start_utc": "2026-03-17T12:39:46Z",
+        "end_utc": "2026-03-18T12:39:46Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-03-15 至 2026-03-16"
+          "value": "2026-03-17 至 2026-03-18"
         },
         {
           "label": "GitHub 增量",
-          "value": "445 commits / 0 releases"
+          "value": "407 commits / 0 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-03-16"
+          "value": "2026-03-18"
         },
         {
           "label": "来源",
@@ -52,58 +52,58 @@
         }
       ],
       "featureItems": [
-        "feat(telegram): add configurable silent error replies (#19776)",
-        "CI: add changed extension test lane",
-        "Channels: add contract surface coverage",
-        "Plugins: add Claude marketplace registry installs (#48058)",
-        "Plugins: add auth choice contracts",
-        "Plugins: add provider discovery contracts",
-        "Plugins: add provider auth contracts",
-        "Plugins: add provider wizard contracts"
+        "Plugins: add LSP server runtime with stdio JSON-RPC client and agent tool bridge",
+        "Plugins: add LSP server loader and surface in inspect reports",
+        "Plugins: add Twitch runtime barrel",
+        "Doctor: add bundle plugin capability summary to workspace status",
+        "feat: expose context-engine compaction delegate helper (#49061)",
+        "Gateway: add docs hint for plugin override trust error (#49513)",
+        "xAI: add web search credential metadata (#49472)",
+        "Image generation: add fal provider (#49454)"
       ],
       "fixItems": [
-        "fix(channels): parse bundled targets without plugin registry",
-        "fix(telegram): keep silent error fallback replies quiet",
-        "fix(ui): auto load Usage tab data on navigation",
-        "Tests: harden WhatsApp inbound contract cleanup",
-        "fix(macos): restore debug build helpers (#48046)",
-        "fix: split browser-safe thinking helpers",
-        "fix: retry runtime postbuild skill copy races",
-        "fix: restore effective setup wizard lazy import"
+        "fix(security): block build-tool and glibc env injection vectors in host exec sandbox (#49702)",
+        "Plugin SDK: harden provider auth seams",
+        "fix(config): add missing qwen-chat-template to thinking format schema",
+        "fix: serialize duplicate channel starts (#49583) (thanks @sudie-codes)",
+        "Contracts: harden plugin registry loading",
+        "fix(agents): correct broken docs/testing.md path in AGENTS.md",
+        "Contracts: harden provider registry loading",
+        "Perf: skip MCP/LSP runtime spawning when no servers are configured"
       ],
       "releases": [],
       "topScopes": [
         {
-          "scope": "plugins",
-          "count": 60
+          "scope": "test",
+          "count": 101
         },
         {
-          "scope": "fix",
-          "count": 49
+          "scope": "plugins",
+          "count": 68
+        },
+        {
+          "scope": "telegram",
+          "count": 20
         },
         {
           "scope": "refactor",
-          "count": 49
+          "count": 20
         },
         {
-          "scope": "tests",
-          "count": 36
+          "scope": "plugin sdk",
+          "count": 18
         },
         {
           "scope": "docs",
-          "count": 25
+          "count": 16
         },
         {
-          "scope": "status",
-          "count": 15
+          "scope": "tests",
+          "count": 11
         },
         {
-          "scope": "channels",
-          "count": 14
-        },
-        {
-          "scope": "gateway",
-          "count": 12
+          "scope": "agents",
+          "count": 10
         }
       ],
       "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"

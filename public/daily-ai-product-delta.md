@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-03-17T23:59:31+08:00
-- Requested window: 2026-03-16 to 2026-03-17
+- Generated at: 2026-03-18T20:40:03+08:00
+- Requested window: 2026-03-17 to 2026-03-18
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-03-15 to 2026-03-16
-- Generated at: 2026-03-16T20:00:00.956470+08:00
-- 窗口: 2026-03-15 至 2026-03-16
-- GitHub 增量: 445 commits / 0 releases
-- 最近 push: 2026-03-16
+- Window: 2026-03-17 to 2026-03-18
+- Generated at: 2026-03-18T20:39:46.435176+08:00
+- 窗口: 2026-03-17 至 2026-03-18
+- GitHub 增量: 407 commits / 0 releases
+- 最近 push: 2026-03-18
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(telegram): add configurable silent error replies (#19776)
-  - CI: add changed extension test lane
-  - Channels: add contract surface coverage
-  - Plugins: add Claude marketplace registry installs (#48058)
-  - Plugins: add auth choice contracts
-  - Plugins: add provider discovery contracts
-  - Plugins: add provider auth contracts
-  - Plugins: add provider wizard contracts
+  - Plugins: add LSP server runtime with stdio JSON-RPC client and agent tool bridge
+  - Plugins: add LSP server loader and surface in inspect reports
+  - Plugins: add Twitch runtime barrel
+  - Doctor: add bundle plugin capability summary to workspace status
+  - feat: expose context-engine compaction delegate helper (#49061)
+  - Gateway: add docs hint for plugin override trust error (#49513)
+  - xAI: add web search credential metadata (#49472)
+  - Image generation: add fal provider (#49454)
 - Fixes and constraints:
-  - fix(channels): parse bundled targets without plugin registry
-  - fix(telegram): keep silent error fallback replies quiet
-  - fix(ui): auto load Usage tab data on navigation
-  - Tests: harden WhatsApp inbound contract cleanup
-  - fix(macos): restore debug build helpers (#48046)
-  - fix: split browser-safe thinking helpers
-  - fix: retry runtime postbuild skill copy races
-  - fix: restore effective setup wizard lazy import
+  - fix(security): block build-tool and glibc env injection vectors in host exec sandbox (#49702)
+  - Plugin SDK: harden provider auth seams
+  - fix(config): add missing qwen-chat-template to thinking format schema
+  - fix: serialize duplicate channel starts (#49583) (thanks @sudie-codes)
+  - Contracts: harden plugin registry loading
+  - fix(agents): correct broken docs/testing.md path in AGENTS.md
+  - Contracts: harden provider registry loading
+  - Perf: skip MCP/LSP runtime spawning when no servers are configured
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
