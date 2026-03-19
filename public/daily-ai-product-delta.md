@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-03-18T20:40:03+08:00
-- Requested window: 2026-03-17 to 2026-03-18
+- Generated at: 2026-03-19T20:33:47+08:00
+- Requested window: 2026-03-18 to 2026-03-19
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,29 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-03-17 to 2026-03-18
-- Generated at: 2026-03-18T20:39:46.435176+08:00
-- 窗口: 2026-03-17 至 2026-03-18
-- GitHub 增量: 407 commits / 0 releases
-- 最近 push: 2026-03-18
+- Window: 2026-03-18 to 2026-03-19
+- Generated at: 2026-03-19T20:33:32.753918+08:00
+- 窗口: 2026-03-18 至 2026-03-19
+- GitHub 增量: 159 commits / 0 releases
+- 最近 push: 2026-03-19
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Plugins: add LSP server runtime with stdio JSON-RPC client and agent tool bridge
-  - Plugins: add LSP server loader and surface in inspect reports
-  - Plugins: add Twitch runtime barrel
-  - Doctor: add bundle plugin capability summary to workspace status
-  - feat: expose context-engine compaction delegate helper (#49061)
-  - Gateway: add docs hint for plugin override trust error (#49513)
-  - xAI: add web search credential metadata (#49472)
-  - Image generation: add fal provider (#49454)
+  - feat(android): benchmark script
+  - feat(android): support android node sms.search (#48299)
+  - Plugin SDK: add public WhatsApp runtime subpaths
+  - MiniMax: add M2.7 models and update default to M2.7 (#49691)
+  - Add plugin-sdk seam audit script
+  - Release: add plugin npm publish workflow (#47678)
 - Fixes and constraints:
-  - fix(security): block build-tool and glibc env injection vectors in host exec sandbox (#49702)
-  - Plugin SDK: harden provider auth seams
-  - fix(config): add missing qwen-chat-template to thinking format schema
-  - fix: serialize duplicate channel starts (#49583) (thanks @sudie-codes)
-  - Contracts: harden plugin registry loading
-  - fix(agents): correct broken docs/testing.md path in AGENTS.md
-  - Contracts: harden provider registry loading
-  - Perf: skip MCP/LSP runtime spawning when no servers are configured
+  - fix(macos): align exec command parity (#50386)
+  - fix(ci): avoid ssh-only git dependency fetches
+  - fix(cli): clarify source archive install failures
+  - fix(android): auto-connect gateway on app open
+  - fix(agents): strip prompt cache for non-OpenAI responses endpoints (#49877) thanks @ShaunTsai
+  - fix(pairing): include shared auth in setup codes
+  - fix(android): show copyable gateway diagnostics
+  - fix: isolate CLI startup imports (#50212)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
