@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-03-19T20:33:47+08:00
-- Requested window: 2026-03-18 to 2026-03-19
+- Generated at: 2026-03-20T20:30:15+08:00
+- Requested window: 2026-03-19 to 2026-03-20
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,29 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-03-18 to 2026-03-19
-- Generated at: 2026-03-19T20:33:32.753918+08:00
-- 窗口: 2026-03-18 至 2026-03-19
-- GitHub 增量: 159 commits / 0 releases
-- 最近 push: 2026-03-19
+- Window: 2026-03-19 to 2026-03-20
+- Generated at: 2026-03-20T20:30:00.842667+08:00
+- 窗口: 2026-03-19 至 2026-03-20
+- GitHub 增量: 216 commits / 0 releases
+- 最近 push: 2026-03-20
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(android): benchmark script
-  - feat(android): support android node sms.search (#48299)
-  - Plugin SDK: add public WhatsApp runtime subpaths
-  - MiniMax: add M2.7 models and update default to M2.7 (#49691)
-  - Add plugin-sdk seam audit script
-  - Release: add plugin npm publish workflow (#47678)
+  - Add Community plugins - openclaw-dingtalk (#29913)
+  - Community plugins - Add QQbot (#29898)
+  - feat(android): hide restricted capabilities in play builds
+  - feat(gateway): add talk speak rpc
+  - feat(tts): add in-memory speech synthesis
+  - feat: add Tavily as a bundled web search plugin with search and extract tools (#49200)
+  - Matrix: add allowBots bot-to-bot policy
+  - feat(xiaomi): add MiMo V2 Pro and MiMo V2 Omni models, switch to OpenAI completions API (#49214)
 - Fixes and constraints:
-  - fix(macos): align exec command parity (#50386)
-  - fix(ci): avoid ssh-only git dependency fetches
-  - fix(cli): clarify source archive install failures
-  - fix(android): auto-connect gateway on app open
-  - fix(agents): strip prompt cache for non-OpenAI responses endpoints (#49877) thanks @ShaunTsai
-  - fix(pairing): include shared auth in setup codes
-  - fix(android): show copyable gateway diagnostics
-  - fix: isolate CLI startup imports (#50212)
+  - perf(android): reduce tab-switch CPU churn
+  - fix(gateway): skip seq-gap broadcast for stale post-lifecycle events (#43751)
+  - test(signal): harden tool-result infra-runtime mock
+  - fix(ci): isolate jiti-mocked test files
+  - fix(ci): isolate loader git-path regression env roots
+  - fix(ci): restore full loader regression coverage
+  - fix(telegram): serialize thread binding persists
+  - fix(ci): split slow plugin loader regression test
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

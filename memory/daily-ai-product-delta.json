@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-03-19T20:33:47+08:00",
+  "generatedAt": "2026-03-20T20:30:15+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-03-18T20:33:47+08:00",
-    "end_local": "2026-03-19T20:33:47+08:00"
+    "start_local": "2026-03-19T20:30:15+08:00",
+    "end_local": "2026-03-20T20:30:15+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-03-19T20:33:32.753918+08:00",
+      "generatedAt": "2026-03-20T20:30:00.842667+08:00",
       "window": {
-        "start_local": "2026-03-18T20:33:32.753918+08:00",
-        "end_local": "2026-03-19T20:33:32.753918+08:00",
-        "start_utc": "2026-03-18T12:33:32Z",
-        "end_utc": "2026-03-19T12:33:32Z"
+        "start_local": "2026-03-19T20:30:00.842667+08:00",
+        "end_local": "2026-03-20T20:30:00.842667+08:00",
+        "start_utc": "2026-03-19T12:30:00Z",
+        "end_utc": "2026-03-20T12:30:00Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-03-18 至 2026-03-19"
+          "value": "2026-03-19 至 2026-03-20"
         },
         {
           "label": "GitHub 增量",
-          "value": "159 commits / 0 releases"
+          "value": "216 commits / 0 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-03-19"
+          "value": "2026-03-20"
         },
         {
           "label": "来源",
@@ -52,56 +52,58 @@
         }
       ],
       "featureItems": [
-        "feat(android): benchmark script",
-        "feat(android): support android node sms.search (#48299)",
-        "Plugin SDK: add public WhatsApp runtime subpaths",
-        "MiniMax: add M2.7 models and update default to M2.7 (#49691)",
-        "Add plugin-sdk seam audit script",
-        "Release: add plugin npm publish workflow (#47678)"
+        "Add Community plugins - openclaw-dingtalk (#29913)",
+        "Community plugins - Add QQbot (#29898)",
+        "feat(android): hide restricted capabilities in play builds",
+        "feat(gateway): add talk speak rpc",
+        "feat(tts): add in-memory speech synthesis",
+        "feat: add Tavily as a bundled web search plugin with search and extract tools (#49200)",
+        "Matrix: add allowBots bot-to-bot policy",
+        "feat(xiaomi): add MiMo V2 Pro and MiMo V2 Omni models, switch to OpenAI completions API (#49214)"
       ],
       "fixItems": [
-        "fix(macos): align exec command parity (#50386)",
-        "fix(ci): avoid ssh-only git dependency fetches",
-        "fix(cli): clarify source archive install failures",
-        "fix(android): auto-connect gateway on app open",
-        "fix(agents): strip prompt cache for non-OpenAI responses endpoints (#49877) thanks @ShaunTsai",
-        "fix(pairing): include shared auth in setup codes",
-        "fix(android): show copyable gateway diagnostics",
-        "fix: isolate CLI startup imports (#50212)"
+        "perf(android): reduce tab-switch CPU churn",
+        "fix(gateway): skip seq-gap broadcast for stale post-lifecycle events (#43751)",
+        "test(signal): harden tool-result infra-runtime mock",
+        "fix(ci): isolate jiti-mocked test files",
+        "fix(ci): isolate loader git-path regression env roots",
+        "fix(ci): restore full loader regression coverage",
+        "fix(telegram): serialize thread binding persists",
+        "fix(ci): split slow plugin loader regression test"
       ],
       "releases": [],
       "topScopes": [
         {
-          "scope": "fix",
-          "count": 20
-        },
-        {
-          "scope": "refactor",
-          "count": 17
+          "scope": "ci",
+          "count": 52
         },
         {
           "scope": "docs",
-          "count": 15
-        },
-        {
-          "scope": "plugin sdk",
-          "count": 11
+          "count": 41
         },
         {
           "scope": "test",
-          "count": 11
-        },
-        {
-          "scope": "tests",
-          "count": 9
+          "count": 15
         },
         {
           "scope": "matrix",
+          "count": 12
+        },
+        {
+          "scope": "plugins",
+          "count": 9
+        },
+        {
+          "scope": "android",
           "count": 7
         },
         {
-          "scope": "build",
+          "scope": "fix",
           "count": 7
+        },
+        {
+          "scope": "gateway",
+          "count": 6
         }
       ],
       "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"

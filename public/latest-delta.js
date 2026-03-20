@@ -1,89 +1,91 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-03-19T20:33:32.753918+08:00",
+  "generatedAt": "2026-03-20T20:30:00.842667+08:00",
   "window": {
-    "start_local": "2026-03-18T20:33:32.753918+08:00",
-    "end_local": "2026-03-19T20:33:32.753918+08:00",
-    "start_utc": "2026-03-18T12:33:32Z",
-    "end_utc": "2026-03-19T12:33:32Z"
+    "start_local": "2026-03-19T20:30:00.842667+08:00",
+    "end_local": "2026-03-20T20:30:00.842667+08:00",
+    "start_utc": "2026-03-19T12:30:00Z",
+    "end_utc": "2026-03-20T12:30:00Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 324418,
-    "forks": 62570,
-    "open_issues": 14634,
-    "pushed_at": "2026-03-19T12:32:38Z"
+    "stars": 326425,
+    "forks": 63108,
+    "open_issues": 14657,
+    "pushed_at": "2026-03-20T11:50:18Z"
   },
   "summary": {
-    "commitCount": 159,
+    "commitCount": 216,
     "releaseCount": 0,
     "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 324418,
-    "forks": 62570,
-    "openIssues": 14634
+    "stars": 326425,
+    "forks": 63108,
+    "openIssues": 14657
   },
   "releases": [],
   "featureItems": [
-    "feat(android): benchmark script",
-    "feat(android): support android node sms.search (#48299)",
-    "Plugin SDK: add public WhatsApp runtime subpaths",
-    "MiniMax: add M2.7 models and update default to M2.7 (#49691)",
-    "Add plugin-sdk seam audit script",
-    "Release: add plugin npm publish workflow (#47678)"
+    "Add Community plugins - openclaw-dingtalk (#29913)",
+    "Community plugins - Add QQbot (#29898)",
+    "feat(android): hide restricted capabilities in play builds",
+    "feat(gateway): add talk speak rpc",
+    "feat(tts): add in-memory speech synthesis",
+    "feat: add Tavily as a bundled web search plugin with search and extract tools (#49200)",
+    "Matrix: add allowBots bot-to-bot policy",
+    "feat(xiaomi): add MiMo V2 Pro and MiMo V2 Omni models, switch to OpenAI completions API (#49214)"
   ],
   "fixItems": [
-    "fix(macos): align exec command parity (#50386)",
-    "fix(ci): avoid ssh-only git dependency fetches",
-    "fix(cli): clarify source archive install failures",
-    "fix(android): auto-connect gateway on app open",
-    "fix(agents): strip prompt cache for non-OpenAI responses endpoints (#49877) thanks @ShaunTsai",
-    "fix(pairing): include shared auth in setup codes",
-    "fix(android): show copyable gateway diagnostics",
-    "fix: isolate CLI startup imports (#50212)"
+    "perf(android): reduce tab-switch CPU churn",
+    "fix(gateway): skip seq-gap broadcast for stale post-lifecycle events (#43751)",
+    "test(signal): harden tool-result infra-runtime mock",
+    "fix(ci): isolate jiti-mocked test files",
+    "fix(ci): isolate loader git-path regression env roots",
+    "fix(ci): restore full loader regression coverage",
+    "fix(telegram): serialize thread binding persists",
+    "fix(ci): split slow plugin loader regression test"
   ],
   "topScopes": [
     {
-      "scope": "fix",
-      "count": 20
-    },
-    {
-      "scope": "refactor",
-      "count": 17
+      "scope": "ci",
+      "count": 52
     },
     {
       "scope": "docs",
-      "count": 15
-    },
-    {
-      "scope": "plugin sdk",
-      "count": 11
+      "count": 41
     },
     {
       "scope": "test",
-      "count": 11
-    },
-    {
-      "scope": "tests",
-      "count": 9
+      "count": 15
     },
     {
       "scope": "matrix",
+      "count": 12
+    },
+    {
+      "scope": "plugins",
+      "count": 9
+    },
+    {
+      "scope": "android",
       "count": 7
     },
     {
-      "scope": "build",
+      "scope": "fix",
       "count": 7
+    },
+    {
+      "scope": "gateway",
+      "count": 6
     }
   ],
   "headlineCommits": [
-    "Matrix: persist clean shutdown sync state",
-    "Tests: update Matrix agent bind fixtures",
-    "CLI: fix check failures",
-    "Matrix: restore doctor migration previews",
-    "Matrix: wire startup migration into doctor and gateway",
-    "Matrix: fix typecheck and boundary drift",
-    "fix(macos): align exec command parity (#50386)",
-    "fix(ci): avoid ssh-only git dependency fetches"
+    "build(android): update Gradle tooling",
+    "perf(android): reduce tab-switch CPU churn",
+    "fix(gateway): skip seq-gap broadcast for stale post-lifecycle events (#43751)",
+    "Add Community plugins - openclaw-dingtalk (#29913)",
+    "Community plugins - Add QQbot (#29898)",
+    "test(signal): harden tool-result infra-runtime mock",
+    "fix(ci): isolate jiti-mocked test files",
+    "ci: collapse extra workflow guards into check-additional"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
