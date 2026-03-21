@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-03-20T20:30:15+08:00
-- Requested window: 2026-03-19 to 2026-03-20
+- Generated at: 2026-03-21T20:21:59+08:00
+- Requested window: 2026-03-20 to 2026-03-21
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-03-19 to 2026-03-20
-- Generated at: 2026-03-20T20:30:00.842667+08:00
-- 窗口: 2026-03-19 至 2026-03-20
-- GitHub 增量: 216 commits / 0 releases
-- 最近 push: 2026-03-20
+- Window: 2026-03-20 to 2026-03-21
+- Generated at: 2026-03-21T20:21:44.726845+08:00
+- 窗口: 2026-03-20 至 2026-03-21
+- GitHub 增量: 108 commits / 0 releases
+- 最近 push: 2026-03-21
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Add Community plugins - openclaw-dingtalk (#29913)
-  - Community plugins - Add QQbot (#29898)
-  - feat(android): hide restricted capabilities in play builds
-  - feat(gateway): add talk speak rpc
-  - feat(tts): add in-memory speech synthesis
-  - feat: add Tavily as a bundled web search plugin with search and extract tools (#49200)
-  - Matrix: add allowBots bot-to-bot policy
-  - feat(xiaomi): add MiMo V2 Pro and MiMo V2 Omni models, switch to OpenAI completions API (#49214)
+  - feat(github-copilot): resolve any model ID dynamically (#51325)
+  - feat(telegram): auto-rename DM topics on first message (#51502)
+  - feat(telegram): support custom apiRoot for alternative API endpoints (#48842)
+  - feat(context-engine): pass incoming prompt to assemble (#50848)
+  - feat: add context engine transcript maintenance (#51191)
+  - feat: add anthropic-vertex provider for Claude via GCP Vertex AI (#43356)
+  - Add Grok 4.20 reasoning and non-reasoning to xAI model catalog (#50772)
+  - feat: pass modelId to context engine assemble() (#47437)
 - Fixes and constraints:
-  - perf(android): reduce tab-switch CPU churn
-  - fix(gateway): skip seq-gap broadcast for stale post-lifecycle events (#43751)
-  - test(signal): harden tool-result infra-runtime mock
-  - fix(ci): isolate jiti-mocked test files
-  - fix(ci): isolate loader git-path regression env roots
-  - fix(ci): restore full loader regression coverage
-  - fix(telegram): serialize thread binding persists
-  - fix(ci): split slow plugin loader regression test
+  - fix(agents): register simple completion transports
+  - fix: defer plugin runtime globals until use
+  - fix(discord): clarify startup readiness log (#51425)
+  - fix(agent): clarify embedded transport errors (#51419)
+  - fix(subagent): include partial progress when subagent times out (#40700)
+  - fix(slack): unify slash conversation-runtime mock
+  - fix: sanitize malformed replay tool calls (#50005)
+  - Exec: harden host env override handling across gateway and node (#51207)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
