@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-03-23T20:37:07+08:00
-- Requested window: 2026-03-22 to 2026-03-23
+- Generated at: 2026-03-24T20:40:21+08:00
+- Requested window: 2026-03-23 to 2026-03-24
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-03-22 to 2026-03-23
-- Generated at: 2026-03-23T20:36:49.974626+08:00
-- 窗口: 2026-03-22 至 2026-03-23
-- GitHub 增量: 637 commits / 2 releases
-- 最近 push: 2026-03-23
+- Window: 2026-03-23 to 2026-03-24
+- Generated at: 2026-03-24T20:40:05.777796+08:00
+- 窗口: 2026-03-23 至 2026-03-24
+- GitHub 增量: 221 commits / 1 releases
+- 最近 push: 2026-03-24
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - ClawHub/install: add native `openclaw skills search|install|update` flows plus `openclaw plugins install clawhub:<package>` with tracked update metadata, gateway skill-install/update support for ClawHub-backed requests, and regression coverage/docs for the new source path. [v2026.3.22]
-  - Plugins/marketplaces: add Claude marketplace registry resolution, `plugin@marketplace` installs, marketplace listing, and update support, plus Docker E2E coverage for local and official marketplace flows. (#48058) Thanks @vincentkoc. [v2026.3.22]
-  - Commands/plugins: add owner-gated `/plugins` and `/plugin` chat commands for plugin list/show and enable/disable flows, alongside explicit `commands.plugins` config gating. Thanks @vincentkoc. [v2026.3.22]
-  - Plugins/bundles: add compatible Codex, Claude, and Cursor bundle discovery/install support, map bundle skills into OpenClaw skills, and apply Claude bundle `settings.json` defaults to embedded Pi with shell overrides sanitized. [v2026.3.22]
-  - Agents: add per-agent thinking/reasoning/fast defaults and auto-revert disallowed model overrides to the agent's default selection. Thanks @xuanmingguo and @vincentkoc. [v2026.3.22]
-  - Commands/btw: add `/btw` side questions for quick tool-less answers about the current session without changing future session context, with dismissible in-session TUI answers and explicit BTW replies on external channels. (#45444) Thanks @ngutman. [v2026.3.22]
-  - Sandbox/runtime: add pluggable sandbox backends, ship an OpenShell backend with `mirror` and `remote` workspace modes, and make sandbox list/recreate/prune backend-aware instead of Docker-only. [v2026.3.22]
-  - Sandbox/SSH: add a core SSH sandbox backend with secret-backed key, certificate, and known_hosts inputs, move shared remote exec/filesystem tooling into core, and keep OpenShell focused on sandbox lifecycle plus optional `mirror` mode. [v2026.3.22]
+  - ModelStudio/Qwen: add standard (pay-as-you-go) DashScope endpoints for China and global Qwen API keys alongside the existing Coding Plan endpoints, and relabel the provider group to `Qwen (Alibaba Cloud Model Studio)`. (#43878) [v2026.3.23]
+  - UI/clarity: consolidate button primitives (`btn--icon`, `btn--ghost`, `btn--xs`), refine the Knot theme to a black-and-red palette with WCAG 2.1 AA contrast, add config icons for Diagnostics/CLI/Secrets/ACP/MCP sections, replace the roundness slider with discrete stops, and improve accessibility with aria-labels across usage filters. (#53272) Thanks @BunsDev. [v2026.3.23]
+  - feat(ui): Control UI polish — skills revamp, markdown preview, agent workspace, macOS config tree (#53411) thanks @BunsDev
+  - msteams: add message edit and delete support (#49925)
+  - feat(csp): support inline script hashes in Control UI CSP (#53307) thanks @BunsDev
+  - style(ui): continue ui clarity pass across theme, config, and usage (#53272) thanks @BunsDev
+  - feat(modelstudio): add standard (pay-as-you-go) DashScope endpoints for Qwen (#43878)
+  - release: add changelog for control UI tarball check
 - Fixes and constraints:
-  - Security/pairing: bind iOS setup codes to the intended node profile and reject first-use bootstrap redemption that asks for broader roles or scopes. Thanks @tdjackey. [v2026.3.22]
-  - Slack/startup: harden `@slack/bolt` import interop across current bundled runtime shapes so Slack monitors no longer crash with `App is not a constructor` after plugin-sdk bundling changes. (#45953) Thanks @merc1305. [v2026.3.22]
-  - Security/device pairing: harden `device.token.rotate` deny handling by keeping public failures generic while logging internal deny reasons and preserving approved-baseline enforcement. (`GHSA-7jrw-x62h-64p8`) [v2026.3.22]
-  - Security/exec safe bins: remove `jq` from the default safe-bin allowlist and fail closed on the `jq` `env` builtin when operators explicitly opt `jq` back in, so `jq -n env` cannot dump host secrets without an explicit trust path. Thanks @gladiator9797 for reporting. [v2026.3.22]
-  - Security/exec approvals: escape blank Hangul filler code points in approval prompts across gateway/chat and the macOS native approval UI so visually empty Unicode padding cannot hide reviewed command text. [v2026.3.22]
-  - Security/exec approvals: unify transparent dispatch-wrapper handling across resolution and allow-always persistence so wrapper metadata cannot silently drift and broaden approvals. [v2026.3.22]
-  - Security/exec: harden macOS allowlist resolution against wrapper and `env` spoofing, require fresh approval for inline interpreter eval with `tools.exec.strictInlineEval`, wrap Discord guild message bodies as untrusted external content, and add audit findings for risky exec approval and open-channel combinations. [v2026.3.22]
-  - Security/network: harden explicit-proxy SSRF pinning by translating target-hop transport hints onto HTTPS proxy tunnels and failing closed for plain HTTP guarded fetches that cannot preserve pinned DNS. [v2026.3.22]
+  - CLI/channel auth: auto-select the single configured login-capable channel for `channels login`/`logout`, harden channel ids against prototype-chain and control-character abuse, and fall back cleanly to catalog-backed channel installs, so channel auth works again for single-channel setups and on-demand channel installs. (#53254) Thanks @BunsDev. [v2026.3.23]
+  - ClawHub/skills: keep updating already-tracked legacy Unicode slugs after the ASCII-only slug hardening, so older installs do not get stuck behind `Invalid skill slug` errors during `openclaw skills update`. (#53206) Thanks @drobison00. [v2026.3.23]
+  - Security/exec approvals: keep shell-wrapper positional-argv allowlist matching on real direct carriers only by rejecting single-quoted `$0`/`$n` tokens, disallowing newline-separated `exec`, and still accepting `exec --` carrier forms. Thanks @vincentkoc. [v2026.3.23]
+  - fix(agents): harden edit tool recovery (#52516)
+  - test: harden threaded channel follow-ups
+  - test: harden threaded shared-worker suites
+  - fix: widen installer regex allowlists and deduplicate safeExternalHref calls
+  - fix(security): resolve Aisle findings — skill installer validation, terminal sanitization, URL scheme allowlisting (#53471) thanks @BunsDev
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
