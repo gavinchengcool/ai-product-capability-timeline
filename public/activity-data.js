@@ -1,5 +1,5 @@
 window.OPENCLAW_ACTIVITY = {
-  "generatedAt": "2026-03-24T20:40:21.568111+08:00",
+  "generatedAt": "2026-03-25T20:37:39.155007+08:00",
   "repo": "openclaw/openclaw",
   "timezone": "Asia/Shanghai",
   "metricKey": "merged_prs",
@@ -481,6 +481,10 @@ window.OPENCLAW_ACTIVITY = {
     {
       "date": "2026-03-23",
       "merged_prs": 64
+    },
+    {
+      "date": "2026-03-24",
+      "merged_prs": 60
     }
   ],
   "maxMergedPrs": 209,
