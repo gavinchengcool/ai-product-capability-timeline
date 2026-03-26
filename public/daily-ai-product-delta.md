@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-03-25T20:37:39+08:00
-- Requested window: 2026-03-24 to 2026-03-25
+- Generated at: 2026-03-26T20:43:56+08:00
+- Requested window: 2026-03-25 to 2026-03-26
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-03-24 to 2026-03-25
-- Generated at: 2026-03-25T20:37:23.854883+08:00
-- 窗口: 2026-03-24 至 2026-03-25
-- GitHub 增量: 326 commits / 1 releases
-- 最近 push: 2026-03-25
+- Window: 2026-03-25 to 2026-03-26
+- Generated at: 2026-03-26T20:43:42.066440+08:00
+- 窗口: 2026-03-25 至 2026-03-26
+- GitHub 增量: 86 commits / 2 releases
+- 最近 push: 2026-03-26
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Gateway/OpenAI compatibility: add `/v1/models` and `/v1/embeddings`, and forward explicit model overrides through `/v1/chat/completions` and `/v1/responses` for broader client and RAG compatibility. Thanks @vincentkoc. [v2026.3.24-beta.1]
-  - Agents/tools: make `/tools` show the tools the current agent can actually use right now, add a compact default view with an optional detailed mode, and add a live “Available Right Now” section in the Control UI so it is easier to see what will work before you ask. [v2026.3.24-beta.1]
-  - Microsoft Teams: migrate to the official Teams SDK and add AI-agent UX best practices including streaming 1:1 replies, welcome cards with prompt starters, feedback/reflection, informative status updates, typing indicators, and native AI labeling. (#51808) [v2026.3.24-beta.1]
-  - Microsoft Teams: add message edit and delete support for sent messages, including in-thread fallbacks when no explicit target is provided. (#49925) [v2026.3.24-beta.1]
-  - Skills/install metadata: add one-click install recipes to bundled skills (coding-agent, gh-issues, openai-whisper-api, session-logs, tmux, trello, weather) so the CLI and Control UI can offer dependency installation when requirements are missing. (#53411) Thanks @BunsDev. [v2026.3.24-beta.1]
-  - Control UI/skills: add status-filter tabs (All / Ready / Needs Setup / Disabled) with counts, replace inline skill cards with a click-to-detail dialog showing requirements, toggle switch, install action, API key entry, source metadata, and homepage link. (#53411) Thanks @BunsDev. [v2026.3.24-beta.1]
-  - Slack/interactive replies: restore rich reply parity for direct deliveries, auto-render simple trailing `Options:` lines as buttons/selects, improve Slack interactive setup defaults, and isolate reply controls from plugin interactive handlers. (#53389) Thanks @vincentkoc. [v2026.3.24-beta.1]
-  - CLI/containers: add `--container` and `OPENCLAW_CONTAINER` to run `openclaw` commands inside a running Docker or Podman OpenClaw container. (#52651) Thanks @sallyom. [v2026.3.24-beta.1]
+  - Gateway/OpenAI compatibility: add `/v1/models` and `/v1/embeddings`, and forward explicit model overrides through `/v1/chat/completions` and `/v1/responses` for broader client and RAG compatibility. Thanks @vincentkoc. [v2026.3.24]
+  - Agents/tools: make `/tools` show the tools the current agent can actually use right now, add a compact default view with an optional detailed mode, and add a live "Available Right Now" section in the Control UI so it is easier to see what will work before you ask. [v2026.3.24]
+  - Microsoft Teams: migrate to the official Teams SDK and add AI-agent UX best practices including streaming 1:1 replies, welcome cards with prompt starters, feedback/reflection, informative status updates, typing indicators, and native AI labeling. (#51808) [v2026.3.24]
+  - Microsoft Teams: add message edit and delete support for sent messages, including in-thread fallbacks when no explicit target is provided. (#49925) [v2026.3.24]
+  - Skills/install metadata: add one-click install recipes to bundled skills (coding-agent, gh-issues, openai-whisper-api, session-logs, tmux, trello, weather) so the CLI and Control UI can offer dependency installation when requirements are missing. (#53411) Thanks @BunsDev. [v2026.3.24]
+  - Control UI/skills: add status-filter tabs (All / Ready / Needs Setup / Disabled) with counts, replace inline skill cards with a click-to-detail dialog showing requirements, toggle switch, install action, API key entry, source metadata, and homepage link. (#53411) Thanks @BunsDev. [v2026.3.24]
+  - Slack/interactive replies: restore rich reply parity for direct deliveries, auto-render simple trailing `Options:` lines as buttons/selects, improve Slack interactive setup defaults, and isolate reply controls from plugin interactive handlers. (#53389) Thanks @vincentkoc. [v2026.3.24]
+  - CLI/containers: add `--container` and `OPENCLAW_CONTAINER` to run `openclaw` commands inside a running Docker or Podman OpenClaw container. (#52651) Thanks @sallyom. [v2026.3.24]
 - Fixes and constraints:
-  - Security/sandbox media dispatch: close the `mediaUrl`/`fileUrl` alias bypass so outbound tool and message actions cannot escape media-root restrictions. (#54034) [v2026.3.24-beta.1]
-  - Runtime/build: stabilize long-lived lazy `dist` runtime entry paths and harden bundled plugin npm staging so local rebuilds stop breaking on missing hashed chunks or broken shell `npm` shims. (#53855) Thanks @vincentkoc. [v2026.3.24-beta.1]
-  - Security/skills: validate skill installer metadata against strict regex allowlists per package manager, sanitize skill metadata for terminal output, add URL protocol allowlisting in markdown preview and skill homepage links, warn on non-bundled skill install sources, and remove unsafe `file://` workspace links. (#53471) Thanks @BunsDev. [v2026.3.24-beta.1]
-  - fix(config): ignore same-base correction publish warnings
-  - fix: copy openclaw bin before docker install
-  - fix(whatsapp): use async fs.promises.readFile for selfLid creds read
-  - fix(whatsapp): read selfLid from creds.json for reply-to-bot detection
-  - fix(whatsapp): compare selfLid for reply-to-bot implicit mention in groups
+  - Security/sandbox media dispatch: close the `mediaUrl`/`fileUrl` alias bypass so outbound tool and message actions cannot escape media-root restrictions. (#54034) [v2026.3.24]
+  - fix: surface provider-specific rate limit error message (#54433) (#54512)
+  - fix(bluebubbles): auto-allow private network for local serverUrl and add allowPrivateNetwork to channel schema
+  - fix(msteams): align feedback invoke authorization (#55108)
+  - fix(agents): enforce session_status guard after sessionId resolution (#55105)
+  - fix(discord): force fresh gateway reconnects (#54697)
+  - fix(extensions): route fetch calls through fetchWithSsrFGuard (#53929)
+  - fix: add slack upload-file action (#54987) (thanks @kevinlin-openai)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
