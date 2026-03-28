@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-03-27T20:34:43+08:00
-- Requested window: 2026-03-26 to 2026-03-27
+- Generated at: 2026-03-28T20:27:18+08:00
+- Requested window: 2026-03-27 to 2026-03-28
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,25 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-03-26 to 2026-03-27
-- Generated at: 2026-03-27T20:34:27.271839+08:00
-- 窗口: 2026-03-26 至 2026-03-27
-- GitHub 增量: 370 commits / 0 releases
-- 最近 push: 2026-03-27
+- Window: 2026-03-27 to 2026-03-28
+- Generated at: 2026-03-28T20:26:59.966703+08:00
+- 窗口: 2026-03-27 至 2026-03-28
+- GitHub 增量: 708 commits / 0 releases
+- 最近 push: 2026-03-28
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat: add anthropic claude cli migration
-  - feat: pluginize cli inference backends
+  - feat: add support for extra headers in Tavily API requests (#55335)
+  - Add collect-all test failure planning
+  - Plugins: add runtime registry compatibility helper
+  - feat: add openclaw channel mcp bridge
+  - feat(acp): add conversation binds for message channels
+  - Plugins: add nested discovery regression test
+  - feat(hooks): add async requireApproval to before_tool_call (#55339)
+  - feat(plugins): expose runId in agent hook context (#54265)
 - Fixes and constraints:
-  - fix: resolve bundled plugins from running CLI
-  - fix: stop test-parallel from waiting forever on child close
-  - fix: apply live model switches during active retries
-  - fix(tui): validate activation slash commands
-  - fix(tui): prune chat log system messages atomically
-  - fix(google): strip empty required arrays from tool schemas for Gemini (#52106)
-  - fix: preserve tui local auth with url overrides
-  - fix: keep tui out of browser origin checks
+  - fix: include extension channels in subagent announce delivery path (#56348)
+  - fix: restore xai pricing cache fallback
+  - fix: repair package contract and boundary drift
+  - fix: stabilize implicit provider discovery merges
+  - fix: keep provider discovery on mockable lazy runtime paths
+  - fix: keep provider normalization on local sync paths
+  - fix: keep model selection on local normalization paths
+  - fix: keep cost lookup on sync pricing paths
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

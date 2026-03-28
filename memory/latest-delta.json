@@ -1,85 +1,91 @@
 {
-  "generatedAt": "2026-03-27T20:34:27.271839+08:00",
+  "generatedAt": "2026-03-28T20:26:59.966703+08:00",
   "window": {
-    "start_local": "2026-03-26T20:34:27.271839+08:00",
-    "end_local": "2026-03-27T20:34:27.271839+08:00",
-    "start_utc": "2026-03-26T12:34:27Z",
-    "end_utc": "2026-03-27T12:34:27Z"
+    "start_local": "2026-03-27T20:26:59.966703+08:00",
+    "end_local": "2026-03-28T20:26:59.966703+08:00",
+    "start_utc": "2026-03-27T12:26:59Z",
+    "end_utc": "2026-03-28T12:26:59Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 338137,
-    "forks": 66384,
-    "open_issues": 15862,
-    "pushed_at": "2026-03-27T12:26:04Z"
+    "stars": 339079,
+    "forks": 66720,
+    "open_issues": 16085,
+    "pushed_at": "2026-03-28T12:15:26Z"
   },
   "summary": {
-    "commitCount": 370,
+    "commitCount": 708,
     "releaseCount": 0,
     "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 338137,
-    "forks": 66384,
-    "openIssues": 15862
+    "stars": 339079,
+    "forks": 66720,
+    "openIssues": 16085
   },
   "releases": [],
   "featureItems": [
-    "feat: add anthropic claude cli migration",
-    "feat: pluginize cli inference backends"
+    "feat: add support for extra headers in Tavily API requests (#55335)",
+    "Add collect-all test failure planning",
+    "Plugins: add runtime registry compatibility helper",
+    "feat: add openclaw channel mcp bridge",
+    "feat(acp): add conversation binds for message channels",
+    "Plugins: add nested discovery regression test",
+    "feat(hooks): add async requireApproval to before_tool_call (#55339)",
+    "feat(plugins): expose runId in agent hook context (#54265)"
   ],
   "fixItems": [
-    "fix: resolve bundled plugins from running CLI",
-    "fix: stop test-parallel from waiting forever on child close",
-    "fix: apply live model switches during active retries",
-    "fix(tui): validate activation slash commands",
-    "fix(tui): prune chat log system messages atomically",
-    "fix(google): strip empty required arrays from tool schemas for Gemini (#52106)",
-    "fix: preserve tui local auth with url overrides",
-    "fix: keep tui out of browser origin checks"
+    "fix: include extension channels in subagent announce delivery path (#56348)",
+    "fix: restore xai pricing cache fallback",
+    "fix: repair package contract and boundary drift",
+    "fix: stabilize implicit provider discovery merges",
+    "fix: keep provider discovery on mockable lazy runtime paths",
+    "fix: keep provider normalization on local sync paths",
+    "fix: keep model selection on local normalization paths",
+    "fix: keep cost lookup on sync pricing paths"
   ],
   "topScopes": [
     {
       "scope": "refactor",
-      "count": 90
+      "count": 126
     },
     {
-      "scope": "fix",
-      "count": 88
+      "scope": "regression",
+      "count": 124
     },
     {
       "scope": "test",
-      "count": 50
+      "count": 119
+    },
+    {
+      "scope": "fix",
+      "count": 105
     },
     {
       "scope": "ci",
-      "count": 12
+      "count": 42
     },
     {
-      "scope": "docs",
-      "count": 12
+      "scope": "plugins",
+      "count": 16
     },
     {
-      "scope": "feishu",
-      "count": 12
+      "scope": "matrix",
+      "count": 13
     },
     {
-      "scope": "agents",
-      "count": 11
-    },
-    {
-      "scope": "gateway",
-      "count": 9
+      "scope": "telegram",
+      "count": 13
     }
   ],
   "headlineCommits": [
-    "refactor: pluginize litellm auth onboarding",
-    "fix: resolve bundled plugins from running CLI",
-    "fix: stop test-parallel from waiting forever on child close",
-    "style: apply current oxfmt output to ui views",
-    "fix: apply live model switches during active retries",
-    "ci: align bun artifact upload with node24-safe action",
-    "Prefer non-user writeable paths (#54346)",
-    "Replace killProcessTree references to shell-utils with process/kill-tree (#55213)"
+    "fix: include extension channels in subagent announce delivery path (#56348)",
+    "test: silence warning filter stderr",
+    "test: silence ui localstorage warning",
+    "test: silence planner fixture stderr",
+    "test: align code region fence slices",
+    "fix: restore xai pricing cache fallback",
+    "test: repair focused unit lane drift",
+    "fix: repair package contract and boundary drift"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 }

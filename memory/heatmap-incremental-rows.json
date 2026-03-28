@@ -167,5 +167,19 @@
     },
     "source": "daily-incremental",
     "generatedAt": "2026-03-27T20:34:27.271839+08:00"
+  },
+  {
+    "date": "2026-03-28",
+    "stage": "openclaw",
+    "summary": "移动端入口、渠道互动、gateway / 会话控制面、browser / tools继续增强，最近一天的增量也并入主矩阵。",
+    "axisEntries": {
+      "channels": "Feishu cards / reactions / reasoning stream 继续扩张。 WhatsApp / Telegram / Zalo / Signal 相关兼容修补继续推进。",
+      "models": "",
+      "tools": "Browser existing-session / MCP attach 模式继续简化并加固。 plugin-sdk 构建与重复安装路径继续收敛。",
+      "devices": "Windows 重启与清理过程的可见控制台问题被压下去。",
+      "control": "Session / plugin 路由与配置基线继续收敛。"
+    },
+    "source": "daily-incremental",
+    "generatedAt": "2026-03-28T20:26:59.966703+08:00"
   }
 ]

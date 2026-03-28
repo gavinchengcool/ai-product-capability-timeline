@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-03-27T20:34:43+08:00",
+  "generatedAt": "2026-03-28T20:27:18+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-03-26T20:34:43+08:00",
-    "end_local": "2026-03-27T20:34:43+08:00"
+    "start_local": "2026-03-27T20:27:18+08:00",
+    "end_local": "2026-03-28T20:27:18+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-03-27T20:34:27.271839+08:00",
+      "generatedAt": "2026-03-28T20:26:59.966703+08:00",
       "window": {
-        "start_local": "2026-03-26T20:34:27.271839+08:00",
-        "end_local": "2026-03-27T20:34:27.271839+08:00",
-        "start_utc": "2026-03-26T12:34:27Z",
-        "end_utc": "2026-03-27T12:34:27Z"
+        "start_local": "2026-03-27T20:26:59.966703+08:00",
+        "end_local": "2026-03-28T20:26:59.966703+08:00",
+        "start_utc": "2026-03-27T12:26:59Z",
+        "end_utc": "2026-03-28T12:26:59Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-03-26 至 2026-03-27"
+          "value": "2026-03-27 至 2026-03-28"
         },
         {
           "label": "GitHub 增量",
-          "value": "370 commits / 0 releases"
+          "value": "708 commits / 0 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-03-27"
+          "value": "2026-03-28"
         },
         {
           "label": "来源",
@@ -52,52 +52,58 @@
         }
       ],
       "featureItems": [
-        "feat: add anthropic claude cli migration",
-        "feat: pluginize cli inference backends"
+        "feat: add support for extra headers in Tavily API requests (#55335)",
+        "Add collect-all test failure planning",
+        "Plugins: add runtime registry compatibility helper",
+        "feat: add openclaw channel mcp bridge",
+        "feat(acp): add conversation binds for message channels",
+        "Plugins: add nested discovery regression test",
+        "feat(hooks): add async requireApproval to before_tool_call (#55339)",
+        "feat(plugins): expose runId in agent hook context (#54265)"
       ],
       "fixItems": [
-        "fix: resolve bundled plugins from running CLI",
-        "fix: stop test-parallel from waiting forever on child close",
-        "fix: apply live model switches during active retries",
-        "fix(tui): validate activation slash commands",
-        "fix(tui): prune chat log system messages atomically",
-        "fix(google): strip empty required arrays from tool schemas for Gemini (#52106)",
-        "fix: preserve tui local auth with url overrides",
-        "fix: keep tui out of browser origin checks"
+        "fix: include extension channels in subagent announce delivery path (#56348)",
+        "fix: restore xai pricing cache fallback",
+        "fix: repair package contract and boundary drift",
+        "fix: stabilize implicit provider discovery merges",
+        "fix: keep provider discovery on mockable lazy runtime paths",
+        "fix: keep provider normalization on local sync paths",
+        "fix: keep model selection on local normalization paths",
+        "fix: keep cost lookup on sync pricing paths"
       ],
       "releases": [],
       "topScopes": [
         {
           "scope": "refactor",
-          "count": 90
+          "count": 126
         },
         {
-          "scope": "fix",
-          "count": 88
+          "scope": "regression",
+          "count": 124
         },
         {
           "scope": "test",
-          "count": 50
+          "count": 119
+        },
+        {
+          "scope": "fix",
+          "count": 105
         },
         {
           "scope": "ci",
-          "count": 12
+          "count": 42
         },
         {
-          "scope": "docs",
-          "count": 12
+          "scope": "plugins",
+          "count": 16
         },
         {
-          "scope": "feishu",
-          "count": 12
+          "scope": "matrix",
+          "count": 13
         },
         {
-          "scope": "agents",
-          "count": 11
-        },
-        {
-          "scope": "gateway",
-          "count": 9
+          "scope": "telegram",
+          "count": 13
         }
       ],
       "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
