@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-03-29T20:27:40+08:00
-- Requested window: 2026-03-28 to 2026-03-29
+- Generated at: 2026-03-30T20:46:29+08:00
+- Requested window: 2026-03-29 to 2026-03-30
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-03-28 to 2026-03-29
-- Generated at: 2026-03-29T20:27:25.075556+08:00
-- 窗口: 2026-03-28 至 2026-03-29
-- GitHub 增量: 203 commits / 2 releases
-- 最近 push: 2026-03-29
+- Window: 2026-03-29 to 2026-03-30
+- Generated at: 2026-03-30T20:46:14.202535+08:00
+- 窗口: 2026-03-29 至 2026-03-30
+- GitHub 增量: 346 commits / 0 releases
+- 最近 push: 2026-03-30
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - xAI/tools: move the bundled xAI provider to the Responses API, add first-class `x_search`, and auto-enable the xAI plugin from owned web-search and tool config so bundled Grok auth/configured search flows work without manual plugin toggles. (#56048) Thanks @huntharo. [v2026.3.28]
-  - MiniMax: add image generation provider for `image-01` model, supporting generate and image-to-image editing with aspect ratio control. (#54487) Thanks @liyuan97. [v2026.3.28]
-  - Plugins/hooks: add async `requireApproval` to `before_tool_call` hooks, letting plugins pause tool execution and prompt the user for approval via the exec approval overlay, Telegram buttons, Discord interactions, or the `/approve` command on any channel. The `/approve` command now handles both exec and plugin approvals with automatic fallback. (#55339) Thanks @vaclavbelak and @joshavant. [v2026.3.28]
-  - ACP/channels: add current-conversation ACP binds for Discord, BlueBubbles, and iMessage so `/acp spawn codex --bind here` can turn the current chat into a Codex-backed workspace without creating a child thread, and document the distinction between chat surface, ACP session, and runtime workspace. [v2026.3.28]
-  - Plugins/CLI backends: move bundled Claude CLI, Codex CLI, and Gemini CLI inference defaults onto the plugin surface, add bundled Gemini CLI backend support, and replace `gateway run --claude-cli-logs` with generic `--cli-backend-logs` while keeping the old flag as a compatibility alias. [v2026.3.28]
-  - Slack/tool actions: add an explicit `upload-file` Slack action that routes file uploads through the existing Slack upload transport, with optional filename/title/comment overrides for channels and DMs. [v2026.3.28]
-  - Message actions/files: start unifying file-first sends on the canonical `upload-file` action by adding explicit support for Microsoft Teams and Google Chat, and by exposing BlueBubbles file sends through `upload-file` while keeping the legacy `sendAttachment` alias. [v2026.3.28]
-  - CLI: add `openclaw config schema` to print the generated JSON schema for `openclaw.json`. (#54523) Thanks @kvokka. [v2026.3.28]
+  - feat(matrix): add explicit channels.matrix.proxy config (#56930) (#56931)
+  - feat(tasks): harden maintenance repair paths (#57439)
+  - feat(tasks): add status health and maintenance command (#57423)
+  - feat(openai): forward text verbosity (#47106)
+  - feat(tasks): move task ledger to sqlite and add audit CLI (#57361)
+  - feat: add LLM idle timeout for streaming responses
+  - feat(status): surface task run pressure (#57350)
+  - feat(mcp): add HTTP transport support and tool namespacing
 - Fixes and constraints:
-  - Security/audit: extend web search key audit to recognize Gemini, Grok/xAI, Kimi, Moonshot, and OpenRouter credentials via a boundary-safe bundled-web-search registry shim. (#56540) [v2026.3.28]
-  - Gateway/plugins: reuse the session workspace when building HTTP `/tools/invoke` tool lists and harden tool construction to infer the session agent workspace by default, so workspace plugins do not re-register on repeated HTTP tool calls. (#56101) thanks @neeravmakwana [v2026.3.28]
-  - Security/audit: extend web search key audit to recognize Gemini, Grok/xAI, Kimi, Moonshot, and OpenRouter credentials via a boundary-safe bundled-web-search registry shim. (#56540) [v2026.3.28-beta.1]
-  - Gateway/plugins: reuse the session workspace when building HTTP `/tools/invoke` tool lists and harden tool construction to infer the session agent workspace by default, so workspace plugins do not re-register on repeated HTTP tool calls. (#56101) thanks @neeravmakwana [v2026.3.28-beta.1]
-  - fix: preserve node exec cwd on remote hosts (#50961) (thanks @openperf)
-  - fix: avoid telegram plugin self-recursive sdk imports
-  - fix(status): handle node-only hosts on current main (#56718)
-  - fix: keep openai-codex on HTTP responses transport
+  - fix(infra): block BROWSER, GIT_EDITOR, GIT_SEQUENCE_EDITOR from inherited host env (#57559)
+  - fix(telegram): gate audio preflight transcription on sender authorization (#57566)
+  - fix(test): satisfy telegram pairing seam
+  - fix: use azure-openai-responses for Azure custom providers (#50851) (thanks @kunalk16)
+  - fix(test): trim telegram command registry imports
+  - fix(twitch): align markdown table mode type
+  - fix(memory): preserve shared qmd collection names (#57628)
+  - fix(test): use plugin public surfaces in reply command tests
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
