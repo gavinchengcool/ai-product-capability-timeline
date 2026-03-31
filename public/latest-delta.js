@@ -1,91 +1,91 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-03-30T20:46:14.202535+08:00",
+  "generatedAt": "2026-03-31T20:45:06.678827+08:00",
   "window": {
-    "start_local": "2026-03-29T20:46:14.202535+08:00",
-    "end_local": "2026-03-30T20:46:14.202535+08:00",
-    "start_utc": "2026-03-29T12:46:14Z",
-    "end_utc": "2026-03-30T12:46:14Z"
+    "start_local": "2026-03-30T20:45:06.678827+08:00",
+    "end_local": "2026-03-31T20:45:06.678827+08:00",
+    "start_utc": "2026-03-30T12:45:06Z",
+    "end_utc": "2026-03-31T12:45:06Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 341283,
-    "forks": 67363,
-    "open_issues": 16584,
-    "pushed_at": "2026-03-30T11:31:05Z"
+    "stars": 342676,
+    "forks": 67705,
+    "open_issues": 16712,
+    "pushed_at": "2026-03-31T12:44:47Z"
   },
   "summary": {
-    "commitCount": 346,
+    "commitCount": 268,
     "releaseCount": 0,
     "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 341283,
-    "forks": 67363,
-    "openIssues": 16584
+    "stars": 342676,
+    "forks": 67705,
+    "openIssues": 16712
   },
   "releases": [],
   "featureItems": [
-    "feat(matrix): add explicit channels.matrix.proxy config (#56930) (#56931)",
-    "feat(tasks): harden maintenance repair paths (#57439)",
-    "feat(tasks): add status health and maintenance command (#57423)",
-    "feat(openai): forward text verbosity (#47106)",
-    "feat(tasks): move task ledger to sqlite and add audit CLI (#57361)",
-    "feat: add LLM idle timeout for streaming responses",
-    "feat(status): surface task run pressure (#57350)",
-    "feat(mcp): add HTTP transport support and tool namespacing"
+    "ClawFlow: add runtime substrate (#58336)",
+    "Feature/add qq channel (#52986)",
+    "ClawFlow: add linear flow control surface (#58227)",
+    "feat(memory): add per-agent QMD extra collections for cross-agent session search (#58211)",
+    "Tasks: add blocked flow retry state (#58204)",
+    "msteams: add member-info action via Graph API (#57528)",
+    "feat(slack): add native exec approvals (#58155)",
+    "feat(tts): add structured provider diagnostics and fallback attempt analytics (#57954)"
   ],
   "fixItems": [
-    "fix(infra): block BROWSER, GIT_EDITOR, GIT_SEQUENCE_EDITOR from inherited host env (#57559)",
-    "fix(telegram): gate audio preflight transcription on sender authorization (#57566)",
-    "fix(test): satisfy telegram pairing seam",
-    "fix: use azure-openai-responses for Azure custom providers (#50851) (thanks @kunalk16)",
-    "fix(test): trim telegram command registry imports",
-    "fix(twitch): align markdown table mode type",
-    "fix(memory): preserve shared qmd collection names (#57628)",
-    "fix(test): use plugin public surfaces in reply command tests"
+    "perf(telegram): narrow native command import surface",
+    "fix(telegram): lazy-load sticker vision model lookup",
+    "fix(discord): gate voice ingress by allowlists (#58245)",
+    "fix(ci): restore matrix guardrails and windows exec shim",
+    "fix(exec): block proxy-style env overrides (#58202)",
+    "fix(exec): unwrap arch and xcrun dispatch wrappers (#58203)",
+    "fix(plugins): guard marketplace archive downloads (#58267)",
+    "fix: migrate Telegram pairing allowFrom to default account only (#58165)"
   ],
   "topScopes": [
     {
-      "scope": "docs",
-      "count": 51
+      "scope": "test",
+      "count": 36
     },
     {
       "scope": "fix",
-      "count": 44
+      "count": 22
     },
     {
-      "scope": "test",
-      "count": 40
+      "scope": "matrix",
+      "count": 21
     },
     {
-      "scope": "refactor",
-      "count": 20
+      "scope": "docs",
+      "count": 16
     },
     {
-      "scope": "tasks",
-      "count": 18
+      "scope": "gateway",
+      "count": 15
     },
     {
-      "scope": "tests",
-      "count": 14
+      "scope": "ci",
+      "count": 9
+    },
+    {
+      "scope": "exec",
+      "count": 8
     },
     {
       "scope": "memory",
-      "count": 12
-    },
-    {
-      "scope": "plugin-sdk",
-      "count": 10
+      "count": 8
     }
   ],
   "headlineCommits": [
-    "fix(infra): block BROWSER, GIT_EDITOR, GIT_SEQUENCE_EDITOR from inherited host env (#57559)",
-    "fix(telegram): gate audio preflight transcription on sender authorization (#57566)",
-    "fix(test): satisfy telegram pairing seam",
-    "fix: use azure-openai-responses for Azure custom providers (#50851) (thanks @kunalk16)",
-    "fix(test): trim telegram command registry imports",
-    "fix(twitch): align markdown table mode type",
-    "fix(memory): preserve shared qmd collection names (#57628)",
-    "fix(test): use plugin public surfaces in reply command tests"
+    "perf(telegram): narrow native command import surface",
+    "fix(telegram): lazy-load sticker vision model lookup",
+    "fix(discord): gate voice ingress by allowlists (#58245)",
+    "fix(ci): restore matrix guardrails and windows exec shim",
+    "build: pin axios to 1.13.6",
+    "fix(exec): block proxy-style env overrides (#58202)",
+    "Matrix: narrow thread binding runtime seam",
+    "Matrix: narrow storage and routing imports"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

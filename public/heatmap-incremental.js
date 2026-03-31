@@ -212,5 +212,21 @@ window.OPENCLAW_HEATMAP_INCREMENTAL_ROWS = [
     },
     "source": "daily-incremental",
     "generatedAt": "2026-03-30T20:46:14.202535+08:00"
+  },
+  {
+    "date": "2026-03-31",
+    "stage": "openclaw",
+    "summary": "移动端入口、渠道互动、gateway / 会话控制面、Docker / 运维继续增强，最近一天的增量也并入主矩阵。",
+    "axisEntries": {
+      "channels": "Feishu cards / reactions / reasoning stream 继续扩张。 Slack interactive replies 与 DM block 保留继续增强。 WhatsApp / Telegram / Zalo / Signal 相关兼容修补继续推进。",
+      "models": "",
+      "tools": "Browser existing-session / MCP attach 模式继续简化并加固。",
+      "devices": "Android settings UI、dark theme 和扫码体验继续迭代。 iOS onboarding welcome pager 进入主线。 Windows 重启与清理过程的可见控制台问题被压下去。",
+      "control": "Gateway health monitor、pairing 与 watch 链路继续打磨。 Session / plugin 路由与配置基线继续收敛。",
+      "security": "",
+      "ops": "构建内存回归与 cron 死锁等运行期问题继续收敛。"
+    },
+    "source": "daily-incremental",
+    "generatedAt": "2026-03-31T20:45:06.678827+08:00"
   }
 ];

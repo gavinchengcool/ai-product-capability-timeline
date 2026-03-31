@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-03-30T20:46:29+08:00
-- Requested window: 2026-03-29 to 2026-03-30
+- Generated at: 2026-03-31T20:45:25+08:00
+- Requested window: 2026-03-30 to 2026-03-31
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-03-29 to 2026-03-30
-- Generated at: 2026-03-30T20:46:14.202535+08:00
-- 窗口: 2026-03-29 至 2026-03-30
-- GitHub 增量: 346 commits / 0 releases
-- 最近 push: 2026-03-30
+- Window: 2026-03-30 to 2026-03-31
+- Generated at: 2026-03-31T20:45:06.678827+08:00
+- 窗口: 2026-03-30 至 2026-03-31
+- GitHub 增量: 268 commits / 0 releases
+- 最近 push: 2026-03-31
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(matrix): add explicit channels.matrix.proxy config (#56930) (#56931)
-  - feat(tasks): harden maintenance repair paths (#57439)
-  - feat(tasks): add status health and maintenance command (#57423)
-  - feat(openai): forward text verbosity (#47106)
-  - feat(tasks): move task ledger to sqlite and add audit CLI (#57361)
-  - feat: add LLM idle timeout for streaming responses
-  - feat(status): surface task run pressure (#57350)
-  - feat(mcp): add HTTP transport support and tool namespacing
+  - ClawFlow: add runtime substrate (#58336)
+  - Feature/add qq channel (#52986)
+  - ClawFlow: add linear flow control surface (#58227)
+  - feat(memory): add per-agent QMD extra collections for cross-agent session search (#58211)
+  - Tasks: add blocked flow retry state (#58204)
+  - msteams: add member-info action via Graph API (#57528)
+  - feat(slack): add native exec approvals (#58155)
+  - feat(tts): add structured provider diagnostics and fallback attempt analytics (#57954)
 - Fixes and constraints:
-  - fix(infra): block BROWSER, GIT_EDITOR, GIT_SEQUENCE_EDITOR from inherited host env (#57559)
-  - fix(telegram): gate audio preflight transcription on sender authorization (#57566)
-  - fix(test): satisfy telegram pairing seam
-  - fix: use azure-openai-responses for Azure custom providers (#50851) (thanks @kunalk16)
-  - fix(test): trim telegram command registry imports
-  - fix(twitch): align markdown table mode type
-  - fix(memory): preserve shared qmd collection names (#57628)
-  - fix(test): use plugin public surfaces in reply command tests
+  - perf(telegram): narrow native command import surface
+  - fix(telegram): lazy-load sticker vision model lookup
+  - fix(discord): gate voice ingress by allowlists (#58245)
+  - fix(ci): restore matrix guardrails and windows exec shim
+  - fix(exec): block proxy-style env overrides (#58202)
+  - fix(exec): unwrap arch and xcrun dispatch wrappers (#58203)
+  - fix(plugins): guard marketplace archive downloads (#58267)
+  - fix: migrate Telegram pairing allowFrom to default account only (#58165)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
