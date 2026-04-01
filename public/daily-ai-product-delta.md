@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-03-31T20:45:25+08:00
-- Requested window: 2026-03-30 to 2026-03-31
+- Generated at: 2026-04-01T20:48:01+08:00
+- Requested window: 2026-03-31 to 2026-04-01
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-03-30 to 2026-03-31
-- Generated at: 2026-03-31T20:45:06.678827+08:00
-- 窗口: 2026-03-30 至 2026-03-31
-- GitHub 增量: 268 commits / 0 releases
-- 最近 push: 2026-03-31
+- Window: 2026-03-31 to 2026-04-01
+- Generated at: 2026-04-01T20:47:46.196192+08:00
+- 窗口: 2026-03-31 至 2026-04-01
+- GitHub 增量: 357 commits / 2 releases
+- 最近 push: 2026-04-01
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - ClawFlow: add runtime substrate (#58336)
-  - Feature/add qq channel (#52986)
-  - ClawFlow: add linear flow control surface (#58227)
-  - feat(memory): add per-agent QMD extra collections for cross-agent session search (#58211)
-  - Tasks: add blocked flow retry state (#58204)
-  - msteams: add member-info action via Graph API (#57528)
-  - feat(slack): add native exec approvals (#58155)
-  - feat(tts): add structured provider diagnostics and fallback attempt analytics (#57954)
+  - ACP/plugins: add an explicit default-off ACPX plugin-tools MCP bridge config, document the trust boundary, and harden the built-in bridge packaging/logging path so global installs and stdio MCP sessions work reliably. (#56867) Thanks @joe2643. [v2026.3.31]
+  - Agents/LLM: add a configurable idle-stream timeout for embedded runner requests so stalled model streams abort cleanly instead of hanging until the broader run timeout fires. (#55072) Thanks @liuy. [v2026.3.31]
+  - Agents/MCP: materialize bundle MCP tools with provider-safe names (`serverName__toolName`), support optional `streamable-http` transport selection plus per-server connection timeouts, and preserve real tool results from aborted/error turns unless truncation explicitly drops them. (#49505) Thanks @ziomancer. [v2026.3.31]
+  - Android/notifications: add notification-forwarding controls with package filtering, quiet hours, rate limiting, and safer picker behavior for forwarded notification events. (#40175) Thanks @nimbleenigma. [v2026.3.31]
+  - Background tasks: add the first linear task flow control surface with `openclaw flows list|show|cancel`, keep manual multi-task flows separate from one-task auto-sync flows, and surface doctor recovery hints for obviously orphaned or broken flow/task linkage. Thanks @mbelinky and @vincentkoc. [v2026.3.31]
+  - Channels/QQ Bot: add QQ Bot as a bundled channel plugin with multi-account setup, SecretRef-aware credentials, slash commands, reminders, and media send/receive support. (#52986) Thanks @sliverp. [v2026.3.31]
+  - Tasks: add a minimal SQLite-backed task flow registry plus task-to-flow linkage scaffolding, so orchestrated work can start gaining a first-class parent record without changing current task delivery behavior. Thanks @mbelinky and @vincentkoc. [v2026.3.31]
+  - Tasks: persist blocked state on one-task task flows and let the same flow reopen cleanly on retry, so blocked detached work can carry a parent-level reason and continue without fragmenting into a new job. Thanks @mbelinky and @vincentkoc. [v2026.3.31]
 - Fixes and constraints:
-  - perf(telegram): narrow native command import surface
-  - fix(telegram): lazy-load sticker vision model lookup
-  - fix(discord): gate voice ingress by allowlists (#58245)
-  - fix(ci): restore matrix guardrails and windows exec shim
-  - fix(exec): block proxy-style env overrides (#58202)
-  - fix(exec): unwrap arch and xcrun dispatch wrappers (#58203)
-  - fix(plugins): guard marketplace archive downloads (#58267)
-  - fix: migrate Telegram pairing allowFrom to default account only (#58165)
+  - Config/SecretRef + Control UI: harden SecretRef redaction round-trip restore, block unsafe raw fallback (force Form mode when raw is unavailable), and preflight submitted-config SecretRefs before config write RPC persistence. (#58044) Thanks @joshavant. [v2026.3.31]
+  - Gateway/OpenAI HTTP: restore default operator scopes for bearer-authenticated requests that omit `x-openclaw-scopes`, so headless `/v1/chat/completions` and session-history callers work again after the recent method-scope hardening. (#57596) Thanks @openperf. [v2026.3.31]
+  - Harden async approval followup delivery in webchat-only sessions (#57359) Thanks @joshavant. [v2026.3.31]
+  - ACP/plugins: add an explicit default-off ACPX plugin-tools MCP bridge config, document the trust boundary, and harden the built-in bridge packaging/logging path so global installs and stdio MCP sessions work reliably. (#56867) Thanks @joe2643. [v2026.3.31]
+  - CI/dev checks: default local `pnpm check` to a lower-memory typecheck/lint path while keeping CI on the normal parallel path, and harden Telegram test typing/literals around native TypeScript-Go tooling crashes. [v2026.3.31-beta.1]
+  - Config/SecretRef + Control UI: harden SecretRef redaction round-trip restore, block unsafe raw fallback (force Form mode when raw is unavailable), and preflight submitted-config SecretRefs before config write RPC persistence. (#58044) Thanks @joshavant. [v2026.3.31-beta.1]
+  - Gateway/OpenAI HTTP: restore default operator scopes for bearer-authenticated requests that omit `x-openclaw-scopes`, so headless `/v1/chat/completions` and session-history callers work again after the recent method-scope hardening. (#57596) Thanks @openperf. [v2026.3.31-beta.1]
+  - Harden async approval followup delivery in webchat-only sessions (#57359) Thanks @joshavant. [v2026.3.31-beta.1]
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
