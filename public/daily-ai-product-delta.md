@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-04-02T20:42:04+08:00
-- Requested window: 2026-04-01 to 2026-04-02
+- Generated at: 2026-04-03T20:34:49+08:00
+- Requested window: 2026-04-02 to 2026-04-03
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-04-01 to 2026-04-02
-- Generated at: 2026-04-02T20:41:48.932660+08:00
-- 窗口: 2026-04-01 至 2026-04-02
-- GitHub 增量: 206 commits / 2 releases
-- 最近 push: 2026-04-02
+- Window: 2026-04-02 to 2026-04-03
+- Generated at: 2026-04-03T20:34:33.830768+08:00
+- 窗口: 2026-04-02 至 2026-04-03
+- GitHub 增量: 362 commits / 1 releases
+- 最近 push: 2026-04-03
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Tasks/chat: add `/tasks` as a chat-native background task board for the current session, with recent task details and agent-local fallback counts when no linked tasks are visible. Related #54226. Thanks @vincentkoc. [v2026.4.1]
-  - Web search/SearXNG: add the bundled SearXNG provider plugin for `web_search` with configurable host support. (#57317) Thanks @cgdusek. [v2026.4.1]
-  - Amazon Bedrock/Guardrails: add Bedrock Guardrails support to the bundled provider. (#58588) Thanks @MikeORed. [v2026.4.1]
-  - macOS/Voice Wake: add the Voice Wake option to trigger Talk Mode. (#58490) Thanks @SmoothExec. [v2026.4.1]
-  - Feishu/comments: add a dedicated Drive comment-event flow with comment-thread context resolution, in-thread replies, and `feishu_drive` comment actions for document collaboration workflows. (#58497) Thanks @wittam-01. [v2026.4.1]
-  - Gateway/webchat: make `chat.history` text truncation configurable with `gateway.webchat.chatHistoryMaxChars` and per-request `maxChars`, while preserving silent-reply filtering and existing default payload limits. (#58900) [v2026.4.1]
-  - Agents/default params: add `agents.defaults.params` for global default provider parameters. (#58548) Thanks @lpender. [v2026.4.1]
-  - Agents/failover: cap prompt-side and assistant-side same-provider auth-profile retries for rate-limit failures before cross-provider model fallback, add the `auth.cooldowns.rateLimitedProfileRotations` knob, and document the new fallback behavior. (#58707) Thanks @Forgely3D [v2026.4.1]
+  - Tasks/Task Flow: add managed child task spawning plus sticky cancel intent, so external orchestrators can stop scheduling immediately and let parent Task Flows settle to `cancelled` once active child tasks finish. (#59610) Thanks @mbelinky. [v2026.4.2]
+  - Plugins/Task Flow: add a bound `api.runtime.taskFlow` seam so plugins and trusted authoring layers can create and drive managed Task Flows from host-resolved OpenClaw context without passing owner identifiers on each call. (#59622) Thanks @mbelinky. [v2026.4.2]
+  - Android/assistant: add assistant-role entrypoints plus Google Assistant App Actions metadata so Android can launch OpenClaw from the assistant trigger and hand prompts into the chat composer. (#59596) Thanks @obviyus. [v2026.4.2]
+  - Providers/runtime: add provider-owned replay hook surfaces for transcript policy, replay cleanup, and reasoning-mode dispatch. (#59143) Thanks @jalehman. [v2026.4.2]
+  - Plugins/hooks: add `before_agent_reply` so plugins can short-circuit the LLM with synthetic replies after inline actions. (#20067) Thanks @JoshuaLelon. [v2026.4.2]
+  - Feishu/comments: add a dedicated Drive comment-event flow with comment-thread context resolution, in-thread replies, and `feishu_drive` comment actions for document collaboration workflows. (#58497) Thanks @wittam-01. [v2026.4.2]
+  - Diffs: add plugin-owned `viewerBaseUrl` so viewer links can use a stable proxy/public origin without passing `baseUrl` on every tool call. (#59341) Related #59227. Thanks @gumadeiras. [v2026.4.2]
+  - Agents/compaction: add `agents.defaults.compaction.notifyUser` so the `🧹 Compacting context...` start notice is opt-in instead of always being shown. (#54251) Thanks @oguricap0327. [v2026.4.2]
 - Fixes and constraints:
-  - fix(tasks): close registry stores on test resets
-  - fix(tasks): harden task-flow restore and maintenance
-  - fix(config): sync generated base schema
-  - fix(gateway): prune empty node-pending-work state entries to prevent memory leak (#58179)
-  - fix(plugins): preserve activation provenance (#59641)
-  - fix(providers): classify copilot native endpoints (#59644)
-  - fix: align secretref web-fetch matrix
-  - fix(tasks): stabilize task-flow rename gates
+  - Providers/Copilot: classify native GitHub Copilot API hosts in the shared provider endpoint resolver and harden token-derived proxy endpoint parsing so Copilot base URL routing stays centralized and fails closed on malformed hints. (#59644) Thanks @vincentkoc. [v2026.4.2]
+  - Feishu/comment threads: harden document comment-thread delivery so whole-document comments fall back to `add_comment`, delayed reply lookups retry more reliably, and user-visible replies avoid reasoning/planning spillover. (#59129) Thanks @wittam-01. [v2026.4.2]
+  - Zalo/webhook replay: scope replay dedupe key by chat and sender so reused message IDs across different chats or senders no longer collide, and harden metadata reads for partially missing payloads. (#58444) [v2026.4.2]
+  - fix(ci): restore talk-voice plugin runtime export
+  - fix(ci): align discord actions contract with config discovery
+  - fix(ci): route telegram test harness through reply runtime
+  - fix(tui): tolerate clock skew in pending-history reconciliation
+  - fix(test): default local Vitest to one worker (#60281)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
