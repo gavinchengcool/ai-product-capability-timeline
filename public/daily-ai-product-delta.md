@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-04-03T20:34:49+08:00
-- Requested window: 2026-04-02 to 2026-04-03
+- Generated at: 2026-04-04T20:27:53+08:00
+- Requested window: 2026-04-03 to 2026-04-04
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-04-02 to 2026-04-03
-- Generated at: 2026-04-03T20:34:33.830768+08:00
-- 窗口: 2026-04-02 至 2026-04-03
-- GitHub 增量: 362 commits / 1 releases
-- 最近 push: 2026-04-03
+- Window: 2026-04-03 to 2026-04-04
+- Generated at: 2026-04-04T20:27:32.405451+08:00
+- 窗口: 2026-04-03 至 2026-04-04
+- GitHub 增量: 1287 commits / 0 releases
+- 最近 push: 2026-04-04
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Tasks/Task Flow: add managed child task spawning plus sticky cancel intent, so external orchestrators can stop scheduling immediately and let parent Task Flows settle to `cancelled` once active child tasks finish. (#59610) Thanks @mbelinky. [v2026.4.2]
-  - Plugins/Task Flow: add a bound `api.runtime.taskFlow` seam so plugins and trusted authoring layers can create and drive managed Task Flows from host-resolved OpenClaw context without passing owner identifiers on each call. (#59622) Thanks @mbelinky. [v2026.4.2]
-  - Android/assistant: add assistant-role entrypoints plus Google Assistant App Actions metadata so Android can launch OpenClaw from the assistant trigger and hand prompts into the chat composer. (#59596) Thanks @obviyus. [v2026.4.2]
-  - Providers/runtime: add provider-owned replay hook surfaces for transcript policy, replay cleanup, and reasoning-mode dispatch. (#59143) Thanks @jalehman. [v2026.4.2]
-  - Plugins/hooks: add `before_agent_reply` so plugins can short-circuit the LLM with synthetic replies after inline actions. (#20067) Thanks @JoshuaLelon. [v2026.4.2]
-  - Feishu/comments: add a dedicated Drive comment-event flow with comment-thread context resolution, in-thread replies, and `feishu_drive` comment actions for document collaboration workflows. (#58497) Thanks @wittam-01. [v2026.4.2]
-  - Diffs: add plugin-owned `viewerBaseUrl` so viewer links can use a stable proxy/public origin without passing `baseUrl` on every tool call. (#59341) Related #59227. Thanks @gumadeiras. [v2026.4.2]
-  - Agents/compaction: add `agents.defaults.compaction.notifyUser` so the `🧹 Compacting context...` start notice is opt-in instead of always being shown. (#54251) Thanks @oguricap0327. [v2026.4.2]
+  - feat(tools): add MiniMax as bundled web search provider
+  - feat: stream Claude CLI JSONL output
+  - msteams: add typingIndicator config and prevent duplicate DM typing indicator (#60771)
+  - feat: add MiniMax TTS provider (#55921) (thanks @duncanita)
+  - feat(minimax): add native TTS speech provider (T2A v2)
+  - minimax: add image capability to MiniMax-M2.7 model
+  - msteams: add channel-list and channel-info actions (#57529)
+  - feat(msteams): add OpenClaw User-Agent header to Microsoft HTTP calls (#51568) (#60433)
 - Fixes and constraints:
-  - Providers/Copilot: classify native GitHub Copilot API hosts in the shared provider endpoint resolver and harden token-derived proxy endpoint parsing so Copilot base URL routing stays centralized and fails closed on malformed hints. (#59644) Thanks @vincentkoc. [v2026.4.2]
-  - Feishu/comment threads: harden document comment-thread delivery so whole-document comments fall back to `add_comment`, delayed reply lookups retry more reliably, and user-visible replies avoid reasoning/planning spillover. (#59129) Thanks @wittam-01. [v2026.4.2]
-  - Zalo/webhook replay: scope replay dedupe key by chat and sender so reused message IDs across different chats or senders no longer collide, and harden metadata reads for partially missing payloads. (#58444) [v2026.4.2]
-  - fix(ci): restore talk-voice plugin runtime export
-  - fix(ci): align discord actions contract with config discovery
-  - fix(ci): route telegram test harness through reply runtime
-  - fix(tui): tolerate clock skew in pending-history reconciliation
-  - fix(test): default local Vitest to one worker (#60281)
+  - fix(cron): notify user via primary delivery channel on job failure (#60622)
+  - fix(agents): prefer cron for deferred follow-ups (#60811)
+  - fix(plugin-sdk): unblock gateway test surfaces
+  - fix: resolve MiniMax portal usage auth
+  - fix(status): hydrate cache usage in transcript fallback (#59247)
+  - fix: improve MiniMax coding-plan parsing (#52349) (thanks @IVY-AI-gif)
+  - fix: address review feedback and formatting
+  - fix(usage): improve MiniMax coding-plan usage parsing for model_remains array
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
