@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-04-04T20:27:53+08:00
-- Requested window: 2026-04-03 to 2026-04-04
+- Generated at: 2026-04-05T20:28:42+08:00
+- Requested window: 2026-04-04 to 2026-04-05
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-04-03 to 2026-04-04
-- Generated at: 2026-04-04T20:27:32.405451+08:00
-- 窗口: 2026-04-03 至 2026-04-04
-- GitHub 增量: 1287 commits / 0 releases
-- 最近 push: 2026-04-04
+- Window: 2026-04-04 to 2026-04-05
+- Generated at: 2026-04-05T20:28:27.066955+08:00
+- 窗口: 2026-04-04 至 2026-04-05
+- GitHub 增量: 579 commits / 0 releases
+- 最近 push: 2026-04-05
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(tools): add MiniMax as bundled web search provider
-  - feat: stream Claude CLI JSONL output
-  - msteams: add typingIndicator config and prevent duplicate DM typing indicator (#60771)
-  - feat: add MiniMax TTS provider (#55921) (thanks @duncanita)
-  - feat(minimax): add native TTS speech provider (T2A v2)
-  - minimax: add image capability to MiniMax-M2.7 model
-  - msteams: add channel-list and channel-info actions (#57529)
-  - feat(msteams): add OpenClaw User-Agent header to Microsoft HTTP calls (#51568) (#60433)
+  - feat(bedrock): add Bedrock Mantle (OpenAI-compatible) provider (#61296)
+  - feat(bedrock): add inference profile discovery and region injection (#61299)
+  - feat(agents): add structured execution item events
+  - feat: add implicit discovery toggles
+  - feat: add Fireworks provider and simplify plugin setup loading
+  - feat(android): add talk.speak playback path
+  - feat(config): add rich description fields to JSON Schema output [AI-assisted] (#60067)
+  - feat(qwen): add qwen provider and video generation
 - Fixes and constraints:
-  - fix(cron): notify user via primary delivery channel on job failure (#60622)
-  - fix(agents): prefer cron for deferred follow-ups (#60811)
-  - fix(plugin-sdk): unblock gateway test surfaces
-  - fix: resolve MiniMax portal usage auth
-  - fix(status): hydrate cache usage in transcript fallback (#59247)
-  - fix: improve MiniMax coding-plan parsing (#52349) (thanks @IVY-AI-gif)
-  - fix: address review feedback and formatting
-  - fix(usage): improve MiniMax coding-plan usage parsing for model_remains array
+  - fix(runtime): guard import-time side effects
+  - fix(gateway): keep watch restarts in-process
+  - fix(ci): remove duplicate grok test provider inference
+  - fix(config): lazy bootstrap markdown table defaults
+  - fix: pin defu to 6.1.5
+  - fix(test): add lightweight whatsapp group-policy seam
+  - fix(test): break zalo group-policy import cycle
+  - fix(openai): add multilingual gpt ack prompts
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

@@ -291,5 +291,20 @@ window.OPENCLAW_HEATMAP_INCREMENTAL_ROWS = [
     },
     "source": "daily-incremental",
     "generatedAt": "2026-04-04T20:27:32.405451+08:00"
+  },
+  {
+    "date": "2026-04-05",
+    "stage": "openclaw",
+    "summary": "移动端入口、渠道互动、gateway / 会话控制面、Docker / 运维继续增强，最近一天的增量也并入主矩阵。",
+    "axisEntries": {
+      "channels": "Feishu cards / reactions / reasoning stream 继续扩张。 Slack interactive replies 与 DM block 保留继续增强。 WhatsApp / Telegram / Zalo / Signal 相关兼容修补继续推进。",
+      "models": "OpenAI-compatible 接口兼容与 strict-tools 行为继续校正。",
+      "tools": "plugin-sdk 构建与重复安装路径继续收敛。",
+      "devices": "Android settings UI、dark theme 和扫码体验继续迭代。",
+      "control": "Gateway health monitor、pairing 与 watch 链路继续打磨。 Heartbeat 增加 isolatedSession，运行隔离更明确。 Compaction timeout、计数持久化和 sanity check 继续加固。 Session / plugin 路由与配置基线继续收敛。",
+      "ops": "服务重装、重启与 cleanup 路径继续修补。 构建内存回归与 cron 死锁等运行期问题继续收敛。"
+    },
+    "source": "daily-incremental",
+    "generatedAt": "2026-04-05T20:28:27.066955+08:00"
   }
 ];
