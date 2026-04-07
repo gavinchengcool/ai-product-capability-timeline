@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-04-06T20:41:32+08:00
-- Requested window: 2026-04-05 to 2026-04-06
+- Generated at: 2026-04-07T20:51:33+08:00
+- Requested window: 2026-04-06 to 2026-04-07
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-04-05 to 2026-04-06
-- Generated at: 2026-04-06T20:41:11.763784+08:00
-- 窗口: 2026-04-05 至 2026-04-06
-- GitHub 增量: 678 commits / 1 releases
-- 最近 push: 2026-04-06
+- Window: 2026-04-06 to 2026-04-07
+- Generated at: 2026-04-07T20:51:13.132820+08:00
+- 窗口: 2026-04-06 至 2026-04-07
+- GitHub 增量: 1170 commits / 0 releases
+- 最近 push: 2026-04-07
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Agents/video generation: add the built-in `video_generate` tool so agents can create videos through configured providers and return the generated media directly in the reply. [v2026.4.5]
-  - Providers/ComfyUI: add a bundled `comfy` workflow media plugin for local ComfyUI and Comfy Cloud workflows, including shared `image_generate`, `video_generate`, and workflow-backed `music_generate` support, with prompt injection, optional reference-image upload, live tests, and output download. [v2026.4.5]
-  - Tools/music generation: add the built-in `music_generate` tool with bundled Google (Lyria) and MiniMax providers plus workflow-backed Comfy support, including async task tracking and follow-up delivery of finished audio. [v2026.4.5]
-  - Providers: add bundled Qwen, Fireworks AI, and StepFun providers, plus MiniMax TTS, Ollama Web Search, and MiniMax Search integrations for chat, speech, and search workflows. (#60032, #55921, #59318, #54648) [v2026.4.5]
-  - Providers/Amazon Bedrock: add bundled Mantle support plus inference-profile discovery and automatic request-region injection so Bedrock-hosted Claude, GPT-OSS, Qwen, Kimi, GLM, and similar routes work with less manual setup. (#61296, #61299) Thanks @wirjo. [v2026.4.5]
-  - Control UI/multilingual: add localized control UI support for Simplified Chinese, Traditional Chinese, Brazilian Portuguese, German, Spanish, Japanese, Korean, French, Turkish, Indonesian, Polish, and Ukrainian. Thanks @vincentkoc. [v2026.4.5]
-  - Plugins: add plugin-config TUI prompts to guided onboarding/setup flows, and add `openclaw plugins install --force` so existing plugin and hook-pack targets can be replaced without using the dangerous-code override flag. (#60590, #60544) [v2026.4.5]
-  - Control UI/skills: add ClawHub search, detail, and install flows directly in the Skills panel. (#60134) Thanks @samzong. [v2026.4.5]
+  - feat: Add first-class infer CLI for inference workflows (#62129)
+  - feat: unify live cli backend probes
+  - feat: streamline qa lab live runs
+  - feat: auto-reload qa lab fast refresh
+  - feat: add fast qa lab ui refresh mode
+  - style: add padding to qa lab scenario list
+  - feat(qa-lab): add Clawfather/Claw avatars and live-watch mode for scenario runs
+  - feat(context-engine): add memory prompt helper
 - Fixes and constraints:
-  - Security: preserve restrictive plugin-only tool allowlists, require owner access for `/allowlist add` and `/allowlist remove`, fail closed when `before_tool_call` hooks crash, block browser SSRF redirect bypasses earlier, and keep non-interactive auth-choice inference scoped to bundled and already-trusted plugins. (#58476, #59836, #59822, #58771, #59120) Thanks @eleqtrizit and @pgondhi987. [v2026.4.5]
-  - ACPX/runtime: embed the ACP runtime directly in the bundled `acpx` plugin, remove the extra external ACP CLI hop, harden live ACP session binding and reuse, and add a generic `reply_dispatch` hook so bundled plugins like ACPX can own reply interception without hardcoded ACP paths in core auto-reply routing. (#61319) [v2026.4.5]
-  - Plugins/Lobster: harden managed resume validation so invalid TaskFlow resume calls fail earlier, and memoize embedded runtime loading per runner while keeping failed loads retryable. (#61566) Thanks @mbelinky. [v2026.4.5]
-  - fix(openai): soften gpt-5 execution bias prompt
-  - fix(check): repair status report typing drift
-  - perf(test): isolate deep probe finding helper
-  - perf(test): merge secrets runtime snapshot lanes
-  - fix(telegram): restore outbound message splitting for long messages (#57816)
+  - fix: repair post-rebase test typing
+  - fix: restore ci type compatibility
+  - fix(build): drop duplicate web fetch helper
+  - fix(build): restore capability and web-fetch typing
+  - fix(boundary): restore telegram setup imports
+  - test: harden parallels smoke reruns
+  - fix(boundary): restore compile and dm policy type paths
+  - fix web search fallback explicitness
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
