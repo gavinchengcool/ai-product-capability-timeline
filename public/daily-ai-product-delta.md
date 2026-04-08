@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-04-07T20:51:33+08:00
-- Requested window: 2026-04-06 to 2026-04-07
+- Generated at: 2026-04-08T20:51:04+08:00
+- Requested window: 2026-04-07 to 2026-04-08
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-04-06 to 2026-04-07
-- Generated at: 2026-04-07T20:51:13.132820+08:00
-- 窗口: 2026-04-06 至 2026-04-07
-- GitHub 增量: 1170 commits / 0 releases
-- 最近 push: 2026-04-07
+- Window: 2026-04-07 to 2026-04-08
+- Generated at: 2026-04-08T20:50:45.574157+08:00
+- 窗口: 2026-04-07 至 2026-04-08
+- GitHub 增量: 429 commits / 2 releases
+- 最近 push: 2026-04-08
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat: Add first-class infer CLI for inference workflows (#62129)
-  - feat: unify live cli backend probes
-  - feat: streamline qa lab live runs
-  - feat: auto-reload qa lab fast refresh
-  - feat: add fast qa lab ui refresh mode
-  - style: add padding to qa lab scenario list
-  - feat(qa-lab): add Clawfather/Claw avatars and live-watch mode for scenario runs
-  - feat(context-engine): add memory prompt helper
+  - CLI/infer: add a first-class `openclaw infer ...` hub for provider-backed inference workflows across model, media, web, and embedding tasks. Thanks @Takhoffman. [v2026.4.7]
+  - Plugins/webhooks: add a bundled webhook ingress plugin so external automation can create and drive bound TaskFlows through per-route shared-secret endpoints. (#61892) Thanks @mbelinky. [v2026.4.7]
+  - Gateway/sessions: add persisted compaction checkpoints plus Sessions UI branch/restore actions so operators can inspect and recover pre-compaction session state. (#62146) Thanks @scoootscooob. [v2026.4.7]
+  - Compaction: add pluggable compaction provider registry so plugins can replace the built-in summarization pipeline. Configure via `agents.defaults.compaction.provider`; falls back to LLM summarization on provider failure. (#56224) Thanks @DhruvBhatia0. [v2026.4.7]
+  - Agents/system prompt: add `agents.defaults.systemPromptOverride` for controlled prompt experiments plus heartbeat prompt-section controls so heartbeat runtime behavior can stay enabled without injecting heartbeat instructions every turn. [v2026.4.7]
+  - Providers/Google: add Gemma 4 model support and keep Google fallback resolution on the requested provider path so native Google Gemma routes work again. (#61507) Thanks @eyjohn. [v2026.4.7]
+  - Providers/Google: preserve explicit thinking-off semantics for Gemma 4 while still enabling Gemma reasoning support in compatibility wrappers. (#62127) Thanks @romgenie. [v2026.4.7]
+  - Providers/Arcee AI: add a bundled Arcee AI provider plugin with Trinity catalog entries, OpenRouter support, and updated onboarding/auth guidance. (#62068) Thanks @arthurbr11. [v2026.4.7]
 - Fixes and constraints:
-  - fix: repair post-rebase test typing
-  - fix: restore ci type compatibility
-  - fix(build): drop duplicate web fetch helper
-  - fix(build): restore capability and web-fetch typing
-  - fix(boundary): restore telegram setup imports
-  - test: harden parallels smoke reruns
-  - fix(boundary): restore compile and dm policy type paths
-  - fix web search fallback explicitness
+  - Discord: recover forwarded referenced message text and attachments when snapshots are missing, use `ws://` again for gateway monitor sockets, stop forcing a hardcoded temperature for Codex-backed auto-thread titles, and harden voice receive recovery so rapid speaker restarts keep their next utterance. (#41536, #61670) Thanks @artwalker and contributors. [v2026.4.7]
+  - Security/fetch-guard: stop rejecting operator-configured proxy hostnames against the target-scoped hostname allowlist in SSRF-guarded fetches, restoring proxy-based media downloads for Telegram and other channels. (#62312) Thanks @ademczuk. [v2026.4.7]
+  - fix(test): keep warn log capture under openclaw temp dir
+  - fix: classify Z.ai error codes 1311 (billing) and 1113 (auth) (#49552)
+  - fix(qqbot): parse entity encoded self-closing media tags
+  - fix(qqbot): allow URL slashes in media tag attributes
+  - test: harden release gate flakes
+  - fix: keep installer doctor non-interactive
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

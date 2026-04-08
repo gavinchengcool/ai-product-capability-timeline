@@ -1,91 +1,106 @@
 {
-  "generatedAt": "2026-04-07T20:51:13.132820+08:00",
+  "generatedAt": "2026-04-08T20:50:45.574157+08:00",
   "window": {
-    "start_local": "2026-04-06T20:51:13.132820+08:00",
-    "end_local": "2026-04-07T20:51:13.132820+08:00",
-    "start_utc": "2026-04-06T12:51:13Z",
-    "end_utc": "2026-04-07T12:51:13Z"
+    "start_local": "2026-04-07T20:50:45.574157+08:00",
+    "end_local": "2026-04-08T20:50:45.574157+08:00",
+    "start_utc": "2026-04-07T12:50:45Z",
+    "end_utc": "2026-04-08T12:50:45Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 350816,
-    "forks": 70494,
-    "open_issues": 17303,
-    "pushed_at": "2026-04-07T12:47:23Z"
+    "stars": 351879,
+    "forks": 70859,
+    "open_issues": 17662,
+    "pushed_at": "2026-04-08T12:47:52Z"
   },
   "summary": {
-    "commitCount": 1170,
-    "releaseCount": 0,
-    "stableReleaseCount": 0,
+    "commitCount": 429,
+    "releaseCount": 2,
+    "stableReleaseCount": 2,
     "betaReleaseCount": 0,
-    "stars": 350816,
-    "forks": 70494,
-    "openIssues": 17303
+    "stars": 351879,
+    "forks": 70859,
+    "openIssues": 17662
   },
-  "releases": [],
+  "releases": [
+    {
+      "tag_name": "v2026.4.8",
+      "published_at": "2026-04-08T05:59:44Z",
+      "name": "openclaw 2026.4.8",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.8"
+    },
+    {
+      "tag_name": "v2026.4.7",
+      "published_at": "2026-04-08T02:12:57Z",
+      "name": "openclaw 2026.4.7",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.7"
+    }
+  ],
   "featureItems": [
-    "feat: Add first-class infer CLI for inference workflows (#62129)",
-    "feat: unify live cli backend probes",
-    "feat: streamline qa lab live runs",
-    "feat: auto-reload qa lab fast refresh",
-    "feat: add fast qa lab ui refresh mode",
-    "style: add padding to qa lab scenario list",
-    "feat(qa-lab): add Clawfather/Claw avatars and live-watch mode for scenario runs",
-    "feat(context-engine): add memory prompt helper"
+    "CLI/infer: add a first-class `openclaw infer ...` hub for provider-backed inference workflows across model, media, web, and embedding tasks. Thanks @Takhoffman. [v2026.4.7]",
+    "Plugins/webhooks: add a bundled webhook ingress plugin so external automation can create and drive bound TaskFlows through per-route shared-secret endpoints. (#61892) Thanks @mbelinky. [v2026.4.7]",
+    "Gateway/sessions: add persisted compaction checkpoints plus Sessions UI branch/restore actions so operators can inspect and recover pre-compaction session state. (#62146) Thanks @scoootscooob. [v2026.4.7]",
+    "Compaction: add pluggable compaction provider registry so plugins can replace the built-in summarization pipeline. Configure via `agents.defaults.compaction.provider`; falls back to LLM summarization on provider failure. (#56224) Thanks @DhruvBhatia0. [v2026.4.7]",
+    "Agents/system prompt: add `agents.defaults.systemPromptOverride` for controlled prompt experiments plus heartbeat prompt-section controls so heartbeat runtime behavior can stay enabled without injecting heartbeat instructions every turn. [v2026.4.7]",
+    "Providers/Google: add Gemma 4 model support and keep Google fallback resolution on the requested provider path so native Google Gemma routes work again. (#61507) Thanks @eyjohn. [v2026.4.7]",
+    "Providers/Google: preserve explicit thinking-off semantics for Gemma 4 while still enabling Gemma reasoning support in compatibility wrappers. (#62127) Thanks @romgenie. [v2026.4.7]",
+    "Providers/Arcee AI: add a bundled Arcee AI provider plugin with Trinity catalog entries, OpenRouter support, and updated onboarding/auth guidance. (#62068) Thanks @arthurbr11. [v2026.4.7]"
   ],
   "fixItems": [
-    "fix: repair post-rebase test typing",
-    "fix: restore ci type compatibility",
-    "fix(build): drop duplicate web fetch helper",
-    "fix(build): restore capability and web-fetch typing",
-    "fix(boundary): restore telegram setup imports",
-    "test: harden parallels smoke reruns",
-    "fix(boundary): restore compile and dm policy type paths",
-    "fix web search fallback explicitness"
+    "Discord: recover forwarded referenced message text and attachments when snapshots are missing, use `ws://` again for gateway monitor sockets, stop forcing a hardcoded temperature for Codex-backed auto-thread titles, and harden voice receive recovery so rapid speaker restarts keep their next utterance. (#41536, #61670) Thanks @artwalker and contributors. [v2026.4.7]",
+    "Security/fetch-guard: stop rejecting operator-configured proxy hostnames against the target-scoped hostname allowlist in SSRF-guarded fetches, restoring proxy-based media downloads for Telegram and other channels. (#62312) Thanks @ademczuk. [v2026.4.7]",
+    "fix(test): keep warn log capture under openclaw temp dir",
+    "fix: classify Z.ai error codes 1311 (billing) and 1113 (auth) (#49552)",
+    "fix(qqbot): parse entity encoded self-closing media tags",
+    "fix(qqbot): allow URL slashes in media tag attributes",
+    "test: harden release gate flakes",
+    "fix: keep installer doctor non-interactive"
   ],
   "topScopes": [
     {
-      "scope": "refactor",
-      "count": 369
+      "scope": "test",
+      "count": 112
     },
     {
-      "scope": "test",
-      "count": 134
+      "scope": "refactor",
+      "count": 83
     },
     {
       "scope": "fix",
-      "count": 106
-    },
-    {
-      "scope": "plugins",
-      "count": 64
+      "count": 50
     },
     {
       "scope": "tests",
-      "count": 48
+      "count": 28
     },
     {
-      "scope": "secrets",
-      "count": 35
+      "scope": "qa",
+      "count": 24
     },
     {
-      "scope": "ci",
-      "count": 35
+      "scope": "plugins",
+      "count": 12
     },
     {
-      "scope": "agents",
-      "count": 26
+      "scope": "docs",
+      "count": 11
+    },
+    {
+      "scope": "plugin-sdk",
+      "count": 7
     }
   ],
   "headlineCommits": [
-    "test(plugins): align root plugin-sdk runtime contract",
-    "fix: repair post-rebase test typing",
-    "fix: restore ci type compatibility",
-    "refactor: dedupe infra lowercase readers",
-    "refactor: dedupe config lowercase helpers",
-    "refactor: dedupe gateway lowercase helpers",
-    "refactor: dedupe daemon lowercase helpers",
-    "refactor: dedupe google chat lowercase helpers"
+    "test: keep bundled channel entry smokes descriptor-only",
+    "test: guard loader fixtures against broad sdk imports",
+    "ci: split parallel full suite into leaf shards",
+    "test: keep followup runner memory mock complete",
+    "test: isolate discord directory live token env",
+    "ci: skip duplicate full extension shard",
+    "test: inline cli metadata channel fixture",
+    "plugins: read contract inventory from manifests"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 }
