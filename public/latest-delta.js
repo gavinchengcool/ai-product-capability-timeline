@@ -1,106 +1,106 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-04-08T20:50:45.574157+08:00",
+  "generatedAt": "2026-04-09T20:54:05.478107+08:00",
   "window": {
-    "start_local": "2026-04-07T20:50:45.574157+08:00",
-    "end_local": "2026-04-08T20:50:45.574157+08:00",
-    "start_utc": "2026-04-07T12:50:45Z",
-    "end_utc": "2026-04-08T12:50:45Z"
+    "start_local": "2026-04-08T20:54:05.478107+08:00",
+    "end_local": "2026-04-09T20:54:05.478107+08:00",
+    "start_utc": "2026-04-08T12:54:05Z",
+    "end_utc": "2026-04-09T12:54:05Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 351879,
-    "forks": 70859,
-    "open_issues": 17662,
-    "pushed_at": "2026-04-08T12:47:52Z"
+    "stars": 352906,
+    "forks": 71190,
+    "open_issues": 17877,
+    "pushed_at": "2026-04-09T12:39:29Z"
   },
   "summary": {
-    "commitCount": 429,
+    "commitCount": 320,
     "releaseCount": 2,
-    "stableReleaseCount": 2,
-    "betaReleaseCount": 0,
-    "stars": 351879,
-    "forks": 70859,
-    "openIssues": 17662
+    "stableReleaseCount": 1,
+    "betaReleaseCount": 1,
+    "stars": 352906,
+    "forks": 71190,
+    "openIssues": 17877
   },
   "releases": [
     {
-      "tag_name": "v2026.4.8",
-      "published_at": "2026-04-08T05:59:44Z",
-      "name": "openclaw 2026.4.8",
+      "tag_name": "v2026.4.9",
+      "published_at": "2026-04-09T02:25:28Z",
+      "name": "openclaw 2026.4.9",
       "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.8"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.9"
     },
     {
-      "tag_name": "v2026.4.7",
-      "published_at": "2026-04-08T02:12:57Z",
-      "name": "openclaw 2026.4.7",
-      "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.7"
+      "tag_name": "v2026.4.9-beta.1",
+      "published_at": "2026-04-09T01:26:28Z",
+      "name": "openclaw 2026.4.9-beta.1",
+      "prerelease": true,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.9-beta.1"
     }
   ],
   "featureItems": [
-    "CLI/infer: add a first-class `openclaw infer ...` hub for provider-backed inference workflows across model, media, web, and embedding tasks. Thanks @Takhoffman. [v2026.4.7]",
-    "Plugins/webhooks: add a bundled webhook ingress plugin so external automation can create and drive bound TaskFlows through per-route shared-secret endpoints. (#61892) Thanks @mbelinky. [v2026.4.7]",
-    "Gateway/sessions: add persisted compaction checkpoints plus Sessions UI branch/restore actions so operators can inspect and recover pre-compaction session state. (#62146) Thanks @scoootscooob. [v2026.4.7]",
-    "Compaction: add pluggable compaction provider registry so plugins can replace the built-in summarization pipeline. Configure via `agents.defaults.compaction.provider`; falls back to LLM summarization on provider failure. (#56224) Thanks @DhruvBhatia0. [v2026.4.7]",
-    "Agents/system prompt: add `agents.defaults.systemPromptOverride` for controlled prompt experiments plus heartbeat prompt-section controls so heartbeat runtime behavior can stay enabled without injecting heartbeat instructions every turn. [v2026.4.7]",
-    "Providers/Google: add Gemma 4 model support and keep Google fallback resolution on the requested provider path so native Google Gemma routes work again. (#61507) Thanks @eyjohn. [v2026.4.7]",
-    "Providers/Google: preserve explicit thinking-off semantics for Gemma 4 while still enabling Gemma reasoning support in compatibility wrappers. (#62127) Thanks @romgenie. [v2026.4.7]",
-    "Providers/Arcee AI: add a bundled Arcee AI provider plugin with Trinity catalog entries, OpenRouter support, and updated onboarding/auth guidance. (#62068) Thanks @arthurbr11. [v2026.4.7]"
+    "Memory/dreaming: add a grounded REM backfill lane with historical `rem-harness --path`, diary commit/reset flows, cleaner durable-fact extraction, and live short-term promotion integration so old daily notes can replay into Dreams and durable memory without a second memory stack. Thanks @mbelinky. [v2026.4.9]",
+    "Control UI/dreaming: add a structured diary view with timeline navigation, backfill/reset controls, traceable dreaming summaries, and a grounded Scene lane with promotion hints plus a safe clear-grounded action for staged backfill signals. (#63395) Thanks @mbelinky. [v2026.4.9]",
+    "QA/lab: add character-vibes evaluation reports with model selection and parallel runs so live QA can compare candidate behavior faster. [v2026.4.9]",
+    "iOS: pin release versioning to an explicit CalVer in `apps/ios/version.json`, keep TestFlight iteration on the same short version until maintainers intentionally promote the next gateway version, and add the documented `pnpm ios:version:pin -- --from-gateway` workflow for release trains. (#63001) Thanks @ngutman. [v2026.4.9]",
+    "Memory/dreaming: add a grounded REM backfill lane with historical `rem-harness --path`, diary commit/reset flows, cleaner durable-fact extraction, and live short-term promotion integration so old daily notes can replay into Dreams and durable memory without a second memory stack. Thanks @mbelinky. [v2026.4.9-beta.1]",
+    "Control UI/dreaming: add a structured diary view with timeline navigation, backfill/reset controls, traceable dreaming summaries, and a grounded Scene lane with promotion hints plus a safe clear-grounded action for staged backfill signals. (#63395) Thanks @mbelinky. [v2026.4.9-beta.1]",
+    "QA/lab: add character-vibes evaluation reports with model selection and parallel runs so live QA can compare candidate behavior faster. [v2026.4.9-beta.1]",
+    "iOS: pin release versioning to an explicit CalVer in `apps/ios/version.json`, keep TestFlight iteration on the same short version until maintainers intentionally promote the next gateway version, and add the documented `pnpm ios:version:pin -- --from-gateway` workflow for release trains. (#63001) Thanks @ngutman. [v2026.4.9-beta.1]"
   ],
   "fixItems": [
-    "Discord: recover forwarded referenced message text and attachments when snapshots are missing, use `ws://` again for gateway monitor sockets, stop forcing a hardcoded temperature for Codex-backed auto-thread titles, and harden voice receive recovery so rapid speaker restarts keep their next utterance. (#41536, #61670) Thanks @artwalker and contributors. [v2026.4.7]",
-    "Security/fetch-guard: stop rejecting operator-configured proxy hostnames against the target-scoped hostname allowlist in SSRF-guarded fetches, restoring proxy-based media downloads for Telegram and other channels. (#62312) Thanks @ademczuk. [v2026.4.7]",
-    "fix(test): keep warn log capture under openclaw temp dir",
-    "fix: classify Z.ai error codes 1311 (billing) and 1113 (auth) (#49552)",
-    "fix(qqbot): parse entity encoded self-closing media tags",
-    "fix(qqbot): allow URL slashes in media tag attributes",
-    "test: harden release gate flakes",
-    "fix: keep installer doctor non-interactive"
+    "Security/dotenv: block runtime-control env vars plus browser-control override and skip-server env vars from untrusted workspace `.env` files, and reject unsafe URL-style browser control override specifiers before lazy loading. (#62660, #62663) Thanks @eleqtrizit. [v2026.4.9]",
+    "Security/dependency audit: force `basic-ftp` to `5.2.1` for the CRLF command-injection fix and bump Hono plus `@hono/node-server` in production resolution paths. [v2026.4.9]",
+    "Memory/dreaming: harden grounded backfill inputs, diary writes, status payloads, and diary action classification by preserving source-day labels, rejecting missing or symlinked targets cleanly, normalizing diary headings in gateway backfills, and tightening claim splitting plus diary source metadata. Thanks @mbelinky. [v2026.4.9]",
+    "Plugins/contracts: keep test-only helpers out of production contract barrels, load shared contract harnesses through bundled test surfaces, and harden guardrails so indirect re-exports and canonical `*.test.ts` files stay blocked. (#63311) Thanks @altaywtf. [v2026.4.9]",
+    "Security/dotenv: block runtime-control env vars plus browser-control override and skip-server env vars from untrusted workspace `.env` files, and reject unsafe URL-style browser control override specifiers before lazy loading. (#62660, #62663) Thanks @eleqtrizit. [v2026.4.9-beta.1]",
+    "Security/dependency audit: force `basic-ftp` to `5.2.1` for the CRLF command-injection fix and bump Hono plus `@hono/node-server` in production resolution paths. [v2026.4.9-beta.1]",
+    "Memory/dreaming: harden grounded backfill inputs, diary writes, status payloads, and diary action classification by preserving source-day labels, rejecting missing or symlinked targets cleanly, normalizing diary headings in gateway backfills, and tightening claim splitting plus diary source metadata. Thanks @mbelinky. [v2026.4.9-beta.1]",
+    "Plugins/contracts: keep test-only helpers out of production contract barrels, load shared contract harnesses through bundled test surfaces, and harden guardrails so indirect re-exports and canonical `*.test.ts` files stay blocked. (#63311) Thanks @altaywtf. [v2026.4.9-beta.1]"
   ],
   "topScopes": [
     {
       "scope": "test",
-      "count": 112
-    },
-    {
-      "scope": "refactor",
-      "count": 83
+      "count": 97
     },
     {
       "scope": "fix",
-      "count": 50
+      "count": 39
     },
     {
-      "scope": "tests",
-      "count": 28
+      "scope": "ui",
+      "count": 25
     },
     {
-      "scope": "qa",
-      "count": 24
+      "scope": "refactor",
+      "count": 19
+    },
+    {
+      "scope": "matrix",
+      "count": 9
     },
     {
       "scope": "plugins",
-      "count": 12
+      "count": 8
     },
     {
-      "scope": "docs",
-      "count": 11
+      "scope": "ci",
+      "count": 8
     },
     {
-      "scope": "plugin-sdk",
+      "scope": "build",
       "count": 7
     }
   ],
   "headlineCommits": [
-    "test: keep bundled channel entry smokes descriptor-only",
-    "test: guard loader fixtures against broad sdk imports",
-    "ci: split parallel full suite into leaf shards",
-    "test: keep followup runner memory mock complete",
-    "test: isolate discord directory live token env",
-    "ci: skip duplicate full extension shard",
-    "test: inline cli metadata channel fixture",
-    "plugins: read contract inventory from manifests"
+    "fix(qqbot): enforce media storage boundary for all outbound local file paths [AI] (#63271)",
+    "Matrix: drop dead legacy crypto wrapper",
+    "fix: provider-qualified session context limits (#62493) (thanks @neeravmakwana)",
+    "fix: exclude DM participant lists from iMessage self-chat check",
+    "fix: start tailscale exposure before sidecars",
+    "fix: allow CLI task cancel for stuck background tasks (#62506) (thanks @neeravmakwana)",
+    "fix: preserve iMessage self-chat aliases (#61619) (thanks @neeravmakwana)",
+    "fix: keep gateway RPC up during startup (#63480)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
