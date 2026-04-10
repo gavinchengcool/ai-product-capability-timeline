@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-04-09T20:54:23+08:00
-- Requested window: 2026-04-08 to 2026-04-09
+- Generated at: 2026-04-10T20:40:10+08:00
+- Requested window: 2026-04-09 to 2026-04-10
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-04-08 to 2026-04-09
-- Generated at: 2026-04-09T20:54:05.478107+08:00
-- 窗口: 2026-04-08 至 2026-04-09
-- GitHub 增量: 320 commits / 2 releases
-- 最近 push: 2026-04-09
+- Window: 2026-04-09 to 2026-04-10
+- Generated at: 2026-04-10T20:39:54.969380+08:00
+- 窗口: 2026-04-09 至 2026-04-10
+- GitHub 增量: 222 commits / 0 releases
+- 最近 push: 2026-04-10
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Memory/dreaming: add a grounded REM backfill lane with historical `rem-harness --path`, diary commit/reset flows, cleaner durable-fact extraction, and live short-term promotion integration so old daily notes can replay into Dreams and durable memory without a second memory stack. Thanks @mbelinky. [v2026.4.9]
-  - Control UI/dreaming: add a structured diary view with timeline navigation, backfill/reset controls, traceable dreaming summaries, and a grounded Scene lane with promotion hints plus a safe clear-grounded action for staged backfill signals. (#63395) Thanks @mbelinky. [v2026.4.9]
-  - QA/lab: add character-vibes evaluation reports with model selection and parallel runs so live QA can compare candidate behavior faster. [v2026.4.9]
-  - iOS: pin release versioning to an explicit CalVer in `apps/ios/version.json`, keep TestFlight iteration on the same short version until maintainers intentionally promote the next gateway version, and add the documented `pnpm ios:version:pin -- --from-gateway` workflow for release trains. (#63001) Thanks @ngutman. [v2026.4.9]
-  - Memory/dreaming: add a grounded REM backfill lane with historical `rem-harness --path`, diary commit/reset flows, cleaner durable-fact extraction, and live short-term promotion integration so old daily notes can replay into Dreams and durable memory without a second memory stack. Thanks @mbelinky. [v2026.4.9-beta.1]
-  - Control UI/dreaming: add a structured diary view with timeline navigation, backfill/reset controls, traceable dreaming summaries, and a grounded Scene lane with promotion hints plus a safe clear-grounded action for staged backfill signals. (#63395) Thanks @mbelinky. [v2026.4.9-beta.1]
-  - QA/lab: add character-vibes evaluation reports with model selection and parallel runs so live QA can compare candidate behavior faster. [v2026.4.9-beta.1]
-  - iOS: pin release versioning to an explicit CalVer in `apps/ios/version.json`, keep TestFlight iteration on the same short version until maintainers intentionally promote the next gateway version, and add the documented `pnpm ios:version:pin -- --from-gateway` workflow for release trains. (#63001) Thanks @ngutman. [v2026.4.9-beta.1]
+  - dreaming: add an advanced review tab
+  - feat(msteams): handle signin/tokenExchange and signin/verifyState for SSO (#60956) (#64089)
+  - [Fix] agents.create RPC: support model param, write identity to config (#61577)
+  - [Feat] Gateway: add commands.list RPC method (#62656)
+  - feat: add local exec-policy CLI (#64050)
+  - UI: add refreshActiveTab characterization tests
+  - UI: remove unused theme listener helper
+  - UI: remove redundant theme listener attach on connect
 - Fixes and constraints:
-  - Security/dotenv: block runtime-control env vars plus browser-control override and skip-server env vars from untrusted workspace `.env` files, and reject unsafe URL-style browser control override specifiers before lazy loading. (#62660, #62663) Thanks @eleqtrizit. [v2026.4.9]
-  - Security/dependency audit: force `basic-ftp` to `5.2.1` for the CRLF command-injection fix and bump Hono plus `@hono/node-server` in production resolution paths. [v2026.4.9]
-  - Memory/dreaming: harden grounded backfill inputs, diary writes, status payloads, and diary action classification by preserving source-day labels, rejecting missing or symlinked targets cleanly, normalizing diary headings in gateway backfills, and tightening claim splitting plus diary source metadata. Thanks @mbelinky. [v2026.4.9]
-  - Plugins/contracts: keep test-only helpers out of production contract barrels, load shared contract harnesses through bundled test surfaces, and harden guardrails so indirect re-exports and canonical `*.test.ts` files stay blocked. (#63311) Thanks @altaywtf. [v2026.4.9]
-  - Security/dotenv: block runtime-control env vars plus browser-control override and skip-server env vars from untrusted workspace `.env` files, and reject unsafe URL-style browser control override specifiers before lazy loading. (#62660, #62663) Thanks @eleqtrizit. [v2026.4.9-beta.1]
-  - Security/dependency audit: force `basic-ftp` to `5.2.1` for the CRLF command-injection fix and bump Hono plus `@hono/node-server` in production resolution paths. [v2026.4.9-beta.1]
-  - Memory/dreaming: harden grounded backfill inputs, diary writes, status payloads, and diary action classification by preserving source-day labels, rejecting missing or symlinked targets cleanly, normalizing diary headings in gateway backfills, and tightening claim splitting plus diary source metadata. Thanks @mbelinky. [v2026.4.9-beta.1]
-  - Plugins/contracts: keep test-only helpers out of production contract barrels, load shared contract harnesses through bundled test surfaces, and harden guardrails so indirect re-exports and canonical `*.test.ts` files stay blocked. (#63311) Thanks @altaywtf. [v2026.4.9-beta.1]
+  - fix: detect llama.cpp context overflow (#64196) (thanks @alexander-applyinnovations)
+  - fix(agents): detect llama.cpp slot overflow as context overflow
+  - fix(btw): land side-question context hardening (#64225) (thanks @ngutman)
+  - fix(btw): drop hidden reasoning from side-question context
+  - fix(btw): strip embedded tool blocks from side-question context
+  - fix(btw): strip replayed tool calls from side-question context
+  - fix: guard browser control fetches
+  - fix(gateway): improve websocket auth logging
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
