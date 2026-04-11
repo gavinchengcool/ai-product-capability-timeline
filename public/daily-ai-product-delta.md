@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-04-10T20:40:10+08:00
-- Requested window: 2026-04-09 to 2026-04-10
+- Generated at: 2026-04-11T20:29:20+08:00
+- Requested window: 2026-04-10 to 2026-04-11
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-04-09 to 2026-04-10
-- Generated at: 2026-04-10T20:39:54.969380+08:00
-- 窗口: 2026-04-09 至 2026-04-10
-- GitHub 增量: 222 commits / 0 releases
-- 最近 push: 2026-04-10
+- Window: 2026-04-10 to 2026-04-11
+- Generated at: 2026-04-11T20:29:03.648045+08:00
+- 窗口: 2026-04-10 至 2026-04-11
+- GitHub 增量: 690 commits / 1 releases
+- 最近 push: 2026-04-11
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - dreaming: add an advanced review tab
-  - feat(msteams): handle signin/tokenExchange and signin/verifyState for SSO (#60956) (#64089)
-  - [Fix] agents.create RPC: support model param, write identity to config (#61577)
-  - [Feat] Gateway: add commands.list RPC method (#62656)
-  - feat: add local exec-policy CLI (#64050)
-  - UI: add refreshActiveTab characterization tests
-  - UI: remove unused theme listener helper
-  - UI: remove redundant theme listener attach on connect
+  - Models/Codex: add the bundled Codex provider and plugin-owned app-server harness so `codex/gpt-*` models use Codex-managed auth, native threads, model discovery, and compaction while `openai/gpt-*` stays on the normal OpenAI provider path. (#64298) [v2026.4.10]
+  - Memory/Active Memory: add a new optional Active Memory plugin that gives OpenClaw a dedicated memory sub-agent right before the main reply, so ongoing chats can automatically pull in relevant preferences, context, and past details without making users remember to manually say "remember this" or "search memory" first. Includes configurable message/recent/full context modes, live `/verbose` inspection, advanced prompt/thinking overrides for tuning, and opt-in transcript persistence for debugging. Docs: https://docs.openclaw.ai/concepts/active-memory. (#63286) Thanks @Takhoffman. [v2026.4.10]
+  - macOS/Talk: add an experimental local MLX speech provider for Talk Mode, with explicit provider selection, local utterance playback, interruption handling, and system-voice fallback. (#63539) Thanks @ImLukeF. [v2026.4.10]
+  - Tools/video generation: add Seedance 2.0 model refs to the bundled fal provider and submit the provider-specific duration, resolution, audio, and seed metadata fields needed for live Seedance 2.0 runs. [v2026.4.10]
+  - Microsoft Teams: add message actions for pin, unpin, read, react, and listing reactions. (#53432) Thanks @sudie-codes. [v2026.4.10]
+  - QA/Matrix: add a live `openclaw qa matrix` lane backed by a disposable Matrix homeserver, shared live-transport seams, and Matrix-specific transport coverage for threading, reactions, restart, and allowlist behavior. (#64489) Thanks @gumadeiras. [v2026.4.10]
+  - QA/Telegram: add a live `openclaw qa telegram` lane for private-group bot-to-bot checks, harden its artifact handling, and preserve native Telegram command reply threading for QA verification. (#64303) Thanks @obviyus. [v2026.4.10]
+  - QA/testing: add a `--runner multipass` lane for `openclaw qa suite` so repo-backed QA scenarios can run inside a disposable Linux VM and write back the usual report, summary, and VM logs. (#63426) Thanks @shakkernerd. [v2026.4.10]
 - Fixes and constraints:
-  - fix: detect llama.cpp context overflow (#64196) (thanks @alexander-applyinnovations)
-  - fix(agents): detect llama.cpp slot overflow as context overflow
-  - fix(btw): land side-question context hardening (#64225) (thanks @ngutman)
-  - fix(btw): drop hidden reasoning from side-question context
-  - fix(btw): strip embedded tool blocks from side-question context
-  - fix(btw): strip replayed tool calls from side-question context
-  - fix: guard browser control fetches
-  - fix(gateway): improve websocket auth logging
+  - Security/tools: harden exec preflight reads, host env denylisting, node output boundaries, outbound host-media reads, profile-mutation authorization, plugin install dependency scanning, ACPX tool hooks, Gmail watcher token redaction, and oversized realtime WebSocket frame handling. (#62333, #62661, #62662, #63277, #63551, #63553, #63886, #63890, #63891, #64459) [v2026.4.10]
+  - Security/QQBot: enforce media storage boundaries for all outbound local file paths and route image-size probes through SSRF-guarded media fetching instead of raw `fetch()`. (#63271, #63495) Thanks @pgondhi987. [v2026.4.10]
+  - Fireworks/FirePass: disable Kimi K2.5 Turbo reasoning output by forcing thinking off on the FirePass path and hardening the provider wrapper so hidden reasoning no longer leaks into visible replies. (#63607) Thanks @frankekn. [v2026.4.10]
+  - Dreaming/narrative: harden request-scoped diary fallback so scheduled dreaming only falls back on the dedicated subagent-runtime error, stop trusting spoofable raw error-code objects, and avoid leaking workspace paths when local fallback writes fail. (#64156) Thanks @mbelinky. [v2026.4.10]
+  - Daemon/launchd: keep `openclaw gateway stop` persistent without uninstalling the macOS LaunchAgent, re-enable it on explicit restart or repair, and harden launchd label handling. (#64447) Thanks @ngutman. [v2026.4.10]
+  - QA/Telegram: add a live `openclaw qa telegram` lane for private-group bot-to-bot checks, harden its artifact handling, and preserve native Telegram command reply threading for QA verification. (#64303) Thanks @obviyus. [v2026.4.10]
+  - CLI/exec policy: add a local `openclaw exec-policy` command with `show`, `preset`, and `set` subcommands for synchronizing requested `tools.exec.*` config with the local exec approvals file, plus follow-up hardening for node-host rejection, rollback safety, and sync conflict detection. (#64050) [v2026.4.10]
+  - fix(cycles): split runtime taskflow type surface
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
