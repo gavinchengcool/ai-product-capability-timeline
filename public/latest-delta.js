@@ -1,99 +1,106 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-04-11T20:29:03.648045+08:00",
+  "generatedAt": "2026-04-12T20:32:39.028150+08:00",
   "window": {
-    "start_local": "2026-04-10T20:29:03.648045+08:00",
-    "end_local": "2026-04-11T20:29:03.648045+08:00",
-    "start_utc": "2026-04-10T12:29:03Z",
-    "end_utc": "2026-04-11T12:29:03Z"
+    "start_local": "2026-04-11T20:32:39.028150+08:00",
+    "end_local": "2026-04-12T20:32:39.028150+08:00",
+    "start_utc": "2026-04-11T12:32:39Z",
+    "end_utc": "2026-04-12T12:32:39Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 354565,
-    "forks": 71684,
-    "open_issues": 18178,
-    "pushed_at": "2026-04-11T12:27:52Z"
+    "stars": 355354,
+    "forks": 71913,
+    "open_issues": 18236,
+    "pushed_at": "2026-04-12T12:18:32Z"
   },
   "summary": {
-    "commitCount": 690,
-    "releaseCount": 1,
+    "commitCount": 414,
+    "releaseCount": 2,
     "stableReleaseCount": 1,
-    "betaReleaseCount": 0,
-    "stars": 354565,
-    "forks": 71684,
-    "openIssues": 18178
+    "betaReleaseCount": 1,
+    "stars": 355354,
+    "forks": 71913,
+    "openIssues": 18236
   },
   "releases": [
     {
-      "tag_name": "v2026.4.10",
-      "published_at": "2026-04-11T02:43:25Z",
-      "name": "openclaw 2026.4.10",
+      "tag_name": "v2026.4.11",
+      "published_at": "2026-04-12T00:18:03Z",
+      "name": "openclaw 2026.4.11",
       "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.10"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.11"
+    },
+    {
+      "tag_name": "v2026.4.11-beta.1",
+      "published_at": "2026-04-11T15:15:03Z",
+      "name": "openclaw 2026.4.11-beta.1",
+      "prerelease": true,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.11-beta.1"
     }
   ],
   "featureItems": [
-    "Models/Codex: add the bundled Codex provider and plugin-owned app-server harness so `codex/gpt-*` models use Codex-managed auth, native threads, model discovery, and compaction while `openai/gpt-*` stays on the normal OpenAI provider path. (#64298) [v2026.4.10]",
-    "Memory/Active Memory: add a new optional Active Memory plugin that gives OpenClaw a dedicated memory sub-agent right before the main reply, so ongoing chats can automatically pull in relevant preferences, context, and past details without making users remember to manually say \"remember this\" or \"search memory\" first. Includes configurable message/recent/full context modes, live `/verbose` inspection, advanced prompt/thinking overrides for tuning, and opt-in transcript persistence for debugging. Docs: https://docs.openclaw.ai/concepts/active-memory. (#63286) Thanks @Takhoffman. [v2026.4.10]",
-    "macOS/Talk: add an experimental local MLX speech provider for Talk Mode, with explicit provider selection, local utterance playback, interruption handling, and system-voice fallback. (#63539) Thanks @ImLukeF. [v2026.4.10]",
-    "Tools/video generation: add Seedance 2.0 model refs to the bundled fal provider and submit the provider-specific duration, resolution, audio, and seed metadata fields needed for live Seedance 2.0 runs. [v2026.4.10]",
-    "Microsoft Teams: add message actions for pin, unpin, read, react, and listing reactions. (#53432) Thanks @sudie-codes. [v2026.4.10]",
-    "QA/Matrix: add a live `openclaw qa matrix` lane backed by a disposable Matrix homeserver, shared live-transport seams, and Matrix-specific transport coverage for threading, reactions, restart, and allowlist behavior. (#64489) Thanks @gumadeiras. [v2026.4.10]",
-    "QA/Telegram: add a live `openclaw qa telegram` lane for private-group bot-to-bot checks, harden its artifact handling, and preserve native Telegram command reply threading for QA verification. (#64303) Thanks @obviyus. [v2026.4.10]",
-    "QA/testing: add a `--runner multipass` lane for `openclaw qa suite` so repo-backed QA scenarios can run inside a disposable Linux VM and write back the usual report, summary, and VM logs. (#63426) Thanks @shakkernerd. [v2026.4.10]"
+    "Dreaming/memory-wiki: add ChatGPT import ingestion plus new `Imported Insights` and `Memory Palace` diary subtabs so Dreaming can inspect imported source chats, compiled wiki pages, and full source pages directly from the UI. (#64505) [v2026.4.11]",
+    "Control UI/webchat: render assistant media/reply/voice directives as structured chat bubbles, add the `[embed ...]` rich output tag, and gate external embed URLs behind config. (#64104) [v2026.4.11]",
+    "Tools/video_generate: add URL-only generated asset delivery, typed `providerOptions`, reference audio inputs, per-asset role hints, `adaptive` aspect-ratio support, and a higher image-input cap so video providers can expose richer generation modes without forcing large files into memory. (#61987, #61988) Thanks @xieyongliang. [v2026.4.11]",
+    "Microsoft Teams: add reaction support, reaction listing, Graph pagination, and delegated OAuth setup for sending reactions while preserving application-auth read paths. (#51646) [v2026.4.11]",
+    "QA/parity: add the GPT-5.4 vs Opus 4.6 agentic parity report gate with shared scenario coverage checks, stricter evidence heuristics, and skipped-scenario accounting for maintainer review. (#64441) Thanks @100yenadmin. [v2026.4.11]",
+    "Dreaming/memory-wiki: add ChatGPT import ingestion plus new `Imported Insights` and `Memory Palace` diary subtabs so Dreaming can inspect imported source chats, compiled wiki pages, and full source pages directly from the UI. (#64505) [v2026.4.11-beta.1]",
+    "Control UI/webchat: render assistant media/reply/voice directives as structured chat bubbles, add the `[embed ...]` rich output tag, and gate external embed URLs behind config. (#64104) [v2026.4.11-beta.1]",
+    "Tools/video_generate: add URL-only generated asset delivery, typed `providerOptions`, reference audio inputs, per-asset role hints, `adaptive` aspect-ratio support, and a higher image-input cap so video providers can expose richer generation modes without forcing large files into memory. (#61987, #61988) Thanks @xieyongliang. [v2026.4.11-beta.1]"
   ],
   "fixItems": [
-    "Security/tools: harden exec preflight reads, host env denylisting, node output boundaries, outbound host-media reads, profile-mutation authorization, plugin install dependency scanning, ACPX tool hooks, Gmail watcher token redaction, and oversized realtime WebSocket frame handling. (#62333, #62661, #62662, #63277, #63551, #63553, #63886, #63890, #63891, #64459) [v2026.4.10]",
-    "Security/QQBot: enforce media storage boundaries for all outbound local file paths and route image-size probes through SSRF-guarded media fetching instead of raw `fetch()`. (#63271, #63495) Thanks @pgondhi987. [v2026.4.10]",
-    "Fireworks/FirePass: disable Kimi K2.5 Turbo reasoning output by forcing thinking off on the FirePass path and hardening the provider wrapper so hidden reasoning no longer leaks into visible replies. (#63607) Thanks @frankekn. [v2026.4.10]",
-    "Dreaming/narrative: harden request-scoped diary fallback so scheduled dreaming only falls back on the dedicated subagent-runtime error, stop trusting spoofable raw error-code objects, and avoid leaking workspace paths when local fallback writes fail. (#64156) Thanks @mbelinky. [v2026.4.10]",
-    "Daemon/launchd: keep `openclaw gateway stop` persistent without uninstalling the macOS LaunchAgent, re-enable it on explicit restart or repair, and harden launchd label handling. (#64447) Thanks @ngutman. [v2026.4.10]",
-    "QA/Telegram: add a live `openclaw qa telegram` lane for private-group bot-to-bot checks, harden its artifact handling, and preserve native Telegram command reply threading for QA verification. (#64303) Thanks @obviyus. [v2026.4.10]",
-    "CLI/exec policy: add a local `openclaw exec-policy` command with `show`, `preset`, and `set` subcommands for synchronizing requested `tools.exec.*` config with the local exec approvals file, plus follow-up hardening for node-host rejection, rollback safety, and sync conflict detection. (#64050) [v2026.4.10]",
-    "fix(cycles): split runtime taskflow type surface"
+    "fix(agents): avoid kill-recovery hook bootstrap race",
+    "fix(agents): avoid duplicate subagent ended hook loads",
+    "fix(update): Suppress Corepack prompts during update preflight (#61456)",
+    "fix(build): refresh a2ui bundle hash",
+    "fix(ci): gate static import cycles with madge",
+    "fix(cycles): cut madge back-edges in agent and cron types",
+    "fix(runtime): hide lazy command and context seams from static graph",
+    "fix(tests): restore ci type and format checks"
   ],
   "topScopes": [
     {
-      "scope": "test",
-      "count": 169
+      "scope": "agents",
+      "count": 44
     },
     {
       "scope": "fix",
-      "count": 134
+      "count": 41
     },
     {
-      "scope": "refactor",
-      "count": 107
+      "scope": "test",
+      "count": 27
     },
     {
-      "scope": "ci",
-      "count": 32
+      "scope": "cycles",
+      "count": 23
     },
     {
-      "scope": "perf",
-      "count": 26
+      "scope": "providers",
+      "count": 18
     },
     {
-      "scope": "qa-lab",
-      "count": 16
+      "scope": "commands",
+      "count": 15
     },
     {
-      "scope": "agents",
+      "scope": "ui",
+      "count": 15
+    },
+    {
+      "scope": "secrets",
       "count": 14
-    },
-    {
-      "scope": "chore",
-      "count": 13
     }
   ],
   "headlineCommits": [
-    "fix(cycles): split runtime taskflow type surface",
-    "fix(cycles): split runtime delivery and registry seams",
-    "fix(gateway): add shared request handler types",
-    "fix(cycles): bulk extract leaf type surfaces",
-    "test(qa): drop rebase conflict marker",
-    "docs(changelog): note codex qa leak fix",
-    "fix(qa): catch leaked harness meta replies",
-    "fix: harden QA scenario matcher validation"
+    "fix(agents): avoid kill-recovery hook bootstrap race",
+    "fix(agents): avoid duplicate subagent ended hook loads",
+    "fix(update): Suppress Corepack prompts during update preflight (#61456)",
+    "fix(build): refresh a2ui bundle hash",
+    "fix(ci): gate static import cycles with madge",
+    "fix(cycles): cut madge back-edges in agent and cron types",
+    "test(commands): import backup module after tar mocks",
+    "fix(runtime): hide lazy command and context seams from static graph"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
