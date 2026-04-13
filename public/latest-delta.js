@@ -1,106 +1,106 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-04-12T20:32:39.028150+08:00",
+  "generatedAt": "2026-04-13T20:55:10.967897+08:00",
   "window": {
-    "start_local": "2026-04-11T20:32:39.028150+08:00",
-    "end_local": "2026-04-12T20:32:39.028150+08:00",
-    "start_utc": "2026-04-11T12:32:39Z",
-    "end_utc": "2026-04-12T12:32:39Z"
+    "start_local": "2026-04-12T20:55:10.967897+08:00",
+    "end_local": "2026-04-13T20:55:10.967897+08:00",
+    "start_utc": "2026-04-12T12:55:10Z",
+    "end_utc": "2026-04-13T12:55:10Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 355354,
-    "forks": 71913,
-    "open_issues": 18236,
-    "pushed_at": "2026-04-12T12:18:32Z"
+    "stars": 356197,
+    "forks": 72178,
+    "open_issues": 18370,
+    "pushed_at": "2026-04-13T12:35:31Z"
   },
   "summary": {
-    "commitCount": 414,
+    "commitCount": 179,
     "releaseCount": 2,
     "stableReleaseCount": 1,
     "betaReleaseCount": 1,
-    "stars": 355354,
-    "forks": 71913,
-    "openIssues": 18236
+    "stars": 356197,
+    "forks": 72178,
+    "openIssues": 18370
   },
   "releases": [
     {
-      "tag_name": "v2026.4.11",
-      "published_at": "2026-04-12T00:18:03Z",
-      "name": "openclaw 2026.4.11",
+      "tag_name": "v2026.4.12",
+      "published_at": "2026-04-13T12:35:53Z",
+      "name": "openclaw 2026.4.12",
       "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.11"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.12"
     },
     {
-      "tag_name": "v2026.4.11-beta.1",
-      "published_at": "2026-04-11T15:15:03Z",
-      "name": "openclaw 2026.4.11-beta.1",
+      "tag_name": "v2026.4.12-beta.1",
+      "published_at": "2026-04-12T23:27:07Z",
+      "name": "openclaw 2026.4.12-beta.1",
       "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.11-beta.1"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.12-beta.1"
     }
   ],
   "featureItems": [
-    "Dreaming/memory-wiki: add ChatGPT import ingestion plus new `Imported Insights` and `Memory Palace` diary subtabs so Dreaming can inspect imported source chats, compiled wiki pages, and full source pages directly from the UI. (#64505) [v2026.4.11]",
-    "Control UI/webchat: render assistant media/reply/voice directives as structured chat bubbles, add the `[embed ...]` rich output tag, and gate external embed URLs behind config. (#64104) [v2026.4.11]",
-    "Tools/video_generate: add URL-only generated asset delivery, typed `providerOptions`, reference audio inputs, per-asset role hints, `adaptive` aspect-ratio support, and a higher image-input cap so video providers can expose richer generation modes without forcing large files into memory. (#61987, #61988) Thanks @xieyongliang. [v2026.4.11]",
-    "Microsoft Teams: add reaction support, reaction listing, Graph pagination, and delegated OAuth setup for sending reactions while preserving application-auth read paths. (#51646) [v2026.4.11]",
-    "QA/parity: add the GPT-5.4 vs Opus 4.6 agentic parity report gate with shared scenario coverage checks, stricter evidence heuristics, and skipped-scenario accounting for maintainer review. (#64441) Thanks @100yenadmin. [v2026.4.11]",
-    "Dreaming/memory-wiki: add ChatGPT import ingestion plus new `Imported Insights` and `Memory Palace` diary subtabs so Dreaming can inspect imported source chats, compiled wiki pages, and full source pages directly from the UI. (#64505) [v2026.4.11-beta.1]",
-    "Control UI/webchat: render assistant media/reply/voice directives as structured chat bubbles, add the `[embed ...]` rich output tag, and gate external embed URLs behind config. (#64104) [v2026.4.11-beta.1]",
-    "Tools/video_generate: add URL-only generated asset delivery, typed `providerOptions`, reference audio inputs, per-asset role hints, `adaptive` aspect-ratio support, and a higher image-input cap so video providers can expose richer generation modes without forcing large files into memory. (#61987, #61988) Thanks @xieyongliang. [v2026.4.11-beta.1]"
+    "QA/lab: add Convex-backed pooled Telegram credential leasing plus `openclaw qa credentials` admin commands and broker setup docs. (#65596) Thanks @joshavant. [v2026.4.12]",
+    "Memory/Active Memory: add a new optional Active Memory plugin that gives OpenClaw a dedicated memory sub-agent right before the main reply, so ongoing chats can automatically pull in relevant preferences, context, and past details without making users remember to manually say \"remember this\" or \"search memory\" first. Includes configurable message/recent/full context modes, live `/verbose` inspection, advanced prompt/thinking overrides for tuning, and opt-in transcript persistence for debugging. (#63286) Thanks @Takhoffman. [v2026.4.12]",
+    "macOS/Talk: add an experimental local MLX speech provider for Talk Mode, with explicit provider selection, local utterance playback, interruption handling, and system-voice fallback. (#63539) Thanks @ImLukeF. [v2026.4.12]",
+    "CLI/exec policy: add a local `openclaw exec-policy` command with `show`, `preset`, and `set` subcommands for synchronizing requested `tools.exec.*` config with the local exec approvals file, plus follow-up hardening for node-host rejection, rollback safety, and sync conflict detection. (#64050) [v2026.4.12]",
+    "Gateway: add a `commands.list` RPC so remote gateway clients can discover runtime-native, text, skill, and plugin commands with surface-aware naming and serialized argument metadata. (#62656) Thanks @samzong. [v2026.4.12]",
+    "Models/providers: add per-provider `models.providers.*.request.allowPrivateNetwork` for trusted self-hosted OpenAI-compatible endpoints, keep the opt-in scoped to model request surfaces, and refresh cached WebSocket managers when request transport overrides change. (#63671) Thanks @qas. [v2026.4.12]",
+    "QA/testing: add a `--runner multipass` lane for `openclaw qa suite` so repo-backed QA scenarios can run inside a disposable Linux VM and write back the usual report, summary, and VM logs. (#63426) Thanks @shakkernerd. [v2026.4.12]",
+    "Matrix/partial streaming: add MSC4357 live markers to draft preview sends and edits so supporting Matrix clients can render a live/typewriter animation and stop it when the final edit lands. (#63513) Thanks @TigerInYourDream. [v2026.4.12]"
   ],
   "fixItems": [
-    "fix(agents): avoid kill-recovery hook bootstrap race",
-    "fix(agents): avoid duplicate subagent ended hook loads",
-    "fix(update): Suppress Corepack prompts during update preflight (#61456)",
-    "fix(build): refresh a2ui bundle hash",
-    "fix(ci): gate static import cycles with madge",
-    "fix(cycles): cut madge back-edges in agent and cron types",
-    "fix(runtime): hide lazy command and context seams from static graph",
-    "fix(tests): restore ci type and format checks"
+    "Security/busybox: remove busybox/toybox from interpreter-like safe bins (#65713) Thanks @pgondhi987. [v2026.4.12]",
+    "Security/Approval: prevent empty approver list from granting explicit approval authorization (#65714) Thanks @pgondhi987. [v2026.4.12]",
+    "Security/Shell: broaden shell-wrapper detection and block env-argv assignment injection (#65717) Thanks @pgondhi987. [v2026.4.12]",
+    "Dreaming/narrative: harden transient narrative cleanup by retrying timed-out deletes, scrubbing stale dreaming session artifacts through the lock-aware session-store path, and isolating transient narrative session keys per workspace. (#65320, #61674) [v2026.4.12]",
+    "CLI/exec policy: add a local `openclaw exec-policy` command with `show`, `preset`, and `set` subcommands for synchronizing requested `tools.exec.*` config with the local exec approvals file, plus follow-up hardening for node-host rejection, rollback safety, and sync conflict detection. (#64050) [v2026.4.12]",
+    "QA/Telegram: add a live `openclaw qa telegram` lane for private-group bot-to-bot checks, harden its artifact handling, and preserve native Telegram command reply threading for QA verification. (#64303) Thanks @obviyus. [v2026.4.12]",
+    "Dreaming/narrative: harden transient narrative cleanup by retrying timed-out deletes, scrubbing stale dreaming session artifacts through the lock-aware session-store path, and isolating transient narrative session keys per workspace. (#65320, #61674) [v2026.4.12-beta.1]",
+    "fix(feishu): guard app registration fetches"
   ],
   "topScopes": [
     {
-      "scope": "agents",
-      "count": 44
+      "scope": "fix",
+      "count": 26
     },
     {
-      "scope": "fix",
-      "count": 41
+      "scope": "gateway",
+      "count": 21
+    },
+    {
+      "scope": "agents",
+      "count": 17
     },
     {
       "scope": "test",
-      "count": 27
+      "count": 8
     },
     {
-      "scope": "cycles",
-      "count": 23
+      "scope": "qa",
+      "count": 7
     },
     {
-      "scope": "providers",
-      "count": 18
+      "scope": "memory-core",
+      "count": 7
     },
     {
-      "scope": "commands",
-      "count": 15
+      "scope": "ci",
+      "count": 6
     },
     {
-      "scope": "ui",
-      "count": 15
-    },
-    {
-      "scope": "secrets",
-      "count": 14
+      "scope": "release",
+      "count": 6
     }
   ],
   "headlineCommits": [
-    "fix(agents): avoid kill-recovery hook bootstrap race",
-    "fix(agents): avoid duplicate subagent ended hook loads",
-    "fix(update): Suppress Corepack prompts during update preflight (#61456)",
-    "fix(build): refresh a2ui bundle hash",
-    "fix(ci): gate static import cycles with madge",
-    "fix(cycles): cut madge back-edges in agent and cron types",
-    "test(commands): import backup module after tar mocks",
-    "fix(runtime): hide lazy command and context seams from static graph"
+    "test: fix macos parallels gateway fallback",
+    "fix(feishu): guard app registration fetches",
+    "fix(feishu): break auth login barrel cycle",
+    "fix(feishu): keep channel auth on local api barrel",
+    "fix(feishu): avoid sdk facade cycles",
+    "fix(ci): verify bundled plugin runtime deps",
+    "feat: Streamline Feishu channel onboarding with QR code scan-to-create flow (#65680)",
+    "test(release): align pack size budget assertion"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
