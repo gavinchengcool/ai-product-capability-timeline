@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-04-13T20:55:26+08:00
-- Requested window: 2026-04-12 to 2026-04-13
+- Generated at: 2026-04-14T20:55:06+08:00
+- Requested window: 2026-04-13 to 2026-04-14
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,27 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-04-12 to 2026-04-13
-- Generated at: 2026-04-13T20:55:10.967897+08:00
-- 窗口: 2026-04-12 至 2026-04-13
-- GitHub 增量: 179 commits / 2 releases
-- 最近 push: 2026-04-13
+- Window: 2026-04-13 to 2026-04-14
+- Generated at: 2026-04-14T20:54:49.253329+08:00
+- 窗口: 2026-04-13 至 2026-04-14
+- GitHub 增量: 262 commits / 1 releases
+- 最近 push: 2026-04-14
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - QA/lab: add Convex-backed pooled Telegram credential leasing plus `openclaw qa credentials` admin commands and broker setup docs. (#65596) Thanks @joshavant. [v2026.4.12]
-  - Memory/Active Memory: add a new optional Active Memory plugin that gives OpenClaw a dedicated memory sub-agent right before the main reply, so ongoing chats can automatically pull in relevant preferences, context, and past details without making users remember to manually say "remember this" or "search memory" first. Includes configurable message/recent/full context modes, live `/verbose` inspection, advanced prompt/thinking overrides for tuning, and opt-in transcript persistence for debugging. (#63286) Thanks @Takhoffman. [v2026.4.12]
-  - macOS/Talk: add an experimental local MLX speech provider for Talk Mode, with explicit provider selection, local utterance playback, interruption handling, and system-voice fallback. (#63539) Thanks @ImLukeF. [v2026.4.12]
-  - CLI/exec policy: add a local `openclaw exec-policy` command with `show`, `preset`, and `set` subcommands for synchronizing requested `tools.exec.*` config with the local exec approvals file, plus follow-up hardening for node-host rejection, rollback safety, and sync conflict detection. (#64050) [v2026.4.12]
-  - Gateway: add a `commands.list` RPC so remote gateway clients can discover runtime-native, text, skill, and plugin commands with surface-aware naming and serialized argument metadata. (#62656) Thanks @samzong. [v2026.4.12]
-  - Models/providers: add per-provider `models.providers.*.request.allowPrivateNetwork` for trusted self-hosted OpenAI-compatible endpoints, keep the opt-in scoped to model request surfaces, and refresh cached WebSocket managers when request transport overrides change. (#63671) Thanks @qas. [v2026.4.12]
-  - QA/testing: add a `--runner multipass` lane for `openclaw qa suite` so repo-backed QA scenarios can run inside a disposable Linux VM and write back the usual report, summary, and VM logs. (#63426) Thanks @shakkernerd. [v2026.4.12]
-  - Matrix/partial streaming: add MSC4357 live markers to draft preview sends and edits so supporting Matrix clients can render a live/typewriter animation and stop it when the final edit lands. (#63513) Thanks @TigerInYourDream. [v2026.4.12]
+  - feat(codex): add gpt-5.4-pro forward compat (#66453)
+  - feat(plugin-sdk): add claimable dedupe helper
+  - feat(docs): add Hostinger installation guide and link in VPS document… (#65904)
+  - ci: add stable npm dist-tag sync
 - Fixes and constraints:
-  - Security/busybox: remove busybox/toybox from interpreter-like safe bins (#65713) Thanks @pgondhi987. [v2026.4.12]
-  - Security/Approval: prevent empty approver list from granting explicit approval authorization (#65714) Thanks @pgondhi987. [v2026.4.12]
-  - Security/Shell: broaden shell-wrapper detection and block env-argv assignment injection (#65717) Thanks @pgondhi987. [v2026.4.12]
-  - Dreaming/narrative: harden transient narrative cleanup by retrying timed-out deletes, scrubbing stale dreaming session artifacts through the lock-aware session-store path, and isolating transient narrative session keys per workspace. (#65320, #61674) [v2026.4.12]
-  - CLI/exec policy: add a local `openclaw exec-policy` command with `show`, `preset`, and `set` subcommands for synchronizing requested `tools.exec.*` config with the local exec approvals file, plus follow-up hardening for node-host rejection, rollback safety, and sync conflict detection. (#64050) [v2026.4.12]
-  - QA/Telegram: add a live `openclaw qa telegram` lane for private-group bot-to-bot checks, harden its artifact handling, and preserve native Telegram command reply threading for QA verification. (#64303) Thanks @obviyus. [v2026.4.12]
-  - Dreaming/narrative: harden transient narrative cleanup by retrying timed-out deletes, scrubbing stale dreaming session artifacts through the lock-aware session-store path, and isolating transient narrative session keys per workspace. (#65320, #61674) [v2026.4.12-beta.1]
-  - fix(feishu): guard app registration fetches
+  - fix(models): normalize google-vertex flash-lite ids
+  - test: harden video live provider release gate
+  - fix(google): strip Gemini compat base suffixes (#66445)
+  - fix(codex): keep auth read diagnostics off stdout (#66451)
+  - fix(memory): preserve embedding proxy provider prefixes (#66452)
+  - fix(onboard): cap compat probe max_tokens (#66450)
+  - fix(media): remap AAC uploads to M4A (#66446)
+  - fix(telegram): trust explicit proxy DNS for media downloads (#66461)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
