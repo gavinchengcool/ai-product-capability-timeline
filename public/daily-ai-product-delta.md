@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-04-14T20:55:06+08:00
-- Requested window: 2026-04-13 to 2026-04-14
+- Generated at: 2026-04-15T20:54:20+08:00
+- Requested window: 2026-04-14 to 2026-04-15
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,27 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-04-13 to 2026-04-14
-- Generated at: 2026-04-14T20:54:49.253329+08:00
-- 窗口: 2026-04-13 至 2026-04-14
-- GitHub 增量: 262 commits / 1 releases
-- 最近 push: 2026-04-14
+- Window: 2026-04-14 to 2026-04-15
+- Generated at: 2026-04-15T20:54:03.492997+08:00
+- 窗口: 2026-04-14 至 2026-04-15
+- GitHub 增量: 260 commits / 1 releases
+- 最近 push: 2026-04-15
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(codex): add gpt-5.4-pro forward compat (#66453)
-  - feat(plugin-sdk): add claimable dedupe helper
-  - feat(docs): add Hostinger installation guide and link in VPS document… (#65904)
-  - ci: add stable npm dist-tag sync
+  - OpenAI Codex/models: add forward-compat support for `gpt-5.4-pro`, including Codex pricing/limits and list/status visibility before the upstream catalog catches up. (#66453) Thanks @jepson-liu. [v2026.4.14]
+  - feat(github-copilot): add embedding provider for memory search (#61718)
+  - feat(memory-lancedb): add cloud storage support to memory-lancedb (#63502)
+  - doc:add qq support to README (#67039)
+  - feat(ui): add Model Auth status card to Overview dashboard (#66211)
+  - Add Mason Huang as maintainer (#66974)
+  - feat(bluebubbles): replay missed webhook messages after gateway restart (#66857)
+  - feat(skills): add discussion_comment support to secret-scanning skill (#65628)
 - Fixes and constraints:
-  - fix(models): normalize google-vertex flash-lite ids
-  - test: harden video live provider release gate
-  - fix(google): strip Gemini compat base suffixes (#66445)
-  - fix(codex): keep auth read diagnostics off stdout (#66451)
-  - fix(memory): preserve embedding proxy provider prefixes (#66452)
-  - fix(onboard): cap compat probe max_tokens (#66450)
-  - fix(media): remap AAC uploads to M4A (#66446)
-  - fix(telegram): trust explicit proxy DNS for media downloads (#66461)
+  - fix(media): allow host-local CSV and Markdown uploads via Slack (#67047)
+  - fix(qa-matrix): remove unused scenario import
+  - fix(release): mirror bundled runtime deps
+  - fix(ci): align docker smoke cache tests and reuse built dist
+  - fix(ci): clear extension lint regressions
+  - fix(plugins): localize bundled runtime deps to extensions (#67099)
+  - fix(agents): move lean local-model mode behind experimental flag
+  - fix(gateway): stabilize imsg alias test coverage
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

@@ -1,95 +1,99 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-04-14T20:54:49.253329+08:00",
+  "generatedAt": "2026-04-15T20:54:03.492997+08:00",
   "window": {
-    "start_local": "2026-04-13T20:54:49.253329+08:00",
-    "end_local": "2026-04-14T20:54:49.253329+08:00",
-    "start_utc": "2026-04-13T12:54:49Z",
-    "end_utc": "2026-04-14T12:54:49Z"
+    "start_local": "2026-04-14T20:54:03.492997+08:00",
+    "end_local": "2026-04-15T20:54:03.492997+08:00",
+    "start_utc": "2026-04-14T12:54:03Z",
+    "end_utc": "2026-04-15T12:54:03Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 357046,
-    "forks": 72450,
-    "open_issues": 18518,
-    "pushed_at": "2026-04-14T12:24:56Z"
+    "stars": 357863,
+    "forks": 72709,
+    "open_issues": 18809,
+    "pushed_at": "2026-04-15T12:51:40Z"
   },
   "summary": {
-    "commitCount": 262,
+    "commitCount": 260,
     "releaseCount": 1,
-    "stableReleaseCount": 0,
-    "betaReleaseCount": 1,
-    "stars": 357046,
-    "forks": 72450,
-    "openIssues": 18518
+    "stableReleaseCount": 1,
+    "betaReleaseCount": 0,
+    "stars": 357863,
+    "forks": 72709,
+    "openIssues": 18809
   },
   "releases": [
     {
-      "tag_name": "v2026.4.14-beta.1",
-      "published_at": "2026-04-14T02:07:43Z",
-      "name": "openclaw 2026.4.14-beta.1",
-      "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.14-beta.1"
+      "tag_name": "v2026.4.14",
+      "published_at": "2026-04-14T13:03:29Z",
+      "name": "openclaw 2026.4.14",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.14"
     }
   ],
   "featureItems": [
-    "feat(codex): add gpt-5.4-pro forward compat (#66453)",
-    "feat(plugin-sdk): add claimable dedupe helper",
-    "feat(docs): add Hostinger installation guide and link in VPS document… (#65904)",
-    "ci: add stable npm dist-tag sync"
+    "OpenAI Codex/models: add forward-compat support for `gpt-5.4-pro`, including Codex pricing/limits and list/status visibility before the upstream catalog catches up. (#66453) Thanks @jepson-liu. [v2026.4.14]",
+    "feat(github-copilot): add embedding provider for memory search (#61718)",
+    "feat(memory-lancedb): add cloud storage support to memory-lancedb (#63502)",
+    "doc:add qq support to README (#67039)",
+    "feat(ui): add Model Auth status card to Overview dashboard (#66211)",
+    "Add Mason Huang as maintainer (#66974)",
+    "feat(bluebubbles): replay missed webhook messages after gateway restart (#66857)",
+    "feat(skills): add discussion_comment support to secret-scanning skill (#65628)"
   ],
   "fixItems": [
-    "fix(models): normalize google-vertex flash-lite ids",
-    "test: harden video live provider release gate",
-    "fix(google): strip Gemini compat base suffixes (#66445)",
-    "fix(codex): keep auth read diagnostics off stdout (#66451)",
-    "fix(memory): preserve embedding proxy provider prefixes (#66452)",
-    "fix(onboard): cap compat probe max_tokens (#66450)",
-    "fix(media): remap AAC uploads to M4A (#66446)",
-    "fix(telegram): trust explicit proxy DNS for media downloads (#66461)"
+    "fix(media): allow host-local CSV and Markdown uploads via Slack (#67047)",
+    "fix(qa-matrix): remove unused scenario import",
+    "fix(release): mirror bundled runtime deps",
+    "fix(ci): align docker smoke cache tests and reuse built dist",
+    "fix(ci): clear extension lint regressions",
+    "fix(plugins): localize bundled runtime deps to extensions (#67099)",
+    "fix(agents): move lean local-model mode behind experimental flag",
+    "fix(gateway): stabilize imsg alias test coverage"
   ],
   "topScopes": [
     {
-      "scope": "cron",
-      "count": 26
-    },
-    {
       "scope": "fix",
-      "count": 23
+      "count": 22
     },
     {
-      "scope": "test",
+      "scope": "plugins",
       "count": 21
     },
     {
-      "scope": "telegram",
-      "count": 19
+      "scope": "qa",
+      "count": 17
     },
     {
-      "scope": "agents",
+      "scope": "plugin-sdk",
       "count": 15
     },
     {
-      "scope": "ci",
+      "scope": "ui",
       "count": 14
     },
     {
-      "scope": "config",
-      "count": 11
+      "scope": "ci",
+      "count": 12
     },
     {
-      "scope": "browser",
-      "count": 8
+      "scope": "agents",
+      "count": 10
+    },
+    {
+      "scope": "update",
+      "count": 10
     }
   ],
   "headlineCommits": [
-    "fix(models): normalize google-vertex flash-lite ids",
-    "test: harden video live provider release gate",
-    "docs: prepare changelog for 2026.4.14",
-    "fix(google): strip Gemini compat base suffixes (#66445)",
-    "fix(codex): keep auth read diagnostics off stdout (#66451)",
-    "test(codex): cover exact gpt-5.4 registry upgrades (#66454)",
-    "feat(codex): add gpt-5.4-pro forward compat (#66453)",
-    "fix(memory): preserve embedding proxy provider prefixes (#66452)"
+    "fix(media): allow host-local CSV and Markdown uploads via Slack (#67047)",
+    "fix(qa-matrix): remove unused scenario import",
+    "test(plugins): allow packaged runtime mirrors",
+    "QA: extend Matrix live contract coverage",
+    "test(perf): speed up slow gateway specs",
+    "fix(release): mirror bundled runtime deps",
+    "test(agents): trim extraparams anthropic passthrough cost",
+    "test(plugins): align jiti loader cache expectations"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
