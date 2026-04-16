@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-04-15T20:54:20+08:00
-- Requested window: 2026-04-14 to 2026-04-15
+- Generated at: 2026-04-16T20:58:48+08:00
+- Requested window: 2026-04-15 to 2026-04-16
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,29 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-04-14 to 2026-04-15
-- Generated at: 2026-04-15T20:54:03.492997+08:00
-- 窗口: 2026-04-14 至 2026-04-15
-- GitHub 增量: 260 commits / 1 releases
-- 最近 push: 2026-04-15
+- Window: 2026-04-15 to 2026-04-16
+- Generated at: 2026-04-16T20:58:32.320308+08:00
+- 窗口: 2026-04-15 至 2026-04-16
+- GitHub 增量: 80 commits / 1 releases
+- 最近 push: 2026-04-16
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - OpenAI Codex/models: add forward-compat support for `gpt-5.4-pro`, including Codex pricing/limits and list/status visibility before the upstream catalog catches up. (#66453) Thanks @jepson-liu. [v2026.4.14]
-  - feat(github-copilot): add embedding provider for memory search (#61718)
-  - feat(memory-lancedb): add cloud storage support to memory-lancedb (#63502)
-  - doc:add qq support to README (#67039)
-  - feat(ui): add Model Auth status card to Overview dashboard (#66211)
-  - Add Mason Huang as maintainer (#66974)
-  - feat(bluebubbles): replay missed webhook messages after gateway restart (#66857)
-  - feat(skills): add discussion_comment support to secret-scanning skill (#65628)
+  - Control UI/Overview: add a Model Auth status card showing OAuth token health and provider rate-limit pressure at a glance, with attention callouts when OAuth tokens are expiring or expired. Backed by a new `models.authStatus` gateway method that strips credentials and caches for 60s. (#66211) Thanks @omarshahine. [v2026.4.15-beta.1]
+  - Memory/LanceDB: add cloud storage support to `memory-lancedb` so durable memory indexes can run on remote object storage instead of local disk only. (#63502) Thanks @rugvedS07. [v2026.4.15-beta.1]
+  - GitHub Copilot/memory search: add a GitHub Copilot embedding provider for memory search, and expose a dedicated Copilot embedding host helper so plugins can reuse the transport while honoring remote overrides, token refresh, and safer payload validation. (#61718) Thanks @feiskyer and @vincentkoc. [v2026.4.15-beta.1]
+  - Agents/local models: add experimental `agents.defaults.experimental.localModelLean: true` to drop heavyweight default tools like `browser`, `cron`, and `message`, reducing prompt size for weaker local-model setups without changing the normal path. (#66495) Thanks @ImLukeF. [v2026.4.15-beta.1]
+  - CI: add explicit permissions to all workflow jobs (fixes code-scanning #40-#57) (#67612)
+  - Revise contribution process for new features
 - Fixes and constraints:
-  - fix(media): allow host-local CSV and Markdown uploads via Slack (#67047)
-  - fix(qa-matrix): remove unused scenario import
-  - fix(release): mirror bundled runtime deps
-  - fix(ci): align docker smoke cache tests and reuse built dist
-  - fix(ci): clear extension lint regressions
-  - fix(plugins): localize bundled runtime deps to extensions (#67099)
-  - fix(agents): move lean local-model mode behind experimental flag
-  - fix(gateway): stabilize imsg alias test coverage
+  - Security/approvals: redact secrets in exec approval prompts so inline approval review can no longer leak credential material in rendered prompt content. (#61077, #64790) [v2026.4.15-beta.1]
+  - Feishu/webhook: harden the webhook transport and card-action replay guards to fail closed on missing `encryptKey` and blank callback tokens — refuse to start the webhook transport without an `encryptKey`, reject unsigned requests when no key is present instead of accepting them, and drop blank card-action tokens before the dedupe claim and dispatcher. Defense-in-depth over the already-closed monitor-account layer. (#66707) Thanks @eleqtrizit. [v2026.4.15-beta.1]
+  - fix(bluebubbles): replay missed webhook messages after gateway restart via a persistent per-account cursor and `/api/v1/message/query?after=<ts>` pass, so messages delivered while the gateway was down no longer disappear. Uses the existing `processMessage` path and is deduped by #66816's inbound GUID cache. (#66857, #66721) Thanks @omarshahine. [v2026.4.15-beta.1]
+  - WhatsApp/Baileys media upload: harden encrypted upload handling so large outbound media sends avoid buffer spikes and reliability regressions. (#65966) Thanks @frankekn. [v2026.4.15-beta.1]
+  - fix: classify HTML provider error pages correctly (#67642) (thanks @stainlu)
+  - fix(skills): remove unused model-usage import (#67641)
+  - fix(openai-codex): normalize stale transport metadata in resolution and discovery (#67635)
+  - fix(deps): bump hono to 4.12.14 and @hono/node-server to 1.19.14 (GHSA-458j-xx4x-4375) (#67613)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

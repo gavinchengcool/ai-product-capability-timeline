@@ -1,99 +1,97 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-04-15T20:54:03.492997+08:00",
+  "generatedAt": "2026-04-16T20:58:32.320308+08:00",
   "window": {
-    "start_local": "2026-04-14T20:54:03.492997+08:00",
-    "end_local": "2026-04-15T20:54:03.492997+08:00",
-    "start_utc": "2026-04-14T12:54:03Z",
-    "end_utc": "2026-04-15T12:54:03Z"
+    "start_local": "2026-04-15T20:58:32.320308+08:00",
+    "end_local": "2026-04-16T20:58:32.320308+08:00",
+    "start_utc": "2026-04-15T12:58:32Z",
+    "end_utc": "2026-04-16T12:58:32Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 357863,
-    "forks": 72709,
-    "open_issues": 18809,
-    "pushed_at": "2026-04-15T12:51:40Z"
+    "stars": 358579,
+    "forks": 72910,
+    "open_issues": 18905,
+    "pushed_at": "2026-04-16T12:49:53Z"
   },
   "summary": {
-    "commitCount": 260,
+    "commitCount": 80,
     "releaseCount": 1,
-    "stableReleaseCount": 1,
-    "betaReleaseCount": 0,
-    "stars": 357863,
-    "forks": 72709,
-    "openIssues": 18809
+    "stableReleaseCount": 0,
+    "betaReleaseCount": 1,
+    "stars": 358579,
+    "forks": 72910,
+    "openIssues": 18905
   },
   "releases": [
     {
-      "tag_name": "v2026.4.14",
-      "published_at": "2026-04-14T13:03:29Z",
-      "name": "openclaw 2026.4.14",
-      "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.14"
+      "tag_name": "v2026.4.15-beta.1",
+      "published_at": "2026-04-15T19:40:30Z",
+      "name": "OpenClaw 2026.4.15-beta.1",
+      "prerelease": true,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.15-beta.1"
     }
   ],
   "featureItems": [
-    "OpenAI Codex/models: add forward-compat support for `gpt-5.4-pro`, including Codex pricing/limits and list/status visibility before the upstream catalog catches up. (#66453) Thanks @jepson-liu. [v2026.4.14]",
-    "feat(github-copilot): add embedding provider for memory search (#61718)",
-    "feat(memory-lancedb): add cloud storage support to memory-lancedb (#63502)",
-    "doc:add qq support to README (#67039)",
-    "feat(ui): add Model Auth status card to Overview dashboard (#66211)",
-    "Add Mason Huang as maintainer (#66974)",
-    "feat(bluebubbles): replay missed webhook messages after gateway restart (#66857)",
-    "feat(skills): add discussion_comment support to secret-scanning skill (#65628)"
+    "Control UI/Overview: add a Model Auth status card showing OAuth token health and provider rate-limit pressure at a glance, with attention callouts when OAuth tokens are expiring or expired. Backed by a new `models.authStatus` gateway method that strips credentials and caches for 60s. (#66211) Thanks @omarshahine. [v2026.4.15-beta.1]",
+    "Memory/LanceDB: add cloud storage support to `memory-lancedb` so durable memory indexes can run on remote object storage instead of local disk only. (#63502) Thanks @rugvedS07. [v2026.4.15-beta.1]",
+    "GitHub Copilot/memory search: add a GitHub Copilot embedding provider for memory search, and expose a dedicated Copilot embedding host helper so plugins can reuse the transport while honoring remote overrides, token refresh, and safer payload validation. (#61718) Thanks @feiskyer and @vincentkoc. [v2026.4.15-beta.1]",
+    "Agents/local models: add experimental `agents.defaults.experimental.localModelLean: true` to drop heavyweight default tools like `browser`, `cron`, and `message`, reducing prompt size for weaker local-model setups without changing the normal path. (#66495) Thanks @ImLukeF. [v2026.4.15-beta.1]",
+    "CI: add explicit permissions to all workflow jobs (fixes code-scanning #40-#57) (#67612)",
+    "Revise contribution process for new features"
   ],
   "fixItems": [
-    "fix(media): allow host-local CSV and Markdown uploads via Slack (#67047)",
-    "fix(qa-matrix): remove unused scenario import",
-    "fix(release): mirror bundled runtime deps",
-    "fix(ci): align docker smoke cache tests and reuse built dist",
-    "fix(ci): clear extension lint regressions",
-    "fix(plugins): localize bundled runtime deps to extensions (#67099)",
-    "fix(agents): move lean local-model mode behind experimental flag",
-    "fix(gateway): stabilize imsg alias test coverage"
+    "Security/approvals: redact secrets in exec approval prompts so inline approval review can no longer leak credential material in rendered prompt content. (#61077, #64790) [v2026.4.15-beta.1]",
+    "Feishu/webhook: harden the webhook transport and card-action replay guards to fail closed on missing `encryptKey` and blank callback tokens — refuse to start the webhook transport without an `encryptKey`, reject unsigned requests when no key is present instead of accepting them, and drop blank card-action tokens before the dedupe claim and dispatcher. Defense-in-depth over the already-closed monitor-account layer. (#66707) Thanks @eleqtrizit. [v2026.4.15-beta.1]",
+    "fix(bluebubbles): replay missed webhook messages after gateway restart via a persistent per-account cursor and `/api/v1/message/query?after=<ts>` pass, so messages delivered while the gateway was down no longer disappear. Uses the existing `processMessage` path and is deduped by #66816's inbound GUID cache. (#66857, #66721) Thanks @omarshahine. [v2026.4.15-beta.1]",
+    "WhatsApp/Baileys media upload: harden encrypted upload handling so large outbound media sends avoid buffer spikes and reliability regressions. (#65966) Thanks @frankekn. [v2026.4.15-beta.1]",
+    "fix: classify HTML provider error pages correctly (#67642) (thanks @stainlu)",
+    "fix(skills): remove unused model-usage import (#67641)",
+    "fix(openai-codex): normalize stale transport metadata in resolution and discovery (#67635)",
+    "fix(deps): bump hono to 4.12.14 and @hono/node-server to 1.19.14 (GHSA-458j-xx4x-4375) (#67613)"
   ],
   "topScopes": [
     {
       "scope": "fix",
-      "count": 22
+      "count": 11
     },
     {
-      "scope": "plugins",
-      "count": 21
-    },
-    {
-      "scope": "qa",
-      "count": 17
-    },
-    {
-      "scope": "plugin-sdk",
-      "count": 15
-    },
-    {
-      "scope": "ui",
-      "count": 14
+      "scope": "test",
+      "count": 6
     },
     {
       "scope": "ci",
-      "count": 12
+      "count": 5
+    },
+    {
+      "scope": "qa",
+      "count": 5
+    },
+    {
+      "scope": "docs",
+      "count": 5
+    },
+    {
+      "scope": "changelog",
+      "count": 4
     },
     {
       "scope": "agents",
-      "count": 10
+      "count": 4
     },
     {
-      "scope": "update",
-      "count": 10
+      "scope": "build",
+      "count": 4
     }
   ],
   "headlineCommits": [
-    "fix(media): allow host-local CSV and Markdown uploads via Slack (#67047)",
-    "fix(qa-matrix): remove unused scenario import",
-    "test(plugins): allow packaged runtime mirrors",
-    "QA: extend Matrix live contract coverage",
-    "test(perf): speed up slow gateway specs",
-    "fix(release): mirror bundled runtime deps",
-    "test(agents): trim extraparams anthropic passthrough cost",
-    "test(plugins): align jiti loader cache expectations"
+    "fix: classify HTML provider error pages correctly (#67642) (thanks @stainlu)",
+    "fix(skills): remove unused model-usage import (#67641)",
+    "docs(changelog): credit codex fix superseded PRs",
+    "fix(openai-codex): normalize stale transport metadata in resolution and discovery (#67635)",
+    "CI: pin Docker-related GitHub Actions (#67632)",
+    "Android: modernize WebView and discovery API usage (#67627)",
+    "fix(deps): bump hono to 4.12.14 and @hono/node-server to 1.19.14 (GHSA-458j-xx4x-4375) (#67613)",
+    "fix(deps): bump dompurify to 3.4.0 (#67614)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
