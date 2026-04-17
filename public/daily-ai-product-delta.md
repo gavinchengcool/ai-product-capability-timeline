@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-04-16T20:58:48+08:00
-- Requested window: 2026-04-15 to 2026-04-16
+- Generated at: 2026-04-17T20:50:15+08:00
+- Requested window: 2026-04-16 to 2026-04-17
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,29 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-04-15 to 2026-04-16
-- Generated at: 2026-04-16T20:58:32.320308+08:00
-- 窗口: 2026-04-15 至 2026-04-16
-- GitHub 增量: 80 commits / 1 releases
-- 最近 push: 2026-04-16
+- Window: 2026-04-16 to 2026-04-17
+- Generated at: 2026-04-17T20:49:57.774661+08:00
+- 窗口: 2026-04-16 至 2026-04-17
+- GitHub 增量: 180 commits / 2 releases
+- 最近 push: 2026-04-17
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Control UI/Overview: add a Model Auth status card showing OAuth token health and provider rate-limit pressure at a glance, with attention callouts when OAuth tokens are expiring or expired. Backed by a new `models.authStatus` gateway method that strips credentials and caches for 60s. (#66211) Thanks @omarshahine. [v2026.4.15-beta.1]
-  - Memory/LanceDB: add cloud storage support to `memory-lancedb` so durable memory indexes can run on remote object storage instead of local disk only. (#63502) Thanks @rugvedS07. [v2026.4.15-beta.1]
-  - GitHub Copilot/memory search: add a GitHub Copilot embedding provider for memory search, and expose a dedicated Copilot embedding host helper so plugins can reuse the transport while honoring remote overrides, token refresh, and safer payload validation. (#61718) Thanks @feiskyer and @vincentkoc. [v2026.4.15-beta.1]
-  - Agents/local models: add experimental `agents.defaults.experimental.localModelLean: true` to drop heavyweight default tools like `browser`, `cron`, and `message`, reducing prompt size for weaker local-model setups without changing the normal path. (#66495) Thanks @ImLukeF. [v2026.4.15-beta.1]
-  - CI: add explicit permissions to all workflow jobs (fixes code-scanning #40-#57) (#67612)
-  - Revise contribution process for new features
+  - Google/TTS: add Gemini text-to-speech support to the bundled `google` plugin, including provider registration, voice selection, WAV reply output, PCM telephony output, and setup/docs guidance. (#67515) Thanks @barronlroth. [v2026.4.15]
+  - Control UI/Overview: add a Model Auth status card showing OAuth token health and provider rate-limit pressure at a glance, with attention callouts when OAuth tokens are expiring or expired. Backed by a new `models.authStatus` gateway method that strips credentials and caches for 60s. (#66211) Thanks @omarshahine. [v2026.4.15]
+  - Memory/LanceDB: add cloud storage support to `memory-lancedb` so durable memory indexes can run on remote object storage instead of local disk only. (#63502) Thanks @rugvedS07. [v2026.4.15]
+  - GitHub Copilot/memory search: add a GitHub Copilot embedding provider for memory search, and expose a dedicated Copilot embedding host helper so plugins can reuse the transport while honoring remote overrides, token refresh, and safer payload validation. (#61718) Thanks @feiskyer and @vincentkoc. [v2026.4.15]
+  - Agents/local models: add experimental `agents.defaults.experimental.localModelLean: true` to drop heavyweight default tools like `browser`, `cron`, and `message`, reducing prompt size for weaker local-model setups without changing the normal path. (#66495) Thanks @ImLukeF. [v2026.4.15]
+  - Google/TTS: add Gemini text-to-speech support to the bundled `google` plugin, including provider registration, voice selection, WAV reply output, PCM telephony output, and setup/docs guidance. (#67515) Thanks @barronlroth. [v2026.4.15-beta.2]
+  - feat: add macOS screen snapshots for monitor preview (#67954) thanks @BunsDev
+  - feat(ui): overhaul settings and slash command UX (#67819) thanks @BunsDev
 - Fixes and constraints:
-  - Security/approvals: redact secrets in exec approval prompts so inline approval review can no longer leak credential material in rendered prompt content. (#61077, #64790) [v2026.4.15-beta.1]
-  - Feishu/webhook: harden the webhook transport and card-action replay guards to fail closed on missing `encryptKey` and blank callback tokens — refuse to start the webhook transport without an `encryptKey`, reject unsigned requests when no key is present instead of accepting them, and drop blank card-action tokens before the dedupe claim and dispatcher. Defense-in-depth over the already-closed monitor-account layer. (#66707) Thanks @eleqtrizit. [v2026.4.15-beta.1]
-  - fix(bluebubbles): replay missed webhook messages after gateway restart via a persistent per-account cursor and `/api/v1/message/query?after=<ts>` pass, so messages delivered while the gateway was down no longer disappear. Uses the existing `processMessage` path and is deduped by #66816's inbound GUID cache. (#66857, #66721) Thanks @omarshahine. [v2026.4.15-beta.1]
-  - WhatsApp/Baileys media upload: harden encrypted upload handling so large outbound media sends avoid buffer spikes and reliability regressions. (#65966) Thanks @frankekn. [v2026.4.15-beta.1]
-  - fix: classify HTML provider error pages correctly (#67642) (thanks @stainlu)
-  - fix(skills): remove unused model-usage import (#67641)
-  - fix(openai-codex): normalize stale transport metadata in resolution and discovery (#67635)
-  - fix(deps): bump hono to 4.12.14 and @hono/node-server to 1.19.14 (GHSA-458j-xx4x-4375) (#67613)
+  - Security/approvals: redact secrets in exec approval prompts so inline approval review can no longer leak credential material in rendered prompt content. (#61077, #64790) [v2026.4.15]
+  - Feishu/webhook: harden the webhook transport and card-action replay guards to fail closed on missing `encryptKey` and blank callback tokens — refuse to start the webhook transport without an `encryptKey`, reject unsigned requests when no key is present instead of accepting them, and drop blank card-action tokens before the dedupe claim and dispatcher. Defense-in-depth over the already-closed monitor-account layer. (#66707) Thanks @eleqtrizit. [v2026.4.15]
+  - WhatsApp/Baileys media upload: harden encrypted upload handling so large outbound media sends avoid buffer spikes and reliability regressions. (#65966) Thanks @frankekn. [v2026.4.15]
+  - fix: preserve hello-ok scopes for reused device tokens (#68039)
+  - fix: report shared auth scopes in hello-ok (#67810) thanks @BunsDev
+  - fix(macOS): enable undo/redo in webchat composer text input (#34962)
+  - fix(auth): serialize OAuth refresh across agents to fix #26322 (#67876)
+  - fix(memory-core): preserve vector dims on readonly recovery
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
