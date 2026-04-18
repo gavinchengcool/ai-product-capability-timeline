@@ -490,5 +490,21 @@ window.OPENCLAW_HEATMAP_INCREMENTAL_ROWS = [
     },
     "source": "daily-incremental",
     "generatedAt": "2026-04-17T20:49:57.774661+08:00"
+  },
+  {
+    "date": "2026-04-18",
+    "stage": "openclaw",
+    "summary": "移动端入口、渠道互动、gateway / 会话控制面、Docker / 运维继续增强，最近一天的增量也并入主矩阵。",
+    "axisEntries": {
+      "channels": "Slack interactive replies 与 DM block 保留继续增强。 WhatsApp / Telegram / Zalo / Signal 相关兼容修补继续推进。",
+      "models": "Codex CLI auth profile sync 继续补强。",
+      "tools": "Browser existing-session / MCP attach 模式继续简化并加固。",
+      "devices": "iOS onboarding welcome pager 进入主线。",
+      "control": "Gateway health monitor、pairing 与 watch 链路继续打磨。 Session / plugin 路由与配置基线继续收敛。",
+      "security": "Telegram media transport policy 继续向 SSRF 边界对齐。 trusted surfaces 与 external content sanitize 继续收紧。",
+      "ops": "构建内存回归与 cron 死锁等运行期问题继续收敛。"
+    },
+    "source": "daily-incremental",
+    "generatedAt": "2026-04-18T20:32:29.538203+08:00"
   }
 ];
