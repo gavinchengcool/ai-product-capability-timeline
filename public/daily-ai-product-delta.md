@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-04-18T20:32:44+08:00
-- Requested window: 2026-04-17 to 2026-04-18
+- Generated at: 2026-04-19T20:32:17+08:00
+- Requested window: 2026-04-18 to 2026-04-19
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,26 +10,24 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-04-17 to 2026-04-18
-- Generated at: 2026-04-18T20:32:29.538203+08:00
-- 窗口: 2026-04-17 至 2026-04-18
-- GitHub 增量: 274 commits / 0 releases
-- 最近 push: 2026-04-18
+- Window: 2026-04-18 to 2026-04-19
+- Generated at: 2026-04-19T20:32:02.320623+08:00
+- 窗口: 2026-04-18 至 2026-04-19
+- GitHub 增量: 361 commits / 2 releases
+- 最近 push: 2026-04-19
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - QA Matrix: add catchup incremental scenario
-  - Twitch: add bundled setup entry (#68008)
-  - QA: organize scenarios by theme
+  - tasks: add detached runtime plugin registration contract (#68915)
 - Fixes and constraints:
-  - fix(cli): normalize reply-media paths for agent --deliver (#68516)
-  - fix(slack): resolve stream recipient team in shared channels
-  - fix(secret-scanning): remove maintainer @<LOGIN> attribution from replacement comment template (#68521)
-  - fix(config): preserve $schema field across config rewrites (#47322)
-  - fix(cron): clean up deleteAfterRun direct deliveries (#67807)
-  - fix(failover): widen raw 402 detection for third-party proxy messages (#45827)
-  - fix(cron): keep runner-owned delivery off message tool
-  - fix(cron): keep message tool without delivery
+  - fix: default kimi thinking to off (#68907)
+  - fix(browser): discover CDP websocket from bare ws:// URL before attach (#68715)
+  - fix: parse PowerShell cron tools allow-list (#68858) (thanks @chen-zhang-cs-code)
+  - fix: stabilize release smoke reruns
+  - fix: strip orphaned OpenAI reasoning blocks before responses API call (#55787)
+  - fix(ui): stop unsupported wiki RPC probes during startup (#67905)
+  - fix: keep cron last delivery sentinel runtime-only (#68829) (thanks @tianhaocui)
+  - fix: keep qa lab compat shim out of release inventory
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

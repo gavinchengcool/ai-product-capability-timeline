@@ -506,5 +506,19 @@ window.OPENCLAW_HEATMAP_INCREMENTAL_ROWS = [
     },
     "source": "daily-incremental",
     "generatedAt": "2026-04-18T20:32:29.538203+08:00"
+  },
+  {
+    "date": "2026-04-19",
+    "stage": "openclaw",
+    "summary": "gateway / 会话控制面、Docker / 运维、模型兼容、browser / tools继续增强，最近一天的增量也并入主矩阵。",
+    "axisEntries": {
+      "models": "OpenAI-compatible 接口兼容与 strict-tools 行为继续校正。",
+      "tools": "Browser existing-session / MCP attach 模式继续简化并加固。",
+      "control": "Gateway health monitor、pairing 与 watch 链路继续打磨。 Session / plugin 路由与配置基线继续收敛。",
+      "security": "Telegram media transport policy 继续向 SSRF 边界对齐。 trusted surfaces 与 external content sanitize 继续收紧。",
+      "ops": "服务重装、重启与 cleanup 路径继续修补。 构建内存回归与 cron 死锁等运行期问题继续收敛。"
+    },
+    "source": "daily-incremental",
+    "generatedAt": "2026-04-19T20:32:02.320623+08:00"
   }
 ];

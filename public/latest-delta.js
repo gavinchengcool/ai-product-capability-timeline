@@ -1,86 +1,99 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-04-18T20:32:29.538203+08:00",
+  "generatedAt": "2026-04-19T20:32:02.320623+08:00",
   "window": {
-    "start_local": "2026-04-17T20:32:29.538203+08:00",
-    "end_local": "2026-04-18T20:32:29.538203+08:00",
-    "start_utc": "2026-04-17T12:32:29Z",
-    "end_utc": "2026-04-18T12:32:29Z"
+    "start_local": "2026-04-18T20:32:02.320623+08:00",
+    "end_local": "2026-04-19T20:32:02.320623+08:00",
+    "start_utc": "2026-04-18T12:32:02Z",
+    "end_utc": "2026-04-19T12:32:02Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 359799,
-    "forks": 73244,
-    "open_issues": 19207,
-    "pushed_at": "2026-04-18T12:05:42Z"
+    "stars": 360298,
+    "forks": 73452,
+    "open_issues": 19233,
+    "pushed_at": "2026-04-19T11:13:13Z"
   },
   "summary": {
-    "commitCount": 274,
-    "releaseCount": 0,
+    "commitCount": 361,
+    "releaseCount": 2,
     "stableReleaseCount": 0,
-    "betaReleaseCount": 0,
-    "stars": 359799,
-    "forks": 73244,
-    "openIssues": 19207
+    "betaReleaseCount": 2,
+    "stars": 360298,
+    "forks": 73452,
+    "openIssues": 19233
   },
-  "releases": [],
+  "releases": [
+    {
+      "tag_name": "v2026.4.19-beta.2",
+      "published_at": "2026-04-19T05:55:49Z",
+      "name": "openclaw 2026.4.19-beta.2",
+      "prerelease": true,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.19-beta.2"
+    },
+    {
+      "tag_name": "v2026.4.19-beta.1",
+      "published_at": "2026-04-19T02:01:54Z",
+      "name": "openclaw 2026.4.19-beta.1",
+      "prerelease": true,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.19-beta.1"
+    }
+  ],
   "featureItems": [
-    "QA Matrix: add catchup incremental scenario",
-    "Twitch: add bundled setup entry (#68008)",
-    "QA: organize scenarios by theme"
+    "tasks: add detached runtime plugin registration contract (#68915)"
   ],
   "fixItems": [
-    "fix(cli): normalize reply-media paths for agent --deliver (#68516)",
-    "fix(slack): resolve stream recipient team in shared channels",
-    "fix(secret-scanning): remove maintainer @<LOGIN> attribution from replacement comment template (#68521)",
-    "fix(config): preserve $schema field across config rewrites (#47322)",
-    "fix(cron): clean up deleteAfterRun direct deliveries (#67807)",
-    "fix(failover): widen raw 402 detection for third-party proxy messages (#45827)",
-    "fix(cron): keep runner-owned delivery off message tool",
-    "fix(cron): keep message tool without delivery"
+    "fix: default kimi thinking to off (#68907)",
+    "fix(browser): discover CDP websocket from bare ws:// URL before attach (#68715)",
+    "fix: parse PowerShell cron tools allow-list (#68858) (thanks @chen-zhang-cs-code)",
+    "fix: stabilize release smoke reruns",
+    "fix: strip orphaned OpenAI reasoning blocks before responses API call (#55787)",
+    "fix(ui): stop unsupported wiki RPC probes during startup (#67905)",
+    "fix: keep cron last delivery sentinel runtime-only (#68829) (thanks @tianhaocui)",
+    "fix: keep qa lab compat shim out of release inventory"
   ],
   "topScopes": [
     {
       "scope": "test",
-      "count": 149
+      "count": 169
     },
     {
-      "scope": "perf",
-      "count": 24
-    },
-    {
-      "scope": "plugins",
-      "count": 14
-    },
-    {
-      "scope": "tests",
-      "count": 11
-    },
-    {
-      "scope": "auth",
-      "count": 10
-    },
-    {
-      "scope": "cron",
-      "count": 7
+      "scope": "refactor",
+      "count": 57
     },
     {
       "scope": "fix",
-      "count": 7
+      "count": 27
     },
     {
-      "scope": "changelog",
-      "count": 6
+      "scope": "perf",
+      "count": 14
+    },
+    {
+      "scope": "auth",
+      "count": 11
+    },
+    {
+      "scope": "chore",
+      "count": 10
+    },
+    {
+      "scope": "lint",
+      "count": 8
+    },
+    {
+      "scope": "docs",
+      "count": 7
     }
   ],
   "headlineCommits": [
-    "fix(cli): normalize reply-media paths for agent --deliver (#68516)",
-    "fix(slack): resolve stream recipient team in shared channels",
-    "fix(secret-scanning): remove maintainer @<LOGIN> attribution from replacement comment template (#68521)",
-    "docs(changelog): add $schema entry (#68515)",
-    "fix(config): preserve $schema field across config rewrites (#47322)",
-    "changelog: move #67807 entry to Fixes section (#68509)",
-    "fix(cron): clean up deleteAfterRun direct deliveries (#67807)",
-    "fix(failover): widen raw 402 detection for third-party proxy messages (#45827)"
+    "tasks: add detached runtime plugin registration contract (#68915)",
+    "docs(changelog): add thanks for kimi fix",
+    "docs(changelog): note kimi thinking default fix",
+    "fix: default kimi thinking to off (#68907)",
+    "browser: route existing-session user profile through browser nodes (#68891)",
+    "test(tasks): align detached runtime mock return types",
+    "fix(browser): discover CDP websocket from bare ws:// URL before attach (#68715)",
+    "fix: parse PowerShell cron tools allow-list (#68858) (thanks @chen-zhang-cs-code)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
