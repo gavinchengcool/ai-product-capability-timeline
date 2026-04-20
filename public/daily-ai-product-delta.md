@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-04-19T20:32:17+08:00
-- Requested window: 2026-04-18 to 2026-04-19
+- Generated at: 2026-04-20T20:59:51+08:00
+- Requested window: 2026-04-19 to 2026-04-20
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,24 +10,28 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-04-18 to 2026-04-19
-- Generated at: 2026-04-19T20:32:02.320623+08:00
-- 窗口: 2026-04-18 至 2026-04-19
-- GitHub 增量: 361 commits / 2 releases
-- 最近 push: 2026-04-19
+- Window: 2026-04-19 to 2026-04-20
+- Generated at: 2026-04-20T20:59:36.691003+08:00
+- 窗口: 2026-04-19 至 2026-04-20
+- GitHub 增量: 126 commits / 0 releases
+- 最近 push: 2026-04-20
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - tasks: add detached runtime plugin registration contract (#68915)
+  - feat(mattermost): keep draft previews on one visible sink per turn (#47838)
+  - feat(cli): show pairing access upgrades
+  - feat(plugins): pass attachment metadata to before_model_resolve hook (#67322)
+  - Add Matrix QA coverage for MXID-prefixed commands
+  - Skills: add OpenClaw test performance workflow
 - Fixes and constraints:
-  - fix: default kimi thinking to off (#68907)
-  - fix(browser): discover CDP websocket from bare ws:// URL before attach (#68715)
-  - fix: parse PowerShell cron tools allow-list (#68858) (thanks @chen-zhang-cs-code)
-  - fix: stabilize release smoke reruns
-  - fix: strip orphaned OpenAI reasoning blocks before responses API call (#55787)
-  - fix(ui): stop unsupported wiki RPC probes during startup (#67905)
-  - fix: keep cron last delivery sentinel runtime-only (#68829) (thanks @tianhaocui)
-  - fix: keep qa lab compat shim out of release inventory
+  - perf: parallelize local check gate
+  - fix: recover invalid gateway configs
+  - perf: speed up type check gate
+  - fix(matrix): resolve live allowlist updates
+  - fix(bluebubbles): refresh client cache on network policy changes
+  - perf(test): narrow web tool imports
+  - perf(test): tighten skill and session fixtures
+  - perf(test): slim subagent lifecycle imports
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

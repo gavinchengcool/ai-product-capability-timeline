@@ -1,99 +1,88 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-04-19T20:32:02.320623+08:00",
+  "generatedAt": "2026-04-20T20:59:36.691003+08:00",
   "window": {
-    "start_local": "2026-04-18T20:32:02.320623+08:00",
-    "end_local": "2026-04-19T20:32:02.320623+08:00",
-    "start_utc": "2026-04-18T12:32:02Z",
-    "end_utc": "2026-04-19T12:32:02Z"
+    "start_local": "2026-04-19T20:59:36.691003+08:00",
+    "end_local": "2026-04-20T20:59:36.691003+08:00",
+    "start_utc": "2026-04-19T12:59:36Z",
+    "end_utc": "2026-04-20T12:59:36Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 360298,
-    "forks": 73452,
-    "open_issues": 19233,
-    "pushed_at": "2026-04-19T11:13:13Z"
+    "stars": 360961,
+    "forks": 73638,
+    "open_issues": 19230,
+    "pushed_at": "2026-04-20T12:58:20Z"
   },
   "summary": {
-    "commitCount": 361,
-    "releaseCount": 2,
+    "commitCount": 126,
+    "releaseCount": 0,
     "stableReleaseCount": 0,
-    "betaReleaseCount": 2,
-    "stars": 360298,
-    "forks": 73452,
-    "openIssues": 19233
+    "betaReleaseCount": 0,
+    "stars": 360961,
+    "forks": 73638,
+    "openIssues": 19230
   },
-  "releases": [
-    {
-      "tag_name": "v2026.4.19-beta.2",
-      "published_at": "2026-04-19T05:55:49Z",
-      "name": "openclaw 2026.4.19-beta.2",
-      "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.19-beta.2"
-    },
-    {
-      "tag_name": "v2026.4.19-beta.1",
-      "published_at": "2026-04-19T02:01:54Z",
-      "name": "openclaw 2026.4.19-beta.1",
-      "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.19-beta.1"
-    }
-  ],
+  "releases": [],
   "featureItems": [
-    "tasks: add detached runtime plugin registration contract (#68915)"
+    "feat(mattermost): keep draft previews on one visible sink per turn (#47838)",
+    "feat(cli): show pairing access upgrades",
+    "feat(plugins): pass attachment metadata to before_model_resolve hook (#67322)",
+    "Add Matrix QA coverage for MXID-prefixed commands",
+    "Skills: add OpenClaw test performance workflow"
   ],
   "fixItems": [
-    "fix: default kimi thinking to off (#68907)",
-    "fix(browser): discover CDP websocket from bare ws:// URL before attach (#68715)",
-    "fix: parse PowerShell cron tools allow-list (#68858) (thanks @chen-zhang-cs-code)",
-    "fix: stabilize release smoke reruns",
-    "fix: strip orphaned OpenAI reasoning blocks before responses API call (#55787)",
-    "fix(ui): stop unsupported wiki RPC probes during startup (#67905)",
-    "fix: keep cron last delivery sentinel runtime-only (#68829) (thanks @tianhaocui)",
-    "fix: keep qa lab compat shim out of release inventory"
+    "perf: parallelize local check gate",
+    "fix: recover invalid gateway configs",
+    "perf: speed up type check gate",
+    "fix(matrix): resolve live allowlist updates",
+    "fix(bluebubbles): refresh client cache on network policy changes",
+    "perf(test): narrow web tool imports",
+    "perf(test): tighten skill and session fixtures",
+    "perf(test): slim subagent lifecycle imports"
   ],
   "topScopes": [
     {
-      "scope": "test",
-      "count": 169
+      "scope": "fix",
+      "count": 18
+    },
+    {
+      "scope": "ui",
+      "count": 15
     },
     {
       "scope": "refactor",
-      "count": 57
-    },
-    {
-      "scope": "fix",
-      "count": 27
-    },
-    {
-      "scope": "perf",
       "count": 14
     },
     {
-      "scope": "auth",
-      "count": 11
+      "scope": "test",
+      "count": 9
     },
     {
-      "scope": "chore",
-      "count": 10
+      "scope": "gateway",
+      "count": 9
     },
     {
-      "scope": "lint",
-      "count": 8
+      "scope": "matrix",
+      "count": 6
     },
     {
-      "scope": "docs",
-      "count": 7
+      "scope": "doctor",
+      "count": 5
+    },
+    {
+      "scope": "cron",
+      "count": 5
     }
   ],
   "headlineCommits": [
-    "tasks: add detached runtime plugin registration contract (#68915)",
-    "docs(changelog): add thanks for kimi fix",
-    "docs(changelog): note kimi thinking default fix",
-    "fix: default kimi thinking to off (#68907)",
-    "browser: route existing-session user profile through browser nodes (#68891)",
-    "test(tasks): align detached runtime mock return types",
-    "fix(browser): discover CDP websocket from bare ws:// URL before attach (#68715)",
-    "fix: parse PowerShell cron tools allow-list (#68858) (thanks @chen-zhang-cs-code)"
+    "refactor: share native approval runtime types",
+    "perf: parallelize local check gate",
+    "refactor: share human list formatting",
+    "refactor: share approval session lookup",
+    "refactor: share channel account inspection",
+    "refactor: reuse detached task create params",
+    "refactor: share channel manifest metadata mapping",
+    "refactor: share channel media limit lookup"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

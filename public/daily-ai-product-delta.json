@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-04-19T20:32:17+08:00",
+  "generatedAt": "2026-04-20T20:59:51+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-04-18T20:32:17+08:00",
-    "end_local": "2026-04-19T20:32:17+08:00"
+    "start_local": "2026-04-19T20:59:51+08:00",
+    "end_local": "2026-04-20T20:59:51+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-04-19T20:32:02.320623+08:00",
+      "generatedAt": "2026-04-20T20:59:36.691003+08:00",
       "window": {
-        "start_local": "2026-04-18T20:32:02.320623+08:00",
-        "end_local": "2026-04-19T20:32:02.320623+08:00",
-        "start_utc": "2026-04-18T12:32:02Z",
-        "end_utc": "2026-04-19T12:32:02Z"
+        "start_local": "2026-04-19T20:59:36.691003+08:00",
+        "end_local": "2026-04-20T20:59:36.691003+08:00",
+        "start_utc": "2026-04-19T12:59:36Z",
+        "end_utc": "2026-04-20T12:59:36Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-04-18 至 2026-04-19"
+          "value": "2026-04-19 至 2026-04-20"
         },
         {
           "label": "GitHub 增量",
-          "value": "361 commits / 2 releases"
+          "value": "126 commits / 0 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-04-19"
+          "value": "2026-04-20"
         },
         {
           "label": "来源",
@@ -52,66 +52,55 @@
         }
       ],
       "featureItems": [
-        "tasks: add detached runtime plugin registration contract (#68915)"
+        "feat(mattermost): keep draft previews on one visible sink per turn (#47838)",
+        "feat(cli): show pairing access upgrades",
+        "feat(plugins): pass attachment metadata to before_model_resolve hook (#67322)",
+        "Add Matrix QA coverage for MXID-prefixed commands",
+        "Skills: add OpenClaw test performance workflow"
       ],
       "fixItems": [
-        "fix: default kimi thinking to off (#68907)",
-        "fix(browser): discover CDP websocket from bare ws:// URL before attach (#68715)",
-        "fix: parse PowerShell cron tools allow-list (#68858) (thanks @chen-zhang-cs-code)",
-        "fix: stabilize release smoke reruns",
-        "fix: strip orphaned OpenAI reasoning blocks before responses API call (#55787)",
-        "fix(ui): stop unsupported wiki RPC probes during startup (#67905)",
-        "fix: keep cron last delivery sentinel runtime-only (#68829) (thanks @tianhaocui)",
-        "fix: keep qa lab compat shim out of release inventory"
+        "perf: parallelize local check gate",
+        "fix: recover invalid gateway configs",
+        "perf: speed up type check gate",
+        "fix(matrix): resolve live allowlist updates",
+        "fix(bluebubbles): refresh client cache on network policy changes",
+        "perf(test): narrow web tool imports",
+        "perf(test): tighten skill and session fixtures",
+        "perf(test): slim subagent lifecycle imports"
       ],
-      "releases": [
-        {
-          "tag_name": "v2026.4.19-beta.2",
-          "published_at": "2026-04-19T05:55:49Z",
-          "name": "openclaw 2026.4.19-beta.2",
-          "prerelease": true,
-          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.19-beta.2"
-        },
-        {
-          "tag_name": "v2026.4.19-beta.1",
-          "published_at": "2026-04-19T02:01:54Z",
-          "name": "openclaw 2026.4.19-beta.1",
-          "prerelease": true,
-          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.19-beta.1"
-        }
-      ],
+      "releases": [],
       "topScopes": [
         {
-          "scope": "test",
-          "count": 169
+          "scope": "fix",
+          "count": 18
+        },
+        {
+          "scope": "ui",
+          "count": 15
         },
         {
           "scope": "refactor",
-          "count": 57
-        },
-        {
-          "scope": "fix",
-          "count": 27
-        },
-        {
-          "scope": "perf",
           "count": 14
         },
         {
-          "scope": "auth",
-          "count": 11
+          "scope": "test",
+          "count": 9
         },
         {
-          "scope": "chore",
-          "count": 10
+          "scope": "gateway",
+          "count": 9
         },
         {
-          "scope": "lint",
-          "count": 8
+          "scope": "matrix",
+          "count": 6
         },
         {
-          "scope": "docs",
-          "count": 7
+          "scope": "doctor",
+          "count": 5
+        },
+        {
+          "scope": "cron",
+          "count": 5
         }
       ],
       "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
