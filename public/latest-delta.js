@@ -1,88 +1,91 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-04-20T20:59:36.691003+08:00",
+  "generatedAt": "2026-04-21T20:54:14.467822+08:00",
   "window": {
-    "start_local": "2026-04-19T20:59:36.691003+08:00",
-    "end_local": "2026-04-20T20:59:36.691003+08:00",
-    "start_utc": "2026-04-19T12:59:36Z",
-    "end_utc": "2026-04-20T12:59:36Z"
+    "start_local": "2026-04-20T20:54:14.467822+08:00",
+    "end_local": "2026-04-21T20:54:14.467822+08:00",
+    "start_utc": "2026-04-20T12:54:14Z",
+    "end_utc": "2026-04-21T12:54:14Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 360961,
-    "forks": 73638,
-    "open_issues": 19230,
-    "pushed_at": "2026-04-20T12:58:20Z"
+    "stars": 361619,
+    "forks": 73802,
+    "open_issues": 19205,
+    "pushed_at": "2026-04-21T12:53:24Z"
   },
   "summary": {
-    "commitCount": 126,
+    "commitCount": 627,
     "releaseCount": 0,
     "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 360961,
-    "forks": 73638,
-    "openIssues": 19230
+    "stars": 361619,
+    "forks": 73802,
+    "openIssues": 19205
   },
   "releases": [],
   "featureItems": [
-    "feat(mattermost): keep draft previews on one visible sink per turn (#47838)",
-    "feat(cli): show pairing access upgrades",
-    "feat(plugins): pass attachment metadata to before_model_resolve hook (#67322)",
-    "Add Matrix QA coverage for MXID-prefixed commands",
-    "Skills: add OpenClaw test performance workflow"
+    "feat(cron): preview resolved delivery targets",
+    "wizard: support searchable select, restore hint in search haystack",
+    "feat: add tiered model pricing support (#67605)",
+    "feat(moonshot): default to Kimi K2.6 with K2.6-only thinking.keep support (#68816)",
+    "tasks: add detached task recovery hook before markLost (#69313)",
+    "feat: send compaction start and completion notices (#67830)",
+    "feat(cron): split jobs.json into config and runtime state files (#63105)",
+    "feat: add changed-lane local gate"
   ],
   "fixItems": [
-    "perf: parallelize local check gate",
-    "fix: recover invalid gateway configs",
-    "perf: speed up type check gate",
-    "fix(matrix): resolve live allowlist updates",
-    "fix(bluebubbles): refresh client cache on network policy changes",
-    "perf(test): narrow web tool imports",
-    "perf(test): tighten skill and session fixtures",
-    "perf(test): slim subagent lifecycle imports"
+    "perf(plugin-sdk): per-phase + per-jiti-call probes for bundled channel entries (#69537)",
+    "fix: preload slugged startup memory files (#69600)",
+    "fix(agents): enforce subagent envelope inheritance on ACP child sessions [AI-assisted] (#69383)",
+    "fix(tui): arm streaming watchdog on every delta, not only visible ones (#69338)",
+    "fix(codex): exclude codex-app-server synthetic apiKey from secrets audit (#69581)",
+    "fix(agents): honor explicit long Anthropic cache TTL on custom hosts (#67800)",
+    "fix: fix Telegram media file delivery (#69641)",
+    "fix(media): preserve outbound attachment filenames"
   ],
   "topScopes": [
     {
-      "scope": "fix",
-      "count": 18
-    },
-    {
-      "scope": "ui",
-      "count": 15
+      "scope": "test",
+      "count": 312
     },
     {
       "scope": "refactor",
+      "count": 87
+    },
+    {
+      "scope": "fix",
+      "count": 45
+    },
+    {
+      "scope": "ci",
+      "count": 19
+    },
+    {
+      "scope": "docs",
+      "count": 18
+    },
+    {
+      "scope": "extensions",
       "count": 14
     },
     {
-      "scope": "test",
-      "count": 9
-    },
-    {
       "scope": "gateway",
-      "count": 9
-    },
-    {
-      "scope": "matrix",
-      "count": 6
-    },
-    {
-      "scope": "doctor",
-      "count": 5
+      "count": 12
     },
     {
       "scope": "cron",
-      "count": 5
+      "count": 11
     }
   ],
   "headlineCommits": [
-    "refactor: share native approval runtime types",
-    "perf: parallelize local check gate",
-    "refactor: share human list formatting",
-    "refactor: share approval session lookup",
-    "refactor: share channel account inspection",
-    "refactor: reuse detached task create params",
-    "refactor: share channel manifest metadata mapping",
-    "refactor: share channel media limit lookup"
+    "perf(plugin-sdk): per-phase + per-jiti-call probes for bundled channel entries (#69537)",
+    "fix: preload slugged startup memory files (#69600)",
+    "fix(agents): enforce subagent envelope inheritance on ACP child sessions [AI-assisted] (#69383)",
+    "fix(tui): arm streaming watchdog on every delta, not only visible ones (#69338)",
+    "fix(codex): exclude codex-app-server synthetic apiKey from secrets audit (#69581)",
+    "docs(changelog): deduplicate #67800 entries in Unreleased (#69670)",
+    "fix(agents): honor explicit long Anthropic cache TTL on custom hosts (#67800)",
+    "fix: fix Telegram media file delivery (#69641)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

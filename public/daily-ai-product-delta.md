@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-04-20T20:59:51+08:00
-- Requested window: 2026-04-19 to 2026-04-20
+- Generated at: 2026-04-21T20:54:32+08:00
+- Requested window: 2026-04-20 to 2026-04-21
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,28 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-04-19 to 2026-04-20
-- Generated at: 2026-04-20T20:59:36.691003+08:00
-- 窗口: 2026-04-19 至 2026-04-20
-- GitHub 增量: 126 commits / 0 releases
-- 最近 push: 2026-04-20
+- Window: 2026-04-20 to 2026-04-21
+- Generated at: 2026-04-21T20:54:14.467822+08:00
+- 窗口: 2026-04-20 至 2026-04-21
+- GitHub 增量: 627 commits / 0 releases
+- 最近 push: 2026-04-21
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(mattermost): keep draft previews on one visible sink per turn (#47838)
-  - feat(cli): show pairing access upgrades
-  - feat(plugins): pass attachment metadata to before_model_resolve hook (#67322)
-  - Add Matrix QA coverage for MXID-prefixed commands
-  - Skills: add OpenClaw test performance workflow
+  - feat(cron): preview resolved delivery targets
+  - wizard: support searchable select, restore hint in search haystack
+  - feat: add tiered model pricing support (#67605)
+  - feat(moonshot): default to Kimi K2.6 with K2.6-only thinking.keep support (#68816)
+  - tasks: add detached task recovery hook before markLost (#69313)
+  - feat: send compaction start and completion notices (#67830)
+  - feat(cron): split jobs.json into config and runtime state files (#63105)
+  - feat: add changed-lane local gate
 - Fixes and constraints:
-  - perf: parallelize local check gate
-  - fix: recover invalid gateway configs
-  - perf: speed up type check gate
-  - fix(matrix): resolve live allowlist updates
-  - fix(bluebubbles): refresh client cache on network policy changes
-  - perf(test): narrow web tool imports
-  - perf(test): tighten skill and session fixtures
-  - perf(test): slim subagent lifecycle imports
+  - perf(plugin-sdk): per-phase + per-jiti-call probes for bundled channel entries (#69537)
+  - fix: preload slugged startup memory files (#69600)
+  - fix(agents): enforce subagent envelope inheritance on ACP child sessions [AI-assisted] (#69383)
+  - fix(tui): arm streaming watchdog on every delta, not only visible ones (#69338)
+  - fix(codex): exclude codex-app-server synthetic apiKey from secrets audit (#69581)
+  - fix(agents): honor explicit long Anthropic cache TTL on custom hosts (#67800)
+  - fix: fix Telegram media file delivery (#69641)
+  - fix(media): preserve outbound attachment filenames
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
