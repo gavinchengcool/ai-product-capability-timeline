@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-04-21T20:54:32+08:00
-- Requested window: 2026-04-20 to 2026-04-21
+- Generated at: 2026-04-22T20:55:03+08:00
+- Requested window: 2026-04-21 to 2026-04-22
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-04-20 to 2026-04-21
-- Generated at: 2026-04-21T20:54:14.467822+08:00
-- 窗口: 2026-04-20 至 2026-04-21
-- GitHub 增量: 627 commits / 0 releases
-- 最近 push: 2026-04-21
+- Window: 2026-04-21 to 2026-04-22
+- Generated at: 2026-04-22T20:54:47.702053+08:00
+- 窗口: 2026-04-21 至 2026-04-22
+- GitHub 增量: 290 commits / 4 releases
+- 最近 push: 2026-04-22
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(cron): preview resolved delivery targets
-  - wizard: support searchable select, restore hint in search haystack
-  - feat: add tiered model pricing support (#67605)
-  - feat(moonshot): default to Kimi K2.6 with K2.6-only thinking.keep support (#68816)
-  - tasks: add detached task recovery hook before markLost (#69313)
-  - feat: send compaction start and completion notices (#67830)
-  - feat(cron): split jobs.json into config and runtime state files (#63105)
-  - feat: add changed-lane local gate
+  - Onboard/wizard: restyle the setup security disclaimer with a single yellow warning banner, section headings and bulleted checklists, and un-dim the note body so key guidance is easy to scan; add a loading spinner during the initial model catalog load so the wizard no longer goes blank while it runs; add an "API key" placeholder to provider API key prompts. (#69553) Thanks @Patrick-Erichsen. [v2026.4.20]
+  - Models/costs: support tiered model pricing from cached catalogs and configured models, and include bundled Moonshot Kimi K2.6/K2.5 cost estimates for token-usage reports. (#67605) Thanks @sliverp. [v2026.4.20]
+  - BlueBubbles/groups: forward per-group `systemPrompt` config into inbound context `GroupSystemPrompt` so configured group-specific behavioral instructions (for example threaded-reply and tapback conventions) are injected on every turn. Supports `"*"` wildcard fallback matching the existing `requireMention` pattern. Closes #60665. (#69198) Thanks @omarshahine. [v2026.4.20]
+  - Plugins/tasks: add a detached runtime registration contract so plugin executors can own detached task lifecycle and cancellation without reaching into core task internals. (#68915) Thanks @mbelinky. [v2026.4.20]
+  - QA/CI: make `openclaw qa suite` and `openclaw qa telegram` fail by default when scenarios fail, add `--allow-failures` for artifact-only runs, and tighten live-lane defaults for CI automation. (#69122) Thanks @joshavant. [v2026.4.20]
+  - Onboard/wizard: restyle the setup security disclaimer with a single yellow warning banner, section headings and bulleted checklists, and un-dim the note body so key guidance is easy to scan; add a loading spinner during the initial model catalog load so the wizard no longer goes blank while it runs; add an "API key" placeholder to provider API key prompts. (#69553) Thanks @Patrick-Erichsen. [v2026.4.20-beta.2]
+  - Models/costs: support tiered model pricing from cached catalogs and configured models, and include bundled Moonshot Kimi K2.6/K2.5 cost estimates for token-usage reports. (#67605) Thanks @sliverp. [v2026.4.20-beta.2]
+  - BlueBubbles/groups: forward per-group `systemPrompt` config into inbound context `GroupSystemPrompt` so configured group-specific behavioral instructions (for example threaded-reply and tapback conventions) are injected on every turn. Supports `"*"` wildcard fallback matching the existing `requireMention` pattern. Closes #60665. (#69198) Thanks @omarshahine. [v2026.4.20-beta.2]
 - Fixes and constraints:
-  - perf(plugin-sdk): per-phase + per-jiti-call probes for bundled channel entries (#69537)
-  - fix: preload slugged startup memory files (#69600)
-  - fix(agents): enforce subagent envelope inheritance on ACP child sessions [AI-assisted] (#69383)
-  - fix(tui): arm streaming watchdog on every delta, not only visible ones (#69338)
-  - fix(codex): exclude codex-app-server synthetic apiKey from secrets audit (#69581)
-  - fix(agents): honor explicit long Anthropic cache TTL on custom hosts (#67800)
-  - fix: fix Telegram media file delivery (#69641)
-  - fix(media): preserve outbound attachment filenames
+  - Exec/YOLO: stop rejecting gateway-host exec in `security=full` plus `ask=off` mode via the Python/Node script preflight hardening path, so promptless YOLO exec once again runs direct interpreter stdin and heredoc forms such as `node <<'NODE' ... NODE`. [v2026.4.20]
+  - fix(qqbot): add SSRF guard to direct-upload URL paths in uploadC2CMedia and uploadGroupMedia [AI-assisted]. (#69595) Thanks @pgondhi987. [v2026.4.20]
+  - fix(gateway): enforce allowRequestSessionKey gate on template-rendered mapping sessionKeys. (#69381) Thanks @pgondhi987. [v2026.4.20]
+  - fix(security): block MINIMAX_API_HOST workspace env injection and remove env-driven URL routing [AI-assisted]. (#67300) Thanks @pgondhi987. [v2026.4.20]
+  - Security/dotenv: block all `OPENCLAW_*` keys from untrusted workspace `.env` files so workspace-local env loading fails closed for new runtime-control variables instead of silently inheriting them. (#473) [v2026.4.20]
+  - Agents/gateway tool: extend the agent-facing `gateway` tool's config mutation guard so model-driven `config.patch` and `config.apply` cannot rewrite operator-trusted paths (sandbox, plugin trust, gateway auth/TLS, hook routing and tokens, SSRF policy, MCP servers, workspace filesystem hardening) and cannot bypass the guard by editing per-agent sandbox, tools, or embedded-Pi overrides in place under `agents.list[]`. (#69377) Thanks @eleqtrizit. [v2026.4.20]
+  - Exec/YOLO: stop rejecting gateway-host exec in `security=full` plus `ask=off` mode via the Python/Node script preflight hardening path, so promptless YOLO exec once again runs direct interpreter stdin and heredoc forms such as `node <<'NODE' ... NODE`. [v2026.4.20-beta.2]
+  - fix(qqbot): add SSRF guard to direct-upload URL paths in uploadC2CMedia and uploadGroupMedia [AI-assisted]. (#69595) Thanks @pgondhi987. [v2026.4.20-beta.2]
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

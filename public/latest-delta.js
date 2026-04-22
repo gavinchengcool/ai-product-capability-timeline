@@ -1,91 +1,120 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-04-21T20:54:14.467822+08:00",
+  "generatedAt": "2026-04-22T20:54:47.702053+08:00",
   "window": {
-    "start_local": "2026-04-20T20:54:14.467822+08:00",
-    "end_local": "2026-04-21T20:54:14.467822+08:00",
-    "start_utc": "2026-04-20T12:54:14Z",
-    "end_utc": "2026-04-21T12:54:14Z"
+    "start_local": "2026-04-21T20:54:47.702053+08:00",
+    "end_local": "2026-04-22T20:54:47.702053+08:00",
+    "start_utc": "2026-04-21T12:54:47Z",
+    "end_utc": "2026-04-22T12:54:47Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 361619,
-    "forks": 73802,
-    "open_issues": 19205,
-    "pushed_at": "2026-04-21T12:53:24Z"
+    "stars": 362168,
+    "forks": 73973,
+    "open_issues": 19188,
+    "pushed_at": "2026-04-22T12:18:15Z"
   },
   "summary": {
-    "commitCount": 627,
-    "releaseCount": 0,
-    "stableReleaseCount": 0,
-    "betaReleaseCount": 0,
-    "stars": 361619,
-    "forks": 73802,
-    "openIssues": 19205
+    "commitCount": 290,
+    "releaseCount": 4,
+    "stableReleaseCount": 2,
+    "betaReleaseCount": 2,
+    "stars": 362168,
+    "forks": 73973,
+    "openIssues": 19188
   },
-  "releases": [],
+  "releases": [
+    {
+      "tag_name": "v2026.4.21",
+      "published_at": "2026-04-22T04:18:58Z",
+      "name": "openclaw 2026.4.21",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.21"
+    },
+    {
+      "tag_name": "v2026.4.20",
+      "published_at": "2026-04-21T19:19:35Z",
+      "name": "openclaw 2026.4.20",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.20"
+    },
+    {
+      "tag_name": "v2026.4.20-beta.2",
+      "published_at": "2026-04-21T17:44:40Z",
+      "name": "openclaw 2026.4.20-beta.2",
+      "prerelease": true,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.20-beta.2"
+    },
+    {
+      "tag_name": "v2026.4.20-beta.1",
+      "published_at": "2026-04-21T13:34:18Z",
+      "name": "openclaw 2026.4.20-beta.1",
+      "prerelease": true,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.20-beta.1"
+    }
+  ],
   "featureItems": [
-    "feat(cron): preview resolved delivery targets",
-    "wizard: support searchable select, restore hint in search haystack",
-    "feat: add tiered model pricing support (#67605)",
-    "feat(moonshot): default to Kimi K2.6 with K2.6-only thinking.keep support (#68816)",
-    "tasks: add detached task recovery hook before markLost (#69313)",
-    "feat: send compaction start and completion notices (#67830)",
-    "feat(cron): split jobs.json into config and runtime state files (#63105)",
-    "feat: add changed-lane local gate"
+    "Onboard/wizard: restyle the setup security disclaimer with a single yellow warning banner, section headings and bulleted checklists, and un-dim the note body so key guidance is easy to scan; add a loading spinner during the initial model catalog load so the wizard no longer goes blank while it runs; add an \"API key\" placeholder to provider API key prompts. (#69553) Thanks @Patrick-Erichsen. [v2026.4.20]",
+    "Models/costs: support tiered model pricing from cached catalogs and configured models, and include bundled Moonshot Kimi K2.6/K2.5 cost estimates for token-usage reports. (#67605) Thanks @sliverp. [v2026.4.20]",
+    "BlueBubbles/groups: forward per-group `systemPrompt` config into inbound context `GroupSystemPrompt` so configured group-specific behavioral instructions (for example threaded-reply and tapback conventions) are injected on every turn. Supports `\"*\"` wildcard fallback matching the existing `requireMention` pattern. Closes #60665. (#69198) Thanks @omarshahine. [v2026.4.20]",
+    "Plugins/tasks: add a detached runtime registration contract so plugin executors can own detached task lifecycle and cancellation without reaching into core task internals. (#68915) Thanks @mbelinky. [v2026.4.20]",
+    "QA/CI: make `openclaw qa suite` and `openclaw qa telegram` fail by default when scenarios fail, add `--allow-failures` for artifact-only runs, and tighten live-lane defaults for CI automation. (#69122) Thanks @joshavant. [v2026.4.20]",
+    "Onboard/wizard: restyle the setup security disclaimer with a single yellow warning banner, section headings and bulleted checklists, and un-dim the note body so key guidance is easy to scan; add a loading spinner during the initial model catalog load so the wizard no longer goes blank while it runs; add an \"API key\" placeholder to provider API key prompts. (#69553) Thanks @Patrick-Erichsen. [v2026.4.20-beta.2]",
+    "Models/costs: support tiered model pricing from cached catalogs and configured models, and include bundled Moonshot Kimi K2.6/K2.5 cost estimates for token-usage reports. (#67605) Thanks @sliverp. [v2026.4.20-beta.2]",
+    "BlueBubbles/groups: forward per-group `systemPrompt` config into inbound context `GroupSystemPrompt` so configured group-specific behavioral instructions (for example threaded-reply and tapback conventions) are injected on every turn. Supports `\"*\"` wildcard fallback matching the existing `requireMention` pattern. Closes #60665. (#69198) Thanks @omarshahine. [v2026.4.20-beta.2]"
   ],
   "fixItems": [
-    "perf(plugin-sdk): per-phase + per-jiti-call probes for bundled channel entries (#69537)",
-    "fix: preload slugged startup memory files (#69600)",
-    "fix(agents): enforce subagent envelope inheritance on ACP child sessions [AI-assisted] (#69383)",
-    "fix(tui): arm streaming watchdog on every delta, not only visible ones (#69338)",
-    "fix(codex): exclude codex-app-server synthetic apiKey from secrets audit (#69581)",
-    "fix(agents): honor explicit long Anthropic cache TTL on custom hosts (#67800)",
-    "fix: fix Telegram media file delivery (#69641)",
-    "fix(media): preserve outbound attachment filenames"
+    "Exec/YOLO: stop rejecting gateway-host exec in `security=full` plus `ask=off` mode via the Python/Node script preflight hardening path, so promptless YOLO exec once again runs direct interpreter stdin and heredoc forms such as `node <<'NODE' ... NODE`. [v2026.4.20]",
+    "fix(qqbot): add SSRF guard to direct-upload URL paths in uploadC2CMedia and uploadGroupMedia [AI-assisted]. (#69595) Thanks @pgondhi987. [v2026.4.20]",
+    "fix(gateway): enforce allowRequestSessionKey gate on template-rendered mapping sessionKeys. (#69381) Thanks @pgondhi987. [v2026.4.20]",
+    "fix(security): block MINIMAX_API_HOST workspace env injection and remove env-driven URL routing [AI-assisted]. (#67300) Thanks @pgondhi987. [v2026.4.20]",
+    "Security/dotenv: block all `OPENCLAW_*` keys from untrusted workspace `.env` files so workspace-local env loading fails closed for new runtime-control variables instead of silently inheriting them. (#473) [v2026.4.20]",
+    "Agents/gateway tool: extend the agent-facing `gateway` tool's config mutation guard so model-driven `config.patch` and `config.apply` cannot rewrite operator-trusted paths (sandbox, plugin trust, gateway auth/TLS, hook routing and tokens, SSRF policy, MCP servers, workspace filesystem hardening) and cannot bypass the guard by editing per-agent sandbox, tools, or embedded-Pi overrides in place under `agents.list[]`. (#69377) Thanks @eleqtrizit. [v2026.4.20]",
+    "Exec/YOLO: stop rejecting gateway-host exec in `security=full` plus `ask=off` mode via the Python/Node script preflight hardening path, so promptless YOLO exec once again runs direct interpreter stdin and heredoc forms such as `node <<'NODE' ... NODE`. [v2026.4.20-beta.2]",
+    "fix(qqbot): add SSRF guard to direct-upload URL paths in uploadC2CMedia and uploadGroupMedia [AI-assisted]. (#69595) Thanks @pgondhi987. [v2026.4.20-beta.2]"
   ],
   "topScopes": [
     {
-      "scope": "test",
-      "count": 312
-    },
-    {
-      "scope": "refactor",
-      "count": 87
-    },
-    {
       "scope": "fix",
-      "count": 45
+      "count": 51
     },
     {
       "scope": "ci",
-      "count": 19
+      "count": 37
     },
     {
       "scope": "docs",
-      "count": 18
+      "count": 27
     },
     {
-      "scope": "extensions",
-      "count": 14
+      "scope": "test",
+      "count": 24
     },
     {
-      "scope": "gateway",
-      "count": 12
+      "scope": "refactor",
+      "count": 20
     },
     {
-      "scope": "cron",
-      "count": 11
+      "scope": "agents",
+      "count": 10
+    },
+    {
+      "scope": "deps",
+      "count": 8
+    },
+    {
+      "scope": "cli",
+      "count": 7
     }
   ],
   "headlineCommits": [
-    "perf(plugin-sdk): per-phase + per-jiti-call probes for bundled channel entries (#69537)",
-    "fix: preload slugged startup memory files (#69600)",
-    "fix(agents): enforce subagent envelope inheritance on ACP child sessions [AI-assisted] (#69383)",
-    "fix(tui): arm streaming watchdog on every delta, not only visible ones (#69338)",
-    "fix(codex): exclude codex-app-server synthetic apiKey from secrets audit (#69581)",
-    "docs(changelog): deduplicate #67800 entries in Unreleased (#69670)",
-    "fix(agents): honor explicit long Anthropic cache TTL on custom hosts (#67800)",
-    "fix: fix Telegram media file delivery (#69641)"
+    "fix(qqbot): add interaction intents (#70143)",
+    "fix: require cli auth epoch version (#70132)",
+    "fix: update cli session changelog (#70132)",
+    "test(cli): cover oauth auth epoch continuity",
+    "fix(cli): stabilize oauth session auth epochs",
+    "fix(plugins): avoid doctor crash on legacy interactive state (#70135)",
+    "chore(pi): remove local pr prompts",
+    "fix(config): accept truncateAfterCompaction (#68395)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
