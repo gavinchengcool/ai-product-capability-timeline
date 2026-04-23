@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-04-22T20:55:03+08:00
-- Requested window: 2026-04-21 to 2026-04-22
+- Generated at: 2026-04-23T20:54:35+08:00
+- Requested window: 2026-04-22 to 2026-04-23
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-04-21 to 2026-04-22
-- Generated at: 2026-04-22T20:54:47.702053+08:00
-- 窗口: 2026-04-21 至 2026-04-22
-- GitHub 增量: 290 commits / 4 releases
-- 最近 push: 2026-04-22
+- Window: 2026-04-22 to 2026-04-23
+- Generated at: 2026-04-23T20:54:17.151231+08:00
+- 窗口: 2026-04-22 至 2026-04-23
+- GitHub 增量: 571 commits / 0 releases
+- 最近 push: 2026-04-23
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Onboard/wizard: restyle the setup security disclaimer with a single yellow warning banner, section headings and bulleted checklists, and un-dim the note body so key guidance is easy to scan; add a loading spinner during the initial model catalog load so the wizard no longer goes blank while it runs; add an "API key" placeholder to provider API key prompts. (#69553) Thanks @Patrick-Erichsen. [v2026.4.20]
-  - Models/costs: support tiered model pricing from cached catalogs and configured models, and include bundled Moonshot Kimi K2.6/K2.5 cost estimates for token-usage reports. (#67605) Thanks @sliverp. [v2026.4.20]
-  - BlueBubbles/groups: forward per-group `systemPrompt` config into inbound context `GroupSystemPrompt` so configured group-specific behavioral instructions (for example threaded-reply and tapback conventions) are injected on every turn. Supports `"*"` wildcard fallback matching the existing `requireMention` pattern. Closes #60665. (#69198) Thanks @omarshahine. [v2026.4.20]
-  - Plugins/tasks: add a detached runtime registration contract so plugin executors can own detached task lifecycle and cancellation without reaching into core task internals. (#68915) Thanks @mbelinky. [v2026.4.20]
-  - QA/CI: make `openclaw qa suite` and `openclaw qa telegram` fail by default when scenarios fail, add `--allow-failures` for artifact-only runs, and tighten live-lane defaults for CI automation. (#69122) Thanks @joshavant. [v2026.4.20]
-  - Onboard/wizard: restyle the setup security disclaimer with a single yellow warning banner, section headings and bulleted checklists, and un-dim the note body so key guidance is easy to scan; add a loading spinner during the initial model catalog load so the wizard no longer goes blank while it runs; add an "API key" placeholder to provider API key prompts. (#69553) Thanks @Patrick-Erichsen. [v2026.4.20-beta.2]
-  - Models/costs: support tiered model pricing from cached catalogs and configured models, and include bundled Moonshot Kimi K2.6/K2.5 cost estimates for token-usage reports. (#67605) Thanks @sliverp. [v2026.4.20-beta.2]
-  - BlueBubbles/groups: forward per-group `systemPrompt` config into inbound context `GroupSystemPrompt` so configured group-specific behavioral instructions (for example threaded-reply and tapback conventions) are injected on every turn. Supports `"*"` wildcard fallback matching the existing `requireMention` pattern. Closes #60665. (#69198) Thanks @omarshahine. [v2026.4.20-beta.2]
+  - ci: add focused live model dispatch
+  - ci: add docs agent workflow
+  - feat(i18n): add Thai control UI locale
+  - feat: add trajectory bundle export and default-on runtime capture (#70291)
+  - feat: add external auth provider contracts
+  - feat(docs): add Thai translation support
+  - feat(onboarding): auto-install missing provider and channel plugins
+  - feat(whatsapp): adopt replyToMode quoting (#62305)
 - Fixes and constraints:
-  - Exec/YOLO: stop rejecting gateway-host exec in `security=full` plus `ask=off` mode via the Python/Node script preflight hardening path, so promptless YOLO exec once again runs direct interpreter stdin and heredoc forms such as `node <<'NODE' ... NODE`. [v2026.4.20]
-  - fix(qqbot): add SSRF guard to direct-upload URL paths in uploadC2CMedia and uploadGroupMedia [AI-assisted]. (#69595) Thanks @pgondhi987. [v2026.4.20]
-  - fix(gateway): enforce allowRequestSessionKey gate on template-rendered mapping sessionKeys. (#69381) Thanks @pgondhi987. [v2026.4.20]
-  - fix(security): block MINIMAX_API_HOST workspace env injection and remove env-driven URL routing [AI-assisted]. (#67300) Thanks @pgondhi987. [v2026.4.20]
-  - Security/dotenv: block all `OPENCLAW_*` keys from untrusted workspace `.env` files so workspace-local env loading fails closed for new runtime-control variables instead of silently inheriting them. (#473) [v2026.4.20]
-  - Agents/gateway tool: extend the agent-facing `gateway` tool's config mutation guard so model-driven `config.patch` and `config.apply` cannot rewrite operator-trusted paths (sandbox, plugin trust, gateway auth/TLS, hook routing and tokens, SSRF policy, MCP servers, workspace filesystem hardening) and cannot bypass the guard by editing per-agent sandbox, tools, or embedded-Pi overrides in place under `agents.list[]`. (#69377) Thanks @eleqtrizit. [v2026.4.20]
-  - Exec/YOLO: stop rejecting gateway-host exec in `security=full` plus `ask=off` mode via the Python/Node script preflight hardening path, so promptless YOLO exec once again runs direct interpreter stdin and heredoc forms such as `node <<'NODE' ... NODE`. [v2026.4.20-beta.2]
-  - fix(qqbot): add SSRF guard to direct-upload URL paths in uploadC2CMedia and uploadGroupMedia [AI-assisted]. (#69595) Thanks @pgondhi987. [v2026.4.20-beta.2]
+  - fix: Add runner label to /status (#70595)
+  - fix #70487: OpenAI image generation provider does not support Azure OpenAI endpoints (openclaw#70570)
+  - perf(test): reuse plugin validation fixtures
+  - fix (#70562)
+  - perf(test): use gateway harness for cli connect smoke
+  - perf(test): remove gateway method wait debt
+  - perf(test): speed up secrets and mattermost lanes
+  - fix: place telegram rtt changelog entry (#70550)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
