@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-04-23T20:54:35+08:00
-- Requested window: 2026-04-22 to 2026-04-23
+- Generated at: 2026-04-24T20:53:17+08:00
+- Requested window: 2026-04-23 to 2026-04-24
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-04-22 to 2026-04-23
-- Generated at: 2026-04-23T20:54:17.151231+08:00
-- 窗口: 2026-04-22 至 2026-04-23
-- GitHub 增量: 571 commits / 0 releases
-- 最近 push: 2026-04-23
+- Window: 2026-04-23 to 2026-04-24
+- Generated at: 2026-04-24T20:52:58.970177+08:00
+- 窗口: 2026-04-23 至 2026-04-24
+- GitHub 增量: 631 commits / 3 releases
+- 最近 push: 2026-04-24
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - ci: add focused live model dispatch
-  - ci: add docs agent workflow
-  - feat(i18n): add Thai control UI locale
-  - feat: add trajectory bundle export and default-on runtime capture (#70291)
-  - feat: add external auth provider contracts
-  - feat(docs): add Thai translation support
-  - feat(onboarding): auto-install missing provider and channel plugins
-  - feat(whatsapp): adopt replyToMode quoting (#62305)
+  - Providers/OpenAI: add image generation and reference-image editing through Codex OAuth, so `openai/gpt-image-2` works without an `OPENAI_API_KEY`. Fixes #70703. [v2026.4.23-beta.5]
+  - Providers/OpenRouter: add image generation and reference-image editing through `image_generate`, so OpenRouter image models work with `OPENROUTER_API_KEY`. Fixes #55066 via #67668. Thanks @notamicrodose. [v2026.4.23-beta.5]
+  - Agents/subagents: add optional forked context for native `sessions_spawn` runs so agents can let a child inherit the requester transcript when needed, while keeping clean isolated sessions as the default; includes prompt guidance, context-engine hook metadata, docs, and QA coverage. [v2026.4.23-beta.5]
+  - Agents/tools: add optional per-call `timeoutMs` support for image, video, music, and TTS generation tools so agents can extend provider request timeouts only when a specific generation needs it. [v2026.4.23-beta.5]
+  - Memory/local embeddings: add configurable `memorySearch.local.contextSize` with a 4096 default so local embedding contexts can be tuned for constrained hosts without patching the memory host. (#70544) Thanks @aalekh-sarvam. [v2026.4.23-beta.5]
+  - Codex harness: add structured debug logging for embedded harness selection decisions so `/status` stays simple while gateway logs explain auto-selection and Pi fallback reasons. (#70760) Thanks @100yenadmin. [v2026.4.23-beta.5]
+  - Providers/OpenAI: add image generation and reference-image editing through Codex OAuth, so `openai/gpt-image-2` works without an `OPENAI_API_KEY`. Fixes #70703. [v2026.4.23-beta.4]
+  - Providers/OpenRouter: add image generation and reference-image editing through `image_generate`, so OpenRouter image models work with `OPENROUTER_API_KEY`. Fixes #55066 via #67668. Thanks @notamicrodose. [v2026.4.23-beta.4]
 - Fixes and constraints:
-  - fix: Add runner label to /status (#70595)
-  - fix #70487: OpenAI image generation provider does not support Azure OpenAI endpoints (openclaw#70570)
-  - perf(test): reuse plugin validation fixtures
-  - fix (#70562)
-  - perf(test): use gateway harness for cli connect smoke
-  - perf(test): remove gateway method wait debt
-  - perf(test): speed up secrets and mattermost lanes
-  - fix: place telegram rtt changelog entry (#70550)
+  - Providers/OpenAI: harden image generation auth routing and Codex OAuth response parsing so fallback only applies to public OpenAI API routes and bounded SSE results. Thanks @Takhoffman. [v2026.4.23-beta.5]
+  - Providers/OpenAI: harden image generation auth routing and Codex OAuth response parsing so fallback only applies to public OpenAI API routes and bounded SSE results. Thanks @Takhoffman. [v2026.4.23-beta.4]
+  - Providers/OpenAI: harden Voice Call realtime transcription against OpenAI Realtime session-update drift, forward language and prompt hints, and add live coverage for realtime STT. [v2026.4.22]
+  - Discord: harden inbound thread metadata handling against partial Carbon channel getters, so non-command thread messages and queued jobs no longer crash when `name`, `parentId`, `parent`, or `ownerId` requires fetched raw data. [v2026.4.22]
+  - Security/update: fail closed when exact pinned npm plugin or hook-pack updates detect integrity drift, and expose aborted plugin drift details in `openclaw update --json`. [v2026.4.22]
+  - fix(config): accept truncateAfterCompaction (#68395). Thanks @MonkeyLeeT [v2026.4.22]
+  - Security/dotenv: block workspace `.env` overrides for Matrix, Mattermost, IRC, and Synology endpoint settings so cloned workspaces cannot redirect bundled connector traffic through local endpoint config. (#70240) Thanks @drobison00. [v2026.4.22]
+  - perf: lazy load bluebubbles catchup
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

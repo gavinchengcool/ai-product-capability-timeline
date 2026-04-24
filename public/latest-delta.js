@@ -1,91 +1,113 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-04-23T20:54:17.151231+08:00",
+  "generatedAt": "2026-04-24T20:52:58.970177+08:00",
   "window": {
-    "start_local": "2026-04-22T20:54:17.151231+08:00",
-    "end_local": "2026-04-23T20:54:17.151231+08:00",
-    "start_utc": "2026-04-22T12:54:17Z",
-    "end_utc": "2026-04-23T12:54:17Z"
+    "start_local": "2026-04-23T20:52:58.970177+08:00",
+    "end_local": "2026-04-24T20:52:58.970177+08:00",
+    "start_utc": "2026-04-23T12:52:58Z",
+    "end_utc": "2026-04-24T12:52:58Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 362737,
-    "forks": 74111,
-    "open_issues": 19111,
-    "pushed_at": "2026-04-23T12:48:55Z"
+    "stars": 363254,
+    "forks": 74271,
+    "open_issues": 19162,
+    "pushed_at": "2026-04-24T12:33:54Z"
   },
   "summary": {
-    "commitCount": 571,
-    "releaseCount": 0,
-    "stableReleaseCount": 0,
-    "betaReleaseCount": 0,
-    "stars": 362737,
-    "forks": 74111,
-    "openIssues": 19111
+    "commitCount": 631,
+    "releaseCount": 3,
+    "stableReleaseCount": 1,
+    "betaReleaseCount": 2,
+    "stars": 363254,
+    "forks": 74271,
+    "openIssues": 19162
   },
-  "releases": [],
+  "releases": [
+    {
+      "tag_name": "v2026.4.23-beta.5",
+      "published_at": "2026-04-24T09:50:01Z",
+      "name": "OpenClaw 2026.4.23 beta 5",
+      "prerelease": true,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.23-beta.5"
+    },
+    {
+      "tag_name": "v2026.4.23-beta.4",
+      "published_at": "2026-04-24T08:56:03Z",
+      "name": "openclaw 2026.4.23-beta.4",
+      "prerelease": true,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.23-beta.4"
+    },
+    {
+      "tag_name": "v2026.4.22",
+      "published_at": "2026-04-23T13:56:23Z",
+      "name": "openclaw 2026.4.22",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.22"
+    }
+  ],
   "featureItems": [
-    "ci: add focused live model dispatch",
-    "ci: add docs agent workflow",
-    "feat(i18n): add Thai control UI locale",
-    "feat: add trajectory bundle export and default-on runtime capture (#70291)",
-    "feat: add external auth provider contracts",
-    "feat(docs): add Thai translation support",
-    "feat(onboarding): auto-install missing provider and channel plugins",
-    "feat(whatsapp): adopt replyToMode quoting (#62305)"
+    "Providers/OpenAI: add image generation and reference-image editing through Codex OAuth, so `openai/gpt-image-2` works without an `OPENAI_API_KEY`. Fixes #70703. [v2026.4.23-beta.5]",
+    "Providers/OpenRouter: add image generation and reference-image editing through `image_generate`, so OpenRouter image models work with `OPENROUTER_API_KEY`. Fixes #55066 via #67668. Thanks @notamicrodose. [v2026.4.23-beta.5]",
+    "Agents/subagents: add optional forked context for native `sessions_spawn` runs so agents can let a child inherit the requester transcript when needed, while keeping clean isolated sessions as the default; includes prompt guidance, context-engine hook metadata, docs, and QA coverage. [v2026.4.23-beta.5]",
+    "Agents/tools: add optional per-call `timeoutMs` support for image, video, music, and TTS generation tools so agents can extend provider request timeouts only when a specific generation needs it. [v2026.4.23-beta.5]",
+    "Memory/local embeddings: add configurable `memorySearch.local.contextSize` with a 4096 default so local embedding contexts can be tuned for constrained hosts without patching the memory host. (#70544) Thanks @aalekh-sarvam. [v2026.4.23-beta.5]",
+    "Codex harness: add structured debug logging for embedded harness selection decisions so `/status` stays simple while gateway logs explain auto-selection and Pi fallback reasons. (#70760) Thanks @100yenadmin. [v2026.4.23-beta.5]",
+    "Providers/OpenAI: add image generation and reference-image editing through Codex OAuth, so `openai/gpt-image-2` works without an `OPENAI_API_KEY`. Fixes #70703. [v2026.4.23-beta.4]",
+    "Providers/OpenRouter: add image generation and reference-image editing through `image_generate`, so OpenRouter image models work with `OPENROUTER_API_KEY`. Fixes #55066 via #67668. Thanks @notamicrodose. [v2026.4.23-beta.4]"
   ],
   "fixItems": [
-    "fix: Add runner label to /status (#70595)",
-    "fix #70487: OpenAI image generation provider does not support Azure OpenAI endpoints (openclaw#70570)",
-    "perf(test): reuse plugin validation fixtures",
-    "fix (#70562)",
-    "perf(test): use gateway harness for cli connect smoke",
-    "perf(test): remove gateway method wait debt",
-    "perf(test): speed up secrets and mattermost lanes",
-    "fix: place telegram rtt changelog entry (#70550)"
+    "Providers/OpenAI: harden image generation auth routing and Codex OAuth response parsing so fallback only applies to public OpenAI API routes and bounded SSE results. Thanks @Takhoffman. [v2026.4.23-beta.5]",
+    "Providers/OpenAI: harden image generation auth routing and Codex OAuth response parsing so fallback only applies to public OpenAI API routes and bounded SSE results. Thanks @Takhoffman. [v2026.4.23-beta.4]",
+    "Providers/OpenAI: harden Voice Call realtime transcription against OpenAI Realtime session-update drift, forward language and prompt hints, and add live coverage for realtime STT. [v2026.4.22]",
+    "Discord: harden inbound thread metadata handling against partial Carbon channel getters, so non-command thread messages and queued jobs no longer crash when `name`, `parentId`, `parent`, or `ownerId` requires fetched raw data. [v2026.4.22]",
+    "Security/update: fail closed when exact pinned npm plugin or hook-pack updates detect integrity drift, and expose aborted plugin drift details in `openclaw update --json`. [v2026.4.22]",
+    "fix(config): accept truncateAfterCompaction (#68395). Thanks @MonkeyLeeT [v2026.4.22]",
+    "Security/dotenv: block workspace `.env` overrides for Matrix, Mattermost, IRC, and Synology endpoint settings so cloned workspaces cannot redirect bundled connector traffic through local endpoint config. (#70240) Thanks @drobison00. [v2026.4.22]",
+    "perf: lazy load bluebubbles catchup"
   ],
   "topScopes": [
     {
-      "scope": "ci",
-      "count": 79
+      "scope": "test",
+      "count": 111
+    },
+    {
+      "scope": "perf",
+      "count": 82
     },
     {
       "scope": "fix",
-      "count": 70
-    },
-    {
-      "scope": "test",
-      "count": 41
+      "count": 78
     },
     {
       "scope": "docs",
+      "count": 54
+    },
+    {
+      "scope": "ci",
       "count": 35
     },
     {
-      "scope": "hooks",
-      "count": 28
+      "scope": "plugins",
+      "count": 26
     },
     {
-      "scope": "agents",
-      "count": 20
+      "scope": "openai",
+      "count": 21
     },
     {
-      "scope": "gateway",
-      "count": 19
-    },
-    {
-      "scope": "codex",
-      "count": 17
+      "scope": "refactor",
+      "count": 16
     }
   ],
   "headlineCommits": [
-    "docs(providers/openai): document Azure OpenAI endpoint usage for image generation (#70501)",
-    "docs: refresh documentation",
-    "fix: Add runner label to /status (#70595)",
-    "test(line): trim outbound payload coverage",
-    "test(extensions): trim hot extension imports",
-    "test(config): avoid ignored baseline artifact",
-    "test(config): read generated talk baseline",
-    "test(config): avoid module resets in pruning tests"
+    "test: slim browser and msteams imports",
+    "test: bridge xai test helper imports",
+    "test: narrow xai test helper imports",
+    "test: narrow matrix client runtime import",
+    "test: extend Open WebUI docker startup wait",
+    "test: narrow slack inbound contract imports",
+    "test: split slack client option imports",
+    "test: slim slack media imports"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
