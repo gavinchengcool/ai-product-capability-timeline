@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-04-24T20:53:17+08:00
-- Requested window: 2026-04-23 to 2026-04-24
+- Generated at: 2026-04-25T20:34:16+08:00
+- Requested window: 2026-04-24 to 2026-04-25
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-04-23 to 2026-04-24
-- Generated at: 2026-04-24T20:52:58.970177+08:00
-- 窗口: 2026-04-23 至 2026-04-24
-- GitHub 增量: 631 commits / 3 releases
-- 最近 push: 2026-04-24
+- Window: 2026-04-24 to 2026-04-25
+- Generated at: 2026-04-25T20:33:56.987248+08:00
+- 窗口: 2026-04-24 至 2026-04-25
+- GitHub 增量: 803 commits / 4 releases
+- 最近 push: 2026-04-25
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Providers/OpenAI: add image generation and reference-image editing through Codex OAuth, so `openai/gpt-image-2` works without an `OPENAI_API_KEY`. Fixes #70703. [v2026.4.23-beta.5]
-  - Providers/OpenRouter: add image generation and reference-image editing through `image_generate`, so OpenRouter image models work with `OPENROUTER_API_KEY`. Fixes #55066 via #67668. Thanks @notamicrodose. [v2026.4.23-beta.5]
-  - Agents/subagents: add optional forked context for native `sessions_spawn` runs so agents can let a child inherit the requester transcript when needed, while keeping clean isolated sessions as the default; includes prompt guidance, context-engine hook metadata, docs, and QA coverage. [v2026.4.23-beta.5]
-  - Agents/tools: add optional per-call `timeoutMs` support for image, video, music, and TTS generation tools so agents can extend provider request timeouts only when a specific generation needs it. [v2026.4.23-beta.5]
-  - Memory/local embeddings: add configurable `memorySearch.local.contextSize` with a 4096 default so local embedding contexts can be tuned for constrained hosts without patching the memory host. (#70544) Thanks @aalekh-sarvam. [v2026.4.23-beta.5]
-  - Codex harness: add structured debug logging for embedded harness selection decisions so `/status` stays simple while gateway logs explain auto-selection and Pi fallback reasons. (#70760) Thanks @100yenadmin. [v2026.4.23-beta.5]
-  - Providers/OpenAI: add image generation and reference-image editing through Codex OAuth, so `openai/gpt-image-2` works without an `OPENAI_API_KEY`. Fixes #70703. [v2026.4.23-beta.4]
-  - Providers/OpenRouter: add image generation and reference-image editing through `image_generate`, so OpenRouter image models work with `OPENROUTER_API_KEY`. Fixes #55066 via #67668. Thanks @notamicrodose. [v2026.4.23-beta.4]
+  - Control UI/Talk: add browser WebRTC realtime voice sessions backed by OpenAI Realtime, with Gateway-minted ephemeral client secrets and `openclaw_agent_consult` handoff to the full OpenClaw agent. [v2026.4.24-beta.1]
+  - Plugins/Google Meet: add a bundled participant plugin with personal Google auth, explicit meeting URL joins, Chrome and Twilio realtime transports, paired-node `chrome-node` support for Parallels-style Chrome/BlackHole/SoX hosts, and full-agent consults inside live voice sessions. (#70765) [v2026.4.24-beta.1]
+  - Plugins/Google Meet: add artifact and attendance workflows for conference records, recordings, transcripts, smart notes, and participant sessions, including markdown/file output, latest-record lookup, and `--all-conference-records` history scans. [v2026.4.24-beta.1]
+  - Plugins/Google Meet: add OAuth and browser-state doctor/recovery flows, including `googlemeet doctor --oauth` and `recover_current_tab`/`recover-tab` so agents can inspect already-open Meet tabs without opening duplicates. [v2026.4.24-beta.1]
+  - Plugins/Voice Call: add `voicecall setup` and a dry-run-by-default `voicecall smoke` command so Twilio/provider readiness can be checked before placing a live test call. [v2026.4.24-beta.1]
+  - Providers/Google: add a Gemini Live realtime voice provider for backend Voice Call and Google Meet audio bridges, with bidirectional audio and function-call support. [v2026.4.24-beta.1]
+  - Gateway/VoiceClaw: add a realtime brain WebSocket endpoint backed by Gemini Live, with owner-auth gating and async OpenClaw tool handoff. (#70938) Thanks @yagudaev. [v2026.4.24-beta.1]
+  - Control UI/chat: add a Steer action on queued messages so a browser follow-up can be injected into the active run without retyping it. [v2026.4.24-beta.1]
 - Fixes and constraints:
-  - Providers/OpenAI: harden image generation auth routing and Codex OAuth response parsing so fallback only applies to public OpenAI API routes and bounded SSE results. Thanks @Takhoffman. [v2026.4.23-beta.5]
-  - Providers/OpenAI: harden image generation auth routing and Codex OAuth response parsing so fallback only applies to public OpenAI API routes and bounded SSE results. Thanks @Takhoffman. [v2026.4.23-beta.4]
-  - Providers/OpenAI: harden Voice Call realtime transcription against OpenAI Realtime session-update drift, forward language and prompt hints, and add live coverage for realtime STT. [v2026.4.22]
-  - Discord: harden inbound thread metadata handling against partial Carbon channel getters, so non-command thread messages and queued jobs no longer crash when `name`, `parentId`, `parent`, or `ownerId` requires fetched raw data. [v2026.4.22]
-  - Security/update: fail closed when exact pinned npm plugin or hook-pack updates detect integrity drift, and expose aborted plugin drift details in `openclaw update --json`. [v2026.4.22]
-  - fix(config): accept truncateAfterCompaction (#68395). Thanks @MonkeyLeeT [v2026.4.22]
-  - Security/dotenv: block workspace `.env` overrides for Matrix, Mattermost, IRC, and Synology endpoint settings so cloned workspaces cannot redirect bundled connector traffic through local endpoint config. (#70240) Thanks @drobison00. [v2026.4.22]
-  - perf: lazy load bluebubbles catchup
+  - Agents/tool-result pruning: harden the tool-result character estimator and context-pruning loops against malformed `{ type: "text" }` blocks created by void or undefined tool handler results, serializing non-string text payloads for size accounting so they cannot bypass trimming as zero-sized. Fixes #34979. (#51267) Thanks @cgdusek. [v2026.4.24-beta.1]
+  - Diagnostics: harden tool and model diagnostic events against hostile errors, blocking listeners, and unsafe stability reason fields. Thanks @vincentkoc. [v2026.4.24-beta.1]
+  - Codex/GPT-5.4: harden fallback, auth-profile, tool-schema, and replay edge cases across native and embedded runtime paths. (#70743) Thanks @100yenadmin. [v2026.4.24-beta.1]
+  - Providers/OpenAI: harden image generation auth routing and Codex OAuth response parsing so fallback only applies to public OpenAI API routes and bounded SSE results. Thanks @Takhoffman. [v2026.4.23]
+  - Providers/OpenAI: harden image generation auth routing and Codex OAuth response parsing so fallback only applies to public OpenAI API routes and bounded SSE results. Thanks @Takhoffman. [v2026.4.23-beta.6]
+  - fix: yield while waiting for subagent completions
+  - fix(agents): pass Claude system prompt via file
+  - fix(test): detect partial sparse core roots
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
