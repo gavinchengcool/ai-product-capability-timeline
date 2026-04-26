@@ -1,120 +1,134 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-04-25T20:33:56.987248+08:00",
+  "generatedAt": "2026-04-26T20:36:10.950985+08:00",
   "window": {
-    "start_local": "2026-04-24T20:33:56.987248+08:00",
-    "end_local": "2026-04-25T20:33:56.987248+08:00",
-    "start_utc": "2026-04-24T12:33:56Z",
-    "end_utc": "2026-04-25T12:33:56Z"
+    "start_local": "2026-04-25T20:36:10.950985+08:00",
+    "end_local": "2026-04-26T20:36:10.950985+08:00",
+    "start_utc": "2026-04-25T12:36:10Z",
+    "end_utc": "2026-04-26T12:36:10Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 363683,
-    "forks": 74437,
-    "open_issues": 12696,
-    "pushed_at": "2026-04-25T12:30:57Z"
+    "stars": 364185,
+    "forks": 74579,
+    "open_issues": 7262,
+    "pushed_at": "2026-04-26T12:23:07Z"
   },
   "summary": {
-    "commitCount": 803,
-    "releaseCount": 4,
+    "commitCount": 752,
+    "releaseCount": 6,
     "stableReleaseCount": 1,
-    "betaReleaseCount": 3,
-    "stars": 363683,
-    "forks": 74437,
-    "openIssues": 12696
+    "betaReleaseCount": 5,
+    "stars": 364185,
+    "forks": 74579,
+    "openIssues": 7262
   },
   "releases": [
     {
-      "tag_name": "v2026.4.24-beta.2",
-      "published_at": "2026-04-25T12:22:26Z",
-      "name": "OpenClaw 2026.4.24 beta 2",
+      "tag_name": "v2026.4.25-beta.2",
+      "published_at": "2026-04-26T12:23:17Z",
+      "name": "openclaw 2026.4.25-beta.2",
       "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.24-beta.2"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.25-beta.2"
     },
     {
-      "tag_name": "v2026.4.24-beta.1",
-      "published_at": "2026-04-25T09:32:12Z",
-      "name": "openclaw 2026.4.24-beta.1",
+      "tag_name": "v2026.4.25-beta.1",
+      "published_at": "2026-04-26T11:21:56Z",
+      "name": "openclaw 2026.4.25-beta.1",
       "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.24-beta.1"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.25-beta.1"
     },
     {
-      "tag_name": "v2026.4.23",
-      "published_at": "2026-04-24T15:19:55Z",
-      "name": "openclaw 2026.4.23",
+      "tag_name": "v2026.4.24",
+      "published_at": "2026-04-25T18:15:17Z",
+      "name": "openclaw 2026.4.24",
       "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.23"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.24"
     },
     {
-      "tag_name": "v2026.4.23-beta.6",
-      "published_at": "2026-04-24T14:34:43Z",
-      "name": "openclaw 2026.4.23-beta.6",
+      "tag_name": "v2026.4.24-beta.5",
+      "published_at": "2026-04-25T15:09:26Z",
+      "name": "openclaw 2026.4.24-beta.5",
       "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.23-beta.6"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.24-beta.5"
+    },
+    {
+      "tag_name": "v2026.4.24-beta.4",
+      "published_at": "2026-04-25T14:26:47Z",
+      "name": "openclaw 2026.4.24-beta.4",
+      "prerelease": true,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.24-beta.4"
+    },
+    {
+      "tag_name": "v2026.4.24-beta.3",
+      "published_at": "2026-04-25T13:39:59Z",
+      "name": "openclaw 2026.4.24-beta.3",
+      "prerelease": true,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.24-beta.3"
     }
   ],
   "featureItems": [
-    "Control UI/Talk: add browser WebRTC realtime voice sessions backed by OpenAI Realtime, with Gateway-minted ephemeral client secrets and `openclaw_agent_consult` handoff to the full OpenClaw agent. [v2026.4.24-beta.1]",
-    "Plugins/Google Meet: add a bundled participant plugin with personal Google auth, explicit meeting URL joins, Chrome and Twilio realtime transports, paired-node `chrome-node` support for Parallels-style Chrome/BlackHole/SoX hosts, and full-agent consults inside live voice sessions. (#70765) [v2026.4.24-beta.1]",
-    "Plugins/Google Meet: add artifact and attendance workflows for conference records, recordings, transcripts, smart notes, and participant sessions, including markdown/file output, latest-record lookup, and `--all-conference-records` history scans. [v2026.4.24-beta.1]",
-    "Plugins/Google Meet: add OAuth and browser-state doctor/recovery flows, including `googlemeet doctor --oauth` and `recover_current_tab`/`recover-tab` so agents can inspect already-open Meet tabs without opening duplicates. [v2026.4.24-beta.1]",
-    "Plugins/Voice Call: add `voicecall setup` and a dry-run-by-default `voicecall smoke` command so Twilio/provider readiness can be checked before placing a live test call. [v2026.4.24-beta.1]",
-    "Providers/Google: add a Gemini Live realtime voice provider for backend Voice Call and Google Meet audio bridges, with bidirectional audio and function-call support. [v2026.4.24-beta.1]",
-    "Gateway/VoiceClaw: add a realtime brain WebSocket endpoint backed by Gemini Live, with owner-auth gating and async OpenClaw tool handoff. (#70938) Thanks @yagudaev. [v2026.4.24-beta.1]",
-    "Control UI/chat: add a Steer action on queued messages so a browser follow-up can be injected into the active run without retyping it. [v2026.4.24-beta.1]"
+    "TTS/WhatsApp: add `/tts latest` read-aloud support with duplicate suppression and `/tts chat on|off|default` session-scoped auto-TTS overrides, completing the on-demand voice-note UX for current-chat replies. Fixes #66032. [v2026.4.25-beta.2]",
+    "Providers/Azure Speech: add Azure Speech as a bundled TTS provider with Speech-resource auth, voice listing, SSML escaping, native Ogg/Opus voice-note output, and telephony output. (#51776) Thanks @leonchui. [v2026.4.25-beta.2]",
+    "Google Meet: add calendar-backed attendance export workflows, export manifests, dry-run previews, and tool parity for meeting records. [v2026.4.25-beta.2]",
+    "Control UI: add PWA install support and Web Push notifications for Gateway chat. (#44590) Thanks @eduardocruz. [v2026.4.25-beta.2]",
+    "Browser automation: add safe tab URLs in agent responses plus a CDP-native role snapshot fallback with iframe-aware refs, cursor-clickable detection, target attach preparation, and `openclaw browser doctor --deep` live snapshot probing. [v2026.4.25-beta.2]",
+    "Browser/CLI: add `openclaw browser start --headless` as a one-shot local managed browser launch override without rewriting persisted browser config. Thanks @BenediktSchackenberg. [v2026.4.25-beta.2]",
+    "CLI/Crestodian/TUI: add the first-run setup helper, local planner fallback, full-TUI interactive Crestodian, startup progress indicators, context mode selector, and a shorter startup greeting. (#71720, #71760) Thanks @SebTardif and @kevinlin-openai. [v2026.4.25-beta.2]",
+    "Plugins: migrate the local plugin registry automatically during package install/update, keeping install metadata in the plugin index while indexing existing plugin manifests for the new cold registry path. Thanks @vincentkoc and @shakkernerd. [v2026.4.25-beta.2]"
   ],
   "fixItems": [
-    "Agents/tool-result pruning: harden the tool-result character estimator and context-pruning loops against malformed `{ type: \"text\" }` blocks created by void or undefined tool handler results, serializing non-string text payloads for size accounting so they cannot bypass trimming as zero-sized. Fixes #34979. (#51267) Thanks @cgdusek. [v2026.4.24-beta.1]",
-    "Diagnostics: harden tool and model diagnostic events against hostile errors, blocking listeners, and unsafe stability reason fields. Thanks @vincentkoc. [v2026.4.24-beta.1]",
-    "Codex/GPT-5.4: harden fallback, auth-profile, tool-schema, and replay edge cases across native and embedded runtime paths. (#70743) Thanks @100yenadmin. [v2026.4.24-beta.1]",
-    "Providers/OpenAI: harden image generation auth routing and Codex OAuth response parsing so fallback only applies to public OpenAI API routes and bounded SSE results. Thanks @Takhoffman. [v2026.4.23]",
-    "Providers/OpenAI: harden image generation auth routing and Codex OAuth response parsing so fallback only applies to public OpenAI API routes and bounded SSE results. Thanks @Takhoffman. [v2026.4.23-beta.6]",
-    "fix: yield while waiting for subagent completions",
-    "fix(agents): pass Claude system prompt via file",
-    "fix(test): detect partial sparse core roots"
+    "Security/audit: read channel exposure and plugin allowlist ownership from read-only plugin index metadata so cold audits do not depend on loaded channel runtime. Thanks @shakkernerd. [v2026.4.25-beta.2]",
+    "Security/plugins: keep web-search credential presence checks on cold config, env, and manifest metadata instead of importing web-search provider runtime. Thanks @vincentkoc. [v2026.4.25-beta.2]",
+    "Security/audit: read channel exposure and plugin allowlist ownership from read-only plugin index metadata so cold audits do not depend on loaded channel runtime. Thanks @shakkernerd. [v2026.4.25-beta.1]",
+    "Security/plugins: keep web-search credential presence checks on cold config, env, and manifest metadata instead of importing web-search provider runtime. Thanks @vincentkoc. [v2026.4.25-beta.1]",
+    "Agents/tool-result pruning: harden the tool-result character estimator and context-pruning loops against malformed `{ type: \"text\" }` blocks created by void or undefined tool handler results, serializing non-string text payloads for size accounting so they cannot bypass trimming as zero-sized. Fixes #34979. (#51267) Thanks @cgdusek. [v2026.4.24]",
+    "Diagnostics: harden tool and model diagnostic events against hostile errors, blocking listeners, and unsafe stability reason fields. Thanks @vincentkoc. [v2026.4.24]",
+    "Codex/GPT-5.4: harden fallback, auth-profile, tool-schema, and replay edge cases across native and embedded runtime paths. (#70743) Thanks @100yenadmin. [v2026.4.24]",
+    "Agents/tool-result pruning: harden the tool-result character estimator and context-pruning loops against malformed `{ type: \"text\" }` blocks created by void or undefined tool handler results, serializing non-string text payloads for size accounting so they cannot bypass trimming as zero-sized. Fixes #34979. (#51267) Thanks @cgdusek, @alvinttang, and @coffeexcoin. [v2026.4.24-beta.5]"
   ],
   "topScopes": [
     {
       "scope": "fix",
-      "count": 102
+      "count": 153
     },
     {
       "scope": "test",
-      "count": 67
+      "count": 68
     },
     {
       "scope": "plugins",
-      "count": 60
+      "count": 64
     },
     {
       "scope": "docs",
-      "count": 47
+      "count": 39
     },
     {
-      "scope": "browser",
-      "count": 43
+      "scope": "tts",
+      "count": 25
     },
     {
-      "scope": "ui",
-      "count": 33
+      "scope": "agents",
+      "count": 22
     },
     {
-      "scope": "google-meet",
-      "count": 32
+      "scope": "cli",
+      "count": 20
     },
     {
-      "scope": "ci",
-      "count": 28
+      "scope": "gateway",
+      "count": 16
     }
   ],
   "headlineCommits": [
-    "fix: yield while waiting for subagent completions",
-    "fix(agents): pass Claude system prompt via file",
-    "fix(test): detect partial sparse core roots",
-    "test: add Crestodian QA lab setup scenario",
-    "perf(browser): precompute browser help",
-    "fix(telegram): recover incomplete preview finalization (#71554)",
-    "fix(browser): align bare ws cdp readiness",
-    "fix(plugins): preserve default enablement for relocation"
+    "test(extensions): restore transformed dynamic imports",
+    "perf: speed up slow test imports",
+    "fix(cli): keep channel add plugin install noninteractive",
+    "test(plugin-sdk): tighten channel runtime shim scan",
+    "docs(plugin-sdk): refresh api baseline",
+    "fix(ci): repair main type and lint failures",
+    "fix(voice-call): avoid duplicate webhook logs",
+    "Merge branch 'main' of https://github.com/openclaw/openclaw"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

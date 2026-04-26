@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-04-25T20:34:16+08:00
-- Requested window: 2026-04-24 to 2026-04-25
+- Generated at: 2026-04-26T20:36:29+08:00
+- Requested window: 2026-04-25 to 2026-04-26
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-04-24 to 2026-04-25
-- Generated at: 2026-04-25T20:33:56.987248+08:00
-- 窗口: 2026-04-24 至 2026-04-25
-- GitHub 增量: 803 commits / 4 releases
-- 最近 push: 2026-04-25
+- Window: 2026-04-25 to 2026-04-26
+- Generated at: 2026-04-26T20:36:10.950985+08:00
+- 窗口: 2026-04-25 至 2026-04-26
+- GitHub 增量: 752 commits / 6 releases
+- 最近 push: 2026-04-26
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Control UI/Talk: add browser WebRTC realtime voice sessions backed by OpenAI Realtime, with Gateway-minted ephemeral client secrets and `openclaw_agent_consult` handoff to the full OpenClaw agent. [v2026.4.24-beta.1]
-  - Plugins/Google Meet: add a bundled participant plugin with personal Google auth, explicit meeting URL joins, Chrome and Twilio realtime transports, paired-node `chrome-node` support for Parallels-style Chrome/BlackHole/SoX hosts, and full-agent consults inside live voice sessions. (#70765) [v2026.4.24-beta.1]
-  - Plugins/Google Meet: add artifact and attendance workflows for conference records, recordings, transcripts, smart notes, and participant sessions, including markdown/file output, latest-record lookup, and `--all-conference-records` history scans. [v2026.4.24-beta.1]
-  - Plugins/Google Meet: add OAuth and browser-state doctor/recovery flows, including `googlemeet doctor --oauth` and `recover_current_tab`/`recover-tab` so agents can inspect already-open Meet tabs without opening duplicates. [v2026.4.24-beta.1]
-  - Plugins/Voice Call: add `voicecall setup` and a dry-run-by-default `voicecall smoke` command so Twilio/provider readiness can be checked before placing a live test call. [v2026.4.24-beta.1]
-  - Providers/Google: add a Gemini Live realtime voice provider for backend Voice Call and Google Meet audio bridges, with bidirectional audio and function-call support. [v2026.4.24-beta.1]
-  - Gateway/VoiceClaw: add a realtime brain WebSocket endpoint backed by Gemini Live, with owner-auth gating and async OpenClaw tool handoff. (#70938) Thanks @yagudaev. [v2026.4.24-beta.1]
-  - Control UI/chat: add a Steer action on queued messages so a browser follow-up can be injected into the active run without retyping it. [v2026.4.24-beta.1]
+  - TTS/WhatsApp: add `/tts latest` read-aloud support with duplicate suppression and `/tts chat on|off|default` session-scoped auto-TTS overrides, completing the on-demand voice-note UX for current-chat replies. Fixes #66032. [v2026.4.25-beta.2]
+  - Providers/Azure Speech: add Azure Speech as a bundled TTS provider with Speech-resource auth, voice listing, SSML escaping, native Ogg/Opus voice-note output, and telephony output. (#51776) Thanks @leonchui. [v2026.4.25-beta.2]
+  - Google Meet: add calendar-backed attendance export workflows, export manifests, dry-run previews, and tool parity for meeting records. [v2026.4.25-beta.2]
+  - Control UI: add PWA install support and Web Push notifications for Gateway chat. (#44590) Thanks @eduardocruz. [v2026.4.25-beta.2]
+  - Browser automation: add safe tab URLs in agent responses plus a CDP-native role snapshot fallback with iframe-aware refs, cursor-clickable detection, target attach preparation, and `openclaw browser doctor --deep` live snapshot probing. [v2026.4.25-beta.2]
+  - Browser/CLI: add `openclaw browser start --headless` as a one-shot local managed browser launch override without rewriting persisted browser config. Thanks @BenediktSchackenberg. [v2026.4.25-beta.2]
+  - CLI/Crestodian/TUI: add the first-run setup helper, local planner fallback, full-TUI interactive Crestodian, startup progress indicators, context mode selector, and a shorter startup greeting. (#71720, #71760) Thanks @SebTardif and @kevinlin-openai. [v2026.4.25-beta.2]
+  - Plugins: migrate the local plugin registry automatically during package install/update, keeping install metadata in the plugin index while indexing existing plugin manifests for the new cold registry path. Thanks @vincentkoc and @shakkernerd. [v2026.4.25-beta.2]
 - Fixes and constraints:
-  - Agents/tool-result pruning: harden the tool-result character estimator and context-pruning loops against malformed `{ type: "text" }` blocks created by void or undefined tool handler results, serializing non-string text payloads for size accounting so they cannot bypass trimming as zero-sized. Fixes #34979. (#51267) Thanks @cgdusek. [v2026.4.24-beta.1]
-  - Diagnostics: harden tool and model diagnostic events against hostile errors, blocking listeners, and unsafe stability reason fields. Thanks @vincentkoc. [v2026.4.24-beta.1]
-  - Codex/GPT-5.4: harden fallback, auth-profile, tool-schema, and replay edge cases across native and embedded runtime paths. (#70743) Thanks @100yenadmin. [v2026.4.24-beta.1]
-  - Providers/OpenAI: harden image generation auth routing and Codex OAuth response parsing so fallback only applies to public OpenAI API routes and bounded SSE results. Thanks @Takhoffman. [v2026.4.23]
-  - Providers/OpenAI: harden image generation auth routing and Codex OAuth response parsing so fallback only applies to public OpenAI API routes and bounded SSE results. Thanks @Takhoffman. [v2026.4.23-beta.6]
-  - fix: yield while waiting for subagent completions
-  - fix(agents): pass Claude system prompt via file
-  - fix(test): detect partial sparse core roots
+  - Security/audit: read channel exposure and plugin allowlist ownership from read-only plugin index metadata so cold audits do not depend on loaded channel runtime. Thanks @shakkernerd. [v2026.4.25-beta.2]
+  - Security/plugins: keep web-search credential presence checks on cold config, env, and manifest metadata instead of importing web-search provider runtime. Thanks @vincentkoc. [v2026.4.25-beta.2]
+  - Security/audit: read channel exposure and plugin allowlist ownership from read-only plugin index metadata so cold audits do not depend on loaded channel runtime. Thanks @shakkernerd. [v2026.4.25-beta.1]
+  - Security/plugins: keep web-search credential presence checks on cold config, env, and manifest metadata instead of importing web-search provider runtime. Thanks @vincentkoc. [v2026.4.25-beta.1]
+  - Agents/tool-result pruning: harden the tool-result character estimator and context-pruning loops against malformed `{ type: "text" }` blocks created by void or undefined tool handler results, serializing non-string text payloads for size accounting so they cannot bypass trimming as zero-sized. Fixes #34979. (#51267) Thanks @cgdusek. [v2026.4.24]
+  - Diagnostics: harden tool and model diagnostic events against hostile errors, blocking listeners, and unsafe stability reason fields. Thanks @vincentkoc. [v2026.4.24]
+  - Codex/GPT-5.4: harden fallback, auth-profile, tool-schema, and replay edge cases across native and embedded runtime paths. (#70743) Thanks @100yenadmin. [v2026.4.24]
+  - Agents/tool-result pruning: harden the tool-result character estimator and context-pruning loops against malformed `{ type: "text" }` blocks created by void or undefined tool handler results, serializing non-string text payloads for size accounting so they cannot bypass trimming as zero-sized. Fixes #34979. (#51267) Thanks @cgdusek, @alvinttang, and @coffeexcoin. [v2026.4.24-beta.5]
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
