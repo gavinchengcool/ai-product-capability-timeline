@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-04-27T21:12:28+08:00
-- Requested window: 2026-04-26 to 2026-04-27
+- Generated at: 2026-04-28T21:23:01+08:00
+- Requested window: 2026-04-27 to 2026-04-28
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-04-26 to 2026-04-27
-- Generated at: 2026-04-27T21:12:06.740523+08:00
-- 窗口: 2026-04-26 至 2026-04-27
-- GitHub 增量: 697 commits / 2 releases
-- 最近 push: 2026-04-27
+- Window: 2026-04-27 to 2026-04-28
+- Generated at: 2026-04-28T21:22:39.548488+08:00
+- 窗口: 2026-04-27 至 2026-04-28
+- GitHub 增量: 807 commits / 1 releases
+- 最近 push: 2026-04-28
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - TTS/WhatsApp: add `/tts latest` read-aloud support with duplicate suppression and `/tts chat on|off|default` session-scoped auto-TTS overrides, completing the on-demand voice-note UX for current-chat replies. Fixes #66032. [v2026.4.25]
-  - Providers/Azure Speech: add Azure Speech as a bundled TTS provider with Speech-resource auth, voice listing, SSML escaping, native Ogg/Opus voice-note output, and telephony output. (#51776) Thanks @leonchui. [v2026.4.25]
-  - Google Meet: add calendar-backed attendance export workflows, export manifests, dry-run previews, and tool parity for meeting records. [v2026.4.25]
-  - Control UI: add PWA install support and Web Push notifications for Gateway chat. (#44590) Thanks @eduardocruz. [v2026.4.25]
-  - Browser automation: add safe tab URLs in agent responses plus a CDP-native role snapshot fallback with iframe-aware refs, cursor-clickable detection, target attach preparation, and `openclaw browser doctor --deep` live snapshot probing. [v2026.4.25]
-  - Browser/CLI: add `openclaw browser start --headless` as a one-shot local managed browser launch override without rewriting persisted browser config. Thanks @BenediktSchackenberg. [v2026.4.25]
-  - CLI/Crestodian/TUI: add the first-run setup helper, local planner fallback, full-TUI interactive Crestodian, startup progress indicators, context mode selector, and a shorter startup greeting. (#71720, #71760) Thanks @SebTardif and @kevinlin-openai. [v2026.4.25]
-  - Plugins: migrate the local plugin registry automatically during package install/update, keeping install metadata in the plugin index while indexing existing plugin manifests for the new cold registry path. Thanks @vincentkoc and @shakkernerd. [v2026.4.25]
+  - Control UI/Talk: add a generic browser realtime transport contract, Google Live browser Talk sessions with constrained ephemeral tokens, and a Gateway relay for backend-only realtime voice plugins. Thanks @VACInc. [v2026.4.26]
+  - Providers: add Cerebras as a bundled plugin with onboarding, static model catalog, docs, and manifest-owned endpoint metadata. [v2026.4.26]
+  - Memory/OpenAI-compatible: add optional `memorySearch.inputType`, `queryInputType`, and `documentInputType` config for asymmetric embedding endpoints, including direct query embeddings and provider batch indexing. Carries forward #63313 and #60727. Thanks @HOYALIM and @prospect1314521. [v2026.4.26]
+  - Ollama/memory: add model-specific retrieval query prefixes for `nomic-embed-text`, `qwen3-embedding`, and `mxbai-embed-large` memory-search queries while leaving document batches unchanged. Carries forward #45013. Thanks @laolin5564. [v2026.4.26]
+  - Control UI: add a raw config pending-changes diff panel that parses JSON5, redacts sensitive values until reveal, and avoids fake raw-edit callbacks when opening the panel. Refs #39831; supersedes #48621 and #46654. Thanks @JiajunBernoulli and @BunsDev. [v2026.4.26]
+  - Matrix/E2EE: add `openclaw matrix encryption setup` to enable Matrix encryption, bootstrap recovery, and print verification status from one setup flow. Thanks @gumadeiras. [v2026.4.26]
+  - Agents/compaction: add an opt-in `agents.defaults.compaction.maxActiveTranscriptBytes` preflight trigger that runs normal local compaction when the active JSONL grows too large, requiring transcript rotation so successful compaction moves future turns onto a smaller successor file instead of raw byte-splitting history. Thanks @vincentkoc. [v2026.4.26]
+  - CLI/migration: add a bundled Claude importer that previews and applies Claude Code and Claude Desktop instructions, MCP servers, skills, command prompts, and safe archive/manual-review state. Thanks @vincentkoc. [v2026.4.26]
 - Fixes and constraints:
-  - Security/audit: read channel exposure and plugin allowlist ownership from read-only plugin index metadata so cold audits do not depend on loaded channel runtime. Thanks @shakkernerd. [v2026.4.25]
-  - Security/plugins: keep web-search credential presence checks on cold config, env, and manifest metadata instead of importing web-search provider runtime. Thanks @vincentkoc. [v2026.4.25]
-  - Security/audit: read channel exposure and plugin allowlist ownership from read-only plugin index metadata so cold audits do not depend on loaded channel runtime. Thanks @shakkernerd. [v2026.4.25-beta.4]
-  - Security/plugins: keep web-search credential presence checks on cold config, env, and manifest metadata instead of importing web-search provider runtime. Thanks @vincentkoc. [v2026.4.25-beta.4]
-  - fix(memory): skip qmd vectors in lexical mode
-  - fix: cache plugin discovery realpaths
-  - fix(qa-lab): keep gateway client on generic sdk seam
-  - fix(google-meet): use OpenClaw browser for local joins
+  - fix(active-memory): skip payload-less memory_search toolResults in tr… (openclaw#68773)
+  - fix(device-pairing): validate callerScopes against resolved token scopes on repair [AI] (#72925)
+  - fix(agents): canonicalize provider aliases in byProvider tool policy lookup [AI] (#72917)
+  - fix(security): block npm_execpath injection from workspace .env [AI-assisted] (#73262)
+  - fix(acpx): validate runtime session mode at wrapper boundary (#73071) (#73548)
+  - fix: decode web fetch legacy charsets (#73513)
+  - fix: Discord read/search timeout, session-key fallback, and gateway execution mode (#73521)
+  - fix(memory-core): retry dreaming cron startup reconciliation (#73493)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
