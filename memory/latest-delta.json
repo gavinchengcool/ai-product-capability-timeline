@@ -1,99 +1,91 @@
 {
-  "generatedAt": "2026-04-28T21:22:39.548488+08:00",
+  "generatedAt": "2026-04-29T21:15:45.040413+08:00",
   "window": {
-    "start_local": "2026-04-27T21:22:39.548488+08:00",
-    "end_local": "2026-04-28T21:22:39.548488+08:00",
-    "start_utc": "2026-04-27T13:22:39Z",
-    "end_utc": "2026-04-28T13:22:39Z"
+    "start_local": "2026-04-28T21:15:45.040413+08:00",
+    "end_local": "2026-04-29T21:15:45.040413+08:00",
+    "start_utc": "2026-04-28T13:15:45Z",
+    "end_utc": "2026-04-29T13:15:45Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 365679,
-    "forks": 74946,
-    "open_issues": 6986,
-    "pushed_at": "2026-04-28T13:22:12Z"
+    "stars": 366208,
+    "forks": 75094,
+    "open_issues": 6936,
+    "pushed_at": "2026-04-29T13:14:20Z"
   },
   "summary": {
-    "commitCount": 807,
-    "releaseCount": 1,
-    "stableReleaseCount": 1,
+    "commitCount": 533,
+    "releaseCount": 0,
+    "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 365679,
-    "forks": 74946,
-    "openIssues": 6986
+    "stars": 366208,
+    "forks": 75094,
+    "openIssues": 6936
   },
-  "releases": [
-    {
-      "tag_name": "v2026.4.26",
-      "published_at": "2026-04-28T01:11:02Z",
-      "name": "OpenClaw 2026.4.26",
-      "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.4.26"
-    }
-  ],
+  "releases": [],
   "featureItems": [
-    "Control UI/Talk: add a generic browser realtime transport contract, Google Live browser Talk sessions with constrained ephemeral tokens, and a Gateway relay for backend-only realtime voice plugins. Thanks @VACInc. [v2026.4.26]",
-    "Providers: add Cerebras as a bundled plugin with onboarding, static model catalog, docs, and manifest-owned endpoint metadata. [v2026.4.26]",
-    "Memory/OpenAI-compatible: add optional `memorySearch.inputType`, `queryInputType`, and `documentInputType` config for asymmetric embedding endpoints, including direct query embeddings and provider batch indexing. Carries forward #63313 and #60727. Thanks @HOYALIM and @prospect1314521. [v2026.4.26]",
-    "Ollama/memory: add model-specific retrieval query prefixes for `nomic-embed-text`, `qwen3-embedding`, and `mxbai-embed-large` memory-search queries while leaving document batches unchanged. Carries forward #45013. Thanks @laolin5564. [v2026.4.26]",
-    "Control UI: add a raw config pending-changes diff panel that parses JSON5, redacts sensitive values until reveal, and avoids fake raw-edit callbacks when opening the panel. Refs #39831; supersedes #48621 and #46654. Thanks @JiajunBernoulli and @BunsDev. [v2026.4.26]",
-    "Matrix/E2EE: add `openclaw matrix encryption setup` to enable Matrix encryption, bootstrap recovery, and print verification status from one setup flow. Thanks @gumadeiras. [v2026.4.26]",
-    "Agents/compaction: add an opt-in `agents.defaults.compaction.maxActiveTranscriptBytes` preflight trigger that runs normal local compaction when the active JSONL grows too large, requiring transcript rotation so successful compaction moves future turns onto a smaller successor file instead of raw byte-splitting history. Thanks @vincentkoc. [v2026.4.26]",
-    "CLI/migration: add a bundled Claude importer that previews and applies Claude Code and Claude Desktop instructions, MCP servers, skills, command prompts, and safe archive/manual-review state. Thanks @vincentkoc. [v2026.4.26]"
+    "feat(plugins): add SQLite plugin state store (#74190)",
+    "feat(memory-lancedb): support Chinese memory trigger keywords (#70040)",
+    "feat(active-memory): add timeout circuit breaker to skip recall after consecutive failures (#74054) (#74158)",
+    "feat(config): add reasoningDefault to agents.defaults",
+    "feat(memory-lancedb): support query cmd for llm CLI (#71112)",
+    "feat(messages): add global visible replies mode",
+    "feat(ui): add mobile cron session filter",
+    "ci: add Knip dependency check"
   ],
   "fixItems": [
-    "fix(active-memory): skip payload-less memory_search toolResults in tr… (openclaw#68773)",
-    "fix(device-pairing): validate callerScopes against resolved token scopes on repair [AI] (#72925)",
-    "fix(agents): canonicalize provider aliases in byProvider tool policy lookup [AI] (#72917)",
-    "fix(security): block npm_execpath injection from workspace .env [AI-assisted] (#73262)",
-    "fix(acpx): validate runtime session mode at wrapper boundary (#73071) (#73548)",
-    "fix: decode web fetch legacy charsets (#73513)",
-    "fix: Discord read/search timeout, session-key fallback, and gateway execution mode (#73521)",
-    "fix(memory-core): retry dreaming cron startup reconciliation (#73493)"
+    "fix(agents): trace slow embedded run startup stages",
+    "fix: send OpenClaw attribution to OpenAI",
+    "fix(cli): keep tools rpc namespace off plugin startup",
+    "fix(ui): improve command palette accessibility",
+    "fix(ci): tolerate legacy plugin contract targets",
+    "fix(deepseek): add provider-policy-api to hydrate contextWindow and cost from catalog (#74326)",
+    "fix(hooks): repair shared-hook announcement policy (#73800)",
+    "fix(cli): keep status usage on fast path"
   ],
   "topScopes": [
     {
-      "scope": "fix",
-      "count": 127
+      "scope": "ci",
+      "count": 92
     },
     {
       "scope": "test",
-      "count": 113
+      "count": 51
     },
     {
-      "scope": "ci",
-      "count": 70
-    },
-    {
-      "scope": "refactor",
-      "count": 49
-    },
-    {
-      "scope": "docs",
-      "count": 41
-    },
-    {
-      "scope": "gateway",
-      "count": 41
-    },
-    {
-      "scope": "agents",
-      "count": 24
+      "scope": "fix",
+      "count": 46
     },
     {
       "scope": "plugins",
-      "count": 22
+      "count": 32
+    },
+    {
+      "scope": "gateway",
+      "count": 23
+    },
+    {
+      "scope": "refactor",
+      "count": 17
+    },
+    {
+      "scope": "docs",
+      "count": 16
+    },
+    {
+      "scope": "agents",
+      "count": 15
     }
   ],
   "headlineCommits": [
-    "fix(active-memory): skip payload-less memory_search toolResults in tr… (openclaw#68773)",
-    "fix(device-pairing): validate callerScopes against resolved token scopes on repair [AI] (#72925)",
-    "fix(agents): canonicalize provider aliases in byProvider tool policy lookup [AI] (#72917)",
-    "fix(security): block npm_execpath injection from workspace .env [AI-assisted] (#73262)",
-    "fix(acpx): validate runtime session mode at wrapper boundary (#73071) (#73548)",
-    "fix: decode web fetch legacy charsets (#73513)",
-    "fix: Discord read/search timeout, session-key fallback, and gateway execution mode (#73521)",
-    "docs: cover cron_changed plugin hook and legacy env-var deprecation"
+    "fix(agents): trace slow embedded run startup stages",
+    "feat(plugins): add SQLite plugin state store (#74190)",
+    "docs: classify media decode overhead as performance-only (#74311)",
+    "fix: send OpenClaw attribution to OpenAI",
+    "ci: fallback deadcode check for legacy targets",
+    "[Feat] surface spawnedBy in chat and agent broadcast payloads (#63244)",
+    "fix(cli): keep tools rpc namespace off plugin startup",
+    "fix(ui): improve command palette accessibility"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 }
