@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-05-03T20:39:26+08:00
-- Requested window: 2026-05-02 to 2026-05-03
+- Generated at: 2026-05-04T21:16:41+08:00
+- Requested window: 2026-05-03 to 2026-05-04
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-05-02 to 2026-05-03
-- Generated at: 2026-05-03T20:39:10.337009+08:00
-- 窗口: 2026-05-02 至 2026-05-03
-- GitHub 增量: 457 commits / 3 releases
-- 最近 push: 2026-05-03
+- Window: 2026-05-03 to 2026-05-04
+- Generated at: 2026-05-04T21:16:24.335572+08:00
+- 窗口: 2026-05-03 至 2026-05-04
+- GitHub 增量: 561 commits / 4 releases
+- 最近 push: 2026-05-04
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Gateway/startup and restart: skip plugin-backed auth-profile overlays during startup secrets preflight, reducing gateway readiness latency while keeping reload and OAuth recovery paths overlay-capable; add `openclaw gateway restart --force` and `--wait <duration>`, log active task run IDs before restart deferral timers, and report timeout restarts as explicit forced restarts. (#68327) Thanks @JIRBOY. [v2026.5.2]
-  - Infra/path-guards: add a fast path for canonical absolute POSIX containment checks, avoiding repeated `path.resolve` and `path.relative` work in hot filesystem walkers. Refs #75895, #75575, and #68782. Thanks @Enderfga. [v2026.5.2]
-  - Tools/plugins: add a platform-level tool descriptor planner for descriptor-first visibility, generic availability checks, and executor references, and cache plugin tool descriptors captured from `api.registerTool(...)` so repeated prompt-time planning can skip plugin runtime loading while execution still loads the live plugin tool. (#76079) Thanks @shakkernerd. [v2026.5.2]
-  - Providers/xAI: add Grok 4.3 to the bundled catalog and make it the default xAI chat model. [v2026.5.2]
-  - Google Meet: let API-created rooms set `accessType` and `entryPointAccess`, add `googlemeet end-active-conference` for closing managed spaces after a call, and add `googlemeet test-listen` plus the matching `google_meet` `test_listen` action so transcribe-mode joins wait for real caption or transcript movement before reporting listen-first health. (#74824; refs #72478) Thanks @BsnizND and @DougButdorf. [v2026.5.2]
-  - Plugins/Crestodian: add ClawHub plugin search plus Crestodian plugin list/search/install/uninstall operations, with approval and audit coverage for install and uninstall. [v2026.5.2]
-  - Providers/OpenAI: add `extraBody`/`extra_body` passthrough for OpenAI-compatible TTS endpoints, so custom speech servers can receive fields such as `lang` in `/audio/speech` requests. Fixes #39900. Thanks @R3NK0R. [v2026.5.2]
-  - Channels/WhatsApp: support explicit WhatsApp Channel/Newsletter `@newsletter` outbound message targets with channel session metadata instead of DM routing. Fixes #13417; carries forward the narrow outbound target idea from #13424. Thanks @vincentkoc and @agentz-manfred. [v2026.5.2]
+  - Channels/streaming: add unified `streaming.mode: "progress"` drafts with auto single-word status labels and shared progress configuration across Discord, Telegram, Matrix, Slack, and Microsoft Teams. [v2026.5.3]
+  - Agents/commands: add `/steer <message>` for queue-independent steering of the active current-session run without starting a new turn when the session is idle. (#76934) [v2026.5.3]
+  - Tools/BTW: add `/side` as a text and native slash-command alias for `/btw` side questions. [v2026.5.3]
+  - QA/Mantis: add a `pnpm openclaw qa mantis discord-smoke` runner and manual GitHub workflow that verify the Mantis Discord bot can see the configured guild/channel, post a smoke message, add a reaction, and upload artifacts. [v2026.5.3]
+  - QA/Slack: add a Slack live transport QA runner with canary and mention-gating coverage for the private bot-to-bot harness. Thanks @vincentkoc. [v2026.5.3]
+  - Gateway/performance: lazy-load early runtime discovery, shutdown hooks, cron, channel-config schema metadata, restart sentinels, and maintenance timers after readiness; trim duplicate plugin auto-enable work and add startup CPU/profile controls. [v2026.5.3]
+  - Channels/WhatsApp: support explicit WhatsApp Channel/Newsletter `@newsletter` outbound message targets with channel session metadata instead of DM routing. Fixes #13417; carries forward the narrow outbound target idea from #13424. Thanks @vincentkoc and @agentz-manfred. [v2026.5.3]
+  - Exec approvals: add a tree-sitter-backed shell command explainer for future approval and command-review surfaces. (#75004) Thanks @jesse-merhi. [v2026.5.3]
 - Fixes and constraints:
-  - Security audit/plugins: ignore plugin install backup, disabled, and dependency debris directories when enumerating installed plugin roots, avoiding false-positive findings for `.openclaw-install-backups` after plugin updates. Fixes #75456. [v2026.5.2]
-  - fix(infra): block workspace state-directory env override [AI]. (#75940) Thanks @pgondhi987. [v2026.5.2]
-  - Agents/transcripts: avoid reopening large Pi transcript files through the synchronous session manager for maintenance rewrites, persisted tool-result truncation, manual compaction boundary hardening, and queued compaction rotation. Thanks @mariozechner. [v2026.5.2]
-  - Providers/xAI: give Grok `web_search` a 60s default timeout, harden malformed xAI Responses parsing, and return structured timeout errors instead of aborting the tool call. Fixes #58063 and #58733. Thanks @dnishimura, @marvcasasola-svg, and @Nanako0129. [v2026.5.2]
-  - fix: block workspace CLOUDSDK_PYTHON override and always set trusted interpreter for gcloud. (#74492) Thanks @pgondhi987. [v2026.5.2]
-  - fix(infra): block ambient Homebrew env vars from brew resolution. (#74463) Thanks @pgondhi987. [v2026.5.2]
-  - Security/Windows: ignore workspace `.env` system-path variables and resolve stale-process `taskkill.exe` from the validated Windows install root, preventing repository-local env files from redirecting cleanup helpers. Thanks @pgondhi987. [v2026.5.2]
-  - Security/audit: keep plain `security audit` on the cold config/filesystem path and reserve plugin runtime security collectors for `--deep`, so large plugin installs cannot execute every plugin runtime during routine audits. Thanks @vincentkoc. [v2026.5.2]
+  - QA/Matrix: keep the mock OpenAI tool-progress provider aligned with exact-marker Matrix prompts so the hardened live preview scenario still forces a deterministic read before final delivery. Thanks @vincentkoc. [v2026.5.3]
+  - QA/Matrix: keep the mock OpenAI tool-progress provider aligned with exact-marker Matrix prompts so the hardened live preview scenario still forces a deterministic read before final delivery. Thanks @vincentkoc. [v2026.5.3-beta.3]
+  - fix: refresh stale codex auth profile routing
+  - fix: proxy direct APNs HTTP2 sessions (#74905)
+  - test: harden plugin and UI isolation checks
+  - fix(types): wire plugin package metadata
+  - fix(gateway): clarify systemd service scope
+  - fix(plugins): clean replaced managed installs
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
