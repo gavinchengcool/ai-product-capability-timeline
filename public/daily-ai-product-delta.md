@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-05-04T21:16:41+08:00
-- Requested window: 2026-05-03 to 2026-05-04
+- Generated at: 2026-05-05T21:04:01+08:00
+- Requested window: 2026-05-04 to 2026-05-05
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-05-03 to 2026-05-04
-- Generated at: 2026-05-04T21:16:24.335572+08:00
-- 窗口: 2026-05-03 至 2026-05-04
-- GitHub 增量: 561 commits / 4 releases
-- 最近 push: 2026-05-04
+- Window: 2026-05-04 to 2026-05-05
+- Generated at: 2026-05-05T21:03:42.714232+08:00
+- 窗口: 2026-05-04 至 2026-05-05
+- GitHub 增量: 285 commits / 4 releases
+- 最近 push: 2026-05-05
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Channels/streaming: add unified `streaming.mode: "progress"` drafts with auto single-word status labels and shared progress configuration across Discord, Telegram, Matrix, Slack, and Microsoft Teams. [v2026.5.3]
-  - Agents/commands: add `/steer <message>` for queue-independent steering of the active current-session run without starting a new turn when the session is idle. (#76934) [v2026.5.3]
-  - Tools/BTW: add `/side` as a text and native slash-command alias for `/btw` side questions. [v2026.5.3]
-  - QA/Mantis: add a `pnpm openclaw qa mantis discord-smoke` runner and manual GitHub workflow that verify the Mantis Discord bot can see the configured guild/channel, post a smoke message, add a reaction, and upload artifacts. [v2026.5.3]
-  - QA/Slack: add a Slack live transport QA runner with canary and mention-gating coverage for the private bot-to-bot harness. Thanks @vincentkoc. [v2026.5.3]
-  - Gateway/performance: lazy-load early runtime discovery, shutdown hooks, cron, channel-config schema metadata, restart sentinels, and maintenance timers after readiness; trim duplicate plugin auto-enable work and add startup CPU/profile controls. [v2026.5.3]
-  - Channels/WhatsApp: support explicit WhatsApp Channel/Newsletter `@newsletter` outbound message targets with channel session metadata instead of DM routing. Fixes #13417; carries forward the narrow outbound target idea from #13424. Thanks @vincentkoc and @agentz-manfred. [v2026.5.3]
-  - Exec approvals: add a tree-sitter-backed shell command explainer for future approval and command-review surfaces. (#75004) Thanks @jesse-merhi. [v2026.5.3]
+  - Models/auth: add `openclaw models auth list [--provider <id>] [--json]` so users can inspect saved per-agent auth profiles without dumping secrets or hitting the old “too many arguments” path. Thanks @vincentkoc. [v2026.5.4]
+  - Control UI/cron: make the New Job sidebar collapsible so the jobs list can reclaim space while keeping the form one click away. Thanks @BunsDev. [v2026.5.4]
+  - Slack/streaming: add `streaming.progress.render: "rich"` for Block Kit progress drafts backed by structured progress line data. [v2026.5.4]
+  - Control UI/chat: add an agent-first filter to the chat session picker, keep chat controls/composer responsive across phone/tablet/desktop widths, keep desktop chat controls on one row, avoid duplicate avatar refreshes during initial chat load, and hide that row while scrolling down the transcript. Thanks @BunsDev. [v2026.5.4]
+  - Gateway/diagnostics: add startup phase spans, active work labels, stale terminal bridge markers, and default sync-I/O tracing in `pnpm gateway:watch` so slow Gateway turns are easier to attribute from logs and stability diagnostics. [v2026.5.4]
+  - QA/Mantis: add `pnpm openclaw qa mantis slack-desktop-smoke` to run Slack live QA inside a Crabbox VNC desktop, open Slack Web, and capture desktop screenshots beside the Slack QA artifacts. [v2026.5.4]
+  - QA/Codex harness: add targeted live Docker/Testbox diagnostics, auth preflight checks, cache mount fixes, and app-server protocol checkout discovery so maintainer harness failures are easier to reproduce. Thanks @vincentkoc. [v2026.5.4]
+  - Plugins/SDK: add bounded `before_agent_finalize` retry instructions so workflow plugins can request one more model pass. Thanks @100yenadmin. [v2026.5.4]
 - Fixes and constraints:
-  - QA/Matrix: keep the mock OpenAI tool-progress provider aligned with exact-marker Matrix prompts so the hardened live preview scenario still forces a deterministic read before final delivery. Thanks @vincentkoc. [v2026.5.3]
-  - QA/Matrix: keep the mock OpenAI tool-progress provider aligned with exact-marker Matrix prompts so the hardened live preview scenario still forces a deterministic read before final delivery. Thanks @vincentkoc. [v2026.5.3-beta.3]
-  - fix: refresh stale codex auth profile routing
-  - fix: proxy direct APNs HTTP2 sessions (#74905)
-  - test: harden plugin and UI isolation checks
-  - fix(types): wire plugin package metadata
-  - fix(gateway): clarify systemd service scope
-  - fix(plugins): clean replaced managed installs
+  - fix(gateway): clamp unbound websocket auth scopes [AI]. (#77413) Thanks @pgondhi987. [v2026.5.4]
+  - fix(device-pair): require pairing scope for pair command [AI]. (#76377) Thanks @pgondhi987. [v2026.5.4]
+  - fix(qqbot): keep private commands off framework surface [AI]. (#77212) Thanks @pgondhi987. [v2026.5.4]
+  - fix: harden backend message action gateway routing [AI]. (#76374) Thanks @pgondhi987. [v2026.5.4]
+  - Security/Windows: validate `SystemRoot`/`WINDIR` env values through the Windows install-root validator and add them to the dangerous-host-env policy when resolving `icacls.exe`/`whoami.exe` for `openclaw security audit`, so workspace `.env` overrides and bare command names cannot redirect Windows ACL helpers to attacker-controlled binaries. (#74458) Thanks @mmaps. [v2026.5.4]
+  - Security/Windows: pin Windows registry-probe `reg.exe` resolution to the canonical Windows install root in install-root probing, so `SystemRoot`/`WINDIR` env overrides cannot redirect registry queries during Windows host detection. (#74454) Thanks @mmaps. [v2026.5.4]
+  - Security/Windows: block `LOCALAPPDATA` from workspace `.env` and resolve Windows update-flow portable Git path prepends from the trusted process-local `LOCALAPPDATA` only, so workspace-supplied values cannot redirect `git` discovery during `openclaw update`. (#77470) Thanks @drobison00. [v2026.5.4]
+  - Security/Windows: route the `.cmd`/`.bat` process wrapper through the shared Windows install-root resolver instead of `process.env.ComSpec`, so workspace dotenv-blocked `SystemRoot`/`WINDIR` overrides and unsafe values like UNC paths or path-lists cannot redirect `cmd.exe` selection on Windows. (#77472) Thanks @drobison00. [v2026.5.4]
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

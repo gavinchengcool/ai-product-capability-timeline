@@ -1,120 +1,120 @@
 {
-  "generatedAt": "2026-05-04T21:16:24.335572+08:00",
+  "generatedAt": "2026-05-05T21:03:42.714232+08:00",
   "window": {
-    "start_local": "2026-05-03T21:16:24.335572+08:00",
-    "end_local": "2026-05-04T21:16:24.335572+08:00",
-    "start_utc": "2026-05-03T13:16:24Z",
-    "end_utc": "2026-05-04T13:16:24Z"
+    "start_local": "2026-05-04T21:03:42.714232+08:00",
+    "end_local": "2026-05-05T21:03:42.714232+08:00",
+    "start_utc": "2026-05-04T13:03:42Z",
+    "end_utc": "2026-05-05T13:03:42Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 368131,
-    "forks": 75801,
-    "open_issues": 6789,
-    "pushed_at": "2026-05-04T13:13:45Z"
+    "stars": 368502,
+    "forks": 75907,
+    "open_issues": 6928,
+    "pushed_at": "2026-05-05T12:59:40Z"
   },
   "summary": {
-    "commitCount": 561,
+    "commitCount": 285,
     "releaseCount": 4,
-    "stableReleaseCount": 2,
-    "betaReleaseCount": 2,
-    "stars": 368131,
-    "forks": 75801,
-    "openIssues": 6789
+    "stableReleaseCount": 1,
+    "betaReleaseCount": 3,
+    "stars": 368502,
+    "forks": 75907,
+    "openIssues": 6928
   },
   "releases": [
     {
-      "tag_name": "v2026.5.3-1",
-      "published_at": "2026-05-04T09:35:36Z",
-      "name": "openclaw 2026.5.3-1",
+      "tag_name": "v2026.5.4",
+      "published_at": "2026-05-05T08:24:01Z",
+      "name": "openclaw 2026.5.4",
       "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.3-1"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.4"
     },
     {
-      "tag_name": "v2026.5.3",
-      "published_at": "2026-05-04T07:01:29Z",
-      "name": "OpenClaw 2026.5.3",
-      "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.3"
-    },
-    {
-      "tag_name": "v2026.5.3-beta.3",
-      "published_at": "2026-05-04T02:20:18Z",
-      "name": "openclaw 2026.5.3-beta.3",
+      "tag_name": "v2026.5.4-beta.3",
+      "published_at": "2026-05-05T06:14:48Z",
+      "name": "openclaw 2026.5.4-beta.3",
       "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.3-beta.3"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.4-beta.3"
     },
     {
-      "tag_name": "v2026.5.3-beta.2",
-      "published_at": "2026-05-03T21:26:05Z",
-      "name": "OpenClaw 2026.5.3 beta 2",
+      "tag_name": "v2026.5.4-beta.2",
+      "published_at": "2026-05-05T01:43:03Z",
+      "name": "openclaw 2026.5.4-beta.2",
       "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.3-beta.2"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.4-beta.2"
+    },
+    {
+      "tag_name": "v2026.5.4-beta.1",
+      "published_at": "2026-05-04T18:22:09Z",
+      "name": "openclaw 2026.5.4-beta.1",
+      "prerelease": true,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.4-beta.1"
     }
   ],
   "featureItems": [
-    "Channels/streaming: add unified `streaming.mode: \"progress\"` drafts with auto single-word status labels and shared progress configuration across Discord, Telegram, Matrix, Slack, and Microsoft Teams. [v2026.5.3]",
-    "Agents/commands: add `/steer <message>` for queue-independent steering of the active current-session run without starting a new turn when the session is idle. (#76934) [v2026.5.3]",
-    "Tools/BTW: add `/side` as a text and native slash-command alias for `/btw` side questions. [v2026.5.3]",
-    "QA/Mantis: add a `pnpm openclaw qa mantis discord-smoke` runner and manual GitHub workflow that verify the Mantis Discord bot can see the configured guild/channel, post a smoke message, add a reaction, and upload artifacts. [v2026.5.3]",
-    "QA/Slack: add a Slack live transport QA runner with canary and mention-gating coverage for the private bot-to-bot harness. Thanks @vincentkoc. [v2026.5.3]",
-    "Gateway/performance: lazy-load early runtime discovery, shutdown hooks, cron, channel-config schema metadata, restart sentinels, and maintenance timers after readiness; trim duplicate plugin auto-enable work and add startup CPU/profile controls. [v2026.5.3]",
-    "Channels/WhatsApp: support explicit WhatsApp Channel/Newsletter `@newsletter` outbound message targets with channel session metadata instead of DM routing. Fixes #13417; carries forward the narrow outbound target idea from #13424. Thanks @vincentkoc and @agentz-manfred. [v2026.5.3]",
-    "Exec approvals: add a tree-sitter-backed shell command explainer for future approval and command-review surfaces. (#75004) Thanks @jesse-merhi. [v2026.5.3]"
+    "Models/auth: add `openclaw models auth list [--provider <id>] [--json]` so users can inspect saved per-agent auth profiles without dumping secrets or hitting the old “too many arguments” path. Thanks @vincentkoc. [v2026.5.4]",
+    "Control UI/cron: make the New Job sidebar collapsible so the jobs list can reclaim space while keeping the form one click away. Thanks @BunsDev. [v2026.5.4]",
+    "Slack/streaming: add `streaming.progress.render: \"rich\"` for Block Kit progress drafts backed by structured progress line data. [v2026.5.4]",
+    "Control UI/chat: add an agent-first filter to the chat session picker, keep chat controls/composer responsive across phone/tablet/desktop widths, keep desktop chat controls on one row, avoid duplicate avatar refreshes during initial chat load, and hide that row while scrolling down the transcript. Thanks @BunsDev. [v2026.5.4]",
+    "Gateway/diagnostics: add startup phase spans, active work labels, stale terminal bridge markers, and default sync-I/O tracing in `pnpm gateway:watch` so slow Gateway turns are easier to attribute from logs and stability diagnostics. [v2026.5.4]",
+    "QA/Mantis: add `pnpm openclaw qa mantis slack-desktop-smoke` to run Slack live QA inside a Crabbox VNC desktop, open Slack Web, and capture desktop screenshots beside the Slack QA artifacts. [v2026.5.4]",
+    "QA/Codex harness: add targeted live Docker/Testbox diagnostics, auth preflight checks, cache mount fixes, and app-server protocol checkout discovery so maintainer harness failures are easier to reproduce. Thanks @vincentkoc. [v2026.5.4]",
+    "Plugins/SDK: add bounded `before_agent_finalize` retry instructions so workflow plugins can request one more model pass. Thanks @100yenadmin. [v2026.5.4]"
   ],
   "fixItems": [
-    "QA/Matrix: keep the mock OpenAI tool-progress provider aligned with exact-marker Matrix prompts so the hardened live preview scenario still forces a deterministic read before final delivery. Thanks @vincentkoc. [v2026.5.3]",
-    "QA/Matrix: keep the mock OpenAI tool-progress provider aligned with exact-marker Matrix prompts so the hardened live preview scenario still forces a deterministic read before final delivery. Thanks @vincentkoc. [v2026.5.3-beta.3]",
-    "fix: refresh stale codex auth profile routing",
-    "fix: proxy direct APNs HTTP2 sessions (#74905)",
-    "test: harden plugin and UI isolation checks",
-    "fix(types): wire plugin package metadata",
-    "fix(gateway): clarify systemd service scope",
-    "fix(plugins): clean replaced managed installs"
+    "fix(gateway): clamp unbound websocket auth scopes [AI]. (#77413) Thanks @pgondhi987. [v2026.5.4]",
+    "fix(device-pair): require pairing scope for pair command [AI]. (#76377) Thanks @pgondhi987. [v2026.5.4]",
+    "fix(qqbot): keep private commands off framework surface [AI]. (#77212) Thanks @pgondhi987. [v2026.5.4]",
+    "fix: harden backend message action gateway routing [AI]. (#76374) Thanks @pgondhi987. [v2026.5.4]",
+    "Security/Windows: validate `SystemRoot`/`WINDIR` env values through the Windows install-root validator and add them to the dangerous-host-env policy when resolving `icacls.exe`/`whoami.exe` for `openclaw security audit`, so workspace `.env` overrides and bare command names cannot redirect Windows ACL helpers to attacker-controlled binaries. (#74458) Thanks @mmaps. [v2026.5.4]",
+    "Security/Windows: pin Windows registry-probe `reg.exe` resolution to the canonical Windows install root in install-root probing, so `SystemRoot`/`WINDIR` env overrides cannot redirect registry queries during Windows host detection. (#74454) Thanks @mmaps. [v2026.5.4]",
+    "Security/Windows: block `LOCALAPPDATA` from workspace `.env` and resolve Windows update-flow portable Git path prepends from the trusted process-local `LOCALAPPDATA` only, so workspace-supplied values cannot redirect `git` discovery during `openclaw update`. (#77470) Thanks @drobison00. [v2026.5.4]",
+    "Security/Windows: route the `.cmd`/`.bat` process wrapper through the shared Windows install-root resolver instead of `process.env.ComSpec`, so workspace dotenv-blocked `SystemRoot`/`WINDIR` overrides and unsafe values like UNC paths or path-lists cannot redirect `cmd.exe` selection on Windows. (#77472) Thanks @drobison00. [v2026.5.4]"
   ],
   "topScopes": [
     {
       "scope": "fix",
-      "count": 71
-    },
-    {
-      "scope": "ui",
-      "count": 49
+      "count": 43
     },
     {
       "scope": "plugins",
-      "count": 41
-    },
-    {
-      "scope": "test",
-      "count": 27
-    },
-    {
-      "scope": "docs",
-      "count": 27
-    },
-    {
-      "scope": "qa",
-      "count": 25
-    },
-    {
-      "scope": "ci",
-      "count": 24
+      "count": 28
     },
     {
       "scope": "agents",
-      "count": 20
+      "count": 18
+    },
+    {
+      "scope": "docs",
+      "count": 14
+    },
+    {
+      "scope": "live",
+      "count": 11
+    },
+    {
+      "scope": "changelog",
+      "count": 10
+    },
+    {
+      "scope": "gateway",
+      "count": 9
+    },
+    {
+      "scope": "update",
+      "count": 9
     }
   ],
   "headlineCommits": [
-    "test: repair current main checks",
-    "chore(ui): refresh fa control ui locale",
-    "chore(ui): refresh nl control ui locale",
-    "chore(ui): refresh th control ui locale",
-    "chore(ui): refresh vi control ui locale",
-    "chore(ui): refresh pl control ui locale",
-    "chore(ui): refresh id control ui locale",
-    "chore(ui): refresh uk control ui locale"
+    "fix: avoid early Slack credential leases in Mantis",
+    "ci: harden Mantis Crabbox CLI help check",
+    "fix: default Mantis Slack desktop smoke to AWS",
+    "test(live): skip synthetic auth in provider sweeps",
+    "fix(release): accept Docker OCI attestations and xAI reasoning defaults",
+    "fix: harden Mantis Slack desktop gateway proof",
+    "test(live): bound provider discovery hooks",
+    "fix(core): avoid session export filename collisions (#77762)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 }
