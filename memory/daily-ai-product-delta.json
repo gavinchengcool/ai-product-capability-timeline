@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-06T21:23:25+08:00",
+  "generatedAt": "2026-05-07T21:23:14+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-05-05T21:23:25+08:00",
-    "end_local": "2026-05-06T21:23:25+08:00"
+    "start_local": "2026-05-06T21:23:14+08:00",
+    "end_local": "2026-05-07T21:23:14+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-05-06T21:23:07.982995+08:00",
+      "generatedAt": "2026-05-07T21:22:56.143613+08:00",
       "window": {
-        "start_local": "2026-05-05T21:23:07.982995+08:00",
-        "end_local": "2026-05-06T21:23:07.982995+08:00",
-        "start_utc": "2026-05-05T13:23:07Z",
-        "end_utc": "2026-05-06T13:23:07Z"
+        "start_local": "2026-05-06T21:22:56.143613+08:00",
+        "end_local": "2026-05-07T21:22:56.143613+08:00",
+        "start_utc": "2026-05-06T13:22:56Z",
+        "end_utc": "2026-05-07T13:22:56Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-05-05 至 2026-05-06"
+          "value": "2026-05-06 至 2026-05-07"
         },
         {
           "label": "GitHub 增量",
-          "value": "370 commits / 1 releases"
+          "value": "284 commits / 1 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-05-06"
+          "value": "2026-05-07"
         },
         {
           "label": "来源",
@@ -52,66 +52,66 @@
         }
       ],
       "featureItems": [
-        "feat: add user input blocking lifecycle gates (#75035)",
-        "pdf: add Codex instructions for extraction fallback (#51329)",
-        "feat(plugins): support npm pack installs",
-        "changelog: add Matrix approval delivery retry entry (#78179)",
-        "changelog: add xAI thinking-profile clamp entry",
-        "feat(mantis): capture logged-in discord web evidence",
-        "feat: adapt voice surfaces to talk events",
-        "feat: unify browser realtime talk clients"
+        "feat: add native sqlite Kysely dialect",
+        "feat(openai): add chat-latest model override",
+        "Feat/channels list show all and drop auth (#78456)",
+        "feat(cron): add computed status field to --json output (#78701)",
+        "feat(ui): show persistent chat context usage",
+        "feat: stream elevenlabs tts into discord voice",
+        "ci: scope prompt snapshot support tests",
+        "ci: add runner fallback timing telemetry"
       ],
       "fixItems": [
-        "Gateway/shutdown: report structured shutdown warnings and HTTP close timeout warnings through `ShutdownResult` while preserving lifecycle hook hardening. Carries forward #41296. Thanks @edenfunf. [v2026.5.5]",
-        "Docker/Gateway: harden the gateway container by dropping `NET_RAW` and `NET_ADMIN` capabilities and enabling `no-new-privileges` in the bundled `docker-compose.yml`. Thanks @VintageAyu. [v2026.5.5]",
-        "fix(update): preserve pnpm custom global root (#78393)",
-        "fix: make conversation labels work with Codex (#78450)",
-        "fix(net): bound guarded fetch dispatcher cleanup",
-        "fix(agent): persist visible embedded final replies",
-        "fix(reply): preserve private group replies for text turns",
-        "ci: harden release validation harness checks"
+        "fix: normalize auth profile inline secrets",
+        "fix: sanitize existing prompt images",
+        "fix: strip unsupported Fireworks tool schema keywords",
+        "fix: strip tools for no-tool completions models",
+        "fix(sessions): skip durable fsync for session store",
+        "fix: guard sandbox move cleanup identity",
+        "fix: preserve late sandbox rename writes",
+        "fix: harden sandbox runtime cleanup"
       ],
       "releases": [
         {
-          "tag_name": "v2026.5.5",
-          "published_at": "2026-05-06T09:00:55Z",
-          "name": "openclaw 2026.5.5",
+          "tag_name": "v2026.5.6",
+          "published_at": "2026-05-06T17:51:03Z",
+          "name": "openclaw 2026.5.6",
           "prerelease": false,
-          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.5"
+          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.6"
         }
       ],
       "topScopes": [
         {
-          "scope": "test",
-          "count": 58
+          "scope": "fix",
+          "count": 46
         },
         {
           "scope": "docs",
-          "count": 45
-        },
-        {
-          "scope": "fix",
-          "count": 44
-        },
-        {
-          "scope": "ui",
-          "count": 19
+          "count": 24
         },
         {
           "scope": "perf",
-          "count": 14
+          "count": 22
         },
         {
-          "scope": "gateway",
+          "scope": "ci",
+          "count": 20
+        },
+        {
+          "scope": "telegram",
           "count": 13
         },
         {
-          "scope": "docker",
-          "count": 13
+          "scope": "test",
+          "count": 10
         },
         {
-          "scope": "plugins",
-          "count": 11
+          "scope": "live",
+          "count": 10
+        },
+        {
+          "scope": "changelog",
+          "count": 9
         }
       ],
       "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
