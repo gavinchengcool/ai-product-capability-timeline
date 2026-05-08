@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-05-07T21:23:14+08:00
-- Requested window: 2026-05-06 to 2026-05-07
+- Generated at: 2026-05-08T21:03:08+08:00
+- Requested window: 2026-05-07 to 2026-05-08
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-05-06 to 2026-05-07
-- Generated at: 2026-05-07T21:22:56.143613+08:00
-- 窗口: 2026-05-06 至 2026-05-07
-- GitHub 增量: 284 commits / 1 releases
-- 最近 push: 2026-05-07
+- Window: 2026-05-07 to 2026-05-08
+- Generated at: 2026-05-08T21:02:51.747564+08:00
+- 窗口: 2026-05-07 至 2026-05-08
+- GitHub 增量: 519 commits / 1 releases
+- 最近 push: 2026-05-08
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat: add native sqlite Kysely dialect
-  - feat(openai): add chat-latest model override
-  - Feat/channels list show all and drop auth (#78456)
-  - feat(cron): add computed status field to --json output (#78701)
-  - feat(ui): show persistent chat context usage
-  - feat: stream elevenlabs tts into discord voice
-  - ci: scope prompt snapshot support tests
-  - ci: add runner fallback timing telemetry
+  - feat(qa-lab): list telegram live scenarios
+  - feat(bedrock): add service_tier parameter support
+  - feat(telegram): persist observed message cache
+  - feat(reply): add reply-chain prompt context
+  - feat(workspace): oc-path addressing substrate + openclaw path CLI (md/jsonc/jsonl/yaml) (#78678)
+  - feat(imessage): add native imsg message actions
+  - Add ACP session load event ledger (#79093)
+  - Add Maurice Niu as maintainer (#79219)
 - Fixes and constraints:
-  - fix: normalize auth profile inline secrets
-  - fix: sanitize existing prompt images
-  - fix: strip unsupported Fireworks tool schema keywords
-  - fix: strip tools for no-tool completions models
-  - fix(sessions): skip durable fsync for session store
-  - fix: guard sandbox move cleanup identity
-  - fix: preserve late sandbox rename writes
-  - fix: harden sandbox runtime cleanup
+  - fix(channels): honor reasoning defaults in previews (#71817) (thanks @anagnorisis2peripeteia)
+  - fix(telegram): log inbound gateway watch messages
+  - fix(telegram): preserve tool-only duplicate suppression
+  - fix(reply): fast-path native slash commands
+  - fix(fetch-timeout): pass operation and url context at omitting call sites (#79195) (#79253)
+  - fix: separate Current time from Reference UTC (#42654)
+  - fix(agents): compare file-target structurally not via fingerprint split
+  - fix(agents): narrow self-heal recovery to edit↔write pair
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
