@@ -1,99 +1,91 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-05-08T21:02:51.747564+08:00",
+  "generatedAt": "2026-05-09T20:45:25.697420+08:00",
   "window": {
-    "start_local": "2026-05-07T21:02:51.747564+08:00",
-    "end_local": "2026-05-08T21:02:51.747564+08:00",
-    "start_utc": "2026-05-07T13:02:51Z",
-    "end_utc": "2026-05-08T13:02:51Z"
+    "start_local": "2026-05-08T20:45:25.697420+08:00",
+    "end_local": "2026-05-09T20:45:25.697420+08:00",
+    "start_utc": "2026-05-08T12:45:25Z",
+    "end_utc": "2026-05-09T12:45:25Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 369723,
-    "forks": 76303,
-    "open_issues": 7531,
-    "pushed_at": "2026-05-08T13:02:05Z"
+    "stars": 370089,
+    "forks": 76426,
+    "open_issues": 7645,
+    "pushed_at": "2026-05-09T12:44:42Z"
   },
   "summary": {
-    "commitCount": 519,
-    "releaseCount": 1,
-    "stableReleaseCount": 1,
+    "commitCount": 1429,
+    "releaseCount": 0,
+    "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 369723,
-    "forks": 76303,
-    "openIssues": 7531
+    "stars": 370089,
+    "forks": 76426,
+    "openIssues": 7645
   },
-  "releases": [
-    {
-      "tag_name": "v2026.5.7",
-      "published_at": "2026-05-07T20:57:43Z",
-      "name": "openclaw 2026.5.7",
-      "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.7"
-    }
-  ],
+  "releases": [],
   "featureItems": [
-    "feat(qa-lab): list telegram live scenarios",
-    "feat(bedrock): add service_tier parameter support",
-    "feat(telegram): persist observed message cache",
-    "feat(reply): add reply-chain prompt context",
-    "feat(workspace): oc-path addressing substrate + openclaw path CLI (md/jsonc/jsonl/yaml) (#78678)",
-    "feat(imessage): add native imsg message actions",
-    "Add ACP session load event ledger (#79093)",
-    "Add Maurice Niu as maintainer (#79219)"
+    "feat(config): support Qwen thinkingFormat values (#79777)",
+    "feat: default discord voice to agent proxy",
+    "feat(cli): add thinking override to infer model run",
+    "feat: add realtime consult overrides",
+    "feat(mistral): add mistral-medium-3-5 model with reasoning support",
+    "feat(mistral): add mistral-medium-3-5 model",
+    "feat: add plugin install overrides",
+    "feat(plugin-sdk): share presentation control helpers"
   ],
   "fixItems": [
-    "fix(channels): honor reasoning defaults in previews (#71817) (thanks @anagnorisis2peripeteia)",
-    "fix(telegram): log inbound gateway watch messages",
-    "fix(telegram): preserve tool-only duplicate suppression",
-    "fix(reply): fast-path native slash commands",
-    "fix(fetch-timeout): pass operation and url context at omitting call sites (#79195) (#79253)",
-    "fix: separate Current time from Reference UTC (#42654)",
-    "fix(agents): compare file-target structurally not via fingerprint split",
-    "fix(agents): narrow self-heal recovery to edit↔write pair"
+    "perf: defer whatsapp setup finalize import",
+    "perf(telegram): append reply-chain cache records",
+    "fix(backup): keep temp manifest outside source paths",
+    "fix: normalize google catalog model ids",
+    "fix(agents): handle resumed cli jsonl output",
+    "fix(agents): bound cli runner supervisor output",
+    "fix: propagate image generation SSRF policy (#79765) (thanks @hclsys)",
+    "fix: preserve Gemini flash image capability (#79759) (thanks @hclsys)"
   ],
   "topScopes": [
     {
       "scope": "test",
-      "count": 315
+      "count": 1229
     },
     {
       "scope": "fix",
-      "count": 42
-    },
-    {
-      "scope": "ui",
-      "count": 24
-    },
-    {
-      "scope": "telegram",
-      "count": 14
+      "count": 37
     },
     {
       "scope": "docs",
-      "count": 10
+      "count": 17
     },
     {
-      "scope": "agents",
-      "count": 10
+      "scope": "cli",
+      "count": 16
     },
     {
       "scope": "gateway",
+      "count": 9
+    },
+    {
+      "scope": "oc-path",
+      "count": 9
+    },
+    {
+      "scope": "telegram",
       "count": 8
     },
     {
-      "scope": "imessage",
-      "count": 6
+      "scope": "agents",
+      "count": 8
     }
   ],
   "headlineCommits": [
-    "fix(channels): honor reasoning defaults in previews (#71817) (thanks @anagnorisis2peripeteia)",
-    "test: clarify loose boolean assertions",
-    "refactor(telegram): simplify inbound watch log formatting",
-    "docs: add Telegram changelog entry",
-    "fix(telegram): log inbound gateway watch messages",
-    "test: clarify secrets audit findings",
-    "test: clarify boolean membership assertions",
-    "test: remove oc-path no-op pitfall smoke"
+    "test: tighten bootstrap context assertion",
+    "perf: defer whatsapp setup finalize import",
+    "test: tighten exec path assertion",
+    "test: tighten background exec assertion",
+    "test: tighten auth session override assertion",
+    "test: tighten concurrent oauth assertion",
+    "test: tighten oauth lock timeout assertion",
+    "test: tighten external cli auth scope assertion"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

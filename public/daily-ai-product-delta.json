@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-08T21:03:08+08:00",
+  "generatedAt": "2026-05-09T20:45:46+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-05-07T21:03:08+08:00",
-    "end_local": "2026-05-08T21:03:08+08:00"
+    "start_local": "2026-05-08T20:45:46+08:00",
+    "end_local": "2026-05-09T20:45:46+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-05-08T21:02:51.747564+08:00",
+      "generatedAt": "2026-05-09T20:45:25.697420+08:00",
       "window": {
-        "start_local": "2026-05-07T21:02:51.747564+08:00",
-        "end_local": "2026-05-08T21:02:51.747564+08:00",
-        "start_utc": "2026-05-07T13:02:51Z",
-        "end_utc": "2026-05-08T13:02:51Z"
+        "start_local": "2026-05-08T20:45:25.697420+08:00",
+        "end_local": "2026-05-09T20:45:25.697420+08:00",
+        "start_utc": "2026-05-08T12:45:25Z",
+        "end_utc": "2026-05-09T12:45:25Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-05-07 至 2026-05-08"
+          "value": "2026-05-08 至 2026-05-09"
         },
         {
           "label": "GitHub 增量",
-          "value": "519 commits / 1 releases"
+          "value": "1429 commits / 0 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-05-08"
+          "value": "2026-05-09"
         },
         {
           "label": "来源",
@@ -52,66 +52,58 @@
         }
       ],
       "featureItems": [
-        "feat(qa-lab): list telegram live scenarios",
-        "feat(bedrock): add service_tier parameter support",
-        "feat(telegram): persist observed message cache",
-        "feat(reply): add reply-chain prompt context",
-        "feat(workspace): oc-path addressing substrate + openclaw path CLI (md/jsonc/jsonl/yaml) (#78678)",
-        "feat(imessage): add native imsg message actions",
-        "Add ACP session load event ledger (#79093)",
-        "Add Maurice Niu as maintainer (#79219)"
+        "feat(config): support Qwen thinkingFormat values (#79777)",
+        "feat: default discord voice to agent proxy",
+        "feat(cli): add thinking override to infer model run",
+        "feat: add realtime consult overrides",
+        "feat(mistral): add mistral-medium-3-5 model with reasoning support",
+        "feat(mistral): add mistral-medium-3-5 model",
+        "feat: add plugin install overrides",
+        "feat(plugin-sdk): share presentation control helpers"
       ],
       "fixItems": [
-        "fix(channels): honor reasoning defaults in previews (#71817) (thanks @anagnorisis2peripeteia)",
-        "fix(telegram): log inbound gateway watch messages",
-        "fix(telegram): preserve tool-only duplicate suppression",
-        "fix(reply): fast-path native slash commands",
-        "fix(fetch-timeout): pass operation and url context at omitting call sites (#79195) (#79253)",
-        "fix: separate Current time from Reference UTC (#42654)",
-        "fix(agents): compare file-target structurally not via fingerprint split",
-        "fix(agents): narrow self-heal recovery to edit↔write pair"
+        "perf: defer whatsapp setup finalize import",
+        "perf(telegram): append reply-chain cache records",
+        "fix(backup): keep temp manifest outside source paths",
+        "fix: normalize google catalog model ids",
+        "fix(agents): handle resumed cli jsonl output",
+        "fix(agents): bound cli runner supervisor output",
+        "fix: propagate image generation SSRF policy (#79765) (thanks @hclsys)",
+        "fix: preserve Gemini flash image capability (#79759) (thanks @hclsys)"
       ],
-      "releases": [
-        {
-          "tag_name": "v2026.5.7",
-          "published_at": "2026-05-07T20:57:43Z",
-          "name": "openclaw 2026.5.7",
-          "prerelease": false,
-          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.7"
-        }
-      ],
+      "releases": [],
       "topScopes": [
         {
           "scope": "test",
-          "count": 315
+          "count": 1229
         },
         {
           "scope": "fix",
-          "count": 42
-        },
-        {
-          "scope": "ui",
-          "count": 24
-        },
-        {
-          "scope": "telegram",
-          "count": 14
+          "count": 37
         },
         {
           "scope": "docs",
-          "count": 10
+          "count": 17
         },
         {
-          "scope": "agents",
-          "count": 10
+          "scope": "cli",
+          "count": 16
         },
         {
           "scope": "gateway",
+          "count": 9
+        },
+        {
+          "scope": "oc-path",
+          "count": 9
+        },
+        {
+          "scope": "telegram",
           "count": 8
         },
         {
-          "scope": "imessage",
-          "count": 6
+          "scope": "agents",
+          "count": 8
         }
       ],
       "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"

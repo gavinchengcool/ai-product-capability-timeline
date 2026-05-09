@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-05-08T21:03:08+08:00
-- Requested window: 2026-05-07 to 2026-05-08
+- Generated at: 2026-05-09T20:45:46+08:00
+- Requested window: 2026-05-08 to 2026-05-09
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-05-07 to 2026-05-08
-- Generated at: 2026-05-08T21:02:51.747564+08:00
-- 窗口: 2026-05-07 至 2026-05-08
-- GitHub 增量: 519 commits / 1 releases
-- 最近 push: 2026-05-08
+- Window: 2026-05-08 to 2026-05-09
+- Generated at: 2026-05-09T20:45:25.697420+08:00
+- 窗口: 2026-05-08 至 2026-05-09
+- GitHub 增量: 1429 commits / 0 releases
+- 最近 push: 2026-05-09
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(qa-lab): list telegram live scenarios
-  - feat(bedrock): add service_tier parameter support
-  - feat(telegram): persist observed message cache
-  - feat(reply): add reply-chain prompt context
-  - feat(workspace): oc-path addressing substrate + openclaw path CLI (md/jsonc/jsonl/yaml) (#78678)
-  - feat(imessage): add native imsg message actions
-  - Add ACP session load event ledger (#79093)
-  - Add Maurice Niu as maintainer (#79219)
+  - feat(config): support Qwen thinkingFormat values (#79777)
+  - feat: default discord voice to agent proxy
+  - feat(cli): add thinking override to infer model run
+  - feat: add realtime consult overrides
+  - feat(mistral): add mistral-medium-3-5 model with reasoning support
+  - feat(mistral): add mistral-medium-3-5 model
+  - feat: add plugin install overrides
+  - feat(plugin-sdk): share presentation control helpers
 - Fixes and constraints:
-  - fix(channels): honor reasoning defaults in previews (#71817) (thanks @anagnorisis2peripeteia)
-  - fix(telegram): log inbound gateway watch messages
-  - fix(telegram): preserve tool-only duplicate suppression
-  - fix(reply): fast-path native slash commands
-  - fix(fetch-timeout): pass operation and url context at omitting call sites (#79195) (#79253)
-  - fix: separate Current time from Reference UTC (#42654)
-  - fix(agents): compare file-target structurally not via fingerprint split
-  - fix(agents): narrow self-heal recovery to edit↔write pair
+  - perf: defer whatsapp setup finalize import
+  - perf(telegram): append reply-chain cache records
+  - fix(backup): keep temp manifest outside source paths
+  - fix: normalize google catalog model ids
+  - fix(agents): handle resumed cli jsonl output
+  - fix(agents): bound cli runner supervisor output
+  - fix: propagate image generation SSRF policy (#79765) (thanks @hclsys)
+  - fix: preserve Gemini flash image capability (#79759) (thanks @hclsys)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
