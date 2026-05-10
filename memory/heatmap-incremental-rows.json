@@ -824,5 +824,21 @@
     },
     "source": "daily-incremental",
     "generatedAt": "2026-05-09T20:45:25.697420+08:00"
+  },
+  {
+    "date": "2026-05-10",
+    "stage": "openclaw",
+    "summary": "移动端入口、渠道互动、gateway / 会话控制面、Docker / 运维继续增强，最近一天的增量也并入主矩阵。",
+    "axisEntries": {
+      "channels": "Slack interactive replies 与 DM block 保留继续增强。 WhatsApp / Telegram / Zalo / Signal 相关兼容修补继续推进。",
+      "models": "OpenRouter 运行时能力探测继续修补。 OpenAI-compatible 接口兼容与 strict-tools 行为继续校正。",
+      "tools": "Browser existing-session / MCP attach 模式继续简化并加固。",
+      "devices": "macOS canvas actions 被进一步限制到 trusted surfaces。 Windows 重启与清理过程的可见控制台问题被压下去。",
+      "control": "Gateway health monitor、pairing 与 watch 链路继续打磨。 Compaction timeout、计数持久化和 sanity check 继续加固。 Session / plugin 路由与配置基线继续收敛。",
+      "security": "",
+      "ops": "Docker 补上 OPENCLAW_TZ、apt-get upgrade 与 runtime lsof 等运维细节。 服务重装、重启与 cleanup 路径继续修补。 构建内存回归与 cron 死锁等运行期问题继续收敛。"
+    },
+    "source": "daily-incremental",
+    "generatedAt": "2026-05-10T20:46:14.602685+08:00"
   }
 ]

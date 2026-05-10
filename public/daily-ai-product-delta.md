@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-05-09T20:45:46+08:00
-- Requested window: 2026-05-08 to 2026-05-09
+- Generated at: 2026-05-10T20:46:34+08:00
+- Requested window: 2026-05-09 to 2026-05-10
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-05-08 to 2026-05-09
-- Generated at: 2026-05-09T20:45:25.697420+08:00
-- 窗口: 2026-05-08 至 2026-05-09
-- GitHub 增量: 1429 commits / 0 releases
-- 最近 push: 2026-05-09
+- Window: 2026-05-09 to 2026-05-10
+- Generated at: 2026-05-10T20:46:14.602685+08:00
+- 窗口: 2026-05-09 至 2026-05-10
+- GitHub 增量: 1080 commits / 1 releases
+- 最近 push: 2026-05-10
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(config): support Qwen thinkingFormat values (#79777)
-  - feat: default discord voice to agent proxy
-  - feat(cli): add thinking override to infer model run
-  - feat: add realtime consult overrides
-  - feat(mistral): add mistral-medium-3-5 model with reasoning support
-  - feat(mistral): add mistral-medium-3-5 model
-  - feat: add plugin install overrides
-  - feat(plugin-sdk): share presentation control helpers
+  - Chat commands: add `/think default` and `/fast default` to clear session overrides and inherit configured/provider defaults. (#79385) Thanks @VACInc. [v2026.5.9-beta.1]
+  - Dependencies: refresh workspace dependency pins and lockfile, including `@openai/codex` `0.130.0`, `acpx` `0.7.0`, AWS SDK `3.1044.0`, OpenTelemetry `0.217.0`, `typebox` `1.1.38`, `vite` `8.0.11`, `oxfmt` `0.48.0`, and `oxlint` `1.63.0`, and update the Codex harness model snapshot for the new bundled app-server catalog. [v2026.5.9-beta.1]
+  - Plugins/install: add guarded plugin install overrides so onboarding and repair tests can route specific plugins to registry specs or local `npm pack` artifacts via environment variables. [v2026.5.9-beta.1]
+  - Plugins/CLI: add the optional bundled `oc-path` plugin, providing `openclaw path` for surgical `oc://` access to markdown, JSONC, and JSONL workspace files. [v2026.5.9-beta.1]
+  - Plugins/SDK: add unified model catalog registration for text, image, video, and music providers, including `providerCatalogEntry` manifests, shared media list help, live catalog caching, and per-model video capability overlays. [v2026.5.9-beta.1]
+  - Plugin SDK: add presentation helpers for controls-only interactive rendering and opt-in empty fallback text so rich channel renderers can share `MessagePresentation` semantics without duplicating native cards or components. [v2026.5.9-beta.1]
+  - Active Memory: support concrete `plugins.entries.active-memory.config.toolsAllow` recall tool names for custom memory plugins while keeping the built-in memory-core default on `memory_search`/`memory_get` and preserving `memory_recall` automatically for `plugins.slots.memory: "memory-lancedb"`. [v2026.5.9-beta.1]
+  - Amazon Bedrock: support `serviceTier` parameter for Bedrock models, configurable via `agents.defaults.params.serviceTier` or per-model in `agents.defaults.models`. Valid values: `default`, `flex`, `priority`, `reserved`. (#64512) Thanks @mobilinkd. [v2026.5.9-beta.1]
 - Fixes and constraints:
-  - perf: defer whatsapp setup finalize import
-  - perf(telegram): append reply-chain cache records
-  - fix(backup): keep temp manifest outside source paths
-  - fix: normalize google catalog model ids
-  - fix(agents): handle resumed cli jsonl output
-  - fix(agents): bound cli runner supervisor output
-  - fix: propagate image generation SSRF policy (#79765) (thanks @hclsys)
-  - fix: preserve Gemini flash image capability (#79759) (thanks @hclsys)
+  - fix(discord): gate user allowlist name resolution [AI]. (#79002) Thanks @pgondhi987. [v2026.5.9-beta.1]
+  - fix(msteams): gate startup user allowlist resolution [AI]. (#79003) Thanks @pgondhi987. [v2026.5.9-beta.1]
+  - Harden macOS shell wrapper allowlist parsing [AI]. (#78518) Thanks @pgondhi987. [v2026.5.9-beta.1]
+  - Docs/Docker: document a local Compose override for Docker Desktop DNS failures in the shared-network `openclaw-cli` sidecar, keeping the default compose setup hardened while unblocking `openclaw plugins install` when users opt in. Fixes #79018. Thanks @Jason-Vaughan. [v2026.5.9-beta.1]
+  - fix(skill-workshop): honor pending approval for tool suggestions [AI]. (#78516) Thanks @pgondhi987. [v2026.5.9-beta.1]
+  - Agents/failover: harden state-aware lane suspension by persisting quota resume transitions, restoring configured lane concurrency, preserving non-quota failure reasons, and exporting model failover events through diagnostics OTLP. Thanks @BunsDev. [v2026.5.9-beta.1]
+  - fix(auto-reply): suppress stale foreground replies
+  - fix(telegram): handle list spacing code blocks
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

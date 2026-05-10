@@ -1,91 +1,99 @@
 {
-  "generatedAt": "2026-05-09T20:45:25.697420+08:00",
+  "generatedAt": "2026-05-10T20:46:14.602685+08:00",
   "window": {
-    "start_local": "2026-05-08T20:45:25.697420+08:00",
-    "end_local": "2026-05-09T20:45:25.697420+08:00",
-    "start_utc": "2026-05-08T12:45:25Z",
-    "end_utc": "2026-05-09T12:45:25Z"
+    "start_local": "2026-05-09T20:46:14.602685+08:00",
+    "end_local": "2026-05-10T20:46:14.602685+08:00",
+    "start_utc": "2026-05-09T12:46:14Z",
+    "end_utc": "2026-05-10T12:46:14Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 370089,
-    "forks": 76426,
-    "open_issues": 7645,
-    "pushed_at": "2026-05-09T12:44:42Z"
+    "stars": 370398,
+    "forks": 76522,
+    "open_issues": 7575,
+    "pushed_at": "2026-05-10T12:44:56Z"
   },
   "summary": {
-    "commitCount": 1429,
-    "releaseCount": 0,
+    "commitCount": 1080,
+    "releaseCount": 1,
     "stableReleaseCount": 0,
-    "betaReleaseCount": 0,
-    "stars": 370089,
-    "forks": 76426,
-    "openIssues": 7645
+    "betaReleaseCount": 1,
+    "stars": 370398,
+    "forks": 76522,
+    "openIssues": 7575
   },
-  "releases": [],
+  "releases": [
+    {
+      "tag_name": "v2026.5.9-beta.1",
+      "published_at": "2026-05-09T13:32:02Z",
+      "name": "openclaw 2026.5.9-beta.1",
+      "prerelease": true,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.9-beta.1"
+    }
+  ],
   "featureItems": [
-    "feat(config): support Qwen thinkingFormat values (#79777)",
-    "feat: default discord voice to agent proxy",
-    "feat(cli): add thinking override to infer model run",
-    "feat: add realtime consult overrides",
-    "feat(mistral): add mistral-medium-3-5 model with reasoning support",
-    "feat(mistral): add mistral-medium-3-5 model",
-    "feat: add plugin install overrides",
-    "feat(plugin-sdk): share presentation control helpers"
+    "Chat commands: add `/think default` and `/fast default` to clear session overrides and inherit configured/provider defaults. (#79385) Thanks @VACInc. [v2026.5.9-beta.1]",
+    "Dependencies: refresh workspace dependency pins and lockfile, including `@openai/codex` `0.130.0`, `acpx` `0.7.0`, AWS SDK `3.1044.0`, OpenTelemetry `0.217.0`, `typebox` `1.1.38`, `vite` `8.0.11`, `oxfmt` `0.48.0`, and `oxlint` `1.63.0`, and update the Codex harness model snapshot for the new bundled app-server catalog. [v2026.5.9-beta.1]",
+    "Plugins/install: add guarded plugin install overrides so onboarding and repair tests can route specific plugins to registry specs or local `npm pack` artifacts via environment variables. [v2026.5.9-beta.1]",
+    "Plugins/CLI: add the optional bundled `oc-path` plugin, providing `openclaw path` for surgical `oc://` access to markdown, JSONC, and JSONL workspace files. [v2026.5.9-beta.1]",
+    "Plugins/SDK: add unified model catalog registration for text, image, video, and music providers, including `providerCatalogEntry` manifests, shared media list help, live catalog caching, and per-model video capability overlays. [v2026.5.9-beta.1]",
+    "Plugin SDK: add presentation helpers for controls-only interactive rendering and opt-in empty fallback text so rich channel renderers can share `MessagePresentation` semantics without duplicating native cards or components. [v2026.5.9-beta.1]",
+    "Active Memory: support concrete `plugins.entries.active-memory.config.toolsAllow` recall tool names for custom memory plugins while keeping the built-in memory-core default on `memory_search`/`memory_get` and preserving `memory_recall` automatically for `plugins.slots.memory: \"memory-lancedb\"`. [v2026.5.9-beta.1]",
+    "Amazon Bedrock: support `serviceTier` parameter for Bedrock models, configurable via `agents.defaults.params.serviceTier` or per-model in `agents.defaults.models`. Valid values: `default`, `flex`, `priority`, `reserved`. (#64512) Thanks @mobilinkd. [v2026.5.9-beta.1]"
   ],
   "fixItems": [
-    "perf: defer whatsapp setup finalize import",
-    "perf(telegram): append reply-chain cache records",
-    "fix(backup): keep temp manifest outside source paths",
-    "fix: normalize google catalog model ids",
-    "fix(agents): handle resumed cli jsonl output",
-    "fix(agents): bound cli runner supervisor output",
-    "fix: propagate image generation SSRF policy (#79765) (thanks @hclsys)",
-    "fix: preserve Gemini flash image capability (#79759) (thanks @hclsys)"
+    "fix(discord): gate user allowlist name resolution [AI]. (#79002) Thanks @pgondhi987. [v2026.5.9-beta.1]",
+    "fix(msteams): gate startup user allowlist resolution [AI]. (#79003) Thanks @pgondhi987. [v2026.5.9-beta.1]",
+    "Harden macOS shell wrapper allowlist parsing [AI]. (#78518) Thanks @pgondhi987. [v2026.5.9-beta.1]",
+    "Docs/Docker: document a local Compose override for Docker Desktop DNS failures in the shared-network `openclaw-cli` sidecar, keeping the default compose setup hardened while unblocking `openclaw plugins install` when users opt in. Fixes #79018. Thanks @Jason-Vaughan. [v2026.5.9-beta.1]",
+    "fix(skill-workshop): honor pending approval for tool suggestions [AI]. (#78516) Thanks @pgondhi987. [v2026.5.9-beta.1]",
+    "Agents/failover: harden state-aware lane suspension by persisting quota resume transitions, restoring configured lane concurrency, preserving non-quota failure reasons, and exporting model failover events through diagnostics OTLP. Thanks @BunsDev. [v2026.5.9-beta.1]",
+    "fix(auto-reply): suppress stale foreground replies",
+    "fix(telegram): handle list spacing code blocks"
   ],
   "topScopes": [
     {
       "scope": "test",
-      "count": 1229
+      "count": 689
     },
     {
       "scope": "fix",
-      "count": 37
+      "count": 71
+    },
+    {
+      "scope": "release",
+      "count": 40
+    },
+    {
+      "scope": "telegram",
+      "count": 27
     },
     {
       "scope": "docs",
-      "count": 17
+      "count": 25
+    },
+    {
+      "scope": "gateway",
+      "count": 18
+    },
+    {
+      "scope": "ui",
+      "count": 18
     },
     {
       "scope": "cli",
       "count": 16
-    },
-    {
-      "scope": "gateway",
-      "count": 9
-    },
-    {
-      "scope": "oc-path",
-      "count": 9
-    },
-    {
-      "scope": "telegram",
-      "count": 8
-    },
-    {
-      "scope": "agents",
-      "count": 8
     }
   ],
   "headlineCommits": [
-    "test: tighten bootstrap context assertion",
-    "perf: defer whatsapp setup finalize import",
-    "test: tighten exec path assertion",
-    "test: tighten background exec assertion",
-    "test: tighten auth session override assertion",
-    "test: tighten concurrent oauth assertion",
-    "test: tighten oauth lock timeout assertion",
-    "test: tighten external cli auth scope assertion"
+    "test: clear config io broad matchers",
+    "test: clear file transfer write broad matchers",
+    "test: clear telegram media retry broad matchers",
+    "test: clear matrix sdk broad matchers",
+    "test(codex): use harness queue surface (#79867)",
+    "test(context): cover context map media (#79867)",
+    "docs(context): describe context map command",
+    "feat(context): add context treemap map"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 }
