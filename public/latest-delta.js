@@ -1,99 +1,106 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-05-10T20:46:14.602685+08:00",
+  "generatedAt": "2026-05-11T22:15:55.533216+08:00",
   "window": {
-    "start_local": "2026-05-09T20:46:14.602685+08:00",
-    "end_local": "2026-05-10T20:46:14.602685+08:00",
-    "start_utc": "2026-05-09T12:46:14Z",
-    "end_utc": "2026-05-10T12:46:14Z"
+    "start_local": "2026-05-10T22:15:55.533216+08:00",
+    "end_local": "2026-05-11T22:15:55.533216+08:00",
+    "start_utc": "2026-05-10T14:15:55Z",
+    "end_utc": "2026-05-11T14:15:55Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 370398,
-    "forks": 76522,
-    "open_issues": 7575,
-    "pushed_at": "2026-05-10T12:44:56Z"
+    "stars": 370815,
+    "forks": 76640,
+    "open_issues": 7374,
+    "pushed_at": "2026-05-11T14:15:42Z"
   },
   "summary": {
-    "commitCount": 1080,
-    "releaseCount": 1,
+    "commitCount": 1713,
+    "releaseCount": 2,
     "stableReleaseCount": 0,
-    "betaReleaseCount": 1,
-    "stars": 370398,
-    "forks": 76522,
-    "openIssues": 7575
+    "betaReleaseCount": 2,
+    "stars": 370815,
+    "forks": 76640,
+    "openIssues": 7374
   },
   "releases": [
     {
-      "tag_name": "v2026.5.9-beta.1",
-      "published_at": "2026-05-09T13:32:02Z",
-      "name": "openclaw 2026.5.9-beta.1",
+      "tag_name": "v2026.5.10-beta.3",
+      "published_at": "2026-05-11T03:28:30Z",
+      "name": "openclaw 2026.5.10-beta.3",
       "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.9-beta.1"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.10-beta.3"
+    },
+    {
+      "tag_name": "v2026.5.10-beta.2",
+      "published_at": "2026-05-10T18:18:58Z",
+      "name": "openclaw 2026.5.10-beta.2",
+      "prerelease": true,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.10-beta.2"
     }
   ],
   "featureItems": [
-    "Chat commands: add `/think default` and `/fast default` to clear session overrides and inherit configured/provider defaults. (#79385) Thanks @VACInc. [v2026.5.9-beta.1]",
-    "Dependencies: refresh workspace dependency pins and lockfile, including `@openai/codex` `0.130.0`, `acpx` `0.7.0`, AWS SDK `3.1044.0`, OpenTelemetry `0.217.0`, `typebox` `1.1.38`, `vite` `8.0.11`, `oxfmt` `0.48.0`, and `oxlint` `1.63.0`, and update the Codex harness model snapshot for the new bundled app-server catalog. [v2026.5.9-beta.1]",
-    "Plugins/install: add guarded plugin install overrides so onboarding and repair tests can route specific plugins to registry specs or local `npm pack` artifacts via environment variables. [v2026.5.9-beta.1]",
-    "Plugins/CLI: add the optional bundled `oc-path` plugin, providing `openclaw path` for surgical `oc://` access to markdown, JSONC, and JSONL workspace files. [v2026.5.9-beta.1]",
-    "Plugins/SDK: add unified model catalog registration for text, image, video, and music providers, including `providerCatalogEntry` manifests, shared media list help, live catalog caching, and per-model video capability overlays. [v2026.5.9-beta.1]",
-    "Plugin SDK: add presentation helpers for controls-only interactive rendering and opt-in empty fallback text so rich channel renderers can share `MessagePresentation` semantics without duplicating native cards or components. [v2026.5.9-beta.1]",
-    "Active Memory: support concrete `plugins.entries.active-memory.config.toolsAllow` recall tool names for custom memory plugins while keeping the built-in memory-core default on `memory_search`/`memory_get` and preserving `memory_recall` automatically for `plugins.slots.memory: \"memory-lancedb\"`. [v2026.5.9-beta.1]",
-    "Amazon Bedrock: support `serviceTier` parameter for Bedrock models, configurable via `agents.defaults.params.serviceTier` or per-model in `agents.defaults.models`. Valid values: `default`, `flex`, `priority`, `reserved`. (#64512) Thanks @mobilinkd. [v2026.5.9-beta.1]"
+    "Models: add provider-level `localService` startup for on-demand local model servers before OpenAI-compatible requests, including one-shot model probes. [v2026.5.10-beta.3]",
+    "Context: add `/context map` to send a treemap image of the current session context contributors. (#79867) [v2026.5.10-beta.3]",
+    "Slack: add `unfurlLinks` and `unfurlMedia` config for bot `chat.postMessage` replies, including per-account overrides, so Slack link and media previews can be suppressed without workspace-wide settings. Fixes #48435. (#80145) Thanks @esegev1 and @HemantSudarshan. [v2026.5.10-beta.3]",
+    "Slack: add explicit `replyBroadcast` support for text and Block Kit thread replies so agents can opt into Slack's parent-channel `reply_broadcast` behavior. (#64365) Thanks @tony88331. [v2026.5.10-beta.3]",
+    "Plugin SDK: deprecate public subpaths currently used by only one or two bundled plugin owners, keeping them importable while steering new plugin code to focused shared SDK seams or plugin-owned APIs. [v2026.5.10-beta.3]",
+    "QA/Mantis: add Telegram live PR evidence automation with Convex-leased credentials, Crabbox transcript capture, motion GIF previews, and inline PR comments. [v2026.5.10-beta.3]",
+    "QA/Mantis: add a Telegram desktop scenario builder that leases Crabbox, installs native Telegram Desktop, configures an OpenClaw Telegram gateway with leased bot credentials, and records VNC screenshot/video artifacts. [v2026.5.10-beta.3]",
+    "Discord/voice: add realtime voice diagnostics for speaker turns, playback resets, barge-in detection, and audio cutoff analysis. [v2026.5.10-beta.3]"
   ],
   "fixItems": [
-    "fix(discord): gate user allowlist name resolution [AI]. (#79002) Thanks @pgondhi987. [v2026.5.9-beta.1]",
-    "fix(msteams): gate startup user allowlist resolution [AI]. (#79003) Thanks @pgondhi987. [v2026.5.9-beta.1]",
-    "Harden macOS shell wrapper allowlist parsing [AI]. (#78518) Thanks @pgondhi987. [v2026.5.9-beta.1]",
-    "Docs/Docker: document a local Compose override for Docker Desktop DNS failures in the shared-network `openclaw-cli` sidecar, keeping the default compose setup hardened while unblocking `openclaw plugins install` when users opt in. Fixes #79018. Thanks @Jason-Vaughan. [v2026.5.9-beta.1]",
-    "fix(skill-workshop): honor pending approval for tool suggestions [AI]. (#78516) Thanks @pgondhi987. [v2026.5.9-beta.1]",
-    "Agents/failover: harden state-aware lane suspension by persisting quota resume transitions, restoring configured lane concurrency, preserving non-quota failure reasons, and exporting model failover events through diagnostics OTLP. Thanks @BunsDev. [v2026.5.9-beta.1]",
-    "fix(auto-reply): suppress stale foreground replies",
-    "fix(telegram): handle list spacing code blocks"
+    "Security/audit: honor `tools.byProvider[\"provider/model\"].deny` when reporting small-model web/browser exposure, so per-model OpenRouter mitigations clear the `models.small_params` exposure signal. Fixes #80118. [v2026.5.10-beta.3]",
+    "Security/audit: honor `tools.byProvider[\"provider/model\"].deny` when reporting small-model web/browser exposure, so per-model OpenRouter mitigations clear the `models.small_params` exposure signal. Fixes #80118. [v2026.5.10-beta.2]",
+    "fix(gateway): dedupe inflight outbound requests (#68341)",
+    "fix(plugin-sdk): restore compact progress draft cap",
+    "fix(memory-core): cap MEMORY.md size during dreaming promotions to prevent unbounded growth (#73691)",
+    "fix: harden gh config discovery",
+    "fix(doctor): surface GH_CONFIG_DIR hint when gh auth lives at a different HOME",
+    "fix(cron): mark manual cron runs active (#78243)"
   ],
   "topScopes": [
     {
       "scope": "test",
-      "count": 689
+      "count": 1386
     },
     {
       "scope": "fix",
-      "count": 71
-    },
-    {
-      "scope": "release",
-      "count": 40
-    },
-    {
-      "scope": "telegram",
-      "count": 27
+      "count": 35
     },
     {
       "scope": "docs",
-      "count": 25
+      "count": 29
     },
     {
-      "scope": "gateway",
-      "count": 18
+      "scope": "codex",
+      "count": 29
     },
     {
-      "scope": "ui",
-      "count": 18
+      "scope": "ci",
+      "count": 19
     },
     {
-      "scope": "cli",
+      "scope": "ci(mantis)",
       "count": 16
+    },
+    {
+      "scope": "slack",
+      "count": 15
+    },
+    {
+      "scope": "telegram",
+      "count": 14
     }
   ],
   "headlineCommits": [
-    "test: clear config io broad matchers",
-    "test: clear file transfer write broad matchers",
-    "test: clear telegram media retry broad matchers",
-    "test: clear matrix sdk broad matchers",
-    "test(codex): use harness queue surface (#79867)",
-    "test(context): cover context map media (#79867)",
-    "docs(context): describe context map command",
-    "feat(context): add context treemap map"
+    "test: tighten channel assertion checks",
+    "test: verify default account warning copy",
+    "test: spell out gateway send responses",
+    "test: cover exec safe bin warning text",
+    "fix(gateway): dedupe inflight outbound requests (#68341)",
+    "test: pin realtime relay requests",
+    "test: tighten cli gateway assertions",
+    "test: pin browser state errors"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
