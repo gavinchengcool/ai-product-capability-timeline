@@ -1,106 +1,106 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-05-11T22:15:55.533216+08:00",
+  "generatedAt": "2026-05-12T21:30:42.201049+08:00",
   "window": {
-    "start_local": "2026-05-10T22:15:55.533216+08:00",
-    "end_local": "2026-05-11T22:15:55.533216+08:00",
-    "start_utc": "2026-05-10T14:15:55Z",
-    "end_utc": "2026-05-11T14:15:55Z"
+    "start_local": "2026-05-11T21:30:42.201049+08:00",
+    "end_local": "2026-05-12T21:30:42.201049+08:00",
+    "start_utc": "2026-05-11T13:30:42Z",
+    "end_utc": "2026-05-12T13:30:42Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 370815,
-    "forks": 76640,
-    "open_issues": 7374,
-    "pushed_at": "2026-05-11T14:15:42Z"
+    "stars": 371135,
+    "forks": 76770,
+    "open_issues": 7304,
+    "pushed_at": "2026-05-12T13:30:34Z"
   },
   "summary": {
-    "commitCount": 1713,
+    "commitCount": 1277,
     "releaseCount": 2,
     "stableReleaseCount": 0,
     "betaReleaseCount": 2,
-    "stars": 370815,
-    "forks": 76640,
-    "openIssues": 7374
+    "stars": 371135,
+    "forks": 76770,
+    "openIssues": 7304
   },
   "releases": [
     {
-      "tag_name": "v2026.5.10-beta.3",
-      "published_at": "2026-05-11T03:28:30Z",
-      "name": "openclaw 2026.5.10-beta.3",
+      "tag_name": "v2026.5.10-beta.5",
+      "published_at": "2026-05-11T16:38:39Z",
+      "name": "openclaw 2026.5.10-beta.5",
       "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.10-beta.3"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.10-beta.5"
     },
     {
-      "tag_name": "v2026.5.10-beta.2",
-      "published_at": "2026-05-10T18:18:58Z",
-      "name": "openclaw 2026.5.10-beta.2",
+      "tag_name": "v2026.5.10-beta.4",
+      "published_at": "2026-05-11T16:04:13Z",
+      "name": "openclaw 2026.5.10-beta.4",
       "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.10-beta.2"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.10-beta.4"
     }
   ],
   "featureItems": [
-    "Models: add provider-level `localService` startup for on-demand local model servers before OpenAI-compatible requests, including one-shot model probes. [v2026.5.10-beta.3]",
-    "Context: add `/context map` to send a treemap image of the current session context contributors. (#79867) [v2026.5.10-beta.3]",
-    "Slack: add `unfurlLinks` and `unfurlMedia` config for bot `chat.postMessage` replies, including per-account overrides, so Slack link and media previews can be suppressed without workspace-wide settings. Fixes #48435. (#80145) Thanks @esegev1 and @HemantSudarshan. [v2026.5.10-beta.3]",
-    "Slack: add explicit `replyBroadcast` support for text and Block Kit thread replies so agents can opt into Slack's parent-channel `reply_broadcast` behavior. (#64365) Thanks @tony88331. [v2026.5.10-beta.3]",
-    "Plugin SDK: deprecate public subpaths currently used by only one or two bundled plugin owners, keeping them importable while steering new plugin code to focused shared SDK seams or plugin-owned APIs. [v2026.5.10-beta.3]",
-    "QA/Mantis: add Telegram live PR evidence automation with Convex-leased credentials, Crabbox transcript capture, motion GIF previews, and inline PR comments. [v2026.5.10-beta.3]",
-    "QA/Mantis: add a Telegram desktop scenario builder that leases Crabbox, installs native Telegram Desktop, configures an OpenClaw Telegram gateway with leased bot credentials, and records VNC screenshot/video artifacts. [v2026.5.10-beta.3]",
-    "Discord/voice: add realtime voice diagnostics for speaker turns, playback resets, barge-in detection, and audio cutoff analysis. [v2026.5.10-beta.3]"
+    "CI: add a non-blocking `plugin-inspector-advisory` artifact to Plugin Prerelease so release runs capture bundled plugin compatibility triage without changing the blocking gate. [v2026.5.10-beta.5]",
+    "Logging: add targeted model transport, payload, SSE, and code-mode diagnostics with redacted URL handling. [v2026.5.10-beta.5]",
+    "Agents: add per-agent `tools.message.crossContext` overrides so sandboxed/public agents can restrict message sends to the current conversation without changing the global bot policy. [v2026.5.10-beta.5]",
+    "Agents: add per-agent `tools.message.actions.allow` overrides so sandboxed/public agents can expose and enforce send-only message tools. [v2026.5.10-beta.5]",
+    "Models: add provider-level `localService` startup for on-demand local model servers before OpenAI-compatible requests, including one-shot model probes. [v2026.5.10-beta.5]",
+    "Context: add `/context map` to send a treemap image of the current session context contributors. (#79867) [v2026.5.10-beta.5]",
+    "Slack: add `unfurlLinks` and `unfurlMedia` config for bot `chat.postMessage` replies, including per-account overrides, so Slack link and media previews can be suppressed without workspace-wide settings. Fixes #48435. (#80145) Thanks @esegev1 and @HemantSudarshan. [v2026.5.10-beta.5]",
+    "Slack: add explicit `replyBroadcast` support for text and Block Kit thread replies so agents can opt into Slack's parent-channel `reply_broadcast` behavior. (#64365) Thanks @tony88331. [v2026.5.10-beta.5]"
   ],
   "fixItems": [
-    "Security/audit: honor `tools.byProvider[\"provider/model\"].deny` when reporting small-model web/browser exposure, so per-model OpenRouter mitigations clear the `models.small_params` exposure signal. Fixes #80118. [v2026.5.10-beta.3]",
-    "Security/audit: honor `tools.byProvider[\"provider/model\"].deny` when reporting small-model web/browser exposure, so per-model OpenRouter mitigations clear the `models.small_params` exposure signal. Fixes #80118. [v2026.5.10-beta.2]",
-    "fix(gateway): dedupe inflight outbound requests (#68341)",
-    "fix(plugin-sdk): restore compact progress draft cap",
-    "fix(memory-core): cap MEMORY.md size during dreaming promotions to prevent unbounded growth (#73691)",
-    "fix: harden gh config discovery",
-    "fix(doctor): surface GH_CONFIG_DIR hint when gh auth lives at a different HOME",
-    "fix(cron): mark manual cron runs active (#78243)"
+    "fix(matrix): gate name-based allowlist resolution [AI]. (#79007) Thanks @pgondhi987. [v2026.5.10-beta.5]",
+    "Security/audit: honor `tools.byProvider[\"provider/model\"].deny` when reporting small-model web/browser exposure, so per-model OpenRouter mitigations clear the `models.small_params` exposure signal. Fixes #80118. [v2026.5.10-beta.5]",
+    "fix(matrix): gate name-based allowlist resolution [AI]. (#79007) Thanks @pgondhi987. [v2026.5.10-beta.4]",
+    "Security/audit: honor `tools.byProvider[\"provider/model\"].deny` when reporting small-model web/browser exposure, so per-model OpenRouter mitigations clear the `models.small_params` exposure signal. Fixes #80118. [v2026.5.10-beta.4]",
+    "fix: canonicalize qualified gemini pro preview refs",
+    "fix: normalize oauth auth-result config patches",
+    "fix: surface silent model fallback failures (#80917)",
+    "fix(gateway): wire max_completion_tokens/max_tokens through openai-http (#81013)"
   ],
   "topScopes": [
     {
       "scope": "test",
-      "count": 1386
+      "count": 1075
     },
     {
       "scope": "fix",
-      "count": 35
+      "count": 46
+    },
+    {
+      "scope": "doctor",
+      "count": 12
+    },
+    {
+      "scope": "agents",
+      "count": 11
     },
     {
       "scope": "docs",
-      "count": 29
+      "count": 10
     },
     {
-      "scope": "codex",
-      "count": 29
+      "scope": "gateway",
+      "count": 9
+    },
+    {
+      "scope": "changelog",
+      "count": 7
     },
     {
       "scope": "ci",
-      "count": 19
-    },
-    {
-      "scope": "ci(mantis)",
-      "count": 16
-    },
-    {
-      "scope": "slack",
-      "count": 15
-    },
-    {
-      "scope": "telegram",
-      "count": 14
+      "count": 7
     }
   ],
   "headlineCommits": [
-    "test: tighten channel assertion checks",
-    "test: verify default account warning copy",
-    "test: spell out gateway send responses",
-    "test: cover exec safe bin warning text",
-    "fix(gateway): dedupe inflight outbound requests (#68341)",
-    "test: pin realtime relay requests",
-    "test: tighten cli gateway assertions",
-    "test: pin browser state errors"
+    "test: dedupe heartbeat reply body mock calls",
+    "test: dedupe bedrock mantle stream mock calls",
+    "test: dedupe browser registration mock calls",
+    "test: bind clawhub detail dialog text",
+    "test: target clawhub result fields",
+    "test: isolate agent skills tab count",
+    "test: dedupe feishu monitor cleanup mock calls",
+    "test: verify debug security callout text"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

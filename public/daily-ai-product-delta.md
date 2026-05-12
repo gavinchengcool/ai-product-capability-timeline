@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-05-11T22:16:15+08:00
-- Requested window: 2026-05-10 to 2026-05-11
+- Generated at: 2026-05-12T21:31:04+08:00
+- Requested window: 2026-05-11 to 2026-05-12
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-05-10 to 2026-05-11
-- Generated at: 2026-05-11T22:15:55.533216+08:00
-- 窗口: 2026-05-10 至 2026-05-11
-- GitHub 增量: 1713 commits / 2 releases
-- 最近 push: 2026-05-11
+- Window: 2026-05-11 to 2026-05-12
+- Generated at: 2026-05-12T21:30:42.201049+08:00
+- 窗口: 2026-05-11 至 2026-05-12
+- GitHub 增量: 1277 commits / 2 releases
+- 最近 push: 2026-05-12
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Models: add provider-level `localService` startup for on-demand local model servers before OpenAI-compatible requests, including one-shot model probes. [v2026.5.10-beta.3]
-  - Context: add `/context map` to send a treemap image of the current session context contributors. (#79867) [v2026.5.10-beta.3]
-  - Slack: add `unfurlLinks` and `unfurlMedia` config for bot `chat.postMessage` replies, including per-account overrides, so Slack link and media previews can be suppressed without workspace-wide settings. Fixes #48435. (#80145) Thanks @esegev1 and @HemantSudarshan. [v2026.5.10-beta.3]
-  - Slack: add explicit `replyBroadcast` support for text and Block Kit thread replies so agents can opt into Slack's parent-channel `reply_broadcast` behavior. (#64365) Thanks @tony88331. [v2026.5.10-beta.3]
-  - Plugin SDK: deprecate public subpaths currently used by only one or two bundled plugin owners, keeping them importable while steering new plugin code to focused shared SDK seams or plugin-owned APIs. [v2026.5.10-beta.3]
-  - QA/Mantis: add Telegram live PR evidence automation with Convex-leased credentials, Crabbox transcript capture, motion GIF previews, and inline PR comments. [v2026.5.10-beta.3]
-  - QA/Mantis: add a Telegram desktop scenario builder that leases Crabbox, installs native Telegram Desktop, configures an OpenClaw Telegram gateway with leased bot credentials, and records VNC screenshot/video artifacts. [v2026.5.10-beta.3]
-  - Discord/voice: add realtime voice diagnostics for speaker turns, playback resets, barge-in detection, and audio cutoff analysis. [v2026.5.10-beta.3]
+  - CI: add a non-blocking `plugin-inspector-advisory` artifact to Plugin Prerelease so release runs capture bundled plugin compatibility triage without changing the blocking gate. [v2026.5.10-beta.5]
+  - Logging: add targeted model transport, payload, SSE, and code-mode diagnostics with redacted URL handling. [v2026.5.10-beta.5]
+  - Agents: add per-agent `tools.message.crossContext` overrides so sandboxed/public agents can restrict message sends to the current conversation without changing the global bot policy. [v2026.5.10-beta.5]
+  - Agents: add per-agent `tools.message.actions.allow` overrides so sandboxed/public agents can expose and enforce send-only message tools. [v2026.5.10-beta.5]
+  - Models: add provider-level `localService` startup for on-demand local model servers before OpenAI-compatible requests, including one-shot model probes. [v2026.5.10-beta.5]
+  - Context: add `/context map` to send a treemap image of the current session context contributors. (#79867) [v2026.5.10-beta.5]
+  - Slack: add `unfurlLinks` and `unfurlMedia` config for bot `chat.postMessage` replies, including per-account overrides, so Slack link and media previews can be suppressed without workspace-wide settings. Fixes #48435. (#80145) Thanks @esegev1 and @HemantSudarshan. [v2026.5.10-beta.5]
+  - Slack: add explicit `replyBroadcast` support for text and Block Kit thread replies so agents can opt into Slack's parent-channel `reply_broadcast` behavior. (#64365) Thanks @tony88331. [v2026.5.10-beta.5]
 - Fixes and constraints:
-  - Security/audit: honor `tools.byProvider["provider/model"].deny` when reporting small-model web/browser exposure, so per-model OpenRouter mitigations clear the `models.small_params` exposure signal. Fixes #80118. [v2026.5.10-beta.3]
-  - Security/audit: honor `tools.byProvider["provider/model"].deny` when reporting small-model web/browser exposure, so per-model OpenRouter mitigations clear the `models.small_params` exposure signal. Fixes #80118. [v2026.5.10-beta.2]
-  - fix(gateway): dedupe inflight outbound requests (#68341)
-  - fix(plugin-sdk): restore compact progress draft cap
-  - fix(memory-core): cap MEMORY.md size during dreaming promotions to prevent unbounded growth (#73691)
-  - fix: harden gh config discovery
-  - fix(doctor): surface GH_CONFIG_DIR hint when gh auth lives at a different HOME
-  - fix(cron): mark manual cron runs active (#78243)
+  - fix(matrix): gate name-based allowlist resolution [AI]. (#79007) Thanks @pgondhi987. [v2026.5.10-beta.5]
+  - Security/audit: honor `tools.byProvider["provider/model"].deny` when reporting small-model web/browser exposure, so per-model OpenRouter mitigations clear the `models.small_params` exposure signal. Fixes #80118. [v2026.5.10-beta.5]
+  - fix(matrix): gate name-based allowlist resolution [AI]. (#79007) Thanks @pgondhi987. [v2026.5.10-beta.4]
+  - Security/audit: honor `tools.byProvider["provider/model"].deny` when reporting small-model web/browser exposure, so per-model OpenRouter mitigations clear the `models.small_params` exposure signal. Fixes #80118. [v2026.5.10-beta.4]
+  - fix: canonicalize qualified gemini pro preview refs
+  - fix: normalize oauth auth-result config patches
+  - fix: surface silent model fallback failures (#80917)
+  - fix(gateway): wire max_completion_tokens/max_tokens through openai-http (#81013)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
