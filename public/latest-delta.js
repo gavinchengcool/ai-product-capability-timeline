@@ -1,120 +1,120 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-05-13T21:58:54.812191+08:00",
+  "generatedAt": "2026-05-14T21:22:38.775116+08:00",
   "window": {
-    "start_local": "2026-05-12T21:58:54.812191+08:00",
-    "end_local": "2026-05-13T21:58:54.812191+08:00",
-    "start_utc": "2026-05-12T13:58:54Z",
-    "end_utc": "2026-05-13T13:58:54Z"
+    "start_local": "2026-05-13T21:22:38.775116+08:00",
+    "end_local": "2026-05-14T21:22:38.775116+08:00",
+    "start_utc": "2026-05-13T13:22:38Z",
+    "end_utc": "2026-05-14T13:22:38Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 371475,
-    "forks": 76876,
-    "open_issues": 7353,
-    "pushed_at": "2026-05-13T13:58:02Z"
+    "stars": 371795,
+    "forks": 76957,
+    "open_issues": 7127,
+    "pushed_at": "2026-05-14T12:37:23Z"
   },
   "summary": {
-    "commitCount": 1132,
+    "commitCount": 284,
     "releaseCount": 4,
     "stableReleaseCount": 0,
     "betaReleaseCount": 4,
-    "stars": 371475,
-    "forks": 76876,
-    "openIssues": 7353
+    "stars": 371795,
+    "forks": 76957,
+    "openIssues": 7127
   },
   "releases": [
     {
-      "tag_name": "v2026.5.12-beta.4",
-      "published_at": "2026-05-13T05:17:07Z",
-      "name": "openclaw 2026.5.12-beta.4",
+      "tag_name": "v2026.5.12-beta.8",
+      "published_at": "2026-05-14T11:16:04Z",
+      "name": "openclaw 2026.5.12-beta.8",
       "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.12-beta.4"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.12-beta.8"
     },
     {
-      "tag_name": "v2026.5.12-beta.3",
-      "published_at": "2026-05-12T23:38:26Z",
-      "name": "openclaw 2026.5.12-beta.3",
+      "tag_name": "v2026.5.12-beta.7",
+      "published_at": "2026-05-14T09:39:25Z",
+      "name": "openclaw 2026.5.12-beta.7",
       "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.12-beta.3"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.12-beta.7"
     },
     {
-      "tag_name": "v2026.5.12-beta.2",
-      "published_at": "2026-05-12T22:15:42Z",
-      "name": "openclaw 2026.5.12-beta.2",
+      "tag_name": "v2026.5.12-beta.6",
+      "published_at": "2026-05-13T21:00:40Z",
+      "name": "openclaw 2026.5.12-beta.6",
       "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.12-beta.2"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.12-beta.6"
     },
     {
-      "tag_name": "v2026.5.12-beta.1",
-      "published_at": "2026-05-12T17:10:10Z",
-      "name": "openclaw 2026.5.12-beta.1",
+      "tag_name": "v2026.5.12-beta.5",
+      "published_at": "2026-05-13T18:06:44Z",
+      "name": "openclaw 2026.5.12-beta.5",
       "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.12-beta.1"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.12-beta.5"
     }
   ],
   "featureItems": [
-    "Cron: add direct `cron.get`, `openclaw cron get <id>`, and agent-tool `get` support for inspecting one stored cron job by id. (#75117) Thanks @samzong. [v2026.5.12-beta.4]",
-    "Agents/tools: add per-sender tool policies with canonical channel-scoped sender keys, so operators can restrict dangerous tools by requester identity across global, agent, group, core, bundled, and plugin tool surfaces. (#66933) Thanks @JerranC. [v2026.5.12-beta.4]",
-    "Channels/iMessage: add `openclaw channels status --channel <name>` filtering and document the BlueBubbles-to-imsg cutover path so operators can probe iMessage without starting both channel monitors. (#80706) Thanks @omarshahine. [v2026.5.12-beta.4]",
-    "CI: add a non-blocking `plugin-inspector-advisory` artifact to Plugin Prerelease so release runs capture bundled plugin compatibility triage without changing the blocking gate. [v2026.5.12-beta.4]",
-    "Logging: add targeted model transport, payload, SSE, and code-mode diagnostics with redacted URL handling. [v2026.5.12-beta.4]",
-    "Agents: add per-agent `tools.message.crossContext` overrides so sandboxed/public agents can restrict message sends to the current conversation without changing the global bot policy. [v2026.5.12-beta.4]",
-    "Agents: add per-agent `tools.message.actions.allow` overrides so sandboxed/public agents can expose and enforce send-only message tools. [v2026.5.12-beta.4]",
-    "Models: add provider-level `localService` startup for on-demand local model servers before OpenAI-compatible requests, including one-shot model probes. [v2026.5.12-beta.4]"
+    "Control UI/WebChat: add a persisted auto-scroll mode selector so users can keep the current near-bottom behavior, always follow streaming output, or turn automatic streaming scroll off and use the New messages button manually. Fixes #7648 and #81287. Thanks @BunsDev. [v2026.5.12-beta.8]",
+    "ACP: add `acp.fallbacks` so ACP turns can try configured backup runtime backends when the primary backend is unavailable before any output is emitted. (#69542) Thanks @kaseonedge. [v2026.5.12-beta.8]",
+    "Cron: add direct `cron.get`, `openclaw cron get <id>`, and agent-tool `get` support for inspecting one stored cron job by id. (#75117) Thanks @samzong. [v2026.5.12-beta.8]",
+    "Agents/tools: add per-sender tool policies with canonical channel-scoped sender keys, so operators can restrict dangerous tools by requester identity across global, agent, group, core, bundled, and plugin tool surfaces. (#66933) Thanks @JerranC. [v2026.5.12-beta.8]",
+    "Channels/iMessage: add `openclaw channels status --channel <name>` filtering and document the BlueBubbles-to-imsg cutover path so operators can probe iMessage without starting both channel monitors. (#80706) Thanks @omarshahine. [v2026.5.12-beta.8]",
+    "CI: add a non-blocking `plugin-inspector-advisory` artifact to Plugin Prerelease so release runs capture bundled plugin compatibility triage without changing the blocking gate. [v2026.5.12-beta.8]",
+    "Logging: add targeted model transport, payload, SSE, and code-mode diagnostics with redacted URL handling. [v2026.5.12-beta.8]",
+    "Agents: add per-agent `tools.message.crossContext` overrides so sandboxed/public agents can restrict message sends to the current conversation without changing the global bot policy. [v2026.5.12-beta.8]"
   ],
   "fixItems": [
-    "fix(memory-wiki): require admin scope for ingest [AI]. (#80897) Thanks @pgondhi987. [v2026.5.12-beta.4]",
-    "fix(matrix): gate name-based allowlist resolution [AI]. (#79007) Thanks @pgondhi987. [v2026.5.12-beta.4]",
-    "Security/audit: honor `tools.byProvider[\"provider/model\"].deny` when reporting small-model web/browser exposure, so per-model OpenRouter mitigations clear the `models.small_params` exposure signal. Fixes #80118. [v2026.5.12-beta.4]",
-    "fix(memory-wiki): require admin scope for ingest [AI]. (#80897) Thanks @pgondhi987. [v2026.5.12-beta.3]",
-    "fix(matrix): gate name-based allowlist resolution [AI]. (#79007) Thanks @pgondhi987. [v2026.5.12-beta.3]",
-    "Security/audit: honor `tools.byProvider[\"provider/model\"].deny` when reporting small-model web/browser exposure, so per-model OpenRouter mitigations clear the `models.small_params` exposure signal. Fixes #80118. [v2026.5.12-beta.3]",
-    "fix(memory-wiki): require admin scope for ingest [AI]. (#80897) Thanks @pgondhi987. [v2026.5.12-beta.2]",
-    "fix(matrix): gate name-based allowlist resolution [AI]. (#79007) Thanks @pgondhi987. [v2026.5.12-beta.2]"
+    "Security/sandbox: include Windows `USERPROFILE` in the sandbox blocked home roots so credential-bearing binds (such as `.codex`, `.openclaw`, or `.ssh` under the Windows user profile) are denied even when `HOME` points at a different shell home. (#63074) Thanks @luoyanglang. [v2026.5.12-beta.8]",
+    "Harden trusted-proxy source validation [AI]. (#81290) Thanks @pgondhi987. [v2026.5.12-beta.8]",
+    "fix: scan plugin runtime entries during install [AI]. (#80998) Thanks @pgondhi987. [v2026.5.12-beta.8]",
+    "fix(plugins): scan installed dependency runtime code [AI]. (#81066) Thanks @pgondhi987. [v2026.5.12-beta.8]",
+    "fix: detect carried exec command forms [AI]. (#81000) Thanks @pgondhi987. [v2026.5.12-beta.8]",
+    "fix(node-pairing): replace changed pending requests [AI]. (#80894) Thanks @pgondhi987. [v2026.5.12-beta.8]",
+    "fix(feishu): normalize webhook rate-limit client keys [AI]. (#80975) Thanks @pgondhi987. [v2026.5.12-beta.8]",
+    "fix(auth): prevent bootstrap pairing scope changes [AI]. (#80976) Thanks @pgondhi987. [v2026.5.12-beta.8]"
   ],
   "topScopes": [
     {
-      "scope": "test",
-      "count": 988
-    },
-    {
       "scope": "fix",
-      "count": 20
+      "count": 30
     },
     {
       "scope": "docs",
-      "count": 13
+      "count": 19
     },
     {
-      "scope": "provider",
+      "scope": "gateway",
+      "count": 16
+    },
+    {
+      "scope": "cli",
+      "count": 14
+    },
+    {
+      "scope": "plugins",
       "count": 12
     },
     {
       "scope": "changelog",
-      "count": 8
+      "count": 12
     },
     {
-      "scope": "telegram",
-      "count": 7
+      "scope": "codex",
+      "count": 11
     },
     {
-      "scope": "ci",
-      "count": 7
-    },
-    {
-      "scope": "require",
-      "count": 5
+      "scope": "test",
+      "count": 10
     }
   ],
   "headlineCommits": [
-    "docs: add ds4 provider guide",
-    "test: fix queue settings session fixtures",
-    "test: add live subagent steering proof",
-    "fix: use in-process subagent announce handoff",
-    "fix(telegram): limit startup probes (#80986)",
-    "Require approval for setup-code device pairing [AI] (#81292)",
-    "docs: update changelog for docker setup path fix (#81105)",
-    "fix(docker): pin setup cli container paths"
+    "feat: WhatsApp status reactions, new emoji categories, self-explanatory defaults (#59077) (#80612)",
+    "fix(mattermost): wrap malformed interaction json",
+    "fix(plugins): harden git ref checkout",
+    "fix(synology-chat): wrap malformed webhook json",
+    "fix(cli): keep plugin json output parseable",
+    "fix(openai): wrap malformed embedding batch jsonl",
+    "fix(qqbot): wrap malformed token json",
+    "fix(bedrock): wrap malformed embedding json"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

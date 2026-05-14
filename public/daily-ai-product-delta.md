@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-05-13T21:59:13+08:00
-- Requested window: 2026-05-12 to 2026-05-13
+- Generated at: 2026-05-14T21:22:57+08:00
+- Requested window: 2026-05-13 to 2026-05-14
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-05-12 to 2026-05-13
-- Generated at: 2026-05-13T21:58:54.812191+08:00
-- 窗口: 2026-05-12 至 2026-05-13
-- GitHub 增量: 1132 commits / 4 releases
-- 最近 push: 2026-05-13
+- Window: 2026-05-13 to 2026-05-14
+- Generated at: 2026-05-14T21:22:38.775116+08:00
+- 窗口: 2026-05-13 至 2026-05-14
+- GitHub 增量: 284 commits / 4 releases
+- 最近 push: 2026-05-14
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Cron: add direct `cron.get`, `openclaw cron get <id>`, and agent-tool `get` support for inspecting one stored cron job by id. (#75117) Thanks @samzong. [v2026.5.12-beta.4]
-  - Agents/tools: add per-sender tool policies with canonical channel-scoped sender keys, so operators can restrict dangerous tools by requester identity across global, agent, group, core, bundled, and plugin tool surfaces. (#66933) Thanks @JerranC. [v2026.5.12-beta.4]
-  - Channels/iMessage: add `openclaw channels status --channel <name>` filtering and document the BlueBubbles-to-imsg cutover path so operators can probe iMessage without starting both channel monitors. (#80706) Thanks @omarshahine. [v2026.5.12-beta.4]
-  - CI: add a non-blocking `plugin-inspector-advisory` artifact to Plugin Prerelease so release runs capture bundled plugin compatibility triage without changing the blocking gate. [v2026.5.12-beta.4]
-  - Logging: add targeted model transport, payload, SSE, and code-mode diagnostics with redacted URL handling. [v2026.5.12-beta.4]
-  - Agents: add per-agent `tools.message.crossContext` overrides so sandboxed/public agents can restrict message sends to the current conversation without changing the global bot policy. [v2026.5.12-beta.4]
-  - Agents: add per-agent `tools.message.actions.allow` overrides so sandboxed/public agents can expose and enforce send-only message tools. [v2026.5.12-beta.4]
-  - Models: add provider-level `localService` startup for on-demand local model servers before OpenAI-compatible requests, including one-shot model probes. [v2026.5.12-beta.4]
+  - Control UI/WebChat: add a persisted auto-scroll mode selector so users can keep the current near-bottom behavior, always follow streaming output, or turn automatic streaming scroll off and use the New messages button manually. Fixes #7648 and #81287. Thanks @BunsDev. [v2026.5.12-beta.8]
+  - ACP: add `acp.fallbacks` so ACP turns can try configured backup runtime backends when the primary backend is unavailable before any output is emitted. (#69542) Thanks @kaseonedge. [v2026.5.12-beta.8]
+  - Cron: add direct `cron.get`, `openclaw cron get <id>`, and agent-tool `get` support for inspecting one stored cron job by id. (#75117) Thanks @samzong. [v2026.5.12-beta.8]
+  - Agents/tools: add per-sender tool policies with canonical channel-scoped sender keys, so operators can restrict dangerous tools by requester identity across global, agent, group, core, bundled, and plugin tool surfaces. (#66933) Thanks @JerranC. [v2026.5.12-beta.8]
+  - Channels/iMessage: add `openclaw channels status --channel <name>` filtering and document the BlueBubbles-to-imsg cutover path so operators can probe iMessage without starting both channel monitors. (#80706) Thanks @omarshahine. [v2026.5.12-beta.8]
+  - CI: add a non-blocking `plugin-inspector-advisory` artifact to Plugin Prerelease so release runs capture bundled plugin compatibility triage without changing the blocking gate. [v2026.5.12-beta.8]
+  - Logging: add targeted model transport, payload, SSE, and code-mode diagnostics with redacted URL handling. [v2026.5.12-beta.8]
+  - Agents: add per-agent `tools.message.crossContext` overrides so sandboxed/public agents can restrict message sends to the current conversation without changing the global bot policy. [v2026.5.12-beta.8]
 - Fixes and constraints:
-  - fix(memory-wiki): require admin scope for ingest [AI]. (#80897) Thanks @pgondhi987. [v2026.5.12-beta.4]
-  - fix(matrix): gate name-based allowlist resolution [AI]. (#79007) Thanks @pgondhi987. [v2026.5.12-beta.4]
-  - Security/audit: honor `tools.byProvider["provider/model"].deny` when reporting small-model web/browser exposure, so per-model OpenRouter mitigations clear the `models.small_params` exposure signal. Fixes #80118. [v2026.5.12-beta.4]
-  - fix(memory-wiki): require admin scope for ingest [AI]. (#80897) Thanks @pgondhi987. [v2026.5.12-beta.3]
-  - fix(matrix): gate name-based allowlist resolution [AI]. (#79007) Thanks @pgondhi987. [v2026.5.12-beta.3]
-  - Security/audit: honor `tools.byProvider["provider/model"].deny` when reporting small-model web/browser exposure, so per-model OpenRouter mitigations clear the `models.small_params` exposure signal. Fixes #80118. [v2026.5.12-beta.3]
-  - fix(memory-wiki): require admin scope for ingest [AI]. (#80897) Thanks @pgondhi987. [v2026.5.12-beta.2]
-  - fix(matrix): gate name-based allowlist resolution [AI]. (#79007) Thanks @pgondhi987. [v2026.5.12-beta.2]
+  - Security/sandbox: include Windows `USERPROFILE` in the sandbox blocked home roots so credential-bearing binds (such as `.codex`, `.openclaw`, or `.ssh` under the Windows user profile) are denied even when `HOME` points at a different shell home. (#63074) Thanks @luoyanglang. [v2026.5.12-beta.8]
+  - Harden trusted-proxy source validation [AI]. (#81290) Thanks @pgondhi987. [v2026.5.12-beta.8]
+  - fix: scan plugin runtime entries during install [AI]. (#80998) Thanks @pgondhi987. [v2026.5.12-beta.8]
+  - fix(plugins): scan installed dependency runtime code [AI]. (#81066) Thanks @pgondhi987. [v2026.5.12-beta.8]
+  - fix: detect carried exec command forms [AI]. (#81000) Thanks @pgondhi987. [v2026.5.12-beta.8]
+  - fix(node-pairing): replace changed pending requests [AI]. (#80894) Thanks @pgondhi987. [v2026.5.12-beta.8]
+  - fix(feishu): normalize webhook rate-limit client keys [AI]. (#80975) Thanks @pgondhi987. [v2026.5.12-beta.8]
+  - fix(auth): prevent bootstrap pairing scope changes [AI]. (#80976) Thanks @pgondhi987. [v2026.5.12-beta.8]
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
