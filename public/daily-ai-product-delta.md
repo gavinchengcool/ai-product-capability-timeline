@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-05-14T21:22:57+08:00
-- Requested window: 2026-05-13 to 2026-05-14
+- Generated at: 2026-05-15T21:21:52+08:00
+- Requested window: 2026-05-14 to 2026-05-15
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-05-13 to 2026-05-14
-- Generated at: 2026-05-14T21:22:38.775116+08:00
-- 窗口: 2026-05-13 至 2026-05-14
-- GitHub 增量: 284 commits / 4 releases
-- 最近 push: 2026-05-14
+- Window: 2026-05-14 to 2026-05-15
+- Generated at: 2026-05-15T21:21:35.113091+08:00
+- 窗口: 2026-05-14 至 2026-05-15
+- GitHub 增量: 255 commits / 3 releases
+- 最近 push: 2026-05-15
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Control UI/WebChat: add a persisted auto-scroll mode selector so users can keep the current near-bottom behavior, always follow streaming output, or turn automatic streaming scroll off and use the New messages button manually. Fixes #7648 and #81287. Thanks @BunsDev. [v2026.5.12-beta.8]
-  - ACP: add `acp.fallbacks` so ACP turns can try configured backup runtime backends when the primary backend is unavailable before any output is emitted. (#69542) Thanks @kaseonedge. [v2026.5.12-beta.8]
-  - Cron: add direct `cron.get`, `openclaw cron get <id>`, and agent-tool `get` support for inspecting one stored cron job by id. (#75117) Thanks @samzong. [v2026.5.12-beta.8]
-  - Agents/tools: add per-sender tool policies with canonical channel-scoped sender keys, so operators can restrict dangerous tools by requester identity across global, agent, group, core, bundled, and plugin tool surfaces. (#66933) Thanks @JerranC. [v2026.5.12-beta.8]
-  - Channels/iMessage: add `openclaw channels status --channel <name>` filtering and document the BlueBubbles-to-imsg cutover path so operators can probe iMessage without starting both channel monitors. (#80706) Thanks @omarshahine. [v2026.5.12-beta.8]
-  - CI: add a non-blocking `plugin-inspector-advisory` artifact to Plugin Prerelease so release runs capture bundled plugin compatibility triage without changing the blocking gate. [v2026.5.12-beta.8]
-  - Logging: add targeted model transport, payload, SSE, and code-mode diagnostics with redacted URL handling. [v2026.5.12-beta.8]
-  - Agents: add per-agent `tools.message.crossContext` overrides so sandboxed/public agents can restrict message sends to the current conversation without changing the global bot policy. [v2026.5.12-beta.8]
+  - Channels/SDK: add normalized command turn facts to channel turn construction and expose command-turn helpers for plugin inbound contexts. [v2026.5.14-beta.2]
+  - Agents/config: support per-agent bootstrap profile overrides for `contextInjection`, `bootstrapMaxChars`, and `bootstrapTotalMaxChars`, inheriting from `agents.defaults` when omitted. Fixes #69966. Thanks @BunsDev. [v2026.5.14-beta.2]
+  - Control UI/i18n: add a `pnpm ui:i18n:report` baseline report for hardcoded-copy focus areas and locale fallback metadata. (#81320) Thanks @samzong. [v2026.5.14-beta.2]
+  - Maintainer tooling: add a repo-local `codex-review` skill for Codex closeout reviews, including local dirty-work and PR-branch review helpers that rerun until no accepted/actionable findings remain and avoid unsupported inline prompts with `--base`. [v2026.5.14-beta.2]
+  - Maintainer tooling: fail CI when pull requests add package patch files or pnpm patched dependencies, preserving the upstream-and-bump dependency workflow. [v2026.5.14-beta.2]
+  - Gateway/startup: add owner-level startup trace attribution for auth, plugin loading, lookup counts, and plugin sidecar services. (#81738) Thanks @samzong. [v2026.5.14-beta.2]
+  - Channels/status reactions: wire `StatusReactionController` into WhatsApp message turns (queued → thinking → tool → done/error lifecycle, on par with Telegram and Discord), add `deploy`/`build`/`concierge` emoji categories with tool-token routing, and replace the status reaction defaults with self-explanatory emoji (🧠 thinking, 🛠️ tool, 💻 coding, 🌐 web, ⏳ stallSoft, ⚠️ stallHard, ✅ done, ❌ error, 🗜️ compacting) so stall and lifecycle reactions read as status indicators instead of emotional commentary. Fixes #59077. (#80612) Thanks @gado-ships-it. [v2026.5.14-beta.2]
+  - Control UI: add a browser-local Text size setting in Appearance and Quick Settings, scaling chat and dense UI text while keeping inputs above the mobile Safari focus-zoom threshold. Fixes #8547. Thanks @BunsDev. [v2026.5.14-beta.2]
 - Fixes and constraints:
-  - Security/sandbox: include Windows `USERPROFILE` in the sandbox blocked home roots so credential-bearing binds (such as `.codex`, `.openclaw`, or `.ssh` under the Windows user profile) are denied even when `HOME` points at a different shell home. (#63074) Thanks @luoyanglang. [v2026.5.12-beta.8]
-  - Harden trusted-proxy source validation [AI]. (#81290) Thanks @pgondhi987. [v2026.5.12-beta.8]
-  - fix: scan plugin runtime entries during install [AI]. (#80998) Thanks @pgondhi987. [v2026.5.12-beta.8]
-  - fix(plugins): scan installed dependency runtime code [AI]. (#81066) Thanks @pgondhi987. [v2026.5.12-beta.8]
-  - fix: detect carried exec command forms [AI]. (#81000) Thanks @pgondhi987. [v2026.5.12-beta.8]
-  - fix(node-pairing): replace changed pending requests [AI]. (#80894) Thanks @pgondhi987. [v2026.5.12-beta.8]
-  - fix(feishu): normalize webhook rate-limit client keys [AI]. (#80975) Thanks @pgondhi987. [v2026.5.12-beta.8]
-  - fix(auth): prevent bootstrap pairing scope changes [AI]. (#80976) Thanks @pgondhi987. [v2026.5.12-beta.8]
+  - fix(canvas): validate snapshot response formats [AI]. (#81881) Thanks @pgondhi987. [v2026.5.14-beta.2]
+  - Security/Windows ACL audit: classify Anonymous Logon, Guests, Interactive, Local, and Network SIDs as world-equivalent principals so broadly writable paths stay critical instead of being downgraded to group-writable. Fixes #74350. (#74383) Thanks @dwc1997. [v2026.5.14-beta.2]
+  - fix: harden safe-bin argument validation [AI]. (#80999) Thanks @pgondhi987. [v2026.5.14-beta.2]
+  - fix(config): reject auto-managed meta.lastTouched\* paths in config set/unset (#80856). Thanks @ai-hpc [v2026.5.14-beta.2]
+  - Security/Windows ACL audit: classify Anonymous Logon, Guests, Interactive, Local, and Network SIDs as world-equivalent principals so broadly writable paths stay critical instead of being downgraded to group-writable. Fixes #74350. (#74383) Thanks @dwc1997. [v2026.5.14-beta.1]
+  - fix: harden safe-bin argument validation [AI]. (#80999) Thanks @pgondhi987. [v2026.5.14-beta.1]
+  - fix(config): reject auto-managed meta.lastTouched\* paths in config set/unset (#80856). Thanks @ai-hpc [v2026.5.14-beta.1]
+  - Security/sandbox: include Windows `USERPROFILE` in the sandbox blocked home roots so credential-bearing binds (such as `.codex`, `.openclaw`, or `.ssh` under the Windows user profile) are denied even when `HOME` points at a different shell home. (#63074) Thanks @luoyanglang. [v2026.5.12]
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
