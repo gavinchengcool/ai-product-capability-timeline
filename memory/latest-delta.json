@@ -1,113 +1,106 @@
 {
-  "generatedAt": "2026-05-15T21:21:35.113091+08:00",
+  "generatedAt": "2026-05-16T20:51:59.037643+08:00",
   "window": {
-    "start_local": "2026-05-14T21:21:35.113091+08:00",
-    "end_local": "2026-05-15T21:21:35.113091+08:00",
-    "start_utc": "2026-05-14T13:21:35Z",
-    "end_utc": "2026-05-15T13:21:35Z"
+    "start_local": "2026-05-15T20:51:59.037643+08:00",
+    "end_local": "2026-05-16T20:51:59.037643+08:00",
+    "start_utc": "2026-05-15T12:51:59Z",
+    "end_utc": "2026-05-16T12:51:59Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 372074,
-    "forks": 77029,
-    "open_issues": 7050,
-    "pushed_at": "2026-05-15T13:17:34Z"
+    "stars": 372311,
+    "forks": 77135,
+    "open_issues": 7016,
+    "pushed_at": "2026-05-16T12:51:52Z"
   },
   "summary": {
-    "commitCount": 255,
-    "releaseCount": 3,
-    "stableReleaseCount": 1,
+    "commitCount": 325,
+    "releaseCount": 2,
+    "stableReleaseCount": 0,
     "betaReleaseCount": 2,
-    "stars": 372074,
-    "forks": 77029,
-    "openIssues": 7050
+    "stars": 372311,
+    "forks": 77135,
+    "openIssues": 7016
   },
   "releases": [
     {
-      "tag_name": "v2026.5.14-beta.2",
-      "published_at": "2026-05-15T11:11:27Z",
-      "name": "openclaw 2026.5.14-beta.2",
+      "tag_name": "v2026.5.16-beta.2",
+      "published_at": "2026-05-16T11:29:05Z",
+      "name": "openclaw 2026.5.16-beta.2",
       "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.14-beta.2"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.16-beta.2"
     },
     {
-      "tag_name": "v2026.5.14-beta.1",
-      "published_at": "2026-05-14T21:31:13Z",
-      "name": "openclaw 2026.5.14-beta.1",
+      "tag_name": "v2026.5.16-beta.1",
+      "published_at": "2026-05-16T01:33:32Z",
+      "name": "openclaw 2026.5.16-beta.1",
       "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.14-beta.1"
-    },
-    {
-      "tag_name": "v2026.5.12",
-      "published_at": "2026-05-14T18:28:04Z",
-      "name": "openclaw 2026.5.12",
-      "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.12"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.16-beta.1"
     }
   ],
   "featureItems": [
-    "Channels/SDK: add normalized command turn facts to channel turn construction and expose command-turn helpers for plugin inbound contexts. [v2026.5.14-beta.2]",
-    "Agents/config: support per-agent bootstrap profile overrides for `contextInjection`, `bootstrapMaxChars`, and `bootstrapTotalMaxChars`, inheriting from `agents.defaults` when omitted. Fixes #69966. Thanks @BunsDev. [v2026.5.14-beta.2]",
-    "Control UI/i18n: add a `pnpm ui:i18n:report` baseline report for hardcoded-copy focus areas and locale fallback metadata. (#81320) Thanks @samzong. [v2026.5.14-beta.2]",
-    "Maintainer tooling: add a repo-local `codex-review` skill for Codex closeout reviews, including local dirty-work and PR-branch review helpers that rerun until no accepted/actionable findings remain and avoid unsupported inline prompts with `--base`. [v2026.5.14-beta.2]",
-    "Maintainer tooling: fail CI when pull requests add package patch files or pnpm patched dependencies, preserving the upstream-and-bump dependency workflow. [v2026.5.14-beta.2]",
-    "Gateway/startup: add owner-level startup trace attribution for auth, plugin loading, lookup counts, and plugin sidecar services. (#81738) Thanks @samzong. [v2026.5.14-beta.2]",
-    "Channels/status reactions: wire `StatusReactionController` into WhatsApp message turns (queued → thinking → tool → done/error lifecycle, on par with Telegram and Discord), add `deploy`/`build`/`concierge` emoji categories with tool-token routing, and replace the status reaction defaults with self-explanatory emoji (🧠 thinking, 🛠️ tool, 💻 coding, 🌐 web, ⏳ stallSoft, ⚠️ stallHard, ✅ done, ❌ error, 🗜️ compacting) so stall and lifecycle reactions read as status indicators instead of emotional commentary. Fixes #59077. (#80612) Thanks @gado-ships-it. [v2026.5.14-beta.2]",
-    "Control UI: add a browser-local Text size setting in Appearance and Quick Settings, scaling chat and dense UI text while keeping inputs above the mobile Safari focus-zoom threshold. Fixes #8547. Thanks @BunsDev. [v2026.5.14-beta.2]"
+    "Providers/xAI: add xAI Grok OAuth login for SuperGrok subscribers, letting `xai/*` models and xAI media/tool providers authenticate without `XAI_API_KEY`. [v2026.5.16-beta.2]",
+    "CLI/cron: add `openclaw cron run --wait` with timeout and poll interval controls, plus exact `cron.runs --run-id` filtering so automation can block on one queued manual run. (#81929) Thanks @ificator. [v2026.5.16-beta.2]",
+    "Telegram/group chat: add opt-in `messages.groupChat.ambientTurns: \"room_event\"` handling so always-on ambient chatter can run as quiet room context and speak visibly only via the message tool. (#81317) Thanks @obviyus. [v2026.5.16-beta.2]",
+    "Telegram/group chat: add opt-in `messages.groupChat.ambientTurns: \"room_event\"` handling so always-on ambient chatter can run as quiet room context and speak visibly only via the message tool. (#81317) Thanks @obviyus. [v2026.5.16-beta.1]",
+    "feat(gateway): add restart trace instrumentation",
+    "changelog: dedupe MCP cancellation bullets, add Fixes #82424",
+    "OC Path: add dry-run diff output (#81437)",
+    "feat(codex): bind context-engine projections to codex threads (#82351)"
   ],
   "fixItems": [
-    "fix(canvas): validate snapshot response formats [AI]. (#81881) Thanks @pgondhi987. [v2026.5.14-beta.2]",
-    "Security/Windows ACL audit: classify Anonymous Logon, Guests, Interactive, Local, and Network SIDs as world-equivalent principals so broadly writable paths stay critical instead of being downgraded to group-writable. Fixes #74350. (#74383) Thanks @dwc1997. [v2026.5.14-beta.2]",
-    "fix: harden safe-bin argument validation [AI]. (#80999) Thanks @pgondhi987. [v2026.5.14-beta.2]",
-    "fix(config): reject auto-managed meta.lastTouched\\* paths in config set/unset (#80856). Thanks @ai-hpc [v2026.5.14-beta.2]",
-    "Security/Windows ACL audit: classify Anonymous Logon, Guests, Interactive, Local, and Network SIDs as world-equivalent principals so broadly writable paths stay critical instead of being downgraded to group-writable. Fixes #74350. (#74383) Thanks @dwc1997. [v2026.5.14-beta.1]",
-    "fix: harden safe-bin argument validation [AI]. (#80999) Thanks @pgondhi987. [v2026.5.14-beta.1]",
-    "fix(config): reject auto-managed meta.lastTouched\\* paths in config set/unset (#80856). Thanks @ai-hpc [v2026.5.14-beta.1]",
-    "Security/sandbox: include Windows `USERPROFILE` in the sandbox blocked home roots so credential-bearing binds (such as `.codex`, `.openclaw`, or `.ssh` under the Windows user profile) are denied even when `HOME` points at a different shell home. (#63074) Thanks @luoyanglang. [v2026.5.12]"
+    "Cron: reject empty scheduled main/isolated payloads before persisting jobs, keeping runtime stores compatible with malformed-row hardening. [v2026.5.16-beta.2]",
+    "fix: carry gateway restart trace across respawn (#82396) (thanks @samzong)",
+    "fix: normalize Xiaomi array tool schemas (#82575)",
+    "fix(slack): clarify mention prompt guidance",
+    "fix: finalize memory slot warning",
+    "fix(config): keep blocked memory slots fatal",
+    "fix(config): warn for missing official memory slot",
+    "fix(gateway): quiet startup retry closes"
   ],
   "topScopes": [
     {
       "scope": "fix",
-      "count": 50
-    },
-    {
-      "scope": "ui",
-      "count": 25
-    },
-    {
-      "scope": "docs",
-      "count": 15
+      "count": 58
     },
     {
       "scope": "test",
-      "count": 12
+      "count": 44
+    },
+    {
+      "scope": "docs",
+      "count": 19
+    },
+    {
+      "scope": "codex",
+      "count": 15
+    },
+    {
+      "scope": "agents",
+      "count": 13
+    },
+    {
+      "scope": "telegram",
+      "count": 13
     },
     {
       "scope": "gateway",
+      "count": 12
+    },
+    {
+      "scope": "plugins",
       "count": 11
-    },
-    {
-      "scope": "refactor",
-      "count": 7
-    },
-    {
-      "scope": "xiaomi",
-      "count": 6
-    },
-    {
-      "scope": "slack",
-      "count": 6
     }
   ],
   "headlineCommits": [
-    "refactor: assemble channel contexts in core",
-    "fix(xiaomi): surface MiMo reasoning-only finals (#60304)",
-    "fix: document cron runtime plugin preload (#82111)",
-    "fix(cron): align runtime plugin preload mode",
-    "fix(cron): lazily load runtime plugins to fix external channel resolution",
-    "refactor: centralize channel history window",
-    "fix(slack): clarify finalized draft guard",
-    "fix(slack): preserve finalized draft after tool warning"
+    "fix: carry gateway restart trace across respawn (#82396) (thanks @samzong)",
+    "docs: document gateway restart trace (#82396) (thanks @samzong)",
+    "feat(gateway): add restart trace instrumentation",
+    "fix: normalize Xiaomi array tool schemas (#82575)",
+    "docs: update changelog for Slack mention hints (#82152)",
+    "fix(slack): clarify mention prompt guidance",
+    "fix: finalize memory slot warning",
+    "fix(config): keep blocked memory slots fatal"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 }

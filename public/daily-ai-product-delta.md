@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-05-15T21:21:52+08:00
-- Requested window: 2026-05-14 to 2026-05-15
+- Generated at: 2026-05-16T20:52:15+08:00
+- Requested window: 2026-05-15 to 2026-05-16
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-05-14 to 2026-05-15
-- Generated at: 2026-05-15T21:21:35.113091+08:00
-- 窗口: 2026-05-14 至 2026-05-15
-- GitHub 增量: 255 commits / 3 releases
-- 最近 push: 2026-05-15
+- Window: 2026-05-15 to 2026-05-16
+- Generated at: 2026-05-16T20:51:59.037643+08:00
+- 窗口: 2026-05-15 至 2026-05-16
+- GitHub 增量: 325 commits / 2 releases
+- 最近 push: 2026-05-16
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Channels/SDK: add normalized command turn facts to channel turn construction and expose command-turn helpers for plugin inbound contexts. [v2026.5.14-beta.2]
-  - Agents/config: support per-agent bootstrap profile overrides for `contextInjection`, `bootstrapMaxChars`, and `bootstrapTotalMaxChars`, inheriting from `agents.defaults` when omitted. Fixes #69966. Thanks @BunsDev. [v2026.5.14-beta.2]
-  - Control UI/i18n: add a `pnpm ui:i18n:report` baseline report for hardcoded-copy focus areas and locale fallback metadata. (#81320) Thanks @samzong. [v2026.5.14-beta.2]
-  - Maintainer tooling: add a repo-local `codex-review` skill for Codex closeout reviews, including local dirty-work and PR-branch review helpers that rerun until no accepted/actionable findings remain and avoid unsupported inline prompts with `--base`. [v2026.5.14-beta.2]
-  - Maintainer tooling: fail CI when pull requests add package patch files or pnpm patched dependencies, preserving the upstream-and-bump dependency workflow. [v2026.5.14-beta.2]
-  - Gateway/startup: add owner-level startup trace attribution for auth, plugin loading, lookup counts, and plugin sidecar services. (#81738) Thanks @samzong. [v2026.5.14-beta.2]
-  - Channels/status reactions: wire `StatusReactionController` into WhatsApp message turns (queued → thinking → tool → done/error lifecycle, on par with Telegram and Discord), add `deploy`/`build`/`concierge` emoji categories with tool-token routing, and replace the status reaction defaults with self-explanatory emoji (🧠 thinking, 🛠️ tool, 💻 coding, 🌐 web, ⏳ stallSoft, ⚠️ stallHard, ✅ done, ❌ error, 🗜️ compacting) so stall and lifecycle reactions read as status indicators instead of emotional commentary. Fixes #59077. (#80612) Thanks @gado-ships-it. [v2026.5.14-beta.2]
-  - Control UI: add a browser-local Text size setting in Appearance and Quick Settings, scaling chat and dense UI text while keeping inputs above the mobile Safari focus-zoom threshold. Fixes #8547. Thanks @BunsDev. [v2026.5.14-beta.2]
+  - Providers/xAI: add xAI Grok OAuth login for SuperGrok subscribers, letting `xai/*` models and xAI media/tool providers authenticate without `XAI_API_KEY`. [v2026.5.16-beta.2]
+  - CLI/cron: add `openclaw cron run --wait` with timeout and poll interval controls, plus exact `cron.runs --run-id` filtering so automation can block on one queued manual run. (#81929) Thanks @ificator. [v2026.5.16-beta.2]
+  - Telegram/group chat: add opt-in `messages.groupChat.ambientTurns: "room_event"` handling so always-on ambient chatter can run as quiet room context and speak visibly only via the message tool. (#81317) Thanks @obviyus. [v2026.5.16-beta.2]
+  - Telegram/group chat: add opt-in `messages.groupChat.ambientTurns: "room_event"` handling so always-on ambient chatter can run as quiet room context and speak visibly only via the message tool. (#81317) Thanks @obviyus. [v2026.5.16-beta.1]
+  - feat(gateway): add restart trace instrumentation
+  - changelog: dedupe MCP cancellation bullets, add Fixes #82424
+  - OC Path: add dry-run diff output (#81437)
+  - feat(codex): bind context-engine projections to codex threads (#82351)
 - Fixes and constraints:
-  - fix(canvas): validate snapshot response formats [AI]. (#81881) Thanks @pgondhi987. [v2026.5.14-beta.2]
-  - Security/Windows ACL audit: classify Anonymous Logon, Guests, Interactive, Local, and Network SIDs as world-equivalent principals so broadly writable paths stay critical instead of being downgraded to group-writable. Fixes #74350. (#74383) Thanks @dwc1997. [v2026.5.14-beta.2]
-  - fix: harden safe-bin argument validation [AI]. (#80999) Thanks @pgondhi987. [v2026.5.14-beta.2]
-  - fix(config): reject auto-managed meta.lastTouched\* paths in config set/unset (#80856). Thanks @ai-hpc [v2026.5.14-beta.2]
-  - Security/Windows ACL audit: classify Anonymous Logon, Guests, Interactive, Local, and Network SIDs as world-equivalent principals so broadly writable paths stay critical instead of being downgraded to group-writable. Fixes #74350. (#74383) Thanks @dwc1997. [v2026.5.14-beta.1]
-  - fix: harden safe-bin argument validation [AI]. (#80999) Thanks @pgondhi987. [v2026.5.14-beta.1]
-  - fix(config): reject auto-managed meta.lastTouched\* paths in config set/unset (#80856). Thanks @ai-hpc [v2026.5.14-beta.1]
-  - Security/sandbox: include Windows `USERPROFILE` in the sandbox blocked home roots so credential-bearing binds (such as `.codex`, `.openclaw`, or `.ssh` under the Windows user profile) are denied even when `HOME` points at a different shell home. (#63074) Thanks @luoyanglang. [v2026.5.12]
+  - Cron: reject empty scheduled main/isolated payloads before persisting jobs, keeping runtime stores compatible with malformed-row hardening. [v2026.5.16-beta.2]
+  - fix: carry gateway restart trace across respawn (#82396) (thanks @samzong)
+  - fix: normalize Xiaomi array tool schemas (#82575)
+  - fix(slack): clarify mention prompt guidance
+  - fix: finalize memory slot warning
+  - fix(config): keep blocked memory slots fatal
+  - fix(config): warn for missing official memory slot
+  - fix(gateway): quiet startup retry closes
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
