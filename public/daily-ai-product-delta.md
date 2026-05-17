@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-05-16T20:52:15+08:00
-- Requested window: 2026-05-15 to 2026-05-16
+- Generated at: 2026-05-17T20:48:51+08:00
+- Requested window: 2026-05-16 to 2026-05-17
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-05-15 to 2026-05-16
-- Generated at: 2026-05-16T20:51:59.037643+08:00
-- 窗口: 2026-05-15 至 2026-05-16
-- GitHub 增量: 325 commits / 2 releases
-- 最近 push: 2026-05-16
+- Window: 2026-05-16 to 2026-05-17
+- Generated at: 2026-05-17T20:48:35.511982+08:00
+- 窗口: 2026-05-16 至 2026-05-17
+- GitHub 增量: 476 commits / 2 releases
+- 最近 push: 2026-05-17
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Providers/xAI: add xAI Grok OAuth login for SuperGrok subscribers, letting `xai/*` models and xAI media/tool providers authenticate without `XAI_API_KEY`. [v2026.5.16-beta.2]
-  - CLI/cron: add `openclaw cron run --wait` with timeout and poll interval controls, plus exact `cron.runs --run-id` filtering so automation can block on one queued manual run. (#81929) Thanks @ificator. [v2026.5.16-beta.2]
-  - Telegram/group chat: add opt-in `messages.groupChat.ambientTurns: "room_event"` handling so always-on ambient chatter can run as quiet room context and speak visibly only via the message tool. (#81317) Thanks @obviyus. [v2026.5.16-beta.2]
-  - Telegram/group chat: add opt-in `messages.groupChat.ambientTurns: "room_event"` handling so always-on ambient chatter can run as quiet room context and speak visibly only via the message tool. (#81317) Thanks @obviyus. [v2026.5.16-beta.1]
-  - feat(gateway): add restart trace instrumentation
-  - changelog: dedupe MCP cancellation bullets, add Fixes #82424
-  - OC Path: add dry-run diff output (#81437)
-  - feat(codex): bind context-engine projections to codex threads (#82351)
+  - Providers/media: add fal and OpenRouter music-generation providers for the shared `music_generate` tool, including fal MiniMax/ACE/Stable Audio endpoints and OpenRouter Lyria audio output. [v2026.5.16-beta.4]
+  - Mac app remote setup can now be preconfigured from `openclaw-mac configure-remote`, skips onboarding when config is already complete, supports direct LAN/Tailnet gateway URLs, allows private same-origin Control UI loads, and owns the SSH tunnel process when SSH is selected. [v2026.5.16-beta.4]
+  - Providers/xAI: add xAI Grok OAuth login for SuperGrok subscribers, letting `xai/*` models and xAI media/tool providers authenticate without `XAI_API_KEY`. [v2026.5.16-beta.4]
+  - CLI/cron: add `openclaw cron run --wait` with timeout and poll interval controls, plus exact `cron.runs --run-id` filtering so automation can block on one queued manual run. (#81929) Thanks @ificator. [v2026.5.16-beta.4]
+  - Group chat: add core inbound event classification with opt-in `messages.groupChat.unmentionedInbound: "room_event"`, so always-on unmentioned room chatter can run as quiet context and speak visibly only via the message tool. (#81317) Thanks @obviyus. [v2026.5.16-beta.4]
+  - Gateway: add opt-in restart trace logs for restart signal, active-work drain, close, next-start, ready, and memory spans. (#82396) Thanks @samzong. [v2026.5.16-beta.4]
+  - Gateway/performance: split startup benchmark HTTP-listen timing from full gateway-ready timing and add post-bind plugin and sidecar diagnostics to restart-readiness traces. (#82603) Thanks @samzong. [v2026.5.16-beta.4]
+  - QA-Lab: add a deterministic local personal-agent scenario pack covering reminders, threaded replies, scoped memory recall, redaction, and safe tool followthrough. (#78219) Thanks @iFiras-Max1. [v2026.5.16-beta.4]
 - Fixes and constraints:
-  - Cron: reject empty scheduled main/isolated payloads before persisting jobs, keeping runtime stores compatible with malformed-row hardening. [v2026.5.16-beta.2]
-  - fix: carry gateway restart trace across respawn (#82396) (thanks @samzong)
-  - fix: normalize Xiaomi array tool schemas (#82575)
-  - fix(slack): clarify mention prompt guidance
-  - fix: finalize memory slot warning
-  - fix(config): keep blocked memory slots fatal
-  - fix(config): warn for missing official memory slot
-  - fix(gateway): quiet startup retry closes
+  - Cron: reject empty scheduled main/isolated payloads before persisting jobs, keeping runtime stores compatible with malformed-row hardening. [v2026.5.16-beta.4]
+  - Security/audit: add `security.audit.suppressions` for intentionally accepted audit findings, keeping suppressed matches out of the active summary while preserving them in JSON output with an active suppression notice. (#76949) Thanks @100menotu001. [v2026.5.16-beta.4]
+  - Cron: reject empty scheduled main/isolated payloads before persisting jobs, keeping runtime stores compatible with malformed-row hardening. [v2026.5.16-beta.3]
+  - test: harden wsl2 fixtures
+  - fix(update): use post-doctor plugin records
+  - test: harden live transport gates
+  - fix(qa-lab): fail live parity without token usage
+  - fix(macos): avoid cron settings crash
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

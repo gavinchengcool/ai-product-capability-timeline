@@ -1,21 +1,21 @@
 # OpenClaw GitHub Snapshot
 
-生成时间：2026-05-16T20:51:59.037643+08:00
+生成时间：2026-05-17T20:48:35.511982+08:00
 
 ## Repo Snapshot
 
 - Repo: `openclaw/openclaw`
 - Created at: 2025-11-24T10:16:47Z
-- Last pushed at: 2026-05-16T12:51:52Z
-- Stars: 372311
-- Forks: 77135
-- Open issues: 7016
+- Last pushed at: 2026-05-17T12:46:44Z
+- Stars: 372563
+- Forks: 77223
+- Open issues: 6907
 - Default branch: `main`
 - Description: Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 
 
 ## Release Snapshot
 
-- Stable releases sampled: 39
+- Stable releases sampled: 38
 - Latest stable release: `v2026.5.12` published 2026-05-14T18:28:04Z
 
 ## Recent Stable Releases
