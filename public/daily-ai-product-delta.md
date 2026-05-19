@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-05-18T22:48:45+08:00
-- Requested window: 2026-05-17 to 2026-05-18
+- Generated at: 2026-05-19T22:27:33+08:00
+- Requested window: 2026-05-18 to 2026-05-19
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-05-17 to 2026-05-18
-- Generated at: 2026-05-18T22:48:27.186294+08:00
-- 窗口: 2026-05-17 至 2026-05-18
-- GitHub 增量: 290 commits / 3 releases
-- 最近 push: 2026-05-18
+- Window: 2026-05-18 to 2026-05-19
+- Generated at: 2026-05-19T22:27:17.143063+08:00
+- 窗口: 2026-05-18 至 2026-05-19
+- GitHub 增量: 132 commits / 3 releases
+- 最近 push: 2026-05-19
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Docker/Podman: add `OPENCLAW_IMAGE_APT_PACKAGES` as the runtime-neutral image build arg for extra apt packages while keeping `OPENCLAW_DOCKER_APT_PACKAGES` as a legacy fallback. (#62431) Thanks @urtabajev. [v2026.5.16-beta.7]
-  - Mac app: redesign Settings pages with consistent card layouts, cached navigation, cleaner permissions/voice/skills/cron/exec/debug panes, and steadier spacing around the native sidebar. [v2026.5.16-beta.7]
-  - Skills: add a meme-maker skill for curated template search, local SVG/PNG rendering, Imgflip hosted rendering, and Know Your Meme provenance links. [v2026.5.16-beta.7]
-  - Skills: add node inspector debugging, fused diagram generation, and throwaway spike workflow skills. [v2026.5.16-beta.7]
-  - CLI/plugins: add `defineToolPlugin` plus `openclaw plugins build`, `validate`, and `init` for typed simple tool plugins with generated manifest metadata, optional tool declarations, and context factories. [v2026.5.16-beta.7]
-  - Skills: add a Python debugging skill for pdb, breakpoint(), post-mortem inspection, and debugpy remote attach. [v2026.5.16-beta.7]
-  - Plugins/messages: add presentation capability limits for channel renderers, adapt rich message controls before native rendering, and mark legacy `interactive`/Slack directive producer APIs as deprecated. [v2026.5.16-beta.7]
-  - Proxy: support HTTPS managed forward-proxy endpoints and scoped `proxy.tls.caFile` CA trust for proxy endpoint TLS. (#79171) Thanks @jesse-merhi. [v2026.5.16-beta.7]
+  - Docker/Podman: add `OPENCLAW_IMAGE_APT_PACKAGES` as the runtime-neutral image build arg for extra apt packages while keeping `OPENCLAW_DOCKER_APT_PACKAGES` as a legacy fallback. (#62431) Thanks @urtabajev. [v2026.5.19-beta.1]
+  - Mac app: redesign Settings pages with consistent card layouts, cached navigation, cleaner permissions/voice/skills/cron/exec/debug panes, and steadier spacing around the native sidebar. [v2026.5.19-beta.1]
+  - Skills: add a meme-maker skill for curated template search, local SVG/PNG rendering, Imgflip hosted rendering, and Know Your Meme provenance links. [v2026.5.19-beta.1]
+  - Browser CLI: add `openclaw browser evaluate --timeout-ms` so long-running page functions can extend both the evaluate action and request timeout budgets. (#83447) Thanks @eefreenyc. [v2026.5.19-beta.1]
+  - Skills: add node inspector debugging, fused diagram generation, and throwaway spike workflow skills. [v2026.5.19-beta.1]
+  - CLI/plugins: add `defineToolPlugin` plus `openclaw plugins build`, `validate`, and `init` for typed simple tool plugins with generated manifest metadata, optional tool declarations, and context factories. [v2026.5.19-beta.1]
+  - Skills: add a Python debugging skill for pdb, breakpoint(), post-mortem inspection, and debugpy remote attach. [v2026.5.19-beta.1]
+  - Plugins/messages: add presentation capability limits for channel renderers, adapt rich message controls before native rendering, and mark legacy `interactive`/Slack directive producer APIs as deprecated. [v2026.5.19-beta.1]
 - Fixes and constraints:
-  - Core/plugins: harden clawpatch-reported edge cases across gateway auth cleanup, Claude session id paths, plugin activation policy, apply-patch hunk handling, diagnostic redaction, and plugin metadata validation. [v2026.5.16-beta.7]
-  - fix(macos): normalize settings pane margins
-  - fix(codex): complete dynamic tool diagnostics
-  - fix(slack): persist inbound delivery dedupe
-  - fix(ci): restore release e2e checks
-  - fix(followup,reply): stop model-fallback retries duplicating session entries
-  - fix(gateway): clear CLI bindings on session reset
-  - fix(agents): skip fallback for session coordination errors
+  - Core/plugins: harden clawpatch-reported edge cases across gateway auth cleanup, Claude session id paths, plugin activation policy, apply-patch hunk handling, diagnostic redaction, and plugin metadata validation. [v2026.5.19-beta.1]
+  - Core/plugins: harden clawpatch-reported edge cases across gateway auth cleanup, Claude session id paths, plugin activation policy, apply-patch hunk handling, diagnostic redaction, and plugin metadata validation. [v2026.5.18]
+  - Core/plugins: harden clawpatch-reported edge cases across gateway auth cleanup, Claude session id paths, plugin activation policy, apply-patch hunk handling, diagnostic redaction, and plugin metadata validation. [v2026.5.18-beta.1]
+  - fix(cli): preserve first line of channels logs at window boundary (#84106)
+  - Fix config queue overrides for Matrix (#84104)
+  - fix(media): decode remote URL fallback filenames (#84108)
+  - fix(cli): preserve equals in root option values [AI-assisted] (#84107)
+  - fix(cli): reject out-of-range port numbers in parsePort (#83900) (#84008)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
