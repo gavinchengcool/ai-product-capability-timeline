@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-05-21T22:36:10+08:00
-- Requested window: 2026-05-20 to 2026-05-21
+- Generated at: 2026-05-22T22:09:14+08:00
+- Requested window: 2026-05-21 to 2026-05-22
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-05-20 to 2026-05-21
-- Generated at: 2026-05-21T22:35:53.154638+08:00
-- 窗口: 2026-05-20 至 2026-05-21
-- GitHub 增量: 98 commits / 2 releases
-- 最近 push: 2026-05-21
+- Window: 2026-05-21 to 2026-05-22
+- Generated at: 2026-05-22T22:08:57.179577+08:00
+- 窗口: 2026-05-21 至 2026-05-22
+- GitHub 增量: 259 commits / 2 releases
+- 最近 push: 2026-05-22
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Dependencies: bump the bundled Codex harness to `@openai/codex` `0.132.0` and refresh the app-server model-list docs for the new catalog. [v2026.5.20-beta.1]
-  - CLI/policy: add the bundled Policy plugin for policy-backed channel conformance checks, doctor lint findings, and opt-in workspace repair. (#80407) Thanks @giodl73-repo. [v2026.5.20-beta.1]
-  - Providers/xAI: add device-code OAuth login so remote and headless setups can authorize xAI without a localhost browser callback. (#84005) Thanks @fuller-stack-dev. [v2026.5.20-beta.1]
-  - Docker/Podman: add `OPENCLAW_IMAGE_APT_PACKAGES` as the runtime-neutral image build arg for extra apt packages while keeping `OPENCLAW_DOCKER_APT_PACKAGES` as a legacy fallback. (#62431) Thanks @urtabajev. [v2026.5.19]
-  - Mac app: redesign Settings pages with consistent card layouts, cached navigation, cleaner permissions/voice/skills/cron/exec/debug panes, and steadier spacing around the native sidebar. [v2026.5.19]
-  - Skills: add a meme-maker skill for curated template search, local SVG/PNG rendering, Imgflip hosted rendering, and Know Your Meme provenance links. [v2026.5.19]
-  - Browser CLI: add `openclaw browser evaluate --timeout-ms` so long-running page functions can extend both the evaluate action and request timeout budgets. (#83447) Thanks @eefreenyc. [v2026.5.19]
-  - Docker/Podman: add `OPENCLAW_IMAGE_PIP_PACKAGES` for opt-in Python package installation in local image builds. (#83771) Thanks @stephenredmond-straiteis. [v2026.5.19]
+  - Dependencies: bump the bundled Codex harness to `@openai/codex` `0.132.0` and refresh the app-server model-list docs for the new catalog. [v2026.5.20]
+  - CLI/policy: add the bundled Policy plugin for policy-backed channel conformance checks, doctor lint findings, and opt-in workspace repair. (#80407) Thanks @giodl73-repo. [v2026.5.20]
+  - Providers/xAI: add device-code OAuth login so remote and headless setups can authorize xAI without a localhost browser callback. (#84005) Thanks @fuller-stack-dev. [v2026.5.20]
+  - Dependencies: bump the bundled Codex harness to `@openai/codex` `0.132.0` and refresh the app-server model-list docs for the new catalog. [v2026.5.20-beta.2]
+  - CLI/policy: add the bundled Policy plugin for policy-backed channel conformance checks, doctor lint findings, and opt-in workspace repair. (#80407) Thanks @giodl73-repo. [v2026.5.20-beta.2]
+  - Providers/xAI: add device-code OAuth login so remote and headless setups can authorize xAI without a localhost browser callback. (#84005) Thanks @fuller-stack-dev. [v2026.5.20-beta.2]
+  - feat: support pi and opencode autoreview engines
+  - feat: bundle plugin npm dependencies
 - Fixes and constraints:
-  - fix(mattermost): fail closed on missing channel type [AI]. (#84091) Thanks @pgondhi987. [v2026.5.20-beta.1]
-  - harden update restart script creation [AI]. (#84088) Thanks @pgondhi987. [v2026.5.20-beta.1]
-  - Core/plugins: harden clawpatch-reported edge cases across gateway auth cleanup, Claude session id paths, plugin activation policy, apply-patch hunk handling, diagnostic redaction, and plugin metadata validation. [v2026.5.19]
-  - fix(agents): fence embedded session writes
-  - fix(xai): keep OAuth URL clickable (#84927)
-  - Fix stale WebChat typing indicator after terminal session patch (#84565)
-  - perf(plugins): reuse compatible gateway startup registry
-  - fix(tests): wrap kitchen sink pnpm runner
+  - fix(mattermost): fail closed on missing channel type [AI]. (#84091) Thanks @pgondhi987. [v2026.5.20]
+  - harden update restart script creation [AI]. (#84088) Thanks @pgondhi987. [v2026.5.20]
+  - fix(mattermost): fail closed on missing channel type [AI]. (#84091) Thanks @pgondhi987. [v2026.5.20-beta.2]
+  - harden update restart script creation [AI]. (#84088) Thanks @pgondhi987. [v2026.5.20-beta.2]
+  - fix(diagnostics): surface async queue drops
+  - fix(diagnostics): bound diagnostic buffers
+  - fix(installer): copy portable Node into place
+  - fix(cli): recover replaced device approvals (#85342)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
