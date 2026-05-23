@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-05-22T22:09:14+08:00
-- Requested window: 2026-05-21 to 2026-05-22
+- Generated at: 2026-05-23T20:53:21+08:00
+- Requested window: 2026-05-22 to 2026-05-23
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-05-21 to 2026-05-22
-- Generated at: 2026-05-22T22:08:57.179577+08:00
-- 窗口: 2026-05-21 至 2026-05-22
-- GitHub 增量: 259 commits / 2 releases
-- 最近 push: 2026-05-22
+- Window: 2026-05-22 to 2026-05-23
+- Generated at: 2026-05-23T20:53:05.387117+08:00
+- 窗口: 2026-05-22 至 2026-05-23
+- GitHub 增量: 269 commits / 1 releases
+- 最近 push: 2026-05-23
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Dependencies: bump the bundled Codex harness to `@openai/codex` `0.132.0` and refresh the app-server model-list docs for the new catalog. [v2026.5.20]
-  - CLI/policy: add the bundled Policy plugin for policy-backed channel conformance checks, doctor lint findings, and opt-in workspace repair. (#80407) Thanks @giodl73-repo. [v2026.5.20]
-  - Providers/xAI: add device-code OAuth login so remote and headless setups can authorize xAI without a localhost browser callback. (#84005) Thanks @fuller-stack-dev. [v2026.5.20]
-  - Dependencies: bump the bundled Codex harness to `@openai/codex` `0.132.0` and refresh the app-server model-list docs for the new catalog. [v2026.5.20-beta.2]
-  - CLI/policy: add the bundled Policy plugin for policy-backed channel conformance checks, doctor lint findings, and opt-in workspace repair. (#80407) Thanks @giodl73-repo. [v2026.5.20-beta.2]
-  - Providers/xAI: add device-code OAuth login so remote and headless setups can authorize xAI without a localhost browser callback. (#84005) Thanks @fuller-stack-dev. [v2026.5.20-beta.2]
-  - feat: support pi and opencode autoreview engines
-  - feat: bundle plugin npm dependencies
+  - QA-Lab/diagnostics: extend the OpenTelemetry smoke harness to prove trace, metric, and log export, and add first-class Prometheus and observability smoke aliases. [v2026.5.22-beta.1]
+  - Plugin SDK: add a generic channel-message poll sender so channel plugins can expose poll delivery without depending on channel-specific SDK facades. [v2026.5.22-beta.1]
+  - Maintainer skills: add `openclaw-landable-bug-sweep` for producing five small, reviewed, CI-green OpenClaw bugfix PRs from issue/PR sweeps. [v2026.5.22-beta.1]
+  - Control UI/chat: add search and Load More pagination to the chat session picker, keeping initial session loads bounded while making older conversations reachable. (#85237) Thanks @amknight. [v2026.5.22-beta.1]
+  - xAI/Grok: reuse xAI OAuth auth profiles for Grok `web_search`, thread active-agent auth through web search, add Grok model aliases, and let media providers declare default operation timeouts. (#85182) Thanks @fuller-stack-dev. [v2026.5.22-beta.1]
+  - Plugin SDK: add row-level session workflow helpers and deprecate `loadSessionStore` so plugins can read and patch sessions without depending on the legacy whole-store shape. (#84693) Thanks @efpiva. [v2026.5.22-beta.1]
+  - Plugins/SDK: add a general `embeddingProviders` capability contract and registration API so embeddings can become a reusable provider surface outside memory-specific adapters. [v2026.5.22-beta.1]
+  - QA-Lab: add curated mock JSONL replay fixtures and first-drift reporting for runtime-parity audits. (#80323, refs #80176) Thanks @100yenadmin. [v2026.5.22-beta.1]
 - Fixes and constraints:
-  - fix(mattermost): fail closed on missing channel type [AI]. (#84091) Thanks @pgondhi987. [v2026.5.20]
-  - harden update restart script creation [AI]. (#84088) Thanks @pgondhi987. [v2026.5.20]
-  - fix(mattermost): fail closed on missing channel type [AI]. (#84091) Thanks @pgondhi987. [v2026.5.20-beta.2]
-  - harden update restart script creation [AI]. (#84088) Thanks @pgondhi987. [v2026.5.20-beta.2]
-  - fix(diagnostics): surface async queue drops
-  - fix(diagnostics): bound diagnostic buffers
-  - fix(installer): copy portable Node into place
-  - fix(cli): recover replaced device approvals (#85342)
+  - fix(integrations): enforce channel read target allowlists [AI]. (#84982) Thanks @pgondhi987. [v2026.5.22-beta.1]
+  - fix: constrain Windows task script names [AI]. (#85064) Thanks @pgondhi987. [v2026.5.22-beta.1]
+  - fix(config): validate browser sandbox bind sources [AI]. (#84799) Thanks @pgondhi987. [v2026.5.22-beta.1]
+  - fix(cron): route topic targets through channel plugins
+  - fix(agents): simplify subagent completion handoff
+  - fix(release): allow large beta smoke run lists
+  - fix(bootstrap): guard bootstrap name checks against undefined names (#85523) (#85615)
+  - fix(cli): waitForever must keep the event loop alive (#85694)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

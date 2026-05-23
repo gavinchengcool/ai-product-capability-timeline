@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-22T22:09:14+08:00",
+  "generatedAt": "2026-05-23T20:53:21+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-05-21T22:09:14+08:00",
-    "end_local": "2026-05-22T22:09:14+08:00"
+    "start_local": "2026-05-22T20:53:21+08:00",
+    "end_local": "2026-05-23T20:53:21+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-05-22T22:08:57.179577+08:00",
+      "generatedAt": "2026-05-23T20:53:05.387117+08:00",
       "window": {
-        "start_local": "2026-05-21T22:08:57.179577+08:00",
-        "end_local": "2026-05-22T22:08:57.179577+08:00",
-        "start_utc": "2026-05-21T14:08:57Z",
-        "end_utc": "2026-05-22T14:08:57Z"
+        "start_local": "2026-05-22T20:53:05.387117+08:00",
+        "end_local": "2026-05-23T20:53:05.387117+08:00",
+        "start_utc": "2026-05-22T12:53:05Z",
+        "end_utc": "2026-05-23T12:53:05Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-05-21 至 2026-05-22"
+          "value": "2026-05-22 至 2026-05-23"
         },
         {
           "label": "GitHub 增量",
-          "value": "259 commits / 2 releases"
+          "value": "269 commits / 1 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-05-22"
+          "value": "2026-05-23"
         },
         {
           "label": "来源",
@@ -52,72 +52,65 @@
         }
       ],
       "featureItems": [
-        "Dependencies: bump the bundled Codex harness to `@openai/codex` `0.132.0` and refresh the app-server model-list docs for the new catalog. [v2026.5.20]",
-        "CLI/policy: add the bundled Policy plugin for policy-backed channel conformance checks, doctor lint findings, and opt-in workspace repair. (#80407) Thanks @giodl73-repo. [v2026.5.20]",
-        "Providers/xAI: add device-code OAuth login so remote and headless setups can authorize xAI without a localhost browser callback. (#84005) Thanks @fuller-stack-dev. [v2026.5.20]",
-        "Dependencies: bump the bundled Codex harness to `@openai/codex` `0.132.0` and refresh the app-server model-list docs for the new catalog. [v2026.5.20-beta.2]",
-        "CLI/policy: add the bundled Policy plugin for policy-backed channel conformance checks, doctor lint findings, and opt-in workspace repair. (#80407) Thanks @giodl73-repo. [v2026.5.20-beta.2]",
-        "Providers/xAI: add device-code OAuth login so remote and headless setups can authorize xAI without a localhost browser callback. (#84005) Thanks @fuller-stack-dev. [v2026.5.20-beta.2]",
-        "feat: support pi and opencode autoreview engines",
-        "feat: bundle plugin npm dependencies"
+        "QA-Lab/diagnostics: extend the OpenTelemetry smoke harness to prove trace, metric, and log export, and add first-class Prometheus and observability smoke aliases. [v2026.5.22-beta.1]",
+        "Plugin SDK: add a generic channel-message poll sender so channel plugins can expose poll delivery without depending on channel-specific SDK facades. [v2026.5.22-beta.1]",
+        "Maintainer skills: add `openclaw-landable-bug-sweep` for producing five small, reviewed, CI-green OpenClaw bugfix PRs from issue/PR sweeps. [v2026.5.22-beta.1]",
+        "Control UI/chat: add search and Load More pagination to the chat session picker, keeping initial session loads bounded while making older conversations reachable. (#85237) Thanks @amknight. [v2026.5.22-beta.1]",
+        "xAI/Grok: reuse xAI OAuth auth profiles for Grok `web_search`, thread active-agent auth through web search, add Grok model aliases, and let media providers declare default operation timeouts. (#85182) Thanks @fuller-stack-dev. [v2026.5.22-beta.1]",
+        "Plugin SDK: add row-level session workflow helpers and deprecate `loadSessionStore` so plugins can read and patch sessions without depending on the legacy whole-store shape. (#84693) Thanks @efpiva. [v2026.5.22-beta.1]",
+        "Plugins/SDK: add a general `embeddingProviders` capability contract and registration API so embeddings can become a reusable provider surface outside memory-specific adapters. [v2026.5.22-beta.1]",
+        "QA-Lab: add curated mock JSONL replay fixtures and first-drift reporting for runtime-parity audits. (#80323, refs #80176) Thanks @100yenadmin. [v2026.5.22-beta.1]"
       ],
       "fixItems": [
-        "fix(mattermost): fail closed on missing channel type [AI]. (#84091) Thanks @pgondhi987. [v2026.5.20]",
-        "harden update restart script creation [AI]. (#84088) Thanks @pgondhi987. [v2026.5.20]",
-        "fix(mattermost): fail closed on missing channel type [AI]. (#84091) Thanks @pgondhi987. [v2026.5.20-beta.2]",
-        "harden update restart script creation [AI]. (#84088) Thanks @pgondhi987. [v2026.5.20-beta.2]",
-        "fix(diagnostics): surface async queue drops",
-        "fix(diagnostics): bound diagnostic buffers",
-        "fix(installer): copy portable Node into place",
-        "fix(cli): recover replaced device approvals (#85342)"
+        "fix(integrations): enforce channel read target allowlists [AI]. (#84982) Thanks @pgondhi987. [v2026.5.22-beta.1]",
+        "fix: constrain Windows task script names [AI]. (#85064) Thanks @pgondhi987. [v2026.5.22-beta.1]",
+        "fix(config): validate browser sandbox bind sources [AI]. (#84799) Thanks @pgondhi987. [v2026.5.22-beta.1]",
+        "fix(cron): route topic targets through channel plugins",
+        "fix(agents): simplify subagent completion handoff",
+        "fix(release): allow large beta smoke run lists",
+        "fix(bootstrap): guard bootstrap name checks against undefined names (#85523) (#85615)",
+        "fix(cli): waitForever must keep the event loop alive (#85694)"
       ],
       "releases": [
         {
-          "tag_name": "v2026.5.20",
-          "published_at": "2026-05-21T20:44:50Z",
-          "name": "openclaw 2026.5.20",
-          "prerelease": false,
-          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.20"
-        },
-        {
-          "tag_name": "v2026.5.20-beta.2",
-          "published_at": "2026-05-21T15:57:15Z",
-          "name": "openclaw 2026.5.20-beta.2",
+          "tag_name": "v2026.5.22-beta.1",
+          "published_at": "2026-05-23T09:59:56Z",
+          "name": "openclaw 2026.5.22-beta.1",
           "prerelease": true,
-          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.20-beta.2"
+          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.22-beta.1"
         }
       ],
       "topScopes": [
         {
-          "scope": "fix",
-          "count": 38
+          "scope": "ui",
+          "count": 26
         },
         {
-          "scope": "ui",
-          "count": 21
+          "scope": "fix",
+          "count": 25
+        },
+        {
+          "scope": "docs",
+          "count": 24
+        },
+        {
+          "scope": "ci",
+          "count": 16
         },
         {
           "scope": "gateway",
-          "count": 15
-        },
-        {
-          "scope": "codex",
-          "count": 12
-        },
-        {
-          "scope": "qa-lab",
-          "count": 11
-        },
-        {
-          "scope": "plugins",
-          "count": 9
+          "count": 13
         },
         {
           "scope": "release",
-          "count": 8
+          "count": 9
         },
         {
-          "scope": "agents",
+          "scope": "installer",
+          "count": 9
+        },
+        {
+          "scope": "ci(release)",
           "count": 8
         }
       ],
