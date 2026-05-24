@@ -1,99 +1,99 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-05-23T20:53:05.387117+08:00",
+  "generatedAt": "2026-05-24T20:53:27.072480+08:00",
   "window": {
-    "start_local": "2026-05-22T20:53:05.387117+08:00",
-    "end_local": "2026-05-23T20:53:05.387117+08:00",
-    "start_utc": "2026-05-22T12:53:05Z",
-    "end_utc": "2026-05-23T12:53:05Z"
+    "start_local": "2026-05-23T20:53:27.072480+08:00",
+    "end_local": "2026-05-24T20:53:27.072480+08:00",
+    "start_utc": "2026-05-23T12:53:27Z",
+    "end_utc": "2026-05-24T12:53:27Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 374102,
-    "forks": 77768,
-    "open_issues": 7178,
-    "pushed_at": "2026-05-23T12:52:08Z"
+    "stars": 374312,
+    "forks": 77856,
+    "open_issues": 6861,
+    "pushed_at": "2026-05-24T12:53:15Z"
   },
   "summary": {
-    "commitCount": 269,
+    "commitCount": 275,
     "releaseCount": 1,
-    "stableReleaseCount": 0,
-    "betaReleaseCount": 1,
-    "stars": 374102,
-    "forks": 77768,
-    "openIssues": 7178
+    "stableReleaseCount": 1,
+    "betaReleaseCount": 0,
+    "stars": 374312,
+    "forks": 77856,
+    "openIssues": 6861
   },
   "releases": [
     {
-      "tag_name": "v2026.5.22-beta.1",
-      "published_at": "2026-05-23T09:59:56Z",
-      "name": "openclaw 2026.5.22-beta.1",
-      "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.22-beta.1"
+      "tag_name": "v2026.5.22",
+      "published_at": "2026-05-24T01:12:56Z",
+      "name": "openclaw 2026.5.22",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.22"
     }
   ],
   "featureItems": [
-    "QA-Lab/diagnostics: extend the OpenTelemetry smoke harness to prove trace, metric, and log export, and add first-class Prometheus and observability smoke aliases. [v2026.5.22-beta.1]",
-    "Plugin SDK: add a generic channel-message poll sender so channel plugins can expose poll delivery without depending on channel-specific SDK facades. [v2026.5.22-beta.1]",
-    "Maintainer skills: add `openclaw-landable-bug-sweep` for producing five small, reviewed, CI-green OpenClaw bugfix PRs from issue/PR sweeps. [v2026.5.22-beta.1]",
-    "Control UI/chat: add search and Load More pagination to the chat session picker, keeping initial session loads bounded while making older conversations reachable. (#85237) Thanks @amknight. [v2026.5.22-beta.1]",
-    "xAI/Grok: reuse xAI OAuth auth profiles for Grok `web_search`, thread active-agent auth through web search, add Grok model aliases, and let media providers declare default operation timeouts. (#85182) Thanks @fuller-stack-dev. [v2026.5.22-beta.1]",
-    "Plugin SDK: add row-level session workflow helpers and deprecate `loadSessionStore` so plugins can read and patch sessions without depending on the legacy whole-store shape. (#84693) Thanks @efpiva. [v2026.5.22-beta.1]",
-    "Plugins/SDK: add a general `embeddingProviders` capability contract and registration API so embeddings can become a reusable provider surface outside memory-specific adapters. [v2026.5.22-beta.1]",
-    "QA-Lab: add curated mock JSONL replay fixtures and first-drift reporting for runtime-parity audits. (#80323, refs #80176) Thanks @100yenadmin. [v2026.5.22-beta.1]"
+    "Meeting Notes: add a source-only external meeting-notes plugin and SDK source-provider contract outside the core npm package, with auto-start capture config, manual transcript imports, read-only `openclaw meeting-notes` CLI access, and Discord voice as the first live source. [v2026.5.22]",
+    "QA-Lab/diagnostics: extend the OpenTelemetry smoke harness to prove trace, metric, and log export, and add first-class Prometheus and observability smoke aliases. [v2026.5.22]",
+    "Plugin SDK: add a generic channel-message poll sender so channel plugins can expose poll delivery without depending on channel-specific SDK facades. [v2026.5.22]",
+    "Maintainer skills: add `openclaw-landable-bug-sweep` for producing five small, reviewed, CI-green OpenClaw bugfix PRs from issue/PR sweeps. [v2026.5.22]",
+    "Control UI/chat: add search and Load More pagination to the chat session picker, keeping initial session loads bounded while making older conversations reachable. (#85237) Thanks @amknight. [v2026.5.22]",
+    "xAI/Grok: reuse xAI OAuth auth profiles for Grok `web_search`, thread active-agent auth through web search, add Grok model aliases, and let media providers declare default operation timeouts. (#85182) Thanks @fuller-stack-dev. [v2026.5.22]",
+    "Plugin SDK: add row-level session workflow helpers and deprecate `loadSessionStore` so plugins can read and patch sessions without depending on the legacy whole-store shape. (#84693) Thanks @efpiva. [v2026.5.22]",
+    "Plugins/SDK: add a general `embeddingProviders` capability contract and registration API so embeddings can become a reusable provider surface outside memory-specific adapters. [v2026.5.22]"
   ],
   "fixItems": [
-    "fix(integrations): enforce channel read target allowlists [AI]. (#84982) Thanks @pgondhi987. [v2026.5.22-beta.1]",
-    "fix: constrain Windows task script names [AI]. (#85064) Thanks @pgondhi987. [v2026.5.22-beta.1]",
-    "fix(config): validate browser sandbox bind sources [AI]. (#84799) Thanks @pgondhi987. [v2026.5.22-beta.1]",
-    "fix(cron): route topic targets through channel plugins",
-    "fix(agents): simplify subagent completion handoff",
-    "fix(release): allow large beta smoke run lists",
-    "fix(bootstrap): guard bootstrap name checks against undefined names (#85523) (#85615)",
-    "fix(cli): waitForever must keep the event loop alive (#85694)"
+    "fix(integrations): enforce channel read target allowlists [AI]. (#84982) Thanks @pgondhi987. [v2026.5.22]",
+    "fix: constrain Windows task script names [AI]. (#85064) Thanks @pgondhi987. [v2026.5.22]",
+    "fix(config): validate browser sandbox bind sources [AI]. (#84799) Thanks @pgondhi987. [v2026.5.22]",
+    "fix(android): route offline voice to gateway setup",
+    "fix(scripts): harden Windows control UI i18n commands",
+    "fix(android): stop operator chat subscription",
+    "fix(test): fail missing kitchen sink rss samples",
+    "fix(android): smooth gateway pairing recovery"
   ],
   "topScopes": [
     {
-      "scope": "ui",
+      "scope": "fix",
+      "count": 47
+    },
+    {
+      "scope": "test",
       "count": 26
     },
     {
-      "scope": "fix",
-      "count": 25
-    },
-    {
-      "scope": "docs",
-      "count": 24
+      "scope": "release",
+      "count": 15
     },
     {
       "scope": "ci",
-      "count": 16
+      "count": 14
     },
     {
-      "scope": "gateway",
+      "scope": "codex",
       "count": 13
     },
     {
-      "scope": "release",
-      "count": 9
+      "scope": "telegram",
+      "count": 12
     },
     {
-      "scope": "installer",
-      "count": 9
+      "scope": "docs",
+      "count": 11
     },
     {
-      "scope": "ci(release)",
-      "count": 8
+      "scope": "gateway",
+      "count": 10
     }
   ],
   "headlineCommits": [
-    "fix(cron): route topic targets through channel plugins",
-    "fix(agents): simplify subagent completion handoff",
-    "fix(release): allow large beta smoke run lists",
-    "ci(release): isolate npm publish concurrency",
-    "ci(release): allow beta publish after npm preflight",
-    "ci(release): retry child workflow polling",
-    "ci(release): poll child workflows through actions api",
-    "fix(bootstrap): guard bootstrap name checks against undefined names (#85523) (#85615)"
+    "fix(android): route offline voice to gateway setup",
+    "fix(scripts): harden Windows control UI i18n commands",
+    "fix(android): stop operator chat subscription",
+    "fix(test): fail missing kitchen sink rss samples",
+    "test(qa): widen capability flip restart budget",
+    "fix(android): smooth gateway pairing recovery",
+    "fix(test): suppress rolldown timing noise",
+    "style(android): fix talk mode ktlint formatting"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
