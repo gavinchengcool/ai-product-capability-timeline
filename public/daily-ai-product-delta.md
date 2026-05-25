@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-05-24T20:53:42+08:00
-- Requested window: 2026-05-23 to 2026-05-24
+- Generated at: 2026-05-25T22:27:42+08:00
+- Requested window: 2026-05-24 to 2026-05-25
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-05-23 to 2026-05-24
-- Generated at: 2026-05-24T20:53:27.072480+08:00
-- 窗口: 2026-05-23 至 2026-05-24
-- GitHub 增量: 275 commits / 1 releases
-- 最近 push: 2026-05-24
+- Window: 2026-05-24 to 2026-05-25
+- Generated at: 2026-05-25T22:27:27.237342+08:00
+- 窗口: 2026-05-24 至 2026-05-25
+- GitHub 增量: 185 commits / 2 releases
+- 最近 push: 2026-05-25
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Meeting Notes: add a source-only external meeting-notes plugin and SDK source-provider contract outside the core npm package, with auto-start capture config, manual transcript imports, read-only `openclaw meeting-notes` CLI access, and Discord voice as the first live source. [v2026.5.22]
-  - QA-Lab/diagnostics: extend the OpenTelemetry smoke harness to prove trace, metric, and log export, and add first-class Prometheus and observability smoke aliases. [v2026.5.22]
-  - Plugin SDK: add a generic channel-message poll sender so channel plugins can expose poll delivery without depending on channel-specific SDK facades. [v2026.5.22]
-  - Maintainer skills: add `openclaw-landable-bug-sweep` for producing five small, reviewed, CI-green OpenClaw bugfix PRs from issue/PR sweeps. [v2026.5.22]
-  - Control UI/chat: add search and Load More pagination to the chat session picker, keeping initial session loads bounded while making older conversations reachable. (#85237) Thanks @amknight. [v2026.5.22]
-  - xAI/Grok: reuse xAI OAuth auth profiles for Grok `web_search`, thread active-agent auth through web search, add Grok model aliases, and let media providers declare default operation timeouts. (#85182) Thanks @fuller-stack-dev. [v2026.5.22]
-  - Plugin SDK: add row-level session workflow helpers and deprecate `loadSessionStore` so plugins can read and patch sessions without depending on the legacy whole-store shape. (#84693) Thanks @efpiva. [v2026.5.22]
-  - Plugins/SDK: add a general `embeddingProviders` capability contract and registration API so embeddings can become a reusable provider surface outside memory-specific adapters. [v2026.5.22]
+  - iMessage: support thumb-approval reactions — `👍` (Like tapback) resolves an approval as `allow-once` and `👎` resolves as `deny`, with the explicit-approver allowlist read from `channels.imessage.allowFrom`; `allow-always` stays on the manual `/approve <id> allow-always` text fallback. Mirrors the WhatsApp behavior from #85477. [v2026.5.24-beta.2]
+  - Discord/voice: add realtime wake-name gating with agent-name defaults and raise profile bootstrap context budget for longer `USER.md`/`SOUL.md` files. [v2026.5.24-beta.2]
+  - Image tool: add adaptive model-aware image compression with an `agents.defaults.imageQuality` preference for choosing token-efficient, balanced, or high-detail media handling. [v2026.5.24-beta.2]
+  - Meeting Notes: add a source-only external meeting-notes plugin and SDK source-provider contract outside the core npm package, with auto-start capture config, manual transcript imports, read-only `openclaw meeting-notes` CLI access, and Discord voice as the first live source. [v2026.5.24-beta.2]
+  - QA-Lab/diagnostics: extend the OpenTelemetry smoke harness to prove trace, metric, and log export, and add first-class Prometheus and observability smoke aliases. [v2026.5.24-beta.2]
+  - Plugin SDK: add a generic channel-message poll sender so channel plugins can expose poll delivery without depending on channel-specific SDK facades. [v2026.5.24-beta.2]
+  - Maintainer skills: add `openclaw-landable-bug-sweep` for producing five small, reviewed, CI-green OpenClaw bugfix PRs from issue/PR sweeps. [v2026.5.24-beta.2]
+  - Control UI/chat: add search and Load More pagination to the chat session picker, keeping initial session loads bounded while making older conversations reachable. (#85237) Thanks @amknight. [v2026.5.24-beta.2]
 - Fixes and constraints:
-  - fix(integrations): enforce channel read target allowlists [AI]. (#84982) Thanks @pgondhi987. [v2026.5.22]
-  - fix: constrain Windows task script names [AI]. (#85064) Thanks @pgondhi987. [v2026.5.22]
-  - fix(config): validate browser sandbox bind sources [AI]. (#84799) Thanks @pgondhi987. [v2026.5.22]
-  - fix(android): route offline voice to gateway setup
-  - fix(scripts): harden Windows control UI i18n commands
-  - fix(android): stop operator chat subscription
-  - fix(test): fail missing kitchen sink rss samples
-  - fix(android): smooth gateway pairing recovery
+  - fix(integrations): enforce channel read target allowlists [AI]. (#84982) Thanks @pgondhi987. [v2026.5.24-beta.2]
+  - fix: constrain Windows task script names [AI]. (#85064) Thanks @pgondhi987. [v2026.5.24-beta.2]
+  - fix(config): validate browser sandbox bind sources [AI]. (#84799) Thanks @pgondhi987. [v2026.5.24-beta.2]
+  - fix(integrations): enforce channel read target allowlists [AI]. (#84982) Thanks @pgondhi987. [v2026.5.24-beta.1]
+  - fix: constrain Windows task script names [AI]. (#85064) Thanks @pgondhi987. [v2026.5.24-beta.1]
+  - fix(config): validate browser sandbox bind sources [AI]. (#84799) Thanks @pgondhi987. [v2026.5.24-beta.1]
+  - fix(gateway): keep session tool mirrors under pressure
+  - fix(agents): release embedded-attempt session lock on every exit path (#86427)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

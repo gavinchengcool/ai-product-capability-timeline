@@ -1,5 +1,5 @@
 window.OPENCLAW_ACTIVITY = {
-  "generatedAt": "2026-05-24T20:53:42.559042+08:00",
+  "generatedAt": "2026-05-25T22:27:42.658456+08:00",
   "repo": "openclaw/openclaw",
   "timezone": "Asia/Shanghai",
   "metricKey": "merged_prs",
@@ -724,7 +724,11 @@ window.OPENCLAW_ACTIVITY = {
     },
     {
       "date": "2026-05-23",
-      "merged_prs": 136
+      "merged_prs": 134
+    },
+    {
+      "date": "2026-05-24",
+      "merged_prs": 86
     }
   ],
   "maxMergedPrs": 209,
@@ -758,8 +762,8 @@ window.OPENCLAW_ACTIVITY = {
       "merged_prs": 141
     },
     {
-      "date": "2026-05-23",
-      "merged_prs": 136
+      "date": "2026-04-04",
+      "merged_prs": 135
     }
   ]
 };
