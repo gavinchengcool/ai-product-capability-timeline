@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-05-25T22:27:42+08:00
-- Requested window: 2026-05-24 to 2026-05-25
+- Generated at: 2026-05-26T22:31:13+08:00
+- Requested window: 2026-05-25 to 2026-05-26
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,28 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-05-24 to 2026-05-25
-- Generated at: 2026-05-25T22:27:27.237342+08:00
-- 窗口: 2026-05-24 至 2026-05-25
-- GitHub 增量: 185 commits / 2 releases
-- 最近 push: 2026-05-25
+- Window: 2026-05-25 to 2026-05-26
+- Generated at: 2026-05-26T22:30:53.424151+08:00
+- 窗口: 2026-05-25 至 2026-05-26
+- GitHub 增量: 339 commits / 1 releases
+- 最近 push: 2026-05-26
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - iMessage: support thumb-approval reactions — `👍` (Like tapback) resolves an approval as `allow-once` and `👎` resolves as `deny`, with the explicit-approver allowlist read from `channels.imessage.allowFrom`; `allow-always` stays on the manual `/approve <id> allow-always` text fallback. Mirrors the WhatsApp behavior from #85477. [v2026.5.24-beta.2]
-  - Discord/voice: add realtime wake-name gating with agent-name defaults and raise profile bootstrap context budget for longer `USER.md`/`SOUL.md` files. [v2026.5.24-beta.2]
-  - Image tool: add adaptive model-aware image compression with an `agents.defaults.imageQuality` preference for choosing token-efficient, balanced, or high-detail media handling. [v2026.5.24-beta.2]
-  - Meeting Notes: add a source-only external meeting-notes plugin and SDK source-provider contract outside the core npm package, with auto-start capture config, manual transcript imports, read-only `openclaw meeting-notes` CLI access, and Discord voice as the first live source. [v2026.5.24-beta.2]
-  - QA-Lab/diagnostics: extend the OpenTelemetry smoke harness to prove trace, metric, and log export, and add first-class Prometheus and observability smoke aliases. [v2026.5.24-beta.2]
-  - Plugin SDK: add a generic channel-message poll sender so channel plugins can expose poll delivery without depending on channel-specific SDK facades. [v2026.5.24-beta.2]
-  - Maintainer skills: add `openclaw-landable-bug-sweep` for producing five small, reviewed, CI-green OpenClaw bugfix PRs from issue/PR sweeps. [v2026.5.24-beta.2]
-  - Control UI/chat: add search and Load More pagination to the chat session picker, keeping initial session loads bounded while making older conversations reachable. (#85237) Thanks @amknight. [v2026.5.24-beta.2]
+  - ci: add node download fallback
+  - Add OpenTelemetry LLM content spans (#86191)
+  - feat(signal): support reaction approvals (#85894)
+  - feat(gateway): forward OpenAI sampling params (#84094)
+  - Policy: add agent-scoped policy overlays (#85817)
 - Fixes and constraints:
-  - fix(integrations): enforce channel read target allowlists [AI]. (#84982) Thanks @pgondhi987. [v2026.5.24-beta.2]
-  - fix: constrain Windows task script names [AI]. (#85064) Thanks @pgondhi987. [v2026.5.24-beta.2]
-  - fix(config): validate browser sandbox bind sources [AI]. (#84799) Thanks @pgondhi987. [v2026.5.24-beta.2]
-  - fix(integrations): enforce channel read target allowlists [AI]. (#84982) Thanks @pgondhi987. [v2026.5.24-beta.1]
-  - fix: constrain Windows task script names [AI]. (#85064) Thanks @pgondhi987. [v2026.5.24-beta.1]
-  - fix(config): validate browser sandbox bind sources [AI]. (#84799) Thanks @pgondhi987. [v2026.5.24-beta.1]
-  - fix(gateway): keep session tool mirrors under pressure
-  - fix(agents): release embedded-attempt session lock on every exit path (#86427)
+  - fix(setup): kill timed image pulls when supported
+  - fix(test): default Vitest stall watchdog
+  - fix(ci): bound crabbox hydrate downloads
+  - fix(control-ui): guard stale overview usage refresh
+  - fix(qa): require genai otel model spans (#86920)
+  - fix(message-tool): hydrate structured reply attachments
+  - fix(e2e): kill timed npm install process groups
+  - fix(ci): kill timed workflow process groups
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
