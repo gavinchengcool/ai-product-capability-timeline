@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-05-26T22:31:13+08:00
-- Requested window: 2026-05-25 to 2026-05-26
+- Generated at: 2026-05-27T22:49:16+08:00
+- Requested window: 2026-05-26 to 2026-05-27
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,28 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-05-25 to 2026-05-26
-- Generated at: 2026-05-26T22:30:53.424151+08:00
-- 窗口: 2026-05-25 至 2026-05-26
-- GitHub 增量: 339 commits / 1 releases
-- 最近 push: 2026-05-26
+- Window: 2026-05-26 to 2026-05-27
+- Generated at: 2026-05-27T22:48:59.801312+08:00
+- 窗口: 2026-05-26 至 2026-05-27
+- GitHub 增量: 566 commits / 3 releases
+- 最近 push: 2026-05-27
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - ci: add node download fallback
-  - Add OpenTelemetry LLM content spans (#86191)
-  - feat(signal): support reaction approvals (#85894)
-  - feat(gateway): forward OpenAI sampling params (#84094)
-  - Policy: add agent-scoped policy overlays (#85817)
+  - Transcripts: add core transcript capture and source-provider support for transcript-backed meeting summaries, including the renamed Transcripts docs, CLI surface, source-provider chunks, and cleaned user-turn persistence. [v2026.5.26]
+  - Auth: add named model login profiles and supported credential migration for Hermes, OpenCode, and Codex auth profiles, with explicit opt-out and non-interactive controls. (#85667) Thanks @fuller-stack-dev. [v2026.5.26]
+  - Diagnostics: trace gateway secret preparation, classify skill/tool usage, surface model stream progress, add OpenTelemetry LLM content spans, and expose alertable telemetry for blocked tools, failover, stale sessions, liveness, oversized payloads, and webhook ingress. (#83019, #80370, #86191) [v2026.5.26]
+  - Channels: add Signal reaction approvals, iMessage thumb approval reactions, and WhatsApp thumb approval reaction support so mobile approval flows work without textual `/approve` commands. (#85894, #85952, #85477) [v2026.5.26]
+  - Plugin SDK: add reaction approval helpers and keep diagnostic event root exports discoverable across function-name and alias-bound module graphs. (#86735, #87084) [v2026.5.26]
+  - Android/iOS: add the Android pair-new-gateway action and improve mobile Talk mode surfaces, including iOS realtime Talk mode and Android offline voice/gateway recovery. (#86798, #86355) Thanks @ngutman. [v2026.5.26]
+  - QA-Lab: add `qa coverage --match <query>` so focused proof selection can discover matching scenarios from existing metadata before running live or remote lanes. [v2026.5.26]
+  - Control UI: add an ephemeral Activity tab for sanitized live tool activity summaries without persisting raw telemetry. Fixes #12831. Thanks @BunsDev. [v2026.5.26]
 - Fixes and constraints:
-  - fix(setup): kill timed image pulls when supported
-  - fix(test): default Vitest stall watchdog
-  - fix(ci): bound crabbox hydrate downloads
-  - fix(control-ui): guard stale overview usage refresh
-  - fix(qa): require genai otel model spans (#86920)
-  - fix(message-tool): hydrate structured reply attachments
-  - fix(e2e): kill timed npm install process groups
-  - fix(ci): kill timed workflow process groups
+  - Security/content boundaries: validate Browser snapshot tab URLs against SSRF policy before ChromeMCP or direct CDP reads, sanitize queued system-event text so untrusted plugin/channel labels cannot spoof nested prompt markers, wrap fetched file text and metadata as external content, apply ClickClack `allowFrom` sender allowlists before agent dispatch, reject RPCs from invalidated device-token clients during rotation, require staged sandbox media refs, and scrub serialized tool-call text from replies. (#78526, #87094, #87062, #83741, #70707, #86924) Thanks @zsxsoft, @ttzero25, and @mmaps. [v2026.5.26]
+  - Install/release: bound Docker package build, inventory, pack, and tarball preparation with process-group timeouts; pin shrinkwrap patch drift to the pnpm lock; harden macOS restart and dSYM packaging; and run release Docker/live timeout wrappers in the foreground so child processes cannot wedge gates. [v2026.5.26]
+  - Security: avoid printing Gateway tokens in Docker, validate plugin model-pattern regexes safely, escape transcript metadata field names, harden session allowlist glob matching, audit Claude permission overrides under YOLO, and require explicit allow for ACP auto approvals. (#85849, #85934, #86046, #86557) [v2026.5.26]
+  - Security/Audit: flag webhook `hooks.token` reuse of active Gateway password auth in `openclaw security audit` while keeping password-mode startup compatibility. (#84338) Thanks @coygeek. [v2026.5.26]
+  - Security audit: warn when YOLO OpenClaw exec policy overrides a restrictive raw Claude `--permission-mode` for managed live sessions. (#86557) Thanks @sallyom. [v2026.5.26]
+  - Performance: cache plugin metadata snapshots, package realpaths, stable gateway metadata, model cost indexes, channel resolution, usage-cost indexes, and session/auth hot-path facts so common Gateway and reply paths do less rediscovery. (#84649, #85843, #86517, #86678) [v2026.5.26]
+  - Security/content boundaries: validate Browser snapshot tab URLs against SSRF policy before ChromeMCP or direct CDP reads, sanitize queued system-event text so untrusted plugin/channel labels cannot spoof nested prompt markers, wrap fetched file text and metadata as external content, apply ClickClack `allowFrom` sender allowlists before agent dispatch, reject RPCs from invalidated device-token clients during rotation, require staged sandbox media refs, and scrub serialized tool-call text from replies. (#78526, #87094, #87062, #83741, #70707, #86924) Thanks @zsxsoft, @ttzero25, and @mmaps. [v2026.5.26-beta.2]
+  - Install/release: bound Docker package build, inventory, pack, and tarball preparation with process-group timeouts; pin shrinkwrap patch drift to the pnpm lock; harden macOS restart and dSYM packaging; and run release Docker/live timeout wrappers in the foreground so child processes cannot wedge gates. [v2026.5.26-beta.2]
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
