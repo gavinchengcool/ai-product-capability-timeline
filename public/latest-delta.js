@@ -1,106 +1,106 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-05-28T22:59:29.211329+08:00",
+  "generatedAt": "2026-05-29T22:32:20.495476+08:00",
   "window": {
-    "start_local": "2026-05-27T22:59:29.211329+08:00",
-    "end_local": "2026-05-28T22:59:29.211329+08:00",
-    "start_utc": "2026-05-27T14:59:29Z",
-    "end_utc": "2026-05-28T14:59:29Z"
+    "start_local": "2026-05-28T22:32:20.495476+08:00",
+    "end_local": "2026-05-29T22:32:20.495476+08:00",
+    "start_utc": "2026-05-28T14:32:20Z",
+    "end_utc": "2026-05-29T14:32:20Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 375256,
-    "forks": 78281,
-    "open_issues": 6978,
-    "pushed_at": "2026-05-28T14:58:56Z"
+    "stars": 375443,
+    "forks": 78340,
+    "open_issues": 7037,
+    "pushed_at": "2026-05-29T14:30:00Z"
   },
   "summary": {
-    "commitCount": 324,
+    "commitCount": 735,
     "releaseCount": 2,
-    "stableReleaseCount": 1,
-    "betaReleaseCount": 1,
-    "stars": 375256,
-    "forks": 78281,
-    "openIssues": 6978
+    "stableReleaseCount": 0,
+    "betaReleaseCount": 2,
+    "stars": 375443,
+    "forks": 78340,
+    "openIssues": 7037
   },
   "releases": [
     {
-      "tag_name": "v2026.5.27",
-      "published_at": "2026-05-28T11:41:42Z",
-      "name": "openclaw 2026.5.27",
-      "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.27"
+      "tag_name": "v2026.5.28-beta.2",
+      "published_at": "2026-05-29T12:19:13Z",
+      "name": "openclaw 2026.5.28-beta.2",
+      "prerelease": true,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.28-beta.2"
     },
     {
-      "tag_name": "v2026.5.27-beta.1",
-      "published_at": "2026-05-28T05:54:37Z",
-      "name": "openclaw 2026.5.27-beta.1",
+      "tag_name": "v2026.5.28-beta.1",
+      "published_at": "2026-05-29T04:46:20Z",
+      "name": "openclaw 2026.5.28-beta.1",
       "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.27-beta.1"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.28-beta.1"
     }
   ],
   "featureItems": [
-    "Memory: add a core OpenAI-compatible embedding provider for local and hosted OpenAI-style endpoints, with config, doctor, and docs support. (#85269) Thanks @dutifulbob. [v2026.5.27]",
-    "Providers: add the Pixverse video generation provider, API region selection, docs, and external plugin packaging support. [v2026.5.27]",
-    "ClawHub: add plugin display metadata so catalog/package listings use cleaner names. (#87354) Thanks @thewilloftheshadow. [v2026.5.27]",
-    "Agents: split the heartbeat runtime template out of docs assets and add compatibility repair for legacy heartbeat template content. (#85416) Thanks @hxy91819. [v2026.5.27]",
-    "Memory: add a core OpenAI-compatible embedding provider for local and hosted OpenAI-style endpoints, with config, doctor, and docs support. (#85269) Thanks @dutifulbob. [v2026.5.27-beta.1]",
-    "Providers: add the Pixverse video generation provider, API region selection, docs, and external plugin packaging support. [v2026.5.27-beta.1]",
-    "ClawHub: add plugin display metadata so catalog/package listings use cleaner names. (#87354) Thanks @thewilloftheshadow. [v2026.5.27-beta.1]",
-    "Agents: split the heartbeat runtime template out of docs assets and add compatibility repair for legacy heartbeat template content. (#85416) Thanks @hxy91819. [v2026.5.27-beta.1]"
+    "ClawHub: add plugin display names plus skill verification and trust surfaces. (#87354, #86699) Thanks @thewilloftheshadow and @Patrick-Erichsen. [v2026.5.28-beta.2]",
+    "PDF/tools: use ClawPDF for PDF extraction, support encrypted PDF extraction, and surface MCP structured content in agent tool results. (#87670, #87751) [v2026.5.28-beta.2]",
+    "Providers: add Claude Opus 4.8 support, Fal Krea image model schemas, NVIDIA featured model catalogs, MiniMax streaming music responses, and provider-backed voice model catalogs. (#87845, #87890, #80775, #84764, #87794) Thanks @eleqtrizit and @vincentkoc. [v2026.5.28-beta.2]",
+    "Codex/GitHub: add the GitHub Copilot agent runtime and the Codex Supervisor plugin package. [v2026.5.28-beta.2]",
+    "Plugin SDK: add a reply payload sending hook for plugins that need to deliver channel-owned replies and flatten package types for SDK declarations. (#82823, #87165) Thanks @RomneyDa. [v2026.5.28-beta.2]",
+    "Policy: add policy comparison, ingress-channel conformance, and sandbox-posture conformance checks. (#85572, #85744, #86768) [v2026.5.28-beta.2]",
+    "ClawHub: add plugin display names plus skill verification and trust surfaces. (#87354, #86699) Thanks @thewilloftheshadow and @Patrick-Erichsen. [v2026.5.28-beta.1]",
+    "feat(exec): add normalized auto mode"
   ],
   "fixItems": [
-    "Security/content boundaries: route untrusted group prompt metadata outside system prompts, normalize repeated trailing hostname dots, block side-effecting command wrappers, reject unsafe Node runtime env overrides, reject no-auth Tailscale exposure, block untrusted Microsoft Teams service URLs, enforce `/allowlist configWrites` origin policy, gate QQBot fallback approval buttons, and require admin for node/device-role approvals. (#87144, #87305, #87292, #87308, #87146, #87154, #87334) Thanks @eleqtrizit and @pgondhi987. [v2026.5.27]",
-    "Channels: make Telegram `sendMessage` action replies durable and preserve SecretRef prompt config, suppress duplicate iMessage native exec approval prompts and sends, keep iMessage approval polling alive after denied reactions, keep Slack delivered final replies during late cleanup, keep Matrix mention previews/finals mention-inert and normally delivered, ignore filename-embedded Matrix IDs, suppress recovered Discord tool-warning artifacts from successful replies, suppress Google Chat thread sends in DMs, and harden Discord guild requester checks. (#87261, #87452) Thanks @mbelinky. [v2026.5.27]",
-    "Install/package/release: match npm globstar exclusions, honor dist package exclusions in inventory, omit unpacked test helpers, skip Homebrew until macOS packages need it, package Docker runtime workspace templates, smoke Docker runtime templates during full validation, merge nested shrinkwrap override pins, preserve forked shrinkwrap pins, pin aged `lru-cache`, harden postpublish verification, accept main full-validation proof, and reject empty beta smoke runs. [v2026.5.27]",
-    "Security/content boundaries: route untrusted group prompt metadata outside system prompts, normalize repeated trailing hostname dots, block side-effecting command wrappers, reject unsafe Node runtime env overrides, reject no-auth Tailscale exposure, block untrusted Microsoft Teams service URLs, enforce `/allowlist configWrites` origin policy, gate QQBot fallback approval buttons, and require admin for node/device-role approvals. (#87144, #87305, #87292, #87308, #87146, #87154, #87334) Thanks @eleqtrizit and @pgondhi987. [v2026.5.27-beta.1]",
-    "Channels: make Telegram `sendMessage` action replies durable and preserve SecretRef prompt config, suppress duplicate iMessage native exec approval prompts and sends, keep iMessage approval polling alive after denied reactions, keep Slack delivered final replies during late cleanup, keep Matrix mention previews/finals mention-inert and normally delivered, ignore filename-embedded Matrix IDs, suppress recovered Discord tool-warning artifacts from successful replies, suppress Google Chat thread sends in DMs, and harden Discord guild requester checks. (#87261, #87452) Thanks @mbelinky. [v2026.5.27-beta.1]",
-    "Install/package/release: match npm globstar exclusions, honor dist package exclusions in inventory, omit unpacked test helpers, skip Homebrew until macOS packages need it, package Docker runtime workspace templates, smoke Docker runtime templates during full validation, merge nested shrinkwrap override pins, preserve forked shrinkwrap pins, pin aged `lru-cache`, harden postpublish verification, accept main full-validation proof, and reject empty beta smoke runs. [v2026.5.27-beta.1]",
-    "fix(core): restore changed gate typecheck",
-    "fix(agents): quarantine compaction tool schemas"
+    "CLI/auth/doctor/providers: reject malformed numeric/timeout/subcommand-version inputs, ignore workspace dotenv provider credentials, wait for respawn child shutdown, bound Codex and GitHub Copilot OAuth/token requests, harden Codex auth probes, warm provider auth off the main thread, honor Codex response timeouts, stop migrating current Claude Haiku 4.5 profiles to Sonnet, bound local service startup, resolve GPT-5.5 without cached catalog, migrate legacy memory auto-provider config, rewrite non-canonical `api_key` auth profiles, and make doctor restart follow-ups actionable. (#87398, #86281, #87361, #83655, #87559, #87719) Thanks @Patrick-Erichsen, @samzong, @giodl73-repo, @alkor2000, @mmaps, and @nxmxbbd. [v2026.5.28-beta.2]",
+    "Browser/input hardening: reject invalid tab indexes, excessive viewport resizes, explicit zero CDP ports, malformed geolocation options, unsafe screenshot or permission-grant timeouts, loose response-body limits, invalid cookie expiries, and non-finite Browser tool delays/timeouts. [v2026.5.28-beta.2]",
+    "Agents/tool args: harden smart-quoted argument repair for edit arrays and exact escaped arguments so model-produced tool calls recover without corrupting valid input. (#86611) [v2026.5.28-beta.2]",
+    "Performance: trust install-record caches between reloads, prefer native JSON parsing, reuse unchanged tool-search catalogs, skip unchanged store serialization, add precomputed session patch writers, reduce store clone allocations, cache manifest model catalog rows and auto-enabled plugin config, avoid full session snapshots for entry reads, defer configured Slack full startup, prefer bundled plugin dist entries, and slim current metadata identity caches. (#87760) [v2026.5.28-beta.2]",
+    "Performance: trust install-record caches between reloads, prefer native JSON parsing, reuse unchanged tool-search catalogs, skip unchanged store serialization, add precomputed session patch writers, reduce store clone allocations, cache manifest model catalog rows and auto-enabled plugin config, and slim current metadata identity caches. [v2026.5.28-beta.1]",
+    "fix(whatsapp): validate inbound timestamps",
+    "perf(agent): lazy load embedded agent cli path",
+    "fix(discord): reject unsafe rate limit headers"
   ],
   "topScopes": [
     {
-      "scope": "agents",
-      "count": 24
-    },
-    {
-      "scope": "test",
-      "count": 21
-    },
-    {
-      "scope": "ui",
-      "count": 19
-    },
-    {
       "scope": "fix",
-      "count": 17
+      "count": 211
     },
     {
-      "scope": "release",
-      "count": 16
+      "scope": "refactor",
+      "count": 55
     },
     {
-      "scope": "gateway",
-      "count": 14
+      "scope": "agents",
+      "count": 33
     },
     {
       "scope": "e2e",
-      "count": 14
+      "count": 27
+    },
+    {
+      "scope": "browser",
+      "count": 27
+    },
+    {
+      "scope": "test",
+      "count": 20
+    },
+    {
+      "scope": "workboard",
+      "count": 20
     },
     {
       "scope": "ci",
-      "count": 13
+      "count": 19
     }
   ],
   "headlineCommits": [
-    "Block provider credentials from workspace dotenv [AI] (#83655)",
-    "fix(core): restore changed gate typecheck",
-    "fix(agents): quarantine compaction tool schemas",
-    "fix: reject partial numeric parsing",
-    "perf: reduce gateway runtime discovery overhead",
-    "fix(codex): bound sandbox http stream lines",
-    "fix(ssh): bound config probe output",
-    "fix(msteams): bind bot framework service urls (#87160)"
+    "refactor: share agent harness loader helpers",
+    "fix(whatsapp): validate inbound timestamps",
+    "perf(agent): lazy load embedded agent cli path",
+    "ci(release): make plugin publish retries idempotent",
+    "fix(discord): reject unsafe rate limit headers",
+    "fix(discord): validate error code integers",
+    "fix(provider): bound Vydra and Comfy media downloads",
+    "fix(tts): centralize directive number parsing"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
