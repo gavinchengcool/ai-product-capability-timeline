@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-05-31T21:06:24+08:00
-- Requested window: 2026-05-30 to 2026-05-31
+- Generated at: 2026-06-02T01:09:32+08:00
+- Requested window: 2026-06-01 to 2026-06-02
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-05-30 to 2026-05-31
-- Generated at: 2026-05-31T21:06:06.815500+08:00
-- 窗口: 2026-05-30 至 2026-05-31
-- GitHub 增量: 598 commits / 2 releases
-- 最近 push: 2026-05-31
+- Window: 2026-06-01 to 2026-06-02
+- Generated at: 2026-06-02T01:09:15.810586+08:00
+- 窗口: 2026-06-01 至 2026-06-02
+- GitHub 增量: 598 commits / 5 releases
+- 最近 push: 2026-06-01
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Skills: let Skill Workshop proposals carry approved support files under standard skill folders, with scanner, hash, and rollback safeguards. Thanks @shakkernerd. [v2026.5.30-beta.1]
-  - Skills: add Skill Workshop proposals with pending `PROPOSAL.md` drafts, CLI/Gateway review actions, rollback metadata, and the `skill_research` agent tool. Thanks @shakkernerd. [v2026.5.30-beta.1]
-  - iOS: add hosted push relay defaults, realtime Talk playback, and a guarded WebSocket ping path for more reliable mobile sessions. (#88096, #88105, #88231) [v2026.5.30-beta.1]
-  - Workboard: add orchestration primitives and agent coordination tools for multi-agent planning and run tracking. (#87469) [v2026.5.30-beta.1]
-  - Code mode: add internal namespaces for scoped agent/global sessions and exact namespace tool dispatch. (#88043) [v2026.5.30-beta.1]
-  - Control UI: add a Dreaming-tab agent selector and propagate the selected agent through Dreaming status, diary, and diary actions. (#78748) Thanks @stevenepalmer. [v2026.5.30-beta.1]
-  - Plugins: add a SecretRef provider integration manifest contract and extract shared LLM core packages for provider/plugin reuse. (#82326, #88117) [v2026.5.30-beta.1]
-  - Skills: add the core skills index and centralize skills runtime loading, status, filtering, and prompt formatting. [v2026.5.30-beta.1]
+  - Skills: let proposals carry approved support files under standard skill folders, with scanner, hash, and rollback safeguards. Thanks @shakkernerd. [v2026.6.1-beta.1]
+  - Skills: add Skill Workshop with pending proposals, CLI/Gateway review actions, rollback metadata, and the `skill_workshop` agent tool. Thanks @shakkernerd. [v2026.6.1-beta.1]
+  - Skill Workshop: add the Control UI navigation, styled dashboard, proposal today view, revision dialog, file preview modal, searchable preview files, reusable session handoff, and localized strings. [v2026.6.1-beta.1]
+  - iOS: add hosted push relay defaults, realtime Talk playback, and a guarded WebSocket ping path for more reliable mobile sessions. (#88096, #88105, #88231) [v2026.6.1-beta.1]
+  - iOS: support native iPad display layouts. [v2026.6.1-beta.1]
+  - Workboard: add orchestration primitives and agent coordination tools for multi-agent planning and run tracking. (#87469) [v2026.6.1-beta.1]
+  - Code mode: add internal namespaces for scoped agent/global sessions and exact namespace tool dispatch. (#88043) [v2026.6.1-beta.1]
+  - Code mode: add MCP API files and docs for code-mode integrations. [v2026.6.1-beta.1]
 - Fixes and constraints:
-  - Security/config parsing: reject unsafe OAuth/token lifetimes, retry-after delays, inbound timestamps, response body sizes, command timeout config, sandbox observer token TTLs, and gateway WebSocket calls after close. [v2026.5.30-beta.1]
-  - Performance: prebuild QA runtime probes with generated plugin assets but without CLI startup metadata. [v2026.5.30-beta.1]
-  - Performance: skip declaration bundling for runtime-only CLI startup and gateway watch build profiles. [v2026.5.30-beta.1]
-  - Performance: reuse prepared provider handles, strict tool schemas, gateway runtime metadata, session maintenance config, plugin metadata, bundled skill allowlists, package-local plugin artifacts, single-entry store writes, and validated/serialized session prompt blobs. [v2026.5.30-beta.1]
-  - CLI/auth/doctor/providers: reject malformed numeric/timeout/subcommand-version inputs, ignore workspace dotenv provider credentials, wait for respawn child shutdown, bound heartbeat defaults plus Codex, GitHub Copilot, OpenAI, Anthropic, Google, Feishu, LM Studio, MiniMax, Xiaomi TTS, and local-provider OAuth/token/model requests, harden Codex auth probes, label auth health by agent, preserve explicit agentRuntime pins during Codex model migration, warm provider auth off the main thread, honor Codex response timeouts, stop migrating current Claude Haiku 4.5 profiles to Sonnet, bound local service startup, resolve GPT-5.5 without cached catalog, migrate legacy memory auto-provider config, rewrite non-canonical `api_key` auth profiles, and make doctor restart follow-ups actionable. (#87398, #86281, #87361, #88133, #83655, #87559, #87719, #88088, #85924, #84362) Thanks @Patrick-Erichsen, @samzong, @giodl73-repo, @alkor2000, @mmaps, @nxmxbbd, and @vincentkoc. [v2026.5.28]
-  - Browser/input hardening: reject invalid tab indexes, excessive viewport resizes, explicit zero CDP ports, malformed geolocation options, unsafe screenshot or permission-grant timeouts, loose response-body limits, invalid cookie expiries, and non-finite Browser tool delays/timeouts. [v2026.5.28]
-  - Agents/tool args: harden smart-quoted argument repair for edit arrays and exact escaped arguments so model-produced tool calls recover without corrupting valid input. (#86611) Thanks @ferminquant. [v2026.5.28]
-  - Performance: trust install-record caches between reloads, prefer native JSON parsing, reuse unchanged tool-search catalogs, reuse gateway session and plugin metadata paths, skip unchanged store serialization, patch single-entry session writes, add precomputed session patch writers, reduce store clone allocations, cache manifest model catalog rows and auto-enabled plugin config, avoid full session snapshots for entry reads, defer configured Slack full startup, prefer bundled plugin dist entries, and slim current metadata identity caches. (#87760) [v2026.5.28]
+  - Cron: keep update delivery validation scoped, harden restart state, and retire MCP runtimes on isolated cron cleanup. [v2026.6.1-beta.1]
+  - Memory: serialize QMD update/embed writes per store, preserve phase signals on read errors, harden envelope metadata sanitization, and rewrite generated transcript paths on rollover so memory/search state survives concurrent gateway and CLI activity. (#66339, #85931) Thanks @openperf and @amittell. [v2026.6.1-beta.1]
+  - Security/config parsing: reject unsafe OAuth/token lifetimes, retry-after delays, inbound timestamps, response body sizes, command timeout config, sandbox observer token TTLs, and gateway WebSocket calls after close. [v2026.6.1-beta.1]
+  - Gateway/session state: list commands from the Gateway plugin registry, harden MCP loopback tool schemas, hide phantom agent-store rows from `sessions.list`, make task persistence failures explicit, and carry session UUIDs on interactive dispatch events. [v2026.6.1-beta.1]
+  - Performance: prebuild QA runtime probes with generated plugin assets but without CLI startup metadata. [v2026.6.1-beta.1]
+  - Performance: skip declaration bundling for runtime-only CLI startup and gateway watch build profiles. [v2026.6.1-beta.1]
+  - Performance: reuse prepared provider handles, strict tool schemas, gateway runtime metadata, session maintenance config, plugin metadata, bundled skill allowlists, package-local plugin artifacts, single-entry store writes, and validated/serialized session prompt blobs. [v2026.6.1-beta.1]
+  - Cron: keep update delivery validation scoped, harden restart state, and retire MCP runtimes on isolated cron cleanup. [v2026.5.31-beta.4]
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
