@@ -1,232 +1,192 @@
 {
-  "generated_at": "2026-06-02T01:09:15.810586+08:00",
+  "generated_at": "2026-06-02T23:51:24.346521+08:00",
   "window": {
-    "start_local": "2026-06-01T01:09:15.810586+08:00",
-    "end_local": "2026-06-02T01:09:15.810586+08:00",
-    "start_utc": "2026-05-31T17:09:15Z",
-    "end_utc": "2026-06-01T17:09:15Z"
+    "start_local": "2026-06-01T23:51:24.346521+08:00",
+    "end_local": "2026-06-02T23:51:24.346521+08:00",
+    "start_utc": "2026-06-01T15:51:24Z",
+    "end_utc": "2026-06-02T15:51:24Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 376040,
-    "forks": 78539,
-    "open_issues": 6997,
-    "pushed_at": "2026-06-01T17:08:27Z"
+    "stars": 376216,
+    "forks": 78602,
+    "open_issues": 7100,
+    "pushed_at": "2026-06-02T15:49:00Z"
   },
   "releases_in_window": [
     {
-      "tag_name": "v2026.6.1-beta.1",
-      "published_at": "2026-06-01T09:45:05Z",
-      "name": "openclaw 2026.6.1-beta.1",
+      "tag_name": "v2026.6.1-beta.2",
+      "published_at": "2026-06-01T21:56:19Z",
+      "name": "openclaw 2026.6.1-beta.2",
       "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.1-beta.1"
-    },
-    {
-      "tag_name": "v2026.5.31-beta.4",
-      "published_at": "2026-06-01T02:04:59Z",
-      "name": "openclaw 2026.5.31-beta.4",
-      "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.31-beta.4"
-    },
-    {
-      "tag_name": "v2026.5.31-beta.3",
-      "published_at": "2026-05-31T19:19:39Z",
-      "name": "openclaw 2026.5.31-beta.3",
-      "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.31-beta.3"
-    },
-    {
-      "tag_name": "v2026.5.31-beta.2",
-      "published_at": "2026-05-31T18:17:21Z",
-      "name": "openclaw 2026.5.31-beta.2",
-      "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.31-beta.2"
-    },
-    {
-      "tag_name": "v2026.5.31-beta.1",
-      "published_at": "2026-05-31T17:44:50Z",
-      "name": "openclaw 2026.5.31-beta.1",
-      "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.31-beta.1"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.1-beta.2"
     }
   ],
-  "commit_count": 598,
+  "commit_count": 268,
   "commit_headlines": [
-    "fix(repro): clean webchat tts proof artifacts",
-    "refactor: share startup memory test helpers",
-    "fix(e2e): bound cron mcp probe waits",
-    "refactor: share startup secrets test helpers",
-    "fix(e2e): clean timed-out runtime commands",
-    "refactor: share probe request dispatch helper",
-    "refactor: share talk transcription relay test setup",
-    "fix(codex): abort app-server thread startup cleanly",
-    "refactor: share maintenance test fixtures",
-    "fix(usage): skip empty timeseries scans",
-    "refactor: share codex harness model assertions",
-    "refactor: share shared auth rotation test helpers",
-    "fix: bound remote media reference reads [AI] (#88974)",
-    "refactor: share session reset test helpers",
-    "test(codex): drop unused live harness helper",
-    "fix(e2e): isolate MCP channel client temp state",
-    "test(codex): avoid sessions list wait in live harness start probe",
-    "fix(dev): clean Telegram flow previews on failure",
-    "fix(dev): close gateway smoke websocket on failures",
-    "fix(dev): close stalled gateway websocket handshakes",
-    "refactor: share config patch test helpers",
-    "test(openrouter): stabilize music timeout clamp assertion",
-    "test(agents): align provider auth alias fixtures",
-    "test(gateway): fix node invoke capture race",
-    "fix(e2e): escalate stuck PTY children",
-    "refactor: share device pair authz test helpers",
-    "fix(e2e): harden Parallels helper cleanup",
-    "refactor: share silent reconnect test helpers",
-    "test(release): stabilize beta validation regressions",
-    "fix(scripts): clean Anthropic prompt probe temp state",
-    "fix(ui): clear chat composer after send (#89106)",
-    "refactor: share startup recovery test helpers",
-    "test(e2e): exercise Parallels smoke cleanup path",
-    "test: close oxlint signal readiness race",
-    "test: harden changed-gate assertions",
-    "test: stabilize order-sensitive assertions",
-    "fix: stabilize full-suite regressions",
-    "test: stabilize slow shard regressions",
-    "fix(scripts): clean Z.AI fallback repro temp state",
-    "refactor: share gateway misc test helpers",
-    "fix(ci): clean check-changed pnpm shim temp dirs",
-    "refactor: share node allowlist test helpers",
-    "fix(ci): use QA runtime build for release checks",
-    "test(gateway): scope lazy server mock",
-    "test(scripts): clean session log temp roots",
-    "refactor: share node registry system run test helpers",
-    "test(codex): clean up fake timer spies",
-    "test(qa): cover QA lab help runtime boundary",
-    "fix(test): keep runtime tests raw-sync safe",
-    "fix(test): keep app parity checks sparse safe"
+    "test(gateway): defer sidecars in tools invoke e2e",
+    "fix(test): stabilize ARM extension timer tests",
+    "fix: recover suspicious gateway startup configs (#89480)",
+    "fix(kimi): strip anthropic cache markers",
+    "fix: restore Skill Workshop view switcher",
+    "docs(changelog): note update repair stall handling",
+    "fix(update): keep plugin repair fetch failures nonblocking",
+    "fix(test): isolate gateway CPU QA state",
+    "fix(models): preserve provider prompt cache boundaries",
+    "docs: clarify autoreview follow-up scope",
+    "fix(google): forward Gemini stop sequences",
+    "fix: audit and repair hooks token reuse with Gateway auth",
+    "fix(memory): avoid optional vector status dereference",
+    "fix(memory): force provider-none indexes to FTS-only vectors",
+    "fix(scripts): avoid dead child assignment in fd repro",
+    "fix(memory): initialize provider-none lifecycle during sync",
+    "fix(memory): report provider-none probes as FTS-only",
+    "fix(scripts): avoid spread in runtime output collection",
+    "fix(scripts): clean memory fd temp dirs after preindex failures",
+    "fix(memory): scope provider-none FTS bypass",
+    "fix(scripts): keep watch proof asset copies out of idle window",
+    "fix(memory): keep FTS-only sync offline",
+    "fix(mistral): enable prompt cache keys",
+    "fix(llm): keep OpenAI-compatible reasoning streams active",
+    "docs: document Android notification picker helpers",
+    "fix(agents): gate finalize hooks before delivery",
+    "fix(llm): gate OpenAI-compatible reasoning output",
+    "fix: recover corrupt managed npm installs",
+    "fix(qqbot): migrate state stores to sqlite kv",
+    "fix: align auth health status after Codex sidecar merge",
+    "fix(testing): probe plugin CLI help while installed",
+    "feat(plugin-sdk): add resolve_exec_env hook",
+    "fix: surface unresolved OAuth sidecar auth failures",
+    "fix(providers): use native reasoning mode for Gemini instead of tagged (#89379)",
+    "fix(codex): clear stale context-engine projection after overflow retry",
+    "refactor(gateway): derive connection auth options",
+    "refactor(gateway): share node agent dispatch",
+    "refactor(gateway): share embedding remote options",
+    "fix(google): add missing gemini-3.1-flash-lite to google-vertex catalog (#89400)",
+    "refactor: tighten agent harness surfaces",
+    "fix(update): pin post-core plugin compatibility to the downgraded core version (#87914) (#87952)",
+    "fix: repeat doctor state migration repairs",
+    "fix(qqbot): isolate credential backups by state root",
+    "fix(sessions): preserve corrupt-header transcripts",
+    "feat(status): detect external plugin version drift",
+    "refactor(gateway): share secret ref input resolution",
+    "refactor(gateway): share runtime service helpers",
+    "Treat soft plugin repair warnings as nonfatal (#84431)",
+    "fix(messages): preserve inbound audio for message-tool TTS",
+    "fix: detect shrinkwrapped npm installs"
   ],
   "feature_items": [
-    "Skills: let proposals carry approved support files under standard skill folders, with scanner, hash, and rollback safeguards. Thanks @shakkernerd. [v2026.6.1-beta.1]",
-    "Skills: add Skill Workshop with pending proposals, CLI/Gateway review actions, rollback metadata, and the `skill_workshop` agent tool. Thanks @shakkernerd. [v2026.6.1-beta.1]",
-    "Skill Workshop: add the Control UI navigation, styled dashboard, proposal today view, revision dialog, file preview modal, searchable preview files, reusable session handoff, and localized strings. [v2026.6.1-beta.1]",
-    "iOS: add hosted push relay defaults, realtime Talk playback, and a guarded WebSocket ping path for more reliable mobile sessions. (#88096, #88105, #88231) [v2026.6.1-beta.1]",
-    "iOS: support native iPad display layouts. [v2026.6.1-beta.1]",
-    "Workboard: add orchestration primitives and agent coordination tools for multi-agent planning and run tracking. (#87469) [v2026.6.1-beta.1]",
-    "Code mode: add internal namespaces for scoped agent/global sessions and exact namespace tool dispatch. (#88043) [v2026.6.1-beta.1]",
-    "Code mode: add MCP API files and docs for code-mode integrations. [v2026.6.1-beta.1]",
-    "Control UI: add a Dreaming-tab agent selector and propagate the selected agent through Dreaming status, diary, and diary actions. (#78748) Thanks @stevenepalmer. [v2026.6.1-beta.1]",
-    "Control UI: add calmer chat composer controls, local draft typing state, and first-output latency instrumentation for active chat entry. (#88772, #88998) Thanks @vincentkoc. [v2026.6.1-beta.1]",
-    "Plugins: add a SecretRef provider integration manifest contract and extract shared LLM core packages for provider/plugin reuse. (#82326, #88117) [v2026.6.1-beta.1]",
-    "Providers: add MiniMax M3 model support. (#88860) [v2026.6.1-beta.1]",
-    "Doctor: add disk space health checks and stabilize post-upgrade JSON probes. [v2026.6.1-beta.1]",
-    "Skills: add the core skills index and centralize skills runtime loading, status, filtering, and prompt formatting. [v2026.6.1-beta.1]",
-    "Skills: let proposals carry approved support files under standard skill folders, with scanner, hash, and rollback safeguards. Thanks @shakkernerd. [v2026.5.31-beta.4]",
-    "Skills: add Skill Workshop with pending proposals, CLI/Gateway review actions, rollback metadata, and the `skill_workshop` agent tool. Thanks @shakkernerd. [v2026.5.31-beta.4]",
-    "Skill Workshop: add the Control UI navigation, styled dashboard, proposal today view, revision dialog, file preview modal, searchable preview files, reusable session handoff, and localized strings. [v2026.5.31-beta.4]",
-    "iOS: add hosted push relay defaults, realtime Talk playback, and a guarded WebSocket ping path for more reliable mobile sessions. (#88096, #88105, #88231) [v2026.5.31-beta.4]",
-    "iOS: support native iPad display layouts. [v2026.5.31-beta.4]",
-    "Workboard: add orchestration primitives and agent coordination tools for multi-agent planning and run tracking. (#87469) [v2026.5.31-beta.4]",
-    "Gateway: support Tailscale Serve service-name bindings for gateway exposure and status. [v2026.5.31-beta.4]",
-    "Code mode: add internal namespaces for scoped agent/global sessions and exact namespace tool dispatch. (#88043) [v2026.5.31-beta.4]",
-    "Code mode: add MCP API files and docs for code-mode integrations. [v2026.5.31-beta.4]",
-    "Control UI: add a Dreaming-tab agent selector and propagate the selected agent through Dreaming status, diary, and diary actions. (#78748) Thanks @stevenepalmer. [v2026.5.31-beta.4]",
-    "Control UI: add calmer chat composer controls for active chat entry. (#88772) [v2026.5.31-beta.4]",
-    "Plugin SDK/channels: add typed presentation command actions so native slash-command and callback controls can round-trip through capable channel plugins without being reinterpreted. (#88721) [v2026.5.31-beta.4]",
-    "Plugins: add a SecretRef provider integration manifest contract and extract shared LLM core packages for provider/plugin reuse. (#82326, #88117) [v2026.5.31-beta.4]",
-    "Providers: add MiniMax M3 model support. (#88860) [v2026.5.31-beta.4]",
-    "Doctor: add disk space health checks and stabilize post-upgrade JSON probes. [v2026.5.31-beta.4]",
-    "Skills: add the core skills index and centralize skills runtime loading, status, filtering, and prompt formatting. [v2026.5.31-beta.4]"
+    "Skills: let proposals carry approved support files under standard skill folders, with scanner, hash, and rollback safeguards. Thanks @shakkernerd. [v2026.6.1-beta.2]",
+    "Skills: add Skill Workshop with pending proposals, CLI/Gateway review actions, rollback metadata, and the `skill_workshop` agent tool. Thanks @shakkernerd. [v2026.6.1-beta.2]",
+    "Skill Workshop: add the Control UI navigation, styled dashboard, proposal today view, revision dialog, file preview modal, searchable preview files, reusable session handoff, and localized strings. [v2026.6.1-beta.2]",
+    "iOS: add hosted push relay defaults, realtime Talk playback, and a guarded WebSocket ping path for more reliable mobile sessions. (#88096, #88105, #88231) [v2026.6.1-beta.2]",
+    "iOS: support native iPad display layouts. [v2026.6.1-beta.2]",
+    "Workboard: add orchestration primitives and agent coordination tools for multi-agent planning and run tracking. (#87469) [v2026.6.1-beta.2]",
+    "Code mode: add internal namespaces for scoped agent/global sessions and exact namespace tool dispatch. (#88043) [v2026.6.1-beta.2]",
+    "Code mode: add MCP API files and docs for code-mode integrations. [v2026.6.1-beta.2]",
+    "Control UI: add a Dreaming-tab agent selector and propagate the selected agent through Dreaming status, diary, and diary actions. (#78748) Thanks @stevenepalmer. [v2026.6.1-beta.2]",
+    "Control UI: add calmer chat composer controls, local draft typing state, and first-output latency instrumentation for active chat entry. (#88772, #88998) Thanks @vincentkoc. [v2026.6.1-beta.2]",
+    "Plugins: add a SecretRef provider integration manifest contract and extract shared LLM core packages for provider/plugin reuse. (#82326, #88117) [v2026.6.1-beta.2]",
+    "Providers: add MiniMax M3 model support. (#88860) [v2026.6.1-beta.2]",
+    "Doctor: add disk space health checks and stabilize post-upgrade JSON probes. [v2026.6.1-beta.2]",
+    "Skills: add the core skills index and centralize skills runtime loading, status, filtering, and prompt formatting. [v2026.6.1-beta.2]",
+    "feat(plugin-sdk): add resolve_exec_env hook",
+    "feat(status): detect external plugin version drift",
+    "feat(agents): generalized native compaction ownership for CLI backends",
+    "feat(android): add installed apps node command"
   ],
   "fix_items": [
-    "Cron: keep update delivery validation scoped, harden restart state, and retire MCP runtimes on isolated cron cleanup. [v2026.6.1-beta.1]",
-    "Memory: serialize QMD update/embed writes per store, preserve phase signals on read errors, harden envelope metadata sanitization, and rewrite generated transcript paths on rollover so memory/search state survives concurrent gateway and CLI activity. (#66339, #85931) Thanks @openperf and @amittell. [v2026.6.1-beta.1]",
-    "Security/config parsing: reject unsafe OAuth/token lifetimes, retry-after delays, inbound timestamps, response body sizes, command timeout config, sandbox observer token TTLs, and gateway WebSocket calls after close. [v2026.6.1-beta.1]",
-    "Gateway/session state: list commands from the Gateway plugin registry, harden MCP loopback tool schemas, hide phantom agent-store rows from `sessions.list`, make task persistence failures explicit, and carry session UUIDs on interactive dispatch events. [v2026.6.1-beta.1]",
-    "Performance: prebuild QA runtime probes with generated plugin assets but without CLI startup metadata. [v2026.6.1-beta.1]",
-    "Performance: skip declaration bundling for runtime-only CLI startup and gateway watch build profiles. [v2026.6.1-beta.1]",
-    "Performance: reuse prepared provider handles, strict tool schemas, gateway runtime metadata, session maintenance config, plugin metadata, bundled skill allowlists, package-local plugin artifacts, single-entry store writes, and validated/serialized session prompt blobs. [v2026.6.1-beta.1]",
-    "Cron: keep update delivery validation scoped, harden restart state, and retire MCP runtimes on isolated cron cleanup. [v2026.5.31-beta.4]",
-    "Security/config parsing: reject unsafe OAuth/token lifetimes, retry-after delays, inbound timestamps, response body sizes, command timeout config, sandbox observer token TTLs, and gateway WebSocket calls after close. [v2026.5.31-beta.4]",
-    "Gateway/session state: list commands from the Gateway plugin registry, harden MCP loopback tool schemas, hide phantom agent-store rows from `sessions.list`, make task persistence failures explicit, and carry session UUIDs on interactive dispatch events. [v2026.5.31-beta.4]",
-    "Performance: prebuild QA runtime probes with generated plugin assets but without CLI startup metadata. [v2026.5.31-beta.4]",
-    "Performance: skip declaration bundling for runtime-only CLI startup and gateway watch build profiles. [v2026.5.31-beta.4]",
-    "Performance: reuse prepared provider handles, strict tool schemas, gateway runtime metadata, session maintenance config, plugin metadata, bundled skill allowlists, package-local plugin artifacts, single-entry store writes, and validated/serialized session prompt blobs. [v2026.5.31-beta.4]",
-    "Security/config parsing: reject unsafe OAuth/token lifetimes, retry-after delays, inbound timestamps, response body sizes, command timeout config, sandbox observer token TTLs, and gateway WebSocket calls after close. [v2026.5.31-beta.3]",
-    "Performance: prebuild QA runtime probes with generated plugin assets but without CLI startup metadata. [v2026.5.31-beta.3]",
-    "Performance: skip declaration bundling for runtime-only CLI startup and gateway watch build profiles. [v2026.5.31-beta.3]",
-    "Performance: reuse prepared provider handles, strict tool schemas, gateway runtime metadata, session maintenance config, plugin metadata, bundled skill allowlists, package-local plugin artifacts, single-entry store writes, and validated/serialized session prompt blobs. [v2026.5.31-beta.3]",
-    "Security/config parsing: reject unsafe OAuth/token lifetimes, retry-after delays, inbound timestamps, response body sizes, command timeout config, sandbox observer token TTLs, and gateway WebSocket calls after close. [v2026.5.31-beta.2]",
-    "Performance: prebuild QA runtime probes with generated plugin assets but without CLI startup metadata. [v2026.5.31-beta.2]",
-    "Performance: skip declaration bundling for runtime-only CLI startup and gateway watch build profiles. [v2026.5.31-beta.2]",
-    "Performance: reuse prepared provider handles, strict tool schemas, gateway runtime metadata, session maintenance config, plugin metadata, bundled skill allowlists, package-local plugin artifacts, single-entry store writes, and validated/serialized session prompt blobs. [v2026.5.31-beta.2]",
-    "Security/config parsing: reject unsafe OAuth/token lifetimes, retry-after delays, inbound timestamps, response body sizes, command timeout config, sandbox observer token TTLs, and gateway WebSocket calls after close. [v2026.5.31-beta.1]",
-    "Performance: prebuild QA runtime probes with generated plugin assets but without CLI startup metadata. [v2026.5.31-beta.1]",
-    "Performance: skip declaration bundling for runtime-only CLI startup and gateway watch build profiles. [v2026.5.31-beta.1]",
-    "Performance: reuse prepared provider handles, strict tool schemas, gateway runtime metadata, session maintenance config, plugin metadata, bundled skill allowlists, package-local plugin artifacts, single-entry store writes, and validated/serialized session prompt blobs. [v2026.5.31-beta.1]",
-    "fix(repro): clean webchat tts proof artifacts",
-    "fix(e2e): bound cron mcp probe waits",
-    "fix(e2e): clean timed-out runtime commands",
-    "fix(codex): abort app-server thread startup cleanly",
-    "fix(usage): skip empty timeseries scans"
+    "Cron: keep update delivery validation scoped, harden restart state, and retire MCP runtimes on isolated cron cleanup. [v2026.6.1-beta.2]",
+    "Memory: serialize QMD update/embed writes per store, reduce Linux watcher fan-out, retry transient FileProvider-backed reads, preserve phase signals on read errors, harden envelope metadata sanitization, reattach Linux native watchers when directories are recreated, and rewrite generated transcript paths on rollover so memory/search state survives concurrent gateway and CLI activity. (#66339, #85931, #89185, #89188, #85351) Thanks @openperf, @amittell, @RomneyDa, and @NianJiuZst. [v2026.6.1-beta.2]",
+    "Security/config parsing: reject unsafe OAuth/token lifetimes, retry-after delays, inbound timestamps, response body sizes, command timeout config, sandbox observer token TTLs, and gateway WebSocket calls after close. [v2026.6.1-beta.2]",
+    "Gateway/session state: list commands from the Gateway plugin registry, harden MCP loopback tool schemas, hide phantom agent-store rows from `sessions.list`, make task persistence failures explicit, and carry session UUIDs on interactive dispatch events. [v2026.6.1-beta.2]",
+    "Performance: prebuild QA runtime probes with generated plugin assets but without CLI startup metadata. [v2026.6.1-beta.2]",
+    "Performance: skip declaration bundling for runtime-only CLI startup and gateway watch build profiles. [v2026.6.1-beta.2]",
+    "Performance: reuse prepared provider handles, strict tool schemas, gateway runtime metadata, session maintenance config, plugin metadata, bundled skill allowlists, package-local plugin artifacts, single-entry store writes, and validated/serialized session prompt blobs. [v2026.6.1-beta.2]",
+    "fix(test): stabilize ARM extension timer tests",
+    "fix: recover suspicious gateway startup configs (#89480)",
+    "fix(kimi): strip anthropic cache markers",
+    "fix: restore Skill Workshop view switcher",
+    "fix(update): keep plugin repair fetch failures nonblocking",
+    "fix(test): isolate gateway CPU QA state",
+    "fix(models): preserve provider prompt cache boundaries",
+    "fix(google): forward Gemini stop sequences",
+    "fix: audit and repair hooks token reuse with Gateway auth",
+    "fix(memory): avoid optional vector status dereference",
+    "fix(memory): force provider-none indexes to FTS-only vectors",
+    "fix(scripts): avoid dead child assignment in fd repro",
+    "fix(memory): initialize provider-none lifecycle during sync",
+    "fix(memory): report provider-none probes as FTS-only",
+    "fix(scripts): avoid spread in runtime output collection",
+    "fix(scripts): clean memory fd temp dirs after preindex failures",
+    "fix(memory): scope provider-none FTS bypass",
+    "fix(scripts): keep watch proof asset copies out of idle window",
+    "fix(memory): keep FTS-only sync offline",
+    "fix(mistral): enable prompt cache keys",
+    "fix(llm): keep OpenAI-compatible reasoning streams active",
+    "fix(agents): gate finalize hooks before delivery",
+    "fix(llm): gate OpenAI-compatible reasoning output"
   ],
   "top_scopes": [
     {
       "scope": "refactor",
-      "count": 109
-    },
-    {
-      "scope": "ui",
-      "count": 84
-    },
-    {
-      "scope": "fix",
-      "count": 57
-    },
-    {
-      "scope": "ci",
-      "count": 32
-    },
-    {
-      "scope": "e2e",
-      "count": 29
-    },
-    {
-      "scope": "agents",
-      "count": 27
-    },
-    {
-      "scope": "test",
-      "count": 26
-    },
-    {
-      "scope": "feat",
-      "count": 20
-    },
-    {
-      "scope": "docs",
-      "count": 18
-    },
-    {
-      "scope": "doctor",
-      "count": 17
+      "count": 65
     },
     {
       "scope": "gateway",
-      "count": 15
+      "count": 31
     },
     {
-      "scope": "codex",
-      "count": 10
+      "scope": "e2e",
+      "count": 25
     },
     {
-      "scope": "release",
-      "count": 9
+      "scope": "fix",
+      "count": 19
     },
     {
       "scope": "scripts",
-      "count": 8
+      "count": 12
     },
     {
-      "scope": "plugins",
+      "scope": "memory",
+      "count": 10
+    },
+    {
+      "scope": "agents",
+      "count": 9
+    },
+    {
+      "scope": "test",
       "count": 7
+    },
+    {
+      "scope": "ci",
+      "count": 7
+    },
+    {
+      "scope": "codex",
+      "count": 6
+    },
+    {
+      "scope": "release",
+      "count": 6
+    },
+    {
+      "scope": "docs",
+      "count": 4
+    },
+    {
+      "scope": "mac",
+      "count": 4
+    },
+    {
+      "scope": "ci(release)",
+      "count": 4
+    },
+    {
+      "scope": "update",
+      "count": 3
     }
   ]
 }
