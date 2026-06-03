@@ -1,99 +1,99 @@
 {
-  "generatedAt": "2026-06-02T23:51:24.346521+08:00",
+  "generatedAt": "2026-06-04T00:09:34.536274+08:00",
   "window": {
-    "start_local": "2026-06-01T23:51:24.346521+08:00",
-    "end_local": "2026-06-02T23:51:24.346521+08:00",
-    "start_utc": "2026-06-01T15:51:24Z",
-    "end_utc": "2026-06-02T15:51:24Z"
+    "start_local": "2026-06-03T00:09:34.536274+08:00",
+    "end_local": "2026-06-04T00:09:34.536274+08:00",
+    "start_utc": "2026-06-02T16:09:34Z",
+    "end_utc": "2026-06-03T16:09:34Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 376216,
-    "forks": 78602,
-    "open_issues": 7100,
-    "pushed_at": "2026-06-02T15:49:00Z"
+    "stars": 376504,
+    "forks": 78659,
+    "open_issues": 7318,
+    "pushed_at": "2026-06-03T16:08:58Z"
   },
   "summary": {
-    "commitCount": 268,
+    "commitCount": 150,
     "releaseCount": 1,
     "stableReleaseCount": 0,
     "betaReleaseCount": 1,
-    "stars": 376216,
-    "forks": 78602,
-    "openIssues": 7100
+    "stars": 376504,
+    "forks": 78659,
+    "openIssues": 7318
   },
   "releases": [
     {
-      "tag_name": "v2026.6.1-beta.2",
-      "published_at": "2026-06-01T21:56:19Z",
-      "name": "openclaw 2026.6.1-beta.2",
+      "tag_name": "v2026.6.1-beta.3",
+      "published_at": "2026-06-03T09:16:02Z",
+      "name": "openclaw 2026.6.1-beta.3",
       "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.1-beta.2"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.1-beta.3"
     }
   ],
   "featureItems": [
-    "Skills: let proposals carry approved support files under standard skill folders, with scanner, hash, and rollback safeguards. Thanks @shakkernerd. [v2026.6.1-beta.2]",
-    "Skills: add Skill Workshop with pending proposals, CLI/Gateway review actions, rollback metadata, and the `skill_workshop` agent tool. Thanks @shakkernerd. [v2026.6.1-beta.2]",
-    "Skill Workshop: add the Control UI navigation, styled dashboard, proposal today view, revision dialog, file preview modal, searchable preview files, reusable session handoff, and localized strings. [v2026.6.1-beta.2]",
-    "iOS: add hosted push relay defaults, realtime Talk playback, and a guarded WebSocket ping path for more reliable mobile sessions. (#88096, #88105, #88231) [v2026.6.1-beta.2]",
-    "iOS: support native iPad display layouts. [v2026.6.1-beta.2]",
-    "Workboard: add orchestration primitives and agent coordination tools for multi-agent planning and run tracking. (#87469) [v2026.6.1-beta.2]",
-    "Code mode: add internal namespaces for scoped agent/global sessions and exact namespace tool dispatch. (#88043) [v2026.6.1-beta.2]",
-    "Code mode: add MCP API files and docs for code-mode integrations. [v2026.6.1-beta.2]"
+    "Skills: let proposals carry approved support files under standard skill folders, with scanner, hash, and rollback safeguards. Thanks @shakkernerd. [v2026.6.1-beta.3]",
+    "Skills: add Skill Workshop with pending proposals, CLI/Gateway review actions, rollback metadata, and the `skill_workshop` agent tool. Thanks @shakkernerd. [v2026.6.1-beta.3]",
+    "Skill Workshop: add the Control UI navigation, styled dashboard, proposal today view, revision dialog, file preview modal, searchable preview files, reusable session handoff, and localized strings. [v2026.6.1-beta.3]",
+    "iOS: add hosted push relay defaults, realtime Talk playback, and a guarded WebSocket ping path for more reliable mobile sessions. (#88096, #88105, #88231) [v2026.6.1-beta.3]",
+    "iOS: support native iPad display layouts. [v2026.6.1-beta.3]",
+    "Workboard: add orchestration primitives and agent coordination tools for multi-agent planning and run tracking. (#87469) [v2026.6.1-beta.3]",
+    "Code mode: add internal namespaces for scoped agent/global sessions and exact namespace tool dispatch. (#88043) [v2026.6.1-beta.3]",
+    "Code mode: add MCP API files and docs for code-mode integrations. [v2026.6.1-beta.3]"
   ],
   "fixItems": [
-    "Cron: keep update delivery validation scoped, harden restart state, and retire MCP runtimes on isolated cron cleanup. [v2026.6.1-beta.2]",
-    "Memory: serialize QMD update/embed writes per store, reduce Linux watcher fan-out, retry transient FileProvider-backed reads, preserve phase signals on read errors, harden envelope metadata sanitization, reattach Linux native watchers when directories are recreated, and rewrite generated transcript paths on rollover so memory/search state survives concurrent gateway and CLI activity. (#66339, #85931, #89185, #89188, #85351) Thanks @openperf, @amittell, @RomneyDa, and @NianJiuZst. [v2026.6.1-beta.2]",
-    "Security/config parsing: reject unsafe OAuth/token lifetimes, retry-after delays, inbound timestamps, response body sizes, command timeout config, sandbox observer token TTLs, and gateway WebSocket calls after close. [v2026.6.1-beta.2]",
-    "Gateway/session state: list commands from the Gateway plugin registry, harden MCP loopback tool schemas, hide phantom agent-store rows from `sessions.list`, make task persistence failures explicit, and carry session UUIDs on interactive dispatch events. [v2026.6.1-beta.2]",
-    "Performance: prebuild QA runtime probes with generated plugin assets but without CLI startup metadata. [v2026.6.1-beta.2]",
-    "Performance: skip declaration bundling for runtime-only CLI startup and gateway watch build profiles. [v2026.6.1-beta.2]",
-    "Performance: reuse prepared provider handles, strict tool schemas, gateway runtime metadata, session maintenance config, plugin metadata, bundled skill allowlists, package-local plugin artifacts, single-entry store writes, and validated/serialized session prompt blobs. [v2026.6.1-beta.2]",
-    "fix(test): stabilize ARM extension timer tests"
+    "Cron: keep update delivery validation scoped, harden restart state, and retire MCP runtimes on isolated cron cleanup. [v2026.6.1-beta.3]",
+    "Memory: serialize QMD update/embed writes per store, reduce Linux watcher fan-out, retry transient FileProvider-backed reads, preserve phase signals on read errors, harden envelope metadata sanitization, reattach Linux native watchers when directories are recreated, and rewrite generated transcript paths on rollover so memory/search state survives concurrent gateway and CLI activity. (#66339, #85931, #89185, #89188, #85351) Thanks @openperf, @amittell, @RomneyDa, and @NianJiuZst. [v2026.6.1-beta.3]",
+    "Security/config parsing: reject unsafe OAuth/token lifetimes, retry-after delays, inbound timestamps, response body sizes, command timeout config, sandbox observer token TTLs, and gateway WebSocket calls after close. [v2026.6.1-beta.3]",
+    "Gateway/session state: list commands from the Gateway plugin registry, harden MCP loopback tool schemas, hide phantom agent-store rows from `sessions.list`, make task persistence failures explicit, and carry session UUIDs on interactive dispatch events. [v2026.6.1-beta.3]",
+    "Performance: prebuild QA runtime probes with generated plugin assets but without CLI startup metadata. [v2026.6.1-beta.3]",
+    "Performance: skip declaration bundling for runtime-only CLI startup and gateway watch build profiles. [v2026.6.1-beta.3]",
+    "Performance: reuse prepared provider handles, strict tool schemas, gateway runtime metadata, session maintenance config, plugin metadata, bundled skill allowlists, package-local plugin artifacts, single-entry store writes, and validated/serialized session prompt blobs. [v2026.6.1-beta.3]",
+    "fix(testing): route source targets through test planner"
   ],
   "topScopes": [
-    {
-      "scope": "refactor",
-      "count": 65
-    },
-    {
-      "scope": "gateway",
-      "count": 31
-    },
     {
       "scope": "e2e",
       "count": 25
     },
     {
-      "scope": "fix",
-      "count": 19
-    },
-    {
-      "scope": "scripts",
-      "count": 12
-    },
-    {
-      "scope": "memory",
-      "count": 10
-    },
-    {
-      "scope": "agents",
-      "count": 9
+      "scope": "ui",
+      "count": 15
     },
     {
       "scope": "test",
+      "count": 14
+    },
+    {
+      "scope": "telegram",
+      "count": 11
+    },
+    {
+      "scope": "tooling",
+      "count": 9
+    },
+    {
+      "scope": "scripts",
       "count": 7
+    },
+    {
+      "scope": "ci",
+      "count": 7
+    },
+    {
+      "scope": "gateway",
+      "count": 6
     }
   ],
   "headlineCommits": [
-    "test(gateway): defer sidecars in tools invoke e2e",
-    "fix(test): stabilize ARM extension timer tests",
-    "fix: recover suspicious gateway startup configs (#89480)",
-    "fix(kimi): strip anthropic cache markers",
-    "fix: restore Skill Workshop view switcher",
-    "docs(changelog): note update repair stall handling",
-    "fix(update): keep plugin repair fetch failures nonblocking",
-    "fix(test): isolate gateway CPU QA state"
+    "fix(testing): route source targets through test planner",
+    "fix(canvas): restore A2UI compatibility assets",
+    "fix(gateway): cancel stop terminate fallback",
+    "test(plugins): anchor provider family inventory to source roots",
+    "test(ui): defer control ui vite import",
+    "fix(scripts): guard codex protocol generation disk headroom",
+    "fix(e2e): fail timed rpc commands",
+    "test(canvas): cover A2UI static asset compatibility"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 }
