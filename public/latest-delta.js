@@ -1,99 +1,106 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-06-04T00:09:34.536274+08:00",
+  "generatedAt": "2026-06-04T22:26:41.590592+08:00",
   "window": {
-    "start_local": "2026-06-03T00:09:34.536274+08:00",
-    "end_local": "2026-06-04T00:09:34.536274+08:00",
-    "start_utc": "2026-06-02T16:09:34Z",
-    "end_utc": "2026-06-03T16:09:34Z"
+    "start_local": "2026-06-03T22:26:41.590592+08:00",
+    "end_local": "2026-06-04T22:26:41.590592+08:00",
+    "start_utc": "2026-06-03T14:26:41Z",
+    "end_utc": "2026-06-04T14:26:41Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 376504,
-    "forks": 78659,
-    "open_issues": 7318,
-    "pushed_at": "2026-06-03T16:08:58Z"
+    "stars": 376767,
+    "forks": 78733,
+    "open_issues": 7606,
+    "pushed_at": "2026-06-04T14:26:37Z"
   },
   "summary": {
-    "commitCount": 150,
-    "releaseCount": 1,
-    "stableReleaseCount": 0,
+    "commitCount": 562,
+    "releaseCount": 2,
+    "stableReleaseCount": 1,
     "betaReleaseCount": 1,
-    "stars": 376504,
-    "forks": 78659,
-    "openIssues": 7318
+    "stars": 376767,
+    "forks": 78733,
+    "openIssues": 7606
   },
   "releases": [
     {
-      "tag_name": "v2026.6.1-beta.3",
-      "published_at": "2026-06-03T09:16:02Z",
-      "name": "openclaw 2026.6.1-beta.3",
+      "tag_name": "v2026.6.2-beta.1",
+      "published_at": "2026-06-03T23:46:41Z",
+      "name": "openclaw 2026.6.2-beta.1",
       "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.1-beta.3"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.2-beta.1"
+    },
+    {
+      "tag_name": "v2026.6.1",
+      "published_at": "2026-06-03T19:35:12Z",
+      "name": "openclaw 2026.6.1",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.1"
     }
   ],
   "featureItems": [
-    "Skills: let proposals carry approved support files under standard skill folders, with scanner, hash, and rollback safeguards. Thanks @shakkernerd. [v2026.6.1-beta.3]",
-    "Skills: add Skill Workshop with pending proposals, CLI/Gateway review actions, rollback metadata, and the `skill_workshop` agent tool. Thanks @shakkernerd. [v2026.6.1-beta.3]",
-    "Skill Workshop: add the Control UI navigation, styled dashboard, proposal today view, revision dialog, file preview modal, searchable preview files, reusable session handoff, and localized strings. [v2026.6.1-beta.3]",
-    "iOS: add hosted push relay defaults, realtime Talk playback, and a guarded WebSocket ping path for more reliable mobile sessions. (#88096, #88105, #88231) [v2026.6.1-beta.3]",
-    "iOS: support native iPad display layouts. [v2026.6.1-beta.3]",
-    "Workboard: add orchestration primitives and agent coordination tools for multi-agent planning and run tracking. (#87469) [v2026.6.1-beta.3]",
-    "Code mode: add internal namespaces for scoped agent/global sessions and exact namespace tool dispatch. (#88043) [v2026.6.1-beta.3]",
-    "Code mode: add MCP API files and docs for code-mode integrations. [v2026.6.1-beta.3]"
+    "Policy: add data-handling conformance checks and reject unsupported policy keys. (#87056, #87074) Thanks @giodl73-repo. [v2026.6.2-beta.1]",
+    "UI/mobile: add Workboard keyboard movement controls, tighten Workboard card operations, improve Android companion-first shell UX, and document chat ACK timing metadata. (#89802) Thanks @vincentkoc. [v2026.6.2-beta.1]",
+    "Skills: let proposals carry approved support files under standard skill folders, with scanner, hash, and rollback safeguards. Thanks @shakkernerd. [v2026.6.1]",
+    "Skills: add Skill Workshop with pending proposals, CLI/Gateway review actions, rollback metadata, and the `skill_workshop` agent tool. Thanks @shakkernerd. [v2026.6.1]",
+    "Skill Workshop: add the Control UI navigation, styled dashboard, proposal today view, revision dialog, file preview modal, searchable preview files, reusable session handoff, and localized strings. [v2026.6.1]",
+    "iOS: add hosted push relay defaults, realtime Talk playback, and a guarded WebSocket ping path for more reliable mobile sessions. (#88096, #88105, #88231) [v2026.6.1]",
+    "iOS: support native iPad display layouts. [v2026.6.1]",
+    "Workboard: add orchestration primitives and agent coordination tools for multi-agent planning and run tracking. (#87469) [v2026.6.1]"
   ],
   "fixItems": [
-    "Cron: keep update delivery validation scoped, harden restart state, and retire MCP runtimes on isolated cron cleanup. [v2026.6.1-beta.3]",
-    "Memory: serialize QMD update/embed writes per store, reduce Linux watcher fan-out, retry transient FileProvider-backed reads, preserve phase signals on read errors, harden envelope metadata sanitization, reattach Linux native watchers when directories are recreated, and rewrite generated transcript paths on rollover so memory/search state survives concurrent gateway and CLI activity. (#66339, #85931, #89185, #89188, #85351) Thanks @openperf, @amittell, @RomneyDa, and @NianJiuZst. [v2026.6.1-beta.3]",
-    "Security/config parsing: reject unsafe OAuth/token lifetimes, retry-after delays, inbound timestamps, response body sizes, command timeout config, sandbox observer token TTLs, and gateway WebSocket calls after close. [v2026.6.1-beta.3]",
-    "Gateway/session state: list commands from the Gateway plugin registry, harden MCP loopback tool schemas, hide phantom agent-store rows from `sessions.list`, make task persistence failures explicit, and carry session UUIDs on interactive dispatch events. [v2026.6.1-beta.3]",
-    "Performance: prebuild QA runtime probes with generated plugin assets but without CLI startup metadata. [v2026.6.1-beta.3]",
-    "Performance: skip declaration bundling for runtime-only CLI startup and gateway watch build profiles. [v2026.6.1-beta.3]",
-    "Performance: reuse prepared provider handles, strict tool schemas, gateway runtime metadata, session maintenance config, plugin metadata, bundled skill allowlists, package-local plugin artifacts, single-entry store writes, and validated/serialized session prompt blobs. [v2026.6.1-beta.3]",
-    "fix(testing): route source targets through test planner"
+    "Chat/UI/Gateway: preserve visible chat stream text, clear stale stream buffers before terminal commits, reconcile completed sends, scroll pending sends into view, harden Workboard dialog accessibility, stabilize WebChat prompt-cache affinity, overlap chat catalog startup, render chat history incrementally, lazy-load usage dashboard, and report gateway health auth diagnostics. (#89337) Thanks @RomneyDa. [v2026.6.2-beta.1]",
+    "Security/config/tooling: reject corrupt shell snapshots, suspicious gateway startup configs, malformed release/test/tooling/Docker/perf numeric limits, oversized audit responses, unsafe exec precheck env, and invalid pending-agent SQLite scaffold denials. (#89701, #89705, #89480, #81488) Thanks @RomneyDa and @mmaps. [v2026.6.2-beta.1]",
+    "Release/CI/E2E: restore package changelog extraction after the post-2026.6.1 version bump, keep hydrated pnpm modules under `node_modules` for ARM/Linux package lifecycle scripts, keep OpenAI live-cache prerequisites advisory while Anthropic prerequisites stay blocking, retry Windows Parallels background log appends on transient file-lock errors, bound candidate GitHub and cross-OS Discord fetches, harden ARM smoke/browser checks, show Docker build heartbeats, reset Crabbox pnpm hydrate state, and isolate Testbox/Docker/release journey artifacts. [v2026.6.2-beta.1]",
+    "Cron: keep update delivery validation scoped, harden restart state, and retire MCP runtimes on isolated cron cleanup. [v2026.6.1]",
+    "Memory: serialize QMD update/embed writes per store, reduce Linux watcher fan-out, retry transient FileProvider-backed reads, preserve phase signals on read errors, harden envelope metadata sanitization, reattach Linux native watchers when directories are recreated, and rewrite generated transcript paths on rollover so memory/search state survives concurrent gateway and CLI activity. (#66339, #85931, #89185, #89188, #85351) Thanks @openperf, @amittell, @RomneyDa, and @NianJiuZst. [v2026.6.1]",
+    "Security/config parsing: reject unsafe OAuth/token lifetimes, retry-after delays, inbound timestamps, response body sizes, command timeout config, sandbox observer token TTLs, and gateway WebSocket calls after close. [v2026.6.1]",
+    "Gateway/session state: list commands from the Gateway plugin registry, harden MCP loopback tool schemas, hide phantom agent-store rows from `sessions.list`, make task persistence failures explicit, and carry session UUIDs on interactive dispatch events. [v2026.6.1]",
+    "Performance: prebuild QA runtime probes with generated plugin assets but without CLI startup metadata. [v2026.6.1]"
   ],
   "topScopes": [
     {
-      "scope": "e2e",
-      "count": 25
+      "scope": "docs",
+      "count": 428
     },
     {
-      "scope": "ui",
-      "count": 15
+      "scope": "e2e",
+      "count": 20
+    },
+    {
+      "scope": "fix",
+      "count": 13
+    },
+    {
+      "scope": "acp",
+      "count": 10
+    },
+    {
+      "scope": "release",
+      "count": 7
     },
     {
       "scope": "test",
-      "count": 14
-    },
-    {
-      "scope": "telegram",
-      "count": 11
-    },
-    {
-      "scope": "tooling",
-      "count": 9
-    },
-    {
-      "scope": "scripts",
       "count": 7
     },
     {
-      "scope": "ci",
-      "count": 7
+      "scope": "agents",
+      "count": 6
     },
     {
-      "scope": "gateway",
+      "scope": "changelog",
       "count": 6
     }
   ],
   "headlineCommits": [
-    "fix(testing): route source targets through test planner",
-    "fix(canvas): restore A2UI compatibility assets",
-    "fix(gateway): cancel stop terminate fallback",
-    "test(plugins): anchor provider family inventory to source roots",
-    "test(ui): defer control ui vite import",
-    "fix(scripts): guard codex protocol generation disk headroom",
-    "fix(e2e): fail timed rpc commands",
-    "test(canvas): cover A2UI static asset compatibility"
+    "docs: document channel utility helpers",
+    "docs: document session web tools",
+    "docs: document media session tools",
+    "docs: document built-in tool helpers",
+    "docs: document tool utility helpers",
+    "docs: document subagent registry helpers",
+    "docs: document subagent helpers",
+    "docs: document session tools"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
