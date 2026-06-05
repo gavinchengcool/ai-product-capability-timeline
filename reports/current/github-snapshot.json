@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-04T22:26:41.590592+08:00",
+  "generated_at": "2026-06-05T22:16:24.105470+08:00",
   "repo": {
     "slug": "openclaw/openclaw",
     "created_at": "2025-11-24T10:16:47Z",
-    "pushed_at": "2026-06-04T14:26:37Z",
-    "stars": 376767,
-    "forks": 78733,
-    "open_issues": 7606,
+    "pushed_at": "2026-06-05T13:37:35Z",
+    "stars": 377026,
+    "forks": 78784,
+    "open_issues": 7772,
     "default_branch": "main"
   },
   "latest_stable_release": {

@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-06-04T22:26:58+08:00
-- Requested window: 2026-06-03 to 2026-06-04
+- Generated at: 2026-06-05T22:16:41+08:00
+- Requested window: 2026-06-04 to 2026-06-05
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,28 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-06-03 to 2026-06-04
-- Generated at: 2026-06-04T22:26:41.590592+08:00
-- 窗口: 2026-06-03 至 2026-06-04
-- GitHub 增量: 562 commits / 2 releases
-- 最近 push: 2026-06-04
+- Window: 2026-06-04 to 2026-06-05
+- Generated at: 2026-06-05T22:16:24.105470+08:00
+- 窗口: 2026-06-04 至 2026-06-05
+- GitHub 增量: 545 commits / 0 releases
+- 最近 push: 2026-06-05
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Policy: add data-handling conformance checks and reject unsupported policy keys. (#87056, #87074) Thanks @giodl73-repo. [v2026.6.2-beta.1]
-  - UI/mobile: add Workboard keyboard movement controls, tighten Workboard card operations, improve Android companion-first shell UX, and document chat ACK timing metadata. (#89802) Thanks @vincentkoc. [v2026.6.2-beta.1]
-  - Skills: let proposals carry approved support files under standard skill folders, with scanner, hash, and rollback safeguards. Thanks @shakkernerd. [v2026.6.1]
-  - Skills: add Skill Workshop with pending proposals, CLI/Gateway review actions, rollback metadata, and the `skill_workshop` agent tool. Thanks @shakkernerd. [v2026.6.1]
-  - Skill Workshop: add the Control UI navigation, styled dashboard, proposal today view, revision dialog, file preview modal, searchable preview files, reusable session handoff, and localized strings. [v2026.6.1]
-  - iOS: add hosted push relay defaults, realtime Talk playback, and a guarded WebSocket ping path for more reliable mobile sessions. (#88096, #88105, #88231) [v2026.6.1]
-  - iOS: support native iPad display layouts. [v2026.6.1]
-  - Workboard: add orchestration primitives and agent coordination tools for multi-agent planning and run tracking. (#87469) [v2026.6.1]
+  - Add Codex multi-agent migration coverage (#90317)
+  - feat(googlechat): add native approval cards
+  - feat(memory): support qmd query rerank toggle
+  - feat: install GitHub-backed ClawHub skills (#90478)
+  - feat(nvidia): default to nemotron ultra
 - Fixes and constraints:
-  - Chat/UI/Gateway: preserve visible chat stream text, clear stale stream buffers before terminal commits, reconcile completed sends, scroll pending sends into view, harden Workboard dialog accessibility, stabilize WebChat prompt-cache affinity, overlap chat catalog startup, render chat history incrementally, lazy-load usage dashboard, and report gateway health auth diagnostics. (#89337) Thanks @RomneyDa. [v2026.6.2-beta.1]
-  - Security/config/tooling: reject corrupt shell snapshots, suspicious gateway startup configs, malformed release/test/tooling/Docker/perf numeric limits, oversized audit responses, unsafe exec precheck env, and invalid pending-agent SQLite scaffold denials. (#89701, #89705, #89480, #81488) Thanks @RomneyDa and @mmaps. [v2026.6.2-beta.1]
-  - Release/CI/E2E: restore package changelog extraction after the post-2026.6.1 version bump, keep hydrated pnpm modules under `node_modules` for ARM/Linux package lifecycle scripts, keep OpenAI live-cache prerequisites advisory while Anthropic prerequisites stay blocking, retry Windows Parallels background log appends on transient file-lock errors, bound candidate GitHub and cross-OS Discord fetches, harden ARM smoke/browser checks, show Docker build heartbeats, reset Crabbox pnpm hydrate state, and isolate Testbox/Docker/release journey artifacts. [v2026.6.2-beta.1]
-  - Cron: keep update delivery validation scoped, harden restart state, and retire MCP runtimes on isolated cron cleanup. [v2026.6.1]
-  - Memory: serialize QMD update/embed writes per store, reduce Linux watcher fan-out, retry transient FileProvider-backed reads, preserve phase signals on read errors, harden envelope metadata sanitization, reattach Linux native watchers when directories are recreated, and rewrite generated transcript paths on rollover so memory/search state survives concurrent gateway and CLI activity. (#66339, #85931, #89185, #89188, #85351) Thanks @openperf, @amittell, @RomneyDa, and @NianJiuZst. [v2026.6.1]
-  - Security/config parsing: reject unsafe OAuth/token lifetimes, retry-after delays, inbound timestamps, response body sizes, command timeout config, sandbox observer token TTLs, and gateway WebSocket calls after close. [v2026.6.1]
-  - Gateway/session state: list commands from the Gateway plugin registry, harden MCP loopback tool schemas, hide phantom agent-store rows from `sessions.list`, make task persistence failures explicit, and carry session UUIDs on interactive dispatch events. [v2026.6.1]
-  - Performance: prebuild QA runtime probes with generated plugin assets but without CLI startup metadata. [v2026.6.1]
+  - fix(sessions): mark transcript rewrites in registry
+  - fix(sessions): keep transcript append result discriminant
+  - fix(sessions): cover terminal transcript markers
+  - fix(sessions): reconcile stale terminal main transcripts
+  - fix(gateway): share codex model visibility
+  - fix(gateway): fail closed for unknown model auth
+  - fix(android): surface expiring providers in palette
+  - fix(android): show unavailable model rows as attention
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
