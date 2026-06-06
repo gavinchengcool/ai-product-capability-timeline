@@ -1211,5 +1211,18 @@ window.OPENCLAW_HEATMAP_INCREMENTAL_ROWS = [
     },
     "source": "daily-incremental",
     "generatedAt": "2026-06-05T22:16:24.105470+08:00"
+  },
+  {
+    "date": "2026-06-06",
+    "stage": "openclaw",
+    "summary": "移动端入口、gateway / 会话控制面继续增强，最近一天的增量也并入主矩阵。",
+    "axisEntries": {
+      "models": "",
+      "devices": "Android settings UI、dark theme 和扫码体验继续迭代。 iOS onboarding welcome pager 进入主线。",
+      "control": "Gateway health monitor、pairing 与 watch 链路继续打磨。 Session / plugin 路由与配置基线继续收敛。",
+      "security": ""
+    },
+    "source": "daily-incremental",
+    "generatedAt": "2026-06-06T21:01:31.719137+08:00"
   }
 ];

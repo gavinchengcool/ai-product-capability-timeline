@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-06-05T22:16:41+08:00
-- Requested window: 2026-06-04 to 2026-06-05
+- Generated at: 2026-06-06T21:01:49+08:00
+- Requested window: 2026-06-05 to 2026-06-06
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,28 +10,30 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-06-04 to 2026-06-05
-- Generated at: 2026-06-05T22:16:24.105470+08:00
-- 窗口: 2026-06-04 至 2026-06-05
-- GitHub 增量: 545 commits / 0 releases
-- 最近 push: 2026-06-05
+- Window: 2026-06-05 to 2026-06-06
+- Generated at: 2026-06-06T21:01:31.719137+08:00
+- 窗口: 2026-06-05 至 2026-06-06
+- GitHub 增量: 112 commits / 1 releases
+- 最近 push: 2026-06-06
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Add Codex multi-agent migration coverage (#90317)
-  - feat(googlechat): add native approval cards
-  - feat(memory): support qmd query rerank toggle
-  - feat: install GitHub-backed ClawHub skills (#90478)
-  - feat(nvidia): default to nemotron ultra
+  - Search/providers: add the Parallel bundled web-search plugin, live provider tests, registration contracts, onboarding/docs wiring, and guarded `api.parallel.ai/v1/search` support. (#85158) Thanks @NormallyGaussian. [v2026.6.5-beta.1]
+  - Matrix/channels: add voice-message preflight and thread-aware read/reply behavior, including Matrix QA scenario wiring and docs for voice-message behavior. (#78016, #90415) [v2026.6.5-beta.1]
+  - Google Chat/channels: add native approval card actions and click handling so Google Chat approvals use platform-native cards instead of generic message flow. [v2026.6.5-beta.1]
+  - Memory: QMD search can use the new rerank toggle, and memory adapter status uses the resolved default model identity when checking plain status. (#61834) [v2026.6.5-beta.1]
+  - feat(android): brand onboarding welcome screen
+  - feat(parallel): add Parallel as a bundled web_search provider (#85158)
+  - feat(matrix): handle voice preflight and threads (#90415)
 - Fixes and constraints:
-  - fix(sessions): mark transcript rewrites in registry
-  - fix(sessions): keep transcript append result discriminant
-  - fix(sessions): cover terminal transcript markers
-  - fix(sessions): reconcile stale terminal main transcripts
-  - fix(gateway): share codex model visibility
-  - fix(gateway): fail closed for unknown model auth
-  - fix(android): surface expiring providers in palette
-  - fix(android): show unavailable model rows as attention
+  - Security/config/tooling: guard MCP HTTP redirects, protect global agent config defaults, and keep release/test/tooling proof failures bounded and explicit. (#89732, #90145) [v2026.6.5-beta.1]
+  - fix(talk): resolve realtime provider secret refs (#90914)
+  - fix(memory): fail fast when embeddings provider is unavailable
+  - fix(agents): keep safe tool images without native backend
+  - fix(agents): emit terminal abort lifecycle metadata
+  - fix(android): clarify nearby gateway discovery state
+  - fix(android): show configured provider readiness
+  - fix(android): reconnect saved gateway after disconnect
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
