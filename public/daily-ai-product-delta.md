@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-06-06T21:01:49+08:00
-- Requested window: 2026-06-05 to 2026-06-06
+- Generated at: 2026-06-07T21:14:08+08:00
+- Requested window: 2026-06-06 to 2026-06-07
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,30 +10,29 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-06-05 to 2026-06-06
-- Generated at: 2026-06-06T21:01:31.719137+08:00
-- 窗口: 2026-06-05 至 2026-06-06
-- GitHub 增量: 112 commits / 1 releases
-- 最近 push: 2026-06-06
+- Window: 2026-06-06 to 2026-06-07
+- Generated at: 2026-06-07T21:13:49.125106+08:00
+- 窗口: 2026-06-06 至 2026-06-07
+- GitHub 增量: 346 commits / 1 releases
+- 最近 push: 2026-06-07
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Search/providers: add the Parallel bundled web-search plugin, live provider tests, registration contracts, onboarding/docs wiring, and guarded `api.parallel.ai/v1/search` support. (#85158) Thanks @NormallyGaussian. [v2026.6.5-beta.1]
-  - Matrix/channels: add voice-message preflight and thread-aware read/reply behavior, including Matrix QA scenario wiring and docs for voice-message behavior. (#78016, #90415) [v2026.6.5-beta.1]
-  - Google Chat/channels: add native approval card actions and click handling so Google Chat approvals use platform-native cards instead of generic message flow. [v2026.6.5-beta.1]
-  - Memory: QMD search can use the new rerank toggle, and memory adapter status uses the resolved default model identity when checking plain status. (#61834) [v2026.6.5-beta.1]
-  - feat(android): brand onboarding welcome screen
-  - feat(parallel): add Parallel as a bundled web_search provider (#85158)
-  - feat(matrix): handle voice preflight and threads (#90415)
+  - Search/providers: add the Parallel bundled web-search plugin, live provider tests, registration contracts, onboarding/docs wiring, and guarded `api.parallel.ai/v1/search` support. (#85158) Thanks @NormallyGaussian. [v2026.6.5-beta.2]
+  - Matrix/channels: add voice-message preflight and thread-aware read/reply behavior, including Matrix QA scenario wiring and docs for voice-message behavior. (#78016, #90415) [v2026.6.5-beta.2]
+  - Google Chat/channels: add native approval card actions and click handling so Google Chat approvals use platform-native cards instead of generic message flow. [v2026.6.5-beta.2]
+  - Memory: QMD search can use the new rerank toggle, and memory adapter status uses the resolved default model identity when checking plain status. (#61834) [v2026.6.5-beta.2]
+  - feat(parallel): add free Parallel Search MCP as the zero-config default web_search provider (#90849)
+  - [codex] Add iOS Apple Review demo mode (#90919)
 - Fixes and constraints:
-  - Security/config/tooling: guard MCP HTTP redirects, protect global agent config defaults, and keep release/test/tooling proof failures bounded and explicit. (#89732, #90145) [v2026.6.5-beta.1]
-  - fix(talk): resolve realtime provider secret refs (#90914)
-  - fix(memory): fail fast when embeddings provider is unavailable
-  - fix(agents): keep safe tool images without native backend
-  - fix(agents): emit terminal abort lifecycle metadata
-  - fix(android): clarify nearby gateway discovery state
-  - fix(android): show configured provider readiness
-  - fix(android): reconnect saved gateway after disconnect
+  - Security/config/tooling: guard MCP HTTP redirects, protect global agent config defaults, and keep release/test/tooling proof failures bounded and explicit. (#89732, #90145) [v2026.6.5-beta.2]
+  - fix(e2e): bound release user journey JSON artifacts
+  - fix(inbound-meta): preserve reply-context body tails
+  - fix(e2e): bound release scenario JSON artifacts
+  - fix(e2e): bound browser snapshot diagnostics
+  - fix(infra/agents): session-routing guard for coalesced gateway restart continuations (#86742) (#87323)
+  - fix(tooling): bound extension boundary source reads
+  - fix(e2e): cancel timed out response reads
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
