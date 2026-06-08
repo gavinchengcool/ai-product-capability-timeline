@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-06-07T21:14:08+08:00
-- Requested window: 2026-06-06 to 2026-06-07
+- Generated at: 2026-06-08T23:21:21+08:00
+- Requested window: 2026-06-07 to 2026-06-08
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,29 +10,28 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-06-06 to 2026-06-07
-- Generated at: 2026-06-07T21:13:49.125106+08:00
-- 窗口: 2026-06-06 至 2026-06-07
-- GitHub 增量: 346 commits / 1 releases
-- 最近 push: 2026-06-07
+- Window: 2026-06-07 to 2026-06-08
+- Generated at: 2026-06-08T23:21:06.509568+08:00
+- 窗口: 2026-06-07 至 2026-06-08
+- GitHub 增量: 60 commits / 0 releases
+- 最近 push: 2026-06-08
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Search/providers: add the Parallel bundled web-search plugin, live provider tests, registration contracts, onboarding/docs wiring, and guarded `api.parallel.ai/v1/search` support. (#85158) Thanks @NormallyGaussian. [v2026.6.5-beta.2]
-  - Matrix/channels: add voice-message preflight and thread-aware read/reply behavior, including Matrix QA scenario wiring and docs for voice-message behavior. (#78016, #90415) [v2026.6.5-beta.2]
-  - Google Chat/channels: add native approval card actions and click handling so Google Chat approvals use platform-native cards instead of generic message flow. [v2026.6.5-beta.2]
-  - Memory: QMD search can use the new rerank toggle, and memory adapter status uses the resolved default model identity when checking plain status. (#61834) [v2026.6.5-beta.2]
-  - feat(parallel): add free Parallel Search MCP as the zero-config default web_search provider (#90849)
-  - [codex] Add iOS Apple Review demo mode (#90919)
+  - feat(cron): support command jobs
+  - feat(whatsapp): expand live QA coverage (#90480)
+  - feat(android): add theme mode selection (#90752)
+  - feat: add live provider model catalog helper
+  - feat(ios): clarify talk realtime fallback (#91201)
 - Fixes and constraints:
-  - Security/config/tooling: guard MCP HTTP redirects, protect global agent config defaults, and keep release/test/tooling proof failures bounded and explicit. (#89732, #90145) [v2026.6.5-beta.2]
-  - fix(e2e): bound release user journey JSON artifacts
-  - fix(inbound-meta): preserve reply-context body tails
-  - fix(e2e): bound release scenario JSON artifacts
-  - fix(e2e): bound browser snapshot diagnostics
-  - fix(infra/agents): session-routing guard for coalesced gateway restart continuations (#86742) (#87323)
-  - fix(tooling): bound extension boundary source reads
-  - fix(e2e): cancel timed out response reads
+  - fix(agents): retry post-tool empty replies
+  - fix: normalize Codex dynamic tool progress results
+  - fix(memory): rebuild missing index metadata safely
+  - fix(memory): keep FTS keyword search model agnostic
+  - fix(memory-core): preserve sqlite-vec table on unsafe reindex
+  - fix(memory): fall back to sqlite-vec platform variant
+  - fix(android): use connected device foreground service
+  - fix(android): avoid data sync fgs for node service
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

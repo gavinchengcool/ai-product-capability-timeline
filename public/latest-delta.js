@@ -1,97 +1,88 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-06-07T21:13:49.125106+08:00",
+  "generatedAt": "2026-06-08T23:21:06.509568+08:00",
   "window": {
-    "start_local": "2026-06-06T21:13:49.125106+08:00",
-    "end_local": "2026-06-07T21:13:49.125106+08:00",
-    "start_utc": "2026-06-06T13:13:49Z",
-    "end_utc": "2026-06-07T13:13:49Z"
+    "start_local": "2026-06-07T23:21:06.509568+08:00",
+    "end_local": "2026-06-08T23:21:06.509568+08:00",
+    "start_utc": "2026-06-07T15:21:06Z",
+    "end_utc": "2026-06-08T15:21:06Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 377364,
-    "forks": 78891,
-    "open_issues": 7835,
-    "pushed_at": "2026-06-07T11:37:47Z"
+    "stars": 377581,
+    "forks": 78942,
+    "open_issues": 7933,
+    "pushed_at": "2026-06-08T15:19:00Z"
   },
   "summary": {
-    "commitCount": 346,
-    "releaseCount": 1,
+    "commitCount": 60,
+    "releaseCount": 0,
     "stableReleaseCount": 0,
-    "betaReleaseCount": 1,
-    "stars": 377364,
-    "forks": 78891,
-    "openIssues": 7835
+    "betaReleaseCount": 0,
+    "stars": 377581,
+    "forks": 78942,
+    "openIssues": 7933
   },
-  "releases": [
-    {
-      "tag_name": "v2026.6.5-beta.2",
-      "published_at": "2026-06-07T00:26:39Z",
-      "name": "openclaw 2026.6.5-beta.2",
-      "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.5-beta.2"
-    }
-  ],
+  "releases": [],
   "featureItems": [
-    "Search/providers: add the Parallel bundled web-search plugin, live provider tests, registration contracts, onboarding/docs wiring, and guarded `api.parallel.ai/v1/search` support. (#85158) Thanks @NormallyGaussian. [v2026.6.5-beta.2]",
-    "Matrix/channels: add voice-message preflight and thread-aware read/reply behavior, including Matrix QA scenario wiring and docs for voice-message behavior. (#78016, #90415) [v2026.6.5-beta.2]",
-    "Google Chat/channels: add native approval card actions and click handling so Google Chat approvals use platform-native cards instead of generic message flow. [v2026.6.5-beta.2]",
-    "Memory: QMD search can use the new rerank toggle, and memory adapter status uses the resolved default model identity when checking plain status. (#61834) [v2026.6.5-beta.2]",
-    "feat(parallel): add free Parallel Search MCP as the zero-config default web_search provider (#90849)",
-    "[codex] Add iOS Apple Review demo mode (#90919)"
+    "feat(cron): support command jobs",
+    "feat(whatsapp): expand live QA coverage (#90480)",
+    "feat(android): add theme mode selection (#90752)",
+    "feat: add live provider model catalog helper",
+    "feat(ios): clarify talk realtime fallback (#91201)"
   ],
   "fixItems": [
-    "Security/config/tooling: guard MCP HTTP redirects, protect global agent config defaults, and keep release/test/tooling proof failures bounded and explicit. (#89732, #90145) [v2026.6.5-beta.2]",
-    "fix(e2e): bound release user journey JSON artifacts",
-    "fix(inbound-meta): preserve reply-context body tails",
-    "fix(e2e): bound release scenario JSON artifacts",
-    "fix(e2e): bound browser snapshot diagnostics",
-    "fix(infra/agents): session-routing guard for coalesced gateway restart continuations (#86742) (#87323)",
-    "fix(tooling): bound extension boundary source reads",
-    "fix(e2e): cancel timed out response reads"
+    "fix(agents): retry post-tool empty replies",
+    "fix: normalize Codex dynamic tool progress results",
+    "fix(memory): rebuild missing index metadata safely",
+    "fix(memory): keep FTS keyword search model agnostic",
+    "fix(memory-core): preserve sqlite-vec table on unsafe reindex",
+    "fix(memory): fall back to sqlite-vec platform variant",
+    "fix(android): use connected device foreground service",
+    "fix(android): avoid data sync fgs for node service"
   ],
   "topScopes": [
-    {
-      "scope": "test",
-      "count": 98
-    },
-    {
-      "scope": "e2e",
-      "count": 82
-    },
-    {
-      "scope": "ci",
-      "count": 16
-    },
-    {
-      "scope": "qa",
-      "count": 14
-    },
     {
       "scope": "fix",
       "count": 12
     },
     {
-      "scope": "gateway",
-      "count": 12
-    },
-    {
       "scope": "agents",
-      "count": 11
+      "count": 5
     },
     {
-      "scope": "mac",
-      "count": 8
+      "scope": "telegram",
+      "count": 5
+    },
+    {
+      "scope": "memory",
+      "count": 4
+    },
+    {
+      "scope": "android",
+      "count": 4
+    },
+    {
+      "scope": "test",
+      "count": 4
+    },
+    {
+      "scope": "docs",
+      "count": 3
+    },
+    {
+      "scope": "gateway",
+      "count": 3
     }
   ],
   "headlineCommits": [
-    "fix(e2e): bound release user journey JSON artifacts",
-    "fix(inbound-meta): preserve reply-context body tails",
-    "fix(e2e): bound release scenario JSON artifacts",
-    "fix(e2e): bound browser snapshot diagnostics",
-    "fix(infra/agents): session-routing guard for coalesced gateway restart continuations (#86742) (#87323)",
-    "fix(tooling): bound extension boundary source reads",
-    "fix(e2e): cancel timed out response reads",
-    "fix(codex): surface lastToolError on degraded orphan-tool delivery"
+    "fix(agents): retry post-tool empty replies",
+    "docs: add maturity scorecard mirror (#91317)",
+    "fix: normalize Codex dynamic tool progress results",
+    "fix(memory): rebuild missing index metadata safely",
+    "fix(memory): keep FTS keyword search model agnostic",
+    "docs: preserve LINE across localized docs glossaries (#91442)",
+    "fix(memory-core): preserve sqlite-vec table on unsafe reindex",
+    "fix(memory): fall back to sqlite-vec platform variant"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
