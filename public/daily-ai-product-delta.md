@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-06-09T22:14:24+08:00
-- Requested window: 2026-06-08 to 2026-06-09
+- Generated at: 2026-06-10T22:45:36+08:00
+- Requested window: 2026-06-09 to 2026-06-10
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-06-08 to 2026-06-09
-- Generated at: 2026-06-09T22:14:06.978175+08:00
-- 窗口: 2026-06-08 至 2026-06-09
-- GitHub 增量: 175 commits / 3 releases
-- 最近 push: 2026-06-09
+- Window: 2026-06-09 to 2026-06-10
+- Generated at: 2026-06-10T22:45:20.140779+08:00
+- 窗口: 2026-06-09 至 2026-06-10
+- GitHub 增量: 139 commits / 1 releases
+- 最近 push: 2026-06-10
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Search/providers: add the Parallel bundled web-search plugin, live provider tests, registration contracts, onboarding/docs wiring, and guarded `api.parallel.ai/v1/search` support. (#85158) Thanks @NormallyGaussian. [v2026.6.5-beta.6]
-  - Matrix/channels: add voice-message preflight and thread-aware read/reply behavior, including Matrix QA scenario wiring and docs for voice-message behavior. (#78016, #90415) [v2026.6.5-beta.6]
-  - Google Chat/channels: add native approval card actions and click handling so Google Chat approvals use platform-native cards instead of generic message flow. [v2026.6.5-beta.6]
-  - Mobile: Android provider/model screens now surface expiring, unavailable, unresolved, and attention states more clearly, Android adds theme mode selection, and iOS settings and Talk tabs keep diagnostics, gateway rows, attachment labels, fallback copy, and unavailable Talk controls reachable. (#90752, #91201) [v2026.6.5-beta.6]
-  - Memory: QMD search can use the new rerank toggle, and memory adapter status uses the resolved default model identity when checking plain status. (#61834) [v2026.6.5-beta.6]
-  - Search/providers: add the Parallel bundled web-search plugin, live provider tests, registration contracts, onboarding/docs wiring, and guarded `api.parallel.ai/v1/search` support. (#85158) Thanks @NormallyGaussian. [v2026.6.5-beta.5]
-  - Matrix/channels: add voice-message preflight and thread-aware read/reply behavior, including Matrix QA scenario wiring and docs for voice-message behavior. (#78016, #90415) [v2026.6.5-beta.5]
-  - Google Chat/channels: add native approval card actions and click handling so Google Chat approvals use platform-native cards instead of generic message flow. [v2026.6.5-beta.5]
+  - Search/providers: add the Parallel bundled web-search plugin, live provider tests, registration contracts, onboarding/docs wiring, and guarded `api.parallel.ai/v1/search` support. (#85158) Thanks @NormallyGaussian. [v2026.6.5]
+  - Matrix/channels: add voice-message preflight and thread-aware read/reply behavior, including Matrix QA scenario wiring and docs for voice-message behavior. (#78016, #90415) [v2026.6.5]
+  - Google Chat/channels: add native approval card actions and click handling so Google Chat approvals use platform-native cards instead of generic message flow. [v2026.6.5]
+  - Mobile: Android provider/model screens now surface expiring, unavailable, unresolved, and attention states more clearly, Android adds theme mode selection, and iOS settings and Talk tabs keep diagnostics, gateway rows, attachment labels, fallback copy, and unavailable Talk controls reachable. (#90752, #91201) [v2026.6.5]
+  - Memory: QMD search can use the new rerank toggle, and memory adapter status uses the resolved default model identity when checking plain status. (#61834) [v2026.6.5]
+  - Support existing-session browser CDP endpoints (#91736)
+  - feat(telegram): size block-mode preview chunks from streaming.preview.chunk
+  - feat(plugin-sdk): expose persistent dedupe import helpers
 - Fixes and constraints:
-  - Security/config/tooling: guard MCP HTTP redirects, protect global agent config defaults, and keep release/test/tooling proof failures bounded and explicit. (#89732, #90145) [v2026.6.5-beta.6]
-  - Security/config/tooling: guard MCP HTTP redirects, protect global agent config defaults, and keep release/test/tooling proof failures bounded and explicit. (#89732, #90145) [v2026.6.5-beta.5]
-  - Security/config/tooling: guard MCP HTTP redirects, protect global agent config defaults, and keep release/test/tooling proof failures bounded and explicit. (#89732, #90145) [v2026.6.5-beta.3]
-  - fix(agents): keep compaction notices additive
-  - fix(discord): restore runtime timeout compatibility exports (#91686)
-  - fix(plugin-sdk): align Discord component edit facade types (#91679)
-  - fix #88009: [Feature]: batched memory embedding should batch over files (#89138)
-  - fix: harden legacy session SQLite migration
+  - Security/config/tooling: guard MCP HTTP redirects, protect global agent config defaults, and keep release/test/tooling proof failures bounded and explicit. (#89732, #90145) [v2026.6.5]
+  - fix(sandbox): use materialized skill paths in startup prompts (#91791)
+  - fix(compaction): lower default timeout from 900s to 180s, preserve explicit config (#91361)
+  - fix(telegram): delete retired dispatch dedupe buckets after doctor import
+  - fix(telegram): block unauthorized DM text from cache and prompt context (#91478)
+  - fix(discord): hydrate reply context metadata
+  - fix(telegram): bound dispatch dedupe state
+  - fix(state): preserve ttl for plugin-state imports
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

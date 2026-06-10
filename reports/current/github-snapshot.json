@@ -1,20 +1,25 @@
 {
-  "generated_at": "2026-06-09T22:14:06.978175+08:00",
+  "generated_at": "2026-06-10T22:45:20.140779+08:00",
   "repo": {
     "slug": "openclaw/openclaw",
     "created_at": "2025-11-24T10:16:47Z",
-    "pushed_at": "2026-06-09T13:28:29Z",
-    "stars": 377793,
-    "forks": 78993,
-    "open_issues": 7974,
+    "pushed_at": "2026-06-10T14:44:36Z",
+    "stars": 377937,
+    "forks": 79035,
+    "open_issues": 7997,
     "default_branch": "main"
   },
   "latest_stable_release": {
-    "tag_name": "v2026.6.1",
-    "published_at": "2026-06-03T19:35:12Z",
-    "name": "openclaw 2026.6.1"
+    "tag_name": "v2026.6.5",
+    "published_at": "2026-06-09T18:13:20Z",
+    "name": "openclaw 2026.6.5"
   },
   "recent_stable_releases": [
+    {
+      "tag_name": "v2026.6.5",
+      "published_at": "2026-06-09T18:13:20Z",
+      "name": "openclaw 2026.6.5"
+    },
     {
       "tag_name": "v2026.6.1",
       "published_at": "2026-06-03T19:35:12Z",
@@ -49,11 +54,6 @@
       "tag_name": "v2026.5.19",
       "published_at": "2026-05-20T20:20:53Z",
       "name": "openclaw 2026.5.19"
-    },
-    {
-      "tag_name": "v2026.5.18",
-      "published_at": "2026-05-18T18:54:22Z",
-      "name": "openclaw 2026.5.18"
     }
   ]
 }

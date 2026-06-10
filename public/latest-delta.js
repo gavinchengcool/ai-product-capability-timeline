@@ -1,113 +1,99 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-06-09T22:14:06.978175+08:00",
+  "generatedAt": "2026-06-10T22:45:20.140779+08:00",
   "window": {
-    "start_local": "2026-06-08T22:14:06.978175+08:00",
-    "end_local": "2026-06-09T22:14:06.978175+08:00",
-    "start_utc": "2026-06-08T14:14:06Z",
-    "end_utc": "2026-06-09T14:14:06Z"
+    "start_local": "2026-06-09T22:45:20.140779+08:00",
+    "end_local": "2026-06-10T22:45:20.140779+08:00",
+    "start_utc": "2026-06-09T14:45:20Z",
+    "end_utc": "2026-06-10T14:45:20Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 377793,
-    "forks": 78993,
-    "open_issues": 7974,
-    "pushed_at": "2026-06-09T13:28:29Z"
+    "stars": 377937,
+    "forks": 79035,
+    "open_issues": 7997,
+    "pushed_at": "2026-06-10T14:44:36Z"
   },
   "summary": {
-    "commitCount": 175,
-    "releaseCount": 3,
-    "stableReleaseCount": 0,
-    "betaReleaseCount": 3,
-    "stars": 377793,
-    "forks": 78993,
-    "openIssues": 7974
+    "commitCount": 139,
+    "releaseCount": 1,
+    "stableReleaseCount": 1,
+    "betaReleaseCount": 0,
+    "stars": 377937,
+    "forks": 79035,
+    "openIssues": 7997
   },
   "releases": [
     {
-      "tag_name": "v2026.6.5-beta.6",
-      "published_at": "2026-06-09T08:43:04Z",
-      "name": "openclaw 2026.6.5-beta.6",
-      "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.5-beta.6"
-    },
-    {
-      "tag_name": "v2026.6.5-beta.5",
-      "published_at": "2026-06-08T22:49:14Z",
-      "name": "openclaw 2026.6.5-beta.5",
-      "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.5-beta.5"
-    },
-    {
-      "tag_name": "v2026.6.5-beta.3",
-      "published_at": "2026-06-08T21:38:14Z",
-      "name": "OpenClaw 2026.6.5-beta.3",
-      "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.5-beta.3"
+      "tag_name": "v2026.6.5",
+      "published_at": "2026-06-09T18:13:20Z",
+      "name": "openclaw 2026.6.5",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.5"
     }
   ],
   "featureItems": [
-    "Search/providers: add the Parallel bundled web-search plugin, live provider tests, registration contracts, onboarding/docs wiring, and guarded `api.parallel.ai/v1/search` support. (#85158) Thanks @NormallyGaussian. [v2026.6.5-beta.6]",
-    "Matrix/channels: add voice-message preflight and thread-aware read/reply behavior, including Matrix QA scenario wiring and docs for voice-message behavior. (#78016, #90415) [v2026.6.5-beta.6]",
-    "Google Chat/channels: add native approval card actions and click handling so Google Chat approvals use platform-native cards instead of generic message flow. [v2026.6.5-beta.6]",
-    "Mobile: Android provider/model screens now surface expiring, unavailable, unresolved, and attention states more clearly, Android adds theme mode selection, and iOS settings and Talk tabs keep diagnostics, gateway rows, attachment labels, fallback copy, and unavailable Talk controls reachable. (#90752, #91201) [v2026.6.5-beta.6]",
-    "Memory: QMD search can use the new rerank toggle, and memory adapter status uses the resolved default model identity when checking plain status. (#61834) [v2026.6.5-beta.6]",
-    "Search/providers: add the Parallel bundled web-search plugin, live provider tests, registration contracts, onboarding/docs wiring, and guarded `api.parallel.ai/v1/search` support. (#85158) Thanks @NormallyGaussian. [v2026.6.5-beta.5]",
-    "Matrix/channels: add voice-message preflight and thread-aware read/reply behavior, including Matrix QA scenario wiring and docs for voice-message behavior. (#78016, #90415) [v2026.6.5-beta.5]",
-    "Google Chat/channels: add native approval card actions and click handling so Google Chat approvals use platform-native cards instead of generic message flow. [v2026.6.5-beta.5]"
+    "Search/providers: add the Parallel bundled web-search plugin, live provider tests, registration contracts, onboarding/docs wiring, and guarded `api.parallel.ai/v1/search` support. (#85158) Thanks @NormallyGaussian. [v2026.6.5]",
+    "Matrix/channels: add voice-message preflight and thread-aware read/reply behavior, including Matrix QA scenario wiring and docs for voice-message behavior. (#78016, #90415) [v2026.6.5]",
+    "Google Chat/channels: add native approval card actions and click handling so Google Chat approvals use platform-native cards instead of generic message flow. [v2026.6.5]",
+    "Mobile: Android provider/model screens now surface expiring, unavailable, unresolved, and attention states more clearly, Android adds theme mode selection, and iOS settings and Talk tabs keep diagnostics, gateway rows, attachment labels, fallback copy, and unavailable Talk controls reachable. (#90752, #91201) [v2026.6.5]",
+    "Memory: QMD search can use the new rerank toggle, and memory adapter status uses the resolved default model identity when checking plain status. (#61834) [v2026.6.5]",
+    "Support existing-session browser CDP endpoints (#91736)",
+    "feat(telegram): size block-mode preview chunks from streaming.preview.chunk",
+    "feat(plugin-sdk): expose persistent dedupe import helpers"
   ],
   "fixItems": [
-    "Security/config/tooling: guard MCP HTTP redirects, protect global agent config defaults, and keep release/test/tooling proof failures bounded and explicit. (#89732, #90145) [v2026.6.5-beta.6]",
-    "Security/config/tooling: guard MCP HTTP redirects, protect global agent config defaults, and keep release/test/tooling proof failures bounded and explicit. (#89732, #90145) [v2026.6.5-beta.5]",
-    "Security/config/tooling: guard MCP HTTP redirects, protect global agent config defaults, and keep release/test/tooling proof failures bounded and explicit. (#89732, #90145) [v2026.6.5-beta.3]",
-    "fix(agents): keep compaction notices additive",
-    "fix(discord): restore runtime timeout compatibility exports (#91686)",
-    "fix(plugin-sdk): align Discord component edit facade types (#91679)",
-    "fix #88009: [Feature]: batched memory embedding should batch over files (#89138)",
-    "fix: harden legacy session SQLite migration"
+    "Security/config/tooling: guard MCP HTTP redirects, protect global agent config defaults, and keep release/test/tooling proof failures bounded and explicit. (#89732, #90145) [v2026.6.5]",
+    "fix(sandbox): use materialized skill paths in startup prompts (#91791)",
+    "fix(compaction): lower default timeout from 900s to 180s, preserve explicit config (#91361)",
+    "fix(telegram): delete retired dispatch dedupe buckets after doctor import",
+    "fix(telegram): block unauthorized DM text from cache and prompt context (#91478)",
+    "fix(discord): hydrate reply context metadata",
+    "fix(telegram): bound dispatch dedupe state",
+    "fix(state): preserve ttl for plugin-state imports"
   ],
   "topScopes": [
     {
-      "scope": "release",
-      "count": 23
-    },
-    {
       "scope": "fix",
-      "count": 21
+      "count": 24
     },
     {
-      "scope": "microsoft-foundry",
-      "count": 14
-    },
-    {
-      "scope": "docs",
+      "scope": "telegram",
       "count": 9
     },
     {
-      "scope": "cron",
+      "scope": "gateway",
       "count": 9
-    },
-    {
-      "scope": "memory",
-      "count": 7
-    },
-    {
-      "scope": "agents",
-      "count": 6
     },
     {
       "scope": "test",
+      "count": 7
+    },
+    {
+      "scope": "ci",
+      "count": 6
+    },
+    {
+      "scope": "discord",
+      "count": 5
+    },
+    {
+      "scope": "update",
+      "count": 5
+    },
+    {
+      "scope": "qa",
       "count": 5
     }
   ],
   "headlineCommits": [
-    "fix(agents): keep compaction notices additive",
-    "fix(discord): restore runtime timeout compatibility exports (#91686)",
-    "test(memory): drop backend config bridge test",
-    "test: consolidate wrapper facade coverage",
-    "fix(plugin-sdk): align Discord component edit facade types (#91679)",
-    "fix #88009: [Feature]: batched memory embedding should batch over files (#89138)",
-    "fix: harden legacy session SQLite migration",
-    "docs: clarify Android opt-in for release CI (#91665)"
+    "Support existing-session browser CDP endpoints (#91736)",
+    "fix(sandbox): use materialized skill paths in startup prompts (#91791)",
+    "test(tooling): isolate pnpm fallback path",
+    "fix(compaction): lower default timeout from 900s to 180s, preserve explicit config (#91361)",
+    "docs(streaming): document Telegram block-mode preview chunk sizing",
+    "refactor(telegram): drop NO_REPLY precount debug logging",
+    "refactor(telegram): trust grammy api contract in handler seams",
+    "fix(telegram): delete retired dispatch dedupe buckets after doctor import"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
