@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-06-10T22:45:36+08:00
-- Requested window: 2026-06-09 to 2026-06-10
+- Generated at: 2026-06-11T23:27:05+08:00
+- Requested window: 2026-06-10 to 2026-06-11
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-06-09 to 2026-06-10
-- Generated at: 2026-06-10T22:45:20.140779+08:00
-- 窗口: 2026-06-09 至 2026-06-10
-- GitHub 增量: 139 commits / 1 releases
-- 最近 push: 2026-06-10
+- Window: 2026-06-10 to 2026-06-11
+- Generated at: 2026-06-11T23:26:48.035207+08:00
+- 窗口: 2026-06-10 至 2026-06-11
+- GitHub 增量: 209 commits / 1 releases
+- 最近 push: 2026-06-11
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Search/providers: add the Parallel bundled web-search plugin, live provider tests, registration contracts, onboarding/docs wiring, and guarded `api.parallel.ai/v1/search` support. (#85158) Thanks @NormallyGaussian. [v2026.6.5]
-  - Matrix/channels: add voice-message preflight and thread-aware read/reply behavior, including Matrix QA scenario wiring and docs for voice-message behavior. (#78016, #90415) [v2026.6.5]
-  - Google Chat/channels: add native approval card actions and click handling so Google Chat approvals use platform-native cards instead of generic message flow. [v2026.6.5]
-  - Mobile: Android provider/model screens now surface expiring, unavailable, unresolved, and attention states more clearly, Android adds theme mode selection, and iOS settings and Talk tabs keep diagnostics, gateway rows, attachment labels, fallback copy, and unavailable Talk controls reachable. (#90752, #91201) [v2026.6.5]
-  - Memory: QMD search can use the new rerank toggle, and memory adapter status uses the resolved default model identity when checking plain status. (#61834) [v2026.6.5]
-  - Support existing-session browser CDP endpoints (#91736)
-  - feat(telegram): size block-mode preview chunks from streaming.preview.chunk
-  - feat(plugin-sdk): expose persistent dedupe import helpers
+  - Observability: allow trusted diagnostics channels to capture tool input/output content, add first-assistant-event traces, and warn on slow initial replies. (#91256, #91568, #91583) Thanks @amknight. [v2026.6.6-beta.1]
+  - Channels/mobile: add the QQBot group mention toggle, improve iPad and iPhone control surfaces, and expose the active connection host in the TUI footer. (#91423, #91557, #89909) Thanks @cxyhhhhh, @Solvely-Colin, and @baskduf. [v2026.6.6-beta.1]
+  - feat(skills): allow trusted workshop symlink targets
+  - feat(auto-reply): emit durable tool summaries from CLI runner tool results
+  - feat(telegram): route verbose progress payloads durably instead of into the streaming draft
+  - feat(auto-reply): deliver inter-tool commentary as standalone verbose progress messages
+  - feat(cron): add readable ISO time fields to `cron runs` JSON output (#91471)
+  - Issue 89661: add unit test
 - Fixes and constraints:
-  - Security/config/tooling: guard MCP HTTP redirects, protect global agent config defaults, and keep release/test/tooling proof failures bounded and explicit. (#89732, #90145) [v2026.6.5]
-  - fix(sandbox): use materialized skill paths in startup prompts (#91791)
-  - fix(compaction): lower default timeout from 900s to 180s, preserve explicit config (#91361)
-  - fix(telegram): delete retired dispatch dedupe buckets after doctor import
-  - fix(telegram): block unauthorized DM text from cache and prompt context (#91478)
-  - fix(discord): hydrate reply context metadata
-  - fix(telegram): bound dispatch dedupe state
-  - fix(state): preserve ttl for plugin-state imports
+  - Performance: prewarm TUI runtime plugins, deduplicate plugin auto-enable fanout, trim dense text-delta snapshots, and reuse prepared startup model metadata. (#90782, #89978, #91580, #91531) Thanks @RomneyDa and @ai-hpc. [v2026.6.6-beta.1]
+  - test: harden stalled websocket cleanup
+  - fix: validate workshop support symlink writes
+  - fix: gate Skill Workshop symlink writes
+  - fix: handle explicit silent assistant replies (#92073)
+  - fix(wizard): report keyless web search providers as ready
+  - fix(installer): stop after failed Node package installs
+  - fix(channel): harden local setup trust (#92175)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
