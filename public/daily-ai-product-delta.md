@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-06-11T23:27:05+08:00
-- Requested window: 2026-06-10 to 2026-06-11
+- Generated at: 2026-06-12T22:27:07+08:00
+- Requested window: 2026-06-11 to 2026-06-12
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,27 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-06-10 to 2026-06-11
-- Generated at: 2026-06-11T23:26:48.035207+08:00
-- 窗口: 2026-06-10 至 2026-06-11
-- GitHub 增量: 209 commits / 1 releases
-- 最近 push: 2026-06-11
+- Window: 2026-06-11 to 2026-06-12
+- Generated at: 2026-06-12T22:26:51.950822+08:00
+- 窗口: 2026-06-11 至 2026-06-12
+- GitHub 增量: 39 commits / 2 releases
+- 最近 push: 2026-06-12
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Observability: allow trusted diagnostics channels to capture tool input/output content, add first-assistant-event traces, and warn on slow initial replies. (#91256, #91568, #91583) Thanks @amknight. [v2026.6.6-beta.1]
-  - Channels/mobile: add the QQBot group mention toggle, improve iPad and iPhone control surfaces, and expose the active connection host in the TUI footer. (#91423, #91557, #89909) Thanks @cxyhhhhh, @Solvely-Colin, and @baskduf. [v2026.6.6-beta.1]
-  - feat(skills): allow trusted workshop symlink targets
-  - feat(auto-reply): emit durable tool summaries from CLI runner tool results
-  - feat(telegram): route verbose progress payloads durably instead of into the streaming draft
-  - feat(auto-reply): deliver inter-tool commentary as standalone verbose progress messages
-  - feat(cron): add readable ISO time fields to `cron runs` JSON output (#91471)
-  - Issue 89661: add unit test
+  - Observability: allow trusted diagnostics channels to capture tool input/output content, add first-assistant-event traces, and warn on slow initial replies. (#91256, #91568, #91583) Thanks @amknight. [v2026.6.6]
+  - Channels/mobile: add the QQBot group mention toggle, improve iPad and iPhone control surfaces, and expose the active connection host in the TUI footer. (#91423, #91557, #89909) Thanks @cxyhhhhh, @Solvely-Colin, and @baskduf. [v2026.6.6]
+  - Observability: allow trusted diagnostics channels to capture tool input/output content, add first-assistant-event traces, and warn on slow initial replies. (#91256, #91568, #91583) Thanks @amknight. [v2026.6.6-beta.2]
+  - Channels/mobile: add the QQBot group mention toggle, improve iPad and iPhone control surfaces, and expose the active connection host in the TUI footer. (#91423, #91557, #89909) Thanks @cxyhhhhh, @Solvely-Colin, and @baskduf. [v2026.6.6-beta.2]
 - Fixes and constraints:
-  - Performance: prewarm TUI runtime plugins, deduplicate plugin auto-enable fanout, trim dense text-delta snapshots, and reuse prepared startup model metadata. (#90782, #89978, #91580, #91531) Thanks @RomneyDa and @ai-hpc. [v2026.6.6-beta.1]
-  - test: harden stalled websocket cleanup
-  - fix: validate workshop support symlink writes
-  - fix: gate Skill Workshop symlink writes
-  - fix: handle explicit silent assistant replies (#92073)
-  - fix(wizard): report keyless web search providers as ready
-  - fix(installer): stop after failed Node package installs
-  - fix(channel): harden local setup trust (#92175)
+  - Performance: prewarm TUI runtime plugins, deduplicate plugin auto-enable fanout, stop `/models` derived-registry rescan storms, trim dense text-delta snapshots, and reuse prepared startup model metadata. (#90782, #89978, #92127, #91580, #91531) Thanks @RomneyDa, @obuchowski, and @ai-hpc. [v2026.6.6]
+  - Performance: prewarm TUI runtime plugins, deduplicate plugin auto-enable fanout, stop `/models` derived-registry rescan storms, trim dense text-delta snapshots, and reuse prepared startup model metadata. (#90782, #89978, #92127, #91580, #91531) Thanks @RomneyDa, @obuchowski, and @ai-hpc. [v2026.6.6-beta.2]
+  - fix: stop docker build commands by pid and group
+  - fix(anthropic-vertex): stop re-marking cache_control on transport-budgeted payloads (#92387)
+  - fix: route respawn hint env clears
+  - fix: route live env restore deletes
+  - fix: scope commitment heartbeat state env
+  - fix: restore commitment extraction state env
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

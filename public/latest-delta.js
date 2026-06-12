@@ -1,99 +1,102 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-06-11T23:26:48.035207+08:00",
+  "generatedAt": "2026-06-12T22:26:51.950822+08:00",
   "window": {
-    "start_local": "2026-06-10T23:26:48.035207+08:00",
-    "end_local": "2026-06-11T23:26:48.035207+08:00",
-    "start_utc": "2026-06-10T15:26:48Z",
-    "end_utc": "2026-06-11T15:26:48Z"
+    "start_local": "2026-06-11T22:26:51.950822+08:00",
+    "end_local": "2026-06-12T22:26:51.950822+08:00",
+    "start_utc": "2026-06-11T14:26:51Z",
+    "end_utc": "2026-06-12T14:26:51Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 378170,
-    "forks": 79088,
-    "open_issues": 8014,
-    "pushed_at": "2026-06-11T15:26:20Z"
+    "stars": 378346,
+    "forks": 79125,
+    "open_issues": 7981,
+    "pushed_at": "2026-06-12T14:17:23Z"
   },
   "summary": {
-    "commitCount": 209,
-    "releaseCount": 1,
-    "stableReleaseCount": 0,
+    "commitCount": 39,
+    "releaseCount": 2,
+    "stableReleaseCount": 1,
     "betaReleaseCount": 1,
-    "stars": 378170,
-    "forks": 79088,
-    "openIssues": 8014
+    "stars": 378346,
+    "forks": 79125,
+    "openIssues": 7981
   },
   "releases": [
     {
-      "tag_name": "v2026.6.6-beta.1",
-      "published_at": "2026-06-10T19:33:39Z",
-      "name": "OpenClaw 2026.6.6-beta.1",
+      "tag_name": "v2026.6.6",
+      "published_at": "2026-06-12T11:04:42Z",
+      "name": "openclaw 2026.6.6",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.6"
+    },
+    {
+      "tag_name": "v2026.6.6-beta.2",
+      "published_at": "2026-06-12T03:32:42Z",
+      "name": "openclaw 2026.6.6-beta.2",
       "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.6-beta.1"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.6-beta.2"
     }
   ],
   "featureItems": [
-    "Observability: allow trusted diagnostics channels to capture tool input/output content, add first-assistant-event traces, and warn on slow initial replies. (#91256, #91568, #91583) Thanks @amknight. [v2026.6.6-beta.1]",
-    "Channels/mobile: add the QQBot group mention toggle, improve iPad and iPhone control surfaces, and expose the active connection host in the TUI footer. (#91423, #91557, #89909) Thanks @cxyhhhhh, @Solvely-Colin, and @baskduf. [v2026.6.6-beta.1]",
-    "feat(skills): allow trusted workshop symlink targets",
-    "feat(auto-reply): emit durable tool summaries from CLI runner tool results",
-    "feat(telegram): route verbose progress payloads durably instead of into the streaming draft",
-    "feat(auto-reply): deliver inter-tool commentary as standalone verbose progress messages",
-    "feat(cron): add readable ISO time fields to `cron runs` JSON output (#91471)",
-    "Issue 89661: add unit test"
+    "Observability: allow trusted diagnostics channels to capture tool input/output content, add first-assistant-event traces, and warn on slow initial replies. (#91256, #91568, #91583) Thanks @amknight. [v2026.6.6]",
+    "Channels/mobile: add the QQBot group mention toggle, improve iPad and iPhone control surfaces, and expose the active connection host in the TUI footer. (#91423, #91557, #89909) Thanks @cxyhhhhh, @Solvely-Colin, and @baskduf. [v2026.6.6]",
+    "Observability: allow trusted diagnostics channels to capture tool input/output content, add first-assistant-event traces, and warn on slow initial replies. (#91256, #91568, #91583) Thanks @amknight. [v2026.6.6-beta.2]",
+    "Channels/mobile: add the QQBot group mention toggle, improve iPad and iPhone control surfaces, and expose the active connection host in the TUI footer. (#91423, #91557, #89909) Thanks @cxyhhhhh, @Solvely-Colin, and @baskduf. [v2026.6.6-beta.2]"
   ],
   "fixItems": [
-    "Performance: prewarm TUI runtime plugins, deduplicate plugin auto-enable fanout, trim dense text-delta snapshots, and reuse prepared startup model metadata. (#90782, #89978, #91580, #91531) Thanks @RomneyDa and @ai-hpc. [v2026.6.6-beta.1]",
-    "test: harden stalled websocket cleanup",
-    "fix: validate workshop support symlink writes",
-    "fix: gate Skill Workshop symlink writes",
-    "fix: handle explicit silent assistant replies (#92073)",
-    "fix(wizard): report keyless web search providers as ready",
-    "fix(installer): stop after failed Node package installs",
-    "fix(channel): harden local setup trust (#92175)"
+    "Performance: prewarm TUI runtime plugins, deduplicate plugin auto-enable fanout, stop `/models` derived-registry rescan storms, trim dense text-delta snapshots, and reuse prepared startup model metadata. (#90782, #89978, #92127, #91580, #91531) Thanks @RomneyDa, @obuchowski, and @ai-hpc. [v2026.6.6]",
+    "Performance: prewarm TUI runtime plugins, deduplicate plugin auto-enable fanout, stop `/models` derived-registry rescan storms, trim dense text-delta snapshots, and reuse prepared startup model metadata. (#90782, #89978, #92127, #91580, #91531) Thanks @RomneyDa, @obuchowski, and @ai-hpc. [v2026.6.6-beta.2]",
+    "fix: stop docker build commands by pid and group",
+    "fix(anthropic-vertex): stop re-marking cache_control on transport-budgeted payloads (#92387)",
+    "fix: route respawn hint env clears",
+    "fix: route live env restore deletes",
+    "fix: scope commitment heartbeat state env",
+    "fix: restore commitment extraction state env"
   ],
   "topScopes": [
     {
       "scope": "fix",
-      "count": 33
+      "count": 13
     },
     {
-      "scope": "foundry",
-      "count": 20
+      "scope": "test",
+      "count": 9
     },
     {
-      "scope": "reply",
-      "count": 16
+      "scope": "telegram",
+      "count": 4
     },
     {
-      "scope": "agents",
-      "count": 12
+      "scope": "whatsapp",
+      "count": 4
     },
     {
-      "scope": "providers",
-      "count": 7
-    },
-    {
-      "scope": "cron",
-      "count": 6
-    },
-    {
-      "scope": "ci",
-      "count": 6
+      "scope": "anthropic-vertex",
+      "count": 1
     },
     {
       "scope": "release",
-      "count": 6
+      "count": 1
+    },
+    {
+      "scope": "docs",
+      "count": 1
+    },
+    {
+      "scope": "docker",
+      "count": 1
     }
   ],
   "headlineCommits": [
-    "test: harden stalled websocket cleanup",
-    "fix: validate workshop support symlink writes",
-    "fix: gate Skill Workshop symlink writes",
-    "feat(skills): allow trusted workshop symlink targets",
-    "fix: handle explicit silent assistant replies (#92073)",
-    "fix(wizard): report keyless web search providers as ready",
-    "fix(installer): stop after failed Node package installs",
-    "fix(channel): harden local setup trust (#92175)"
+    "fix: stop docker build commands by pid and group",
+    "fix(anthropic-vertex): stop re-marking cache_control on transport-budgeted payloads (#92387)",
+    "fix: route respawn hint env clears",
+    "test: scope plugin dispatch state env",
+    "fix: route live env restore deletes",
+    "test: route state dir env helper",
+    "fix: scope commitment heartbeat state env",
+    "test: scope commitment full chain state env"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
