@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-06-12T22:27:07+08:00
-- Requested window: 2026-06-11 to 2026-06-12
+- Generated at: 2026-06-13T21:18:09+08:00
+- Requested window: 2026-06-12 to 2026-06-13
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,27 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-06-11 to 2026-06-12
-- Generated at: 2026-06-12T22:26:51.950822+08:00
-- 窗口: 2026-06-11 至 2026-06-12
-- GitHub 增量: 39 commits / 2 releases
-- 最近 push: 2026-06-12
+- Window: 2026-06-12 to 2026-06-13
+- Generated at: 2026-06-13T21:17:53.933536+08:00
+- 窗口: 2026-06-12 至 2026-06-13
+- GitHub 增量: 91 commits / 1 releases
+- 最近 push: 2026-06-13
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Observability: allow trusted diagnostics channels to capture tool input/output content, add first-assistant-event traces, and warn on slow initial replies. (#91256, #91568, #91583) Thanks @amknight. [v2026.6.6]
-  - Channels/mobile: add the QQBot group mention toggle, improve iPad and iPhone control surfaces, and expose the active connection host in the TUI footer. (#91423, #91557, #89909) Thanks @cxyhhhhh, @Solvely-Colin, and @baskduf. [v2026.6.6]
-  - Observability: allow trusted diagnostics channels to capture tool input/output content, add first-assistant-event traces, and warn on slow initial replies. (#91256, #91568, #91583) Thanks @amknight. [v2026.6.6-beta.2]
-  - Channels/mobile: add the QQBot group mention toggle, improve iPad and iPhone control surfaces, and expose the active connection host in the TUI footer. (#91423, #91557, #89909) Thanks @cxyhhhhh, @Solvely-Colin, and @baskduf. [v2026.6.6-beta.2]
+  - feat(memory-wiki): import OKF bundles
+  - feat(usage): render real context occupancy + last-call usage atoms
+  - feat(usage): add fixed:N decimal-format verb to usage-bar translator
+  - feat(usage): native templated /usage full renderer (retires the footer plugin)
+  - feat(hooks): per-turn usageState (with provider limits + rich atoms) on reply_payload_sending
+  - feat(ui): hide empty workboard columns (#89615)
+  - feat(moonshot): add Kimi K2.7 Code support (#92554)
+  - Add QA scorecard taxonomy validation (#91500)
 - Fixes and constraints:
-  - Performance: prewarm TUI runtime plugins, deduplicate plugin auto-enable fanout, stop `/models` derived-registry rescan storms, trim dense text-delta snapshots, and reuse prepared startup model metadata. (#90782, #89978, #92127, #91580, #91531) Thanks @RomneyDa, @obuchowski, and @ai-hpc. [v2026.6.6]
-  - Performance: prewarm TUI runtime plugins, deduplicate plugin auto-enable fanout, stop `/models` derived-registry rescan storms, trim dense text-delta snapshots, and reuse prepared startup model metadata. (#90782, #89978, #92127, #91580, #91531) Thanks @RomneyDa, @obuchowski, and @ai-hpc. [v2026.6.6-beta.2]
-  - fix: stop docker build commands by pid and group
-  - fix(anthropic-vertex): stop re-marking cache_control on transport-budgeted payloads (#92387)
-  - fix: route respawn hint env clears
-  - fix: route live env restore deletes
-  - fix: scope commitment heartbeat state env
-  - fix: restore commitment extraction state env
+  - Release, CI, E2E, Docker, and dependency gates keep lifecycle timeout cleanup alive, bundle QA Lab runtime in Docker images, update the esbuild audit pin, harden Docker process cleanup, keep plugin publish checks authoritative, and remove noisy redundant proof scripts so release failures stay bounded. (#92566, #92087, #92540) Thanks @RomneyDa and @jesse-merhi. [v2026.6.7-beta.1]
+  - fix(docs): finalize i18n postprocess before skip (#92668)
+  - fix(slack): emit message_sent on outbound replies (#89943)
+  - fix(agents): expose session identity in runtime prompts
+  - fix(agents): narrow sessions_send active-run fallback
+  - fix(gateway): reject unknown OpenAI agent selectors
+  - fix #73713: surface nested embedding fetch failures (#92628)
+  - fix(copilot): disable eager tool streaming for Claude 4.5 (#75393)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
