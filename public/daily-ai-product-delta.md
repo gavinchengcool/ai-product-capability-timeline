@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-06-13T21:18:09+08:00
-- Requested window: 2026-06-12 to 2026-06-13
+- Generated at: 2026-06-14T21:22:49+08:00
+- Requested window: 2026-06-13 to 2026-06-14
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-06-12 to 2026-06-13
-- Generated at: 2026-06-13T21:17:53.933536+08:00
-- 窗口: 2026-06-12 至 2026-06-13
-- GitHub 增量: 91 commits / 1 releases
-- 最近 push: 2026-06-13
+- Window: 2026-06-13 to 2026-06-14
+- Generated at: 2026-06-14T21:22:32.315883+08:00
+- 窗口: 2026-06-13 至 2026-06-14
+- GitHub 增量: 172 commits / 1 releases
+- 最近 push: 2026-06-14
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(memory-wiki): import OKF bundles
-  - feat(usage): render real context occupancy + last-call usage atoms
-  - feat(usage): add fixed:N decimal-format verb to usage-bar translator
-  - feat(usage): native templated /usage full renderer (retires the footer plugin)
-  - feat(hooks): per-turn usageState (with provider limits + rich atoms) on reply_payload_sending
-  - feat(ui): hide empty workboard columns (#89615)
-  - feat(moonshot): add Kimi K2.7 Code support (#92554)
-  - Add QA scorecard taxonomy validation (#91500)
+  - Providers/models: add GLM-5.2 support and Claude Haiku 4.5 catalog entries while keeping provider-qualified model IDs normalized across OpenRouter and Google Vertex paths. (#92796, #90116, #92627, #91218) Thanks @arkyu2077, @liuhao1024, and @bymle. [v2026.6.8-beta.1]
+  - Agent commands: support `/btw` in CLI-backed sessions and keep CLI usage-error exits classified as usage failures instead of successful runs. (#92669, #92162) Thanks @joshavant and @Pandah97. [v2026.6.8-beta.1]
+  - Usage hooks: add built-in full footer rendering, default footer templates, per-turn usage state, credential-aware limits, and fixed-decimal formatting for usage-bar templates. (#92657, #89835, #89629) Thanks @Marvinthebored. [v2026.6.8-beta.1]
+  - Add diagnostics OTEL capability contract tests (#92045)
+  - feat: add tool search directory mode
+  - feat(browser): extend --labels overlay to full-page and element captures (#92834)
+  - feat(providers): add GLM-5.2 support (#92796)
+  - feat: make workspace files panel collapsible
 - Fixes and constraints:
-  - Release, CI, E2E, Docker, and dependency gates keep lifecycle timeout cleanup alive, bundle QA Lab runtime in Docker images, update the esbuild audit pin, harden Docker process cleanup, keep plugin publish checks authoritative, and remove noisy redundant proof scripts so release failures stay bounded. (#92566, #92087, #92540) Thanks @RomneyDa and @jesse-merhi. [v2026.6.7-beta.1]
-  - fix(docs): finalize i18n postprocess before skip (#92668)
-  - fix(slack): emit message_sent on outbound replies (#89943)
-  - fix(agents): expose session identity in runtime prompts
-  - fix(agents): narrow sessions_send active-run fallback
-  - fix(gateway): reject unknown OpenAI agent selectors
-  - fix #73713: surface nested embedding fetch failures (#92628)
-  - fix(copilot): disable eager tool streaming for Claude 4.5 (#75393)
+  - fix(agents): recover genericized Anthropic thinking errors (#92916)
+  - fix(release): preserve child release check refs
+  - fix(auto-reply): strip delivery hints from leading metadata
+  - fix(plugin-sdk): expose delivery hints without utility imports
+  - fix(auto-reply): share message-tool delivery hints
+  - fix(auto-reply): align message-tool progress gating
+  - fix(auto-reply): deliver channel message-tool final replies
+  - fix(lmstudio): honor thinking off for binary reasoning models (#92002)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
