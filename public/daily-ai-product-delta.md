@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-06-14T21:22:49+08:00
-- Requested window: 2026-06-13 to 2026-06-14
+- Generated at: 2026-06-16T00:48:59+08:00
+- Requested window: 2026-06-15 to 2026-06-16
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,29 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-06-13 to 2026-06-14
-- Generated at: 2026-06-14T21:22:32.315883+08:00
-- 窗口: 2026-06-13 至 2026-06-14
-- GitHub 增量: 172 commits / 1 releases
-- 最近 push: 2026-06-14
+- Window: 2026-06-15 to 2026-06-16
+- Generated at: 2026-06-16T00:48:42.999311+08:00
+- 窗口: 2026-06-15 至 2026-06-16
+- GitHub 增量: 116 commits / 1 releases
+- 最近 push: 2026-06-15
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
   - Providers/models: add GLM-5.2 support and Claude Haiku 4.5 catalog entries while keeping provider-qualified model IDs normalized across OpenRouter and Google Vertex paths. (#92796, #90116, #92627, #91218) Thanks @arkyu2077, @liuhao1024, and @bymle. [v2026.6.8-beta.1]
   - Agent commands: support `/btw` in CLI-backed sessions and keep CLI usage-error exits classified as usage failures instead of successful runs. (#92669, #92162) Thanks @joshavant and @Pandah97. [v2026.6.8-beta.1]
   - Usage hooks: add built-in full footer rendering, default footer templates, per-turn usage state, credential-aware limits, and fixed-decimal formatting for usage-bar templates. (#92657, #89835, #89629) Thanks @Marvinthebored. [v2026.6.8-beta.1]
-  - Add diagnostics OTEL capability contract tests (#92045)
-  - feat: add tool search directory mode
-  - feat(browser): extend --labels overlay to full-page and element captures (#92834)
-  - feat(providers): add GLM-5.2 support (#92796)
-  - feat: make workspace files panel collapsible
+  - feat(status): surface plugin health (#91952)
+  - feat(telegram): send rich messages as rich html (#93286)
+  - feat(codex): add auto plugin approvals (#92625)
 - Fixes and constraints:
-  - fix(agents): recover genericized Anthropic thinking errors (#92916)
-  - fix(release): preserve child release check refs
-  - fix(auto-reply): strip delivery hints from leading metadata
-  - fix(plugin-sdk): expose delivery hints without utility imports
-  - fix(auto-reply): share message-tool delivery hints
-  - fix(auto-reply): align message-tool progress gating
-  - fix(auto-reply): deliver channel message-tool final replies
-  - fix(lmstudio): honor thinking off for binary reasoning models (#92002)
+  - fix(gateway): pass managed inbound PDFs through chat.send (#90115)
+  - fix(plugins): serialize binding approval saves (#88945)
+  - fix(cli): report Gemini CLI runtime auth status (#86544)
+  - fix(heartbeat): refresh stale Current time line on every helper call (#44993) (#75025)
+  - fix(telegram): preserve rich progress command output
+  - fix(control-ui): respect agents.defaults.timeFormat for timestamps (#93297)
+  - fix(cron): trust agent output when channel is unresolved without explicit delivery (#92817)
+  - fix(ios): refresh permission rows after grants (#91776)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

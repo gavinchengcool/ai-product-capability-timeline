@@ -1,31 +1,31 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-06-14T21:22:32.315883+08:00",
+  "generatedAt": "2026-06-16T00:48:42.999311+08:00",
   "window": {
-    "start_local": "2026-06-13T21:22:32.315883+08:00",
-    "end_local": "2026-06-14T21:22:32.315883+08:00",
-    "start_utc": "2026-06-13T13:22:32Z",
-    "end_utc": "2026-06-14T13:22:32Z"
+    "start_local": "2026-06-15T00:48:42.999311+08:00",
+    "end_local": "2026-06-16T00:48:42.999311+08:00",
+    "start_utc": "2026-06-14T16:48:42Z",
+    "end_utc": "2026-06-15T16:48:42Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 378652,
-    "forks": 79184,
-    "open_issues": 7088,
-    "pushed_at": "2026-06-14T13:18:54Z"
+    "stars": 378853,
+    "forks": 79267,
+    "open_issues": 6392,
+    "pushed_at": "2026-06-15T16:41:53Z"
   },
   "summary": {
-    "commitCount": 172,
+    "commitCount": 116,
     "releaseCount": 1,
     "stableReleaseCount": 0,
     "betaReleaseCount": 1,
-    "stars": 378652,
-    "forks": 79184,
-    "openIssues": 7088
+    "stars": 378853,
+    "forks": 79267,
+    "openIssues": 6392
   },
   "releases": [
     {
       "tag_name": "v2026.6.8-beta.1",
-      "published_at": "2026-06-13T21:49:06Z",
+      "published_at": "2026-06-14T22:45:33Z",
       "name": "openclaw 2026.6.8-beta.1",
       "prerelease": true,
       "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.8-beta.1"
@@ -35,65 +35,63 @@ window.OPENCLAW_LATEST_DELTA = {
     "Providers/models: add GLM-5.2 support and Claude Haiku 4.5 catalog entries while keeping provider-qualified model IDs normalized across OpenRouter and Google Vertex paths. (#92796, #90116, #92627, #91218) Thanks @arkyu2077, @liuhao1024, and @bymle. [v2026.6.8-beta.1]",
     "Agent commands: support `/btw` in CLI-backed sessions and keep CLI usage-error exits classified as usage failures instead of successful runs. (#92669, #92162) Thanks @joshavant and @Pandah97. [v2026.6.8-beta.1]",
     "Usage hooks: add built-in full footer rendering, default footer templates, per-turn usage state, credential-aware limits, and fixed-decimal formatting for usage-bar templates. (#92657, #89835, #89629) Thanks @Marvinthebored. [v2026.6.8-beta.1]",
-    "Add diagnostics OTEL capability contract tests (#92045)",
-    "feat: add tool search directory mode",
-    "feat(browser): extend --labels overlay to full-page and element captures (#92834)",
-    "feat(providers): add GLM-5.2 support (#92796)",
-    "feat: make workspace files panel collapsible"
+    "feat(status): surface plugin health (#91952)",
+    "feat(telegram): send rich messages as rich html (#93286)",
+    "feat(codex): add auto plugin approvals (#92625)"
   ],
   "fixItems": [
-    "fix(agents): recover genericized Anthropic thinking errors (#92916)",
-    "fix(release): preserve child release check refs",
-    "fix(auto-reply): strip delivery hints from leading metadata",
-    "fix(plugin-sdk): expose delivery hints without utility imports",
-    "fix(auto-reply): share message-tool delivery hints",
-    "fix(auto-reply): align message-tool progress gating",
-    "fix(auto-reply): deliver channel message-tool final replies",
-    "fix(lmstudio): honor thinking off for binary reasoning models (#92002)"
+    "fix(gateway): pass managed inbound PDFs through chat.send (#90115)",
+    "fix(plugins): serialize binding approval saves (#88945)",
+    "fix(cli): report Gemini CLI runtime auth status (#86544)",
+    "fix(heartbeat): refresh stale Current time line on every helper call (#44993) (#75025)",
+    "fix(telegram): preserve rich progress command output",
+    "fix(control-ui): respect agents.defaults.timeFormat for timestamps (#93297)",
+    "fix(cron): trust agent output when channel is unresolved without explicit delivery (#92817)",
+    "fix(ios): refresh permission rows after grants (#91776)"
   ],
   "topScopes": [
     {
-      "scope": "gateway",
-      "count": 16
-    },
-    {
       "scope": "telegram",
-      "count": 15
-    },
-    {
-      "scope": "usage",
-      "count": 9
+      "count": 10
     },
     {
       "scope": "agents",
       "count": 8
     },
     {
-      "scope": "openai",
-      "count": 7
-    },
-    {
-      "scope": "release",
-      "count": 6
-    },
-    {
-      "scope": "auto-reply",
+      "scope": "cron",
       "count": 6
     },
     {
       "scope": "fix",
       "count": 6
+    },
+    {
+      "scope": "openai",
+      "count": 5
+    },
+    {
+      "scope": "test",
+      "count": 5
+    },
+    {
+      "scope": "refactor",
+      "count": 4
+    },
+    {
+      "scope": "cli",
+      "count": 4
     }
   ],
   "headlineCommits": [
-    "refactor: add session accessor seam with gateway consumer (#90463)",
-    "fix(agents): recover genericized Anthropic thinking errors (#92916)",
-    "fix(release): preserve child release check refs",
-    "fix(auto-reply): strip delivery hints from leading metadata",
-    "fix(plugin-sdk): expose delivery hints without utility imports",
-    "fix(auto-reply): share message-tool delivery hints",
-    "test(auto-reply): trim duplicate progress assertion",
-    "test(auto-reply): assert allowed suppressed progress gating"
+    "refactor: add transcript reader seam (#89121)",
+    "docs(cli): add agent selector to cli backend quick start (#74613)",
+    "fix(gateway): pass managed inbound PDFs through chat.send (#90115)",
+    "fix(plugins): serialize binding approval saves (#88945)",
+    "fix(cli): report Gemini CLI runtime auth status (#86544)",
+    "docs(windows): fix WSL gateway-autostart recipe for WSL ≥ 2.6.1.0 idle-termination (#90992)",
+    "fix(heartbeat): refresh stale Current time line on every helper call (#44993) (#75025)",
+    "feat(status): surface plugin health (#91952)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
