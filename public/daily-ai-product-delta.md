@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-06-16T00:48:59+08:00
-- Requested window: 2026-06-15 to 2026-06-16
+- Generated at: 2026-06-17T00:16:56+08:00
+- Requested window: 2026-06-16 to 2026-06-17
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,29 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-06-15 to 2026-06-16
-- Generated at: 2026-06-16T00:48:42.999311+08:00
-- 窗口: 2026-06-15 至 2026-06-16
-- GitHub 增量: 116 commits / 1 releases
-- 最近 push: 2026-06-15
+- Window: 2026-06-16 to 2026-06-17
+- Generated at: 2026-06-17T00:16:37.128155+08:00
+- 窗口: 2026-06-16 至 2026-06-17
+- GitHub 增量: 326 commits / 1 releases
+- 最近 push: 2026-06-16
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Providers/models: add GLM-5.2 support and Claude Haiku 4.5 catalog entries while keeping provider-qualified model IDs normalized across OpenRouter and Google Vertex paths. (#92796, #90116, #92627, #91218) Thanks @arkyu2077, @liuhao1024, and @bymle. [v2026.6.8-beta.1]
-  - Agent commands: support `/btw` in CLI-backed sessions and keep CLI usage-error exits classified as usage failures instead of successful runs. (#92669, #92162) Thanks @joshavant and @Pandah97. [v2026.6.8-beta.1]
-  - Usage hooks: add built-in full footer rendering, default footer templates, per-turn usage state, credential-aware limits, and fixed-decimal formatting for usage-bar templates. (#92657, #89835, #89629) Thanks @Marvinthebored. [v2026.6.8-beta.1]
-  - feat(status): surface plugin health (#91952)
-  - feat(telegram): send rich messages as rich html (#93286)
-  - feat(codex): add auto plugin approvals (#92625)
+  - Providers/models: add GLM-5.2 support and Claude Haiku 4.5 catalog entries while keeping provider-qualified model IDs normalized across OpenRouter and Google Vertex paths. (#92796, #90116, #92627, #91218) Thanks @arkyu2077, @liuhao1024, and @bymle. [v2026.6.8-beta.2]
+  - Agent commands: support `/btw` in CLI-backed sessions and keep CLI usage-error exits classified as usage failures instead of successful runs. (#92669, #92162) Thanks @joshavant and @Pandah97. [v2026.6.8-beta.2]
+  - Usage hooks: add built-in full footer rendering, default footer templates, per-turn usage state, credential-aware limits, and fixed-decimal formatting for usage-bar templates. (#92657, #89835, #89629) Thanks @Marvinthebored. [v2026.6.8-beta.2]
+  - feat(ios): add watch action surface (#93387)
+  - feat(cron): add compact list responses (#93395)
+  - feat: add Codex hosted web search (#93446)
+  - feat(policy): cover exec approvals artifact (#90003)
+  - Add Apple Watch screenshot pipeline
 - Fixes and constraints:
-  - fix(gateway): pass managed inbound PDFs through chat.send (#90115)
-  - fix(plugins): serialize binding approval saves (#88945)
-  - fix(cli): report Gemini CLI runtime auth status (#86544)
-  - fix(heartbeat): refresh stale Current time line on every helper call (#44993) (#75025)
-  - fix(telegram): preserve rich progress command output
-  - fix(control-ui): respect agents.defaults.timeFormat for timestamps (#93297)
-  - fix(cron): trust agent output when channel is unresolved without explicit delivery (#92817)
-  - fix(ios): refresh permission rows after grants (#91776)
+  - fix(i18n): retain Codex error tails in logs (#93687)
+  - fix(agents): return string assistant content in getLastAssistantText (#93646)
+  - fix(gateway): ignore stale sudo scope for root user services (#93693)
+  - fix(telegram): dispatch MEDIA directives as attachments (#93690)
+  - fix(reply): preserve unsent text-only finals after block pipeline streamed partial content (fixes #81078) (#93629)
+  - fix(control-ui): copy code blocks over plain HTTP via clipboard fallback (#93666)
+  - fix(ci): fail unusable Windows testbox phone-home
+  - fix(deps): update Hono security pin
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
