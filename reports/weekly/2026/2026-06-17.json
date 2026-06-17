@@ -1,187 +1,199 @@
 {
-  "generated_at": "2026-06-17T00:16:37.128155+08:00",
+  "generated_at": "2026-06-17T22:44:43.659011+08:00",
   "window": {
-    "start_local": "2026-06-16T00:16:37.128155+08:00",
-    "end_local": "2026-06-17T00:16:37.128155+08:00",
-    "start_utc": "2026-06-15T16:16:37Z",
-    "end_utc": "2026-06-16T16:16:37Z"
+    "start_local": "2026-06-16T22:44:43.659011+08:00",
+    "end_local": "2026-06-17T22:44:43.659011+08:00",
+    "start_utc": "2026-06-16T14:44:43Z",
+    "end_utc": "2026-06-17T14:44:43Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 379009,
-    "forks": 79316,
-    "open_issues": 6249,
-    "pushed_at": "2026-06-16T16:14:16Z"
+    "stars": 379166,
+    "forks": 79355,
+    "open_issues": 6432,
+    "pushed_at": "2026-06-17T14:44:06Z"
   },
   "releases_in_window": [
     {
-      "tag_name": "v2026.6.8-beta.2",
-      "published_at": "2026-06-16T01:50:19Z",
-      "name": "openclaw 2026.6.8-beta.2",
-      "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.8-beta.2"
+      "tag_name": "v2026.6.8",
+      "published_at": "2026-06-16T16:32:26Z",
+      "name": "openclaw 2026.6.8",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.8"
     }
   ],
-  "commit_count": 326,
+  "commit_count": 531,
   "commit_headlines": [
-    "fix(i18n): retain Codex error tails in logs (#93687)",
-    "fix(agents): return string assistant content in getLastAssistantText (#93646)",
-    "fix(gateway): ignore stale sudo scope for root user services (#93693)",
-    "fix(telegram): dispatch MEDIA directives as attachments (#93690)",
-    "fix(reply): preserve unsent text-only finals after block pipeline streamed partial content (fixes #81078) (#93629)",
-    "fix(control-ui): copy code blocks over plain HTTP via clipboard fallback (#93666)",
-    "fix(ci): fail unusable Windows testbox phone-home",
-    "fix(deps): update Hono security pin",
-    "fix(status): ignore stale context after model switch (#93306)",
-    "fix(plugins): allow Dreaming sidecar through restrictive memory allowlists (#93678)",
-    "fix(browser): accept top-level act fields with nested requests (#93674)",
-    "fix(commands): preserve multiline slash skill args (#93672)",
-    "fix(browser): recover stale managed Chrome CDP listener (#93670)",
-    "fix(ios): satisfy watch screenshot SwiftFormat",
-    "fix(clawdock): open dashboard on published port without starting deps (#93663)",
-    "fix(discord): protect mention aliases in code fences (#93662)",
+    "fix(clickclack): clear gateway status after poll failures",
+    "fix(qa-channel): clear gateway status after poll failures",
+    "refactor(plugins): remove unused session helpers",
+    "fix(doctor): clear inert legacy cron notify markers (#89396)",
+    "chore(ui): refresh it control ui locale",
     "chore(ui): refresh fa control ui locale",
     "chore(ui): refresh nl control ui locale",
-    "chore(ui): refresh th control ui locale",
     "chore(ui): refresh vi control ui locale",
+    "chore(ui): refresh th control ui locale",
     "chore(ui): refresh pl control ui locale",
     "chore(ui): refresh id control ui locale",
-    "chore(ui): refresh uk control ui locale",
     "chore(ui): refresh tr control ui locale",
-    "chore(ui): refresh it control ui locale",
+    "chore(ui): refresh uk control ui locale",
     "chore(ui): refresh ar control ui locale",
     "chore(ui): refresh fr control ui locale",
     "chore(ui): refresh ko control ui locale",
     "chore(ui): refresh es control ui locale",
     "chore(ui): refresh ja-JP control ui locale",
-    "chore(ui): refresh pt-BR control ui locale",
     "chore(ui): refresh zh-TW control ui locale",
+    "chore(ui): refresh pt-BR control ui locale",
     "chore(ui): refresh zh-CN control ui locale",
     "chore(ui): refresh de control ui locale",
-    "fix(ui): localize Talk error dismiss label",
-    "fix(codex): expose remote node exec as a Codex dynamic tool (#93654)",
-    "fix(skill-workshop): skip helper sessions during auto-capture (#93653)",
-    "chore(ios): capture watch now face screenshot",
-    "chore(ios): remove review information metadata",
-    "chore(ios): rename signing repository reference",
-    "chore(ios): migrate release signing to fastlane match",
-    "fix(update): avoid per-Node npm prefixes during self-update (#93650)",
-    "test(feishu): reset lifecycle monitor state",
-    "fix(qwen): place DashScope image prompts in user content (#93649)",
-    "fix(doctor): archive superseded plugin install index conflicts (#93648)",
-    "feat(ios): add watch action surface (#93387)",
-    "fix(feishu): filter temporary card-action-c-* IDs from reply target to prevent Invalid open_message_id errors (fixes #56818) (#93618)",
-    "test(telegram): stabilize spool timeout recovery assertions",
-    "fix #93044: control-ui webchat double-renders agent replies when dmScope=main (#93298)",
-    "fix(telegram): preserve live spool claim owners"
+    "fix(scripts): make fast commits skip hooks",
+    "Polish Workboard operations view (#90057)",
+    "fix(secrets): explicitly pass BWS_SERVER_URL to resolver for self-hosted instances (#93929)",
+    "refactor(runtime): remove unused registry accessors",
+    "fix(testing): relax gateway chat async waits",
+    "fix(testing): use UUIDs for Telegram credential leases",
+    "fix(testing): use UUIDs for cross-OS release probes",
+    "fix(testing): use UUIDs for Vitest include files",
+    "refactor(outbound): remove unused runtime facade",
+    "fix(testing): use UUIDs for macOS Discord smoke nonces",
+    "fix(testing): use UUIDs for npm update guest scripts",
+    "fix(testing): use UUIDs for Parallels background scripts",
+    "refactor(plugins): remove unused helper accessors",
+    "fix(testing): recognize signaled Parallels server exits",
+    "test(qa): align Docker inspect expectations",
+    "fix(testing): normalize QA compose service lookup",
+    "refactor(state): remove unused audit writers",
+    "fix(testing): avoid Parallels guest script collisions",
+    "fix(gateway): clean pending request when send fails",
+    "fix(sdk): settle transport connect on close",
+    "refactor(runtime): remove unused helper exports",
+    "fix(gateway): honor injected env for watchdog timeouts",
+    "fix(testing): bind QA docker port probes to loopback",
+    "refactor(runtime): remove unused internal wrappers",
+    "docs(testing): document gauntlet guardrails",
+    "fix(testing): reserve kitchen sink rpc ports",
+    "feat(docker): support offline setup reruns (#89062)",
+    "refactor(runtime): remove unused helper probes"
   ],
   "feature_items": [
-    "Providers/models: add GLM-5.2 support and Claude Haiku 4.5 catalog entries while keeping provider-qualified model IDs normalized across OpenRouter and Google Vertex paths. (#92796, #90116, #92627, #91218) Thanks @arkyu2077, @liuhao1024, and @bymle. [v2026.6.8-beta.2]",
-    "Agent commands: support `/btw` in CLI-backed sessions and keep CLI usage-error exits classified as usage failures instead of successful runs. (#92669, #92162) Thanks @joshavant and @Pandah97. [v2026.6.8-beta.2]",
-    "Usage hooks: add built-in full footer rendering, default footer templates, per-turn usage state, credential-aware limits, and fixed-decimal formatting for usage-bar templates. (#92657, #89835, #89629) Thanks @Marvinthebored. [v2026.6.8-beta.2]",
-    "feat(ios): add watch action surface (#93387)",
-    "feat(cron): add compact list responses (#93395)",
-    "feat: add Codex hosted web search (#93446)",
-    "feat(policy): cover exec approvals artifact (#90003)",
-    "Add Apple Watch screenshot pipeline",
-    "Add slim evidence mode for QA profile evidence (#93179)",
-    "feat: configure ios app store release upload",
-    "feat: configure ios app store release signing",
-    "feat: add ios screenshot fixture mode",
-    "feat(status): surface plugin health (#91952)"
+    "Providers/models: add GLM-5.2 support and Claude Haiku 4.5 catalog entries while keeping provider-qualified model IDs normalized across OpenRouter and Google Vertex paths. (#92796, #90116, #92627, #91218) Thanks @arkyu2077, @liuhao1024, @bymle, @maaron34, and @lijenhsin. [v2026.6.8]",
+    "Agent commands: support `/btw` in CLI-backed sessions and keep CLI usage-error exits classified as usage failures instead of successful runs. (#92669, #92162) Thanks @joshavant, @Pandah97, and @marcospaulo. [v2026.6.8]",
+    "Usage hooks: add built-in full footer rendering, default footer templates, per-turn usage state, credential-aware limits, and fixed-decimal formatting for usage-bar templates. (#92657, #89835, #89629) Thanks @Marvinthebored. [v2026.6.8]",
+    "feat(docker): support offline setup reruns (#89062)",
+    "feat(agents): trace compaction summarization model calls",
+    "ci: add security-sensitive file guard",
+    "android: add release signing sync",
+    "android: add release preflight lane",
+    "feat(codex): support app-server network proxy profiles (#93538)",
+    "feat(cohere): add provider plugin",
+    "feat(security): emit audit summary events",
+    "feat(plugins): emit security events for installs",
+    "feat(agents): emit security events for exec approvals",
+    "feat(gateway): emit security events for auth handshakes",
+    "feat(gateway): emit security events for device pairing",
+    "feat(agents): emit security events for tool vetoes",
+    "feat(diagnostics): export security events to OTLP logs",
+    "feat(diagnostics): add trusted security events",
+    "feat(providers): add ClawRouter managed proxy",
+    "clawdbot-d02.1.9.1.31: add sessions.create lifecycle seam (#93691)",
+    "feat(context-engine): pass runtime settings into lifecycle (#88750)",
+    "feat(inbound-meta): expose per-turn source modality (#93754)",
+    "feat(memory): apply outputDimensionality truncation to local GGUF embeddings (fixes #58765) (#93758)",
+    "android: add play release upload lane",
+    "android: add pinned release versioning"
   ],
   "fix_items": [
-    "fix(i18n): retain Codex error tails in logs (#93687)",
-    "fix(agents): return string assistant content in getLastAssistantText (#93646)",
-    "fix(gateway): ignore stale sudo scope for root user services (#93693)",
-    "fix(telegram): dispatch MEDIA directives as attachments (#93690)",
-    "fix(reply): preserve unsent text-only finals after block pipeline streamed partial content (fixes #81078) (#93629)",
-    "fix(control-ui): copy code blocks over plain HTTP via clipboard fallback (#93666)",
-    "fix(ci): fail unusable Windows testbox phone-home",
-    "fix(deps): update Hono security pin",
-    "fix(status): ignore stale context after model switch (#93306)",
-    "fix(plugins): allow Dreaming sidecar through restrictive memory allowlists (#93678)",
-    "fix(browser): accept top-level act fields with nested requests (#93674)",
-    "fix(commands): preserve multiline slash skill args (#93672)",
-    "fix(browser): recover stale managed Chrome CDP listener (#93670)",
-    "fix(ios): satisfy watch screenshot SwiftFormat",
-    "fix(clawdock): open dashboard on published port without starting deps (#93663)",
-    "fix(discord): protect mention aliases in code fences (#93662)",
-    "fix(ui): localize Talk error dismiss label",
-    "fix(codex): expose remote node exec as a Codex dynamic tool (#93654)",
-    "fix(skill-workshop): skip helper sessions during auto-capture (#93653)",
-    "fix(update): avoid per-Node npm prefixes during self-update (#93650)",
-    "fix(qwen): place DashScope image prompts in user content (#93649)",
-    "fix(doctor): archive superseded plugin install index conflicts (#93648)",
-    "fix(feishu): filter temporary card-action-c-* IDs from reply target to prevent Invalid open_message_id errors (fixes #56818) (#93618)",
-    "fix #93044: control-ui webchat double-renders agent replies when dmScope=main (#93298)",
-    "fix(telegram): preserve live spool claim owners",
-    "fix(telegram): recover lone active spooled handler on timeout (#84158) (#93615)",
-    "fix(gateway): compute sessions.usage aggregate totals from all sessions, not just the limited page (fixes #76496) (#93612)",
-    "perf(tasks): memoize reconcileInspectableTasks for same-tick calls (fixes #73531) (#93607)",
-    "fix(ui): clear stale Talk error when session transitions to non-error state (fixes #88176) (#93606)",
-    "fix(ci): require billable Anthropic release key"
+    "fix(clickclack): clear gateway status after poll failures",
+    "fix(qa-channel): clear gateway status after poll failures",
+    "fix(doctor): clear inert legacy cron notify markers (#89396)",
+    "fix(scripts): make fast commits skip hooks",
+    "fix(secrets): explicitly pass BWS_SERVER_URL to resolver for self-hosted instances (#93929)",
+    "fix(testing): relax gateway chat async waits",
+    "fix(testing): use UUIDs for Telegram credential leases",
+    "fix(testing): use UUIDs for cross-OS release probes",
+    "fix(testing): use UUIDs for Vitest include files",
+    "fix(testing): use UUIDs for macOS Discord smoke nonces",
+    "fix(testing): use UUIDs for npm update guest scripts",
+    "fix(testing): use UUIDs for Parallels background scripts",
+    "fix(testing): recognize signaled Parallels server exits",
+    "fix(testing): normalize QA compose service lookup",
+    "fix(testing): avoid Parallels guest script collisions",
+    "fix(gateway): clean pending request when send fails",
+    "fix(sdk): settle transport connect on close",
+    "fix(gateway): honor injected env for watchdog timeouts",
+    "fix(testing): bind QA docker port probes to loopback",
+    "fix(testing): reserve kitchen sink rpc ports",
+    "fix(testing): route command root target to both shards",
+    "fix(testing): harden script tooling checks",
+    "fix(qa): mount Telegram package output dir",
+    "fix(qa): use writable tmp in Telegram package runner",
+    "fix(ci): install docker heartbeat traps before launch",
+    "fix(telegram): guard UTF-16 surrogate pairs in outbound chunkers (#93938)",
+    "fix(qa): allow safe otel log bodies",
+    "fix(sdk): refresh plugin surface baselines",
+    "fix(codex): refresh app server protocol mirrors",
+    "fix(qa-lab): bound credential payload reads"
   ],
   "top_scopes": [
     {
-      "scope": "ui",
-      "count": 24
-    },
-    {
       "scope": "agents",
-      "count": 23
-    },
-    {
-      "scope": "ci",
-      "count": 17
-    },
-    {
-      "scope": "plugins",
-      "count": 15
+      "count": 134
     },
     {
       "scope": "fix",
-      "count": 15
-    },
-    {
-      "scope": "gateway",
-      "count": 14
-    },
-    {
-      "scope": "telegram",
-      "count": 10
-    },
-    {
-      "scope": "cron",
-      "count": 10
-    },
-    {
-      "scope": "cli",
-      "count": 10
-    },
-    {
-      "scope": "scripts",
-      "count": 9
-    },
-    {
-      "scope": "ios",
-      "count": 8
-    },
-    {
-      "scope": "feishu",
-      "count": 8
-    },
-    {
-      "scope": "e2e",
-      "count": 8
-    },
-    {
-      "scope": "whatsapp",
-      "count": 7
+      "count": 42
     },
     {
       "scope": "qa",
-      "count": 7
+      "count": 24
+    },
+    {
+      "scope": "ui",
+      "count": 23
+    },
+    {
+      "scope": "commands",
+      "count": 23
+    },
+    {
+      "scope": "release",
+      "count": 22
+    },
+    {
+      "scope": "testing",
+      "count": 15
+    },
+    {
+      "scope": "providers",
+      "count": 15
+    },
+    {
+      "scope": "android",
+      "count": 13
+    },
+    {
+      "scope": "plugins",
+      "count": 12
+    },
+    {
+      "scope": "ci",
+      "count": 12
+    },
+    {
+      "scope": "codex",
+      "count": 12
+    },
+    {
+      "scope": "gateway",
+      "count": 10
+    },
+    {
+      "scope": "config",
+      "count": 8
+    },
+    {
+      "scope": "sdk",
+      "count": 6
     }
   ]
 }
