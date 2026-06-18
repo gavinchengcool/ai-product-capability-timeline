@@ -1,99 +1,90 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-06-17T22:44:43.659011+08:00",
+  "generatedAt": "2026-06-18T22:38:25.572894+08:00",
   "window": {
-    "start_local": "2026-06-16T22:44:43.659011+08:00",
-    "end_local": "2026-06-17T22:44:43.659011+08:00",
-    "start_utc": "2026-06-16T14:44:43Z",
-    "end_utc": "2026-06-17T14:44:43Z"
+    "start_local": "2026-06-17T22:38:25.572894+08:00",
+    "end_local": "2026-06-18T22:38:25.572894+08:00",
+    "start_utc": "2026-06-17T14:38:25Z",
+    "end_utc": "2026-06-18T14:38:25Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 379166,
-    "forks": 79355,
-    "open_issues": 6432,
-    "pushed_at": "2026-06-17T14:44:06Z"
+    "stars": 379357,
+    "forks": 79411,
+    "open_issues": 6547,
+    "pushed_at": "2026-06-18T14:38:11Z"
   },
   "summary": {
-    "commitCount": 531,
-    "releaseCount": 1,
-    "stableReleaseCount": 1,
+    "commitCount": 244,
+    "releaseCount": 0,
+    "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 379166,
-    "forks": 79355,
-    "openIssues": 6432
+    "stars": 379357,
+    "forks": 79411,
+    "openIssues": 6547
   },
-  "releases": [
-    {
-      "tag_name": "v2026.6.8",
-      "published_at": "2026-06-16T16:32:26Z",
-      "name": "openclaw 2026.6.8",
-      "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.8"
-    }
-  ],
+  "releases": [],
   "featureItems": [
-    "Providers/models: add GLM-5.2 support and Claude Haiku 4.5 catalog entries while keeping provider-qualified model IDs normalized across OpenRouter and Google Vertex paths. (#92796, #90116, #92627, #91218) Thanks @arkyu2077, @liuhao1024, @bymle, @maaron34, and @lijenhsin. [v2026.6.8]",
-    "Agent commands: support `/btw` in CLI-backed sessions and keep CLI usage-error exits classified as usage failures instead of successful runs. (#92669, #92162) Thanks @joshavant, @Pandah97, and @marcospaulo. [v2026.6.8]",
-    "Usage hooks: add built-in full footer rendering, default footer templates, per-turn usage state, credential-aware limits, and fixed-decimal formatting for usage-bar templates. (#92657, #89835, #89629) Thanks @Marvinthebored. [v2026.6.8]",
-    "feat(docker): support offline setup reruns (#89062)",
-    "feat(agents): trace compaction summarization model calls",
-    "ci: add security-sensitive file guard",
-    "android: add release signing sync",
-    "android: add release preflight lane"
+    "feat(cohere): externalize provider plugin",
+    "feat: externalize GMI provider plugin (#94350)",
+    "clawdbot-d02.1.9.1.33: add session cleanup lifecycle seam (#93704)",
+    "Support owner-qualified ClawHub skill installs (#94282)",
+    "qa-lab: support script-backed evidence scenarios (#94276)",
+    "feat(codex): support remote app-server plugins (#94203)",
+    "clawdbot-d02.1.9.1.16: add session patch projection seam (#93739)"
   ],
   "fixItems": [
-    "fix(clickclack): clear gateway status after poll failures",
-    "fix(qa-channel): clear gateway status after poll failures",
-    "fix(doctor): clear inert legacy cron notify markers (#89396)",
-    "fix(scripts): make fast commits skip hooks",
-    "fix(secrets): explicitly pass BWS_SERVER_URL to resolver for self-hosted instances (#93929)",
-    "fix(testing): relax gateway chat async waits",
-    "fix(testing): use UUIDs for Telegram credential leases",
-    "fix(testing): use UUIDs for cross-OS release probes"
+    "fix(gateway): keep approval waits visible across backend calls",
+    "fix(doctor): honor WSL env overrides in hints",
+    "fix(windows): prefer native arm64 portable git",
+    "fix: isolate model catalog state env",
+    "fix(android): validate screenshot locale path",
+    "fix: scope cli runner env helpers",
+    "fix: scope bootstrap home override",
+    "fix: simplify approval env restore"
   ],
   "topScopes": [
     {
+      "scope": "test",
+      "count": 40
+    },
+    {
       "scope": "agents",
-      "count": 134
+      "count": 28
+    },
+    {
+      "scope": "scripts",
+      "count": 15
     },
     {
       "scope": "fix",
-      "count": 42
+      "count": 9
     },
     {
-      "scope": "qa",
-      "count": 24
+      "scope": "plugins",
+      "count": 9
+    },
+    {
+      "scope": "gateway",
+      "count": 7
+    },
+    {
+      "scope": "update",
+      "count": 7
     },
     {
       "scope": "ui",
-      "count": 23
-    },
-    {
-      "scope": "commands",
-      "count": 23
-    },
-    {
-      "scope": "release",
-      "count": 22
-    },
-    {
-      "scope": "testing",
-      "count": 15
-    },
-    {
-      "scope": "providers",
-      "count": 15
+      "count": 7
     }
   ],
   "headlineCommits": [
-    "fix(clickclack): clear gateway status after poll failures",
-    "fix(qa-channel): clear gateway status after poll failures",
-    "refactor(plugins): remove unused session helpers",
-    "fix(doctor): clear inert legacy cron notify markers (#89396)",
-    "chore(ui): refresh it control ui locale",
-    "chore(ui): refresh fa control ui locale",
-    "chore(ui): refresh nl control ui locale",
-    "chore(ui): refresh vi control ui locale"
+    "test(gateway): assert codex approval resolver",
+    "test(gateway): accept app-server approval proof",
+    "test(gateway): align approval and update proof",
+    "fix(gateway): keep approval waits visible across backend calls",
+    "fix(doctor): honor WSL env overrides in hints",
+    "refactor(copilot): remove unused usage total helper",
+    "fix(windows): prefer native arm64 portable git",
+    "test: route live cache trace env"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
