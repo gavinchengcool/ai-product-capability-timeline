@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-06-19T22:35:41+08:00
-- Requested window: 2026-06-18 to 2026-06-19
+- Generated at: 2026-06-20T21:20:21+08:00
+- Requested window: 2026-06-19 to 2026-06-20
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,24 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-06-18 to 2026-06-19
-- Generated at: 2026-06-19T22:35:24.233164+08:00
-- 窗口: 2026-06-18 至 2026-06-19
-- GitHub 增量: 435 commits / 1 releases
-- 最近 push: 2026-06-19
+- Window: 2026-06-19 to 2026-06-20
+- Generated at: 2026-06-20T21:20:04.132961+08:00
+- 窗口: 2026-06-19 至 2026-06-20
+- GitHub 增量: 311 commits / 0 releases
+- 最近 push: 2026-06-20
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Providers and auth: add Codex Hosted Search, improve Gemini CLI OAuth behind proxies, and keep external provider onboarding on current choices and package metadata. (#93446, #92815) Thanks @fuller-stack-dev, @yetval, @EvetteYoung, and @vincentkoc. [v2026.6.9-beta.1]
-  - Dashboard and mobile: add a session workspace rail, plugin health in status, compact cron lists, and iOS Watch controls. (#92856, #91952, #93395, #93387) Thanks @Solvely-Colin, @jalehman, @yu-xin-c, @centralpc, @joshavant, and @vincentkoc. [v2026.6.9-beta.1]
-  - Codex and skills: add automatic plugin approvals, preserve ClawHub skill provenance, and expose remote-node execution to Codex when a node is connected. (#92625, #93283, #93654) Thanks @kevinslin, @momothemage, @nmccready-tars, @vincentkoc, and @JPKay-AI. [v2026.6.9-beta.1]
-  - feat(slack): handle global and message shortcuts (#94881)
-  - feat(channels): add Zalo ClawBot external channel entry and documenta… (#89586)
-  - feat(status): show session duration in footer (#88988)
-  - Add stdout diagnostics OTEL log exporter
-  - feat(slack): log INFO receipt for inbound app_mention events (#94790)
+  - feat(cli): add `openclaw sessions compact` and fail loudly on CLI `/compact` (fixes #90640) (#91378)
 - Fixes and constraints:
-  - Security and privacy: redact secrets from debug/config output, block internal HTTP session overrides, audit open-DM tool exposure, and retain plugin write ownership checks. (#93333, #88496, #93443, #92883, #93353) Thanks @Alix-007, @jason-allen-oneal, @coygeek, @RichardCao, @yu-xin-c, @cjg20ss, @eleqtrizit, and @vincentkoc. [v2026.6.9-beta.1]
-  - Channels and replies: fix Telegram rich delivery and ingress recovery, preserve WhatsApp auth and media error reporting, keep Mattermost thread replies intact, and harden Discord action handling. (#93286, #93364, #93281, #93076, #93334, #93424, #93488) Thanks @obviyus, @NianJiuZst, @mcaxtr, @rushindrasinha, @amknight, @lzyyzznl, @darealgege, and @vincentkoc. [v2026.6.9-beta.1]
-  - Operations and updates: harden official plugin recovery, restart managed Gateways after failed update handoff, avoid Node-specific npm prefixes, and keep package validation paths reliable. (#93325, #92111, #93650) Thanks @vincentkoc, @yetval, @ofan, and @yaanfpv. [v2026.6.9-beta.1]
-  - fix(qqbot): guard channel api fetches
-  - fix(qqbot): guard api client fetches
-  - fix(qqbot): bound token response bodies
-  - fix(agent): resolve compaction model alias to canonical model ref (#90885)
-  - fix(sdk): refresh api baseline hash
+  - fix(test-live): force cleanup shard child groups on parent signal
+  - fix(test-live): force cleanup Vitest child groups on parent signal
+  - fix(boundary): force cleanup tsc child trees on parent signal
+  - fix(deadcode): clean Knip child trees on parent signal
+  - fix(build): clean tsdown child trees on parent signal
+  - fix(test-report): clean parent-signaled child trees
+  - fix(boundary): clean active check child trees
+  - fix(install-smoke): clean Bun timeout child trees
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
