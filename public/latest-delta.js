@@ -1,84 +1,101 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-06-20T21:20:04.132961+08:00",
+  "generatedAt": "2026-06-21T21:29:33.266257+08:00",
   "window": {
-    "start_local": "2026-06-19T21:20:04.132961+08:00",
-    "end_local": "2026-06-20T21:20:04.132961+08:00",
-    "start_utc": "2026-06-19T13:20:04Z",
-    "end_utc": "2026-06-20T13:20:04Z"
+    "start_local": "2026-06-20T21:29:33.266257+08:00",
+    "end_local": "2026-06-21T21:29:33.266257+08:00",
+    "start_utc": "2026-06-20T13:29:33Z",
+    "end_utc": "2026-06-21T13:29:33Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 379605,
-    "forks": 79465,
-    "open_issues": 6452,
-    "pushed_at": "2026-06-20T13:19:32Z"
+    "stars": 379764,
+    "forks": 79493,
+    "open_issues": 6460,
+    "pushed_at": "2026-06-21T13:23:25Z"
   },
   "summary": {
-    "commitCount": 311,
-    "releaseCount": 0,
-    "stableReleaseCount": 0,
-    "betaReleaseCount": 0,
-    "stars": 379605,
-    "forks": 79465,
-    "openIssues": 6452
+    "commitCount": 376,
+    "releaseCount": 2,
+    "stableReleaseCount": 1,
+    "betaReleaseCount": 1,
+    "stars": 379764,
+    "forks": 79493,
+    "openIssues": 6460
   },
-  "releases": [],
+  "releases": [
+    {
+      "tag_name": "v2026.6.10-beta.1",
+      "published_at": "2026-06-21T09:12:41Z",
+      "name": "openclaw 2026.6.10-beta.1",
+      "prerelease": true,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.10-beta.1"
+    },
+    {
+      "tag_name": "v2026.6.9",
+      "published_at": "2026-06-21T01:44:28Z",
+      "name": "openclaw 2026.6.9",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.9"
+    }
+  ],
   "featureItems": [
-    "feat(cli): add `openclaw sessions compact` and fail loudly on CLI `/compact` (fixes #90640) (#91378)"
+    "Providers and auth: add Codex Hosted Search, improve Gemini CLI OAuth behind proxies, and keep external provider onboarding on current choices and package metadata. (#93446, #92815) Thanks @fuller-stack-dev, @yetval, @EvetteYoung, and @vincentkoc. [v2026.6.9]",
+    "Dashboard and mobile: add a session workspace rail, plugin health in status, compact cron lists, and iOS Watch controls. (#92856, #91952, #93395, #93387) Thanks @Solvely-Colin, @jalehman, @yu-xin-c, @centralpc, @joshavant, and @vincentkoc. [v2026.6.9]",
+    "Codex, observability, and skills: add automatic plugin approvals and SecretRefs, preserve ClawHub skill provenance, add OpenTelemetry log export, and expose remote-node execution to Codex when a node is connected. (#92625, #94324, #93283, #94561, #93654) Thanks @kevinslin, @kevinlin-openai, @momothemage, @nmccready-tars, @jesse-merhi, @vincentkoc, and @JPKay-AI. [v2026.6.9]"
   ],
   "fixItems": [
-    "fix(test-live): force cleanup shard child groups on parent signal",
-    "fix(test-live): force cleanup Vitest child groups on parent signal",
-    "fix(boundary): force cleanup tsc child trees on parent signal",
-    "fix(deadcode): clean Knip child trees on parent signal",
-    "fix(build): clean tsdown child trees on parent signal",
-    "fix(test-report): clean parent-signaled child trees",
-    "fix(boundary): clean active check child trees",
-    "fix(install-smoke): clean Bun timeout child trees"
+    "Security and privacy: redact secrets from debug/config output, block internal HTTP session overrides, audit open-DM tool exposure, and retain plugin write ownership checks. (#93333, #88496, #93443, #92883, #93353) Thanks @Alix-007, @jason-allen-oneal, @coygeek, @RichardCao, @yu-xin-c, @cjg20ss, @eleqtrizit, and @vincentkoc. [v2026.6.9]",
+    "Channels and replies: fix Telegram rich delivery, table rendering, action-error handling, and ingress recovery; preserve command progress detail across channel adapters; retain WhatsApp opening text after a media failure; keep Mattermost thread replies intact; and harden Discord action handling. (#93286, #93364, #93281, #93076, #93334, #93424, #93488, #94868, #94891, #94856, #94810, #93823) Thanks @obviyus, @NianJiuZst, @mcaxtr, @rushindrasinha, @amknight, @lzyyzznl, @darealgege, @vincentkoc, @zhangqueping, @jairrab, @ZOOWH, @parveshsaini, and @yetval. [v2026.6.9]",
+    "Operations and updates: harden official plugin recovery, restart managed Gateways after failed update handoff, keep safe cron delivery defaults, avoid Node-specific npm prefixes, and keep package validation paths reliable. (#93325, #92111, #93650, #94453, #91685) Thanks @vincentkoc, @yetval, @ofan, @yaanfpv, @jincheng-xydt, @sallyom, @davectr, and @nxmxbbd. [v2026.6.9]",
+    "fix(install): detect package manager launcher names",
+    "fix(ci): validate artifact package source sha",
+    "fix(deadcode): move update check state to sqlite",
+    "fix(qa): reject fractional live token usage",
+    "fix(qa): escape tool coverage markdown cells"
   ],
   "topScopes": [
     {
-      "scope": "test",
-      "count": 49
-    },
-    {
-      "scope": "qa",
-      "count": 31
+      "scope": "scripts",
+      "count": 81
     },
     {
       "scope": "deadcode",
-      "count": 24
+      "count": 60
     },
     {
-      "scope": "scripts",
-      "count": 23
+      "scope": "qa",
+      "count": 27
     },
     {
-      "scope": "e2e",
-      "count": 16
+      "scope": "copilot",
+      "count": 22
     },
     {
-      "scope": "qa-lab",
-      "count": 15
+      "scope": "test",
+      "count": 17
     },
     {
-      "scope": "ci",
-      "count": 13
+      "scope": "release",
+      "count": 17
     },
     {
       "scope": "fix",
-      "count": 10
+      "count": 12
+    },
+    {
+      "scope": "e2e",
+      "count": 11
     }
   ],
   "headlineCommits": [
-    "fix(test-live): force cleanup shard child groups on parent signal",
-    "fix(test-live): force cleanup Vitest child groups on parent signal",
-    "fix(boundary): force cleanup tsc child trees on parent signal",
-    "fix(deadcode): clean Knip child trees on parent signal",
-    "fix(build): clean tsdown child trees on parent signal",
-    "chore(deadcode): move gateway auth helper out of prod path",
-    "fix(test-report): clean parent-signaled child trees",
-    "fix(boundary): clean active check child trees"
+    "fix(install): detect package manager launcher names",
+    "fix(ci): validate artifact package source sha",
+    "fix(deadcode): move update check state to sqlite",
+    "fix(qa): reject fractional live token usage",
+    "fix(qa): escape tool coverage markdown cells",
+    "fix(deadcode): move voicewake settings to sqlite",
+    "fix(qa): reject impossible confidence counts",
+    "fix(plugins): reconcile managed npm root overrides with managed peer pins"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
