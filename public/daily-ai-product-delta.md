@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-06-21T21:29:49+08:00
-- Requested window: 2026-06-20 to 2026-06-21
+- Generated at: 2026-06-23T00:21:55+08:00
+- Requested window: 2026-06-22 to 2026-06-23
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,26 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-06-20 to 2026-06-21
-- Generated at: 2026-06-21T21:29:33.266257+08:00
-- 窗口: 2026-06-20 至 2026-06-21
-- GitHub 增量: 376 commits / 2 releases
-- 最近 push: 2026-06-21
+- Window: 2026-06-22 to 2026-06-23
+- Generated at: 2026-06-23T00:21:37.120902+08:00
+- 窗口: 2026-06-22 至 2026-06-23
+- GitHub 增量: 398 commits / 1 releases
+- 最近 push: 2026-06-22
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Providers and auth: add Codex Hosted Search, improve Gemini CLI OAuth behind proxies, and keep external provider onboarding on current choices and package metadata. (#93446, #92815) Thanks @fuller-stack-dev, @yetval, @EvetteYoung, and @vincentkoc. [v2026.6.9]
-  - Dashboard and mobile: add a session workspace rail, plugin health in status, compact cron lists, and iOS Watch controls. (#92856, #91952, #93395, #93387) Thanks @Solvely-Colin, @jalehman, @yu-xin-c, @centralpc, @joshavant, and @vincentkoc. [v2026.6.9]
-  - Codex, observability, and skills: add automatic plugin approvals and SecretRefs, preserve ClawHub skill provenance, add OpenTelemetry log export, and expose remote-node execution to Codex when a node is connected. (#92625, #94324, #93283, #94561, #93654) Thanks @kevinslin, @kevinlin-openai, @momothemage, @nmccready-tars, @jesse-merhi, @vincentkoc, and @JPKay-AI. [v2026.6.9]
+  - Revert "feat(discord): add server management helper actions"
+  - feat(discord): add server management helper actions
+  - meta(issue-template): add dedicated docs bug report form
+  - feat(cli): add --message-file to openclaw agent
+  - feat(plugins): externalize additional official plugins (#95683)
+  - feat(raft): add wake bridge channel
+  - feat(mattermost): register /oc_queue as a native slash command
+  - feat(ios): consolidate notification permission UX
 - Fixes and constraints:
-  - Security and privacy: redact secrets from debug/config output, block internal HTTP session overrides, audit open-DM tool exposure, and retain plugin write ownership checks. (#93333, #88496, #93443, #92883, #93353) Thanks @Alix-007, @jason-allen-oneal, @coygeek, @RichardCao, @yu-xin-c, @cjg20ss, @eleqtrizit, and @vincentkoc. [v2026.6.9]
-  - Channels and replies: fix Telegram rich delivery, table rendering, action-error handling, and ingress recovery; preserve command progress detail across channel adapters; retain WhatsApp opening text after a media failure; keep Mattermost thread replies intact; and harden Discord action handling. (#93286, #93364, #93281, #93076, #93334, #93424, #93488, #94868, #94891, #94856, #94810, #93823) Thanks @obviyus, @NianJiuZst, @mcaxtr, @rushindrasinha, @amknight, @lzyyzznl, @darealgege, @vincentkoc, @zhangqueping, @jairrab, @ZOOWH, @parveshsaini, and @yetval. [v2026.6.9]
-  - Operations and updates: harden official plugin recovery, restart managed Gateways after failed update handoff, keep safe cron delivery defaults, avoid Node-specific npm prefixes, and keep package validation paths reliable. (#93325, #92111, #93650, #94453, #91685) Thanks @vincentkoc, @yetval, @ofan, @yaanfpv, @jincheng-xydt, @sallyom, @davectr, and @nxmxbbd. [v2026.6.9]
-  - fix(install): detect package manager launcher names
-  - fix(ci): validate artifact package source sha
-  - fix(deadcode): move update check state to sqlite
-  - fix(qa): reject fractional live token usage
-  - fix(qa): escape tool coverage markdown cells
+  - fix: include persisted plugin contracts for migrations (#89612)
+  - fix(agents): normalize hallucinated Office file extensions (#95805)
+  - fix(sessions): drop unused runtime context binding
+  - fix(memory): preserve Windows session transcript paths
+  - fix(session-memory): sanitize model artifacts before saving memory (#95791)
+  - fix(cron): compare thread IDs when deduping failure destinations (#95794)
+  - fix(cron): clean up isolated sessions after runs
+  - fix(web-ui): skip hidden subagent picker pages
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

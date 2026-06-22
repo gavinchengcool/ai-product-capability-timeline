@@ -1,101 +1,99 @@
 {
-  "generatedAt": "2026-06-21T21:29:33.266257+08:00",
+  "generatedAt": "2026-06-23T00:21:37.120902+08:00",
   "window": {
-    "start_local": "2026-06-20T21:29:33.266257+08:00",
-    "end_local": "2026-06-21T21:29:33.266257+08:00",
-    "start_utc": "2026-06-20T13:29:33Z",
-    "end_utc": "2026-06-21T13:29:33Z"
+    "start_local": "2026-06-22T00:21:37.120902+08:00",
+    "end_local": "2026-06-23T00:21:37.120902+08:00",
+    "start_utc": "2026-06-21T16:21:37Z",
+    "end_utc": "2026-06-22T16:21:37Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 379764,
-    "forks": 79493,
-    "open_issues": 6460,
-    "pushed_at": "2026-06-21T13:23:25Z"
+    "stars": 379949,
+    "forks": 79548,
+    "open_issues": 6483,
+    "pushed_at": "2026-06-22T16:20:23Z"
   },
   "summary": {
-    "commitCount": 376,
-    "releaseCount": 2,
-    "stableReleaseCount": 1,
+    "commitCount": 398,
+    "releaseCount": 1,
+    "stableReleaseCount": 0,
     "betaReleaseCount": 1,
-    "stars": 379764,
-    "forks": 79493,
-    "openIssues": 6460
+    "stars": 379949,
+    "forks": 79548,
+    "openIssues": 6483
   },
   "releases": [
     {
-      "tag_name": "v2026.6.10-beta.1",
-      "published_at": "2026-06-21T09:12:41Z",
-      "name": "openclaw 2026.6.10-beta.1",
+      "tag_name": "v2026.6.10-beta.2",
+      "published_at": "2026-06-22T09:36:28Z",
+      "name": "openclaw 2026.6.10-beta.2",
       "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.10-beta.1"
-    },
-    {
-      "tag_name": "v2026.6.9",
-      "published_at": "2026-06-21T01:44:28Z",
-      "name": "openclaw 2026.6.9",
-      "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.9"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.10-beta.2"
     }
   ],
   "featureItems": [
-    "Providers and auth: add Codex Hosted Search, improve Gemini CLI OAuth behind proxies, and keep external provider onboarding on current choices and package metadata. (#93446, #92815) Thanks @fuller-stack-dev, @yetval, @EvetteYoung, and @vincentkoc. [v2026.6.9]",
-    "Dashboard and mobile: add a session workspace rail, plugin health in status, compact cron lists, and iOS Watch controls. (#92856, #91952, #93395, #93387) Thanks @Solvely-Colin, @jalehman, @yu-xin-c, @centralpc, @joshavant, and @vincentkoc. [v2026.6.9]",
-    "Codex, observability, and skills: add automatic plugin approvals and SecretRefs, preserve ClawHub skill provenance, add OpenTelemetry log export, and expose remote-node execution to Codex when a node is connected. (#92625, #94324, #93283, #94561, #93654) Thanks @kevinslin, @kevinlin-openai, @momothemage, @nmccready-tars, @jesse-merhi, @vincentkoc, and @JPKay-AI. [v2026.6.9]"
+    "Revert \"feat(discord): add server management helper actions\"",
+    "feat(discord): add server management helper actions",
+    "meta(issue-template): add dedicated docs bug report form",
+    "feat(cli): add --message-file to openclaw agent",
+    "feat(plugins): externalize additional official plugins (#95683)",
+    "feat(raft): add wake bridge channel",
+    "feat(mattermost): register /oc_queue as a native slash command",
+    "feat(ios): consolidate notification permission UX"
   ],
   "fixItems": [
-    "Security and privacy: redact secrets from debug/config output, block internal HTTP session overrides, audit open-DM tool exposure, and retain plugin write ownership checks. (#93333, #88496, #93443, #92883, #93353) Thanks @Alix-007, @jason-allen-oneal, @coygeek, @RichardCao, @yu-xin-c, @cjg20ss, @eleqtrizit, and @vincentkoc. [v2026.6.9]",
-    "Channels and replies: fix Telegram rich delivery, table rendering, action-error handling, and ingress recovery; preserve command progress detail across channel adapters; retain WhatsApp opening text after a media failure; keep Mattermost thread replies intact; and harden Discord action handling. (#93286, #93364, #93281, #93076, #93334, #93424, #93488, #94868, #94891, #94856, #94810, #93823) Thanks @obviyus, @NianJiuZst, @mcaxtr, @rushindrasinha, @amknight, @lzyyzznl, @darealgege, @vincentkoc, @zhangqueping, @jairrab, @ZOOWH, @parveshsaini, and @yetval. [v2026.6.9]",
-    "Operations and updates: harden official plugin recovery, restart managed Gateways after failed update handoff, keep safe cron delivery defaults, avoid Node-specific npm prefixes, and keep package validation paths reliable. (#93325, #92111, #93650, #94453, #91685) Thanks @vincentkoc, @yetval, @ofan, @yaanfpv, @jincheng-xydt, @sallyom, @davectr, and @nxmxbbd. [v2026.6.9]",
-    "fix(install): detect package manager launcher names",
-    "fix(ci): validate artifact package source sha",
-    "fix(deadcode): move update check state to sqlite",
-    "fix(qa): reject fractional live token usage",
-    "fix(qa): escape tool coverage markdown cells"
+    "fix: include persisted plugin contracts for migrations (#89612)",
+    "fix(agents): normalize hallucinated Office file extensions (#95805)",
+    "fix(sessions): drop unused runtime context binding",
+    "fix(memory): preserve Windows session transcript paths",
+    "fix(session-memory): sanitize model artifacts before saving memory (#95791)",
+    "fix(cron): compare thread IDs when deduping failure destinations (#95794)",
+    "fix(cron): clean up isolated sessions after runs",
+    "fix(web-ui): skip hidden subagent picker pages"
   ],
   "topScopes": [
     {
       "scope": "scripts",
-      "count": 81
+      "count": 57
     },
     {
       "scope": "deadcode",
-      "count": 60
+      "count": 52
     },
     {
-      "scope": "qa",
-      "count": 27
-    },
-    {
-      "scope": "copilot",
-      "count": 22
+      "scope": "agents",
+      "count": 33
     },
     {
       "scope": "test",
-      "count": 17
-    },
-    {
-      "scope": "release",
-      "count": 17
+      "count": 22
     },
     {
       "scope": "fix",
-      "count": 12
+      "count": 20
     },
     {
-      "scope": "e2e",
-      "count": 11
+      "scope": "ui",
+      "count": 20
+    },
+    {
+      "scope": "gateway",
+      "count": 14
+    },
+    {
+      "scope": "ci",
+      "count": 10
     }
   ],
   "headlineCommits": [
-    "fix(install): detect package manager launcher names",
-    "fix(ci): validate artifact package source sha",
-    "fix(deadcode): move update check state to sqlite",
-    "fix(qa): reject fractional live token usage",
-    "fix(qa): escape tool coverage markdown cells",
-    "fix(deadcode): move voicewake settings to sqlite",
-    "fix(qa): reject impossible confidence counts",
-    "fix(plugins): reconcile managed npm root overrides with managed peer pins"
+    "Revert \"feat(discord): add server management helper actions\"",
+    "refactor(gateway): share MCP bearer token classification",
+    "fix: include persisted plugin contracts for migrations (#89612)",
+    "feat(discord): add server management helper actions",
+    "refactor(infra): share Windows port inspection",
+    "refactor(agents): share session tool output rendering",
+    "refactor(gateway): share control-plane identity normalization",
+    "refactor(infra): remove stale utility re-exports"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 }
