@@ -1,94 +1,99 @@
 # OpenClaw Weekly Update
 
-生成时间：2026-06-23T00:21:37.120902+08:00
+生成时间：2026-06-23T22:14:11.851443+08:00
 
 ## Window
 
-- Start: 2026-06-22T00:21:37.120902+08:00
-- End: 2026-06-23T00:21:37.120902+08:00
+- Start: 2026-06-22T22:14:11.851443+08:00
+- End: 2026-06-23T22:14:11.851443+08:00
 - Repo: `openclaw/openclaw`
 
 ## At A Glance
 
-- Commits in window: 398
-- Releases in window: 1
+- Commits in window: 403
+- Releases in window: 0
 - Stable releases in window: 0
-- Beta releases in window: 1
-- Repo stars at scan time: 379949
-- Repo forks at scan time: 79548
+- Beta releases in window: 0
+- Repo stars at scan time: 380098
+- Repo forks at scan time: 79593
 
 ## New Capability Signals
 
-- Revert "feat(discord): add server management helper actions"
-- feat(discord): add server management helper actions
-- meta(issue-template): add dedicated docs bug report form
-- feat(cli): add --message-file to openclaw agent
-- feat(plugins): externalize additional official plugins (#95683)
-- feat(raft): add wake bridge channel
-- feat(mattermost): register /oc_queue as a native slash command
-- feat(ios): consolidate notification permission UX
-- feat: forward-port fast talks auto mode (#85104)
-- [codex] Add Slack relay mode for incoming messages (#94707)
+- feat(copilot): mirror native plan and subagent events
+- ci: add release QA profile evidence (#95094)
+- feat(mattermost): persist participated threads for mention-free follow-ups
+- ci: add codex maturity scorecard agent (#95919)
+- feat(copilot): wire harness parity helpers
+- feat: add bundled plugin icon manifest URLs (#95845)
+- feat: harden ios app store push release mode
+- feat(plugin-sdk): add extensible channel identity hook context (#91903)
+- feat(qa): add "all" taxonomy profile (#95947)
+- feat: add ios push relay diagnostics
+- ci: add maturity scorecard renderer (#94272) (#95901)
+- feat: wire ios push sandbox tooling
+- feat: add ios push relay sandbox profiles
+- feat: support sandbox relay apns registrations
+- feat(android): add settings detail panels (#95148)
 
 ## Important Fixes And Hardening
 
-- fix: include persisted plugin contracts for migrations (#89612)
-- fix(agents): normalize hallucinated Office file extensions (#95805)
-- fix(sessions): drop unused runtime context binding
-- fix(memory): preserve Windows session transcript paths
-- fix(session-memory): sanitize model artifacts before saving memory (#95791)
-- fix(cron): compare thread IDs when deduping failure destinations (#95794)
-- fix(cron): clean up isolated sessions after runs
-- fix(web-ui): skip hidden subagent picker pages
-- perf(cli): speed up precomputed command help startup
-- fix(auto-reply): clear runtime model cache on reset
-- fix(cli): document Commander rawArgs dependency
-- fix(build): allow tsdown heap override
-- fix(discord): drain queued voice replies after stream close
-- fix(ui): roll values near 1M over from k to M in compact token format (#95485)
-- fix(cron): preserve no-config delivery validation (#95754)
+- fix(harness): recover Copilot native subagent tasks
+- fix(qa): reject duplicate startup bench cases
+- fix(qa): reject missing memory fd args
+- fix(qa): disable pnpm verify in cpu scenarios
+- fix(maint): protect pending hosted CI reruns
+- fix(maint): choose latest hosted CI run
+- fix(maint): use rebase PR landing
+- fix: restore task state env through helper
+- fix(qa): reject duplicate gauntlet selectors
+- fix: simplify Fly Machine env cleanup
+- fix(qa): reject polluted Tool Search proof lanes
+- fix(qa): require MCP API list evidence
+- fix(qa): reject duplicate RPC RTT methods
+- fix: route shared auth secret env writes
+- fix(qa): require Telegram proof report before publish
 
 ## Releases This Week
 
-- `v2026.6.10-beta.2` | beta | 2026-06-22T09:36:28Z | openclaw 2026.6.10-beta.2
+- No GitHub releases were published in this window.
 
 ## Most Active Change Scopes
 
-- `scripts`: 57
-- `deadcode`: 52
-- `agents`: 33
-- `test`: 22
-- `fix`: 20
-- `ui`: 20
-- `gateway`: 14
-- `ci`: 10
-- `channels`: 8
-- `ios`: 8
+- `qa`: 60
+- `agents`: 34
+- `ci`: 29
+- `fix`: 21
+- `docs`: 9
+- `doctor`: 9
+- `test`: 8
+- `android`: 8
+- `media`: 8
 - `cli`: 7
-- `qa`: 7
+- `plugins`: 7
+- `gateway`: 7
 
 ## Recent Commit Headlines
 
-- 2026-06-22T16:20:08Z | Revert "feat(discord): add server management helper actions"
-- 2026-06-22T16:19:33Z | refactor(gateway): share MCP bearer token classification
-- 2026-06-22T16:18:48Z | fix: include persisted plugin contracts for migrations (#89612)
-- 2026-06-22T16:18:16Z | feat(discord): add server management helper actions
-- 2026-06-22T16:16:38Z | refactor(infra): share Windows port inspection
-- 2026-06-22T16:14:44Z | refactor(agents): share session tool output rendering
-- 2026-06-22T16:10:48Z | refactor(gateway): share control-plane identity normalization
-- 2026-06-22T16:07:13Z | refactor(infra): remove stale utility re-exports
-- 2026-06-22T16:01:42Z | refactor(agents): remove stale facade exports
-- 2026-06-22T15:39:16Z | refactor(agents): remove stale runner facades
-- 2026-06-22T15:38:24Z | fix(agents): normalize hallucinated Office file extensions (#95805)
-- 2026-06-22T15:24:44Z | refactor(infra): share error normalization
-- 2026-06-22T15:11:30Z | fix(sessions): drop unused runtime context binding
-- 2026-06-22T15:11:30Z | fix(memory): preserve Windows session transcript paths
-- 2026-06-22T15:20:31Z | refactor(tools): remove stale inventory re-exports
-- 2026-06-22T15:07:58Z | refactor(agents): share bundle runtime allowlist gating
-- 2026-06-22T15:05:49Z | refactor(tools): share inventory presentation helpers
-- 2026-06-22T15:01:14Z | refactor(doctor): share primary model resolution
-- 2026-06-22T14:55:53Z | refactor(tasks): share audit JSON payload formatting
-- 2026-06-22T14:48:47Z | refactor(models): share auth command agent resolution
+- 2026-06-23T13:58:42Z | fix(harness): recover Copilot native subagent tasks
+- 2026-06-23T09:44:34Z | feat(copilot): mirror native plan and subagent events
+- 2026-06-23T14:11:40Z | fix(qa): reject duplicate startup bench cases
+- 2026-06-23T13:42:54Z | test(extensions): use real chutes response mocks
+- 2026-06-23T13:31:19Z | test(extensions): use real provider response mocks
+- 2026-06-23T13:06:58Z | test(extensions): use real response mocks
+- 2026-06-23T13:58:33Z | fix(qa): reject missing memory fd args
+- 2026-06-23T13:47:18Z | fix(qa): disable pnpm verify in cpu scenarios
+- 2026-06-23T11:12:15Z | fix(maint): protect pending hosted CI reruns
+- 2026-06-23T11:09:33Z | fix(maint): choose latest hosted CI run
+- 2026-06-23T09:20:23Z | fix(maint): use rebase PR landing
+- 2026-06-23T13:46:20Z | test: scope transcript reader env setup
+- 2026-06-23T13:36:55Z | fix: restore task state env through helper
+- 2026-06-23T13:30:54Z | test: scope send state env helper
+- 2026-06-23T13:32:06Z | fix(qa): reject duplicate gauntlet selectors
+- 2026-06-23T13:27:02Z | fix: simplify Fly Machine env cleanup
+- 2026-06-23T13:15:47Z | test: route network runtime env setup
+- 2026-06-23T13:25:27Z | fix(qa): reject polluted Tool Search proof lanes
+- 2026-06-23T13:20:29Z | fix(qa): require MCP API list evidence
+- 2026-06-23T13:14:35Z | fix(qa): reject duplicate RPC RTT methods
 
 ## Sources
 

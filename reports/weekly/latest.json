@@ -1,163 +1,164 @@
 {
-  "generated_at": "2026-06-23T00:21:37.120902+08:00",
+  "generated_at": "2026-06-23T22:14:11.851443+08:00",
   "window": {
-    "start_local": "2026-06-22T00:21:37.120902+08:00",
-    "end_local": "2026-06-23T00:21:37.120902+08:00",
-    "start_utc": "2026-06-21T16:21:37Z",
-    "end_utc": "2026-06-22T16:21:37Z"
+    "start_local": "2026-06-22T22:14:11.851443+08:00",
+    "end_local": "2026-06-23T22:14:11.851443+08:00",
+    "start_utc": "2026-06-22T14:14:11Z",
+    "end_utc": "2026-06-23T14:14:11Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 379949,
-    "forks": 79548,
-    "open_issues": 6483,
-    "pushed_at": "2026-06-22T16:20:23Z"
+    "stars": 380098,
+    "forks": 79593,
+    "open_issues": 6441,
+    "pushed_at": "2026-06-23T14:14:03Z"
   },
-  "releases_in_window": [
-    {
-      "tag_name": "v2026.6.10-beta.2",
-      "published_at": "2026-06-22T09:36:28Z",
-      "name": "openclaw 2026.6.10-beta.2",
-      "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.10-beta.2"
-    }
-  ],
-  "commit_count": 398,
+  "releases_in_window": [],
+  "commit_count": 403,
   "commit_headlines": [
-    "Revert \"feat(discord): add server management helper actions\"",
-    "refactor(gateway): share MCP bearer token classification",
-    "fix: include persisted plugin contracts for migrations (#89612)",
-    "feat(discord): add server management helper actions",
-    "refactor(infra): share Windows port inspection",
-    "refactor(agents): share session tool output rendering",
-    "refactor(gateway): share control-plane identity normalization",
-    "refactor(infra): remove stale utility re-exports",
-    "refactor(agents): remove stale facade exports",
-    "refactor(agents): remove stale runner facades",
-    "fix(agents): normalize hallucinated Office file extensions (#95805)",
-    "refactor(infra): share error normalization",
-    "fix(sessions): drop unused runtime context binding",
-    "fix(memory): preserve Windows session transcript paths",
-    "refactor(tools): remove stale inventory re-exports",
-    "refactor(agents): share bundle runtime allowlist gating",
-    "refactor(tools): share inventory presentation helpers",
-    "refactor(doctor): share primary model resolution",
-    "refactor(tasks): share audit JSON payload formatting",
-    "refactor(models): share auth command agent resolution",
-    "fix(session-memory): sanitize model artifacts before saving memory (#95791)",
-    "refactor(acp): reuse shared error normalization",
-    "refactor(sessions): share runtime transcript context resolution",
-    "fix(cron): compare thread IDs when deduping failure destinations (#95794)",
-    "refactor(gateway): reuse session message count helper",
-    "refactor(sessions): share bounded file range reads",
-    "refactor(gateway): share transcript metadata parsing",
-    "refactor(voice-call): share path normalization",
-    "chore(tlon): remove inert SSRF policy helper",
-    "chore(deadcode): remove stale session test facades",
-    "refactor: remove test-only production helpers",
-    "fix(cron): clean up isolated sessions after runs",
-    "fix(web-ui): skip hidden subagent picker pages",
-    "refactor: add memory and QMD session identity mapping (#95087)",
-    "perf(cli): speed up precomputed command help startup",
-    "chore(release): refresh generated metadata",
-    "refactor(acp): remove stale type re-export shim",
-    "fix(auto-reply): clear runtime model cache on reset",
-    "refactor(memory): remove duplicate embedding input facade",
-    "refactor(agents): remove unused image helper",
-    "fix(cli): document Commander rawArgs dependency",
-    "refactor(agents): remove unused helper wrappers",
-    "meta(issue-template): add dedicated docs bug report form",
-    "refactor(auto-reply): remove unused thinking exports",
-    "fix(build): allow tsdown heap override",
-    "refactor(qa): share gateway message text extraction",
-    "refactor(qa): share suite summary file loading",
-    "fix(discord): drain queued voice replies after stream close",
-    "refactor(cli): share gateway argv prefix scan",
-    "fix(ui): roll values near 1M over from k to M in compact token format (#95485)"
+    "fix(harness): recover Copilot native subagent tasks",
+    "feat(copilot): mirror native plan and subagent events",
+    "fix(qa): reject duplicate startup bench cases",
+    "test(extensions): use real chutes response mocks",
+    "test(extensions): use real provider response mocks",
+    "test(extensions): use real response mocks",
+    "fix(qa): reject missing memory fd args",
+    "fix(qa): disable pnpm verify in cpu scenarios",
+    "fix(maint): protect pending hosted CI reruns",
+    "fix(maint): choose latest hosted CI run",
+    "fix(maint): use rebase PR landing",
+    "test: scope transcript reader env setup",
+    "fix: restore task state env through helper",
+    "test: scope send state env helper",
+    "fix(qa): reject duplicate gauntlet selectors",
+    "fix: simplify Fly Machine env cleanup",
+    "test: route network runtime env setup",
+    "fix(qa): reject polluted Tool Search proof lanes",
+    "fix(qa): require MCP API list evidence",
+    "fix(qa): reject duplicate RPC RTT methods",
+    "fix: route shared auth secret env writes",
+    "fix(qa): require Telegram proof report before publish",
+    "test: route shared token reload env writes",
+    "fix(qa): reject duplicate Parallels platforms",
+    "fix: clear config secret refs through env helper",
+    "fix(qa): reject duplicate gateway smoke options",
+    "refactor: add transcript update identity contract (#89912)",
+    "fix(qa): reject duplicate otel smoke options",
+    "fix(qa): reject duplicate ux evidence options",
+    "fix(qa): reject duplicate hosted gate options",
+    "fix(release): reject duplicate candidate checklist options",
+    "fix(plugin-sdk): refresh api baseline hash",
+    "fix(qa): reject duplicate docker package options",
+    "fix(qa): reject duplicate package candidate options",
+    "fix(qa): reject duplicate dependency evidence options",
+    "fix(qa): reject duplicate test report controls",
+    "fix(qa): reject duplicate single-value flags",
+    "fix(qa): reject ambiguous dependency report inputs",
+    "fix(qa): reject duplicate report artifacts",
+    "fix(qa): reject duplicate qa e2e outputs",
+    "fix(qa): bound docker e2e log replay",
+    "fix(ci): keep release QA evidence branch-compatible",
+    "fix(ci): pass resolved ref to maturity QA evidence",
+    "fix(ci): allow release QA evidence workflow calls",
+    "fix(qa): preserve active mac restart locks",
+    "fix(acpx): consume acpx 0.11.1 model capability errors",
+    "fix(qa): isolate docker rerun artifact downloads",
+    "fix(qa): avoid extension memory report collisions",
+    "test(ci): update tooling route expectation",
+    "fix(qa): avoid vitest report path collisions"
   ],
   "feature_items": [
+    "feat(copilot): mirror native plan and subagent events",
+    "ci: add release QA profile evidence (#95094)",
+    "feat(mattermost): persist participated threads for mention-free follow-ups",
+    "ci: add codex maturity scorecard agent (#95919)",
+    "feat(copilot): wire harness parity helpers",
+    "feat: add bundled plugin icon manifest URLs (#95845)",
+    "feat: harden ios app store push release mode",
+    "feat(plugin-sdk): add extensible channel identity hook context (#91903)",
+    "feat(qa): add \"all\" taxonomy profile (#95947)",
+    "feat: add ios push relay diagnostics",
+    "ci: add maturity scorecard renderer (#94272) (#95901)",
+    "feat: wire ios push sandbox tooling",
+    "feat: add ios push relay sandbox profiles",
+    "feat: support sandbox relay apns registrations",
+    "feat(android): add settings detail panels (#95148)",
+    "ci: add manual release qa evidence workflow (#95876)",
+    "feat(qa): forward shared suite flags to multipass runner (#91506)",
+    "feat(qa): crabline channel driver (#91502)",
+    "feat(gateway-cli): scope usage-cost by agent (#94483)",
+    "feat(qa): expose active memory toggles to scenarios (#95858)",
+    "feat(channels): add directUserId support for per-DM model override (#95120)",
     "Revert \"feat(discord): add server management helper actions\"",
-    "feat(discord): add server management helper actions",
-    "meta(issue-template): add dedicated docs bug report form",
-    "feat(cli): add --message-file to openclaw agent",
-    "feat(plugins): externalize additional official plugins (#95683)",
-    "feat(raft): add wake bridge channel",
-    "feat(mattermost): register /oc_queue as a native slash command",
-    "feat(ios): consolidate notification permission UX",
-    "feat: forward-port fast talks auto mode (#85104)",
-    "[codex] Add Slack relay mode for incoming messages (#94707)"
+    "feat(discord): add server management helper actions"
   ],
   "fix_items": [
-    "fix: include persisted plugin contracts for migrations (#89612)",
-    "fix(agents): normalize hallucinated Office file extensions (#95805)",
-    "fix(sessions): drop unused runtime context binding",
-    "fix(memory): preserve Windows session transcript paths",
-    "fix(session-memory): sanitize model artifacts before saving memory (#95791)",
-    "fix(cron): compare thread IDs when deduping failure destinations (#95794)",
-    "fix(cron): clean up isolated sessions after runs",
-    "fix(web-ui): skip hidden subagent picker pages",
-    "perf(cli): speed up precomputed command help startup",
-    "fix(auto-reply): clear runtime model cache on reset",
-    "fix(cli): document Commander rawArgs dependency",
-    "fix(build): allow tsdown heap override",
-    "fix(discord): drain queued voice replies after stream close",
-    "fix(ui): roll values near 1M over from k to M in compact token format (#95485)",
-    "fix(cron): preserve no-config delivery validation (#95754)",
-    "Fix config patch restart-required notices",
-    "fix(scripts): support npm node command shims",
-    "fix(scripts): use requested platform for shim checks",
-    "fix(scripts): preserve node command shim arguments on Windows",
-    "fix(channels): keep ownerless config visible but undeliverable",
-    "fix(codeql): clean OpenClaw quality findings",
-    "fix(device-pairing): guard role normalization against non-string entries (#93504)",
-    "fix(matrix): handle missing secret storage facade",
-    "fix(scripts): run gh without terminal formatting",
-    "fix(doctor): stop promising --fix for working isolated shell-prompt cron jobs (#94655) (#94784)",
-    "fix(agents): count message-tool source reply as user-facing reply for tool error warnings (#94072)",
-    "fix(vercel-ai-gateway): resolve dynamic model selections (#95710)",
-    "fix(ui): bump dompurify to patched release (#95691)",
-    "fix(gateway): report draining state in readiness (#94915)",
-    "fix(agent-core): stop loop after aborted tool run (#94412)"
+    "fix(harness): recover Copilot native subagent tasks",
+    "fix(qa): reject duplicate startup bench cases",
+    "fix(qa): reject missing memory fd args",
+    "fix(qa): disable pnpm verify in cpu scenarios",
+    "fix(maint): protect pending hosted CI reruns",
+    "fix(maint): choose latest hosted CI run",
+    "fix(maint): use rebase PR landing",
+    "fix: restore task state env through helper",
+    "fix(qa): reject duplicate gauntlet selectors",
+    "fix: simplify Fly Machine env cleanup",
+    "fix(qa): reject polluted Tool Search proof lanes",
+    "fix(qa): require MCP API list evidence",
+    "fix(qa): reject duplicate RPC RTT methods",
+    "fix: route shared auth secret env writes",
+    "fix(qa): require Telegram proof report before publish",
+    "fix(qa): reject duplicate Parallels platforms",
+    "fix: clear config secret refs through env helper",
+    "fix(qa): reject duplicate gateway smoke options",
+    "fix(qa): reject duplicate otel smoke options",
+    "fix(qa): reject duplicate ux evidence options",
+    "fix(qa): reject duplicate hosted gate options",
+    "fix(release): reject duplicate candidate checklist options",
+    "fix(plugin-sdk): refresh api baseline hash",
+    "fix(qa): reject duplicate docker package options",
+    "fix(qa): reject duplicate package candidate options",
+    "fix(qa): reject duplicate dependency evidence options",
+    "fix(qa): reject duplicate test report controls",
+    "fix(qa): reject duplicate single-value flags",
+    "fix(qa): reject ambiguous dependency report inputs",
+    "fix(qa): reject duplicate report artifacts"
   ],
   "top_scopes": [
     {
-      "scope": "scripts",
-      "count": 57
-    },
-    {
-      "scope": "deadcode",
-      "count": 52
+      "scope": "qa",
+      "count": 60
     },
     {
       "scope": "agents",
-      "count": 33
-    },
-    {
-      "scope": "test",
-      "count": 22
-    },
-    {
-      "scope": "fix",
-      "count": 20
-    },
-    {
-      "scope": "ui",
-      "count": 20
-    },
-    {
-      "scope": "gateway",
-      "count": 14
+      "count": 34
     },
     {
       "scope": "ci",
-      "count": 10
+      "count": 29
     },
     {
-      "scope": "channels",
+      "scope": "fix",
+      "count": 21
+    },
+    {
+      "scope": "docs",
+      "count": 9
+    },
+    {
+      "scope": "doctor",
+      "count": 9
+    },
+    {
+      "scope": "test",
       "count": 8
     },
     {
-      "scope": "ios",
+      "scope": "android",
+      "count": 8
+    },
+    {
+      "scope": "media",
       "count": 8
     },
     {
@@ -165,20 +166,24 @@
       "count": 7
     },
     {
-      "scope": "qa",
+      "scope": "plugins",
       "count": 7
     },
     {
-      "scope": "plugin-sdk",
+      "scope": "gateway",
       "count": 7
     },
     {
-      "scope": "telegram",
-      "count": 7
+      "scope": "release",
+      "count": 6
     },
     {
-      "scope": "doctor",
-      "count": 5
+      "scope": "sessions",
+      "count": 6
+    },
+    {
+      "scope": "cron",
+      "count": 6
     }
   ]
 }

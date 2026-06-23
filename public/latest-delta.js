@@ -1,99 +1,91 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-06-23T00:21:37.120902+08:00",
+  "generatedAt": "2026-06-23T22:14:11.851443+08:00",
   "window": {
-    "start_local": "2026-06-22T00:21:37.120902+08:00",
-    "end_local": "2026-06-23T00:21:37.120902+08:00",
-    "start_utc": "2026-06-21T16:21:37Z",
-    "end_utc": "2026-06-22T16:21:37Z"
+    "start_local": "2026-06-22T22:14:11.851443+08:00",
+    "end_local": "2026-06-23T22:14:11.851443+08:00",
+    "start_utc": "2026-06-22T14:14:11Z",
+    "end_utc": "2026-06-23T14:14:11Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 379949,
-    "forks": 79548,
-    "open_issues": 6483,
-    "pushed_at": "2026-06-22T16:20:23Z"
+    "stars": 380098,
+    "forks": 79593,
+    "open_issues": 6441,
+    "pushed_at": "2026-06-23T14:14:03Z"
   },
   "summary": {
-    "commitCount": 398,
-    "releaseCount": 1,
+    "commitCount": 403,
+    "releaseCount": 0,
     "stableReleaseCount": 0,
-    "betaReleaseCount": 1,
-    "stars": 379949,
-    "forks": 79548,
-    "openIssues": 6483
+    "betaReleaseCount": 0,
+    "stars": 380098,
+    "forks": 79593,
+    "openIssues": 6441
   },
-  "releases": [
-    {
-      "tag_name": "v2026.6.10-beta.2",
-      "published_at": "2026-06-22T09:36:28Z",
-      "name": "openclaw 2026.6.10-beta.2",
-      "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.10-beta.2"
-    }
-  ],
+  "releases": [],
   "featureItems": [
-    "Revert \"feat(discord): add server management helper actions\"",
-    "feat(discord): add server management helper actions",
-    "meta(issue-template): add dedicated docs bug report form",
-    "feat(cli): add --message-file to openclaw agent",
-    "feat(plugins): externalize additional official plugins (#95683)",
-    "feat(raft): add wake bridge channel",
-    "feat(mattermost): register /oc_queue as a native slash command",
-    "feat(ios): consolidate notification permission UX"
+    "feat(copilot): mirror native plan and subagent events",
+    "ci: add release QA profile evidence (#95094)",
+    "feat(mattermost): persist participated threads for mention-free follow-ups",
+    "ci: add codex maturity scorecard agent (#95919)",
+    "feat(copilot): wire harness parity helpers",
+    "feat: add bundled plugin icon manifest URLs (#95845)",
+    "feat: harden ios app store push release mode",
+    "feat(plugin-sdk): add extensible channel identity hook context (#91903)"
   ],
   "fixItems": [
-    "fix: include persisted plugin contracts for migrations (#89612)",
-    "fix(agents): normalize hallucinated Office file extensions (#95805)",
-    "fix(sessions): drop unused runtime context binding",
-    "fix(memory): preserve Windows session transcript paths",
-    "fix(session-memory): sanitize model artifacts before saving memory (#95791)",
-    "fix(cron): compare thread IDs when deduping failure destinations (#95794)",
-    "fix(cron): clean up isolated sessions after runs",
-    "fix(web-ui): skip hidden subagent picker pages"
+    "fix(harness): recover Copilot native subagent tasks",
+    "fix(qa): reject duplicate startup bench cases",
+    "fix(qa): reject missing memory fd args",
+    "fix(qa): disable pnpm verify in cpu scenarios",
+    "fix(maint): protect pending hosted CI reruns",
+    "fix(maint): choose latest hosted CI run",
+    "fix(maint): use rebase PR landing",
+    "fix: restore task state env through helper"
   ],
   "topScopes": [
     {
-      "scope": "scripts",
-      "count": 57
-    },
-    {
-      "scope": "deadcode",
-      "count": 52
+      "scope": "qa",
+      "count": 60
     },
     {
       "scope": "agents",
-      "count": 33
-    },
-    {
-      "scope": "test",
-      "count": 22
-    },
-    {
-      "scope": "fix",
-      "count": 20
-    },
-    {
-      "scope": "ui",
-      "count": 20
-    },
-    {
-      "scope": "gateway",
-      "count": 14
+      "count": 34
     },
     {
       "scope": "ci",
-      "count": 10
+      "count": 29
+    },
+    {
+      "scope": "fix",
+      "count": 21
+    },
+    {
+      "scope": "docs",
+      "count": 9
+    },
+    {
+      "scope": "doctor",
+      "count": 9
+    },
+    {
+      "scope": "test",
+      "count": 8
+    },
+    {
+      "scope": "android",
+      "count": 8
     }
   ],
   "headlineCommits": [
-    "Revert \"feat(discord): add server management helper actions\"",
-    "refactor(gateway): share MCP bearer token classification",
-    "fix: include persisted plugin contracts for migrations (#89612)",
-    "feat(discord): add server management helper actions",
-    "refactor(infra): share Windows port inspection",
-    "refactor(agents): share session tool output rendering",
-    "refactor(gateway): share control-plane identity normalization",
-    "refactor(infra): remove stale utility re-exports"
+    "fix(harness): recover Copilot native subagent tasks",
+    "feat(copilot): mirror native plan and subagent events",
+    "fix(qa): reject duplicate startup bench cases",
+    "test(extensions): use real chutes response mocks",
+    "test(extensions): use real provider response mocks",
+    "test(extensions): use real response mocks",
+    "fix(qa): reject missing memory fd args",
+    "fix(qa): disable pnpm verify in cpu scenarios"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
