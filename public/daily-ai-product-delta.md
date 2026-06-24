@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-06-23T22:14:32+08:00
-- Requested window: 2026-06-22 to 2026-06-23
+- Generated at: 2026-06-24T22:00:01+08:00
+- Requested window: 2026-06-23 to 2026-06-24
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,26 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-06-22 to 2026-06-23
-- Generated at: 2026-06-23T22:14:11.851443+08:00
-- 窗口: 2026-06-22 至 2026-06-23
-- GitHub 增量: 403 commits / 0 releases
-- 最近 push: 2026-06-23
+- Window: 2026-06-23 to 2026-06-24
+- Generated at: 2026-06-24T21:59:45.634970+08:00
+- 窗口: 2026-06-23 至 2026-06-24
+- GitHub 增量: 157 commits / 1 releases
+- 最近 push: 2026-06-24
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
+  - feat(copilot): add BYOK provider parity
+  - #94162: Performance: bundle-tools loading adds 6-7s latency on every agent request (#94230)
   - feat(copilot): mirror native plan and subagent events
-  - ci: add release QA profile evidence (#95094)
-  - feat(mattermost): persist participated threads for mention-free follow-ups
-  - ci: add codex maturity scorecard agent (#95919)
-  - feat(copilot): wire harness parity helpers
-  - feat: add bundled plugin icon manifest URLs (#95845)
-  - feat: harden ios app store push release mode
-  - feat(plugin-sdk): add extensible channel identity hook context (#91903)
 - Fixes and constraints:
-  - fix(harness): recover Copilot native subagent tasks
-  - fix(qa): reject duplicate startup bench cases
-  - fix(qa): reject missing memory fd args
-  - fix(qa): disable pnpm verify in cpu scenarios
-  - fix(maint): protect pending hosted CI reruns
-  - fix(maint): choose latest hosted CI run
-  - fix(maint): use rebase PR landing
-  - fix: restore task state env through helper
+  - fix(telegram): narrow rich table alignment surface
+  - fix(telegram): refresh rich table SDK budget
+  - fix(telegram): preserve rich table styling
+  - fix(duckduckgo): decode &amp; last in decodeHtmlEntities to avoid double-decoding (#96348)
+  - fix(msteams): decode &amp; last in stripHtmlFromTeamsMessage to avoid double-decoding (#96342)
+  - fix(context-engine): avoid quarantining read-only discovery factories (#96357)
+  - fix(memory-core): keep short protected-glossary terms past the min-length gate (#96304)
+  - fix(cron): preserve default toolsAllow markers safely
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

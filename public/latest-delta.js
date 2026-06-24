@@ -1,91 +1,94 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-06-23T22:14:11.851443+08:00",
+  "generatedAt": "2026-06-24T21:59:45.634970+08:00",
   "window": {
-    "start_local": "2026-06-22T22:14:11.851443+08:00",
-    "end_local": "2026-06-23T22:14:11.851443+08:00",
-    "start_utc": "2026-06-22T14:14:11Z",
-    "end_utc": "2026-06-23T14:14:11Z"
+    "start_local": "2026-06-23T21:59:45.634970+08:00",
+    "end_local": "2026-06-24T21:59:45.634970+08:00",
+    "start_utc": "2026-06-23T13:59:45Z",
+    "end_utc": "2026-06-24T13:59:45Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 380098,
-    "forks": 79593,
-    "open_issues": 6441,
-    "pushed_at": "2026-06-23T14:14:03Z"
+    "stars": 380257,
+    "forks": 79642,
+    "open_issues": 6538,
+    "pushed_at": "2026-06-24T13:57:11Z"
   },
   "summary": {
-    "commitCount": 403,
-    "releaseCount": 0,
-    "stableReleaseCount": 0,
+    "commitCount": 157,
+    "releaseCount": 1,
+    "stableReleaseCount": 1,
     "betaReleaseCount": 0,
-    "stars": 380098,
-    "forks": 79593,
-    "openIssues": 6441
+    "stars": 380257,
+    "forks": 79642,
+    "openIssues": 6538
   },
-  "releases": [],
+  "releases": [
+    {
+      "tag_name": "v2026.6.10",
+      "published_at": "2026-06-24T03:06:38Z",
+      "name": "openclaw 2026.6.10",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.10"
+    }
+  ],
   "featureItems": [
-    "feat(copilot): mirror native plan and subagent events",
-    "ci: add release QA profile evidence (#95094)",
-    "feat(mattermost): persist participated threads for mention-free follow-ups",
-    "ci: add codex maturity scorecard agent (#95919)",
-    "feat(copilot): wire harness parity helpers",
-    "feat: add bundled plugin icon manifest URLs (#95845)",
-    "feat: harden ios app store push release mode",
-    "feat(plugin-sdk): add extensible channel identity hook context (#91903)"
+    "feat(copilot): add BYOK provider parity",
+    "#94162: Performance: bundle-tools loading adds 6-7s latency on every agent request (#94230)",
+    "feat(copilot): mirror native plan and subagent events"
   ],
   "fixItems": [
-    "fix(harness): recover Copilot native subagent tasks",
-    "fix(qa): reject duplicate startup bench cases",
-    "fix(qa): reject missing memory fd args",
-    "fix(qa): disable pnpm verify in cpu scenarios",
-    "fix(maint): protect pending hosted CI reruns",
-    "fix(maint): choose latest hosted CI run",
-    "fix(maint): use rebase PR landing",
-    "fix: restore task state env through helper"
+    "fix(telegram): narrow rich table alignment surface",
+    "fix(telegram): refresh rich table SDK budget",
+    "fix(telegram): preserve rich table styling",
+    "fix(duckduckgo): decode &amp; last in decodeHtmlEntities to avoid double-decoding (#96348)",
+    "fix(msteams): decode &amp; last in stripHtmlFromTeamsMessage to avoid double-decoding (#96342)",
+    "fix(context-engine): avoid quarantining read-only discovery factories (#96357)",
+    "fix(memory-core): keep short protected-glossary terms past the min-length gate (#96304)",
+    "fix(cron): preserve default toolsAllow markers safely"
   ],
   "topScopes": [
     {
       "scope": "qa",
-      "count": 60
+      "count": 33
     },
     {
-      "scope": "agents",
-      "count": 34
-    },
-    {
-      "scope": "ci",
-      "count": 29
+      "scope": "refactor",
+      "count": 12
     },
     {
       "scope": "fix",
-      "count": 21
-    },
-    {
-      "scope": "docs",
-      "count": 9
-    },
-    {
-      "scope": "doctor",
-      "count": 9
-    },
-    {
-      "scope": "test",
       "count": 8
     },
     {
-      "scope": "android",
-      "count": 8
+      "scope": "telegram",
+      "count": 7
+    },
+    {
+      "scope": "ci",
+      "count": 7
+    },
+    {
+      "scope": "ios",
+      "count": 7
+    },
+    {
+      "scope": "memory",
+      "count": 5
+    },
+    {
+      "scope": "gateway",
+      "count": 4
     }
   ],
   "headlineCommits": [
-    "fix(harness): recover Copilot native subagent tasks",
-    "feat(copilot): mirror native plan and subagent events",
-    "fix(qa): reject duplicate startup bench cases",
-    "test(extensions): use real chutes response mocks",
-    "test(extensions): use real provider response mocks",
-    "test(extensions): use real response mocks",
-    "fix(qa): reject missing memory fd args",
-    "fix(qa): disable pnpm verify in cpu scenarios"
+    "refactor: route boot session mapping through accessor (#96225)",
+    "Doctor: expose session lock findings (#84366)",
+    "fix(telegram): narrow rich table alignment surface",
+    "fix(telegram): refresh rich table SDK budget",
+    "fix(telegram): preserve rich table styling",
+    "fix(telegram): preserve rich table styling",
+    "fix(telegram): preserve rich table styling",
+    "fix(duckduckgo): decode &amp; last in decodeHtmlEntities to avoid double-decoding (#96348)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
