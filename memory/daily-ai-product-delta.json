@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-24T22:00:01+08:00",
+  "generatedAt": "2026-06-25T21:56:32+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-06-23T22:00:01+08:00",
-    "end_local": "2026-06-24T22:00:01+08:00"
+    "start_local": "2026-06-24T21:56:32+08:00",
+    "end_local": "2026-06-25T21:56:32+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-06-24T21:59:45.634970+08:00",
+      "generatedAt": "2026-06-25T21:56:15.639203+08:00",
       "window": {
-        "start_local": "2026-06-23T21:59:45.634970+08:00",
-        "end_local": "2026-06-24T21:59:45.634970+08:00",
-        "start_utc": "2026-06-23T13:59:45Z",
-        "end_utc": "2026-06-24T13:59:45Z"
+        "start_local": "2026-06-24T21:56:15.639203+08:00",
+        "end_local": "2026-06-25T21:56:15.639203+08:00",
+        "start_utc": "2026-06-24T13:56:15Z",
+        "end_utc": "2026-06-25T13:56:15Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-06-23 至 2026-06-24"
+          "value": "2026-06-24 至 2026-06-25"
         },
         {
           "label": "GitHub 增量",
-          "value": "157 commits / 1 releases"
+          "value": "129 commits / 1 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-06-24"
+          "value": "2026-06-25"
         },
         {
           "label": "来源",
@@ -52,60 +52,59 @@
         }
       ],
       "featureItems": [
-        "feat(copilot): add BYOK provider parity",
-        "#94162: Performance: bundle-tools loading adds 6-7s latency on every agent request (#94230)",
-        "feat(copilot): mirror native plan and subagent events"
+        "**Provider and model coverage:** catalog parsing, reasoning controls, provider model resolution, and encrypted reasoning support now handle more live provider variants. (#95283, #95710, #95268, #95744, #95686, #93956) Thanks @ZengWen-DT, @vincentkoc, @Marvinthebored, @Darren2030, @daniel-alejandro-t, @parveshsaini, @geraint0923, @fuller-stack-dev, and @jason-allen-oneal. [v2026.6.11-beta.1]",
+        "feat(messages): config-level default for the persistent /usage footer"
       ],
       "fixItems": [
-        "fix(telegram): narrow rich table alignment surface",
-        "fix(telegram): refresh rich table SDK budget",
-        "fix(telegram): preserve rich table styling",
-        "fix(duckduckgo): decode &amp; last in decodeHtmlEntities to avoid double-decoding (#96348)",
-        "fix(msteams): decode &amp; last in stripHtmlFromTeamsMessage to avoid double-decoding (#96342)",
-        "fix(context-engine): avoid quarantining read-only discovery factories (#96357)",
-        "fix(memory-core): keep short protected-glossary terms past the min-length gate (#96304)",
-        "fix(cron): preserve default toolsAllow markers safely"
+        "fix(media-generation): preserve trimmed default model flag (#96430)",
+        "fix(acp-core): clear stale active run lookups (#96427)",
+        "fix: narrow test config path",
+        "fix: narrow cron path env cleanup",
+        "fix: scope embedded image state env",
+        "fix: guard current turn state env",
+        "fix: preserve exec env test cleanup",
+        "fix: route session history config env"
       ],
       "releases": [
         {
-          "tag_name": "v2026.6.10",
-          "published_at": "2026-06-24T03:06:38Z",
-          "name": "openclaw 2026.6.10",
-          "prerelease": false,
-          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.10"
+          "tag_name": "v2026.6.11-beta.1",
+          "published_at": "2026-06-24T23:37:32Z",
+          "name": "openclaw 2026.6.11-beta.1",
+          "prerelease": true,
+          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.11-beta.1"
         }
       ],
       "topScopes": [
         {
-          "scope": "qa",
-          "count": 33
-        },
-        {
-          "scope": "refactor",
-          "count": 12
-        },
-        {
           "scope": "fix",
+          "count": 25
+        },
+        {
+          "scope": "test",
+          "count": 19
+        },
+        {
+          "scope": "sdk",
           "count": 8
         },
         {
-          "scope": "telegram",
-          "count": 7
+          "scope": "qa",
+          "count": 6
         },
         {
-          "scope": "ci",
-          "count": 7
-        },
-        {
-          "scope": "ios",
-          "count": 7
-        },
-        {
-          "scope": "memory",
+          "scope": "plugins",
           "count": 5
         },
         {
-          "scope": "gateway",
+          "scope": "sessions",
+          "count": 4
+        },
+        {
+          "scope": "refactor",
+          "count": 4
+        },
+        {
+          "scope": "telegram",
           "count": 4
         }
       ],

@@ -1459,5 +1459,19 @@ window.OPENCLAW_HEATMAP_INCREMENTAL_ROWS = [
     },
     "source": "daily-incremental",
     "generatedAt": "2026-06-24T21:59:45.634970+08:00"
+  },
+  {
+    "date": "2026-06-25",
+    "stage": "openclaw",
+    "summary": "gateway / 会话控制面、Docker / 运维、browser / tools继续增强，最近一天的增量也并入主矩阵。",
+    "axisEntries": {
+      "models": "",
+      "tools": "plugin-sdk 构建与重复安装路径继续收敛。",
+      "control": "Gateway health monitor、pairing 与 watch 链路继续打磨。 Session / plugin 路由与配置基线继续收敛。",
+      "security": "",
+      "ops": "服务重装、重启与 cleanup 路径继续修补。 构建内存回归与 cron 死锁等运行期问题继续收敛。"
+    },
+    "source": "daily-incremental",
+    "generatedAt": "2026-06-25T21:56:15.639203+08:00"
   }
 ];

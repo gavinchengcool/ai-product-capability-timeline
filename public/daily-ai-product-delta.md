@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-06-24T22:00:01+08:00
-- Requested window: 2026-06-23 to 2026-06-24
+- Generated at: 2026-06-25T21:56:32+08:00
+- Requested window: 2026-06-24 to 2026-06-25
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,26 +10,25 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-06-23 to 2026-06-24
-- Generated at: 2026-06-24T21:59:45.634970+08:00
-- 窗口: 2026-06-23 至 2026-06-24
-- GitHub 增量: 157 commits / 1 releases
-- 最近 push: 2026-06-24
+- Window: 2026-06-24 to 2026-06-25
+- Generated at: 2026-06-25T21:56:15.639203+08:00
+- 窗口: 2026-06-24 至 2026-06-25
+- GitHub 增量: 129 commits / 1 releases
+- 最近 push: 2026-06-25
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(copilot): add BYOK provider parity
-  - #94162: Performance: bundle-tools loading adds 6-7s latency on every agent request (#94230)
-  - feat(copilot): mirror native plan and subagent events
+  - **Provider and model coverage:** catalog parsing, reasoning controls, provider model resolution, and encrypted reasoning support now handle more live provider variants. (#95283, #95710, #95268, #95744, #95686, #93956) Thanks @ZengWen-DT, @vincentkoc, @Marvinthebored, @Darren2030, @daniel-alejandro-t, @parveshsaini, @geraint0923, @fuller-stack-dev, and @jason-allen-oneal. [v2026.6.11-beta.1]
+  - feat(messages): config-level default for the persistent /usage footer
 - Fixes and constraints:
-  - fix(telegram): narrow rich table alignment surface
-  - fix(telegram): refresh rich table SDK budget
-  - fix(telegram): preserve rich table styling
-  - fix(duckduckgo): decode &amp; last in decodeHtmlEntities to avoid double-decoding (#96348)
-  - fix(msteams): decode &amp; last in stripHtmlFromTeamsMessage to avoid double-decoding (#96342)
-  - fix(context-engine): avoid quarantining read-only discovery factories (#96357)
-  - fix(memory-core): keep short protected-glossary terms past the min-length gate (#96304)
-  - fix(cron): preserve default toolsAllow markers safely
+  - fix(media-generation): preserve trimmed default model flag (#96430)
+  - fix(acp-core): clear stale active run lookups (#96427)
+  - fix: narrow test config path
+  - fix: narrow cron path env cleanup
+  - fix: scope embedded image state env
+  - fix: guard current turn state env
+  - fix: preserve exec env test cleanup
+  - fix: route session history config env
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
