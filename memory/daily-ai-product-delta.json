@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-25T21:56:32+08:00",
+  "generatedAt": "2026-06-26T21:54:38+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-06-24T21:56:32+08:00",
-    "end_local": "2026-06-25T21:56:32+08:00"
+    "start_local": "2026-06-25T21:54:38+08:00",
+    "end_local": "2026-06-26T21:54:38+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-06-25T21:56:15.639203+08:00",
+      "generatedAt": "2026-06-26T21:54:22.709318+08:00",
       "window": {
-        "start_local": "2026-06-24T21:56:15.639203+08:00",
-        "end_local": "2026-06-25T21:56:15.639203+08:00",
-        "start_utc": "2026-06-24T13:56:15Z",
-        "end_utc": "2026-06-25T13:56:15Z"
+        "start_local": "2026-06-25T21:54:22.709318+08:00",
+        "end_local": "2026-06-26T21:54:22.709318+08:00",
+        "start_utc": "2026-06-25T13:54:22Z",
+        "end_utc": "2026-06-26T13:54:22Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-06-24 至 2026-06-25"
+          "value": "2026-06-25 至 2026-06-26"
         },
         {
           "label": "GitHub 增量",
-          "value": "129 commits / 1 releases"
+          "value": "82 commits / 0 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-06-25"
+          "value": "2026-06-26"
         },
         {
           "label": "来源",
@@ -52,60 +52,51 @@
         }
       ],
       "featureItems": [
-        "**Provider and model coverage:** catalog parsing, reasoning controls, provider model resolution, and encrypted reasoning support now handle more live provider variants. (#95283, #95710, #95268, #95744, #95686, #93956) Thanks @ZengWen-DT, @vincentkoc, @Marvinthebored, @Darren2030, @daniel-alejandro-t, @parveshsaini, @geraint0923, @fuller-stack-dev, and @jason-allen-oneal. [v2026.6.11-beta.1]",
-        "feat(messages): config-level default for the persistent /usage footer"
+        "Doctor: add lint --all (#96471)"
       ],
       "fixItems": [
-        "fix(media-generation): preserve trimmed default model flag (#96430)",
-        "fix(acp-core): clear stale active run lookups (#96427)",
-        "fix: narrow test config path",
-        "fix: narrow cron path env cleanup",
-        "fix: scope embedded image state env",
-        "fix: guard current turn state env",
-        "fix: preserve exec env test cleanup",
-        "fix: route session history config env"
+        "fix: close memory test failure paths",
+        "fix(webchat): make model selector width adaptive to prevent long name… (#96990)",
+        "fix: preserve watcher test state",
+        "fix: retain qmd test environment state",
+        "fix: isolate memory index test state",
+        "fix(image-gen): bound image generation provider JSON response reads (#96495)",
+        "fix: restore dreaming env after setup",
+        "fix: rebase clawhub install trust (#81364)"
       ],
-      "releases": [
-        {
-          "tag_name": "v2026.6.11-beta.1",
-          "published_at": "2026-06-24T23:37:32Z",
-          "name": "openclaw 2026.6.11-beta.1",
-          "prerelease": true,
-          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.11-beta.1"
-        }
-      ],
+      "releases": [],
       "topScopes": [
         {
+          "scope": "outbound",
+          "count": 17
+        },
+        {
           "scope": "fix",
-          "count": 25
+          "count": 13
         },
         {
           "scope": "test",
-          "count": 19
-        },
-        {
-          "scope": "sdk",
-          "count": 8
-        },
-        {
-          "scope": "qa",
           "count": 6
         },
         {
-          "scope": "plugins",
+          "scope": "gateway",
           "count": 5
         },
         {
-          "scope": "sessions",
-          "count": 4
+          "scope": "signal",
+          "count": 3
         },
         {
-          "scope": "refactor",
-          "count": 4
+          "scope": "status",
+          "count": 3
         },
         {
           "scope": "telegram",
-          "count": 4
+          "count": 3
+        },
+        {
+          "scope": "doctor",
+          "count": 2
         }
       ],
       "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"

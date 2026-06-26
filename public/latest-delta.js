@@ -1,93 +1,84 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-06-25T21:56:15.639203+08:00",
+  "generatedAt": "2026-06-26T21:54:22.709318+08:00",
   "window": {
-    "start_local": "2026-06-24T21:56:15.639203+08:00",
-    "end_local": "2026-06-25T21:56:15.639203+08:00",
-    "start_utc": "2026-06-24T13:56:15Z",
-    "end_utc": "2026-06-25T13:56:15Z"
+    "start_local": "2026-06-25T21:54:22.709318+08:00",
+    "end_local": "2026-06-26T21:54:22.709318+08:00",
+    "start_utc": "2026-06-25T13:54:22Z",
+    "end_utc": "2026-06-26T13:54:22Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 380407,
-    "forks": 79680,
-    "open_issues": 6648,
-    "pushed_at": "2026-06-25T12:46:47Z"
+    "stars": 380550,
+    "forks": 79712,
+    "open_issues": 6673,
+    "pushed_at": "2026-06-26T13:13:06Z"
   },
   "summary": {
-    "commitCount": 129,
-    "releaseCount": 1,
+    "commitCount": 82,
+    "releaseCount": 0,
     "stableReleaseCount": 0,
-    "betaReleaseCount": 1,
-    "stars": 380407,
-    "forks": 79680,
-    "openIssues": 6648
+    "betaReleaseCount": 0,
+    "stars": 380550,
+    "forks": 79712,
+    "openIssues": 6673
   },
-  "releases": [
-    {
-      "tag_name": "v2026.6.11-beta.1",
-      "published_at": "2026-06-24T23:37:32Z",
-      "name": "openclaw 2026.6.11-beta.1",
-      "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.11-beta.1"
-    }
-  ],
+  "releases": [],
   "featureItems": [
-    "**Provider and model coverage:** catalog parsing, reasoning controls, provider model resolution, and encrypted reasoning support now handle more live provider variants. (#95283, #95710, #95268, #95744, #95686, #93956) Thanks @ZengWen-DT, @vincentkoc, @Marvinthebored, @Darren2030, @daniel-alejandro-t, @parveshsaini, @geraint0923, @fuller-stack-dev, and @jason-allen-oneal. [v2026.6.11-beta.1]",
-    "feat(messages): config-level default for the persistent /usage footer"
+    "Doctor: add lint --all (#96471)"
   ],
   "fixItems": [
-    "fix(media-generation): preserve trimmed default model flag (#96430)",
-    "fix(acp-core): clear stale active run lookups (#96427)",
-    "fix: narrow test config path",
-    "fix: narrow cron path env cleanup",
-    "fix: scope embedded image state env",
-    "fix: guard current turn state env",
-    "fix: preserve exec env test cleanup",
-    "fix: route session history config env"
+    "fix: close memory test failure paths",
+    "fix(webchat): make model selector width adaptive to prevent long name… (#96990)",
+    "fix: preserve watcher test state",
+    "fix: retain qmd test environment state",
+    "fix: isolate memory index test state",
+    "fix(image-gen): bound image generation provider JSON response reads (#96495)",
+    "fix: restore dreaming env after setup",
+    "fix: rebase clawhub install trust (#81364)"
   ],
   "topScopes": [
     {
+      "scope": "outbound",
+      "count": 17
+    },
+    {
       "scope": "fix",
-      "count": 25
+      "count": 13
     },
     {
       "scope": "test",
-      "count": 19
-    },
-    {
-      "scope": "sdk",
-      "count": 8
-    },
-    {
-      "scope": "qa",
       "count": 6
     },
     {
-      "scope": "plugins",
+      "scope": "gateway",
       "count": 5
     },
     {
-      "scope": "sessions",
-      "count": 4
+      "scope": "signal",
+      "count": 3
     },
     {
-      "scope": "refactor",
-      "count": 4
+      "scope": "status",
+      "count": 3
     },
     {
       "scope": "telegram",
-      "count": 4
+      "count": 3
+    },
+    {
+      "scope": "doctor",
+      "count": 2
     }
   ],
   "headlineCommits": [
-    "fix(media-generation): preserve trimmed default model flag (#96430)",
-    "fix(acp-core): clear stale active run lookups (#96427)",
-    "fix: narrow test config path",
-    "fix: narrow cron path env cleanup",
-    "test: isolate reply media state env",
-    "fix: scope embedded image state env",
-    "test: preserve daemon coverage env scope",
-    "fix: guard current turn state env"
+    "fix: close memory test failure paths",
+    "test: normalize feishu env fixtures",
+    "fix(webchat): make model selector width adaptive to prevent long name… (#96990)",
+    "fix: preserve watcher test state",
+    "test: scope manager reindex state",
+    "fix: retain qmd test environment state",
+    "test: preserve memory startup env state",
+    "fix: isolate memory index test state"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
