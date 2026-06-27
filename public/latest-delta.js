@@ -1,84 +1,86 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-06-26T21:54:22.709318+08:00",
+  "generatedAt": "2026-06-27T21:02:23.433221+08:00",
   "window": {
-    "start_local": "2026-06-25T21:54:22.709318+08:00",
-    "end_local": "2026-06-26T21:54:22.709318+08:00",
-    "start_utc": "2026-06-25T13:54:22Z",
-    "end_utc": "2026-06-26T13:54:22Z"
+    "start_local": "2026-06-26T21:02:23.433221+08:00",
+    "end_local": "2026-06-27T21:02:23.433221+08:00",
+    "start_utc": "2026-06-26T13:02:23Z",
+    "end_utc": "2026-06-27T13:02:23Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 380550,
-    "forks": 79712,
-    "open_issues": 6673,
-    "pushed_at": "2026-06-26T13:13:06Z"
+    "stars": 380687,
+    "forks": 79757,
+    "open_issues": 6726,
+    "pushed_at": "2026-06-27T08:19:02Z"
   },
   "summary": {
-    "commitCount": 82,
+    "commitCount": 70,
     "releaseCount": 0,
     "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 380550,
-    "forks": 79712,
-    "openIssues": 6673
+    "stars": 380687,
+    "forks": 79757,
+    "openIssues": 6726
   },
   "releases": [],
   "featureItems": [
-    "Doctor: add lint --all (#96471)"
+    "feat(codex): add always plugin approval mode (#97123)",
+    "feat: scaffold provider plugins from init (#94352)",
+    "feat(i18n): add Hindi and Russian docs and Control UI locales"
   ],
   "fixItems": [
-    "fix: close memory test failure paths",
-    "fix(webchat): make model selector width adaptive to prevent long name… (#96990)",
-    "fix: preserve watcher test state",
-    "fix: retain qmd test environment state",
-    "fix: isolate memory index test state",
-    "fix(image-gen): bound image generation provider JSON response reads (#96495)",
-    "fix: restore dreaming env after setup",
-    "fix: rebase clawhub install trust (#81364)"
+    "fix: defer active implicit session rollover (#97164)",
+    "fix(trajectory): preserve codex completion usage",
+    "fix(trajectory): preserve usage in truncated events",
+    "fix(agent-core): ignore truncated tool calls (#97140)",
+    "fix(opencode-go): re-arm idle timer on block-boundary events to prevent false stalled-stream abort (#97128)",
+    "fix(telegram): retain socket failure context (#97130)",
+    "fix(provider-transport-fetch): bound SSE buffer to prevent OOM (#96989)",
+    "fix(agents): guard delivery-evidence attachment recursion against cycles (#97041)"
   ],
   "topScopes": [
     {
-      "scope": "outbound",
-      "count": 17
+      "scope": "ui",
+      "count": 19
     },
     {
       "scope": "fix",
-      "count": 13
+      "count": 4
     },
     {
-      "scope": "test",
-      "count": 6
-    },
-    {
-      "scope": "gateway",
-      "count": 5
-    },
-    {
-      "scope": "signal",
+      "scope": "trajectory",
       "count": 3
     },
     {
-      "scope": "status",
+      "scope": "agents",
       "count": 3
     },
     {
-      "scope": "telegram",
+      "scope": "docs",
       "count": 3
     },
     {
-      "scope": "doctor",
+      "scope": "codex",
+      "count": 2
+    },
+    {
+      "scope": "i18n",
+      "count": 2
+    },
+    {
+      "scope": "memory",
       "count": 2
     }
   ],
   "headlineCommits": [
-    "fix: close memory test failure paths",
-    "test: normalize feishu env fixtures",
-    "fix(webchat): make model selector width adaptive to prevent long name… (#96990)",
-    "fix: preserve watcher test state",
-    "test: scope manager reindex state",
-    "fix: retain qmd test environment state",
-    "test: preserve memory startup env state",
-    "fix: isolate memory index test state"
+    "feat(codex): add always plugin approval mode (#97123)",
+    "test: relax local TUI PTY startup wait",
+    "fix: defer active implicit session rollover (#97164)",
+    "test(trajectory): cover truncated usage preservation",
+    "fix(trajectory): preserve codex completion usage",
+    "fix(trajectory): preserve usage in truncated events",
+    "Scope agent cron operations to the calling agent (#96883)",
+    "fix(agent-core): ignore truncated tool calls (#97140)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

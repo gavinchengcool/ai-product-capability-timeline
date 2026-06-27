@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-26T21:54:38+08:00",
+  "generatedAt": "2026-06-27T21:02:39+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-06-25T21:54:38+08:00",
-    "end_local": "2026-06-26T21:54:38+08:00"
+    "start_local": "2026-06-26T21:02:39+08:00",
+    "end_local": "2026-06-27T21:02:39+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-06-26T21:54:22.709318+08:00",
+      "generatedAt": "2026-06-27T21:02:23.433221+08:00",
       "window": {
-        "start_local": "2026-06-25T21:54:22.709318+08:00",
-        "end_local": "2026-06-26T21:54:22.709318+08:00",
-        "start_utc": "2026-06-25T13:54:22Z",
-        "end_utc": "2026-06-26T13:54:22Z"
+        "start_local": "2026-06-26T21:02:23.433221+08:00",
+        "end_local": "2026-06-27T21:02:23.433221+08:00",
+        "start_utc": "2026-06-26T13:02:23Z",
+        "end_utc": "2026-06-27T13:02:23Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-06-25 至 2026-06-26"
+          "value": "2026-06-26 至 2026-06-27"
         },
         {
           "label": "GitHub 增量",
-          "value": "82 commits / 0 releases"
+          "value": "70 commits / 0 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-06-26"
+          "value": "2026-06-27"
         },
         {
           "label": "来源",
@@ -52,50 +52,52 @@
         }
       ],
       "featureItems": [
-        "Doctor: add lint --all (#96471)"
+        "feat(codex): add always plugin approval mode (#97123)",
+        "feat: scaffold provider plugins from init (#94352)",
+        "feat(i18n): add Hindi and Russian docs and Control UI locales"
       ],
       "fixItems": [
-        "fix: close memory test failure paths",
-        "fix(webchat): make model selector width adaptive to prevent long name… (#96990)",
-        "fix: preserve watcher test state",
-        "fix: retain qmd test environment state",
-        "fix: isolate memory index test state",
-        "fix(image-gen): bound image generation provider JSON response reads (#96495)",
-        "fix: restore dreaming env after setup",
-        "fix: rebase clawhub install trust (#81364)"
+        "fix: defer active implicit session rollover (#97164)",
+        "fix(trajectory): preserve codex completion usage",
+        "fix(trajectory): preserve usage in truncated events",
+        "fix(agent-core): ignore truncated tool calls (#97140)",
+        "fix(opencode-go): re-arm idle timer on block-boundary events to prevent false stalled-stream abort (#97128)",
+        "fix(telegram): retain socket failure context (#97130)",
+        "fix(provider-transport-fetch): bound SSE buffer to prevent OOM (#96989)",
+        "fix(agents): guard delivery-evidence attachment recursion against cycles (#97041)"
       ],
       "releases": [],
       "topScopes": [
         {
-          "scope": "outbound",
-          "count": 17
+          "scope": "ui",
+          "count": 19
         },
         {
           "scope": "fix",
-          "count": 13
+          "count": 4
         },
         {
-          "scope": "test",
-          "count": 6
-        },
-        {
-          "scope": "gateway",
-          "count": 5
-        },
-        {
-          "scope": "signal",
+          "scope": "trajectory",
           "count": 3
         },
         {
-          "scope": "status",
+          "scope": "agents",
           "count": 3
         },
         {
-          "scope": "telegram",
+          "scope": "docs",
           "count": 3
         },
         {
-          "scope": "doctor",
+          "scope": "codex",
+          "count": 2
+        },
+        {
+          "scope": "i18n",
+          "count": 2
+        },
+        {
+          "scope": "memory",
           "count": 2
         }
       ],

@@ -1487,5 +1487,20 @@ window.OPENCLAW_HEATMAP_INCREMENTAL_ROWS = [
     },
     "source": "daily-incremental",
     "generatedAt": "2026-06-26T21:54:22.709318+08:00"
+  },
+  {
+    "date": "2026-06-27",
+    "stage": "openclaw",
+    "summary": "移动端入口、渠道互动、gateway / 会话控制面、Docker / 运维继续增强，最近一天的增量也并入主矩阵。",
+    "axisEntries": {
+      "channels": "WhatsApp / Telegram / Zalo / Signal 相关兼容修补继续推进。",
+      "models": "",
+      "tools": "WebChat 侧工具调用与 thinking 可见性得到更细控制。",
+      "devices": "macOS canvas actions 被进一步限制到 trusted surfaces。",
+      "control": "Gateway health monitor、pairing 与 watch 链路继续打磨。 Session / plugin 路由与配置基线继续收敛。",
+      "ops": "构建内存回归与 cron 死锁等运行期问题继续收敛。"
+    },
+    "source": "daily-incremental",
+    "generatedAt": "2026-06-27T21:02:23.433221+08:00"
   }
 ];

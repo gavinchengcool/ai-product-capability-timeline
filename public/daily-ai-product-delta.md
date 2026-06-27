@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-06-26T21:54:38+08:00
-- Requested window: 2026-06-25 to 2026-06-26
+- Generated at: 2026-06-27T21:02:39+08:00
+- Requested window: 2026-06-26 to 2026-06-27
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,24 +10,26 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-06-25 to 2026-06-26
-- Generated at: 2026-06-26T21:54:22.709318+08:00
-- 窗口: 2026-06-25 至 2026-06-26
-- GitHub 增量: 82 commits / 0 releases
-- 最近 push: 2026-06-26
+- Window: 2026-06-26 to 2026-06-27
+- Generated at: 2026-06-27T21:02:23.433221+08:00
+- 窗口: 2026-06-26 至 2026-06-27
+- GitHub 增量: 70 commits / 0 releases
+- 最近 push: 2026-06-27
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Doctor: add lint --all (#96471)
+  - feat(codex): add always plugin approval mode (#97123)
+  - feat: scaffold provider plugins from init (#94352)
+  - feat(i18n): add Hindi and Russian docs and Control UI locales
 - Fixes and constraints:
-  - fix: close memory test failure paths
-  - fix(webchat): make model selector width adaptive to prevent long name… (#96990)
-  - fix: preserve watcher test state
-  - fix: retain qmd test environment state
-  - fix: isolate memory index test state
-  - fix(image-gen): bound image generation provider JSON response reads (#96495)
-  - fix: restore dreaming env after setup
-  - fix: rebase clawhub install trust (#81364)
+  - fix: defer active implicit session rollover (#97164)
+  - fix(trajectory): preserve codex completion usage
+  - fix(trajectory): preserve usage in truncated events
+  - fix(agent-core): ignore truncated tool calls (#97140)
+  - fix(opencode-go): re-arm idle timer on block-boundary events to prevent false stalled-stream abort (#97128)
+  - fix(telegram): retain socket failure context (#97130)
+  - fix(provider-transport-fetch): bound SSE buffer to prevent OOM (#96989)
+  - fix(agents): guard delivery-evidence attachment recursion against cycles (#97041)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
