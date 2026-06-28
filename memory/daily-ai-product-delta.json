@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-27T21:02:39+08:00",
+  "generatedAt": "2026-06-28T21:08:01+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-06-26T21:02:39+08:00",
-    "end_local": "2026-06-27T21:02:39+08:00"
+    "start_local": "2026-06-27T21:08:01+08:00",
+    "end_local": "2026-06-28T21:08:01+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-06-27T21:02:23.433221+08:00",
+      "generatedAt": "2026-06-28T21:07:44.017460+08:00",
       "window": {
-        "start_local": "2026-06-26T21:02:23.433221+08:00",
-        "end_local": "2026-06-27T21:02:23.433221+08:00",
-        "start_utc": "2026-06-26T13:02:23Z",
-        "end_utc": "2026-06-27T13:02:23Z"
+        "start_local": "2026-06-27T21:07:44.017460+08:00",
+        "end_local": "2026-06-28T21:07:44.017460+08:00",
+        "start_utc": "2026-06-27T13:07:44Z",
+        "end_utc": "2026-06-28T13:07:44Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-06-26 至 2026-06-27"
+          "value": "2026-06-27 至 2026-06-28"
         },
         {
           "label": "GitHub 增量",
-          "value": "70 commits / 0 releases"
+          "value": "59 commits / 0 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-06-27"
+          "value": "2026-06-28"
         },
         {
           "label": "来源",
@@ -52,52 +52,53 @@
         }
       ],
       "featureItems": [
-        "feat(codex): add always plugin approval mode (#97123)",
-        "feat: scaffold provider plugins from init (#94352)",
-        "feat(i18n): add Hindi and Russian docs and Control UI locales"
+        "Add hosted catalog source profile validation (#95969)",
+        "Add hosted catalog snapshot fallback (#95877)",
+        "Add hosted external catalog feed loader (#95868)",
+        "feat(xai): route OAuth login through device-code flow (#97249)"
       ],
       "fixItems": [
-        "fix: defer active implicit session rollover (#97164)",
-        "fix(trajectory): preserve codex completion usage",
-        "fix(trajectory): preserve usage in truncated events",
-        "fix(agent-core): ignore truncated tool calls (#97140)",
-        "fix(opencode-go): re-arm idle timer on block-boundary events to prevent false stalled-stream abort (#97128)",
-        "fix(telegram): retain socket failure context (#97130)",
-        "fix(provider-transport-fetch): bound SSE buffer to prevent OOM (#96989)",
-        "fix(agents): guard delivery-evidence attachment recursion against cycles (#97041)"
+        "fix(agents): preserve structured tool result visible text (#97268)",
+        "Fix/zalo bound api json response reads (#97277)",
+        "Fix/discord bound probe getme json reads (#97278)",
+        "fix(cron): propagate cleanupCliLiveSessionOnRunEnd to isolated cron CLI branch (#97227)",
+        "fix: seed Slack thread context after reset (#97100)",
+        "fix: avoid stale dashboard child context budgets (#97332)",
+        "fix: scanned PDF pages reach chat vision models (#97354)",
+        "fix(imessage): stage remote media for plugin claims (#91803)"
       ],
       "releases": [],
       "topScopes": [
         {
-          "scope": "ui",
-          "count": 19
+          "scope": "test",
+          "count": 5
         },
         {
           "scope": "fix",
+          "count": 5
+        },
+        {
+          "scope": "telegram",
+          "count": 5
+        },
+        {
+          "scope": "doctor",
           "count": 4
         },
         {
-          "scope": "trajectory",
+          "scope": "docs",
+          "count": 4
+        },
+        {
+          "scope": "add",
           "count": 3
         },
         {
           "scope": "agents",
-          "count": 3
-        },
-        {
-          "scope": "docs",
-          "count": 3
-        },
-        {
-          "scope": "codex",
           "count": 2
         },
         {
-          "scope": "i18n",
-          "count": 2
-        },
-        {
-          "scope": "memory",
+          "scope": "whatsapp",
           "count": 2
         }
       ],

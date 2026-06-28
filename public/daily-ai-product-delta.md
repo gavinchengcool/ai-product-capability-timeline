@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-06-27T21:02:39+08:00
-- Requested window: 2026-06-26 to 2026-06-27
+- Generated at: 2026-06-28T21:08:01+08:00
+- Requested window: 2026-06-27 to 2026-06-28
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,26 +10,27 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-06-26 to 2026-06-27
-- Generated at: 2026-06-27T21:02:23.433221+08:00
-- 窗口: 2026-06-26 至 2026-06-27
-- GitHub 增量: 70 commits / 0 releases
-- 最近 push: 2026-06-27
+- Window: 2026-06-27 to 2026-06-28
+- Generated at: 2026-06-28T21:07:44.017460+08:00
+- 窗口: 2026-06-27 至 2026-06-28
+- GitHub 增量: 59 commits / 0 releases
+- 最近 push: 2026-06-28
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(codex): add always plugin approval mode (#97123)
-  - feat: scaffold provider plugins from init (#94352)
-  - feat(i18n): add Hindi and Russian docs and Control UI locales
+  - Add hosted catalog source profile validation (#95969)
+  - Add hosted catalog snapshot fallback (#95877)
+  - Add hosted external catalog feed loader (#95868)
+  - feat(xai): route OAuth login through device-code flow (#97249)
 - Fixes and constraints:
-  - fix: defer active implicit session rollover (#97164)
-  - fix(trajectory): preserve codex completion usage
-  - fix(trajectory): preserve usage in truncated events
-  - fix(agent-core): ignore truncated tool calls (#97140)
-  - fix(opencode-go): re-arm idle timer on block-boundary events to prevent false stalled-stream abort (#97128)
-  - fix(telegram): retain socket failure context (#97130)
-  - fix(provider-transport-fetch): bound SSE buffer to prevent OOM (#96989)
-  - fix(agents): guard delivery-evidence attachment recursion against cycles (#97041)
+  - fix(agents): preserve structured tool result visible text (#97268)
+  - Fix/zalo bound api json response reads (#97277)
+  - Fix/discord bound probe getme json reads (#97278)
+  - fix(cron): propagate cleanupCliLiveSessionOnRunEnd to isolated cron CLI branch (#97227)
+  - fix: seed Slack thread context after reset (#97100)
+  - fix: avoid stale dashboard child context budgets (#97332)
+  - fix: scanned PDF pages reach chat vision models (#97354)
+  - fix(imessage): stage remote media for plugin claims (#91803)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

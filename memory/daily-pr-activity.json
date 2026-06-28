@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T21:02:39.696864+08:00",
+  "generatedAt": "2026-06-28T21:08:01.147885+08:00",
   "repo": "openclaw/openclaw",
   "timezone": "Asia/Shanghai",
   "metricKey": "merged_prs",
@@ -861,6 +861,10 @@
     {
       "date": "2026-06-26",
       "merged_prs": 36
+    },
+    {
+      "date": "2026-06-27",
+      "merged_prs": 56
     }
   ],
   "maxMergedPrs": 209,
