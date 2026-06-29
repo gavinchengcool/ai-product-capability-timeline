@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-06-28T21:08:01+08:00
-- Requested window: 2026-06-27 to 2026-06-28
+- Generated at: 2026-06-29T23:23:56+08:00
+- Requested window: 2026-06-28 to 2026-06-29
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,27 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-06-27 to 2026-06-28
-- Generated at: 2026-06-28T21:07:44.017460+08:00
-- 窗口: 2026-06-27 至 2026-06-28
-- GitHub 增量: 59 commits / 0 releases
-- 最近 push: 2026-06-28
+- Window: 2026-06-28 to 2026-06-29
+- Generated at: 2026-06-29T23:23:38.680518+08:00
+- 窗口: 2026-06-28 至 2026-06-29
+- GitHub 增量: 200 commits / 1 releases
+- 最近 push: 2026-06-29
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Add hosted catalog source profile validation (#95969)
-  - Add hosted catalog snapshot fallback (#95877)
-  - Add hosted external catalog feed loader (#95868)
-  - feat(xai): route OAuth login through device-code flow (#97249)
+  - **Provider and model coverage:** catalog parsing, reasoning controls, provider model resolution, and encrypted reasoning support now handle more live provider variants. (#95283, #95710, #95268, #95744, #95686, #93956) Thanks @ZengWen-DT, @vincentkoc, @Marvinthebored, @Darren2030, @daniel-alejandro-t, @parveshsaini, @geraint0923, @fuller-stack-dev, and @jason-allen-oneal. [v2026.6.11-beta.2]
+  - feat(control-ui): add right-click Reply in Dashboard webchat (#92654)
+  - feat: improve model call telemetry
+  - feat(slack): support alternate Web API roots (#97154)
+  - Add marketplace feed telemetry (#96194)
+  - Add marketplace feed entries command (#96158)
+  - Add prototype pollution guard to resolveConfigPath (#59694)
+  - feat(onboard): show setup timeline note (#97482)
 - Fixes and constraints:
-  - fix(agents): preserve structured tool result visible text (#97268)
-  - Fix/zalo bound api json response reads (#97277)
-  - Fix/discord bound probe getme json reads (#97278)
-  - fix(cron): propagate cleanupCliLiveSessionOnRunEnd to isolated cron CLI branch (#97227)
-  - fix: seed Slack thread context after reset (#97100)
-  - fix: avoid stale dashboard child context budgets (#97332)
-  - fix: scanned PDF pages reach chat vision models (#97354)
-  - fix(imessage): stage remote media for plugin claims (#91803)
+  - fix(session-memory): skip transcript-only assistant messages in getRecentSessionContent (#94401)
+  - fix(os): use sw_vers for macOS version on Darwin instead of os.release() (#95225)
+  - fix(tasks): recover terminal lost cron rows (#86088)
+  - fix(ui): collapse failed internal tool calls when the turn still replied (#89683) (#90122)
+  - fix(memory): record structured dreaming outcomes (#97723)
+  - fix #95519: [Bug]: Fallback should trigger on provider upstream_error / LLM request failed (#95542)
+  - fix(codex): preserve per-app approval reviewer policy (#97327)
+  - fix(agents): bound WHAM usage probe JSON response reads
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
