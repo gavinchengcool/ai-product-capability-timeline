@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-06-29T23:23:56+08:00
-- Requested window: 2026-06-28 to 2026-06-29
+- Generated at: 2026-06-30T21:49:31+08:00
+- Requested window: 2026-06-29 to 2026-06-30
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,28 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-06-28 to 2026-06-29
-- Generated at: 2026-06-29T23:23:38.680518+08:00
-- 窗口: 2026-06-28 至 2026-06-29
-- GitHub 增量: 200 commits / 1 releases
-- 最近 push: 2026-06-29
+- Window: 2026-06-29 to 2026-06-30
+- Generated at: 2026-06-30T21:49:14.263618+08:00
+- 窗口: 2026-06-29 至 2026-06-30
+- GitHub 增量: 66 commits / 0 releases
+- 最近 push: 2026-06-30
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - **Provider and model coverage:** catalog parsing, reasoning controls, provider model resolution, and encrypted reasoning support now handle more live provider variants. (#95283, #95710, #95268, #95744, #95686, #93956) Thanks @ZengWen-DT, @vincentkoc, @Marvinthebored, @Darren2030, @daniel-alejandro-t, @parveshsaini, @geraint0923, @fuller-stack-dev, and @jason-allen-oneal. [v2026.6.11-beta.2]
-  - feat(control-ui): add right-click Reply in Dashboard webchat (#92654)
-  - feat: improve model call telemetry
-  - feat(slack): support alternate Web API roots (#97154)
-  - Add marketplace feed telemetry (#96194)
-  - Add marketplace feed entries command (#96158)
-  - Add prototype pollution guard to resolveConfigPath (#59694)
-  - feat(onboard): show setup timeline note (#97482)
+  - [codex] docs: add release notes placeholder (#97959)
+  - feat(qa): add transport scenario requirements (#97915)
+  - feat(qa): wire crabline whatsapp transport (#95920)
+  - feat(qa): wire crabline slack transport (#97891)
+  - feat(whatsapp): support Baileys WebSocket URL override (#97155)
 - Fixes and constraints:
-  - fix(session-memory): skip transcript-only assistant messages in getRecentSessionContent (#94401)
-  - fix(os): use sw_vers for macOS version on Darwin instead of os.release() (#95225)
-  - fix(tasks): recover terminal lost cron rows (#86088)
-  - fix(ui): collapse failed internal tool calls when the turn still replied (#89683) (#90122)
-  - fix(memory): record structured dreaming outcomes (#97723)
-  - fix #95519: [Bug]: Fallback should trigger on provider upstream_error / LLM request failed (#95542)
-  - fix(codex): preserve per-app approval reviewer policy (#97327)
-  - fix(agents): bound WHAM usage probe JSON response reads
+  - fix: require owner for trajectory export (#97840)
+  - fix: gate active memory global toggles (#97841)
+  - fix: gate group activation changes by owner (#97838)
+  - fix(agents): skip pre-prompt precheck when context engine owns compaction (#95342)
+  - fix(codex): keep plugin apps available when inventory is missing (#98042)
+  - fix(qqbot): tighten bundled skill guardrails (#98032)
+  - fix(matrix): use fixed crypto bootstrap command (#97181)
+  - fix(codex): require admin for native controls (#97952)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

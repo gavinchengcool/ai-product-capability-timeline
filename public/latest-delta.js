@@ -1,99 +1,88 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-06-29T23:23:38.680518+08:00",
+  "generatedAt": "2026-06-30T21:49:14.263618+08:00",
   "window": {
-    "start_local": "2026-06-28T23:23:38.680518+08:00",
-    "end_local": "2026-06-29T23:23:38.680518+08:00",
-    "start_utc": "2026-06-28T15:23:38Z",
-    "end_utc": "2026-06-29T15:23:38Z"
+    "start_local": "2026-06-29T21:49:14.263618+08:00",
+    "end_local": "2026-06-30T21:49:14.263618+08:00",
+    "start_utc": "2026-06-29T13:49:14Z",
+    "end_utc": "2026-06-30T13:49:14Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 380967,
-    "forks": 79806,
-    "open_issues": 6622,
-    "pushed_at": "2026-06-29T15:19:25Z"
+    "stars": 381114,
+    "forks": 79827,
+    "open_issues": 6718,
+    "pushed_at": "2026-06-30T13:27:06Z"
   },
   "summary": {
-    "commitCount": 200,
-    "releaseCount": 1,
+    "commitCount": 66,
+    "releaseCount": 0,
     "stableReleaseCount": 0,
-    "betaReleaseCount": 1,
-    "stars": 380967,
-    "forks": 79806,
-    "openIssues": 6622
+    "betaReleaseCount": 0,
+    "stars": 381114,
+    "forks": 79827,
+    "openIssues": 6718
   },
-  "releases": [
-    {
-      "tag_name": "v2026.6.11-beta.2",
-      "published_at": "2026-06-28T23:19:35Z",
-      "name": "openclaw 2026.6.11-beta.2",
-      "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.11-beta.2"
-    }
-  ],
+  "releases": [],
   "featureItems": [
-    "**Provider and model coverage:** catalog parsing, reasoning controls, provider model resolution, and encrypted reasoning support now handle more live provider variants. (#95283, #95710, #95268, #95744, #95686, #93956) Thanks @ZengWen-DT, @vincentkoc, @Marvinthebored, @Darren2030, @daniel-alejandro-t, @parveshsaini, @geraint0923, @fuller-stack-dev, and @jason-allen-oneal. [v2026.6.11-beta.2]",
-    "feat(control-ui): add right-click Reply in Dashboard webchat (#92654)",
-    "feat: improve model call telemetry",
-    "feat(slack): support alternate Web API roots (#97154)",
-    "Add marketplace feed telemetry (#96194)",
-    "Add marketplace feed entries command (#96158)",
-    "Add prototype pollution guard to resolveConfigPath (#59694)",
-    "feat(onboard): show setup timeline note (#97482)"
+    "[codex] docs: add release notes placeholder (#97959)",
+    "feat(qa): add transport scenario requirements (#97915)",
+    "feat(qa): wire crabline whatsapp transport (#95920)",
+    "feat(qa): wire crabline slack transport (#97891)",
+    "feat(whatsapp): support Baileys WebSocket URL override (#97155)"
   ],
   "fixItems": [
-    "fix(session-memory): skip transcript-only assistant messages in getRecentSessionContent (#94401)",
-    "fix(os): use sw_vers for macOS version on Darwin instead of os.release() (#95225)",
-    "fix(tasks): recover terminal lost cron rows (#86088)",
-    "fix(ui): collapse failed internal tool calls when the turn still replied (#89683) (#90122)",
-    "fix(memory): record structured dreaming outcomes (#97723)",
-    "fix #95519: [Bug]: Fallback should trigger on provider upstream_error / LLM request failed (#95542)",
-    "fix(codex): preserve per-app approval reviewer policy (#97327)",
-    "fix(agents): bound WHAM usage probe JSON response reads"
+    "fix: require owner for trajectory export (#97840)",
+    "fix: gate active memory global toggles (#97841)",
+    "fix: gate group activation changes by owner (#97838)",
+    "fix(agents): skip pre-prompt precheck when context engine owns compaction (#95342)",
+    "fix(codex): keep plugin apps available when inventory is missing (#98042)",
+    "fix(qqbot): tighten bundled skill guardrails (#98032)",
+    "fix(matrix): use fixed crypto bootstrap command (#97181)",
+    "fix(codex): require admin for native controls (#97952)"
   ],
   "topScopes": [
     {
-      "scope": "fix",
-      "count": 19
-    },
-    {
-      "scope": "telegram",
-      "count": 10
-    },
-    {
-      "scope": "test",
+      "scope": "ci",
       "count": 9
     },
     {
-      "scope": "agents",
-      "count": 7
-    },
-    {
-      "scope": "feishu",
-      "count": 6
-    },
-    {
-      "scope": "ui",
+      "scope": "fix",
       "count": 5
     },
     {
-      "scope": "cli",
-      "count": 5
-    },
-    {
-      "scope": "control-ui",
+      "scope": "qa",
       "count": 4
+    },
+    {
+      "scope": "agents",
+      "count": 3
+    },
+    {
+      "scope": "codex",
+      "count": 3
+    },
+    {
+      "scope": "cron",
+      "count": 3
+    },
+    {
+      "scope": "test",
+      "count": 3
+    },
+    {
+      "scope": "whatsapp",
+      "count": 2
     }
   ],
   "headlineCommits": [
-    "fix(session-memory): skip transcript-only assistant messages in getRecentSessionContent (#94401)",
-    "fix(os): use sw_vers for macOS version on Darwin instead of os.release() (#95225)",
-    "test(firecrawl): add unit tests for firecrawl client functions (#97714)",
-    "test(config): add unit tests for mapZodIssueToConfigIssue (#97736)",
-    "fix(tasks): recover terminal lost cron rows (#86088)",
-    "fix(ui): collapse failed internal tool calls when the turn still replied (#89683) (#90122)",
-    "fix(memory): record structured dreaming outcomes (#97723)",
-    "fix #95519: [Bug]: Fallback should trigger on provider upstream_error / LLM request failed (#95542)"
+    "fix: require owner for trajectory export (#97840)",
+    "fix: gate active memory global toggles (#97841)",
+    "fix: gate group activation changes by owner (#97838)",
+    "fix(agents): skip pre-prompt precheck when context engine owns compaction (#95342)",
+    "fix(codex): keep plugin apps available when inventory is missing (#98042)",
+    "fix(qqbot): tighten bundled skill guardrails (#98032)",
+    "fix(matrix): use fixed crypto bootstrap command (#97181)",
+    "fix(codex): require admin for native controls (#97952)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
