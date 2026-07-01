@@ -1,88 +1,99 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-06-30T21:49:14.263618+08:00",
+  "generatedAt": "2026-07-01T21:59:49.857621+08:00",
   "window": {
-    "start_local": "2026-06-29T21:49:14.263618+08:00",
-    "end_local": "2026-06-30T21:49:14.263618+08:00",
-    "start_utc": "2026-06-29T13:49:14Z",
-    "end_utc": "2026-06-30T13:49:14Z"
+    "start_local": "2026-06-30T21:59:49.857621+08:00",
+    "end_local": "2026-07-01T21:59:49.857621+08:00",
+    "start_utc": "2026-06-30T13:59:49Z",
+    "end_utc": "2026-07-01T13:59:49Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 381114,
-    "forks": 79827,
-    "open_issues": 6718,
-    "pushed_at": "2026-06-30T13:27:06Z"
+    "stars": 381275,
+    "forks": 79888,
+    "open_issues": 6739,
+    "pushed_at": "2026-07-01T13:57:22Z"
   },
   "summary": {
-    "commitCount": 66,
-    "releaseCount": 0,
-    "stableReleaseCount": 0,
+    "commitCount": 311,
+    "releaseCount": 1,
+    "stableReleaseCount": 1,
     "betaReleaseCount": 0,
-    "stars": 381114,
-    "forks": 79827,
-    "openIssues": 6718
+    "stars": 381275,
+    "forks": 79888,
+    "openIssues": 6739
   },
-  "releases": [],
+  "releases": [
+    {
+      "tag_name": "v2026.6.11",
+      "published_at": "2026-06-30T16:06:39Z",
+      "name": "openclaw 2026.6.11",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.11"
+    }
+  ],
   "featureItems": [
-    "[codex] docs: add release notes placeholder (#97959)",
-    "feat(qa): add transport scenario requirements (#97915)",
-    "feat(qa): wire crabline whatsapp transport (#95920)",
-    "feat(qa): wire crabline slack transport (#97891)",
-    "feat(whatsapp): support Baileys WebSocket URL override (#97155)"
+    "Hosted Ollama Cloud users can keep only the models they explicitly configured after a restart, without the full shared catalog being added back, while automatic discovery continues for local and self-hosted Ollama servers. [#93956](https://github.com/openclaw/openclaw/pull/93956) Thanks @jason-allen-oneal. [v2026.6.11]",
+    "Follow-up answers from xAI reasoning models such as Grok Composer now preserve earlier reasoning context more reliably, even when configurable reasoning effort is unsupported. [#95686](https://github.com/openclaw/openclaw/pull/95686) Thanks @fuller-stack-dev, @geraint0923. [v2026.6.11]",
+    "Ollama Cloud users can now find and select `glm-5.2:cloud` with its 1,000,000-token context window, reasoning, and tool support even when it is absent from the public model list. [11484f8](https://github.com/openclaw/openclaw/commit/11484f8a1483b7c42aa2971de2d88289fcef7046) [v2026.6.11]",
+    "Long-running conversations with screenshots or other images now keep their continuity more consistently when OpenClaw makes room for new messages, instead of repeatedly filling up without moving the retained conversation forward. [#95128](https://github.com/openclaw/openclaw/pull/95128) Thanks @yetval. [v2026.6.11]",
+    "After changing the default model, starting a fresh channel session with `/new` or `/reset` now uses the new default instead of silently reusing the previous cached model, while explicit `/model` overrides remain unchanged. [#77339](https://github.com/openclaw/openclaw/pull/77339) Related [#77322](https://github.com/openclaw/openclaw/issues/77322). Thanks @mjamiv, @zaynl. [v2026.6.11]",
+    "Gateway readiness checks now turn unhealthy during a restart drain, preventing traffic managers from sending new work to a Gateway that is temporarily rejecting requests. [#94915](https://github.com/openclaw/openclaw/pull/94915) Related [#78136](https://github.com/openclaw/openclaw/issues/78136). Thanks @markoub, @maxschachere, @vincentkoc. [v2026.6.11]",
+    "Operators can again add or update scheduled announcements for known channels in no-config setups, while configured environments still reject disabled, stale, ownerless, or unknown destinations before delivery. [#95754](https://github.com/openclaw/openclaw/pull/95754) Thanks @vincentkoc. [v2026.6.11]",
+    "Gateway restarts on systemd or container setups no longer leave old Codex or Claude adapter processes behind, helping new ACPX sessions start without minutes-long cleanup stalls after repeated restarts. [#96032](https://github.com/openclaw/openclaw/pull/96032) Thanks @t2wei, @vincentkoc. [v2026.6.11]"
   ],
   "fixItems": [
-    "fix: require owner for trajectory export (#97840)",
-    "fix: gate active memory global toggles (#97841)",
-    "fix: gate group activation changes by owner (#97838)",
-    "fix(agents): skip pre-prompt precheck when context engine owns compaction (#95342)",
-    "fix(codex): keep plugin apps available when inventory is missing (#98042)",
-    "fix(qqbot): tighten bundled skill guardrails (#98032)",
-    "fix(matrix): use fixed crypto bootstrap command (#97181)",
-    "fix(codex): require admin for native controls (#97952)"
+    "Fixes newer Google Chat direct messages sometimes being treated like group conversations, so they reach the correct one-to-one chat while Space and group-chat messages keep their existing routing. [#58993](https://github.com/openclaw/openclaw/pull/58993) Thanks @starhappysh, @vincentkoc. [v2026.6.11]",
+    "Fixes OpenClaw sometimes replying to its own delayed iMessage echoes when stray leading characters keep the sent message from being recognized. [#94442](https://github.com/openclaw/openclaw/pull/94442) Thanks @ly-wang19. [v2026.6.11]",
+    "Fixes delayed or missing Telegram and other queued channel replies in Kubernetes-style deployments with many injected environment variables, where opening the queue database could stall the gateway. [#95278](https://github.com/openclaw/openclaw/pull/95278) Related [#94571](https://github.com/openclaw/openclaw/issues/94571). Thanks @kaka-srp. [v2026.6.11]",
+    "Fixes completed assistant messages appearing twice in Telegram, Discord, Slack, and other streamed chats after a multi-message reply. [#95432](https://github.com/openclaw/openclaw/pull/95432) Thanks @vincentkoc, @yetval. [v2026.6.11]",
+    "Fixes WhatsApp group replies that could quote an older OpenClaw message instead of the user's triggering message, so final answers stay attached to the intended message when a reply target is available and avoid pointing back to stale bot context when it is not. [#95914](https://github.com/openclaw/openclaw/pull/95914) Thanks @mcaxtr. [v2026.6.11]",
+    "Fixes manifest-defined providers turning valid model IDs into broken ones when `stripPrefixes` entries have stray spaces or different casing, so operators and plugin authors get the intended provider model. [#95744](https://github.com/openclaw/openclaw/pull/95744) Related [#95743](https://github.com/openclaw/openclaw/issues/95743). Thanks @parveshsaini. [v2026.6.11]",
+    "Fixes delivered replies sometimes being saved to the wrong conversation history, or omitted from it, when operators use a custom or per-agent `session.store`, improving continuity and auditability for the intended session. [#95782](https://github.com/openclaw/openclaw/pull/95782) Related [#95781](https://github.com/openclaw/openclaw/issues/95781). Thanks @youngting520. [v2026.6.11]",
+    "Fixes assistant replies disappearing from webchat, Control UI, Feishu, and other embedded conversations after compaction, keeping refreshed chats readable and follow-up requests separate. [#95484](https://github.com/openclaw/openclaw/pull/95484) Related [#76729](https://github.com/openclaw/openclaw/issues/76729). Thanks @maweibin, @njuboy11, @vincentkoc. [v2026.6.11]"
   ],
   "topScopes": [
     {
-      "scope": "ci",
-      "count": 9
+      "scope": "ui",
+      "count": 39
+    },
+    {
+      "scope": "i18n",
+      "count": 37
     },
     {
       "scope": "fix",
-      "count": 5
+      "count": 21
     },
     {
-      "scope": "qa",
-      "count": 4
+      "scope": "gateway",
+      "count": 17
     },
     {
       "scope": "agents",
-      "count": 3
+      "count": 10
     },
     {
-      "scope": "codex",
-      "count": 3
+      "scope": "android",
+      "count": 8
     },
     {
-      "scope": "cron",
-      "count": 3
+      "scope": "doctor",
+      "count": 7
     },
     {
-      "scope": "test",
-      "count": 3
-    },
-    {
-      "scope": "whatsapp",
-      "count": 2
+      "scope": "ci",
+      "count": 7
     }
   ],
   "headlineCommits": [
-    "fix: require owner for trajectory export (#97840)",
-    "fix: gate active memory global toggles (#97841)",
-    "fix: gate group activation changes by owner (#97838)",
-    "fix(agents): skip pre-prompt precheck when context engine owns compaction (#95342)",
-    "fix(codex): keep plugin apps available when inventory is missing (#98042)",
-    "fix(qqbot): tighten bundled skill guardrails (#98032)",
-    "fix(matrix): use fixed crypto bootstrap command (#97181)",
-    "fix(codex): require admin for native controls (#97952)"
+    "fix(tlon): bound error response body reads to prevent OOM (#98496)",
+    "fix(update-check): bound npm registry JSON response read to prevent OOM (#98508)",
+    "fix(cli): retry logs.tail after journal fallback in logs follow (#88159)",
+    "fix(status): bound systemd service probes so status cannot hang on a wedged systemctl (#84698) (#94149)",
+    "fix(cron): preserve provider/model on isolated-run timeout row (#95943)",
+    "feat(autoreview): support cursor-agent engine (#97348)",
+    "test(shared): add unit tests for human-readable list formatting",
+    "feat(doctor): warn about in-flight cron jobs"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
