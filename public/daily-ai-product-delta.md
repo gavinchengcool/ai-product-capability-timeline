@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-07-02T21:23:53+08:00
-- Requested window: 2026-07-01 to 2026-07-02
+- Generated at: 2026-07-03T21:27:46+08:00
+- Requested window: 2026-07-02 to 2026-07-03
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,29 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-07-01 to 2026-07-02
-- Generated at: 2026-07-02T21:23:31.606374+08:00
-- 窗口: 2026-07-01 至 2026-07-02
-- GitHub 增量: 160 commits / 1 releases
-- 最近 push: 2026-07-02
+- Window: 2026-07-02 to 2026-07-03
+- Generated at: 2026-07-03T21:27:29.855329+08:00
+- 窗口: 2026-07-02 至 2026-07-03
+- GitHub 增量: 362 commits / 0 releases
+- 最近 push: 2026-07-03
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - **Model and provider coverage:** add GPT-5.6 support, use Nemotron Super's 1M context window, and preserve explicit OpenRouter authentication headers. (#98333, #98726, #98187) Thanks @steipete-oai, @eleqtrizit, @sunlit-deng, and @laurencebrown. [v2026.7.1-beta.1]
-  - **CLI and node workflows:** add `openclaw attach`, node context-path support, actionable device-approval recovery guidance, and clearer plugin install exit diagnostics. (#96454, #97679, #98115, #98146, #98497) Thanks @anagnorisis2peripeteia, @obviyus, @wm0018, @welfo-beo, @RomneyDa, @Sanjays2402, and @vincentkoc. [v2026.7.1-beta.1]
-  - **Cron and usage:** add exit-triggered schedules, detached session-targeted runs, an in-flight job doctor warning, and a built-in full usage footer. (#92037, #98755, #98620, #92657, #92877) Thanks @anagnorisis2peripeteia, @obviyus, @EthanSK, @masatohoshino, and @Marvinthebored. [v2026.7.1-beta.1]
-  - **Native apps and localization:** modernize iOS navigation, settings, presentation, and Talk controls, add Gateway speech providers, improve QR onboarding and protocol recovery, localize core Apple and Android surfaces, and add Swedish mobile localization. (#98452, #98736, #98811, #98376, #98302, #98385, #97110, #97111, #97112, #97113, #98043) Thanks @Tony-ooo, @joelnishanth, @cursoragent, @joshavant, @vincentkoc, and @yeager. [v2026.7.1-beta.1]
-  - **Messaging capabilities:** add native iMessage polls and Telegram Codex pairing and steering flows. (#98421, #98006, #98126) Thanks @omarshahine, @lobster, @100yenadmin, and @Kyzcreig. [v2026.7.1-beta.1]
-  - **Conversation and review controls:** prepare scoped conversation capability profiles and add Cursor Agent as an autoreview engine. (#98536, #97348) Thanks @hxy91819. [v2026.7.1-beta.1]
-  - ci: add process exec CodeQL security shard (#92667)
-  - [codex] Support Android selected photo access (#98059)
+  - Add Signal status reaction lifecycle (#98791)
+  - feat(nodes): add auto-discovered Ollama inference (#99234)
+  - feat: session-first sidebar, compact context ring, and warm light theme for the Control UI (#99289)
+  - android: add licenses settings screen
+  - feat(telegram): collapse summary bar + multi-line lane rendering
+  - Add iOS licenses settings screen
 - Fixes and constraints:
-  - fix(macos): stop runtime config-health sidecar access (#99039)
-  - fix: Control row icons use inconsistent row styling (iOS) (#98936)
-  - fix(ios): gateway error shows twice on the Settings Gateway page (#98856)
-  - fix: clean up iOS About page copy (#98985)
-  - fix(discord): gate guild metadata reads [AI] (#98966)
-  - fix(feishu): include video upload duration (#98235)
-  - fix(ios): back from settings details returns to the originating screen (#98898)
-  - fix(android): return settings details to their originating tab on Back (#98914)
+  - fix(gateway): declare the dev agent required by the gateway e2e session key (#99520)
+  - fix(logging): redact Telegram bot tokens from timeout URLs (#99428)
+  - fix(ui): keep landscape composer compact (#98683)
+  - fix(subagents): match requesterSessionKey when controllerSessionKey differs in list filter (#99410)
+  - fix: long mobile media recordings time out (#99455)
+  - fix: redact dotted API key activity previews (#99460)
+  - fix(config): use Object.hasOwn instead of in operator in restoreOriginalValueOrThrow (#99152)
+  - fix(agents): preserve fd find failures (#99446)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

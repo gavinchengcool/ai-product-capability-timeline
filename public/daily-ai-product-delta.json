@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-02T21:23:53+08:00",
+  "generatedAt": "2026-07-03T21:27:46+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-07-01T21:23:53+08:00",
-    "end_local": "2026-07-02T21:23:53+08:00"
+    "start_local": "2026-07-02T21:27:46+08:00",
+    "end_local": "2026-07-03T21:27:46+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-07-02T21:23:31.606374+08:00",
+      "generatedAt": "2026-07-03T21:27:29.855329+08:00",
       "window": {
-        "start_local": "2026-07-01T21:23:31.606374+08:00",
-        "end_local": "2026-07-02T21:23:31.606374+08:00",
-        "start_utc": "2026-07-01T13:23:31Z",
-        "end_utc": "2026-07-02T13:23:31Z"
+        "start_local": "2026-07-02T21:27:29.855329+08:00",
+        "end_local": "2026-07-03T21:27:29.855329+08:00",
+        "start_utc": "2026-07-02T13:27:29Z",
+        "end_utc": "2026-07-03T13:27:29Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-07-01 至 2026-07-02"
+          "value": "2026-07-02 至 2026-07-03"
         },
         {
           "label": "GitHub 增量",
-          "value": "160 commits / 1 releases"
+          "value": "362 commits / 0 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-07-02"
+          "value": "2026-07-03"
         },
         {
           "label": "来源",
@@ -52,66 +52,56 @@
         }
       ],
       "featureItems": [
-        "**Model and provider coverage:** add GPT-5.6 support, use Nemotron Super's 1M context window, and preserve explicit OpenRouter authentication headers. (#98333, #98726, #98187) Thanks @steipete-oai, @eleqtrizit, @sunlit-deng, and @laurencebrown. [v2026.7.1-beta.1]",
-        "**CLI and node workflows:** add `openclaw attach`, node context-path support, actionable device-approval recovery guidance, and clearer plugin install exit diagnostics. (#96454, #97679, #98115, #98146, #98497) Thanks @anagnorisis2peripeteia, @obviyus, @wm0018, @welfo-beo, @RomneyDa, @Sanjays2402, and @vincentkoc. [v2026.7.1-beta.1]",
-        "**Cron and usage:** add exit-triggered schedules, detached session-targeted runs, an in-flight job doctor warning, and a built-in full usage footer. (#92037, #98755, #98620, #92657, #92877) Thanks @anagnorisis2peripeteia, @obviyus, @EthanSK, @masatohoshino, and @Marvinthebored. [v2026.7.1-beta.1]",
-        "**Native apps and localization:** modernize iOS navigation, settings, presentation, and Talk controls, add Gateway speech providers, improve QR onboarding and protocol recovery, localize core Apple and Android surfaces, and add Swedish mobile localization. (#98452, #98736, #98811, #98376, #98302, #98385, #97110, #97111, #97112, #97113, #98043) Thanks @Tony-ooo, @joelnishanth, @cursoragent, @joshavant, @vincentkoc, and @yeager. [v2026.7.1-beta.1]",
-        "**Messaging capabilities:** add native iMessage polls and Telegram Codex pairing and steering flows. (#98421, #98006, #98126) Thanks @omarshahine, @lobster, @100yenadmin, and @Kyzcreig. [v2026.7.1-beta.1]",
-        "**Conversation and review controls:** prepare scoped conversation capability profiles and add Cursor Agent as an autoreview engine. (#98536, #97348) Thanks @hxy91819. [v2026.7.1-beta.1]",
-        "ci: add process exec CodeQL security shard (#92667)",
-        "[codex] Support Android selected photo access (#98059)"
+        "Add Signal status reaction lifecycle (#98791)",
+        "feat(nodes): add auto-discovered Ollama inference (#99234)",
+        "feat: session-first sidebar, compact context ring, and warm light theme for the Control UI (#99289)",
+        "android: add licenses settings screen",
+        "feat(telegram): collapse summary bar + multi-line lane rendering",
+        "Add iOS licenses settings screen"
       ],
       "fixItems": [
-        "fix(macos): stop runtime config-health sidecar access (#99039)",
-        "fix: Control row icons use inconsistent row styling (iOS) (#98936)",
-        "fix(ios): gateway error shows twice on the Settings Gateway page (#98856)",
-        "fix: clean up iOS About page copy (#98985)",
-        "fix(discord): gate guild metadata reads [AI] (#98966)",
-        "fix(feishu): include video upload duration (#98235)",
-        "fix(ios): back from settings details returns to the originating screen (#98898)",
-        "fix(android): return settings details to their originating tab on Back (#98914)"
+        "fix(gateway): declare the dev agent required by the gateway e2e session key (#99520)",
+        "fix(logging): redact Telegram bot tokens from timeout URLs (#99428)",
+        "fix(ui): keep landscape composer compact (#98683)",
+        "fix(subagents): match requesterSessionKey when controllerSessionKey differs in list filter (#99410)",
+        "fix: long mobile media recordings time out (#99455)",
+        "fix: redact dotted API key activity previews (#99460)",
+        "fix(config): use Object.hasOwn instead of in operator in restoreOriginalValueOrThrow (#99152)",
+        "fix(agents): preserve fd find failures (#99446)"
       ],
-      "releases": [
-        {
-          "tag_name": "v2026.7.1-beta.1",
-          "published_at": "2026-07-02T07:25:49Z",
-          "name": "openclaw 2026.7.1-beta.1",
-          "prerelease": true,
-          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.1-beta.1"
-        }
-      ],
+      "releases": [],
       "topScopes": [
         {
-          "scope": "telegram",
-          "count": 27
-        },
-        {
-          "scope": "agents",
-          "count": 13
+          "scope": "i18n",
+          "count": 217
         },
         {
           "scope": "fix",
+          "count": 23
+        },
+        {
+          "scope": "ui",
+          "count": 19
+        },
+        {
+          "scope": "telegram",
+          "count": 18
+        },
+        {
+          "scope": "android",
           "count": 12
         },
         {
-          "scope": "ios",
+          "scope": "qa",
           "count": 8
         },
         {
-          "scope": "ci",
+          "scope": "shared",
+          "count": 7
+        },
+        {
+          "scope": "agents",
           "count": 6
-        },
-        {
-          "scope": "cron",
-          "count": 5
-        },
-        {
-          "scope": "add",
-          "count": 4
-        },
-        {
-          "scope": "[codex]",
-          "count": 3
         }
       ],
       "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"

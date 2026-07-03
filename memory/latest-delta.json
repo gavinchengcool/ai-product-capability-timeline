@@ -1,99 +1,89 @@
 {
-  "generatedAt": "2026-07-02T21:23:31.606374+08:00",
+  "generatedAt": "2026-07-03T21:27:29.855329+08:00",
   "window": {
-    "start_local": "2026-07-01T21:23:31.606374+08:00",
-    "end_local": "2026-07-02T21:23:31.606374+08:00",
-    "start_utc": "2026-07-01T13:23:31Z",
-    "end_utc": "2026-07-02T13:23:31Z"
+    "start_local": "2026-07-02T21:27:29.855329+08:00",
+    "end_local": "2026-07-03T21:27:29.855329+08:00",
+    "start_utc": "2026-07-02T13:27:29Z",
+    "end_utc": "2026-07-03T13:27:29Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 381426,
-    "forks": 79941,
-    "open_issues": 6849,
-    "pushed_at": "2026-07-02T13:22:26Z"
+    "stars": 381569,
+    "forks": 79988,
+    "open_issues": 6966,
+    "pushed_at": "2026-07-03T13:01:47Z"
   },
   "summary": {
-    "commitCount": 160,
-    "releaseCount": 1,
+    "commitCount": 362,
+    "releaseCount": 0,
     "stableReleaseCount": 0,
-    "betaReleaseCount": 1,
-    "stars": 381426,
-    "forks": 79941,
-    "openIssues": 6849
+    "betaReleaseCount": 0,
+    "stars": 381569,
+    "forks": 79988,
+    "openIssues": 6966
   },
-  "releases": [
-    {
-      "tag_name": "v2026.7.1-beta.1",
-      "published_at": "2026-07-02T07:25:49Z",
-      "name": "openclaw 2026.7.1-beta.1",
-      "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.1-beta.1"
-    }
-  ],
+  "releases": [],
   "featureItems": [
-    "**Model and provider coverage:** add GPT-5.6 support, use Nemotron Super's 1M context window, and preserve explicit OpenRouter authentication headers. (#98333, #98726, #98187) Thanks @steipete-oai, @eleqtrizit, @sunlit-deng, and @laurencebrown. [v2026.7.1-beta.1]",
-    "**CLI and node workflows:** add `openclaw attach`, node context-path support, actionable device-approval recovery guidance, and clearer plugin install exit diagnostics. (#96454, #97679, #98115, #98146, #98497) Thanks @anagnorisis2peripeteia, @obviyus, @wm0018, @welfo-beo, @RomneyDa, @Sanjays2402, and @vincentkoc. [v2026.7.1-beta.1]",
-    "**Cron and usage:** add exit-triggered schedules, detached session-targeted runs, an in-flight job doctor warning, and a built-in full usage footer. (#92037, #98755, #98620, #92657, #92877) Thanks @anagnorisis2peripeteia, @obviyus, @EthanSK, @masatohoshino, and @Marvinthebored. [v2026.7.1-beta.1]",
-    "**Native apps and localization:** modernize iOS navigation, settings, presentation, and Talk controls, add Gateway speech providers, improve QR onboarding and protocol recovery, localize core Apple and Android surfaces, and add Swedish mobile localization. (#98452, #98736, #98811, #98376, #98302, #98385, #97110, #97111, #97112, #97113, #98043) Thanks @Tony-ooo, @joelnishanth, @cursoragent, @joshavant, @vincentkoc, and @yeager. [v2026.7.1-beta.1]",
-    "**Messaging capabilities:** add native iMessage polls and Telegram Codex pairing and steering flows. (#98421, #98006, #98126) Thanks @omarshahine, @lobster, @100yenadmin, and @Kyzcreig. [v2026.7.1-beta.1]",
-    "**Conversation and review controls:** prepare scoped conversation capability profiles and add Cursor Agent as an autoreview engine. (#98536, #97348) Thanks @hxy91819. [v2026.7.1-beta.1]",
-    "ci: add process exec CodeQL security shard (#92667)",
-    "[codex] Support Android selected photo access (#98059)"
+    "Add Signal status reaction lifecycle (#98791)",
+    "feat(nodes): add auto-discovered Ollama inference (#99234)",
+    "feat: session-first sidebar, compact context ring, and warm light theme for the Control UI (#99289)",
+    "android: add licenses settings screen",
+    "feat(telegram): collapse summary bar + multi-line lane rendering",
+    "Add iOS licenses settings screen"
   ],
   "fixItems": [
-    "fix(macos): stop runtime config-health sidecar access (#99039)",
-    "fix: Control row icons use inconsistent row styling (iOS) (#98936)",
-    "fix(ios): gateway error shows twice on the Settings Gateway page (#98856)",
-    "fix: clean up iOS About page copy (#98985)",
-    "fix(discord): gate guild metadata reads [AI] (#98966)",
-    "fix(feishu): include video upload duration (#98235)",
-    "fix(ios): back from settings details returns to the originating screen (#98898)",
-    "fix(android): return settings details to their originating tab on Back (#98914)"
+    "fix(gateway): declare the dev agent required by the gateway e2e session key (#99520)",
+    "fix(logging): redact Telegram bot tokens from timeout URLs (#99428)",
+    "fix(ui): keep landscape composer compact (#98683)",
+    "fix(subagents): match requesterSessionKey when controllerSessionKey differs in list filter (#99410)",
+    "fix: long mobile media recordings time out (#99455)",
+    "fix: redact dotted API key activity previews (#99460)",
+    "fix(config): use Object.hasOwn instead of in operator in restoreOriginalValueOrThrow (#99152)",
+    "fix(agents): preserve fd find failures (#99446)"
   ],
   "topScopes": [
     {
-      "scope": "telegram",
-      "count": 27
-    },
-    {
-      "scope": "agents",
-      "count": 13
+      "scope": "i18n",
+      "count": 217
     },
     {
       "scope": "fix",
+      "count": 23
+    },
+    {
+      "scope": "ui",
+      "count": 19
+    },
+    {
+      "scope": "telegram",
+      "count": 18
+    },
+    {
+      "scope": "android",
       "count": 12
     },
     {
-      "scope": "ios",
+      "scope": "qa",
       "count": 8
     },
     {
-      "scope": "ci",
+      "scope": "shared",
+      "count": 7
+    },
+    {
+      "scope": "agents",
       "count": 6
-    },
-    {
-      "scope": "cron",
-      "count": 5
-    },
-    {
-      "scope": "add",
-      "count": 4
-    },
-    {
-      "scope": "[codex]",
-      "count": 3
     }
   ],
   "headlineCommits": [
-    "[codex] Gate Android Talk capture starts in background (#98055)",
-    "ci: add process exec CodeQL security shard (#92667)",
-    "fix(macos): stop runtime config-health sidecar access (#99039)",
-    "[codex] Fix Android camera snap cleanup (#98040)",
-    "fix: Control row icons use inconsistent row styling (iOS) (#98936)",
-    "fix(ios): gateway error shows twice on the Settings Gateway page (#98856)",
-    "fix: clean up iOS About page copy (#98985)",
-    "fix(discord): gate guild metadata reads [AI] (#98966)"
+    "fix(gateway): declare the dev agent required by the gateway e2e session key (#99520)",
+    "Preserve Codex output after missing turn completion (#99217)",
+    "fix(logging): redact Telegram bot tokens from timeout URLs (#99428)",
+    "fix(ui): keep landscape composer compact (#98683)",
+    "Add Signal status reaction lifecycle (#98791)",
+    "chore(i18n): refresh native sv locale",
+    "fix(subagents): match requesterSessionKey when controllerSessionKey differs in list filter (#99410)",
+    "chore(i18n): refresh native ru locale"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 }
