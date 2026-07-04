@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-07-03T21:27:46+08:00
-- Requested window: 2026-07-02 to 2026-07-03
+- Generated at: 2026-07-04T20:53:52+08:00
+- Requested window: 2026-07-03 to 2026-07-04
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,29 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-07-02 to 2026-07-03
-- Generated at: 2026-07-03T21:27:29.855329+08:00
-- 窗口: 2026-07-02 至 2026-07-03
-- GitHub 增量: 362 commits / 0 releases
-- 最近 push: 2026-07-03
+- Window: 2026-07-03 to 2026-07-04
+- Generated at: 2026-07-04T20:53:33.367071+08:00
+- 窗口: 2026-07-03 至 2026-07-04
+- GitHub 增量: 370 commits / 0 releases
+- 最近 push: 2026-07-04
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Add Signal status reaction lifecycle (#98791)
-  - feat(nodes): add auto-discovered Ollama inference (#99234)
-  - feat: session-first sidebar, compact context ring, and warm light theme for the Control UI (#99289)
-  - android: add licenses settings screen
-  - feat(telegram): collapse summary bar + multi-line lane rendering
-  - Add iOS licenses settings screen
+  - feat: allow custom sandbox image tags (#99915)
+  - feat(whatsapp): add requester-bound MeowCaller calls (#99635)
+  - feat(codex): share native threads across Codex clients (#99821)
+  - feat: declutter the Control UI shell — reasoning effort slider, borderless composer controls, version out of the sidebar (#99838)
+  - feat(macos): install and run the local Gateway automatically (#99767)
+  - feat: add slash command picker in chat composer (#99426)
+  - feat(providers): add ClawRouter routing and quotas (#99658)
+  - feat(ios): implement branded typography design system
 - Fixes and constraints:
-  - fix(gateway): declare the dev agent required by the gateway e2e session key (#99520)
-  - fix(logging): redact Telegram bot tokens from timeout URLs (#99428)
-  - fix(ui): keep landscape composer compact (#98683)
-  - fix(subagents): match requesterSessionKey when controllerSessionKey differs in list filter (#99410)
-  - fix: long mobile media recordings time out (#99455)
-  - fix: redact dotted API key activity previews (#99460)
-  - fix(config): use Object.hasOwn instead of in operator in restoreOriginalValueOrThrow (#99152)
-  - fix(agents): preserve fd find failures (#99446)
+  - fix(anthropic): fall back to Claude Opus 4.8 when Fable 5 safety classifiers decline a request (#99906)
+  - fix(slack): remove unused unsafe auth fetch helper (#99944)
+  - fix(test): use canonical memory fd repro config
+  - perf: reuse plugin SDK report compiler graph (#99940)
+  - fix(tui): coalesce busy submit notices (#99879)
+  - fix(slack): warn when bot token authenticates as user (#99931)
+  - fix(transcripts): mark delivery mirrors as artifacts (#99855)
+  - fix(slack): preserve time colons in interactive labels (#99877)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
