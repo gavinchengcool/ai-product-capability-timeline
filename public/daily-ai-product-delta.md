@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-07-04T20:53:52+08:00
-- Requested window: 2026-07-03 to 2026-07-04
+- Generated at: 2026-07-05T21:00:44+08:00
+- Requested window: 2026-07-04 to 2026-07-05
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-07-03 to 2026-07-04
-- Generated at: 2026-07-04T20:53:33.367071+08:00
-- 窗口: 2026-07-03 至 2026-07-04
-- GitHub 增量: 370 commits / 0 releases
-- 最近 push: 2026-07-04
+- Window: 2026-07-04 to 2026-07-05
+- Generated at: 2026-07-05T21:00:28.510369+08:00
+- 窗口: 2026-07-04 至 2026-07-05
+- GitHub 增量: 239 commits / 1 releases
+- 最近 push: 2026-07-05
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat: allow custom sandbox image tags (#99915)
-  - feat(whatsapp): add requester-bound MeowCaller calls (#99635)
-  - feat(codex): share native threads across Codex clients (#99821)
-  - feat: declutter the Control UI shell — reasoning effort slider, borderless composer controls, version out of the sidebar (#99838)
-  - feat(macos): install and run the local Gateway automatically (#99767)
-  - feat: add slash command picker in chat composer (#99426)
-  - feat(providers): add ClawRouter routing and quotas (#99658)
-  - feat(ios): implement branded typography design system
+  - **ClawRouter routing and quotas:** add the bundled ClawRouter provider plugin with credential-scoped dynamic model discovery, OpenAI-compatible and native Anthropic/Gemini transports, and managed budget reporting across OpenClaw usage surfaces. (#99658) [v2026.7.1-beta.2]
+  - **Model and provider coverage:** add GPT-5.6 support, use Nemotron Super's 1M context window, and preserve explicit OpenRouter authentication headers. (#98333, #98726, #98187) Thanks @steipete-oai, @eleqtrizit, @sunlit-deng, and @laurencebrown. [v2026.7.1-beta.2]
+  - **CLI and node workflows:** add `openclaw attach`, node context-path support, actionable device-approval recovery guidance, soft-resume CLI sessions when prompt metadata changes, and clearer plugin install exit diagnostics. (#96454, #97679, #98115, #98146, #98497, #99822) Thanks @anagnorisis2peripeteia, @obviyus, @wm0018, @welfo-beo, @RomneyDa, @Sanjays2402, and @vincentkoc. [v2026.7.1-beta.2]
+  - **Cron and usage:** add exit-triggered schedules, detached session-targeted runs, an in-flight job doctor warning, and a built-in full usage footer. (#92037, #98755, #98620, #92657, #92877) Thanks @anagnorisis2peripeteia, @obviyus, @EthanSK, @masatohoshino, and @Marvinthebored. [v2026.7.1-beta.2]
+  - **Native apps and localization:** modernize iOS presentation, Chat, Talk, onboarding, and reconnect flows; add Gateway speech providers; improve QR onboarding and protocol recovery; install the local Gateway from macOS; localize core Apple and Android surfaces; and add Swedish mobile localization. (#98452, #98736, #99243, #98376, #98302, #98385, #99767, #97110, #97111, #97112, #97113, #98043) Thanks @jcooley8, @Tony-ooo, @joelnishanth, @cursoragent, @joshavant, @vincentkoc, and @yeager. [v2026.7.1-beta.2]
+  - **Messaging capabilities:** add native iMessage polls, Telegram Codex pairing and steering, Telegram multi-lane progress summaries, and Signal target aliases. (#98421, #98006, #98126, #98907, #95738) Thanks @omarshahine, @lobster, @100yenadmin, @Kyzcreig, @Marvinthebored, and @jesse-merhi. [v2026.7.1-beta.2]
+  - **Local inference and chat controls:** auto-discover Ollama inference nodes, add Control UI session-first navigation, reasoning controls, and command picking, and keep OpenClaw control tools available when deferred tool search selects the wrong tool family. (#99234, #99289, #99426, #99838, #99561) Thanks @100yenadmin, @joshavant, @VicZhang6, and @Solvely-Colin. [v2026.7.1-beta.2]
+  - **Conversation and review controls:** prepare scoped conversation capability profiles and add Cursor Agent as an autoreview engine. (#98536, #97348) Thanks @hxy91819. [v2026.7.1-beta.2]
 - Fixes and constraints:
-  - fix(anthropic): fall back to Claude Opus 4.8 when Fable 5 safety classifiers decline a request (#99906)
-  - fix(slack): remove unused unsafe auth fetch helper (#99944)
-  - fix(test): use canonical memory fd repro config
-  - perf: reuse plugin SDK report compiler graph (#99940)
-  - fix(tui): coalesce busy submit notices (#99879)
-  - fix(slack): warn when bot token authenticates as user (#99931)
-  - fix(transcripts): mark delivery mirrors as artifacts (#99855)
-  - fix(slack): preserve time colons in interactive labels (#99877)
+  - fix(gateway): stop terminal WhatsApp restart loops (#78511)
+  - fix(core): keep backend truncation UTF-16 safe (#100244)
+  - fix: harden small runtime and installer edge cases (#100258)
+  - fix(voice-call): share webhook replay tracking (#100263)
+  - fix(e2e): avoid browser cdp doctor race
+  - fix: narrow secret target fast-path types
+  - fix(e2e): provide crestodian rescue gateway token
+  - fix(e2e): stage ai runtime in git fixtures
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
