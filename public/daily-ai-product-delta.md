@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-07-05T21:00:44+08:00
-- Requested window: 2026-07-04 to 2026-07-05
+- Generated at: 2026-07-06T22:50:24+08:00
+- Requested window: 2026-07-05 to 2026-07-06
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-07-04 to 2026-07-05
-- Generated at: 2026-07-05T21:00:28.510369+08:00
-- 窗口: 2026-07-04 至 2026-07-05
-- GitHub 增量: 239 commits / 1 releases
-- 最近 push: 2026-07-05
+- Window: 2026-07-05 to 2026-07-06
+- Generated at: 2026-07-06T22:50:06.795312+08:00
+- 窗口: 2026-07-05 至 2026-07-06
+- GitHub 增量: 438 commits / 0 releases
+- 最近 push: 2026-07-06
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - **ClawRouter routing and quotas:** add the bundled ClawRouter provider plugin with credential-scoped dynamic model discovery, OpenAI-compatible and native Anthropic/Gemini transports, and managed budget reporting across OpenClaw usage surfaces. (#99658) [v2026.7.1-beta.2]
-  - **Model and provider coverage:** add GPT-5.6 support, use Nemotron Super's 1M context window, and preserve explicit OpenRouter authentication headers. (#98333, #98726, #98187) Thanks @steipete-oai, @eleqtrizit, @sunlit-deng, and @laurencebrown. [v2026.7.1-beta.2]
-  - **CLI and node workflows:** add `openclaw attach`, node context-path support, actionable device-approval recovery guidance, soft-resume CLI sessions when prompt metadata changes, and clearer plugin install exit diagnostics. (#96454, #97679, #98115, #98146, #98497, #99822) Thanks @anagnorisis2peripeteia, @obviyus, @wm0018, @welfo-beo, @RomneyDa, @Sanjays2402, and @vincentkoc. [v2026.7.1-beta.2]
-  - **Cron and usage:** add exit-triggered schedules, detached session-targeted runs, an in-flight job doctor warning, and a built-in full usage footer. (#92037, #98755, #98620, #92657, #92877) Thanks @anagnorisis2peripeteia, @obviyus, @EthanSK, @masatohoshino, and @Marvinthebored. [v2026.7.1-beta.2]
-  - **Native apps and localization:** modernize iOS presentation, Chat, Talk, onboarding, and reconnect flows; add Gateway speech providers; improve QR onboarding and protocol recovery; install the local Gateway from macOS; localize core Apple and Android surfaces; and add Swedish mobile localization. (#98452, #98736, #99243, #98376, #98302, #98385, #99767, #97110, #97111, #97112, #97113, #98043) Thanks @jcooley8, @Tony-ooo, @joelnishanth, @cursoragent, @joshavant, @vincentkoc, and @yeager. [v2026.7.1-beta.2]
-  - **Messaging capabilities:** add native iMessage polls, Telegram Codex pairing and steering, Telegram multi-lane progress summaries, and Signal target aliases. (#98421, #98006, #98126, #98907, #95738) Thanks @omarshahine, @lobster, @100yenadmin, @Kyzcreig, @Marvinthebored, and @jesse-merhi. [v2026.7.1-beta.2]
-  - **Local inference and chat controls:** auto-discover Ollama inference nodes, add Control UI session-first navigation, reasoning controls, and command picking, and keep OpenClaw control tools available when deferred tool search selects the wrong tool family. (#99234, #99289, #99426, #99838, #99561) Thanks @100yenadmin, @joshavant, @VicZhang6, and @Solvely-Colin. [v2026.7.1-beta.2]
-  - **Conversation and review controls:** prepare scoped conversation capability profiles and add Cursor Agent as an autoreview engine. (#98536, #97348) Thanks @hxy91819. [v2026.7.1-beta.2]
+  - feat(android): tap-to-expand link previews in chat transcript (#100898)
+  - feat(ui): show background tasks live in the web Control UI (#100789)
+  - feat(sessions): grouping, unread state, and full session controls on web, iOS, and Android (#100814)
+  - feat(android): add chat message actions (#100879)
+  - feat(ui): add configurable chat send shortcut (#100810)
+  - feat: correlate native search outcomes in audit history (#98704)
+  - feat(ios): render LaTeX display math in chat via SwiftMath (#100829)
+  - feat: add Anthropic and OpenAI cost history (#100672)
 - Fixes and constraints:
-  - fix(gateway): stop terminal WhatsApp restart loops (#78511)
-  - fix(core): keep backend truncation UTF-16 safe (#100244)
-  - fix: harden small runtime and installer edge cases (#100258)
-  - fix(voice-call): share webhook replay tracking (#100263)
-  - fix(e2e): avoid browser cdp doctor race
-  - fix: narrow secret target fast-path types
-  - fix(e2e): provide crestodian rescue gateway token
-  - fix(e2e): stage ai runtime in git fixtures
+  - fix(agents): distinguish terminal aborts from retryable failures (#60388) (#62682)
+  - fix(test): preflight targeted UI e2e (#100950)
+  - fix(memory): fall back to wiki for missing all-corpus reads (#100904)
+  - fix(cron): use direct lookup instead of paginated search in cron edit (#100836)
+  - fix(tests): restore shared-kit test module compilation after NSNull coalesce (#100903)
+  - fix(cron): accept null fallbacks in update patch payload (#100707) (#100801)
+  - fix(agents): preserve blank lines in multi-question user input fallback parsing (#100832)
+  - fix(feishu): send card JSON message params as cards (#100883)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
