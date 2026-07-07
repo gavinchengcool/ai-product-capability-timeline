@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-07-06T22:50:24+08:00
-- Requested window: 2026-07-05 to 2026-07-06
+- Generated at: 2026-07-07T22:00:29+08:00
+- Requested window: 2026-07-06 to 2026-07-07
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-07-05 to 2026-07-06
-- Generated at: 2026-07-06T22:50:06.795312+08:00
-- 窗口: 2026-07-05 至 2026-07-06
-- GitHub 增量: 438 commits / 0 releases
-- 最近 push: 2026-07-06
+- Window: 2026-07-06 to 2026-07-07
+- Generated at: 2026-07-07T22:00:12.436145+08:00
+- 窗口: 2026-07-06 至 2026-07-07
+- GitHub 增量: 467 commits / 0 releases
+- 最近 push: 2026-07-07
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(android): tap-to-expand link previews in chat transcript (#100898)
-  - feat(ui): show background tasks live in the web Control UI (#100789)
-  - feat(sessions): grouping, unread state, and full session controls on web, iOS, and Android (#100814)
-  - feat(android): add chat message actions (#100879)
-  - feat(ui): add configurable chat send shortcut (#100810)
-  - feat: correlate native search outcomes in audit history (#98704)
-  - feat(ios): render LaTeX display math in chat via SwiftMath (#100829)
-  - feat: add Anthropic and OpenAI cost history (#100672)
+  - feat(android): render LaTeX display math in chat via bundled KaTeX (#101435)
+  - feat(ui): redesign dashboard chrome with tiny top bar and sidebar search (#101497)
+  - ci(mantis): add web UI chat proof lane (#100472)
+  - feat(gateway): archive-gated session deletes give Android delete parity (#101522)
+  - feat(android): og:image thumbnails on link preview cards (#101396)
+  - feat(ios): og:image thumbnails on link preview cards (#101387)
+  - feat(macos): unify About links with iOS/Android (Website, Docs, GitHub, Discord)
+  - feat(ios): render inline LaTeX math in completed chat prose (#101388)
 - Fixes and constraints:
-  - fix(agents): distinguish terminal aborts from retryable failures (#60388) (#62682)
-  - fix(test): preflight targeted UI e2e (#100950)
-  - fix(memory): fall back to wiki for missing all-corpus reads (#100904)
-  - fix(cron): use direct lookup instead of paginated search in cron edit (#100836)
-  - fix(tests): restore shared-kit test module compilation after NSNull coalesce (#100903)
-  - fix(cron): accept null fallbacks in update patch payload (#100707) (#100801)
-  - fix(agents): preserve blank lines in multi-question user input fallback parsing (#100832)
-  - fix(feishu): send card JSON message params as cards (#100883)
+  - fix(gateway): support native Windows exec approvals (#101669)
+  - fix: prevent garbled emoji at remaining text limits (#101685)
+  - fix(channels): prevent metadata caches from growing without bound (#101650)
+  - fix(voice-call): persist complete realtime transcripts (#84161)
+  - fix(slack): bound conversation info cache (#101562)
+  - fix: keep bounded text truncation UTF-16 safe (#101654)
+  - fix(tasks): keep emoji / surrogate pairs intact during terminal output truncation (#101600)
+  - fix(gateway): keep session history stream errors handled (#101571)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
