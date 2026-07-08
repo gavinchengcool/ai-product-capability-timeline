@@ -1,91 +1,87 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-07-07T22:00:12.436145+08:00",
+  "generatedAt": "2026-07-08T21:22:16.051571+08:00",
   "window": {
-    "start_local": "2026-07-06T22:00:12.436145+08:00",
-    "end_local": "2026-07-07T22:00:12.436145+08:00",
-    "start_utc": "2026-07-06T14:00:12Z",
-    "end_utc": "2026-07-07T14:00:12Z"
+    "start_local": "2026-07-07T21:22:16.051571+08:00",
+    "end_local": "2026-07-08T21:22:16.051571+08:00",
+    "start_utc": "2026-07-07T13:22:16Z",
+    "end_utc": "2026-07-08T13:22:16Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 382054,
-    "forks": 80140,
-    "open_issues": 6279,
-    "pushed_at": "2026-07-07T13:57:22Z"
+    "stars": 382163,
+    "forks": 80186,
+    "open_issues": 6432,
+    "pushed_at": "2026-07-08T13:04:34Z"
   },
   "summary": {
-    "commitCount": 467,
+    "commitCount": 118,
     "releaseCount": 0,
     "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 382054,
-    "forks": 80140,
-    "openIssues": 6279
+    "stars": 382163,
+    "forks": 80186,
+    "openIssues": 6432
   },
   "releases": [],
   "featureItems": [
-    "feat(android): render LaTeX display math in chat via bundled KaTeX (#101435)",
-    "feat(ui): redesign dashboard chrome with tiny top bar and sidebar search (#101497)",
-    "ci(mantis): add web UI chat proof lane (#100472)",
-    "feat(gateway): archive-gated session deletes give Android delete parity (#101522)",
-    "feat(android): og:image thumbnails on link preview cards (#101396)",
-    "feat(ios): og:image thumbnails on link preview cards (#101387)",
-    "feat(macos): unify About links with iOS/Android (Website, Docs, GitHub, Discord)",
-    "feat(ios): render inline LaTeX math in completed chat prose (#101388)"
+    "feat(secrets): egress-time credential injection with process-local sentinels (#102009)",
+    "feat(crestodian): guide providerless model setup (#101887)",
+    "feat(cron): event triggers — polled condition-watcher scripts via code mode (#101195)",
+    "feat(ui): redesign gateway connection-lost banner as floating pill (#101812)"
   ],
   "fixItems": [
-    "fix(gateway): support native Windows exec approvals (#101669)",
-    "fix: prevent garbled emoji at remaining text limits (#101685)",
-    "fix(channels): prevent metadata caches from growing without bound (#101650)",
-    "fix(voice-call): persist complete realtime transcripts (#84161)",
-    "fix(slack): bound conversation info cache (#101562)",
-    "fix: keep bounded text truncation UTF-16 safe (#101654)",
-    "fix(tasks): keep emoji / surrogate pairs intact during terminal output truncation (#101600)",
-    "fix(gateway): keep session history stream errors handled (#101571)"
+    "fix: gate Gateway message action requester provenance [AI] (#102031)",
+    "fix: restrict non-owner gateway tool inventory [AI] (#102030)",
+    "fix(crabbox): retry cold metadata probes so a slow run --help does not block validation (#102159)",
+    "fix(state): close agent-db and proxy-capture SQLite handles on exit; rebind stale proxy stores after shared-state close (#100827)",
+    "fix: detect joined inline eval flags [AI] (#101353)",
+    "Harden jq safe-bin semantics (#102032)",
+    "fix(ios): satisfy SwiftFormat in session filter",
+    "fix(text): keep reachable truncation boundaries UTF-16 safe"
   ],
   "topScopes": [
     {
-      "scope": "android",
-      "count": 33
-    },
-    {
-      "scope": "test",
-      "count": 28
-    },
-    {
-      "scope": "ui",
-      "count": 28
+      "scope": "deadcode",
+      "count": 14
     },
     {
       "scope": "fix",
-      "count": 26
+      "count": 11
     },
     {
-      "scope": "agents",
-      "count": 26
+      "scope": "ui",
+      "count": 7
     },
     {
       "scope": "gateway",
-      "count": 16
+      "count": 5
     },
     {
-      "scope": "ios",
-      "count": 16
+      "scope": "refactor",
+      "count": 5
     },
     {
-      "scope": "discord",
-      "count": 15
+      "scope": "slack",
+      "count": 4
+    },
+    {
+      "scope": "qa-lab",
+      "count": 4
+    },
+    {
+      "scope": "test",
+      "count": 4
     }
   ],
   "headlineCommits": [
-    "refactor: localize file-private exports (#101701)",
-    "fix(gateway): support native Windows exec approvals (#101669)",
-    "fix: prevent garbled emoji at remaining text limits (#101685)",
-    "fix(channels): prevent metadata caches from growing without bound (#101650)",
-    "test: remove stale native i18n sentinel (#101689)",
-    "fix(voice-call): persist complete realtime transcripts (#84161)",
-    "refactor: remove obsolete chat display mocks (#101682)",
-    "refactor(android): remove superseded app surfaces (#101680)"
+    "fix: gate Gateway message action requester provenance [AI] (#102031)",
+    "fix: restrict non-owner gateway tool inventory [AI] (#102030)",
+    "feat(secrets): egress-time credential injection with process-local sentinels (#102009)",
+    "fix(crabbox): retry cold metadata probes so a slow run --help does not block validation (#102159)",
+    "fix(state): close agent-db and proxy-capture SQLite handles on exit; rebind stale proxy stores after shared-state close (#100827)",
+    "fix: detect joined inline eval flags [AI] (#101353)",
+    "Harden jq safe-bin semantics (#102032)",
+    "chore(ios): prepare 2026.7.1 release notes"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

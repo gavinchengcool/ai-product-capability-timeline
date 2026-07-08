@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-07-07T22:00:29+08:00
-- Requested window: 2026-07-06 to 2026-07-07
+- Generated at: 2026-07-08T21:22:33+08:00
+- Requested window: 2026-07-07 to 2026-07-08
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,27 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-07-06 to 2026-07-07
-- Generated at: 2026-07-07T22:00:12.436145+08:00
-- 窗口: 2026-07-06 至 2026-07-07
-- GitHub 增量: 467 commits / 0 releases
-- 最近 push: 2026-07-07
+- Window: 2026-07-07 to 2026-07-08
+- Generated at: 2026-07-08T21:22:16.051571+08:00
+- 窗口: 2026-07-07 至 2026-07-08
+- GitHub 增量: 118 commits / 0 releases
+- 最近 push: 2026-07-08
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(android): render LaTeX display math in chat via bundled KaTeX (#101435)
-  - feat(ui): redesign dashboard chrome with tiny top bar and sidebar search (#101497)
-  - ci(mantis): add web UI chat proof lane (#100472)
-  - feat(gateway): archive-gated session deletes give Android delete parity (#101522)
-  - feat(android): og:image thumbnails on link preview cards (#101396)
-  - feat(ios): og:image thumbnails on link preview cards (#101387)
-  - feat(macos): unify About links with iOS/Android (Website, Docs, GitHub, Discord)
-  - feat(ios): render inline LaTeX math in completed chat prose (#101388)
+  - feat(secrets): egress-time credential injection with process-local sentinels (#102009)
+  - feat(crestodian): guide providerless model setup (#101887)
+  - feat(cron): event triggers — polled condition-watcher scripts via code mode (#101195)
+  - feat(ui): redesign gateway connection-lost banner as floating pill (#101812)
 - Fixes and constraints:
-  - fix(gateway): support native Windows exec approvals (#101669)
-  - fix: prevent garbled emoji at remaining text limits (#101685)
-  - fix(channels): prevent metadata caches from growing without bound (#101650)
-  - fix(voice-call): persist complete realtime transcripts (#84161)
-  - fix(slack): bound conversation info cache (#101562)
-  - fix: keep bounded text truncation UTF-16 safe (#101654)
-  - fix(tasks): keep emoji / surrogate pairs intact during terminal output truncation (#101600)
-  - fix(gateway): keep session history stream errors handled (#101571)
+  - fix: gate Gateway message action requester provenance [AI] (#102031)
+  - fix: restrict non-owner gateway tool inventory [AI] (#102030)
+  - fix(crabbox): retry cold metadata probes so a slow run --help does not block validation (#102159)
+  - fix(state): close agent-db and proxy-capture SQLite handles on exit; rebind stale proxy stores after shared-state close (#100827)
+  - fix: detect joined inline eval flags [AI] (#101353)
+  - Harden jq safe-bin semantics (#102032)
+  - fix(ios): satisfy SwiftFormat in session filter
+  - fix(text): keep reachable truncation boundaries UTF-16 safe
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
