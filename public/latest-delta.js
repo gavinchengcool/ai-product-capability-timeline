@@ -1,91 +1,91 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-07-09T22:22:52.352622+08:00",
+  "generatedAt": "2026-07-10T21:49:41.894854+08:00",
   "window": {
-    "start_local": "2026-07-08T22:22:52.352622+08:00",
-    "end_local": "2026-07-09T22:22:52.352622+08:00",
-    "start_utc": "2026-07-08T14:22:52Z",
-    "end_utc": "2026-07-09T14:22:52Z"
+    "start_local": "2026-07-09T21:49:41.894854+08:00",
+    "end_local": "2026-07-10T21:49:41.894854+08:00",
+    "start_utc": "2026-07-09T13:49:41Z",
+    "end_utc": "2026-07-10T13:49:41Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 382310,
-    "forks": 80226,
-    "open_issues": 6305,
-    "pushed_at": "2026-07-09T14:22:24Z"
+    "stars": 382463,
+    "forks": 80255,
+    "open_issues": 6338,
+    "pushed_at": "2026-07-10T13:47:25Z"
   },
   "summary": {
-    "commitCount": 295,
+    "commitCount": 403,
     "releaseCount": 0,
     "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 382310,
-    "forks": 80226,
-    "openIssues": 6305
+    "stars": 382463,
+    "forks": 80255,
+    "openIssues": 6338
   },
   "releases": [],
   "featureItems": [
-    "feat(webchat): rare lobster pet variants incl. retro homage to the classic logo (#102829)",
-    "feat: carry gateway client capabilities through the CLI loopback backend (#102835)",
-    "feat(ios): redesign Control tab to a flatter, card-based layout (#98582)",
-    "feat(ui): add settings profile page with lifetime token stats, streaks, and activity heatmap (#102842)",
-    "feat(ui): show agent avatars in the agents page selector (#102817)",
-    "feat(ui): merge the voice level meter into the stop-voice pill and disambiguate the stop controls (#102786)",
-    "feat(providers): add Qwen 3.6 Flash and Gemini 3.1 Live (#102791)",
-    "feat(cli): add roast taglines to startup banner (#102789)"
+    "feat: add Control UI plugin management (#103176)",
+    "feat: show build identity in About screens (#103595)",
+    "feat(devices): rename command for durable human-friendly device names (#94517)",
+    "feat(webchat,cli): the lobster notices things (#103573)",
+    "feat(openai): default new setups to GPT-5.6 (#103581)",
+    "feat(channels): add turn-adoption ack to channel inbound dispatch",
+    "feat(webchat): the lobster celebrates anniversaries and earns titles (#103563)",
+    "feat(ui): restore sidebar chrome, delete the pane workspace strip, compact native narrow header (#103561)"
   ],
   "fixItems": [
-    "fix: keep bounded Unicode text valid across UTF-16 boundaries (#102823)",
-    "fix(lifecycle): keep install output truncation UTF-16 safe (#102833)",
-    "fix(google): restore image tool results for prefixed Gemini 2 models (#102382)",
-    "fix(imessage): keep CLI stderr tails UTF-16 safe (#102626)",
-    "fix(crestodian): keep prompt history UTF-16 safe (#102627)",
-    "fix(ui): keep event payload previews UTF-16 safe (#102625)",
-    "fix: trust hook mapping provenance (#102418)",
-    "fix(googlechat): bound control and media requests (#102227)"
+    "fix(gateway): use truncateUtf16Safe for voice-wake trigger truncation (#103210)",
+    "fix(mattermost): preserve text-block boundaries in draft preview (#87322) (#87449)",
+    "fix(telegram): recover when media downloads stall (#103020)",
+    "fix(ci): refresh Control UI raw-copy baseline",
+    "perf(test): stabilize TUI validation abort",
+    "fix(logging): keep redacted token hints UTF-16 safe (#103341)",
+    "fix(pr): prevent same-PR operations from overlapping (#103669)",
+    "fix(control-ui): harden workspace avatar projection (#103657)"
   ],
   "topScopes": [
     {
-      "scope": "ui",
-      "count": 26
+      "scope": "ci",
+      "count": 40
     },
     {
-      "scope": "agents",
-      "count": 24
+      "scope": "ui",
+      "count": 38
     },
     {
       "scope": "fix",
-      "count": 16
-    },
-    {
-      "scope": "codex",
-      "count": 13
-    },
-    {
-      "scope": "gateway",
-      "count": 11
-    },
-    {
-      "scope": "ci",
-      "count": 10
+      "count": 25
     },
     {
       "scope": "test",
-      "count": 9
+      "count": 18
     },
     {
-      "scope": "auto-reply",
-      "count": 8
+      "scope": "gateway",
+      "count": 15
+    },
+    {
+      "scope": "release",
+      "count": 12
+    },
+    {
+      "scope": "webchat",
+      "count": 12
+    },
+    {
+      "scope": "agents",
+      "count": 10
     }
   ],
   "headlineCommits": [
-    "fix: keep bounded Unicode text valid across UTF-16 boundaries (#102823)",
-    "refactor(ui): simplify Lit state ownership (#102848)",
-    "fix(lifecycle): keep install output truncation UTF-16 safe (#102833)",
-    "feat(webchat): rare lobster pet variants incl. retro homage to the classic logo (#102829)",
-    "feat: carry gateway client capabilities through the CLI loopback backend (#102835)",
-    "fix(google): restore image tool results for prefixed Gemini 2 models (#102382)",
-    "feat(ios): redesign Control tab to a flatter, card-based layout (#98582)",
-    "fix(imessage): keep CLI stderr tails UTF-16 safe (#102626)"
+    "fix(gateway): use truncateUtf16Safe for voice-wake trigger truncation (#103210)",
+    "fix(mattermost): preserve text-block boundaries in draft preview (#87322) (#87449)",
+    "fix(telegram): recover when media downloads stall (#103020)",
+    "fix(ci): refresh Control UI raw-copy baseline",
+    "perf(test): stabilize TUI validation abort",
+    "fix(logging): keep redacted token hints UTF-16 safe (#103341)",
+    "test(qa): require web fetch after discovery (#103685)",
+    "test(qa): accept structured gateway restart outcomes (#103681)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

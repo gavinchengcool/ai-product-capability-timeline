@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-07-09T22:23:09+08:00
-- Requested window: 2026-07-08 to 2026-07-09
+- Generated at: 2026-07-10T21:50:04+08:00
+- Requested window: 2026-07-09 to 2026-07-10
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-07-08 to 2026-07-09
-- Generated at: 2026-07-09T22:22:52.352622+08:00
-- 窗口: 2026-07-08 至 2026-07-09
-- GitHub 增量: 295 commits / 0 releases
-- 最近 push: 2026-07-09
+- Window: 2026-07-09 to 2026-07-10
+- Generated at: 2026-07-10T21:49:41.894854+08:00
+- 窗口: 2026-07-09 至 2026-07-10
+- GitHub 增量: 403 commits / 0 releases
+- 最近 push: 2026-07-10
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(webchat): rare lobster pet variants incl. retro homage to the classic logo (#102829)
-  - feat: carry gateway client capabilities through the CLI loopback backend (#102835)
-  - feat(ios): redesign Control tab to a flatter, card-based layout (#98582)
-  - feat(ui): add settings profile page with lifetime token stats, streaks, and activity heatmap (#102842)
-  - feat(ui): show agent avatars in the agents page selector (#102817)
-  - feat(ui): merge the voice level meter into the stop-voice pill and disambiguate the stop controls (#102786)
-  - feat(providers): add Qwen 3.6 Flash and Gemini 3.1 Live (#102791)
-  - feat(cli): add roast taglines to startup banner (#102789)
+  - feat: add Control UI plugin management (#103176)
+  - feat: show build identity in About screens (#103595)
+  - feat(devices): rename command for durable human-friendly device names (#94517)
+  - feat(webchat,cli): the lobster notices things (#103573)
+  - feat(openai): default new setups to GPT-5.6 (#103581)
+  - feat(channels): add turn-adoption ack to channel inbound dispatch
+  - feat(webchat): the lobster celebrates anniversaries and earns titles (#103563)
+  - feat(ui): restore sidebar chrome, delete the pane workspace strip, compact native narrow header (#103561)
 - Fixes and constraints:
-  - fix: keep bounded Unicode text valid across UTF-16 boundaries (#102823)
-  - fix(lifecycle): keep install output truncation UTF-16 safe (#102833)
-  - fix(google): restore image tool results for prefixed Gemini 2 models (#102382)
-  - fix(imessage): keep CLI stderr tails UTF-16 safe (#102626)
-  - fix(crestodian): keep prompt history UTF-16 safe (#102627)
-  - fix(ui): keep event payload previews UTF-16 safe (#102625)
-  - fix: trust hook mapping provenance (#102418)
-  - fix(googlechat): bound control and media requests (#102227)
+  - fix(gateway): use truncateUtf16Safe for voice-wake trigger truncation (#103210)
+  - fix(mattermost): preserve text-block boundaries in draft preview (#87322) (#87449)
+  - fix(telegram): recover when media downloads stall (#103020)
+  - fix(ci): refresh Control UI raw-copy baseline
+  - perf(test): stabilize TUI validation abort
+  - fix(logging): keep redacted token hints UTF-16 safe (#103341)
+  - fix(pr): prevent same-PR operations from overlapping (#103669)
+  - fix(control-ui): harden workspace avatar projection (#103657)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

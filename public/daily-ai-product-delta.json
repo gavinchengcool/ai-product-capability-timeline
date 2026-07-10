@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-09T22:23:09+08:00",
+  "generatedAt": "2026-07-10T21:50:04+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-07-08T22:23:09+08:00",
-    "end_local": "2026-07-09T22:23:09+08:00"
+    "start_local": "2026-07-09T21:50:04+08:00",
+    "end_local": "2026-07-10T21:50:04+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-07-09T22:22:52.352622+08:00",
+      "generatedAt": "2026-07-10T21:49:41.894854+08:00",
       "window": {
-        "start_local": "2026-07-08T22:22:52.352622+08:00",
-        "end_local": "2026-07-09T22:22:52.352622+08:00",
-        "start_utc": "2026-07-08T14:22:52Z",
-        "end_utc": "2026-07-09T14:22:52Z"
+        "start_local": "2026-07-09T21:49:41.894854+08:00",
+        "end_local": "2026-07-10T21:49:41.894854+08:00",
+        "start_utc": "2026-07-09T13:49:41Z",
+        "end_utc": "2026-07-10T13:49:41Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-07-08 至 2026-07-09"
+          "value": "2026-07-09 至 2026-07-10"
         },
         {
           "label": "GitHub 增量",
-          "value": "295 commits / 0 releases"
+          "value": "403 commits / 0 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-07-09"
+          "value": "2026-07-10"
         },
         {
           "label": "来源",
@@ -52,58 +52,58 @@
         }
       ],
       "featureItems": [
-        "feat(webchat): rare lobster pet variants incl. retro homage to the classic logo (#102829)",
-        "feat: carry gateway client capabilities through the CLI loopback backend (#102835)",
-        "feat(ios): redesign Control tab to a flatter, card-based layout (#98582)",
-        "feat(ui): add settings profile page with lifetime token stats, streaks, and activity heatmap (#102842)",
-        "feat(ui): show agent avatars in the agents page selector (#102817)",
-        "feat(ui): merge the voice level meter into the stop-voice pill and disambiguate the stop controls (#102786)",
-        "feat(providers): add Qwen 3.6 Flash and Gemini 3.1 Live (#102791)",
-        "feat(cli): add roast taglines to startup banner (#102789)"
+        "feat: add Control UI plugin management (#103176)",
+        "feat: show build identity in About screens (#103595)",
+        "feat(devices): rename command for durable human-friendly device names (#94517)",
+        "feat(webchat,cli): the lobster notices things (#103573)",
+        "feat(openai): default new setups to GPT-5.6 (#103581)",
+        "feat(channels): add turn-adoption ack to channel inbound dispatch",
+        "feat(webchat): the lobster celebrates anniversaries and earns titles (#103563)",
+        "feat(ui): restore sidebar chrome, delete the pane workspace strip, compact native narrow header (#103561)"
       ],
       "fixItems": [
-        "fix: keep bounded Unicode text valid across UTF-16 boundaries (#102823)",
-        "fix(lifecycle): keep install output truncation UTF-16 safe (#102833)",
-        "fix(google): restore image tool results for prefixed Gemini 2 models (#102382)",
-        "fix(imessage): keep CLI stderr tails UTF-16 safe (#102626)",
-        "fix(crestodian): keep prompt history UTF-16 safe (#102627)",
-        "fix(ui): keep event payload previews UTF-16 safe (#102625)",
-        "fix: trust hook mapping provenance (#102418)",
-        "fix(googlechat): bound control and media requests (#102227)"
+        "fix(gateway): use truncateUtf16Safe for voice-wake trigger truncation (#103210)",
+        "fix(mattermost): preserve text-block boundaries in draft preview (#87322) (#87449)",
+        "fix(telegram): recover when media downloads stall (#103020)",
+        "fix(ci): refresh Control UI raw-copy baseline",
+        "perf(test): stabilize TUI validation abort",
+        "fix(logging): keep redacted token hints UTF-16 safe (#103341)",
+        "fix(pr): prevent same-PR operations from overlapping (#103669)",
+        "fix(control-ui): harden workspace avatar projection (#103657)"
       ],
       "releases": [],
       "topScopes": [
         {
-          "scope": "ui",
-          "count": 26
+          "scope": "ci",
+          "count": 40
         },
         {
-          "scope": "agents",
-          "count": 24
+          "scope": "ui",
+          "count": 38
         },
         {
           "scope": "fix",
-          "count": 16
-        },
-        {
-          "scope": "codex",
-          "count": 13
-        },
-        {
-          "scope": "gateway",
-          "count": 11
-        },
-        {
-          "scope": "ci",
-          "count": 10
+          "count": 25
         },
         {
           "scope": "test",
-          "count": 9
+          "count": 18
         },
         {
-          "scope": "auto-reply",
-          "count": 8
+          "scope": "gateway",
+          "count": 15
+        },
+        {
+          "scope": "release",
+          "count": 12
+        },
+        {
+          "scope": "webchat",
+          "count": 12
+        },
+        {
+          "scope": "agents",
+          "count": 10
         }
       ],
       "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
