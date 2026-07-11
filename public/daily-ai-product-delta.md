@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-07-10T21:50:04+08:00
-- Requested window: 2026-07-09 to 2026-07-10
+- Generated at: 2026-07-11T20:45:22+08:00
+- Requested window: 2026-07-10 to 2026-07-11
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-07-09 to 2026-07-10
-- Generated at: 2026-07-10T21:49:41.894854+08:00
-- 窗口: 2026-07-09 至 2026-07-10
-- GitHub 增量: 403 commits / 0 releases
-- 最近 push: 2026-07-10
+- Window: 2026-07-10 to 2026-07-11
+- Generated at: 2026-07-11T20:45:04.889093+08:00
+- 窗口: 2026-07-10 至 2026-07-11
+- GitHub 增量: 486 commits / 1 releases
+- 最近 push: 2026-07-11
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat: add Control UI plugin management (#103176)
-  - feat: show build identity in About screens (#103595)
-  - feat(devices): rename command for durable human-friendly device names (#94517)
-  - feat(webchat,cli): the lobster notices things (#103573)
-  - feat(openai): default new setups to GPT-5.6 (#103581)
-  - feat(channels): add turn-adoption ack to channel inbound dispatch
-  - feat(webchat): the lobster celebrates anniversaries and earns titles (#103563)
-  - feat(ui): restore sidebar chrome, delete the pane workspace strip, compact native narrow header (#103561)
+  - **Meta provider:** add bundled `muse-spark-1.1` Responses API support with streaming, tool calls, encrypted reasoning replay, onboarding, exact-model live validation, and standalone npm/ClawHub distribution as `@openclaw/meta-provider`. (#102873, #103070, #103163) Thanks @HamidShojanazeri, @davemorin, @Solvely-Colin, @jalehman, and @vincentkoc. [v2026.7.1-beta.5]
+  - **Logbook work journal:** add a disabled-by-default bundled plugin that turns paired-node screen snapshots into a private timeline, daily standup, and timeline-grounded Q&A in a plugin-contributed Control UI tab. (#99930) [v2026.7.1-beta.5]
+  - **Android chat code highlighting:** render fenced Kotlin, Swift, TypeScript, JavaScript, Python, Bash, and JSON blocks with bounded, theme-aware syntax colors while preserving plain rendering for unknown, partial, or oversized blocks. (#100217) [v2026.7.1-beta.5]
+  - **Gateway TTS playback:** add an operator-scoped `tts.speak` RPC that returns configured-provider speech as inline whole-clip audio for remote clients. (#100770) [v2026.7.1-beta.5]
+  - **Apple Watch voice turns:** dictate a message from the Watch chat and hear the new OpenClaw reply spoken on the Watch, with explicit silent-message and stop-speaking controls. (#100224) Thanks @vincentkoc. [v2026.7.1-beta.5]
+  - **Conversational onboarding:** add a real agent-loop Crestodian setup flow across the CLI, Gateway, web install, and macOS app, with typed operations, exact approval binding, masked credential prompts, isolated session transcripts, and safe handoff to the normal agent. Thanks @vincentkoc. [v2026.7.1-beta.5]
+  - **Generated session titles:** name new Control UI sessions from their first message, and add default/per-agent `utilityModel` routing for lower-cost session, topic, and thread title generation. Thanks @Juliangsm, @zhangguiping-xydt, and @vincentkoc. [v2026.7.1-beta.5]
+  - **ClawRouter routing and quotas:** add the bundled ClawRouter provider plugin with credential-scoped dynamic model discovery, OpenAI-compatible and native Anthropic/Gemini transports, and managed budget reporting across OpenClaw usage surfaces. (#99658) [v2026.7.1-beta.5]
 - Fixes and constraints:
-  - fix(gateway): use truncateUtf16Safe for voice-wake trigger truncation (#103210)
-  - fix(mattermost): preserve text-block boundaries in draft preview (#87322) (#87449)
-  - fix(telegram): recover when media downloads stall (#103020)
-  - fix(ci): refresh Control UI raw-copy baseline
-  - perf(test): stabilize TUI validation abort
-  - fix(logging): keep redacted token hints UTF-16 safe (#103341)
-  - fix(pr): prevent same-PR operations from overlapping (#103669)
-  - fix(control-ui): harden workspace avatar projection (#103657)
+  - **Subprocess, maintenance, and output hardening:** keep child output failures from crashing exec and TUI sessions, isolate remote skill refresh and subagent sweeps, surface skill-scan and approval diagnostics, sanitize ANSI and stray parameter markup without losing visible text, and stop Android audio capture cleanly on device loss. (#100440) Thanks @cxbAsDev, @wendy-chsy, @tzy-17, @nankingjing, @NianJiuZst, @LavyaTandel, and @maweibin. [v2026.7.1-beta.5]
+  - fix(ci): validate older release targets (#103975)
+  - fix(agents): truncate multibyte middleware details at byte limit (#104156)
+  - fix: route node policy plugin approvals (#98561)
+  - fix(tools): reject malformed availability expressions (#92411)
+  - fix(gateway): cap history when numeric limit is huge (#104263)
+  - fix(release): validate Telegram launcher syntax (#104455)
+  - fix(code-mode): report UTF-8 API file byte counts (#104244)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
