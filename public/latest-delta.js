@@ -1,91 +1,99 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-07-12T20:46:34.846547+08:00",
+  "generatedAt": "2026-07-13T21:54:31.838638+08:00",
   "window": {
-    "start_local": "2026-07-11T20:46:34.846547+08:00",
-    "end_local": "2026-07-12T20:46:34.846547+08:00",
-    "start_utc": "2026-07-11T12:46:34Z",
-    "end_utc": "2026-07-12T12:46:34Z"
+    "start_local": "2026-07-12T21:54:31.838638+08:00",
+    "end_local": "2026-07-13T21:54:31.838638+08:00",
+    "start_utc": "2026-07-12T13:54:31Z",
+    "end_utc": "2026-07-13T13:54:31Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 382668,
-    "forks": 80308,
-    "open_issues": 6400,
-    "pushed_at": "2026-07-12T12:45:52Z"
+    "stars": 382802,
+    "forks": 80345,
+    "open_issues": 6429,
+    "pushed_at": "2026-07-13T13:53:38Z"
   },
   "summary": {
-    "commitCount": 666,
-    "releaseCount": 0,
+    "commitCount": 657,
+    "releaseCount": 1,
     "stableReleaseCount": 0,
-    "betaReleaseCount": 0,
-    "stars": 382668,
-    "forks": 80308,
-    "openIssues": 6400
+    "betaReleaseCount": 1,
+    "stars": 382802,
+    "forks": 80345,
+    "openIssues": 6429
   },
-  "releases": [],
+  "releases": [
+    {
+      "tag_name": "v2026.7.1-beta.6",
+      "published_at": "2026-07-13T01:38:43Z",
+      "name": "openclaw 2026.7.1-beta.6",
+      "prerelease": true,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.1-beta.6"
+    }
+  ],
   "featureItems": [
-    "feat(android): manage skills from settings (#101864)",
-    "feat(android): add locale-aware retained text",
-    "feat(android): localize chat sessions and voice",
-    "feat(android): localize settings surfaces",
-    "feat(android): localize onboarding and navigation",
-    "feat(android): localize platform feedback",
-    "feat(android): generate native localization resources",
-    "improve(ui): fold the New session target controls into click menus (#105265)"
+    "**Meta provider:** add bundled `muse-spark-1.1` Responses API support with streaming, tool calls, encrypted reasoning replay, onboarding, exact-model live validation, and standalone npm/ClawHub distribution as `@openclaw/meta-provider`. (#102873, #103070, #103163) Thanks @HamidShojanazeri, @davemorin, @Solvely-Colin, @jalehman, and @vincentkoc. [v2026.7.1-beta.6]",
+    "**Logbook work journal:** add a disabled-by-default bundled plugin that turns paired-node screen snapshots into a private timeline, daily standup, and timeline-grounded Q&A in a plugin-contributed Control UI tab. (#99930) [v2026.7.1-beta.6]",
+    "**Android chat code highlighting:** render fenced Kotlin, Swift, TypeScript, JavaScript, Python, Bash, and JSON blocks with bounded, theme-aware syntax colors while preserving plain rendering for unknown, partial, or oversized blocks. (#100217) [v2026.7.1-beta.6]",
+    "**Gateway TTS playback:** add an operator-scoped `tts.speak` RPC that returns configured-provider speech as inline whole-clip audio for remote clients. (#100770) [v2026.7.1-beta.6]",
+    "**Apple Watch voice turns:** dictate a message from the Watch chat and hear the new OpenClaw reply spoken on the Watch, with explicit silent-message and stop-speaking controls. (#100224) Thanks @vincentkoc. [v2026.7.1-beta.6]",
+    "**Conversational onboarding:** add a real agent-loop Crestodian setup flow across the CLI, Gateway, web install, and macOS app, with typed operations, exact approval binding, masked credential prompts, isolated session transcripts, and safe handoff to the normal agent. Thanks @vincentkoc. [v2026.7.1-beta.6]",
+    "**Generated session titles:** name new Control UI sessions from their first message, and add default/per-agent `utilityModel` routing for lower-cost session, topic, and thread title generation. Thanks @Juliangsm, @zhangguiping-xydt, and @vincentkoc. [v2026.7.1-beta.6]",
+    "**ClawRouter routing and quotas:** add the bundled ClawRouter provider plugin with credential-scoped dynamic model discovery, OpenAI-compatible and native Anthropic/Gemini transports, and managed budget reporting across OpenClaw usage surfaces. (#99658) [v2026.7.1-beta.6]"
   ],
   "fixItems": [
-    "fix(release): keep source-ref packaging self-contained (#105360)",
-    "fix(ci): pass Telegram target ref to identity gate (#105362)",
-    "fix(browser): bind wait predicates to allowed documents (#101852)",
-    "fix(ui): preserve agent file edits during save (#105359)",
-    "fix(mac): remove unused presence reporter capture (#105361)",
-    "fix(sqlite): harden session migration restore (#105358)",
-    "fix(ci): keep LTS Telegram QA model compatible (#105348)",
-    "fix(canvas): hosted pages fail on macOS with scoped Gateway auth (#105336)"
+    "**Subprocess, maintenance, and output hardening:** keep child output failures from crashing exec and TUI sessions, isolate remote skill refresh and subagent sweeps, surface skill-scan and approval diagnostics, sanitize ANSI and stray parameter markup without losing visible text, and stop Android audio capture cleanly on device loss. (#100440) Thanks @cxbAsDev, @wendy-chsy, @tzy-17, @nankingjing, @NianJiuZst, @LavyaTandel, and @maweibin. [v2026.7.1-beta.6]",
+    "fix(codex): preserve shutdown cleanup across live builds (#106418)",
+    "fix(ci): refresh plugin SDK API baseline (#106411)",
+    "fix(mac): keep remote nodes connected during config metadata writes (#106419)",
+    "fix(ui): make tabs, dialogs, and skill cards keyboard accessible (#106320)",
+    "fix(claude-cli): hold live turn open while native background subagents and workflows run",
+    "fix(ui): preserve sidebar collapsed state when group rename/delete fails (#106152)",
+    "fix(docs-i18n): preserve nested list prefixes"
   ],
   "topScopes": [
     {
-      "scope": "android",
-      "count": 74
-    },
-    {
       "scope": "ui",
-      "count": 58
+      "count": 70
     },
     {
       "scope": "ci",
-      "count": 45
+      "count": 65
     },
     {
-      "scope": "fix",
-      "count": 27
-    },
-    {
-      "scope": "agents",
-      "count": 25
-    },
-    {
-      "scope": "gateway",
-      "count": 24
+      "scope": "ios",
+      "count": 53
     },
     {
       "scope": "i18n",
+      "count": 33
+    },
+    {
+      "scope": "agents",
+      "count": 29
+    },
+    {
+      "scope": "fix",
       "count": 22
     },
     {
-      "scope": "browser",
-      "count": 21
+      "scope": "refactor",
+      "count": 20
+    },
+    {
+      "scope": "watch",
+      "count": 19
     }
   ],
   "headlineCommits": [
-    "fix(release): keep source-ref packaging self-contained (#105360)",
-    "fix(ci): pass Telegram target ref to identity gate (#105362)",
-    "fix(browser): bind wait predicates to allowed documents (#101852)",
-    "fix(ui): preserve agent file edits during save (#105359)",
-    "refactor(skills): remove obsolete testing aliases (#105363)",
-    "fix(mac): remove unused presence reporter capture (#105361)",
-    "fix(sqlite): harden session migration restore (#105358)",
-    "fix(ci): keep LTS Telegram QA model compatible (#105348)"
+    "refactor(slack): trim private reply exports (#106431)",
+    "refactor(gateway): infer validator types from schemas (#106428)",
+    "refactor(cli): trim internal command exports (#106426)",
+    "fix(codex): preserve shutdown cleanup across live builds (#106418)",
+    "fix(ci): refresh plugin SDK API baseline (#106411)",
+    "fix(mac): keep remote nodes connected during config metadata writes (#106419)",
+    "refactor(agents): reuse diff structured hunks (#106410)",
+    "fix(ui): make tabs, dialogs, and skill cards keyboard accessible (#106320)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

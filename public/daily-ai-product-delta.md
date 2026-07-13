@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-07-12T20:46:51+08:00
-- Requested window: 2026-07-11 to 2026-07-12
+- Generated at: 2026-07-13T21:54:50+08:00
+- Requested window: 2026-07-12 to 2026-07-13
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-07-11 to 2026-07-12
-- Generated at: 2026-07-12T20:46:34.846547+08:00
-- 窗口: 2026-07-11 至 2026-07-12
-- GitHub 增量: 666 commits / 0 releases
-- 最近 push: 2026-07-12
+- Window: 2026-07-12 to 2026-07-13
+- Generated at: 2026-07-13T21:54:31.838638+08:00
+- 窗口: 2026-07-12 至 2026-07-13
+- GitHub 增量: 657 commits / 1 releases
+- 最近 push: 2026-07-13
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(android): manage skills from settings (#101864)
-  - feat(android): add locale-aware retained text
-  - feat(android): localize chat sessions and voice
-  - feat(android): localize settings surfaces
-  - feat(android): localize onboarding and navigation
-  - feat(android): localize platform feedback
-  - feat(android): generate native localization resources
-  - improve(ui): fold the New session target controls into click menus (#105265)
+  - **Meta provider:** add bundled `muse-spark-1.1` Responses API support with streaming, tool calls, encrypted reasoning replay, onboarding, exact-model live validation, and standalone npm/ClawHub distribution as `@openclaw/meta-provider`. (#102873, #103070, #103163) Thanks @HamidShojanazeri, @davemorin, @Solvely-Colin, @jalehman, and @vincentkoc. [v2026.7.1-beta.6]
+  - **Logbook work journal:** add a disabled-by-default bundled plugin that turns paired-node screen snapshots into a private timeline, daily standup, and timeline-grounded Q&A in a plugin-contributed Control UI tab. (#99930) [v2026.7.1-beta.6]
+  - **Android chat code highlighting:** render fenced Kotlin, Swift, TypeScript, JavaScript, Python, Bash, and JSON blocks with bounded, theme-aware syntax colors while preserving plain rendering for unknown, partial, or oversized blocks. (#100217) [v2026.7.1-beta.6]
+  - **Gateway TTS playback:** add an operator-scoped `tts.speak` RPC that returns configured-provider speech as inline whole-clip audio for remote clients. (#100770) [v2026.7.1-beta.6]
+  - **Apple Watch voice turns:** dictate a message from the Watch chat and hear the new OpenClaw reply spoken on the Watch, with explicit silent-message and stop-speaking controls. (#100224) Thanks @vincentkoc. [v2026.7.1-beta.6]
+  - **Conversational onboarding:** add a real agent-loop Crestodian setup flow across the CLI, Gateway, web install, and macOS app, with typed operations, exact approval binding, masked credential prompts, isolated session transcripts, and safe handoff to the normal agent. Thanks @vincentkoc. [v2026.7.1-beta.6]
+  - **Generated session titles:** name new Control UI sessions from their first message, and add default/per-agent `utilityModel` routing for lower-cost session, topic, and thread title generation. Thanks @Juliangsm, @zhangguiping-xydt, and @vincentkoc. [v2026.7.1-beta.6]
+  - **ClawRouter routing and quotas:** add the bundled ClawRouter provider plugin with credential-scoped dynamic model discovery, OpenAI-compatible and native Anthropic/Gemini transports, and managed budget reporting across OpenClaw usage surfaces. (#99658) [v2026.7.1-beta.6]
 - Fixes and constraints:
-  - fix(release): keep source-ref packaging self-contained (#105360)
-  - fix(ci): pass Telegram target ref to identity gate (#105362)
-  - fix(browser): bind wait predicates to allowed documents (#101852)
-  - fix(ui): preserve agent file edits during save (#105359)
-  - fix(mac): remove unused presence reporter capture (#105361)
-  - fix(sqlite): harden session migration restore (#105358)
-  - fix(ci): keep LTS Telegram QA model compatible (#105348)
-  - fix(canvas): hosted pages fail on macOS with scoped Gateway auth (#105336)
+  - **Subprocess, maintenance, and output hardening:** keep child output failures from crashing exec and TUI sessions, isolate remote skill refresh and subagent sweeps, surface skill-scan and approval diagnostics, sanitize ANSI and stray parameter markup without losing visible text, and stop Android audio capture cleanly on device loss. (#100440) Thanks @cxbAsDev, @wendy-chsy, @tzy-17, @nankingjing, @NianJiuZst, @LavyaTandel, and @maweibin. [v2026.7.1-beta.6]
+  - fix(codex): preserve shutdown cleanup across live builds (#106418)
+  - fix(ci): refresh plugin SDK API baseline (#106411)
+  - fix(mac): keep remote nodes connected during config metadata writes (#106419)
+  - fix(ui): make tabs, dialogs, and skill cards keyboard accessible (#106320)
+  - fix(claude-cli): hold live turn open while native background subagents and workflows run
+  - fix(ui): preserve sidebar collapsed state when group rename/delete fails (#106152)
+  - fix(docs-i18n): preserve nested list prefixes
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
