@@ -1,99 +1,99 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-07-13T21:54:31.838638+08:00",
+  "generatedAt": "2026-07-14T20:59:16.502983+08:00",
   "window": {
-    "start_local": "2026-07-12T21:54:31.838638+08:00",
-    "end_local": "2026-07-13T21:54:31.838638+08:00",
-    "start_utc": "2026-07-12T13:54:31Z",
-    "end_utc": "2026-07-13T13:54:31Z"
+    "start_local": "2026-07-13T20:59:16.502983+08:00",
+    "end_local": "2026-07-14T20:59:16.502983+08:00",
+    "start_utc": "2026-07-13T12:59:16Z",
+    "end_utc": "2026-07-14T12:59:16Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 382802,
-    "forks": 80345,
-    "open_issues": 6429,
-    "pushed_at": "2026-07-13T13:53:38Z"
+    "stars": 382904,
+    "forks": 80381,
+    "open_issues": 6554,
+    "pushed_at": "2026-07-14T12:58:13Z"
   },
   "summary": {
-    "commitCount": 657,
+    "commitCount": 626,
     "releaseCount": 1,
-    "stableReleaseCount": 0,
-    "betaReleaseCount": 1,
-    "stars": 382802,
-    "forks": 80345,
-    "openIssues": 6429
+    "stableReleaseCount": 1,
+    "betaReleaseCount": 0,
+    "stars": 382904,
+    "forks": 80381,
+    "openIssues": 6554
   },
   "releases": [
     {
-      "tag_name": "v2026.7.1-beta.6",
-      "published_at": "2026-07-13T01:38:43Z",
-      "name": "openclaw 2026.7.1-beta.6",
-      "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.1-beta.6"
+      "tag_name": "v2026.7.1",
+      "published_at": "2026-07-13T22:33:14Z",
+      "name": "openclaw 2026.7.1",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.1"
     }
   ],
   "featureItems": [
-    "**Meta provider:** add bundled `muse-spark-1.1` Responses API support with streaming, tool calls, encrypted reasoning replay, onboarding, exact-model live validation, and standalone npm/ClawHub distribution as `@openclaw/meta-provider`. (#102873, #103070, #103163) Thanks @HamidShojanazeri, @davemorin, @Solvely-Colin, @jalehman, and @vincentkoc. [v2026.7.1-beta.6]",
-    "**Logbook work journal:** add a disabled-by-default bundled plugin that turns paired-node screen snapshots into a private timeline, daily standup, and timeline-grounded Q&A in a plugin-contributed Control UI tab. (#99930) [v2026.7.1-beta.6]",
-    "**Android chat code highlighting:** render fenced Kotlin, Swift, TypeScript, JavaScript, Python, Bash, and JSON blocks with bounded, theme-aware syntax colors while preserving plain rendering for unknown, partial, or oversized blocks. (#100217) [v2026.7.1-beta.6]",
-    "**Gateway TTS playback:** add an operator-scoped `tts.speak` RPC that returns configured-provider speech as inline whole-clip audio for remote clients. (#100770) [v2026.7.1-beta.6]",
-    "**Apple Watch voice turns:** dictate a message from the Watch chat and hear the new OpenClaw reply spoken on the Watch, with explicit silent-message and stop-speaking controls. (#100224) Thanks @vincentkoc. [v2026.7.1-beta.6]",
-    "**Conversational onboarding:** add a real agent-loop Crestodian setup flow across the CLI, Gateway, web install, and macOS app, with typed operations, exact approval binding, masked credential prompts, isolated session transcripts, and safe handoff to the normal agent. Thanks @vincentkoc. [v2026.7.1-beta.6]",
-    "**Generated session titles:** name new Control UI sessions from their first message, and add default/per-agent `utilityModel` routing for lower-cost session, topic, and thread title generation. Thanks @Juliangsm, @zhangguiping-xydt, and @vincentkoc. [v2026.7.1-beta.6]",
-    "**ClawRouter routing and quotas:** add the bundled ClawRouter provider plugin with credential-scoped dynamic model discovery, OpenAI-compatible and native Anthropic/Gemini transports, and managed budget reporting across OpenClaw usage surfaces. (#99658) [v2026.7.1-beta.6]"
+    "**Tools and automation:** browser control, downloads, cron jobs, terminals, files, search, fetch, MCP, and background task workflows gain new capabilities and clearer controls. [v2026.7.1]",
+    "feat(workboard): refresh Control UI from live changes (#99051)",
+    "feat(mcp): deliver requester-scoped MCP to shared-thread harnesses",
+    "feat(mcp): resolve MCP server connections per trusted requester",
+    "feat(sessions): signal watchers when an adopted upstream disappears (#107356)",
+    "feat(macos): native-feel dashboard hosting — instant reopen, preload, frame autosave, ⌘N/⌘K, route memory (#106997)",
+    "feat(ui): add images and model selection to new sessions (#107358)",
+    "feat(linux): headless node device capabilities (camera, location, notifications) (#107193)"
   ],
   "fixItems": [
-    "**Subprocess, maintenance, and output hardening:** keep child output failures from crashing exec and TUI sessions, isolate remote skill refresh and subagent sweeps, surface skill-scan and approval diagnostics, sanitize ANSI and stray parameter markup without losing visible text, and stop Android audio capture cleanly on device loss. (#100440) Thanks @cxbAsDev, @wendy-chsy, @tzy-17, @nankingjing, @NianJiuZst, @LavyaTandel, and @maweibin. [v2026.7.1-beta.6]",
-    "fix(codex): preserve shutdown cleanup across live builds (#106418)",
-    "fix(ci): refresh plugin SDK API baseline (#106411)",
-    "fix(mac): keep remote nodes connected during config metadata writes (#106419)",
-    "fix(ui): make tabs, dialogs, and skill cards keyboard accessible (#106320)",
-    "fix(claude-cli): hold live turn open while native background subagents and workflows run",
-    "fix(ui): preserve sidebar collapsed state when group rename/delete fails (#106152)",
-    "fix(docs-i18n): preserve nested list prefixes"
+    "**Security and credentials:** additional hardening protects tokens, secrets, approval scopes, local paths, network destinations, attachments, archives, and untrusted provider or plugin responses. [v2026.7.1]",
+    "fix(ci): pin calibrated Kova performance budgets",
+    "fix(release): forward-port July guards and restore main validation (#107462)",
+    "fix(qqbot): clean up token refresh sleep abort listener (#105886)",
+    "fix(ws): normalize raw message payloads (#107459)",
+    "fix(commands): require explicit owner authority",
+    "fix(lint): buffer casts for nodebuffer ws message handlers",
+    "fix(test): declare release verifier helpers (#107444)"
   ],
   "topScopes": [
     {
-      "scope": "ui",
-      "count": 70
-    },
-    {
-      "scope": "ci",
-      "count": 65
-    },
-    {
-      "scope": "ios",
-      "count": 53
-    },
-    {
-      "scope": "i18n",
-      "count": 33
-    },
-    {
       "scope": "agents",
+      "count": 55
+    },
+    {
+      "scope": "ui",
+      "count": 45
+    },
+    {
+      "scope": "gateway",
       "count": 29
     },
     {
       "scope": "fix",
-      "count": 22
+      "count": 29
     },
     {
-      "scope": "refactor",
-      "count": 20
+      "scope": "ci",
+      "count": 28
     },
     {
-      "scope": "watch",
-      "count": 19
+      "scope": "test",
+      "count": 28
+    },
+    {
+      "scope": "release",
+      "count": 13
+    },
+    {
+      "scope": "cli",
+      "count": 12
     }
   ],
   "headlineCommits": [
-    "refactor(slack): trim private reply exports (#106431)",
-    "refactor(gateway): infer validator types from schemas (#106428)",
-    "refactor(cli): trim internal command exports (#106426)",
-    "fix(codex): preserve shutdown cleanup across live builds (#106418)",
-    "fix(ci): refresh plugin SDK API baseline (#106411)",
-    "fix(mac): keep remote nodes connected during config metadata writes (#106419)",
-    "refactor(agents): reuse diff structured hunks (#106410)",
-    "fix(ui): make tabs, dialogs, and skill cards keyboard accessible (#106320)"
+    "refactor(media-understanding): remove internal export seams (#107476)",
+    "refactor(ui): privatize config autosave delay (#107475)",
+    "fix(ci): pin calibrated Kova performance budgets",
+    "refactor(types): use native MCP transport declarations",
+    "refactor(bonjour): trust ciao rejection handling",
+    "fix(release): forward-port July guards and restore main validation (#107462)",
+    "fix(qqbot): clean up token refresh sleep abort listener (#105886)",
+    "fix(ws): normalize raw message payloads (#107459)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
