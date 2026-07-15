@@ -1,99 +1,91 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-07-14T20:59:16.502983+08:00",
+  "generatedAt": "2026-07-15T21:02:45.570531+08:00",
   "window": {
-    "start_local": "2026-07-13T20:59:16.502983+08:00",
-    "end_local": "2026-07-14T20:59:16.502983+08:00",
-    "start_utc": "2026-07-13T12:59:16Z",
-    "end_utc": "2026-07-14T12:59:16Z"
+    "start_local": "2026-07-14T21:02:45.570531+08:00",
+    "end_local": "2026-07-15T21:02:45.570531+08:00",
+    "start_utc": "2026-07-14T13:02:45Z",
+    "end_utc": "2026-07-15T13:02:45Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 382904,
-    "forks": 80381,
-    "open_issues": 6554,
-    "pushed_at": "2026-07-14T12:58:13Z"
+    "stars": 383000,
+    "forks": 80419,
+    "open_issues": 6725,
+    "pushed_at": "2026-07-15T13:02:32Z"
   },
   "summary": {
-    "commitCount": 626,
-    "releaseCount": 1,
-    "stableReleaseCount": 1,
+    "commitCount": 501,
+    "releaseCount": 0,
+    "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 382904,
-    "forks": 80381,
-    "openIssues": 6554
+    "stars": 383000,
+    "forks": 80419,
+    "openIssues": 6725
   },
-  "releases": [
-    {
-      "tag_name": "v2026.7.1",
-      "published_at": "2026-07-13T22:33:14Z",
-      "name": "openclaw 2026.7.1",
-      "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.1"
-    }
-  ],
+  "releases": [],
   "featureItems": [
-    "**Tools and automation:** browser control, downloads, cron jobs, terminals, files, search, fetch, MCP, and background task workflows gain new capabilities and clearer controls. [v2026.7.1]",
-    "feat(workboard): refresh Control UI from live changes (#99051)",
-    "feat(mcp): deliver requester-scoped MCP to shared-thread harnesses",
-    "feat(mcp): resolve MCP server connections per trusted requester",
-    "feat(sessions): signal watchers when an adopted upstream disappears (#107356)",
-    "feat(macos): native-feel dashboard hosting — instant reopen, preload, frame autosave, ⌘N/⌘K, route memory (#106997)",
-    "feat(ui): add images and model selection to new sessions (#107358)",
-    "feat(linux): headless node device capabilities (camera, location, notifications) (#107193)"
+    "feat: accept positional channels in setup",
+    "feat: add ClickClack setup wizard",
+    "feat: add ClickClack setup copy",
+    "feat: add ClickClack setup adapter",
+    "feat: add ClickClack setup inputs",
+    "feat(discord): opt-in Discord Activities widget support (#107442)",
+    "feat(telegram): map agent HTML islands to typed rich blocks",
+    "feat(telegram): emit Bot API 10.2 rich message blocks"
   ],
   "fixItems": [
-    "**Security and credentials:** additional hardening protects tokens, secrets, approval scopes, local paths, network destinations, attachments, archives, and untrusted provider or plugin responses. [v2026.7.1]",
-    "fix(ci): pin calibrated Kova performance budgets",
-    "fix(release): forward-port July guards and restore main validation (#107462)",
-    "fix(qqbot): clean up token refresh sleep abort listener (#105886)",
-    "fix(ws): normalize raw message payloads (#107459)",
-    "fix(commands): require explicit owner authority",
-    "fix(lint): buffer casts for nodebuffer ws message handlers",
-    "fix(test): declare release verifier helpers (#107444)"
+    "fix(web-fetch): recognize mixed-case media types (#108230)",
+    "fix(tlon): add timeouts to file upload HTTP requests (#102903)",
+    "fix(codex): make loop relay optional (#97224)",
+    "fix: keep channel CLI helpers private",
+    "fix: accept ClickClack workspace before install",
+    "fix: preserve ClickClack setup secret refs",
+    "fix: preserve optional ClickClack account typing",
+    "fix: resolve ClickClack token secret refs"
   ],
   "topScopes": [
     {
-      "scope": "agents",
-      "count": 55
-    },
-    {
-      "scope": "ui",
-      "count": 45
-    },
-    {
-      "scope": "gateway",
-      "count": 29
-    },
-    {
       "scope": "fix",
+      "count": 58
+    },
+    {
+      "scope": "test",
+      "count": 31
+    },
+    {
+      "scope": "agents",
       "count": 29
     },
     {
       "scope": "ci",
-      "count": 28
+      "count": 22
     },
     {
-      "scope": "test",
-      "count": 28
+      "scope": "docs",
+      "count": 20
     },
     {
       "scope": "release",
-      "count": 13
+      "count": 20
     },
     {
-      "scope": "cli",
-      "count": 12
+      "scope": "ui",
+      "count": 20
+    },
+    {
+      "scope": "telegram",
+      "count": 13
     }
   ],
   "headlineCommits": [
-    "refactor(media-understanding): remove internal export seams (#107476)",
-    "refactor(ui): privatize config autosave delay (#107475)",
-    "fix(ci): pin calibrated Kova performance budgets",
-    "refactor(types): use native MCP transport declarations",
-    "refactor(bonjour): trust ciao rejection handling",
-    "fix(release): forward-port July guards and restore main validation (#107462)",
-    "fix(qqbot): clean up token refresh sleep abort listener (#105886)",
-    "fix(ws): normalize raw message payloads (#107459)"
+    "refactor(agents): trim CLI and transport export seams (#108309)",
+    "fix(web-fetch): recognize mixed-case media types (#108230)",
+    "fix(tlon): add timeouts to file upload HTTP requests (#102903)",
+    "refactor(agents): privatize runtime test seams (#108295)",
+    "fix(codex): make loop relay optional (#97224)",
+    "refactor(agents): privatize state reset seams (#108285)",
+    "docs: sync ClickClack secret credential registry (#108271)",
+    "docs: refresh ClickClack docs map (#108271)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

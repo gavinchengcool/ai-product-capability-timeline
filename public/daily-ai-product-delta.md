@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-07-14T20:59:38+08:00
-- Requested window: 2026-07-13 to 2026-07-14
+- Generated at: 2026-07-15T21:03:03+08:00
+- Requested window: 2026-07-14 to 2026-07-15
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-07-13 to 2026-07-14
-- Generated at: 2026-07-14T20:59:16.502983+08:00
-- 窗口: 2026-07-13 至 2026-07-14
-- GitHub 增量: 626 commits / 1 releases
-- 最近 push: 2026-07-14
+- Window: 2026-07-14 to 2026-07-15
+- Generated at: 2026-07-15T21:02:45.570531+08:00
+- 窗口: 2026-07-14 至 2026-07-15
+- GitHub 增量: 501 commits / 0 releases
+- 最近 push: 2026-07-15
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - **Tools and automation:** browser control, downloads, cron jobs, terminals, files, search, fetch, MCP, and background task workflows gain new capabilities and clearer controls. [v2026.7.1]
-  - feat(workboard): refresh Control UI from live changes (#99051)
-  - feat(mcp): deliver requester-scoped MCP to shared-thread harnesses
-  - feat(mcp): resolve MCP server connections per trusted requester
-  - feat(sessions): signal watchers when an adopted upstream disappears (#107356)
-  - feat(macos): native-feel dashboard hosting — instant reopen, preload, frame autosave, ⌘N/⌘K, route memory (#106997)
-  - feat(ui): add images and model selection to new sessions (#107358)
-  - feat(linux): headless node device capabilities (camera, location, notifications) (#107193)
+  - feat: accept positional channels in setup
+  - feat: add ClickClack setup wizard
+  - feat: add ClickClack setup copy
+  - feat: add ClickClack setup adapter
+  - feat: add ClickClack setup inputs
+  - feat(discord): opt-in Discord Activities widget support (#107442)
+  - feat(telegram): map agent HTML islands to typed rich blocks
+  - feat(telegram): emit Bot API 10.2 rich message blocks
 - Fixes and constraints:
-  - **Security and credentials:** additional hardening protects tokens, secrets, approval scopes, local paths, network destinations, attachments, archives, and untrusted provider or plugin responses. [v2026.7.1]
-  - fix(ci): pin calibrated Kova performance budgets
-  - fix(release): forward-port July guards and restore main validation (#107462)
-  - fix(qqbot): clean up token refresh sleep abort listener (#105886)
-  - fix(ws): normalize raw message payloads (#107459)
-  - fix(commands): require explicit owner authority
-  - fix(lint): buffer casts for nodebuffer ws message handlers
-  - fix(test): declare release verifier helpers (#107444)
+  - fix(web-fetch): recognize mixed-case media types (#108230)
+  - fix(tlon): add timeouts to file upload HTTP requests (#102903)
+  - fix(codex): make loop relay optional (#97224)
+  - fix: keep channel CLI helpers private
+  - fix: accept ClickClack workspace before install
+  - fix: preserve ClickClack setup secret refs
+  - fix: preserve optional ClickClack account typing
+  - fix: resolve ClickClack token secret refs
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
