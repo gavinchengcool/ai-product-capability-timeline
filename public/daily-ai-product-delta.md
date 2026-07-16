@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-07-15T21:03:03+08:00
-- Requested window: 2026-07-14 to 2026-07-15
+- Generated at: 2026-07-16T21:11:12+08:00
+- Requested window: 2026-07-15 to 2026-07-16
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-07-14 to 2026-07-15
-- Generated at: 2026-07-15T21:02:45.570531+08:00
-- 窗口: 2026-07-14 至 2026-07-15
-- GitHub 增量: 501 commits / 0 releases
-- 最近 push: 2026-07-15
+- Window: 2026-07-15 to 2026-07-16
+- Generated at: 2026-07-16T21:10:52.875353+08:00
+- 窗口: 2026-07-15 至 2026-07-16
+- GitHub 增量: 440 commits / 1 releases
+- 最近 push: 2026-07-16
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat: accept positional channels in setup
-  - feat: add ClickClack setup wizard
-  - feat: add ClickClack setup copy
-  - feat: add ClickClack setup adapter
-  - feat: add ClickClack setup inputs
-  - feat(discord): opt-in Discord Activities widget support (#107442)
-  - feat(telegram): map agent HTML islands to typed rich blocks
-  - feat(telegram): emit Bot API 10.2 rich message blocks
+  - **Cloud workers:** add session placement, dispatch, and worker-turn routing for remote session execution. (#106332) [v2026.7.2-beta.1]
+  - feat(agents): screen tool drives Control UI layout
+  - feat(widgets): unify show_widget across surfaces (#108983)
+  - feat(canvas): interactive widgets can send follow-up prompts in web chat (#108889)
+  - feat(presentation): hosted-widget launch via typed web-app actions (#108927)
+  - feat(ui): guided Model Setup page — web/Linux equivalent of the macOS Connect-your-AI flow (#108868)
+  - feat(ui): expand child sessions in sidebar (#108838)
+  - feat(mac): playful hard-hat working mascot during setup and updates (#108735)
 - Fixes and constraints:
-  - fix(web-fetch): recognize mixed-case media types (#108230)
-  - fix(tlon): add timeouts to file upload HTTP requests (#102903)
-  - fix(codex): make loop relay optional (#97224)
-  - fix: keep channel CLI helpers private
-  - fix: accept ClickClack workspace before install
-  - fix: preserve ClickClack setup secret refs
-  - fix: preserve optional ClickClack account typing
-  - fix: resolve ClickClack token secret refs
+  - fix(ci): bound agents-core no-output stalls to one minute
+  - fix(codex): preserve Unicode in stderr tails (#109013)
+  - fix(models): honor scan timeout while reading OpenRouter catalog (#108972)
+  - fix(agents): keep read warning previews UTF-16 safe (#106399)
+  - fix: prevent source builds from exhausting host memory (#108790)
+  - fix(inworld): treat blank env API key as unconfigured in speech provider (#108783)
+  - fix(qa): stop Docker startup hangs on stalled health checks (#108992)
+  - fix: text-only Mattermost replies fail with blank attachment fields (#108281)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

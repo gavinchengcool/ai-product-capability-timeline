@@ -1,71 +1,67 @@
 {
-  "generatedAt": "2026-07-15T21:02:45.570531+08:00",
+  "generatedAt": "2026-07-16T21:10:52.875353+08:00",
   "window": {
-    "start_local": "2026-07-14T21:02:45.570531+08:00",
-    "end_local": "2026-07-15T21:02:45.570531+08:00",
-    "start_utc": "2026-07-14T13:02:45Z",
-    "end_utc": "2026-07-15T13:02:45Z"
+    "start_local": "2026-07-15T21:10:52.875353+08:00",
+    "end_local": "2026-07-16T21:10:52.875353+08:00",
+    "start_utc": "2026-07-15T13:10:52Z",
+    "end_utc": "2026-07-16T13:10:52Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 383000,
-    "forks": 80419,
-    "open_issues": 6725,
-    "pushed_at": "2026-07-15T13:02:32Z"
+    "stars": 383114,
+    "forks": 80458,
+    "open_issues": 6719,
+    "pushed_at": "2026-07-16T13:10:47Z"
   },
   "summary": {
-    "commitCount": 501,
-    "releaseCount": 0,
+    "commitCount": 440,
+    "releaseCount": 1,
     "stableReleaseCount": 0,
-    "betaReleaseCount": 0,
-    "stars": 383000,
-    "forks": 80419,
-    "openIssues": 6725
+    "betaReleaseCount": 1,
+    "stars": 383114,
+    "forks": 80458,
+    "openIssues": 6719
   },
-  "releases": [],
+  "releases": [
+    {
+      "tag_name": "v2026.7.2-beta.1",
+      "published_at": "2026-07-15T18:48:24Z",
+      "name": "openclaw 2026.7.2-beta.1",
+      "prerelease": true,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.1"
+    }
+  ],
   "featureItems": [
-    "feat: accept positional channels in setup",
-    "feat: add ClickClack setup wizard",
-    "feat: add ClickClack setup copy",
-    "feat: add ClickClack setup adapter",
-    "feat: add ClickClack setup inputs",
-    "feat(discord): opt-in Discord Activities widget support (#107442)",
-    "feat(telegram): map agent HTML islands to typed rich blocks",
-    "feat(telegram): emit Bot API 10.2 rich message blocks"
+    "**Cloud workers:** add session placement, dispatch, and worker-turn routing for remote session execution. (#106332) [v2026.7.2-beta.1]",
+    "feat(agents): screen tool drives Control UI layout",
+    "feat(widgets): unify show_widget across surfaces (#108983)",
+    "feat(canvas): interactive widgets can send follow-up prompts in web chat (#108889)",
+    "feat(presentation): hosted-widget launch via typed web-app actions (#108927)",
+    "feat(ui): guided Model Setup page — web/Linux equivalent of the macOS Connect-your-AI flow (#108868)",
+    "feat(ui): expand child sessions in sidebar (#108838)",
+    "feat(mac): playful hard-hat working mascot during setup and updates (#108735)"
   ],
   "fixItems": [
-    "fix(web-fetch): recognize mixed-case media types (#108230)",
-    "fix(tlon): add timeouts to file upload HTTP requests (#102903)",
-    "fix(codex): make loop relay optional (#97224)",
-    "fix: keep channel CLI helpers private",
-    "fix: accept ClickClack workspace before install",
-    "fix: preserve ClickClack setup secret refs",
-    "fix: preserve optional ClickClack account typing",
-    "fix: resolve ClickClack token secret refs"
+    "fix(ci): bound agents-core no-output stalls to one minute",
+    "fix(codex): preserve Unicode in stderr tails (#109013)",
+    "fix(models): honor scan timeout while reading OpenRouter catalog (#108972)",
+    "fix(agents): keep read warning previews UTF-16 safe (#106399)",
+    "fix: prevent source builds from exhausting host memory (#108790)",
+    "fix(inworld): treat blank env API key as unconfigured in speech provider (#108783)",
+    "fix(qa): stop Docker startup hangs on stalled health checks (#108992)",
+    "fix: text-only Mattermost replies fail with blank attachment fields (#108281)"
   ],
   "topScopes": [
     {
-      "scope": "fix",
-      "count": 58
-    },
-    {
-      "scope": "test",
-      "count": 31
-    },
-    {
-      "scope": "agents",
-      "count": 29
-    },
-    {
       "scope": "ci",
-      "count": 22
+      "count": 37
     },
     {
-      "scope": "docs",
-      "count": 20
+      "scope": "fix",
+      "count": 21
     },
     {
-      "scope": "release",
+      "scope": "discord",
       "count": 20
     },
     {
@@ -73,19 +69,31 @@
       "count": 20
     },
     {
-      "scope": "telegram",
-      "count": 13
+      "scope": "agents",
+      "count": 19
+    },
+    {
+      "scope": "codex",
+      "count": 17
+    },
+    {
+      "scope": "release",
+      "count": 14
+    },
+    {
+      "scope": "qa",
+      "count": 12
     }
   ],
   "headlineCommits": [
-    "refactor(agents): trim CLI and transport export seams (#108309)",
-    "fix(web-fetch): recognize mixed-case media types (#108230)",
-    "fix(tlon): add timeouts to file upload HTTP requests (#102903)",
-    "refactor(agents): privatize runtime test seams (#108295)",
-    "fix(codex): make loop relay optional (#97224)",
-    "refactor(agents): privatize state reset seams (#108285)",
-    "docs: sync ClickClack secret credential registry (#108271)",
-    "docs: refresh ClickClack docs map (#108271)"
+    "fix(ci): bound agents-core no-output stalls to one minute",
+    "fix(codex): preserve Unicode in stderr tails (#109013)",
+    "fix(models): honor scan timeout while reading OpenRouter catalog (#108972)",
+    "fix(agents): keep read warning previews UTF-16 safe (#106399)",
+    "fix: prevent source builds from exhausting host memory (#108790)",
+    "fix(inworld): treat blank env API key as unconfigured in speech provider (#108783)",
+    "fix(qa): stop Docker startup hangs on stalled health checks (#108992)",
+    "fix: text-only Mattermost replies fail with blank attachment fields (#108281)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 }
