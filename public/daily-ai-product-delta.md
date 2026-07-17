@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-07-16T21:11:12+08:00
-- Requested window: 2026-07-15 to 2026-07-16
+- Generated at: 2026-07-17T20:56:35+08:00
+- Requested window: 2026-07-16 to 2026-07-17
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-07-15 to 2026-07-16
-- Generated at: 2026-07-16T21:10:52.875353+08:00
-- 窗口: 2026-07-15 至 2026-07-16
-- GitHub 增量: 440 commits / 1 releases
-- 最近 push: 2026-07-16
+- Window: 2026-07-16 to 2026-07-17
+- Generated at: 2026-07-17T20:56:16.614512+08:00
+- 窗口: 2026-07-16 至 2026-07-17
+- GitHub 增量: 566 commits / 1 releases
+- 最近 push: 2026-07-17
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - **Cloud workers:** add session placement, dispatch, and worker-turn routing for remote session execution. (#106332) [v2026.7.2-beta.1]
-  - feat(agents): screen tool drives Control UI layout
-  - feat(widgets): unify show_widget across surfaces (#108983)
-  - feat(canvas): interactive widgets can send follow-up prompts in web chat (#108889)
-  - feat(presentation): hosted-widget launch via typed web-app actions (#108927)
-  - feat(ui): guided Model Setup page — web/Linux equivalent of the macOS Connect-your-AI flow (#108868)
-  - feat(ui): expand child sessions in sidebar (#108838)
-  - feat(mac): playful hard-hat working mascot during setup and updates (#108735)
+  - **External gateway supervision:** add `OPENCLAW_SUPERVISOR_MODE=external` for lifecycle owners such as OCM, preserving verified restart and deferral behavior without exposing native service authority, blocking native service mutation and self-update, and providing a versioned atomic restart-handoff consume contract. Thanks @shakkernerd. [v2026.7.2-beta.2]
+  - **ClickClack guided setup:** configure ClickClack from `openclaw onboard` or `openclaw channels add clickclack` with URL, token, and workspace prompts, default-account env fallback, nonfatal live connection validation, and gateway-aware next steps that connect automatically when OpenClaw is already running. Thanks @shakkernerd. [v2026.7.2-beta.2]
+  - **macOS paired-node terminals:** advertise duplex Codex and Claude terminal resume commands from the embedded node host and forward interactive input and cancellation through the native app bridge. (#107335) [v2026.7.2-beta.2]
+  - **Control UI catalog terminals:** open eligible Codex and Claude Code sessions in the native CLI on their Gateway or paired-node host, with viewer-versus-terminal preferences, validated resume commands, and an interactive PTY relay. (#107086) Thanks @vincentkoc. [v2026.7.2-beta.2]
+  - **Skill Workshop history review:** add a manual, newest-first session scan that progressively searches older substantial work for conservative skill ideas, stores only SQLite cursor metadata, and leaves up to three results as pending proposals even when autonomous self-learning is disabled. (#106182) [v2026.7.2-beta.2]
+  - **Workboard dispatch cap:** add a request-scoped `--max-starts` override while preserving the default cap, sequential starts, and one-card-per-owner guard. (#100174) Thanks @souvikDevloper, @Souvikalp, and @jwest75674. [v2026.7.2-beta.2]
+  - **Cloud workers:** add session placement, dispatch, and worker-turn routing for remote session execution. (#106332) [v2026.7.2-beta.2]
+  - feat(android): add Wear real-time Talk controls (#109483)
 - Fixes and constraints:
-  - fix(ci): bound agents-core no-output stalls to one minute
-  - fix(codex): preserve Unicode in stderr tails (#109013)
-  - fix(models): honor scan timeout while reading OpenRouter catalog (#108972)
-  - fix(agents): keep read warning previews UTF-16 safe (#106399)
-  - fix: prevent source builds from exhausting host memory (#108790)
-  - fix(inworld): treat blank env API key as unconfigured in speech provider (#108783)
-  - fix(qa): stop Docker startup hangs on stalled health checks (#108992)
-  - fix: text-only Mattermost replies fail with blank attachment fields (#108281)
+  - fix(reef): discover trusted peers as conversations (#109905)
+  - fix(doctor): repair ALTER-appended operator approval schema instead of wedging startup (#109876)
+  - test(release): harden extension prerelease contracts
+  - fix(release): honor explicit unreleased dry-run input
+  - fix(release): point locale drift at generated sync
+  - fix(heartbeat): remember silent task results for the next user turn (#95838)
+  - fix: avoid model-not-found fallback on OpenRouter image-input 404s (#99079)
+  - fix(android): keep composer media with its chat (#109200)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
