@@ -1,99 +1,91 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-07-17T20:56:16.614512+08:00",
+  "generatedAt": "2026-07-18T20:42:42.177113+08:00",
   "window": {
-    "start_local": "2026-07-16T20:56:16.614512+08:00",
-    "end_local": "2026-07-17T20:56:16.614512+08:00",
-    "start_utc": "2026-07-16T12:56:16Z",
-    "end_utc": "2026-07-17T12:56:16Z"
+    "start_local": "2026-07-17T20:42:42.177113+08:00",
+    "end_local": "2026-07-18T20:42:42.177113+08:00",
+    "start_utc": "2026-07-17T12:42:42Z",
+    "end_utc": "2026-07-18T12:42:42Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 383242,
-    "forks": 80502,
-    "open_issues": 6846,
-    "pushed_at": "2026-07-17T12:55:32Z"
+    "stars": 383355,
+    "forks": 80529,
+    "open_issues": 6850,
+    "pushed_at": "2026-07-18T12:42:11Z"
   },
   "summary": {
-    "commitCount": 566,
-    "releaseCount": 1,
+    "commitCount": 472,
+    "releaseCount": 0,
     "stableReleaseCount": 0,
-    "betaReleaseCount": 1,
-    "stars": 383242,
-    "forks": 80502,
-    "openIssues": 6846
+    "betaReleaseCount": 0,
+    "stars": 383355,
+    "forks": 80529,
+    "openIssues": 6850
   },
-  "releases": [
-    {
-      "tag_name": "v2026.7.2-beta.2",
-      "published_at": "2026-07-17T08:38:04Z",
-      "name": "openclaw 2026.7.2-beta.2",
-      "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.2"
-    }
-  ],
+  "releases": [],
   "featureItems": [
-    "**External gateway supervision:** add `OPENCLAW_SUPERVISOR_MODE=external` for lifecycle owners such as OCM, preserving verified restart and deferral behavior without exposing native service authority, blocking native service mutation and self-update, and providing a versioned atomic restart-handoff consume contract. Thanks @shakkernerd. [v2026.7.2-beta.2]",
-    "**ClickClack guided setup:** configure ClickClack from `openclaw onboard` or `openclaw channels add clickclack` with URL, token, and workspace prompts, default-account env fallback, nonfatal live connection validation, and gateway-aware next steps that connect automatically when OpenClaw is already running. Thanks @shakkernerd. [v2026.7.2-beta.2]",
-    "**macOS paired-node terminals:** advertise duplex Codex and Claude terminal resume commands from the embedded node host and forward interactive input and cancellation through the native app bridge. (#107335) [v2026.7.2-beta.2]",
-    "**Control UI catalog terminals:** open eligible Codex and Claude Code sessions in the native CLI on their Gateway or paired-node host, with viewer-versus-terminal preferences, validated resume commands, and an interactive PTY relay. (#107086) Thanks @vincentkoc. [v2026.7.2-beta.2]",
-    "**Skill Workshop history review:** add a manual, newest-first session scan that progressively searches older substantial work for conservative skill ideas, stores only SQLite cursor metadata, and leaves up to three results as pending proposals even when autonomous self-learning is disabled. (#106182) [v2026.7.2-beta.2]",
-    "**Workboard dispatch cap:** add a request-scoped `--max-starts` override while preserving the default cap, sequential starts, and one-card-per-owner guard. (#100174) Thanks @souvikDevloper, @Souvikalp, and @jwest75674. [v2026.7.2-beta.2]",
-    "**Cloud workers:** add session placement, dispatch, and worker-turn routing for remote session execution. (#106332) [v2026.7.2-beta.2]",
-    "feat(android): add Wear real-time Talk controls (#109483)"
+    "feat(macos): render system chat option cards (#110584)",
+    "feat(linux): Quick Chat streamed replies and precise pairing states (#110632)",
+    "feat(ui): manage MCP servers directly from Settings → MCP (#110654)",
+    "feat(ui): session unarchive flows with undo toast (#110605)",
+    "feat(ui): theme cards preview their real color palettes (#110626)",
+    "feat(memory): default cross-conversation recall for personal installs (#110597)",
+    "feat(ui): link Get the apps from the mobile pairing dialog (#110622)",
+    "feat(ui): merge voice and video talk into one button with in-call camera toggle (#110576)"
   ],
   "fixItems": [
-    "fix(reef): discover trusted peers as conversations (#109905)",
-    "fix(doctor): repair ALTER-appended operator approval schema instead of wedging startup (#109876)",
-    "test(release): harden extension prerelease contracts",
-    "fix(release): honor explicit unreleased dry-run input",
-    "fix(release): point locale drift at generated sync",
-    "fix(heartbeat): remember silent task results for the next user turn (#95838)",
-    "fix: avoid model-not-found fallback on OpenRouter image-input 404s (#99079)",
-    "fix(android): keep composer media with its chat (#109200)"
+    "fix(reef): add timeout and bounded JSON reads to relay transport (#108333)",
+    "fix(ios): shrink the chat \"Jump to latest\" pill to a compact icon button (#110651)",
+    "perf(ui): keep lazy-page CSS out of the Control UI entry stylesheet (#110687)",
+    "perf(ui): drop zod from the Control UI and lazy-load json5 with the config surfaces (#110623)",
+    "fix(signal): preserve durable ingress retry ownership (#110629)",
+    "fix(security): bound mcporter registry read in audit (#101772)",
+    "fix(cli): bound --message-file reads for agent command (#101442)",
+    "perf(ui): lazy-load the lobster pet out of the Control UI startup graph (#110628)"
   ],
   "topScopes": [
     {
-      "scope": "ci",
-      "count": 52
-    },
-    {
-      "scope": "test",
-      "count": 44
+      "scope": "ui",
+      "count": 47
     },
     {
       "scope": "fix",
-      "count": 30
+      "count": 40
     },
     {
-      "scope": "agents",
-      "count": 25
-    },
-    {
-      "scope": "ui",
-      "count": 19
+      "scope": "ci",
+      "count": 31
     },
     {
       "scope": "release",
-      "count": 17
+      "count": 20
     },
     {
-      "scope": "channels",
-      "count": 15
+      "scope": "gateway",
+      "count": 19
     },
     {
-      "scope": "feat",
-      "count": 14
+      "scope": "cli",
+      "count": 13
+    },
+    {
+      "scope": "test",
+      "count": 13
+    },
+    {
+      "scope": "qa",
+      "count": 11
     }
   ],
   "headlineCommits": [
-    "fix(reef): discover trusted peers as conversations (#109905)",
-    "fix(doctor): repair ALTER-appended operator approval schema instead of wedging startup (#109876)",
-    "feat(android): add Wear real-time Talk controls (#109483)",
-    "feat: align native macOS chat with the web chat capability set (#109712)",
-    "chore(plugin-sdk): refresh generated API baseline (#109987)",
-    "test(release): harden extension prerelease contracts",
-    "test(release): repair plugin prerelease coverage",
-    "fix(release): honor explicit unreleased dry-run input"
+    "fix(reef): add timeout and bounded JSON reads to relay transport (#108333)",
+    "fix(ios): shrink the chat \"Jump to latest\" pill to a compact icon button (#110651)",
+    "perf(ui): keep lazy-page CSS out of the Control UI entry stylesheet (#110687)",
+    "feat(macos): render system chat option cards (#110584)",
+    "feat(linux): Quick Chat streamed replies and precise pairing states (#110632)",
+    "feat(ui): manage MCP servers directly from Settings → MCP (#110654)",
+    "refactor(update): split update-runner into focused modules under the line limit (#110664)",
+    "feat(ui): session unarchive flows with undo toast (#110605)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
