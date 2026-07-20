@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-07-18T20:43:00+08:00
-- Requested window: 2026-07-17 to 2026-07-18
+- Generated at: 2026-07-20T21:41:39+08:00
+- Requested window: 2026-07-19 to 2026-07-20
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-07-17 to 2026-07-18
-- Generated at: 2026-07-18T20:42:42.177113+08:00
-- 窗口: 2026-07-17 至 2026-07-18
-- GitHub 增量: 472 commits / 0 releases
-- 最近 push: 2026-07-18
+- Window: 2026-07-19 to 2026-07-20
+- Generated at: 2026-07-20T21:41:24.714779+08:00
+- 窗口: 2026-07-19 至 2026-07-20
+- GitHub 增量: 184 commits / 0 releases
+- 最近 push: 2026-07-20
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(macos): render system chat option cards (#110584)
-  - feat(linux): Quick Chat streamed replies and precise pairing states (#110632)
-  - feat(ui): manage MCP servers directly from Settings → MCP (#110654)
-  - feat(ui): session unarchive flows with undo toast (#110605)
-  - feat(ui): theme cards preview their real color palettes (#110626)
-  - feat(memory): default cross-conversation recall for personal installs (#110597)
-  - feat(ui): link Get the apps from the mobile pairing dialog (#110622)
-  - feat(ui): merge voice and video talk into one button with in-call camera toggle (#110576)
+  - feat(channels): batch 3 producers drop media placeholder bodies (#111800)
+  - feat(ui): offer page refresh on protocol-mismatch failure (#111772)
+  - feat(dashboard): harden transcript MCP App pinning (#111748)
+  - feat(system-agent): agentic cached caretaker greeting with quick actions (#111615)
+  - feat(anthropic): import Claude Desktop custom groups (#111644)
+  - feat(dashboard): harden MCP widget authority (#111679)
+  - feat(channels): batch 2 producers drop media placeholder bodies (#111665)
+  - feat(agents): agent-controlled session status, attention, and TTL in the sessions tool (#111583)
 - Fixes and constraints:
-  - fix(reef): add timeout and bounded JSON reads to relay transport (#108333)
-  - fix(ios): shrink the chat "Jump to latest" pill to a compact icon button (#110651)
-  - perf(ui): keep lazy-page CSS out of the Control UI entry stylesheet (#110687)
-  - perf(ui): drop zod from the Control UI and lazy-load json5 with the config surfaces (#110623)
-  - fix(signal): preserve durable ingress retry ownership (#110629)
-  - fix(security): bound mcporter registry read in audit (#101772)
-  - fix(cli): bound --message-file reads for agent command (#101442)
-  - perf(ui): lazy-load the lobster pet out of the Control UI startup graph (#110628)
+  - fix(usage): guard malformed Z.AI usage payloads (#110741)
+  - fix(tts): contract speech requests hang on stalled endpoints (#110725)
+  - fix(signal): report malformed release metadata cleanly (#110824)
+  - fix(nostr): prefixed targets fail to send (#110881)
+  - fix: require admin for keyed session model changes [AI] (#111651)
+  - fix(cli): reject unknown models in config set (#111571)
+  - fix(infra): guard malformed Claude usage responses (#111088)
+  - fix(mcp): prevent custom server config races and parsing errors (#111761)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
