@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-07-20T21:41:39+08:00
-- Requested window: 2026-07-19 to 2026-07-20
+- Generated at: 2026-07-21T21:08:56+08:00
+- Requested window: 2026-07-20 to 2026-07-21
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-07-19 to 2026-07-20
-- Generated at: 2026-07-20T21:41:24.714779+08:00
-- 窗口: 2026-07-19 至 2026-07-20
-- GitHub 增量: 184 commits / 0 releases
-- 最近 push: 2026-07-20
+- Window: 2026-07-20 to 2026-07-21
+- Generated at: 2026-07-21T21:08:39.953253+08:00
+- 窗口: 2026-07-20 至 2026-07-21
+- GitHub 增量: 243 commits / 0 releases
+- 最近 push: 2026-07-21
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(channels): batch 3 producers drop media placeholder bodies (#111800)
-  - feat(ui): offer page refresh on protocol-mismatch failure (#111772)
-  - feat(dashboard): harden transcript MCP App pinning (#111748)
-  - feat(system-agent): agentic cached caretaker greeting with quick actions (#111615)
-  - feat(anthropic): import Claude Desktop custom groups (#111644)
-  - feat(dashboard): harden MCP widget authority (#111679)
-  - feat(channels): batch 2 producers drop media placeholder bodies (#111665)
-  - feat(agents): agent-controlled session status, attention, and TTL in the sessions tool (#111583)
+  - feat(cua-computer): add experimental Windows/Linux computer-use fulfiller (#112267)
+  - feat(ui): show PR status on Claude threads (#112180)
+  - feat(android): port the working claw indicator, wait phrases, and turn recap (#112221)
+  - feat(apple): port the working claw indicator, wait phrases, and turn recap to iOS/macOS (#112188)
+  - feat(gateway): session observer digests over the utility model (#112216)
+  - feat(ui): calm the working claw, rare stances, wait phrases, turn recap (#112060)
+  - feat(mobile): session Dashboard on iOS and Android via authenticated Control UI webview (#112163)
+  - feat(ui): expand the lobster pet's random universe (#112073)
 - Fixes and constraints:
-  - fix(usage): guard malformed Z.AI usage payloads (#110741)
-  - fix(tts): contract speech requests hang on stalled endpoints (#110725)
-  - fix(signal): report malformed release metadata cleanly (#110824)
-  - fix(nostr): prefixed targets fail to send (#110881)
-  - fix: require admin for keyed session model changes [AI] (#111651)
-  - fix(cli): reject unknown models in config set (#111571)
-  - fix(infra): guard malformed Claude usage responses (#111088)
-  - fix(mcp): prevent custom server config races and parsing errors (#111761)
+  - fix(macos): respect OPENCLAW_STATE_DIR in openclaw-mac CLI config resolution (fixes #98591) (#98631)
+  - fix(ui): populate mock profile identity (#112296)
+  - fix(android): localize compact token suffixes
+  - fix(ui): close hovercards after route replacement (#112291)
+  - fix(ui): cancel stale selection popup timer (#112290)
+  - fix(linux): harden Quick Chat widget lifecycle (#112261)
+  - fix(i18n): include shared chat strings in macOS catalog
+  - fix(gateway): avoid stale wake delays after node re-pairing (#109647)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

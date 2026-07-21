@@ -1,91 +1,91 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-07-20T21:41:24.714779+08:00",
+  "generatedAt": "2026-07-21T21:08:39.953253+08:00",
   "window": {
-    "start_local": "2026-07-19T21:41:24.714779+08:00",
-    "end_local": "2026-07-20T21:41:24.714779+08:00",
-    "start_utc": "2026-07-19T13:41:24Z",
-    "end_utc": "2026-07-20T13:41:24Z"
+    "start_local": "2026-07-20T21:08:39.953253+08:00",
+    "end_local": "2026-07-21T21:08:39.953253+08:00",
+    "start_utc": "2026-07-20T13:08:39Z",
+    "end_utc": "2026-07-21T13:08:39Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 383560,
-    "forks": 80571,
-    "open_issues": 6961,
-    "pushed_at": "2026-07-20T13:29:40Z"
+    "stars": 383672,
+    "forks": 80612,
+    "open_issues": 6992,
+    "pushed_at": "2026-07-21T12:59:22Z"
   },
   "summary": {
-    "commitCount": 184,
+    "commitCount": 243,
     "releaseCount": 0,
     "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 383560,
-    "forks": 80571,
-    "openIssues": 6961
+    "stars": 383672,
+    "forks": 80612,
+    "openIssues": 6992
   },
   "releases": [],
   "featureItems": [
-    "feat(channels): batch 3 producers drop media placeholder bodies (#111800)",
-    "feat(ui): offer page refresh on protocol-mismatch failure (#111772)",
-    "feat(dashboard): harden transcript MCP App pinning (#111748)",
-    "feat(system-agent): agentic cached caretaker greeting with quick actions (#111615)",
-    "feat(anthropic): import Claude Desktop custom groups (#111644)",
-    "feat(dashboard): harden MCP widget authority (#111679)",
-    "feat(channels): batch 2 producers drop media placeholder bodies (#111665)",
-    "feat(agents): agent-controlled session status, attention, and TTL in the sessions tool (#111583)"
+    "feat(cua-computer): add experimental Windows/Linux computer-use fulfiller (#112267)",
+    "feat(ui): show PR status on Claude threads (#112180)",
+    "feat(android): port the working claw indicator, wait phrases, and turn recap (#112221)",
+    "feat(apple): port the working claw indicator, wait phrases, and turn recap to iOS/macOS (#112188)",
+    "feat(gateway): session observer digests over the utility model (#112216)",
+    "feat(ui): calm the working claw, rare stances, wait phrases, turn recap (#112060)",
+    "feat(mobile): session Dashboard on iOS and Android via authenticated Control UI webview (#112163)",
+    "feat(ui): expand the lobster pet's random universe (#112073)"
   ],
   "fixItems": [
-    "fix(usage): guard malformed Z.AI usage payloads (#110741)",
-    "fix(tts): contract speech requests hang on stalled endpoints (#110725)",
-    "fix(signal): report malformed release metadata cleanly (#110824)",
-    "fix(nostr): prefixed targets fail to send (#110881)",
-    "fix: require admin for keyed session model changes [AI] (#111651)",
-    "fix(cli): reject unknown models in config set (#111571)",
-    "fix(infra): guard malformed Claude usage responses (#111088)",
-    "fix(mcp): prevent custom server config races and parsing errors (#111761)"
+    "fix(macos): respect OPENCLAW_STATE_DIR in openclaw-mac CLI config resolution (fixes #98591) (#98631)",
+    "fix(ui): populate mock profile identity (#112296)",
+    "fix(android): localize compact token suffixes",
+    "fix(ui): close hovercards after route replacement (#112291)",
+    "fix(ui): cancel stale selection popup timer (#112290)",
+    "fix(linux): harden Quick Chat widget lifecycle (#112261)",
+    "fix(i18n): include shared chat strings in macOS catalog",
+    "fix(gateway): avoid stale wake delays after node re-pairing (#109647)"
   ],
   "topScopes": [
     {
       "scope": "ui",
-      "count": 28
-    },
-    {
-      "scope": "fix",
-      "count": 14
-    },
-    {
-      "scope": "gateway",
-      "count": 13
+      "count": 43
     },
     {
       "scope": "agents",
-      "count": 11
+      "count": 10
     },
     {
-      "scope": "onboard",
+      "scope": "fix",
+      "count": 10
+    },
+    {
+      "scope": "android",
+      "count": 9
+    },
+    {
+      "scope": "gateway",
+      "count": 7
+    },
+    {
+      "scope": "ci",
+      "count": 7
+    },
+    {
+      "scope": "dashboard",
+      "count": 7
+    },
+    {
+      "scope": "macos",
       "count": 6
-    },
-    {
-      "scope": "channels",
-      "count": 5
-    },
-    {
-      "scope": "plugins",
-      "count": 5
-    },
-    {
-      "scope": "test",
-      "count": 5
     }
   ],
   "headlineCommits": [
-    "fix(usage): guard malformed Z.AI usage payloads (#110741)",
-    "fix(tts): contract speech requests hang on stalled endpoints (#110725)",
-    "fix(signal): report malformed release metadata cleanly (#110824)",
-    "test(ios): refresh chat voice and sidebar UI coverage (#111655)",
-    "feat(channels): batch 3 producers drop media placeholder bodies (#111800)",
-    "fix(nostr): prefixed targets fail to send (#110881)",
-    "fix: require admin for keyed session model changes [AI] (#111651)",
-    "fix(cli): reject unknown models in config set (#111571)"
+    "fix(macos): respect OPENCLAW_STATE_DIR in openclaw-mac CLI config resolution (fixes #98591) (#98631)",
+    "feat(cua-computer): add experimental Windows/Linux computer-use fulfiller (#112267)",
+    "fix(ui): populate mock profile identity (#112296)",
+    "style(android): satisfy compact token ktlint",
+    "test(i18n): require localized compact token suffixes",
+    "fix(android): localize compact token suffixes",
+    "fix(ui): close hovercards after route replacement (#112291)",
+    "fix(ui): cancel stale selection popup timer (#112290)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
