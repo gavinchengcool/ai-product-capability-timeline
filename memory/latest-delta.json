@@ -1,91 +1,91 @@
 {
-  "generatedAt": "2026-07-21T21:08:39.953253+08:00",
+  "generatedAt": "2026-07-22T21:14:44.229522+08:00",
   "window": {
-    "start_local": "2026-07-20T21:08:39.953253+08:00",
-    "end_local": "2026-07-21T21:08:39.953253+08:00",
-    "start_utc": "2026-07-20T13:08:39Z",
-    "end_utc": "2026-07-21T13:08:39Z"
+    "start_local": "2026-07-21T21:14:44.229522+08:00",
+    "end_local": "2026-07-22T21:14:44.229522+08:00",
+    "start_utc": "2026-07-21T13:14:44Z",
+    "end_utc": "2026-07-22T13:14:44Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 383672,
-    "forks": 80612,
-    "open_issues": 6992,
-    "pushed_at": "2026-07-21T12:59:22Z"
+    "stars": 383806,
+    "forks": 80640,
+    "open_issues": 6917,
+    "pushed_at": "2026-07-22T13:13:05Z"
   },
   "summary": {
-    "commitCount": 243,
+    "commitCount": 204,
     "releaseCount": 0,
     "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 383672,
-    "forks": 80612,
-    "openIssues": 6992
+    "stars": 383806,
+    "forks": 80640,
+    "openIssues": 6917
   },
   "releases": [],
   "featureItems": [
-    "feat(cua-computer): add experimental Windows/Linux computer-use fulfiller (#112267)",
-    "feat(ui): show PR status on Claude threads (#112180)",
-    "feat(android): port the working claw indicator, wait phrases, and turn recap (#112221)",
-    "feat(apple): port the working claw indicator, wait phrases, and turn recap to iOS/macOS (#112188)",
-    "feat(gateway): session observer digests over the utility model (#112216)",
-    "feat(ui): calm the working claw, rare stances, wait phrases, turn recap (#112060)",
-    "feat(mobile): session Dashboard on iOS and Android via authenticated Control UI webview (#112163)",
-    "feat(ui): expand the lobster pet's random universe (#112073)"
+    "feat(sessions): permanent creator attribution, owner avatars, person filter, multi-user docs (#112658)",
+    "feat(ui): inspect chat images in an accessible lightbox (#112442)",
+    "feat(ios): add OpenClaw settings chat (#112420)",
+    "feat(ui): manage DM pairing requests in Channels (#112401)",
+    "feat(ui): unify Control UI offline state into one indicator and a queueing composer hint (#112600)",
+    "feat(ui): redesign session observer HUD with labeled status and visibility-gated digests (#112594)",
+    "feat(apps): native session-list observer digests on iOS, Android, and macOS (#112597)",
+    "feat(agents): mobile_ui agent tool (PR 3/3) (#112255)"
   ],
   "fixItems": [
-    "fix(macos): respect OPENCLAW_STATE_DIR in openclaw-mac CLI config resolution (fixes #98591) (#98631)",
-    "fix(ui): populate mock profile identity (#112296)",
-    "fix(android): localize compact token suffixes",
-    "fix(ui): close hovercards after route replacement (#112291)",
-    "fix(ui): cancel stale selection popup timer (#112290)",
-    "fix(linux): harden Quick Chat widget lifecycle (#112261)",
-    "fix(i18n): include shared chat strings in macOS catalog",
-    "fix(gateway): avoid stale wake delays after node re-pairing (#109647)"
+    "fix(ai): honor provider reasoning effort maps (#112632)",
+    "fix(macos): migrate legacy Gateway profiles (#112629)",
+    "fix(ui): move footer title tooltips onto the shared tooltip component (#112639)",
+    "fix(codex): reject interrupted finalization turns",
+    "fix(agents): finalize settled tool turns safely",
+    "fix(copilot): isolate settled turn finalization",
+    "fix(cron): finalize settled announce turns",
+    "fix(agent): gate settled finalization by harness capability"
   ],
   "topScopes": [
     {
       "scope": "ui",
-      "count": 43
+      "count": 25
     },
     {
       "scope": "agents",
-      "count": 10
+      "count": 17
+    },
+    {
+      "scope": "cron",
+      "count": 8
     },
     {
       "scope": "fix",
-      "count": 10
+      "count": 8
     },
     {
-      "scope": "android",
-      "count": 9
-    },
-    {
-      "scope": "gateway",
-      "count": 7
-    },
-    {
-      "scope": "ci",
-      "count": 7
-    },
-    {
-      "scope": "dashboard",
+      "scope": "config",
       "count": 7
     },
     {
       "scope": "macos",
       "count": 6
+    },
+    {
+      "scope": "ios",
+      "count": 5
+    },
+    {
+      "scope": "channels",
+      "count": 5
     }
   ],
   "headlineCommits": [
-    "fix(macos): respect OPENCLAW_STATE_DIR in openclaw-mac CLI config resolution (fixes #98591) (#98631)",
-    "feat(cua-computer): add experimental Windows/Linux computer-use fulfiller (#112267)",
-    "fix(ui): populate mock profile identity (#112296)",
-    "style(android): satisfy compact token ktlint",
-    "test(i18n): require localized compact token suffixes",
-    "fix(android): localize compact token suffixes",
-    "fix(ui): close hovercards after route replacement (#112291)",
-    "fix(ui): cancel stale selection popup timer (#112290)"
+    "refactor(state): move device auth tokens to SQLite (#112663)",
+    "fix(ai): honor provider reasoning effort maps (#112632)",
+    "feat(sessions): permanent creator attribution, owner avatars, person filter, multi-user docs (#112658)",
+    "feat(ui): inspect chat images in an accessible lightbox (#112442)",
+    "feat(ios): add OpenClaw settings chat (#112420)",
+    "fix(macos): migrate legacy Gateway profiles (#112629)",
+    "refactor(cloud-workers): collapse duplicated workspace conflict and quiescence paths (#112646)",
+    "feat(ui): manage DM pairing requests in Channels (#112401)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 }

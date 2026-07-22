@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-07-21T21:08:56+08:00
-- Requested window: 2026-07-20 to 2026-07-21
+- Generated at: 2026-07-22T21:15:02+08:00
+- Requested window: 2026-07-21 to 2026-07-22
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-07-20 to 2026-07-21
-- Generated at: 2026-07-21T21:08:39.953253+08:00
-- 窗口: 2026-07-20 至 2026-07-21
-- GitHub 增量: 243 commits / 0 releases
-- 最近 push: 2026-07-21
+- Window: 2026-07-21 to 2026-07-22
+- Generated at: 2026-07-22T21:14:44.229522+08:00
+- 窗口: 2026-07-21 至 2026-07-22
+- GitHub 增量: 204 commits / 0 releases
+- 最近 push: 2026-07-22
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(cua-computer): add experimental Windows/Linux computer-use fulfiller (#112267)
-  - feat(ui): show PR status on Claude threads (#112180)
-  - feat(android): port the working claw indicator, wait phrases, and turn recap (#112221)
-  - feat(apple): port the working claw indicator, wait phrases, and turn recap to iOS/macOS (#112188)
-  - feat(gateway): session observer digests over the utility model (#112216)
-  - feat(ui): calm the working claw, rare stances, wait phrases, turn recap (#112060)
-  - feat(mobile): session Dashboard on iOS and Android via authenticated Control UI webview (#112163)
-  - feat(ui): expand the lobster pet's random universe (#112073)
+  - feat(sessions): permanent creator attribution, owner avatars, person filter, multi-user docs (#112658)
+  - feat(ui): inspect chat images in an accessible lightbox (#112442)
+  - feat(ios): add OpenClaw settings chat (#112420)
+  - feat(ui): manage DM pairing requests in Channels (#112401)
+  - feat(ui): unify Control UI offline state into one indicator and a queueing composer hint (#112600)
+  - feat(ui): redesign session observer HUD with labeled status and visibility-gated digests (#112594)
+  - feat(apps): native session-list observer digests on iOS, Android, and macOS (#112597)
+  - feat(agents): mobile_ui agent tool (PR 3/3) (#112255)
 - Fixes and constraints:
-  - fix(macos): respect OPENCLAW_STATE_DIR in openclaw-mac CLI config resolution (fixes #98591) (#98631)
-  - fix(ui): populate mock profile identity (#112296)
-  - fix(android): localize compact token suffixes
-  - fix(ui): close hovercards after route replacement (#112291)
-  - fix(ui): cancel stale selection popup timer (#112290)
-  - fix(linux): harden Quick Chat widget lifecycle (#112261)
-  - fix(i18n): include shared chat strings in macOS catalog
-  - fix(gateway): avoid stale wake delays after node re-pairing (#109647)
+  - fix(ai): honor provider reasoning effort maps (#112632)
+  - fix(macos): migrate legacy Gateway profiles (#112629)
+  - fix(ui): move footer title tooltips onto the shared tooltip component (#112639)
+  - fix(codex): reject interrupted finalization turns
+  - fix(agents): finalize settled tool turns safely
+  - fix(copilot): isolate settled turn finalization
+  - fix(cron): finalize settled announce turns
+  - fix(agent): gate settled finalization by harness capability
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
