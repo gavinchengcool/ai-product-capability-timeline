@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-07-22T21:15:02+08:00
-- Requested window: 2026-07-21 to 2026-07-22
+- Generated at: 2026-07-23T21:17:51+08:00
+- Requested window: 2026-07-22 to 2026-07-23
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-07-21 to 2026-07-22
-- Generated at: 2026-07-22T21:14:44.229522+08:00
-- 窗口: 2026-07-21 至 2026-07-22
-- GitHub 增量: 204 commits / 0 releases
-- 最近 push: 2026-07-22
+- Window: 2026-07-22 to 2026-07-23
+- Generated at: 2026-07-23T21:17:33.301133+08:00
+- 窗口: 2026-07-22 至 2026-07-23
+- GitHub 增量: 199 commits / 0 releases
+- 最近 push: 2026-07-23
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(sessions): permanent creator attribution, owner avatars, person filter, multi-user docs (#112658)
-  - feat(ui): inspect chat images in an accessible lightbox (#112442)
-  - feat(ios): add OpenClaw settings chat (#112420)
-  - feat(ui): manage DM pairing requests in Channels (#112401)
-  - feat(ui): unify Control UI offline state into one indicator and a queueing composer hint (#112600)
-  - feat(ui): redesign session observer HUD with labeled status and visibility-gated digests (#112594)
-  - feat(apps): native session-list observer digests on iOS, Android, and macOS (#112597)
-  - feat(agents): mobile_ui agent tool (PR 3/3) (#112255)
+  - feat(ui): mirror active destination and connection state in the dashboard title (#112929)
+  - feat(sessions): visibility states, membership, and server-enforced participation (#112787)
+  - feat(onboard): stage migration imports before promotion (#112798)
+  - feat(openai): make million-token context an explicit opt-in (#112916)
+  - feat(tlon): render Markdown lists as native listings (#112968)
+  - feat(agents): relay Claude native tool requests as Gateway approvals (#112918)
+  - feat(ci): ratchet the Control UI startup JS budget against a committed baseline (#112880)
+  - feat(scripts): add watch-pr-ci CI watcher with mergeable and attach prechecks (#112821)
 - Fixes and constraints:
-  - fix(ai): honor provider reasoning effort maps (#112632)
-  - fix(macos): migrate legacy Gateway profiles (#112629)
-  - fix(ui): move footer title tooltips onto the shared tooltip component (#112639)
-  - fix(codex): reject interrupted finalization turns
-  - fix(agents): finalize settled tool turns safely
-  - fix(copilot): isolate settled turn finalization
-  - fix(cron): finalize settled announce turns
-  - fix(agent): gate settled finalization by harness capability
+  - fix(docs-i18n): normalize added list containers
+  - fix(mcp): harden concurrent writes and diagnostics (#113026)
+  - fix(whatsapp): unify outbound markdown rendering (#113010)
+  - fix(ios): avoid phantom iPad nodes on Apple Silicon Macs (#112744)
+  - fix(telegram): preserve valid tg-time markup (#112911)
+  - fix(docs-i18n): escape model-added list markers
+  - fix: preserve transcript cursors across session resets (#112988)
+  - fix(ui): use bundled model setup icons
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
