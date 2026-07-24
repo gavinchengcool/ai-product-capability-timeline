@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-07-23T21:17:51+08:00
-- Requested window: 2026-07-22 to 2026-07-23
+- Generated at: 2026-07-24T21:11:21+08:00
+- Requested window: 2026-07-23 to 2026-07-24
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-07-22 to 2026-07-23
-- Generated at: 2026-07-23T21:17:33.301133+08:00
-- 窗口: 2026-07-22 至 2026-07-23
-- GitHub 增量: 199 commits / 0 releases
-- 最近 push: 2026-07-23
+- Window: 2026-07-23 to 2026-07-24
+- Generated at: 2026-07-24T21:11:03.261006+08:00
+- 窗口: 2026-07-23 至 2026-07-24
+- GitHub 增量: 208 commits / 0 releases
+- 最近 push: 2026-07-24
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(ui): mirror active destination and connection state in the dashboard title (#112929)
-  - feat(sessions): visibility states, membership, and server-enforced participation (#112787)
-  - feat(onboard): stage migration imports before promotion (#112798)
-  - feat(openai): make million-token context an explicit opt-in (#112916)
-  - feat(tlon): render Markdown lists as native listings (#112968)
-  - feat(agents): relay Claude native tool requests as Gateway approvals (#112918)
-  - feat(ci): ratchet the Control UI startup JS budget against a committed baseline (#112880)
-  - feat(scripts): add watch-pr-ci CI watcher with mergeable and attach prechecks (#112821)
+  - feat(plugins): support manifest-declared MCP Apps in native plugins (#113224)
+  - feat(browser): add `openclaw browser batch` CLI subcommand (#111457)
+  - feat(matrix): render spoilers, underline, and native tables (#113199)
+  - feat(sessions): suggestion queue + typing indicator (#113173)
+  - feat(ios): deterministically plan App Store releases
+  - feat(cron): convert heartbeat tasks: entries into independent cron jobs (#113165)
+  - feat(telegram): render rich markdown lists natively (#113158)
+  - feat(ui): merge creator avatar into sidebar leading slot, move creator filter into Threads menu (#113150)
 - Fixes and constraints:
-  - fix(docs-i18n): normalize added list containers
-  - fix(mcp): harden concurrent writes and diagnostics (#113026)
-  - fix(whatsapp): unify outbound markdown rendering (#113010)
-  - fix(ios): avoid phantom iPad nodes on Apple Silicon Macs (#112744)
-  - fix(telegram): preserve valid tg-time markup (#112911)
-  - fix(docs-i18n): escape model-added list markers
-  - fix: preserve transcript cursors across session resets (#112988)
-  - fix(ui): use bundled model setup icons
+  - fix(sqlite): normalize Windows verification paths (#113313)
+  - fix(doctor): apply compatibility after plugin repair (#113317)
+  - fix(test): release SQLite fixtures before Windows cleanup (#113316)
+  - fix(i18n): unwrap invented inline code
+  - fix(backup): publish archives durably (#113302)
+  - fix(update): preserve JSON output during resume (#113298)
+  - fix(test): satisfy no-map-spread in exec approvals (#113303)
+  - fix: keep OAuth refresh failures terminal [AI] (#112957)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
