@@ -1,91 +1,91 @@
 {
-  "generatedAt": "2026-07-24T21:11:03.261006+08:00",
+  "generatedAt": "2026-07-25T20:53:27.956032+08:00",
   "window": {
-    "start_local": "2026-07-23T21:11:03.261006+08:00",
-    "end_local": "2026-07-24T21:11:03.261006+08:00",
-    "start_utc": "2026-07-23T13:11:03Z",
-    "end_utc": "2026-07-24T13:11:03Z"
+    "start_local": "2026-07-24T20:53:27.956032+08:00",
+    "end_local": "2026-07-25T20:53:27.956032+08:00",
+    "start_utc": "2026-07-24T12:53:27Z",
+    "end_utc": "2026-07-25T12:53:27Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 383994,
-    "forks": 80682,
-    "open_issues": 6952,
-    "pushed_at": "2026-07-24T13:07:59Z"
+    "stars": 384083,
+    "forks": 80705,
+    "open_issues": 6988,
+    "pushed_at": "2026-07-25T12:51:17Z"
   },
   "summary": {
-    "commitCount": 208,
+    "commitCount": 196,
     "releaseCount": 0,
     "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 383994,
-    "forks": 80682,
-    "openIssues": 6952
+    "stars": 384083,
+    "forks": 80705,
+    "openIssues": 6988
   },
   "releases": [],
   "featureItems": [
-    "feat(plugins): support manifest-declared MCP Apps in native plugins (#113224)",
-    "feat(browser): add `openclaw browser batch` CLI subcommand (#111457)",
-    "feat(matrix): render spoilers, underline, and native tables (#113199)",
-    "feat(sessions): suggestion queue + typing indicator (#113173)",
-    "feat(ios): deterministically plan App Store releases",
-    "feat(cron): convert heartbeat tasks: entries into independent cron jobs (#113165)",
-    "feat(telegram): render rich markdown lists natively (#113158)",
-    "feat(ui): merge creator avatar into sidebar leading slot, move creator filter into Threads menu (#113150)"
+    "feat(agents): explicit per-surface agent targets + default-role materialization (#113637)",
+    "feat(ui): syntax-highlight read-only cron script payloads (#113632)",
+    "feat(onepassword): add managed SecretRef integration",
+    "feat(models): curate default model picker to current-generation catalogs (#113594)",
+    "feat(sessions): show preambles as live subtitles (#112958)",
+    "feat(ui): publish host style variables to embedded MCP apps (#113464)",
+    "feat(system-agent): constrain planner JSON output at generation time (#113482)",
+    "feat(setup): download-model actions on web and macOS onboarding (#113476)"
   ],
   "fixItems": [
-    "fix(sqlite): normalize Windows verification paths (#113313)",
-    "fix(doctor): apply compatibility after plugin repair (#113317)",
-    "fix(test): release SQLite fixtures before Windows cleanup (#113316)",
-    "fix(i18n): unwrap invented inline code",
-    "fix(backup): publish archives durably (#113302)",
-    "fix(update): preserve JSON output during resume (#113298)",
-    "fix(test): satisfy no-map-spread in exec approvals (#113303)",
-    "fix: keep OAuth refresh failures terminal [AI] (#112957)"
+    "fix(agents): extract Undici cause.code for ECONNRESET/ECONNREFUSED/ETIMEDOUT (#110485)",
+    "fix(install): report source UI build failures correctly (#112053)",
+    "fix(mcp): retry failed tool catalogs after recovery (#111962)",
+    "fix(tui): request approved operator scopes for terminal sessions (#113644)",
+    "fix(agents): honor run abort signal in image and pdf tools (#112644)",
+    "fix(gateway): preserve verified owner identity for OpenAI HTTP (#113638)",
+    "fix(qa): run documented channel message flows on supported drivers (#113642)",
+    "perf: multi-select archiving no longer stalls a second per row (#113623)"
   ],
   "topScopes": [
     {
-      "scope": "cron",
+      "scope": "sqlite",
       "count": 17
     },
     {
-      "scope": "ios",
-      "count": 14
-    },
-    {
-      "scope": "fix",
-      "count": 13
-    },
-    {
-      "scope": "agents",
-      "count": 9
-    },
-    {
-      "scope": "gateway",
-      "count": 9
-    },
-    {
-      "scope": "plugins",
-      "count": 9
+      "scope": "anthropic",
+      "count": 16
     },
     {
       "scope": "ui",
-      "count": 9
+      "count": 15
     },
     {
-      "scope": "i18n",
+      "scope": "qa",
+      "count": 12
+    },
+    {
+      "scope": "agents",
       "count": 8
+    },
+    {
+      "scope": "gateway",
+      "count": 8
+    },
+    {
+      "scope": "test",
+      "count": 7
+    },
+    {
+      "scope": "fix",
+      "count": 6
     }
   ],
   "headlineCommits": [
-    "fix(sqlite): normalize Windows verification paths (#113313)",
-    "fix(doctor): apply compatibility after plugin repair (#113317)",
-    "fix(test): release SQLite fixtures before Windows cleanup (#113316)",
-    "fix(i18n): unwrap invented inline code",
-    "refactor(agents): split subagent registry internals (#113297)",
-    "fix(backup): publish archives durably (#113302)",
-    "fix(update): preserve JSON output during resume (#113298)",
-    "refactor(memory-lancedb): remove dead legacy path scan (#113299)"
+    "docs: fix incorrect CLI command in extension READMEs (#112057)",
+    "fix(agents): extract Undici cause.code for ECONNRESET/ECONNREFUSED/ETIMEDOUT (#110485)",
+    "refactor(channels): finish factory migrations for line/tlon/zalouser (#113646)",
+    "fix(install): report source UI build failures correctly (#112053)",
+    "test(qa): restore session turn ordering coverage (#113653)",
+    "refactor(ui): mechanical dedup batch (#113649)",
+    "refactor(agents): split native hook relay (#113626)",
+    "feat(agents): explicit per-surface agent targets + default-role materialization (#113637)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 }

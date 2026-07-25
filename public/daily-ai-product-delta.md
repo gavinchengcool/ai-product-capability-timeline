@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-07-24T21:11:21+08:00
-- Requested window: 2026-07-23 to 2026-07-24
+- Generated at: 2026-07-25T20:53:43+08:00
+- Requested window: 2026-07-24 to 2026-07-25
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-07-23 to 2026-07-24
-- Generated at: 2026-07-24T21:11:03.261006+08:00
-- 窗口: 2026-07-23 至 2026-07-24
-- GitHub 增量: 208 commits / 0 releases
-- 最近 push: 2026-07-24
+- Window: 2026-07-24 to 2026-07-25
+- Generated at: 2026-07-25T20:53:27.956032+08:00
+- 窗口: 2026-07-24 至 2026-07-25
+- GitHub 增量: 196 commits / 0 releases
+- 最近 push: 2026-07-25
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(plugins): support manifest-declared MCP Apps in native plugins (#113224)
-  - feat(browser): add `openclaw browser batch` CLI subcommand (#111457)
-  - feat(matrix): render spoilers, underline, and native tables (#113199)
-  - feat(sessions): suggestion queue + typing indicator (#113173)
-  - feat(ios): deterministically plan App Store releases
-  - feat(cron): convert heartbeat tasks: entries into independent cron jobs (#113165)
-  - feat(telegram): render rich markdown lists natively (#113158)
-  - feat(ui): merge creator avatar into sidebar leading slot, move creator filter into Threads menu (#113150)
+  - feat(agents): explicit per-surface agent targets + default-role materialization (#113637)
+  - feat(ui): syntax-highlight read-only cron script payloads (#113632)
+  - feat(onepassword): add managed SecretRef integration
+  - feat(models): curate default model picker to current-generation catalogs (#113594)
+  - feat(sessions): show preambles as live subtitles (#112958)
+  - feat(ui): publish host style variables to embedded MCP apps (#113464)
+  - feat(system-agent): constrain planner JSON output at generation time (#113482)
+  - feat(setup): download-model actions on web and macOS onboarding (#113476)
 - Fixes and constraints:
-  - fix(sqlite): normalize Windows verification paths (#113313)
-  - fix(doctor): apply compatibility after plugin repair (#113317)
-  - fix(test): release SQLite fixtures before Windows cleanup (#113316)
-  - fix(i18n): unwrap invented inline code
-  - fix(backup): publish archives durably (#113302)
-  - fix(update): preserve JSON output during resume (#113298)
-  - fix(test): satisfy no-map-spread in exec approvals (#113303)
-  - fix: keep OAuth refresh failures terminal [AI] (#112957)
+  - fix(agents): extract Undici cause.code for ECONNRESET/ECONNREFUSED/ETIMEDOUT (#110485)
+  - fix(install): report source UI build failures correctly (#112053)
+  - fix(mcp): retry failed tool catalogs after recovery (#111962)
+  - fix(tui): request approved operator scopes for terminal sessions (#113644)
+  - fix(agents): honor run abort signal in image and pdf tools (#112644)
+  - fix(gateway): preserve verified owner identity for OpenAI HTTP (#113638)
+  - fix(qa): run documented channel message flows on supported drivers (#113642)
+  - perf: multi-select archiving no longer stalls a second per row (#113623)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
