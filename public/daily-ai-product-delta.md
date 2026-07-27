@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-07-25T20:53:43+08:00
-- Requested window: 2026-07-24 to 2026-07-25
+- Generated at: 2026-07-27T22:04:23+08:00
+- Requested window: 2026-07-26 to 2026-07-27
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-07-24 to 2026-07-25
-- Generated at: 2026-07-25T20:53:27.956032+08:00
-- 窗口: 2026-07-24 至 2026-07-25
-- GitHub 增量: 196 commits / 0 releases
-- 最近 push: 2026-07-25
+- Window: 2026-07-26 to 2026-07-27
+- Generated at: 2026-07-27T22:04:05.579544+08:00
+- 窗口: 2026-07-26 至 2026-07-27
+- GitHub 增量: 301 commits / 0 releases
+- 最近 push: 2026-07-27
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(agents): explicit per-surface agent targets + default-role materialization (#113637)
-  - feat(ui): syntax-highlight read-only cron script payloads (#113632)
-  - feat(onepassword): add managed SecretRef integration
-  - feat(models): curate default model picker to current-generation catalogs (#113594)
-  - feat(sessions): show preambles as live subtitles (#112958)
-  - feat(ui): publish host style variables to embedded MCP apps (#113464)
-  - feat(system-agent): constrain planner JSON output at generation time (#113482)
-  - feat(setup): download-model actions on web and macOS onboarding (#113476)
+  - feat(openai): support loopback Codex proxies (#114555)
+  - feat(ui): offer normally-absent core files instead of flagging them missing (#114559)
+  - feat: render model-authored collapsible details (#114556)
+  - feat: add readable managed worktree names (#114488)
+  - feat(auto-reply): show thinking level in model summary
+  - feat(agents): advertise searchable tool capabilities (#114508)
+  - feat(ui): let a link's slug settle a shared short-id prefix (#114486)
+  - feat(ui): resolve session URLs through the gateway with best-effort slug matching (#114422)
 - Fixes and constraints:
-  - fix(agents): extract Undici cause.code for ECONNRESET/ECONNREFUSED/ETIMEDOUT (#110485)
-  - fix(install): report source UI build failures correctly (#112053)
-  - fix(mcp): retry failed tool catalogs after recovery (#111962)
-  - fix(tui): request approved operator scopes for terminal sessions (#113644)
-  - fix(agents): honor run abort signal in image and pdf tools (#112644)
-  - fix(gateway): preserve verified owner identity for OpenAI HTTP (#113638)
-  - fix(qa): run documented channel message flows on supported drivers (#113642)
-  - perf: multi-select archiving no longer stalls a second per row (#113623)
+  - fix(plugins): prevent bundled discovery loss and out-of-scope activation (#114547)
+  - fix(agents): preserve prompt caches across tool discovery (#114572)
+  - fix(release): repair plugin prerelease contracts (#114597)
+  - fix(gateway): stop rechecking plugin routes after lazy load (#114273)
+  - fix(agents): prevent opaque shell commands bypassing auto-review (#114558)
+  - fix: harden cron and Workboard scheduling under load (#114564)
+  - fix(ai): safely format circular provider stream errors (#107800)
+  - fix: tighten findSchema.limit from Type.Number to Type.Integer with execution guard (#105931)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

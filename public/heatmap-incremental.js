@@ -1905,5 +1905,19 @@ window.OPENCLAW_HEATMAP_INCREMENTAL_ROWS = [
     },
     "source": "daily-incremental",
     "generatedAt": "2026-07-25T20:53:27.956032+08:00"
+  },
+  {
+    "date": "2026-07-27",
+    "stage": "openclaw",
+    "summary": "渠道互动、gateway / 会话控制面、Docker / 运维、browser / tools继续增强，最近一天的增量也并入主矩阵。",
+    "axisEntries": {
+      "channels": "WhatsApp / Telegram / Zalo / Signal 相关兼容修补继续推进。",
+      "models": "",
+      "tools": "Browser existing-session / MCP attach 模式继续简化并加固。",
+      "control": "Gateway health monitor、pairing 与 watch 链路继续打磨。 Compaction timeout、计数持久化和 sanity check 继续加固。 Session / plugin 路由与配置基线继续收敛。",
+      "ops": "服务重装、重启与 cleanup 路径继续修补。 构建内存回归与 cron 死锁等运行期问题继续收敛。"
+    },
+    "source": "daily-incremental",
+    "generatedAt": "2026-07-27T22:04:05.579544+08:00"
   }
 ];
