@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-07-27T22:04:23+08:00
-- Requested window: 2026-07-26 to 2026-07-27
+- Generated at: 2026-07-28T21:24:26+08:00
+- Requested window: 2026-07-27 to 2026-07-28
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-07-26 to 2026-07-27
-- Generated at: 2026-07-27T22:04:05.579544+08:00
-- 窗口: 2026-07-26 至 2026-07-27
-- GitHub 增量: 301 commits / 0 releases
-- 最近 push: 2026-07-27
+- Window: 2026-07-27 to 2026-07-28
+- Generated at: 2026-07-28T21:24:07.290432+08:00
+- 窗口: 2026-07-27 至 2026-07-28
+- GitHub 增量: 405 commits / 1 releases
+- 最近 push: 2026-07-28
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(openai): support loopback Codex proxies (#114555)
-  - feat(ui): offer normally-absent core files instead of flagging them missing (#114559)
-  - feat: render model-authored collapsible details (#114556)
-  - feat: add readable managed worktree names (#114488)
-  - feat(auto-reply): show thinking level in model summary
-  - feat(agents): advertise searchable tool capabilities (#114508)
-  - feat(ui): let a link's slug settle a shared short-id prefix (#114486)
-  - feat(ui): resolve session URLs through the gateway with best-effort slug matching (#114422)
+  - **Models and providers:** add Claude Opus 5 across catalog and runtime, Kimi K3, and GPT Live through Codex OAuth. (#113391, #113392, #113633; related #113412; #113909, #113354; related #113353) Thanks @fuller-stack-dev, @vincentkoc, and @Solvely-Colin. [v2026.7.2-beta.5]
+  - **Local inference and setup:** detect local inference providers during onboarding, add in-process llama.cpp GGUF inference and Baseten Model API support, discover models from live provider catalogs, and offer model downloads from web and macOS setup. (#108605; related #108604; #109444, #108708; related #108665; #112412; related #112405; #113476) Thanks @fuller-stack-dev. [v2026.7.2-beta.5]
+  - **Sessions and dashboards:** add rewind/fork and branch switching across web and native chat, session boards and dashboards, archived/visibility/draft/incognito session states, and suggestion queues with typing indicators. (#110660, #110857, #110886, #111149, #110644, #110960, #112554, #112787, #113006, #113127, #113173) [v2026.7.2-beta.5]
+  - **Native apps:** bring Quick Chat to macOS and Linux with streaming, routing, context capture, dictation, and model controls; add Linux desktop integration and signed updates; add multi-gateway apps and mobile dashboards; and expand Wear OS companion/Talk support. (#109720, #109947, #110285, #110631, #110632, #110635, #110994, #109236, #108770, #111932; related #111931; #112163, #109341, #109433; related #108781; #109483, #112721) Thanks @sibbl, @IWhatsskill, @Solvely-Colin, and @vincentkoc. [v2026.7.2-beta.5]
+  - **Meetings:** add Teams and Zoom meeting guests, enable Teams, Zoom, and Google Meet plugins by default, and automatically collect durable meeting transcripts. (#109964, #111048, #113022, #113053, #113122) [v2026.7.2-beta.5]
+  - **Channels:** add the Buzz plugin, Slack user-identity and Agent View modes, Telegram Bot API rich blocks and native Markdown lists, and richer Matrix formatting. (#113419, #109837, #103895; related #103673; #107986, #113158, #113199) Thanks @Patrick-Erichsen and @obviyus. [v2026.7.2-beta.5]
+  - **Browser and MCP Apps:** add a secure per-tab browser copilot, batch browser CLI, bounded page-question extraction, a ticketed MCP App host and Control UI bridge, and manifest-declared MCP Apps for native plugins. (#109817, #111457, #113861, #109861; related #109851; #109807, #113224; related #113218) Thanks @anagnorisis2peripeteia, @FMLS, @cursoragent, @hxy91819, and @fuller-stack-dev. [v2026.7.2-beta.5]
+  - **Memory:** add fast active-memory recall, default cross-conversation recall for personal installs, guided imports from Claude Code/Codex/Hermes, and a dedicated Memory settings page. (#108043, #110597, #108977, #114037) [v2026.7.2-beta.5]
 - Fixes and constraints:
-  - fix(plugins): prevent bundled discovery loss and out-of-scope activation (#114547)
-  - fix(agents): preserve prompt caches across tool discovery (#114572)
-  - fix(release): repair plugin prerelease contracts (#114597)
-  - fix(gateway): stop rechecking plugin routes after lazy load (#114273)
-  - fix(agents): prevent opaque shell commands bypassing auto-review (#114558)
-  - fix: harden cron and Workboard scheduling under load (#114564)
-  - fix(ai): safely format circular provider stream errors (#107800)
-  - fix: tighten findSchema.limit from Type.Number to Type.Integer with execution guard (#105931)
+  - **Security and authorization:** prevent channel allowlists from granting owner access, keep session exports inside the workspace, close a forged-marker/web-search boundary bypass, prevent non-owner ACP session exposure, reject unsafe explicit approval IDs, harden secret redaction and exec/OAuth approvals, validate downloaded install scripts, and prevent insecure secrets-plan writes. (#107403; related #104984; #104708; related #102391; #110417, #110745; related #103055; #111055, #112947, #112952, #112953, #112956, #112946, #112957, #113307; related #90013; #113707) Thanks @obviyus, @yetval, @VACInc, @pgondhi987, and @SebTardif. [v2026.7.2-beta.5]
+  - fix(ui): stop Workboard draft fields reverting during edits (#115141)
+  - fix(cli): resolve plugin-catalog metadata for configured models list rows (#115190)
+  - fix(ui): stop route aliases from hijacking base-path inference on settings deep links (#115186)
+  - fix(doctor): eagerly canonicalize memory_index_chunks recall columns (#115154)
+  - fix(ui): harden browser, session, permissions, and media lifecycles (#115110)
+  - fix(msteams): release failed Graph collection bodies (#109970)
+  - fix: make gateway nodes and local inference reliable under stress (#115185)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
