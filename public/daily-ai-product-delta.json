@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-28T21:24:26+08:00",
+  "generatedAt": "2026-07-29T21:30:46+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-07-27T21:24:26+08:00",
-    "end_local": "2026-07-28T21:24:26+08:00"
+    "start_local": "2026-07-28T21:30:46+08:00",
+    "end_local": "2026-07-29T21:30:46+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-07-28T21:24:07.290432+08:00",
+      "generatedAt": "2026-07-29T21:30:25.407112+08:00",
       "window": {
-        "start_local": "2026-07-27T21:24:07.290432+08:00",
-        "end_local": "2026-07-28T21:24:07.290432+08:00",
-        "start_utc": "2026-07-27T13:24:07Z",
-        "end_utc": "2026-07-28T13:24:07Z"
+        "start_local": "2026-07-28T21:30:25.407112+08:00",
+        "end_local": "2026-07-29T21:30:25.407112+08:00",
+        "start_utc": "2026-07-28T13:30:25Z",
+        "end_utc": "2026-07-29T13:30:25Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-07-27 至 2026-07-28"
+          "value": "2026-07-28 至 2026-07-29"
         },
         {
           "label": "GitHub 增量",
-          "value": "405 commits / 1 releases"
+          "value": "609 commits / 0 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-07-28"
+          "value": "2026-07-29"
         },
         {
           "label": "来源",
@@ -52,66 +52,58 @@
         }
       ],
       "featureItems": [
-        "**Models and providers:** add Claude Opus 5 across catalog and runtime, Kimi K3, and GPT Live through Codex OAuth. (#113391, #113392, #113633; related #113412; #113909, #113354; related #113353) Thanks @fuller-stack-dev, @vincentkoc, and @Solvely-Colin. [v2026.7.2-beta.5]",
-        "**Local inference and setup:** detect local inference providers during onboarding, add in-process llama.cpp GGUF inference and Baseten Model API support, discover models from live provider catalogs, and offer model downloads from web and macOS setup. (#108605; related #108604; #109444, #108708; related #108665; #112412; related #112405; #113476) Thanks @fuller-stack-dev. [v2026.7.2-beta.5]",
-        "**Sessions and dashboards:** add rewind/fork and branch switching across web and native chat, session boards and dashboards, archived/visibility/draft/incognito session states, and suggestion queues with typing indicators. (#110660, #110857, #110886, #111149, #110644, #110960, #112554, #112787, #113006, #113127, #113173) [v2026.7.2-beta.5]",
-        "**Native apps:** bring Quick Chat to macOS and Linux with streaming, routing, context capture, dictation, and model controls; add Linux desktop integration and signed updates; add multi-gateway apps and mobile dashboards; and expand Wear OS companion/Talk support. (#109720, #109947, #110285, #110631, #110632, #110635, #110994, #109236, #108770, #111932; related #111931; #112163, #109341, #109433; related #108781; #109483, #112721) Thanks @sibbl, @IWhatsskill, @Solvely-Colin, and @vincentkoc. [v2026.7.2-beta.5]",
-        "**Meetings:** add Teams and Zoom meeting guests, enable Teams, Zoom, and Google Meet plugins by default, and automatically collect durable meeting transcripts. (#109964, #111048, #113022, #113053, #113122) [v2026.7.2-beta.5]",
-        "**Channels:** add the Buzz plugin, Slack user-identity and Agent View modes, Telegram Bot API rich blocks and native Markdown lists, and richer Matrix formatting. (#113419, #109837, #103895; related #103673; #107986, #113158, #113199) Thanks @Patrick-Erichsen and @obviyus. [v2026.7.2-beta.5]",
-        "**Browser and MCP Apps:** add a secure per-tab browser copilot, batch browser CLI, bounded page-question extraction, a ticketed MCP App host and Control UI bridge, and manifest-declared MCP Apps for native plugins. (#109817, #111457, #113861, #109861; related #109851; #109807, #113224; related #113218) Thanks @anagnorisis2peripeteia, @FMLS, @cursoragent, @hxy91819, and @fuller-stack-dev. [v2026.7.2-beta.5]",
-        "**Memory:** add fast active-memory recall, default cross-conversation recall for personal installs, guided imports from Claude Code/Codex/Hermes, and a dedicated Memory settings page. (#108043, #110597, #108977, #114037) [v2026.7.2-beta.5]"
+        "feat(ui): preview session workspace images (#95956)",
+        "feat(skills): review interrupted deep turns in experience review (#115887)",
+        "feat(gateway): expose MCP tool identity in effective tools (#115870)",
+        "feat(ui): add docs links to settings pages (#115874)",
+        "feat(gateway): manage audio and video attachments end to end (#115842)",
+        "feat(ui): add composer capability menu (#115800)",
+        "feat(gateway): push session PR indicators to subscribed clients (#115643)",
+        "feat(ui): first-class chat audio/video player cards (#115764)"
       ],
       "fixItems": [
-        "**Security and authorization:** prevent channel allowlists from granting owner access, keep session exports inside the workspace, close a forged-marker/web-search boundary bypass, prevent non-owner ACP session exposure, reject unsafe explicit approval IDs, harden secret redaction and exec/OAuth approvals, validate downloaded install scripts, and prevent insecure secrets-plan writes. (#107403; related #104984; #104708; related #102391; #110417, #110745; related #103055; #111055, #112947, #112952, #112953, #112956, #112946, #112957, #113307; related #90013; #113707) Thanks @obviyus, @yetval, @VACInc, @pgondhi987, and @SebTardif. [v2026.7.2-beta.5]",
-        "fix(ui): stop Workboard draft fields reverting during edits (#115141)",
-        "fix(cli): resolve plugin-catalog metadata for configured models list rows (#115190)",
-        "fix(ui): stop route aliases from hijacking base-path inference on settings deep links (#115186)",
-        "fix(doctor): eagerly canonicalize memory_index_chunks recall columns (#115154)",
-        "fix(ui): harden browser, session, permissions, and media lifecycles (#115110)",
-        "fix(msteams): release failed Graph collection bodies (#109970)",
-        "fix: make gateway nodes and local inference reliable under stress (#115185)"
+        "fix(markdown): keep IR text slicing UTF-16 safe (#110643)",
+        "fix(codex): keep stressed inference turns isolated and observable (#115893)",
+        "fix: reject malformed UTF-8 in proxy gateway error response bodies (#111852)",
+        "fix(browser): stabilize atomic download staging (#115892)",
+        "fix(google): cancel unread response body on video download error (#110045)",
+        "fix(test): stop asserting exact video deadline budgets (#115883)",
+        "fix(skills): verify workshop migration without recovery",
+        "fix: reject malformed UTF-8 in hosted official plugin catalog feed responses (#111768)"
       ],
-      "releases": [
-        {
-          "tag_name": "v2026.7.2-beta.5",
-          "published_at": "2026-07-28T03:23:12Z",
-          "name": "openclaw 2026.7.2-beta.5",
-          "prerelease": true,
-          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.5"
-        }
-      ],
+      "releases": [],
       "topScopes": [
         {
           "scope": "ui",
-          "count": 47
-        },
-        {
-          "scope": "fix",
-          "count": 45
+          "count": 65
         },
         {
           "scope": "agents",
-          "count": 23
+          "count": 42
         },
         {
           "scope": "gateway",
-          "count": 19
+          "count": 38
         },
         {
-          "scope": "plugins",
-          "count": 13
+          "scope": "skills",
+          "count": 31
         },
         {
-          "scope": "cli",
-          "count": 12
+          "scope": "fix",
+          "count": 31
         },
         {
-          "scope": "cron",
-          "count": 9
+          "scope": "refactor",
+          "count": 18
         },
         {
-          "scope": "tui",
-          "count": 8
+          "scope": "codex",
+          "count": 17
+        },
+        {
+          "scope": "memory",
+          "count": 17
         }
       ],
       "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"

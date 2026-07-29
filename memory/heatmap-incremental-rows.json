@@ -1935,5 +1935,19 @@
     },
     "source": "daily-incremental",
     "generatedAt": "2026-07-28T21:24:07.290432+08:00"
+  },
+  {
+    "date": "2026-07-29",
+    "stage": "openclaw",
+    "summary": "移动端入口、渠道互动、gateway / 会话控制面、Docker / 运维继续增强，最近一天的增量也并入主矩阵。",
+    "axisEntries": {
+      "channels": "WebChat 可切换隐藏 tool calls / thinking blocks。",
+      "tools": "Browser existing-session / MCP attach 模式继续简化并加固。",
+      "devices": "macOS canvas actions 被进一步限制到 trusted surfaces。",
+      "control": "Gateway health monitor、pairing 与 watch 链路继续打磨。 Session / plugin 路由与配置基线继续收敛。",
+      "ops": "Docker 补上 OPENCLAW_TZ、apt-get upgrade 与 runtime lsof 等运维细节。"
+    },
+    "source": "daily-incremental",
+    "generatedAt": "2026-07-29T21:30:25.407112+08:00"
   }
 ]
