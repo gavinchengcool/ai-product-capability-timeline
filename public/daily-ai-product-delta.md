@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-07-29T21:30:46+08:00
-- Requested window: 2026-07-28 to 2026-07-29
+- Generated at: 2026-07-30T21:20:30+08:00
+- Requested window: 2026-07-29 to 2026-07-30
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-07-28 to 2026-07-29
-- Generated at: 2026-07-29T21:30:25.407112+08:00
-- 窗口: 2026-07-28 至 2026-07-29
-- GitHub 增量: 609 commits / 0 releases
-- 最近 push: 2026-07-29
+- Window: 2026-07-29 to 2026-07-30
+- Generated at: 2026-07-30T21:20:12.825753+08:00
+- 窗口: 2026-07-29 至 2026-07-30
+- GitHub 增量: 366 commits / 0 releases
+- 最近 push: 2026-07-30
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(ui): preview session workspace images (#95956)
-  - feat(skills): review interrupted deep turns in experience review (#115887)
-  - feat(gateway): expose MCP tool identity in effective tools (#115870)
-  - feat(ui): add docs links to settings pages (#115874)
-  - feat(gateway): manage audio and video attachments end to end (#115842)
-  - feat(ui): add composer capability menu (#115800)
-  - feat(gateway): push session PR indicators to subscribed clients (#115643)
-  - feat(ui): first-class chat audio/video player cards (#115764)
+  - feat(agents): report CLI command outcomes in channel progress
+  - feat(ui): add composable skill references (#116330)
+  - feat(reply): annotate recent history images (#100866)
+  - feat(cron): include run time in failure alerts (#80246)
+  - feat: add Buzz typing indicators
+  - feat(ui): transcode renditions and waveform audio cards (#116115)
+  - feat: accept Buzz rich and diff messages
+  - feat: preserve Markdown in Buzz messages
 - Fixes and constraints:
-  - fix(markdown): keep IR text slicing UTF-16 safe (#110643)
-  - fix(codex): keep stressed inference turns isolated and observable (#115893)
-  - fix: reject malformed UTF-8 in proxy gateway error response bodies (#111852)
-  - fix(browser): stabilize atomic download staging (#115892)
-  - fix(google): cancel unread response body on video download error (#110045)
-  - fix(test): stop asserting exact video deadline budgets (#115883)
-  - fix(skills): verify workshop migration without recovery
-  - fix: reject malformed UTF-8 in hosted official plugin catalog feed responses (#111768)
+  - fix(cli): preserve explicit option intent (#116389)
+  - fix(release): trust update restart harness (#116301)
+  - fix(heartbeat): serialize wake lifecycle state (#116351)
+  - fix(test): bound Testbox agentic and extension suites (#115696)
+  - fix(ui): show the correct Threads page size (#116349)
+  - fix(qa): prevent Slack cleanup from stalling profile runs (#116361)
+  - fix(ci): validate frozen release candidates faithfully (#116357)
+  - fix(agents): compare shell tool names case-insensitively and stop re-parsing tool labels
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

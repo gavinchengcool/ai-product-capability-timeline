@@ -1,91 +1,91 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-07-29T21:30:25.407112+08:00",
+  "generatedAt": "2026-07-30T21:20:12.825753+08:00",
   "window": {
-    "start_local": "2026-07-28T21:30:25.407112+08:00",
-    "end_local": "2026-07-29T21:30:25.407112+08:00",
-    "start_utc": "2026-07-28T13:30:25Z",
-    "end_utc": "2026-07-29T13:30:25Z"
+    "start_local": "2026-07-29T21:20:12.825753+08:00",
+    "end_local": "2026-07-30T21:20:12.825753+08:00",
+    "start_utc": "2026-07-29T13:20:12Z",
+    "end_utc": "2026-07-30T13:20:12Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 384434,
-    "forks": 80791,
-    "open_issues": 5914,
-    "pushed_at": "2026-07-29T13:28:14Z"
+    "stars": 384569,
+    "forks": 80815,
+    "open_issues": 5792,
+    "pushed_at": "2026-07-30T13:11:34Z"
   },
   "summary": {
-    "commitCount": 609,
+    "commitCount": 366,
     "releaseCount": 0,
     "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 384434,
-    "forks": 80791,
-    "openIssues": 5914
+    "stars": 384569,
+    "forks": 80815,
+    "openIssues": 5792
   },
   "releases": [],
   "featureItems": [
-    "feat(ui): preview session workspace images (#95956)",
-    "feat(skills): review interrupted deep turns in experience review (#115887)",
-    "feat(gateway): expose MCP tool identity in effective tools (#115870)",
-    "feat(ui): add docs links to settings pages (#115874)",
-    "feat(gateway): manage audio and video attachments end to end (#115842)",
-    "feat(ui): add composer capability menu (#115800)",
-    "feat(gateway): push session PR indicators to subscribed clients (#115643)",
-    "feat(ui): first-class chat audio/video player cards (#115764)"
+    "feat(agents): report CLI command outcomes in channel progress",
+    "feat(ui): add composable skill references (#116330)",
+    "feat(reply): annotate recent history images (#100866)",
+    "feat(cron): include run time in failure alerts (#80246)",
+    "feat: add Buzz typing indicators",
+    "feat(ui): transcode renditions and waveform audio cards (#116115)",
+    "feat: accept Buzz rich and diff messages",
+    "feat: preserve Markdown in Buzz messages"
   ],
   "fixItems": [
-    "fix(markdown): keep IR text slicing UTF-16 safe (#110643)",
-    "fix(codex): keep stressed inference turns isolated and observable (#115893)",
-    "fix: reject malformed UTF-8 in proxy gateway error response bodies (#111852)",
-    "fix(browser): stabilize atomic download staging (#115892)",
-    "fix(google): cancel unread response body on video download error (#110045)",
-    "fix(test): stop asserting exact video deadline budgets (#115883)",
-    "fix(skills): verify workshop migration without recovery",
-    "fix: reject malformed UTF-8 in hosted official plugin catalog feed responses (#111768)"
+    "fix(cli): preserve explicit option intent (#116389)",
+    "fix(release): trust update restart harness (#116301)",
+    "fix(heartbeat): serialize wake lifecycle state (#116351)",
+    "fix(test): bound Testbox agentic and extension suites (#115696)",
+    "fix(ui): show the correct Threads page size (#116349)",
+    "fix(qa): prevent Slack cleanup from stalling profile runs (#116361)",
+    "fix(ci): validate frozen release candidates faithfully (#116357)",
+    "fix(agents): compare shell tool names case-insensitively and stop re-parsing tool labels"
   ],
   "topScopes": [
     {
       "scope": "ui",
-      "count": 65
+      "count": 35
     },
     {
       "scope": "agents",
-      "count": 42
+      "count": 21
     },
     {
-      "scope": "gateway",
-      "count": 38
+      "scope": "test",
+      "count": 20
     },
     {
-      "scope": "skills",
-      "count": 31
+      "scope": "macos",
+      "count": 19
     },
     {
       "scope": "fix",
-      "count": 31
-    },
-    {
-      "scope": "refactor",
       "count": 18
     },
     {
-      "scope": "codex",
-      "count": 17
+      "scope": "gateway",
+      "count": 14
     },
     {
-      "scope": "memory",
-      "count": 17
+      "scope": "openai",
+      "count": 14
+    },
+    {
+      "scope": "plugins",
+      "count": 13
     }
   ],
   "headlineCommits": [
-    "fix(markdown): keep IR text slicing UTF-16 safe (#110643)",
-    "feat(ui): preview session workspace images (#95956)",
-    "test(qa): align bootstrap profile catalog (#115898)",
-    "fix(codex): keep stressed inference turns isolated and observable (#115893)",
-    "feat(skills): review interrupted deep turns in experience review (#115887)",
-    "fix: reject malformed UTF-8 in proxy gateway error response bodies (#111852)",
-    "fix(browser): stabilize atomic download staging (#115892)",
-    "merge: own Workshop apply transitions"
+    "feat(agents): report CLI command outcomes in channel progress",
+    "fix(cli): preserve explicit option intent (#116389)",
+    "fix(release): trust update restart harness (#116301)",
+    "test(reef): remove false-green live guard smoke (#116393)",
+    "test(comfy): evaluate live guards after setup (#116388)",
+    "fix(heartbeat): serialize wake lifecycle state (#116351)",
+    "test: remove redundant extension boundary wrapper (#116385)",
+    "fix(test): bound Testbox agentic and extension suites (#115696)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
