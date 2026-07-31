@@ -1,91 +1,91 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-07-30T21:20:12.825753+08:00",
+  "generatedAt": "2026-07-31T21:24:00.958466+08:00",
   "window": {
-    "start_local": "2026-07-29T21:20:12.825753+08:00",
-    "end_local": "2026-07-30T21:20:12.825753+08:00",
-    "start_utc": "2026-07-29T13:20:12Z",
-    "end_utc": "2026-07-30T13:20:12Z"
+    "start_local": "2026-07-30T21:24:00.958466+08:00",
+    "end_local": "2026-07-31T21:24:00.958466+08:00",
+    "start_utc": "2026-07-30T13:24:00Z",
+    "end_utc": "2026-07-31T13:24:00Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 384569,
-    "forks": 80815,
-    "open_issues": 5792,
-    "pushed_at": "2026-07-30T13:11:34Z"
+    "stars": 384680,
+    "forks": 80848,
+    "open_issues": 5774,
+    "pushed_at": "2026-07-31T13:20:50Z"
   },
   "summary": {
-    "commitCount": 366,
+    "commitCount": 441,
     "releaseCount": 0,
     "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 384569,
-    "forks": 80815,
-    "openIssues": 5792
+    "stars": 384680,
+    "forks": 80848,
+    "openIssues": 5774
   },
   "releases": [],
   "featureItems": [
-    "feat(agents): report CLI command outcomes in channel progress",
-    "feat(ui): add composable skill references (#116330)",
-    "feat(reply): annotate recent history images (#100866)",
-    "feat(cron): include run time in failure alerts (#80246)",
-    "feat: add Buzz typing indicators",
-    "feat(ui): transcode renditions and waveform audio cards (#116115)",
-    "feat: accept Buzz rich and diff messages",
-    "feat: preserve Markdown in Buzz messages"
+    "feat: label Buzz senders and rooms from relay profiles",
+    "feat: expose Buzz sender and room directory",
+    "feat: maintain Buzz directory state on the active bus",
+    "feat: add Buzz directory state model",
+    "feat(plugins): externalize Vydra provider (#116813)",
+    "feat(plugins): externalize Voyage embeddings (#116785)",
+    "feat(plugins): externalize DuckDuckGo search (#116740)",
+    "feat(models): expose tool support to clients"
   ],
   "fixItems": [
-    "fix(cli): preserve explicit option intent (#116389)",
-    "fix(release): trust update restart harness (#116301)",
-    "fix(heartbeat): serialize wake lifecycle state (#116351)",
-    "fix(test): bound Testbox agentic and extension suites (#115696)",
-    "fix(ui): show the correct Threads page size (#116349)",
-    "fix(qa): prevent Slack cleanup from stalling profile runs (#116361)",
-    "fix(ci): validate frozen release candidates faithfully (#116357)",
-    "fix(agents): compare shell tool names case-insensitively and stop re-parsing tool labels"
+    "fix(gateway): preserve Responses streaming terminal ownership (#116836)",
+    "fix: fence sharing mutations to their connection",
+    "fix(cron): align list ordering and visible-name search (#116834)",
+    "fix(ui): make plugin and session controls keyboard accessible (#116820)",
+    "fix(gateway): retain HTTP disconnect and stream error ownership (#116835)",
+    "fix(cli): preserve config dry-run error and batch contracts (#116833)",
+    "fix: reserve Buzz relay subscription capacity (#116799)",
+    "fix: retain Buzz metadata changes during startup"
   ],
   "topScopes": [
     {
-      "scope": "ui",
-      "count": 35
+      "scope": "fix",
+      "count": 50
     },
     {
-      "scope": "agents",
+      "scope": "voice-call",
+      "count": 32
+    },
+    {
+      "scope": "meeting-bot",
+      "count": 26
+    },
+    {
+      "scope": "merge",
+      "count": 23
+    },
+    {
+      "scope": "ui",
       "count": 21
     },
     {
-      "scope": "test",
-      "count": 20
-    },
-    {
-      "scope": "macos",
-      "count": 19
-    },
-    {
-      "scope": "fix",
+      "scope": "agents",
       "count": 18
     },
     {
-      "scope": "gateway",
-      "count": 14
-    },
-    {
       "scope": "openai",
-      "count": 14
+      "count": 18
     },
     {
-      "scope": "plugins",
-      "count": 13
+      "scope": "qa",
+      "count": 14
     }
   ],
   "headlineCommits": [
-    "feat(agents): report CLI command outcomes in channel progress",
-    "fix(cli): preserve explicit option intent (#116389)",
-    "fix(release): trust update restart harness (#116301)",
-    "test(reef): remove false-green live guard smoke (#116393)",
-    "test(comfy): evaluate live guards after setup (#116388)",
-    "fix(heartbeat): serialize wake lifecycle state (#116351)",
-    "test: remove redundant extension boundary wrapper (#116385)",
-    "fix(test): bound Testbox agentic and extension suites (#115696)"
+    "fix(gateway): preserve Responses streaming terminal ownership (#116836)",
+    "test: avoid allocation-heavy case setup (#116837)",
+    "test: cover every sharing mutation phase",
+    "chore: format sharing mutation tests",
+    "docs: note sharing connection isolation",
+    "test: cover stale sharing mutation completion",
+    "fix: fence sharing mutations to their connection",
+    "fix(cron): align list ordering and visible-name search (#116834)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

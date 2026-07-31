@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-07-30T21:20:30+08:00
-- Requested window: 2026-07-29 to 2026-07-30
+- Generated at: 2026-07-31T21:24:18+08:00
+- Requested window: 2026-07-30 to 2026-07-31
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-07-29 to 2026-07-30
-- Generated at: 2026-07-30T21:20:12.825753+08:00
-- 窗口: 2026-07-29 至 2026-07-30
-- GitHub 增量: 366 commits / 0 releases
-- 最近 push: 2026-07-30
+- Window: 2026-07-30 to 2026-07-31
+- Generated at: 2026-07-31T21:24:00.958466+08:00
+- 窗口: 2026-07-30 至 2026-07-31
+- GitHub 增量: 441 commits / 0 releases
+- 最近 push: 2026-07-31
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(agents): report CLI command outcomes in channel progress
-  - feat(ui): add composable skill references (#116330)
-  - feat(reply): annotate recent history images (#100866)
-  - feat(cron): include run time in failure alerts (#80246)
-  - feat: add Buzz typing indicators
-  - feat(ui): transcode renditions and waveform audio cards (#116115)
-  - feat: accept Buzz rich and diff messages
-  - feat: preserve Markdown in Buzz messages
+  - feat: label Buzz senders and rooms from relay profiles
+  - feat: expose Buzz sender and room directory
+  - feat: maintain Buzz directory state on the active bus
+  - feat: add Buzz directory state model
+  - feat(plugins): externalize Vydra provider (#116813)
+  - feat(plugins): externalize Voyage embeddings (#116785)
+  - feat(plugins): externalize DuckDuckGo search (#116740)
+  - feat(models): expose tool support to clients
 - Fixes and constraints:
-  - fix(cli): preserve explicit option intent (#116389)
-  - fix(release): trust update restart harness (#116301)
-  - fix(heartbeat): serialize wake lifecycle state (#116351)
-  - fix(test): bound Testbox agentic and extension suites (#115696)
-  - fix(ui): show the correct Threads page size (#116349)
-  - fix(qa): prevent Slack cleanup from stalling profile runs (#116361)
-  - fix(ci): validate frozen release candidates faithfully (#116357)
-  - fix(agents): compare shell tool names case-insensitively and stop re-parsing tool labels
+  - fix(gateway): preserve Responses streaming terminal ownership (#116836)
+  - fix: fence sharing mutations to their connection
+  - fix(cron): align list ordering and visible-name search (#116834)
+  - fix(ui): make plugin and session controls keyboard accessible (#116820)
+  - fix(gateway): retain HTTP disconnect and stream error ownership (#116835)
+  - fix(cli): preserve config dry-run error and batch contracts (#116833)
+  - fix: reserve Buzz relay subscription capacity (#116799)
+  - fix: retain Buzz metadata changes during startup
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
