@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-08-03T22:09:02+08:00
-- Requested window: 2026-08-02 to 2026-08-03
+- Generated at: 2026-08-04T21:30:43+08:00
+- Requested window: 2026-08-03 to 2026-08-04
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,26 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-08-02 to 2026-08-03
-- Generated at: 2026-08-03T22:08:40.830255+08:00
-- 窗口: 2026-08-02 至 2026-08-03
-- GitHub 增量: 596 commits / 0 releases
-- 最近 push: 2026-08-03
+- Window: 2026-08-03 to 2026-08-04
+- Generated at: 2026-08-04T21:30:26.500010+08:00
+- 窗口: 2026-08-03 至 2026-08-04
+- GitHub 增量: 319 commits / 2 releases
+- 最近 push: 2026-08-04
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat: enable rich setup controls in custodian chat (#114631)
-  - feat(ui): link the Chrome Web Store listing from the apps page (#118327)
-  - feat(channels): lifecycle wave 2 — fifteen more channels publish recorded lifecycle (#118298)
-  - feat(cron): add webhook SSRF policy (#118237) (#118286)
-  - feat(gateway): track event-loop degradation persistence and add concurrency benchmark (#118193)
-  - feat(channels): publish recorded lifecycle from bundled channel transitions (#118110)
-  - feat(cron): auto-disable repeatedly failing recurring jobs (#118113)
-  - feat(browser): redesign extension popup with settings panel (#118095)
+  - feat(sms): track Twilio delivery status (#118665)
+  - feat(sms): add Twilio MMS support (#118664)
+  - feat(cli): add session archive and delete commands (#118791)
 - Fixes and constraints:
-  - fix(scripts): bound check-file-utils git lookup (#111582)
-  - fix(slack): scope interactive conversation bindings safely (#118662)
-  - fix(agents): avoid false compaction after mid-turn precheck (#117963)
-  - fix(ui): show original filename on chat history attachment cards instead of managed UUID suffix (#118628)
-  - fix(whatsapp): preserve terminal retry exhaustion lifecycle (#118659)
-  - fix(doctor): audit every agent workspace (#111840)
-  - fix(release): skip unavailable Buzz on frozen candidates (#118670)
-  - fix(ui): surface onboarding and pairing clipboard failures (#118651)
+  - fix(telegram): route reactions to their originating forum topics
+  - fix(cli): avoid repeated migration scans during local agent turns (#119051)
+  - fix(gateway): keep agents list on prepared model facts (#119208)
+  - fix(telegram): retry update offset persistence
+  - fix(ci): accept profiled partial Kova gates (#119121)
+  - fix(qqbot): keep channel API calls on the active account [AI] (#118575)
+  - fix(agents): recover from invalid compaction summaries (#119137)
+  - fix(gateway): expose OAuth-backed tools to CLI agents (#119166)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
