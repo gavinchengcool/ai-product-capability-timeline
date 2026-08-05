@@ -1,101 +1,85 @@
 {
-  "generatedAt": "2026-08-04T21:30:26.500010+08:00",
+  "generatedAt": "2026-08-05T21:28:41.594278+08:00",
   "window": {
-    "start_local": "2026-08-03T21:30:26.500010+08:00",
-    "end_local": "2026-08-04T21:30:26.500010+08:00",
-    "start_utc": "2026-08-03T13:30:26Z",
-    "end_utc": "2026-08-04T13:30:26Z"
+    "start_local": "2026-08-04T21:28:41.594278+08:00",
+    "end_local": "2026-08-05T21:28:41.594278+08:00",
+    "start_utc": "2026-08-04T13:28:41Z",
+    "end_utc": "2026-08-05T13:28:41Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 385109,
-    "forks": 80946,
-    "open_issues": 5487,
-    "pushed_at": "2026-08-04T13:27:43Z"
+    "stars": 385219,
+    "forks": 80975,
+    "open_issues": 5522,
+    "pushed_at": "2026-08-05T13:28:18Z"
   },
   "summary": {
-    "commitCount": 319,
-    "releaseCount": 2,
-    "stableReleaseCount": 2,
+    "commitCount": 183,
+    "releaseCount": 0,
+    "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 385109,
-    "forks": 80946,
-    "openIssues": 5487
+    "stars": 385219,
+    "forks": 80975,
+    "openIssues": 5522
   },
-  "releases": [
-    {
-      "tag_name": "v2026.7.1-2",
-      "published_at": "2026-08-04T00:41:26Z",
-      "name": "openclaw 2026.7.1-2",
-      "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.1-2"
-    },
-    {
-      "tag_name": "v2026.7.1-1",
-      "published_at": "2026-08-04T00:41:25Z",
-      "name": "openclaw 2026.7.1-1",
-      "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.1-1"
-    }
-  ],
+  "releases": [],
   "featureItems": [
-    "feat(sms): track Twilio delivery status (#118665)",
-    "feat(sms): add Twilio MMS support (#118664)",
-    "feat(cli): add session archive and delete commands (#118791)"
+    "feat(tools): support batched tool search queries (#118623)",
+    "feat(audit): add execution identity inspection (#117034)"
   ],
   "fixItems": [
-    "fix(telegram): route reactions to their originating forum topics",
-    "fix(cli): avoid repeated migration scans during local agent turns (#119051)",
-    "fix(gateway): keep agents list on prepared model facts (#119208)",
-    "fix(telegram): retry update offset persistence",
-    "fix(ci): accept profiled partial Kova gates (#119121)",
-    "fix(qqbot): keep channel API calls on the active account [AI] (#118575)",
-    "fix(agents): recover from invalid compaction summaries (#119137)",
-    "fix(gateway): expose OAuth-backed tools to CLI agents (#119166)"
+    "fix(gateway): claim malformed plugin icon routes (#119559)",
+    "fix(telegram): preserve truthful empty-content delivery (#88810)",
+    "fix(tooling): balance local tsgo CPU cap (#119542)",
+    "fix(build): select the root-help bundle that exports outputRootHelp (#119590)",
+    "fix(gateway): keep context prewarm cooperative (#119607)",
+    "fix(channels): preserve concurrent draft updates when sendOrEditStreamMessage returns false (#112370)",
+    "fix(ci): preserve QA profile evidence on timeout (#119572)",
+    "fix(qa): select the scenario's required provider before its models (#119491)"
   ],
   "topScopes": [
     {
+      "scope": "fix",
+      "count": 26
+    },
+    {
       "scope": "qa",
-      "count": 66
+      "count": 23
     },
     {
       "scope": "gateway",
-      "count": 29
+      "count": 11
     },
     {
-      "scope": "merge",
-      "count": 17
+      "scope": "test",
+      "count": 11
     },
     {
-      "scope": "agents",
-      "count": 13
-    },
-    {
-      "scope": "ui",
-      "count": 9
+      "scope": "telegram",
+      "count": 8
     },
     {
       "scope": "ci",
       "count": 8
     },
     {
-      "scope": "plugins",
+      "scope": "discord",
       "count": 8
     },
     {
-      "scope": "cron",
-      "count": 7
+      "scope": "sessions",
+      "count": 6
     }
   ],
   "headlineCommits": [
-    "chore(tui): add Gateway boundary PTY coverage (#119191)",
-    "fix(telegram): route reactions to their originating forum topics",
-    "test(gateway): isolate scheduled service timers (#119218)",
-    "test(qa): cover Canvas agent and node controls (#119047)",
-    "fix(cli): avoid repeated migration scans during local agent turns (#119051)",
-    "fix(gateway): keep agents list on prepared model facts (#119208)",
-    "fix(telegram): retry update offset persistence",
-    "fix(ci): accept profiled partial Kova gates (#119121)"
+    "fix(gateway): claim malformed plugin icon routes (#119559)",
+    "fix(telegram): preserve truthful empty-content delivery (#88810)",
+    "fix(tooling): balance local tsgo CPU cap (#119542)",
+    "fix(build): select the root-help bundle that exports outputRootHelp (#119590)",
+    "fix(gateway): keep context prewarm cooperative (#119607)",
+    "fix(channels): preserve concurrent draft updates when sendOrEditStreamMessage returns false (#112370)",
+    "fix(ci): preserve QA profile evidence on timeout (#119572)",
+    "fix(qa): select the scenario's required provider before its models (#119491)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 }

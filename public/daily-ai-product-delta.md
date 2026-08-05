@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-08-04T21:30:43+08:00
-- Requested window: 2026-08-03 to 2026-08-04
+- Generated at: 2026-08-05T21:28:57+08:00
+- Requested window: 2026-08-04 to 2026-08-05
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,26 +10,25 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-08-03 to 2026-08-04
-- Generated at: 2026-08-04T21:30:26.500010+08:00
-- 窗口: 2026-08-03 至 2026-08-04
-- GitHub 增量: 319 commits / 2 releases
-- 最近 push: 2026-08-04
+- Window: 2026-08-04 to 2026-08-05
+- Generated at: 2026-08-05T21:28:41.594278+08:00
+- 窗口: 2026-08-04 至 2026-08-05
+- GitHub 增量: 183 commits / 0 releases
+- 最近 push: 2026-08-05
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(sms): track Twilio delivery status (#118665)
-  - feat(sms): add Twilio MMS support (#118664)
-  - feat(cli): add session archive and delete commands (#118791)
+  - feat(tools): support batched tool search queries (#118623)
+  - feat(audit): add execution identity inspection (#117034)
 - Fixes and constraints:
-  - fix(telegram): route reactions to their originating forum topics
-  - fix(cli): avoid repeated migration scans during local agent turns (#119051)
-  - fix(gateway): keep agents list on prepared model facts (#119208)
-  - fix(telegram): retry update offset persistence
-  - fix(ci): accept profiled partial Kova gates (#119121)
-  - fix(qqbot): keep channel API calls on the active account [AI] (#118575)
-  - fix(agents): recover from invalid compaction summaries (#119137)
-  - fix(gateway): expose OAuth-backed tools to CLI agents (#119166)
+  - fix(gateway): claim malformed plugin icon routes (#119559)
+  - fix(telegram): preserve truthful empty-content delivery (#88810)
+  - fix(tooling): balance local tsgo CPU cap (#119542)
+  - fix(build): select the root-help bundle that exports outputRootHelp (#119590)
+  - fix(gateway): keep context prewarm cooperative (#119607)
+  - fix(channels): preserve concurrent draft updates when sendOrEditStreamMessage returns false (#112370)
+  - fix(ci): preserve QA profile evidence on timeout (#119572)
+  - fix(qa): select the scenario's required provider before its models (#119491)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
