@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-05T21:28:57+08:00",
+  "generatedAt": "2026-08-06T21:27:37+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-08-04T21:28:57+08:00",
-    "end_local": "2026-08-05T21:28:57+08:00"
+    "start_local": "2026-08-05T21:27:37+08:00",
+    "end_local": "2026-08-06T21:27:37+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-08-05T21:28:41.594278+08:00",
+      "generatedAt": "2026-08-06T21:27:19.747687+08:00",
       "window": {
-        "start_local": "2026-08-04T21:28:41.594278+08:00",
-        "end_local": "2026-08-05T21:28:41.594278+08:00",
-        "start_utc": "2026-08-04T13:28:41Z",
-        "end_utc": "2026-08-05T13:28:41Z"
+        "start_local": "2026-08-05T21:27:19.747687+08:00",
+        "end_local": "2026-08-06T21:27:19.747687+08:00",
+        "start_utc": "2026-08-05T13:27:19Z",
+        "end_utc": "2026-08-06T13:27:19Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-08-04 至 2026-08-05"
+          "value": "2026-08-05 至 2026-08-06"
         },
         {
           "label": "GitHub 增量",
-          "value": "183 commits / 0 releases"
+          "value": "165 commits / 0 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-08-05"
+          "value": "2026-08-06"
         },
         {
           "label": "来源",
@@ -52,52 +52,51 @@
         }
       ],
       "featureItems": [
-        "feat(tools): support batched tool search queries (#118623)",
-        "feat(audit): add execution identity inspection (#117034)"
+        "feat(skills): reviewer patch contract, active learning bias, shallow-turn accumulation"
       ],
       "fixItems": [
-        "fix(gateway): claim malformed plugin icon routes (#119559)",
-        "fix(telegram): preserve truthful empty-content delivery (#88810)",
-        "fix(tooling): balance local tsgo CPU cap (#119542)",
-        "fix(build): select the root-help bundle that exports outputRootHelp (#119590)",
-        "fix(gateway): keep context prewarm cooperative (#119607)",
-        "fix(channels): preserve concurrent draft updates when sendOrEditStreamMessage returns false (#112370)",
-        "fix(ci): preserve QA profile evidence on timeout (#119572)",
-        "fix(qa): select the scenario's required provider before its models (#119491)"
+        "fix(channels): preserve bundled delivery contracts",
+        "fix(device-pair): keep notifier poll off Gateway startup (#119936)",
+        "fix(plugins): migrate Fish Audio plugin identity (#119900)",
+        "fix(diagnostics): report exporter health in doctor and status (#119816)",
+        "fix(telegram): preserve callback action ownership",
+        "fix(cron): reject unsupported generic timeout edits (#119899)",
+        "fix(release): report seeded changelog provenance truthfully (#119897)",
+        "fix(qa): include pinned gateway restart in core runtime proof (#118009)"
       ],
       "releases": [],
       "topScopes": [
         {
+          "scope": "agents",
+          "count": 16
+        },
+        {
           "scope": "fix",
-          "count": 26
+          "count": 14
         },
         {
           "scope": "qa",
-          "count": 23
+          "count": 11
+        },
+        {
+          "scope": "diagnostics",
+          "count": 7
         },
         {
           "scope": "gateway",
-          "count": 11
+          "count": 7
         },
         {
-          "scope": "test",
-          "count": 11
+          "scope": "skills",
+          "count": 6
+        },
+        {
+          "scope": "memory",
+          "count": 5
         },
         {
           "scope": "telegram",
-          "count": 8
-        },
-        {
-          "scope": "ci",
-          "count": 8
-        },
-        {
-          "scope": "discord",
-          "count": 8
-        },
-        {
-          "scope": "sessions",
-          "count": 6
+          "count": 4
         }
       ],
       "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"

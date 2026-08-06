@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-08-05T21:28:57+08:00
-- Requested window: 2026-08-04 to 2026-08-05
+- Generated at: 2026-08-06T21:27:37+08:00
+- Requested window: 2026-08-05 to 2026-08-06
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,25 +10,24 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-08-04 to 2026-08-05
-- Generated at: 2026-08-05T21:28:41.594278+08:00
-- 窗口: 2026-08-04 至 2026-08-05
-- GitHub 增量: 183 commits / 0 releases
-- 最近 push: 2026-08-05
+- Window: 2026-08-05 to 2026-08-06
+- Generated at: 2026-08-06T21:27:19.747687+08:00
+- 窗口: 2026-08-05 至 2026-08-06
+- GitHub 增量: 165 commits / 0 releases
+- 最近 push: 2026-08-06
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(tools): support batched tool search queries (#118623)
-  - feat(audit): add execution identity inspection (#117034)
+  - feat(skills): reviewer patch contract, active learning bias, shallow-turn accumulation
 - Fixes and constraints:
-  - fix(gateway): claim malformed plugin icon routes (#119559)
-  - fix(telegram): preserve truthful empty-content delivery (#88810)
-  - fix(tooling): balance local tsgo CPU cap (#119542)
-  - fix(build): select the root-help bundle that exports outputRootHelp (#119590)
-  - fix(gateway): keep context prewarm cooperative (#119607)
-  - fix(channels): preserve concurrent draft updates when sendOrEditStreamMessage returns false (#112370)
-  - fix(ci): preserve QA profile evidence on timeout (#119572)
-  - fix(qa): select the scenario's required provider before its models (#119491)
+  - fix(channels): preserve bundled delivery contracts
+  - fix(device-pair): keep notifier poll off Gateway startup (#119936)
+  - fix(plugins): migrate Fish Audio plugin identity (#119900)
+  - fix(diagnostics): report exporter health in doctor and status (#119816)
+  - fix(telegram): preserve callback action ownership
+  - fix(cron): reject unsupported generic timeout edits (#119899)
+  - fix(release): report seeded changelog provenance truthfully (#119897)
+  - fix(qa): include pinned gateway restart in core runtime proof (#118009)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
