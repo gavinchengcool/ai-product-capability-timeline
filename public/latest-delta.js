@@ -1,40 +1,44 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-08-06T21:27:19.747687+08:00",
+  "generatedAt": "2026-08-07T20:33:59.149291+08:00",
   "window": {
-    "start_local": "2026-08-05T21:27:19.747687+08:00",
-    "end_local": "2026-08-06T21:27:19.747687+08:00",
-    "start_utc": "2026-08-05T13:27:19Z",
-    "end_utc": "2026-08-06T13:27:19Z"
+    "start_local": "2026-08-06T20:33:59.149291+08:00",
+    "end_local": "2026-08-07T20:33:59.149291+08:00",
+    "start_utc": "2026-08-06T12:33:59Z",
+    "end_utc": "2026-08-07T12:33:59Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 385341,
-    "forks": 81009,
-    "open_issues": 5507,
-    "pushed_at": "2026-08-06T13:24:45Z"
+    "stars": 385450,
+    "forks": 81021,
+    "open_issues": 5546,
+    "pushed_at": "2026-08-07T12:29:41Z"
   },
   "summary": {
-    "commitCount": 165,
+    "commitCount": 143,
     "releaseCount": 0,
     "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 385341,
-    "forks": 81009,
-    "openIssues": 5507
+    "stars": 385450,
+    "forks": 81021,
+    "openIssues": 5546
   },
   "releases": [],
   "featureItems": [
-    "feat(skills): reviewer patch contract, active learning bias, shallow-turn accumulation"
+    "feat(claws): adopt portable profiles and native bootstrap (#115237)",
+    "feat(plugins): read the ai.openclaw Agent Plugins extension namespace (#120214)",
+    "feat(plugins): support the Agent Plugins bundle format (#120115)",
+    "feat(audit): preserve exact agent execution provenance",
+    "feat: expose session classification facts (#106832)"
   ],
   "fixItems": [
-    "fix(channels): preserve bundled delivery contracts",
-    "fix(device-pair): keep notifier poll off Gateway startup (#119936)",
-    "fix(plugins): migrate Fish Audio plugin identity (#119900)",
-    "fix(diagnostics): report exporter health in doctor and status (#119816)",
-    "fix(telegram): preserve callback action ownership",
-    "fix(cron): reject unsupported generic timeout edits (#119899)",
-    "fix(release): report seeded changelog provenance truthfully (#119897)",
-    "fix(qa): include pinned gateway restart in core runtime proof (#118009)"
+    "fix(agents): subagent hard-deny list cannot be overridden by allow config (#120025)",
+    "fix(gateway): redact credentials from gateway URLs in status and logs diagnostics (#120024)",
+    "fix(cron): on-exit watcher retries transient failures instead of silently dropping the watch (#120023)",
+    "fix(slack): workspace-scoped thread cache and durable channel-id migration (#120022)",
+    "fix(gateway): refresh session lists after external identity writes (#120203)",
+    "fix(gateway): prevent approval E2E startup timeout (#120195)",
+    "fix(diagnostics): honor OTEL_SDK_DISABLED (#119961)",
+    "fix(ai): truncated Anthropic streams error; proxies exempt from message_stop contract (#120030)"
   ],
   "topScopes": [
     {
@@ -42,43 +46,43 @@ window.OPENCLAW_LATEST_DELTA = {
       "count": 16
     },
     {
-      "scope": "fix",
+      "scope": "test",
       "count": 14
     },
     {
-      "scope": "qa",
+      "scope": "gateway",
+      "count": 12
+    },
+    {
+      "scope": "plugins",
+      "count": 12
+    },
+    {
+      "scope": "fix",
       "count": 11
     },
     {
-      "scope": "diagnostics",
+      "scope": "ui",
       "count": 7
     },
     {
-      "scope": "gateway",
-      "count": 7
-    },
-    {
-      "scope": "skills",
+      "scope": "acp",
       "count": 6
     },
     {
-      "scope": "memory",
-      "count": 5
-    },
-    {
-      "scope": "telegram",
-      "count": 4
+      "scope": "qa",
+      "count": 6
     }
   ],
   "headlineCommits": [
-    "fix(channels): preserve bundled delivery contracts",
-    "docs: openclaw-refactor-docs points at a skill renamed in 0dabb70 (#119394)",
-    "fix(device-pair): keep notifier poll off Gateway startup (#119936)",
-    "fix(plugins): migrate Fish Audio plugin identity (#119900)",
-    "fix(diagnostics): report exporter health in doctor and status (#119816)",
-    "test(agents): isolate lifecycle registry persistence (#119931)",
-    "feat(skills): reviewer patch contract, active learning bias, shallow-turn accumulation",
-    "chore(i18n): refresh native locales (#119669)"
+    "test(tui): gate built CLI PTY cases (#120221)",
+    "feat(claws): adopt portable profiles and native bootstrap (#115237)",
+    "fix(agents): subagent hard-deny list cannot be overridden by allow config (#120025)",
+    "fix(gateway): redact credentials from gateway URLs in status and logs diagnostics (#120024)",
+    "fix(cron): on-exit watcher retries transient failures instead of silently dropping the watch (#120023)",
+    "fix(slack): workspace-scoped thread cache and durable channel-id migration (#120022)",
+    "feat(plugins): read the ai.openclaw Agent Plugins extension namespace (#120214)",
+    "feat(plugins): support the Agent Plugins bundle format (#120115)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

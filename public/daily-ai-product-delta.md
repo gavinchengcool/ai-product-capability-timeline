@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-08-06T21:27:37+08:00
-- Requested window: 2026-08-05 to 2026-08-06
+- Generated at: 2026-08-07T20:34:16+08:00
+- Requested window: 2026-08-06 to 2026-08-07
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,24 +10,28 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-08-05 to 2026-08-06
-- Generated at: 2026-08-06T21:27:19.747687+08:00
-- 窗口: 2026-08-05 至 2026-08-06
-- GitHub 增量: 165 commits / 0 releases
-- 最近 push: 2026-08-06
+- Window: 2026-08-06 to 2026-08-07
+- Generated at: 2026-08-07T20:33:59.149291+08:00
+- 窗口: 2026-08-06 至 2026-08-07
+- GitHub 增量: 143 commits / 0 releases
+- 最近 push: 2026-08-07
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(skills): reviewer patch contract, active learning bias, shallow-turn accumulation
+  - feat(claws): adopt portable profiles and native bootstrap (#115237)
+  - feat(plugins): read the ai.openclaw Agent Plugins extension namespace (#120214)
+  - feat(plugins): support the Agent Plugins bundle format (#120115)
+  - feat(audit): preserve exact agent execution provenance
+  - feat: expose session classification facts (#106832)
 - Fixes and constraints:
-  - fix(channels): preserve bundled delivery contracts
-  - fix(device-pair): keep notifier poll off Gateway startup (#119936)
-  - fix(plugins): migrate Fish Audio plugin identity (#119900)
-  - fix(diagnostics): report exporter health in doctor and status (#119816)
-  - fix(telegram): preserve callback action ownership
-  - fix(cron): reject unsupported generic timeout edits (#119899)
-  - fix(release): report seeded changelog provenance truthfully (#119897)
-  - fix(qa): include pinned gateway restart in core runtime proof (#118009)
+  - fix(agents): subagent hard-deny list cannot be overridden by allow config (#120025)
+  - fix(gateway): redact credentials from gateway URLs in status and logs diagnostics (#120024)
+  - fix(cron): on-exit watcher retries transient failures instead of silently dropping the watch (#120023)
+  - fix(slack): workspace-scoped thread cache and durable channel-id migration (#120022)
+  - fix(gateway): refresh session lists after external identity writes (#120203)
+  - fix(gateway): prevent approval E2E startup timeout (#120195)
+  - fix(diagnostics): honor OTEL_SDK_DISABLED (#119961)
+  - fix(ai): truncated Anthropic streams error; proxies exempt from message_stop contract (#120030)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
