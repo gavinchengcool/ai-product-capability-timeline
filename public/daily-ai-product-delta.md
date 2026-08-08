@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-08-07T20:34:16+08:00
-- Requested window: 2026-08-06 to 2026-08-07
+- Generated at: 2026-08-08T20:19:52+08:00
+- Requested window: 2026-08-07 to 2026-08-08
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,28 +10,28 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-08-06 to 2026-08-07
-- Generated at: 2026-08-07T20:33:59.149291+08:00
-- 窗口: 2026-08-06 至 2026-08-07
-- GitHub 增量: 143 commits / 0 releases
-- 最近 push: 2026-08-07
+- Window: 2026-08-07 to 2026-08-08
+- Generated at: 2026-08-08T20:19:36.234076+08:00
+- 窗口: 2026-08-07 至 2026-08-08
+- GitHub 增量: 154 commits / 2 releases
+- 最近 push: 2026-08-08
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(claws): adopt portable profiles and native bootstrap (#115237)
-  - feat(plugins): read the ai.openclaw Agent Plugins extension namespace (#120214)
-  - feat(plugins): support the Agent Plugins bundle format (#120115)
-  - feat(audit): preserve exact agent execution provenance
-  - feat: expose session classification facts (#106832)
+  - **Extended-stable hardening:** this maintenance release carries targeted security and reliability repairs without adding new release-line features. [v2026.6.34]
+  - feat(ui): split model picker into searchable model + effort popovers (#120495)
+  - feat(ui): show custom commit age in sidebar footer (#120388)
+  - feat(claws): apply schema-v1 profile requirements (#115962)
+  - feat(status): render /status as a native rich card and declutter the plain body (#120167)
 - Fixes and constraints:
-  - fix(agents): subagent hard-deny list cannot be overridden by allow config (#120025)
-  - fix(gateway): redact credentials from gateway URLs in status and logs diagnostics (#120024)
-  - fix(cron): on-exit watcher retries transient failures instead of silently dropping the watch (#120023)
-  - fix(slack): workspace-scoped thread cache and durable channel-id migration (#120022)
-  - fix(gateway): refresh session lists after external identity writes (#120203)
-  - fix(gateway): prevent approval E2E startup timeout (#120195)
-  - fix(diagnostics): honor OTEL_SDK_DISABLED (#119961)
-  - fix(ai): truncated Anthropic streams error; proxies exempt from message_stop contract (#120030)
+  - **Extended-stable hardening:** this maintenance release carries targeted security and reliability repairs without adding new release-line features. [v2026.6.34]
+  - fix(gateway): retain work admission across hosted wizard steps (#120582)
+  - fix(ci): clear Mantis reactions with app identity (#120523)
+  - fix(exec): explain Linux OOM-score-adjusted SIGKILLs (#117911)
+  - fix(mcp): complete browser OAuth login callbacks (#120431)
+  - fix(maintainers): route PR reads through Octopool (#120525)
+  - fix(ci): restore deterministic main checks (#120501)
+  - fix(ui): restore terminal button in chat header (#120436)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-07T20:34:16+08:00",
+  "generatedAt": "2026-08-08T20:19:52+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-08-06T20:34:16+08:00",
-    "end_local": "2026-08-07T20:34:16+08:00"
+    "start_local": "2026-08-07T20:19:52+08:00",
+    "end_local": "2026-08-08T20:19:52+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-08-07T20:33:59.149291+08:00",
+      "generatedAt": "2026-08-08T20:19:36.234076+08:00",
       "window": {
-        "start_local": "2026-08-06T20:33:59.149291+08:00",
-        "end_local": "2026-08-07T20:33:59.149291+08:00",
-        "start_utc": "2026-08-06T12:33:59Z",
-        "end_utc": "2026-08-07T12:33:59Z"
+        "start_local": "2026-08-07T20:19:36.234076+08:00",
+        "end_local": "2026-08-08T20:19:36.234076+08:00",
+        "start_utc": "2026-08-07T12:19:36Z",
+        "end_utc": "2026-08-08T12:19:36Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-08-06 至 2026-08-07"
+          "value": "2026-08-07 至 2026-08-08"
         },
         {
           "label": "GitHub 增量",
-          "value": "143 commits / 0 releases"
+          "value": "154 commits / 2 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-08-07"
+          "value": "2026-08-08"
         },
         {
           "label": "来源",
@@ -52,55 +52,70 @@
         }
       ],
       "featureItems": [
-        "feat(claws): adopt portable profiles and native bootstrap (#115237)",
-        "feat(plugins): read the ai.openclaw Agent Plugins extension namespace (#120214)",
-        "feat(plugins): support the Agent Plugins bundle format (#120115)",
-        "feat(audit): preserve exact agent execution provenance",
-        "feat: expose session classification facts (#106832)"
+        "**Extended-stable hardening:** this maintenance release carries targeted security and reliability repairs without adding new release-line features. [v2026.6.34]",
+        "feat(ui): split model picker into searchable model + effort popovers (#120495)",
+        "feat(ui): show custom commit age in sidebar footer (#120388)",
+        "feat(claws): apply schema-v1 profile requirements (#115962)",
+        "feat(status): render /status as a native rich card and declutter the plain body (#120167)"
       ],
       "fixItems": [
-        "fix(agents): subagent hard-deny list cannot be overridden by allow config (#120025)",
-        "fix(gateway): redact credentials from gateway URLs in status and logs diagnostics (#120024)",
-        "fix(cron): on-exit watcher retries transient failures instead of silently dropping the watch (#120023)",
-        "fix(slack): workspace-scoped thread cache and durable channel-id migration (#120022)",
-        "fix(gateway): refresh session lists after external identity writes (#120203)",
-        "fix(gateway): prevent approval E2E startup timeout (#120195)",
-        "fix(diagnostics): honor OTEL_SDK_DISABLED (#119961)",
-        "fix(ai): truncated Anthropic streams error; proxies exempt from message_stop contract (#120030)"
+        "**Extended-stable hardening:** this maintenance release carries targeted security and reliability repairs without adding new release-line features. [v2026.6.34]",
+        "fix(gateway): retain work admission across hosted wizard steps (#120582)",
+        "fix(ci): clear Mantis reactions with app identity (#120523)",
+        "fix(exec): explain Linux OOM-score-adjusted SIGKILLs (#117911)",
+        "fix(mcp): complete browser OAuth login callbacks (#120431)",
+        "fix(maintainers): route PR reads through Octopool (#120525)",
+        "fix(ci): restore deterministic main checks (#120501)",
+        "fix(ui): restore terminal button in chat header (#120436)"
       ],
-      "releases": [],
+      "releases": [
+        {
+          "tag_name": "v2026.6.34",
+          "published_at": "2026-08-08T07:22:14Z",
+          "name": "openclaw 2026.6.34",
+          "prerelease": false,
+          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.34"
+        },
+        {
+          "tag_name": "v2026.6.33",
+          "published_at": "2026-08-08T07:16:21Z",
+          "name": "openclaw 2026.6.33",
+          "prerelease": false,
+          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.33"
+        }
+      ],
       "topScopes": [
         {
-          "scope": "agents",
-          "count": 16
-        },
-        {
-          "scope": "test",
-          "count": 14
-        },
-        {
-          "scope": "gateway",
-          "count": 12
-        },
-        {
-          "scope": "plugins",
-          "count": 12
-        },
-        {
-          "scope": "fix",
-          "count": 11
-        },
-        {
           "scope": "ui",
+          "count": 20
+        },
+        {
+          "scope": "revert \"fix(agents)",
+          "count": 9
+        },
+        {
+          "scope": "ci",
+          "count": 8
+        },
+        {
+          "scope": "agents",
           "count": 7
         },
         {
-          "scope": "acp",
+          "scope": "qa",
+          "count": 7
+        },
+        {
+          "scope": "diagnostics",
           "count": 6
         },
         {
-          "scope": "qa",
-          "count": 6
+          "scope": "test",
+          "count": 5
+        },
+        {
+          "scope": "fix",
+          "count": 5
         }
       ],
       "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
