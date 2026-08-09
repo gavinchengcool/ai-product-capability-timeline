@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-08-08T20:19:52+08:00
-- Requested window: 2026-08-07 to 2026-08-08
+- Generated at: 2026-08-09T20:21:44+08:00
+- Requested window: 2026-08-08 to 2026-08-09
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,28 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-08-07 to 2026-08-08
-- Generated at: 2026-08-08T20:19:36.234076+08:00
-- 窗口: 2026-08-07 至 2026-08-08
-- GitHub 增量: 154 commits / 2 releases
-- 最近 push: 2026-08-08
+- Window: 2026-08-08 to 2026-08-09
+- Generated at: 2026-08-09T20:21:28.508716+08:00
+- 窗口: 2026-08-08 至 2026-08-09
+- GitHub 增量: 332 commits / 0 releases
+- 最近 push: 2026-08-09
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - **Extended-stable hardening:** this maintenance release carries targeted security and reliability repairs without adding new release-line features. [v2026.6.34]
-  - feat(ui): split model picker into searchable model + effort popovers (#120495)
-  - feat(ui): show custom commit age in sidebar footer (#120388)
-  - feat(claws): apply schema-v1 profile requirements (#115962)
-  - feat(status): render /status as a native rich card and declutter the plain body (#120167)
+  - feat(talk): broker realtime sideband control (#121054)
+  - feat(claws): add local project author lifecycle (#117037)
+  - feat(browser): add all-tabs extension access (#120995)
+  - feat(cli): openclaw resume attaches the TUI to a recent session (#120664)
+  - feat(meetings): enable Linux Chrome talk-back (#118451)
+  - feat(macos): open dashboard as soon as onboarding inference connects (#120950)
+  - feat(ui): labs-gated CLI agent targets in new-session model picker (#120949)
+  - feat(agents): record run-end worktree cleanup outcome; prove Workboard dirty retention (#120434)
 - Fixes and constraints:
-  - **Extended-stable hardening:** this maintenance release carries targeted security and reliability repairs without adding new release-line features. [v2026.6.34]
-  - fix(gateway): retain work admission across hosted wizard steps (#120582)
-  - fix(ci): clear Mantis reactions with app identity (#120523)
-  - fix(exec): explain Linux OOM-score-adjusted SIGKILLs (#117911)
-  - fix(mcp): complete browser OAuth login callbacks (#120431)
-  - fix(maintainers): route PR reads through Octopool (#120525)
-  - fix(ci): restore deterministic main checks (#120501)
-  - fix(ui): restore terminal button in chat header (#120436)
+  - fix(discord): clean voice temp files on send failures (#120904)
+  - fix(heartbeat): suppress reasoning-only acknowledgements (#114454)
+  - fix: preserve browser annotation metadata styling
+  - fix: preserve staged browser annotations across remounts
+  - fix: bound browser annotation composer lifecycle
+  - fix: restore annotation removal focus handling
+  - fix: couple browser annotations to composer attachments
+  - fix: keep cron trigger once when editing only the script body (#120226)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

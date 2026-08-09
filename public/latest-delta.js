@@ -1,103 +1,91 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-08-08T20:19:36.234076+08:00",
+  "generatedAt": "2026-08-09T20:21:28.508716+08:00",
   "window": {
-    "start_local": "2026-08-07T20:19:36.234076+08:00",
-    "end_local": "2026-08-08T20:19:36.234076+08:00",
-    "start_utc": "2026-08-07T12:19:36Z",
-    "end_utc": "2026-08-08T12:19:36Z"
+    "start_local": "2026-08-08T20:21:28.508716+08:00",
+    "end_local": "2026-08-09T20:21:28.508716+08:00",
+    "start_utc": "2026-08-08T12:21:28Z",
+    "end_utc": "2026-08-09T12:21:28Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 385533,
-    "forks": 81034,
-    "open_issues": 5650,
-    "pushed_at": "2026-08-08T12:09:49Z"
+    "stars": 385646,
+    "forks": 81060,
+    "open_issues": 5618,
+    "pushed_at": "2026-08-09T12:21:23Z"
   },
   "summary": {
-    "commitCount": 154,
-    "releaseCount": 2,
-    "stableReleaseCount": 2,
+    "commitCount": 332,
+    "releaseCount": 0,
+    "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 385533,
-    "forks": 81034,
-    "openIssues": 5650
+    "stars": 385646,
+    "forks": 81060,
+    "openIssues": 5618
   },
-  "releases": [
-    {
-      "tag_name": "v2026.6.34",
-      "published_at": "2026-08-08T07:22:14Z",
-      "name": "openclaw 2026.6.34",
-      "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.34"
-    },
-    {
-      "tag_name": "v2026.6.33",
-      "published_at": "2026-08-08T07:16:21Z",
-      "name": "openclaw 2026.6.33",
-      "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.33"
-    }
-  ],
+  "releases": [],
   "featureItems": [
-    "**Extended-stable hardening:** this maintenance release carries targeted security and reliability repairs without adding new release-line features. [v2026.6.34]",
-    "feat(ui): split model picker into searchable model + effort popovers (#120495)",
-    "feat(ui): show custom commit age in sidebar footer (#120388)",
-    "feat(claws): apply schema-v1 profile requirements (#115962)",
-    "feat(status): render /status as a native rich card and declutter the plain body (#120167)"
+    "feat(talk): broker realtime sideband control (#121054)",
+    "feat(claws): add local project author lifecycle (#117037)",
+    "feat(browser): add all-tabs extension access (#120995)",
+    "feat(cli): openclaw resume attaches the TUI to a recent session (#120664)",
+    "feat(meetings): enable Linux Chrome talk-back (#118451)",
+    "feat(macos): open dashboard as soon as onboarding inference connects (#120950)",
+    "feat(ui): labs-gated CLI agent targets in new-session model picker (#120949)",
+    "feat(agents): record run-end worktree cleanup outcome; prove Workboard dirty retention (#120434)"
   ],
   "fixItems": [
-    "**Extended-stable hardening:** this maintenance release carries targeted security and reliability repairs without adding new release-line features. [v2026.6.34]",
-    "fix(gateway): retain work admission across hosted wizard steps (#120582)",
-    "fix(ci): clear Mantis reactions with app identity (#120523)",
-    "fix(exec): explain Linux OOM-score-adjusted SIGKILLs (#117911)",
-    "fix(mcp): complete browser OAuth login callbacks (#120431)",
-    "fix(maintainers): route PR reads through Octopool (#120525)",
-    "fix(ci): restore deterministic main checks (#120501)",
-    "fix(ui): restore terminal button in chat header (#120436)"
+    "fix(discord): clean voice temp files on send failures (#120904)",
+    "fix(heartbeat): suppress reasoning-only acknowledgements (#114454)",
+    "fix: preserve browser annotation metadata styling",
+    "fix: preserve staged browser annotations across remounts",
+    "fix: bound browser annotation composer lifecycle",
+    "fix: restore annotation removal focus handling",
+    "fix: couple browser annotations to composer attachments",
+    "fix: keep cron trigger once when editing only the script body (#120226)"
   ],
   "topScopes": [
     {
       "scope": "ui",
-      "count": 20
+      "count": 29
     },
     {
-      "scope": "revert \"fix(agents)",
-      "count": 9
-    },
-    {
-      "scope": "ci",
-      "count": 8
-    },
-    {
-      "scope": "agents",
-      "count": 7
-    },
-    {
-      "scope": "qa",
-      "count": 7
-    },
-    {
-      "scope": "diagnostics",
-      "count": 6
-    },
-    {
-      "scope": "test",
-      "count": 5
+      "scope": "gateway",
+      "count": 23
     },
     {
       "scope": "fix",
-      "count": 5
+      "count": 23
+    },
+    {
+      "scope": "agents",
+      "count": 18
+    },
+    {
+      "scope": "release",
+      "count": 15
+    },
+    {
+      "scope": "telegram",
+      "count": 13
+    },
+    {
+      "scope": "ci",
+      "count": 10
+    },
+    {
+      "scope": "doctor",
+      "count": 10
     }
   ],
   "headlineCommits": [
-    "fix(gateway): retain work admission across hosted wizard steps (#120582)",
-    "fix(ci): clear Mantis reactions with app identity (#120523)",
-    "improve(ui): consolidate dashboard chat visibility into one Chat/Split/Dashboard toggle (#120487)",
-    "fix(exec): explain Linux OOM-score-adjusted SIGKILLs (#117911)",
-    "fix(mcp): complete browser OAuth login callbacks (#120431)",
-    "fix(maintainers): route PR reads through Octopool (#120525)",
-    "feat(ui): split model picker into searchable model + effort popovers (#120495)",
-    "refactor(ui): align sidebar session list on a single lead-slot rail (#120473)"
+    "fix(discord): clean voice temp files on send failures (#120904)",
+    "fix(heartbeat): suppress reasoning-only acknowledgements (#114454)",
+    "refactor(sessions): consolidate batch patch mutation ownership (#121017)",
+    "feat(talk): broker realtime sideband control (#121054)",
+    "refactor(cli): consolidate route argv fixtures (#114513)",
+    "test(gateway): isolate live-event sweep assertion (#106216)",
+    "test(updater): clean cloned Git fixtures (#113348)",
+    "test: satisfy browser annotation landing guards (#120848)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
