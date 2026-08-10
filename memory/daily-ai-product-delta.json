@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-09T20:21:44+08:00",
+  "generatedAt": "2026-08-10T20:38:00+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-08-08T20:21:44+08:00",
-    "end_local": "2026-08-09T20:21:44+08:00"
+    "start_local": "2026-08-09T20:38:00+08:00",
+    "end_local": "2026-08-10T20:38:00+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-08-09T20:21:28.508716+08:00",
+      "generatedAt": "2026-08-10T20:37:44.929586+08:00",
       "window": {
-        "start_local": "2026-08-08T20:21:28.508716+08:00",
-        "end_local": "2026-08-09T20:21:28.508716+08:00",
-        "start_utc": "2026-08-08T12:21:28Z",
-        "end_utc": "2026-08-09T12:21:28Z"
+        "start_local": "2026-08-09T20:37:44.929586+08:00",
+        "end_local": "2026-08-10T20:37:44.929586+08:00",
+        "start_utc": "2026-08-09T12:37:44Z",
+        "end_utc": "2026-08-10T12:37:44Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-08-08 至 2026-08-09"
+          "value": "2026-08-09 至 2026-08-10"
         },
         {
           "label": "GitHub 增量",
-          "value": "332 commits / 0 releases"
+          "value": "361 commits / 0 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-08-09"
+          "value": "2026-08-10"
         },
         {
           "label": "来源",
@@ -52,58 +52,58 @@
         }
       ],
       "featureItems": [
-        "feat(talk): broker realtime sideband control (#121054)",
-        "feat(claws): add local project author lifecycle (#117037)",
-        "feat(browser): add all-tabs extension access (#120995)",
-        "feat(cli): openclaw resume attaches the TUI to a recent session (#120664)",
-        "feat(meetings): enable Linux Chrome talk-back (#118451)",
-        "feat(macos): open dashboard as soon as onboarding inference connects (#120950)",
-        "feat(ui): labs-gated CLI agent targets in new-session model picker (#120949)",
-        "feat(agents): record run-end worktree cleanup outcome; prove Workboard dirty retention (#120434)"
+        "feat(ui): show unsent-draft pencil on sidebar session rows (#121476)",
+        "feat(gateway): grant scopes by verified identity (#121531)",
+        "Control UI: add direct Custodian wizard cancel",
+        "feat: stream live edit diff progress (#121528)",
+        "feat(skills): repair used skills in turn (#121522)",
+        "feat(skills): improve used skills autonomously",
+        "feat(control-ui): preview text attachments inline with a download action (#121400)",
+        "feat(ui): add people session sorting (#121470)"
       ],
       "fixItems": [
-        "fix(discord): clean voice temp files on send failures (#120904)",
-        "fix(heartbeat): suppress reasoning-only acknowledgements (#114454)",
-        "fix: preserve browser annotation metadata styling",
-        "fix: preserve staged browser annotations across remounts",
-        "fix: bound browser annotation composer lifecycle",
-        "fix: restore annotation removal focus handling",
-        "fix: couple browser annotations to composer attachments",
-        "fix: keep cron trigger once when editing only the script body (#120226)"
+        "fix(agent): allow progress before final message-tool replies",
+        "fix(codex): deliver task-suggestion tools to Codex-harness runs with calibrated guidance (#121568)",
+        "fix(auto-reply): handle uppercase file URLs when staging media (#121521)",
+        "fix(gateway): prevent restart replay after final delivery",
+        "fix(gateway): unify media privacy in chat history (#121490)",
+        "fix(agents): settle exec preparation failures (#121148)",
+        "fix(opencode): keep API-key onboarding routes usable (#121414)",
+        "fix(cron): prevent invalid timestamps from stranding jobs (#121394)"
       ],
       "releases": [],
       "topScopes": [
         {
           "scope": "ui",
-          "count": 29
+          "count": 51
         },
         {
           "scope": "gateway",
-          "count": 23
-        },
-        {
-          "scope": "fix",
-          "count": 23
+          "count": 32
         },
         {
           "scope": "agents",
-          "count": 18
+          "count": 21
         },
         {
-          "scope": "release",
-          "count": 15
+          "scope": "fix",
+          "count": 17
         },
         {
           "scope": "telegram",
-          "count": 13
+          "count": 15
         },
         {
-          "scope": "ci",
-          "count": 10
+          "scope": "sessions",
+          "count": 12
         },
         {
-          "scope": "doctor",
-          "count": 10
+          "scope": "qa",
+          "count": 11
+        },
+        {
+          "scope": "docs",
+          "count": 9
         }
       ],
       "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"

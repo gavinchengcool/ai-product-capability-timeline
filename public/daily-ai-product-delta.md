@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-08-09T20:21:44+08:00
-- Requested window: 2026-08-08 to 2026-08-09
+- Generated at: 2026-08-10T20:38:00+08:00
+- Requested window: 2026-08-09 to 2026-08-10
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-08-08 to 2026-08-09
-- Generated at: 2026-08-09T20:21:28.508716+08:00
-- 窗口: 2026-08-08 至 2026-08-09
-- GitHub 增量: 332 commits / 0 releases
-- 最近 push: 2026-08-09
+- Window: 2026-08-09 to 2026-08-10
+- Generated at: 2026-08-10T20:37:44.929586+08:00
+- 窗口: 2026-08-09 至 2026-08-10
+- GitHub 增量: 361 commits / 0 releases
+- 最近 push: 2026-08-10
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(talk): broker realtime sideband control (#121054)
-  - feat(claws): add local project author lifecycle (#117037)
-  - feat(browser): add all-tabs extension access (#120995)
-  - feat(cli): openclaw resume attaches the TUI to a recent session (#120664)
-  - feat(meetings): enable Linux Chrome talk-back (#118451)
-  - feat(macos): open dashboard as soon as onboarding inference connects (#120950)
-  - feat(ui): labs-gated CLI agent targets in new-session model picker (#120949)
-  - feat(agents): record run-end worktree cleanup outcome; prove Workboard dirty retention (#120434)
+  - feat(ui): show unsent-draft pencil on sidebar session rows (#121476)
+  - feat(gateway): grant scopes by verified identity (#121531)
+  - Control UI: add direct Custodian wizard cancel
+  - feat: stream live edit diff progress (#121528)
+  - feat(skills): repair used skills in turn (#121522)
+  - feat(skills): improve used skills autonomously
+  - feat(control-ui): preview text attachments inline with a download action (#121400)
+  - feat(ui): add people session sorting (#121470)
 - Fixes and constraints:
-  - fix(discord): clean voice temp files on send failures (#120904)
-  - fix(heartbeat): suppress reasoning-only acknowledgements (#114454)
-  - fix: preserve browser annotation metadata styling
-  - fix: preserve staged browser annotations across remounts
-  - fix: bound browser annotation composer lifecycle
-  - fix: restore annotation removal focus handling
-  - fix: couple browser annotations to composer attachments
-  - fix: keep cron trigger once when editing only the script body (#120226)
+  - fix(agent): allow progress before final message-tool replies
+  - fix(codex): deliver task-suggestion tools to Codex-harness runs with calibrated guidance (#121568)
+  - fix(auto-reply): handle uppercase file URLs when staging media (#121521)
+  - fix(gateway): prevent restart replay after final delivery
+  - fix(gateway): unify media privacy in chat history (#121490)
+  - fix(agents): settle exec preparation failures (#121148)
+  - fix(opencode): keep API-key onboarding routes usable (#121414)
+  - fix(cron): prevent invalid timestamps from stranding jobs (#121394)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
