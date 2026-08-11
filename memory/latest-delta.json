@@ -1,91 +1,91 @@
 {
-  "generatedAt": "2026-08-10T20:37:44.929586+08:00",
+  "generatedAt": "2026-08-11T20:34:30.844442+08:00",
   "window": {
-    "start_local": "2026-08-09T20:37:44.929586+08:00",
-    "end_local": "2026-08-10T20:37:44.929586+08:00",
-    "start_utc": "2026-08-09T12:37:44Z",
-    "end_utc": "2026-08-10T12:37:44Z"
+    "start_local": "2026-08-10T20:34:30.844442+08:00",
+    "end_local": "2026-08-11T20:34:30.844442+08:00",
+    "start_utc": "2026-08-10T12:34:30Z",
+    "end_utc": "2026-08-11T12:34:30Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 385757,
-    "forks": 81075,
-    "open_issues": 5662,
-    "pushed_at": "2026-08-10T12:36:07Z"
+    "stars": 385902,
+    "forks": 81097,
+    "open_issues": 5608,
+    "pushed_at": "2026-08-11T12:34:00Z"
   },
   "summary": {
-    "commitCount": 361,
+    "commitCount": 339,
     "releaseCount": 0,
     "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 385757,
-    "forks": 81075,
-    "openIssues": 5662
+    "stars": 385902,
+    "forks": 81097,
+    "openIssues": 5608
   },
   "releases": [],
   "featureItems": [
-    "feat(ui): show unsent-draft pencil on sidebar session rows (#121476)",
-    "feat(gateway): grant scopes by verified identity (#121531)",
-    "Control UI: add direct Custodian wizard cancel",
-    "feat: stream live edit diff progress (#121528)",
-    "feat(skills): repair used skills in turn (#121522)",
-    "feat(skills): improve used skills autonomously",
-    "feat(control-ui): preview text attachments inline with a download action (#121400)",
-    "feat(ui): add people session sorting (#121470)"
+    "feat(ui): lead the chat header with the project and its own icon (#121734)",
+    "feat(ai): add provider video input contract (#121887)",
+    "feat(cloud): let cloud sessions spawn and message cloud children (#121846)",
+    "feat(secrets): manage team secrets in Control UI (#121724)",
+    "feat(ui): edit a queued chat message in place (#121692)",
+    "feat(ui): hide system-created probe sessions from the sessions sidebar (#121855)",
+    "feat(apple): show live subagent activity in chat (#121815)",
+    "feat(ui): give pinned sessions their own sidebar group (#121712)"
   ],
   "fixItems": [
-    "fix(agent): allow progress before final message-tool replies",
-    "fix(codex): deliver task-suggestion tools to Codex-harness runs with calibrated guidance (#121568)",
-    "fix(auto-reply): handle uppercase file URLs when staging media (#121521)",
-    "fix(gateway): prevent restart replay after final delivery",
-    "fix(gateway): unify media privacy in chat history (#121490)",
-    "fix(agents): settle exec preparation failures (#121148)",
-    "fix(opencode): keep API-key onboarding routes usable (#121414)",
-    "fix(cron): prevent invalid timestamps from stranding jobs (#121394)"
+    "fix(memory): accept Windows extra-file Markdown casing (#121976)",
+    "fix: resume main sessions after gateway restarts (#121969)",
+    "fix(discord): keep durable forum batches in one thread (#121165)",
+    "perf(cli): skip inactive provider cleanup imports (#121997)",
+    "fix(gateway): preserve attachment order in chat history (#121980)",
+    "fix(plugin-sdk): keep inbound reply shim through next SDK major (#121922)",
+    "fix(e2e): download non-root installer before execution",
+    "fix(e2e): preserve Unicode in Telegram proof tails (#109940)"
   ],
   "topScopes": [
     {
+      "scope": "agents",
+      "count": 43
+    },
+    {
       "scope": "ui",
-      "count": 51
+      "count": 38
     },
     {
       "scope": "gateway",
-      "count": 32
+      "count": 23
     },
     {
-      "scope": "agents",
-      "count": 21
-    },
-    {
-      "scope": "fix",
+      "scope": "auto-reply",
       "count": 17
     },
     {
-      "scope": "telegram",
-      "count": 15
+      "scope": "ci",
+      "count": 16
     },
     {
-      "scope": "sessions",
-      "count": 12
+      "scope": "fix",
+      "count": 14
     },
     {
-      "scope": "qa",
-      "count": 11
+      "scope": "refactor",
+      "count": 9
     },
     {
-      "scope": "docs",
+      "scope": "cron",
       "count": 9
     }
   ],
   "headlineCommits": [
-    "fix(agent): allow progress before final message-tool replies",
-    "docs(web): document the sidebar unsent-draft pencil indicator",
-    "feat(ui): show unsent-draft pencil on sidebar session rows (#121476)",
-    "refactor: replace exec approvals lease with journal CAS (#121273)",
-    "fix(codex): deliver task-suggestion tools to Codex-harness runs with calibrated guidance (#121568)",
-    "fix(auto-reply): handle uppercase file URLs when staging media (#121521)",
-    "test(gateway): verify identity scopes reach fs handlers (#121466)",
-    "fix(gateway): prevent restart replay after final delivery"
+    "feat(ui): lead the chat header with the project and its own icon (#121734)",
+    "test(sqlite): right-size reliability crash payloads (#122016)",
+    "test(telegram): align dispatch custody assertions with final-update options",
+    "test(outbound): use test-support suffix for shared fixtures (#122017)",
+    "refactor(agents): collapse prompt dispatch relay (#122018)",
+    "refactor: burn SDK export collision debt (#121888)",
+    "test(audit): remove private test bridges (#122012)",
+    "refactor(gateway): finalize kernel composition (#122014)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 }

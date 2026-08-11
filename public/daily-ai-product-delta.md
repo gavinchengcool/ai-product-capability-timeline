@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-08-10T20:38:00+08:00
-- Requested window: 2026-08-09 to 2026-08-10
+- Generated at: 2026-08-11T20:34:46+08:00
+- Requested window: 2026-08-10 to 2026-08-11
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-08-09 to 2026-08-10
-- Generated at: 2026-08-10T20:37:44.929586+08:00
-- 窗口: 2026-08-09 至 2026-08-10
-- GitHub 增量: 361 commits / 0 releases
-- 最近 push: 2026-08-10
+- Window: 2026-08-10 to 2026-08-11
+- Generated at: 2026-08-11T20:34:30.844442+08:00
+- 窗口: 2026-08-10 至 2026-08-11
+- GitHub 增量: 339 commits / 0 releases
+- 最近 push: 2026-08-11
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(ui): show unsent-draft pencil on sidebar session rows (#121476)
-  - feat(gateway): grant scopes by verified identity (#121531)
-  - Control UI: add direct Custodian wizard cancel
-  - feat: stream live edit diff progress (#121528)
-  - feat(skills): repair used skills in turn (#121522)
-  - feat(skills): improve used skills autonomously
-  - feat(control-ui): preview text attachments inline with a download action (#121400)
-  - feat(ui): add people session sorting (#121470)
+  - feat(ui): lead the chat header with the project and its own icon (#121734)
+  - feat(ai): add provider video input contract (#121887)
+  - feat(cloud): let cloud sessions spawn and message cloud children (#121846)
+  - feat(secrets): manage team secrets in Control UI (#121724)
+  - feat(ui): edit a queued chat message in place (#121692)
+  - feat(ui): hide system-created probe sessions from the sessions sidebar (#121855)
+  - feat(apple): show live subagent activity in chat (#121815)
+  - feat(ui): give pinned sessions their own sidebar group (#121712)
 - Fixes and constraints:
-  - fix(agent): allow progress before final message-tool replies
-  - fix(codex): deliver task-suggestion tools to Codex-harness runs with calibrated guidance (#121568)
-  - fix(auto-reply): handle uppercase file URLs when staging media (#121521)
-  - fix(gateway): prevent restart replay after final delivery
-  - fix(gateway): unify media privacy in chat history (#121490)
-  - fix(agents): settle exec preparation failures (#121148)
-  - fix(opencode): keep API-key onboarding routes usable (#121414)
-  - fix(cron): prevent invalid timestamps from stranding jobs (#121394)
+  - fix(memory): accept Windows extra-file Markdown casing (#121976)
+  - fix: resume main sessions after gateway restarts (#121969)
+  - fix(discord): keep durable forum batches in one thread (#121165)
+  - perf(cli): skip inactive provider cleanup imports (#121997)
+  - fix(gateway): preserve attachment order in chat history (#121980)
+  - fix(plugin-sdk): keep inbound reply shim through next SDK major (#121922)
+  - fix(e2e): download non-root installer before execution
+  - fix(e2e): preserve Unicode in Telegram proof tails (#109940)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
