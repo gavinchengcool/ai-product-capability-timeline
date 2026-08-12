@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-08-11T20:34:46+08:00
-- Requested window: 2026-08-10 to 2026-08-11
+- Generated at: 2026-08-12T20:37:44+08:00
+- Requested window: 2026-08-11 to 2026-08-12
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-08-10 to 2026-08-11
-- Generated at: 2026-08-11T20:34:30.844442+08:00
-- 窗口: 2026-08-10 至 2026-08-11
-- GitHub 增量: 339 commits / 0 releases
-- 最近 push: 2026-08-11
+- Window: 2026-08-11 to 2026-08-12
+- Generated at: 2026-08-12T20:37:28.559937+08:00
+- 窗口: 2026-08-11 至 2026-08-12
+- GitHub 增量: 376 commits / 0 releases
+- 最近 push: 2026-08-12
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(ui): lead the chat header with the project and its own icon (#121734)
-  - feat(ai): add provider video input contract (#121887)
-  - feat(cloud): let cloud sessions spawn and message cloud children (#121846)
-  - feat(secrets): manage team secrets in Control UI (#121724)
-  - feat(ui): edit a queued chat message in place (#121692)
-  - feat(ui): hide system-created probe sessions from the sessions sidebar (#121855)
-  - feat(apple): show live subagent activity in chat (#121815)
-  - feat(ui): give pinned sessions their own sidebar group (#121712)
+  - feat(ui): keep Where picker destinations live (#122531)
+  - feat(audit): explain denied operator approvals (#119815)
+  - feat(pairing): one-paste device pairing via oc-pair setup links (#120768)
+  - feat(ui): commit-scoped session diff viewer with file, sync, and view menus (#122470)
+  - feat(gateway,ui): quiet Where picker, placement chip, and projects read model (#120804)
+  - feat(webui): auto-request notification permission on first chat send (#122446)
+  - feat(gateway): add /startupz startup probe and fix deployment template admission (#122477)
+  - feat(media): let agents inspect unsupported local documents (#122408)
 - Fixes and constraints:
-  - fix(memory): accept Windows extra-file Markdown casing (#121976)
-  - fix: resume main sessions after gateway restarts (#121969)
-  - fix(discord): keep durable forum batches in one thread (#121165)
-  - perf(cli): skip inactive provider cleanup imports (#121997)
-  - fix(gateway): preserve attachment order in chat history (#121980)
-  - fix(plugin-sdk): keep inbound reply shim through next SDK major (#121922)
-  - fix(e2e): download non-root installer before execution
-  - fix(e2e): preserve Unicode in Telegram proof tails (#109940)
+  - fix(ci): repair Slack enterprise fixture routing (#122589)
+  - fix(sessions): reject missing explicit session targets (#122564)
+  - fix(outbound): report broadcast delivery truth (#122605)
+  - fix(skills): reconcile manually created proposal targets (#118676)
+  - fix(test): type CDP DNS lookup mocks (#122607)
+  - fix(state): avoid startup ownership snapshots (#122518)
+  - fix(test): wait for gateway hook model activity (#122584)
+  - fix(agents): heartbeats lose all conversation context on claude-cli chat↔heartbeat transitions (#121509)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
