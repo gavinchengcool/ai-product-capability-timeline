@@ -1,91 +1,91 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-08-12T20:37:28.559937+08:00",
+  "generatedAt": "2026-08-13T20:38:14.868508+08:00",
   "window": {
-    "start_local": "2026-08-11T20:37:28.559937+08:00",
-    "end_local": "2026-08-12T20:37:28.559937+08:00",
-    "start_utc": "2026-08-11T12:37:28Z",
-    "end_utc": "2026-08-12T12:37:28Z"
+    "start_local": "2026-08-12T20:38:14.868508+08:00",
+    "end_local": "2026-08-13T20:38:14.868508+08:00",
+    "start_utc": "2026-08-12T12:38:14Z",
+    "end_utc": "2026-08-13T12:38:14Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 386041,
-    "forks": 81132,
-    "open_issues": 5552,
-    "pushed_at": "2026-08-12T12:37:02Z"
+    "stars": 386160,
+    "forks": 81165,
+    "open_issues": 5517,
+    "pushed_at": "2026-08-13T12:37:27Z"
   },
   "summary": {
-    "commitCount": 376,
+    "commitCount": 369,
     "releaseCount": 0,
     "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 386041,
-    "forks": 81132,
-    "openIssues": 5552
+    "stars": 386160,
+    "forks": 81165,
+    "openIssues": 5517
   },
   "releases": [],
   "featureItems": [
-    "feat(ui): keep Where picker destinations live (#122531)",
-    "feat(audit): explain denied operator approvals (#119815)",
-    "feat(pairing): one-paste device pairing via oc-pair setup links (#120768)",
-    "feat(ui): commit-scoped session diff viewer with file, sync, and view menus (#122470)",
-    "feat(gateway,ui): quiet Where picker, placement chip, and projects read model (#120804)",
-    "feat(webui): auto-request notification permission on first chat send (#122446)",
-    "feat(gateway): add /startupz startup probe and fix deployment template admission (#122477)",
-    "feat(media): let agents inspect unsupported local documents (#122408)"
+    "feat(runners): publish atomic device runner inventory (#123094)",
+    "feat: view your machine's screen from the iOS and Android apps (#123097)",
+    "feat(ui): sync gateway browser viewport to the dock panel size (#123104)",
+    "feat(ui): click the desktop to take control (#123096)",
+    "feat(android): unify chat composer with iOS and web design (#123077)",
+    "feat(gateway): provision paired node session hosts (#122966)",
+    "feat: portals — expose agent-run dev servers to the operator (#122536)",
+    "feat(worker): add durable node launch adapter (#123033)"
   ],
   "fixItems": [
-    "fix(ci): repair Slack enterprise fixture routing (#122589)",
-    "fix(sessions): reject missing explicit session targets (#122564)",
-    "fix(outbound): report broadcast delivery truth (#122605)",
-    "fix(skills): reconcile manually created proposal targets (#118676)",
-    "fix(test): type CDP DNS lookup mocks (#122607)",
-    "fix(state): avoid startup ownership snapshots (#122518)",
-    "fix(test): wait for gateway hook model activity (#122584)",
-    "fix(agents): heartbeats lose all conversation context on claude-cli chat↔heartbeat transitions (#121509)"
+    "fix(ui): stop stamping a dead blur class on chat links containing 'tail' (#123154)",
+    "fix(doctor): stop after failed config migration write (#123045)",
+    "fix(ui): keep limited-access banner clear of shell controls (#123128)",
+    "fix(raft): report missing CLI in channel status (#123140)",
+    "fix(release): allow ANSI in reusable job logs (#123129)",
+    "fix(codex): resume parent after terminal subagent fan-out (#123124)",
+    "fix(agents): prepare selected harnesses for setup probes (#123141)",
+    "fix(ci): stop killing healthy discord Vitest runs and repair partial runtime-env mocks (#123131)"
   ],
   "topScopes": [
     {
       "scope": "ui",
-      "count": 58
+      "count": 39
     },
     {
-      "scope": "fix",
-      "count": 32
+      "scope": "ci",
+      "count": 25
     },
     {
       "scope": "agents",
-      "count": 25
+      "count": 24
+    },
+    {
+      "scope": "fix",
+      "count": 22
     },
     {
       "scope": "gateway",
       "count": 20
     },
     {
-      "scope": "ci",
-      "count": 14
+      "scope": "test",
+      "count": 17
     },
     {
-      "scope": "cli",
-      "count": 14
-    },
-    {
-      "scope": "refactor",
-      "count": 14
-    },
-    {
-      "scope": "plugins",
+      "scope": "slack",
       "count": 11
+    },
+    {
+      "scope": "feat",
+      "count": 8
     }
   ],
   "headlineCommits": [
-    "fix(ci): repair Slack enterprise fixture routing (#122589)",
-    "test(browser): model DNS lookup overloads (#122614)",
-    "feat(ui): keep Where picker destinations live (#122531)",
-    "fix(sessions): reject missing explicit session targets (#122564)",
-    "fix(outbound): report broadcast delivery truth (#122605)",
-    "test(gateway): keep session search tests focused (#122603)",
-    "fix(skills): reconcile manually created proposal targets (#118676)",
-    "fix(test): type CDP DNS lookup mocks (#122607)"
+    "refactor(ui): route stylesheet colors through the token layer and gate hex literals (#123156)",
+    "fix(ui): stop stamping a dead blur class on chat links containing 'tail' (#123154)",
+    "test: speed up model selection suite (#123155)",
+    "feat(runners): publish atomic device runner inventory (#123094)",
+    "fix(doctor): stop after failed config migration write (#123045)",
+    "test: remove residual duplicate assertions (#123134)",
+    "fix(ui): keep limited-access banner clear of shell controls (#123128)",
+    "fix(raft): report missing CLI in channel status (#123140)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

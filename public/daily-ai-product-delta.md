@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-08-12T20:37:44+08:00
-- Requested window: 2026-08-11 to 2026-08-12
+- Generated at: 2026-08-13T20:38:30+08:00
+- Requested window: 2026-08-12 to 2026-08-13
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-08-11 to 2026-08-12
-- Generated at: 2026-08-12T20:37:28.559937+08:00
-- 窗口: 2026-08-11 至 2026-08-12
-- GitHub 增量: 376 commits / 0 releases
-- 最近 push: 2026-08-12
+- Window: 2026-08-12 to 2026-08-13
+- Generated at: 2026-08-13T20:38:14.868508+08:00
+- 窗口: 2026-08-12 至 2026-08-13
+- GitHub 增量: 369 commits / 0 releases
+- 最近 push: 2026-08-13
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(ui): keep Where picker destinations live (#122531)
-  - feat(audit): explain denied operator approvals (#119815)
-  - feat(pairing): one-paste device pairing via oc-pair setup links (#120768)
-  - feat(ui): commit-scoped session diff viewer with file, sync, and view menus (#122470)
-  - feat(gateway,ui): quiet Where picker, placement chip, and projects read model (#120804)
-  - feat(webui): auto-request notification permission on first chat send (#122446)
-  - feat(gateway): add /startupz startup probe and fix deployment template admission (#122477)
-  - feat(media): let agents inspect unsupported local documents (#122408)
+  - feat(runners): publish atomic device runner inventory (#123094)
+  - feat: view your machine's screen from the iOS and Android apps (#123097)
+  - feat(ui): sync gateway browser viewport to the dock panel size (#123104)
+  - feat(ui): click the desktop to take control (#123096)
+  - feat(android): unify chat composer with iOS and web design (#123077)
+  - feat(gateway): provision paired node session hosts (#122966)
+  - feat: portals — expose agent-run dev servers to the operator (#122536)
+  - feat(worker): add durable node launch adapter (#123033)
 - Fixes and constraints:
-  - fix(ci): repair Slack enterprise fixture routing (#122589)
-  - fix(sessions): reject missing explicit session targets (#122564)
-  - fix(outbound): report broadcast delivery truth (#122605)
-  - fix(skills): reconcile manually created proposal targets (#118676)
-  - fix(test): type CDP DNS lookup mocks (#122607)
-  - fix(state): avoid startup ownership snapshots (#122518)
-  - fix(test): wait for gateway hook model activity (#122584)
-  - fix(agents): heartbeats lose all conversation context on claude-cli chat↔heartbeat transitions (#121509)
+  - fix(ui): stop stamping a dead blur class on chat links containing 'tail' (#123154)
+  - fix(doctor): stop after failed config migration write (#123045)
+  - fix(ui): keep limited-access banner clear of shell controls (#123128)
+  - fix(raft): report missing CLI in channel status (#123140)
+  - fix(release): allow ANSI in reusable job logs (#123129)
+  - fix(codex): resume parent after terminal subagent fan-out (#123124)
+  - fix(agents): prepare selected harnesses for setup probes (#123141)
+  - fix(ci): stop killing healthy discord Vitest runs and repair partial runtime-env mocks (#123131)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
