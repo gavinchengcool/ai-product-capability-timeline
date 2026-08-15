@@ -1,91 +1,99 @@
 {
-  "generatedAt": "2026-08-13T20:38:14.868508+08:00",
+  "generatedAt": "2026-08-15T20:11:58.302584+08:00",
   "window": {
-    "start_local": "2026-08-12T20:38:14.868508+08:00",
-    "end_local": "2026-08-13T20:38:14.868508+08:00",
-    "start_utc": "2026-08-12T12:38:14Z",
-    "end_utc": "2026-08-13T12:38:14Z"
+    "start_local": "2026-08-14T20:11:58.302584+08:00",
+    "end_local": "2026-08-15T20:11:58.302584+08:00",
+    "start_utc": "2026-08-14T12:11:58Z",
+    "end_utc": "2026-08-15T12:11:58Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 386160,
-    "forks": 81165,
-    "open_issues": 5517,
-    "pushed_at": "2026-08-13T12:37:27Z"
+    "stars": 386361,
+    "forks": 81206,
+    "open_issues": 5539,
+    "pushed_at": "2026-08-15T12:04:09Z"
   },
   "summary": {
-    "commitCount": 369,
-    "releaseCount": 0,
+    "commitCount": 340,
+    "releaseCount": 1,
     "stableReleaseCount": 0,
-    "betaReleaseCount": 0,
-    "stars": 386160,
-    "forks": 81165,
-    "openIssues": 5517
+    "betaReleaseCount": 1,
+    "stars": 386361,
+    "forks": 81206,
+    "openIssues": 5539
   },
-  "releases": [],
+  "releases": [
+    {
+      "tag_name": "v2026.8.1-beta.2",
+      "published_at": "2026-08-15T05:36:23Z",
+      "name": "OpenClaw 2026.8.1-beta.2",
+      "prerelease": true,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.1-beta.2"
+    }
+  ],
   "featureItems": [
-    "feat(runners): publish atomic device runner inventory (#123094)",
-    "feat: view your machine's screen from the iOS and Android apps (#123097)",
-    "feat(ui): sync gateway browser viewport to the dock panel size (#123104)",
-    "feat(ui): click the desktop to take control (#123096)",
-    "feat(android): unify chat composer with iOS and web design (#123077)",
-    "feat(gateway): provision paired node session hosts (#122966)",
-    "feat: portals — expose agent-run dev servers to the operator (#122536)",
-    "feat(worker): add durable node launch adapter (#123033)"
+    "**Browser extension relay CDP compat:** answer `Target.getBrowserContexts` so Puppeteer-based clients (chrome-devtools-mcp) can drive the paired Chrome without the remote-debugging permission prompt, serve DevTools-style `/json/list` target descriptors, and add `openclaw browser extension cdp` to print the relay endpoint plus auth header for external CDP clients. Thanks @vincentkoc. [v2026.8.1-beta.2]",
+    "**Fish Audio speech:** add hosted S2.1 synthesis with streaming, voice notes, voice discovery, and telephony, plus local Fish S2 Pro reference-voice streaming in native macOS Talk. Thanks @Conan-Scott, @vincentkoc, and @Patrick-Erichsen. [v2026.8.1-beta.2]",
+    "**Control UI update recovery:** the \"A new version is available\" Reload button now waits out the gateway restart that stranded the chunk and reloads as soon as it answers, instead of silently doing nothing and leaving a manual hard reload as the only way out. Thanks @vincentkoc. [v2026.8.1-beta.2]",
+    "**Trusted-proxy browser pairing:** optionally auto-approve new Control UI and WebChat devices from allowlisted proxy identities with non-admin scope caps, while keeping existing-device upgrades manual. Thanks @vincentkoc. [v2026.8.1-beta.2]",
+    "**Channel plugin ingress monitors:** add a shared plugin SDK monitor for durable admission, polling, pruning, claim identity validation, adoption handoff, and shutdown, and migrate IRC, Synology Chat, and Google Chat to the shared lifecycle. Thanks @vincentkoc and @shakkernerd. [v2026.8.1-beta.2]",
+    "**External gateway supervision:** add `OPENCLAW_SUPERVISOR_MODE=external` for lifecycle owners such as OCM, preserving verified restart and deferral behavior without exposing native service authority, blocking native service mutation and self-update, and providing a versioned atomic restart-handoff consume contract. Thanks @shakkernerd. [v2026.8.1-beta.2]",
+    "**ClickClack guided setup:** configure ClickClack from `openclaw onboard` or `openclaw channels add clickclack` with URL, token, and workspace prompts, default-account env fallback, nonfatal live connection validation, and gateway-aware next steps that connect automatically when OpenClaw is already running. Thanks @shakkernerd and @vincentkoc. [v2026.8.1-beta.2]",
+    "**ClickClack bot collaboration:** add opt-in bot-authored inbound dispatch with explicit sender authorization, mention gating, retry-safe loop protection, and independent thread budgets while keeping bot traffic denied by default. Thanks @jjjhenriksen, @shakkernerd, and @vincentkoc. [v2026.8.1-beta.2]"
   ],
   "fixItems": [
-    "fix(ui): stop stamping a dead blur class on chat links containing 'tail' (#123154)",
-    "fix(doctor): stop after failed config migration write (#123045)",
-    "fix(ui): keep limited-access banner clear of shell controls (#123128)",
-    "fix(raft): report missing CLI in channel status (#123140)",
-    "fix(release): allow ANSI in reusable job logs (#123129)",
-    "fix(codex): resume parent after terminal subagent fan-out (#123124)",
-    "fix(agents): prepare selected harnesses for setup probes (#123141)",
-    "fix(ci): stop killing healthy discord Vitest runs and repair partial runtime-env mocks (#123131)"
+    "Fixed Crabbox hydration on unprivileged cloud sandboxes by falling back to a user-writable pnpm store when the shared `/var/cache/crabbox` cache is unavailable, preserving the hardlink import mode after hydration, and making Docker an explicit routed capability instead of an implicit install requirement. Thanks @vincentkoc and @joshavant. [v2026.8.1-beta.2]",
+    "fix(gateway): restart after prepared maintenance suspension (#124157)",
+    "fix(session-catalog): preserve explicit agent ownership across UI and CLI (#123899)",
+    "fix(agents): deliver Codex input choices in Telegram and web chat (#124146)",
+    "fix(cua): initialize execution resources on first use (#124156)",
+    "fix(auto-reply): reject undelivered ask_user prompts (#124148)",
+    "fix(cli): migrate apply refusal suggests a valid preview command (#124149)",
+    "fix(computer-use): repair artifact verification and post-approval descriptor found by the Linux gate (#124128)"
   ],
   "topScopes": [
     {
       "scope": "ui",
-      "count": 39
-    },
-    {
-      "scope": "ci",
-      "count": 25
-    },
-    {
-      "scope": "agents",
-      "count": 24
-    },
-    {
-      "scope": "fix",
-      "count": 22
+      "count": 67
     },
     {
       "scope": "gateway",
-      "count": 20
+      "count": 34
     },
     {
       "scope": "test",
-      "count": 17
+      "count": 22
     },
     {
-      "scope": "slack",
-      "count": 11
+      "scope": "ci",
+      "count": 20
     },
     {
-      "scope": "feat",
-      "count": 8
+      "scope": "cli",
+      "count": 16
+    },
+    {
+      "scope": "fix",
+      "count": 14
+    },
+    {
+      "scope": "agents",
+      "count": 9
+    },
+    {
+      "scope": "macos",
+      "count": 9
     }
   ],
   "headlineCommits": [
-    "refactor(ui): route stylesheet colors through the token layer and gate hex literals (#123156)",
-    "fix(ui): stop stamping a dead blur class on chat links containing 'tail' (#123154)",
-    "test: speed up model selection suite (#123155)",
-    "feat(runners): publish atomic device runner inventory (#123094)",
-    "fix(doctor): stop after failed config migration write (#123045)",
-    "test: remove residual duplicate assertions (#123134)",
-    "fix(ui): keep limited-access banner clear of shell controls (#123128)",
-    "fix(raft): report missing CLI in channel status (#123140)"
+    "fix(gateway): restart after prepared maintenance suspension (#124157)",
+    "test(tooling): remove obsolete runner facades (#124159)",
+    "fix(session-catalog): preserve explicit agent ownership across UI and CLI (#123899)",
+    "fix(agents): deliver Codex input choices in Telegram and web chat (#124146)",
+    "fix(cua): initialize execution resources on first use (#124156)",
+    "fix(auto-reply): reject undelivered ask_user prompts (#124148)",
+    "test: remove UI and native test residue (#124152)",
+    "fix(cli): migrate apply refusal suggests a valid preview command (#124149)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 }

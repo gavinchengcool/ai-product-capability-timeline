@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-08-13T20:38:30+08:00
-- Requested window: 2026-08-12 to 2026-08-13
+- Generated at: 2026-08-15T20:12:14+08:00
+- Requested window: 2026-08-14 to 2026-08-15
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-08-12 to 2026-08-13
-- Generated at: 2026-08-13T20:38:14.868508+08:00
-- 窗口: 2026-08-12 至 2026-08-13
-- GitHub 增量: 369 commits / 0 releases
-- 最近 push: 2026-08-13
+- Window: 2026-08-14 to 2026-08-15
+- Generated at: 2026-08-15T20:11:58.302584+08:00
+- 窗口: 2026-08-14 至 2026-08-15
+- GitHub 增量: 340 commits / 1 releases
+- 最近 push: 2026-08-15
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(runners): publish atomic device runner inventory (#123094)
-  - feat: view your machine's screen from the iOS and Android apps (#123097)
-  - feat(ui): sync gateway browser viewport to the dock panel size (#123104)
-  - feat(ui): click the desktop to take control (#123096)
-  - feat(android): unify chat composer with iOS and web design (#123077)
-  - feat(gateway): provision paired node session hosts (#122966)
-  - feat: portals — expose agent-run dev servers to the operator (#122536)
-  - feat(worker): add durable node launch adapter (#123033)
+  - **Browser extension relay CDP compat:** answer `Target.getBrowserContexts` so Puppeteer-based clients (chrome-devtools-mcp) can drive the paired Chrome without the remote-debugging permission prompt, serve DevTools-style `/json/list` target descriptors, and add `openclaw browser extension cdp` to print the relay endpoint plus auth header for external CDP clients. Thanks @vincentkoc. [v2026.8.1-beta.2]
+  - **Fish Audio speech:** add hosted S2.1 synthesis with streaming, voice notes, voice discovery, and telephony, plus local Fish S2 Pro reference-voice streaming in native macOS Talk. Thanks @Conan-Scott, @vincentkoc, and @Patrick-Erichsen. [v2026.8.1-beta.2]
+  - **Control UI update recovery:** the "A new version is available" Reload button now waits out the gateway restart that stranded the chunk and reloads as soon as it answers, instead of silently doing nothing and leaving a manual hard reload as the only way out. Thanks @vincentkoc. [v2026.8.1-beta.2]
+  - **Trusted-proxy browser pairing:** optionally auto-approve new Control UI and WebChat devices from allowlisted proxy identities with non-admin scope caps, while keeping existing-device upgrades manual. Thanks @vincentkoc. [v2026.8.1-beta.2]
+  - **Channel plugin ingress monitors:** add a shared plugin SDK monitor for durable admission, polling, pruning, claim identity validation, adoption handoff, and shutdown, and migrate IRC, Synology Chat, and Google Chat to the shared lifecycle. Thanks @vincentkoc and @shakkernerd. [v2026.8.1-beta.2]
+  - **External gateway supervision:** add `OPENCLAW_SUPERVISOR_MODE=external` for lifecycle owners such as OCM, preserving verified restart and deferral behavior without exposing native service authority, blocking native service mutation and self-update, and providing a versioned atomic restart-handoff consume contract. Thanks @shakkernerd. [v2026.8.1-beta.2]
+  - **ClickClack guided setup:** configure ClickClack from `openclaw onboard` or `openclaw channels add clickclack` with URL, token, and workspace prompts, default-account env fallback, nonfatal live connection validation, and gateway-aware next steps that connect automatically when OpenClaw is already running. Thanks @shakkernerd and @vincentkoc. [v2026.8.1-beta.2]
+  - **ClickClack bot collaboration:** add opt-in bot-authored inbound dispatch with explicit sender authorization, mention gating, retry-safe loop protection, and independent thread budgets while keeping bot traffic denied by default. Thanks @jjjhenriksen, @shakkernerd, and @vincentkoc. [v2026.8.1-beta.2]
 - Fixes and constraints:
-  - fix(ui): stop stamping a dead blur class on chat links containing 'tail' (#123154)
-  - fix(doctor): stop after failed config migration write (#123045)
-  - fix(ui): keep limited-access banner clear of shell controls (#123128)
-  - fix(raft): report missing CLI in channel status (#123140)
-  - fix(release): allow ANSI in reusable job logs (#123129)
-  - fix(codex): resume parent after terminal subagent fan-out (#123124)
-  - fix(agents): prepare selected harnesses for setup probes (#123141)
-  - fix(ci): stop killing healthy discord Vitest runs and repair partial runtime-env mocks (#123131)
+  - Fixed Crabbox hydration on unprivileged cloud sandboxes by falling back to a user-writable pnpm store when the shared `/var/cache/crabbox` cache is unavailable, preserving the hardlink import mode after hydration, and making Docker an explicit routed capability instead of an implicit install requirement. Thanks @vincentkoc and @joshavant. [v2026.8.1-beta.2]
+  - fix(gateway): restart after prepared maintenance suspension (#124157)
+  - fix(session-catalog): preserve explicit agent ownership across UI and CLI (#123899)
+  - fix(agents): deliver Codex input choices in Telegram and web chat (#124146)
+  - fix(cua): initialize execution resources on first use (#124156)
+  - fix(auto-reply): reject undelivered ask_user prompts (#124148)
+  - fix(cli): migrate apply refusal suggests a valid preview command (#124149)
+  - fix(computer-use): repair artifact verification and post-approval descriptor found by the Linux gate (#124128)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
