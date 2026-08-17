@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-08-16T20:12:53+08:00
-- Requested window: 2026-08-15 to 2026-08-16
+- Generated at: 2026-08-17T20:16:55+08:00
+- Requested window: 2026-08-16 to 2026-08-17
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,30 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-08-15 to 2026-08-16
-- Generated at: 2026-08-16T20:12:37.977820+08:00
-- 窗口: 2026-08-15 至 2026-08-16
-- GitHub 增量: 186 commits / 1 releases
-- 最近 push: 2026-08-16
+- Window: 2026-08-16 to 2026-08-17
+- Generated at: 2026-08-17T20:16:04.304150+08:00
+- 窗口: 2026-08-16 至 2026-08-17
+- GitHub 增量: 463 commits / 0 releases
+- 最近 push: 2026-08-17
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(lint): SAFETY-comment assertion ratchet + repo deslop skill (#124359)
-  - feat(ui): grid picker for session icons (#124335)
-  - feat(ui): move incognito to new-session rail (#124352)
-  - feat(ui): open links in Control UI browser (#123912)
-  - feat(workers): run device sessions from Gateway bundles (#124037)
-  - feat(sessions): preserve recent session history (#123987)
-  - feat(slack): make presence event guidance configurable (#123875)
+  - feat: session permission modes with worktree-scoped defaults (#124909)
+  - feat(node-host): support Cloudflare Access service tokens (#125193)
+  - feat(ui): make session references first-class links with titled chips and hovercards (#125014)
+  - feat(sessions): three-layer session ownership — agent attribution, assignable owner, participants (#125057)
+  - feat(workboard): run attached automations after linked sessions finish (#125170)
+  - feat(mac): harden Peekaboo elevation cutovers (#124564)
+  - feat(ui): load session transcripts instantly from snapshots (#125128)
+  - feat(android): pin gateway-backed session search in the sidebar (#124338)
 - Fixes and constraints:
-  - perf(test): avoid Canvas Git timeout wait (#124547)
-  - fix(gateway): honor pairing exemptions on reconnect (#124545)
-  - fix(cli): scope unknown-subcommand help to its command tree (#124544)
-  - perf(ci): fold built-runtime verifiers into the artifact-check wave
-  - fix(scripts): give the artifact mtime repair a millisecond of headroom
-  - fix(gateway): batch worker placement session evidence (#124372)
-  - fix(computer-use): macOS live-proof rig deadlocks on operator device approval (#124536)
-  - fix(gateway): prevent sustained-turn readiness stalls (#124528)
+  - fix(sessions): surface cleanup failures and purge owned artifacts (#125217)
+  - fix(test): prepare standalone survivor plugin registry (#125251)
+  - fix(agents): show waiting reply when sessions_yield pauses a turn (#125106)
+  - fix(canvas): omit deleted snapshot paths (#125216)
+  - fix: new sessions open promptly in Git workspaces (#124796)
+  - fix: tool-heavy sessions survive runtime cutover (#125181)
+  - fix: recovery no longer claims interrupted commands succeeded (#125209)
+  - fix(ui): retry first-run model detection once (#125212)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

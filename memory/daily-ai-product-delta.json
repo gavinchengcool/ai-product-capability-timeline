@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-16T20:12:53+08:00",
+  "generatedAt": "2026-08-17T20:16:55+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-08-15T20:12:53+08:00",
-    "end_local": "2026-08-16T20:12:53+08:00"
+    "start_local": "2026-08-16T20:16:55+08:00",
+    "end_local": "2026-08-17T20:16:55+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-08-16T20:12:37.977820+08:00",
+      "generatedAt": "2026-08-17T20:16:04.304150+08:00",
       "window": {
-        "start_local": "2026-08-15T20:12:37.977820+08:00",
-        "end_local": "2026-08-16T20:12:37.977820+08:00",
-        "start_utc": "2026-08-15T12:12:37Z",
-        "end_utc": "2026-08-16T12:12:37Z"
+        "start_local": "2026-08-16T20:16:04.304150+08:00",
+        "end_local": "2026-08-17T20:16:04.304150+08:00",
+        "start_utc": "2026-08-16T12:16:04Z",
+        "end_utc": "2026-08-17T12:16:04Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-08-15 至 2026-08-16"
+          "value": "2026-08-16 至 2026-08-17"
         },
         {
           "label": "GitHub 增量",
-          "value": "186 commits / 1 releases"
+          "value": "463 commits / 0 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-08-16"
+          "value": "2026-08-17"
         },
         {
           "label": "来源",
@@ -52,65 +52,58 @@
         }
       ],
       "featureItems": [
-        "feat(lint): SAFETY-comment assertion ratchet + repo deslop skill (#124359)",
-        "feat(ui): grid picker for session icons (#124335)",
-        "feat(ui): move incognito to new-session rail (#124352)",
-        "feat(ui): open links in Control UI browser (#123912)",
-        "feat(workers): run device sessions from Gateway bundles (#124037)",
-        "feat(sessions): preserve recent session history (#123987)",
-        "feat(slack): make presence event guidance configurable (#123875)"
+        "feat: session permission modes with worktree-scoped defaults (#124909)",
+        "feat(node-host): support Cloudflare Access service tokens (#125193)",
+        "feat(ui): make session references first-class links with titled chips and hovercards (#125014)",
+        "feat(sessions): three-layer session ownership — agent attribution, assignable owner, participants (#125057)",
+        "feat(workboard): run attached automations after linked sessions finish (#125170)",
+        "feat(mac): harden Peekaboo elevation cutovers (#124564)",
+        "feat(ui): load session transcripts instantly from snapshots (#125128)",
+        "feat(android): pin gateway-backed session search in the sidebar (#124338)"
       ],
       "fixItems": [
-        "perf(test): avoid Canvas Git timeout wait (#124547)",
-        "fix(gateway): honor pairing exemptions on reconnect (#124545)",
-        "fix(cli): scope unknown-subcommand help to its command tree (#124544)",
-        "perf(ci): fold built-runtime verifiers into the artifact-check wave",
-        "fix(scripts): give the artifact mtime repair a millisecond of headroom",
-        "fix(gateway): batch worker placement session evidence (#124372)",
-        "fix(computer-use): macOS live-proof rig deadlocks on operator device approval (#124536)",
-        "fix(gateway): prevent sustained-turn readiness stalls (#124528)"
+        "fix(sessions): surface cleanup failures and purge owned artifacts (#125217)",
+        "fix(test): prepare standalone survivor plugin registry (#125251)",
+        "fix(agents): show waiting reply when sessions_yield pauses a turn (#125106)",
+        "fix(canvas): omit deleted snapshot paths (#125216)",
+        "fix: new sessions open promptly in Git workspaces (#124796)",
+        "fix: tool-heavy sessions survive runtime cutover (#125181)",
+        "fix: recovery no longer claims interrupted commands succeeded (#125209)",
+        "fix(ui): retry first-run model detection once (#125212)"
       ],
-      "releases": [
-        {
-          "tag_name": "pr-124528-profiles",
-          "published_at": "2026-08-16T10:15:43Z",
-          "name": "PR #124528 Gateway profile evidence",
-          "prerelease": true,
-          "html_url": "https://github.com/openclaw/openclaw/releases/tag/pr-124528-profiles"
-        }
-      ],
+      "releases": [],
       "topScopes": [
         {
           "scope": "ui",
-          "count": 31
+          "count": 54
         },
         {
           "scope": "gateway",
-          "count": 21
-        },
-        {
-          "scope": "test",
-          "count": 20
+          "count": 43
         },
         {
           "scope": "fix",
-          "count": 11
+          "count": 27
         },
         {
-          "scope": "ci",
-          "count": 9
-        },
-        {
-          "scope": "agents",
-          "count": 7
+          "scope": "test",
+          "count": 24
         },
         {
           "scope": "cli",
-          "count": 4
+          "count": 23
         },
         {
-          "scope": "types",
-          "count": 4
+          "scope": "ci",
+          "count": 22
+        },
+        {
+          "scope": "agents",
+          "count": 19
+        },
+        {
+          "scope": "plugins",
+          "count": 13
         }
       ],
       "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"

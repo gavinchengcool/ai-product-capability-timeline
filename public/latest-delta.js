@@ -1,98 +1,91 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-08-16T20:12:37.977820+08:00",
+  "generatedAt": "2026-08-17T20:16:04.304150+08:00",
   "window": {
-    "start_local": "2026-08-15T20:12:37.977820+08:00",
-    "end_local": "2026-08-16T20:12:37.977820+08:00",
-    "start_utc": "2026-08-15T12:12:37Z",
-    "end_utc": "2026-08-16T12:12:37Z"
+    "start_local": "2026-08-16T20:16:04.304150+08:00",
+    "end_local": "2026-08-17T20:16:04.304150+08:00",
+    "start_utc": "2026-08-16T12:16:04Z",
+    "end_utc": "2026-08-17T12:16:04Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 386431,
-    "forks": 81205,
-    "open_issues": 5551,
-    "pushed_at": "2026-08-16T12:10:51Z"
+    "stars": 386513,
+    "forks": 81217,
+    "open_issues": 5619,
+    "pushed_at": "2026-08-17T12:13:38Z"
   },
   "summary": {
-    "commitCount": 186,
-    "releaseCount": 1,
+    "commitCount": 463,
+    "releaseCount": 0,
     "stableReleaseCount": 0,
-    "betaReleaseCount": 1,
-    "stars": 386431,
-    "forks": 81205,
-    "openIssues": 5551
+    "betaReleaseCount": 0,
+    "stars": 386513,
+    "forks": 81217,
+    "openIssues": 5619
   },
-  "releases": [
-    {
-      "tag_name": "pr-124528-profiles",
-      "published_at": "2026-08-16T10:15:43Z",
-      "name": "PR #124528 Gateway profile evidence",
-      "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/pr-124528-profiles"
-    }
-  ],
+  "releases": [],
   "featureItems": [
-    "feat(lint): SAFETY-comment assertion ratchet + repo deslop skill (#124359)",
-    "feat(ui): grid picker for session icons (#124335)",
-    "feat(ui): move incognito to new-session rail (#124352)",
-    "feat(ui): open links in Control UI browser (#123912)",
-    "feat(workers): run device sessions from Gateway bundles (#124037)",
-    "feat(sessions): preserve recent session history (#123987)",
-    "feat(slack): make presence event guidance configurable (#123875)"
+    "feat: session permission modes with worktree-scoped defaults (#124909)",
+    "feat(node-host): support Cloudflare Access service tokens (#125193)",
+    "feat(ui): make session references first-class links with titled chips and hovercards (#125014)",
+    "feat(sessions): three-layer session ownership — agent attribution, assignable owner, participants (#125057)",
+    "feat(workboard): run attached automations after linked sessions finish (#125170)",
+    "feat(mac): harden Peekaboo elevation cutovers (#124564)",
+    "feat(ui): load session transcripts instantly from snapshots (#125128)",
+    "feat(android): pin gateway-backed session search in the sidebar (#124338)"
   ],
   "fixItems": [
-    "perf(test): avoid Canvas Git timeout wait (#124547)",
-    "fix(gateway): honor pairing exemptions on reconnect (#124545)",
-    "fix(cli): scope unknown-subcommand help to its command tree (#124544)",
-    "perf(ci): fold built-runtime verifiers into the artifact-check wave",
-    "fix(scripts): give the artifact mtime repair a millisecond of headroom",
-    "fix(gateway): batch worker placement session evidence (#124372)",
-    "fix(computer-use): macOS live-proof rig deadlocks on operator device approval (#124536)",
-    "fix(gateway): prevent sustained-turn readiness stalls (#124528)"
+    "fix(sessions): surface cleanup failures and purge owned artifacts (#125217)",
+    "fix(test): prepare standalone survivor plugin registry (#125251)",
+    "fix(agents): show waiting reply when sessions_yield pauses a turn (#125106)",
+    "fix(canvas): omit deleted snapshot paths (#125216)",
+    "fix: new sessions open promptly in Git workspaces (#124796)",
+    "fix: tool-heavy sessions survive runtime cutover (#125181)",
+    "fix: recovery no longer claims interrupted commands succeeded (#125209)",
+    "fix(ui): retry first-run model detection once (#125212)"
   ],
   "topScopes": [
     {
       "scope": "ui",
-      "count": 31
+      "count": 54
     },
     {
       "scope": "gateway",
-      "count": 21
-    },
-    {
-      "scope": "test",
-      "count": 20
+      "count": 43
     },
     {
       "scope": "fix",
-      "count": 11
+      "count": 27
     },
     {
-      "scope": "ci",
-      "count": 9
-    },
-    {
-      "scope": "agents",
-      "count": 7
+      "scope": "test",
+      "count": 24
     },
     {
       "scope": "cli",
-      "count": 4
+      "count": 23
     },
     {
-      "scope": "types",
-      "count": 4
+      "scope": "ci",
+      "count": 22
+    },
+    {
+      "scope": "agents",
+      "count": 19
+    },
+    {
+      "scope": "plugins",
+      "count": 13
     }
   ],
   "headlineCommits": [
-    "perf(test): avoid Canvas Git timeout wait (#124547)",
-    "fix(gateway): honor pairing exemptions on reconnect (#124545)",
-    "fix(cli): scope unknown-subcommand help to its command tree (#124544)",
-    "perf(ci): fold built-runtime verifiers into the artifact-check wave",
-    "refactor(workers): separate runner consent from capacity (#124356)",
-    "fix(scripts): give the artifact mtime repair a millisecond of headroom",
-    "fix(gateway): batch worker placement session evidence (#124372)",
-    "fix(computer-use): macOS live-proof rig deadlocks on operator device approval (#124536)"
+    "refactor(gateway): carry authoritative read facts (#125145)",
+    "fix(sessions): surface cleanup failures and purge owned artifacts (#125217)",
+    "fix(test): prepare standalone survivor plugin registry (#125251)",
+    "feat: session permission modes with worktree-scoped defaults (#124909)",
+    "fix(agents): show waiting reply when sessions_yield pauses a turn (#125106)",
+    "docs(completion): document ZDOTDIR profile path (#125247)",
+    "build(macos): pin Peekaboo 4.2.1 source (#125208)",
+    "docs(install): avoid duplicate onboarding runs (#125246)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
