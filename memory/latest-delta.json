@@ -1,91 +1,91 @@
 {
-  "generatedAt": "2026-08-17T20:16:04.304150+08:00",
+  "generatedAt": "2026-08-18T20:18:17.978941+08:00",
   "window": {
-    "start_local": "2026-08-16T20:16:04.304150+08:00",
-    "end_local": "2026-08-17T20:16:04.304150+08:00",
-    "start_utc": "2026-08-16T12:16:04Z",
-    "end_utc": "2026-08-17T12:16:04Z"
+    "start_local": "2026-08-17T20:18:17.978941+08:00",
+    "end_local": "2026-08-18T20:18:17.978941+08:00",
+    "start_utc": "2026-08-17T12:18:17Z",
+    "end_utc": "2026-08-18T12:18:17Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 386513,
-    "forks": 81217,
-    "open_issues": 5619,
-    "pushed_at": "2026-08-17T12:13:38Z"
+    "stars": 386622,
+    "forks": 81246,
+    "open_issues": 5717,
+    "pushed_at": "2026-08-18T12:16:27Z"
   },
   "summary": {
-    "commitCount": 463,
+    "commitCount": 287,
     "releaseCount": 0,
     "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 386513,
-    "forks": 81217,
-    "openIssues": 5619
+    "stars": 386622,
+    "forks": 81246,
+    "openIssues": 5717
   },
   "releases": [],
   "featureItems": [
-    "feat: session permission modes with worktree-scoped defaults (#124909)",
-    "feat(node-host): support Cloudflare Access service tokens (#125193)",
-    "feat(ui): make session references first-class links with titled chips and hovercards (#125014)",
-    "feat(sessions): three-layer session ownership — agent attribution, assignable owner, participants (#125057)",
-    "feat(workboard): run attached automations after linked sessions finish (#125170)",
-    "feat(mac): harden Peekaboo elevation cutovers (#124564)",
-    "feat(ui): load session transcripts instantly from snapshots (#125128)",
-    "feat(android): pin gateway-backed session search in the sidebar (#124338)"
+    "feat(skills): merge execution-dir skills after agent workspace skills (#125786)",
+    "feat(gateway): reach a Gateway behind an identity-aware proxy from the CLI (#125700)",
+    "feat(ui): show session info in the sidebar hovercard (#125678)",
+    "feat(ui): add typed update recovery actions (#125098)",
+    "feat(gateway/ui): command-lane diagnostics with debug page table and global busyness overlay (#125591)",
+    "feat(ui): show online people and session activity (#125695)",
+    "feat: revalidate cached chat history with cursor deltas (#125606)",
+    "improve(ui): redesign tool calls as lightweight transcript activity (#125240)"
   ],
   "fixItems": [
-    "fix(sessions): surface cleanup failures and purge owned artifacts (#125217)",
-    "fix(test): prepare standalone survivor plugin registry (#125251)",
-    "fix(agents): show waiting reply when sessions_yield pauses a turn (#125106)",
-    "fix(canvas): omit deleted snapshot paths (#125216)",
-    "fix: new sessions open promptly in Git workspaces (#124796)",
-    "fix: tool-heavy sessions survive runtime cutover (#125181)",
-    "fix: recovery no longer claims interrupted commands succeeded (#125209)",
-    "fix(ui): retry first-run model detection once (#125212)"
+    "fix(ci): heal red main - dialog reopen under isolation + startup baseline (#125800)",
+    "fix(codex): inherit agent workspace instructions in native subagents (#125783)",
+    "fix(sessions): track context window provenance (#124303)",
+    "fix(ui): seed chat rename from stored label (#125097)",
+    "fix(ui): match fullscreen table presentation (#125692)",
+    "fix(ui): restore tool activity interaction polish (#125790)",
+    "fix(sessions): keep lifecycle upserts atomic (#125777)",
+    "fix(tts): normalize streamed speech and report fallbacks (#125686)"
   ],
   "topScopes": [
     {
       "scope": "ui",
-      "count": 54
-    },
-    {
-      "scope": "gateway",
-      "count": 43
+      "count": 56
     },
     {
       "scope": "fix",
-      "count": 27
-    },
-    {
-      "scope": "test",
       "count": 24
     },
     {
-      "scope": "cli",
-      "count": 23
-    },
-    {
-      "scope": "ci",
+      "scope": "agents",
       "count": 22
     },
     {
-      "scope": "agents",
-      "count": 19
+      "scope": "gateway",
+      "count": 15
     },
     {
-      "scope": "plugins",
+      "scope": "improve(ui)",
       "count": 13
+    },
+    {
+      "scope": "cli",
+      "count": 9
+    },
+    {
+      "scope": "voice-call",
+      "count": 8
+    },
+    {
+      "scope": "doctor",
+      "count": 8
     }
   ],
   "headlineCommits": [
-    "refactor(gateway): carry authoritative read facts (#125145)",
-    "fix(sessions): surface cleanup failures and purge owned artifacts (#125217)",
-    "fix(test): prepare standalone survivor plugin registry (#125251)",
-    "feat: session permission modes with worktree-scoped defaults (#124909)",
-    "fix(agents): show waiting reply when sessions_yield pauses a turn (#125106)",
-    "docs(completion): document ZDOTDIR profile path (#125247)",
-    "build(macos): pin Peekaboo 4.2.1 source (#125208)",
-    "docs(install): avoid duplicate onboarding runs (#125246)"
+    "fix(ci): heal red main - dialog reopen under isolation + startup baseline (#125800)",
+    "fix(codex): inherit agent workspace instructions in native subagents (#125783)",
+    "feat(skills): merge execution-dir skills after agent workspace skills (#125786)",
+    "chore(ui): refresh control ui locales (#125774)",
+    "fix(sessions): track context window provenance (#124303)",
+    "fix(ui): seed chat rename from stored label (#125097)",
+    "improve(ui): compact GitHub links in chat (#125746)",
+    "fix(ui): match fullscreen table presentation (#125692)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 }

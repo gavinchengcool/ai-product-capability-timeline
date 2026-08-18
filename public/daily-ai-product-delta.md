@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-08-17T20:16:55+08:00
-- Requested window: 2026-08-16 to 2026-08-17
+- Generated at: 2026-08-18T20:18:34+08:00
+- Requested window: 2026-08-17 to 2026-08-18
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-08-16 to 2026-08-17
-- Generated at: 2026-08-17T20:16:04.304150+08:00
-- 窗口: 2026-08-16 至 2026-08-17
-- GitHub 增量: 463 commits / 0 releases
-- 最近 push: 2026-08-17
+- Window: 2026-08-17 to 2026-08-18
+- Generated at: 2026-08-18T20:18:17.978941+08:00
+- 窗口: 2026-08-17 至 2026-08-18
+- GitHub 增量: 287 commits / 0 releases
+- 最近 push: 2026-08-18
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat: session permission modes with worktree-scoped defaults (#124909)
-  - feat(node-host): support Cloudflare Access service tokens (#125193)
-  - feat(ui): make session references first-class links with titled chips and hovercards (#125014)
-  - feat(sessions): three-layer session ownership — agent attribution, assignable owner, participants (#125057)
-  - feat(workboard): run attached automations after linked sessions finish (#125170)
-  - feat(mac): harden Peekaboo elevation cutovers (#124564)
-  - feat(ui): load session transcripts instantly from snapshots (#125128)
-  - feat(android): pin gateway-backed session search in the sidebar (#124338)
+  - feat(skills): merge execution-dir skills after agent workspace skills (#125786)
+  - feat(gateway): reach a Gateway behind an identity-aware proxy from the CLI (#125700)
+  - feat(ui): show session info in the sidebar hovercard (#125678)
+  - feat(ui): add typed update recovery actions (#125098)
+  - feat(gateway/ui): command-lane diagnostics with debug page table and global busyness overlay (#125591)
+  - feat(ui): show online people and session activity (#125695)
+  - feat: revalidate cached chat history with cursor deltas (#125606)
+  - improve(ui): redesign tool calls as lightweight transcript activity (#125240)
 - Fixes and constraints:
-  - fix(sessions): surface cleanup failures and purge owned artifacts (#125217)
-  - fix(test): prepare standalone survivor plugin registry (#125251)
-  - fix(agents): show waiting reply when sessions_yield pauses a turn (#125106)
-  - fix(canvas): omit deleted snapshot paths (#125216)
-  - fix: new sessions open promptly in Git workspaces (#124796)
-  - fix: tool-heavy sessions survive runtime cutover (#125181)
-  - fix: recovery no longer claims interrupted commands succeeded (#125209)
-  - fix(ui): retry first-run model detection once (#125212)
+  - fix(ci): heal red main - dialog reopen under isolation + startup baseline (#125800)
+  - fix(codex): inherit agent workspace instructions in native subagents (#125783)
+  - fix(sessions): track context window provenance (#124303)
+  - fix(ui): seed chat rename from stored label (#125097)
+  - fix(ui): match fullscreen table presentation (#125692)
+  - fix(ui): restore tool activity interaction polish (#125790)
+  - fix(sessions): keep lifecycle upserts atomic (#125777)
+  - fix(tts): normalize streamed speech and report fallbacks (#125686)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
