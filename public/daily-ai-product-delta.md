@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-08-18T20:18:34+08:00
-- Requested window: 2026-08-17 to 2026-08-18
+- Generated at: 2026-08-19T20:18:18+08:00
+- Requested window: 2026-08-18 to 2026-08-19
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-08-17 to 2026-08-18
-- Generated at: 2026-08-18T20:18:17.978941+08:00
-- 窗口: 2026-08-17 至 2026-08-18
-- GitHub 增量: 287 commits / 0 releases
-- 最近 push: 2026-08-18
+- Window: 2026-08-18 to 2026-08-19
+- Generated at: 2026-08-19T20:18:03.058106+08:00
+- 窗口: 2026-08-18 至 2026-08-19
+- GitHub 增量: 295 commits / 0 releases
+- 最近 push: 2026-08-19
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(skills): merge execution-dir skills after agent workspace skills (#125786)
-  - feat(gateway): reach a Gateway behind an identity-aware proxy from the CLI (#125700)
-  - feat(ui): show session info in the sidebar hovercard (#125678)
-  - feat(ui): add typed update recovery actions (#125098)
-  - feat(gateway/ui): command-lane diagnostics with debug page table and global busyness overlay (#125591)
-  - feat(ui): show online people and session activity (#125695)
-  - feat: revalidate cached chat history with cursor deltas (#125606)
-  - improve(ui): redesign tool calls as lightweight transcript activity (#125240)
+  - feat(ui): unify focused presentation routes (#126143)
+  - feat: add per-project cloud worker profile defaults (#126238)
+  - feat(ui): dispatch sessions to paired devices (#126187)
+  - feat(skills): custodian-only skill library (first wave) (#126186)
+  - feat(discord): auto-join occupied voice rooms (#125974)
+  - improve(ui): fix sidebar session row hierarchy and add a message-preview toggle
+  - feat(qa): add a standalone Telegram Desktop recorder with a prebaked desktop image (#125186)
+  - feat(secrets): add explicit protected and agent-readable access (#126088)
 - Fixes and constraints:
-  - fix(ci): heal red main - dialog reopen under isolation + startup baseline (#125800)
-  - fix(codex): inherit agent workspace instructions in native subagents (#125783)
-  - fix(sessions): track context window provenance (#124303)
-  - fix(ui): seed chat rename from stored label (#125097)
-  - fix(ui): match fullscreen table presentation (#125692)
-  - fix(ui): restore tool activity interaction polish (#125790)
-  - fix(sessions): keep lifecycle upserts atomic (#125777)
-  - fix(tts): normalize streamed speech and report fallbacks (#125686)
+  - fix: browser screenshots fail on routed Control UI pages (#126290)
+  - fix(worktrees): rebind live repository before removal (#126305)
+  - fix(discord): preserve realtime speaker context (#123243)
+  - fix(nextcloud-talk): prevent shared proxy webhook lockouts (#126251)
+  - fix: show generated media previews after durable recovery (#126261)
+  - fix(codex): reap app-server descendant processes (#126285)
+  - fix(ci): restore protocol lint and Codex shard ownership (#126275)
+  - fix(update): validate target config before managed handoff (#126270)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

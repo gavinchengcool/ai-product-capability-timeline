@@ -1,91 +1,91 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-08-18T20:18:17.978941+08:00",
+  "generatedAt": "2026-08-19T20:18:03.058106+08:00",
   "window": {
-    "start_local": "2026-08-17T20:18:17.978941+08:00",
-    "end_local": "2026-08-18T20:18:17.978941+08:00",
-    "start_utc": "2026-08-17T12:18:17Z",
-    "end_utc": "2026-08-18T12:18:17Z"
+    "start_local": "2026-08-18T20:18:03.058106+08:00",
+    "end_local": "2026-08-19T20:18:03.058106+08:00",
+    "start_utc": "2026-08-18T12:18:03Z",
+    "end_utc": "2026-08-19T12:18:03Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 386622,
-    "forks": 81246,
-    "open_issues": 5717,
-    "pushed_at": "2026-08-18T12:16:27Z"
+    "stars": 386761,
+    "forks": 81258,
+    "open_issues": 5778,
+    "pushed_at": "2026-08-19T12:16:46Z"
   },
   "summary": {
-    "commitCount": 287,
+    "commitCount": 295,
     "releaseCount": 0,
     "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 386622,
-    "forks": 81246,
-    "openIssues": 5717
+    "stars": 386761,
+    "forks": 81258,
+    "openIssues": 5778
   },
   "releases": [],
   "featureItems": [
-    "feat(skills): merge execution-dir skills after agent workspace skills (#125786)",
-    "feat(gateway): reach a Gateway behind an identity-aware proxy from the CLI (#125700)",
-    "feat(ui): show session info in the sidebar hovercard (#125678)",
-    "feat(ui): add typed update recovery actions (#125098)",
-    "feat(gateway/ui): command-lane diagnostics with debug page table and global busyness overlay (#125591)",
-    "feat(ui): show online people and session activity (#125695)",
-    "feat: revalidate cached chat history with cursor deltas (#125606)",
-    "improve(ui): redesign tool calls as lightweight transcript activity (#125240)"
+    "feat(ui): unify focused presentation routes (#126143)",
+    "feat: add per-project cloud worker profile defaults (#126238)",
+    "feat(ui): dispatch sessions to paired devices (#126187)",
+    "feat(skills): custodian-only skill library (first wave) (#126186)",
+    "feat(discord): auto-join occupied voice rooms (#125974)",
+    "improve(ui): fix sidebar session row hierarchy and add a message-preview toggle",
+    "feat(qa): add a standalone Telegram Desktop recorder with a prebaked desktop image (#125186)",
+    "feat(secrets): add explicit protected and agent-readable access (#126088)"
   ],
   "fixItems": [
-    "fix(ci): heal red main - dialog reopen under isolation + startup baseline (#125800)",
-    "fix(codex): inherit agent workspace instructions in native subagents (#125783)",
-    "fix(sessions): track context window provenance (#124303)",
-    "fix(ui): seed chat rename from stored label (#125097)",
-    "fix(ui): match fullscreen table presentation (#125692)",
-    "fix(ui): restore tool activity interaction polish (#125790)",
-    "fix(sessions): keep lifecycle upserts atomic (#125777)",
-    "fix(tts): normalize streamed speech and report fallbacks (#125686)"
+    "fix: browser screenshots fail on routed Control UI pages (#126290)",
+    "fix(worktrees): rebind live repository before removal (#126305)",
+    "fix(discord): preserve realtime speaker context (#123243)",
+    "fix(nextcloud-talk): prevent shared proxy webhook lockouts (#126251)",
+    "fix: show generated media previews after durable recovery (#126261)",
+    "fix(codex): reap app-server descendant processes (#126285)",
+    "fix(ci): restore protocol lint and Codex shard ownership (#126275)",
+    "fix(update): validate target config before managed handoff (#126270)"
   ],
   "topScopes": [
     {
       "scope": "ui",
-      "count": 56
-    },
-    {
-      "scope": "fix",
-      "count": 24
-    },
-    {
-      "scope": "agents",
-      "count": 22
+      "count": 51
     },
     {
       "scope": "gateway",
-      "count": 15
+      "count": 31
     },
     {
-      "scope": "improve(ui)",
-      "count": 13
+      "scope": "fix",
+      "count": 21
+    },
+    {
+      "scope": "agents",
+      "count": 20
+    },
+    {
+      "scope": "test",
+      "count": 17
+    },
+    {
+      "scope": "codex",
+      "count": 14
+    },
+    {
+      "scope": "release",
+      "count": 8
     },
     {
       "scope": "cli",
-      "count": 9
-    },
-    {
-      "scope": "voice-call",
-      "count": 8
-    },
-    {
-      "scope": "doctor",
-      "count": 8
+      "count": 7
     }
   ],
   "headlineCommits": [
-    "fix(ci): heal red main - dialog reopen under isolation + startup baseline (#125800)",
-    "fix(codex): inherit agent workspace instructions in native subagents (#125783)",
-    "feat(skills): merge execution-dir skills after agent workspace skills (#125786)",
-    "chore(ui): refresh control ui locales (#125774)",
-    "fix(sessions): track context window provenance (#124303)",
-    "fix(ui): seed chat rename from stored label (#125097)",
-    "improve(ui): compact GitHub links in chat (#125746)",
-    "fix(ui): match fullscreen table presentation (#125692)"
+    "test: remove final delta scaffolding (#126310)",
+    "test: stabilize extension lifecycle isolation (#126309)",
+    "refactor(gateway): interrupt at admission; sessions.steer delegates to chat.send (#126291)",
+    "fix: browser screenshots fail on routed Control UI pages (#126290)",
+    "fix(worktrees): rebind live repository before removal (#126305)",
+    "chore: remove final low-value test artifacts (#126300)",
+    "fix(discord): preserve realtime speaker context (#123243)",
+    "feat(ui): unify focused presentation routes (#126143)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
