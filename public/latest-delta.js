@@ -1,91 +1,90 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-08-19T20:18:03.058106+08:00",
+  "generatedAt": "2026-08-21T20:19:30.358421+08:00",
   "window": {
-    "start_local": "2026-08-18T20:18:03.058106+08:00",
-    "end_local": "2026-08-19T20:18:03.058106+08:00",
-    "start_utc": "2026-08-18T12:18:03Z",
-    "end_utc": "2026-08-19T12:18:03Z"
+    "start_local": "2026-08-20T20:19:30.358421+08:00",
+    "end_local": "2026-08-21T20:19:30.358421+08:00",
+    "start_utc": "2026-08-20T12:19:30Z",
+    "end_utc": "2026-08-21T12:19:30Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 386761,
-    "forks": 81258,
-    "open_issues": 5778,
-    "pushed_at": "2026-08-19T12:16:46Z"
+    "stars": 387009,
+    "forks": 81289,
+    "open_issues": 5872,
+    "pushed_at": "2026-08-21T12:11:05Z"
   },
   "summary": {
-    "commitCount": 295,
+    "commitCount": 286,
     "releaseCount": 0,
     "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 386761,
-    "forks": 81258,
-    "openIssues": 5778
+    "stars": 387009,
+    "forks": 81289,
+    "openIssues": 5872
   },
   "releases": [],
   "featureItems": [
-    "feat(ui): unify focused presentation routes (#126143)",
-    "feat: add per-project cloud worker profile defaults (#126238)",
-    "feat(ui): dispatch sessions to paired devices (#126187)",
-    "feat(skills): custodian-only skill library (first wave) (#126186)",
-    "feat(discord): auto-join occupied voice rooms (#125974)",
-    "improve(ui): fix sidebar session row hierarchy and add a message-preview toggle",
-    "feat(qa): add a standalone Telegram Desktop recorder with a prebaked desktop image (#125186)",
-    "feat(secrets): add explicit protected and agent-readable access (#126088)"
+    "feat(nodes): expose plugin duplex channels (#126961)",
+    "feat(control-ui): stream live draft previews in the typing indicator (#126994)",
+    "feat(slack): add compact commentary progress (#126480)",
+    "feat(sessions): recover offline device placements (#126284)",
+    "feat(qa): acknowledge Mantis PR requests (#126702)",
+    "feat(qa): trigger Mantis proof from pull requests (#126658)",
+    "feat(ui): manage automation condition triggers (#126534)"
   ],
   "fixItems": [
-    "fix: browser screenshots fail on routed Control UI pages (#126290)",
-    "fix(worktrees): rebind live repository before removal (#126305)",
-    "fix(discord): preserve realtime speaker context (#123243)",
-    "fix(nextcloud-talk): prevent shared proxy webhook lockouts (#126251)",
-    "fix: show generated media previews after durable recovery (#126261)",
-    "fix(codex): reap app-server descendant processes (#126285)",
-    "fix(ci): restore protocol lint and Codex shard ownership (#126275)",
-    "fix(update): validate target config before managed handoff (#126270)"
+    "fix(heartbeat): honor configured session for monitor wakes (#127153)",
+    "fix(gateway): refresh health after runtime inspection failure (#127174)",
+    "fix(ui): keep segmented selections visible in forced colors (#127165)",
+    "perf(test): speed up board provider snapshot observations (#127163)",
+    "perf(sessions): lazily scan transcript matches (#127162)",
+    "fix(ui): recover cloud worker saves after reconnect (#127150)",
+    "fix(process): retain live children after signal errors (#127154)",
+    "fix(ci): isolate candidate cache authority (#127149)"
   ],
   "topScopes": [
     {
       "scope": "ui",
-      "count": 51
-    },
-    {
-      "scope": "gateway",
       "count": 31
     },
     {
-      "scope": "fix",
-      "count": 21
-    },
-    {
-      "scope": "agents",
-      "count": 20
-    },
-    {
       "scope": "test",
-      "count": 17
+      "count": 19
     },
     {
-      "scope": "codex",
+      "scope": "gateway",
+      "count": 18
+    },
+    {
+      "scope": "onboard",
+      "count": 15
+    },
+    {
+      "scope": "cron",
       "count": 14
     },
     {
-      "scope": "release",
-      "count": 8
+      "scope": "agents",
+      "count": 13
+    },
+    {
+      "scope": "qa",
+      "count": 12
     },
     {
       "scope": "cli",
-      "count": 7
+      "count": 10
     }
   ],
   "headlineCommits": [
-    "test: remove final delta scaffolding (#126310)",
-    "test: stabilize extension lifecycle isolation (#126309)",
-    "refactor(gateway): interrupt at admission; sessions.steer delegates to chat.send (#126291)",
-    "fix: browser screenshots fail on routed Control UI pages (#126290)",
-    "fix(worktrees): rebind live repository before removal (#126305)",
-    "chore: remove final low-value test artifacts (#126300)",
-    "fix(discord): preserve realtime speaker context (#123243)",
-    "feat(ui): unify focused presentation routes (#126143)"
+    "fix(heartbeat): honor configured session for monitor wakes (#127153)",
+    "fix(gateway): refresh health after runtime inspection failure (#127174)",
+    "fix(ui): keep segmented selections visible in forced colors (#127165)",
+    "perf(test): speed up board provider snapshot observations (#127163)",
+    "perf(sessions): lazily scan transcript matches (#127162)",
+    "fix(ui): recover cloud worker saves after reconnect (#127150)",
+    "fix(process): retain live children after signal errors (#127154)",
+    "fix(ci): isolate candidate cache authority (#127149)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

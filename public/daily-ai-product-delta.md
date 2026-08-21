@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-08-19T20:18:18+08:00
-- Requested window: 2026-08-18 to 2026-08-19
+- Generated at: 2026-08-21T20:19:45+08:00
+- Requested window: 2026-08-20 to 2026-08-21
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,30 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-08-18 to 2026-08-19
-- Generated at: 2026-08-19T20:18:03.058106+08:00
-- 窗口: 2026-08-18 至 2026-08-19
-- GitHub 增量: 295 commits / 0 releases
-- 最近 push: 2026-08-19
+- Window: 2026-08-20 to 2026-08-21
+- Generated at: 2026-08-21T20:19:30.358421+08:00
+- 窗口: 2026-08-20 至 2026-08-21
+- GitHub 增量: 286 commits / 0 releases
+- 最近 push: 2026-08-21
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(ui): unify focused presentation routes (#126143)
-  - feat: add per-project cloud worker profile defaults (#126238)
-  - feat(ui): dispatch sessions to paired devices (#126187)
-  - feat(skills): custodian-only skill library (first wave) (#126186)
-  - feat(discord): auto-join occupied voice rooms (#125974)
-  - improve(ui): fix sidebar session row hierarchy and add a message-preview toggle
-  - feat(qa): add a standalone Telegram Desktop recorder with a prebaked desktop image (#125186)
-  - feat(secrets): add explicit protected and agent-readable access (#126088)
+  - feat(nodes): expose plugin duplex channels (#126961)
+  - feat(control-ui): stream live draft previews in the typing indicator (#126994)
+  - feat(slack): add compact commentary progress (#126480)
+  - feat(sessions): recover offline device placements (#126284)
+  - feat(qa): acknowledge Mantis PR requests (#126702)
+  - feat(qa): trigger Mantis proof from pull requests (#126658)
+  - feat(ui): manage automation condition triggers (#126534)
 - Fixes and constraints:
-  - fix: browser screenshots fail on routed Control UI pages (#126290)
-  - fix(worktrees): rebind live repository before removal (#126305)
-  - fix(discord): preserve realtime speaker context (#123243)
-  - fix(nextcloud-talk): prevent shared proxy webhook lockouts (#126251)
-  - fix: show generated media previews after durable recovery (#126261)
-  - fix(codex): reap app-server descendant processes (#126285)
-  - fix(ci): restore protocol lint and Codex shard ownership (#126275)
-  - fix(update): validate target config before managed handoff (#126270)
+  - fix(heartbeat): honor configured session for monitor wakes (#127153)
+  - fix(gateway): refresh health after runtime inspection failure (#127174)
+  - fix(ui): keep segmented selections visible in forced colors (#127165)
+  - perf(test): speed up board provider snapshot observations (#127163)
+  - perf(sessions): lazily scan transcript matches (#127162)
+  - fix(ui): recover cloud worker saves after reconnect (#127150)
+  - fix(process): retain live children after signal errors (#127154)
+  - fix(ci): isolate candidate cache authority (#127149)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
