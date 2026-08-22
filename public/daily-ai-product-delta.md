@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-08-21T20:19:45+08:00
-- Requested window: 2026-08-20 to 2026-08-21
+- Generated at: 2026-08-22T20:13:18+08:00
+- Requested window: 2026-08-21 to 2026-08-22
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,30 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-08-20 to 2026-08-21
-- Generated at: 2026-08-21T20:19:30.358421+08:00
-- 窗口: 2026-08-20 至 2026-08-21
-- GitHub 增量: 286 commits / 0 releases
-- 最近 push: 2026-08-21
+- Window: 2026-08-21 to 2026-08-22
+- Generated at: 2026-08-22T20:13:00.571602+08:00
+- 窗口: 2026-08-21 至 2026-08-22
+- GitHub 增量: 236 commits / 0 releases
+- 最近 push: 2026-08-22
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(nodes): expose plugin duplex channels (#126961)
-  - feat(control-ui): stream live draft previews in the typing indicator (#126994)
-  - feat(slack): add compact commentary progress (#126480)
-  - feat(sessions): recover offline device placements (#126284)
-  - feat(qa): acknowledge Mantis PR requests (#126702)
-  - feat(qa): trigger Mantis proof from pull requests (#126658)
-  - feat(ui): manage automation condition triggers (#126534)
+  - feat(e2e): record provider media content facts for Mantis proofs (#127830)
+  - feat(mantis): keep QA leases alive and stage fixture plugins (#127804)
+  - feat(mantis): programmable proof boundaries with recipe library (#127782)
+  - feat(ui): add live CPU/memory/delay sparkline graphs to the system busyness overlay (#127650)
+  - feat(dashboard): let widgets run granted actions and open links (#127315)
+  - feat(ui): add Person grouping mode for sessions sidebar and sessions page (#127346)
+  - feat: run Codex sessions on approved paired devices (#127202)
+  - feat(ui): explain decision receipts in Activity (#126007)
 - Fixes and constraints:
-  - fix(heartbeat): honor configured session for monitor wakes (#127153)
-  - fix(gateway): refresh health after runtime inspection failure (#127174)
-  - fix(ui): keep segmented selections visible in forced colors (#127165)
-  - perf(test): speed up board provider snapshot observations (#127163)
-  - perf(sessions): lazily scan transcript matches (#127162)
-  - fix(ui): recover cloud worker saves after reconnect (#127150)
-  - fix(process): retain live children after signal errors (#127154)
-  - fix(ci): isolate candidate cache authority (#127149)
+  - fix(sqlite): isolate read-only snapshot preparation to stop WAL lock drops (#127855)
+  - fix(mantis): keep caller stdin for the lease-fenced command (#127871)
+  - perf(mattermost): decode inbound websocket frames once (#127870)
+  - fix(cli): sanitize node describe commands (#127856)
+  - perf(e2e): reuse one authorized Telegram Desktop session per Mantis run (#127835)
+  - perf(signal): reuse parsed inbound payload (#127851)
+  - fix(ui): keep transcript disclosures anchored (#126272)
+  - perf(line): skip empty inbound media projection (#127827)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
