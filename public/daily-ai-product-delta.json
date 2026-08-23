@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-22T20:13:18+08:00",
+  "generatedAt": "2026-08-23T20:13:48+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-08-21T20:13:18+08:00",
-    "end_local": "2026-08-22T20:13:18+08:00"
+    "start_local": "2026-08-22T20:13:48+08:00",
+    "end_local": "2026-08-23T20:13:48+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-08-22T20:13:00.571602+08:00",
+      "generatedAt": "2026-08-23T20:13:31.269188+08:00",
       "window": {
-        "start_local": "2026-08-21T20:13:00.571602+08:00",
-        "end_local": "2026-08-22T20:13:00.571602+08:00",
-        "start_utc": "2026-08-21T12:13:00Z",
-        "end_utc": "2026-08-22T12:13:00Z"
+        "start_local": "2026-08-22T20:13:31.269188+08:00",
+        "end_local": "2026-08-23T20:13:31.269188+08:00",
+        "start_utc": "2026-08-22T12:13:31Z",
+        "end_utc": "2026-08-23T12:13:31Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-08-21 至 2026-08-22"
+          "value": "2026-08-22 至 2026-08-23"
         },
         {
           "label": "GitHub 增量",
-          "value": "236 commits / 0 releases"
+          "value": "138 commits / 0 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-08-22"
+          "value": "2026-08-23"
         },
         {
           "label": "来源",
@@ -52,58 +52,57 @@
         }
       ],
       "featureItems": [
-        "feat(e2e): record provider media content facts for Mantis proofs (#127830)",
-        "feat(mantis): keep QA leases alive and stage fixture plugins (#127804)",
-        "feat(mantis): programmable proof boundaries with recipe library (#127782)",
-        "feat(ui): add live CPU/memory/delay sparkline graphs to the system busyness overlay (#127650)",
-        "feat(dashboard): let widgets run granted actions and open links (#127315)",
-        "feat(ui): add Person grouping mode for sessions sidebar and sessions page (#127346)",
-        "feat: run Codex sessions on approved paired devices (#127202)",
-        "feat(ui): explain decision receipts in Activity (#126007)"
+        "feat(mantis): add long-held active turn recipe (#128117)",
+        "feat(mantis): give the proof agent a developer shell and gateway restart (#128094)",
+        "feat(ui): add session hovercards (#125068)",
+        "feat(mantis): publish trusted lane fact digests and a differential line (#128089)",
+        "feat(audit): explain plugin and remote actions (#126027)",
+        "feat(ui): environment differentiation for the Control UI (gateway.controlUi.environment) (#127711)",
+        "feat(ui): add a Claude CLI 200K/1M context-window switch to the model picker (#127951)"
       ],
       "fixItems": [
-        "fix(sqlite): isolate read-only snapshot preparation to stop WAL lock drops (#127855)",
-        "fix(mantis): keep caller stdin for the lease-fenced command (#127871)",
-        "perf(mattermost): decode inbound websocket frames once (#127870)",
-        "fix(cli): sanitize node describe commands (#127856)",
-        "perf(e2e): reuse one authorized Telegram Desktop session per Mantis run (#127835)",
-        "perf(signal): reuse parsed inbound payload (#127851)",
-        "fix(ui): keep transcript disclosures anchored (#126272)",
-        "perf(line): skip empty inbound media projection (#127827)"
+        "fix(discord): surface failed voice notes after text fallback (#127876)",
+        "fix(feishu): preserve all accepted voice fallback content (#128130)",
+        "fix(discord): deliver embed-only and component-only messages (#128152)",
+        "fix(telegram): preserve accepted media delivery after failures (#128181)",
+        "fix(discord): preserve MIME extension for component uploads (#119671)",
+        "fix(macos): restore Settings pane scrolling (#118831)",
+        "fix(whatsapp): preserve upload attachment metadata (#128186)",
+        "fix(talk): share and bound Apple relay lifecycle (#127232)"
       ],
       "releases": [],
       "topScopes": [
         {
           "scope": "ui",
-          "count": 46
-        },
-        {
-          "scope": "gateway",
-          "count": 14
-        },
-        {
-          "scope": "fix",
-          "count": 14
+          "count": 29
         },
         {
           "scope": "agents",
-          "count": 14
+          "count": 10
+        },
+        {
+          "scope": "mantis",
+          "count": 10
+        },
+        {
+          "scope": "discord",
+          "count": 6
         },
         {
           "scope": "cli",
-          "count": 11
+          "count": 6
+        },
+        {
+          "scope": "fix",
+          "count": 6
         },
         {
           "scope": "plugins",
-          "count": 8
+          "count": 5
         },
         {
-          "scope": "test",
-          "count": 8
-        },
-        {
-          "scope": "qa",
-          "count": 8
+          "scope": "cron",
+          "count": 4
         }
       ],
       "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
