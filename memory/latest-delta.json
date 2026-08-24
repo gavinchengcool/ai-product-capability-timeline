@@ -1,90 +1,99 @@
 {
-  "generatedAt": "2026-08-23T20:13:31.269188+08:00",
+  "generatedAt": "2026-08-24T20:20:02.289815+08:00",
   "window": {
-    "start_local": "2026-08-22T20:13:31.269188+08:00",
-    "end_local": "2026-08-23T20:13:31.269188+08:00",
-    "start_utc": "2026-08-22T12:13:31Z",
-    "end_utc": "2026-08-23T12:13:31Z"
+    "start_local": "2026-08-23T20:20:02.289815+08:00",
+    "end_local": "2026-08-24T20:20:02.289815+08:00",
+    "start_utc": "2026-08-23T12:20:02Z",
+    "end_utc": "2026-08-24T12:20:02Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 387206,
-    "forks": 81321,
-    "open_issues": 6038,
-    "pushed_at": "2026-08-23T12:10:43Z"
+    "stars": 387303,
+    "forks": 81330,
+    "open_issues": 5855,
+    "pushed_at": "2026-08-24T12:19:39Z"
   },
   "summary": {
-    "commitCount": 138,
-    "releaseCount": 0,
+    "commitCount": 321,
+    "releaseCount": 1,
     "stableReleaseCount": 0,
-    "betaReleaseCount": 0,
-    "stars": 387206,
-    "forks": 81321,
-    "openIssues": 6038
+    "betaReleaseCount": 1,
+    "stars": 387303,
+    "forks": 81330,
+    "openIssues": 5855
   },
-  "releases": [],
+  "releases": [
+    {
+      "tag_name": "v2026.8.1-beta.3",
+      "published_at": "2026-08-24T04:40:41Z",
+      "name": "OpenClaw 2026.8.1-beta.3",
+      "prerelease": true,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.1-beta.3"
+    }
+  ],
   "featureItems": [
-    "feat(mantis): add long-held active turn recipe (#128117)",
-    "feat(mantis): give the proof agent a developer shell and gateway restart (#128094)",
-    "feat(ui): add session hovercards (#125068)",
-    "feat(mantis): publish trusted lane fact digests and a differential line (#128089)",
-    "feat(audit): explain plugin and remote actions (#126027)",
-    "feat(ui): environment differentiation for the Control UI (gateway.controlUi.environment) (#127711)",
-    "feat(ui): add a Claude CLI 200K/1M context-window switch to the model picker (#127951)"
+    "GPT-5.6 Sol, Terra, Luna, and Ultra reasoning support across OpenClaw and the Codex runtime. [v2026.8.1-beta.3]",
+    "Puppeteer-compatible CDP relay support for paired Chrome sessions. [v2026.8.1-beta.3]",
+    "feat(geolocation): resolve client addresses to a coarse city via a bundled plugin (#128546)",
+    "feat(ios): adopt gateway user accent in chat (#128599)",
+    "feat(ui): show disk space in diagnostics overlay (#128552)",
+    "feat(gateway): generic operator roles for non-maintainer access (#128548)",
+    "feat(ui): open sessions in real browser tabs and keep sidebar visibility per-tab (#128474)",
+    "feat(control-ui): Cmd+/ keyboard shortcuts overview from a declarative catalog (#128563)"
   ],
   "fixItems": [
-    "fix(discord): surface failed voice notes after text fallback (#127876)",
-    "fix(feishu): preserve all accepted voice fallback content (#128130)",
-    "fix(discord): deliver embed-only and component-only messages (#128152)",
-    "fix(telegram): preserve accepted media delivery after failures (#128181)",
-    "fix(discord): preserve MIME extension for component uploads (#119671)",
-    "fix(macos): restore Settings pane scrolling (#118831)",
-    "fix(whatsapp): preserve upload attachment metadata (#128186)",
-    "fix(talk): share and bound Apple relay lifecycle (#127232)"
+    "fix(browser): stop cancelled downloads from publishing files (#128651)",
+    "fix(daemon): audit effective systemd properties (#128705)",
+    "fix(scripts): ignore superseded target dispatch checks (#128704)",
+    "fix(ci): isolate release QA lane locks (#128458)",
+    "fix(ui): show chat before startup metadata finishes (#128652)",
+    "fix(agents): stop context-engine work when runs are cancelled (#128607)",
+    "fix(workers): reject conflicting placement identity (#128670)",
+    "fix(file-transfer): inline bounded text attachment formats (#128656)"
   ],
   "topScopes": [
     {
       "scope": "ui",
-      "count": 29
+      "count": 32
+    },
+    {
+      "scope": "gateway",
+      "count": 27
     },
     {
       "scope": "agents",
-      "count": 10
+      "count": 19
     },
     {
-      "scope": "mantis",
+      "scope": "cli",
+      "count": 18
+    },
+    {
+      "scope": "ci",
       "count": 10
     },
     {
       "scope": "discord",
-      "count": 6
-    },
-    {
-      "scope": "cli",
-      "count": 6
-    },
-    {
-      "scope": "fix",
-      "count": 6
-    },
-    {
-      "scope": "plugins",
-      "count": 5
+      "count": 9
     },
     {
       "scope": "cron",
-      "count": 4
+      "count": 9
+    },
+    {
+      "scope": "telegram",
+      "count": 8
     }
   ],
   "headlineCommits": [
-    "fix(discord): surface failed voice notes after text fallback (#127876)",
-    "fix(feishu): preserve all accepted voice fallback content (#128130)",
-    "fix(discord): deliver embed-only and component-only messages (#128152)",
-    "fix(telegram): preserve accepted media delivery after failures (#128181)",
-    "fix(discord): preserve MIME extension for component uploads (#119671)",
-    "fix(macos): restore Settings pane scrolling (#118831)",
-    "fix(whatsapp): preserve upload attachment metadata (#128186)",
-    "fix(talk): share and bound Apple relay lifecycle (#127232)"
+    "fix(browser): stop cancelled downloads from publishing files (#128651)",
+    "fix(daemon): audit effective systemd properties (#128705)",
+    "fix(scripts): ignore superseded target dispatch checks (#128704)",
+    "fix(ci): isolate release QA lane locks (#128458)",
+    "fix(ui): show chat before startup metadata finishes (#128652)",
+    "feat(geolocation): resolve client addresses to a coarse city via a bundled plugin (#128546)",
+    "fix(agents): stop context-engine work when runs are cancelled (#128607)",
+    "fix(workers): reject conflicting placement identity (#128670)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 }

@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-08-23T20:13:48+08:00
-- Requested window: 2026-08-22 to 2026-08-23
+- Generated at: 2026-08-24T20:20:20+08:00
+- Requested window: 2026-08-23 to 2026-08-24
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,30 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-08-22 to 2026-08-23
-- Generated at: 2026-08-23T20:13:31.269188+08:00
-- 窗口: 2026-08-22 至 2026-08-23
-- GitHub 增量: 138 commits / 0 releases
-- 最近 push: 2026-08-23
+- Window: 2026-08-23 to 2026-08-24
+- Generated at: 2026-08-24T20:20:02.289815+08:00
+- 窗口: 2026-08-23 至 2026-08-24
+- GitHub 增量: 321 commits / 1 releases
+- 最近 push: 2026-08-24
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(mantis): add long-held active turn recipe (#128117)
-  - feat(mantis): give the proof agent a developer shell and gateway restart (#128094)
-  - feat(ui): add session hovercards (#125068)
-  - feat(mantis): publish trusted lane fact digests and a differential line (#128089)
-  - feat(audit): explain plugin and remote actions (#126027)
-  - feat(ui): environment differentiation for the Control UI (gateway.controlUi.environment) (#127711)
-  - feat(ui): add a Claude CLI 200K/1M context-window switch to the model picker (#127951)
+  - GPT-5.6 Sol, Terra, Luna, and Ultra reasoning support across OpenClaw and the Codex runtime. [v2026.8.1-beta.3]
+  - Puppeteer-compatible CDP relay support for paired Chrome sessions. [v2026.8.1-beta.3]
+  - feat(geolocation): resolve client addresses to a coarse city via a bundled plugin (#128546)
+  - feat(ios): adopt gateway user accent in chat (#128599)
+  - feat(ui): show disk space in diagnostics overlay (#128552)
+  - feat(gateway): generic operator roles for non-maintainer access (#128548)
+  - feat(ui): open sessions in real browser tabs and keep sidebar visibility per-tab (#128474)
+  - feat(control-ui): Cmd+/ keyboard shortcuts overview from a declarative catalog (#128563)
 - Fixes and constraints:
-  - fix(discord): surface failed voice notes after text fallback (#127876)
-  - fix(feishu): preserve all accepted voice fallback content (#128130)
-  - fix(discord): deliver embed-only and component-only messages (#128152)
-  - fix(telegram): preserve accepted media delivery after failures (#128181)
-  - fix(discord): preserve MIME extension for component uploads (#119671)
-  - fix(macos): restore Settings pane scrolling (#118831)
-  - fix(whatsapp): preserve upload attachment metadata (#128186)
-  - fix(talk): share and bound Apple relay lifecycle (#127232)
+  - fix(browser): stop cancelled downloads from publishing files (#128651)
+  - fix(daemon): audit effective systemd properties (#128705)
+  - fix(scripts): ignore superseded target dispatch checks (#128704)
+  - fix(ci): isolate release QA lane locks (#128458)
+  - fix(ui): show chat before startup metadata finishes (#128652)
+  - fix(agents): stop context-engine work when runs are cancelled (#128607)
+  - fix(workers): reject conflicting placement identity (#128670)
+  - fix(file-transfer): inline bounded text attachment formats (#128656)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
