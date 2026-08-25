@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-08-24T20:20:20+08:00
-- Requested window: 2026-08-23 to 2026-08-24
+- Generated at: 2026-08-25T20:21:02+08:00
+- Requested window: 2026-08-24 to 2026-08-25
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-08-23 to 2026-08-24
-- Generated at: 2026-08-24T20:20:02.289815+08:00
-- 窗口: 2026-08-23 至 2026-08-24
-- GitHub 增量: 321 commits / 1 releases
-- 最近 push: 2026-08-24
+- Window: 2026-08-24 to 2026-08-25
+- Generated at: 2026-08-25T20:20:43.654897+08:00
+- 窗口: 2026-08-24 至 2026-08-25
+- GitHub 增量: 352 commits / 0 releases
+- 最近 push: 2026-08-25
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - GPT-5.6 Sol, Terra, Luna, and Ultra reasoning support across OpenClaw and the Codex runtime. [v2026.8.1-beta.3]
-  - Puppeteer-compatible CDP relay support for paired Chrome sessions. [v2026.8.1-beta.3]
-  - feat(geolocation): resolve client addresses to a coarse city via a bundled plugin (#128546)
-  - feat(ios): adopt gateway user accent in chat (#128599)
-  - feat(ui): show disk space in diagnostics overlay (#128552)
-  - feat(gateway): generic operator roles for non-maintainer access (#128548)
-  - feat(ui): open sessions in real browser tabs and keep sidebar visibility per-tab (#128474)
-  - feat(control-ui): Cmd+/ keyboard shortcuts overview from a declarative catalog (#128563)
+  - feat(android): unify agent and session pickers (#128309)
+  - improve(ci): add trusted FRV proof broker (#128966)
+  - feat(ui): dock the session progress card beside a wide composer (#129141)
+  - feat(workers): run OpenClaw and Codex on the same cloud profile (#127752)
+  - feat(cli): add openclaw triage for sanitized agent debugging handoffs (#128756)
+  - feat(github): surface team-session attribution (#129012)
+  - feat(codex): upgrade main to app-server 0.149.1 (#128370)
+  - feat(ui): search sessions and catalogs from command palette (#128356)
 - Fixes and constraints:
-  - fix(browser): stop cancelled downloads from publishing files (#128651)
-  - fix(daemon): audit effective systemd properties (#128705)
-  - fix(scripts): ignore superseded target dispatch checks (#128704)
-  - fix(ci): isolate release QA lane locks (#128458)
-  - fix(ui): show chat before startup metadata finishes (#128652)
-  - fix(agents): stop context-engine work when runs are cancelled (#128607)
-  - fix(workers): reject conflicting placement identity (#128670)
-  - fix(file-transfer): inline bounded text attachment formats (#128656)
+  - fix(reply): preserve location and video presentation in delivery identity (#129278)
+  - fix(whatsapp): preserve text when Markdown formatting returns no chunks (#129275)
+  - fix(discord): honor explicit names for new forum posts (#129294)
+  - fix(mistral): report provider terminal failures instead of silent success (#129256)
+  - fix(anthropic): keep Claude CLI authentication native (#129052)
+  - fix(linux): first-run desktop onboarding automatically connects working AI (#129211)
+  - fix(gateway): prevent live profile retries from replacing runtimes (#129239)
+  - fix(cli): make managed service recovery hints actionable (#129243)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
