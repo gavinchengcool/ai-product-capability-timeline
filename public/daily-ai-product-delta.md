@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-08-25T20:21:02+08:00
-- Requested window: 2026-08-24 to 2026-08-25
+- Generated at: 2026-08-26T20:22:44+08:00
+- Requested window: 2026-08-25 to 2026-08-26
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-08-24 to 2026-08-25
-- Generated at: 2026-08-25T20:20:43.654897+08:00
-- 窗口: 2026-08-24 至 2026-08-25
-- GitHub 增量: 352 commits / 0 releases
-- 最近 push: 2026-08-25
+- Window: 2026-08-25 to 2026-08-26
+- Generated at: 2026-08-26T20:22:28.764134+08:00
+- 窗口: 2026-08-25 至 2026-08-26
+- GitHub 增量: 572 commits / 0 releases
+- 最近 push: 2026-08-26
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(android): unify agent and session pickers (#128309)
-  - improve(ci): add trusted FRV proof broker (#128966)
-  - feat(ui): dock the session progress card beside a wide composer (#129141)
-  - feat(workers): run OpenClaw and Codex on the same cloud profile (#127752)
-  - feat(cli): add openclaw triage for sanitized agent debugging handoffs (#128756)
-  - feat(github): surface team-session attribution (#129012)
-  - feat(codex): upgrade main to app-server 0.149.1 (#128370)
-  - feat(ui): search sessions and catalogs from command palette (#128356)
+  - feat(gateway): add renewable cooperative suspension draining (#130003)
+  - feat(cron): link chat notifications to Control UI run inspection (#130049)
+  - feat(msteams): native Adaptive Card approve/deny for exec and plugin approvals (#129997)
+  - feat(secrets): opt-in traffic allowlist for the secret egress proxy (#129880)
+  - feat(control-ui): add the Absolutely theme with self-hosted typography (#129885)
+  - feat(daemon): support Bun 1.4 managed services (#129593)
+  - feat(gateway): identity-conditional forced sandboxing for operator roles (#129926)
+  - feat: bring Linux desktop onboarding to macOS parity (#129815)
 - Fixes and constraints:
-  - fix(reply): preserve location and video presentation in delivery identity (#129278)
-  - fix(whatsapp): preserve text when Markdown formatting returns no chunks (#129275)
-  - fix(discord): honor explicit names for new forum posts (#129294)
-  - fix(mistral): report provider terminal failures instead of silent success (#129256)
-  - fix(anthropic): keep Claude CLI authentication native (#129052)
-  - fix(linux): first-run desktop onboarding automatically connects working AI (#129211)
-  - fix(gateway): prevent live profile retries from replacing runtimes (#129239)
-  - fix(cli): make managed service recovery hints actionable (#129243)
+  - fix(line): preserve quick replies after rejected rich messages (#130076)
+  - fix(browser): prove post-action target continuity before adopting a tab (#110884)
+  - fix(ui): let mobile workboard scroll with toolbar (#129497)
+  - fix(ui): clear stale session-list errors after Gateway recovery (#130004)
+  - fix: preserve unread reminder for open sessions (#129386)
+  - fix(channels): restore retry accounting for abandoned ingress (#130077)
+  - fix(google): retain provider-returned response model (#129606)
+  - fix(onboarding): recovery hints target the wrong Gateway (#129577)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
