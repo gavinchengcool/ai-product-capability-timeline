@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-08-26T20:22:44+08:00
-- Requested window: 2026-08-25 to 2026-08-26
+- Generated at: 2026-08-28T05:21:36+08:00
+- Requested window: 2026-08-27 to 2026-08-28
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-08-25 to 2026-08-26
-- Generated at: 2026-08-26T20:22:28.764134+08:00
-- 窗口: 2026-08-25 至 2026-08-26
-- GitHub 增量: 572 commits / 0 releases
-- 最近 push: 2026-08-26
+- Window: 2026-08-27 to 2026-08-28
+- Generated at: 2026-08-28T05:21:19.963144+08:00
+- 窗口: 2026-08-27 至 2026-08-28
+- GitHub 增量: 513 commits / 0 releases
+- 最近 push: 2026-08-27
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(gateway): add renewable cooperative suspension draining (#130003)
-  - feat(cron): link chat notifications to Control UI run inspection (#130049)
-  - feat(msteams): native Adaptive Card approve/deny for exec and plugin approvals (#129997)
-  - feat(secrets): opt-in traffic allowlist for the secret egress proxy (#129880)
-  - feat(control-ui): add the Absolutely theme with self-hosted typography (#129885)
-  - feat(daemon): support Bun 1.4 managed services (#129593)
-  - feat(gateway): identity-conditional forced sandboxing for operator roles (#129926)
-  - feat: bring Linux desktop onboarding to macOS parity (#129815)
+  - improve(ui): add permission docs link to picker (#131152)
+  - feat(ci): alarm and self-heal when the docs mirror goes stale (#131173)
+  - feat(channels): add Matrix and LINE join introductions (#131128)
+  - feat(configure): surface the trusted-proxy loopback opt-in with its warning (#131132)
+  - feat(security): warn on inert mutable allowFrom entries (#131129)
+  - feat(ui): show activity cards for online people (#130664)
+  - improve(ui): clarify Appearance theme controls (#130844)
+  - feat(plugin-sdk): publish identifier authentication contract (#123793)
 - Fixes and constraints:
-  - fix(line): preserve quick replies after rejected rich messages (#130076)
-  - fix(browser): prove post-action target continuity before adopting a tab (#110884)
-  - fix(ui): let mobile workboard scroll with toolbar (#129497)
-  - fix(ui): clear stale session-list errors after Gateway recovery (#130004)
-  - fix: preserve unread reminder for open sessions (#129386)
-  - fix(channels): restore retry accounting for abandoned ingress (#130077)
-  - fix(google): retain provider-returned response model (#129606)
-  - fix(onboarding): recovery hints target the wrong Gateway (#129577)
+  - fix(ui): keep Gateway place labels current (#131118)
+  - fix(ui): preserve external config edits after Raw revert (#130935)
+  - fix(cli): preserve authored config during channel auth (#131117)
+  - perf(ci): refit Control UI E2E duration hints to the grown suite
+  - fix(gateway): pin runtime generation at admission (#131120)
+  - fix(ui): keep reconnect-uncertain sends inline and prove delivery by run id (#131171)
+  - fix(twitch): retain native sender identity in execution audits (#130730)
+  - fix(copilot): honor static GPT-5.4 mini thinking levels (#131160)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-26T20:22:44+08:00",
+  "generatedAt": "2026-08-28T05:21:36+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-08-25T20:22:44+08:00",
-    "end_local": "2026-08-26T20:22:44+08:00"
+    "start_local": "2026-08-27T05:21:36+08:00",
+    "end_local": "2026-08-28T05:21:36+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-08-26T20:22:28.764134+08:00",
+      "generatedAt": "2026-08-28T05:21:19.963144+08:00",
       "window": {
-        "start_local": "2026-08-25T20:22:28.764134+08:00",
-        "end_local": "2026-08-26T20:22:28.764134+08:00",
-        "start_utc": "2026-08-25T12:22:28Z",
-        "end_utc": "2026-08-26T12:22:28Z"
+        "start_local": "2026-08-27T05:21:19.963144+08:00",
+        "end_local": "2026-08-28T05:21:19.963144+08:00",
+        "start_utc": "2026-08-26T21:21:19Z",
+        "end_utc": "2026-08-27T21:21:19Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-08-25 至 2026-08-26"
+          "value": "2026-08-27 至 2026-08-28"
         },
         {
           "label": "GitHub 增量",
-          "value": "572 commits / 0 releases"
+          "value": "513 commits / 0 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-08-26"
+          "value": "2026-08-27"
         },
         {
           "label": "来源",
@@ -52,58 +52,58 @@
         }
       ],
       "featureItems": [
-        "feat(gateway): add renewable cooperative suspension draining (#130003)",
-        "feat(cron): link chat notifications to Control UI run inspection (#130049)",
-        "feat(msteams): native Adaptive Card approve/deny for exec and plugin approvals (#129997)",
-        "feat(secrets): opt-in traffic allowlist for the secret egress proxy (#129880)",
-        "feat(control-ui): add the Absolutely theme with self-hosted typography (#129885)",
-        "feat(daemon): support Bun 1.4 managed services (#129593)",
-        "feat(gateway): identity-conditional forced sandboxing for operator roles (#129926)",
-        "feat: bring Linux desktop onboarding to macOS parity (#129815)"
+        "improve(ui): add permission docs link to picker (#131152)",
+        "feat(ci): alarm and self-heal when the docs mirror goes stale (#131173)",
+        "feat(channels): add Matrix and LINE join introductions (#131128)",
+        "feat(configure): surface the trusted-proxy loopback opt-in with its warning (#131132)",
+        "feat(security): warn on inert mutable allowFrom entries (#131129)",
+        "feat(ui): show activity cards for online people (#130664)",
+        "improve(ui): clarify Appearance theme controls (#130844)",
+        "feat(plugin-sdk): publish identifier authentication contract (#123793)"
       ],
       "fixItems": [
-        "fix(line): preserve quick replies after rejected rich messages (#130076)",
-        "fix(browser): prove post-action target continuity before adopting a tab (#110884)",
-        "fix(ui): let mobile workboard scroll with toolbar (#129497)",
-        "fix(ui): clear stale session-list errors after Gateway recovery (#130004)",
-        "fix: preserve unread reminder for open sessions (#129386)",
-        "fix(channels): restore retry accounting for abandoned ingress (#130077)",
-        "fix(google): retain provider-returned response model (#129606)",
-        "fix(onboarding): recovery hints target the wrong Gateway (#129577)"
+        "fix(ui): keep Gateway place labels current (#131118)",
+        "fix(ui): preserve external config edits after Raw revert (#130935)",
+        "fix(cli): preserve authored config during channel auth (#131117)",
+        "perf(ci): refit Control UI E2E duration hints to the grown suite",
+        "fix(gateway): pin runtime generation at admission (#131120)",
+        "fix(ui): keep reconnect-uncertain sends inline and prove delivery by run id (#131171)",
+        "fix(twitch): retain native sender identity in execution audits (#130730)",
+        "fix(copilot): honor static GPT-5.4 mini thinking levels (#131160)"
       ],
       "releases": [],
       "topScopes": [
         {
           "scope": "ui",
-          "count": 56
-        },
-        {
-          "scope": "gateway",
-          "count": 31
-        },
-        {
-          "scope": "test",
-          "count": 23
-        },
-        {
-          "scope": "agents",
-          "count": 23
-        },
-        {
-          "scope": "cli",
-          "count": 17
-        },
-        {
-          "scope": "android",
-          "count": 17
-        },
-        {
-          "scope": "browser",
-          "count": 16
+          "count": 66
         },
         {
           "scope": "fix",
-          "count": 16
+          "count": 30
+        },
+        {
+          "scope": "agents",
+          "count": 25
+        },
+        {
+          "scope": "plugins",
+          "count": 21
+        },
+        {
+          "scope": "gateway",
+          "count": 17
+        },
+        {
+          "scope": "ci",
+          "count": 13
+        },
+        {
+          "scope": "browser",
+          "count": 13
+        },
+        {
+          "scope": "cli",
+          "count": 12
         }
       ],
       "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
