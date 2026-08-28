@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-08-28T05:21:36+08:00
-- Requested window: 2026-08-27 to 2026-08-28
+- Generated at: 2026-08-29T05:33:25+08:00
+- Requested window: 2026-08-28 to 2026-08-29
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-08-27 to 2026-08-28
-- Generated at: 2026-08-28T05:21:19.963144+08:00
-- 窗口: 2026-08-27 至 2026-08-28
-- GitHub 增量: 513 commits / 0 releases
-- 最近 push: 2026-08-27
+- Window: 2026-08-28 to 2026-08-29
+- Generated at: 2026-08-29T05:33:04.666344+08:00
+- 窗口: 2026-08-28 至 2026-08-29
+- GitHub 增量: 544 commits / 1 releases
+- 最近 push: 2026-08-28
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - improve(ui): add permission docs link to picker (#131152)
-  - feat(ci): alarm and self-heal when the docs mirror goes stale (#131173)
-  - feat(channels): add Matrix and LINE join introductions (#131128)
-  - feat(configure): surface the trusted-proxy loopback opt-in with its warning (#131132)
-  - feat(security): warn on inert mutable allowFrom entries (#131129)
-  - feat(ui): show activity cards for online people (#130664)
-  - improve(ui): clarify Appearance theme controls (#130844)
-  - feat(plugin-sdk): publish identifier authentication contract (#123793)
+  - **Model selection scopes:** add configurable model-selection scopes while preserving the canonical provider and runtime policy path. (#127813) Thanks @Marvinthebored and @Peetiegonzalez. [v2026.9.1-beta.1]
+  - feat(visitor-access): internal Cloudflare Access visitor plugin (#132073)
+  - feat(docker): install openssh-client in the runtime image (#131710)
+  - feat(release): reuse exact full release candidates (#131818)
+  - feat(browser): expose page errors action (#131906)
+  - feat(profile): enable Git co-author credit by default (#131964)
+  - feat: show latest assistant actions without hover (#131529)
+  - feat(buzz): support flat automatic replies and typing (#130511)
 - Fixes and constraints:
-  - fix(ui): keep Gateway place labels current (#131118)
-  - fix(ui): preserve external config edits after Raw revert (#130935)
-  - fix(cli): preserve authored config during channel auth (#131117)
-  - perf(ci): refit Control UI E2E duration hints to the grown suite
-  - fix(gateway): pin runtime generation at admission (#131120)
-  - fix(ui): keep reconnect-uncertain sends inline and prove delivery by run id (#131171)
-  - fix(twitch): retain native sender identity in execution audits (#130730)
-  - fix(copilot): honor static GPT-5.4 mini thinking levels (#131160)
+  - fix(qa): keep leases when Gateway startup teardown fails (#131740)
+  - fix(ui): compact mobile session actions (#132020)
+  - fix(onboard): probe remote gateways with saved TLS pins and validate trusted proxies (#131475)
+  - fix(cron): capture Codex shell aliases under canonical tool identity with a restrict-only exec pin (#130579)
+  - fix(msteams): retain legacy stores until migrations prove survivors (#131284)
+  - fix: interactive update can leave the Gateway stopped when completion refresh fails (#131393)
+  - fix(whatsapp): retain unmatched attachments across captioned replacement (#131672)
+  - perf(release): pipeline full release validation (#131914)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
