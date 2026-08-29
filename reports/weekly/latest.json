@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-08-29T05:33:04.666344+08:00",
+  "generated_at": "2026-08-29T23:48:49.647262+08:00",
   "window": {
-    "start_local": "2026-08-28T05:33:04.666344+08:00",
-    "end_local": "2026-08-29T05:33:04.666344+08:00",
-    "start_utc": "2026-08-27T21:33:04Z",
-    "end_utc": "2026-08-28T21:33:04Z"
+    "start_local": "2026-08-28T23:48:49.647262+08:00",
+    "end_local": "2026-08-29T23:48:49.647262+08:00",
+    "start_utc": "2026-08-28T15:48:49Z",
+    "end_utc": "2026-08-29T15:48:49Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 387928,
-    "forks": 81452,
-    "open_issues": 5780,
-    "pushed_at": "2026-08-28T21:33:01Z"
+    "stars": 387985,
+    "forks": 81476,
+    "open_issues": 5719,
+    "pushed_at": "2026-08-29T15:48:44Z"
   },
   "releases_in_window": [
     {
@@ -22,61 +22,72 @@
       "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.1-beta.1"
     }
   ],
-  "commit_count": 544,
+  "commit_count": 546,
   "commit_headlines": [
-    "fix(qa): keep leases when Gateway startup teardown fails (#131740)",
-    "fix(ui): compact mobile session actions (#132020)",
-    "feat(visitor-access): internal Cloudflare Access visitor plugin (#132073)",
-    "fix(onboard): probe remote gateways with saved TLS pins and validate trusted proxies (#131475)",
-    "fix(cron): capture Codex shell aliases under canonical tool identity with a restrict-only exec pin (#130579)",
-    "fix(msteams): retain legacy stores until migrations prove survivors (#131284)",
-    "fix: interactive update can leave the Gateway stopped when completion refresh fails (#131393)",
-    "fix(whatsapp): retain unmatched attachments across captioned replacement (#131672)",
-    "perf(release): pipeline full release validation (#131914)",
-    "fix(openshell): serialize symlinked mirror workspaces (#131917)",
-    "fix(ui): show structural loading states in side-panel tabs (#131819)",
-    "fix(agents): preserve native runtime auth across catalog refresh (#131931)",
-    "fix(mcp): retrieve attachments from older messages (#131702)",
-    "fix(feishu): stop repeated document child pagination (#121124)",
-    "fix(webchat): restore playback for delivered audio and video (#131831)",
-    "fix(gateway): preserve authored fields in config patches (#132080)",
-    "fix(ui): avoid blank screen on first command palette open (#132028)",
-    "fix(webchat): strip reply directives during media transcript rewrites (#131859)",
-    "fix(release): accept Codex capabilities in Telegram QA (#131296)",
-    "fix(agents): stop retrying provider request ceilings (#130275)",
-    "fix(line): preserve postback selections for agents (#132014)",
-    "fix(ui): refresh stale mobile transcript bundles (#132024)",
-    "fix(ui): settle settings reconciliation at its own roster snapshot (#131958)",
-    "fix(scripts): prevent lint limits from slowing declaration preparation (#132043)",
-    "fix(logging): classify Node process warnings correctly (#131333)",
-    "fix(slack): mark partially unavailable thread files (#131896)",
-    "fix(release): distinguish CSS colors from issue references (#132075)",
-    "fix(ui): show a not-found state for missing session links (#131823)",
-    "fix: usage dashboard loads slowly for large session histories (#132064)",
-    "fix(ui): preserve attachments across offline reloads (#131753)",
-    "fix(media): preserve LINE attachment names in model context (#131216)",
-    "fix: tailor agent handoff guidance to the client surface (#131646)",
-    "fix: declaration steps succeed with lingering subprocesses (#132070)",
-    "fix(daemon): preserve recovery after Startup entry removal (#132056)",
-    "fix(models): keep native and alias-backed catalogs consistent (#131677)",
-    "fix: declaration steps succeed with lingering subprocesses (#132070)",
-    "docs: friendlier security and first-touch pages (#132067)",
-    "fix(ui): terminal never opens after a Gateway update reloads the tab (#131439)",
-    "fix(ui): polish the mobile Inbox sheet (#132007)",
-    "refactor(macos): simplify readiness bookkeeping and discovery parsing (#132074)",
-    "chore(i18n): refresh native locales (#132063)",
-    "refactor(release): remove unused GitHub publisher helper (#132068)",
-    "fix(android): stop offering obsolete ClawHub acknowledgement retries (#132016)",
-    "feat(docker): install openssh-client in the runtime image (#131710)",
-    "fix(browser): report native hosts with missing runtime targets (#131907)",
-    "fix(memory): bound the embedding cache with a built-in default (#131121)",
-    "fix(qa): repair stale Playwright scenario test selectors (#129277)",
-    "fix(release): full verification fails as main comparison grows (#132029)",
-    "fix(installer): resolve source refs safely (#130907)",
-    "chore(ui): refresh control ui locales (#132072)"
+    "fix(agents): account summarization model usage (#131115)",
+    "fix(doctor): preserve OpenAI auth rotation state (#130763)",
+    "fix(test): join tsgo cleanup after operation timeout (#132654)",
+    "fix(signal): preserve messages redelivered behind a busy lane (#128093)",
+    "fix(qa): stop hung packaged bootstrap subprocesses (#132659)",
+    "fix(agents): keep CLI tool args from start blocks (#120737)",
+    "fix(tavily): resolve dedicated tool SecretRefs (#131082)",
+    "chore(ui): refresh control ui locales (#132661)",
+    "fix(plugins): isolate malformed manifest schemas from plugin load and config validation (#119825)",
+    "fix(ci): prevent docs agent from throttling its own run (#132640)",
+    "fix: clean up health tests after failed or delayed setup (#132653)",
+    "test: clean up state and async task fixtures (#132643)",
+    "perf(test): consolidate duplicate sweeper close-reopen proof (#132656)",
+    "fix(release): validate complete ClawHub recovery audits (#132642)",
+    "perf(test): avoid inventory scans for exact test validation (#132652)",
+    "fix(policy): scan keyed agent evidence (#126935)",
+    "improve(ui): smoother chat history loading with an in-flow earlier-history boundary (#132493)",
+    "docs: clarify paired-node Codex continuation limits (#132637)",
+    "perf(parallel): keep search limits on the lightweight descriptor (#132647)",
+    "fix(sessions): keep reset history closed after compaction (#132606)",
+    "test: verify dependency-cache registry lifetime (#132636)",
+    "test(macos): synchronize catalog frame-limit readiness (#132585)",
+    "fix(auto-reply): admit low-level channel queue policy (#130621)",
+    "docs(qa): require Convex Telegram leases (#132644)",
+    "fix(test): prevent reconciles from recreating cleaned fixtures (#132634)",
+    "fix(auto-reply): bound Markdown fence reopen headers (#131086)",
+    "fix: cloud sessions reject image input (#132114)",
+    "fix(codex): prevent macOS Unix transport test hangs (#132632)",
+    "fix(ci): provision ripgrep for native grep tests (#132609)",
+    "fix(state): tolerate disappearing SQLite sidecars (#125451)",
+    "fix(tasks): retain CLI runs in standalone maintenance (#132602)",
+    "test(gateway): own session fixture setup and cleanup (#132574)",
+    "fix(compaction): preserve focus in split-turn summaries (#132564)",
+    "fix(ui): render model provider controls progressively (#130546)",
+    "fix: preserve transcript recovery and prerelease update routing (#132598)",
+    "fix(maintainers): wait for mergeability before admission (#132418)",
+    "fix: stabilize rollback-journal ownership race coverage (#132599)",
+    "fix(anthropic): keep private CLI context out of chat history (#132466)",
+    "chore(ui): refresh control ui locales (#132421)",
+    "fix(claws): keep deletion fence through cleanup (#128500)",
+    "fix(workboard): resolve stored terminal proofs by id (#127074)",
+    "fix(build): seal cold declaration outputs through workspace aliases (#132603)",
+    "fix(channels): accept env SecretRefs with shared default aliases (#132578)",
+    "fix(release): bound FRV transport uncertainty (#132595)",
+    "test(tasks): avoid persisting empty fixture resets (#132600)",
+    "refactor: consolidate package tarball test fixtures (#132563)",
+    "fix(auto-reply): deliver safe command replies during active runs (#131023)",
+    "docs(mac): correct build commit metadata description (#132568)",
+    "fix(ui): stop child-session error refetch churn (#132587)",
+    "fix(ui): reject secret deletion after Gateway client replacement (#129488)"
   ],
   "feature_items": [
     "**Model selection scopes:** add configurable model-selection scopes while preserving the canonical provider and runtime policy path. (#127813) Thanks @Marvinthebored and @Peetiegonzalez. [v2026.9.1-beta.1]",
+    "feat(control-ui): show cloud worker service and profile on session placements (#132405)",
+    "feat(ui): show node worker-slot utilization as segmented pips in the placement picker and Devices settings (#132394)",
+    "feat(crabbox): allow profiles without a default machine class (#131009)",
+    "feat(buzz): preserve bot identities when adding named accounts (#132226)",
+    "feat(hovercard): show PR co-authors as a facepile (#132275)",
+    "feat: configure Code Mode per model with inherited defaults (#132332)",
+    "feat(qa): add Convex-leased Telegram userbot proof (#131715)",
+    "feat(gateway): auto-apply safe doctor config migrations at startup (#132135)",
+    "feat(hovercard): show the PR author beside the number (#132107)",
+    "feat(ui): expand video attachments in the media overlay (#132131)",
+    "feat(ui): render queued follow-ups as transcript bubbles (#131909)",
     "feat(visitor-access): internal Cloudflare Access visitor plugin (#132073)",
     "feat(docker): install openssh-client in the runtime image (#131710)",
     "feat(release): reuse exact full release candidates (#131818)",
@@ -86,115 +97,100 @@
     "feat(buzz): support flat automatic replies and typing (#130511)",
     "feat(macos): bring native chat layout and controls closer to web (#131849)",
     "feat(browser): agent requests/text/emulate + snapshot query, and inline browser-tab thumbnail cards (#131592)",
-    "feat(cloud-workers): enable warm images by default outside secret-bearing setup (#131874)",
-    "feat(cloud-workers): warm project seeds and automatic image refresh (#131744)",
-    "feat(macos): enable native node session hosting (#131717)",
-    "feat(release): seal full release candidate evidence (#131751)",
-    "feat(control-ui): create and manage goals without slash commands (#131370)",
-    "feat(approvals): standing-grant ledger, revocation, and configurable terms (#131602)",
-    "feat(comfy): support custom headers and per-request seed randomization (#130098)",
-    "feat(ui): sidebar Project grouping and truly flat None mode (#131543)",
-    "feat(cron): recover interrupted one-shot jobs on restart (#131473)",
-    "feat(ci): add admin-only Crabbox PR gate fallback (#131091)",
-    "feat(ui): interface and chat font pickers in appearance settings (#131275)",
-    "feat(models): refresh provider models and live discovery (#131294)",
-    "feat(ui): open new-session plus controls in browser tabs (#131336)",
-    "feat(ui): rename automatic placement to Auto with a least-busy subtitle (#131215)",
-    "feat(clawhub): show security audit before installs (#131233)",
-    "feat(reef): operator-configurable sharing rules for the guard (#131167)"
+    "feat(cloud-workers): enable warm images by default outside secret-bearing setup (#131874)"
   ],
   "fix_items": [
-    "fix(qa): keep leases when Gateway startup teardown fails (#131740)",
-    "fix(ui): compact mobile session actions (#132020)",
-    "fix(onboard): probe remote gateways with saved TLS pins and validate trusted proxies (#131475)",
-    "fix(cron): capture Codex shell aliases under canonical tool identity with a restrict-only exec pin (#130579)",
-    "fix(msteams): retain legacy stores until migrations prove survivors (#131284)",
-    "fix: interactive update can leave the Gateway stopped when completion refresh fails (#131393)",
-    "fix(whatsapp): retain unmatched attachments across captioned replacement (#131672)",
-    "perf(release): pipeline full release validation (#131914)",
-    "fix(openshell): serialize symlinked mirror workspaces (#131917)",
-    "fix(ui): show structural loading states in side-panel tabs (#131819)",
-    "fix(agents): preserve native runtime auth across catalog refresh (#131931)",
-    "fix(mcp): retrieve attachments from older messages (#131702)",
-    "fix(feishu): stop repeated document child pagination (#121124)",
-    "fix(webchat): restore playback for delivered audio and video (#131831)",
-    "fix(gateway): preserve authored fields in config patches (#132080)",
-    "fix(ui): avoid blank screen on first command palette open (#132028)",
-    "fix(webchat): strip reply directives during media transcript rewrites (#131859)",
-    "fix(release): accept Codex capabilities in Telegram QA (#131296)",
-    "fix(agents): stop retrying provider request ceilings (#130275)",
-    "fix(line): preserve postback selections for agents (#132014)",
-    "fix(ui): refresh stale mobile transcript bundles (#132024)",
-    "fix(ui): settle settings reconciliation at its own roster snapshot (#131958)",
-    "fix(scripts): prevent lint limits from slowing declaration preparation (#132043)",
-    "fix(logging): classify Node process warnings correctly (#131333)",
-    "fix(slack): mark partially unavailable thread files (#131896)",
-    "fix(release): distinguish CSS colors from issue references (#132075)",
-    "fix(ui): show a not-found state for missing session links (#131823)",
-    "fix: usage dashboard loads slowly for large session histories (#132064)",
-    "fix(ui): preserve attachments across offline reloads (#131753)",
-    "fix(media): preserve LINE attachment names in model context (#131216)"
+    "fix(agents): account summarization model usage (#131115)",
+    "fix(doctor): preserve OpenAI auth rotation state (#130763)",
+    "fix(test): join tsgo cleanup after operation timeout (#132654)",
+    "fix(signal): preserve messages redelivered behind a busy lane (#128093)",
+    "fix(qa): stop hung packaged bootstrap subprocesses (#132659)",
+    "fix(agents): keep CLI tool args from start blocks (#120737)",
+    "fix(tavily): resolve dedicated tool SecretRefs (#131082)",
+    "fix(plugins): isolate malformed manifest schemas from plugin load and config validation (#119825)",
+    "fix(ci): prevent docs agent from throttling its own run (#132640)",
+    "fix: clean up health tests after failed or delayed setup (#132653)",
+    "perf(test): consolidate duplicate sweeper close-reopen proof (#132656)",
+    "fix(release): validate complete ClawHub recovery audits (#132642)",
+    "perf(test): avoid inventory scans for exact test validation (#132652)",
+    "fix(policy): scan keyed agent evidence (#126935)",
+    "perf(parallel): keep search limits on the lightweight descriptor (#132647)",
+    "fix(sessions): keep reset history closed after compaction (#132606)",
+    "fix(auto-reply): admit low-level channel queue policy (#130621)",
+    "fix(test): prevent reconciles from recreating cleaned fixtures (#132634)",
+    "fix(auto-reply): bound Markdown fence reopen headers (#131086)",
+    "fix: cloud sessions reject image input (#132114)",
+    "fix(codex): prevent macOS Unix transport test hangs (#132632)",
+    "fix(ci): provision ripgrep for native grep tests (#132609)",
+    "fix(state): tolerate disappearing SQLite sidecars (#125451)",
+    "fix(tasks): retain CLI runs in standalone maintenance (#132602)",
+    "fix(compaction): preserve focus in split-turn summaries (#132564)",
+    "fix(ui): render model provider controls progressively (#130546)",
+    "fix: preserve transcript recovery and prerelease update routing (#132598)",
+    "fix(maintainers): wait for mergeability before admission (#132418)",
+    "fix: stabilize rollback-journal ownership race coverage (#132599)",
+    "fix(anthropic): keep private CLI context out of chat history (#132466)"
   ],
   "top_scopes": [
     {
       "scope": "ui",
-      "count": 99
-    },
-    {
-      "scope": "fix",
-      "count": 31
+      "count": 57
     },
     {
       "scope": "test",
-      "count": 31
+      "count": 46
     },
     {
-      "scope": "agents",
-      "count": 29
+      "scope": "fix",
+      "count": 39
     },
     {
       "scope": "release",
-      "count": 24
+      "count": 25
     },
     {
-      "scope": "gateway",
-      "count": 21
+      "scope": "agents",
+      "count": 22
     },
     {
       "scope": "ci",
+      "count": 20
+    },
+    {
+      "scope": "qa",
       "count": 17
     },
     {
-      "scope": "plugins",
+      "scope": "gateway",
+      "count": 16
+    },
+    {
+      "scope": "docs",
       "count": 13
+    },
+    {
+      "scope": "macos",
+      "count": 12
     },
     {
       "scope": "codex",
       "count": 11
     },
     {
-      "scope": "sessions",
+      "scope": "browser",
       "count": 11
     },
     {
-      "scope": "channels",
+      "scope": "plugins",
       "count": 10
     },
     {
-      "scope": "cron",
+      "scope": "sessions",
       "count": 9
     },
     {
-      "scope": "qa",
-      "count": 8
-    },
-    {
-      "scope": "macos",
-      "count": 8
-    },
-    {
-      "scope": "improve(ui)",
-      "count": 7
+      "scope": "line",
+      "count": 9
     }
   ]
 }

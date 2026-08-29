@@ -1,6 +1,6 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-08-29T05:33:25+08:00
+- Generated at: 2026-08-29T23:49:05+08:00
 - Requested window: 2026-08-28 to 2026-08-29
 - Coverage: 6 products
 - Live 24h feeds: 1
@@ -11,30 +11,30 @@
 
 - Freshness: live_24h
 - Window: 2026-08-28 to 2026-08-29
-- Generated at: 2026-08-29T05:33:04.666344+08:00
+- Generated at: 2026-08-29T23:48:49.647262+08:00
 - 窗口: 2026-08-28 至 2026-08-29
-- GitHub 增量: 544 commits / 1 releases
-- 最近 push: 2026-08-28
+- GitHub 增量: 546 commits / 1 releases
+- 最近 push: 2026-08-29
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
   - **Model selection scopes:** add configurable model-selection scopes while preserving the canonical provider and runtime policy path. (#127813) Thanks @Marvinthebored and @Peetiegonzalez. [v2026.9.1-beta.1]
-  - feat(visitor-access): internal Cloudflare Access visitor plugin (#132073)
-  - feat(docker): install openssh-client in the runtime image (#131710)
-  - feat(release): reuse exact full release candidates (#131818)
-  - feat(browser): expose page errors action (#131906)
-  - feat(profile): enable Git co-author credit by default (#131964)
-  - feat: show latest assistant actions without hover (#131529)
-  - feat(buzz): support flat automatic replies and typing (#130511)
+  - feat(control-ui): show cloud worker service and profile on session placements (#132405)
+  - feat(ui): show node worker-slot utilization as segmented pips in the placement picker and Devices settings (#132394)
+  - feat(crabbox): allow profiles without a default machine class (#131009)
+  - feat(buzz): preserve bot identities when adding named accounts (#132226)
+  - feat(hovercard): show PR co-authors as a facepile (#132275)
+  - feat: configure Code Mode per model with inherited defaults (#132332)
+  - feat(qa): add Convex-leased Telegram userbot proof (#131715)
 - Fixes and constraints:
-  - fix(qa): keep leases when Gateway startup teardown fails (#131740)
-  - fix(ui): compact mobile session actions (#132020)
-  - fix(onboard): probe remote gateways with saved TLS pins and validate trusted proxies (#131475)
-  - fix(cron): capture Codex shell aliases under canonical tool identity with a restrict-only exec pin (#130579)
-  - fix(msteams): retain legacy stores until migrations prove survivors (#131284)
-  - fix: interactive update can leave the Gateway stopped when completion refresh fails (#131393)
-  - fix(whatsapp): retain unmatched attachments across captioned replacement (#131672)
-  - perf(release): pipeline full release validation (#131914)
+  - fix(agents): account summarization model usage (#131115)
+  - fix(doctor): preserve OpenAI auth rotation state (#130763)
+  - fix(test): join tsgo cleanup after operation timeout (#132654)
+  - fix(signal): preserve messages redelivered behind a busy lane (#128093)
+  - fix(qa): stop hung packaged bootstrap subprocesses (#132659)
+  - fix(agents): keep CLI tool args from start blocks (#120737)
+  - fix(tavily): resolve dedicated tool SecretRefs (#131082)
+  - fix(plugins): isolate malformed manifest schemas from plugin load and config validation (#119825)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
