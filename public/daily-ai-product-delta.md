@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-08-29T23:49:05+08:00
-- Requested window: 2026-08-28 to 2026-08-29
+- Generated at: 2026-08-30T23:33:56+08:00
+- Requested window: 2026-08-29 to 2026-08-30
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,30 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-08-28 to 2026-08-29
-- Generated at: 2026-08-29T23:48:49.647262+08:00
-- 窗口: 2026-08-28 至 2026-08-29
-- GitHub 增量: 546 commits / 1 releases
-- 最近 push: 2026-08-29
+- Window: 2026-08-29 to 2026-08-30
+- Generated at: 2026-08-30T23:33:40.206455+08:00
+- 窗口: 2026-08-29 至 2026-08-30
+- GitHub 增量: 441 commits / 0 releases
+- 最近 push: 2026-08-30
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - **Model selection scopes:** add configurable model-selection scopes while preserving the canonical provider and runtime policy path. (#127813) Thanks @Marvinthebored and @Peetiegonzalez. [v2026.9.1-beta.1]
-  - feat(control-ui): show cloud worker service and profile on session placements (#132405)
-  - feat(ui): show node worker-slot utilization as segmented pips in the placement picker and Devices settings (#132394)
-  - feat(crabbox): allow profiles without a default machine class (#131009)
-  - feat(buzz): preserve bot identities when adding named accounts (#132226)
-  - feat(hovercard): show PR co-authors as a facepile (#132275)
-  - feat: configure Code Mode per model with inherited defaults (#132332)
-  - feat(qa): add Convex-leased Telegram userbot proof (#131715)
+  - feat(ui): render cross-session messages as linked speech bubbles (#132054)
+  - feat(qa): run Telegram RTT through userbot leases (#133030)
+  - feat(ui): label the configured default in the session permissions picker (#132989)
+  - feat: add secure PWA approval notifications and preferences (#129348)
+  - feat(matrix): intelligent multi-agent communication via fast AI-guided participation control and fresh-message redrafting (#113115)
+  - feat(ui): add task progress disclosure preference (#132137)
+  - feat: per-session colors across web, macOS, iOS, Android with Claude Code import (#132570)
 - Fixes and constraints:
-  - fix(agents): account summarization model usage (#131115)
-  - fix(doctor): preserve OpenAI auth rotation state (#130763)
-  - fix(test): join tsgo cleanup after operation timeout (#132654)
-  - fix(signal): preserve messages redelivered behind a busy lane (#128093)
-  - fix(qa): stop hung packaged bootstrap subprocesses (#132659)
-  - fix(agents): keep CLI tool args from start blocks (#120737)
-  - fix(tavily): resolve dedicated tool SecretRefs (#131082)
-  - fix(plugins): isolate malformed manifest schemas from plugin load and config validation (#119825)
+  - fix: remove ignored arguments from agent tools (#133336)
+  - fix(agents): preserve decoded grep context and readable paths (#131621)
+  - fix(agents): preserve apply patch source bytes (#124418)
+  - fix(test): keep complete multi-project JSON reports (#133309)
+  - fix(release): record approved Telegram waiver for 2026.8.1 (#133321)
+  - fix(skills): allow malformed proposal disposal (#124488)
+  - fix(ui): prevent system theme flash on reload (#132789)
+  - fix(agents): recover settled failed-tool batches (#133300)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
