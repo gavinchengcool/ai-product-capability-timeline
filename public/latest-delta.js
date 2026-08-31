@@ -1,90 +1,99 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-08-30T23:33:40.206455+08:00",
+  "generatedAt": "2026-09-01T02:16:30.895135+08:00",
   "window": {
-    "start_local": "2026-08-29T23:33:40.206455+08:00",
-    "end_local": "2026-08-30T23:33:40.206455+08:00",
-    "start_utc": "2026-08-29T15:33:40Z",
-    "end_utc": "2026-08-30T15:33:40Z"
+    "start_local": "2026-08-31T02:16:30.895135+08:00",
+    "end_local": "2026-09-01T02:16:30.895135+08:00",
+    "start_utc": "2026-08-30T18:16:30Z",
+    "end_utc": "2026-08-31T18:16:30Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 388057,
-    "forks": 81474,
-    "open_issues": 5716,
-    "pushed_at": "2026-08-30T15:33:11Z"
+    "stars": 388254,
+    "forks": 81512,
+    "open_issues": 5894,
+    "pushed_at": "2026-08-31T18:15:56Z"
   },
   "summary": {
-    "commitCount": 441,
-    "releaseCount": 0,
-    "stableReleaseCount": 0,
+    "commitCount": 522,
+    "releaseCount": 1,
+    "stableReleaseCount": 1,
     "betaReleaseCount": 0,
-    "stars": 388057,
-    "forks": 81474,
-    "openIssues": 5716
+    "stars": 388254,
+    "forks": 81512,
+    "openIssues": 5894
   },
-  "releases": [],
+  "releases": [
+    {
+      "tag_name": "v2026.8.1",
+      "published_at": "2026-08-31T03:30:51Z",
+      "name": "OpenClaw 2026.8.1",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.1"
+    }
+  ],
   "featureItems": [
-    "feat(ui): render cross-session messages as linked speech bubbles (#132054)",
-    "feat(qa): run Telegram RTT through userbot leases (#133030)",
-    "feat(ui): label the configured default in the session permissions picker (#132989)",
-    "feat: add secure PWA approval notifications and preferences (#129348)",
-    "feat(matrix): intelligent multi-agent communication via fast AI-guided participation control and fresh-message redrafting (#113115)",
-    "feat(ui): add task progress disclosure preference (#132137)",
-    "feat: per-session colors across web, macOS, iOS, Android with Claude Code import (#132570)"
+    "**Automatic self-learning:** capture strong reusable lessons and automatically apply scanner-approved new or Workshop-owned skills by default, while leaving user-authored skill changes pending and preserving explicit off or propose settings. (#115576) [v2026.8.1]",
+    "**Conversation-bound automations and loops:** default new agent-turn automations to their originating conversation when creation has session context. Owner-only `/loop` supports fixed-interval or self-paced checks; context-free CLI/API creation stays isolated. (#114328) [v2026.8.1]",
+    "**Named agent setup:** choose the first agent name during interactive onboarding or with `--agent-name`, migrate legacy main-session history to its clear owner, and reuse `main` as an ordinary agent ID after required doctor repairs. (#123521, #123609, #123424, #123349) [v2026.8.1]",
+    "**Quick Chat and desktop setup:** add macOS dictation, paste-to-app and model controls, Linux agent switching and per-agent routing, and a more complete Linux onboarding flow. (#110994, #110285, #129815) [v2026.8.1]",
+    "**Daytona sandboxes:** add a Daytona backend plugin for isolated cloud execution. (#121554) Thanks @mislavivanda and @Patrick-Erichsen. [v2026.8.1]",
+    "**Agent interoperability:** add an opt-in A2A 1.0 channel plugin for authenticated text tasks, task polling, and messages to configured peer agents. (#130008) [v2026.8.1]",
+    "**Email triggers:** start agent work from configured inbound IMAP mailboxes through a new plugin. (#130230) [v2026.8.1]",
+    "**Approval surfaces:** show typed operation-scope summaries on channel cards, add native Teams approve/deny controls, and deliver opted-in PWA approval notifications. (#130116, #129997, #129348) Thanks @Takhoffman. [v2026.8.1]"
   ],
   "fixItems": [
-    "fix: remove ignored arguments from agent tools (#133336)",
-    "fix(agents): preserve decoded grep context and readable paths (#131621)",
-    "fix(agents): preserve apply patch source bytes (#124418)",
-    "fix(test): keep complete multi-project JSON reports (#133309)",
-    "fix(release): record approved Telegram waiver for 2026.8.1 (#133321)",
-    "fix(skills): allow malformed proposal disposal (#124488)",
-    "fix(ui): prevent system theme flash on reload (#132789)",
-    "fix(agents): recover settled failed-tool batches (#133300)"
+    "fix(ci): record complete native UI file timings (#134283)",
+    "perf(ui): prepare usage query predicates once (#134318)",
+    "fix(update): recover the managed gateway after a failed CLI update (#119516)",
+    "fix(ui): keep images visible during hard refresh (#134310)",
+    "fix(sessions): avoid excessive history copies and preserve fork provenance (#134238)",
+    "fix(test): preserve Git update fixture identity through postinstall (#134328)",
+    "fix(agents): preserve nested tool result delivery state (#134056)",
+    "perf(workers): streamline cloud startup and fix bootstrap archive races (#134043)"
   ],
   "topScopes": [
     {
-      "scope": "fix",
-      "count": 42
-    },
-    {
-      "scope": "agents",
-      "count": 41
+      "scope": "ui",
+      "count": 54
     },
     {
       "scope": "test",
+      "count": 47
+    },
+    {
+      "scope": "fix",
       "count": 32
     },
     {
-      "scope": "ui",
-      "count": 32
+      "scope": "docs",
+      "count": 24
     },
     {
       "scope": "ci",
-      "count": 22
+      "count": 23
+    },
+    {
+      "scope": "agents",
+      "count": 20
+    },
+    {
+      "scope": "cli",
+      "count": 16
     },
     {
       "scope": "gateway",
-      "count": 20
-    },
-    {
-      "scope": "qa",
-      "count": 20
-    },
-    {
-      "scope": "plugins",
-      "count": 16
+      "count": 15
     }
   ],
   "headlineCommits": [
-    "fix: remove ignored arguments from agent tools (#133336)",
-    "fix(agents): preserve decoded grep context and readable paths (#131621)",
-    "fix(agents): preserve apply patch source bytes (#124418)",
-    "fix(test): keep complete multi-project JSON reports (#133309)",
-    "refactor: simplify command handler registration (#133332)",
-    "fix(release): record approved Telegram waiver for 2026.8.1 (#133321)",
-    "fix(skills): allow malformed proposal disposal (#124488)",
-    "fix(ui): prevent system theme flash on reload (#132789)"
+    "test(tooling): reuse Periphery workflow code fixtures (#134350)",
+    "fix(ci): record complete native UI file timings (#134283)",
+    "test(macos): remove app profile source invariants (#134288)",
+    "test(lmstudio): reuse oversized response source chunks (#134322)",
+    "test(infra): load execution policy modules once per suite (#134319)",
+    "perf(ui): prepare usage query predicates once (#134318)",
+    "refactor: reuse prepared plugin facts during Gateway turns (#134290)",
+    "fix(update): recover the managed gateway after a failed CLI update (#119516)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
