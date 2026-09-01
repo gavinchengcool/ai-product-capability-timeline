@@ -1,6 +1,6 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-09-01T02:16:48+08:00
+- Generated at: 2026-09-01T23:38:05+08:00
 - Requested window: 2026-08-31 to 2026-09-01
 - Coverage: 6 products
 - Live 24h feeds: 1
@@ -11,30 +11,30 @@
 
 - Freshness: live_24h
 - Window: 2026-08-31 to 2026-09-01
-- Generated at: 2026-09-01T02:16:30.895135+08:00
+- Generated at: 2026-09-01T23:37:47.685380+08:00
 - 窗口: 2026-08-31 至 2026-09-01
-- GitHub 增量: 522 commits / 1 releases
-- 最近 push: 2026-08-31
+- GitHub 增量: 673 commits / 0 releases
+- 最近 push: 2026-09-01
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - **Automatic self-learning:** capture strong reusable lessons and automatically apply scanner-approved new or Workshop-owned skills by default, while leaving user-authored skill changes pending and preserving explicit off or propose settings. (#115576) [v2026.8.1]
-  - **Conversation-bound automations and loops:** default new agent-turn automations to their originating conversation when creation has session context. Owner-only `/loop` supports fixed-interval or self-paced checks; context-free CLI/API creation stays isolated. (#114328) [v2026.8.1]
-  - **Named agent setup:** choose the first agent name during interactive onboarding or with `--agent-name`, migrate legacy main-session history to its clear owner, and reuse `main` as an ordinary agent ID after required doctor repairs. (#123521, #123609, #123424, #123349) [v2026.8.1]
-  - **Quick Chat and desktop setup:** add macOS dictation, paste-to-app and model controls, Linux agent switching and per-agent routing, and a more complete Linux onboarding flow. (#110994, #110285, #129815) [v2026.8.1]
-  - **Daytona sandboxes:** add a Daytona backend plugin for isolated cloud execution. (#121554) Thanks @mislavivanda and @Patrick-Erichsen. [v2026.8.1]
-  - **Agent interoperability:** add an opt-in A2A 1.0 channel plugin for authenticated text tasks, task polling, and messages to configured peer agents. (#130008) [v2026.8.1]
-  - **Email triggers:** start agent work from configured inbound IMAP mailboxes through a new plugin. (#130230) [v2026.8.1]
-  - **Approval surfaces:** show typed operation-scope summaries on channel cards, add native Teams approve/deny controls, and deliver opted-in PWA approval notifications. (#130116, #129997, #129348) Thanks @Takhoffman. [v2026.8.1]
+  - feat(onboarding): quick-start lane opens the web dashboard from one prompt (#134221)
+  - feat(gateway): deliver delegated system-agent config approvals to channels (#134670)
+  - feat(ui): render Mermaid diagrams in chat (#134913)
+  - feat: configure a global managed worktree storage root (#134872)
+  - feat(ui): streamline model provider defaults (#134813)
+  - feat(codex): preserve native history in supervised message forks (#134660)
+  - feat(approvals): add external verification contract (#113517)
+  - feat(ui): start new sessions in background (#128050)
 - Fixes and constraints:
-  - fix(ci): record complete native UI file timings (#134283)
-  - perf(ui): prepare usage query predicates once (#134318)
-  - fix(update): recover the managed gateway after a failed CLI update (#119516)
-  - fix(ui): keep images visible during hard refresh (#134310)
-  - fix(sessions): avoid excessive history copies and preserve fork provenance (#134238)
-  - fix(test): preserve Git update fixture identity through postinstall (#134328)
-  - fix(agents): preserve nested tool result delivery state (#134056)
-  - perf(workers): streamline cloud startup and fix bootstrap archive races (#134043)
+  - fix: publish verified plugin npm artifacts without rebuilding (#135289)
+  - fix(ios): omit deep-link URLs from logs (#134738)
+  - perf(plugins): reuse prepared catalog facts during management operations (#135260)
+  - fix(tts): inherit request timeouts for local CLI synthesis (#135222)
+  - fix(process): Gateway survives late CLI output after timeout (#132582)
+  - perf(replies): reduce work when preparing explicit replies (#135208)
+  - perf: reuse accepted tool-result transcript snapshots (#135220)
+  - fix(media): preserve attachment types when streamed chunks are reused (#135232)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

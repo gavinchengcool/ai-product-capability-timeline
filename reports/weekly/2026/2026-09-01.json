@@ -1,204 +1,175 @@
 {
-  "generated_at": "2026-09-01T02:16:30.895135+08:00",
+  "generated_at": "2026-09-01T23:37:47.685380+08:00",
   "window": {
-    "start_local": "2026-08-31T02:16:30.895135+08:00",
-    "end_local": "2026-09-01T02:16:30.895135+08:00",
-    "start_utc": "2026-08-30T18:16:30Z",
-    "end_utc": "2026-08-31T18:16:30Z"
+    "start_local": "2026-08-31T23:37:47.685380+08:00",
+    "end_local": "2026-09-01T23:37:47.685380+08:00",
+    "start_utc": "2026-08-31T15:37:47Z",
+    "end_utc": "2026-09-01T15:37:47Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 388254,
-    "forks": 81512,
-    "open_issues": 5894,
-    "pushed_at": "2026-08-31T18:15:56Z"
+    "stars": 388491,
+    "forks": 81554,
+    "open_issues": 5966,
+    "pushed_at": "2026-09-01T15:36:36Z"
   },
-  "releases_in_window": [
-    {
-      "tag_name": "v2026.8.1",
-      "published_at": "2026-08-31T03:30:51Z",
-      "name": "OpenClaw 2026.8.1",
-      "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.1"
-    }
-  ],
-  "commit_count": 522,
+  "releases_in_window": [],
+  "commit_count": 673,
   "commit_headlines": [
-    "test(tooling): reuse Periphery workflow code fixtures (#134350)",
-    "fix(ci): record complete native UI file timings (#134283)",
-    "test(macos): remove app profile source invariants (#134288)",
-    "test(lmstudio): reuse oversized response source chunks (#134322)",
-    "test(infra): load execution policy modules once per suite (#134319)",
-    "perf(ui): prepare usage query predicates once (#134318)",
-    "refactor: reuse prepared plugin facts during Gateway turns (#134290)",
-    "fix(update): recover the managed gateway after a failed CLI update (#119516)",
-    "fix(ui): keep images visible during hard refresh (#134310)",
-    "test(browser): remove duplicated profile allocation demonstrations (#134324)",
-    "test(auto-reply): avoid catalog discovery in media fixtures (#134245)",
-    "fix(sessions): avoid excessive history copies and preserve fork provenance (#134238)",
-    "fix(test): preserve Git update fixture identity through postinstall (#134328)",
-    "fix(agents): preserve nested tool result delivery state (#134056)",
-    "perf(workers): streamline cloud startup and fix bootstrap archive races (#134043)",
-    "refactor(agents): reduce per-turn policy and tool preparation (#134246)",
-    "fix(macos): finish ChatGPT login after Gateway reconnect",
-    "fix: retain 2026.8.1 release fixes on main (#134045)",
-    "test(tooling): configure fixture identity in the commit command (#134277)",
-    "fix(doctor): identify malformed legacy exec approval fields (#133952)",
-    "fix(docker): include shared lifecycle marker in install stages (#134231)",
-    "fix(gateway): release cached transcript backing storage (#133988)",
-    "perf(sessions): reuse prepared transcript batch writers (#134252)",
-    "perf(ci): use runtime-only builds for Node test prerequisites (#134294)",
-    "test(xai): verify OAuth runtime imports stay lazy (#134315)",
-    "test(tooling): batch startup benchmark state cases (#134296)",
-    "fix(cli): keep embedded triage on the diagnosed installation (#134244)",
-    "test(macos): remove duplicate shell smoke check (#134123)",
-    "fix(codex): preserve accepted speech through media delivery (#134170)",
-    "test(tooling): use value fixtures for mobile release renderers (#134293)",
-    "perf(ci): report type failures before broad audits (#134298)",
-    "test(feishu): consolidate backoff coverage at its owner (#134289)",
-    "perf(workers): reuse validated hashes during workspace activation (#134026)",
-    "refactor(core): share first-wins keyed dedupe (#134287)",
-    "fix: fail updates when session migration is incomplete (#134228)",
-    "fix(gateway): use the npm WebSocket receiver under Bun (#134282)",
-    "fix(talk): scope voice consult admission to each turn (#134138)",
-    "test(infra): synchronize approval shutdown races at callback entry (#134284)",
-    "fix(codex): preserve summarized context when switching runtimes (#134259)",
-    "test(infra): move duration cases to the formatter owner (#134280)",
-    "fix(worker): preserve actionable cloud failure causes (#134200)",
-    "perf: avoid scanning unused package-root candidates (#134271)",
-    "test(tooling): remove delayed activity fixture responses (#134273)",
-    "feat: keep the Home agent beside your work (#133676)",
-    "test(llm-core): batch event stream sequence assertions (#134270)",
-    "fix(doctor): preserve files created during session restore (#133921)",
-    "fix(state): let doctor repair legacy v17 agent databases (#134208)",
-    "test(infra): exercise real transport backoff (#134263)",
-    "test(infra): consolidate abort relay coverage at its owner (#134266)",
-    "perf: reduce Control UI startup and history processing (#134209)"
+    "refactor(gateway): derive session projections from protocol types (#135275)",
+    "fix: publish verified plugin npm artifacts without rebuilding (#135289)",
+    "fix(ios): omit deep-link URLs from logs (#134738)",
+    "perf(plugins): reuse prepared catalog facts during management operations (#135260)",
+    "refactor(testing): share grouped report argument parsing (#135271)",
+    "ci: ignore helper checkouts in compiler cache topology (#135269)",
+    "refactor(ui): reuse protocol-owned model and checkpoint types (#135265)",
+    "ci: isolate artifact writers and overlap verification (#135226)",
+    "fix(tts): inherit request timeouts for local CLI synthesis (#135222)",
+    "refactor(ios): carry Watch inbound events through one owner (#135235)",
+    "refactor(schema): consolidate JSON Schema child traversal (#135145)",
+    "fix(process): Gateway survives late CLI output after timeout (#132582)",
+    "refactor(msteams): share bounded Graph pagination (#135258)",
+    "perf(replies): reduce work when preparing explicit replies (#135208)",
+    "perf: reuse accepted tool-result transcript snapshots (#135220)",
+    "fix(media): preserve attachment types when streamed chunks are reused (#135232)",
+    "fix(cli): guard state writes against gateway split-brain (#134403)",
+    "refactor(openai): avoid redundant image auth lookup (#135259)",
+    "fix: preserve context-free harness policy reasons (#135206)",
+    "refactor(google-meet): derive shared meeting types from the canonical owner (#135257)",
+    "fix(release): publish frozen 2026.8.2 with approved Codex pin (#135246)",
+    "fix: usage peak error hours shift during daylight saving (#135153)",
+    "refactor(markdown): share span clipping logic (#134910)",
+    "fix(plugins): ignore build stamps in registry freshness",
+    "refactor(packaging): reuse canonical Docker CLI flag parser (#135207)",
+    "fix(ai): make generated commentary segment identities unique per segment",
+    "fix: stale group updates revoke valid browser commands (#135186)",
+    "fix(tlon): preserve parser progress and unify outbound preparation (#135181)",
+    "perf: reduce memory used to decode command output (#135189)",
+    "perf(agents): skip empty tool-result planning branches (#135204)",
+    "fix(feishu): validate document API outcomes before reporting success (#135106)",
+    "fix(matrix): deliver the controls an agent reply offers (#133268)",
+    "refactor(qa): share Mantis report rendering and summary fields (#135160)",
+    "refactor(perplexity): unify search runtime configuration resolution (#135159)",
+    "fix(ui): preserve duration quantities across locales (#133224)",
+    "chore(ui): refresh control ui locales (#135201)",
+    "fix(macos): bind exec approval fixtures to the canonical cwd owner (#134937)",
+    "refactor(qa): share evidence builder execution context (#135158)",
+    "fix(ai): exclude tools from the HTTP continuation request-equality check (#132951)",
+    "perf: avoid terminal replay stalls during bulk eviction (#135183)",
+    "perf(plugins): build only the requested provider index (#135169)",
+    "ci: isolate source-launching command tests (#135170)",
+    "refactor(talk): share Apple voice configuration helpers (#135125)",
+    "test(doctor): exit memory probe after result flush (#135146)",
+    "perf(ui): defer Settings English until needed (#135131)",
+    "perf(state): reduce repeated schema reads during database opens (#135172)",
+    "fix(cli): bound target-file reads and preserve failed input",
+    "perf(media): avoid intermediate multipart upload copies (#135162)",
+    "fix(memory): resolve profile auth for compatible embeddings (#134744)",
+    "refactor(slack): share channel list page request (#135059)"
   ],
   "feature_items": [
-    "**Automatic self-learning:** capture strong reusable lessons and automatically apply scanner-approved new or Workshop-owned skills by default, while leaving user-authored skill changes pending and preserving explicit off or propose settings. (#115576) [v2026.8.1]",
-    "**Conversation-bound automations and loops:** default new agent-turn automations to their originating conversation when creation has session context. Owner-only `/loop` supports fixed-interval or self-paced checks; context-free CLI/API creation stays isolated. (#114328) [v2026.8.1]",
-    "**Named agent setup:** choose the first agent name during interactive onboarding or with `--agent-name`, migrate legacy main-session history to its clear owner, and reuse `main` as an ordinary agent ID after required doctor repairs. (#123521, #123609, #123424, #123349) [v2026.8.1]",
-    "**Quick Chat and desktop setup:** add macOS dictation, paste-to-app and model controls, Linux agent switching and per-agent routing, and a more complete Linux onboarding flow. (#110994, #110285, #129815) [v2026.8.1]",
-    "**Daytona sandboxes:** add a Daytona backend plugin for isolated cloud execution. (#121554) Thanks @mislavivanda and @Patrick-Erichsen. [v2026.8.1]",
-    "**Agent interoperability:** add an opt-in A2A 1.0 channel plugin for authenticated text tasks, task polling, and messages to configured peer agents. (#130008) [v2026.8.1]",
-    "**Email triggers:** start agent work from configured inbound IMAP mailboxes through a new plugin. (#130230) [v2026.8.1]",
-    "**Approval surfaces:** show typed operation-scope summaries on channel cards, add native Teams approve/deny controls, and deliver opted-in PWA approval notifications. (#130116, #129997, #129348) Thanks @Takhoffman. [v2026.8.1]",
-    "**Debugging handoff:** add `openclaw triage` for sanitized agent-debugging handoffs. (#128756) [v2026.8.1]",
-    "**Interactive widgets:** present interactive widgets in chat, pin them to session dashboards, export rendered views as PNGs, and grant exact actions or network origins to pinned widgets. (#101840, #108889, #108983, #110960, #110987, #110992, #111030, #125803, #127315) Thanks @100yenadmin and @hannesrudolph. [v2026.8.1]",
-    "**Presence-triggered conversations:** optionally wake an agent when an eligible Discord participant comes online or a previously active Slack participant returns, with scoped audiences, cooldowns, and configurable Slack guidance. (#107451, #108510, #123805, #123875) Thanks @sjf-oa and @sjf. [v2026.8.1]",
-    "**Workboard dispatch cap:** add a request-scoped `--max-starts` override while preserving the default cap, sequential starts, and one-card-per-owner guard. (#100174) Thanks @souvikDevloper, @Souvikalp, and @jwest75674. [v2026.8.1]",
-    "**MCP dashboards:** pin interactive MCP app views from a conversation to its dashboard, retaining bounded tool grants and restoring the view when reopened. (#111524) [v2026.8.1]",
-    "**MCP connections:** add servers from composer connectors and support per-requester OAuth credentials for shared MCP servers. (#115921, #122166) Thanks @obviyus. [v2026.8.1]",
-    "**Model discovery:** add Qwen 3.8 Max/Flash, DeepSeek V4 Flash Vision (Experimental), NVIDIA Nemotron 3.5 Lightning, and GLM-5.3/Flash, with provider-owned discovery. (#131294, #123523, #130309) Thanks @oliver-mee and @Marvinthebored. [v2026.8.1]",
-    "**Baseten and Qwen plans:** add Baseten Model APIs and Qwen Token Plan Team Edition as official external plugins with their own setup and authenticated model catalogs; Qwen Token Plan is for interactive use.  (#108708, #94419) Thanks @oliver-mee. [v2026.8.1]",
-    "**Node-hosted tools:** discover and invoke approved plugin tools and MCP servers on paired nodes without duplicating their server configuration on the Gateway; node-hosted MCP configuration takes effect after restarting the node and does not support OAuth servers yet. (#90431, #114877, #114876) [v2026.8.1]",
-    "**Slack at scale:** support Enterprise Grid identity, direct messages, workspace routing, actions, approvals, and presence. (#121373, #121014) Thanks @sjf-oa and @sjf. [v2026.8.1]",
-    "**Feishu collaboration:** support bot-to-bot conversations with mention handling and let agents discover and resend received stickers. (#89783, #130374, #130498) Thanks @GeekyMax, @heyumeng154-alt, and @zw-xysk. [v2026.8.1]",
-    "**Buzz conversations:** support bounded bot-to-bot room conversations, retain passive context for accepted turns, and allow flat automatic replies with typing indicators. (#130488, #130509, #130511) [v2026.8.1]",
-    "**Slack Agent View:** open separate agent conversations from Slack Agent View and carry its current page context into the correct thread while continuing to support existing Assistant View installations. (#103895) Thanks @Patrick-Erichsen. [v2026.8.1]",
-    "**Discord interactive widgets:** open agent-generated HTML widgets inside Discord Activities after configuring the bot application and its public Gateway route. (#107442) [v2026.8.1]",
-    "**ClickClack bot collaboration:** add opt-in bot-authored inbound dispatch with explicit sender authorization, mention gating, retry-safe loop protection, and independent thread budgets while keeping bot traffic denied by default. (#119278) Thanks @jjjhenriksen and @shakkernerd. [v2026.8.1]",
-    "**Speech:** add hosted Fish Audio synthesis and local MLX speech, and allow realtime voice agents to end a completed call. (#115790, #125525) Thanks @Conan-Scott, @Rheingold777, @ImLukeF, and @Patrick-Erichsen. [v2026.8.1]",
-    "**More realtime voice options:** add xAI realtime voice and streaming speech synthesis as provider choices for voice conversations and spoken replies. (#106267, #103993) Thanks @TheAngryPit and @CassieMei. [v2026.8.1]",
-    "**Appearance:** choose interface and chat fonts, save appearance preferences per user profile, and use the Tide, Beacon, and Phosphor themes. (#131275, #130340, #130232) [v2026.8.1]",
-    "**Control UI update recovery:** make the \"A new version is available\" Reload button wait for the restarting Gateway, then reload automatically instead of requiring a hard reload. (#111670) Thanks @vincentkoc. [v2026.8.1]",
-    "feat: keep the Home agent beside your work (#133676)",
-    "feat(update): clean up retained migration recovery files (#133864)",
-    "feat(scripts): materialize the scripts/pr trust anchor for mismatched worktrees (#133913)"
+    "feat(onboarding): quick-start lane opens the web dashboard from one prompt (#134221)",
+    "feat(gateway): deliver delegated system-agent config approvals to channels (#134670)",
+    "feat(ui): render Mermaid diagrams in chat (#134913)",
+    "feat: configure a global managed worktree storage root (#134872)",
+    "feat(ui): streamline model provider defaults (#134813)",
+    "feat(codex): preserve native history in supervised message forks (#134660)",
+    "feat(approvals): add external verification contract (#113517)",
+    "feat(ui): start new sessions in background (#128050)",
+    "feat: keep the Home agent beside your work (#133676)"
   ],
   "fix_items": [
-    "fix(ci): record complete native UI file timings (#134283)",
-    "perf(ui): prepare usage query predicates once (#134318)",
-    "fix(update): recover the managed gateway after a failed CLI update (#119516)",
-    "fix(ui): keep images visible during hard refresh (#134310)",
-    "fix(sessions): avoid excessive history copies and preserve fork provenance (#134238)",
-    "fix(test): preserve Git update fixture identity through postinstall (#134328)",
-    "fix(agents): preserve nested tool result delivery state (#134056)",
-    "perf(workers): streamline cloud startup and fix bootstrap archive races (#134043)",
-    "fix(macos): finish ChatGPT login after Gateway reconnect",
-    "fix: retain 2026.8.1 release fixes on main (#134045)",
-    "fix(doctor): identify malformed legacy exec approval fields (#133952)",
-    "fix(docker): include shared lifecycle marker in install stages (#134231)",
-    "fix(gateway): release cached transcript backing storage (#133988)",
-    "perf(sessions): reuse prepared transcript batch writers (#134252)",
-    "perf(ci): use runtime-only builds for Node test prerequisites (#134294)",
-    "fix(cli): keep embedded triage on the diagnosed installation (#134244)",
-    "fix(codex): preserve accepted speech through media delivery (#134170)",
-    "perf(ci): report type failures before broad audits (#134298)",
-    "perf(workers): reuse validated hashes during workspace activation (#134026)",
-    "fix: fail updates when session migration is incomplete (#134228)",
-    "fix(gateway): use the npm WebSocket receiver under Bun (#134282)",
-    "fix(talk): scope voice consult admission to each turn (#134138)",
-    "fix(codex): preserve summarized context when switching runtimes (#134259)",
-    "fix(worker): preserve actionable cloud failure causes (#134200)",
-    "perf: avoid scanning unused package-root candidates (#134271)",
-    "fix(doctor): preserve files created during session restore (#133921)",
-    "fix(state): let doctor repair legacy v17 agent databases (#134208)",
-    "perf: reduce Control UI startup and history processing (#134209)",
-    "fix(ui): stabilize earlier-history loading action (#132445)",
-    "fix(doctor): report interrupted auth archive recovery (#134009)"
+    "fix: publish verified plugin npm artifacts without rebuilding (#135289)",
+    "fix(ios): omit deep-link URLs from logs (#134738)",
+    "perf(plugins): reuse prepared catalog facts during management operations (#135260)",
+    "fix(tts): inherit request timeouts for local CLI synthesis (#135222)",
+    "fix(process): Gateway survives late CLI output after timeout (#132582)",
+    "perf(replies): reduce work when preparing explicit replies (#135208)",
+    "perf: reuse accepted tool-result transcript snapshots (#135220)",
+    "fix(media): preserve attachment types when streamed chunks are reused (#135232)",
+    "fix(cli): guard state writes against gateway split-brain (#134403)",
+    "fix: preserve context-free harness policy reasons (#135206)",
+    "fix(release): publish frozen 2026.8.2 with approved Codex pin (#135246)",
+    "fix: usage peak error hours shift during daylight saving (#135153)",
+    "fix(plugins): ignore build stamps in registry freshness",
+    "fix(ai): make generated commentary segment identities unique per segment",
+    "fix: stale group updates revoke valid browser commands (#135186)",
+    "fix(tlon): preserve parser progress and unify outbound preparation (#135181)",
+    "perf: reduce memory used to decode command output (#135189)",
+    "perf(agents): skip empty tool-result planning branches (#135204)",
+    "fix(feishu): validate document API outcomes before reporting success (#135106)",
+    "fix(matrix): deliver the controls an agent reply offers (#133268)",
+    "fix(ui): preserve duration quantities across locales (#133224)",
+    "fix(macos): bind exec approval fixtures to the canonical cwd owner (#134937)",
+    "fix(ai): exclude tools from the HTTP continuation request-equality check (#132951)",
+    "perf: avoid terminal replay stalls during bulk eviction (#135183)",
+    "perf(plugins): build only the requested provider index (#135169)",
+    "perf(ui): defer Settings English until needed (#135131)",
+    "perf(state): reduce repeated schema reads during database opens (#135172)",
+    "fix(cli): bound target-file reads and preserve failed input",
+    "perf(media): avoid intermediate multipart upload copies (#135162)",
+    "fix(memory): resolve profile auth for compatible embeddings (#134744)"
   ],
   "top_scopes": [
     {
       "scope": "ui",
-      "count": 54
-    },
-    {
-      "scope": "test",
-      "count": 47
+      "count": 63
     },
     {
       "scope": "fix",
-      "count": 32
-    },
-    {
-      "scope": "docs",
-      "count": 24
+      "count": 41
     },
     {
       "scope": "ci",
-      "count": 23
-    },
-    {
-      "scope": "agents",
-      "count": 20
-    },
-    {
-      "scope": "cli",
-      "count": 16
+      "count": 37
     },
     {
       "scope": "gateway",
-      "count": 15
+      "count": 29
     },
     {
-      "scope": "sessions",
-      "count": 14
+      "scope": "agents",
+      "count": 26
+    },
+    {
+      "scope": "test",
+      "count": 23
     },
     {
       "scope": "doctor",
-      "count": 14
-    },
-    {
-      "scope": "plugins",
-      "count": 13
-    },
-    {
-      "scope": "infra",
-      "count": 12
-    },
-    {
-      "scope": "scripts",
-      "count": 12
-    },
-    {
-      "scope": "update",
-      "count": 10
+      "count": 22
     },
     {
       "scope": "release",
-      "count": 10
+      "count": 20
+    },
+    {
+      "scope": "plugins",
+      "count": 19
+    },
+    {
+      "scope": "cli",
+      "count": 17
+    },
+    {
+      "scope": "perf",
+      "count": 16
+    },
+    {
+      "scope": "infra",
+      "count": 15
+    },
+    {
+      "scope": "refactor",
+      "count": 13
+    },
+    {
+      "scope": "macos",
+      "count": 11
+    },
+    {
+      "scope": "docs",
+      "count": 11
     }
   ]
 }

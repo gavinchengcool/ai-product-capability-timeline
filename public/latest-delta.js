@@ -1,99 +1,91 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-09-01T02:16:30.895135+08:00",
+  "generatedAt": "2026-09-01T23:37:47.685380+08:00",
   "window": {
-    "start_local": "2026-08-31T02:16:30.895135+08:00",
-    "end_local": "2026-09-01T02:16:30.895135+08:00",
-    "start_utc": "2026-08-30T18:16:30Z",
-    "end_utc": "2026-08-31T18:16:30Z"
+    "start_local": "2026-08-31T23:37:47.685380+08:00",
+    "end_local": "2026-09-01T23:37:47.685380+08:00",
+    "start_utc": "2026-08-31T15:37:47Z",
+    "end_utc": "2026-09-01T15:37:47Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 388254,
-    "forks": 81512,
-    "open_issues": 5894,
-    "pushed_at": "2026-08-31T18:15:56Z"
+    "stars": 388491,
+    "forks": 81554,
+    "open_issues": 5966,
+    "pushed_at": "2026-09-01T15:36:36Z"
   },
   "summary": {
-    "commitCount": 522,
-    "releaseCount": 1,
-    "stableReleaseCount": 1,
+    "commitCount": 673,
+    "releaseCount": 0,
+    "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 388254,
-    "forks": 81512,
-    "openIssues": 5894
+    "stars": 388491,
+    "forks": 81554,
+    "openIssues": 5966
   },
-  "releases": [
-    {
-      "tag_name": "v2026.8.1",
-      "published_at": "2026-08-31T03:30:51Z",
-      "name": "OpenClaw 2026.8.1",
-      "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.1"
-    }
-  ],
+  "releases": [],
   "featureItems": [
-    "**Automatic self-learning:** capture strong reusable lessons and automatically apply scanner-approved new or Workshop-owned skills by default, while leaving user-authored skill changes pending and preserving explicit off or propose settings. (#115576) [v2026.8.1]",
-    "**Conversation-bound automations and loops:** default new agent-turn automations to their originating conversation when creation has session context. Owner-only `/loop` supports fixed-interval or self-paced checks; context-free CLI/API creation stays isolated. (#114328) [v2026.8.1]",
-    "**Named agent setup:** choose the first agent name during interactive onboarding or with `--agent-name`, migrate legacy main-session history to its clear owner, and reuse `main` as an ordinary agent ID after required doctor repairs. (#123521, #123609, #123424, #123349) [v2026.8.1]",
-    "**Quick Chat and desktop setup:** add macOS dictation, paste-to-app and model controls, Linux agent switching and per-agent routing, and a more complete Linux onboarding flow. (#110994, #110285, #129815) [v2026.8.1]",
-    "**Daytona sandboxes:** add a Daytona backend plugin for isolated cloud execution. (#121554) Thanks @mislavivanda and @Patrick-Erichsen. [v2026.8.1]",
-    "**Agent interoperability:** add an opt-in A2A 1.0 channel plugin for authenticated text tasks, task polling, and messages to configured peer agents. (#130008) [v2026.8.1]",
-    "**Email triggers:** start agent work from configured inbound IMAP mailboxes through a new plugin. (#130230) [v2026.8.1]",
-    "**Approval surfaces:** show typed operation-scope summaries on channel cards, add native Teams approve/deny controls, and deliver opted-in PWA approval notifications. (#130116, #129997, #129348) Thanks @Takhoffman. [v2026.8.1]"
+    "feat(onboarding): quick-start lane opens the web dashboard from one prompt (#134221)",
+    "feat(gateway): deliver delegated system-agent config approvals to channels (#134670)",
+    "feat(ui): render Mermaid diagrams in chat (#134913)",
+    "feat: configure a global managed worktree storage root (#134872)",
+    "feat(ui): streamline model provider defaults (#134813)",
+    "feat(codex): preserve native history in supervised message forks (#134660)",
+    "feat(approvals): add external verification contract (#113517)",
+    "feat(ui): start new sessions in background (#128050)"
   ],
   "fixItems": [
-    "fix(ci): record complete native UI file timings (#134283)",
-    "perf(ui): prepare usage query predicates once (#134318)",
-    "fix(update): recover the managed gateway after a failed CLI update (#119516)",
-    "fix(ui): keep images visible during hard refresh (#134310)",
-    "fix(sessions): avoid excessive history copies and preserve fork provenance (#134238)",
-    "fix(test): preserve Git update fixture identity through postinstall (#134328)",
-    "fix(agents): preserve nested tool result delivery state (#134056)",
-    "perf(workers): streamline cloud startup and fix bootstrap archive races (#134043)"
+    "fix: publish verified plugin npm artifacts without rebuilding (#135289)",
+    "fix(ios): omit deep-link URLs from logs (#134738)",
+    "perf(plugins): reuse prepared catalog facts during management operations (#135260)",
+    "fix(tts): inherit request timeouts for local CLI synthesis (#135222)",
+    "fix(process): Gateway survives late CLI output after timeout (#132582)",
+    "perf(replies): reduce work when preparing explicit replies (#135208)",
+    "perf: reuse accepted tool-result transcript snapshots (#135220)",
+    "fix(media): preserve attachment types when streamed chunks are reused (#135232)"
   ],
   "topScopes": [
     {
       "scope": "ui",
-      "count": 54
-    },
-    {
-      "scope": "test",
-      "count": 47
+      "count": 63
     },
     {
       "scope": "fix",
-      "count": 32
-    },
-    {
-      "scope": "docs",
-      "count": 24
+      "count": 41
     },
     {
       "scope": "ci",
-      "count": 23
-    },
-    {
-      "scope": "agents",
-      "count": 20
-    },
-    {
-      "scope": "cli",
-      "count": 16
+      "count": 37
     },
     {
       "scope": "gateway",
-      "count": 15
+      "count": 29
+    },
+    {
+      "scope": "agents",
+      "count": 26
+    },
+    {
+      "scope": "test",
+      "count": 23
+    },
+    {
+      "scope": "doctor",
+      "count": 22
+    },
+    {
+      "scope": "release",
+      "count": 20
     }
   ],
   "headlineCommits": [
-    "test(tooling): reuse Periphery workflow code fixtures (#134350)",
-    "fix(ci): record complete native UI file timings (#134283)",
-    "test(macos): remove app profile source invariants (#134288)",
-    "test(lmstudio): reuse oversized response source chunks (#134322)",
-    "test(infra): load execution policy modules once per suite (#134319)",
-    "perf(ui): prepare usage query predicates once (#134318)",
-    "refactor: reuse prepared plugin facts during Gateway turns (#134290)",
-    "fix(update): recover the managed gateway after a failed CLI update (#119516)"
+    "refactor(gateway): derive session projections from protocol types (#135275)",
+    "fix: publish verified plugin npm artifacts without rebuilding (#135289)",
+    "fix(ios): omit deep-link URLs from logs (#134738)",
+    "perf(plugins): reuse prepared catalog facts during management operations (#135260)",
+    "refactor(testing): share grouped report argument parsing (#135271)",
+    "ci: ignore helper checkouts in compiler cache topology (#135269)",
+    "refactor(ui): reuse protocol-owned model and checkpoint types (#135265)",
+    "ci: isolate artifact writers and overlap verification (#135226)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

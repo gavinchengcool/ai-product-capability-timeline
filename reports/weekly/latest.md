@@ -1,99 +1,93 @@
 # OpenClaw Weekly Update
 
-生成时间：2026-09-01T02:16:30.895135+08:00
+生成时间：2026-09-01T23:37:47.685380+08:00
 
 ## Window
 
-- Start: 2026-08-31T02:16:30.895135+08:00
-- End: 2026-09-01T02:16:30.895135+08:00
+- Start: 2026-08-31T23:37:47.685380+08:00
+- End: 2026-09-01T23:37:47.685380+08:00
 - Repo: `openclaw/openclaw`
 
 ## At A Glance
 
-- Commits in window: 522
-- Releases in window: 1
-- Stable releases in window: 1
+- Commits in window: 673
+- Releases in window: 0
+- Stable releases in window: 0
 - Beta releases in window: 0
-- Repo stars at scan time: 388254
-- Repo forks at scan time: 81512
+- Repo stars at scan time: 388491
+- Repo forks at scan time: 81554
 
 ## New Capability Signals
 
-- **Automatic self-learning:** capture strong reusable lessons and automatically apply scanner-approved new or Workshop-owned skills by default, while leaving user-authored skill changes pending and preserving explicit off or propose settings. (#115576) [v2026.8.1]
-- **Conversation-bound automations and loops:** default new agent-turn automations to their originating conversation when creation has session context. Owner-only `/loop` supports fixed-interval or self-paced checks; context-free CLI/API creation stays isolated. (#114328) [v2026.8.1]
-- **Named agent setup:** choose the first agent name during interactive onboarding or with `--agent-name`, migrate legacy main-session history to its clear owner, and reuse `main` as an ordinary agent ID after required doctor repairs. (#123521, #123609, #123424, #123349) [v2026.8.1]
-- **Quick Chat and desktop setup:** add macOS dictation, paste-to-app and model controls, Linux agent switching and per-agent routing, and a more complete Linux onboarding flow. (#110994, #110285, #129815) [v2026.8.1]
-- **Daytona sandboxes:** add a Daytona backend plugin for isolated cloud execution. (#121554) Thanks @mislavivanda and @Patrick-Erichsen. [v2026.8.1]
-- **Agent interoperability:** add an opt-in A2A 1.0 channel plugin for authenticated text tasks, task polling, and messages to configured peer agents. (#130008) [v2026.8.1]
-- **Email triggers:** start agent work from configured inbound IMAP mailboxes through a new plugin. (#130230) [v2026.8.1]
-- **Approval surfaces:** show typed operation-scope summaries on channel cards, add native Teams approve/deny controls, and deliver opted-in PWA approval notifications. (#130116, #129997, #129348) Thanks @Takhoffman. [v2026.8.1]
-- **Debugging handoff:** add `openclaw triage` for sanitized agent-debugging handoffs. (#128756) [v2026.8.1]
-- **Interactive widgets:** present interactive widgets in chat, pin them to session dashboards, export rendered views as PNGs, and grant exact actions or network origins to pinned widgets. (#101840, #108889, #108983, #110960, #110987, #110992, #111030, #125803, #127315) Thanks @100yenadmin and @hannesrudolph. [v2026.8.1]
-- **Presence-triggered conversations:** optionally wake an agent when an eligible Discord participant comes online or a previously active Slack participant returns, with scoped audiences, cooldowns, and configurable Slack guidance. (#107451, #108510, #123805, #123875) Thanks @sjf-oa and @sjf. [v2026.8.1]
-- **Workboard dispatch cap:** add a request-scoped `--max-starts` override while preserving the default cap, sequential starts, and one-card-per-owner guard. (#100174) Thanks @souvikDevloper, @Souvikalp, and @jwest75674. [v2026.8.1]
-- **MCP dashboards:** pin interactive MCP app views from a conversation to its dashboard, retaining bounded tool grants and restoring the view when reopened. (#111524) [v2026.8.1]
-- **MCP connections:** add servers from composer connectors and support per-requester OAuth credentials for shared MCP servers. (#115921, #122166) Thanks @obviyus. [v2026.8.1]
-- **Model discovery:** add Qwen 3.8 Max/Flash, DeepSeek V4 Flash Vision (Experimental), NVIDIA Nemotron 3.5 Lightning, and GLM-5.3/Flash, with provider-owned discovery. (#131294, #123523, #130309) Thanks @oliver-mee and @Marvinthebored. [v2026.8.1]
+- feat(onboarding): quick-start lane opens the web dashboard from one prompt (#134221)
+- feat(gateway): deliver delegated system-agent config approvals to channels (#134670)
+- feat(ui): render Mermaid diagrams in chat (#134913)
+- feat: configure a global managed worktree storage root (#134872)
+- feat(ui): streamline model provider defaults (#134813)
+- feat(codex): preserve native history in supervised message forks (#134660)
+- feat(approvals): add external verification contract (#113517)
+- feat(ui): start new sessions in background (#128050)
+- feat: keep the Home agent beside your work (#133676)
 
 ## Important Fixes And Hardening
 
-- fix(ci): record complete native UI file timings (#134283)
-- perf(ui): prepare usage query predicates once (#134318)
-- fix(update): recover the managed gateway after a failed CLI update (#119516)
-- fix(ui): keep images visible during hard refresh (#134310)
-- fix(sessions): avoid excessive history copies and preserve fork provenance (#134238)
-- fix(test): preserve Git update fixture identity through postinstall (#134328)
-- fix(agents): preserve nested tool result delivery state (#134056)
-- perf(workers): streamline cloud startup and fix bootstrap archive races (#134043)
-- fix(macos): finish ChatGPT login after Gateway reconnect
-- fix: retain 2026.8.1 release fixes on main (#134045)
-- fix(doctor): identify malformed legacy exec approval fields (#133952)
-- fix(docker): include shared lifecycle marker in install stages (#134231)
-- fix(gateway): release cached transcript backing storage (#133988)
-- perf(sessions): reuse prepared transcript batch writers (#134252)
-- perf(ci): use runtime-only builds for Node test prerequisites (#134294)
+- fix: publish verified plugin npm artifacts without rebuilding (#135289)
+- fix(ios): omit deep-link URLs from logs (#134738)
+- perf(plugins): reuse prepared catalog facts during management operations (#135260)
+- fix(tts): inherit request timeouts for local CLI synthesis (#135222)
+- fix(process): Gateway survives late CLI output after timeout (#132582)
+- perf(replies): reduce work when preparing explicit replies (#135208)
+- perf: reuse accepted tool-result transcript snapshots (#135220)
+- fix(media): preserve attachment types when streamed chunks are reused (#135232)
+- fix(cli): guard state writes against gateway split-brain (#134403)
+- fix: preserve context-free harness policy reasons (#135206)
+- fix(release): publish frozen 2026.8.2 with approved Codex pin (#135246)
+- fix: usage peak error hours shift during daylight saving (#135153)
+- fix(plugins): ignore build stamps in registry freshness
+- fix(ai): make generated commentary segment identities unique per segment
+- fix: stale group updates revoke valid browser commands (#135186)
 
 ## Releases This Week
 
-- `v2026.8.1` | stable | 2026-08-31T03:30:51Z | OpenClaw 2026.8.1
+- No GitHub releases were published in this window.
 
 ## Most Active Change Scopes
 
-- `ui`: 54
-- `test`: 47
-- `fix`: 32
-- `docs`: 24
-- `ci`: 23
-- `agents`: 20
-- `cli`: 16
-- `gateway`: 15
-- `sessions`: 14
-- `doctor`: 14
-- `plugins`: 13
-- `infra`: 12
+- `ui`: 63
+- `fix`: 41
+- `ci`: 37
+- `gateway`: 29
+- `agents`: 26
+- `test`: 23
+- `doctor`: 22
+- `release`: 20
+- `plugins`: 19
+- `cli`: 17
+- `perf`: 16
+- `infra`: 15
 
 ## Recent Commit Headlines
 
-- 2026-08-31T18:15:53Z | test(tooling): reuse Periphery workflow code fixtures (#134350)
-- 2026-08-31T18:13:21Z | fix(ci): record complete native UI file timings (#134283)
-- 2026-08-31T18:11:06Z | test(macos): remove app profile source invariants (#134288)
-- 2026-08-31T18:10:45Z | test(lmstudio): reuse oversized response source chunks (#134322)
-- 2026-08-31T18:08:29Z | test(infra): load execution policy modules once per suite (#134319)
-- 2026-08-31T18:06:00Z | perf(ui): prepare usage query predicates once (#134318)
-- 2026-08-31T18:02:43Z | refactor: reuse prepared plugin facts during Gateway turns (#134290)
-- 2026-08-31T18:00:30Z | fix(update): recover the managed gateway after a failed CLI update (#119516)
-- 2026-08-31T18:00:25Z | fix(ui): keep images visible during hard refresh (#134310)
-- 2026-08-31T17:58:46Z | test(browser): remove duplicated profile allocation demonstrations (#134324)
-- 2026-08-31T17:54:11Z | test(auto-reply): avoid catalog discovery in media fixtures (#134245)
-- 2026-08-31T17:50:20Z | fix(sessions): avoid excessive history copies and preserve fork provenance (#134238)
-- 2026-08-31T17:49:27Z | fix(test): preserve Git update fixture identity through postinstall (#134328)
-- 2026-08-31T17:49:21Z | fix(agents): preserve nested tool result delivery state (#134056)
-- 2026-08-31T17:48:17Z | perf(workers): streamline cloud startup and fix bootstrap archive races (#134043)
-- 2026-08-31T17:43:19Z | refactor(agents): reduce per-turn policy and tool preparation (#134246)
-- 2026-08-31T17:40:36Z | fix(macos): finish ChatGPT login after Gateway reconnect
-- 2026-08-31T17:38:47Z | fix: retain 2026.8.1 release fixes on main (#134045)
-- 2026-08-31T17:37:25Z | test(tooling): configure fixture identity in the commit command (#134277)
-- 2026-08-31T17:35:06Z | fix(doctor): identify malformed legacy exec approval fields (#133952)
+- 2026-09-01T15:32:13Z | refactor(gateway): derive session projections from protocol types (#135275)
+- 2026-09-01T15:31:20Z | fix: publish verified plugin npm artifacts without rebuilding (#135289)
+- 2026-09-01T15:27:11Z | fix(ios): omit deep-link URLs from logs (#134738)
+- 2026-09-01T15:26:30Z | perf(plugins): reuse prepared catalog facts during management operations (#135260)
+- 2026-09-01T15:25:31Z | refactor(testing): share grouped report argument parsing (#135271)
+- 2026-09-01T15:24:28Z | ci: ignore helper checkouts in compiler cache topology (#135269)
+- 2026-09-01T15:16:00Z | refactor(ui): reuse protocol-owned model and checkpoint types (#135265)
+- 2026-09-01T15:12:02Z | ci: isolate artifact writers and overlap verification (#135226)
+- 2026-09-01T15:11:18Z | fix(tts): inherit request timeouts for local CLI synthesis (#135222)
+- 2026-09-01T15:09:23Z | refactor(ios): carry Watch inbound events through one owner (#135235)
+- 2026-09-01T15:05:55Z | refactor(schema): consolidate JSON Schema child traversal (#135145)
+- 2026-09-01T15:02:58Z | fix(process): Gateway survives late CLI output after timeout (#132582)
+- 2026-09-01T15:02:41Z | refactor(msteams): share bounded Graph pagination (#135258)
+- 2026-09-01T14:59:17Z | perf(replies): reduce work when preparing explicit replies (#135208)
+- 2026-09-01T14:59:13Z | perf: reuse accepted tool-result transcript snapshots (#135220)
+- 2026-09-01T14:57:52Z | fix(media): preserve attachment types when streamed chunks are reused (#135232)
+- 2026-09-01T14:55:24Z | fix(cli): guard state writes against gateway split-brain (#134403)
+- 2026-09-01T14:54:32Z | refactor(openai): avoid redundant image auth lookup (#135259)
+- 2026-09-01T14:53:03Z | fix: preserve context-free harness policy reasons (#135206)
+- 2026-09-01T14:51:16Z | refactor(google-meet): derive shared meeting types from the canonical owner (#135257)
 
 ## Sources
 
