@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-09-01T23:38:05+08:00
-- Requested window: 2026-08-31 to 2026-09-01
+- Generated at: 2026-09-02T23:26:16+08:00
+- Requested window: 2026-09-01 to 2026-09-02
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-08-31 to 2026-09-01
-- Generated at: 2026-09-01T23:37:47.685380+08:00
-- 窗口: 2026-08-31 至 2026-09-01
-- GitHub 增量: 673 commits / 0 releases
-- 最近 push: 2026-09-01
+- Window: 2026-09-01 to 2026-09-02
+- Generated at: 2026-09-02T23:25:59.293794+08:00
+- 窗口: 2026-09-01 至 2026-09-02
+- GitHub 增量: 583 commits / 1 releases
+- 最近 push: 2026-09-02
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(onboarding): quick-start lane opens the web dashboard from one prompt (#134221)
-  - feat(gateway): deliver delegated system-agent config approvals to channels (#134670)
-  - feat(ui): render Mermaid diagrams in chat (#134913)
-  - feat: configure a global managed worktree storage root (#134872)
-  - feat(ui): streamline model provider defaults (#134813)
-  - feat(codex): preserve native history in supervised message forks (#134660)
-  - feat(approvals): add external verification contract (#113517)
-  - feat(ui): start new sessions in background (#128050)
+  - **Chrome relay wake-up:** support standalone local relays that start on demand, share their paired browser with the Gateway, and remain available to other CDP clients when the Gateway disconnects; see the [Chrome extension guide](https://docs.openclaw.ai/tools/chrome-extension#standalone-direct-loopback-relay) for supported builds and setup. (#128379) [v2026.8.2]
+  - **Background sessions:** start work from New Session without leaving the page with `Cmd/Ctrl+Enter`, retain the selected local, cloud, or paired-device placement, and open the session from its completion notice; use `Cmd/Ctrl+Shift+Enter` when Modifier+Enter is already your normal send shortcut, while explicit Draft visibility still creates a draft. Related #128037. (#128050) Thanks @Takhoffman. [v2026.8.2]
+  - feat: prepare new-session names after idle typing (#133724)
+  - feat(config): add conditional set expectations (#136137)
+  - feat(approvals): make Allow Always durable for MCP tools on OpenClaw-configured servers (#136019)
+  - feat(macos): render Mermaid diagrams in native chat (#135746)
+  - feat(worktrees): raise managed checkout limit to 100 (#135885)
+  - feat(xai): surface SuperGrok usage stats (#135766)
 - Fixes and constraints:
-  - fix: publish verified plugin npm artifacts without rebuilding (#135289)
-  - fix(ios): omit deep-link URLs from logs (#134738)
-  - perf(plugins): reuse prepared catalog facts during management operations (#135260)
-  - fix(tts): inherit request timeouts for local CLI synthesis (#135222)
-  - fix(process): Gateway survives late CLI output after timeout (#132582)
-  - perf(replies): reduce work when preparing explicit replies (#135208)
-  - perf: reuse accepted tool-result transcript snapshots (#135220)
-  - fix(media): preserve attachment types when streamed chunks are reused (#135232)
+  - fix(macos): let browser sidebar expand beyond half width (#136168)
+  - fix(android): mask credentials and refresh secret input state (#136352)
+  - fix(test): synchronize residual descendant readiness (#136185)
+  - fix(release): retain preflight artifact producer for publication (#136336)
+  - fix(test): join failed Gateway client acquisition cleanup (#136344)
+  - fix(packaging): make built package imports side-effect free (#136308)
+  - fix(ui): load heartbeat scratch into the read-only monitor field (#135508)
+  - fix(install): qualify npm 12 archives and prepared plugins (#136316)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
