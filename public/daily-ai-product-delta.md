@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-09-02T23:26:16+08:00
-- Requested window: 2026-09-01 to 2026-09-02
+- Generated at: 2026-09-03T23:19:23+08:00
+- Requested window: 2026-09-02 to 2026-09-03
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-09-01 to 2026-09-02
-- Generated at: 2026-09-02T23:25:59.293794+08:00
-- 窗口: 2026-09-01 至 2026-09-02
-- GitHub 增量: 583 commits / 1 releases
-- 最近 push: 2026-09-02
+- Window: 2026-09-02 to 2026-09-03
+- Generated at: 2026-09-03T23:19:05.665520+08:00
+- 窗口: 2026-09-02 至 2026-09-03
+- GitHub 增量: 591 commits / 0 releases
+- 最近 push: 2026-09-03
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - **Chrome relay wake-up:** support standalone local relays that start on demand, share their paired browser with the Gateway, and remain available to other CDP clients when the Gateway disconnects; see the [Chrome extension guide](https://docs.openclaw.ai/tools/chrome-extension#standalone-direct-loopback-relay) for supported builds and setup. (#128379) [v2026.8.2]
-  - **Background sessions:** start work from New Session without leaving the page with `Cmd/Ctrl+Enter`, retain the selected local, cloud, or paired-device placement, and open the session from its completion notice; use `Cmd/Ctrl+Shift+Enter` when Modifier+Enter is already your normal send shortcut, while explicit Draft visibility still creates a draft. Related #128037. (#128050) Thanks @Takhoffman. [v2026.8.2]
-  - feat: prepare new-session names after idle typing (#133724)
-  - feat(config): add conditional set expectations (#136137)
-  - feat(approvals): make Allow Always durable for MCP tools on OpenClaw-configured servers (#136019)
-  - feat(macos): render Mermaid diagrams in native chat (#135746)
-  - feat(worktrees): raise managed checkout limit to 100 (#135885)
-  - feat(xai): surface SuperGrok usage stats (#135766)
+  - feat(multi-user): add provider-neutral connected accounts (#134970)
+  - improve(testing): add watchOS Gateway upgrade survivor (#137203)
+  - feat(ui): turn dashboards into a task gallery (#137069)
+  - feat(ui): move dashboards into the chat side panel (#137068)
+  - feat(nodes): keep last-known host stats for offline nodes and show them in nodes status (#137090)
+  - feat(gateway): hot-reload node, browser, and access settings (#137160)
+  - feat(android): report node host resource stats (#137083)
+  - feat(ios): report node host memory and CPU stats (#137082)
 - Fixes and constraints:
-  - fix(macos): let browser sidebar expand beyond half width (#136168)
-  - fix(android): mask credentials and refresh secret input state (#136352)
-  - fix(test): synchronize residual descendant readiness (#136185)
-  - fix(release): retain preflight artifact producer for publication (#136336)
-  - fix(test): join failed Gateway client acquisition cleanup (#136344)
-  - fix(packaging): make built package imports side-effect free (#136308)
-  - fix(ui): load heartbeat scratch into the read-only monitor field (#135508)
-  - fix(install): qualify npm 12 archives and prepared plugins (#136316)
+  - fix(gateway): repair the Gateway E2E shard (browser suite project, skill resource argv, Codex diagnostic) (#137358)
+  - fix(qa): restore Slack private QA startup (#137346)
+  - fix(release): read frozen auth profile store contract (#136828)
+  - perf: reuse Code Mode skill field patterns (#137340)
+  - fix(macos): keep gateway windows on their selected connections (#137089)
+  - fix(release): restore reviewed Telegram waiver allowlist (#137118)
+  - perf: keep normal continuation diagnostics at debug level (#137328)
+  - fix(sessions): stop labeling internal completion provenance as webchat (#128165)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
