@@ -2420,5 +2420,20 @@ window.OPENCLAW_HEATMAP_INCREMENTAL_ROWS = [
     },
     "source": "daily-incremental",
     "generatedAt": "2026-09-03T23:19:05.665520+08:00"
+  },
+  {
+    "date": "2026-09-04",
+    "stage": "openclaw",
+    "summary": "移动端入口、渠道互动、gateway / 会话控制面、Docker / 运维继续增强，最近一天的增量也并入主矩阵。",
+    "axisEntries": {
+      "channels": "Slack interactive replies 与 DM block 保留继续增强。",
+      "models": "",
+      "tools": "Browser existing-session / MCP attach 模式继续简化并加固。",
+      "devices": "Android settings UI、dark theme 和扫码体验继续迭代。 macOS canvas actions 被进一步限制到 trusted surfaces。",
+      "control": "Gateway health monitor、pairing 与 watch 链路继续打磨。 Session / plugin 路由与配置基线继续收敛。",
+      "ops": "服务重装、重启与 cleanup 路径继续修补。 构建内存回归与 cron 死锁等运行期问题继续收敛。"
+    },
+    "source": "daily-incremental",
+    "generatedAt": "2026-09-04T23:14:12.280701+08:00"
   }
 ];

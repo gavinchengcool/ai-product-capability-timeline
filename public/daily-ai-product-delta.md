@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-09-03T23:19:23+08:00
-- Requested window: 2026-09-02 to 2026-09-03
+- Generated at: 2026-09-04T23:14:32+08:00
+- Requested window: 2026-09-03 to 2026-09-04
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-09-02 to 2026-09-03
-- Generated at: 2026-09-03T23:19:05.665520+08:00
-- 窗口: 2026-09-02 至 2026-09-03
-- GitHub 增量: 591 commits / 0 releases
-- 最近 push: 2026-09-03
+- Window: 2026-09-03 to 2026-09-04
+- Generated at: 2026-09-04T23:14:12.280701+08:00
+- 窗口: 2026-09-03 至 2026-09-04
+- GitHub 增量: 442 commits / 1 releases
+- 最近 push: 2026-09-04
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(multi-user): add provider-neutral connected accounts (#134970)
-  - improve(testing): add watchOS Gateway upgrade survivor (#137203)
-  - feat(ui): turn dashboards into a task gallery (#137069)
-  - feat(ui): move dashboards into the chat side panel (#137068)
-  - feat(nodes): keep last-known host stats for offline nodes and show them in nodes status (#137090)
-  - feat(gateway): hot-reload node, browser, and access settings (#137160)
-  - feat(android): report node host resource stats (#137083)
-  - feat(ios): report node host memory and CPU stats (#137082)
+  - **New models and usage:** support Anthropic Fable 5.1 from shared model metadata, show SuperGrok usage in `openclaw models` and the usage panel, keep GPT-5.6 Ultra selected across runtime boundaries and configured native accounts, and keep Sonnet 5 pricing current on Vertex. Related #135623, #135991, #135664. (#135638, #135766, #135397, #136061, #135761) [v2026.9.1]
+  - **Session naming and switching:** new-session names are prepared after idle typing, switching sessions in large lists is faster with lighter sidebar work and payloads, sidebar catalog groups are capped at five sessions, and New Session and Chat do less startup work. Related #133702. (#133724, #135021, #135332, #135574, #136362, #136021, #136040) Thanks @fuller-stack-dev. [v2026.9.1]
+  - **Control UI layout:** sidebar controls move into the agent header, session context menus are regrouped, the accent color lives with the theme, dashboard widgets fill mobile width, the shared Agent picker and settings pages are streamlined with loading skeletons, hovercards show participants, and Gateway suspension appears in account footers. Related #135506, #135535, #132147. (#134365, #135526, #135547, #133814, #134680, #134684, #134659, #134636, #136542, #136220, #134478, #134764) Thanks @vyctorbrzezowski, @MoerAI, and @Patrick-Erichsen. [v2026.9.1]
+  - feat(gateway): apply more settings without restarting (#138112)
+  - feat(macos): simplify node and device pairing approvals (#138137)
+  - feat(diagnostics): measure gateway RPC latency phases (#138015)
+  - feat: enable Swarm by default (#136514)
+  - feat(ui): make task panels interchangeable (#138077)
 - Fixes and constraints:
-  - fix(gateway): repair the Gateway E2E shard (browser suite project, skill resource argv, Codex diagnostic) (#137358)
-  - fix(qa): restore Slack private QA startup (#137346)
-  - fix(release): read frozen auth profile store contract (#136828)
-  - perf: reuse Code Mode skill field patterns (#137340)
-  - fix(macos): keep gateway windows on their selected connections (#137089)
-  - fix(release): restore reviewed Telegram waiver allowlist (#137118)
-  - perf: keep normal continuation diagnostics at debug level (#137328)
-  - fix(sessions): stop labeling internal completion provenance as webchat (#128165)
+  - perf: avoid temporary entries in bounded JSON traversal (#138017)
+  - fix(irc): render complete messages before splitting (#138328)
+  - perf: prepare worker trajectory payloads only for recorded events (#138086)
+  - fix(mcp): paginated listings no longer time out after a forward clock step (#137206)
+  - fix(codex): page native transcripts and bound UI previews (#136282)
+  - fix(docs): preserve mirrored ClawHub maturity links (#138241)
+  - fix(test): own UI animation and legacy database setup (#138296)
+  - fix(tts): preserve literal directives in Markdown code (#138319)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
