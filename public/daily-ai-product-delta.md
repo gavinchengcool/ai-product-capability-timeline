@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-09-04T23:14:32+08:00
-- Requested window: 2026-09-03 to 2026-09-04
+- Generated at: 2026-09-05T22:04:21+08:00
+- Requested window: 2026-09-04 to 2026-09-05
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-09-03 to 2026-09-04
-- Generated at: 2026-09-04T23:14:12.280701+08:00
-- 窗口: 2026-09-03 至 2026-09-04
-- GitHub 增量: 442 commits / 1 releases
-- 最近 push: 2026-09-04
+- Window: 2026-09-04 to 2026-09-05
+- Generated at: 2026-09-05T22:04:04.065067+08:00
+- 窗口: 2026-09-04 至 2026-09-05
+- GitHub 增量: 504 commits / 0 releases
+- 最近 push: 2026-09-05
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - **New models and usage:** support Anthropic Fable 5.1 from shared model metadata, show SuperGrok usage in `openclaw models` and the usage panel, keep GPT-5.6 Ultra selected across runtime boundaries and configured native accounts, and keep Sonnet 5 pricing current on Vertex. Related #135623, #135991, #135664. (#135638, #135766, #135397, #136061, #135761) [v2026.9.1]
-  - **Session naming and switching:** new-session names are prepared after idle typing, switching sessions in large lists is faster with lighter sidebar work and payloads, sidebar catalog groups are capped at five sessions, and New Session and Chat do less startup work. Related #133702. (#133724, #135021, #135332, #135574, #136362, #136021, #136040) Thanks @fuller-stack-dev. [v2026.9.1]
-  - **Control UI layout:** sidebar controls move into the agent header, session context menus are regrouped, the accent color lives with the theme, dashboard widgets fill mobile width, the shared Agent picker and settings pages are streamlined with loading skeletons, hovercards show participants, and Gateway suspension appears in account footers. Related #135506, #135535, #132147. (#134365, #135526, #135547, #133814, #134680, #134684, #134659, #134636, #136542, #136220, #134478, #134764) Thanks @vyctorbrzezowski, @MoerAI, and @Patrick-Erichsen. [v2026.9.1]
-  - feat(gateway): apply more settings without restarting (#138112)
-  - feat(macos): simplify node and device pairing approvals (#138137)
-  - feat(diagnostics): measure gateway RPC latency phases (#138015)
-  - feat: enable Swarm by default (#136514)
-  - feat(ui): make task panels interchangeable (#138077)
+  - feat(skills)!: give each agent its own Skill Workshop (#135528)
+  - feat(agents): allow bounded recursive session spawning by default (#138059)
+  - feat(macos): connect gateways through browser sign-in and website handoff (#138745)
+  - feat(gateway): hand off suspended gateways to external restart owners (#138885)
+  - feat(ci): add paired Vitest benchmark (#138937)
+  - feat(process): show timeout causes in list (#133318)
+  - feat(slack): teach agents proactive Block Kit replies (#138896)
+  - feat(update): keep progress and reports across restarts (#138737)
 - Fixes and constraints:
-  - perf: avoid temporary entries in bounded JSON traversal (#138017)
-  - fix(irc): render complete messages before splitting (#138328)
-  - perf: prepare worker trajectory payloads only for recorded events (#138086)
-  - fix(mcp): paginated listings no longer time out after a forward clock step (#137206)
-  - fix(codex): page native transcripts and bound UI previews (#136282)
-  - fix(docs): preserve mirrored ClawHub maturity links (#138241)
-  - fix(test): own UI animation and legacy database setup (#138296)
-  - fix(tts): preserve literal directives in Markdown code (#138319)
+  - perf(reply): reuse debounce queue keys for admission accounting (#139104)
+  - perf(cli): prepare missing requirement details only for verbose lists (#139095)
+  - fix(ci): restore prebuilt UI test admission (#139123)
+  - perf(infra): avoid idle churn during worker handoffs (#139069)
+  - perf(matrix): isolate storage metadata from client loading (#139093)
+  - fix(sqlite): release cached statement with its database owner (#139085)
+  - fix(cron): preserve scheduled report images in conversation history (#136589)
+  - fix(ui): keep Home context current after dock reconnection (#139059)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
