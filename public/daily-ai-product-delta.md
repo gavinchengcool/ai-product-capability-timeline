@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-09-05T22:04:21+08:00
-- Requested window: 2026-09-04 to 2026-09-05
+- Generated at: 2026-09-06T22:28:57+08:00
+- Requested window: 2026-09-05 to 2026-09-06
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-09-04 to 2026-09-05
-- Generated at: 2026-09-05T22:04:04.065067+08:00
-- 窗口: 2026-09-04 至 2026-09-05
-- GitHub 增量: 504 commits / 0 releases
-- 最近 push: 2026-09-05
+- Window: 2026-09-05 to 2026-09-06
+- Generated at: 2026-09-06T22:28:41.119249+08:00
+- 窗口: 2026-09-05 至 2026-09-06
+- GitHub 增量: 760 commits / 1 releases
+- 最近 push: 2026-09-06
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(skills)!: give each agent its own Skill Workshop (#135528)
-  - feat(agents): allow bounded recursive session spawning by default (#138059)
-  - feat(macos): connect gateways through browser sign-in and website handoff (#138745)
-  - feat(gateway): hand off suspended gateways to external restart owners (#138885)
-  - feat(ci): add paired Vitest benchmark (#138937)
-  - feat(process): show timeout causes in list (#133318)
-  - feat(slack): teach agents proactive Block Kit replies (#138896)
-  - feat(update): keep progress and reports across restarts (#138737)
+  - **GPT-6 Astra reasoning:** keep supported reasoning and sampling settings correct when catalog metadata is absent, add `/think ultra` orchestration for OpenClaw and native Codex runtimes, and retain configured Azure deployment capabilities. (#138626, #138739) [v2026.9.2]
+  - **Personal connected accounts:** add provider accounts from Settings → Profile → Connected accounts or the CLI, choose an account for new chats or one existing chat, and keep existing session selections when your default changes. (#134970) Thanks @scoootscooob. [v2026.9.2]
+  - **Slack session controls:** add a native Stop button, session processing and approval status, and synchronized session titles; enable the documented Slack session-event subscriptions to receive Stop and title changes. (#136706) [v2026.9.2]
+  - **Realtime Talk:** support native realtime sessions for thin audio clients while retaining the selected model and account, transcripts, spoken controls, and scoped agent consultations. (#134003) Thanks @edenfunf and @obviyus. [v2026.9.2]
+  - feat(providers): leave generated setup catalogs to discovery (#140154)
+  - feat: share selected sessions publicly in a read-only view (#139489)
+  - feat(control-ui): browse meeting notes and manage capture sources (#140084)
+  - feat(transcripts): browse and export saved meeting archives (#139875)
 - Fixes and constraints:
-  - perf(reply): reuse debounce queue keys for admission accounting (#139104)
-  - perf(cli): prepare missing requirement details only for verbose lists (#139095)
-  - fix(ci): restore prebuilt UI test admission (#139123)
-  - perf(infra): avoid idle churn during worker handoffs (#139069)
-  - perf(matrix): isolate storage metadata from client loading (#139093)
-  - fix(sqlite): release cached statement with its database owner (#139085)
-  - fix(cron): preserve scheduled report images in conversation history (#136589)
-  - fix(ui): keep Home context current after dock reconnection (#139059)
+  - fix: preserve Markdown values and simplify plugin adapters (#140150)
+  - fix(code-mode): describe emitted output helpers (#140140)
+  - perf(ui): reuse board drag layout work (#140151)
+  - fix(codex): report safe history rejection reasons (#139933)
+  - perf(agents): reduce bootstrap accounting overhead (#140142)
+  - fix(media): stop image setup after cancellation (#140149)
+  - fix(plugins): retain service cleanup through late startup (#140132)
+  - fix: revert updater policy and Workshop ownership changes (#140148)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
