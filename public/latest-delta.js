@@ -1,99 +1,91 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-09-06T22:28:41.119249+08:00",
+  "generatedAt": "2026-09-08T00:43:12.797874+08:00",
   "window": {
-    "start_local": "2026-09-05T22:28:41.119249+08:00",
-    "end_local": "2026-09-06T22:28:41.119249+08:00",
-    "start_utc": "2026-09-05T14:28:41Z",
-    "end_utc": "2026-09-06T14:28:41Z"
+    "start_local": "2026-09-07T00:43:12.797874+08:00",
+    "end_local": "2026-09-08T00:43:12.797874+08:00",
+    "start_utc": "2026-09-06T16:43:12Z",
+    "end_utc": "2026-09-07T16:43:12Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 389015,
-    "forks": 81740,
-    "open_issues": 6234,
-    "pushed_at": "2026-09-06T14:27:27Z"
+    "stars": 389114,
+    "forks": 81762,
+    "open_issues": 6303,
+    "pushed_at": "2026-09-07T16:43:03Z"
   },
   "summary": {
-    "commitCount": 760,
-    "releaseCount": 1,
-    "stableReleaseCount": 1,
+    "commitCount": 713,
+    "releaseCount": 0,
+    "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 389015,
-    "forks": 81740,
-    "openIssues": 6234
+    "stars": 389114,
+    "forks": 81762,
+    "openIssues": 6303
   },
-  "releases": [
-    {
-      "tag_name": "v2026.9.2",
-      "published_at": "2026-09-05T20:00:07Z",
-      "name": "openclaw 2026.9.2",
-      "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.2"
-    }
-  ],
+  "releases": [],
   "featureItems": [
-    "**GPT-6 Astra reasoning:** keep supported reasoning and sampling settings correct when catalog metadata is absent, add `/think ultra` orchestration for OpenClaw and native Codex runtimes, and retain configured Azure deployment capabilities. (#138626, #138739) [v2026.9.2]",
-    "**Personal connected accounts:** add provider accounts from Settings → Profile → Connected accounts or the CLI, choose an account for new chats or one existing chat, and keep existing session selections when your default changes. (#134970) Thanks @scoootscooob. [v2026.9.2]",
-    "**Slack session controls:** add a native Stop button, session processing and approval status, and synchronized session titles; enable the documented Slack session-event subscriptions to receive Stop and title changes. (#136706) [v2026.9.2]",
-    "**Realtime Talk:** support native realtime sessions for thin audio clients while retaining the selected model and account, transcripts, spoken controls, and scoped agent consultations. (#134003) Thanks @edenfunf and @obviyus. [v2026.9.2]",
-    "feat(providers): leave generated setup catalogs to discovery (#140154)",
-    "feat: share selected sessions publicly in a read-only view (#139489)",
-    "feat(control-ui): browse meeting notes and manage capture sources (#140084)",
-    "feat(transcripts): browse and export saved meeting archives (#139875)"
+    "feat(team-reports): adopt Carapace visual contract and GitHub avatars (#141327)",
+    "feat(qa): run isolated behavioral proof for inline reviews (#138953)",
+    "feat: show active sessions in Live activity (#141045)",
+    "feat(browser): stream the Control UI browser panel live instead of polling screenshots (#141031)",
+    "feat(ui): add native embed mode and phone-width settings pages (#139492)",
+    "feat(ui): manage provider accounts from Models settings (#132451)",
+    "feat(ios): start live voice from Siri and Shortcuts (#141003)",
+    "feat(cron): report slow list page timings (#140994)"
   ],
   "fixItems": [
-    "fix: preserve Markdown values and simplify plugin adapters (#140150)",
-    "fix(code-mode): describe emitted output helpers (#140140)",
-    "perf(ui): reuse board drag layout work (#140151)",
-    "fix(codex): report safe history rejection reasons (#139933)",
-    "perf(agents): reduce bootstrap accounting overhead (#140142)",
-    "fix(media): stop image setup after cancellation (#140149)",
-    "fix(plugins): retain service cleanup through late startup (#140132)",
-    "fix: revert updater policy and Workshop ownership changes (#140148)"
+    "perf(status): reuse normalized log-tail lines (#141329)",
+    "fix(ui): count selected usage tool invocations accurately (#141216)",
+    "fix(reef): keep parked messages recoverable across live frames (#141127)",
+    "fix(agents): strip wrapped runtime-context prefaces from delivered text (#139604)",
+    "fix(ios): retain intent metadata during dead-code scans (#141334)",
+    "fix(ai): preserve Responses reasoning changes after idle gaps (#141065)",
+    "fix(desktop): bind observer tickets and viewers to the requesting Gateway connection (#141336)",
+    "fix(memory-core): resume validated session transcript appends (#119367)"
   ],
   "topScopes": [
     {
       "scope": "ui",
-      "count": 71
+      "count": 60
     },
     {
       "scope": "fix",
-      "count": 63
-    },
-    {
-      "scope": "gateway",
-      "count": 55
-    },
-    {
-      "scope": "test",
-      "count": 52
+      "count": 59
     },
     {
       "scope": "agents",
-      "count": 48
-    },
-    {
-      "scope": "plugins",
       "count": 33
     },
     {
-      "scope": "update",
-      "count": 18
+      "scope": "plugins",
+      "count": 30
     },
     {
-      "scope": "media",
-      "count": 14
+      "scope": "gateway",
+      "count": 29
+    },
+    {
+      "scope": "tests",
+      "count": 22
+    },
+    {
+      "scope": "update",
+      "count": 20
+    },
+    {
+      "scope": "cli",
+      "count": 19
     }
   ],
   "headlineCommits": [
-    "fix: preserve Markdown values and simplify plugin adapters (#140150)",
-    "fix(code-mode): describe emitted output helpers (#140140)",
-    "refactor(tui): remove unused picker mutation hooks (#140120)",
-    "feat(providers): leave generated setup catalogs to discovery (#140154)",
-    "perf(ui): reuse board drag layout work (#140151)",
-    "fix(codex): report safe history rejection reasons (#139933)",
-    "perf(agents): reduce bootstrap accounting overhead (#140142)",
-    "fix(media): stop image setup after cancellation (#140149)"
+    "refactor(native): share Talk configuration snapshots (#141342)",
+    "perf(status): reuse normalized log-tail lines (#141329)",
+    "fix(ui): count selected usage tool invocations accurately (#141216)",
+    "fix(reef): keep parked messages recoverable across live frames (#141127)",
+    "fix(agents): strip wrapped runtime-context prefaces from delivered text (#139604)",
+    "fix(ios): retain intent metadata during dead-code scans (#141334)",
+    "refactor(agents): share terminal control character detection (#141343)",
+    "improve(ui): show sidebar unread state on the row icon instead of the trailing edge (#141335)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
