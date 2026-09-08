@@ -1,91 +1,99 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-09-08T00:43:12.797874+08:00",
+  "generatedAt": "2026-09-08T23:27:32.956779+08:00",
   "window": {
-    "start_local": "2026-09-07T00:43:12.797874+08:00",
-    "end_local": "2026-09-08T00:43:12.797874+08:00",
-    "start_utc": "2026-09-06T16:43:12Z",
-    "end_utc": "2026-09-07T16:43:12Z"
+    "start_local": "2026-09-07T23:27:32.956779+08:00",
+    "end_local": "2026-09-08T23:27:32.956779+08:00",
+    "start_utc": "2026-09-07T15:27:32Z",
+    "end_utc": "2026-09-08T15:27:32Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 389114,
-    "forks": 81762,
-    "open_issues": 6303,
-    "pushed_at": "2026-09-07T16:43:03Z"
+    "stars": 389215,
+    "forks": 81779,
+    "open_issues": 6415,
+    "pushed_at": "2026-09-08T15:27:14Z"
   },
   "summary": {
-    "commitCount": 713,
-    "releaseCount": 0,
-    "stableReleaseCount": 0,
+    "commitCount": 622,
+    "releaseCount": 1,
+    "stableReleaseCount": 1,
     "betaReleaseCount": 0,
-    "stars": 389114,
-    "forks": 81762,
-    "openIssues": 6303
+    "stars": 389215,
+    "forks": 81779,
+    "openIssues": 6415
   },
-  "releases": [],
+  "releases": [
+    {
+      "tag_name": "v2026.9.3",
+      "published_at": "2026-09-08T14:15:53Z",
+      "name": "openclaw 2026.9.3",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.3"
+    }
+  ],
   "featureItems": [
-    "feat(team-reports): adopt Carapace visual contract and GitHub avatars (#141327)",
-    "feat(qa): run isolated behavioral proof for inline reviews (#138953)",
-    "feat: show active sessions in Live activity (#141045)",
-    "feat(browser): stream the Control UI browser panel live instead of polling screenshots (#141031)",
-    "feat(ui): add native embed mode and phone-width settings pages (#139492)",
-    "feat(ui): manage provider accounts from Models settings (#132451)",
-    "feat(ios): start live voice from Siri and Shortcuts (#141003)",
-    "feat(cron): report slow list page timings (#140994)"
+    "**Code Mode composition:** retain the running JavaScript environment across fast tool replies, add optional TypeScript checks against available tools, and report original-source error locations with bounded console output; explicit yields and resource limits still checkpoint execution. Related #141261. (#141265) Thanks @Takhoffman. [v2026.9.3]",
+    "**Provider account controls:** add and remove individual accounts, manage supported account priority, and clear an agent’s custom order without disconnecting accounts; inherited and provider-managed order remains explicit. (#132451) Thanks @jesse-merhi. [v2026.9.3]",
+    "**Model fallback picker:** choose ordered fallback models from a searchable dropdown, remove selections, and add custom references. Related #137410. (#141330) Thanks @najef1979-code and @shakkernerd. [v2026.9.3]",
+    "**Team Reports:** install the optional Team Reports plugin for authenticated daily, weekly, and monthly GitHub reports and explicitly selected Discord sources, with stored history, optional summaries, people timelines and calendars, coverage warnings, scheduler/source health, and theme-aware report pages. (#139850, #141327, #141384) [v2026.9.3]",
+    "**Chat navigation:** add a previewable position rail for long conversations, including hover previews and direct jumps. Related #138587. (#138603) Thanks @brokemac79. [v2026.9.3]",
+    "feat(canvas): report widget runtime script errors back to the agent (#142225)",
+    "feat(providers): keep registered setup connection-only (#142202)",
+    "feat(models): scope implicit catalogs to configured provider endpoints (#142158)"
   ],
   "fixItems": [
-    "perf(status): reuse normalized log-tail lines (#141329)",
-    "fix(ui): count selected usage tool invocations accurately (#141216)",
-    "fix(reef): keep parked messages recoverable across live frames (#141127)",
-    "fix(agents): strip wrapped runtime-context prefaces from delivered text (#139604)",
-    "fix(ios): retain intent metadata during dead-code scans (#141334)",
-    "fix(ai): preserve Responses reasoning changes after idle gaps (#141065)",
-    "fix(desktop): bind observer tickets and viewers to the requesting Gateway connection (#141336)",
-    "fix(memory-core): resume validated session transcript appends (#119367)"
+    "fix(daemon): Bun runtime probe ignores the Gateway's SQLite library selection (#142186)",
+    "fix(cli): explain environment-disabled automation scheduling (#142185)",
+    "fix(status): show available Gateway self metadata (#142174)",
+    "fix(tui): stop showing a stale model after fallback events (#141436)",
+    "fix(status): surface failed update fetches in plain status (#142199)",
+    "perf(gateway): reuse configured roster membership (#142229)",
+    "fix(ui): numeric step buttons skip the first allowed value (#142201)",
+    "fix: prepare provider runtimes before sticker selection tests (#142234)"
   ],
   "topScopes": [
     {
       "scope": "ui",
-      "count": 60
+      "count": 57
     },
     {
       "scope": "fix",
-      "count": 59
-    },
-    {
-      "scope": "agents",
-      "count": 33
-    },
-    {
-      "scope": "plugins",
-      "count": 30
-    },
-    {
-      "scope": "gateway",
-      "count": 29
+      "count": 38
     },
     {
       "scope": "tests",
+      "count": 28
+    },
+    {
+      "scope": "release",
+      "count": 27
+    },
+    {
+      "scope": "agents",
+      "count": 25
+    },
+    {
+      "scope": "plugins",
+      "count": 24
+    },
+    {
+      "scope": "test",
       "count": 22
     },
     {
-      "scope": "update",
-      "count": 20
-    },
-    {
-      "scope": "cli",
-      "count": 19
+      "scope": "gateway",
+      "count": 21
     }
   ],
   "headlineCommits": [
-    "refactor(native): share Talk configuration snapshots (#141342)",
-    "perf(status): reuse normalized log-tail lines (#141329)",
-    "fix(ui): count selected usage tool invocations accurately (#141216)",
-    "fix(reef): keep parked messages recoverable across live frames (#141127)",
-    "fix(agents): strip wrapped runtime-context prefaces from delivered text (#139604)",
-    "fix(ios): retain intent metadata during dead-code scans (#141334)",
-    "refactor(agents): share terminal control character detection (#141343)",
-    "improve(ui): show sidebar unread state on the row icon instead of the trailing edge (#141335)"
+    "fix(daemon): Bun runtime probe ignores the Gateway's SQLite library selection (#142186)",
+    "fix(cli): explain environment-disabled automation scheduling (#142185)",
+    "refactor(sessions): share bounded session selection (#142239)",
+    "fix(status): show available Gateway self metadata (#142174)",
+    "fix(tui): stop showing a stale model after fallback events (#141436)",
+    "chore(skills): remove bundled video-frames skill (#142232)",
+    "refactor(plugins): separate inspection authority from resource claims (#142214)",
+    "fix(status): surface failed update fetches in plain status (#142199)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

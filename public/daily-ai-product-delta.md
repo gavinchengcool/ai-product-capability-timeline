@@ -1,6 +1,6 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-09-08T00:43:35+08:00
+- Generated at: 2026-09-08T23:27:52+08:00
 - Requested window: 2026-09-07 to 2026-09-08
 - Coverage: 6 products
 - Live 24h feeds: 1
@@ -11,30 +11,30 @@
 
 - Freshness: live_24h
 - Window: 2026-09-07 to 2026-09-08
-- Generated at: 2026-09-08T00:43:12.797874+08:00
+- Generated at: 2026-09-08T23:27:32.956779+08:00
 - 窗口: 2026-09-07 至 2026-09-08
-- GitHub 增量: 713 commits / 0 releases
-- 最近 push: 2026-09-07
+- GitHub 增量: 622 commits / 1 releases
+- 最近 push: 2026-09-08
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(team-reports): adopt Carapace visual contract and GitHub avatars (#141327)
-  - feat(qa): run isolated behavioral proof for inline reviews (#138953)
-  - feat: show active sessions in Live activity (#141045)
-  - feat(browser): stream the Control UI browser panel live instead of polling screenshots (#141031)
-  - feat(ui): add native embed mode and phone-width settings pages (#139492)
-  - feat(ui): manage provider accounts from Models settings (#132451)
-  - feat(ios): start live voice from Siri and Shortcuts (#141003)
-  - feat(cron): report slow list page timings (#140994)
+  - **Code Mode composition:** retain the running JavaScript environment across fast tool replies, add optional TypeScript checks against available tools, and report original-source error locations with bounded console output; explicit yields and resource limits still checkpoint execution. Related #141261. (#141265) Thanks @Takhoffman. [v2026.9.3]
+  - **Provider account controls:** add and remove individual accounts, manage supported account priority, and clear an agent’s custom order without disconnecting accounts; inherited and provider-managed order remains explicit. (#132451) Thanks @jesse-merhi. [v2026.9.3]
+  - **Model fallback picker:** choose ordered fallback models from a searchable dropdown, remove selections, and add custom references. Related #137410. (#141330) Thanks @najef1979-code and @shakkernerd. [v2026.9.3]
+  - **Team Reports:** install the optional Team Reports plugin for authenticated daily, weekly, and monthly GitHub reports and explicitly selected Discord sources, with stored history, optional summaries, people timelines and calendars, coverage warnings, scheduler/source health, and theme-aware report pages. (#139850, #141327, #141384) [v2026.9.3]
+  - **Chat navigation:** add a previewable position rail for long conversations, including hover previews and direct jumps. Related #138587. (#138603) Thanks @brokemac79. [v2026.9.3]
+  - feat(canvas): report widget runtime script errors back to the agent (#142225)
+  - feat(providers): keep registered setup connection-only (#142202)
+  - feat(models): scope implicit catalogs to configured provider endpoints (#142158)
 - Fixes and constraints:
-  - perf(status): reuse normalized log-tail lines (#141329)
-  - fix(ui): count selected usage tool invocations accurately (#141216)
-  - fix(reef): keep parked messages recoverable across live frames (#141127)
-  - fix(agents): strip wrapped runtime-context prefaces from delivered text (#139604)
-  - fix(ios): retain intent metadata during dead-code scans (#141334)
-  - fix(ai): preserve Responses reasoning changes after idle gaps (#141065)
-  - fix(desktop): bind observer tickets and viewers to the requesting Gateway connection (#141336)
-  - fix(memory-core): resume validated session transcript appends (#119367)
+  - fix(daemon): Bun runtime probe ignores the Gateway's SQLite library selection (#142186)
+  - fix(cli): explain environment-disabled automation scheduling (#142185)
+  - fix(status): show available Gateway self metadata (#142174)
+  - fix(tui): stop showing a stale model after fallback events (#141436)
+  - fix(status): surface failed update fetches in plain status (#142199)
+  - perf(gateway): reuse configured roster membership (#142229)
+  - fix(ui): numeric step buttons skip the first allowed value (#142201)
+  - fix: prepare provider runtimes before sticker selection tests (#142234)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

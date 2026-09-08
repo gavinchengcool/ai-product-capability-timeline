@@ -1,99 +1,99 @@
 # OpenClaw Weekly Update
 
-生成时间：2026-09-08T00:43:12.797874+08:00
+生成时间：2026-09-08T23:27:32.956779+08:00
 
 ## Window
 
-- Start: 2026-09-07T00:43:12.797874+08:00
-- End: 2026-09-08T00:43:12.797874+08:00
+- Start: 2026-09-07T23:27:32.956779+08:00
+- End: 2026-09-08T23:27:32.956779+08:00
 - Repo: `openclaw/openclaw`
 
 ## At A Glance
 
-- Commits in window: 713
-- Releases in window: 0
-- Stable releases in window: 0
+- Commits in window: 622
+- Releases in window: 1
+- Stable releases in window: 1
 - Beta releases in window: 0
-- Repo stars at scan time: 389114
-- Repo forks at scan time: 81762
+- Repo stars at scan time: 389215
+- Repo forks at scan time: 81779
 
 ## New Capability Signals
 
-- feat(team-reports): adopt Carapace visual contract and GitHub avatars (#141327)
-- feat(qa): run isolated behavioral proof for inline reviews (#138953)
-- feat: show active sessions in Live activity (#141045)
-- feat(browser): stream the Control UI browser panel live instead of polling screenshots (#141031)
-- feat(ui): add native embed mode and phone-width settings pages (#139492)
-- feat(ui): manage provider accounts from Models settings (#132451)
-- feat(ios): start live voice from Siri and Shortcuts (#141003)
-- feat(cron): report slow list page timings (#140994)
-- feat: add Team Reports plugin for GitHub and Discord activity reports (#139850)
-- feat(agents): add sandboxed text encoding to Code Mode (#140812)
-- feat(android): use both fold planes for tabletop chat (#140802)
-- feat(android): keep navigation beside content on book folds (#140710)
-- feat(android): keep content clear of separating hinges (#140614)
-- feat(triage): start installation-owned recovery after update and startup failures (#135868)
-- feat(crabbox): report cloud bootstrap phase timings (#140442)
+- **Code Mode composition:** retain the running JavaScript environment across fast tool replies, add optional TypeScript checks against available tools, and report original-source error locations with bounded console output; explicit yields and resource limits still checkpoint execution. Related #141261. (#141265) Thanks @Takhoffman. [v2026.9.3]
+- **Provider account controls:** add and remove individual accounts, manage supported account priority, and clear an agent’s custom order without disconnecting accounts; inherited and provider-managed order remains explicit. (#132451) Thanks @jesse-merhi. [v2026.9.3]
+- **Model fallback picker:** choose ordered fallback models from a searchable dropdown, remove selections, and add custom references. Related #137410. (#141330) Thanks @najef1979-code and @shakkernerd. [v2026.9.3]
+- **Team Reports:** install the optional Team Reports plugin for authenticated daily, weekly, and monthly GitHub reports and explicitly selected Discord sources, with stored history, optional summaries, people timelines and calendars, coverage warnings, scheduler/source health, and theme-aware report pages. (#139850, #141327, #141384) [v2026.9.3]
+- **Chat navigation:** add a previewable position rail for long conversations, including hover previews and direct jumps. Related #138587. (#138603) Thanks @brokemac79. [v2026.9.3]
+- feat(canvas): report widget runtime script errors back to the agent (#142225)
+- feat(providers): keep registered setup connection-only (#142202)
+- feat(models): scope implicit catalogs to configured provider endpoints (#142158)
+- feat(ui): search long model menus (#141894)
+- feat(cloud): choose an operating system for cloud sessions next to machine class (#142095)
+- Feat/add new model (#131598)
+- feat(sqlite): select an extension-capable SQLite library for Bun on macOS (#141854)
+- feat(cron): explain slow automation list requests (#141805)
+- feat(ui): render sidebar and chat from cached state before the Gateway connects (#141121)
+- feat(beam): delete beamed sessions from the sidebar row menu (#141467)
 
 ## Important Fixes And Hardening
 
-- perf(status): reuse normalized log-tail lines (#141329)
-- fix(ui): count selected usage tool invocations accurately (#141216)
-- fix(reef): keep parked messages recoverable across live frames (#141127)
-- fix(agents): strip wrapped runtime-context prefaces from delivered text (#139604)
-- fix(ios): retain intent metadata during dead-code scans (#141334)
-- fix(ai): preserve Responses reasoning changes after idle gaps (#141065)
-- fix(desktop): bind observer tickets and viewers to the requesting Gateway connection (#141336)
-- fix(memory-core): resume validated session transcript appends (#119367)
-- fix(update): roll back a fresh install's first broken update (#141219)
-- fix(agents): keep tool history stable after Gateway restarts (#141090)
-- fix(ui): retain loaded dashboards across navigation (#141130)
-- fix(test): prevent Vitest profiling startup hangs (#141131)
-- fix: close prepared model runtimes before auth teardown (#141280)
-- fix(bedrock): honor prompt caching for supported Nova models (#141060)
-- fix(tooling): omit ClawSweeper machine squash credit (#141105)
+- fix(daemon): Bun runtime probe ignores the Gateway's SQLite library selection (#142186)
+- fix(cli): explain environment-disabled automation scheduling (#142185)
+- fix(status): show available Gateway self metadata (#142174)
+- fix(tui): stop showing a stale model after fallback events (#141436)
+- fix(status): surface failed update fetches in plain status (#142199)
+- perf(gateway): reuse configured roster membership (#142229)
+- fix(ui): numeric step buttons skip the first allowed value (#142201)
+- fix: prepare provider runtimes before sticker selection tests (#142234)
+- fix(tui): preserve published model availability (#142160)
+- fix(cli): reject explicit blank directory limits (#141738)
+- fix(terminal): preserve blank lines in multiline table cells (#142196)
+- fix(android): avoid false Gateway offline labels in empty chats (#142182)
+- fix(macos): make openclaw-mac configure-remote honor app profiles (#142163)
+- fix: show repaired skills on first watcher acquisition read (#142123)
+- fix(plugins): name the changed facet in plugin registry differences (#142192)
 
 ## Releases This Week
 
-- No GitHub releases were published in this window.
+- `v2026.9.3` | stable | 2026-09-08T14:15:53Z | openclaw 2026.9.3
 
 ## Most Active Change Scopes
 
-- `ui`: 60
-- `fix`: 59
-- `agents`: 33
-- `plugins`: 30
-- `gateway`: 29
-- `tests`: 22
-- `update`: 20
+- `ui`: 57
+- `fix`: 38
+- `tests`: 28
+- `release`: 27
+- `agents`: 25
+- `plugins`: 24
+- `test`: 22
+- `gateway`: 21
 - `cli`: 19
-- `channels`: 15
-- `ci`: 15
-- `test`: 14
-- `android`: 14
+- `update`: 15
+- `ci`: 13
+- `qa`: 11
 
 ## Recent Commit Headlines
 
-- 2026-09-07T16:43:00Z | refactor(native): share Talk configuration snapshots (#141342)
-- 2026-09-07T16:38:10Z | perf(status): reuse normalized log-tail lines (#141329)
-- 2026-09-07T16:36:46Z | fix(ui): count selected usage tool invocations accurately (#141216)
-- 2026-09-07T16:35:50Z | fix(reef): keep parked messages recoverable across live frames (#141127)
-- 2026-09-07T16:33:48Z | fix(agents): strip wrapped runtime-context prefaces from delivered text (#139604)
-- 2026-09-07T16:33:26Z | fix(ios): retain intent metadata during dead-code scans (#141334)
-- 2026-09-07T16:32:31Z | refactor(agents): share terminal control character detection (#141343)
-- 2026-09-07T16:27:01Z | improve(ui): show sidebar unread state on the row icon instead of the trailing edge (#141335)
-- 2026-09-07T16:25:16Z | fix(ai): preserve Responses reasoning changes after idle gaps (#141065)
-- 2026-09-07T16:24:55Z | fix(desktop): bind observer tickets and viewers to the requesting Gateway connection (#141336)
-- 2026-09-07T16:18:40Z | feat(team-reports): adopt Carapace visual contract and GitHub avatars (#141327)
-- 2026-09-07T16:16:58Z | fix(memory-core): resume validated session transcript appends (#119367)
-- 2026-09-07T16:13:52Z | fix(update): roll back a fresh install's first broken update (#141219)
-- 2026-09-07T16:12:21Z | improve(control-ui): lead the login gate with the fix instead of the credentials form (#141087)
-- 2026-09-07T16:11:30Z | fix(agents): keep tool history stable after Gateway restarts (#141090)
-- 2026-09-07T16:11:12Z | fix(ui): retain loaded dashboards across navigation (#141130)
-- 2026-09-07T16:09:31Z | fix(test): prevent Vitest profiling startup hangs (#141131)
-- 2026-09-07T16:08:23Z | fix: close prepared model runtimes before auth teardown (#141280)
-- 2026-09-07T16:07:46Z | refactor(agents): remove constant owner display settings (#141320)
-- 2026-09-07T16:06:28Z | fix(bedrock): honor prompt caching for supported Nova models (#141060)
+- 2026-09-08T15:26:31Z | fix(daemon): Bun runtime probe ignores the Gateway's SQLite library selection (#142186)
+- 2026-09-08T15:26:15Z | fix(cli): explain environment-disabled automation scheduling (#142185)
+- 2026-09-08T15:25:41Z | refactor(sessions): share bounded session selection (#142239)
+- 2026-09-08T15:22:43Z | fix(status): show available Gateway self metadata (#142174)
+- 2026-09-08T15:22:24Z | fix(tui): stop showing a stale model after fallback events (#141436)
+- 2026-09-08T15:14:28Z | chore(skills): remove bundled video-frames skill (#142232)
+- 2026-09-08T15:13:32Z | refactor(plugins): separate inspection authority from resource claims (#142214)
+- 2026-09-08T15:13:12Z | fix(status): surface failed update fetches in plain status (#142199)
+- 2026-09-08T15:11:57Z | perf(gateway): reuse configured roster membership (#142229)
+- 2026-09-08T15:11:36Z | feat(canvas): report widget runtime script errors back to the agent (#142225)
+- 2026-09-08T15:09:09Z | fix(ui): numeric step buttons skip the first allowed value (#142201)
+- 2026-09-08T14:59:30Z | refactor(tests): share API-key credential inputs (#142245)
+- 2026-09-08T14:57:28Z | fix: prepare provider runtimes before sticker selection tests (#142234)
+- 2026-09-08T14:53:12Z | test: join native triage controllers before fixture cleanup (#142215)
+- 2026-09-08T14:52:25Z | feat(providers): keep registered setup connection-only (#142202)
+- 2026-09-08T14:50:54Z | fix(tui): preserve published model availability (#142160)
+- 2026-09-08T14:49:08Z | fix(cli): reject explicit blank directory limits (#141738)
+- 2026-09-08T14:45:37Z | chore(release): update appcast for 2026.9.3 (#142235)
+- 2026-09-08T14:45:17Z | fix(terminal): preserve blank lines in multiline table cells (#142196)
+- 2026-09-08T14:44:30Z | fix(android): avoid false Gateway offline labels in empty chats (#142182)
 
 ## Sources
 

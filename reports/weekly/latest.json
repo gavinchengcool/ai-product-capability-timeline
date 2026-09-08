@@ -1,181 +1,202 @@
 {
-  "generated_at": "2026-09-08T00:43:12.797874+08:00",
+  "generated_at": "2026-09-08T23:27:32.956779+08:00",
   "window": {
-    "start_local": "2026-09-07T00:43:12.797874+08:00",
-    "end_local": "2026-09-08T00:43:12.797874+08:00",
-    "start_utc": "2026-09-06T16:43:12Z",
-    "end_utc": "2026-09-07T16:43:12Z"
+    "start_local": "2026-09-07T23:27:32.956779+08:00",
+    "end_local": "2026-09-08T23:27:32.956779+08:00",
+    "start_utc": "2026-09-07T15:27:32Z",
+    "end_utc": "2026-09-08T15:27:32Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 389114,
-    "forks": 81762,
-    "open_issues": 6303,
-    "pushed_at": "2026-09-07T16:43:03Z"
+    "stars": 389215,
+    "forks": 81779,
+    "open_issues": 6415,
+    "pushed_at": "2026-09-08T15:27:14Z"
   },
-  "releases_in_window": [],
-  "commit_count": 713,
+  "releases_in_window": [
+    {
+      "tag_name": "v2026.9.3",
+      "published_at": "2026-09-08T14:15:53Z",
+      "name": "openclaw 2026.9.3",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.3"
+    }
+  ],
+  "commit_count": 622,
   "commit_headlines": [
-    "refactor(native): share Talk configuration snapshots (#141342)",
-    "perf(status): reuse normalized log-tail lines (#141329)",
-    "fix(ui): count selected usage tool invocations accurately (#141216)",
-    "fix(reef): keep parked messages recoverable across live frames (#141127)",
-    "fix(agents): strip wrapped runtime-context prefaces from delivered text (#139604)",
-    "fix(ios): retain intent metadata during dead-code scans (#141334)",
-    "refactor(agents): share terminal control character detection (#141343)",
-    "improve(ui): show sidebar unread state on the row icon instead of the trailing edge (#141335)",
-    "fix(ai): preserve Responses reasoning changes after idle gaps (#141065)",
-    "fix(desktop): bind observer tickets and viewers to the requesting Gateway connection (#141336)",
-    "feat(team-reports): adopt Carapace visual contract and GitHub avatars (#141327)",
-    "fix(memory-core): resume validated session transcript appends (#119367)",
-    "fix(update): roll back a fresh install's first broken update (#141219)",
-    "improve(control-ui): lead the login gate with the fix instead of the credentials form (#141087)",
-    "fix(agents): keep tool history stable after Gateway restarts (#141090)",
-    "fix(ui): retain loaded dashboards across navigation (#141130)",
-    "fix(test): prevent Vitest profiling startup hangs (#141131)",
-    "fix: close prepared model runtimes before auth teardown (#141280)",
-    "refactor(agents): remove constant owner display settings (#141320)",
-    "fix(bedrock): honor prompt caching for supported Nova models (#141060)",
-    "refactor(sdk): project Gateway options from client contracts (#141325)",
-    "refactor(native): share Apple discovery bookkeeping (#141274)",
-    "fix(tooling): omit ClawSweeper machine squash credit (#141105)",
-    "fix(config): apply environment changes after in-process restart (#141296)",
-    "fix(lmstudio): budget against the loaded instance context (#138633)",
-    "refactor(cron): unify status filter normalization (#141324)",
-    "refactor(meeting-bot): remove unused bridge close timestamp (#141183)",
-    "refactor(state): share lazy feature schema initialization (#141278)",
-    "fix(gateway): retain owned run loop through failed restarts (#141297)",
-    "fix(browser): align labels on scaled and cropped screenshots (#141103)",
-    "fix: preserve account selection and recovery lifecycle ownership (#140973)",
-    "fix: correct missing and misdirected Control UI notifications (#141081)",
-    "fix(mcp): keep session servers alive between turns (#141125)",
-    "fix(update): preserve npm dev links during package replacement (#141168)",
-    "fix(channels): preserve account names in agent listings (#141302)",
-    "refactor(skills): share ordered array equality (#141284)",
-    "refactor(image): share CLI and tool option parsing (#141294)",
-    "fix(cli): preserve inherited primary in model pickers (#141293)",
-    "refactor(plugins): share active hook and skill root selection (#141298)",
-    "fix: preserve recovered terminal upload expiry (#141251)",
-    "fix(docs): remove unsupported automation update command (#137229)",
-    "fix(status): label diagnostic-only service state (#140547)",
-    "perf(ports): reuse parsed listener facts (#141281)",
-    "fix: keep active sessions scoped to their agent (#141247)",
-    "refactor(crypto): share SHA-256 identifier helpers (#140887)",
-    "refactor(memory-lancedb): share bounded recall orchestration (#141282)",
-    "perf(reply): reuse prepared inbound media indexes (#141256)",
-    "fix(ui): keep long agent action labels inside sidebar menus (#140125)",
-    "test(tts): share readiness fallback fixtures (#141258)",
-    "fix: stop idle remote sessions without waiting for unrelated provisioning (#141246)"
+    "fix(daemon): Bun runtime probe ignores the Gateway's SQLite library selection (#142186)",
+    "fix(cli): explain environment-disabled automation scheduling (#142185)",
+    "refactor(sessions): share bounded session selection (#142239)",
+    "fix(status): show available Gateway self metadata (#142174)",
+    "fix(tui): stop showing a stale model after fallback events (#141436)",
+    "chore(skills): remove bundled video-frames skill (#142232)",
+    "refactor(plugins): separate inspection authority from resource claims (#142214)",
+    "fix(status): surface failed update fetches in plain status (#142199)",
+    "perf(gateway): reuse configured roster membership (#142229)",
+    "feat(canvas): report widget runtime script errors back to the agent (#142225)",
+    "fix(ui): numeric step buttons skip the first allowed value (#142201)",
+    "refactor(tests): share API-key credential inputs (#142245)",
+    "fix: prepare provider runtimes before sticker selection tests (#142234)",
+    "test: join native triage controllers before fixture cleanup (#142215)",
+    "feat(providers): keep registered setup connection-only (#142202)",
+    "fix(tui): preserve published model availability (#142160)",
+    "fix(cli): reject explicit blank directory limits (#141738)",
+    "chore(release): update appcast for 2026.9.3 (#142235)",
+    "fix(terminal): preserve blank lines in multiline table cells (#142196)",
+    "fix(android): avoid false Gateway offline labels in empty chats (#142182)",
+    "fix(macos): make openclaw-mac configure-remote honor app profiles (#142163)",
+    "fix: show repaired skills on first watcher acquisition read (#142123)",
+    "fix(plugins): name the changed facet in plugin registry differences (#142192)",
+    "fix(crabbox): retain lease renewal after heartbeat conflicts (#142194)",
+    "fix(channels): stop ingress retry loops during gateway suspension (#142064)",
+    "fix(llm): retain prepared runtimes through transport cleanup (#142197)",
+    "feat(models): scope implicit catalogs to configured provider endpoints (#142158)",
+    "fix(release): initialize ClawHub bootstrap packaging harness (#142191)",
+    "refactor(logging): share assignment detection across redaction outputs (#142183)",
+    "refactor(tests): share timestamped assistant inputs (#142184)",
+    "fix(worker): accept long prepared workspace paths (#142198)",
+    "fix(cli): preserve automation error guidance in JSON mode (#142113)",
+    "fix(testing): run package contracts without unrelated runtime builds (#142159)",
+    "fix(tests): keep canonical transport fixtures on source plugins (#142171)",
+    "fix: use scoped native login during model discovery (#141759)",
+    "perf(crabbox): skip redundant desktop setup lease inspection (#142172)",
+    "fix(plugins): clarify install restart ownership (#142129)",
+    "refactor(tests): remove duplicate Discord retry cases (#142177)",
+    "test: await audio transcript materialization completion (#142178)",
+    "fix(cli): preserve explicit Gateway credential guidance (#142112)",
+    "fix(cron): run scheduled commands with secret egress enabled (#142074)",
+    "fix(crabbox): maintain warm images across mixed CLI binaries (#142166)",
+    "fix(tooling): drop machine squash credit and carry human co-author trailers (#142167)",
+    "test: include bounded Code Mode poll failure diagnostics (#142157)",
+    "test(scripts): source install.sh under system Bash in stdin isolation cases (#142161)",
+    "docs(install): add Node.js and Bun compatibility reference pages (#142156)",
+    "fix(cli): keep approvals allowlist --json output parseable on local writes (#142152)",
+    "fix(terminal): show CLI progress in supported terminals (#142071)",
+    "fix(directives): preserve indented code in markdown containers (#141767)",
+    "perf(plugin-state): avoid a redundant scan after quota eviction (#142148)"
   ],
   "feature_items": [
-    "feat(team-reports): adopt Carapace visual contract and GitHub avatars (#141327)",
-    "feat(qa): run isolated behavioral proof for inline reviews (#138953)",
-    "feat: show active sessions in Live activity (#141045)",
-    "feat(browser): stream the Control UI browser panel live instead of polling screenshots (#141031)",
-    "feat(ui): add native embed mode and phone-width settings pages (#139492)",
-    "feat(ui): manage provider accounts from Models settings (#132451)",
-    "feat(ios): start live voice from Siri and Shortcuts (#141003)",
-    "feat(cron): report slow list page timings (#140994)",
-    "feat: add Team Reports plugin for GitHub and Discord activity reports (#139850)",
-    "feat(agents): add sandboxed text encoding to Code Mode (#140812)",
-    "feat(android): use both fold planes for tabletop chat (#140802)",
-    "feat(android): keep navigation beside content on book folds (#140710)",
-    "feat(android): keep content clear of separating hinges (#140614)",
-    "feat(triage): start installation-owned recovery after update and startup failures (#135868)",
-    "feat(crabbox): report cloud bootstrap phase timings (#140442)",
-    "feat(onboarding): require explicit AI choice in desktop and Control UI (#140336)"
+    "**Code Mode composition:** retain the running JavaScript environment across fast tool replies, add optional TypeScript checks against available tools, and report original-source error locations with bounded console output; explicit yields and resource limits still checkpoint execution. Related #141261. (#141265) Thanks @Takhoffman. [v2026.9.3]",
+    "**Provider account controls:** add and remove individual accounts, manage supported account priority, and clear an agent’s custom order without disconnecting accounts; inherited and provider-managed order remains explicit. (#132451) Thanks @jesse-merhi. [v2026.9.3]",
+    "**Model fallback picker:** choose ordered fallback models from a searchable dropdown, remove selections, and add custom references. Related #137410. (#141330) Thanks @najef1979-code and @shakkernerd. [v2026.9.3]",
+    "**Team Reports:** install the optional Team Reports plugin for authenticated daily, weekly, and monthly GitHub reports and explicitly selected Discord sources, with stored history, optional summaries, people timelines and calendars, coverage warnings, scheduler/source health, and theme-aware report pages. (#139850, #141327, #141384) [v2026.9.3]",
+    "**Chat navigation:** add a previewable position rail for long conversations, including hover previews and direct jumps. Related #138587. (#138603) Thanks @brokemac79. [v2026.9.3]",
+    "feat(canvas): report widget runtime script errors back to the agent (#142225)",
+    "feat(providers): keep registered setup connection-only (#142202)",
+    "feat(models): scope implicit catalogs to configured provider endpoints (#142158)",
+    "feat(ui): search long model menus (#141894)",
+    "feat(cloud): choose an operating system for cloud sessions next to machine class (#142095)",
+    "Feat/add new model (#131598)",
+    "feat(sqlite): select an extension-capable SQLite library for Bun on macOS (#141854)",
+    "feat(cron): explain slow automation list requests (#141805)",
+    "feat(ui): render sidebar and chat from cached state before the Gateway connects (#141121)",
+    "feat(beam): delete beamed sessions from the sidebar row menu (#141467)",
+    "feat(models): report nonfatal catalog attempt failures (#141524)",
+    "feat(macos): open links as native Mac tabs in the Browser panel (#140988)",
+    "feat(macos): add primary and saved gateway CLI commands",
+    "feat(macos): serve authenticated gateway control in the app",
+    "feat(team-reports): match the maintainer report site layout (#141384)",
+    "feat(cli): limit docs search results (#131014)",
+    "feat: choose agent fallback models from a searchable dropdown (#141330)",
+    "feat(gateway): accept the configured auth secret from either connect field (#141456)",
+    "feat(ui): link bare GitHub issue and PR references in chat (#141431)",
+    "feat(telegram): send photo attachments as native albums (#141398)",
+    "feat(agents): improve Code Mode continuation and composition (#141265)",
+    "feat(control-ui): reconnect automatically after pairing approval (#141362)",
+    "feat: expose installed plugin inventory (#133255)",
+    "feat(team-reports): adopt Carapace visual contract and GitHub avatars (#141327)"
   ],
   "fix_items": [
-    "perf(status): reuse normalized log-tail lines (#141329)",
-    "fix(ui): count selected usage tool invocations accurately (#141216)",
-    "fix(reef): keep parked messages recoverable across live frames (#141127)",
-    "fix(agents): strip wrapped runtime-context prefaces from delivered text (#139604)",
-    "fix(ios): retain intent metadata during dead-code scans (#141334)",
-    "fix(ai): preserve Responses reasoning changes after idle gaps (#141065)",
-    "fix(desktop): bind observer tickets and viewers to the requesting Gateway connection (#141336)",
-    "fix(memory-core): resume validated session transcript appends (#119367)",
-    "fix(update): roll back a fresh install's first broken update (#141219)",
-    "fix(agents): keep tool history stable after Gateway restarts (#141090)",
-    "fix(ui): retain loaded dashboards across navigation (#141130)",
-    "fix(test): prevent Vitest profiling startup hangs (#141131)",
-    "fix: close prepared model runtimes before auth teardown (#141280)",
-    "fix(bedrock): honor prompt caching for supported Nova models (#141060)",
-    "fix(tooling): omit ClawSweeper machine squash credit (#141105)",
-    "fix(config): apply environment changes after in-process restart (#141296)",
-    "fix(lmstudio): budget against the loaded instance context (#138633)",
-    "fix(gateway): retain owned run loop through failed restarts (#141297)",
-    "fix(browser): align labels on scaled and cropped screenshots (#141103)",
-    "fix: preserve account selection and recovery lifecycle ownership (#140973)",
-    "fix: correct missing and misdirected Control UI notifications (#141081)",
-    "fix(mcp): keep session servers alive between turns (#141125)",
-    "fix(update): preserve npm dev links during package replacement (#141168)",
-    "fix(channels): preserve account names in agent listings (#141302)",
-    "fix(cli): preserve inherited primary in model pickers (#141293)",
-    "fix: preserve recovered terminal upload expiry (#141251)",
-    "fix(docs): remove unsupported automation update command (#137229)",
-    "fix(status): label diagnostic-only service state (#140547)",
-    "perf(ports): reuse parsed listener facts (#141281)",
-    "fix: keep active sessions scoped to their agent (#141247)"
+    "fix(daemon): Bun runtime probe ignores the Gateway's SQLite library selection (#142186)",
+    "fix(cli): explain environment-disabled automation scheduling (#142185)",
+    "fix(status): show available Gateway self metadata (#142174)",
+    "fix(tui): stop showing a stale model after fallback events (#141436)",
+    "fix(status): surface failed update fetches in plain status (#142199)",
+    "perf(gateway): reuse configured roster membership (#142229)",
+    "fix(ui): numeric step buttons skip the first allowed value (#142201)",
+    "fix: prepare provider runtimes before sticker selection tests (#142234)",
+    "fix(tui): preserve published model availability (#142160)",
+    "fix(cli): reject explicit blank directory limits (#141738)",
+    "fix(terminal): preserve blank lines in multiline table cells (#142196)",
+    "fix(android): avoid false Gateway offline labels in empty chats (#142182)",
+    "fix(macos): make openclaw-mac configure-remote honor app profiles (#142163)",
+    "fix: show repaired skills on first watcher acquisition read (#142123)",
+    "fix(plugins): name the changed facet in plugin registry differences (#142192)",
+    "fix(crabbox): retain lease renewal after heartbeat conflicts (#142194)",
+    "fix(channels): stop ingress retry loops during gateway suspension (#142064)",
+    "fix(llm): retain prepared runtimes through transport cleanup (#142197)",
+    "fix(release): initialize ClawHub bootstrap packaging harness (#142191)",
+    "fix(worker): accept long prepared workspace paths (#142198)",
+    "fix(cli): preserve automation error guidance in JSON mode (#142113)",
+    "fix(testing): run package contracts without unrelated runtime builds (#142159)",
+    "fix(tests): keep canonical transport fixtures on source plugins (#142171)",
+    "fix: use scoped native login during model discovery (#141759)",
+    "perf(crabbox): skip redundant desktop setup lease inspection (#142172)",
+    "fix(plugins): clarify install restart ownership (#142129)",
+    "fix(cli): preserve explicit Gateway credential guidance (#142112)",
+    "fix(cron): run scheduled commands with secret egress enabled (#142074)",
+    "fix(crabbox): maintain warm images across mixed CLI binaries (#142166)",
+    "fix(tooling): drop machine squash credit and carry human co-author trailers (#142167)"
   ],
   "top_scopes": [
     {
       "scope": "ui",
-      "count": 60
+      "count": 57
     },
     {
       "scope": "fix",
-      "count": 59
-    },
-    {
-      "scope": "agents",
-      "count": 33
-    },
-    {
-      "scope": "plugins",
-      "count": 30
-    },
-    {
-      "scope": "gateway",
-      "count": 29
+      "count": 38
     },
     {
       "scope": "tests",
+      "count": 28
+    },
+    {
+      "scope": "release",
+      "count": 27
+    },
+    {
+      "scope": "agents",
+      "count": 25
+    },
+    {
+      "scope": "plugins",
+      "count": 24
+    },
+    {
+      "scope": "test",
       "count": 22
     },
     {
-      "scope": "update",
-      "count": 20
+      "scope": "gateway",
+      "count": 21
     },
     {
       "scope": "cli",
       "count": 19
     },
     {
-      "scope": "channels",
+      "scope": "update",
       "count": 15
     },
     {
       "scope": "ci",
-      "count": 15
+      "count": 13
     },
     {
-      "scope": "test",
-      "count": 14
+      "scope": "qa",
+      "count": 11
     },
     {
       "scope": "android",
-      "count": 14
+      "count": 10
     },
     {
-      "scope": "ai",
-      "count": 11
+      "scope": "macos",
+      "count": 10
     },
     {
-      "scope": "refactor",
-      "count": 11
-    },
-    {
-      "scope": "codex",
+      "scope": "models",
       "count": 10
     }
   ]
