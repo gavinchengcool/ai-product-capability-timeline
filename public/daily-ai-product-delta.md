@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-09-08T23:27:52+08:00
-- Requested window: 2026-09-07 to 2026-09-08
+- Generated at: 2026-09-09T23:24:23+08:00
+- Requested window: 2026-09-08 to 2026-09-09
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-09-07 to 2026-09-08
-- Generated at: 2026-09-08T23:27:32.956779+08:00
-- 窗口: 2026-09-07 至 2026-09-08
-- GitHub 增量: 622 commits / 1 releases
-- 最近 push: 2026-09-08
+- Window: 2026-09-08 to 2026-09-09
+- Generated at: 2026-09-09T23:24:03.698206+08:00
+- 窗口: 2026-09-08 至 2026-09-09
+- GitHub 增量: 600 commits / 0 releases
+- 最近 push: 2026-09-09
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - **Code Mode composition:** retain the running JavaScript environment across fast tool replies, add optional TypeScript checks against available tools, and report original-source error locations with bounded console output; explicit yields and resource limits still checkpoint execution. Related #141261. (#141265) Thanks @Takhoffman. [v2026.9.3]
-  - **Provider account controls:** add and remove individual accounts, manage supported account priority, and clear an agent’s custom order without disconnecting accounts; inherited and provider-managed order remains explicit. (#132451) Thanks @jesse-merhi. [v2026.9.3]
-  - **Model fallback picker:** choose ordered fallback models from a searchable dropdown, remove selections, and add custom references. Related #137410. (#141330) Thanks @najef1979-code and @shakkernerd. [v2026.9.3]
-  - **Team Reports:** install the optional Team Reports plugin for authenticated daily, weekly, and monthly GitHub reports and explicitly selected Discord sources, with stored history, optional summaries, people timelines and calendars, coverage warnings, scheduler/source health, and theme-aware report pages. (#139850, #141327, #141384) [v2026.9.3]
-  - **Chat navigation:** add a previewable position rail for long conversations, including hover previews and direct jumps. Related #138587. (#138603) Thanks @brokemac79. [v2026.9.3]
-  - feat(canvas): report widget runtime script errors back to the agent (#142225)
-  - feat(providers): keep registered setup connection-only (#142202)
-  - feat(models): scope implicit catalogs to configured provider endpoints (#142158)
+  - feat: connect UI development to a Gateway (#143052)
+  - feat(openai): support GPT Image 2.5 variants (#143068)
+  - feat(auth): import declared credentials during provider login (#142933)
+  - feat(skills): open past-work learning in a normal session (#142909)
+  - feat: show video previews in the chat composer (#142623)
+  - feat(crabbox): advertise Windows (WSL2) cloud workers on Crabbox 0.53.1+ (#142679)
+  - feat(ui): add selected text to the main chat composer (#142543)
+  - feat(config): support externally managed read-only configuration (#140719)
 - Fixes and constraints:
-  - fix(daemon): Bun runtime probe ignores the Gateway's SQLite library selection (#142186)
-  - fix(cli): explain environment-disabled automation scheduling (#142185)
-  - fix(status): show available Gateway self metadata (#142174)
-  - fix(tui): stop showing a stale model after fallback events (#141436)
-  - fix(status): surface failed update fetches in plain status (#142199)
-  - perf(gateway): reuse configured roster membership (#142229)
-  - fix(ui): numeric step buttons skip the first allowed value (#142201)
-  - fix: prepare provider runtimes before sticker selection tests (#142234)
+  - fix(ui): keep session views consistent across concurrent updates (#143049)
+  - fix(plugins): avoid dead-end capability consent recovery (#143125)
+  - fix(cli): reject blank account selectors before command startup (#143088)
+  - fix(update): repair young runs after recorded drivers exit (#143136)
+  - fix(test): retire chat preview Escape listeners during teardown (#143191)
+  - fix(ci): accept native iOS keychain filenames (#142968)
+  - fix(ci): show publication observations in FRV status (#143171)
+  - fix(github): point the stuck-FAQ auto-response at a live anchor (#143194)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
