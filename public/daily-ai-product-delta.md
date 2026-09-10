@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-09-09T23:24:23+08:00
-- Requested window: 2026-09-08 to 2026-09-09
+- Generated at: 2026-09-10T23:18:46+08:00
+- Requested window: 2026-09-09 to 2026-09-10
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-09-08 to 2026-09-09
-- Generated at: 2026-09-09T23:24:03.698206+08:00
-- 窗口: 2026-09-08 至 2026-09-09
-- GitHub 增量: 600 commits / 0 releases
-- 最近 push: 2026-09-09
+- Window: 2026-09-09 to 2026-09-10
+- Generated at: 2026-09-10T23:18:29.132212+08:00
+- 窗口: 2026-09-09 至 2026-09-10
+- GitHub 增量: 610 commits / 1 releases
+- 最近 push: 2026-09-10
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat: connect UI development to a Gateway (#143052)
-  - feat(openai): support GPT Image 2.5 variants (#143068)
-  - feat(auth): import declared credentials during provider login (#142933)
-  - feat(skills): open past-work learning in a normal session (#142909)
-  - feat: show video previews in the chat composer (#142623)
-  - feat(crabbox): advertise Windows (WSL2) cloud workers on Crabbox 0.53.1+ (#142679)
-  - feat(ui): add selected text to the main chat composer (#142543)
-  - feat(config): support externally managed read-only configuration (#140719)
+  - **Extended-stable maintenance:** this release carries the audited reliability and security backports selected for the `extended-stable` line, without introducing a new release-line feature. (#119942) Thanks @RomneyDa, @vincentkoc, @Pick-cat, @RileyJJY, @ZengWen-DT, @Monkey-wusky, @chengzhichao-xydt, @mushuiyu886, @masatohoshino, @moguangyu5-design, @sunlit-deng, @ZOOWH, @NianJiuZst, @Alix-007, @aniruddhaadak80, @eleqtrizit, @yetval, @rvdlaar, @litang9, @machine3at, @miorbnli, @sallyom, @obviyus, @hugenshen, @cursoragent, @cxbAsDev, @wangmiao0668000666, @lsr911, and @jalfaro2876. [v2026.6.35]
+  - feat(ui): build and rebuild cloud worker snapshots (#143929)
+  - feat(workers): reuse prepared public GitHub repositories (#143410)
+  - feat(sessions): explain slow artifact cleanup preparation (#143942)
+  - feat(control-ui): show cloud session machine specs (#143864)
+  - feat(crabbox): pin, delete, and roll back cloud worker snapshots (#143893)
+  - feat: identify holders of slow session lifecycle queues (#143886)
+  - feat(gateway): prepare cloud workers on demand (#143838)
 - Fixes and constraints:
-  - fix(ui): keep session views consistent across concurrent updates (#143049)
-  - fix(plugins): avoid dead-end capability consent recovery (#143125)
-  - fix(cli): reject blank account selectors before command startup (#143088)
-  - fix(update): repair young runs after recorded drivers exit (#143136)
-  - fix(test): retire chat preview Escape listeners during teardown (#143191)
-  - fix(ci): accept native iOS keychain filenames (#142968)
-  - fix(ci): show publication observations in FRV status (#143171)
-  - fix(github): point the stuck-FAQ auto-response at a live anchor (#143194)
+  - fix(agents): honor selected provider in tool inventory (#144107)
+  - fix(update): inline schemas in managed handoff runtime (#144031)
+  - fix(prometheus): avoid unused private diagnostic copies (#144109)
+  - fix(config): select authored model rows before defaults (#144034)
+  - fix(gateway): avoid duplicate user turns after Claude CLI resume (#143960)
+  - fix(ci): validate frozen targets without executing candidate code (#144023)
+  - fix(ui): restore Send when Stop finds a finished run (#143437)
+  - fix(feishu): reject replayed webhook callbacks with stale signed timestamps (#143484)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
