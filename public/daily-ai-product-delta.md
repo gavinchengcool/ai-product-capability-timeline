@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-09-10T23:18:46+08:00
-- Requested window: 2026-09-09 to 2026-09-10
+- Generated at: 2026-09-11T23:20:46+08:00
+- Requested window: 2026-09-10 to 2026-09-11
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-09-09 to 2026-09-10
-- Generated at: 2026-09-10T23:18:29.132212+08:00
-- 窗口: 2026-09-09 至 2026-09-10
-- GitHub 增量: 610 commits / 1 releases
-- 最近 push: 2026-09-10
+- Window: 2026-09-10 to 2026-09-11
+- Generated at: 2026-09-11T23:20:27.770213+08:00
+- 窗口: 2026-09-10 至 2026-09-11
+- GitHub 增量: 468 commits / 1 releases
+- 最近 push: 2026-09-11
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - **Extended-stable maintenance:** this release carries the audited reliability and security backports selected for the `extended-stable` line, without introducing a new release-line feature. (#119942) Thanks @RomneyDa, @vincentkoc, @Pick-cat, @RileyJJY, @ZengWen-DT, @Monkey-wusky, @chengzhichao-xydt, @mushuiyu886, @masatohoshino, @moguangyu5-design, @sunlit-deng, @ZOOWH, @NianJiuZst, @Alix-007, @aniruddhaadak80, @eleqtrizit, @yetval, @rvdlaar, @litang9, @machine3at, @miorbnli, @sallyom, @obviyus, @hugenshen, @cursoragent, @cxbAsDev, @wangmiao0668000666, @lsr911, and @jalfaro2876. [v2026.6.35]
-  - feat(ui): build and rebuild cloud worker snapshots (#143929)
-  - feat(workers): reuse prepared public GitHub repositories (#143410)
-  - feat(sessions): explain slow artifact cleanup preparation (#143942)
-  - feat(control-ui): show cloud session machine specs (#143864)
-  - feat(crabbox): pin, delete, and roll back cloud worker snapshots (#143893)
-  - feat: identify holders of slow session lifecycle queues (#143886)
-  - feat(gateway): prepare cloud workers on demand (#143838)
+  - **Rollback and recovery:** eligible schema-neutral update failures restore the retained package, command shim, service, and pre-activation configuration, then verify the previous Gateway again. Changed database schemas, incompatible new databases, or intervening operator configuration edits block automatic rollback; a recovered update remains a failed update with a recorded rollback outcome. Use a [verified backup](https://docs.openclaw.ai/install/updating/rollback-and-recovery) before migration-bearing upgrades. (#140339) Thanks @fuller-stack-dev. [v2026.9.4]
+  - **Chat navigation and composition:** use a compact left-side conversation rail with sender identities in shared-chat previews, add selected text to the main composer, and preview attached videos before sending. Related #142207, #142592, #143473. (#142227, #143486, #142543, #142623) Thanks @vyctorbrzezowski and @Patrick-Erichsen. [v2026.9.4]
+  - **Cloud placement and diagnostics:** edit advanced worker profiles and repository defaults, inspect cloud-session machine specifications, and select native Windows workers when the backend supports them. Warm images and desktops remain Linux-only. (#143801, #143864, #143769, #143798) [v2026.9.4]
+  - feat(ui): dismiss failed cloud worker snapshot builds (#144671)
+  - feat(sqlite): run Team Reports storage in owned workers (#144871)
+  - feat(plugins): expose the selected runtime entry (#144818)
+  - feat(ui): let users draft while chat history loads (#143625)
+  - feat(ui): complete chat rail keyboard navigation (#143611)
 - Fixes and constraints:
-  - fix(agents): honor selected provider in tool inventory (#144107)
-  - fix(update): inline schemas in managed handoff runtime (#144031)
-  - fix(prometheus): avoid unused private diagnostic copies (#144109)
-  - fix(config): select authored model rows before defaults (#144034)
-  - fix(gateway): avoid duplicate user turns after Claude CLI resume (#143960)
-  - fix(ci): validate frozen targets without executing candidate code (#144023)
-  - fix(ui): restore Send when Stop finds a finished run (#143437)
-  - fix(feishu): reject replayed webhook callbacks with stale signed timestamps (#143484)
+  - fix(agents): recover when Responses streams end mid-tool-call (#144583)
+  - fix(macos): avoid stale dashboard command assertions (#144710)
+  - fix(doctor): preserve legacy registry files when quarantine fails (#144787)
+  - fix(bonjour): silence transient ENODEV socket warnings (#144870)
+  - fix(matrix): preserve unrelated files when migration fails (#144883)
+  - fix(update): install explicit same-version artifacts (#144894)
+  - fix(perf): isolate external evaluator from candidate runtime (#144162)
+  - fix: resolve the documented Fireworks model alias (#144913)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

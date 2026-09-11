@@ -1,25 +1,26 @@
 # OpenClaw GitHub Snapshot
 
-生成时间：2026-09-10T23:18:29.132212+08:00
+生成时间：2026-09-11T23:20:27.770213+08:00
 
 ## Repo Snapshot
 
 - Repo: `openclaw/openclaw`
 - Created at: 2025-11-24T10:16:47Z
-- Last pushed at: 2026-09-10T15:16:50Z
-- Stars: 389356
-- Forks: 81824
-- Open issues: 6605
+- Last pushed at: 2026-09-11T15:19:01Z
+- Stars: 389438
+- Forks: 81852
+- Open issues: 6803
 - Default branch: `main`
 - Description: The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 
 
 ## Release Snapshot
 
-- Stable releases sampled: 26
-- Latest stable release: `v2026.6.35` published 2026-09-10T06:39:30Z
+- Stable releases sampled: 27
+- Latest stable release: `v2026.9.4` published 2026-09-11T03:46:22Z
 
 ## Recent Stable Releases
 
+- `v2026.9.4` published 2026-09-11T03:46:22Z
 - `v2026.6.35` published 2026-09-10T06:39:30Z
 - `v2026.9.3` published 2026-09-08T14:15:53Z
 - `v2026.9.2` published 2026-09-05T20:00:07Z
@@ -27,7 +28,6 @@
 - `v2026.8.2` published 2026-09-01T16:00:56Z
 - `v2026.8.1` published 2026-08-31T03:30:51Z
 - `v2026.7.1-2` published 2026-08-04T00:41:26Z
-- `v2026.7.1-1` published 2026-08-04T00:41:25Z
 
 ## Sources
 
