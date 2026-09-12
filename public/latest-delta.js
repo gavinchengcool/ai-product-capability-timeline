@@ -1,99 +1,91 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-09-11T23:20:27.770213+08:00",
+  "generatedAt": "2026-09-12T22:28:30.179603+08:00",
   "window": {
-    "start_local": "2026-09-10T23:20:27.770213+08:00",
-    "end_local": "2026-09-11T23:20:27.770213+08:00",
-    "start_utc": "2026-09-10T15:20:27Z",
-    "end_utc": "2026-09-11T15:20:27Z"
+    "start_local": "2026-09-11T22:28:30.179603+08:00",
+    "end_local": "2026-09-12T22:28:30.179603+08:00",
+    "start_utc": "2026-09-11T14:28:30Z",
+    "end_utc": "2026-09-12T14:28:30Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 389438,
-    "forks": 81852,
-    "open_issues": 6803,
-    "pushed_at": "2026-09-11T15:19:01Z"
+    "stars": 389490,
+    "forks": 81876,
+    "open_issues": 6938,
+    "pushed_at": "2026-09-12T14:28:29Z"
   },
   "summary": {
-    "commitCount": 468,
-    "releaseCount": 1,
-    "stableReleaseCount": 1,
+    "commitCount": 637,
+    "releaseCount": 0,
+    "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 389438,
-    "forks": 81852,
-    "openIssues": 6803
+    "stars": 389490,
+    "forks": 81876,
+    "openIssues": 6938
   },
-  "releases": [
-    {
-      "tag_name": "v2026.9.4",
-      "published_at": "2026-09-11T03:46:22Z",
-      "name": "openclaw 2026.9.4",
-      "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.4"
-    }
-  ],
+  "releases": [],
   "featureItems": [
-    "**Rollback and recovery:** eligible schema-neutral update failures restore the retained package, command shim, service, and pre-activation configuration, then verify the previous Gateway again. Changed database schemas, incompatible new databases, or intervening operator configuration edits block automatic rollback; a recovered update remains a failed update with a recorded rollback outcome. Use a [verified backup](https://docs.openclaw.ai/install/updating/rollback-and-recovery) before migration-bearing upgrades. (#140339) Thanks @fuller-stack-dev. [v2026.9.4]",
-    "**Chat navigation and composition:** use a compact left-side conversation rail with sender identities in shared-chat previews, add selected text to the main composer, and preview attached videos before sending. Related #142207, #142592, #143473. (#142227, #143486, #142543, #142623) Thanks @vyctorbrzezowski and @Patrick-Erichsen. [v2026.9.4]",
-    "**Cloud placement and diagnostics:** edit advanced worker profiles and repository defaults, inspect cloud-session machine specifications, and select native Windows workers when the backend supports them. Warm images and desktops remain Linux-only. (#143801, #143864, #143769, #143798) [v2026.9.4]",
-    "feat(ui): dismiss failed cloud worker snapshot builds (#144671)",
-    "feat(sqlite): run Team Reports storage in owned workers (#144871)",
-    "feat(plugins): expose the selected runtime entry (#144818)",
-    "feat(ui): let users draft while chat history loads (#143625)",
-    "feat(ui): complete chat rail keyboard navigation (#143611)"
+    "feat(plugins): offer asynchronous task and flow reads (#145851)",
+    "feat: refresh plugin tools in managed Codex conversations (#145917)",
+    "feat: refresh plugin tools within active agent conversations (#145648)",
+    "feat(claws): activate plugin requirement batches without restarting (#145713)",
+    "feat: apply supported plugin installs without restarting the Gateway (#145710)",
+    "feat(custodian): recommend a chief of staff and specialist roles when creating an agent (#141453)",
+    "feat(ui): team mode shows every agent and its sessions in the sidebar (#141476)",
+    "feat(macos): show page favicons on Mac tabs in the chat side panel (#145714)"
   ],
   "fixItems": [
-    "fix(agents): recover when Responses streams end mid-tool-call (#144583)",
-    "fix(macos): avoid stale dashboard command assertions (#144710)",
-    "fix(doctor): preserve legacy registry files when quarantine fails (#144787)",
-    "fix(bonjour): silence transient ENODEV socket warnings (#144870)",
-    "fix(matrix): preserve unrelated files when migration fails (#144883)",
-    "fix(update): install explicit same-version artifacts (#144894)",
-    "fix(perf): isolate external evaluator from candidate runtime (#144162)",
-    "fix: resolve the documented Fireworks model alias (#144913)"
+    "fix(gateway): reduce allocation churn serving Control UI documents (#146003)",
+    "fix(ui): preserve catalog transcript cache inputs (#145863)",
+    "fix(tests): retain pinned selectors in unchanged plugin updates (#145991)",
+    "fix(runtime): harden Bun process and transport compatibility (#146008)",
+    "fix(sessions): reduce allocation churn in repeated entry reads (#145997)",
+    "fix(gateway): retain late events after agent cancellation (#145987)",
+    "fix(gateway): reduce completed-run cache allocation churn (#145988)",
+    "perf: batch child-session participant reads (#146000)"
   ],
   "topScopes": [
     {
       "scope": "ui",
-      "count": 57
+      "count": 69
     },
     {
       "scope": "fix",
-      "count": 27
-    },
-    {
-      "scope": "agents",
-      "count": 22
+      "count": 48
     },
     {
       "scope": "test",
-      "count": 20
-    },
-    {
-      "scope": "docs",
-      "count": 20
-    },
-    {
-      "scope": "update",
-      "count": 16
+      "count": 45
     },
     {
       "scope": "tests",
-      "count": 14
+      "count": 31
     },
     {
-      "scope": "config",
-      "count": 13
+      "scope": "update",
+      "count": 30
+    },
+    {
+      "scope": "gateway",
+      "count": 27
+    },
+    {
+      "scope": "plugins",
+      "count": 22
+    },
+    {
+      "scope": "agents",
+      "count": 19
     }
   ],
   "headlineCommits": [
-    "feat(ui): dismiss failed cloud worker snapshot builds (#144671)",
-    "fix(agents): recover when Responses streams end mid-tool-call (#144583)",
-    "docs(ci): correct Windows project concurrency (#144684)",
-    "refactor(tests): share model status runtime fixture (#144989)",
-    "refactor(copilot): deduplicate transcript user text (#144888)",
-    "refactor(sessions): await discovery and config readiness (#144854)",
-    "refactor(e2e): deduplicate release file assertions (#144904)",
-    "ci: keep growing hosted test plans within the job cap (#144965)"
+    "fix(gateway): reduce allocation churn serving Control UI documents (#146003)",
+    "fix(ui): preserve catalog transcript cache inputs (#145863)",
+    "refactor(cli): remove agent session loader test injection (#145961)",
+    "fix(tests): retain pinned selectors in unchanged plugin updates (#145991)",
+    "fix(runtime): harden Bun process and transport compatibility (#146008)",
+    "fix(sessions): reduce allocation churn in repeated entry reads (#145997)",
+    "fix(gateway): retain late events after agent cancellation (#145987)",
+    "fix(gateway): reduce completed-run cache allocation churn (#145988)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
