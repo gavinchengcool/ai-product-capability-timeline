@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-09-12T22:28:53+08:00
-- Requested window: 2026-09-11 to 2026-09-12
+- Generated at: 2026-09-13T23:09:29+08:00
+- Requested window: 2026-09-12 to 2026-09-13
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-09-11 to 2026-09-12
-- Generated at: 2026-09-12T22:28:30.179603+08:00
-- 窗口: 2026-09-11 至 2026-09-12
-- GitHub 增量: 637 commits / 0 releases
-- 最近 push: 2026-09-12
+- Window: 2026-09-12 to 2026-09-13
+- Generated at: 2026-09-13T23:09:08.093940+08:00
+- 窗口: 2026-09-12 至 2026-09-13
+- GitHub 增量: 647 commits / 0 releases
+- 最近 push: 2026-09-13
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(plugins): offer asynchronous task and flow reads (#145851)
-  - feat: refresh plugin tools in managed Codex conversations (#145917)
-  - feat: refresh plugin tools within active agent conversations (#145648)
-  - feat(claws): activate plugin requirement batches without restarting (#145713)
-  - feat: apply supported plugin installs without restarting the Gateway (#145710)
-  - feat(custodian): recommend a chief of staff and specialist roles when creating an agent (#141453)
-  - feat(ui): team mode shows every agent and its sessions in the sidebar (#141476)
-  - feat(macos): show page favicons on Mac tabs in the chat side panel (#145714)
+  - feat: show when conversation memory is being saved (#140380)
+  - feat(macos): improve agent navigation and chat layout (#146531)
+  - feat(ui): keep file previews in tabs and render HTML (#146672)
+  - feat: share browser dashboards with agents (#146702)
+  - feat(agents): retry cyber-refused embedded turns on Daybreak (#145291)
+  - feat(ui): show Gateway ping and shared activity graphs (#146755)
+  - feat(onboarding): offer four avatar choices during hatching (#146669)
+  - feat(tui): display image attachments inline (#146644)
 - Fixes and constraints:
-  - fix(gateway): reduce allocation churn serving Control UI documents (#146003)
-  - fix(ui): preserve catalog transcript cache inputs (#145863)
-  - fix(tests): retain pinned selectors in unchanged plugin updates (#145991)
-  - fix(runtime): harden Bun process and transport compatibility (#146008)
-  - fix(sessions): reduce allocation churn in repeated entry reads (#145997)
-  - fix(gateway): retain late events after agent cancellation (#145987)
-  - fix(gateway): reduce completed-run cache allocation churn (#145988)
-  - perf: batch child-session participant reads (#146000)
+  - fix: complete Radius and Session Share plugin listings (#147104)
+  - fix: keep SQLite worker tests on fork hosts (#146991)
+  - fix(voice): update libopus-wasm to 0.4.0 (#147093)
+  - fix(chat): clarify attachment preparation and removal (#146941)
+  - perf: inspect registered agent databases asynchronously (#146754)
+  - fix(ui): keep Undo available while a toast is focused or hovered (#146940)
+  - fix(google-meet): honor summary output paths (#147078)
+  - fix(logging): keep stored log batches valid when masking secrets (#146850)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

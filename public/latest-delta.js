@@ -1,91 +1,91 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-09-12T22:28:30.179603+08:00",
+  "generatedAt": "2026-09-13T23:09:08.093940+08:00",
   "window": {
-    "start_local": "2026-09-11T22:28:30.179603+08:00",
-    "end_local": "2026-09-12T22:28:30.179603+08:00",
-    "start_utc": "2026-09-11T14:28:30Z",
-    "end_utc": "2026-09-12T14:28:30Z"
+    "start_local": "2026-09-12T23:09:08.093940+08:00",
+    "end_local": "2026-09-13T23:09:08.093940+08:00",
+    "start_utc": "2026-09-12T15:09:08Z",
+    "end_utc": "2026-09-13T15:09:08Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 389490,
-    "forks": 81876,
-    "open_issues": 6938,
-    "pushed_at": "2026-09-12T14:28:29Z"
+    "stars": 389582,
+    "forks": 81900,
+    "open_issues": 7118,
+    "pushed_at": "2026-09-13T15:09:04Z"
   },
   "summary": {
-    "commitCount": 637,
+    "commitCount": 647,
     "releaseCount": 0,
     "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 389490,
-    "forks": 81876,
-    "openIssues": 6938
+    "stars": 389582,
+    "forks": 81900,
+    "openIssues": 7118
   },
   "releases": [],
   "featureItems": [
-    "feat(plugins): offer asynchronous task and flow reads (#145851)",
-    "feat: refresh plugin tools in managed Codex conversations (#145917)",
-    "feat: refresh plugin tools within active agent conversations (#145648)",
-    "feat(claws): activate plugin requirement batches without restarting (#145713)",
-    "feat: apply supported plugin installs without restarting the Gateway (#145710)",
-    "feat(custodian): recommend a chief of staff and specialist roles when creating an agent (#141453)",
-    "feat(ui): team mode shows every agent and its sessions in the sidebar (#141476)",
-    "feat(macos): show page favicons on Mac tabs in the chat side panel (#145714)"
+    "feat: show when conversation memory is being saved (#140380)",
+    "feat(macos): improve agent navigation and chat layout (#146531)",
+    "feat(ui): keep file previews in tabs and render HTML (#146672)",
+    "feat: share browser dashboards with agents (#146702)",
+    "feat(agents): retry cyber-refused embedded turns on Daybreak (#145291)",
+    "feat(ui): show Gateway ping and shared activity graphs (#146755)",
+    "feat(onboarding): offer four avatar choices during hatching (#146669)",
+    "feat(tui): display image attachments inline (#146644)"
   ],
   "fixItems": [
-    "fix(gateway): reduce allocation churn serving Control UI documents (#146003)",
-    "fix(ui): preserve catalog transcript cache inputs (#145863)",
-    "fix(tests): retain pinned selectors in unchanged plugin updates (#145991)",
-    "fix(runtime): harden Bun process and transport compatibility (#146008)",
-    "fix(sessions): reduce allocation churn in repeated entry reads (#145997)",
-    "fix(gateway): retain late events after agent cancellation (#145987)",
-    "fix(gateway): reduce completed-run cache allocation churn (#145988)",
-    "perf: batch child-session participant reads (#146000)"
+    "fix: complete Radius and Session Share plugin listings (#147104)",
+    "fix: keep SQLite worker tests on fork hosts (#146991)",
+    "fix(voice): update libopus-wasm to 0.4.0 (#147093)",
+    "fix(chat): clarify attachment preparation and removal (#146941)",
+    "perf: inspect registered agent databases asynchronously (#146754)",
+    "fix(ui): keep Undo available while a toast is focused or hovered (#146940)",
+    "fix(google-meet): honor summary output paths (#147078)",
+    "fix(logging): keep stored log batches valid when masking secrets (#146850)"
   ],
   "topScopes": [
     {
       "scope": "ui",
-      "count": 69
+      "count": 71
     },
     {
       "scope": "fix",
-      "count": 48
+      "count": 63
     },
     {
-      "scope": "test",
-      "count": 45
+      "scope": "improve",
+      "count": 55
     },
     {
-      "scope": "tests",
-      "count": 31
-    },
-    {
-      "scope": "update",
-      "count": 30
+      "scope": "refactor",
+      "count": 54
     },
     {
       "scope": "gateway",
-      "count": 27
+      "count": 23
     },
     {
-      "scope": "plugins",
-      "count": 22
+      "scope": "update",
+      "count": 21
+    },
+    {
+      "scope": "test",
+      "count": 17
     },
     {
       "scope": "agents",
-      "count": 19
+      "count": 17
     }
   ],
   "headlineCommits": [
-    "fix(gateway): reduce allocation churn serving Control UI documents (#146003)",
-    "fix(ui): preserve catalog transcript cache inputs (#145863)",
-    "refactor(cli): remove agent session loader test injection (#145961)",
-    "fix(tests): retain pinned selectors in unchanged plugin updates (#145991)",
-    "fix(runtime): harden Bun process and transport compatibility (#146008)",
-    "fix(sessions): reduce allocation churn in repeated entry reads (#145997)",
-    "fix(gateway): retain late events after agent cancellation (#145987)",
-    "fix(gateway): reduce completed-run cache allocation churn (#145988)"
+    "refactor(ui): reuse cron timezone list normalization (#146992)",
+    "improve(sessions): avoid watcher join fanout (#147107)",
+    "fix: complete Radius and Session Share plugin listings (#147104)",
+    "fix: keep SQLite worker tests on fork hosts (#146991)",
+    "improve(workboard): batch dependency status reads (#147102)",
+    "improve(memory): reuse standing-intent candidate rows (#147099)",
+    "fix(voice): update libopus-wasm to 0.4.0 (#147093)",
+    "fix(chat): clarify attachment preparation and removal (#146941)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
