@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-09-13T23:09:29+08:00
-- Requested window: 2026-09-12 to 2026-09-13
+- Generated at: 2026-09-15T01:06:50+08:00
+- Requested window: 2026-09-14 to 2026-09-15
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-09-12 to 2026-09-13
-- Generated at: 2026-09-13T23:09:08.093940+08:00
-- 窗口: 2026-09-12 至 2026-09-13
-- GitHub 增量: 647 commits / 0 releases
-- 最近 push: 2026-09-13
+- Window: 2026-09-14 to 2026-09-15
+- Generated at: 2026-09-15T01:06:31.296614+08:00
+- 窗口: 2026-09-14 至 2026-09-15
+- GitHub 增量: 676 commits / 0 releases
+- 最近 push: 2026-09-14
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat: show when conversation memory is being saved (#140380)
-  - feat(macos): improve agent navigation and chat layout (#146531)
-  - feat(ui): keep file previews in tabs and render HTML (#146672)
-  - feat: share browser dashboards with agents (#146702)
-  - feat(agents): retry cyber-refused embedded turns on Daybreak (#145291)
-  - feat(ui): show Gateway ping and shared activity graphs (#146755)
-  - feat(onboarding): offer four avatar choices during hatching (#146669)
-  - feat(tui): display image attachments inline (#146644)
+  - feat: offer model choices across agent harnesses (#147994)
+  - feat(chat): inspect CI jobs and steps from PR chips (#148070)
+  - feat(ios): switch saved gateways from the sidebar (#146641)
+  - feat(android): collapse completed work in default chats (#148050)
+  - feat(ios): collapse completed chat work above replies (#148002)
+  - feat(subagents): explain waits and separate execution from result delivery (#147571)
+  - feat: start remote sessions without a repository (#147773)
+  - feat(artifacts): select assistant-delivered files by run (#147682)
 - Fixes and constraints:
-  - fix: complete Radius and Session Share plugin listings (#147104)
-  - fix: keep SQLite worker tests on fork hosts (#146991)
-  - fix(voice): update libopus-wasm to 0.4.0 (#147093)
-  - fix(chat): clarify attachment preparation and removal (#146941)
-  - perf: inspect registered agent databases asynchronously (#146754)
-  - fix(ui): keep Undo available while a toast is focused or hovered (#146940)
-  - fix(google-meet): honor summary output paths (#147078)
-  - fix(logging): keep stored log batches valid when masking secrets (#146850)
+  - fix: Doctor maintenance closes unrelated database clients (#148126)
+  - fix: session maintenance delays other Gateway requests (#148351)
+  - fix(agents): keep tool result summaries when middleware details exceed shape limits (#147805)
+  - fix(cli): drain failed web capability output (#148234)
+  - fix(plugins): scope feed integrity to hosted ClawHub (#148220)
+  - fix(matrix): retain sync state runtime for deferred persistence (#148152)
+  - fix: prevent stale database workers across extension tests (#147986)
+  - fix: restore reads for the installed official Mattermost plugin (#147660)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

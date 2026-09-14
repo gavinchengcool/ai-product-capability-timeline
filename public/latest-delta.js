@@ -1,91 +1,91 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-09-13T23:09:08.093940+08:00",
+  "generatedAt": "2026-09-15T01:06:31.296614+08:00",
   "window": {
-    "start_local": "2026-09-12T23:09:08.093940+08:00",
-    "end_local": "2026-09-13T23:09:08.093940+08:00",
-    "start_utc": "2026-09-12T15:09:08Z",
-    "end_utc": "2026-09-13T15:09:08Z"
+    "start_local": "2026-09-14T01:06:31.296614+08:00",
+    "end_local": "2026-09-15T01:06:31.296614+08:00",
+    "start_utc": "2026-09-13T17:06:31Z",
+    "end_utc": "2026-09-14T17:06:31Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 389582,
-    "forks": 81900,
-    "open_issues": 7118,
-    "pushed_at": "2026-09-13T15:09:04Z"
+    "stars": 389667,
+    "forks": 81917,
+    "open_issues": 7341,
+    "pushed_at": "2026-09-14T17:05:40Z"
   },
   "summary": {
-    "commitCount": 647,
+    "commitCount": 676,
     "releaseCount": 0,
     "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 389582,
-    "forks": 81900,
-    "openIssues": 7118
+    "stars": 389667,
+    "forks": 81917,
+    "openIssues": 7341
   },
   "releases": [],
   "featureItems": [
-    "feat: show when conversation memory is being saved (#140380)",
-    "feat(macos): improve agent navigation and chat layout (#146531)",
-    "feat(ui): keep file previews in tabs and render HTML (#146672)",
-    "feat: share browser dashboards with agents (#146702)",
-    "feat(agents): retry cyber-refused embedded turns on Daybreak (#145291)",
-    "feat(ui): show Gateway ping and shared activity graphs (#146755)",
-    "feat(onboarding): offer four avatar choices during hatching (#146669)",
-    "feat(tui): display image attachments inline (#146644)"
+    "feat: offer model choices across agent harnesses (#147994)",
+    "feat(chat): inspect CI jobs and steps from PR chips (#148070)",
+    "feat(ios): switch saved gateways from the sidebar (#146641)",
+    "feat(android): collapse completed work in default chats (#148050)",
+    "feat(ios): collapse completed chat work above replies (#148002)",
+    "feat(subagents): explain waits and separate execution from result delivery (#147571)",
+    "feat: start remote sessions without a repository (#147773)",
+    "feat(artifacts): select assistant-delivered files by run (#147682)"
   ],
   "fixItems": [
-    "fix: complete Radius and Session Share plugin listings (#147104)",
-    "fix: keep SQLite worker tests on fork hosts (#146991)",
-    "fix(voice): update libopus-wasm to 0.4.0 (#147093)",
-    "fix(chat): clarify attachment preparation and removal (#146941)",
-    "perf: inspect registered agent databases asynchronously (#146754)",
-    "fix(ui): keep Undo available while a toast is focused or hovered (#146940)",
-    "fix(google-meet): honor summary output paths (#147078)",
-    "fix(logging): keep stored log batches valid when masking secrets (#146850)"
+    "fix: Doctor maintenance closes unrelated database clients (#148126)",
+    "fix: session maintenance delays other Gateway requests (#148351)",
+    "fix(agents): keep tool result summaries when middleware details exceed shape limits (#147805)",
+    "fix(cli): drain failed web capability output (#148234)",
+    "fix(plugins): scope feed integrity to hosted ClawHub (#148220)",
+    "fix(matrix): retain sync state runtime for deferred persistence (#148152)",
+    "fix: prevent stale database workers across extension tests (#147986)",
+    "fix: restore reads for the installed official Mattermost plugin (#147660)"
   ],
   "topScopes": [
     {
-      "scope": "ui",
-      "count": 71
-    },
-    {
       "scope": "fix",
-      "count": 63
+      "count": 89
     },
     {
-      "scope": "improve",
-      "count": 55
+      "scope": "ui",
+      "count": 70
     },
     {
-      "scope": "refactor",
-      "count": 54
-    },
-    {
-      "scope": "gateway",
-      "count": 23
-    },
-    {
-      "scope": "update",
-      "count": 21
+      "scope": "qa",
+      "count": 32
     },
     {
       "scope": "test",
-      "count": 17
+      "count": 26
+    },
+    {
+      "scope": "improve",
+      "count": 25
     },
     {
       "scope": "agents",
+      "count": 23
+    },
+    {
+      "scope": "gateway",
+      "count": 19
+    },
+    {
+      "scope": "plugins",
       "count": 17
     }
   ],
   "headlineCommits": [
-    "refactor(ui): reuse cron timezone list normalization (#146992)",
-    "improve(sessions): avoid watcher join fanout (#147107)",
-    "fix: complete Radius and Session Share plugin listings (#147104)",
-    "fix: keep SQLite worker tests on fork hosts (#146991)",
-    "improve(workboard): batch dependency status reads (#147102)",
-    "improve(memory): reuse standing-intent candidate rows (#147099)",
-    "fix(voice): update libopus-wasm to 0.4.0 (#147093)",
-    "fix(chat): clarify attachment preparation and removal (#146941)"
+    "fix: Doctor maintenance closes unrelated database clients (#148126)",
+    "fix: session maintenance delays other Gateway requests (#148351)",
+    "improve: reduce data fetched for Team Reports people pages (#148288)",
+    "test(wizard): run inference recovery with shared-state broker (#148353)",
+    "fix(agents): keep tool result summaries when middleware details exceed shape limits (#147805)",
+    "test: make full-suite fixtures portable across runtimes (#148247)",
+    "refactor(qa): share unknown confidence results (#148200)",
+    "chore(android): remove unused test dependencies and duplicate Wear settings (#148231)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
