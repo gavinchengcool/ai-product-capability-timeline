@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-15T01:06:50+08:00",
+  "generatedAt": "2026-09-15T23:46:27+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-09-14T01:06:50+08:00",
-    "end_local": "2026-09-15T01:06:50+08:00"
+    "start_local": "2026-09-14T23:46:27+08:00",
+    "end_local": "2026-09-15T23:46:27+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,12 +22,12 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-09-15T01:06:31.296614+08:00",
+      "generatedAt": "2026-09-15T23:46:10.189852+08:00",
       "window": {
-        "start_local": "2026-09-14T01:06:31.296614+08:00",
-        "end_local": "2026-09-15T01:06:31.296614+08:00",
-        "start_utc": "2026-09-13T17:06:31Z",
-        "end_utc": "2026-09-14T17:06:31Z"
+        "start_local": "2026-09-14T23:46:10.189852+08:00",
+        "end_local": "2026-09-15T23:46:10.189852+08:00",
+        "start_utc": "2026-09-14T15:46:10Z",
+        "end_utc": "2026-09-15T15:46:10Z"
       },
       "meta": [
         {
@@ -36,11 +36,11 @@
         },
         {
           "label": "GitHub 增量",
-          "value": "676 commits / 0 releases"
+          "value": "558 commits / 0 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-09-14"
+          "value": "2026-09-15"
         },
         {
           "label": "来源",
@@ -52,58 +52,58 @@
         }
       ],
       "featureItems": [
-        "feat: offer model choices across agent harnesses (#147994)",
-        "feat(chat): inspect CI jobs and steps from PR chips (#148070)",
-        "feat(ios): switch saved gateways from the sidebar (#146641)",
-        "feat(android): collapse completed work in default chats (#148050)",
-        "feat(ios): collapse completed chat work above replies (#148002)",
-        "feat(subagents): explain waits and separate execution from result delivery (#147571)",
-        "feat: start remote sessions without a repository (#147773)",
-        "feat(artifacts): select assistant-delivered files by run (#147682)"
+        "feat(bench): add multi-agent Gateway workloads (#149178)",
+        "feat: give agents scoped, resumable session inventories (#148051)",
+        "feat(qa): retain evidence across repeated scenarios and retries (#147756)",
+        "feat: show cited source previews in macOS and iOS chat (#148906)",
+        "feat: show cited source previews in Android chat (#148904)",
+        "feat(ui): show compact previews for cited sources (#148431)",
+        "feat: unify Tauri setup and Quick Chat themes (#148808)",
+        "feat(codex): report session catalog failure phases (#148735)"
       ],
       "fixItems": [
-        "fix: Doctor maintenance closes unrelated database clients (#148126)",
-        "fix: session maintenance delays other Gateway requests (#148351)",
-        "fix(agents): keep tool result summaries when middleware details exceed shape limits (#147805)",
-        "fix(cli): drain failed web capability output (#148234)",
-        "fix(plugins): scope feed integrity to hosted ClawHub (#148220)",
-        "fix(matrix): retain sync state runtime for deferred persistence (#148152)",
-        "fix: prevent stale database workers across extension tests (#147986)",
-        "fix: restore reads for the installed official Mattermost plugin (#147660)"
+        "fix(mac): keep chat preferences in their active profile (#146966)",
+        "fix(gateway): revoke in-flight hook admission on reload (#147785)",
+        "fix(triage): report an update failure as repaired only with resolution evidence (#148968)",
+        "fix(workboard): preserve ready-card history on idle dispatch (#149160)",
+        "fix(ui): stop invisible list polling in minimized diagnostics (#149151)",
+        "fix(ui): make short chat links ready for drafting sooner (#149070)",
+        "fix(worktrees): avoid repeated Git scans during cleanup (#148919)",
+        "perf(plugins): defer provider registration completeness preparation (#148912)"
       ],
       "releases": [],
       "topScopes": [
         {
           "scope": "fix",
-          "count": 89
-        },
-        {
-          "scope": "ui",
-          "count": 70
-        },
-        {
-          "scope": "qa",
-          "count": 32
+          "count": 60
         },
         {
           "scope": "test",
-          "count": 26
+          "count": 50
+        },
+        {
+          "scope": "ui",
+          "count": 45
         },
         {
           "scope": "improve",
-          "count": 25
-        },
-        {
-          "scope": "agents",
-          "count": 23
-        },
-        {
-          "scope": "gateway",
-          "count": 19
+          "count": 27
         },
         {
           "scope": "plugins",
-          "count": 17
+          "count": 22
+        },
+        {
+          "scope": "gateway",
+          "count": 20
+        },
+        {
+          "scope": "refactor",
+          "count": 18
+        },
+        {
+          "scope": "ci",
+          "count": 18
         }
       ],
       "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"

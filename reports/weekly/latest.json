@@ -1,196 +1,182 @@
 {
-  "generated_at": "2026-09-15T01:06:31.296614+08:00",
+  "generated_at": "2026-09-15T23:46:10.189852+08:00",
   "window": {
-    "start_local": "2026-09-14T01:06:31.296614+08:00",
-    "end_local": "2026-09-15T01:06:31.296614+08:00",
-    "start_utc": "2026-09-13T17:06:31Z",
-    "end_utc": "2026-09-14T17:06:31Z"
+    "start_local": "2026-09-14T23:46:10.189852+08:00",
+    "end_local": "2026-09-15T23:46:10.189852+08:00",
+    "start_utc": "2026-09-14T15:46:10Z",
+    "end_utc": "2026-09-15T15:46:10Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 389667,
-    "forks": 81917,
-    "open_issues": 7341,
-    "pushed_at": "2026-09-14T17:05:40Z"
+    "stars": 389755,
+    "forks": 81927,
+    "open_issues": 7404,
+    "pushed_at": "2026-09-15T15:46:00Z"
   },
   "releases_in_window": [],
-  "commit_count": 676,
+  "commit_count": 558,
   "commit_headlines": [
-    "fix: Doctor maintenance closes unrelated database clients (#148126)",
-    "fix: session maintenance delays other Gateway requests (#148351)",
-    "improve: reduce data fetched for Team Reports people pages (#148288)",
-    "test(wizard): run inference recovery with shared-state broker (#148353)",
-    "fix(agents): keep tool result summaries when middleware details exceed shape limits (#147805)",
-    "test: make full-suite fixtures portable across runtimes (#148247)",
-    "refactor(qa): share unknown confidence results (#148200)",
-    "chore(android): remove unused test dependencies and duplicate Wear settings (#148231)",
-    "test: reuse compiled preflight in startup fixtures (#148330)",
-    "test(wizard): route recovery integration through database forks (#148337)",
-    "refactor(plugins): simplify provider auth patch recursion (#147933)",
-    "fix(cli): drain failed web capability output (#148234)",
-    "refactor(android): remove unused production helpers (#148233)",
-    "fix(plugins): scope feed integrity to hosted ClawHub (#148220)",
-    "test(qa): compare Telegram entities semantically (#148219)",
-    "test(qa): recognize native Slack exec progress rows (#148217)",
-    "test(cron): distinguish repeated delivery incidents (#148151)",
-    "test(qa): preserve restart command ownership (#148218)",
-    "test(qa): isolate bundled skill CLI gateway state (#148150)",
-    "test(qa): align process lifecycle contracts (#148149)",
-    "improve(media): reduce metadata fetched during orphan cleanup (#148244)",
-    "fix(matrix): retain sync state runtime for deferred persistence (#148152)",
-    "test: deduplicate gateway watch exit fixtures (#148237)",
-    "refactor(cli): derive daemon status contract from gatherer (#148108)",
-    "refactor(cua): derive action params from contract (#148110)",
-    "refactor(slack): derive monitor context from factory (#148111)",
-    "refactor(qa): infer scenario runtime dependencies (#148109)",
-    "test(models): observe published catalog in scope fixtures (#148293)",
-    "improve(telegram): avoid redundant parsing of formatted replies (#148285)",
-    "test: reuse compiled runtime in lease fixtures (#148281)",
-    "fix: prevent stale database workers across extension tests (#147986)",
-    "docs: require Night Watch coordination for Team updates",
-    "fix: restore reads for the installed official Mattermost plugin (#147660)",
-    "fix(qa): avoid runtime startup for evidence scripts (#148153)",
-    "fix(nodes): preserve cancelled turns when workers reject terminal events (#148181)",
-    "fix(linux): preserve update delivery across core releases (#146052)",
-    "fix(cron): reject explicitly blank schedule values (#148271)",
-    "test(qa): run source producers through Node on Bun (#147996)",
-    "feat: offer model choices across agent harnesses (#147994)",
-    "improve(usage): batch stale rollup cleanup (#147998)",
-    "improve(sessions): reduce pending-input read work (#148208)",
-    "improve(exec): reduce queue trimming work for burst output (#148260)",
-    "fix(gateway): retain close failure diagnostics on restart (#148163)",
-    "chore(ui): move startup-adjacent modules and split lazy style/catalog boundaries (#144737)",
-    "fix(tests): restore session race coverage on Node 26 (#148182)",
-    "fix: balance Auto session starts across paired devices (#148099)",
-    "test(gateway): use shared RPC timeout for abort smoke (#148254)",
-    "test(android): simplify media playback fixtures (#148258)",
-    "refactor(plugins): read installed metadata through the shared worker (#148017)",
-    "feat(chat): inspect CI jobs and steps from PR chips (#148070)"
+    "improve(tooling): reuse env names across baseline ratchets (#149186)",
+    "fix(mac): keep chat preferences in their active profile (#146966)",
+    "test: reuse compiled CLI for Doctor workspace checks (#149163)",
+    "feat(bench): add multi-agent Gateway workloads (#149178)",
+    "fix(gateway): revoke in-flight hook admission on reload (#147785)",
+    "fix(triage): report an update failure as repaired only with resolution evidence (#148968)",
+    "test(qa): preserve native process in runtime fixtures (#149164)",
+    "fix(workboard): preserve ready-card history on idle dispatch (#149160)",
+    "fix(ui): stop invisible list polling in minimized diagnostics (#149151)",
+    "fix(ui): make short chat links ready for drafting sooner (#149070)",
+    "refactor(xai): simplify usage period normalization (#149022)",
+    "test(ui): scope archive undo refresh cursor to its query (#149135)",
+    "improve: speed up legacy updater compatibility tests (#149008)",
+    "test: reuse immutable CI planner fixtures (#149148)",
+    "fix(worktrees): avoid repeated Git scans during cleanup (#148919)",
+    "refactor(google): build only selected family templates (#149021)",
+    "refactor(ai): remove duplicate tool-call terminal checks (#148986)",
+    "perf(plugins): defer provider registration completeness preparation (#148912)",
+    "improve(cron): move data-only saves off the caller thread (#148594)",
+    "improve(ios): inspect beta distribution without another upload (#149007)",
+    "perf(gateway): yield catalog admission between fill steps (#149030)",
+    "perf(sessions): reduce statistics and conversation read work (#148918)",
+    "improve(feishu): reuse decoded posts when reading messages (#149136)",
+    "refactor: make worker inference draining type-safe (#148913)",
+    "fix(ci): share managed process cleanup across developer probes (#149041)",
+    "refactor(beam): move upload decisions onto plugin-state CAS (#148908)",
+    "test(sqlite): await worker cleanup between fixtures (#149127)",
+    "fix(qa): close browsers when scenario opening fails or is canceled (#148141)",
+    "feat: give agents scoped, resumable session inventories (#148051)",
+    "fix(update): probe system Node under Bun (#149083)",
+    "test(infra): remove Node-only runtime assumptions (#149098)",
+    "improve: reuse history worker database connections (#148972)",
+    "fix: avoid duplicate Codex subagent completion replies (#149104)",
+    "fix(subagents): preserve follow-through after private completion (#149073)",
+    "fix: identify slow session subscription warnings (#149062)",
+    "fix(sandbox): speed up startup with many session workspaces (#149063)",
+    "refactor(openrouter): project only selected video capabilities (#148924)",
+    "fix(cron): exclude queue waits from heartbeat timeouts (#148876)",
+    "test(plugins): preserve config invalidation diagnostic codes (#148944)",
+    "refactor: simplify primary CLI command registration (#149053)",
+    "fix: preserve completed tool results in Codex subagent forks (#149096)",
+    "improve: reduce repeated work when listing sessions across agents (#149057)",
+    "test: settle session fixture database lifetimes (#148849)",
+    "test(cron): seed overdue state in add regression (#149017)",
+    "fix(gateway): subagent sessions stay running after restart (#126322)",
+    "fix: accept bare current channel IDs for Teams reads (#149093)",
+    "improve(logging): avoid copying fields during redaction (#148677)",
+    "fix(subagents): prevent completed requester replay after delivery failure (#85308)",
+    "refactor(memory-core): use atomic state comparisons for workspace lock deletion (#148934)",
+    "fix(doctor): resolve moved Workshop backup owners by content (#148995)"
   ],
   "feature_items": [
-    "feat: offer model choices across agent harnesses (#147994)",
-    "feat(chat): inspect CI jobs and steps from PR chips (#148070)",
-    "feat(ios): switch saved gateways from the sidebar (#146641)",
-    "feat(android): collapse completed work in default chats (#148050)",
-    "feat(ios): collapse completed chat work above replies (#148002)",
-    "feat(subagents): explain waits and separate execution from result delivery (#147571)",
-    "feat: start remote sessions without a repository (#147773)",
-    "feat(artifacts): select assistant-delivered files by run (#147682)",
-    "feat(gateway): bind requests to selected profiles (#143587)",
-    "feat(ui): shrink diagnostics widget and graph all three metrics (#147840)",
-    "feat: show subagent status through claw motion and tooltips (#147753)",
-    "feat(ui): minimize System busyness into a live widget (#147760)",
-    "feat(config): offload async health and audit persistence (#147256)",
-    "feat(macos): collapse completed work above chat replies (#147540)",
-    "feat: show rolling session recaps in Activity (#147441)",
-    "feat(ui): let critters play around the new-session composer (#147338)",
-    "feat(ui): collapse task progress while reading history (#147295)",
-    "feat(doctor): report a runtime built from a different commit than HEAD (#144499)",
-    "feat: use custom SVG artwork for session icons (#147442)",
-    "feat(subagents): allow private parent completion handoffs (#147206)",
-    "feat(bench): report process and main-thread CPU usage (#147436)",
-    "feat(agents): scale parallel session defaults to four runs per CPU (#147423)",
-    "feat(dashboard): save shared fullscreen and split defaults (#146475)",
-    "feat: give every plugin a compact chat activity icon (#147333)",
-    "feat(code-mode): infer results from the requested action (#147291)",
-    "feat(agents): retain oversized code mode results automatically (#147278)",
-    "feat(workboard): add selection and bulk card actions (#144756)",
-    "feat(computer): control Gateway desktops without paired nodes (#147275)",
-    "feat: load CDN libraries and fonts in widgets (#147265)",
-    "feat(qa): preserve maturity decision context (#147219)"
+    "feat(bench): add multi-agent Gateway workloads (#149178)",
+    "feat: give agents scoped, resumable session inventories (#148051)",
+    "feat(qa): retain evidence across repeated scenarios and retries (#147756)",
+    "feat: show cited source previews in macOS and iOS chat (#148906)",
+    "feat: show cited source previews in Android chat (#148904)",
+    "feat(ui): show compact previews for cited sources (#148431)",
+    "feat: unify Tauri setup and Quick Chat themes (#148808)",
+    "feat(codex): report session catalog failure phases (#148735)",
+    "feat(gateway): add admin CPU profile diagnostics (#148004)",
+    "feat: stage selected chat text as editable comments (#148649)",
+    "feat(codex): identify slow session catalog phases (#148639)",
+    "feat: offload data-only keyed plugin state operations (#146557)",
+    "feat(ui): show a status dot on the browser tab favicon (#147388)",
+    "feat(desktop): redesign Gateway manager around web login (#148526)",
+    "feat: add a desktop-first Systems workspace (#147519)",
+    "feat(desktop): switch saved Gateways independently of Primary (#147684)"
   ],
   "fix_items": [
-    "fix: Doctor maintenance closes unrelated database clients (#148126)",
-    "fix: session maintenance delays other Gateway requests (#148351)",
-    "fix(agents): keep tool result summaries when middleware details exceed shape limits (#147805)",
-    "fix(cli): drain failed web capability output (#148234)",
-    "fix(plugins): scope feed integrity to hosted ClawHub (#148220)",
-    "fix(matrix): retain sync state runtime for deferred persistence (#148152)",
-    "fix: prevent stale database workers across extension tests (#147986)",
-    "fix: restore reads for the installed official Mattermost plugin (#147660)",
-    "fix(qa): avoid runtime startup for evidence scripts (#148153)",
-    "fix(nodes): preserve cancelled turns when workers reject terminal events (#148181)",
-    "fix(linux): preserve update delivery across core releases (#146052)",
-    "fix(cron): reject explicitly blank schedule values (#148271)",
-    "fix(gateway): retain close failure diagnostics on restart (#148163)",
-    "fix(tests): restore session race coverage on Node 26 (#148182)",
-    "fix: balance Auto session starts across paired devices (#148099)",
-    "fix: accept model JSON before trailing diagnostics (#145764)",
-    "fix(cli): emit JSON when command configuration validation fails (#145768)",
-    "perf(logging): materialize decoded record edits once (#148007)",
-    "fix(ui): make plugin credential fields editable (#148192)",
-    "fix(exec): resolve relative workdirs from the session directory (#148162)",
-    "fix(tasks): preserve finished work across Gateway restarts (#145940)",
-    "fix: recover the model picker after catalog changes (#147926)",
-    "fix(brave): remove unsupported model authentication metadata (#148178)",
-    "fix(setup): keep wizard recovery bound to its config target (#148195)",
-    "fix: preserve sibling home paths in plugin diagnostics (#148142)",
-    "fix(browser): restore subscribed tabs after native target loss (#147943)",
-    "fix(config): reload fresh drafts after stale-write rejection (#148143)",
-    "fix(heartbeat): resolve scoped owners and preserve Gateway readiness (#147944)",
-    "fix(update): check snapshot capacity before staging (#147908)",
-    "fix(ui): settings reload can overflow the browser stack (#147970)"
+    "fix(mac): keep chat preferences in their active profile (#146966)",
+    "fix(gateway): revoke in-flight hook admission on reload (#147785)",
+    "fix(triage): report an update failure as repaired only with resolution evidence (#148968)",
+    "fix(workboard): preserve ready-card history on idle dispatch (#149160)",
+    "fix(ui): stop invisible list polling in minimized diagnostics (#149151)",
+    "fix(ui): make short chat links ready for drafting sooner (#149070)",
+    "fix(worktrees): avoid repeated Git scans during cleanup (#148919)",
+    "perf(plugins): defer provider registration completeness preparation (#148912)",
+    "perf(gateway): yield catalog admission between fill steps (#149030)",
+    "perf(sessions): reduce statistics and conversation read work (#148918)",
+    "fix(ci): share managed process cleanup across developer probes (#149041)",
+    "fix(qa): close browsers when scenario opening fails or is canceled (#148141)",
+    "fix(update): probe system Node under Bun (#149083)",
+    "fix: avoid duplicate Codex subagent completion replies (#149104)",
+    "fix(subagents): preserve follow-through after private completion (#149073)",
+    "fix: identify slow session subscription warnings (#149062)",
+    "fix(sandbox): speed up startup with many session workspaces (#149063)",
+    "fix(cron): exclude queue waits from heartbeat timeouts (#148876)",
+    "fix: preserve completed tool results in Codex subagent forks (#149096)",
+    "fix(gateway): subagent sessions stay running after restart (#126322)",
+    "fix: accept bare current channel IDs for Teams reads (#149093)",
+    "fix(subagents): prevent completed requester replay after delivery failure (#85308)",
+    "fix(doctor): resolve moved Workshop backup owners by content (#148995)",
+    "fix(gateway): name the shutdown trigger in admission and lifecycle logs (#148910)",
+    "fix: updates fail when configured agents have no legacy history (#148901)",
+    "fix: refuse cancellation of native harness task mirrors (#149025)",
+    "fix: find Feishu peers beyond the first directory page (#149077)",
+    "fix: systemd Gateway loses env keys during legacy config repair (#146645)",
+    "fix: allow Matrix and Teams member lookups from the CLI (#149074)",
+    "fix(ui): keep one scroll boundary per expanded tool-call activity (#139120)"
   ],
   "top_scopes": [
     {
       "scope": "fix",
-      "count": 89
-    },
-    {
-      "scope": "ui",
-      "count": 70
-    },
-    {
-      "scope": "qa",
-      "count": 32
+      "count": 60
     },
     {
       "scope": "test",
-      "count": 26
+      "count": 50
+    },
+    {
+      "scope": "ui",
+      "count": 45
     },
     {
       "scope": "improve",
-      "count": 25
-    },
-    {
-      "scope": "agents",
-      "count": 23
-    },
-    {
-      "scope": "gateway",
-      "count": 19
+      "count": 27
     },
     {
       "scope": "plugins",
-      "count": 17
+      "count": 22
     },
     {
-      "scope": "cli",
-      "count": 17
+      "scope": "gateway",
+      "count": 20
     },
     {
       "scope": "refactor",
-      "count": 17
-    },
-    {
-      "scope": "update",
-      "count": 14
-    },
-    {
-      "scope": "perf",
-      "count": 10
-    },
-    {
-      "scope": "doctor",
-      "count": 10
+      "count": 18
     },
     {
       "scope": "ci",
+      "count": 18
+    },
+    {
+      "scope": "qa",
+      "count": 15
+    },
+    {
+      "scope": "agents",
+      "count": 13
+    },
+    {
+      "scope": "update",
       "count": 10
     },
     {
-      "scope": "memory",
-      "count": 10
+      "scope": "cron",
+      "count": 9
+    },
+    {
+      "scope": "ai",
+      "count": 8
+    },
+    {
+      "scope": "codex",
+      "count": 8
+    },
+    {
+      "scope": "sessions",
+      "count": 7
     }
   ]
 }

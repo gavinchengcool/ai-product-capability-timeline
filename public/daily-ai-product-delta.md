@@ -1,6 +1,6 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-09-15T01:06:50+08:00
+- Generated at: 2026-09-15T23:46:27+08:00
 - Requested window: 2026-09-14 to 2026-09-15
 - Coverage: 6 products
 - Live 24h feeds: 1
@@ -11,30 +11,30 @@
 
 - Freshness: live_24h
 - Window: 2026-09-14 to 2026-09-15
-- Generated at: 2026-09-15T01:06:31.296614+08:00
+- Generated at: 2026-09-15T23:46:10.189852+08:00
 - 窗口: 2026-09-14 至 2026-09-15
-- GitHub 增量: 676 commits / 0 releases
-- 最近 push: 2026-09-14
+- GitHub 增量: 558 commits / 0 releases
+- 最近 push: 2026-09-15
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat: offer model choices across agent harnesses (#147994)
-  - feat(chat): inspect CI jobs and steps from PR chips (#148070)
-  - feat(ios): switch saved gateways from the sidebar (#146641)
-  - feat(android): collapse completed work in default chats (#148050)
-  - feat(ios): collapse completed chat work above replies (#148002)
-  - feat(subagents): explain waits and separate execution from result delivery (#147571)
-  - feat: start remote sessions without a repository (#147773)
-  - feat(artifacts): select assistant-delivered files by run (#147682)
+  - feat(bench): add multi-agent Gateway workloads (#149178)
+  - feat: give agents scoped, resumable session inventories (#148051)
+  - feat(qa): retain evidence across repeated scenarios and retries (#147756)
+  - feat: show cited source previews in macOS and iOS chat (#148906)
+  - feat: show cited source previews in Android chat (#148904)
+  - feat(ui): show compact previews for cited sources (#148431)
+  - feat: unify Tauri setup and Quick Chat themes (#148808)
+  - feat(codex): report session catalog failure phases (#148735)
 - Fixes and constraints:
-  - fix: Doctor maintenance closes unrelated database clients (#148126)
-  - fix: session maintenance delays other Gateway requests (#148351)
-  - fix(agents): keep tool result summaries when middleware details exceed shape limits (#147805)
-  - fix(cli): drain failed web capability output (#148234)
-  - fix(plugins): scope feed integrity to hosted ClawHub (#148220)
-  - fix(matrix): retain sync state runtime for deferred persistence (#148152)
-  - fix: prevent stale database workers across extension tests (#147986)
-  - fix: restore reads for the installed official Mattermost plugin (#147660)
+  - fix(mac): keep chat preferences in their active profile (#146966)
+  - fix(gateway): revoke in-flight hook admission on reload (#147785)
+  - fix(triage): report an update failure as repaired only with resolution evidence (#148968)
+  - fix(workboard): preserve ready-card history on idle dispatch (#149160)
+  - fix(ui): stop invisible list polling in minimized diagnostics (#149151)
+  - fix(ui): make short chat links ready for drafting sooner (#149070)
+  - fix(worktrees): avoid repeated Git scans during cleanup (#148919)
+  - perf(plugins): defer provider registration completeness preparation (#148912)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
