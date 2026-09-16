@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-09-15T23:46:27+08:00
-- Requested window: 2026-09-14 to 2026-09-15
+- Generated at: 2026-09-16T23:38:28+08:00
+- Requested window: 2026-09-15 to 2026-09-16
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-09-14 to 2026-09-15
-- Generated at: 2026-09-15T23:46:10.189852+08:00
-- 窗口: 2026-09-14 至 2026-09-15
-- GitHub 增量: 558 commits / 0 releases
-- 最近 push: 2026-09-15
+- Window: 2026-09-15 to 2026-09-16
+- Generated at: 2026-09-16T23:38:11.649386+08:00
+- 窗口: 2026-09-15 至 2026-09-16
+- GitHub 增量: 572 commits / 0 releases
+- 最近 push: 2026-09-16
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(bench): add multi-agent Gateway workloads (#149178)
-  - feat: give agents scoped, resumable session inventories (#148051)
-  - feat(qa): retain evidence across repeated scenarios and retries (#147756)
-  - feat: show cited source previews in macOS and iOS chat (#148906)
-  - feat: show cited source previews in Android chat (#148904)
-  - feat(ui): show compact previews for cited sources (#148431)
-  - feat: unify Tauri setup and Quick Chat themes (#148808)
-  - feat(codex): report session catalog failure phases (#148735)
+  - feat: show matches for ambiguous automation names (#150082)
+  - feat(plugins): manage multiple plugins in one CLI command (#149910)
+  - feat(apps): preview pending requests in native sidebars (#149811)
+  - feat(triage): add Kimi Code and Qwen Code handoffs (#149877)
+  - feat(process): support awaited stdout consumers (#149442)
+  - feat(macos): default to web with experimental native experience (#149763)
+  - feat(triage): support Muse, Grok, and Cursor handoffs (#149703)
+  - feat(worktrees): select repository-defined source checkouts (#149581)
 - Fixes and constraints:
-  - fix(mac): keep chat preferences in their active profile (#146966)
-  - fix(gateway): revoke in-flight hook admission on reload (#147785)
-  - fix(triage): report an update failure as repaired only with resolution evidence (#148968)
-  - fix(workboard): preserve ready-card history on idle dispatch (#149160)
-  - fix(ui): stop invisible list polling in minimized diagnostics (#149151)
-  - fix(ui): make short chat links ready for drafting sooner (#149070)
-  - fix(worktrees): avoid repeated Git scans during cleanup (#148919)
-  - perf(plugins): defer provider registration completeness preparation (#148912)
+  - fix(codex): bound session catalog memory and preserve tied rows (#150112)
+  - fix(plugins): retain CLI backend capabilities when inspecting disabled plugins (#149837)
+  - fix(subagents): preserve private completion follow-through and cancellation (#150065)
+  - fix(memory): observe cached SQLite results in forget payload guard (#150090)
+  - perf: separate async audit worker imports (#150107)
+  - fix(plugins): validate source reloads under Bun (#150088)
+  - fix(codex): stop service refresh from repeatedly aborting startup (#149365)
+  - fix(discord): join accepted introductions on shutdown (#150072)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

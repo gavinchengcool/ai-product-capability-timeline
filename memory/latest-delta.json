@@ -1,91 +1,91 @@
 {
-  "generatedAt": "2026-09-15T23:46:10.189852+08:00",
+  "generatedAt": "2026-09-16T23:38:11.649386+08:00",
   "window": {
-    "start_local": "2026-09-14T23:46:10.189852+08:00",
-    "end_local": "2026-09-15T23:46:10.189852+08:00",
-    "start_utc": "2026-09-14T15:46:10Z",
-    "end_utc": "2026-09-15T15:46:10Z"
+    "start_local": "2026-09-15T23:38:11.649386+08:00",
+    "end_local": "2026-09-16T23:38:11.649386+08:00",
+    "start_utc": "2026-09-15T15:38:11Z",
+    "end_utc": "2026-09-16T15:38:11Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 389755,
-    "forks": 81927,
-    "open_issues": 7404,
-    "pushed_at": "2026-09-15T15:46:00Z"
+    "stars": 389844,
+    "forks": 81947,
+    "open_issues": 7474,
+    "pushed_at": "2026-09-16T15:37:32Z"
   },
   "summary": {
-    "commitCount": 558,
+    "commitCount": 572,
     "releaseCount": 0,
     "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 389755,
-    "forks": 81927,
-    "openIssues": 7404
+    "stars": 389844,
+    "forks": 81947,
+    "openIssues": 7474
   },
   "releases": [],
   "featureItems": [
-    "feat(bench): add multi-agent Gateway workloads (#149178)",
-    "feat: give agents scoped, resumable session inventories (#148051)",
-    "feat(qa): retain evidence across repeated scenarios and retries (#147756)",
-    "feat: show cited source previews in macOS and iOS chat (#148906)",
-    "feat: show cited source previews in Android chat (#148904)",
-    "feat(ui): show compact previews for cited sources (#148431)",
-    "feat: unify Tauri setup and Quick Chat themes (#148808)",
-    "feat(codex): report session catalog failure phases (#148735)"
+    "feat: show matches for ambiguous automation names (#150082)",
+    "feat(plugins): manage multiple plugins in one CLI command (#149910)",
+    "feat(apps): preview pending requests in native sidebars (#149811)",
+    "feat(triage): add Kimi Code and Qwen Code handoffs (#149877)",
+    "feat(process): support awaited stdout consumers (#149442)",
+    "feat(macos): default to web with experimental native experience (#149763)",
+    "feat(triage): support Muse, Grok, and Cursor handoffs (#149703)",
+    "feat(worktrees): select repository-defined source checkouts (#149581)"
   ],
   "fixItems": [
-    "fix(mac): keep chat preferences in their active profile (#146966)",
-    "fix(gateway): revoke in-flight hook admission on reload (#147785)",
-    "fix(triage): report an update failure as repaired only with resolution evidence (#148968)",
-    "fix(workboard): preserve ready-card history on idle dispatch (#149160)",
-    "fix(ui): stop invisible list polling in minimized diagnostics (#149151)",
-    "fix(ui): make short chat links ready for drafting sooner (#149070)",
-    "fix(worktrees): avoid repeated Git scans during cleanup (#148919)",
-    "perf(plugins): defer provider registration completeness preparation (#148912)"
+    "fix(codex): bound session catalog memory and preserve tied rows (#150112)",
+    "fix(plugins): retain CLI backend capabilities when inspecting disabled plugins (#149837)",
+    "fix(subagents): preserve private completion follow-through and cancellation (#150065)",
+    "fix(memory): observe cached SQLite results in forget payload guard (#150090)",
+    "perf: separate async audit worker imports (#150107)",
+    "fix(plugins): validate source reloads under Bun (#150088)",
+    "fix(codex): stop service refresh from repeatedly aborting startup (#149365)",
+    "fix(discord): join accepted introductions on shutdown (#150072)"
   ],
   "topScopes": [
     {
       "scope": "fix",
-      "count": 60
-    },
-    {
-      "scope": "test",
-      "count": 50
+      "count": 68
     },
     {
       "scope": "ui",
-      "count": 45
+      "count": 65
     },
     {
-      "scope": "improve",
-      "count": 27
-    },
-    {
-      "scope": "plugins",
-      "count": 22
+      "scope": "test",
+      "count": 28
     },
     {
       "scope": "gateway",
-      "count": 20
+      "count": 24
     },
     {
-      "scope": "refactor",
-      "count": 18
+      "scope": "improve",
+      "count": 24
+    },
+    {
+      "scope": "sessions",
+      "count": 19
+    },
+    {
+      "scope": "agents",
+      "count": 19
     },
     {
       "scope": "ci",
-      "count": 18
+      "count": 19
     }
   ],
   "headlineCommits": [
-    "improve(tooling): reuse env names across baseline ratchets (#149186)",
-    "fix(mac): keep chat preferences in their active profile (#146966)",
-    "test: reuse compiled CLI for Doctor workspace checks (#149163)",
-    "feat(bench): add multi-agent Gateway workloads (#149178)",
-    "fix(gateway): revoke in-flight hook admission on reload (#147785)",
-    "fix(triage): report an update failure as repaired only with resolution evidence (#148968)",
-    "test(qa): preserve native process in runtime fixtures (#149164)",
-    "fix(workboard): preserve ready-card history on idle dispatch (#149160)"
+    "fix(codex): bound session catalog memory and preserve tied rows (#150112)",
+    "fix(plugins): retain CLI backend capabilities when inspecting disabled plugins (#149837)",
+    "test(ui): move off session link before expanding table (#150120)",
+    "fix(subagents): preserve private completion follow-through and cancellation (#150065)",
+    "fix(memory): observe cached SQLite results in forget payload guard (#150090)",
+    "perf: separate async audit worker imports (#150107)",
+    "test(ui): release quota catalog when recovery succeeds (#150115)",
+    "feat: show matches for ambiguous automation names (#150082)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 }
