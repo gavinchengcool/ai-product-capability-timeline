@@ -1,91 +1,98 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-09-16T23:38:11.649386+08:00",
+  "generatedAt": "2026-09-18T23:17:16.736017+08:00",
   "window": {
-    "start_local": "2026-09-15T23:38:11.649386+08:00",
-    "end_local": "2026-09-16T23:38:11.649386+08:00",
-    "start_utc": "2026-09-15T15:38:11Z",
-    "end_utc": "2026-09-16T15:38:11Z"
+    "start_local": "2026-09-17T23:17:16.736017+08:00",
+    "end_local": "2026-09-18T23:17:16.736017+08:00",
+    "start_utc": "2026-09-17T15:17:16Z",
+    "end_utc": "2026-09-18T15:17:16Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 389844,
-    "forks": 81947,
-    "open_issues": 7474,
-    "pushed_at": "2026-09-16T15:37:32Z"
+    "stars": 390030,
+    "forks": 81998,
+    "open_issues": 7832,
+    "pushed_at": "2026-09-18T15:17:14Z"
   },
   "summary": {
-    "commitCount": 572,
-    "releaseCount": 0,
-    "stableReleaseCount": 0,
+    "commitCount": 511,
+    "releaseCount": 1,
+    "stableReleaseCount": 1,
     "betaReleaseCount": 0,
-    "stars": 389844,
-    "forks": 81947,
-    "openIssues": 7474
+    "stars": 390030,
+    "forks": 81998,
+    "openIssues": 7832
   },
-  "releases": [],
+  "releases": [
+    {
+      "tag_name": "v2026.7.33",
+      "published_at": "2026-09-18T05:33:23Z",
+      "name": "openclaw 2026.7.33",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.33"
+    }
+  ],
   "featureItems": [
-    "feat: show matches for ambiguous automation names (#150082)",
-    "feat(plugins): manage multiple plugins in one CLI command (#149910)",
-    "feat(apps): preview pending requests in native sidebars (#149811)",
-    "feat(triage): add Kimi Code and Qwen Code handoffs (#149877)",
-    "feat(process): support awaited stdout consumers (#149442)",
-    "feat(macos): default to web with experimental native experience (#149763)",
-    "feat(triage): support Muse, Grok, and Cursor handoffs (#149703)",
-    "feat(worktrees): select repository-defined source checkouts (#149581)"
+    "feat: automatically update idle headless nodes (#151545)",
+    "feat(ci): compare installed Gateway startup packages (#151697)",
+    "feat(ci): measure installed Gateway startup on Windows (#151635)",
+    "feat(sessions): select cloud OS and size when spawning sessions (#148034)",
+    "improve(ui): smooth new messages and chat scrolling (#148447)",
+    "feat(mcp): sign in to connectors from Settings (#151023)",
+    "feat(browser): expose native extension tab IDs (#138338)"
   ],
   "fixItems": [
-    "fix(codex): bound session catalog memory and preserve tied rows (#150112)",
-    "fix(plugins): retain CLI backend capabilities when inspecting disabled plugins (#149837)",
-    "fix(subagents): preserve private completion follow-through and cancellation (#150065)",
-    "fix(memory): observe cached SQLite results in forget payload guard (#150090)",
-    "perf: separate async audit worker imports (#150107)",
-    "fix(plugins): validate source reloads under Bun (#150088)",
-    "fix(codex): stop service refresh from repeatedly aborting startup (#149365)",
-    "fix(discord): join accepted introductions on shutdown (#150072)"
+    "fix(release): allow an explicit operator soak waiver for stable publication (#151880)",
+    "fix(plugin-sdk): count inherited message helper export (#151881)",
+    "fix(plugin-sdk): keep new outbound helpers off deprecated facade (#151816)",
+    "fix(test): finish cleanup for configured session stores (#151719)",
+    "fix(codex): keep healthy apps available when plugins are missing (#150255)",
+    "fix(ci): lint CommonJS CLI diagnostics with type-aware checks (#151385)",
+    "fix(tasks): report failed metadata reads instead of empty pages (#151310)",
+    "fix(codex): unify turn activation and cleanup ownership (#151753)"
   ],
   "topScopes": [
     {
       "scope": "fix",
-      "count": 68
-    },
-    {
-      "scope": "ui",
-      "count": 65
+      "count": 79
     },
     {
       "scope": "test",
-      "count": 28
+      "count": 45
+    },
+    {
+      "scope": "ui",
+      "count": 42
     },
     {
       "scope": "gateway",
-      "count": 24
+      "count": 32
+    },
+    {
+      "scope": "codex",
+      "count": 21
     },
     {
       "scope": "improve",
-      "count": 24
-    },
-    {
-      "scope": "sessions",
-      "count": 19
-    },
-    {
-      "scope": "agents",
-      "count": 19
+      "count": 20
     },
     {
       "scope": "ci",
-      "count": 19
+      "count": 18
+    },
+    {
+      "scope": "update",
+      "count": 15
     }
   ],
   "headlineCommits": [
-    "fix(codex): bound session catalog memory and preserve tied rows (#150112)",
-    "fix(plugins): retain CLI backend capabilities when inspecting disabled plugins (#149837)",
-    "test(ui): move off session link before expanding table (#150120)",
-    "fix(subagents): preserve private completion follow-through and cancellation (#150065)",
-    "fix(memory): observe cached SQLite results in forget payload guard (#150090)",
-    "perf: separate async audit worker imports (#150107)",
-    "test(ui): release quota catalog when recovery succeeds (#150115)",
-    "feat: show matches for ambiguous automation names (#150082)"
+    "fix(release): allow an explicit operator soak waiver for stable publication (#151880)",
+    "fix(plugin-sdk): count inherited message helper export (#151881)",
+    "fix(plugin-sdk): keep new outbound helpers off deprecated facade (#151816)",
+    "fix(test): finish cleanup for configured session stores (#151719)",
+    "refactor: assemble recovery text from normalized payload facts (#151817)",
+    "fix(codex): keep healthy apps available when plugins are missing (#150255)",
+    "fix(ci): lint CommonJS CLI diagnostics with type-aware checks (#151385)",
+    "fix(tasks): report failed metadata reads instead of empty pages (#151310)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

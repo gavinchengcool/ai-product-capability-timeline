@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-09-16T23:38:28+08:00
-- Requested window: 2026-09-15 to 2026-09-16
+- Generated at: 2026-09-18T23:17:33+08:00
+- Requested window: 2026-09-17 to 2026-09-18
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,30 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-09-15 to 2026-09-16
-- Generated at: 2026-09-16T23:38:11.649386+08:00
-- 窗口: 2026-09-15 至 2026-09-16
-- GitHub 增量: 572 commits / 0 releases
-- 最近 push: 2026-09-16
+- Window: 2026-09-17 to 2026-09-18
+- Generated at: 2026-09-18T23:17:16.736017+08:00
+- 窗口: 2026-09-17 至 2026-09-18
+- GitHub 增量: 511 commits / 1 releases
+- 最近 push: 2026-09-18
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat: show matches for ambiguous automation names (#150082)
-  - feat(plugins): manage multiple plugins in one CLI command (#149910)
-  - feat(apps): preview pending requests in native sidebars (#149811)
-  - feat(triage): add Kimi Code and Qwen Code handoffs (#149877)
-  - feat(process): support awaited stdout consumers (#149442)
-  - feat(macos): default to web with experimental native experience (#149763)
-  - feat(triage): support Muse, Grok, and Cursor handoffs (#149703)
-  - feat(worktrees): select repository-defined source checkouts (#149581)
+  - feat: automatically update idle headless nodes (#151545)
+  - feat(ci): compare installed Gateway startup packages (#151697)
+  - feat(ci): measure installed Gateway startup on Windows (#151635)
+  - feat(sessions): select cloud OS and size when spawning sessions (#148034)
+  - improve(ui): smooth new messages and chat scrolling (#148447)
+  - feat(mcp): sign in to connectors from Settings (#151023)
+  - feat(browser): expose native extension tab IDs (#138338)
 - Fixes and constraints:
-  - fix(codex): bound session catalog memory and preserve tied rows (#150112)
-  - fix(plugins): retain CLI backend capabilities when inspecting disabled plugins (#149837)
-  - fix(subagents): preserve private completion follow-through and cancellation (#150065)
-  - fix(memory): observe cached SQLite results in forget payload guard (#150090)
-  - perf: separate async audit worker imports (#150107)
-  - fix(plugins): validate source reloads under Bun (#150088)
-  - fix(codex): stop service refresh from repeatedly aborting startup (#149365)
-  - fix(discord): join accepted introductions on shutdown (#150072)
+  - fix(release): allow an explicit operator soak waiver for stable publication (#151880)
+  - fix(plugin-sdk): count inherited message helper export (#151881)
+  - fix(plugin-sdk): keep new outbound helpers off deprecated facade (#151816)
+  - fix(test): finish cleanup for configured session stores (#151719)
+  - fix(codex): keep healthy apps available when plugins are missing (#150255)
+  - fix(ci): lint CommonJS CLI diagnostics with type-aware checks (#151385)
+  - fix(tasks): report failed metadata reads instead of empty pages (#151310)
+  - fix(codex): unify turn activation and cleanup ownership (#151753)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
