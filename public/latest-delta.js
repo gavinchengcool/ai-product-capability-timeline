@@ -1,98 +1,106 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-09-18T23:17:16.736017+08:00",
+  "generatedAt": "2026-09-19T22:54:11.767636+08:00",
   "window": {
-    "start_local": "2026-09-17T23:17:16.736017+08:00",
-    "end_local": "2026-09-18T23:17:16.736017+08:00",
-    "start_utc": "2026-09-17T15:17:16Z",
-    "end_utc": "2026-09-18T15:17:16Z"
+    "start_local": "2026-09-18T22:54:11.767636+08:00",
+    "end_local": "2026-09-19T22:54:11.767636+08:00",
+    "start_utc": "2026-09-18T14:54:11Z",
+    "end_utc": "2026-09-19T14:54:11Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 390030,
-    "forks": 81998,
-    "open_issues": 7832,
-    "pushed_at": "2026-09-18T15:17:14Z"
+    "stars": 390077,
+    "forks": 82022,
+    "open_issues": 8061,
+    "pushed_at": "2026-09-19T14:54:00Z"
   },
   "summary": {
-    "commitCount": 511,
-    "releaseCount": 1,
+    "commitCount": 614,
+    "releaseCount": 2,
     "stableReleaseCount": 1,
-    "betaReleaseCount": 0,
-    "stars": 390030,
-    "forks": 81998,
-    "openIssues": 7832
+    "betaReleaseCount": 1,
+    "stars": 390077,
+    "forks": 82022,
+    "openIssues": 8061
   },
   "releases": [
     {
-      "tag_name": "v2026.7.33",
-      "published_at": "2026-09-18T05:33:23Z",
-      "name": "openclaw 2026.7.33",
+      "tag_name": "v2026.9.5",
+      "published_at": "2026-09-19T01:55:23Z",
+      "name": "openclaw 2026.9.5",
       "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.33"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.5"
+    },
+    {
+      "tag_name": "linux-stable",
+      "published_at": "2026-09-19T05:00:44Z",
+      "name": "OpenClaw Linux update channel",
+      "prerelease": true,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/linux-stable"
     }
   ],
   "featureItems": [
-    "feat: automatically update idle headless nodes (#151545)",
-    "feat(ci): compare installed Gateway startup packages (#151697)",
-    "feat(ci): measure installed Gateway startup on Windows (#151635)",
-    "feat(sessions): select cloud OS and size when spawning sessions (#148034)",
-    "improve(ui): smooth new messages and chat scrolling (#148447)",
-    "feat(mcp): sign in to connectors from Settings (#151023)",
-    "feat(browser): expose native extension tab IDs (#138338)"
+    "feat(usage): restore history and add creator breakdowns (#152528)",
+    "feat: let agents apply plugin and personal themes (#152460)",
+    "feat: show favicons and social previews on browser cards (#152324)",
+    "feat(release): check publication gates before dispatch (#152470)",
+    "feat: read GitHub issues, pull requests, and commits beside chat (#148464)",
+    "feat: read and edit agent documents on a paired node (#150734)",
+    "feat(ui): show session workspace types in the sidebar (#152316)",
+    "feat(ci): split security review into maintainer and SecOps tiers (#152415)"
   ],
   "fixItems": [
-    "fix(release): allow an explicit operator soak waiver for stable publication (#151880)",
-    "fix(plugin-sdk): count inherited message helper export (#151881)",
-    "fix(plugin-sdk): keep new outbound helpers off deprecated facade (#151816)",
-    "fix(test): finish cleanup for configured session stores (#151719)",
-    "fix(codex): keep healthy apps available when plugins are missing (#150255)",
-    "fix(ci): lint CommonJS CLI diagnostics with type-aware checks (#151385)",
-    "fix(tasks): report failed metadata reads instead of empty pages (#151310)",
-    "fix(codex): unify turn activation and cleanup ownership (#151753)"
+    "fix: avoid blocking Gateway requests during skill archive commits (#152816)",
+    "fix(nodes): finish worker cleanup when stopping environments (#152896)",
+    "fix(memory): retain forget lineage through writer admission (#152902)",
+    "fix(update): preserve slow Gateway startup during verification (#151663)",
+    "fix(ci): reuse REST metadata for rollup attachment (#152893)",
+    "fix(desktop): skip non-Node shims for the computer host (#151933)",
+    "fix(imessage): move startup watermark reads off the Gateway thread (#152837)",
+    "perf(doctor): reuse read-only worker for pending migrations (#152793)"
   ],
   "topScopes": [
     {
       "scope": "fix",
-      "count": 79
-    },
-    {
-      "scope": "test",
-      "count": 45
+      "count": 70
     },
     {
       "scope": "ui",
-      "count": 42
+      "count": 61
+    },
+    {
+      "scope": "test",
+      "count": 49
     },
     {
       "scope": "gateway",
-      "count": 32
+      "count": 36
     },
     {
-      "scope": "codex",
+      "scope": "release",
       "count": 21
     },
     {
-      "scope": "improve",
-      "count": 20
-    },
-    {
-      "scope": "ci",
+      "scope": "codex",
       "count": 18
     },
     {
-      "scope": "update",
-      "count": 15
+      "scope": "agents",
+      "count": 17
+    },
+    {
+      "scope": "improve",
+      "count": 16
     }
   ],
   "headlineCommits": [
-    "fix(release): allow an explicit operator soak waiver for stable publication (#151880)",
-    "fix(plugin-sdk): count inherited message helper export (#151881)",
-    "fix(plugin-sdk): keep new outbound helpers off deprecated facade (#151816)",
-    "fix(test): finish cleanup for configured session stores (#151719)",
-    "refactor: assemble recovery text from normalized payload facts (#151817)",
-    "fix(codex): keep healthy apps available when plugins are missing (#150255)",
-    "fix(ci): lint CommonJS CLI diagnostics with type-aware checks (#151385)",
-    "fix(tasks): report failed metadata reads instead of empty pages (#151310)"
+    "fix: avoid blocking Gateway requests during skill archive commits (#152816)",
+    "fix(nodes): finish worker cleanup when stopping environments (#152896)",
+    "test: reuse completion choice fixtures (#152773)",
+    "fix(memory): retain forget lineage through writer admission (#152902)",
+    "fix(update): preserve slow Gateway startup during verification (#151663)",
+    "fix(ci): reuse REST metadata for rollup attachment (#152893)",
+    "fix(desktop): skip non-Node shims for the computer host (#151933)",
+    "fix(imessage): move startup watermark reads off the Gateway thread (#152837)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
