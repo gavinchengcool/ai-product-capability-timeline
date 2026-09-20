@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-09-19T22:54:32+08:00
-- Requested window: 2026-09-18 to 2026-09-19
+- Generated at: 2026-09-20T22:58:23+08:00
+- Requested window: 2026-09-19 to 2026-09-20
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-09-18 to 2026-09-19
-- Generated at: 2026-09-19T22:54:11.767636+08:00
-- 窗口: 2026-09-18 至 2026-09-19
-- GitHub 增量: 614 commits / 2 releases
-- 最近 push: 2026-09-19
+- Window: 2026-09-19 to 2026-09-20
+- Generated at: 2026-09-20T22:58:07.000391+08:00
+- 窗口: 2026-09-19 至 2026-09-20
+- GitHub 增量: 527 commits / 0 releases
+- 最近 push: 2026-09-20
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(usage): restore history and add creator breakdowns (#152528)
-  - feat: let agents apply plugin and personal themes (#152460)
-  - feat: show favicons and social previews on browser cards (#152324)
-  - feat(release): check publication gates before dispatch (#152470)
-  - feat: read GitHub issues, pull requests, and commits beside chat (#148464)
-  - feat: read and edit agent documents on a paired node (#150734)
-  - feat(ui): show session workspace types in the sidebar (#152316)
-  - feat(ci): split security review into maintainer and SecOps tiers (#152415)
+  - feat(ui): identify cloud providers in session pickers (#153288)
+  - feat: enable desktop sharing by default with Mac and Tauri settings (#153359)
+  - feat: select and manage installed agents from Models (#150224)
+  - feat(onnx): add local decision models and provider guides (#153476)
+  - feat(ui): add theme-matched app backgrounds (#153583)
+  - feat(ui): open and archive sessions with keyboard shortcuts (#153537)
+  - feat: redesign Tauri Quick Chat and simplify effort controls (#153564)
+  - feat(skills): use remote workspace skills in agent tasks (#153126)
 - Fixes and constraints:
-  - fix: avoid blocking Gateway requests during skill archive commits (#152816)
-  - fix(nodes): finish worker cleanup when stopping environments (#152896)
-  - fix(memory): retain forget lineage through writer admission (#152902)
-  - fix(update): preserve slow Gateway startup during verification (#151663)
-  - fix(ci): reuse REST metadata for rollup attachment (#152893)
-  - fix(desktop): skip non-Node shims for the computer host (#151933)
-  - fix(imessage): move startup watermark reads off the Gateway thread (#152837)
-  - perf(doctor): reuse read-only worker for pending migrations (#152793)
+  - fix: preserve follow-through after subagent batches finish (#153441)
+  - fix(test): restore requester fixtures through durable owners (#153763)
+  - fix(ui): restore plain image loading skeletons (#153269)
+  - perf(test): narrow workflow guard evidence imports (#153747)
+  - fix(ui): explain GitHub detection under the Gateway account (#153754)
+  - fix: show dev update revisions with GitHub comparison links (#153740)
+  - fix: close agent database readers between test files (#153749)
+  - fix: hide internal prompts when Talk steers an active run (#153698)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

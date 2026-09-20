@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-19T22:54:32+08:00",
+  "generatedAt": "2026-09-20T22:58:23+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-09-18T22:54:32+08:00",
-    "end_local": "2026-09-19T22:54:32+08:00"
+    "start_local": "2026-09-19T22:58:23+08:00",
+    "end_local": "2026-09-20T22:58:23+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-09-19T22:54:11.767636+08:00",
+      "generatedAt": "2026-09-20T22:58:07.000391+08:00",
       "window": {
-        "start_local": "2026-09-18T22:54:11.767636+08:00",
-        "end_local": "2026-09-19T22:54:11.767636+08:00",
-        "start_utc": "2026-09-18T14:54:11Z",
-        "end_utc": "2026-09-19T14:54:11Z"
+        "start_local": "2026-09-19T22:58:07.000391+08:00",
+        "end_local": "2026-09-20T22:58:07.000391+08:00",
+        "start_utc": "2026-09-19T14:58:07Z",
+        "end_utc": "2026-09-20T14:58:07Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-09-18 至 2026-09-19"
+          "value": "2026-09-19 至 2026-09-20"
         },
         {
           "label": "GitHub 增量",
-          "value": "614 commits / 2 releases"
+          "value": "527 commits / 0 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-09-19"
+          "value": "2026-09-20"
         },
         {
           "label": "来源",
@@ -52,73 +52,58 @@
         }
       ],
       "featureItems": [
-        "feat(usage): restore history and add creator breakdowns (#152528)",
-        "feat: let agents apply plugin and personal themes (#152460)",
-        "feat: show favicons and social previews on browser cards (#152324)",
-        "feat(release): check publication gates before dispatch (#152470)",
-        "feat: read GitHub issues, pull requests, and commits beside chat (#148464)",
-        "feat: read and edit agent documents on a paired node (#150734)",
-        "feat(ui): show session workspace types in the sidebar (#152316)",
-        "feat(ci): split security review into maintainer and SecOps tiers (#152415)"
+        "feat(ui): identify cloud providers in session pickers (#153288)",
+        "feat: enable desktop sharing by default with Mac and Tauri settings (#153359)",
+        "feat: select and manage installed agents from Models (#150224)",
+        "feat(onnx): add local decision models and provider guides (#153476)",
+        "feat(ui): add theme-matched app backgrounds (#153583)",
+        "feat(ui): open and archive sessions with keyboard shortcuts (#153537)",
+        "feat: redesign Tauri Quick Chat and simplify effort controls (#153564)",
+        "feat(skills): use remote workspace skills in agent tasks (#153126)"
       ],
       "fixItems": [
-        "fix: avoid blocking Gateway requests during skill archive commits (#152816)",
-        "fix(nodes): finish worker cleanup when stopping environments (#152896)",
-        "fix(memory): retain forget lineage through writer admission (#152902)",
-        "fix(update): preserve slow Gateway startup during verification (#151663)",
-        "fix(ci): reuse REST metadata for rollup attachment (#152893)",
-        "fix(desktop): skip non-Node shims for the computer host (#151933)",
-        "fix(imessage): move startup watermark reads off the Gateway thread (#152837)",
-        "perf(doctor): reuse read-only worker for pending migrations (#152793)"
+        "fix: preserve follow-through after subagent batches finish (#153441)",
+        "fix(test): restore requester fixtures through durable owners (#153763)",
+        "fix(ui): restore plain image loading skeletons (#153269)",
+        "perf(test): narrow workflow guard evidence imports (#153747)",
+        "fix(ui): explain GitHub detection under the Gateway account (#153754)",
+        "fix: show dev update revisions with GitHub comparison links (#153740)",
+        "fix: close agent database readers between test files (#153749)",
+        "fix: hide internal prompts when Talk steers an active run (#153698)"
       ],
-      "releases": [
-        {
-          "tag_name": "v2026.9.5",
-          "published_at": "2026-09-19T01:55:23Z",
-          "name": "openclaw 2026.9.5",
-          "prerelease": false,
-          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.5"
-        },
-        {
-          "tag_name": "linux-stable",
-          "published_at": "2026-09-19T05:00:44Z",
-          "name": "OpenClaw Linux update channel",
-          "prerelease": true,
-          "html_url": "https://github.com/openclaw/openclaw/releases/tag/linux-stable"
-        }
-      ],
+      "releases": [],
       "topScopes": [
         {
           "scope": "fix",
-          "count": 70
+          "count": 80
         },
         {
           "scope": "ui",
-          "count": 61
+          "count": 53
         },
         {
           "scope": "test",
-          "count": 49
+          "count": 47
         },
         {
           "scope": "gateway",
-          "count": 36
+          "count": 24
         },
         {
-          "scope": "release",
+          "scope": "update",
           "count": 21
         },
         {
-          "scope": "codex",
+          "scope": "agents",
           "count": 18
         },
         {
-          "scope": "agents",
-          "count": 17
+          "scope": "refactor",
+          "count": 16
         },
         {
-          "scope": "improve",
-          "count": 16
+          "scope": "tasks",
+          "count": 13
         }
       ],
       "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
