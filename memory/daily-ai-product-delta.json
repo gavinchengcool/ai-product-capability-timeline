@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-20T22:58:23+08:00",
+  "generatedAt": "2026-09-22T01:15:55+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-09-19T22:58:23+08:00",
-    "end_local": "2026-09-20T22:58:23+08:00"
+    "start_local": "2026-09-21T01:15:55+08:00",
+    "end_local": "2026-09-22T01:15:55+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-09-20T22:58:07.000391+08:00",
+      "generatedAt": "2026-09-22T01:15:38.794536+08:00",
       "window": {
-        "start_local": "2026-09-19T22:58:07.000391+08:00",
-        "end_local": "2026-09-20T22:58:07.000391+08:00",
-        "start_utc": "2026-09-19T14:58:07Z",
-        "end_utc": "2026-09-20T14:58:07Z"
+        "start_local": "2026-09-21T01:15:38.794536+08:00",
+        "end_local": "2026-09-22T01:15:38.794536+08:00",
+        "start_utc": "2026-09-20T17:15:38Z",
+        "end_utc": "2026-09-21T17:15:38Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-09-19 至 2026-09-20"
+          "value": "2026-09-21 至 2026-09-22"
         },
         {
           "label": "GitHub 增量",
-          "value": "527 commits / 0 releases"
+          "value": "662 commits / 1 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-09-20"
+          "value": "2026-09-21"
         },
         {
           "label": "来源",
@@ -52,58 +52,66 @@
         }
       ],
       "featureItems": [
-        "feat(ui): identify cloud providers in session pickers (#153288)",
-        "feat: enable desktop sharing by default with Mac and Tauri settings (#153359)",
-        "feat: select and manage installed agents from Models (#150224)",
-        "feat(onnx): add local decision models and provider guides (#153476)",
-        "feat(ui): add theme-matched app backgrounds (#153583)",
-        "feat(ui): open and archive sessions with keyboard shortcuts (#153537)",
-        "feat: redesign Tauri Quick Chat and simplify effort controls (#153564)",
-        "feat(skills): use remote workspace skills in agent tasks (#153126)"
+        "feat: personalize USER bootstrap with authenticated profiles (#153966)",
+        "feat(ui): make optional-question dismissal reversible (#154692)",
+        "feat(ui): add crown, santa, party, and pumpkin to the avatar-hat catalog (#154774)",
+        "feat(ui): recover unfinished optional-question drafts (#154473)",
+        "feat(ui): let themes drop the mascot, set status words, add critters and avatar hats (#154518)",
+        "feat(search): configure providers and verify search in Settings (#154135)",
+        "feat(macos): support architecture-specific releases (#154595)",
+        "feat(ui): add composer corner-shape theme token (#154583)"
       ],
       "fixItems": [
-        "fix: preserve follow-through after subagent batches finish (#153441)",
-        "fix(test): restore requester fixtures through durable owners (#153763)",
-        "fix(ui): restore plain image loading skeletons (#153269)",
-        "perf(test): narrow workflow guard evidence imports (#153747)",
-        "fix(ui): explain GitHub detection under the Gateway account (#153754)",
-        "fix: show dev update revisions with GitHub comparison links (#153740)",
-        "fix: close agent database readers between test files (#153749)",
-        "fix: hide internal prompts when Talk steers an active run (#153698)"
+        "fix(agents): restore session history selector guidance (#154890)",
+        "perf(test): defer harness runtime imports in shared fixtures (#154966)",
+        "perf(gateway): coalesce session pull request refresh bursts (#154944)",
+        "fix(tasks): avoid worker OOM on large waiting flows (#154972)",
+        "fix(ci): trim unused Node matrix output fields",
+        "fix(process): release cleanup when a relay cannot spawn",
+        "fix(tests): stabilize launcher startup fixtures (#154981)",
+        "fix(ci): select dependent tests for tooling fixture edits (#154934)"
       ],
-      "releases": [],
+      "releases": [
+        {
+          "tag_name": "v2026.7.35",
+          "published_at": "2026-09-21T13:14:04Z",
+          "name": "openclaw 2026.7.35",
+          "prerelease": false,
+          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.35"
+        }
+      ],
       "topScopes": [
         {
           "scope": "fix",
-          "count": 80
+          "count": 95
         },
         {
           "scope": "ui",
-          "count": 53
+          "count": 89
         },
         {
           "scope": "test",
-          "count": 47
+          "count": 54
+        },
+        {
+          "scope": "ci",
+          "count": 32
         },
         {
           "scope": "gateway",
           "count": 24
         },
         {
-          "scope": "update",
-          "count": 21
-        },
-        {
           "scope": "agents",
+          "count": 23
+        },
+        {
+          "scope": "improve",
+          "count": 20
+        },
+        {
+          "scope": "update",
           "count": 18
-        },
-        {
-          "scope": "refactor",
-          "count": 16
-        },
-        {
-          "scope": "tasks",
-          "count": 13
         }
       ],
       "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"

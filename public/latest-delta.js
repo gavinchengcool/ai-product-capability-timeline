@@ -1,91 +1,99 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-09-20T22:58:07.000391+08:00",
+  "generatedAt": "2026-09-22T01:15:38.794536+08:00",
   "window": {
-    "start_local": "2026-09-19T22:58:07.000391+08:00",
-    "end_local": "2026-09-20T22:58:07.000391+08:00",
-    "start_utc": "2026-09-19T14:58:07Z",
-    "end_utc": "2026-09-20T14:58:07Z"
+    "start_local": "2026-09-21T01:15:38.794536+08:00",
+    "end_local": "2026-09-22T01:15:38.794536+08:00",
+    "start_utc": "2026-09-20T17:15:38Z",
+    "end_utc": "2026-09-21T17:15:38Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 390142,
-    "forks": 82040,
-    "open_issues": 8071,
-    "pushed_at": "2026-09-20T14:54:59Z"
+    "stars": 390203,
+    "forks": 82079,
+    "open_issues": 8334,
+    "pushed_at": "2026-09-21T17:13:21Z"
   },
   "summary": {
-    "commitCount": 527,
-    "releaseCount": 0,
-    "stableReleaseCount": 0,
+    "commitCount": 662,
+    "releaseCount": 1,
+    "stableReleaseCount": 1,
     "betaReleaseCount": 0,
-    "stars": 390142,
-    "forks": 82040,
-    "openIssues": 8071
+    "stars": 390203,
+    "forks": 82079,
+    "openIssues": 8334
   },
-  "releases": [],
+  "releases": [
+    {
+      "tag_name": "v2026.7.35",
+      "published_at": "2026-09-21T13:14:04Z",
+      "name": "openclaw 2026.7.35",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.35"
+    }
+  ],
   "featureItems": [
-    "feat(ui): identify cloud providers in session pickers (#153288)",
-    "feat: enable desktop sharing by default with Mac and Tauri settings (#153359)",
-    "feat: select and manage installed agents from Models (#150224)",
-    "feat(onnx): add local decision models and provider guides (#153476)",
-    "feat(ui): add theme-matched app backgrounds (#153583)",
-    "feat(ui): open and archive sessions with keyboard shortcuts (#153537)",
-    "feat: redesign Tauri Quick Chat and simplify effort controls (#153564)",
-    "feat(skills): use remote workspace skills in agent tasks (#153126)"
+    "feat: personalize USER bootstrap with authenticated profiles (#153966)",
+    "feat(ui): make optional-question dismissal reversible (#154692)",
+    "feat(ui): add crown, santa, party, and pumpkin to the avatar-hat catalog (#154774)",
+    "feat(ui): recover unfinished optional-question drafts (#154473)",
+    "feat(ui): let themes drop the mascot, set status words, add critters and avatar hats (#154518)",
+    "feat(search): configure providers and verify search in Settings (#154135)",
+    "feat(macos): support architecture-specific releases (#154595)",
+    "feat(ui): add composer corner-shape theme token (#154583)"
   ],
   "fixItems": [
-    "fix: preserve follow-through after subagent batches finish (#153441)",
-    "fix(test): restore requester fixtures through durable owners (#153763)",
-    "fix(ui): restore plain image loading skeletons (#153269)",
-    "perf(test): narrow workflow guard evidence imports (#153747)",
-    "fix(ui): explain GitHub detection under the Gateway account (#153754)",
-    "fix: show dev update revisions with GitHub comparison links (#153740)",
-    "fix: close agent database readers between test files (#153749)",
-    "fix: hide internal prompts when Talk steers an active run (#153698)"
+    "fix(agents): restore session history selector guidance (#154890)",
+    "perf(test): defer harness runtime imports in shared fixtures (#154966)",
+    "perf(gateway): coalesce session pull request refresh bursts (#154944)",
+    "fix(tasks): avoid worker OOM on large waiting flows (#154972)",
+    "fix(ci): trim unused Node matrix output fields",
+    "fix(process): release cleanup when a relay cannot spawn",
+    "fix(tests): stabilize launcher startup fixtures (#154981)",
+    "fix(ci): select dependent tests for tooling fixture edits (#154934)"
   ],
   "topScopes": [
     {
       "scope": "fix",
-      "count": 80
+      "count": 95
     },
     {
       "scope": "ui",
-      "count": 53
+      "count": 89
     },
     {
       "scope": "test",
-      "count": 47
+      "count": 54
+    },
+    {
+      "scope": "ci",
+      "count": 32
     },
     {
       "scope": "gateway",
       "count": 24
     },
     {
-      "scope": "update",
-      "count": 21
-    },
-    {
       "scope": "agents",
+      "count": 23
+    },
+    {
+      "scope": "improve",
+      "count": 20
+    },
+    {
+      "scope": "update",
       "count": 18
-    },
-    {
-      "scope": "refactor",
-      "count": 16
-    },
-    {
-      "scope": "tasks",
-      "count": 13
     }
   ],
   "headlineCommits": [
-    "fix: preserve follow-through after subagent batches finish (#153441)",
-    "fix(test): restore requester fixtures through durable owners (#153763)",
-    "fix(ui): restore plain image loading skeletons (#153269)",
-    "chore(ui): refresh control ui locales (#153762)",
-    "perf(test): narrow workflow guard evidence imports (#153747)",
-    "fix(ui): explain GitHub detection under the Gateway account (#153754)",
-    "fix: show dev update revisions with GitHub comparison links (#153740)",
-    "refactor: reuse shared Fleet removal test fixtures (#153759)"
+    "fix(agents): restore session history selector guidance (#154890)",
+    "improve(ci): shorten complete lint and typecheck jobs (#154150)",
+    "ci: parallelize remaining extension Vitest lanes (#154823)",
+    "test(media): measure current memory in base64 guards (#154808)",
+    "perf(test): defer harness runtime imports in shared fixtures (#154966)",
+    "perf(gateway): coalesce session pull request refresh bursts (#154944)",
+    "test: drive supervisor byte activity with a controlled clock (#154997)",
+    "test(plugins): isolate clocked record-cache contention fixture (#154780)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

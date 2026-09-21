@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-09-20T22:58:23+08:00
-- Requested window: 2026-09-19 to 2026-09-20
+- Generated at: 2026-09-22T01:15:55+08:00
+- Requested window: 2026-09-21 to 2026-09-22
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-09-19 to 2026-09-20
-- Generated at: 2026-09-20T22:58:07.000391+08:00
-- 窗口: 2026-09-19 至 2026-09-20
-- GitHub 增量: 527 commits / 0 releases
-- 最近 push: 2026-09-20
+- Window: 2026-09-21 to 2026-09-22
+- Generated at: 2026-09-22T01:15:38.794536+08:00
+- 窗口: 2026-09-21 至 2026-09-22
+- GitHub 增量: 662 commits / 1 releases
+- 最近 push: 2026-09-21
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(ui): identify cloud providers in session pickers (#153288)
-  - feat: enable desktop sharing by default with Mac and Tauri settings (#153359)
-  - feat: select and manage installed agents from Models (#150224)
-  - feat(onnx): add local decision models and provider guides (#153476)
-  - feat(ui): add theme-matched app backgrounds (#153583)
-  - feat(ui): open and archive sessions with keyboard shortcuts (#153537)
-  - feat: redesign Tauri Quick Chat and simplify effort controls (#153564)
-  - feat(skills): use remote workspace skills in agent tasks (#153126)
+  - feat: personalize USER bootstrap with authenticated profiles (#153966)
+  - feat(ui): make optional-question dismissal reversible (#154692)
+  - feat(ui): add crown, santa, party, and pumpkin to the avatar-hat catalog (#154774)
+  - feat(ui): recover unfinished optional-question drafts (#154473)
+  - feat(ui): let themes drop the mascot, set status words, add critters and avatar hats (#154518)
+  - feat(search): configure providers and verify search in Settings (#154135)
+  - feat(macos): support architecture-specific releases (#154595)
+  - feat(ui): add composer corner-shape theme token (#154583)
 - Fixes and constraints:
-  - fix: preserve follow-through after subagent batches finish (#153441)
-  - fix(test): restore requester fixtures through durable owners (#153763)
-  - fix(ui): restore plain image loading skeletons (#153269)
-  - perf(test): narrow workflow guard evidence imports (#153747)
-  - fix(ui): explain GitHub detection under the Gateway account (#153754)
-  - fix: show dev update revisions with GitHub comparison links (#153740)
-  - fix: close agent database readers between test files (#153749)
-  - fix: hide internal prompts when Talk steers an active run (#153698)
+  - fix(agents): restore session history selector guidance (#154890)
+  - perf(test): defer harness runtime imports in shared fixtures (#154966)
+  - perf(gateway): coalesce session pull request refresh bursts (#154944)
+  - fix(tasks): avoid worker OOM on large waiting flows (#154972)
+  - fix(ci): trim unused Node matrix output fields
+  - fix(process): release cleanup when a relay cannot spawn
+  - fix(tests): stabilize launcher startup fixtures (#154981)
+  - fix(ci): select dependent tests for tooling fixture edits (#154934)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
