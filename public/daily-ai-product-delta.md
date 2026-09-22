@@ -1,6 +1,6 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-09-22T01:15:55+08:00
+- Generated at: 2026-09-22T23:49:08+08:00
 - Requested window: 2026-09-21 to 2026-09-22
 - Coverage: 6 products
 - Live 24h feeds: 1
@@ -11,30 +11,30 @@
 
 - Freshness: live_24h
 - Window: 2026-09-21 to 2026-09-22
-- Generated at: 2026-09-22T01:15:38.794536+08:00
+- Generated at: 2026-09-22T23:48:50.409293+08:00
 - 窗口: 2026-09-21 至 2026-09-22
-- GitHub 增量: 662 commits / 1 releases
-- 最近 push: 2026-09-21
+- GitHub 增量: 581 commits / 0 releases
+- 最近 push: 2026-09-22
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat: personalize USER bootstrap with authenticated profiles (#153966)
-  - feat(ui): make optional-question dismissal reversible (#154692)
-  - feat(ui): add crown, santa, party, and pumpkin to the avatar-hat catalog (#154774)
-  - feat(ui): recover unfinished optional-question drafts (#154473)
-  - feat(ui): let themes drop the mascot, set status words, add critters and avatar hats (#154518)
-  - feat(search): configure providers and verify search in Settings (#154135)
-  - feat(macos): support architecture-specific releases (#154595)
-  - feat(ui): add composer corner-shape theme token (#154583)
+  - feat: compare Kitchen Sink Gateway resource costs (#155734)
+  - feat(browser): unify local Chrome setup across desktop and terminal (#152057)
+  - feat: colour and animate the highest effort settings (#155402)
+  - feat: enable automatic Code Mode for preferred models (#155614)
+  - feat(discord-e2e): check bot readiness without QA Lab (#155598)
+  - feat(browser): support Lightpanda connection-scoped CDP replies (#154342)
+  - feat(slack-e2e): check shared user OAuth without QA Lab (#155547)
+  - feat(ui): show social hover cards for public GitHub links (#155482)
 - Fixes and constraints:
-  - fix(agents): restore session history selector guidance (#154890)
-  - perf(test): defer harness runtime imports in shared fixtures (#154966)
-  - perf(gateway): coalesce session pull request refresh bursts (#154944)
-  - fix(tasks): avoid worker OOM on large waiting flows (#154972)
-  - fix(ci): trim unused Node matrix output fields
-  - fix(process): release cleanup when a relay cannot spawn
-  - fix(tests): stabilize launcher startup fixtures (#154981)
-  - fix(ci): select dependent tests for tooling fixture edits (#154934)
+  - fix: keep plugin queues bound to their selected session (#155714)
+  - fix(ci): wait for reset hook entry and join fixture cleanup (#155770)
+  - fix(gateway): retain question requester authority through settlement (#155335)
+  - perf(gateway): move progress-card reads off the main thread (#153857)
+  - fix(mattermost): preserve post state during partial edits (#151255)
+  - fix: deliver subagent results after the requester yields (#155348)
+  - fix(tasks): throttle unchanged attempt activity (#155745)
+  - fix(msteams): keep channel-thread reactions in their thread (#155713)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

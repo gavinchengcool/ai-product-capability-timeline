@@ -1,99 +1,99 @@
 # OpenClaw Weekly Update
 
-生成时间：2026-09-22T01:15:38.794536+08:00
+生成时间：2026-09-22T23:48:50.409293+08:00
 
 ## Window
 
-- Start: 2026-09-21T01:15:38.794536+08:00
-- End: 2026-09-22T01:15:38.794536+08:00
+- Start: 2026-09-21T23:48:50.409293+08:00
+- End: 2026-09-22T23:48:50.409293+08:00
 - Repo: `openclaw/openclaw`
 
 ## At A Glance
 
-- Commits in window: 662
-- Releases in window: 1
-- Stable releases in window: 1
+- Commits in window: 581
+- Releases in window: 0
+- Stable releases in window: 0
 - Beta releases in window: 0
-- Repo stars at scan time: 390203
-- Repo forks at scan time: 82079
+- Repo stars at scan time: 390254
+- Repo forks at scan time: 82085
 
 ## New Capability Signals
 
-- feat: personalize USER bootstrap with authenticated profiles (#153966)
-- feat(ui): make optional-question dismissal reversible (#154692)
-- feat(ui): add crown, santa, party, and pumpkin to the avatar-hat catalog (#154774)
-- feat(ui): recover unfinished optional-question drafts (#154473)
-- feat(ui): let themes drop the mascot, set status words, add critters and avatar hats (#154518)
-- feat(search): configure providers and verify search in Settings (#154135)
-- feat(macos): support architecture-specific releases (#154595)
-- feat(ui): add composer corner-shape theme token (#154583)
-- feat: validate visitor permissions before granting access (#153987)
-- feat(release): add non-Latest extended-stable releases (#154515)
-- improve(ui): support multiline question answers (#154432)
-- feat: add session-scoped operator grants (#154392)
-- feat(ui): mention people in the quick composer (#154061)
-- feat: verify GitHub credit from trusted OIDC claims (#153940)
-- feat(sessions): support explicit local placement for child sessions (#153912)
+- feat: compare Kitchen Sink Gateway resource costs (#155734)
+- feat(browser): unify local Chrome setup across desktop and terminal (#152057)
+- feat: colour and animate the highest effort settings (#155402)
+- feat: enable automatic Code Mode for preferred models (#155614)
+- feat(discord-e2e): check bot readiness without QA Lab (#155598)
+- feat(browser): support Lightpanda connection-scoped CDP replies (#154342)
+- feat(slack-e2e): check shared user OAuth without QA Lab (#155547)
+- feat(ui): show social hover cards for public GitHub links (#155482)
+- feat(xiaomi): add MiMo V2.6 support
+- feat(qa): add Convex-backed Discord and Slack E2E skills (#153471)
+- feat(xai): add Grok 4.7 support (#155379)
+- feat: run Code Mode on Node or isolated QuickJS (#154522)
+- feat(crabbox): run native CUA in macOS and Windows cloud desktops (#152060)
+- feat(gateway): download inline artifacts over HTTPS (#154673)
+- feat(plugins): show installation progress and lifecycle feedback (#150235)
 
 ## Important Fixes And Hardening
 
-- fix(agents): restore session history selector guidance (#154890)
-- perf(test): defer harness runtime imports in shared fixtures (#154966)
-- perf(gateway): coalesce session pull request refresh bursts (#154944)
-- fix(tasks): avoid worker OOM on large waiting flows (#154972)
-- fix(ci): trim unused Node matrix output fields
-- fix(process): release cleanup when a relay cannot spawn
-- fix(tests): stabilize launcher startup fixtures (#154981)
-- fix(ci): select dependent tests for tooling fixture edits (#154934)
-- fix(state): report lease heartbeat startup phases (#154779)
-- fix: remove stale progress cards after Telegram topic replies (#154939)
-- perf(gateway): reduce event-loop work during placement reporting (#154695)
-- fix(ollama): preserve measured context for compaction prechecks (#154819)
-- fix(ui): keep Secrets row actions inside narrow tables (#154586)
-- fix(test): release seeded stores before Gateway startup
-- fix(agents): preserve indented code in streamed replies (#153587)
+- fix: keep plugin queues bound to their selected session (#155714)
+- fix(ci): wait for reset hook entry and join fixture cleanup (#155770)
+- fix(gateway): retain question requester authority through settlement (#155335)
+- perf(gateway): move progress-card reads off the main thread (#153857)
+- fix(mattermost): preserve post state during partial edits (#151255)
+- fix: deliver subagent results after the requester yields (#155348)
+- fix(tasks): throttle unchanged attempt activity (#155745)
+- fix(msteams): keep channel-thread reactions in their thread (#155713)
+- fix(ui): pause passive polling in hidden tabs (#155617)
+- fix(ui): preserve saved project after discovery failure (#155619)
+- fix(ci): join archive placement fixtures before teardown (#155751)
+- fix(matrix): keep bot discovery off the Gateway thread (#152122)
+- fix(agents): reconcile late requester recovery receipts (#155357)
+- fix: isolate triage fixture acquisition and cleanup (#155736)
+- fix: Claude MCP turns abort before tool timeout (#155663)
 
 ## Releases This Week
 
-- `v2026.7.35` | stable | 2026-09-21T13:14:04Z | openclaw 2026.7.35
+- No GitHub releases were published in this window.
 
 ## Most Active Change Scopes
 
-- `fix`: 95
-- `ui`: 89
-- `test`: 54
-- `ci`: 32
-- `gateway`: 24
-- `agents`: 23
-- `improve`: 20
-- `update`: 18
-- `plugins`: 13
-- `refactor`: 13
-- `tasks`: 12
-- `config`: 12
+- `fix`: 65
+- `ui`: 60
+- `test`: 55
+- `gateway`: 53
+- `ci`: 33
+- `update`: 23
+- `agents`: 18
+- `doctor`: 13
+- `codex`: 12
+- `plugins`: 12
+- `tests`: 10
+- `qa`: 10
 
 ## Recent Commit Headlines
 
-- 2026-09-21T17:12:03Z | fix(agents): restore session history selector guidance (#154890)
-- 2026-09-21T17:11:25Z | improve(ci): shorten complete lint and typecheck jobs (#154150)
-- 2026-09-21T17:11:05Z | ci: parallelize remaining extension Vitest lanes (#154823)
-- 2026-09-21T17:10:05Z | test(media): measure current memory in base64 guards (#154808)
-- 2026-09-21T17:08:17Z | perf(test): defer harness runtime imports in shared fixtures (#154966)
-- 2026-09-21T17:04:54Z | perf(gateway): coalesce session pull request refresh bursts (#154944)
-- 2026-09-21T17:03:21Z | test: drive supervisor byte activity with a controlled clock (#154997)
-- 2026-09-21T17:03:06Z | test(plugins): isolate clocked record-cache contention fixture (#154780)
-- 2026-09-21T17:00:55Z | fix(tasks): avoid worker OOM on large waiting flows (#154972)
-- 2026-09-21T16:23:42Z | fix(ci): trim unused Node matrix output fields
-- 2026-09-21T14:05:57Z | test(process): exercise relay startup through its explicit mode
-- 2026-09-21T13:38:50Z | fix(process): release cleanup when a relay cannot spawn
-- 2026-09-21T13:39:49Z | test(ui): await canonical roster before involvement assertions
-- 2026-09-21T16:51:21Z | fix(tests): stabilize launcher startup fixtures (#154981)
-- 2026-09-21T16:48:09Z | fix(ci): select dependent tests for tooling fixture edits (#154934)
-- 2026-09-21T16:46:09Z | fix(state): report lease heartbeat startup phases (#154779)
-- 2026-09-21T16:31:09Z | fix: remove stale progress cards after Telegram topic replies (#154939)
-- 2026-09-21T16:27:57Z | test(agents): validate rendered code in directive delivery
-- 2026-09-21T16:19:46Z | perf(gateway): reduce event-loop work during placement reporting (#154695)
-- 2026-09-21T16:19:06Z | fix(ollama): preserve measured context for compaction prechecks (#154819)
+- 2026-09-22T15:37:46Z | fix: keep plugin queues bound to their selected session (#155714)
+- 2026-09-22T15:36:13Z | chore(i18n): refresh native locales (#155571)
+- 2026-09-22T15:35:11Z | fix(ci): wait for reset hook entry and join fixture cleanup (#155770)
+- 2026-09-22T15:23:58Z | test: move subagent fixtures to module boundaries (#155727)
+- 2026-09-22T15:22:27Z | fix(gateway): retain question requester authority through settlement (#155335)
+- 2026-09-22T15:19:26Z | perf(gateway): move progress-card reads off the main thread (#153857)
+- 2026-09-22T15:18:29Z | fix(mattermost): preserve post state during partial edits (#151255)
+- 2026-09-22T15:17:15Z | fix: deliver subagent results after the requester yields (#155348)
+- 2026-09-22T15:16:25Z | test(codex): reuse dynamic tool request fixtures (#155776)
+- 2026-09-22T15:14:43Z | test(gateway): isolate embedding cleanup fixture state (#155703)
+- 2026-09-22T15:05:19Z | test(gateway): join archive lifecycle fixture requests
+- 2026-09-22T15:07:28Z | test(bedrock): keep embedding SDK mocks scoped (#154722)
+- 2026-09-22T15:04:28Z | fix(tasks): throttle unchanged attempt activity (#155745)
+- 2026-09-22T15:00:46Z | fix(msteams): keep channel-thread reactions in their thread (#155713)
+- 2026-09-22T15:00:28Z | refactor(agents): prepare interrupted-turn replay asynchronously (#153432)
+- 2026-09-22T14:55:23Z | fix(ui): pause passive polling in hidden tabs (#155617)
+- 2026-09-22T14:47:57Z | improve(android): keep chat photos outside text bubbles (#155338)
+- 2026-09-22T14:46:05Z | fix(ui): preserve saved project after discovery failure (#155619)
+- 2026-09-22T14:40:32Z | feat: compare Kitchen Sink Gateway resource costs (#155734)
+- 2026-09-22T14:26:10Z | test(gateway): arm clock-jump claim after readiness (#155748)
 
 ## Sources
 

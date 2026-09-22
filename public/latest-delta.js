@@ -1,99 +1,91 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-09-22T01:15:38.794536+08:00",
+  "generatedAt": "2026-09-22T23:48:50.409293+08:00",
   "window": {
-    "start_local": "2026-09-21T01:15:38.794536+08:00",
-    "end_local": "2026-09-22T01:15:38.794536+08:00",
-    "start_utc": "2026-09-20T17:15:38Z",
-    "end_utc": "2026-09-21T17:15:38Z"
+    "start_local": "2026-09-21T23:48:50.409293+08:00",
+    "end_local": "2026-09-22T23:48:50.409293+08:00",
+    "start_utc": "2026-09-21T15:48:50Z",
+    "end_utc": "2026-09-22T15:48:50Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 390203,
-    "forks": 82079,
-    "open_issues": 8334,
-    "pushed_at": "2026-09-21T17:13:21Z"
+    "stars": 390254,
+    "forks": 82085,
+    "open_issues": 8289,
+    "pushed_at": "2026-09-22T15:45:43Z"
   },
   "summary": {
-    "commitCount": 662,
-    "releaseCount": 1,
-    "stableReleaseCount": 1,
+    "commitCount": 581,
+    "releaseCount": 0,
+    "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 390203,
-    "forks": 82079,
-    "openIssues": 8334
+    "stars": 390254,
+    "forks": 82085,
+    "openIssues": 8289
   },
-  "releases": [
-    {
-      "tag_name": "v2026.7.35",
-      "published_at": "2026-09-21T13:14:04Z",
-      "name": "openclaw 2026.7.35",
-      "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.35"
-    }
-  ],
+  "releases": [],
   "featureItems": [
-    "feat: personalize USER bootstrap with authenticated profiles (#153966)",
-    "feat(ui): make optional-question dismissal reversible (#154692)",
-    "feat(ui): add crown, santa, party, and pumpkin to the avatar-hat catalog (#154774)",
-    "feat(ui): recover unfinished optional-question drafts (#154473)",
-    "feat(ui): let themes drop the mascot, set status words, add critters and avatar hats (#154518)",
-    "feat(search): configure providers and verify search in Settings (#154135)",
-    "feat(macos): support architecture-specific releases (#154595)",
-    "feat(ui): add composer corner-shape theme token (#154583)"
+    "feat: compare Kitchen Sink Gateway resource costs (#155734)",
+    "feat(browser): unify local Chrome setup across desktop and terminal (#152057)",
+    "feat: colour and animate the highest effort settings (#155402)",
+    "feat: enable automatic Code Mode for preferred models (#155614)",
+    "feat(discord-e2e): check bot readiness without QA Lab (#155598)",
+    "feat(browser): support Lightpanda connection-scoped CDP replies (#154342)",
+    "feat(slack-e2e): check shared user OAuth without QA Lab (#155547)",
+    "feat(ui): show social hover cards for public GitHub links (#155482)"
   ],
   "fixItems": [
-    "fix(agents): restore session history selector guidance (#154890)",
-    "perf(test): defer harness runtime imports in shared fixtures (#154966)",
-    "perf(gateway): coalesce session pull request refresh bursts (#154944)",
-    "fix(tasks): avoid worker OOM on large waiting flows (#154972)",
-    "fix(ci): trim unused Node matrix output fields",
-    "fix(process): release cleanup when a relay cannot spawn",
-    "fix(tests): stabilize launcher startup fixtures (#154981)",
-    "fix(ci): select dependent tests for tooling fixture edits (#154934)"
+    "fix: keep plugin queues bound to their selected session (#155714)",
+    "fix(ci): wait for reset hook entry and join fixture cleanup (#155770)",
+    "fix(gateway): retain question requester authority through settlement (#155335)",
+    "perf(gateway): move progress-card reads off the main thread (#153857)",
+    "fix(mattermost): preserve post state during partial edits (#151255)",
+    "fix: deliver subagent results after the requester yields (#155348)",
+    "fix(tasks): throttle unchanged attempt activity (#155745)",
+    "fix(msteams): keep channel-thread reactions in their thread (#155713)"
   ],
   "topScopes": [
     {
       "scope": "fix",
-      "count": 95
+      "count": 65
     },
     {
       "scope": "ui",
-      "count": 89
+      "count": 60
     },
     {
       "scope": "test",
-      "count": 54
-    },
-    {
-      "scope": "ci",
-      "count": 32
+      "count": 55
     },
     {
       "scope": "gateway",
-      "count": 24
+      "count": 53
     },
     {
-      "scope": "agents",
-      "count": 23
-    },
-    {
-      "scope": "improve",
-      "count": 20
+      "scope": "ci",
+      "count": 33
     },
     {
       "scope": "update",
+      "count": 23
+    },
+    {
+      "scope": "agents",
       "count": 18
+    },
+    {
+      "scope": "doctor",
+      "count": 13
     }
   ],
   "headlineCommits": [
-    "fix(agents): restore session history selector guidance (#154890)",
-    "improve(ci): shorten complete lint and typecheck jobs (#154150)",
-    "ci: parallelize remaining extension Vitest lanes (#154823)",
-    "test(media): measure current memory in base64 guards (#154808)",
-    "perf(test): defer harness runtime imports in shared fixtures (#154966)",
-    "perf(gateway): coalesce session pull request refresh bursts (#154944)",
-    "test: drive supervisor byte activity with a controlled clock (#154997)",
-    "test(plugins): isolate clocked record-cache contention fixture (#154780)"
+    "fix: keep plugin queues bound to their selected session (#155714)",
+    "chore(i18n): refresh native locales (#155571)",
+    "fix(ci): wait for reset hook entry and join fixture cleanup (#155770)",
+    "test: move subagent fixtures to module boundaries (#155727)",
+    "fix(gateway): retain question requester authority through settlement (#155335)",
+    "perf(gateway): move progress-card reads off the main thread (#153857)",
+    "fix(mattermost): preserve post state during partial edits (#151255)",
+    "fix: deliver subagent results after the requester yields (#155348)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

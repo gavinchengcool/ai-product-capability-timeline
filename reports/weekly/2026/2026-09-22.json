@@ -1,201 +1,183 @@
 {
-  "generated_at": "2026-09-22T01:15:38.794536+08:00",
+  "generated_at": "2026-09-22T23:48:50.409293+08:00",
   "window": {
-    "start_local": "2026-09-21T01:15:38.794536+08:00",
-    "end_local": "2026-09-22T01:15:38.794536+08:00",
-    "start_utc": "2026-09-20T17:15:38Z",
-    "end_utc": "2026-09-21T17:15:38Z"
+    "start_local": "2026-09-21T23:48:50.409293+08:00",
+    "end_local": "2026-09-22T23:48:50.409293+08:00",
+    "start_utc": "2026-09-21T15:48:50Z",
+    "end_utc": "2026-09-22T15:48:50Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 390203,
-    "forks": 82079,
-    "open_issues": 8334,
-    "pushed_at": "2026-09-21T17:13:21Z"
+    "stars": 390254,
+    "forks": 82085,
+    "open_issues": 8289,
+    "pushed_at": "2026-09-22T15:45:43Z"
   },
-  "releases_in_window": [
-    {
-      "tag_name": "v2026.7.35",
-      "published_at": "2026-09-21T13:14:04Z",
-      "name": "openclaw 2026.7.35",
-      "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.35"
-    }
-  ],
-  "commit_count": 662,
+  "releases_in_window": [],
+  "commit_count": 581,
   "commit_headlines": [
-    "fix(agents): restore session history selector guidance (#154890)",
-    "improve(ci): shorten complete lint and typecheck jobs (#154150)",
-    "ci: parallelize remaining extension Vitest lanes (#154823)",
-    "test(media): measure current memory in base64 guards (#154808)",
-    "perf(test): defer harness runtime imports in shared fixtures (#154966)",
-    "perf(gateway): coalesce session pull request refresh bursts (#154944)",
-    "test: drive supervisor byte activity with a controlled clock (#154997)",
-    "test(plugins): isolate clocked record-cache contention fixture (#154780)",
-    "fix(tasks): avoid worker OOM on large waiting flows (#154972)",
-    "fix(ci): trim unused Node matrix output fields",
-    "test(process): exercise relay startup through its explicit mode",
-    "fix(process): release cleanup when a relay cannot spawn",
-    "test(ui): await canonical roster before involvement assertions",
-    "fix(tests): stabilize launcher startup fixtures (#154981)",
-    "fix(ci): select dependent tests for tooling fixture edits (#154934)",
-    "fix(state): report lease heartbeat startup phases (#154779)",
-    "fix: remove stale progress cards after Telegram topic replies (#154939)",
-    "test(agents): validate rendered code in directive delivery",
-    "perf(gateway): reduce event-loop work during placement reporting (#154695)",
-    "fix(ollama): preserve measured context for compaction prechecks (#154819)",
-    "test(release): remove duplicate child flag assertion (#154665)",
-    "fix(ui): keep Secrets row actions inside narrow tables (#154586)",
-    "chore(test): model ongoing Discord recording speech (#154913)",
-    "fix(test): release seeded stores before Gateway startup",
-    "fix(agents): preserve indented code in streamed replies (#153587)",
-    "test(ui): skip hover delay in preview tooltip lifecycle proof (#154914)",
-    "chore: stabilize Control UI browser test timers (#154821)",
-    "fix(qa): validate Slack run artifacts and approval identities (#117344)",
-    "refactor(agents): keep spawn overrides in test support (#154867)",
-    "refactor: move type-only tests to compiler contracts (#154841)",
-    "feat: personalize USER bootstrap with authenticated profiles (#153966)",
-    "refactor(skills): prepare embedded library entries asynchronously (#148679)",
-    "fix(state): surface the renewal failure behind \"state lease heartbeat exited\" (#154878)",
-    "fix(plugins): add missing categories and artwork for FaceTime, GitHub, ONNX, TypeSafe (#154888)",
-    "fix(ui): prevent editing unread agent files (#154910)",
-    "feat(ui): make optional-question dismissal reversible (#154692)",
-    "test(transcripts): keep lifecycle lease clocks real (#154902)",
-    "fix(packaging): omit unused native Bash parsers from npm installs (#154843)",
-    "chore(imessage): clean up fixture state directories (#154900)",
-    "ci: run the whole CLI group with measured workers on the 32-vCPU class (#154883)",
-    "fix(msteams): keep skipped messages within their channel thread (#154825)",
-    "feat(ui): add crown, santa, party, and pumpkin to the avatar-hat catalog (#154774)",
-    "refactor(setup): use canonical baseline setup owners (#154894)",
-    "test(cron): await queued manual delivery completion",
-    "fix(ci): use tooling worker capacity (#153820)",
-    "test(agents): drain suspension fixture databases before deletion (#154898)",
-    "fix(ui): remember fast mode for the next session (#154690)",
-    "test(agents): isolate FIFO read watchdog (#123647)",
-    "fix(gateway): release retired session selection graphs (#154590)",
-    "perf(gateway): avoid HEAD probes during session PR polling (#154826)"
+    "fix: keep plugin queues bound to their selected session (#155714)",
+    "chore(i18n): refresh native locales (#155571)",
+    "fix(ci): wait for reset hook entry and join fixture cleanup (#155770)",
+    "test: move subagent fixtures to module boundaries (#155727)",
+    "fix(gateway): retain question requester authority through settlement (#155335)",
+    "perf(gateway): move progress-card reads off the main thread (#153857)",
+    "fix(mattermost): preserve post state during partial edits (#151255)",
+    "fix: deliver subagent results after the requester yields (#155348)",
+    "test(codex): reuse dynamic tool request fixtures (#155776)",
+    "test(gateway): isolate embedding cleanup fixture state (#155703)",
+    "test(gateway): join archive lifecycle fixture requests",
+    "test(bedrock): keep embedding SDK mocks scoped (#154722)",
+    "fix(tasks): throttle unchanged attempt activity (#155745)",
+    "fix(msteams): keep channel-thread reactions in their thread (#155713)",
+    "refactor(agents): prepare interrupted-turn replay asynchronously (#153432)",
+    "fix(ui): pause passive polling in hidden tabs (#155617)",
+    "improve(android): keep chat photos outside text bubbles (#155338)",
+    "fix(ui): preserve saved project after discovery failure (#155619)",
+    "feat: compare Kitchen Sink Gateway resource costs (#155734)",
+    "test(gateway): arm clock-jump claim after readiness (#155748)",
+    "chore(ui): refresh control ui locales (#155700)",
+    "fix(ci): join archive placement fixtures before teardown (#155751)",
+    "fix(matrix): keep bot discovery off the Gateway thread (#152122)",
+    "fix(agents): reconcile late requester recovery receipts (#155357)",
+    "test(gateway): guard embeddings HTTP fixture lifetimes",
+    "fix: isolate triage fixture acquisition and cleanup (#155736)",
+    "refactor(sessions): hydrate saved transcripts off thread (#153325)",
+    "fix: Claude MCP turns abort before tool timeout (#155663)",
+    "fix(goals): pause terminal failures and clarify goal states (#155694)",
+    "fix(test): preserve watcher errors when diagnostic capture fails (#155383)",
+    "ci: move native runtime proofs to release validation (#155606)",
+    "fix(auth): decouple compaction from profile rotation (#155204)",
+    "fix(agents): admit compaction outside retired plugin generations (#151232)",
+    "perf(ui): reduce automatic session list refetches (#155705)",
+    "test: avoid unused source repos in release input fixtures (#155733)",
+    "refactor: reuse Gateway fixtures for noncommitting config tests (#155709)",
+    "fix(android): isolate camera captures and preview staged photos (#153033)",
+    "feat(browser): unify local Chrome setup across desktop and terminal (#152057)",
+    "fix: meeting browser operations expire early or overrun after clock changes (#155648)",
+    "refactor: move skill upload database work to the shared worker (#155283)",
+    "fix(plugins): preserve retirement failure attribution (#154729)",
+    "fix(cli): keep state-custody tests independent of short deadlines (#155294)",
+    "fix(test): reuse prepared Gateway for stream completion",
+    "fix(files): keep skill and worker downloads inside staging (#154570)",
+    "fix(codex): stabilize startup retry race tests (#155612)",
+    "fix(auth): keep session pin changes within the selected agent (#155717)",
+    "fix(matrix): restore progress updates when runtime context is unavailable (#155354)",
+    "improve(plugins): skip activation planning for retained provider owners (#155711)",
+    "fix(ci): retain passing-job timings when main CI fails (#155718)",
+    "fix: revoke cached access when role-change result delivery fails (#152835)"
   ],
   "feature_items": [
-    "feat: personalize USER bootstrap with authenticated profiles (#153966)",
-    "feat(ui): make optional-question dismissal reversible (#154692)",
-    "feat(ui): add crown, santa, party, and pumpkin to the avatar-hat catalog (#154774)",
-    "feat(ui): recover unfinished optional-question drafts (#154473)",
-    "feat(ui): let themes drop the mascot, set status words, add critters and avatar hats (#154518)",
-    "feat(search): configure providers and verify search in Settings (#154135)",
-    "feat(macos): support architecture-specific releases (#154595)",
-    "feat(ui): add composer corner-shape theme token (#154583)",
-    "feat: validate visitor permissions before granting access (#153987)",
-    "feat(release): add non-Latest extended-stable releases (#154515)",
-    "improve(ui): support multiline question answers (#154432)",
-    "feat: add session-scoped operator grants (#154392)",
-    "feat(ui): mention people in the quick composer (#154061)",
-    "feat: verify GitHub credit from trusted OIDC claims (#153940)",
-    "feat(sessions): support explicit local placement for child sessions (#153912)",
-    "feat(typesafe): support local System One decision models (#154059)",
-    "feat: use paired-node workspaces for attachments, Memory, and Skills (#154087)",
-    "feat(ui): replace sidebar session menu button with Archive (#154144)",
-    "feat(ui): move and remember the System busyness panel (#154207)",
-    "feat(reports): show session links in each member report (#154192)",
-    "feat: enable structured Tool Search by default (#154068)",
-    "feat(ui): refresh work progress without adding a chat message (#154044)",
-    "feat(reports): link team activity to work sessions (#154020)",
-    "feat(skills): install and inspect skills on the workspace host (#153438)",
-    "feat(acpx): add native Copilot CLI model selection (#153799)",
-    "feat(node-host): support native session and policy ownership (#150344) thanks @giodl73-repo",
-    "feat(ui): paste images into command-palette sessions (#153238)"
+    "feat: compare Kitchen Sink Gateway resource costs (#155734)",
+    "feat(browser): unify local Chrome setup across desktop and terminal (#152057)",
+    "feat: colour and animate the highest effort settings (#155402)",
+    "feat: enable automatic Code Mode for preferred models (#155614)",
+    "feat(discord-e2e): check bot readiness without QA Lab (#155598)",
+    "feat(browser): support Lightpanda connection-scoped CDP replies (#154342)",
+    "feat(slack-e2e): check shared user OAuth without QA Lab (#155547)",
+    "feat(ui): show social hover cards for public GitHub links (#155482)",
+    "feat(xiaomi): add MiMo V2.6 support",
+    "feat(qa): add Convex-backed Discord and Slack E2E skills (#153471)",
+    "feat(xai): add Grok 4.7 support (#155379)",
+    "feat: run Code Mode on Node or isolated QuickJS (#154522)",
+    "feat(crabbox): run native CUA in macOS and Windows cloud desktops (#152060)",
+    "feat(gateway): download inline artifacts over HTTPS (#154673)",
+    "feat(plugins): show installation progress and lifecycle feedback (#150235)",
+    "feat(ui): show optional-answer delivery and retry state (#154486)",
+    "feat(themes): support plugin hats and critter artwork (#154935)"
   ],
   "fix_items": [
-    "fix(agents): restore session history selector guidance (#154890)",
-    "perf(test): defer harness runtime imports in shared fixtures (#154966)",
-    "perf(gateway): coalesce session pull request refresh bursts (#154944)",
-    "fix(tasks): avoid worker OOM on large waiting flows (#154972)",
-    "fix(ci): trim unused Node matrix output fields",
-    "fix(process): release cleanup when a relay cannot spawn",
-    "fix(tests): stabilize launcher startup fixtures (#154981)",
-    "fix(ci): select dependent tests for tooling fixture edits (#154934)",
-    "fix(state): report lease heartbeat startup phases (#154779)",
-    "fix: remove stale progress cards after Telegram topic replies (#154939)",
-    "perf(gateway): reduce event-loop work during placement reporting (#154695)",
-    "fix(ollama): preserve measured context for compaction prechecks (#154819)",
-    "fix(ui): keep Secrets row actions inside narrow tables (#154586)",
-    "fix(test): release seeded stores before Gateway startup",
-    "fix(agents): preserve indented code in streamed replies (#153587)",
-    "fix(qa): validate Slack run artifacts and approval identities (#117344)",
-    "fix(state): surface the renewal failure behind \"state lease heartbeat exited\" (#154878)",
-    "fix(plugins): add missing categories and artwork for FaceTime, GitHub, ONNX, TypeSafe (#154888)",
-    "fix(ui): prevent editing unread agent files (#154910)",
-    "fix(packaging): omit unused native Bash parsers from npm installs (#154843)",
-    "fix(msteams): keep skipped messages within their channel thread (#154825)",
-    "fix(ci): use tooling worker capacity (#153820)",
-    "fix(ui): remember fast mode for the next session (#154690)",
-    "fix(gateway): release retired session selection graphs (#154590)",
-    "perf(gateway): avoid HEAD probes during session PR polling (#154826)",
-    "fix(agents): preserve leading code indentation in final reply payloads (#154857)",
-    "fix: automation history claims no runs when loading fails (#154871)",
-    "perf(gateway): move operator approval persistence into workers (#154619)",
-    "fix: preserve code blank lines when formatted replies split (#154875)",
-    "fix: reduce initial session preview delay (#154817)"
+    "fix: keep plugin queues bound to their selected session (#155714)",
+    "fix(ci): wait for reset hook entry and join fixture cleanup (#155770)",
+    "fix(gateway): retain question requester authority through settlement (#155335)",
+    "perf(gateway): move progress-card reads off the main thread (#153857)",
+    "fix(mattermost): preserve post state during partial edits (#151255)",
+    "fix: deliver subagent results after the requester yields (#155348)",
+    "fix(tasks): throttle unchanged attempt activity (#155745)",
+    "fix(msteams): keep channel-thread reactions in their thread (#155713)",
+    "fix(ui): pause passive polling in hidden tabs (#155617)",
+    "fix(ui): preserve saved project after discovery failure (#155619)",
+    "fix(ci): join archive placement fixtures before teardown (#155751)",
+    "fix(matrix): keep bot discovery off the Gateway thread (#152122)",
+    "fix(agents): reconcile late requester recovery receipts (#155357)",
+    "fix: isolate triage fixture acquisition and cleanup (#155736)",
+    "fix: Claude MCP turns abort before tool timeout (#155663)",
+    "fix(goals): pause terminal failures and clarify goal states (#155694)",
+    "fix(test): preserve watcher errors when diagnostic capture fails (#155383)",
+    "fix(auth): decouple compaction from profile rotation (#155204)",
+    "fix(agents): admit compaction outside retired plugin generations (#151232)",
+    "perf(ui): reduce automatic session list refetches (#155705)",
+    "fix(android): isolate camera captures and preview staged photos (#153033)",
+    "fix: meeting browser operations expire early or overrun after clock changes (#155648)",
+    "fix(plugins): preserve retirement failure attribution (#154729)",
+    "fix(cli): keep state-custody tests independent of short deadlines (#155294)",
+    "fix(test): reuse prepared Gateway for stream completion",
+    "fix(files): keep skill and worker downloads inside staging (#154570)",
+    "fix(codex): stabilize startup retry race tests (#155612)",
+    "fix(auth): keep session pin changes within the selected agent (#155717)",
+    "fix(matrix): restore progress updates when runtime context is unavailable (#155354)",
+    "fix(ci): retain passing-job timings when main CI fails (#155718)"
   ],
   "top_scopes": [
     {
       "scope": "fix",
-      "count": 95
+      "count": 65
     },
     {
       "scope": "ui",
-      "count": 89
+      "count": 60
     },
     {
       "scope": "test",
-      "count": 54
-    },
-    {
-      "scope": "ci",
-      "count": 32
+      "count": 55
     },
     {
       "scope": "gateway",
-      "count": 24
+      "count": 53
     },
     {
-      "scope": "agents",
-      "count": 23
-    },
-    {
-      "scope": "improve",
-      "count": 20
+      "scope": "ci",
+      "count": 33
     },
     {
       "scope": "update",
+      "count": 23
+    },
+    {
+      "scope": "agents",
       "count": 18
     },
     {
-      "scope": "plugins",
-      "count": 13
-    },
-    {
-      "scope": "refactor",
-      "count": 13
-    },
-    {
-      "scope": "tasks",
-      "count": 12
-    },
-    {
-      "scope": "config",
-      "count": 12
-    },
-    {
-      "scope": "release",
-      "count": 10
-    },
-    {
       "scope": "doctor",
-      "count": 10
+      "count": 13
+    },
+    {
+      "scope": "codex",
+      "count": 12
+    },
+    {
+      "scope": "plugins",
+      "count": 12
     },
     {
       "scope": "tests",
+      "count": 10
+    },
+    {
+      "scope": "qa",
+      "count": 10
+    },
+    {
+      "scope": "refactor",
       "count": 9
+    },
+    {
+      "scope": "tasks",
+      "count": 8
+    },
+    {
+      "scope": "sessions",
+      "count": 8
     }
   ]
 }
