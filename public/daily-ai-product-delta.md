@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-09-22T23:49:08+08:00
-- Requested window: 2026-09-21 to 2026-09-22
+- Generated at: 2026-09-23T23:38:53+08:00
+- Requested window: 2026-09-22 to 2026-09-23
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-09-21 to 2026-09-22
-- Generated at: 2026-09-22T23:48:50.409293+08:00
-- 窗口: 2026-09-21 至 2026-09-22
-- GitHub 增量: 581 commits / 0 releases
-- 最近 push: 2026-09-22
+- Window: 2026-09-22 to 2026-09-23
+- Generated at: 2026-09-23T23:38:32.578458+08:00
+- 窗口: 2026-09-22 至 2026-09-23
+- GitHub 增量: 517 commits / 0 releases
+- 最近 push: 2026-09-23
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat: compare Kitchen Sink Gateway resource costs (#155734)
-  - feat(browser): unify local Chrome setup across desktop and terminal (#152057)
-  - feat: colour and animate the highest effort settings (#155402)
-  - feat: enable automatic Code Mode for preferred models (#155614)
-  - feat(discord-e2e): check bot readiness without QA Lab (#155598)
-  - feat(browser): support Lightpanda connection-scoped CDP replies (#154342)
-  - feat(slack-e2e): check shared user OAuth without QA Lab (#155547)
-  - feat(ui): show social hover cards for public GitHub links (#155482)
+  - feat(ui): copy user messages as markdown (#156563)
+  - feat(browser): add portable Lightpanda deployment and benchmarks (#154360)
+  - feat(browser): add opt-in Lightpanda semantic profiles (#154359)
+  - feat(models): publish v2 catalog beside unchanged v1 (#156530)
+  - feat(ui): explain connection access in Profile (#156304)
+  - feat(ci): add bounded retries for declared flaky release jobs (#156463)
+  - feat(catalog): define the model-first v2 feed contract (#156518)
+  - feat: support scoped session reading and organization (#155184)
 - Fixes and constraints:
-  - fix: keep plugin queues bound to their selected session (#155714)
-  - fix(ci): wait for reset hook entry and join fixture cleanup (#155770)
-  - fix(gateway): retain question requester authority through settlement (#155335)
-  - perf(gateway): move progress-card reads off the main thread (#153857)
-  - fix(mattermost): preserve post state during partial edits (#151255)
-  - fix: deliver subagent results after the requester yields (#155348)
-  - fix(tasks): throttle unchanged attempt activity (#155745)
-  - fix(msteams): keep channel-thread reactions in their thread (#155713)
+  - fix(zalouser): avoid Gateway stalls during credential persistence (#156003)
+  - fix: show unread marker when a visible session completes (#155690)
+  - perf(ui): defer Profile identity editor copy
+  - fix(ci): give hosted Control UI checks the 35-minute budget on full-release dispatches (#156570)
+  - fix(gateway): session lists stall after identity-scope changes (#156339)
+  - perf(gateway): select prepared session rows once per read (#156221)
+  - fix(ci): avoid caller PIDs in Doctor identity fixture (#156564)
+  - fix(update): update system-scope services and hand the restart to the operator (#156584)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

@@ -1,91 +1,91 @@
 {
-  "generatedAt": "2026-09-22T23:48:50.409293+08:00",
+  "generatedAt": "2026-09-23T23:38:32.578458+08:00",
   "window": {
-    "start_local": "2026-09-21T23:48:50.409293+08:00",
-    "end_local": "2026-09-22T23:48:50.409293+08:00",
-    "start_utc": "2026-09-21T15:48:50Z",
-    "end_utc": "2026-09-22T15:48:50Z"
+    "start_local": "2026-09-22T23:38:32.578458+08:00",
+    "end_local": "2026-09-23T23:38:32.578458+08:00",
+    "start_utc": "2026-09-22T15:38:32Z",
+    "end_utc": "2026-09-23T15:38:32Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 390254,
-    "forks": 82085,
-    "open_issues": 8289,
-    "pushed_at": "2026-09-22T15:45:43Z"
+    "stars": 390321,
+    "forks": 82111,
+    "open_issues": 8348,
+    "pushed_at": "2026-09-23T15:38:24Z"
   },
   "summary": {
-    "commitCount": 581,
+    "commitCount": 517,
     "releaseCount": 0,
     "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 390254,
-    "forks": 82085,
-    "openIssues": 8289
+    "stars": 390321,
+    "forks": 82111,
+    "openIssues": 8348
   },
   "releases": [],
   "featureItems": [
-    "feat: compare Kitchen Sink Gateway resource costs (#155734)",
-    "feat(browser): unify local Chrome setup across desktop and terminal (#152057)",
-    "feat: colour and animate the highest effort settings (#155402)",
-    "feat: enable automatic Code Mode for preferred models (#155614)",
-    "feat(discord-e2e): check bot readiness without QA Lab (#155598)",
-    "feat(browser): support Lightpanda connection-scoped CDP replies (#154342)",
-    "feat(slack-e2e): check shared user OAuth without QA Lab (#155547)",
-    "feat(ui): show social hover cards for public GitHub links (#155482)"
+    "feat(ui): copy user messages as markdown (#156563)",
+    "feat(browser): add portable Lightpanda deployment and benchmarks (#154360)",
+    "feat(browser): add opt-in Lightpanda semantic profiles (#154359)",
+    "feat(models): publish v2 catalog beside unchanged v1 (#156530)",
+    "feat(ui): explain connection access in Profile (#156304)",
+    "feat(ci): add bounded retries for declared flaky release jobs (#156463)",
+    "feat(catalog): define the model-first v2 feed contract (#156518)",
+    "feat: support scoped session reading and organization (#155184)"
   ],
   "fixItems": [
-    "fix: keep plugin queues bound to their selected session (#155714)",
-    "fix(ci): wait for reset hook entry and join fixture cleanup (#155770)",
-    "fix(gateway): retain question requester authority through settlement (#155335)",
-    "perf(gateway): move progress-card reads off the main thread (#153857)",
-    "fix(mattermost): preserve post state during partial edits (#151255)",
-    "fix: deliver subagent results after the requester yields (#155348)",
-    "fix(tasks): throttle unchanged attempt activity (#155745)",
-    "fix(msteams): keep channel-thread reactions in their thread (#155713)"
+    "fix(zalouser): avoid Gateway stalls during credential persistence (#156003)",
+    "fix: show unread marker when a visible session completes (#155690)",
+    "perf(ui): defer Profile identity editor copy",
+    "fix(ci): give hosted Control UI checks the 35-minute budget on full-release dispatches (#156570)",
+    "fix(gateway): session lists stall after identity-scope changes (#156339)",
+    "perf(gateway): select prepared session rows once per read (#156221)",
+    "fix(ci): avoid caller PIDs in Doctor identity fixture (#156564)",
+    "fix(update): update system-scope services and hand the restart to the operator (#156584)"
   ],
   "topScopes": [
     {
-      "scope": "fix",
-      "count": 65
-    },
-    {
       "scope": "ui",
-      "count": 60
+      "count": 58
     },
     {
       "scope": "test",
       "count": 55
     },
     {
-      "scope": "gateway",
-      "count": 53
+      "scope": "fix",
+      "count": 48
     },
     {
       "scope": "ci",
-      "count": 33
+      "count": 46
+    },
+    {
+      "scope": "gateway",
+      "count": 36
     },
     {
       "scope": "update",
-      "count": 23
+      "count": 17
     },
     {
-      "scope": "agents",
-      "count": 18
+      "scope": "tests",
+      "count": 17
     },
     {
-      "scope": "doctor",
-      "count": 13
+      "scope": "plugins",
+      "count": 12
     }
   ],
   "headlineCommits": [
-    "fix: keep plugin queues bound to their selected session (#155714)",
-    "chore(i18n): refresh native locales (#155571)",
-    "fix(ci): wait for reset hook entry and join fixture cleanup (#155770)",
-    "test: move subagent fixtures to module boundaries (#155727)",
-    "fix(gateway): retain question requester authority through settlement (#155335)",
-    "perf(gateway): move progress-card reads off the main thread (#153857)",
-    "fix(mattermost): preserve post state during partial edits (#151255)",
-    "fix: deliver subagent results after the requester yields (#155348)"
+    "feat(ui): copy user messages as markdown (#156563)",
+    "docs(release): re-cut only on request; cherry-pick main fixes for blockers only (#156577)",
+    "test(gateway): assert reclamation runs off the Gateway thread (#156591)",
+    "fix(zalouser): avoid Gateway stalls during credential persistence (#156003)",
+    "test(ui): keep reconnect session fixtures consistent",
+    "fix: show unread marker when a visible session completes (#155690)",
+    "perf(ui): defer Profile identity editor copy",
+    "fix(ci): give hosted Control UI checks the 35-minute budget on full-release dispatches (#156570)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 }
