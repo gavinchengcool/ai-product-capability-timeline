@@ -1,91 +1,99 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-09-23T23:38:32.578458+08:00",
+  "generatedAt": "2026-09-24T23:59:11.491554+08:00",
   "window": {
-    "start_local": "2026-09-22T23:38:32.578458+08:00",
-    "end_local": "2026-09-23T23:38:32.578458+08:00",
-    "start_utc": "2026-09-22T15:38:32Z",
-    "end_utc": "2026-09-23T15:38:32Z"
+    "start_local": "2026-09-23T23:59:11.491554+08:00",
+    "end_local": "2026-09-24T23:59:11.491554+08:00",
+    "start_utc": "2026-09-23T15:59:11Z",
+    "end_utc": "2026-09-24T15:59:11Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 390321,
-    "forks": 82111,
-    "open_issues": 8348,
-    "pushed_at": "2026-09-23T15:38:24Z"
+    "stars": 390374,
+    "forks": 82132,
+    "open_issues": 8512,
+    "pushed_at": "2026-09-24T15:59:09Z"
   },
   "summary": {
-    "commitCount": 517,
-    "releaseCount": 0,
-    "stableReleaseCount": 0,
+    "commitCount": 471,
+    "releaseCount": 1,
+    "stableReleaseCount": 1,
     "betaReleaseCount": 0,
-    "stars": 390321,
-    "forks": 82111,
-    "openIssues": 8348
+    "stars": 390374,
+    "forks": 82132,
+    "openIssues": 8512
   },
-  "releases": [],
+  "releases": [
+    {
+      "tag_name": "v2026.9.6",
+      "published_at": "2026-09-23T23:21:10Z",
+      "name": "openclaw 2026.9.6",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.6"
+    }
+  ],
   "featureItems": [
-    "feat(ui): copy user messages as markdown (#156563)",
-    "feat(browser): add portable Lightpanda deployment and benchmarks (#154360)",
-    "feat(browser): add opt-in Lightpanda semantic profiles (#154359)",
-    "feat(models): publish v2 catalog beside unchanged v1 (#156530)",
-    "feat(ui): explain connection access in Profile (#156304)",
-    "feat(ci): add bounded retries for declared flaky release jobs (#156463)",
-    "feat(catalog): define the model-first v2 feed contract (#156518)",
-    "feat: support scoped session reading and organization (#155184)"
+    "feat(models): use the v2 catalog and price each route by who bills it (#156535)",
+    "feat(release): add a checkpoint-only packaging boundary for split macOS notarization (#157117)",
+    "feat(update): let the candidate decide update admission (#155632)",
+    "feat(release): redesign release validation and publication for faster stable releases (#156812)",
+    "feat(tools): explain terminal access restrictions (#157014)",
+    "feat(agentsapi): preserve native output and tool history (#156182)",
+    "feat(protocol): publish node invoke cancellation payload (#115390)",
+    "feat(ui): opt into configured defaults for fresh sessions (#156866)"
   ],
   "fixItems": [
-    "fix(zalouser): avoid Gateway stalls during credential persistence (#156003)",
-    "fix: show unread marker when a visible session completes (#155690)",
-    "perf(ui): defer Profile identity editor copy",
-    "fix(ci): give hosted Control UI checks the 35-minute budget on full-release dispatches (#156570)",
-    "fix(gateway): session lists stall after identity-scope changes (#156339)",
-    "perf(gateway): select prepared session rows once per read (#156221)",
-    "fix(ci): avoid caller PIDs in Doctor identity fixture (#156564)",
-    "fix(update): update system-scope services and hand the restart to the operator (#156584)"
+    "fix(android): preserve the Wear launcher icon on splash screens (#157316)",
+    "perf(state): prepare plugin-state commands independently (#157333)",
+    "fix(android): keep Wear backgrounds black in light appearance (#157357)",
+    "fix(worktrees): avoid excessive disk reserves on large volumes (#157356)",
+    "fix(test): stop preflight mocks leaking into shared workers (#157207)",
+    "fix(build): scope normalization declarations to package sources (#157174)",
+    "fix: exit after validating Codex model references (#157323)",
+    "fix(gateway): guard workspace adoption during active work (#157259)"
   ],
   "topScopes": [
     {
-      "scope": "ui",
-      "count": 58
-    },
-    {
-      "scope": "test",
-      "count": 55
-    },
-    {
       "scope": "fix",
-      "count": 48
+      "count": 69
+    },
+    {
+      "scope": "ui",
+      "count": 45
     },
     {
       "scope": "ci",
-      "count": 46
+      "count": 41
+    },
+    {
+      "scope": "test",
+      "count": 33
     },
     {
       "scope": "gateway",
-      "count": 36
+      "count": 27
+    },
+    {
+      "scope": "release",
+      "count": 23
+    },
+    {
+      "scope": "agents",
+      "count": 20
     },
     {
       "scope": "update",
-      "count": 17
-    },
-    {
-      "scope": "tests",
-      "count": 17
-    },
-    {
-      "scope": "plugins",
-      "count": 12
+      "count": 14
     }
   ],
   "headlineCommits": [
-    "feat(ui): copy user messages as markdown (#156563)",
-    "docs(release): re-cut only on request; cherry-pick main fixes for blockers only (#156577)",
-    "test(gateway): assert reclamation runs off the Gateway thread (#156591)",
-    "fix(zalouser): avoid Gateway stalls during credential persistence (#156003)",
-    "test(ui): keep reconnect session fixtures consistent",
-    "fix: show unread marker when a visible session completes (#155690)",
-    "perf(ui): defer Profile identity editor copy",
-    "fix(ci): give hosted Control UI checks the 35-minute budget on full-release dispatches (#156570)"
+    "refactor: consolidate duplicate MCP lifecycle tests (#157360)",
+    "test(qa): consolidate CLI runtime fixtures (#118496)",
+    "chore(ui): refresh control ui locales (#157378)",
+    "fix(android): preserve the Wear launcher icon on splash screens (#157316)",
+    "perf(state): prepare plugin-state commands independently (#157333)",
+    "fix(android): keep Wear backgrounds black in light appearance (#157357)",
+    "feat(models): use the v2 catalog and price each route by who bills it (#156535)",
+    "fix(worktrees): avoid excessive disk reserves on large volumes (#157356)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

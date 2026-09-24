@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-09-23T23:38:53+08:00
-- Requested window: 2026-09-22 to 2026-09-23
+- Generated at: 2026-09-24T23:59:31+08:00
+- Requested window: 2026-09-23 to 2026-09-24
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-09-22 to 2026-09-23
-- Generated at: 2026-09-23T23:38:32.578458+08:00
-- 窗口: 2026-09-22 至 2026-09-23
-- GitHub 增量: 517 commits / 0 releases
-- 最近 push: 2026-09-23
+- Window: 2026-09-23 to 2026-09-24
+- Generated at: 2026-09-24T23:59:11.491554+08:00
+- 窗口: 2026-09-23 至 2026-09-24
+- GitHub 增量: 471 commits / 1 releases
+- 最近 push: 2026-09-24
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(ui): copy user messages as markdown (#156563)
-  - feat(browser): add portable Lightpanda deployment and benchmarks (#154360)
-  - feat(browser): add opt-in Lightpanda semantic profiles (#154359)
-  - feat(models): publish v2 catalog beside unchanged v1 (#156530)
-  - feat(ui): explain connection access in Profile (#156304)
-  - feat(ci): add bounded retries for declared flaky release jobs (#156463)
-  - feat(catalog): define the model-first v2 feed contract (#156518)
-  - feat: support scoped session reading and organization (#155184)
+  - feat(models): use the v2 catalog and price each route by who bills it (#156535)
+  - feat(release): add a checkpoint-only packaging boundary for split macOS notarization (#157117)
+  - feat(update): let the candidate decide update admission (#155632)
+  - feat(release): redesign release validation and publication for faster stable releases (#156812)
+  - feat(tools): explain terminal access restrictions (#157014)
+  - feat(agentsapi): preserve native output and tool history (#156182)
+  - feat(protocol): publish node invoke cancellation payload (#115390)
+  - feat(ui): opt into configured defaults for fresh sessions (#156866)
 - Fixes and constraints:
-  - fix(zalouser): avoid Gateway stalls during credential persistence (#156003)
-  - fix: show unread marker when a visible session completes (#155690)
-  - perf(ui): defer Profile identity editor copy
-  - fix(ci): give hosted Control UI checks the 35-minute budget on full-release dispatches (#156570)
-  - fix(gateway): session lists stall after identity-scope changes (#156339)
-  - perf(gateway): select prepared session rows once per read (#156221)
-  - fix(ci): avoid caller PIDs in Doctor identity fixture (#156564)
-  - fix(update): update system-scope services and hand the restart to the operator (#156584)
+  - fix(android): preserve the Wear launcher icon on splash screens (#157316)
+  - perf(state): prepare plugin-state commands independently (#157333)
+  - fix(android): keep Wear backgrounds black in light appearance (#157357)
+  - fix(worktrees): avoid excessive disk reserves on large volumes (#157356)
+  - fix(test): stop preflight mocks leaking into shared workers (#157207)
+  - fix(build): scope normalization declarations to package sources (#157174)
+  - fix: exit after validating Codex model references (#157323)
+  - fix(gateway): guard workspace adoption during active work (#157259)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
