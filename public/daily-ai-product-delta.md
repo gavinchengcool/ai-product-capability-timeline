@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-09-24T23:59:31+08:00
-- Requested window: 2026-09-23 to 2026-09-24
+- Generated at: 2026-09-26T00:00:22+08:00
+- Requested window: 2026-09-25 to 2026-09-26
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-09-23 to 2026-09-24
-- Generated at: 2026-09-24T23:59:11.491554+08:00
-- 窗口: 2026-09-23 至 2026-09-24
-- GitHub 增量: 471 commits / 1 releases
-- 最近 push: 2026-09-24
+- Window: 2026-09-25 to 2026-09-26
+- Generated at: 2026-09-26T00:00:05.277998+08:00
+- 窗口: 2026-09-25 至 2026-09-26
+- GitHub 增量: 518 commits / 0 releases
+- 最近 push: 2026-09-25
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(models): use the v2 catalog and price each route by who bills it (#156535)
-  - feat(release): add a checkpoint-only packaging boundary for split macOS notarization (#157117)
-  - feat(update): let the candidate decide update admission (#155632)
-  - feat(release): redesign release validation and publication for faster stable releases (#156812)
-  - feat(tools): explain terminal access restrictions (#157014)
-  - feat(agentsapi): preserve native output and tool history (#156182)
-  - feat(protocol): publish node invoke cancellation payload (#115390)
-  - feat(ui): opt into configured defaults for fresh sessions (#156866)
+  - feat(agentsapi): add OpenClaw tool support (#154208)
+  - feat(ui): control audio from the standalone desktop view (#157726)
+  - feat(ui): listen to managed desktop audio in the panel (#157724)
+  - feat(release): one approval per release via an attested parent approval receipt (#157911)
+  - feat(desktop): advertise current managed desktop audio (#157723)
+  - feat(desktop): bind audio streaming to screen authorization (#157722)
+  - feat(desktop): isolate managed Linux application audio (#157720)
+  - feat(desktop): advertise optional audio capability (#157718)
 - Fixes and constraints:
-  - fix(android): preserve the Wear launcher icon on splash screens (#157316)
-  - perf(state): prepare plugin-state commands independently (#157333)
-  - fix(android): keep Wear backgrounds black in light appearance (#157357)
-  - fix(worktrees): avoid excessive disk reserves on large volumes (#157356)
-  - fix(test): stop preflight mocks leaking into shared workers (#157207)
-  - fix(build): scope normalization declarations to package sources (#157174)
-  - fix: exit after validating Codex model references (#157323)
-  - fix(gateway): guard workspace adoption during active work (#157259)
+  - fix(agents): restore admitted optional plugin tools in Codex runs (#157840)
+  - fix: enforce Google Chat and Team Reports file size limits (#158181)
+  - fix(doctor): report remaining systemd units after cleanup (#158034)
+  - fix(codex): restore Computer Use after desktop plugin replacement (#156556)
+  - perf(test): replace placement polling waits with fake timers (#158175)
+  - fix(ci): resume partially published preparation receipts (#158174)
+  - fix(ui): retain delayed progress scroll gestures (#158153)
+  - perf(update): avoid repeated retained-copy parent creation
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

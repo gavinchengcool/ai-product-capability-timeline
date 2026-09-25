@@ -1,99 +1,91 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-09-24T23:59:11.491554+08:00",
+  "generatedAt": "2026-09-26T00:00:05.277998+08:00",
   "window": {
-    "start_local": "2026-09-23T23:59:11.491554+08:00",
-    "end_local": "2026-09-24T23:59:11.491554+08:00",
-    "start_utc": "2026-09-23T15:59:11Z",
-    "end_utc": "2026-09-24T15:59:11Z"
+    "start_local": "2026-09-25T00:00:05.277998+08:00",
+    "end_local": "2026-09-26T00:00:05.277998+08:00",
+    "start_utc": "2026-09-24T16:00:05Z",
+    "end_utc": "2026-09-25T16:00:05Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 390374,
-    "forks": 82132,
-    "open_issues": 8512,
-    "pushed_at": "2026-09-24T15:59:09Z"
+    "stars": 390481,
+    "forks": 82151,
+    "open_issues": 8600,
+    "pushed_at": "2026-09-25T15:59:28Z"
   },
   "summary": {
-    "commitCount": 471,
-    "releaseCount": 1,
-    "stableReleaseCount": 1,
+    "commitCount": 518,
+    "releaseCount": 0,
+    "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 390374,
-    "forks": 82132,
-    "openIssues": 8512
+    "stars": 390481,
+    "forks": 82151,
+    "openIssues": 8600
   },
-  "releases": [
-    {
-      "tag_name": "v2026.9.6",
-      "published_at": "2026-09-23T23:21:10Z",
-      "name": "openclaw 2026.9.6",
-      "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.6"
-    }
-  ],
+  "releases": [],
   "featureItems": [
-    "feat(models): use the v2 catalog and price each route by who bills it (#156535)",
-    "feat(release): add a checkpoint-only packaging boundary for split macOS notarization (#157117)",
-    "feat(update): let the candidate decide update admission (#155632)",
-    "feat(release): redesign release validation and publication for faster stable releases (#156812)",
-    "feat(tools): explain terminal access restrictions (#157014)",
-    "feat(agentsapi): preserve native output and tool history (#156182)",
-    "feat(protocol): publish node invoke cancellation payload (#115390)",
-    "feat(ui): opt into configured defaults for fresh sessions (#156866)"
+    "feat(agentsapi): add OpenClaw tool support (#154208)",
+    "feat(ui): control audio from the standalone desktop view (#157726)",
+    "feat(ui): listen to managed desktop audio in the panel (#157724)",
+    "feat(release): one approval per release via an attested parent approval receipt (#157911)",
+    "feat(desktop): advertise current managed desktop audio (#157723)",
+    "feat(desktop): bind audio streaming to screen authorization (#157722)",
+    "feat(desktop): isolate managed Linux application audio (#157720)",
+    "feat(desktop): advertise optional audio capability (#157718)"
   ],
   "fixItems": [
-    "fix(android): preserve the Wear launcher icon on splash screens (#157316)",
-    "perf(state): prepare plugin-state commands independently (#157333)",
-    "fix(android): keep Wear backgrounds black in light appearance (#157357)",
-    "fix(worktrees): avoid excessive disk reserves on large volumes (#157356)",
-    "fix(test): stop preflight mocks leaking into shared workers (#157207)",
-    "fix(build): scope normalization declarations to package sources (#157174)",
-    "fix: exit after validating Codex model references (#157323)",
-    "fix(gateway): guard workspace adoption during active work (#157259)"
+    "fix(agents): restore admitted optional plugin tools in Codex runs (#157840)",
+    "fix: enforce Google Chat and Team Reports file size limits (#158181)",
+    "fix(doctor): report remaining systemd units after cleanup (#158034)",
+    "fix(codex): restore Computer Use after desktop plugin replacement (#156556)",
+    "perf(test): replace placement polling waits with fake timers (#158175)",
+    "fix(ci): resume partially published preparation receipts (#158174)",
+    "fix(ui): retain delayed progress scroll gestures (#158153)",
+    "perf(update): avoid repeated retained-copy parent creation"
   ],
   "topScopes": [
     {
-      "scope": "fix",
-      "count": 69
+      "scope": "ui",
+      "count": 53
     },
     {
-      "scope": "ui",
-      "count": 45
+      "scope": "fix",
+      "count": 43
     },
     {
       "scope": "ci",
-      "count": 41
+      "count": 40
     },
     {
       "scope": "test",
-      "count": 33
+      "count": 35
     },
     {
       "scope": "gateway",
-      "count": 27
+      "count": 26
     },
     {
-      "scope": "release",
+      "scope": "update",
       "count": 23
     },
     {
       "scope": "agents",
-      "count": 20
+      "count": 17
     },
     {
-      "scope": "update",
-      "count": 14
+      "scope": "release",
+      "count": 15
     }
   ],
   "headlineCommits": [
-    "refactor: consolidate duplicate MCP lifecycle tests (#157360)",
-    "test(qa): consolidate CLI runtime fixtures (#118496)",
-    "chore(ui): refresh control ui locales (#157378)",
-    "fix(android): preserve the Wear launcher icon on splash screens (#157316)",
-    "perf(state): prepare plugin-state commands independently (#157333)",
-    "fix(android): keep Wear backgrounds black in light appearance (#157357)",
-    "feat(models): use the v2 catalog and price each route by who bills it (#156535)",
-    "fix(worktrees): avoid excessive disk reserves on large volumes (#157356)"
+    "fix(agents): restore admitted optional plugin tools in Codex runs (#157840)",
+    "refactor(retry): consolidate timer tests at package owner (#158185)",
+    "fix: enforce Google Chat and Team Reports file size limits (#158181)",
+    "refactor(state): consolidate sandbox read dispatch (#157687)",
+    "refactor(tests): reuse scheduled-task process result fixtures (#158184)",
+    "refactor(channels): deslop discord and slack second pass (#158085)",
+    "feat(agentsapi): add OpenClaw tool support (#154208)",
+    "feat(ui): control audio from the standalone desktop view (#157726)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
