@@ -1,57 +1,57 @@
 # OpenClaw Weekly Update
 
-生成时间：2026-09-26T00:00:05.277998+08:00
+生成时间：2026-09-26T23:11:43.098930+08:00
 
 ## Window
 
-- Start: 2026-09-25T00:00:05.277998+08:00
-- End: 2026-09-26T00:00:05.277998+08:00
+- Start: 2026-09-25T23:11:43.098930+08:00
+- End: 2026-09-26T23:11:43.098930+08:00
 - Repo: `openclaw/openclaw`
 
 ## At A Glance
 
-- Commits in window: 518
+- Commits in window: 545
 - Releases in window: 0
 - Stable releases in window: 0
 - Beta releases in window: 0
-- Repo stars at scan time: 390481
-- Repo forks at scan time: 82151
+- Repo stars at scan time: 390558
+- Repo forks at scan time: 82148
 
 ## New Capability Signals
 
-- feat(agentsapi): add OpenClaw tool support (#154208)
-- feat(ui): control audio from the standalone desktop view (#157726)
-- feat(ui): listen to managed desktop audio in the panel (#157724)
-- feat(release): one approval per release via an attested parent approval receipt (#157911)
-- feat(desktop): advertise current managed desktop audio (#157723)
-- feat(desktop): bind audio streaming to screen authorization (#157722)
-- feat(desktop): isolate managed Linux application audio (#157720)
-- feat(desktop): advertise optional audio capability (#157718)
-- feat(ci): add the release-fast-lane label for release tooling pull requests (#157921)
-- feat(release): mint the protected tooling tag from a trusted main SHA (#157896)
-- feat(perf): separate session and first tool resource costs (#157744)
-- feat(gateway): inspect HTTP headers without buffering responses (#157457)
-- feat(release): add the resumable release:stable orchestrator (#157941)
-- feat(agents): sharpen sessions_spawn research guidance and add stalled-child follow-up (#141209)
-- feat(openai): add Sign in with ChatGPT through Responses (#148567)
+- feat: expose preferred Git release targets in update status (#158926)
+- feat: reserve ordered model recommendations in catalog v2 (#158863)
+- feat(release): automate iOS and Android store releases (#158807)
+- feat(gateway): preserve callback ports on plugin routes (#158360)
+- feat(agents): let owners hand keys, config, and skill edits to their agent in chat (#158120)
+- feat: curate plugin categories and add Computer use discovery (#158686)
+- feat(release): publish npm children in npm-publish behind the single parent approval (#158500)
+- feat(ci): add SimSlim and native iOS release qualification (#147770)
+- feat: show plugin tool inputs in detail previews (#157946)
+- feat: show declared plugin capabilities and setup guides (#157956)
+- feat(agentsapi): transfer attachments and hosted files (#154229)
+- improve(memory): speed up batched session indexing (#158364)
+- feat(meetings): add durable participation foundation (#152327)
+- feat(gemini): add google-interactions api backend (#149880)
+- feat(update): accept owner-bound repair turns (#147584)
 
 ## Important Fixes And Hardening
 
-- fix(agents): restore admitted optional plugin tools in Codex runs (#157840)
-- fix: enforce Google Chat and Team Reports file size limits (#158181)
-- fix(doctor): report remaining systemd units after cleanup (#158034)
-- fix(codex): restore Computer Use after desktop plugin replacement (#156556)
-- perf(test): replace placement polling waits with fake timers (#158175)
-- fix(ci): resume partially published preparation receipts (#158174)
-- fix(ui): retain delayed progress scroll gestures (#158153)
-- perf(update): avoid repeated retained-copy parent creation
-- fix(test): prepare catalog fixture modules before startup (#158157)
-- fix: keep model pickers usable during provider sign-in (#158132)
-- fix(ci): unblock Control UI targeted Crabbox gates (#158149)
-- fix: bound stalled browser stream startup (#156323)
-- fix(onnx): prevent worker fixture hangs after release (#158146)
-- fix(models): preserve scoped provider discovery outcomes (#158139)
-- fix(agents): report offline trash failures after agent delete (#158052)
+- fix: rebuild incomplete Git runtimes when source is current (#158931)
+- perf(sessions): retain reclamation workers after settled refusals (#158878)
+- fix: let setup chat remove configuration overrides (#158873)
+- fix: retain parent links in Incognito forks (#158927)
+- perf(ui): defer table overflow measurement until layout (#158930)
+- perf(agents): coalesce queued provider text appends (#158837)
+- fix(codex): use monotonic clock for plugin config discovery deadline (#155863)
+- fix(cli): reject blank native hook relay --timeout (#145523)
+- fix(memory-core): fall back to FTS on runtime query-embedding failure for optional providers (#156998) (#157032)
+- fix(doctor): migrate every agent database before repairs open it (#158584)
+- fix: warn agents when background commands cannot wake them (#158884)
+- fix(doctor): enforce version-bound plugin convergence (#119857)
+- fix(workers): stop checkpoint writes after authority closes (#150611)
+- perf(worktrees): avoid repeated cleanup inventories (#158892)
+- perf(sessions): bound maintenance planning outside write admission (#158885)
 
 ## Releases This Week
 
@@ -59,41 +59,41 @@
 
 ## Most Active Change Scopes
 
-- `ui`: 53
-- `fix`: 43
-- `ci`: 40
-- `test`: 35
-- `gateway`: 26
-- `update`: 23
-- `agents`: 17
-- `release`: 15
-- `android`: 13
-- `refactor`: 11
-- `cli`: 10
-- `plugins`: 10
+- `gateway`: 69
+- `ui`: 47
+- `fix`: 45
+- `test`: 42
+- `agents`: 23
+- `update`: 17
+- `sessions`: 16
+- `channels`: 15
+- `ci`: 13
+- `plugins`: 12
+- `qa`: 12
+- `codex`: 9
 
 ## Recent Commit Headlines
 
-- 2026-09-25T15:55:19Z | fix(agents): restore admitted optional plugin tools in Codex runs (#157840)
-- 2026-09-25T15:54:49Z | refactor(retry): consolidate timer tests at package owner (#158185)
-- 2026-09-25T15:54:04Z | fix: enforce Google Chat and Team Reports file size limits (#158181)
-- 2026-09-25T15:51:27Z | refactor(state): consolidate sandbox read dispatch (#157687)
-- 2026-09-25T15:48:35Z | refactor(tests): reuse scheduled-task process result fixtures (#158184)
-- 2026-09-25T15:47:40Z | refactor(channels): deslop discord and slack second pass (#158085)
-- 2026-09-25T15:43:32Z | feat(agentsapi): add OpenClaw tool support (#154208)
-- 2026-09-25T15:43:26Z | feat(ui): control audio from the standalone desktop view (#157726)
-- 2026-09-25T15:42:19Z | fix(doctor): report remaining systemd units after cleanup (#158034)
-- 2026-09-25T15:41:06Z | chore(ui): refresh control ui locales (#158186)
-- 2026-09-25T15:39:08Z | refactor(ui): isolate desktop PCM buffering (#157725)
-- 2026-09-25T15:19:43Z | test(models): report live discovery in lifecycle fixture
-- 2026-09-25T14:28:13Z | test(models): preserve current-first lifecycle catalog ordering
-- 2026-09-25T15:30:03Z | fix(codex): restore Computer Use after desktop plugin replacement (#156556)
-- 2026-09-25T15:24:34Z | perf(test): replace placement polling waits with fake timers (#158175)
-- 2026-09-25T15:24:11Z | refactor(ui): remove duplicate cron lifecycle tests (#158176)
-- 2026-09-25T15:23:18Z | feat(ui): listen to managed desktop audio in the panel (#157724)
-- 2026-09-25T15:20:49Z | fix(ci): resume partially published preparation receipts (#158174)
-- 2026-09-25T15:19:22Z | feat(release): one approval per release via an attested parent approval receipt (#157911)
-- 2026-09-25T15:19:19Z | feat(desktop): advertise current managed desktop audio (#157723)
+- 2026-09-26T15:08:49Z | chore(lint): drop stale copilot event-bridge max-lines baseline entry
+- 2026-09-26T15:06:56Z | fix: rebuild incomplete Git runtimes when source is current (#158931)
+- 2026-09-26T14:47:22Z | test(core,ui,plugins): remove low-value tests (batch d017) (#158882)
+- 2026-09-26T14:45:26Z | test(agents,gateway,plugins): remove low-value tests (batch d021) (#158919)
+- 2026-09-26T14:44:49Z | perf(sessions): retain reclamation workers after settled refusals (#158878)
+- 2026-09-26T14:44:03Z | fix: let setup chat remove configuration overrides (#158873)
+- 2026-09-26T14:43:30Z | test(core,plugins,chat): remove low-value tests (batch d010) (#158698)
+- 2026-09-26T14:41:59Z | test(core,plugins,tooling): remove low-value tests (batch d011) (#158811)
+- 2026-09-26T14:39:58Z | refactor(gateway): schedule update checks through the lifetime owner (#158909)
+- 2026-09-26T14:31:44Z | fix: retain parent links in Incognito forks (#158927)
+- 2026-09-26T14:29:15Z | refactor(plugins): deslop plugin runtime third pass (#158638)
+- 2026-09-26T14:27:36Z | perf(ui): defer table overflow measurement until layout (#158930)
+- 2026-09-26T14:26:55Z | feat: expose preferred Git release targets in update status (#158926)
+- 2026-09-26T14:15:08Z | refactor(telegram): receive webhooks on Gateway routes (#158732)
+- 2026-09-26T14:12:03Z | test(ci): replace audit timeout sleep with budget coverage (#138203)
+- 2026-09-26T14:09:54Z | test(gateway): isolate session path projection probes
+- 2026-09-26T14:01:04Z | refactor(channels): isolate ingress queue contract and failure codec (#158896)
+- 2026-09-26T13:57:14Z | perf(agents): coalesce queued provider text appends (#158837)
+- 2026-09-26T13:56:39Z | refactor(channels): deslop discord and slack third pass (#158886)
+- 2026-09-26T13:52:26Z | fix(codex): use monotonic clock for plugin config discovery deadline (#155863)
 
 ## Sources
 

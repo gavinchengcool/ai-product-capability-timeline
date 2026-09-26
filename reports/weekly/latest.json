@@ -1,188 +1,188 @@
 {
-  "generated_at": "2026-09-26T00:00:05.277998+08:00",
+  "generated_at": "2026-09-26T23:11:43.098930+08:00",
   "window": {
-    "start_local": "2026-09-25T00:00:05.277998+08:00",
-    "end_local": "2026-09-26T00:00:05.277998+08:00",
-    "start_utc": "2026-09-24T16:00:05Z",
-    "end_utc": "2026-09-25T16:00:05Z"
+    "start_local": "2026-09-25T23:11:43.098930+08:00",
+    "end_local": "2026-09-26T23:11:43.098930+08:00",
+    "start_utc": "2026-09-25T15:11:43Z",
+    "end_utc": "2026-09-26T15:11:43Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 390481,
-    "forks": 82151,
-    "open_issues": 8600,
-    "pushed_at": "2026-09-25T15:59:28Z"
+    "stars": 390558,
+    "forks": 82148,
+    "open_issues": 8658,
+    "pushed_at": "2026-09-26T15:09:53Z"
   },
   "releases_in_window": [],
-  "commit_count": 518,
+  "commit_count": 545,
   "commit_headlines": [
-    "fix(agents): restore admitted optional plugin tools in Codex runs (#157840)",
-    "refactor(retry): consolidate timer tests at package owner (#158185)",
-    "fix: enforce Google Chat and Team Reports file size limits (#158181)",
-    "refactor(state): consolidate sandbox read dispatch (#157687)",
-    "refactor(tests): reuse scheduled-task process result fixtures (#158184)",
-    "refactor(channels): deslop discord and slack second pass (#158085)",
-    "feat(agentsapi): add OpenClaw tool support (#154208)",
-    "feat(ui): control audio from the standalone desktop view (#157726)",
-    "fix(doctor): report remaining systemd units after cleanup (#158034)",
-    "chore(ui): refresh control ui locales (#158186)",
-    "refactor(ui): isolate desktop PCM buffering (#157725)",
-    "test(models): report live discovery in lifecycle fixture",
-    "test(models): preserve current-first lifecycle catalog ordering",
-    "fix(codex): restore Computer Use after desktop plugin replacement (#156556)",
-    "perf(test): replace placement polling waits with fake timers (#158175)",
-    "refactor(ui): remove duplicate cron lifecycle tests (#158176)",
-    "feat(ui): listen to managed desktop audio in the panel (#157724)",
-    "fix(ci): resume partially published preparation receipts (#158174)",
-    "feat(release): one approval per release via an attested parent approval receipt (#157911)",
-    "feat(desktop): advertise current managed desktop audio (#157723)",
-    "fix(ui): retain delayed progress scroll gestures (#158153)",
-    "refactor(ui): share sidebar mutation error feedback (#158173)",
-    "test: await database verifier process lifecycle events (#158171)",
-    "perf(update): avoid repeated retained-copy parent creation",
-    "feat(desktop): bind audio streaming to screen authorization (#157722)",
-    "refactor(gateway): split companion prompts and metadata fixtures (#158050)",
-    "feat(desktop): isolate managed Linux application audio (#157720)",
-    "fix(test): prepare catalog fixture modules before startup (#158157)",
-    "fix: keep model pickers usable during provider sign-in (#158132)",
-    "refactor(test): remove unused prompt scenario metadata (#158151)",
-    "fix(ci): unblock Control UI targeted Crabbox gates (#158149)",
-    "refactor(agents): deslop subagents, sessions, worktrees, commands and auth (#158020)",
-    "fix: bound stalled browser stream startup (#156323)",
-    "fix(onnx): prevent worker fixture hangs after release (#158146)",
-    "fix(models): preserve scoped provider discovery outcomes (#158139)",
-    "fix(agents): report offline trash failures after agent delete (#158052)",
-    "perf(mcp): back off failed bundle server starts (#158088)",
-    "chore(gateway): guard admitted cron work during shutdown (#158080)",
-    "test: await Android voice-note fixture readiness",
-    "fix: show native background commands in Tasks (#158038)",
-    "refactor(cli): deslop CLI, ACP, and logging (#157748)",
-    "refactor: simplify channel reply context handling (#157185)",
-    "fix: model pickers ignore clicks during startup loading (#158128)",
-    "perf(cron): speed up concurrent automation list requests (#158077)",
-    "refactor(macos): centralize icon override policy (#158137)",
-    "fix(ci): repair Gateway lint and Doctor mock cleanup (#158074)",
-    "refactor(runtime): deslop core subsystems (#157982)",
-    "perf(test): defer jsdom loading for Node tests (#158125)",
-    "refactor(tests): reuse trajectory recorder fixtures (#158133)",
-    "refactor(text): consolidate shared text test coverage (#158040)"
+    "chore(lint): drop stale copilot event-bridge max-lines baseline entry",
+    "fix: rebuild incomplete Git runtimes when source is current (#158931)",
+    "test(core,ui,plugins): remove low-value tests (batch d017) (#158882)",
+    "test(agents,gateway,plugins): remove low-value tests (batch d021) (#158919)",
+    "perf(sessions): retain reclamation workers after settled refusals (#158878)",
+    "fix: let setup chat remove configuration overrides (#158873)",
+    "test(core,plugins,chat): remove low-value tests (batch d010) (#158698)",
+    "test(core,plugins,tooling): remove low-value tests (batch d011) (#158811)",
+    "refactor(gateway): schedule update checks through the lifetime owner (#158909)",
+    "fix: retain parent links in Incognito forks (#158927)",
+    "refactor(plugins): deslop plugin runtime third pass (#158638)",
+    "perf(ui): defer table overflow measurement until layout (#158930)",
+    "feat: expose preferred Git release targets in update status (#158926)",
+    "refactor(telegram): receive webhooks on Gateway routes (#158732)",
+    "test(ci): replace audit timeout sleep with budget coverage (#138203)",
+    "test(gateway): isolate session path projection probes",
+    "refactor(channels): isolate ingress queue contract and failure codec (#158896)",
+    "perf(agents): coalesce queued provider text appends (#158837)",
+    "refactor(channels): deslop discord and slack third pass (#158886)",
+    "fix(codex): use monotonic clock for plugin config discovery deadline (#155863)",
+    "test(channels): share ingress fixture cleanup (#158887)",
+    "fix(cli): reject blank native hook relay --timeout (#145523)",
+    "fix(memory-core): fall back to FTS on runtime query-embedding failure for optional providers (#156998) (#157032)",
+    "test(core,plugins,ui): remove low-value tests (batch d018) (#158856)",
+    "fix(doctor): migrate every agent database before repairs open it (#158584)",
+    "test(core,plugins,ui): remove low-value tests (batch d024) (#158907)",
+    "refactor(gateway): schedule session PR subscription refreshes (#158821)",
+    "fix: warn agents when background commands cannot wake them (#158884)",
+    "fix(doctor): enforce version-bound plugin convergence (#119857)",
+    "refactor(gateway): schedule worker environment reconciliation (#158812)",
+    "refactor(ui): isolate session model override ownership",
+    "fix(workers): stop checkpoint writes after authority closes (#150611)",
+    "perf(worktrees): avoid repeated cleanup inventories (#158892)",
+    "test(ci): verify the bounded base recovery fetch sequence",
+    "perf(sessions): bound maintenance planning outside write admission (#158885)",
+    "refactor(telegram): remove ingress directory encoding (#158860)",
+    "fix(sessions): prevent duplicate labels during concurrent creation (#158839)",
+    "fix(cron): automations get rejects jobs carrying scheduleErrorCount diagnostics (#157497)",
+    "perf(trajectory): reuse unchanged tool schema projections (#158871)",
+    "feat: reserve ordered model recommendations in catalog v2 (#158863)",
+    "test(crabbox): reuse prepared toolchain cache (#158850)",
+    "perf(gateway): bound conversation environment cleanup retries (#158867)",
+    "perf(agents): reuse current session capability facts (#158872)",
+    "perf(gateway): reuse resident facts for activity recaps (#158803)",
+    "perf(gateway): reuse prepared assistant identities and avatars (#158597)",
+    "fix(channels): retain ingress claims through settlement (#158637)",
+    "perf(plugins): stop reading native plugin artifacts at startup (#158414)",
+    "fix(ui): keep agent menu closed when leaving settings (#158870)",
+    "refactor(plugins): deslop memory, migration and utility plugins (#158532)",
+    "fix(computer): release attached desktops after rejected actions (#158546)"
   ],
   "feature_items": [
+    "feat: expose preferred Git release targets in update status (#158926)",
+    "feat: reserve ordered model recommendations in catalog v2 (#158863)",
+    "feat(release): automate iOS and Android store releases (#158807)",
+    "feat(gateway): preserve callback ports on plugin routes (#158360)",
+    "feat(agents): let owners hand keys, config, and skill edits to their agent in chat (#158120)",
+    "feat: curate plugin categories and add Computer use discovery (#158686)",
+    "feat(release): publish npm children in npm-publish behind the single parent approval (#158500)",
+    "feat(ci): add SimSlim and native iOS release qualification (#147770)",
+    "feat: show plugin tool inputs in detail previews (#157946)",
+    "feat: show declared plugin capabilities and setup guides (#157956)",
+    "feat(agentsapi): transfer attachments and hosted files (#154229)",
+    "improve(memory): speed up batched session indexing (#158364)",
+    "feat(meetings): add durable participation foundation (#152327)",
+    "feat(gemini): add google-interactions api backend (#149880)",
+    "feat(update): accept owner-bound repair turns (#147584)",
+    "feat(ui): add bounded PDF previews to chat attachments (#148399)",
+    "feat: register Telnyx as an official external provider (#116016)",
     "feat(agentsapi): add OpenClaw tool support (#154208)",
     "feat(ui): control audio from the standalone desktop view (#157726)",
     "feat(ui): listen to managed desktop audio in the panel (#157724)",
     "feat(release): one approval per release via an attested parent approval receipt (#157911)",
-    "feat(desktop): advertise current managed desktop audio (#157723)",
-    "feat(desktop): bind audio streaming to screen authorization (#157722)",
-    "feat(desktop): isolate managed Linux application audio (#157720)",
-    "feat(desktop): advertise optional audio capability (#157718)",
-    "feat(ci): add the release-fast-lane label for release tooling pull requests (#157921)",
-    "feat(release): mint the protected tooling tag from a trusted main SHA (#157896)",
-    "feat(perf): separate session and first tool resource costs (#157744)",
-    "feat(gateway): inspect HTTP headers without buffering responses (#157457)",
-    "feat(release): add the resumable release:stable orchestrator (#157941)",
-    "feat(agents): sharpen sessions_spawn research guidance and add stalled-child follow-up (#141209)",
-    "feat(openai): add Sign in with ChatGPT through Responses (#148567)",
-    "feat: show live cloud worker pool in settings (#157200)",
-    "feat(gateway): preserve browser sign-in requirements before connecting (#157454)",
-    "feat(gateway): await native upgrade headers before connecting (#147070)",
-    "feat(android): verify Cloudflare Access browser sessions (#147061)",
-    "feat(android): prepare gateway transports for Access reauthentication (#147094)",
-    "feat(perf): qualify plugin cold-import resource measurements (#157071)",
-    "feat(ios): establish native Cloudflare Access sign-in sessions (#146996)"
+    "feat(desktop): advertise current managed desktop audio (#157723)"
   ],
   "fix_items": [
-    "fix(agents): restore admitted optional plugin tools in Codex runs (#157840)",
-    "fix: enforce Google Chat and Team Reports file size limits (#158181)",
-    "fix(doctor): report remaining systemd units after cleanup (#158034)",
-    "fix(codex): restore Computer Use after desktop plugin replacement (#156556)",
-    "perf(test): replace placement polling waits with fake timers (#158175)",
-    "fix(ci): resume partially published preparation receipts (#158174)",
-    "fix(ui): retain delayed progress scroll gestures (#158153)",
-    "perf(update): avoid repeated retained-copy parent creation",
-    "fix(test): prepare catalog fixture modules before startup (#158157)",
-    "fix: keep model pickers usable during provider sign-in (#158132)",
-    "fix(ci): unblock Control UI targeted Crabbox gates (#158149)",
-    "fix: bound stalled browser stream startup (#156323)",
-    "fix(onnx): prevent worker fixture hangs after release (#158146)",
-    "fix(models): preserve scoped provider discovery outcomes (#158139)",
-    "fix(agents): report offline trash failures after agent delete (#158052)",
-    "perf(mcp): back off failed bundle server starts (#158088)",
-    "fix: show native background commands in Tasks (#158038)",
-    "fix: model pickers ignore clicks during startup loading (#158128)",
-    "perf(cron): speed up concurrent automation list requests (#158077)",
-    "fix(ci): repair Gateway lint and Doctor mock cleanup (#158074)",
-    "perf(test): defer jsdom loading for Node tests (#158125)",
-    "fix(memory): keep consolidated snippets on a word boundary (#157322)",
-    "fix: show GitHub merge and closure dates beside sidebar badges (#158081)",
-    "perf(skills): preserve canonical sources in worktree sessions (#158110)",
-    "fix(ui): show failed goal outcome checks (#158021)",
-    "perf(models): correct discovery outcomes in lifecycle fixtures (#158115)",
-    "fix: package private QA Gateway fixtures for installed candidates (#157286)",
-    "fix(i18n): warn about obsolete Apple catalog rows in CI",
-    "fix(update): release the retained runtime on every exit path and keep checkout manifests loadable (#157752)",
-    "fix: reuse Crabbox Testboxes with a custom state directory (#157898)"
+    "fix: rebuild incomplete Git runtimes when source is current (#158931)",
+    "perf(sessions): retain reclamation workers after settled refusals (#158878)",
+    "fix: let setup chat remove configuration overrides (#158873)",
+    "fix: retain parent links in Incognito forks (#158927)",
+    "perf(ui): defer table overflow measurement until layout (#158930)",
+    "perf(agents): coalesce queued provider text appends (#158837)",
+    "fix(codex): use monotonic clock for plugin config discovery deadline (#155863)",
+    "fix(cli): reject blank native hook relay --timeout (#145523)",
+    "fix(memory-core): fall back to FTS on runtime query-embedding failure for optional providers (#156998) (#157032)",
+    "fix(doctor): migrate every agent database before repairs open it (#158584)",
+    "fix: warn agents when background commands cannot wake them (#158884)",
+    "fix(doctor): enforce version-bound plugin convergence (#119857)",
+    "fix(workers): stop checkpoint writes after authority closes (#150611)",
+    "perf(worktrees): avoid repeated cleanup inventories (#158892)",
+    "perf(sessions): bound maintenance planning outside write admission (#158885)",
+    "fix(sessions): prevent duplicate labels during concurrent creation (#158839)",
+    "fix(cron): automations get rejects jobs carrying scheduleErrorCount diagnostics (#157497)",
+    "perf(trajectory): reuse unchanged tool schema projections (#158871)",
+    "perf(gateway): bound conversation environment cleanup retries (#158867)",
+    "perf(agents): reuse current session capability facts (#158872)",
+    "perf(gateway): reuse resident facts for activity recaps (#158803)",
+    "perf(gateway): reuse prepared assistant identities and avatars (#158597)",
+    "fix(channels): retain ingress claims through settlement (#158637)",
+    "perf(plugins): stop reading native plugin artifacts at startup (#158414)",
+    "fix(ui): keep agent menu closed when leaving settings (#158870)",
+    "fix(computer): release attached desktops after rejected actions (#158546)",
+    "perf(state): reduce host CPU for agent worker writes (#158843)",
+    "perf(sessions): skip unused extension dispatch while streaming (#158859)",
+    "fix(telegram): recognize delivered forum-topic replies (#158054)",
+    "fix(ci): recover distant pull request bases in shallow checkouts (#129492)"
   ],
   "top_scopes": [
     {
+      "scope": "gateway",
+      "count": 69
+    },
+    {
       "scope": "ui",
-      "count": 53
+      "count": 47
     },
     {
       "scope": "fix",
-      "count": 43
-    },
-    {
-      "scope": "ci",
-      "count": 40
+      "count": 45
     },
     {
       "scope": "test",
-      "count": 35
-    },
-    {
-      "scope": "gateway",
-      "count": 26
-    },
-    {
-      "scope": "update",
-      "count": 23
+      "count": 42
     },
     {
       "scope": "agents",
+      "count": 23
+    },
+    {
+      "scope": "update",
       "count": 17
     },
     {
-      "scope": "release",
+      "scope": "sessions",
+      "count": 16
+    },
+    {
+      "scope": "channels",
       "count": 15
     },
     {
-      "scope": "android",
+      "scope": "ci",
       "count": 13
     },
     {
-      "scope": "refactor",
-      "count": 11
-    },
-    {
-      "scope": "cli",
-      "count": 10
-    },
-    {
       "scope": "plugins",
-      "count": 10
+      "count": 12
     },
     {
-      "scope": "sessions",
-      "count": 10
+      "scope": "qa",
+      "count": 12
+    },
+    {
+      "scope": "codex",
+      "count": 9
+    },
+    {
+      "scope": "release",
+      "count": 9
     },
     {
       "scope": "doctor",
-      "count": 9
+      "count": 8
     },
     {
-      "scope": "models",
-      "count": 9
+      "scope": "state",
+      "count": 8
     }
   ]
 }

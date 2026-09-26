@@ -1,6 +1,6 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-09-26T00:00:22+08:00
+- Generated at: 2026-09-26T23:12:00+08:00
 - Requested window: 2026-09-25 to 2026-09-26
 - Coverage: 6 products
 - Live 24h feeds: 1
@@ -11,30 +11,30 @@
 
 - Freshness: live_24h
 - Window: 2026-09-25 to 2026-09-26
-- Generated at: 2026-09-26T00:00:05.277998+08:00
+- Generated at: 2026-09-26T23:11:43.098930+08:00
 - 窗口: 2026-09-25 至 2026-09-26
-- GitHub 增量: 518 commits / 0 releases
-- 最近 push: 2026-09-25
+- GitHub 增量: 545 commits / 0 releases
+- 最近 push: 2026-09-26
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(agentsapi): add OpenClaw tool support (#154208)
-  - feat(ui): control audio from the standalone desktop view (#157726)
-  - feat(ui): listen to managed desktop audio in the panel (#157724)
-  - feat(release): one approval per release via an attested parent approval receipt (#157911)
-  - feat(desktop): advertise current managed desktop audio (#157723)
-  - feat(desktop): bind audio streaming to screen authorization (#157722)
-  - feat(desktop): isolate managed Linux application audio (#157720)
-  - feat(desktop): advertise optional audio capability (#157718)
+  - feat: expose preferred Git release targets in update status (#158926)
+  - feat: reserve ordered model recommendations in catalog v2 (#158863)
+  - feat(release): automate iOS and Android store releases (#158807)
+  - feat(gateway): preserve callback ports on plugin routes (#158360)
+  - feat(agents): let owners hand keys, config, and skill edits to their agent in chat (#158120)
+  - feat: curate plugin categories and add Computer use discovery (#158686)
+  - feat(release): publish npm children in npm-publish behind the single parent approval (#158500)
+  - feat(ci): add SimSlim and native iOS release qualification (#147770)
 - Fixes and constraints:
-  - fix(agents): restore admitted optional plugin tools in Codex runs (#157840)
-  - fix: enforce Google Chat and Team Reports file size limits (#158181)
-  - fix(doctor): report remaining systemd units after cleanup (#158034)
-  - fix(codex): restore Computer Use after desktop plugin replacement (#156556)
-  - perf(test): replace placement polling waits with fake timers (#158175)
-  - fix(ci): resume partially published preparation receipts (#158174)
-  - fix(ui): retain delayed progress scroll gestures (#158153)
-  - perf(update): avoid repeated retained-copy parent creation
+  - fix: rebuild incomplete Git runtimes when source is current (#158931)
+  - perf(sessions): retain reclamation workers after settled refusals (#158878)
+  - fix: let setup chat remove configuration overrides (#158873)
+  - fix: retain parent links in Incognito forks (#158927)
+  - perf(ui): defer table overflow measurement until layout (#158930)
+  - perf(agents): coalesce queued provider text appends (#158837)
+  - fix(codex): use monotonic clock for plugin config discovery deadline (#155863)
+  - fix(cli): reject blank native hook relay --timeout (#145523)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
