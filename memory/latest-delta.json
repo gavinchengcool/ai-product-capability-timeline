@@ -1,91 +1,91 @@
 {
-  "generatedAt": "2026-09-26T23:11:43.098930+08:00",
+  "generatedAt": "2026-09-27T23:52:36.169789+08:00",
   "window": {
-    "start_local": "2026-09-25T23:11:43.098930+08:00",
-    "end_local": "2026-09-26T23:11:43.098930+08:00",
-    "start_utc": "2026-09-25T15:11:43Z",
-    "end_utc": "2026-09-26T15:11:43Z"
+    "start_local": "2026-09-26T23:52:36.169789+08:00",
+    "end_local": "2026-09-27T23:52:36.169789+08:00",
+    "start_utc": "2026-09-26T15:52:36Z",
+    "end_utc": "2026-09-27T15:52:36Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 390558,
-    "forks": 82148,
-    "open_issues": 8658,
-    "pushed_at": "2026-09-26T15:09:53Z"
+    "stars": 390640,
+    "forks": 82159,
+    "open_issues": 8785,
+    "pushed_at": "2026-09-27T15:51:44Z"
   },
   "summary": {
-    "commitCount": 545,
+    "commitCount": 461,
     "releaseCount": 0,
     "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 390558,
-    "forks": 82148,
-    "openIssues": 8658
+    "stars": 390640,
+    "forks": 82159,
+    "openIssues": 8785
   },
   "releases": [],
   "featureItems": [
-    "feat: expose preferred Git release targets in update status (#158926)",
-    "feat: reserve ordered model recommendations in catalog v2 (#158863)",
-    "feat(release): automate iOS and Android store releases (#158807)",
-    "feat(gateway): preserve callback ports on plugin routes (#158360)",
-    "feat(agents): let owners hand keys, config, and skill edits to their agent in chat (#158120)",
-    "feat: curate plugin categories and add Computer use discovery (#158686)",
-    "feat(release): publish npm children in npm-publish behind the single parent approval (#158500)",
-    "feat(ci): add SimSlim and native iOS release qualification (#147770)"
+    "feat(apple): show agent identities in native chat (#159528)",
+    "feat: let agents query online people and device activity (#159117)",
+    "feat(apple): show message times and models in native chat (#159366)",
+    "feat(macos): add a command palette to native chat windows (#159350)",
+    "feat(channels): configure mentions in bot-created threads (#157713)",
+    "feat(codex): enable Ultrafast for supported models (#158703)",
+    "Support isolated sessions in the AgentsAPI and enable restricted dreaming sessions (#159246)",
+    "feat: delegate managed Gateway updates to OCM (#158932)"
   ],
   "fixItems": [
-    "fix: rebuild incomplete Git runtimes when source is current (#158931)",
-    "perf(sessions): retain reclamation workers after settled refusals (#158878)",
-    "fix: let setup chat remove configuration overrides (#158873)",
-    "fix: retain parent links in Incognito forks (#158927)",
-    "perf(ui): defer table overflow measurement until layout (#158930)",
-    "perf(agents): coalesce queued provider text appends (#158837)",
-    "fix(codex): use monotonic clock for plugin config discovery deadline (#155863)",
-    "fix(cli): reject blank native hook relay --timeout (#145523)"
+    "fix(android): keep draft text aligned when adding lines (#159720)",
+    "fix(state): retire workers after existing-schema scope ends",
+    "fix(android): preserve QR pairing when another network connects (#159719)",
+    "fix(imessage): keep benign Contacts diagnostics out of error logs (#156334) thanks @Olli0103",
+    "perf(gateway): avoid full-store run session lookups (#159742)",
+    "fix(config): walk include pre-scan on an explicit work stack (#153711) thanks @ruel225",
+    "fix(cli): stop advising retries for declined conditional config writes (#159708)",
+    "fix(config): resolve deep nesting on an explicit work stack (#152889) thanks @ruel225"
   ],
   "topScopes": [
     {
-      "scope": "gateway",
-      "count": 69
+      "scope": "ui",
+      "count": 42
     },
     {
-      "scope": "ui",
-      "count": 47
+      "scope": "gateway",
+      "count": 40
     },
     {
       "scope": "fix",
-      "count": 45
+      "count": 31
     },
     {
       "scope": "test",
-      "count": 42
+      "count": 30
     },
     {
       "scope": "agents",
       "count": 23
     },
     {
-      "scope": "update",
-      "count": 17
-    },
-    {
-      "scope": "sessions",
-      "count": 16
+      "scope": "cli",
+      "count": 13
     },
     {
       "scope": "channels",
-      "count": 15
+      "count": 13
+    },
+    {
+      "scope": "plugins",
+      "count": 12
     }
   ],
   "headlineCommits": [
-    "chore(lint): drop stale copilot event-bridge max-lines baseline entry",
-    "fix: rebuild incomplete Git runtimes when source is current (#158931)",
-    "test(core,ui,plugins): remove low-value tests (batch d017) (#158882)",
-    "test(agents,gateway,plugins): remove low-value tests (batch d021) (#158919)",
-    "perf(sessions): retain reclamation workers after settled refusals (#158878)",
-    "fix: let setup chat remove configuration overrides (#158873)",
-    "test(core,plugins,chat): remove low-value tests (batch d010) (#158698)",
-    "test(core,plugins,tooling): remove low-value tests (batch d011) (#158811)"
+    "fix(android): keep draft text aligned when adding lines (#159720)",
+    "fix(state): retire workers after existing-schema scope ends",
+    "fix(android): preserve QR pairing when another network connects (#159719)",
+    "fix(imessage): keep benign Contacts diagnostics out of error logs (#156334) thanks @Olli0103",
+    "perf(gateway): avoid full-store run session lookups (#159742)",
+    "fix(config): walk include pre-scan on an explicit work stack (#153711) thanks @ruel225",
+    "fix(cli): stop advising retries for declined conditional config writes (#159708)",
+    "fix(config): resolve deep nesting on an explicit work stack (#152889) thanks @ruel225"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 }

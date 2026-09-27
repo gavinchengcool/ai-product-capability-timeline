@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-09-26T23:12:00+08:00
-- Requested window: 2026-09-25 to 2026-09-26
+- Generated at: 2026-09-27T23:52:53+08:00
+- Requested window: 2026-09-26 to 2026-09-27
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-09-25 to 2026-09-26
-- Generated at: 2026-09-26T23:11:43.098930+08:00
-- 窗口: 2026-09-25 至 2026-09-26
-- GitHub 增量: 545 commits / 0 releases
-- 最近 push: 2026-09-26
+- Window: 2026-09-26 to 2026-09-27
+- Generated at: 2026-09-27T23:52:36.169789+08:00
+- 窗口: 2026-09-26 至 2026-09-27
+- GitHub 增量: 461 commits / 0 releases
+- 最近 push: 2026-09-27
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat: expose preferred Git release targets in update status (#158926)
-  - feat: reserve ordered model recommendations in catalog v2 (#158863)
-  - feat(release): automate iOS and Android store releases (#158807)
-  - feat(gateway): preserve callback ports on plugin routes (#158360)
-  - feat(agents): let owners hand keys, config, and skill edits to their agent in chat (#158120)
-  - feat: curate plugin categories and add Computer use discovery (#158686)
-  - feat(release): publish npm children in npm-publish behind the single parent approval (#158500)
-  - feat(ci): add SimSlim and native iOS release qualification (#147770)
+  - feat(apple): show agent identities in native chat (#159528)
+  - feat: let agents query online people and device activity (#159117)
+  - feat(apple): show message times and models in native chat (#159366)
+  - feat(macos): add a command palette to native chat windows (#159350)
+  - feat(channels): configure mentions in bot-created threads (#157713)
+  - feat(codex): enable Ultrafast for supported models (#158703)
+  - Support isolated sessions in the AgentsAPI and enable restricted dreaming sessions (#159246)
+  - feat: delegate managed Gateway updates to OCM (#158932)
 - Fixes and constraints:
-  - fix: rebuild incomplete Git runtimes when source is current (#158931)
-  - perf(sessions): retain reclamation workers after settled refusals (#158878)
-  - fix: let setup chat remove configuration overrides (#158873)
-  - fix: retain parent links in Incognito forks (#158927)
-  - perf(ui): defer table overflow measurement until layout (#158930)
-  - perf(agents): coalesce queued provider text appends (#158837)
-  - fix(codex): use monotonic clock for plugin config discovery deadline (#155863)
-  - fix(cli): reject blank native hook relay --timeout (#145523)
+  - fix(android): keep draft text aligned when adding lines (#159720)
+  - fix(state): retire workers after existing-schema scope ends
+  - fix(android): preserve QR pairing when another network connects (#159719)
+  - fix(imessage): keep benign Contacts diagnostics out of error logs (#156334) thanks @Olli0103
+  - perf(gateway): avoid full-store run session lookups (#159742)
+  - fix(config): walk include pre-scan on an explicit work stack (#153711) thanks @ruel225
+  - fix(cli): stop advising retries for declined conditional config writes (#159708)
+  - fix(config): resolve deep nesting on an explicit work stack (#152889) thanks @ruel225
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
