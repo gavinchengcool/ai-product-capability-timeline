@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-09-27T23:52:53+08:00
-- Requested window: 2026-09-26 to 2026-09-27
+- Generated at: 2026-09-29T02:49:31+08:00
+- Requested window: 2026-09-28 to 2026-09-29
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-09-26 to 2026-09-27
-- Generated at: 2026-09-27T23:52:36.169789+08:00
-- 窗口: 2026-09-26 至 2026-09-27
-- GitHub 增量: 461 commits / 0 releases
-- 最近 push: 2026-09-27
+- Window: 2026-09-28 to 2026-09-29
+- Generated at: 2026-09-29T02:49:13.731176+08:00
+- 窗口: 2026-09-28 至 2026-09-29
+- GitHub 增量: 569 commits / 0 releases
+- 最近 push: 2026-09-28
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(apple): show agent identities in native chat (#159528)
-  - feat: let agents query online people and device activity (#159117)
-  - feat(apple): show message times and models in native chat (#159366)
-  - feat(macos): add a command palette to native chat windows (#159350)
-  - feat(channels): configure mentions in bot-created threads (#157713)
-  - feat(codex): enable Ultrafast for supported models (#158703)
-  - Support isolated sessions in the AgentsAPI and enable restricted dreaming sessions (#159246)
-  - feat: delegate managed Gateway updates to OCM (#158932)
+  - feat(desktop): let agents resume after manual control (#159923)
+  - feat(video): add Kie AI, Z.AI, and Novita video generation (#160080)
+  - feat(macos): show the web conversation in native chat windows (#159946)
+  - feat(macos): match the web sidebar's roster defaults and view options (#160141)
+  - feat(agentsapi): discover self-hosted skills (#159363)
+  - feat(agentsapi): configure hosted or self-hosted environments (#158307)
+  - feat(ui): show open and running sessions beside online people (#160022)
+  - feat(ui): organize sidebar session filters in one panel (#150605)
 - Fixes and constraints:
-  - fix(android): keep draft text aligned when adding lines (#159720)
-  - fix(state): retire workers after existing-schema scope ends
-  - fix(android): preserve QR pairing when another network connects (#159719)
-  - fix(imessage): keep benign Contacts diagnostics out of error logs (#156334) thanks @Olli0103
-  - perf(gateway): avoid full-store run session lookups (#159742)
-  - fix(config): walk include pre-scan on an explicit work stack (#153711) thanks @ruel225
-  - fix(cli): stop advising retries for declined conditional config writes (#159708)
-  - fix(config): resolve deep nesting on an explicit work stack (#152889) thanks @ruel225
+  - fix(ci): pack partitioned planner proof within the main-tier row cap
+  - fix: keep Codex chats working during slow model discovery (#160363)
+  - fix(googlechat): update reply visibility after config reload (#160323)
+  - fix(ui): show the working branch in the mobile PR strip (#160597)
+  - fix(plugins): Doctor fails after native capture directories disappear (#160291)
+  - fix(plugins): preserve install recovery and retirement ownership (#147827)
+  - fix(ui): keep New Session composer reachable on mobile (#160603)
+  - fix(plugins): copy dependency manifests into native captures (#160519)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
