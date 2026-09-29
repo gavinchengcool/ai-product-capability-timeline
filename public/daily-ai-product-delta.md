@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-09-29T02:49:31+08:00
-- Requested window: 2026-09-28 to 2026-09-29
+- Generated at: 2026-09-30T01:06:40+08:00
+- Requested window: 2026-09-29 to 2026-09-30
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-09-28 to 2026-09-29
-- Generated at: 2026-09-29T02:49:13.731176+08:00
-- 窗口: 2026-09-28 至 2026-09-29
-- GitHub 增量: 569 commits / 0 releases
-- 最近 push: 2026-09-28
+- Window: 2026-09-29 to 2026-09-30
+- Generated at: 2026-09-30T01:06:21.731471+08:00
+- 窗口: 2026-09-29 至 2026-09-30
+- GitHub 增量: 565 commits / 1 releases
+- 最近 push: 2026-09-29
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(desktop): let agents resume after manual control (#159923)
-  - feat(video): add Kie AI, Z.AI, and Novita video generation (#160080)
-  - feat(macos): show the web conversation in native chat windows (#159946)
-  - feat(macos): match the web sidebar's roster defaults and view options (#160141)
-  - feat(agentsapi): discover self-hosted skills (#159363)
-  - feat(agentsapi): configure hosted or self-hosted environments (#158307)
-  - feat(ui): show open and running sessions beside online people (#160022)
-  - feat(ui): organize sidebar session filters in one panel (#150605)
+  - feat: connect Agents API sessions to HTTP MCP servers (#160931)
+  - feat(agentsapi): add independent plugin selection configuration (#161048)
+  - improve: pick agent emoji and enlarge New Session avatar (#160950)
+  - feat(agentsapi): configure hosted network access (#161004)
+  - feat(anthropic): support Claude Sonnet 5.5 (#160847)
+  - feat(approvals): enforce scoped Slack plugin reviewers (#159525)
+  - feat(ui): remove large pasted text from composer preview (#160834)
+  - feat: speak Gemini dialogues with two voices (#157465)
 - Fixes and constraints:
-  - fix(ci): pack partitioned planner proof within the main-tier row cap
-  - fix: keep Codex chats working during slow model discovery (#160363)
-  - fix(googlechat): update reply visibility after config reload (#160323)
-  - fix(ui): show the working branch in the mobile PR strip (#160597)
-  - fix(plugins): Doctor fails after native capture directories disappear (#160291)
-  - fix(plugins): preserve install recovery and retirement ownership (#147827)
-  - fix(ui): keep New Session composer reachable on mobile (#160603)
-  - fix(plugins): copy dependency manifests into native captures (#160519)
+  - perf(ui): preload the chat route's boot chunks on cold loads (#160293)
+  - fix(update): preserve original state before direct updates (#161044)
+  - fix(ci): run Codex adoption recovery with the database broker (#161276)
+  - fix(infra): preserve snapshot cleanup custody across module reloads
+  - fix(pr): recover a cancelled auto request on the same head
+  - fix: recover Gateway after triage repairs a refused restart (#160173)
+  - fix(sessions): restore Windows cron setup and session admission (#160075)
+  - fix(test): verify retired listener rejection and non-dispatch
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

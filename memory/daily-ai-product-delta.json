@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-29T02:49:31+08:00",
+  "generatedAt": "2026-09-30T01:06:40+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-09-28T02:49:31+08:00",
-    "end_local": "2026-09-29T02:49:31+08:00"
+    "start_local": "2026-09-29T01:06:40+08:00",
+    "end_local": "2026-09-30T01:06:40+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-09-29T02:49:13.731176+08:00",
+      "generatedAt": "2026-09-30T01:06:21.731471+08:00",
       "window": {
-        "start_local": "2026-09-28T02:49:13.731176+08:00",
-        "end_local": "2026-09-29T02:49:13.731176+08:00",
-        "start_utc": "2026-09-27T18:49:13Z",
-        "end_utc": "2026-09-28T18:49:13Z"
+        "start_local": "2026-09-29T01:06:21.731471+08:00",
+        "end_local": "2026-09-30T01:06:21.731471+08:00",
+        "start_utc": "2026-09-28T17:06:21Z",
+        "end_utc": "2026-09-29T17:06:21Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-09-28 至 2026-09-29"
+          "value": "2026-09-29 至 2026-09-30"
         },
         {
           "label": "GitHub 增量",
-          "value": "569 commits / 0 releases"
+          "value": "565 commits / 1 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-09-28"
+          "value": "2026-09-29"
         },
         {
           "label": "来源",
@@ -52,58 +52,66 @@
         }
       ],
       "featureItems": [
-        "feat(desktop): let agents resume after manual control (#159923)",
-        "feat(video): add Kie AI, Z.AI, and Novita video generation (#160080)",
-        "feat(macos): show the web conversation in native chat windows (#159946)",
-        "feat(macos): match the web sidebar's roster defaults and view options (#160141)",
-        "feat(agentsapi): discover self-hosted skills (#159363)",
-        "feat(agentsapi): configure hosted or self-hosted environments (#158307)",
-        "feat(ui): show open and running sessions beside online people (#160022)",
-        "feat(ui): organize sidebar session filters in one panel (#150605)"
+        "feat: connect Agents API sessions to HTTP MCP servers (#160931)",
+        "feat(agentsapi): add independent plugin selection configuration (#161048)",
+        "improve: pick agent emoji and enlarge New Session avatar (#160950)",
+        "feat(agentsapi): configure hosted network access (#161004)",
+        "feat(anthropic): support Claude Sonnet 5.5 (#160847)",
+        "feat(approvals): enforce scoped Slack plugin reviewers (#159525)",
+        "feat(ui): remove large pasted text from composer preview (#160834)",
+        "feat: speak Gemini dialogues with two voices (#157465)"
       ],
       "fixItems": [
-        "fix(ci): pack partitioned planner proof within the main-tier row cap",
-        "fix: keep Codex chats working during slow model discovery (#160363)",
-        "fix(googlechat): update reply visibility after config reload (#160323)",
-        "fix(ui): show the working branch in the mobile PR strip (#160597)",
-        "fix(plugins): Doctor fails after native capture directories disappear (#160291)",
-        "fix(plugins): preserve install recovery and retirement ownership (#147827)",
-        "fix(ui): keep New Session composer reachable on mobile (#160603)",
-        "fix(plugins): copy dependency manifests into native captures (#160519)"
+        "perf(ui): preload the chat route's boot chunks on cold loads (#160293)",
+        "fix(update): preserve original state before direct updates (#161044)",
+        "fix(ci): run Codex adoption recovery with the database broker (#161276)",
+        "fix(infra): preserve snapshot cleanup custody across module reloads",
+        "fix(pr): recover a cancelled auto request on the same head",
+        "fix: recover Gateway after triage repairs a refused restart (#160173)",
+        "fix(sessions): restore Windows cron setup and session admission (#160075)",
+        "fix(test): verify retired listener rejection and non-dispatch"
       ],
-      "releases": [],
+      "releases": [
+        {
+          "tag_name": "v2026.8.33",
+          "published_at": "2026-09-29T03:12:00Z",
+          "name": "openclaw 2026.8.33",
+          "prerelease": false,
+          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.33"
+        }
+      ],
       "topScopes": [
         {
-          "scope": "ci",
-          "count": 80
-        },
-        {
           "scope": "ui",
-          "count": 78
-        },
-        {
-          "scope": "gateway",
-          "count": 51
-        },
-        {
-          "scope": "test",
-          "count": 43
+          "count": 77
         },
         {
           "scope": "fix",
-          "count": 35
+          "count": 43
+        },
+        {
+          "scope": "gateway",
+          "count": 34
+        },
+        {
+          "scope": "test",
+          "count": 32
+        },
+        {
+          "scope": "ci",
+          "count": 26
+        },
+        {
+          "scope": "agents",
+          "count": 19
+        },
+        {
+          "scope": "sessions",
+          "count": 18
         },
         {
           "scope": "update",
-          "count": 14
-        },
-        {
-          "scope": "plugins",
-          "count": 13
-        },
-        {
-          "scope": "cli",
-          "count": 12
+          "count": 17
         }
       ],
       "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
