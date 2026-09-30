@@ -1,99 +1,99 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-09-30T01:06:21.731471+08:00",
+  "generatedAt": "2026-10-01T01:04:16.550931+08:00",
   "window": {
-    "start_local": "2026-09-29T01:06:21.731471+08:00",
-    "end_local": "2026-09-30T01:06:21.731471+08:00",
-    "start_utc": "2026-09-28T17:06:21Z",
-    "end_utc": "2026-09-29T17:06:21Z"
+    "start_local": "2026-09-30T01:04:16.550931+08:00",
+    "end_local": "2026-10-01T01:04:16.550931+08:00",
+    "start_utc": "2026-09-29T17:04:16Z",
+    "end_utc": "2026-09-30T17:04:16Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 390780,
-    "forks": 82183,
-    "open_issues": 9034,
-    "pushed_at": "2026-09-29T17:06:14Z"
+    "stars": 390901,
+    "forks": 82210,
+    "open_issues": 9117,
+    "pushed_at": "2026-09-30T17:03:03Z"
   },
   "summary": {
-    "commitCount": 565,
+    "commitCount": 559,
     "releaseCount": 1,
     "stableReleaseCount": 1,
     "betaReleaseCount": 0,
-    "stars": 390780,
-    "forks": 82183,
-    "openIssues": 9034
+    "stars": 390901,
+    "forks": 82210,
+    "openIssues": 9117
   },
   "releases": [
     {
-      "tag_name": "v2026.8.33",
-      "published_at": "2026-09-29T03:12:00Z",
-      "name": "openclaw 2026.8.33",
+      "tag_name": "v2026.9.7",
+      "published_at": "2026-09-30T04:44:14Z",
+      "name": "openclaw 2026.9.7",
       "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.33"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.7"
     }
   ],
   "featureItems": [
-    "feat: connect Agents API sessions to HTTP MCP servers (#160931)",
-    "feat(agentsapi): add independent plugin selection configuration (#161048)",
-    "improve: pick agent emoji and enlarge New Session avatar (#160950)",
-    "feat(agentsapi): configure hosted network access (#161004)",
-    "feat(anthropic): support Claude Sonnet 5.5 (#160847)",
-    "feat(approvals): enforce scoped Slack plugin reviewers (#159525)",
-    "feat(ui): remove large pasted text from composer preview (#160834)",
-    "feat: speak Gemini dialogues with two voices (#157465)"
+    "Worktree sessions: start a new chat in an isolated managed worktree from web, iOS, or Android so parallel sessions on one repository no longer collide. (#100788) Thanks @obviyus. [v2026.9.7]",
+    "New sessions: set `gateway.controlUi.newSessionModelDefaults: \"configured\"` to start fresh sessions from the agent's configured model, runtime, and thinking defaults instead of the last-used choices; the default stays `\"last-used\"`. (#156866) Thanks @vincentkoc. [v2026.9.7]",
+    "Anthropic: bare `opus` and new Anthropic API, CLI, and media setup select Claude Opus 5.5 while explicit Opus 5 selections stay pinned, and thinking-display preferences reach Anthropic transports. (#156093) Thanks @fuller-stack-dev. [v2026.9.7]",
+    "Gemini: add an opt-in `google-interactions` API backend for Gemini Interactions text, image, reasoning, and tool-call workflows. (#149880) Thanks @markmcd and @RomneyDa. [v2026.9.7]",
+    "Plugins: see declared plugin capabilities, setup guides, and tool inputs in detail previews, browse curated categories with a new Computer use shelf, and get consistent white icon tiles for bundled logos. (#157956, #157946, #158686, #155259) Thanks @Patrick-Erichsen. [v2026.9.7]",
+    "Decision models: add the `decision_evaluate` tool for Boolean, Choice, and Score questions against an agent's configured decision model, with provider capabilities listed in `models.list`, and keep fallback working when a provider rejects the input. (#155134, #156746) Thanks @jjjhenriksen and @jalehman. [v2026.9.7]",
+    "Portals: let collaborators open session-scoped interactive previews from dedicated worker attachments through a restricted `portal` tool, without global host-port access. (#156373) Thanks @vincentkoc. [v2026.9.7]",
+    "Meetings: add experimental duplicate-safe Google Meet participation with retained caption context and speaker provenance. (#152327) Thanks @canvrno-oai. [v2026.9.7]"
   ],
   "fixItems": [
-    "perf(ui): preload the chat route's boot chunks on cold loads (#160293)",
-    "fix(update): preserve original state before direct updates (#161044)",
-    "fix(ci): run Codex adoption recovery with the database broker (#161276)",
-    "fix(infra): preserve snapshot cleanup custody across module reloads",
-    "fix(pr): recover a cancelled auto request on the same head",
-    "fix: recover Gateway after triage repairs a refused restart (#160173)",
-    "fix(sessions): restore Windows cron setup and session admission (#160075)",
-    "fix(test): verify retired listener rejection and non-dispatch"
+    "perf(ui): stop scanning the whole roster for every sidebar row's archive state (#161995)",
+    "fix(gateway): preserve proxy policy in local TLS health probes (#161946)",
+    "fix(release): skip pending ClawHub publications and surface recovery for failed ones (#161985)",
+    "fix(pr): qualify real Gateway failures in cancelled UI jobs",
+    "fix(release): verify beta floor for core npm packages (#161968)",
+    "fix(ci): bound isolated Gateway fixture workers",
+    "fix: preserve plugin install records during legacy updates (#161485)",
+    "fix(ios): release cancelled Watch readback observers promptly"
   ],
   "topScopes": [
     {
       "scope": "ui",
-      "count": 77
-    },
-    {
-      "scope": "fix",
-      "count": 43
-    },
-    {
-      "scope": "gateway",
-      "count": 34
+      "count": 62
     },
     {
       "scope": "test",
-      "count": 32
+      "count": 49
     },
     {
       "scope": "ci",
-      "count": 26
+      "count": 36
     },
     {
-      "scope": "agents",
-      "count": 19
+      "scope": "gateway",
+      "count": 28
     },
     {
-      "scope": "sessions",
-      "count": 18
+      "scope": "fix",
+      "count": 24
     },
     {
       "scope": "update",
+      "count": 22
+    },
+    {
+      "scope": "agents",
+      "count": 22
+    },
+    {
+      "scope": "plugins",
       "count": 17
     }
   ],
   "headlineCommits": [
-    "test(gateway): isolate the worker-free startup fixture",
-    "ci(release): drop the self-upgrade aggregate chunk from stable validation (#161291)",
-    "refactor(agent-core): tighten compaction and tool-policy tests (#161281)",
-    "perf(ui): preload the chat route's boot chunks on cold loads (#160293)",
-    "refactor(ui): consolidate retained pane cleanup (#161274)",
-    "test: bind MCP migration fault observers to worker instances",
-    "fix(update): preserve original state before direct updates (#161044)",
-    "fix(ci): run Codex adoption recovery with the database broker (#161276)"
+    "chore(ui): make incidental chat test videos opt-in (#161996)",
+    "perf(ui): stop scanning the whole roster for every sidebar row's archive state (#161995)",
+    "test(update): verify context activation after published upgrade",
+    "test(ui): scope storage recovery checks to the fixture",
+    "refactor(policy): deslop policy (#161988)",
+    "fix(gateway): preserve proxy policy in local TLS health probes (#161946)",
+    "refactor(whatsapp): deslop whatsapp (#161983)",
+    "test(prometheus): await metric scrapes before assertions (#161986)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

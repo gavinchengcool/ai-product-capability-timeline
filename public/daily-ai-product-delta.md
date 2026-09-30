@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-09-30T01:06:40+08:00
-- Requested window: 2026-09-29 to 2026-09-30
+- Generated at: 2026-10-01T01:04:36+08:00
+- Requested window: 2026-09-30 to 2026-10-01
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-09-29 to 2026-09-30
-- Generated at: 2026-09-30T01:06:21.731471+08:00
-- 窗口: 2026-09-29 至 2026-09-30
-- GitHub 增量: 565 commits / 1 releases
-- 最近 push: 2026-09-29
+- Window: 2026-09-30 to 2026-10-01
+- Generated at: 2026-10-01T01:04:16.550931+08:00
+- 窗口: 2026-09-30 至 2026-10-01
+- GitHub 增量: 559 commits / 1 releases
+- 最近 push: 2026-09-30
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat: connect Agents API sessions to HTTP MCP servers (#160931)
-  - feat(agentsapi): add independent plugin selection configuration (#161048)
-  - improve: pick agent emoji and enlarge New Session avatar (#160950)
-  - feat(agentsapi): configure hosted network access (#161004)
-  - feat(anthropic): support Claude Sonnet 5.5 (#160847)
-  - feat(approvals): enforce scoped Slack plugin reviewers (#159525)
-  - feat(ui): remove large pasted text from composer preview (#160834)
-  - feat: speak Gemini dialogues with two voices (#157465)
+  - Worktree sessions: start a new chat in an isolated managed worktree from web, iOS, or Android so parallel sessions on one repository no longer collide. (#100788) Thanks @obviyus. [v2026.9.7]
+  - New sessions: set `gateway.controlUi.newSessionModelDefaults: "configured"` to start fresh sessions from the agent's configured model, runtime, and thinking defaults instead of the last-used choices; the default stays `"last-used"`. (#156866) Thanks @vincentkoc. [v2026.9.7]
+  - Anthropic: bare `opus` and new Anthropic API, CLI, and media setup select Claude Opus 5.5 while explicit Opus 5 selections stay pinned, and thinking-display preferences reach Anthropic transports. (#156093) Thanks @fuller-stack-dev. [v2026.9.7]
+  - Gemini: add an opt-in `google-interactions` API backend for Gemini Interactions text, image, reasoning, and tool-call workflows. (#149880) Thanks @markmcd and @RomneyDa. [v2026.9.7]
+  - Plugins: see declared plugin capabilities, setup guides, and tool inputs in detail previews, browse curated categories with a new Computer use shelf, and get consistent white icon tiles for bundled logos. (#157956, #157946, #158686, #155259) Thanks @Patrick-Erichsen. [v2026.9.7]
+  - Decision models: add the `decision_evaluate` tool for Boolean, Choice, and Score questions against an agent's configured decision model, with provider capabilities listed in `models.list`, and keep fallback working when a provider rejects the input. (#155134, #156746) Thanks @jjjhenriksen and @jalehman. [v2026.9.7]
+  - Portals: let collaborators open session-scoped interactive previews from dedicated worker attachments through a restricted `portal` tool, without global host-port access. (#156373) Thanks @vincentkoc. [v2026.9.7]
+  - Meetings: add experimental duplicate-safe Google Meet participation with retained caption context and speaker provenance. (#152327) Thanks @canvrno-oai. [v2026.9.7]
 - Fixes and constraints:
-  - perf(ui): preload the chat route's boot chunks on cold loads (#160293)
-  - fix(update): preserve original state before direct updates (#161044)
-  - fix(ci): run Codex adoption recovery with the database broker (#161276)
-  - fix(infra): preserve snapshot cleanup custody across module reloads
-  - fix(pr): recover a cancelled auto request on the same head
-  - fix: recover Gateway after triage repairs a refused restart (#160173)
-  - fix(sessions): restore Windows cron setup and session admission (#160075)
-  - fix(test): verify retired listener rejection and non-dispatch
+  - perf(ui): stop scanning the whole roster for every sidebar row's archive state (#161995)
+  - fix(gateway): preserve proxy policy in local TLS health probes (#161946)
+  - fix(release): skip pending ClawHub publications and surface recovery for failed ones (#161985)
+  - fix(pr): qualify real Gateway failures in cancelled UI jobs
+  - fix(release): verify beta floor for core npm packages (#161968)
+  - fix(ci): bound isolated Gateway fixture workers
+  - fix: preserve plugin install records during legacy updates (#161485)
+  - fix(ios): release cancelled Watch readback observers promptly
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
