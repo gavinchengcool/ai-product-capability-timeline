@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-10-01T01:04:36+08:00
-- Requested window: 2026-09-30 to 2026-10-01
+- Generated at: 2026-10-02T01:34:59+08:00
+- Requested window: 2026-10-01 to 2026-10-02
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-09-30 to 2026-10-01
-- Generated at: 2026-10-01T01:04:16.550931+08:00
-- 窗口: 2026-09-30 至 2026-10-01
-- GitHub 增量: 559 commits / 1 releases
-- 最近 push: 2026-09-30
+- Window: 2026-10-01 to 2026-10-02
+- Generated at: 2026-10-02T01:34:41.128033+08:00
+- 窗口: 2026-10-01 至 2026-10-02
+- GitHub 增量: 654 commits / 0 releases
+- 最近 push: 2026-10-01
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Worktree sessions: start a new chat in an isolated managed worktree from web, iOS, or Android so parallel sessions on one repository no longer collide. (#100788) Thanks @obviyus. [v2026.9.7]
-  - New sessions: set `gateway.controlUi.newSessionModelDefaults: "configured"` to start fresh sessions from the agent's configured model, runtime, and thinking defaults instead of the last-used choices; the default stays `"last-used"`. (#156866) Thanks @vincentkoc. [v2026.9.7]
-  - Anthropic: bare `opus` and new Anthropic API, CLI, and media setup select Claude Opus 5.5 while explicit Opus 5 selections stay pinned, and thinking-display preferences reach Anthropic transports. (#156093) Thanks @fuller-stack-dev. [v2026.9.7]
-  - Gemini: add an opt-in `google-interactions` API backend for Gemini Interactions text, image, reasoning, and tool-call workflows. (#149880) Thanks @markmcd and @RomneyDa. [v2026.9.7]
-  - Plugins: see declared plugin capabilities, setup guides, and tool inputs in detail previews, browse curated categories with a new Computer use shelf, and get consistent white icon tiles for bundled logos. (#157956, #157946, #158686, #155259) Thanks @Patrick-Erichsen. [v2026.9.7]
-  - Decision models: add the `decision_evaluate` tool for Boolean, Choice, and Score questions against an agent's configured decision model, with provider capabilities listed in `models.list`, and keep fallback working when a provider rejects the input. (#155134, #156746) Thanks @jjjhenriksen and @jalehman. [v2026.9.7]
-  - Portals: let collaborators open session-scoped interactive previews from dedicated worker attachments through a restricted `portal` tool, without global host-port access. (#156373) Thanks @vincentkoc. [v2026.9.7]
-  - Meetings: add experimental duplicate-safe Google Meet participation with retained caption context and speaker provenance. (#152327) Thanks @canvrno-oai. [v2026.9.7]
+  - feat: optionally omit tools on conversational turns (#153340)
+  - feat(ai): scope transport hosts per runtime (#158901)
+  - feat(macos): add Gateway hosting controls and Node migration (#161779)
+  - feat: retain required results without model polling (#162707)
+  - feat: migrate existing agents to local Claws (#162329)
+  - feat(skills): search bounded installed skill instructions (#160538)
+  - feat(cron): query run history across automations (#148947)
+  - feat(agents): expose installed skill search across harnesses (#158091)
 - Fixes and constraints:
-  - perf(ui): stop scanning the whole roster for every sidebar row's archive state (#161995)
-  - fix(gateway): preserve proxy policy in local TLS health probes (#161946)
-  - fix(release): skip pending ClawHub publications and surface recovery for failed ones (#161985)
-  - fix(pr): qualify real Gateway failures in cancelled UI jobs
-  - fix(release): verify beta floor for core npm packages (#161968)
-  - fix(ci): bound isolated Gateway fixture workers
-  - fix: preserve plugin install records during legacy updates (#161485)
-  - fix(ios): release cancelled Watch readback observers promptly
+  - fix(test): TUI PTY e2e tests fail on loaded hosts when fixture record polling outlasts its deadline (#162845)
+  - fix(usage): file-based usage footer stops updating after an atomic save (#162733)
+  - fix(agents): request errors naming a thinking field no longer trigger the thinking-block retry (#161118)
+  - fix(test): plugin install, staging, release, and Docker tooling tests fail on loaded hosts when fixture children outlast polling deadlines (#162848)
+  - fix(outbound): keep long fenced code intact in newline chunk mode (#162412)
+  - fix(ci): fetch boundary bases for shallow PR checkouts
+  - perf(gateway): reduce session publication allocations and repeated redaction scans (#162810)
+  - fix(ci): align TUI PTY support tests with canonical owners
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
