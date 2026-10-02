@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-10-02T01:34:59+08:00
-- Requested window: 2026-10-01 to 2026-10-02
+- Generated at: 2026-10-03T00:54:00+08:00
+- Requested window: 2026-10-02 to 2026-10-03
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-10-01 to 2026-10-02
-- Generated at: 2026-10-02T01:34:41.128033+08:00
-- 窗口: 2026-10-01 至 2026-10-02
-- GitHub 增量: 654 commits / 0 releases
-- 最近 push: 2026-10-01
+- Window: 2026-10-02 to 2026-10-03
+- Generated at: 2026-10-03T00:53:41.118603+08:00
+- 窗口: 2026-10-02 至 2026-10-03
+- GitHub 增量: 635 commits / 2 releases
+- 最近 push: 2026-10-02
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat: optionally omit tools on conversational turns (#153340)
-  - feat(ai): scope transport hosts per runtime (#158901)
-  - feat(macos): add Gateway hosting controls and Node migration (#161779)
-  - feat: retain required results without model polling (#162707)
-  - feat: migrate existing agents to local Claws (#162329)
-  - feat(skills): search bounded installed skill instructions (#160538)
-  - feat(cron): query run history across automations (#148947)
-  - feat(agents): expose installed skill search across harnesses (#158091)
+  - **Model compatibility:** add GPT-6.1 Sol to the branch-native OpenAI and Reef compatibility owners. (#161400, #162955) [v2026.8.35]
+  - feat: inspect ClawHub plugin and skill details before installation (#163460)
+  - feat(plugin-sdk): awaited session persistence; deprecate sync transcript writes (#163264)
+  - feat(state): incognito actor report and outbox adapters (P4a, inactive) (#163494)
+  - feat: use MCP plugin apps across conversations and workspace files (#161747)
+  - feat(state): incognito actor side-data adapters (P3, inactive) (#163403)
+  - feat(state): incognito actor session facts and authority (P2, inactive) (#163225)
+  - feat(codex): request Ultrafast by default when the catalog advertises it (#163320)
 - Fixes and constraints:
-  - fix(test): TUI PTY e2e tests fail on loaded hosts when fixture record polling outlasts its deadline (#162845)
-  - fix(usage): file-based usage footer stops updating after an atomic save (#162733)
-  - fix(agents): request errors naming a thinking field no longer trigger the thinking-block retry (#161118)
-  - fix(test): plugin install, staging, release, and Docker tooling tests fail on loaded hosts when fixture children outlast polling deadlines (#162848)
-  - fix(outbound): keep long fenced code intact in newline chunk mode (#162412)
-  - fix(ci): fetch boundary bases for shallow PR checkouts
-  - perf(gateway): reduce session publication allocations and repeated redaction scans (#162810)
-  - fix(ci): align TUI PTY support tests with canonical owners
+  - fix(test): 20 more suites prepare compiled worker subprocesses inside their first test (#163554)
+  - fix(telegram): recognize images sent as documents (#141292)
+  - fix(codex): authorize canonical sandbox reads (#150731)
+  - fix(release): apply 2026.9.8 live shard waivers (#163621)
+  - fix(watch): complete cache migration and ignore unchanged invalidations (#161543)
+  - fix: prove Codex native workspace execution in QA (#163427)
+  - fix: let long Claude shell jobs release chat turns (#161780)
+  - fix(agents): preserve actionable public failure guidance (#163538)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

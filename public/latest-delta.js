@@ -1,91 +1,106 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-10-02T01:34:41.128033+08:00",
+  "generatedAt": "2026-10-03T00:53:41.118603+08:00",
   "window": {
-    "start_local": "2026-10-01T01:34:41.128033+08:00",
-    "end_local": "2026-10-02T01:34:41.128033+08:00",
-    "start_utc": "2026-09-30T17:34:41Z",
-    "end_utc": "2026-10-01T17:34:41Z"
+    "start_local": "2026-10-02T00:53:41.118603+08:00",
+    "end_local": "2026-10-03T00:53:41.118603+08:00",
+    "start_utc": "2026-10-01T16:53:41Z",
+    "end_utc": "2026-10-02T16:53:41Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 391133,
-    "forks": 82235,
-    "open_issues": 9152,
-    "pushed_at": "2026-10-01T17:33:22Z"
+    "stars": 391181,
+    "forks": 82224,
+    "open_issues": 9175,
+    "pushed_at": "2026-10-02T16:52:10Z"
   },
   "summary": {
-    "commitCount": 654,
-    "releaseCount": 0,
-    "stableReleaseCount": 0,
+    "commitCount": 635,
+    "releaseCount": 2,
+    "stableReleaseCount": 2,
     "betaReleaseCount": 0,
-    "stars": 391133,
-    "forks": 82235,
-    "openIssues": 9152
+    "stars": 391181,
+    "forks": 82224,
+    "openIssues": 9175
   },
-  "releases": [],
+  "releases": [
+    {
+      "tag_name": "v2026.8.35",
+      "published_at": "2026-10-02T14:06:34Z",
+      "name": "openclaw 2026.8.35",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.35"
+    },
+    {
+      "tag_name": "v2026.8.34",
+      "published_at": "2026-10-02T00:12:39Z",
+      "name": "openclaw 2026.8.34",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.34"
+    }
+  ],
   "featureItems": [
-    "feat: optionally omit tools on conversational turns (#153340)",
-    "feat(ai): scope transport hosts per runtime (#158901)",
-    "feat(macos): add Gateway hosting controls and Node migration (#161779)",
-    "feat: retain required results without model polling (#162707)",
-    "feat: migrate existing agents to local Claws (#162329)",
-    "feat(skills): search bounded installed skill instructions (#160538)",
-    "feat(cron): query run history across automations (#148947)",
-    "feat(agents): expose installed skill search across harnesses (#158091)"
+    "**Model compatibility:** add GPT-6.1 Sol to the branch-native OpenAI and Reef compatibility owners. (#161400, #162955) [v2026.8.35]",
+    "feat: inspect ClawHub plugin and skill details before installation (#163460)",
+    "feat(plugin-sdk): awaited session persistence; deprecate sync transcript writes (#163264)",
+    "feat(state): incognito actor report and outbox adapters (P4a, inactive) (#163494)",
+    "feat: use MCP plugin apps across conversations and workspace files (#161747)",
+    "feat(state): incognito actor side-data adapters (P3, inactive) (#163403)",
+    "feat(state): incognito actor session facts and authority (P2, inactive) (#163225)",
+    "feat(codex): request Ultrafast by default when the catalog advertises it (#163320)"
   ],
   "fixItems": [
-    "fix(test): TUI PTY e2e tests fail on loaded hosts when fixture record polling outlasts its deadline (#162845)",
-    "fix(usage): file-based usage footer stops updating after an atomic save (#162733)",
-    "fix(agents): request errors naming a thinking field no longer trigger the thinking-block retry (#161118)",
-    "fix(test): plugin install, staging, release, and Docker tooling tests fail on loaded hosts when fixture children outlast polling deadlines (#162848)",
-    "fix(outbound): keep long fenced code intact in newline chunk mode (#162412)",
-    "fix(ci): fetch boundary bases for shallow PR checkouts",
-    "perf(gateway): reduce session publication allocations and repeated redaction scans (#162810)",
-    "fix(ci): align TUI PTY support tests with canonical owners"
+    "fix(test): 20 more suites prepare compiled worker subprocesses inside their first test (#163554)",
+    "fix(telegram): recognize images sent as documents (#141292)",
+    "fix(codex): authorize canonical sandbox reads (#150731)",
+    "fix(release): apply 2026.9.8 live shard waivers (#163621)",
+    "fix(watch): complete cache migration and ignore unchanged invalidations (#161543)",
+    "fix: prove Codex native workspace execution in QA (#163427)",
+    "fix: let long Claude shell jobs release chat turns (#161780)",
+    "fix(agents): preserve actionable public failure guidance (#163538)"
   ],
   "topScopes": [
     {
       "scope": "test",
-      "count": 63
-    },
-    {
-      "scope": "ui",
-      "count": 46
+      "count": 57
     },
     {
       "scope": "fix",
-      "count": 42
+      "count": 44
     },
     {
-      "scope": "agents",
-      "count": 29
+      "scope": "ui",
+      "count": 38
+    },
+    {
+      "scope": "ci",
+      "count": 38
     },
     {
       "scope": "update",
-      "count": 26
-    },
-    {
-      "scope": "docs",
-      "count": 25
-    },
-    {
-      "scope": "gateway",
-      "count": 24
+      "count": 33
     },
     {
       "scope": "sessions",
-      "count": 22
+      "count": 33
+    },
+    {
+      "scope": "gateway",
+      "count": 32
+    },
+    {
+      "scope": "agents",
+      "count": 24
     }
   ],
   "headlineCommits": [
-    "fix(test): TUI PTY e2e tests fail on loaded hosts when fixture record polling outlasts its deadline (#162845)",
-    "fix(usage): file-based usage footer stops updating after an atomic save (#162733)",
-    "fix(agents): request errors naming a thinking field no longer trigger the thinking-block retry (#161118)",
-    "fix(test): plugin install, staging, release, and Docker tooling tests fail on loaded hosts when fixture children outlast polling deadlines (#162848)",
-    "improve: sessions_send delivers a peer's reply once instead of running automatic agent ping-pong (#162227)",
-    "fix(outbound): keep long fenced code intact in newline chunk mode (#162412)",
-    "fix(ci): fetch boundary bases for shallow PR checkouts",
-    "perf(gateway): reduce session publication allocations and repeated redaction scans (#162810)"
+    "test: preserve Gateway storage in composed worker fixtures (#163637)",
+    "fix(test): 20 more suites prepare compiled worker subprocesses inside their first test (#163554)",
+    "fix(telegram): recognize images sent as documents (#141292)",
+    "test(agents): stop pinning legacy tool-result wording",
+    "refactor(config): remove unused metadata timestamp argument (#163622)",
+    "test(ui): remove low-value tests (batch d158) (#163632)",
+    "refactor(agents): deslop subagent retirement and reactivation paths (#163614)",
+    "fix(codex): authorize canonical sandbox reads (#150731)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
