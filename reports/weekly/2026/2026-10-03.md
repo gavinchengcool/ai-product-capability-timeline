@@ -1,100 +1,99 @@
 # OpenClaw Weekly Update
 
-生成时间：2026-10-03T00:53:41.118603+08:00
+生成时间：2026-10-03T23:17:39.151457+08:00
 
 ## Window
 
-- Start: 2026-10-02T00:53:41.118603+08:00
-- End: 2026-10-03T00:53:41.118603+08:00
+- Start: 2026-10-02T23:17:39.151457+08:00
+- End: 2026-10-03T23:17:39.151457+08:00
 - Repo: `openclaw/openclaw`
 
 ## At A Glance
 
-- Commits in window: 635
-- Releases in window: 2
-- Stable releases in window: 2
+- Commits in window: 618
+- Releases in window: 1
+- Stable releases in window: 1
 - Beta releases in window: 0
-- Repo stars at scan time: 391181
-- Repo forks at scan time: 82224
+- Repo stars at scan time: 391230
+- Repo forks at scan time: 82238
 
 ## New Capability Signals
 
-- **Model compatibility:** add GPT-6.1 Sol to the branch-native OpenAI and Reef compatibility owners. (#161400, #162955) [v2026.8.35]
-- feat: inspect ClawHub plugin and skill details before installation (#163460)
-- feat(plugin-sdk): awaited session persistence; deprecate sync transcript writes (#163264)
-- feat(state): incognito actor report and outbox adapters (P4a, inactive) (#163494)
-- feat: use MCP plugin apps across conversations and workspace files (#161747)
-- feat(state): incognito actor side-data adapters (P3, inactive) (#163403)
-- feat(state): incognito actor session facts and authority (P2, inactive) (#163225)
-- feat(codex): request Ultrafast by default when the catalog advertises it (#163320)
-- feat(macos): snooze sessions from the native sidebar (#163241)
-- feat(macos): show web composer badges and session actions in the sidebar (#163193)
-- feat(macos): add native sidebar filtering and grouping (#163164)
-- feat(state): worker-owned incognito session actor (P1, inactive) (#163145)
-- feat(agents): allow managed worktrees for hidden subagents (#163124)
-- feat(macos): show session hovercards in the native sidebar (#163165)
-- feat(macos): edit native sidebar group defaults (#163162)
+- feat(plugins): refuse foreign live-owner SDK workspace mutations (routing 2/4 follow-up) (#164203)
+- feat: prepare cloud workers for enterprise repositories (#160108)
+- feat(diagnostics): record RPC response bytes and main-thread heap delta per method (#164335)
+- feat(memory): let the memory slot own the pre-compaction flush (#162177)
+- feat(state): incognito actor memory and Codex history routing (P5c, inactive) (#164224)
+- feat(ui): show when a chat is waiting on subagents (#164190)
+- feat(gateway): route pairing and default approvals through the live owner (#164075)
+- feat(update): adopt immutable installations and prepare sealed generations without activating them (#163799)
+- feat(macos): undo archiving and group selected sessions in the native sidebar (#164073)
+- feat(state): incognito actor history routing (P5a, inactive) (#164044)
+- feat(diagnostics): export the V8 heap-space breakdown (#164057)
+- feat(macos): select, batch-edit, and drag sessions in the native sidebar (#164013)
+- feat(gateway): route worktree CLI mutations through the live owner (routing 2/4) (#163953)
+- feat(state): incognito actor history routing (P5a, inactive) (#163987)
+- feat(gateway): route same-root local state mutations through the live owner (routing 1/4) (#163853)
 
 ## Important Fixes And Hardening
 
-- fix(test): 20 more suites prepare compiled worker subprocesses inside their first test (#163554)
-- fix(telegram): recognize images sent as documents (#141292)
-- fix(codex): authorize canonical sandbox reads (#150731)
-- fix(release): apply 2026.9.8 live shard waivers (#163621)
-- fix(watch): complete cache migration and ignore unchanged invalidations (#161543)
-- fix: prove Codex native workspace execution in QA (#163427)
-- fix: let long Claude shell jobs release chat turns (#161780)
-- fix(agents): preserve actionable public failure guidance (#163538)
-- fix(i18n): stop parallel native PRs from conflicting in the string inventory (#163330)
-- fix(update): keep registry mutations and Doctor repairs working when update-history reconciliation cannot run (#163608)
-- fix(qa): classify transport readiness failures (#163602)
-- fix: keep Bun plugins on their native loader when module hooks exist (#163539)
-- fix(codex): update managed runtime to 0.160.0 (#163560)
-- fix(qa): retain Telegram proxy failure facts (#163598)
-- fix: macOS release upgrade checks fail during updater recovery (#163580)
+- fix(update): publish the repair deadline result when the Gateway is still starting (#164337)
+- fix(cli): respect --format text when fetching web pages (#162036)
+- fix(sessions): release discarded tool output backing strings (#164361)
+- fix(cli): avoid hangs on FIFO config file inputs (#164161)
+- fix: retain admitted agent context after auth refresh (#164340)
+- fix(memory): session memory sync fails with too many SQL variables on large session stores (#164336)
+- fix(codex): prevent stale native sessions from mutating successors (#164197)
+- fix(gateway): serialize recovery source reads with publication
+- perf(gateway): release per-connection state on close (#164307)
+- fix: reconcile Windows node results in deeply nested repositories (#164331)
+- fix(bench): generate canonical agent rosters for startup (#164322)
+- fix(ci): forward live video provider credentials (#164317)
+- fix(sessions): Windows sessions.create fails with publication owner is no longer current (#162033)
+- fix(test): retain real query factories in environment capture fixture
+- fix(qa): compare generated image captions through delivery owner (#164213)
 
 ## Releases This Week
 
-- `v2026.8.35` | stable | 2026-10-02T14:06:34Z | openclaw 2026.8.35
-- `v2026.8.34` | stable | 2026-10-02T00:12:39Z | openclaw 2026.8.34
+- `v2026.9.8` | stable | 2026-10-03T03:21:47Z | openclaw 2026.9.8
 
 ## Most Active Change Scopes
 
-- `test`: 57
-- `fix`: 44
-- `ui`: 38
-- `ci`: 38
-- `update`: 33
-- `sessions`: 33
-- `gateway`: 32
-- `agents`: 24
-- `state`: 17
-- `release`: 15
-- `codex`: 14
-- `qa`: 14
+- `gateway`: 55
+- `test`: 50
+- `fix`: 42
+- `ui`: 33
+- `agents`: 29
+- `sessions`: 26
+- `plugins`: 26
+- `ci`: 20
+- `update`: 15
+- `state`: 15
+- `cli`: 14
+- `doctor`: 14
 
 ## Recent Commit Headlines
 
-- 2026-10-02T16:51:41Z | test: preserve Gateway storage in composed worker fixtures (#163637)
-- 2026-10-02T16:49:00Z | fix(test): 20 more suites prepare compiled worker subprocesses inside their first test (#163554)
-- 2026-10-02T16:48:48Z | fix(telegram): recognize images sent as documents (#141292)
-- 2026-10-02T16:44:09Z | test(agents): stop pinning legacy tool-result wording
-- 2026-10-02T16:44:41Z | refactor(config): remove unused metadata timestamp argument (#163622)
-- 2026-10-02T16:39:41Z | test(ui): remove low-value tests (batch d158) (#163632)
-- 2026-10-02T16:31:24Z | refactor(agents): deslop subagent retirement and reactivation paths (#163614)
-- 2026-10-02T16:26:11Z | fix(codex): authorize canonical sandbox reads (#150731)
-- 2026-10-02T16:21:21Z | test(update): inject handoff cancellation at the worker-owned sentinel seam (#163626)
-- 2026-10-02T16:19:23Z | test(qa): stabilize completion policy continuation (#163398)
-- 2026-10-02T16:17:01Z | fix(release): apply 2026.9.8 live shard waivers (#163621)
-- 2026-10-02T16:15:12Z | test(gateway): use canonical steer fixture config (#163618)
-- 2026-10-02T16:14:04Z | fix(watch): complete cache migration and ignore unchanged invalidations (#161543)
-- 2026-10-02T16:09:56Z | fix: prove Codex native workspace execution in QA (#163427)
-- 2026-10-02T16:01:23Z | fix: let long Claude shell jobs release chat turns (#161780)
-- 2026-10-02T16:00:20Z | refactor(state): move transient disposal to the database lifecycle owner (#163426)
-- 2026-10-02T15:53:47Z | fix(agents): preserve actionable public failure guidance (#163538)
-- 2026-10-02T15:51:58Z | refactor(sessions): move watch and version operations into workers (#163513)
-- 2026-10-02T15:48:17Z | fix(i18n): stop parallel native PRs from conflicting in the string inventory (#163330)
-- 2026-10-02T15:46:18Z | test(ui,state): remove low-value tests (batch d157) (#163609)
+- 2026-10-03T15:17:06Z | refactor(tlon): remove unused request options (#164345)
+- 2026-10-03T15:13:28Z | fix(update): publish the repair deadline result when the Gateway is still starting (#164337)
+- 2026-10-03T15:13:14Z | fix(cli): respect --format text when fetching web pages (#162036)
+- 2026-10-03T15:12:43Z | test(sessions,commands,cron,daemon): remove low-value tests (batch d177) (#164353)
+- 2026-10-03T15:12:31Z | fix(sessions): release discarded tool output backing strings (#164361)
+- 2026-10-03T15:03:53Z | test(startup): configure the historical webhook repair fixture
+- 2026-10-03T15:04:43Z | refactor(secrets): move providerless refs to Doctor (#163350)
+- 2026-10-03T15:00:23Z | chore(ui): refresh control ui locales (#164358)
+- 2026-10-03T14:57:35Z | fix(cli): avoid hangs on FIFO config file inputs (#164161)
+- 2026-10-03T14:53:14Z | fix: retain admitted agent context after auth refresh (#164340)
+- 2026-10-03T14:48:51Z | test(doctor,cli,config,sessions): remove low-value tests (batch d176) (#164348)
+- 2026-10-03T14:46:55Z | feat(plugins): refuse foreign live-owner SDK workspace mutations (routing 2/4 follow-up) (#164203)
+- 2026-10-03T14:42:18Z | feat: prepare cloud workers for enterprise repositories (#160108)
+- 2026-10-03T14:39:22Z | chore(deps): update ACP SDK to 1.5.0 (#162954)
+- 2026-10-03T14:33:19Z | test: seed session-list cap coverage through transcript import (#164326)
+- 2026-10-03T14:33:16Z | fix(memory): session memory sync fails with too many SQL variables on large session stores (#164336)
+- 2026-10-03T14:21:43Z | feat(diagnostics): record RPC response bytes and main-thread heap delta per method (#164335)
+- 2026-10-03T14:21:33Z | fix(codex): prevent stale native sessions from mutating successors (#164197)
+- 2026-10-03T14:18:11Z | test(cron): await owner repair turn admission (#164321)
+- 2026-10-03T14:08:07Z | test(ui): track runs admitted by session creation
 
 ## Sources
 

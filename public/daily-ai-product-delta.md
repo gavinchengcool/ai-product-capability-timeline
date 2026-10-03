@@ -1,6 +1,6 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-10-03T00:54:00+08:00
+- Generated at: 2026-10-03T23:17:55+08:00
 - Requested window: 2026-10-02 to 2026-10-03
 - Coverage: 6 products
 - Live 24h feeds: 1
@@ -11,30 +11,30 @@
 
 - Freshness: live_24h
 - Window: 2026-10-02 to 2026-10-03
-- Generated at: 2026-10-03T00:53:41.118603+08:00
+- Generated at: 2026-10-03T23:17:39.151457+08:00
 - 窗口: 2026-10-02 至 2026-10-03
-- GitHub 增量: 635 commits / 2 releases
-- 最近 push: 2026-10-02
+- GitHub 增量: 618 commits / 1 releases
+- 最近 push: 2026-10-03
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - **Model compatibility:** add GPT-6.1 Sol to the branch-native OpenAI and Reef compatibility owners. (#161400, #162955) [v2026.8.35]
-  - feat: inspect ClawHub plugin and skill details before installation (#163460)
-  - feat(plugin-sdk): awaited session persistence; deprecate sync transcript writes (#163264)
-  - feat(state): incognito actor report and outbox adapters (P4a, inactive) (#163494)
-  - feat: use MCP plugin apps across conversations and workspace files (#161747)
-  - feat(state): incognito actor side-data adapters (P3, inactive) (#163403)
-  - feat(state): incognito actor session facts and authority (P2, inactive) (#163225)
-  - feat(codex): request Ultrafast by default when the catalog advertises it (#163320)
+  - feat(plugins): refuse foreign live-owner SDK workspace mutations (routing 2/4 follow-up) (#164203)
+  - feat: prepare cloud workers for enterprise repositories (#160108)
+  - feat(diagnostics): record RPC response bytes and main-thread heap delta per method (#164335)
+  - feat(memory): let the memory slot own the pre-compaction flush (#162177)
+  - feat(state): incognito actor memory and Codex history routing (P5c, inactive) (#164224)
+  - feat(ui): show when a chat is waiting on subagents (#164190)
+  - feat(gateway): route pairing and default approvals through the live owner (#164075)
+  - feat(update): adopt immutable installations and prepare sealed generations without activating them (#163799)
 - Fixes and constraints:
-  - fix(test): 20 more suites prepare compiled worker subprocesses inside their first test (#163554)
-  - fix(telegram): recognize images sent as documents (#141292)
-  - fix(codex): authorize canonical sandbox reads (#150731)
-  - fix(release): apply 2026.9.8 live shard waivers (#163621)
-  - fix(watch): complete cache migration and ignore unchanged invalidations (#161543)
-  - fix: prove Codex native workspace execution in QA (#163427)
-  - fix: let long Claude shell jobs release chat turns (#161780)
-  - fix(agents): preserve actionable public failure guidance (#163538)
+  - fix(update): publish the repair deadline result when the Gateway is still starting (#164337)
+  - fix(cli): respect --format text when fetching web pages (#162036)
+  - fix(sessions): release discarded tool output backing strings (#164361)
+  - fix(cli): avoid hangs on FIFO config file inputs (#164161)
+  - fix: retain admitted agent context after auth refresh (#164340)
+  - fix(memory): session memory sync fails with too many SQL variables on large session stores (#164336)
+  - fix(codex): prevent stale native sessions from mutating successors (#164197)
+  - fix(gateway): serialize recovery source reads with publication
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
