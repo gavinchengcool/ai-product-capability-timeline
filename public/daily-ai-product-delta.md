@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-10-03T23:17:55+08:00
-- Requested window: 2026-10-02 to 2026-10-03
+- Generated at: 2026-10-07T01:29:02+08:00
+- Requested window: 2026-10-06 to 2026-10-07
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-10-02 to 2026-10-03
-- Generated at: 2026-10-03T23:17:39.151457+08:00
-- 窗口: 2026-10-02 至 2026-10-03
-- GitHub 增量: 618 commits / 1 releases
-- 最近 push: 2026-10-03
+- Window: 2026-10-06 to 2026-10-07
+- Generated at: 2026-10-07T01:28:38.815051+08:00
+- 窗口: 2026-10-06 至 2026-10-07
+- GitHub 增量: 310 commits / 1 releases
+- 最近 push: 2026-10-06
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(plugins): refuse foreign live-owner SDK workspace mutations (routing 2/4 follow-up) (#164203)
-  - feat: prepare cloud workers for enterprise repositories (#160108)
-  - feat(diagnostics): record RPC response bytes and main-thread heap delta per method (#164335)
-  - feat(memory): let the memory slot own the pre-compaction flush (#162177)
-  - feat(state): incognito actor memory and Codex history routing (P5c, inactive) (#164224)
-  - feat(ui): show when a chat is waiting on subagents (#164190)
-  - feat(gateway): route pairing and default approvals through the live owner (#164075)
-  - feat(update): adopt immutable installations and prepare sealed generations without activating them (#163799)
+  - Added inactive-foundation support for incognito actor memory and Codex history routing. (#164224) [v2026.10.1-beta.1]
+  - feat: open the Subagents panel from the chat's subagent count and names (#166142)
+  - feat: open public threads at their regular links (#166049)
+  - ci(release): add package artifact headroom (#166118)
+  - feat(github): support asynchronous PR merges (#163579)
+  - feat(voice-call): per-call briefs, call reports, live steering, callbacks, and voicemail detection (#165716)
+  - feat: benchmark coordinated Control UI Gateway load (#166057)
+  - feat(gateway): dispatch worker-local native inference safely
 - Fixes and constraints:
-  - fix(update): publish the repair deadline result when the Gateway is still starting (#164337)
-  - fix(cli): respect --format text when fetching web pages (#162036)
-  - fix(sessions): release discarded tool output backing strings (#164361)
-  - fix(cli): avoid hangs on FIFO config file inputs (#164161)
-  - fix: retain admitted agent context after auth refresh (#164340)
-  - fix(memory): session memory sync fails with too many SQL variables on large session stores (#164336)
-  - fix(codex): prevent stale native sessions from mutating successors (#164197)
-  - fix(gateway): serialize recovery source reads with publication
+  - perf(sqlite): reuse admitted schema catalog facts (#166102)
+  - fix(whatsapp): recognize images sent as documents (#165774)
+  - perf(state): reuse background integrity checks on clean restarts (#166112)
+  - fix(telegram): keep delegated progress live after the parent yields (#166101)
+  - fix(test): stabilize full release validation shards (#166184)
+  - fix: inspect retained drafts in background-work tests (#166201)
+  - fix: tool turns fail for reasoning models on api.openai.com Completions routes (#166182)
+  - fix: avoid duplicate Crabbox fixture builds (#166188)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
