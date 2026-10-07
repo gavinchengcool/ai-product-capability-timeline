@@ -1,99 +1,86 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-10-07T01:28:38.815051+08:00",
+  "generatedAt": "2026-10-08T02:00:52.062700+08:00",
   "window": {
-    "start_local": "2026-10-06T01:28:38.815051+08:00",
-    "end_local": "2026-10-07T01:28:38.815051+08:00",
-    "start_utc": "2026-10-05T17:28:38Z",
-    "end_utc": "2026-10-06T17:28:38Z"
+    "start_local": "2026-10-07T02:00:52.062700+08:00",
+    "end_local": "2026-10-08T02:00:52.062700+08:00",
+    "start_utc": "2026-10-06T18:00:52Z",
+    "end_utc": "2026-10-07T18:00:52Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 391511,
-    "forks": 82292,
-    "open_issues": 9457,
-    "pushed_at": "2026-10-06T17:27:10Z"
+    "stars": 391584,
+    "forks": 82285,
+    "open_issues": 9441,
+    "pushed_at": "2026-10-07T17:56:27Z"
   },
   "summary": {
-    "commitCount": 310,
-    "releaseCount": 1,
+    "commitCount": 287,
+    "releaseCount": 0,
     "stableReleaseCount": 0,
-    "betaReleaseCount": 1,
-    "stars": 391511,
-    "forks": 82292,
-    "openIssues": 9457
+    "betaReleaseCount": 0,
+    "stars": 391584,
+    "forks": 82285,
+    "openIssues": 9441
   },
-  "releases": [
-    {
-      "tag_name": "v2026.10.1-beta.1",
-      "published_at": "2026-10-05T19:47:49Z",
-      "name": "openclaw 2026.10.1-beta.1",
-      "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.1-beta.1"
-    }
-  ],
+  "releases": [],
   "featureItems": [
-    "Added inactive-foundation support for incognito actor memory and Codex history routing. (#164224) [v2026.10.1-beta.1]",
-    "feat: open the Subagents panel from the chat's subagent count and names (#166142)",
-    "feat: open public threads at their regular links (#166049)",
-    "ci(release): add package artifact headroom (#166118)",
-    "feat(github): support asynchronous PR merges (#163579)",
-    "feat(voice-call): per-call briefs, call reports, live steering, callbacks, and voicemail detection (#165716)",
-    "feat: benchmark coordinated Control UI Gateway load (#166057)",
-    "feat(gateway): dispatch worker-local native inference safely"
+    "feat(terminal): configurable fonts with built-in Nerd Font icons (#166180)",
+    "feat(ui): add seven character variants to the Lobsterdex (#159815)",
+    "feat(clients): adopt worker-local inference placement (#163647)"
   ],
   "fixItems": [
-    "perf(sqlite): reuse admitted schema catalog facts (#166102)",
-    "fix(whatsapp): recognize images sent as documents (#165774)",
-    "perf(state): reuse background integrity checks on clean restarts (#166112)",
-    "fix(telegram): keep delegated progress live after the parent yields (#166101)",
-    "fix(test): stabilize full release validation shards (#166184)",
-    "fix: inspect retained drafts in background-work tests (#166201)",
-    "fix: tool turns fail for reasoning models on api.openai.com Completions routes (#166182)",
-    "fix: avoid duplicate Crabbox fixture builds (#166188)"
+    "fix: preserve CLI history after interrupted progress replies (#166658)",
+    "fix: keep node completion follow-ups in their originating conversation (#160675)",
+    "fix(doctor): preserve SQLite files during migration planning (#166671)",
+    "fix: keep OpenClaw helper calls working across runtime changes (#166235)",
+    "fix(codex): settle undeliverable historical native task deliveries so the plugin migration can converge (#166668)",
+    "fix(slack): keep final replies below later human messages (#163511)",
+    "fix(feishu): coalesce obsolete streaming previews before finalization (#166610)",
+    "perf(cli): reduce gateway call cold-start imports (#166657)"
   ],
   "topScopes": [
     {
       "scope": "gateway",
-      "count": 35
-    },
-    {
-      "scope": "fix",
-      "count": 33
-    },
-    {
-      "scope": "sessions",
-      "count": 25
+      "count": 37
     },
     {
       "scope": "ui",
-      "count": 21
+      "count": 25
+    },
+    {
+      "scope": "fix",
+      "count": 15
+    },
+    {
+      "scope": "update",
+      "count": 13
     },
     {
       "scope": "agents",
+      "count": 13
+    },
+    {
+      "scope": "doctor",
       "count": 12
     },
     {
-      "scope": "ci",
-      "count": 12
-    },
-    {
-      "scope": "test",
+      "scope": "sessions",
       "count": 10
     },
     {
       "scope": "state",
-      "count": 8
+      "count": 9
     }
   ],
   "headlineCommits": [
-    "perf(sqlite): reuse admitted schema catalog facts (#166102)",
-    "refactor(tool-call-repair): simplify redundant guards (#166192)",
-    "fix(whatsapp): recognize images sent as documents (#165774)",
-    "refactor(cli): reuse environment snapshots in tests (#159669)",
-    "perf(state): reuse background integrity checks on clean restarts (#166112)",
-    "fix(telegram): keep delegated progress live after the parent yields (#166101)",
-    "fix(test): stabilize full release validation shards (#166184)",
-    "fix: inspect retained drafts in background-work tests (#166201)"
+    "refactor(linux): consolidate companion lifecycle and presentation (#166673)",
+    "fix: preserve CLI history after interrupted progress replies (#166658)",
+    "fix: keep node completion follow-ups in their originating conversation (#160675)",
+    "fix(doctor): preserve SQLite files during migration planning (#166671)",
+    "fix: keep OpenClaw helper calls working across runtime changes (#166235)",
+    "fix(codex): settle undeliverable historical native task deliveries so the plugin migration can converge (#166668)",
+    "improve(cli): skip version helper for library imports (#162313)",
+    "test(gateway): preserve runtime publication facts contract"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

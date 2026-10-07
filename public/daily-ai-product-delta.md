@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-10-07T01:29:02+08:00
-- Requested window: 2026-10-06 to 2026-10-07
+- Generated at: 2026-10-08T02:01:09+08:00
+- Requested window: 2026-10-07 to 2026-10-08
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,26 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-10-06 to 2026-10-07
-- Generated at: 2026-10-07T01:28:38.815051+08:00
-- 窗口: 2026-10-06 至 2026-10-07
-- GitHub 增量: 310 commits / 1 releases
-- 最近 push: 2026-10-06
+- Window: 2026-10-07 to 2026-10-08
+- Generated at: 2026-10-08T02:00:52.062700+08:00
+- 窗口: 2026-10-07 至 2026-10-08
+- GitHub 增量: 287 commits / 0 releases
+- 最近 push: 2026-10-07
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Added inactive-foundation support for incognito actor memory and Codex history routing. (#164224) [v2026.10.1-beta.1]
-  - feat: open the Subagents panel from the chat's subagent count and names (#166142)
-  - feat: open public threads at their regular links (#166049)
-  - ci(release): add package artifact headroom (#166118)
-  - feat(github): support asynchronous PR merges (#163579)
-  - feat(voice-call): per-call briefs, call reports, live steering, callbacks, and voicemail detection (#165716)
-  - feat: benchmark coordinated Control UI Gateway load (#166057)
-  - feat(gateway): dispatch worker-local native inference safely
+  - feat(terminal): configurable fonts with built-in Nerd Font icons (#166180)
+  - feat(ui): add seven character variants to the Lobsterdex (#159815)
+  - feat(clients): adopt worker-local inference placement (#163647)
 - Fixes and constraints:
-  - perf(sqlite): reuse admitted schema catalog facts (#166102)
-  - fix(whatsapp): recognize images sent as documents (#165774)
-  - perf(state): reuse background integrity checks on clean restarts (#166112)
-  - fix(telegram): keep delegated progress live after the parent yields (#166101)
-  - fix(test): stabilize full release validation shards (#166184)
-  - fix: inspect retained drafts in background-work tests (#166201)
-  - fix: tool turns fail for reasoning models on api.openai.com Completions routes (#166182)
-  - fix: avoid duplicate Crabbox fixture builds (#166188)
+  - fix: preserve CLI history after interrupted progress replies (#166658)
+  - fix: keep node completion follow-ups in their originating conversation (#160675)
+  - fix(doctor): preserve SQLite files during migration planning (#166671)
+  - fix: keep OpenClaw helper calls working across runtime changes (#166235)
+  - fix(codex): settle undeliverable historical native task deliveries so the plugin migration can converge (#166668)
+  - fix(slack): keep final replies below later human messages (#163511)
+  - fix(feishu): coalesce obsolete streaming previews before finalization (#166610)
+  - perf(cli): reduce gateway call cold-start imports (#166657)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
