@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-10-09T02:03:15+08:00
-- Requested window: 2026-10-08 to 2026-10-09
+- Generated at: 2026-10-10T01:36:21+08:00
+- Requested window: 2026-10-09 to 2026-10-10
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,26 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-10-08 to 2026-10-09
-- Generated at: 2026-10-09T02:02:58.807189+08:00
-- 窗口: 2026-10-08 至 2026-10-09
-- GitHub 增量: 393 commits / 2 releases
-- 最近 push: 2026-10-08
+- Window: 2026-10-09 to 2026-10-10
+- Generated at: 2026-10-10T01:36:05.974001+08:00
+- 窗口: 2026-10-09 至 2026-10-10
+- GitHub 增量: 356 commits / 0 releases
+- 最近 push: 2026-10-09
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(ui): choose unlocked Lobsterdex tab icons (#166325)
-  - feat(ui): use agent avatars for browser tab icons (#165201)
-  - feat: prepare required placement through session owners (#166616)
-  - feat(ios): connect Gateway through native Cloudflare Access (#147244)
-  - feat(ios): own Cloudflare Access browser and profile admission (#147238)
-  - feat: enforce required worker destinations before dispatch (#166613)
-  - feat(catalog): publish curated recommended models per provider in catalog v2 (#166737)
-  - feat(anthropic): support Claude Haiku 5.5 (#166706)
+  - feat(ui): choose the shape of agent-avatar favicons (#167809)
+  - ci: admit support and gateway method tests to Bun (#167464)
+  - feat(models): show each provider's recommended models first in pickers (#167370)
 - Fixes and constraints:
-  - fix(ci): avoid redundant release validation work and delayed failures (#167356)
-  - perf(acp): move Gateway session metadata to the shared worker (#167086)
-  - perf(sessions): batch manual transcript maintenance in workers (#167070)
-  - fix(sessions): distinguish slow database holders from queued writers (#167332)
-  - fix: hide active memory recall rows when system sessions are hidden (#167357)
-  - perf(agents): reuse verified history images across session turns (#167355)
-  - fix(gateway): report an unreadable state database in deep status (#167352)
-  - perf: reduce SQLite work from idle periodic sweeps (#167268)
+  - fix(storage): publish conversation and plugin-state mutation receipts (#167731)
+  - fix(ios): task list shows raw progress tags instead of bars (#166321)
+  - fix(sessions): settle locked transcript reads through their owner
+  - fix(plugins): plugin-started agent turns lose session completion status and timing (#167621)
+  - fix(state): revoke native proof when a SQLite worker is lost
+  - fix(state): revoke retired validation before cleanup admission
+  - fix(catalog): stop publishing models providers no longer serve (#167855)
+  - fix(doctor): keep automatic Skill Workshop learning for approval-policy configs (#167846)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

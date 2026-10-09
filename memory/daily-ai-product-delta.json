@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-09T02:03:15+08:00",
+  "generatedAt": "2026-10-10T01:36:21+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-10-08T02:03:15+08:00",
-    "end_local": "2026-10-09T02:03:15+08:00"
+    "start_local": "2026-10-09T01:36:21+08:00",
+    "end_local": "2026-10-10T01:36:21+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-10-09T02:02:58.807189+08:00",
+      "generatedAt": "2026-10-10T01:36:05.974001+08:00",
       "window": {
-        "start_local": "2026-10-08T02:02:58.807189+08:00",
-        "end_local": "2026-10-09T02:02:58.807189+08:00",
-        "start_utc": "2026-10-07T18:02:58Z",
-        "end_utc": "2026-10-08T18:02:58Z"
+        "start_local": "2026-10-09T01:36:05.974001+08:00",
+        "end_local": "2026-10-10T01:36:05.974001+08:00",
+        "start_utc": "2026-10-08T17:36:05Z",
+        "end_utc": "2026-10-09T17:36:05Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-10-08 至 2026-10-09"
+          "value": "2026-10-09 至 2026-10-10"
         },
         {
           "label": "GitHub 增量",
-          "value": "393 commits / 2 releases"
+          "value": "356 commits / 0 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-10-08"
+          "value": "2026-10-09"
         },
         {
           "label": "来源",
@@ -52,73 +52,53 @@
         }
       ],
       "featureItems": [
-        "feat(ui): choose unlocked Lobsterdex tab icons (#166325)",
-        "feat(ui): use agent avatars for browser tab icons (#165201)",
-        "feat: prepare required placement through session owners (#166616)",
-        "feat(ios): connect Gateway through native Cloudflare Access (#147244)",
-        "feat(ios): own Cloudflare Access browser and profile admission (#147238)",
-        "feat: enforce required worker destinations before dispatch (#166613)",
-        "feat(catalog): publish curated recommended models per provider in catalog v2 (#166737)",
-        "feat(anthropic): support Claude Haiku 5.5 (#166706)"
+        "feat(ui): choose the shape of agent-avatar favicons (#167809)",
+        "ci: admit support and gateway method tests to Bun (#167464)",
+        "feat(models): show each provider's recommended models first in pickers (#167370)"
       ],
       "fixItems": [
-        "fix(ci): avoid redundant release validation work and delayed failures (#167356)",
-        "perf(acp): move Gateway session metadata to the shared worker (#167086)",
-        "perf(sessions): batch manual transcript maintenance in workers (#167070)",
-        "fix(sessions): distinguish slow database holders from queued writers (#167332)",
-        "fix: hide active memory recall rows when system sessions are hidden (#167357)",
-        "perf(agents): reuse verified history images across session turns (#167355)",
-        "fix(gateway): report an unreadable state database in deep status (#167352)",
-        "perf: reduce SQLite work from idle periodic sweeps (#167268)"
+        "fix(storage): publish conversation and plugin-state mutation receipts (#167731)",
+        "fix(ios): task list shows raw progress tags instead of bars (#166321)",
+        "fix(sessions): settle locked transcript reads through their owner",
+        "fix(plugins): plugin-started agent turns lose session completion status and timing (#167621)",
+        "fix(state): revoke native proof when a SQLite worker is lost",
+        "fix(state): revoke retired validation before cleanup admission",
+        "fix(catalog): stop publishing models providers no longer serve (#167855)",
+        "fix(doctor): keep automatic Skill Workshop learning for approval-policy configs (#167846)"
       ],
-      "releases": [
-        {
-          "tag_name": "v2026.9.9",
-          "published_at": "2026-10-08T10:23:23Z",
-          "name": "openclaw 2026.9.9",
-          "prerelease": false,
-          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.9"
-        },
-        {
-          "tag_name": "v2026.10.1-beta.2",
-          "published_at": "2026-10-08T00:41:22Z",
-          "name": "openclaw 2026.10.1-beta.2",
-          "prerelease": true,
-          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.1-beta.2"
-        }
-      ],
+      "releases": [],
       "topScopes": [
         {
-          "scope": "fix",
-          "count": 65
+          "scope": "gateway",
+          "count": 29
         },
         {
           "scope": "ui",
-          "count": 24
-        },
-        {
-          "scope": "gateway",
-          "count": 21
+          "count": 26
         },
         {
           "scope": "agents",
-          "count": 20
+          "count": 25
         },
         {
           "scope": "sessions",
-          "count": 17
+          "count": 22
+        },
+        {
+          "scope": "fix",
+          "count": 19
+        },
+        {
+          "scope": "update",
+          "count": 18
         },
         {
           "scope": "refactor",
           "count": 12
         },
         {
-          "scope": "ci",
-          "count": 11
-        },
-        {
-          "scope": "models",
-          "count": 11
+          "scope": "test",
+          "count": 10
         }
       ],
       "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
