@@ -1,86 +1,91 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-10-10T01:36:05.974001+08:00",
+  "generatedAt": "2026-10-11T00:26:45.972313+08:00",
   "window": {
-    "start_local": "2026-10-09T01:36:05.974001+08:00",
-    "end_local": "2026-10-10T01:36:05.974001+08:00",
-    "start_utc": "2026-10-08T17:36:05Z",
-    "end_utc": "2026-10-09T17:36:05Z"
+    "start_local": "2026-10-10T00:26:45.972313+08:00",
+    "end_local": "2026-10-11T00:26:45.972313+08:00",
+    "start_utc": "2026-10-09T16:26:45Z",
+    "end_utc": "2026-10-10T16:26:45Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 391526,
-    "forks": 82295,
-    "open_issues": 9379,
-    "pushed_at": "2026-10-09T17:35:13Z"
+    "stars": 391589,
+    "forks": 82319,
+    "open_issues": 9427,
+    "pushed_at": "2026-10-10T16:26:18Z"
   },
   "summary": {
-    "commitCount": 356,
+    "commitCount": 466,
     "releaseCount": 0,
     "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 391526,
-    "forks": 82295,
-    "openIssues": 9379
+    "stars": 391589,
+    "forks": 82319,
+    "openIssues": 9427
   },
   "releases": [],
   "featureItems": [
-    "feat(ui): choose the shape of agent-avatar favicons (#167809)",
-    "ci: admit support and gateway method tests to Bun (#167464)",
-    "feat(models): show each provider's recommended models first in pickers (#167370)"
+    "feat(plugins): support Solid Control UI views (#168408)",
+    "feat(ui): prepare dormant browser capability screen (#168360)",
+    "feat: choose when sessions can send and receive messages (#162316)",
+    "feat(cli): show progress while tool input is generated (#167789)",
+    "feat: personalize session backgrounds (#168301)",
+    "feat(release): reconcile exact owned validation cancellation trees (#168267)",
+    "feat(ui): group session context and task progress in Details (#161674)",
+    "feat(ui): choose Agents API hosted workspaces when starting sessions (#168259)"
   ],
   "fixItems": [
-    "fix(storage): publish conversation and plugin-state mutation receipts (#167731)",
-    "fix(ios): task list shows raw progress tags instead of bars (#166321)",
-    "fix(sessions): settle locked transcript reads through their owner",
-    "fix(plugins): plugin-started agent turns lose session completion status and timing (#167621)",
-    "fix(state): revoke native proof when a SQLite worker is lost",
-    "fix(state): revoke retired validation before cleanup admission",
-    "fix(catalog): stop publishing models providers no longer serve (#167855)",
-    "fix(doctor): keep automatic Skill Workshop learning for approval-policy configs (#167846)"
+    "fix(qa-lab): prevent false Slack progress failures and leaked fixtures (#168507)",
+    "fix(qa): preserve uncertain Telegram forum cleanup (#168501)",
+    "fix(ui): restore the Control UI startup JavaScript budget (#168506)",
+    "fix(memory): stop dreaming errors for sessions named heartbeat (#168502)",
+    "perf(control-ui): seed reloads with authenticated config (#168265)",
+    "fix(oc-path): reject malformed UTF-8 before writing an edited file (#168491)",
+    "fix(sessions): avoid repeated host compaction after native compaction (#168051)",
+    "fix(workboard): keep CLI changes visible to the running Gateway (#168457)"
   ],
   "topScopes": [
     {
-      "scope": "gateway",
-      "count": 29
+      "scope": "ui",
+      "count": 68
     },
     {
-      "scope": "ui",
-      "count": 26
+      "scope": "fix",
+      "count": 51
     },
     {
       "scope": "agents",
       "count": 25
     },
     {
-      "scope": "sessions",
-      "count": 22
-    },
-    {
-      "scope": "fix",
+      "scope": "memory",
       "count": 19
     },
     {
-      "scope": "update",
-      "count": 18
+      "scope": "gateway",
+      "count": 19
+    },
+    {
+      "scope": "sessions",
+      "count": 17
     },
     {
       "scope": "refactor",
-      "count": 12
+      "count": 15
     },
     {
-      "scope": "test",
-      "count": 10
+      "scope": "ci",
+      "count": 14
     }
   ],
   "headlineCommits": [
-    "refactor: share remaining worker-boundary test probes (#167705)",
-    "fix(storage): publish conversation and plugin-state mutation receipts (#167731)",
-    "refactor(commands): consolidate auth, setup, and maintenance paths (#167870)",
-    "refactor: share gateway method worker-boundary probes (#167681)",
-    "fix(ios): task list shows raw progress tags instead of bars (#166321)",
-    "refactor(agents): share authentication and runtime result handling (#167816)",
-    "test: share Crabbox wrapper fixture compilation",
-    "test(core,plugins,ui): remove low-value tests (batch d034) (#167863)"
+    "fix(qa-lab): prevent false Slack progress failures and leaked fixtures (#168507)",
+    "fix(qa): preserve uncertain Telegram forum cleanup (#168501)",
+    "improve: reduce repeated SQLite work during chat turns (#168093)",
+    "fix(ui): restore the Control UI startup JavaScript budget (#168506)",
+    "fix(memory): stop dreaming errors for sessions named heartbeat (#168502)",
+    "test(models): restore native admission renewal assertions",
+    "improve: reduce SQLite work during chat preparation (#168318)",
+    "test(ui): serialize browser capability build fixtures"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

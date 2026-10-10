@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-10T01:36:21+08:00",
+  "generatedAt": "2026-10-11T00:27:05+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-10-09T01:36:21+08:00",
-    "end_local": "2026-10-10T01:36:21+08:00"
+    "start_local": "2026-10-10T00:27:05+08:00",
+    "end_local": "2026-10-11T00:27:05+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-10-10T01:36:05.974001+08:00",
+      "generatedAt": "2026-10-11T00:26:45.972313+08:00",
       "window": {
-        "start_local": "2026-10-09T01:36:05.974001+08:00",
-        "end_local": "2026-10-10T01:36:05.974001+08:00",
-        "start_utc": "2026-10-08T17:36:05Z",
-        "end_utc": "2026-10-09T17:36:05Z"
+        "start_local": "2026-10-10T00:26:45.972313+08:00",
+        "end_local": "2026-10-11T00:26:45.972313+08:00",
+        "start_utc": "2026-10-09T16:26:45Z",
+        "end_utc": "2026-10-10T16:26:45Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-10-09 至 2026-10-10"
+          "value": "2026-10-10 至 2026-10-11"
         },
         {
           "label": "GitHub 增量",
-          "value": "356 commits / 0 releases"
+          "value": "466 commits / 0 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-10-09"
+          "value": "2026-10-10"
         },
         {
           "label": "来源",
@@ -52,53 +52,58 @@
         }
       ],
       "featureItems": [
-        "feat(ui): choose the shape of agent-avatar favicons (#167809)",
-        "ci: admit support and gateway method tests to Bun (#167464)",
-        "feat(models): show each provider's recommended models first in pickers (#167370)"
+        "feat(plugins): support Solid Control UI views (#168408)",
+        "feat(ui): prepare dormant browser capability screen (#168360)",
+        "feat: choose when sessions can send and receive messages (#162316)",
+        "feat(cli): show progress while tool input is generated (#167789)",
+        "feat: personalize session backgrounds (#168301)",
+        "feat(release): reconcile exact owned validation cancellation trees (#168267)",
+        "feat(ui): group session context and task progress in Details (#161674)",
+        "feat(ui): choose Agents API hosted workspaces when starting sessions (#168259)"
       ],
       "fixItems": [
-        "fix(storage): publish conversation and plugin-state mutation receipts (#167731)",
-        "fix(ios): task list shows raw progress tags instead of bars (#166321)",
-        "fix(sessions): settle locked transcript reads through their owner",
-        "fix(plugins): plugin-started agent turns lose session completion status and timing (#167621)",
-        "fix(state): revoke native proof when a SQLite worker is lost",
-        "fix(state): revoke retired validation before cleanup admission",
-        "fix(catalog): stop publishing models providers no longer serve (#167855)",
-        "fix(doctor): keep automatic Skill Workshop learning for approval-policy configs (#167846)"
+        "fix(qa-lab): prevent false Slack progress failures and leaked fixtures (#168507)",
+        "fix(qa): preserve uncertain Telegram forum cleanup (#168501)",
+        "fix(ui): restore the Control UI startup JavaScript budget (#168506)",
+        "fix(memory): stop dreaming errors for sessions named heartbeat (#168502)",
+        "perf(control-ui): seed reloads with authenticated config (#168265)",
+        "fix(oc-path): reject malformed UTF-8 before writing an edited file (#168491)",
+        "fix(sessions): avoid repeated host compaction after native compaction (#168051)",
+        "fix(workboard): keep CLI changes visible to the running Gateway (#168457)"
       ],
       "releases": [],
       "topScopes": [
         {
-          "scope": "gateway",
-          "count": 29
+          "scope": "ui",
+          "count": 68
         },
         {
-          "scope": "ui",
-          "count": 26
+          "scope": "fix",
+          "count": 51
         },
         {
           "scope": "agents",
           "count": 25
         },
         {
-          "scope": "sessions",
-          "count": 22
-        },
-        {
-          "scope": "fix",
+          "scope": "memory",
           "count": 19
         },
         {
-          "scope": "update",
-          "count": 18
+          "scope": "gateway",
+          "count": 19
+        },
+        {
+          "scope": "sessions",
+          "count": 17
         },
         {
           "scope": "refactor",
-          "count": 12
+          "count": 15
         },
         {
-          "scope": "test",
-          "count": 10
+          "scope": "ci",
+          "count": 14
         }
       ],
       "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"

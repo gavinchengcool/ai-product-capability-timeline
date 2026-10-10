@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-10-10T01:36:21+08:00
-- Requested window: 2026-10-09 to 2026-10-10
+- Generated at: 2026-10-11T00:27:05+08:00
+- Requested window: 2026-10-10 to 2026-10-11
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,26 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-10-09 to 2026-10-10
-- Generated at: 2026-10-10T01:36:05.974001+08:00
-- 窗口: 2026-10-09 至 2026-10-10
-- GitHub 增量: 356 commits / 0 releases
-- 最近 push: 2026-10-09
+- Window: 2026-10-10 to 2026-10-11
+- Generated at: 2026-10-11T00:26:45.972313+08:00
+- 窗口: 2026-10-10 至 2026-10-11
+- GitHub 增量: 466 commits / 0 releases
+- 最近 push: 2026-10-10
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(ui): choose the shape of agent-avatar favicons (#167809)
-  - ci: admit support and gateway method tests to Bun (#167464)
-  - feat(models): show each provider's recommended models first in pickers (#167370)
+  - feat(plugins): support Solid Control UI views (#168408)
+  - feat(ui): prepare dormant browser capability screen (#168360)
+  - feat: choose when sessions can send and receive messages (#162316)
+  - feat(cli): show progress while tool input is generated (#167789)
+  - feat: personalize session backgrounds (#168301)
+  - feat(release): reconcile exact owned validation cancellation trees (#168267)
+  - feat(ui): group session context and task progress in Details (#161674)
+  - feat(ui): choose Agents API hosted workspaces when starting sessions (#168259)
 - Fixes and constraints:
-  - fix(storage): publish conversation and plugin-state mutation receipts (#167731)
-  - fix(ios): task list shows raw progress tags instead of bars (#166321)
-  - fix(sessions): settle locked transcript reads through their owner
-  - fix(plugins): plugin-started agent turns lose session completion status and timing (#167621)
-  - fix(state): revoke native proof when a SQLite worker is lost
-  - fix(state): revoke retired validation before cleanup admission
-  - fix(catalog): stop publishing models providers no longer serve (#167855)
-  - fix(doctor): keep automatic Skill Workshop learning for approval-policy configs (#167846)
+  - fix(qa-lab): prevent false Slack progress failures and leaked fixtures (#168507)
+  - fix(qa): preserve uncertain Telegram forum cleanup (#168501)
+  - fix(ui): restore the Control UI startup JavaScript budget (#168506)
+  - fix(memory): stop dreaming errors for sessions named heartbeat (#168502)
+  - perf(control-ui): seed reloads with authenticated config (#168265)
+  - fix(oc-path): reject malformed UTF-8 before writing an edited file (#168491)
+  - fix(sessions): avoid repeated host compaction after native compaction (#168051)
+  - fix(workboard): keep CLI changes visible to the running Gateway (#168457)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
