@@ -1,100 +1,97 @@
 # OpenClaw Weekly Update
 
-生成时间：2026-10-12T00:51:20.255054+08:00
+生成时间：2026-10-13T04:28:50.395237+08:00
 
 ## Window
 
-- Start: 2026-10-11T00:51:20.255054+08:00
-- End: 2026-10-12T00:51:20.255054+08:00
+- Start: 2026-10-12T04:28:50.395237+08:00
+- End: 2026-10-13T04:28:50.395237+08:00
 - Repo: `openclaw/openclaw`
 
 ## At A Glance
 
-- Commits in window: 577
+- Commits in window: 791
 - Releases in window: 2
 - Stable releases in window: 1
 - Beta releases in window: 1
-- Repo stars at scan time: 391678
-- Repo forks at scan time: 82343
+- Repo stars at scan time: 391785
+- Repo forks at scan time: 82377
 
 ## New Capability Signals
 
-- **Worker-local inference:** add a native worker inference runtime with Gateway dispatch, client placement, required worker policy and destination checks before local inference, and clear setup-failure explanations. (#158902, #163645, #163646, #163647, #166611, #166613, #165960) Thanks @RomneyDa. [v2026.10.5-beta.1]
-- **X channel:** add the X (Twitter) mentions channel plugin with Activity API streaming and backfill, repository-question guest mode with hidden same-agent helpers, GitHub-verified repository writers, and daily and monthly X API cost limits. (#165138, #165337, #165376, #165354, #165543, #168071, #165351) Thanks @obviyus. [v2026.10.5-beta.1]
-- **Channel progress:** show useful Telegram and Discord progress by default, add per-tool glyphs to Discord progress drafts, restore per-tool emoji on Telegram tool rows, and hide routine Slack reaction rows. (#166861, #168032, #167392, #166880) Thanks @obviyus, @keshavbotagent, and @notmnp. [v2026.10.5-beta.1]
-- **Anthropic and Claude CLI:** support Claude Haiku 5.5, show newly listed Claude models without waiting for an OpenClaw release, list each Claude CLI model once, and keep logged-out Claude CLI models listed with a login reason. (#166706, #167658, #166311, #166338, #167942) Thanks @RomneyDa and @obviyus. [v2026.10.5-beta.1]
-- **OpenAI:** support custom realtime voice endpoints, show account chat models missing from the manifest, surface new ChatGPT-login models without a release, and stop offering ChatGPT-only or bundled-Codex-rejected models that would fail. (#165632, #162563, #167387, #167633, #167975) Thanks @jacobtomlinson and @obviyus. [v2026.10.5-beta.1]
-- **Voice calls:** add per-call briefs, call reports, live steering, callbacks, and voicemail detection to voice calls. (#165716) Thanks @mbelinky and @jacobtomlinson. [v2026.10.5-beta.1]
-- **Control UI customization:** let themes customize Control UI branding, use agent avatars or unlocked Lobsterdex icons for browser tabs, choose favicon shapes, and add seven Lobsterdex character variants. (#168027, #165201, #166325, #167809, #159815) Thanks @vyctorbrzezowski, @jacobtomlinson, and @hannesrudolph. [v2026.10.5-beta.1]
-- **Terminal:** add configurable terminal fonts with built-in Nerd Font icons. (#166180) Thanks @jacobtomlinson. [v2026.10.5-beta.1]
-- **Plugins:** pick the newest official plugin release the running OpenClaw supports and keep a working plugin when its matching release is unavailable. (#167485, #166588) Thanks @charlesBerg-ux. [v2026.10.5-beta.1]
-- **GitHub:** support asynchronous PR merges and compact the Publish PR card. (#163579, #165219) Thanks @vincentkoc. [v2026.10.5-beta.1]
-- feat: add per-session speech bubbles and prompt reactions (#168861)
-- feat(install): add opt-in pinned Bun runtime (#168832)
-- feat(sessions): add inactive session actor and scoped receipts (#168602)
-- feat(ui): add guarded Lit-to-Solid codemod (#168720)
-- feat(plugin-sdk): add worker-owned conversation binding APIs (#168483)
+- **Session notices:** creating many sessions gives the main session one summary of new sessions instead of separate notices that crowd out reminders and wakes. (#168239) [v2026.10.5-beta.2]
+- feat(macos): start fresh installs in guided dashboard setup (#169568)
+- feat: support local Gateways in the Windows desktop app (#169522)
+- feat(database): share experimental database engine adapters (#169933)
+- feat: show or hide values in secure entry prompts (#169925)
+- feat: experimental PostgreSQL engine for the workboard store (#169214)
+- feat: show session-specific previews for public links (#169527)
+- feat(agents): prioritize shared private vLLM requests (#129434)
+- feat(llama-cpp): add managed local OCR and vision setup (#148193)
+- feat: offer optional memory embedding setup (#163693)
+- feat(clawrouter): sidebar dashboard for subscription pool headroom (#169514)
+- feat(agents): compact ChatGPT sign-in sessions server-side (remote compaction V2) (#168401)
 
 ## Important Fixes And Hardening
 
-- **Telegram:** keep streamed replies from vanishing when their replacement never lands, retry preview edits after transient errors, keep delegated progress and media-run progress cards live, honor explicit reply tags during partial streaming, keep pending questions through settings commands, restore verbose diagnostics, treat GIFs as videos, and harden spooled turn adoption. (#164649, #165072, #166101, #167362, #167895, #168004, #168016, #168011, #103695, #167470) Thanks @jayzhou2309, @obviyus, @jmar5439, @vincentkoc, and @mgr-nick. [v2026.10.5-beta.1]
-- fix: retain Discord native commands in conversation history (#169200)
-- fix(test): isolate built smoke runtime state
-- fix(ui): repair Activity and Usage test contracts
-- fix(ui): bound shared boot chunks after Solid ports
-- perf(sessions): reuse transcript projection facts within reads (#169201)
-- fix(build): keep Solid tag declarations in the shared owner
-- fix(ui): await rendered palette settings readiness in tests
-- fix(sessions): avoid turn errors when write receipts overtake reads (#169174)
-- fix(ui): preserve chat navigation during recovery reloads (#169194)
-- fix(ui): keep plugin action notices inside the detail panel
-- fix(ios): realtime Talk crashes on the first reply and is silent on the iPhone speaker (#168416)
-- fix(ci): expose lazy runtime imports to dead-export analysis
-- fix(sessions): recover from transient hydration invalidation (#169199)
-- fix(agents): preserve compaction checkpoint recovery ownership
+- Fixed credential leaks across redaction chunk boundaries and redaction stalls on large tool output. (#161480) Thanks @eleqtrizit. [v2026.10.2]
+- Fixed replies lost while an agent finishes starting, streamed Telegram replies vanishing when the replacement message never lands, and Telegram treating local owner rejection as ambiguous delivery. (#168826, #164649, #167470) Thanks @xiaozishan, @jayzhou2309, @obviyus, @jmar5439, and @mgr-nick. [v2026.10.2]
+- Fixed Claude CLI sessions showing runtime prompts as user messages, routed CLI prompts appearing on the owner's side of history, lost replies after long streamed turns, and post-turn compaction failing without an Anthropic API key. (#166080, #163521, #153545, #162066) Thanks @Marvinthebored, @Peetiegonzalez, @RomneyDa, @rogeriochaves, @zhangguiping-xydt, @obviyus, @methylester, @llmsommelier, and @ajmtrz. [v2026.10.2]
+- Fixed subagent and ACP answers being truncated, superseded child answers delivered by late receipts, and requester turns stopping when completion delivery expires. (#165800, #162843, #166139, #164282) Thanks @yetval, @holgergruenhagen, @zyz619963502zyz, @Yun-0000, @michaeljgood71, @Oldrich333, and @obviyus. [v2026.10.2]
+- Fixed runs aborted as stalled after completed async tools or while waiting on plugin approval, context-engine advancement lost after steering, and the tool loop refilling from the wrong context window. (#166997, #161821, #168394, #166120) Thanks @SunnyShu0925, @hannesrudolph, @fransqaas, @obviyus, @robertoronderosjr, @ruel225, and @igs-rogenlo. [v2026.10.2]
+- Fixed OpenAI turns failing on regex-lookaround tool schemas, ChatGPT websocket expiry and 16 MiB SSE limits, strict chat templates after runtime notices, and Code Mode calls with repeated tool-call IDs. (#166999, #167063, #166853, #167309, #165210) Thanks @scs0209, @cursoragent, @obviyus, @adamjgmiller, @Jackten, @jlapenna, and @RomneyDa. [v2026.10.2]
+- Fixed Codex sessions stopping after thread unloads, leaked app-server clients after model discovery timeouts, provider failures shown as a silent stop, and max thinking dropping on cron and hook turns. (#166693, #168365, #165488, #165444) Thanks @jalehman, @Oldrich333, and @obviyus. [v2026.10.2]
+- Fixed sessions failing every turn after a truncated image, the agent disowning earlier image answers, and memory_search snake_case arguments being rejected through tool_call. (#166564, #166165, #158632) Thanks @jayzhou2309, @mirasrael, @nogikeyaksh, @masatohoshino, and @obviyus. [v2026.10.2]
+- Fixed scheduled cron runs losing the Gateway plugin registry, manual cron runs losing tool access, runs rejected after catalog publication, and preflight compaction skipped for completion turns. (#166991, #168037, #168410, #163117) Thanks @67-luck, @lucianosmori, @obviyus, @RomneyDa, @SunnyShu0925, and @AXEG0. [v2026.10.2]
+- Fixed the Control UI hold-to-dictate button stopping on release, typed /stop letting queued turns restart the agent, repeated browser replies after background work, and pending Home creation notices piling up. (#166843, #167860, #166362, #168239) Thanks @alfredjbclaw, @obviyus, @masatohoshino, and @shakkernerd. [v2026.10.2]
+- Fixed update failures from absolute avatar paths, refused finalize steps leaving the Gateway stopped, and the SQLite worker launch error hidden behind a TypeError. (#164638, #166548, #165373) Thanks @nitinjwadhawan and @Shirleyyyhk. [v2026.10.2]
+- Fixed worker capacity leaks after forced descendant cleanup and browser tab eviction at the managed tab cap. (#168746, #166666) Thanks @aniruddhaadak80, @ruel225, and @obviyus. [v2026.10.2]
+- Fixed Feishu replaying obsolete streaming previews, Bedrock custom provider routes using the wrong region, the egress proxy CA rejected by strict TLS clients, and quoted Windows shell arguments in the node host. (#166610, #164406, #165818, #158160) Thanks @rudycelekli, @Takhoffman, @Ayushdevo, @obviyus, @kai-ocean-kurt, @vortexopenclaw, @RyanSandoval, @Dimitri-lcht, and @igs-rogenlo. [v2026.10.2]
+- Fixed macOS crashes: the Swift compiler crash in the sidebar picker, Rosetta segfaults, Intel worker startup, and managed llama.cpp setup on macOS below 13.3. (#165573, #165088, #161876, #163358) Thanks @shakkernerd, @NovaUnboundAi, @VACInc, and @xXG0DLessXx. [v2026.10.2]
+- fix(update): preserve unsafe Doctor recovery guidance (#170207)
 
 ## Releases This Week
 
-- `v2026.10.5-beta.1` | beta | 2026-10-11T13:08:24Z | openclaw 2026.10.5-beta.1
-- `v2026.10.1` | stable | 2026-10-10T23:54:03Z | openclaw 2026.10.1
+- `v2026.10.5-beta.2` | beta | 2026-10-12T12:10:48Z | openclaw 2026.10.5-beta.2
+- `v2026.10.2` | stable | 2026-10-12T05:34:44Z | openclaw 2026.10.2
 
 ## Most Active Change Scopes
 
-- `ui`: 92
-- `gateway`: 46
-- `agents`: 35
-- `fix`: 34
-- `sessions`: 32
-- `ci`: 24
-- `test`: 22
-- `update`: 19
-- `refactor`: 18
-- `workers`: 12
-- `plugins`: 10
-- `codex`: 10
+- `ui`: 111
+- `gateway`: 72
+- `sessions`: 68
+- `fix`: 50
+- `test`: 44
+- `ci`: 41
+- `agents`: 32
+- `update`: 30
+- `state`: 26
+- `refactor`: 15
+- `docs`: 13
+- `doctor`: 12
 
 ## Recent Commit Headlines
 
-- 2026-10-11T16:50:02Z | test(state): wait for publication deletion receipt installation
-- 2026-10-11T16:50:05Z | fix: retain Discord native commands in conversation history (#169200)
-- 2026-10-11T16:49:27Z | refactor: drop remaining over-defensive plugin and Gateway machinery (#169198)
-- 2026-10-11T16:43:53Z | refactor(ui): migrate shared launchers, panels, and dialogs to Solid (#168791)
-- 2026-10-11T16:40:41Z | test: avoid shadowed smoke guard binding
-- 2026-10-11T16:39:02Z | fix(test): isolate built smoke runtime state
-- 2026-10-11T16:36:57Z | fix(ui): repair Activity and Usage test contracts
-- 2026-10-11T16:39:38Z | test(core,plugins): remove low-value tests (batch d053) (#169218)
-- 2026-10-11T16:35:12Z | fix(ui): bound shared boot chunks after Solid ports
-- 2026-10-11T16:34:54Z | perf(sessions): reuse transcript projection facts within reads (#169201)
-- 2026-10-11T16:23:55Z | fix(build): keep Solid tag declarations in the shared owner
-- 2026-10-11T16:21:51Z | fix(ui): await rendered palette settings readiness in tests
-- 2026-10-11T16:14:34Z | test(gateway): follow worker-owned memory database through close
-- 2026-10-11T16:13:38Z | refactor: deslop gateway and UI page leftovers (#168819)
-- 2026-10-11T16:13:16Z | refactor: await bundled skill command discovery (#169089)
-- 2026-10-11T16:12:03Z | fix(sessions): avoid turn errors when write receipts overtake reads (#169174)
-- 2026-10-11T16:11:57Z | fix(ui): preserve chat navigation during recovery reloads (#169194)
-- 2026-10-11T16:10:56Z | fix(ui): keep plugin action notices inside the detail panel
-- 2026-10-11T16:04:44Z | test(cron): distinguish cancellation output from failure alerts
-- 2026-10-11T16:04:43Z | fix(ios): realtime Talk crashes on the first reply and is silent on the iPhone speaker (#168416)
+- 2026-10-12T20:27:34Z | fix(update): preserve unsafe Doctor recovery guidance (#170207)
+- 2026-10-12T20:25:53Z | fix: chat turns fail when session receipts exceed transport limits (#169843)
+- 2026-10-12T20:23:42Z | fix(auth): invalidate persisted profiles on explicit refresh (#170201)
+- 2026-10-12T20:19:49Z | fix: recover interrupted worker claims before turn admission (#170161)
+- 2026-10-12T20:19:44Z | test: remove dead single-case fixture branches (#170205)
+- 2026-10-12T20:18:09Z | perf(sessions): reuse actor projection receipts for history reads (#170127)
+- 2026-10-12T20:17:50Z | fix(database): make shared-state queries portable to PostgreSQL (#170055)
+- 2026-10-12T20:17:07Z | test: remove redundant worker probe self-tests (#170197)
+- 2026-10-12T20:16:57Z | fix(ui): bind update confirmation to its original Gateway (#170086)
+- 2026-10-12T20:15:41Z | fix(plugins): malformed hook fallback lists crash or reroute runs (#169702)
+- 2026-10-12T20:15:18Z | perf(gateway): publish session previews and participants from commit receipts (#170105)
+- 2026-10-12T20:09:32Z | test(codex): prepare runtime config for native provenance cases
+- 2026-10-12T20:12:51Z | refactor(twitch): simplify test fixture scaffolding (#170142)
+- 2026-10-12T20:12:46Z | perf(control-ui): let chat load before pinned sessions (#170047)
+- 2026-10-12T20:11:46Z | test(ui): share the composer browser fixture lifecycle (#170164)
+- 2026-10-12T20:11:25Z | fix(release): recover packaged Gateway port refusals (#170178)
+- 2026-10-12T20:10:57Z | fix(test): prepare cold Codex catalogs before benchmarking (#170181)
+- 2026-10-12T20:10:17Z | fix(database): preserve shared-state PostgreSQL schema constraints (#170059)
+- 2026-10-12T20:08:35Z | refactor(gateway): move startup database work off the main thread (#169880)
+- 2026-10-12T20:08:08Z | perf(state): reduce repeated schema checks on Gateway restart (#170017)
 
 ## Sources
 

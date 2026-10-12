@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-10-12T00:51:38+08:00
-- Requested window: 2026-10-11 to 2026-10-12
+- Generated at: 2026-10-13T04:29:10+08:00
+- Requested window: 2026-10-12 to 2026-10-13
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-10-11 to 2026-10-12
-- Generated at: 2026-10-12T00:51:20.255054+08:00
-- 窗口: 2026-10-11 至 2026-10-12
-- GitHub 增量: 577 commits / 2 releases
-- 最近 push: 2026-10-11
+- Window: 2026-10-12 to 2026-10-13
+- Generated at: 2026-10-13T04:28:50.395237+08:00
+- 窗口: 2026-10-12 至 2026-10-13
+- GitHub 增量: 791 commits / 2 releases
+- 最近 push: 2026-10-12
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - **Worker-local inference:** add a native worker inference runtime with Gateway dispatch, client placement, required worker policy and destination checks before local inference, and clear setup-failure explanations. (#158902, #163645, #163646, #163647, #166611, #166613, #165960) Thanks @RomneyDa. [v2026.10.5-beta.1]
-  - **X channel:** add the X (Twitter) mentions channel plugin with Activity API streaming and backfill, repository-question guest mode with hidden same-agent helpers, GitHub-verified repository writers, and daily and monthly X API cost limits. (#165138, #165337, #165376, #165354, #165543, #168071, #165351) Thanks @obviyus. [v2026.10.5-beta.1]
-  - **Channel progress:** show useful Telegram and Discord progress by default, add per-tool glyphs to Discord progress drafts, restore per-tool emoji on Telegram tool rows, and hide routine Slack reaction rows. (#166861, #168032, #167392, #166880) Thanks @obviyus, @keshavbotagent, and @notmnp. [v2026.10.5-beta.1]
-  - **Anthropic and Claude CLI:** support Claude Haiku 5.5, show newly listed Claude models without waiting for an OpenClaw release, list each Claude CLI model once, and keep logged-out Claude CLI models listed with a login reason. (#166706, #167658, #166311, #166338, #167942) Thanks @RomneyDa and @obviyus. [v2026.10.5-beta.1]
-  - **OpenAI:** support custom realtime voice endpoints, show account chat models missing from the manifest, surface new ChatGPT-login models without a release, and stop offering ChatGPT-only or bundled-Codex-rejected models that would fail. (#165632, #162563, #167387, #167633, #167975) Thanks @jacobtomlinson and @obviyus. [v2026.10.5-beta.1]
-  - **Voice calls:** add per-call briefs, call reports, live steering, callbacks, and voicemail detection to voice calls. (#165716) Thanks @mbelinky and @jacobtomlinson. [v2026.10.5-beta.1]
-  - **Control UI customization:** let themes customize Control UI branding, use agent avatars or unlocked Lobsterdex icons for browser tabs, choose favicon shapes, and add seven Lobsterdex character variants. (#168027, #165201, #166325, #167809, #159815) Thanks @vyctorbrzezowski, @jacobtomlinson, and @hannesrudolph. [v2026.10.5-beta.1]
-  - **Terminal:** add configurable terminal fonts with built-in Nerd Font icons. (#166180) Thanks @jacobtomlinson. [v2026.10.5-beta.1]
+  - **Session notices:** creating many sessions gives the main session one summary of new sessions instead of separate notices that crowd out reminders and wakes. (#168239) [v2026.10.5-beta.2]
+  - feat(macos): start fresh installs in guided dashboard setup (#169568)
+  - feat: support local Gateways in the Windows desktop app (#169522)
+  - feat(database): share experimental database engine adapters (#169933)
+  - feat: show or hide values in secure entry prompts (#169925)
+  - feat: experimental PostgreSQL engine for the workboard store (#169214)
+  - feat: show session-specific previews for public links (#169527)
+  - feat(agents): prioritize shared private vLLM requests (#129434)
 - Fixes and constraints:
-  - **Telegram:** keep streamed replies from vanishing when their replacement never lands, retry preview edits after transient errors, keep delegated progress and media-run progress cards live, honor explicit reply tags during partial streaming, keep pending questions through settings commands, restore verbose diagnostics, treat GIFs as videos, and harden spooled turn adoption. (#164649, #165072, #166101, #167362, #167895, #168004, #168016, #168011, #103695, #167470) Thanks @jayzhou2309, @obviyus, @jmar5439, @vincentkoc, and @mgr-nick. [v2026.10.5-beta.1]
-  - fix: retain Discord native commands in conversation history (#169200)
-  - fix(test): isolate built smoke runtime state
-  - fix(ui): repair Activity and Usage test contracts
-  - fix(ui): bound shared boot chunks after Solid ports
-  - perf(sessions): reuse transcript projection facts within reads (#169201)
-  - fix(build): keep Solid tag declarations in the shared owner
-  - fix(ui): await rendered palette settings readiness in tests
+  - Fixed credential leaks across redaction chunk boundaries and redaction stalls on large tool output. (#161480) Thanks @eleqtrizit. [v2026.10.2]
+  - Fixed replies lost while an agent finishes starting, streamed Telegram replies vanishing when the replacement message never lands, and Telegram treating local owner rejection as ambiguous delivery. (#168826, #164649, #167470) Thanks @xiaozishan, @jayzhou2309, @obviyus, @jmar5439, and @mgr-nick. [v2026.10.2]
+  - Fixed Claude CLI sessions showing runtime prompts as user messages, routed CLI prompts appearing on the owner's side of history, lost replies after long streamed turns, and post-turn compaction failing without an Anthropic API key. (#166080, #163521, #153545, #162066) Thanks @Marvinthebored, @Peetiegonzalez, @RomneyDa, @rogeriochaves, @zhangguiping-xydt, @obviyus, @methylester, @llmsommelier, and @ajmtrz. [v2026.10.2]
+  - Fixed subagent and ACP answers being truncated, superseded child answers delivered by late receipts, and requester turns stopping when completion delivery expires. (#165800, #162843, #166139, #164282) Thanks @yetval, @holgergruenhagen, @zyz619963502zyz, @Yun-0000, @michaeljgood71, @Oldrich333, and @obviyus. [v2026.10.2]
+  - Fixed runs aborted as stalled after completed async tools or while waiting on plugin approval, context-engine advancement lost after steering, and the tool loop refilling from the wrong context window. (#166997, #161821, #168394, #166120) Thanks @SunnyShu0925, @hannesrudolph, @fransqaas, @obviyus, @robertoronderosjr, @ruel225, and @igs-rogenlo. [v2026.10.2]
+  - Fixed OpenAI turns failing on regex-lookaround tool schemas, ChatGPT websocket expiry and 16 MiB SSE limits, strict chat templates after runtime notices, and Code Mode calls with repeated tool-call IDs. (#166999, #167063, #166853, #167309, #165210) Thanks @scs0209, @cursoragent, @obviyus, @adamjgmiller, @Jackten, @jlapenna, and @RomneyDa. [v2026.10.2]
+  - Fixed Codex sessions stopping after thread unloads, leaked app-server clients after model discovery timeouts, provider failures shown as a silent stop, and max thinking dropping on cron and hook turns. (#166693, #168365, #165488, #165444) Thanks @jalehman, @Oldrich333, and @obviyus. [v2026.10.2]
+  - Fixed sessions failing every turn after a truncated image, the agent disowning earlier image answers, and memory_search snake_case arguments being rejected through tool_call. (#166564, #166165, #158632) Thanks @jayzhou2309, @mirasrael, @nogikeyaksh, @masatohoshino, and @obviyus. [v2026.10.2]
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
