@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-10-13T04:29:10+08:00
-- Requested window: 2026-10-12 to 2026-10-13
+- Generated at: 2026-10-14T02:34:21+08:00
+- Requested window: 2026-10-13 to 2026-10-14
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-10-12 to 2026-10-13
-- Generated at: 2026-10-13T04:28:50.395237+08:00
-- 窗口: 2026-10-12 至 2026-10-13
-- GitHub 增量: 791 commits / 2 releases
-- 最近 push: 2026-10-12
+- Window: 2026-10-13 to 2026-10-14
+- Generated at: 2026-10-14T02:34:02.707446+08:00
+- 窗口: 2026-10-13 至 2026-10-14
+- GitHub 增量: 1045 commits / 2 releases
+- 最近 push: 2026-10-13
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - **Session notices:** creating many sessions gives the main session one summary of new sessions instead of separate notices that crowd out reminders and wakes. (#168239) [v2026.10.5-beta.2]
-  - feat(macos): start fresh installs in guided dashboard setup (#169568)
-  - feat: support local Gateways in the Windows desktop app (#169522)
-  - feat(database): share experimental database engine adapters (#169933)
-  - feat: show or hide values in secure entry prompts (#169925)
-  - feat: experimental PostgreSQL engine for the workboard store (#169214)
-  - feat: show session-specific previews for public links (#169527)
-  - feat(agents): prioritize shared private vLLM requests (#129434)
+  - **Meta Muse Wonder:** adds `meta/muse-wonder-1.0` with text and image input, tools, streaming, encrypted reasoning replay, and a 1,048,576-token context window; Spark remains the onboarding default. (#170232) Thanks @RomneyDa. [v2026.10.5-beta.3]
+  - feat: preserve PostgreSQL stores in backups and updates (#170828)
+  - feat(plugins): let plugins steer a session's active run (#170152)
+  - feat(cloud): support repository environment recipes (#170862)
+  - feat: save suggested cloud profiles on first use (#170875)
+  - feat(ui): organize cloud environments by repository (#170892)
+  - feat: show cloud snapshot startup progress (#170895)
+  - feat(cloud): provision verified Node toolchains (#170796)
 - Fixes and constraints:
-  - Fixed credential leaks across redaction chunk boundaries and redaction stalls on large tool output. (#161480) Thanks @eleqtrizit. [v2026.10.2]
-  - Fixed replies lost while an agent finishes starting, streamed Telegram replies vanishing when the replacement message never lands, and Telegram treating local owner rejection as ambiguous delivery. (#168826, #164649, #167470) Thanks @xiaozishan, @jayzhou2309, @obviyus, @jmar5439, and @mgr-nick. [v2026.10.2]
-  - Fixed Claude CLI sessions showing runtime prompts as user messages, routed CLI prompts appearing on the owner's side of history, lost replies after long streamed turns, and post-turn compaction failing without an Anthropic API key. (#166080, #163521, #153545, #162066) Thanks @Marvinthebored, @Peetiegonzalez, @RomneyDa, @rogeriochaves, @zhangguiping-xydt, @obviyus, @methylester, @llmsommelier, and @ajmtrz. [v2026.10.2]
-  - Fixed subagent and ACP answers being truncated, superseded child answers delivered by late receipts, and requester turns stopping when completion delivery expires. (#165800, #162843, #166139, #164282) Thanks @yetval, @holgergruenhagen, @zyz619963502zyz, @Yun-0000, @michaeljgood71, @Oldrich333, and @obviyus. [v2026.10.2]
-  - Fixed runs aborted as stalled after completed async tools or while waiting on plugin approval, context-engine advancement lost after steering, and the tool loop refilling from the wrong context window. (#166997, #161821, #168394, #166120) Thanks @SunnyShu0925, @hannesrudolph, @fransqaas, @obviyus, @robertoronderosjr, @ruel225, and @igs-rogenlo. [v2026.10.2]
-  - Fixed OpenAI turns failing on regex-lookaround tool schemas, ChatGPT websocket expiry and 16 MiB SSE limits, strict chat templates after runtime notices, and Code Mode calls with repeated tool-call IDs. (#166999, #167063, #166853, #167309, #165210) Thanks @scs0209, @cursoragent, @obviyus, @adamjgmiller, @Jackten, @jlapenna, and @RomneyDa. [v2026.10.2]
-  - Fixed Codex sessions stopping after thread unloads, leaked app-server clients after model discovery timeouts, provider failures shown as a silent stop, and max thinking dropping on cron and hook turns. (#166693, #168365, #165488, #165444) Thanks @jalehman, @Oldrich333, and @obviyus. [v2026.10.2]
-  - Fixed sessions failing every turn after a truncated image, the agent disowning earlier image answers, and memory_search snake_case arguments being rejected through tool_call. (#166564, #166165, #158632) Thanks @jayzhou2309, @mirasrael, @nogikeyaksh, @masatohoshino, and @obviyus. [v2026.10.2]
+  - fix(ui): sidebar view stays selected when its panel is collapsed (#171163)
+  - perf(memory): skip empty standing-intent transactions (#171254)
+  - fix(gateway): attribute slow chat admission and persistence waits (#171250)
+  - fix: refresh macOS permission cards after denying access (#171175)
+  - fix(testing): restore environment after team fixture generation
+  - perf(state): skip historical migrations on first database creation (#171214)
+  - fix(codex): stop the version probe from opening stdin (#171248)
+  - fix(qwen): honor reasoning overrides after payload replacement
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
