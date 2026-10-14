@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-10-14T02:34:21+08:00
-- Requested window: 2026-10-13 to 2026-10-14
+- Generated at: 2026-10-15T00:01:51+08:00
+- Requested window: 2026-10-14 to 2026-10-15
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-10-13 to 2026-10-14
-- Generated at: 2026-10-14T02:34:02.707446+08:00
-- 窗口: 2026-10-13 至 2026-10-14
-- GitHub 增量: 1045 commits / 2 releases
-- 最近 push: 2026-10-13
+- Window: 2026-10-14 to 2026-10-15
+- Generated at: 2026-10-15T00:01:32.531789+08:00
+- 窗口: 2026-10-14 至 2026-10-15
+- GitHub 增量: 914 commits / 0 releases
+- 最近 push: 2026-10-14
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - **Meta Muse Wonder:** adds `meta/muse-wonder-1.0` with text and image input, tools, streaming, encrypted reasoning replay, and a 1,048,576-token context window; Spark remains the onboarding default. (#170232) Thanks @RomneyDa. [v2026.10.5-beta.3]
-  - feat: preserve PostgreSQL stores in backups and updates (#170828)
-  - feat(plugins): let plugins steer a session's active run (#170152)
-  - feat(cloud): support repository environment recipes (#170862)
-  - feat: save suggested cloud profiles on first use (#170875)
-  - feat(ui): organize cloud environments by repository (#170892)
-  - feat: show cloud snapshot startup progress (#170895)
-  - feat(cloud): provision verified Node toolchains (#170796)
+  - feat(i18n): add Swedish to the Control UI and docs (#62063)
+  - feat(state): select the shared-state database engine at the state owner (#171962)
+  - feat(database): add scoped startup migration backups (#171764)
+  - feat(labs): add experimental Advisor that steers agents off avoidable work (#169564)
+  - feat(diagnostics): attribute GC metrics by kind and worker (#171923)
+  - feat(google): add Gemini 4 Argon support (#171852)
+  - feat(control-ui): include plugin catalogs in locale refresh (#171496)
+  - feat(team-reports): allow pausing automatic collection (#171840)
 - Fixes and constraints:
-  - fix(ui): sidebar view stays selected when its panel is collapsed (#171163)
-  - perf(memory): skip empty standing-intent transactions (#171254)
-  - fix(gateway): attribute slow chat admission and persistence waits (#171250)
-  - fix: refresh macOS permission cards after denying access (#171175)
-  - fix(testing): restore environment after team fixture generation
-  - perf(state): skip historical migrations on first database creation (#171214)
-  - fix(codex): stop the version probe from opening stdin (#171248)
-  - fix(qwen): honor reasoning overrides after payload replacement
+  - fix(ui): refresh retained progress card translations (#172184)
+  - fix: let guest readers open message attachments (#172202)
+  - fix: preserve recovery authority rejection errors (#172195)
+  - fix: guest commands fail during workspace checkpoints (#172137)
+  - fix(ci): close stale PRs despite automated review activity (#172022)
+  - fix: retain causes in startup maintenance warnings (#172138)
+  - fix(update): defer Doctor instead of rolling back when update-driver ancestry is unverified (#172247)
+  - fix: update person card labels when locale changes (#172140)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

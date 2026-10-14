@@ -1,100 +1,99 @@
 # OpenClaw Weekly Update
 
-生成时间：2026-10-14T02:34:02.707446+08:00
+生成时间：2026-10-15T00:01:32.531789+08:00
 
 ## Window
 
-- Start: 2026-10-13T02:34:02.707446+08:00
-- End: 2026-10-14T02:34:02.707446+08:00
+- Start: 2026-10-14T00:01:32.531789+08:00
+- End: 2026-10-15T00:01:32.531789+08:00
 - Repo: `openclaw/openclaw`
 
 ## At A Glance
 
-- Commits in window: 1045
-- Releases in window: 2
-- Stable releases in window: 1
-- Beta releases in window: 1
-- Repo stars at scan time: 391871
-- Repo forks at scan time: 82404
+- Commits in window: 914
+- Releases in window: 0
+- Stable releases in window: 0
+- Beta releases in window: 0
+- Repo stars at scan time: 391973
+- Repo forks at scan time: 82421
 
 ## New Capability Signals
 
-- **Meta Muse Wonder:** adds `meta/muse-wonder-1.0` with text and image input, tools, streaming, encrypted reasoning replay, and a 1,048,576-token context window; Spark remains the onboarding default. (#170232) Thanks @RomneyDa. [v2026.10.5-beta.3]
-- feat: preserve PostgreSQL stores in backups and updates (#170828)
-- feat(plugins): let plugins steer a session's active run (#170152)
-- feat(cloud): support repository environment recipes (#170862)
-- feat: save suggested cloud profiles on first use (#170875)
-- feat(ui): organize cloud environments by repository (#170892)
-- feat: show cloud snapshot startup progress (#170895)
-- feat(cloud): provision verified Node toolchains (#170796)
-- feat(plugins): fork a session's live context for background side questions (#170146)
-- feat(secrets): add scoped setup egress grants (#170810)
-- feat(agents): end runs after confirmed final source replies (#170653)
-- improve(ui): keep New conversation visible across sidebar modes (#170771)
-- feat(ci): add opt-in smaller Testbox qualification profiles (#170747)
-- feat: isolate Agents API sessions from Gateway tools and MCP (#170728)
-- feat: connect MCP apps through a principal-bound relay plugin (#168233)
+- feat(i18n): add Swedish to the Control UI and docs (#62063)
+- feat(state): select the shared-state database engine at the state owner (#171962)
+- feat(database): add scoped startup migration backups (#171764)
+- feat(labs): add experimental Advisor that steers agents off avoidable work (#169564)
+- feat(diagnostics): attribute GC metrics by kind and worker (#171923)
+- feat(google): add Gemini 4 Argon support (#171852)
+- feat(control-ui): include plugin catalogs in locale refresh (#171496)
+- feat(team-reports): allow pausing automatic collection (#171840)
+- feat: report slow cloud worker dispatch phases (#171749)
+- feat(claws): accept portable manifest categories (#171532)
+- feat: move sessions between local and cloud from session menus (#171690)
+- feat(crabbox): protect cloud setup secrets through egress (#171073)
+- feat: expose published ClawHub packages to Gateway (#171622)
+- feat(openai): support typed Decisions API evaluations (#166320)
+- feat(browser): expose wrapped observations to Code Mode (#164833)
 
 ## Important Fixes And Hardening
 
-- fix(ui): sidebar view stays selected when its panel is collapsed (#171163)
-- perf(memory): skip empty standing-intent transactions (#171254)
-- fix(gateway): attribute slow chat admission and persistence waits (#171250)
-- fix: refresh macOS permission cards after denying access (#171175)
-- fix(testing): restore environment after team fixture generation
-- perf(state): skip historical migrations on first database creation (#171214)
-- fix(codex): stop the version probe from opening stdin (#171248)
-- fix(qwen): honor reasoning overrides after payload replacement
-- fix(ui): stop polling operator-only surfaces for session readers (#171223)
-- perf(gateway): report placement changes from committed receipts (#171232)
-- fix(gateway): use monotonic clock for MCP loopback capture idle deadline (#170495)
-- fix(channels): keep capability probe deadline on the monotonic clock (#170500)
-- fix(ci): align sidebar and performance scan entrypoints (#171230)
-- perf(sessions): release writer between actor append commands (#171225)
-- fix: Teams message reads and searches hide fetched text (#171153)
+- fix(ui): refresh retained progress card translations (#172184)
+- fix: let guest readers open message attachments (#172202)
+- fix: preserve recovery authority rejection errors (#172195)
+- fix: guest commands fail during workspace checkpoints (#172137)
+- fix(ci): close stale PRs despite automated review activity (#172022)
+- fix: retain causes in startup maintenance warnings (#172138)
+- fix(update): defer Doctor instead of rolling back when update-driver ancestry is unverified (#172247)
+- fix: update person card labels when locale changes (#172140)
+- fix(sessions): keep maintenance owner state private
+- fix: Gateway repeatedly rebuilds directory watches above 256 agents (#171805)
+- fix: keep recovered subagent final replies from disappearing (#171929)
+- fix(update): avoid downloading unrelated Git branches (#172199)
+- fix(update): Doctor fails after short commands complete (#172132)
+- fix(code-mode): stop GC thrash and bound captured output (#172134)
+- fix: preserve inbound messages when queued turn preparation fails (#172080)
 
 ## Releases This Week
 
-- `v2026.10.5-beta.3` | beta | 2026-10-13T10:00:37Z | openclaw 2026.10.5-beta.3
-- `v2026.10.3` | stable | 2026-10-13T13:49:25Z | openclaw 2026.10.3
+- No GitHub releases were published in this window.
 
 ## Most Active Change Scopes
 
-- `gateway`: 115
 - `ui`: 109
-- `fix`: 79
-- `sessions`: 58
-- `agents`: 50
-- `ci`: 47
-- `test`: 41
-- `update`: 35
-- `state`: 17
-- `sqlite`: 17
-- `control-ui`: 16
-- `memory`: 15
+- `gateway`: 91
+- `fix`: 89
+- `sessions`: 62
+- `agents`: 42
+- `ci`: 39
+- `test`: 28
+- `update`: 24
+- `plugins`: 20
+- `state`: 19
+- `sqlite`: 14
+- `perf`: 14
 
 ## Recent Commit Headlines
 
-- 2026-10-13T18:33:14Z | fix(ui): sidebar view stays selected when its panel is collapsed (#171163)
-- 2026-10-13T18:30:08Z | perf(memory): skip empty standing-intent transactions (#171254)
-- 2026-10-13T18:29:00Z | fix(gateway): attribute slow chat admission and persistence waits (#171250)
-- 2026-10-13T18:28:50Z | refactor(subagents): reduce spawn and completion database overhead (#171137)
-- 2026-10-13T18:28:20Z | fix: refresh macOS permission cards after denying access (#171175)
-- 2026-10-13T18:27:31Z | refactor(media): consolidate ignored-response cancellation tests (#166374)
-- 2026-10-13T18:08:43Z | test(qa-lab): diagnose bootstrap group assertion failures
-- 2026-10-13T17:50:09Z | fix(testing): restore environment after team fixture generation
-- 2026-10-13T18:24:59Z | perf(state): skip historical migrations on first database creation (#171214)
-- 2026-10-13T18:24:37Z | fix(codex): stop the version probe from opening stdin (#171248)
-- 2026-10-13T18:20:32Z | refactor(ui): use shared tabs for the meeting reader (#170314)
-- 2026-10-13T18:03:08Z | fix(qwen): honor reasoning overrides after payload replacement
-- 2026-10-13T18:17:26Z | fix(ui): stop polling operator-only surfaces for session readers (#171223)
-- 2026-10-13T18:16:57Z | refactor(plugin-sdk): remove retired Telegram command UI facade (#166401)
-- 2026-10-13T18:16:36Z | perf(gateway): report placement changes from committed receipts (#171232)
-- 2026-10-13T18:16:16Z | fix(gateway): use monotonic clock for MCP loopback capture idle deadline (#170495)
-- 2026-10-13T18:15:38Z | fix(channels): keep capability probe deadline on the monotonic clock (#170500)
-- 2026-10-13T18:15:11Z | fix(ci): align sidebar and performance scan entrypoints (#171230)
-- 2026-10-13T18:14:41Z | perf(sessions): release writer between actor append commands (#171225)
-- 2026-10-13T18:14:24Z | fix: Teams message reads and searches hide fetched text (#171153)
+- 2026-10-14T15:58:47Z | fix(ui): refresh retained progress card translations (#172184)
+- 2026-10-14T15:56:45Z | fix: let guest readers open message attachments (#172202)
+- 2026-10-14T15:54:53Z | fix: preserve recovery authority rejection errors (#172195)
+- 2026-10-14T15:53:03Z | fix: guest commands fail during workspace checkpoints (#172137)
+- 2026-10-14T15:49:27Z | feat(i18n): add Swedish to the Control UI and docs (#62063)
+- 2026-10-14T15:46:46Z | fix(ci): close stale PRs despite automated review activity (#172022)
+- 2026-10-14T15:44:12Z | test(android): drain speech queue before Wear abort assertion (#172252)
+- 2026-10-14T15:43:51Z | fix: retain causes in startup maintenance warnings (#172138)
+- 2026-10-14T15:43:40Z | fix(update): defer Doctor instead of rolling back when update-driver ancestry is unverified (#172247)
+- 2026-10-14T15:43:29Z | test(ui): use touch input for mobile conversation navigation (#172126)
+- 2026-10-14T15:38:20Z | fix: update person card labels when locale changes (#172140)
+- 2026-10-14T15:06:56Z | test(ui): await lazy participant artwork before asserting
+- 2026-10-14T15:06:46Z | fix(sessions): keep maintenance owner state private
+- 2026-10-14T15:30:49Z | refactor(ui): simplify retained chat page snapshots (#171745)
+- 2026-10-14T15:28:31Z | test(models): await obsolete catalog worker settlement
+- 2026-10-14T15:27:44Z | fix: Gateway repeatedly rebuilds directory watches above 256 agents (#171805)
+- 2026-10-14T15:25:39Z | test(cli,agents,infra,ui): remove low-value tests (batch d084) (#172215)
+- 2026-10-14T15:23:56Z | refactor(ui): reduce markdown text rendering work (#172035)
+- 2026-10-14T15:18:15Z | refactor(ui): remove Lit types from controller consumers (#172073)
+- 2026-10-14T15:11:40Z | fix: keep recovered subagent final replies from disappearing (#171929)
 
 ## Sources
 

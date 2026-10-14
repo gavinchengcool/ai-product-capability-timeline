@@ -1,0 +1,192 @@
+{
+  "generated_at": "2026-10-15T00:01:32.531789+08:00",
+  "window": {
+    "start_local": "2026-10-14T00:01:32.531789+08:00",
+    "end_local": "2026-10-15T00:01:32.531789+08:00",
+    "start_utc": "2026-10-13T16:01:32Z",
+    "end_utc": "2026-10-14T16:01:32Z"
+  },
+  "repo": {
+    "slug": "openclaw/openclaw",
+    "stars": 391973,
+    "forks": 82421,
+    "open_issues": 9593,
+    "pushed_at": "2026-10-14T16:00:53Z"
+  },
+  "releases_in_window": [],
+  "commit_count": 914,
+  "commit_headlines": [
+    "fix(ui): refresh retained progress card translations (#172184)",
+    "fix: let guest readers open message attachments (#172202)",
+    "fix: preserve recovery authority rejection errors (#172195)",
+    "fix: guest commands fail during workspace checkpoints (#172137)",
+    "feat(i18n): add Swedish to the Control UI and docs (#62063)",
+    "fix(ci): close stale PRs despite automated review activity (#172022)",
+    "test(android): drain speech queue before Wear abort assertion (#172252)",
+    "fix: retain causes in startup maintenance warnings (#172138)",
+    "fix(update): defer Doctor instead of rolling back when update-driver ancestry is unverified (#172247)",
+    "test(ui): use touch input for mobile conversation navigation (#172126)",
+    "fix: update person card labels when locale changes (#172140)",
+    "test(ui): await lazy participant artwork before asserting",
+    "fix(sessions): keep maintenance owner state private",
+    "refactor(ui): simplify retained chat page snapshots (#171745)",
+    "test(models): await obsolete catalog worker settlement",
+    "fix: Gateway repeatedly rebuilds directory watches above 256 agents (#171805)",
+    "test(cli,agents,infra,ui): remove low-value tests (batch d084) (#172215)",
+    "refactor(ui): reduce markdown text rendering work (#172035)",
+    "refactor(ui): remove Lit types from controller consumers (#172073)",
+    "fix: keep recovered subagent final replies from disappearing (#171929)",
+    "refactor(ui): remove the details progress bridge (#172190)",
+    "fix(update): avoid downloading unrelated Git branches (#172199)",
+    "chore(ui): refresh control ui locales (#172216)",
+    "fix(update): Doctor fails after short commands complete (#172132)",
+    "fix(code-mode): stop GC thrash and bound captured output (#172134)",
+    "fix: preserve inbound messages when queued turn preparation fails (#172080)",
+    "fix: typing lags on New Session with large model catalogs (#171769)",
+    "fix(e2e): reject unmatched MCP Code Mode completion (#172197)",
+    "refactor(memory): let plugins own settings labels (#172178)",
+    "refactor(ui): remove obsolete option card bridge (#171744)",
+    "refactor(system-agent): share fallback failure fixtures (#172148)",
+    "refactor(ui): remove shell and picker forwarding modules (#172086)",
+    "fix(agents): large subagent completion batches overflow requester context (#172068)",
+    "fix(release): repair extended-stable validation harness for 2026.9.33 (#172158)",
+    "test(gateway): align recovery authority refusal expectation",
+    "fix(sqlite): own Bun-serialized request bytes before transfer (#172175)",
+    "test(lint): record progress fixture virtualizer lifecycle calls",
+    "feat(state): select the shared-state database engine at the state owner (#171962)",
+    "fix: save guest project choices in New Session (#172114)",
+    "refactor: prepare synchronous SQLite SDK retirement (#171775)",
+    "fix(test): preserve worker preparation and shutdown cleanup (#172036)",
+    "fix(android): prevent Wear freezes when stopping speech (#172147)",
+    "test(runtime,tooling): remove low-value tests (batch d083) (#172172)",
+    "test(ui): await Activity subscription acceptance (#172057)",
+    "fix(memory-wiki): avoid full-vault reads for path lookups (#171961)",
+    "fix(android): keep Wear pages valid when Pulse disappears (#172136)",
+    "fix: continue active goals after the model ends a turn (#167897)",
+    "test(migrations): bind MCP delivery faults to their commit port",
+    "chore: clarify node command history test failures (#172038)",
+    "refactor(ui): remove the unused Sessions page bridge (#171808)"
+  ],
+  "feature_items": [
+    "feat(i18n): add Swedish to the Control UI and docs (#62063)",
+    "feat(state): select the shared-state database engine at the state owner (#171962)",
+    "feat(database): add scoped startup migration backups (#171764)",
+    "feat(labs): add experimental Advisor that steers agents off avoidable work (#169564)",
+    "feat(diagnostics): attribute GC metrics by kind and worker (#171923)",
+    "feat(google): add Gemini 4 Argon support (#171852)",
+    "feat(control-ui): include plugin catalogs in locale refresh (#171496)",
+    "feat(team-reports): allow pausing automatic collection (#171840)",
+    "feat: report slow cloud worker dispatch phases (#171749)",
+    "feat(claws): accept portable manifest categories (#171532)",
+    "feat: move sessions between local and cloud from session menus (#171690)",
+    "feat(crabbox): protect cloud setup secrets through egress (#171073)",
+    "feat: expose published ClawHub packages to Gateway (#171622)",
+    "feat(openai): support typed Decisions API evaluations (#166320)",
+    "feat(browser): expose wrapped observations to Code Mode (#164833)",
+    "feat(muse): sign in to Muse Code from Model Setup (#171526)",
+    "feat(sessions): run sessions in existing folders on paired devices (#169722)",
+    "feat(sdk): complete awaited SQLite compatibility migration paths (#171443)",
+    "feat(diagnostics): export turn prompt and final answer on message and run spans (#156603)",
+    "feat: add offline workboard database port command (#171368)",
+    "feat: run Meta models through the Muse Code CLI agent runtime (#170487)",
+    "feat(gateway): ready workers for empty-workspace cloud sessions (#170929)",
+    "feat: choose a custom time to snooze sessions (#171255)",
+    "feat: guard interrupted database ports and verify replacements (#171265)",
+    "feat: preserve PostgreSQL stores in backups and updates (#170828)",
+    "feat(plugins): let plugins steer a session's active run (#170152)"
+  ],
+  "fix_items": [
+    "fix(ui): refresh retained progress card translations (#172184)",
+    "fix: let guest readers open message attachments (#172202)",
+    "fix: preserve recovery authority rejection errors (#172195)",
+    "fix: guest commands fail during workspace checkpoints (#172137)",
+    "fix(ci): close stale PRs despite automated review activity (#172022)",
+    "fix: retain causes in startup maintenance warnings (#172138)",
+    "fix(update): defer Doctor instead of rolling back when update-driver ancestry is unverified (#172247)",
+    "fix: update person card labels when locale changes (#172140)",
+    "fix(sessions): keep maintenance owner state private",
+    "fix: Gateway repeatedly rebuilds directory watches above 256 agents (#171805)",
+    "fix: keep recovered subagent final replies from disappearing (#171929)",
+    "fix(update): avoid downloading unrelated Git branches (#172199)",
+    "fix(update): Doctor fails after short commands complete (#172132)",
+    "fix(code-mode): stop GC thrash and bound captured output (#172134)",
+    "fix: preserve inbound messages when queued turn preparation fails (#172080)",
+    "fix: typing lags on New Session with large model catalogs (#171769)",
+    "fix(e2e): reject unmatched MCP Code Mode completion (#172197)",
+    "fix(agents): large subagent completion batches overflow requester context (#172068)",
+    "fix(release): repair extended-stable validation harness for 2026.9.33 (#172158)",
+    "fix(sqlite): own Bun-serialized request bytes before transfer (#172175)",
+    "fix: save guest project choices in New Session (#172114)",
+    "fix(test): preserve worker preparation and shutdown cleanup (#172036)",
+    "fix(android): prevent Wear freezes when stopping speech (#172147)",
+    "fix(memory-wiki): avoid full-vault reads for path lookups (#171961)",
+    "fix(android): keep Wear pages valid when Pulse disappears (#172136)",
+    "fix: continue active goals after the model ends a turn (#167897)",
+    "fix(doctor): drop timestamp-only duplicate session headers during import (#172133)",
+    "fix(memory): resolve SecretRefs for foreign memory providers in status and Doctor (#172135)",
+    "fix(test): remove runtime assumptions from Bun census fixtures (#172111)",
+    "perf(sessions): avoid redundant actor history copies during appends (#172125)"
+  ],
+  "top_scopes": [
+    {
+      "scope": "ui",
+      "count": 109
+    },
+    {
+      "scope": "gateway",
+      "count": 91
+    },
+    {
+      "scope": "fix",
+      "count": 89
+    },
+    {
+      "scope": "sessions",
+      "count": 62
+    },
+    {
+      "scope": "agents",
+      "count": 42
+    },
+    {
+      "scope": "ci",
+      "count": 39
+    },
+    {
+      "scope": "test",
+      "count": 28
+    },
+    {
+      "scope": "update",
+      "count": 24
+    },
+    {
+      "scope": "plugins",
+      "count": 20
+    },
+    {
+      "scope": "state",
+      "count": 19
+    },
+    {
+      "scope": "sqlite",
+      "count": 14
+    },
+    {
+      "scope": "perf",
+      "count": 14
+    },
+    {
+      "scope": "telegram",
+      "count": 14
+    },
+    {
+      "scope": "codex",
+      "count": 13
+    },
+    {
+      "scope": "memory",
+      "count": 12
+    }
+  ]
+}

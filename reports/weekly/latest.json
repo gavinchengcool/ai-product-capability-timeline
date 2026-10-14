@@ -1,211 +1,192 @@
 {
-  "generated_at": "2026-10-14T02:34:02.707446+08:00",
+  "generated_at": "2026-10-15T00:01:32.531789+08:00",
   "window": {
-    "start_local": "2026-10-13T02:34:02.707446+08:00",
-    "end_local": "2026-10-14T02:34:02.707446+08:00",
-    "start_utc": "2026-10-12T18:34:02Z",
-    "end_utc": "2026-10-13T18:34:02Z"
+    "start_local": "2026-10-14T00:01:32.531789+08:00",
+    "end_local": "2026-10-15T00:01:32.531789+08:00",
+    "start_utc": "2026-10-13T16:01:32Z",
+    "end_utc": "2026-10-14T16:01:32Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 391871,
-    "forks": 82404,
-    "open_issues": 9543,
-    "pushed_at": "2026-10-13T18:33:42Z"
+    "stars": 391973,
+    "forks": 82421,
+    "open_issues": 9593,
+    "pushed_at": "2026-10-14T16:00:53Z"
   },
-  "releases_in_window": [
-    {
-      "tag_name": "v2026.10.5-beta.3",
-      "published_at": "2026-10-13T10:00:37Z",
-      "name": "openclaw 2026.10.5-beta.3",
-      "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.5-beta.3"
-    },
-    {
-      "tag_name": "v2026.10.3",
-      "published_at": "2026-10-13T13:49:25Z",
-      "name": "openclaw 2026.10.3",
-      "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.3"
-    }
-  ],
-  "commit_count": 1045,
+  "releases_in_window": [],
+  "commit_count": 914,
   "commit_headlines": [
-    "fix(ui): sidebar view stays selected when its panel is collapsed (#171163)",
-    "perf(memory): skip empty standing-intent transactions (#171254)",
-    "fix(gateway): attribute slow chat admission and persistence waits (#171250)",
-    "refactor(subagents): reduce spawn and completion database overhead (#171137)",
-    "fix: refresh macOS permission cards after denying access (#171175)",
-    "refactor(media): consolidate ignored-response cancellation tests (#166374)",
-    "test(qa-lab): diagnose bootstrap group assertion failures",
-    "fix(testing): restore environment after team fixture generation",
-    "perf(state): skip historical migrations on first database creation (#171214)",
-    "fix(codex): stop the version probe from opening stdin (#171248)",
-    "refactor(ui): use shared tabs for the meeting reader (#170314)",
-    "fix(qwen): honor reasoning overrides after payload replacement",
-    "fix(ui): stop polling operator-only surfaces for session readers (#171223)",
-    "refactor(plugin-sdk): remove retired Telegram command UI facade (#166401)",
-    "perf(gateway): report placement changes from committed receipts (#171232)",
-    "fix(gateway): use monotonic clock for MCP loopback capture idle deadline (#170495)",
-    "fix(channels): keep capability probe deadline on the monotonic clock (#170500)",
-    "fix(ci): align sidebar and performance scan entrypoints (#171230)",
-    "perf(sessions): release writer between actor append commands (#171225)",
-    "fix: Teams message reads and searches hide fetched text (#171153)",
-    "perf(boards): reuse the admitted worker read scope (#171245)",
-    "chore: reconcile main before preview repair landing",
-    "fix(gateway): defer unused catalog roster projection (#171240)",
-    "fix(agents): prepare runtime config before standalone ingress (#171209)",
-    "chore: integrate main for validated preview repair",
-    "test(gateway): capture session list diagnostics at debug (#171237)",
-    "fix: archive sessions after orphaned worker cleanup (#171233)",
-    "perf(sessions): avoid copying immutable transcript history (#171200)",
-    "perf(state): reuse fresh agent schema admission (#170718)",
-    "perf(cron): reuse owned transcript preparation facts (#171213)",
-    "perf(sidebar): reuse unchanged session list row payloads (#171220)",
-    "test(nextcloud-talk): drive durable room retry clock",
-    "perf(state): retire idle surplus readers (#171231)",
-    "fix(gateway): keep normal startup and catalog logs actionable (#171229)",
-    "fix(claude-cli): messages sent mid-turn wait for a second run instead of steering the running turn (#159816)",
-    "feat: preserve PostgreSQL stores in backups and updates (#170828)",
-    "test(agents): handle expected worker deadline before timer advance",
-    "test(release): drain checksum input in publisher fixture",
-    "fix(synology-chat): stop one account's send burst from delaying other accounts (#144991)",
-    "fix(agents): stop empty completions from exhausting model fallbacks (#171199)",
-    "fix(sessions): let transcript searches finish within the worker budget (#171190)",
-    "refactor(ui): use owned tooltip lifecycle events (#170841)",
-    "fix(config): defer recovery when the original config snapshot was not saved (#171217)",
-    "fix(gateway): reuse prepared metadata in history defaults (#171210)",
-    "test(gateway): prepare compaction handler during collection",
-    "perf(test): shorten skill-library worker wire setup (#171202)",
-    "refactor(ui): use native popover for group folder defaults (#170566)",
-    "fix: move update schema publication off the Gateway main thread (#171179)",
-    "perf(sessions): drain archives without a redundant writer reservation (#171198)",
-    "fix(ci): restore isolated routing workflow tests"
+    "fix(ui): refresh retained progress card translations (#172184)",
+    "fix: let guest readers open message attachments (#172202)",
+    "fix: preserve recovery authority rejection errors (#172195)",
+    "fix: guest commands fail during workspace checkpoints (#172137)",
+    "feat(i18n): add Swedish to the Control UI and docs (#62063)",
+    "fix(ci): close stale PRs despite automated review activity (#172022)",
+    "test(android): drain speech queue before Wear abort assertion (#172252)",
+    "fix: retain causes in startup maintenance warnings (#172138)",
+    "fix(update): defer Doctor instead of rolling back when update-driver ancestry is unverified (#172247)",
+    "test(ui): use touch input for mobile conversation navigation (#172126)",
+    "fix: update person card labels when locale changes (#172140)",
+    "test(ui): await lazy participant artwork before asserting",
+    "fix(sessions): keep maintenance owner state private",
+    "refactor(ui): simplify retained chat page snapshots (#171745)",
+    "test(models): await obsolete catalog worker settlement",
+    "fix: Gateway repeatedly rebuilds directory watches above 256 agents (#171805)",
+    "test(cli,agents,infra,ui): remove low-value tests (batch d084) (#172215)",
+    "refactor(ui): reduce markdown text rendering work (#172035)",
+    "refactor(ui): remove Lit types from controller consumers (#172073)",
+    "fix: keep recovered subagent final replies from disappearing (#171929)",
+    "refactor(ui): remove the details progress bridge (#172190)",
+    "fix(update): avoid downloading unrelated Git branches (#172199)",
+    "chore(ui): refresh control ui locales (#172216)",
+    "fix(update): Doctor fails after short commands complete (#172132)",
+    "fix(code-mode): stop GC thrash and bound captured output (#172134)",
+    "fix: preserve inbound messages when queued turn preparation fails (#172080)",
+    "fix: typing lags on New Session with large model catalogs (#171769)",
+    "fix(e2e): reject unmatched MCP Code Mode completion (#172197)",
+    "refactor(memory): let plugins own settings labels (#172178)",
+    "refactor(ui): remove obsolete option card bridge (#171744)",
+    "refactor(system-agent): share fallback failure fixtures (#172148)",
+    "refactor(ui): remove shell and picker forwarding modules (#172086)",
+    "fix(agents): large subagent completion batches overflow requester context (#172068)",
+    "fix(release): repair extended-stable validation harness for 2026.9.33 (#172158)",
+    "test(gateway): align recovery authority refusal expectation",
+    "fix(sqlite): own Bun-serialized request bytes before transfer (#172175)",
+    "test(lint): record progress fixture virtualizer lifecycle calls",
+    "feat(state): select the shared-state database engine at the state owner (#171962)",
+    "fix: save guest project choices in New Session (#172114)",
+    "refactor: prepare synchronous SQLite SDK retirement (#171775)",
+    "fix(test): preserve worker preparation and shutdown cleanup (#172036)",
+    "fix(android): prevent Wear freezes when stopping speech (#172147)",
+    "test(runtime,tooling): remove low-value tests (batch d083) (#172172)",
+    "test(ui): await Activity subscription acceptance (#172057)",
+    "fix(memory-wiki): avoid full-vault reads for path lookups (#171961)",
+    "fix(android): keep Wear pages valid when Pulse disappears (#172136)",
+    "fix: continue active goals after the model ends a turn (#167897)",
+    "test(migrations): bind MCP delivery faults to their commit port",
+    "chore: clarify node command history test failures (#172038)",
+    "refactor(ui): remove the unused Sessions page bridge (#171808)"
   ],
   "feature_items": [
-    "**Meta Muse Wonder:** adds `meta/muse-wonder-1.0` with text and image input, tools, streaming, encrypted reasoning replay, and a 1,048,576-token context window; Spark remains the onboarding default. (#170232) Thanks @RomneyDa. [v2026.10.5-beta.3]",
+    "feat(i18n): add Swedish to the Control UI and docs (#62063)",
+    "feat(state): select the shared-state database engine at the state owner (#171962)",
+    "feat(database): add scoped startup migration backups (#171764)",
+    "feat(labs): add experimental Advisor that steers agents off avoidable work (#169564)",
+    "feat(diagnostics): attribute GC metrics by kind and worker (#171923)",
+    "feat(google): add Gemini 4 Argon support (#171852)",
+    "feat(control-ui): include plugin catalogs in locale refresh (#171496)",
+    "feat(team-reports): allow pausing automatic collection (#171840)",
+    "feat: report slow cloud worker dispatch phases (#171749)",
+    "feat(claws): accept portable manifest categories (#171532)",
+    "feat: move sessions between local and cloud from session menus (#171690)",
+    "feat(crabbox): protect cloud setup secrets through egress (#171073)",
+    "feat: expose published ClawHub packages to Gateway (#171622)",
+    "feat(openai): support typed Decisions API evaluations (#166320)",
+    "feat(browser): expose wrapped observations to Code Mode (#164833)",
+    "feat(muse): sign in to Muse Code from Model Setup (#171526)",
+    "feat(sessions): run sessions in existing folders on paired devices (#169722)",
+    "feat(sdk): complete awaited SQLite compatibility migration paths (#171443)",
+    "feat(diagnostics): export turn prompt and final answer on message and run spans (#156603)",
+    "feat: add offline workboard database port command (#171368)",
+    "feat: run Meta models through the Muse Code CLI agent runtime (#170487)",
+    "feat(gateway): ready workers for empty-workspace cloud sessions (#170929)",
+    "feat: choose a custom time to snooze sessions (#171255)",
+    "feat: guard interrupted database ports and verify replacements (#171265)",
     "feat: preserve PostgreSQL stores in backups and updates (#170828)",
-    "feat(plugins): let plugins steer a session's active run (#170152)",
-    "feat(cloud): support repository environment recipes (#170862)",
-    "feat: save suggested cloud profiles on first use (#170875)",
-    "feat(ui): organize cloud environments by repository (#170892)",
-    "feat: show cloud snapshot startup progress (#170895)",
-    "feat(cloud): provision verified Node toolchains (#170796)",
-    "feat(plugins): fork a session's live context for background side questions (#170146)",
-    "feat(secrets): add scoped setup egress grants (#170810)",
-    "feat(agents): end runs after confirmed final source replies (#170653)",
-    "improve(ui): keep New conversation visible across sidebar modes (#170771)",
-    "feat(ci): add opt-in smaller Testbox qualification profiles (#170747)",
-    "feat: isolate Agents API sessions from Gateway tools and MCP (#170728)",
-    "feat: connect MCP apps through a principal-bound relay plugin (#168233)",
-    "feat(models): support endpoint-resolved custom model aliases (#170009)",
-    "feat: support principal-bound remote Control UI for trusted plugins (#170540)",
-    "feat(auth): publish shared and agent credential authority (#170583)",
-    "feat(database): add verified offline port foundations (#170518)",
-    "feat(macos): guide missing native permissions in chat (#169635)",
-    "feat(meta): support Muse Wonder (#170232)",
-    "feat: show local provider processing and estimated wait time (#170369)",
-    "feat(llama-cpp): allow non-interactive embedding-only setup (#170153)",
-    "feat: automatically choose inference for first-run setup (#169628)",
-    "feat: use model fallbacks after context overflow recovery (#170141)",
-    "feat(ollama): show cloud balance in status usage (#167474)",
-    "feat(ui): use native Solid overlays and tabs (#169128)",
-    "feat(sessions): opt in to sessions_send thread targets (#168846)",
-    "feat: start fresh Tauri installs with a local Gateway (#169512)",
-    "feat(macos): start fresh installs in guided dashboard setup (#169568)"
+    "feat(plugins): let plugins steer a session's active run (#170152)"
   ],
   "fix_items": [
-    "fix(ui): sidebar view stays selected when its panel is collapsed (#171163)",
-    "perf(memory): skip empty standing-intent transactions (#171254)",
-    "fix(gateway): attribute slow chat admission and persistence waits (#171250)",
-    "fix: refresh macOS permission cards after denying access (#171175)",
-    "fix(testing): restore environment after team fixture generation",
-    "perf(state): skip historical migrations on first database creation (#171214)",
-    "fix(codex): stop the version probe from opening stdin (#171248)",
-    "fix(qwen): honor reasoning overrides after payload replacement",
-    "fix(ui): stop polling operator-only surfaces for session readers (#171223)",
-    "perf(gateway): report placement changes from committed receipts (#171232)",
-    "fix(gateway): use monotonic clock for MCP loopback capture idle deadline (#170495)",
-    "fix(channels): keep capability probe deadline on the monotonic clock (#170500)",
-    "fix(ci): align sidebar and performance scan entrypoints (#171230)",
-    "perf(sessions): release writer between actor append commands (#171225)",
-    "fix: Teams message reads and searches hide fetched text (#171153)",
-    "perf(boards): reuse the admitted worker read scope (#171245)",
-    "fix(gateway): defer unused catalog roster projection (#171240)",
-    "fix(agents): prepare runtime config before standalone ingress (#171209)",
-    "fix: archive sessions after orphaned worker cleanup (#171233)",
-    "perf(sessions): avoid copying immutable transcript history (#171200)",
-    "perf(state): reuse fresh agent schema admission (#170718)",
-    "perf(cron): reuse owned transcript preparation facts (#171213)",
-    "perf(sidebar): reuse unchanged session list row payloads (#171220)",
-    "perf(state): retire idle surplus readers (#171231)",
-    "fix(gateway): keep normal startup and catalog logs actionable (#171229)",
-    "fix(claude-cli): messages sent mid-turn wait for a second run instead of steering the running turn (#159816)",
-    "fix(synology-chat): stop one account's send burst from delaying other accounts (#144991)",
-    "fix(agents): stop empty completions from exhausting model fallbacks (#171199)",
-    "fix(sessions): let transcript searches finish within the worker budget (#171190)",
-    "fix(config): defer recovery when the original config snapshot was not saved (#171217)"
+    "fix(ui): refresh retained progress card translations (#172184)",
+    "fix: let guest readers open message attachments (#172202)",
+    "fix: preserve recovery authority rejection errors (#172195)",
+    "fix: guest commands fail during workspace checkpoints (#172137)",
+    "fix(ci): close stale PRs despite automated review activity (#172022)",
+    "fix: retain causes in startup maintenance warnings (#172138)",
+    "fix(update): defer Doctor instead of rolling back when update-driver ancestry is unverified (#172247)",
+    "fix: update person card labels when locale changes (#172140)",
+    "fix(sessions): keep maintenance owner state private",
+    "fix: Gateway repeatedly rebuilds directory watches above 256 agents (#171805)",
+    "fix: keep recovered subagent final replies from disappearing (#171929)",
+    "fix(update): avoid downloading unrelated Git branches (#172199)",
+    "fix(update): Doctor fails after short commands complete (#172132)",
+    "fix(code-mode): stop GC thrash and bound captured output (#172134)",
+    "fix: preserve inbound messages when queued turn preparation fails (#172080)",
+    "fix: typing lags on New Session with large model catalogs (#171769)",
+    "fix(e2e): reject unmatched MCP Code Mode completion (#172197)",
+    "fix(agents): large subagent completion batches overflow requester context (#172068)",
+    "fix(release): repair extended-stable validation harness for 2026.9.33 (#172158)",
+    "fix(sqlite): own Bun-serialized request bytes before transfer (#172175)",
+    "fix: save guest project choices in New Session (#172114)",
+    "fix(test): preserve worker preparation and shutdown cleanup (#172036)",
+    "fix(android): prevent Wear freezes when stopping speech (#172147)",
+    "fix(memory-wiki): avoid full-vault reads for path lookups (#171961)",
+    "fix(android): keep Wear pages valid when Pulse disappears (#172136)",
+    "fix: continue active goals after the model ends a turn (#167897)",
+    "fix(doctor): drop timestamp-only duplicate session headers during import (#172133)",
+    "fix(memory): resolve SecretRefs for foreign memory providers in status and Doctor (#172135)",
+    "fix(test): remove runtime assumptions from Bun census fixtures (#172111)",
+    "perf(sessions): avoid redundant actor history copies during appends (#172125)"
   ],
   "top_scopes": [
-    {
-      "scope": "gateway",
-      "count": 115
-    },
     {
       "scope": "ui",
       "count": 109
     },
     {
+      "scope": "gateway",
+      "count": 91
+    },
+    {
       "scope": "fix",
-      "count": 79
+      "count": 89
     },
     {
       "scope": "sessions",
-      "count": 58
+      "count": 62
     },
     {
       "scope": "agents",
-      "count": 50
+      "count": 42
     },
     {
       "scope": "ci",
-      "count": 47
+      "count": 39
     },
     {
       "scope": "test",
-      "count": 41
+      "count": 28
     },
     {
       "scope": "update",
-      "count": 35
+      "count": 24
+    },
+    {
+      "scope": "plugins",
+      "count": 20
     },
     {
       "scope": "state",
-      "count": 17
+      "count": 19
     },
     {
       "scope": "sqlite",
-      "count": 17
-    },
-    {
-      "scope": "control-ui",
-      "count": 16
-    },
-    {
-      "scope": "memory",
-      "count": 15
-    },
-    {
-      "scope": "codex",
-      "count": 15
-    },
-    {
-      "scope": "doctor",
       "count": 14
     },
     {
-      "scope": "cron",
+      "scope": "perf",
+      "count": 14
+    },
+    {
+      "scope": "telegram",
+      "count": 14
+    },
+    {
+      "scope": "codex",
       "count": 13
+    },
+    {
+      "scope": "memory",
+      "count": 12
     }
   ]
 }
