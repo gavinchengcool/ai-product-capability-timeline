@@ -1,6 +1,6 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-10-15T00:01:51+08:00
+- Generated at: 2026-10-15T23:50:25+08:00
 - Requested window: 2026-10-14 to 2026-10-15
 - Coverage: 6 products
 - Live 24h feeds: 1
@@ -11,30 +11,30 @@
 
 - Freshness: live_24h
 - Window: 2026-10-14 to 2026-10-15
-- Generated at: 2026-10-15T00:01:32.531789+08:00
+- Generated at: 2026-10-15T23:50:04.917319+08:00
 - 窗口: 2026-10-14 至 2026-10-15
-- GitHub 增量: 914 commits / 0 releases
-- 最近 push: 2026-10-14
+- GitHub 增量: 787 commits / 2 releases
+- 最近 push: 2026-10-15
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(i18n): add Swedish to the Control UI and docs (#62063)
-  - feat(state): select the shared-state database engine at the state owner (#171962)
-  - feat(database): add scoped startup migration backups (#171764)
-  - feat(labs): add experimental Advisor that steers agents off avoidable work (#169564)
-  - feat(diagnostics): attribute GC metrics by kind and worker (#171923)
-  - feat(google): add Gemini 4 Argon support (#171852)
-  - feat(control-ui): include plugin catalogs in locale refresh (#171496)
-  - feat(team-reports): allow pausing automatic collection (#171840)
+  - **Meta:** add the Muse Wonder model to the catalog and onboarding with max thinking support, keeping Spark as the default. (#170232) Thanks @RomneyDa, @DonnieFi, @Takhoffman, @NianJiuZst, @masatohoshino, @obviyus, @ericcurtin, @jjjhenriksen, @sjf-oa, @ceckert, @jayzhou2309, @brokemac79, @xilopaint, @k-sekula, @Warhangel, @Yolo521-bot, @mightyx, and @ajmtrz. [v2026.9.33]
+  - **MiniMax:** add the MiniMax M3.1 Flash Preview model and route its thinking effort levels to the provider. (#160089) Thanks @NianJiuZst, @Takhoffman, @php737, @DonnieFi, @RomneyDa, @masatohoshino, @obviyus, @ericcurtin, @jjjhenriksen, @sjf-oa, @ceckert, @jayzhou2309, @brokemac79, @xilopaint, @k-sekula, @Warhangel, @Yolo521-bot, @mightyx, and @ajmtrz. [v2026.9.33]
+  - feat(state): select the shared-state database engine from config (#172266)
+  - feat(typesafe): support custom decision servers through provider settings (#173101)
+  - feat(gateway): measure the connect handshake in RPC diagnostics (#173079)
+  - feat(dev): default local tests and CLI to pinned Bun (#172625)
+  - feat: download files from the Files list and preview (#172042)
+  - feat(diagnostics): attribute Code Mode GC storms to reasons and runs (#172945)
 - Fixes and constraints:
-  - fix(ui): refresh retained progress card translations (#172184)
-  - fix: let guest readers open message attachments (#172202)
-  - fix: preserve recovery authority rejection errors (#172195)
-  - fix: guest commands fail during workspace checkpoints (#172137)
-  - fix(ci): close stale PRs despite automated review activity (#172022)
-  - fix: retain causes in startup maintenance warnings (#172138)
-  - fix(update): defer Doctor instead of rolling back when update-driver ancestry is unverified (#172247)
-  - fix: update person card labels when locale changes (#172140)
+  - fix(delivery): log terminal session delivery reasons (#173207)
+  - fix(models): release superseded catalogs after config reload (#158986)
+  - fix(update): avoid redundant database copies for compatible targets (#173201)
+  - perf(trajectory): retain window facts across metadata notices (#173182)
+  - perf: reduce repeated work during warm agent turns (#172993)
+  - fix(nodes): preserve pairing errors during duplex setup (#173209)
+  - perf(gateway): send sidebar session list refreshes as row deltas (#172946)
+  - fix(ci): retire remaining unused internal exports
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
