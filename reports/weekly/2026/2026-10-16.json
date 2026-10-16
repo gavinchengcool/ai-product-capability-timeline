@@ -1,0 +1,211 @@
+{
+  "generated_at": "2026-10-16T23:38:41.154834+08:00",
+  "window": {
+    "start_local": "2026-10-15T23:38:41.154834+08:00",
+    "end_local": "2026-10-16T23:38:41.154834+08:00",
+    "start_utc": "2026-10-15T15:38:41Z",
+    "end_utc": "2026-10-16T15:38:41Z"
+  },
+  "repo": {
+    "slug": "openclaw/openclaw",
+    "stars": 392171,
+    "forks": 82460,
+    "open_issues": 9405,
+    "pushed_at": "2026-10-16T15:38:06Z"
+  },
+  "releases_in_window": [
+    {
+      "tag_name": "v2026.10.10-beta.1",
+      "published_at": "2026-10-15T18:03:07Z",
+      "name": "openclaw 2026.10.10-beta.1",
+      "prerelease": true,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.10-beta.1"
+    },
+    {
+      "tag_name": "v2026.10.4",
+      "published_at": "2026-10-16T00:36:19Z",
+      "name": "openclaw 2026.10.4",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.4"
+    }
+  ],
+  "commit_count": 992,
+  "commit_headlines": [
+    "fix(gateway): expose recovery startup timing breakdown (#174357)",
+    "feat(identity): support configurable GitHub Enterprise coauthor credit (#173513)",
+    "refactor(ui): derive settings agent projections from their owners (#174337)",
+    "fix(workers): ship Windows permission helper in portable archives (#174362)",
+    "fix(ci): preserve offline build consumers in deadcode checks (#174358)",
+    "refactor(test): remove dead script report fixture branches (#174356)",
+    "test(process, state, plugins, codex, ui): remove low-value tests (batch d119) (#173126)",
+    "refactor(ui): reuse disposable listeners for plugin components (#174346)",
+    "perf(sessions): reuse bounded worker history projections (#174275)",
+    "test(apple): bound outbox waits and join restart flushes",
+    "refactor(logging): remove duplicate diagnostic observers (#174332)",
+    "test(update): allow the documented channel diagnostic in update status --json e2e (#174348)",
+    "refactor(ui): retain composer question and goal disclosure in Solid (#174320)",
+    "refactor(ui): own sidebar menu pointer listeners (#174338)",
+    "refactor(ui): own native browser subscriptions in Solid (#174327)",
+    "fix(sessions): stop retrying replaced delivery endpoints on every restart (#174278)",
+    "perf(gateway): cut allocation hotspots under concurrent agent turns (#174130)",
+    "test(onboard): prepare native pin state before spoofing Windows",
+    "fix(ci): report failed shard invocations with output tails",
+    "refactor(test): consolidate required option validation coverage (#174335)",
+    "test(build): include memory catalog in service relay closure",
+    "refactor(ui): retire Lit migration infrastructure (#174213)",
+    "refactor(telegram): remove test-only bot dependency bags (#174256)",
+    "refactor(ui): derive view lifetimes and retire unused controllers (#174263)",
+    "refactor: remove unreachable DeepSeek alias refresh state (#174328)",
+    "feat(decisions): preserve richer answers with versioned data codecs (#157148)",
+    "refactor(ui): compose session menu item classes (#174307)",
+    "perf(sessions): keep context accounting bounded on large sessions (#174274)",
+    "refactor(logging): remove redundant channel diagnostics (#174260)",
+    "fix(memory-wiki): refuse malformed input and keep handwritten notes (#173931)",
+    "refactor(discord): remove routine diagnostics and voice content traces (#174279)",
+    "refactor(nextcloud-talk): share spool test cleanup (#174165)",
+    "feat: support plugin-owned model credentials (#156799)",
+    "fix(plugins): admit peers from relocated standalone builds (#174273)",
+    "feat(database): agent family port and backup on PostgreSQL (#174080)",
+    "test(core,ui): remove low-value tests (batch d172) (#174255)",
+    "fix(x): retain work references on follow-up mentions (#174305)",
+    "chore(deps): bump github.com/pointfreeco/swift-concurrency-extras (#174031)",
+    "fix(decisions): stop reporting unconfirmed credentials as ready (#174027)",
+    "refactor: reuse Fal music request assertion helper (#174303)",
+    "refactor(crabbox): remove test-only worker dependency plumbing (#173995)",
+    "fix(ci): repair auth wrapper and unused helper exports (#174296)",
+    "refactor(ui): let MCP confirmation view own focus (#174291)",
+    "feat(diagnostics): attribute worker heap usage by V8 space (#174288)",
+    "test(update): reuse native readers in CLI routing fixtures",
+    "perf(gateway): trim history warmup imports for restart recovery (#174293)",
+    "refactor(ui): own composer suggestions in Solid stores (#174226)",
+    "refactor(ui): own chat context subscriptions in Solid (#174289)",
+    "refactor(ui): publish MCP card state through a signal (#174286)",
+    "fix: allow attachment follow-ups in managed project sessions (#173956)"
+  ],
+  "feature_items": [
+    "**Cloud sessions:** move sessions between local and cloud from session menus, organize cloud environments by repository, support repository environment recipes with verified Node toolchains, save suggested cloud profiles on first use, show snapshot startup progress, start sessions while the first snapshot uploads, ready workers for empty-workspace sessions, report slow dispatch phases, and keep cloud setup secrets behind scoped egress grants. (#171690, #170892, #170862, #170796, #170875, #170895, #171729, #170929, #171749, #171073, #170810) Thanks @VACInc. [v2026.10.10-beta.1]",
+    "**Desktop apps and first run:** support local Gateways in the Windows desktop app, start fresh Tauri installs with a local Gateway, start fresh macOS installs in guided dashboard setup, guide missing native permissions in chat, and choose inference automatically during first-run setup. (#169522, #169512, #169568, #169635, #169628) [v2026.10.10-beta.1]",
+    "**Local setup:** offer optional memory embedding setup, add managed llama.cpp OCR and vision setup, and allow non-interactive llama.cpp embedding-only setup. (#163693, #148193, #170153) Thanks @PollyBot13, @duyufansh2008, and @dh-js. [v2026.10.10-beta.1]",
+    "**Bun runtime:** build standalone OpenClaw executables with Bun, add an opt-in pinned Bun runtime that rejects unpinnable paths before changing anything, and start the Gateway faster on Bun. (#172384, #168832, #168982, #169543) Thanks @vincentkoc. [v2026.10.10-beta.1]",
+    "**Experimental PostgreSQL:** add an experimental PostgreSQL engine for the Workboard store, select the shared-state engine at its owner, generate PostgreSQL DDL from canonical SQLite schemas, add PostgreSQL migrations with capability admission and exact schema-drift checks, preserve PostgreSQL stores in backups and updates, and add verified offline database port tooling. (#169214, #171962, #168219, #169933, #172265, #170828, #170518, #171368, #171265, #170037, #170055, #170059, #171350, #171484, #171518, #171795, #172046, #171545) Thanks @vincentkoc and @joshavant. [v2026.10.10-beta.1]",
+    "**Session personalization:** personalize session backgrounds, add per-session speech bubbles and prompt reactions, show session-specific previews for public links, and match public conversation pages to the chat design with copy buttons. (#168301, #168861, #169527, #168156) Thanks @vyctorbrzezowski and @VACInc. [v2026.10.10-beta.1]",
+    "**Control UI navigation:** organize personal navigation in a compact sidebar rail with real shortcut icons, filter sidebar users by online status, keep New conversation visible across sidebar modes, show session details beside wide conversations, make colored sessions easier to scan, inspect attached automations from session hovercards, put everyday session actions first, and make release updates discoverable from the account menu. (#168325, #168997, #172243, #170771, #170707, #170382, #172240, #168616, #172544, #100024) Thanks @fuller-stack-dev, @shakkernerd, and @VACInc. [v2026.10.10-beta.1]",
+    "**Control UI chat:** group session context and task progress in Details, clarify the session details inspector, render assistant directives and an embed tag, show readable tweet preview cards, load older history in larger pages, shrink the composer in existing sessions, search emoji by name in the reaction picker, add manual code folding to session diffs, and show or hide values in secure entry prompts. (#161674, #172436, #64104, #168213, #170481, #171637, #172577, #172350, #169925, #172549) Thanks @vyctorbrzezowski, @obviyus, @Takhoffman, @Patrick-Erichsen, and @jacobtomlinson. [v2026.10.10-beta.1]",
+    "**Languages:** add Swedish to the Control UI and docs, and include plugin catalogs in locale refresh. (#62063, #171496) Thanks @yeager and @vincentkoc. [v2026.10.10-beta.1]",
+    "**MCP apps and automations:** use MCP plugin apps across conversations and workspace files, trigger automations from MCP events, connect MCP apps through a principal-bound relay plugin, and support principal-bound remote Control UI for trusted plugins. (#161747, #165399, #168233, #170540) [v2026.10.10-beta.1]",
+    "**Plugins and SDK:** allow per-run model fallback overrides, fork a session's live context for background side questions, let plugins steer a session's active run, support Solid Control UI views, add worker-owned keyed state and conversation binding APIs, join service and account scheduling at retirement, complete awaited SQLite compatibility migration paths, and show calm notices for deprecated SDK usage. (#168893, #170146, #170152, #168408, #168478, #168483, #162669, #171443, #171752) Thanks @obviyus, @dwty11, and @joshavant. [v2026.10.10-beta.1]",
+    "**Models and providers:** add Gemini 4 Argon as the default Gemini model with Gemini 3.8 Flash, replace Nemotron 3 Super with Nemotron 3.5 Super VL, add xAI Imagine Image 2.0 without silent image-model fallback, accept the Fish Audio Drama 3 preview, support endpoint-resolved custom model aliases, prefer a newer installed Codex for ChatGPT discovery, and prioritize shared private vLLM requests. (#171852, #172339, #172449, #172445, #170473, #170009, #168228, #129434) Thanks @nv-kasikritc, @jacobtomlinson, @JFLeonM, @xyrolle, @obviyus, @m888m, and @joshavant. [v2026.10.10-beta.1]",
+    "**Usage and accounts:** show active auth subscription blocks, show Ollama cloud balance in status usage, add a ClawRouter sidebar dashboard for subscription pool headroom, show local provider processing with estimated wait time, and show every matched session in a paged usage overview. (#133087, #167474, #169514, #170041, #170369, #169660) Thanks @Leon-SK668, @vincentkoc, and @usimic. [v2026.10.10-beta.1]",
+    "**Model recovery:** use model fallbacks after context-overflow recovery, compact ChatGPT sign-in sessions server-side, end runs after confirmed final source replies, and support typed OpenAI Decisions API evaluations. (#170141, #168401, #170653, #166320) Thanks @amirarenco-create, @obviyus, @RomneyDa, @sunlit-deng, @jjjhenriksen, and @Kimiyu-186. [v2026.10.10-beta.1]",
+    "**Labs Advisor:** add an experimental Advisor that steers agents away from avoidable work. (#169564) Thanks @obviyus. [v2026.10.10-beta.1]",
+    "**Mobile and devices:** add Android system, photos, contacts, calendar, and motion capabilities, add an authenticated iOS background presence beacon, and support multiple Microsoft Teams bot accounts. (#29398, #73330, #112811) Thanks @obviyus and @jimmypuckett. [v2026.10.10-beta.1]",
+    "**More:** expose wrapped browser observations to Code Mode, allow pausing automatic team-report collection, and add scoped startup migration backups. (#164833, #171840, #171764) Thanks @alkor2000, @potterdigital, and @vincentkoc. [v2026.10.10-beta.1]",
+    "Stability patch for 2026.10.3 with no new features or configuration changes. Thanks @RomneyDa. [v2026.10.4]",
+    "feat(identity): support configurable GitHub Enterprise coauthor credit (#173513)",
+    "feat(decisions): preserve richer answers with versioned data codecs (#157148)",
+    "feat: support plugin-owned model credentials (#156799)",
+    "feat(database): agent family port and backup on PostgreSQL (#174080)",
+    "feat(diagnostics): attribute worker heap usage by V8 space (#174288)",
+    "feat(memory): memory search on PostgreSQL (#174242)",
+    "feat(x): attach native images and videos to replies (#174051)",
+    "feat(build): support selected standalone plugins (#173794)",
+    "feat: use oMLX for local chat and memory embeddings (#173327)",
+    "feat(memory): index and publish memory on PostgreSQL (#174183)",
+    "feat(update): PostgreSQL-aware update preflight and rollback (#173968)",
+    "feat: discover models during custom provider setup (#173300)"
+  ],
+  "fix_items": [
+    "fix(gateway): expose recovery startup timing breakdown (#174357)",
+    "fix(workers): ship Windows permission helper in portable archives (#174362)",
+    "fix(ci): preserve offline build consumers in deadcode checks (#174358)",
+    "perf(sessions): reuse bounded worker history projections (#174275)",
+    "fix(sessions): stop retrying replaced delivery endpoints on every restart (#174278)",
+    "perf(gateway): cut allocation hotspots under concurrent agent turns (#174130)",
+    "fix(ci): report failed shard invocations with output tails",
+    "perf(sessions): keep context accounting bounded on large sessions (#174274)",
+    "fix(memory-wiki): refuse malformed input and keep handwritten notes (#173931)",
+    "fix(plugins): admit peers from relocated standalone builds (#174273)",
+    "fix(x): retain work references on follow-up mentions (#174305)",
+    "fix(decisions): stop reporting unconfirmed credentials as ready (#174027)",
+    "fix(ci): repair auth wrapper and unused helper exports (#174296)",
+    "perf(gateway): trim history warmup imports for restart recovery (#174293)",
+    "fix: allow attachment follow-ups in managed project sessions (#173956)",
+    "fix: complete runtime-pin migration for fresh profiles (#174228)",
+    "fix: stop false history rewrite warnings after tool replay (#174282)",
+    "fix(cron): editing an automation accepts a CLI-backed model again (#173258)",
+    "fix(plugins): preserve bundled Cloudflare distribution ownership (#174287)",
+    "fix(memory): prevent capacity failures during large-session reindexing (#174280)",
+    "perf(deploy): shorten the release activation offline window (#174290)",
+    "fix(decisions): report applied tool restrictions (#174013)",
+    "fix(ui): keep the Control UI usable offline and retry lazy assets (#174043)",
+    "fix(ci): label oMLX plugin changes (#174277)",
+    "fix(doctor): treat case-variant agent ids that share a database as one target (#174243)",
+    "fix(reply): coalesce rapid progress narration updates (#174007)",
+    "perf(control-ui): prepare session-menu owner rosters in idle slices after load (#173867)",
+    "fix: let guests mark owned conversations unread (#173941)",
+    "perf(sqlite): reuse generated memory schema facts (#174141)",
+    "fix: prevent attachment staging after worktree removal (#174104)"
+  ],
+  "top_scopes": [
+    {
+      "scope": "ui",
+      "count": 221
+    },
+    {
+      "scope": "fix",
+      "count": 88
+    },
+    {
+      "scope": "ci",
+      "count": 43
+    },
+    {
+      "scope": "tests",
+      "count": 40
+    },
+    {
+      "scope": "gateway",
+      "count": 39
+    },
+    {
+      "scope": "agents",
+      "count": 36
+    },
+    {
+      "scope": "refactor",
+      "count": 29
+    },
+    {
+      "scope": "sessions",
+      "count": 27
+    },
+    {
+      "scope": "test",
+      "count": 26
+    },
+    {
+      "scope": "update",
+      "count": 26
+    },
+    {
+      "scope": "plugins",
+      "count": 18
+    },
+    {
+      "scope": "cron",
+      "count": 16
+    },
+    {
+      "scope": "codex",
+      "count": 16
+    },
+    {
+      "scope": "feat",
+      "count": 14
+    },
+    {
+      "scope": "control-ui",
+      "count": 13
+    }
+  ]
+}
