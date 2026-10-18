@@ -1,196 +1,176 @@
 {
-  "generated_at": "2026-10-17T22:30:32.786718+08:00",
+  "generated_at": "2026-10-18T22:57:10.378216+08:00",
   "window": {
-    "start_local": "2026-10-16T22:30:32.786718+08:00",
-    "end_local": "2026-10-17T22:30:32.786718+08:00",
-    "start_utc": "2026-10-16T14:30:32Z",
-    "end_utc": "2026-10-17T14:30:32Z"
+    "start_local": "2026-10-17T22:57:10.378216+08:00",
+    "end_local": "2026-10-18T22:57:10.378216+08:00",
+    "start_utc": "2026-10-17T14:57:10Z",
+    "end_utc": "2026-10-18T14:57:10Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 392258,
-    "forks": 82459,
-    "open_issues": 9348,
-    "pushed_at": "2026-10-17T14:30:10Z"
+    "stars": 392350,
+    "forks": 82472,
+    "open_issues": 9403,
+    "pushed_at": "2026-10-18T14:56:06Z"
   },
   "releases_in_window": [],
-  "commit_count": 1097,
+  "commit_count": 422,
   "commit_headlines": [
-    "refactor(test): remove unused compaction test hooks (#175594)",
-    "refactor(runtime): remove routine diagnostic plumbing (#175546)",
-    "test(crabbox): migrate allocation authority fixture to keyed store v2 (#175593)",
-    "test: restore fixture state after assertion failures (#157803)",
-    "refactor(plugins): share optional filesystem discovery (#175458)",
-    "fix(sessions): honor hidden assistant rows in transcript recovery (#175551)",
-    "refactor(chat): publish page state without redraw callbacks (#175575)",
-    "test(channels): cover fused idle admission in Discord and Signal ordering tests (#175579)",
-    "fix(memory): reserve embedding cache capacity before inserting at the cap (#175566)",
-    "refactor(ui): project swarm hydration from its owner (#175587)",
-    "test(core, plugins): remove low-value tests (batch d218) (#175530)",
-    "refactor(ui): publish chat history and errors without redraw callbacks (#175571)",
-    "fix: preserve assistant previews across user appends (#175534)",
-    "test(ui): provide application context to the pairing shell fixture",
-    "fix(agents): keep private completion output and followups private (#175559)",
-    "test(doctor): retire owned fixture admissions",
-    "fix: avoid duplicate widgets when chat replies finish (#175544)",
-    "fix(update): prevent migrated results from appearing before cleanup (#159644)",
-    "refactor(test): remove unused transport test support (#175580)",
-    "refactor(plugins): use current host state APIs in bundled adapters (#175523)",
-    "fix(telegram): keep implicit final replies on the current message (#175561)",
-    "feat(decisions): support Jev image and Box questions (#175070)",
-    "fix: workspace sync stalls on test caches and build locks (#175538)",
-    "fix(agents): suppress duplicate CLI replies after final message delivery (#175560)",
-    "fix(pr): recover clean replacement heads after admin intents (#175573)",
-    "fix(sessions): exclude transcript artifacts from model identity (#175553)",
-    "refactor(infra): simplify update progress and report bookkeeping (#175482)",
-    "fix(anthropic): explain Claude CLI refresh contention (#175558)",
-    "test(gateway): request session details in demand-driven fixtures (#175564)",
-    "fix(groq): clamp GPT OSS thinking levels to supported efforts (#175539)",
-    "refactor(ui): localize sidebar attachment resource updates (#175569)",
-    "improve(sessions): avoid encoding commit receipts twice (#175038)",
-    "fix(ai): send explicit null Responses reasoning summaries (#175525)",
-    "refactor(cli): fold private helpers into command owners (#174876)",
-    "perf(gateway): send session row deltas to capable clients (#175521)",
-    "refactor(gateway): remove redundant module and helper comments (#175395)",
-    "perf(control-ui): fill a short boot transcript once, to the viewport (#175437)",
-    "fix(gateway): keep forwarded cron history and attachments readable (#175550)",
-    "refactor(ui): publish dashboard readiness through its owner (#175511)",
-    "refactor(test): remove duplicate npm JSON normalization proof (#175554)",
-    "fix(ci): speed up Windows validation compression (#175524)",
-    "fix(anthropic): honor Claude config root for transcript recovery (#175549)",
-    "refactor(ui): keep chat media updates inside their owners (#175494)",
-    "refactor(state): join shared reads through async ownership (#175443)",
-    "fix(doctor): avoid rereading newly created backups (#175548)",
-    "test(gateway): preserve native recovery shutdown deadlines",
-    "perf(trajectory): compress runtime events with stable Brotli (#175217)",
-    "refactor(ui): publish chat history fields directly (#175454)",
-    "refactor: let plugins own Session Sources settings declarations (#175547)",
-    "test(ui,core): remove low-value tests (batch d217) (#175520)"
+    "refactor(tests): reuse channel entry memoization proof (#176231)",
+    "fix: sandbox screenshots unavailable in managed project chats (#176199)",
+    "fix(tests): align Darwin lock fixtures with drained failures (#176219)",
+    "refactor(tests): remove obsolete test-only exports (#176210)",
+    "docs: mark the docs search query as optional",
+    "test(agents): control stalled-global keep-alive clock",
+    "fix(models): wait for catalog publication during API-key saves (#176195)",
+    "fix(subagents): preserve confirmed cancellation during delivery (#176206)",
+    "fix: keep required-sandbox images within allowed folders (#176203)",
+    "fix: suppress formatted diagnostics for incognito sessions (#156429)",
+    "refactor(tests): remove unused database capability table (#176196)",
+    "fix(gateway): clear stale restart-loop breaker error on recovery (#176182)",
+    "fix(memory-wiki): preserve concepts when OKF input is not UTF-8 (#176009)",
+    "fix(agents): distinguish invalid tool arguments from blocked calls (#176104)",
+    "fix(tests): await chat file preview readiness (#176198)",
+    "test(ios): await native reconnect state before checking Share metadata",
+    "feat: upload workspace evidence for managed pull requests (#176139)",
+    "refactor(meetings): remove unused test DOM shims (#176189)",
+    "fix(cli): preserve missing maintenance scope guidance (#176191)",
+    "fix: identify Claws Add button targets to screen readers",
+    "fix(worker): settle aborts when remote cancellation arrives first (#176181)",
+    "refactor(x): consolidate monitor attachment coverage (#176185)",
+    "fix: read public GitHub Actions job logs (#176147)",
+    "fix(backup): preserve invalid database refusals during discovery (#176180)",
+    "fix: keep failed commands visible with zero exit codes (#176178)",
+    "refactor(infra): consolidate HTTP response test fixtures (#176175)",
+    "fix(state): preserve schema ownership across Windows path aliases (#176174)",
+    "fix: avoid partial API-key saves during credential publication (#176166)",
+    "feat: open managed pull requests by default (#176105)",
+    "fix(plugins): honor custom ClawHub registry authority (#147103)",
+    "refactor(infra): consolidate duplicate port inspection tests (#176164)",
+    "fix(cron): run scheduled scripts with recorded creator account context (#176158)",
+    "fix: follow candidate schema in scoped restore proof (#176161)",
+    "fix(update): fetch only release tags for stable and beta git targets (#176155)",
+    "refactor(ci): test legacy plugin contracts at the manifest boundary (#176156)",
+    "refactor(plugins): remove unused subagent hook fixture fields (#176150)",
+    "fix(backup): exclude managed worktrees from state-only archives (#176142)",
+    "fix(update): wait for native maintenance before activation (#176131)",
+    "fix(ci): remove unused exports and fix async test assertions (#176122)",
+    "refactor(openai): trim unused realtime voice fixtures (#176135)",
+    "fix(ci): discover OpenGrep fixtures by rule directory",
+    "feat: let guests request a ClawSweeper re-review (#176083)",
+    "refactor(memory): reuse lazy session runtime bindings (#176128)",
+    "docs: clarify system event does not wait for heartbeat completion",
+    "fix(doctor): avoid repeated database copies during lint (#176130)",
+    "fix(ci): avoid flagging managed release asset downloads (#176123)",
+    "refactor(workboard): remove dead test fixture branches (#176118)",
+    "fix(plugins): reduce memory retained by external plugins (#176124)",
+    "fix(doctor): skip stale npm generations during host-link repair (#176121)",
+    "feat: support core Goals on Codex cloud workers (#175918)"
   ],
   "feature_items": [
-    "feat(decisions): support Jev image and Box questions (#175070)",
-    "feat(gateway): send presence deltas to capable operator clients (#175508)",
-    "feat(workboard): paginate cards and session boards (#175349)",
-    "feat(gateway): expose sidebar baseline retirement causes (#175412)",
-    "improve: group New Session agent and workspace controls (#175255)",
-    "feat: show selected agent avatars in completion and push notifications (#173774)",
-    "feat(ui): choose preset, generated, or uploaded agent avatars (#173773)",
-    "feat: generate Blobster avatars with the configured agent model (#173762)",
-    "feat(gateway): attribute session list and chat history response bytes (#175200)",
-    "feat(ui): show subagents and background processes with progress in session Details (#175041)",
-    "improve: use Cmd+N for new sessions in desktop apps (#174882)",
-    "feat(doctor): truthful per-store database diagnostics (#174912)",
-    "feat: edit session PR details without publishing source (#174945)",
-    "feat(database): family-scoped port, backup and update for mixed engines (#174387)",
-    "feat(onnx): use prepared decision model execution (#174162)",
-    "feat(proof): add measured screenshot and video annotations (#174805)",
-    "feat(ui): preview live skill files from chat links (#174781)",
-    "feat(ui): browse folders on paired devices for existing-folder sessions (#174713)",
-    "feat(plugins): default package installs to ClawHub (#173669)",
-    "feat(database): admit mixed state/agent engine pairs (#174623)",
-    "feat: refresh managed sandbox bases before publication (#174532)",
-    "feat(github): preview GitHub Enterprise links through admitted session readers (#173712)",
-    "feat(github): admit GitHub Enterprise session reads through repository-scoped App tokens (#173668)",
-    "feat: prepare local client credential storage and recovery (#174294)",
-    "feat(decisions): preserve native results in the decision tool (#174161)",
-    "feat(openrouter): support native Jev decisions (#158510)",
-    "feat(decisions): preserve native catalog capabilities and accounting (#157492)",
-    "feat(decisions): run typed tasks with prepared model credentials (#157225)",
-    "feat(database): legacy SQLite migrations complete before PostgreSQL port (#174399)",
-    "feat(control-ui): keep link readers scoped to their pane session (#173652)"
+    "feat: upload workspace evidence for managed pull requests (#176139)",
+    "feat: open managed pull requests by default (#176105)",
+    "feat: let guests request a ClawSweeper re-review (#176083)",
+    "feat: support core Goals on Codex cloud workers (#175918)",
+    "feat(agents): agents can check why a tool is missing before saying OpenClaw can't (#176073)",
+    "feat(qa): report scorecard evidence gaps (#169697)",
+    "feat(tui): report run lifecycle through OSC 7501 program status (#175692)",
+    "feat(ui): show the Gateway connection state in the sidebar footer (#174022)",
+    "feat(deepseek): search the web with the standalone Search API (#175729)",
+    "feat(plugin-sdk): public transcript watermark API for context engines (#167481)"
   ],
   "fix_items": [
-    "fix(sessions): honor hidden assistant rows in transcript recovery (#175551)",
-    "fix(memory): reserve embedding cache capacity before inserting at the cap (#175566)",
-    "fix: preserve assistant previews across user appends (#175534)",
-    "fix(agents): keep private completion output and followups private (#175559)",
-    "fix: avoid duplicate widgets when chat replies finish (#175544)",
-    "fix(update): prevent migrated results from appearing before cleanup (#159644)",
-    "fix(telegram): keep implicit final replies on the current message (#175561)",
-    "fix: workspace sync stalls on test caches and build locks (#175538)",
-    "fix(agents): suppress duplicate CLI replies after final message delivery (#175560)",
-    "fix(pr): recover clean replacement heads after admin intents (#175573)",
-    "fix(sessions): exclude transcript artifacts from model identity (#175553)",
-    "fix(anthropic): explain Claude CLI refresh contention (#175558)",
-    "fix(groq): clamp GPT OSS thinking levels to supported efforts (#175539)",
-    "fix(ai): send explicit null Responses reasoning summaries (#175525)",
-    "perf(gateway): send session row deltas to capable clients (#175521)",
-    "perf(control-ui): fill a short boot transcript once, to the viewport (#175437)",
-    "fix(gateway): keep forwarded cron history and attachments readable (#175550)",
-    "fix(ci): speed up Windows validation compression (#175524)",
-    "fix(anthropic): honor Claude config root for transcript recovery (#175549)",
-    "fix(doctor): avoid rereading newly created backups (#175548)",
-    "perf(trajectory): compress runtime events with stable Brotli (#175217)",
-    "fix: keep AutoReview within its parent run lifetime (#175529)",
-    "fix(ci): avoid full history for manual Testbox shells (#175526)",
-    "fix(session-share): report node discovery failures in the catalog (#175532)",
-    "fix(doctor): preserve offline migrations through service policy drift (#175492)",
-    "fix(test): bound Gateway CI worker lifetime (#175407)",
-    "perf(gateway): defer unrequested session row enrichment (#175438)",
-    "fix: preserve sidebar deltas across projection revision changes (#175506)",
-    "fix(doctor): keep rehearsal completion recording private (#175502)",
-    "perf(channels): claim idle ingress during durable admission (#175459)"
+    "fix: sandbox screenshots unavailable in managed project chats (#176199)",
+    "fix(tests): align Darwin lock fixtures with drained failures (#176219)",
+    "fix(models): wait for catalog publication during API-key saves (#176195)",
+    "fix(subagents): preserve confirmed cancellation during delivery (#176206)",
+    "fix: keep required-sandbox images within allowed folders (#176203)",
+    "fix: suppress formatted diagnostics for incognito sessions (#156429)",
+    "fix(gateway): clear stale restart-loop breaker error on recovery (#176182)",
+    "fix(memory-wiki): preserve concepts when OKF input is not UTF-8 (#176009)",
+    "fix(agents): distinguish invalid tool arguments from blocked calls (#176104)",
+    "fix(tests): await chat file preview readiness (#176198)",
+    "fix(cli): preserve missing maintenance scope guidance (#176191)",
+    "fix: identify Claws Add button targets to screen readers",
+    "fix(worker): settle aborts when remote cancellation arrives first (#176181)",
+    "fix: read public GitHub Actions job logs (#176147)",
+    "fix(backup): preserve invalid database refusals during discovery (#176180)",
+    "fix: keep failed commands visible with zero exit codes (#176178)",
+    "fix(state): preserve schema ownership across Windows path aliases (#176174)",
+    "fix: avoid partial API-key saves during credential publication (#176166)",
+    "fix(plugins): honor custom ClawHub registry authority (#147103)",
+    "fix(cron): run scheduled scripts with recorded creator account context (#176158)",
+    "fix: follow candidate schema in scoped restore proof (#176161)",
+    "fix(update): fetch only release tags for stable and beta git targets (#176155)",
+    "fix(backup): exclude managed worktrees from state-only archives (#176142)",
+    "fix(update): wait for native maintenance before activation (#176131)",
+    "fix(ci): remove unused exports and fix async test assertions (#176122)",
+    "fix(ci): discover OpenGrep fixtures by rule directory",
+    "fix(doctor): avoid repeated database copies during lint (#176130)",
+    "fix(ci): avoid flagging managed release asset downloads (#176123)",
+    "fix(plugins): reduce memory retained by external plugins (#176124)",
+    "fix(doctor): skip stale npm generations during host-link repair (#176121)"
   ],
   "top_scopes": [
     {
+      "scope": "fix",
+      "count": 36
+    },
+    {
       "scope": "ui",
-      "count": 199
+      "count": 34
     },
     {
       "scope": "gateway",
-      "count": 83
-    },
-    {
-      "scope": "fix",
-      "count": 66
-    },
-    {
-      "scope": "agents",
-      "count": 51
+      "count": 24
     },
     {
       "scope": "test",
-      "count": 44
+      "count": 23
     },
     {
       "scope": "ci",
-      "count": 37
+      "count": 21
     },
     {
-      "scope": "refactor",
-      "count": 37
-    },
-    {
-      "scope": "sessions",
-      "count": 32
-    },
-    {
-      "scope": "doctor",
-      "count": 29
-    },
-    {
-      "scope": "plugins",
-      "count": 23
+      "scope": "agents",
+      "count": 16
     },
     {
       "scope": "update",
-      "count": 23
+      "count": 13
     },
     {
-      "scope": "control-ui",
-      "count": 20
+      "scope": "tests",
+      "count": 12
     },
     {
-      "scope": "memory",
-      "count": 18
+      "scope": "plugins",
+      "count": 12
     },
     {
-      "scope": "database",
-      "count": 17
+      "scope": "cli",
+      "count": 11
+    },
+    {
+      "scope": "daemon",
+      "count": 11
+    },
+    {
+      "scope": "sessions",
+      "count": 10
+    },
+    {
+      "scope": "doctor",
+      "count": 8
+    },
+    {
+      "scope": "refactor",
+      "count": 7
     },
     {
       "scope": "codex",
-      "count": 14
+      "count": 6
     }
   ]
 }

@@ -1,0 +1,176 @@
+{
+  "generated_at": "2026-10-18T22:57:10.378216+08:00",
+  "window": {
+    "start_local": "2026-10-17T22:57:10.378216+08:00",
+    "end_local": "2026-10-18T22:57:10.378216+08:00",
+    "start_utc": "2026-10-17T14:57:10Z",
+    "end_utc": "2026-10-18T14:57:10Z"
+  },
+  "repo": {
+    "slug": "openclaw/openclaw",
+    "stars": 392350,
+    "forks": 82472,
+    "open_issues": 9403,
+    "pushed_at": "2026-10-18T14:56:06Z"
+  },
+  "releases_in_window": [],
+  "commit_count": 422,
+  "commit_headlines": [
+    "refactor(tests): reuse channel entry memoization proof (#176231)",
+    "fix: sandbox screenshots unavailable in managed project chats (#176199)",
+    "fix(tests): align Darwin lock fixtures with drained failures (#176219)",
+    "refactor(tests): remove obsolete test-only exports (#176210)",
+    "docs: mark the docs search query as optional",
+    "test(agents): control stalled-global keep-alive clock",
+    "fix(models): wait for catalog publication during API-key saves (#176195)",
+    "fix(subagents): preserve confirmed cancellation during delivery (#176206)",
+    "fix: keep required-sandbox images within allowed folders (#176203)",
+    "fix: suppress formatted diagnostics for incognito sessions (#156429)",
+    "refactor(tests): remove unused database capability table (#176196)",
+    "fix(gateway): clear stale restart-loop breaker error on recovery (#176182)",
+    "fix(memory-wiki): preserve concepts when OKF input is not UTF-8 (#176009)",
+    "fix(agents): distinguish invalid tool arguments from blocked calls (#176104)",
+    "fix(tests): await chat file preview readiness (#176198)",
+    "test(ios): await native reconnect state before checking Share metadata",
+    "feat: upload workspace evidence for managed pull requests (#176139)",
+    "refactor(meetings): remove unused test DOM shims (#176189)",
+    "fix(cli): preserve missing maintenance scope guidance (#176191)",
+    "fix: identify Claws Add button targets to screen readers",
+    "fix(worker): settle aborts when remote cancellation arrives first (#176181)",
+    "refactor(x): consolidate monitor attachment coverage (#176185)",
+    "fix: read public GitHub Actions job logs (#176147)",
+    "fix(backup): preserve invalid database refusals during discovery (#176180)",
+    "fix: keep failed commands visible with zero exit codes (#176178)",
+    "refactor(infra): consolidate HTTP response test fixtures (#176175)",
+    "fix(state): preserve schema ownership across Windows path aliases (#176174)",
+    "fix: avoid partial API-key saves during credential publication (#176166)",
+    "feat: open managed pull requests by default (#176105)",
+    "fix(plugins): honor custom ClawHub registry authority (#147103)",
+    "refactor(infra): consolidate duplicate port inspection tests (#176164)",
+    "fix(cron): run scheduled scripts with recorded creator account context (#176158)",
+    "fix: follow candidate schema in scoped restore proof (#176161)",
+    "fix(update): fetch only release tags for stable and beta git targets (#176155)",
+    "refactor(ci): test legacy plugin contracts at the manifest boundary (#176156)",
+    "refactor(plugins): remove unused subagent hook fixture fields (#176150)",
+    "fix(backup): exclude managed worktrees from state-only archives (#176142)",
+    "fix(update): wait for native maintenance before activation (#176131)",
+    "fix(ci): remove unused exports and fix async test assertions (#176122)",
+    "refactor(openai): trim unused realtime voice fixtures (#176135)",
+    "fix(ci): discover OpenGrep fixtures by rule directory",
+    "feat: let guests request a ClawSweeper re-review (#176083)",
+    "refactor(memory): reuse lazy session runtime bindings (#176128)",
+    "docs: clarify system event does not wait for heartbeat completion",
+    "fix(doctor): avoid repeated database copies during lint (#176130)",
+    "fix(ci): avoid flagging managed release asset downloads (#176123)",
+    "refactor(workboard): remove dead test fixture branches (#176118)",
+    "fix(plugins): reduce memory retained by external plugins (#176124)",
+    "fix(doctor): skip stale npm generations during host-link repair (#176121)",
+    "feat: support core Goals on Codex cloud workers (#175918)"
+  ],
+  "feature_items": [
+    "feat: upload workspace evidence for managed pull requests (#176139)",
+    "feat: open managed pull requests by default (#176105)",
+    "feat: let guests request a ClawSweeper re-review (#176083)",
+    "feat: support core Goals on Codex cloud workers (#175918)",
+    "feat(agents): agents can check why a tool is missing before saying OpenClaw can't (#176073)",
+    "feat(qa): report scorecard evidence gaps (#169697)",
+    "feat(tui): report run lifecycle through OSC 7501 program status (#175692)",
+    "feat(ui): show the Gateway connection state in the sidebar footer (#174022)",
+    "feat(deepseek): search the web with the standalone Search API (#175729)",
+    "feat(plugin-sdk): public transcript watermark API for context engines (#167481)"
+  ],
+  "fix_items": [
+    "fix: sandbox screenshots unavailable in managed project chats (#176199)",
+    "fix(tests): align Darwin lock fixtures with drained failures (#176219)",
+    "fix(models): wait for catalog publication during API-key saves (#176195)",
+    "fix(subagents): preserve confirmed cancellation during delivery (#176206)",
+    "fix: keep required-sandbox images within allowed folders (#176203)",
+    "fix: suppress formatted diagnostics for incognito sessions (#156429)",
+    "fix(gateway): clear stale restart-loop breaker error on recovery (#176182)",
+    "fix(memory-wiki): preserve concepts when OKF input is not UTF-8 (#176009)",
+    "fix(agents): distinguish invalid tool arguments from blocked calls (#176104)",
+    "fix(tests): await chat file preview readiness (#176198)",
+    "fix(cli): preserve missing maintenance scope guidance (#176191)",
+    "fix: identify Claws Add button targets to screen readers",
+    "fix(worker): settle aborts when remote cancellation arrives first (#176181)",
+    "fix: read public GitHub Actions job logs (#176147)",
+    "fix(backup): preserve invalid database refusals during discovery (#176180)",
+    "fix: keep failed commands visible with zero exit codes (#176178)",
+    "fix(state): preserve schema ownership across Windows path aliases (#176174)",
+    "fix: avoid partial API-key saves during credential publication (#176166)",
+    "fix(plugins): honor custom ClawHub registry authority (#147103)",
+    "fix(cron): run scheduled scripts with recorded creator account context (#176158)",
+    "fix: follow candidate schema in scoped restore proof (#176161)",
+    "fix(update): fetch only release tags for stable and beta git targets (#176155)",
+    "fix(backup): exclude managed worktrees from state-only archives (#176142)",
+    "fix(update): wait for native maintenance before activation (#176131)",
+    "fix(ci): remove unused exports and fix async test assertions (#176122)",
+    "fix(ci): discover OpenGrep fixtures by rule directory",
+    "fix(doctor): avoid repeated database copies during lint (#176130)",
+    "fix(ci): avoid flagging managed release asset downloads (#176123)",
+    "fix(plugins): reduce memory retained by external plugins (#176124)",
+    "fix(doctor): skip stale npm generations during host-link repair (#176121)"
+  ],
+  "top_scopes": [
+    {
+      "scope": "fix",
+      "count": 36
+    },
+    {
+      "scope": "ui",
+      "count": 34
+    },
+    {
+      "scope": "gateway",
+      "count": 24
+    },
+    {
+      "scope": "test",
+      "count": 23
+    },
+    {
+      "scope": "ci",
+      "count": 21
+    },
+    {
+      "scope": "agents",
+      "count": 16
+    },
+    {
+      "scope": "update",
+      "count": 13
+    },
+    {
+      "scope": "tests",
+      "count": 12
+    },
+    {
+      "scope": "plugins",
+      "count": 12
+    },
+    {
+      "scope": "cli",
+      "count": 11
+    },
+    {
+      "scope": "daemon",
+      "count": 11
+    },
+    {
+      "scope": "sessions",
+      "count": 10
+    },
+    {
+      "scope": "doctor",
+      "count": 8
+    },
+    {
+      "scope": "refactor",
+      "count": 7
+    },
+    {
+      "scope": "codex",
+      "count": 6
+    }
+  ]
+}

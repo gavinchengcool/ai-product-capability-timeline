@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T22:30:54.223414+08:00",
+  "generatedAt": "2026-10-18T22:57:30.538070+08:00",
   "repo": "openclaw/openclaw",
   "timezone": "Asia/Shanghai",
   "metricKey": "merged_prs",
@@ -1309,10 +1309,18 @@
     {
       "date": "2026-10-16",
       "merged_prs": 918
+    },
+    {
+      "date": "2026-10-17",
+      "merged_prs": 1006
     }
   ],
-  "maxMergedPrs": 918,
+  "maxMergedPrs": 1006,
   "peakDays": [
+    {
+      "date": "2026-10-17",
+      "merged_prs": 1006
+    },
     {
       "date": "2026-10-16",
       "merged_prs": 918
@@ -1340,10 +1348,6 @@
     {
       "date": "2026-09-14",
       "merged_prs": 716
-    },
-    {
-      "date": "2026-09-01",
-      "merged_prs": 678
     }
   ]
 }

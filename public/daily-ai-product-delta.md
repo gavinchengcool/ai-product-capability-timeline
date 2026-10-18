@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-10-17T22:30:54+08:00
-- Requested window: 2026-10-16 to 2026-10-17
+- Generated at: 2026-10-18T22:57:30+08:00
+- Requested window: 2026-10-17 to 2026-10-18
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-10-16 to 2026-10-17
-- Generated at: 2026-10-17T22:30:32.786718+08:00
-- 窗口: 2026-10-16 至 2026-10-17
-- GitHub 增量: 1097 commits / 0 releases
-- 最近 push: 2026-10-17
+- Window: 2026-10-17 to 2026-10-18
+- Generated at: 2026-10-18T22:57:10.378216+08:00
+- 窗口: 2026-10-17 至 2026-10-18
+- GitHub 增量: 422 commits / 0 releases
+- 最近 push: 2026-10-18
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(decisions): support Jev image and Box questions (#175070)
-  - feat(gateway): send presence deltas to capable operator clients (#175508)
-  - feat(workboard): paginate cards and session boards (#175349)
-  - feat(gateway): expose sidebar baseline retirement causes (#175412)
-  - improve: group New Session agent and workspace controls (#175255)
-  - feat: show selected agent avatars in completion and push notifications (#173774)
-  - feat(ui): choose preset, generated, or uploaded agent avatars (#173773)
-  - feat: generate Blobster avatars with the configured agent model (#173762)
+  - feat: upload workspace evidence for managed pull requests (#176139)
+  - feat: open managed pull requests by default (#176105)
+  - feat: let guests request a ClawSweeper re-review (#176083)
+  - feat: support core Goals on Codex cloud workers (#175918)
+  - feat(agents): agents can check why a tool is missing before saying OpenClaw can't (#176073)
+  - feat(qa): report scorecard evidence gaps (#169697)
+  - feat(tui): report run lifecycle through OSC 7501 program status (#175692)
+  - feat(ui): show the Gateway connection state in the sidebar footer (#174022)
 - Fixes and constraints:
-  - fix(sessions): honor hidden assistant rows in transcript recovery (#175551)
-  - fix(memory): reserve embedding cache capacity before inserting at the cap (#175566)
-  - fix: preserve assistant previews across user appends (#175534)
-  - fix(agents): keep private completion output and followups private (#175559)
-  - fix: avoid duplicate widgets when chat replies finish (#175544)
-  - fix(update): prevent migrated results from appearing before cleanup (#159644)
-  - fix(telegram): keep implicit final replies on the current message (#175561)
-  - fix: workspace sync stalls on test caches and build locks (#175538)
+  - fix: sandbox screenshots unavailable in managed project chats (#176199)
+  - fix(tests): align Darwin lock fixtures with drained failures (#176219)
+  - fix(models): wait for catalog publication during API-key saves (#176195)
+  - fix(subagents): preserve confirmed cancellation during delivery (#176206)
+  - fix: keep required-sandbox images within allowed folders (#176203)
+  - fix: suppress formatted diagnostics for incognito sessions (#156429)
+  - fix(gateway): clear stale restart-loop breaker error on recovery (#176182)
+  - fix(memory-wiki): preserve concepts when OKF input is not UTF-8 (#176009)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
