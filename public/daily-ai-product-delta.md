@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-10-18T22:57:30+08:00
-- Requested window: 2026-10-17 to 2026-10-18
+- Generated at: 2026-10-20T01:50:19+08:00
+- Requested window: 2026-10-19 to 2026-10-20
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-10-17 to 2026-10-18
-- Generated at: 2026-10-18T22:57:10.378216+08:00
-- 窗口: 2026-10-17 至 2026-10-18
-- GitHub 增量: 422 commits / 0 releases
-- 最近 push: 2026-10-18
+- Window: 2026-10-19 to 2026-10-20
+- Generated at: 2026-10-20T01:49:58.594552+08:00
+- 窗口: 2026-10-19 至 2026-10-20
+- GitHub 增量: 974 commits / 2 releases
+- 最近 push: 2026-10-19
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat: upload workspace evidence for managed pull requests (#176139)
-  - feat: open managed pull requests by default (#176105)
-  - feat: let guests request a ClawSweeper re-review (#176083)
-  - feat: support core Goals on Codex cloud workers (#175918)
-  - feat(agents): agents can check why a tool is missing before saying OpenClaw can't (#176073)
-  - feat(qa): report scorecard evidence gaps (#169697)
-  - feat(tui): report run lifecycle through OSC 7501 program status (#175692)
-  - feat(ui): show the Gateway connection state in the sidebar footer (#174022)
+  - **Worker-local inference:** add a native worker inference runtime with Gateway dispatch, client placement, required worker policy and destination checks before local inference, and clear setup-failure explanations. (#158902, #163645, #163646, #163647, #166611, #166613, #165960) Thanks @RomneyDa. [v2026.10.5]
+  - **X channel:** add the X (Twitter) mentions channel plugin with Activity API streaming and backfill, repository-question guest mode with hidden same-agent helpers, GitHub-verified repository writers, and daily and monthly X API cost limits. (#165138, #165337, #165376, #165354, #165543, #168071, #165351) Thanks @obviyus. [v2026.10.5]
+  - **Channel progress:** show useful Telegram and Discord progress by default, add per-tool glyphs to Discord progress drafts, restore per-tool emoji on Telegram tool rows, and hide routine Slack reaction rows. (#166861, #168032, #167392, #166880) Thanks @obviyus, @keshavbotagent, and @notmnp. [v2026.10.5]
+  - **Google:** add Gemini 4 Argon and Gemini 3.8 Flash, and make Gemini 4 Argon the default Google model. (#171852, #172339) [v2026.10.5]
+  - **OpenAI:** support custom realtime voice endpoints, show account chat models missing from the manifest, surface new ChatGPT-login models without a release, and stop offering ChatGPT-only or bundled-Codex-rejected models that would fail. (#165632, #162563, #167387, #167633, #167975) Thanks @jacobtomlinson, @obviyus, and @RomneyDa. [v2026.10.5]
+  - **Voice calls:** add per-call briefs, call reports, live steering, callbacks, and voicemail detection to voice calls. (#165716) Thanks @mbelinky and @jacobtomlinson. [v2026.10.5]
+  - **Control UI customization:** let themes customize Control UI branding, use agent avatars or unlocked Lobsterdex icons for browser tabs, choose favicon shapes, and add seven Lobsterdex character variants. (#168027, #165201, #166325, #167809, #159815) Thanks @vyctorbrzezowski, @jacobtomlinson, and @hannesrudolph. [v2026.10.5]
+  - **Terminal:** add configurable terminal fonts with built-in Nerd Font icons. (#166180) Thanks @jacobtomlinson. [v2026.10.5]
 - Fixes and constraints:
-  - fix: sandbox screenshots unavailable in managed project chats (#176199)
-  - fix(tests): align Darwin lock fixtures with drained failures (#176219)
-  - fix(models): wait for catalog publication during API-key saves (#176195)
-  - fix(subagents): preserve confirmed cancellation during delivery (#176206)
-  - fix: keep required-sandbox images within allowed folders (#176203)
-  - fix: suppress formatted diagnostics for incognito sessions (#156429)
-  - fix(gateway): clear stale restart-loop breaker error on recovery (#176182)
-  - fix(memory-wiki): preserve concepts when OKF input is not UTF-8 (#176009)
+  - fix(feishu): bind normalized account aliases to exact configured keys (#174809)
+  - fix: preserve native prompt annotations for cron runs (#177516)
+  - fix(nodes): keep paired-node photos and screenshots private by default (#174814)
+  - fix(worker): use monotonic admission deadlines (#175040)
+  - fix(worker): retry unresolved orphan workspace cleanup (#169223)
+  - fix(node): preserve saved TLS pins for blank values (#125646)
+  - fix(process): keep native cleanup pending after resource failure (#177526)
+  - perf(gateway): reuse native session model choices after activity (#177475)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

@@ -1,0 +1,199 @@
+{
+  "generated_at": "2026-10-20T01:49:58.594552+08:00",
+  "window": {
+    "start_local": "2026-10-19T01:49:58.594552+08:00",
+    "end_local": "2026-10-20T01:49:58.594552+08:00",
+    "start_utc": "2026-10-18T17:49:58Z",
+    "end_utc": "2026-10-19T17:49:58Z"
+  },
+  "repo": {
+    "slug": "openclaw/openclaw",
+    "stars": 392464,
+    "forks": 82501,
+    "open_issues": 9526,
+    "pushed_at": "2026-10-19T17:49:51Z"
+  },
+  "releases_in_window": [
+    {
+      "tag_name": "v2026.10.5",
+      "published_at": "2026-10-18T21:47:25Z",
+      "name": "openclaw 2026.10.5",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.5"
+    },
+    {
+      "tag_name": "v2026.10.10-beta.2",
+      "published_at": "2026-10-19T12:23:09Z",
+      "name": "openclaw 2026.10.10-beta.2",
+      "prerelease": true,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.10-beta.2"
+    }
+  ],
+  "commit_count": 974,
+  "commit_headlines": [
+    "refactor(ui): simplify appearance display derivations (#177522)",
+    "fix(feishu): bind normalized account aliases to exact configured keys (#174809)",
+    "refactor: fold single-consumer CLI and reply surfaces (#177514)",
+    "fix: preserve native prompt annotations for cron runs (#177516)",
+    "test(acpx): prune retired registry mock baseline",
+    "fix(nodes): keep paired-node photos and screenshots private by default (#174814)",
+    "fix(worker): use monotonic admission deadlines (#175040)",
+    "fix(worker): retry unresolved orphan workspace cleanup (#169223)",
+    "refactor: trim private browser channel and UI arguments (#177399)",
+    "refactor(agents): trust admitted runner facts (#177504)",
+    "refactor(ui): use direct reads for chat display values (#177490)",
+    "fix(node): preserve saved TLS pins for blank values (#125646)",
+    "refactor(ui): fold private page rendering surfaces (#177511)",
+    "fix(process): keep native cleanup pending after resource failure (#177526)",
+    "refactor(chat): consume canonical owner facts (#177512)",
+    "test(doctor): trim plugin work from legacy state-dir proof",
+    "refactor(ui): project plugin component properties (#177513)",
+    "refactor(gateway): bind private notifications to their owner (#177507)",
+    "test(runtime): align built-CLI recovery e2e with launcher-bound respawns (#177503)",
+    "refactor(ui): simplify chat rendering ownership and derivations (#177461)",
+    "refactor(update): share strict missing-path handling (#177435)",
+    "test(ai): reuse existing cancellation stream fixture (#177515)",
+    "refactor(config): trust validated core runtime settings (#177452)",
+    "perf(gateway): reuse native session model choices after activity (#177475)",
+    "test(ui): await lazy Skills menu readiness",
+    "test(ui): stabilize durable draft teardown coverage (#177509)",
+    "test(gateway): restore authenticated cross-owner sign-in proof",
+    "fix(agents): acquire CLI prompt workspace inside execution lifetime (#177493)",
+    "fix(gateway): preserve public reads and repair suppression ratchet (#177371)",
+    "refactor(agents): share error envelopes and execution context (#177445)",
+    "perf(ui): skip grapheme segmentation for fitting strings (#177478)",
+    "fix(nodes): fall back to configured auth when role policies reject stored device auth (#164480)",
+    "fix(acp): wait for pending acpx startup probes (#177499)",
+    "fix(gateway): isolate cold placement results from later reads (#177489)",
+    "test(codex): verify transcript warning storage failures (#177492)",
+    "test(gateway): align sign-in and startup recovery fixtures",
+    "refactor(ui): keep new-session subscriptions with draft owner (#177463)",
+    "perf(presence): compact repeated roster identities (#177471)",
+    "refactor(plugins): centralize origin selection priorities (#177483)",
+    "fix(worker): require visible settled-tool finalization results (#177480)",
+    "test: preserve process census mock exports",
+    "refactor(agents): simplify private notification ownership (#177413)",
+    "refactor(ui): derive hovercard locale presentation from owners (#177464)",
+    "refactor(ui): let Solid own retained content and focus settlement (#177460)",
+    "test(gateway): retain chat lifecycle fixture custody",
+    "perf(control-ui): render cached full-UUID chat routes before sessions.resolve (#177153)",
+    "fix(cli): show the reason when node host startup fails (#173894)",
+    "test(agents): distinguish hidden recovery prompts from user turns",
+    "test(gateway): isolate node pairing identity stores",
+    "refactor(ui): reuse JSON validation for cron event arguments (#177473)"
+  ],
+  "feature_items": [
+    "**Worker-local inference:** add a native worker inference runtime with Gateway dispatch, client placement, required worker policy and destination checks before local inference, and clear setup-failure explanations. (#158902, #163645, #163646, #163647, #166611, #166613, #165960) Thanks @RomneyDa. [v2026.10.5]",
+    "**X channel:** add the X (Twitter) mentions channel plugin with Activity API streaming and backfill, repository-question guest mode with hidden same-agent helpers, GitHub-verified repository writers, and daily and monthly X API cost limits. (#165138, #165337, #165376, #165354, #165543, #168071, #165351) Thanks @obviyus. [v2026.10.5]",
+    "**Channel progress:** show useful Telegram and Discord progress by default, add per-tool glyphs to Discord progress drafts, restore per-tool emoji on Telegram tool rows, and hide routine Slack reaction rows. (#166861, #168032, #167392, #166880) Thanks @obviyus, @keshavbotagent, and @notmnp. [v2026.10.5]",
+    "**Google:** add Gemini 4 Argon and Gemini 3.8 Flash, and make Gemini 4 Argon the default Google model. (#171852, #172339) [v2026.10.5]",
+    "**OpenAI:** support custom realtime voice endpoints, show account chat models missing from the manifest, surface new ChatGPT-login models without a release, and stop offering ChatGPT-only or bundled-Codex-rejected models that would fail. (#165632, #162563, #167387, #167633, #167975) Thanks @jacobtomlinson, @obviyus, and @RomneyDa. [v2026.10.5]",
+    "**Voice calls:** add per-call briefs, call reports, live steering, callbacks, and voicemail detection to voice calls. (#165716) Thanks @mbelinky and @jacobtomlinson. [v2026.10.5]",
+    "**Control UI customization:** let themes customize Control UI branding, use agent avatars or unlocked Lobsterdex icons for browser tabs, choose favicon shapes, and add seven Lobsterdex character variants. (#168027, #165201, #166325, #167809, #159815) Thanks @vyctorbrzezowski, @jacobtomlinson, and @hannesrudolph. [v2026.10.5]",
+    "**Terminal:** add configurable terminal fonts with built-in Nerd Font icons. (#166180) Thanks @jacobtomlinson. [v2026.10.5]",
+    "**Plugins:** pick the newest official plugin release the running OpenClaw supports and keep a working plugin when its matching release is unavailable. (#167485, #166588) Thanks @charlesBerg-ux. [v2026.10.5]",
+    "**GitHub:** support asynchronous PR merges and compact the Publish PR card. (#163579, #165219) Thanks @vincentkoc. [v2026.10.5]",
+    "feat(maturity): distinguish regional channel capability claims (#177116)",
+    "feat: add native Levanto Sage decision provider (#157433)",
+    "feat: localize public conversation controls (#173800)",
+    "feat(bench): measure Decision transport reuse across revisions (#177051)",
+    "feat(mcp): prepare private context-bound server views (#176864)",
+    "feat: use SubQ Snap for typed decisions (#171965)",
+    "improve(perf): add the openclaw-performance skill and work-count regression tests (#176630)",
+    "feat(ui): show live change totals in chat details (#171794)"
+  ],
+  "fix_items": [
+    "fix(feishu): bind normalized account aliases to exact configured keys (#174809)",
+    "fix: preserve native prompt annotations for cron runs (#177516)",
+    "fix(nodes): keep paired-node photos and screenshots private by default (#174814)",
+    "fix(worker): use monotonic admission deadlines (#175040)",
+    "fix(worker): retry unresolved orphan workspace cleanup (#169223)",
+    "fix(node): preserve saved TLS pins for blank values (#125646)",
+    "fix(process): keep native cleanup pending after resource failure (#177526)",
+    "perf(gateway): reuse native session model choices after activity (#177475)",
+    "fix(agents): acquire CLI prompt workspace inside execution lifetime (#177493)",
+    "fix(gateway): preserve public reads and repair suppression ratchet (#177371)",
+    "perf(ui): skip grapheme segmentation for fitting strings (#177478)",
+    "fix(nodes): fall back to configured auth when role policies reject stored device auth (#164480)",
+    "fix(acp): wait for pending acpx startup probes (#177499)",
+    "fix(gateway): isolate cold placement results from later reads (#177489)",
+    "perf(presence): compact repeated roster identities (#177471)",
+    "fix(worker): require visible settled-tool finalization results (#177480)",
+    "perf(control-ui): render cached full-UUID chat routes before sessions.resolve (#177153)",
+    "fix(cli): show the reason when node host startup fails (#173894)",
+    "fix(connect): accept case-insensitive JSON join responses (#171759)",
+    "fix(gateway): avoid early wait timeouts in live qualification (#177430)",
+    "fix(nodes): allow prototype-like generic command names (#177433)",
+    "fix(cli): reject conflicting approvals targets (#176201)",
+    "fix(doctor): reclaim runtimes despite unrelated Node processes (#177407)",
+    "fix(test): wait for OpenAI batch polling before advancing clocks (#177428)",
+    "fix(diagnostics): stop reporting accepted model recovery as active work (#177406)",
+    "fix(update): report background discovery failures (#177397)",
+    "fix: rate-limited runs lose the prompt cache on retry (#177050)",
+    "fix(health): warn when persisted quarantine reads fail (#177408)",
+    "fix(gateway): restore hook and cron capacity validation (#177400)",
+    "fix(gateway): keep superseded chat aborts from stopping newer sends (#177411)"
+  ],
+  "top_scopes": [
+    {
+      "scope": "ui",
+      "count": 181
+    },
+    {
+      "scope": "gateway",
+      "count": 75
+    },
+    {
+      "scope": "fix",
+      "count": 64
+    },
+    {
+      "scope": "refactor",
+      "count": 52
+    },
+    {
+      "scope": "agents",
+      "count": 47
+    },
+    {
+      "scope": "sessions",
+      "count": 39
+    },
+    {
+      "scope": "plugins",
+      "count": 34
+    },
+    {
+      "scope": "test",
+      "count": 34
+    },
+    {
+      "scope": "ci",
+      "count": 22
+    },
+    {
+      "scope": "cli",
+      "count": 19
+    },
+    {
+      "scope": "state",
+      "count": 19
+    },
+    {
+      "scope": "update",
+      "count": 13
+    },
+    {
+      "scope": "sqlite",
+      "count": 13
+    },
+    {
+      "scope": "doctor",
+      "count": 11
+    },
+    {
+      "scope": "cron",
+      "count": 10
+    }
+  ]
+}
