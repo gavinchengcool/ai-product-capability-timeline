@@ -1,100 +1,99 @@
 # OpenClaw Weekly Update
 
-生成时间：2026-10-20T01:49:58.594552+08:00
+生成时间：2026-10-20T23:53:44.705042+08:00
 
 ## Window
 
-- Start: 2026-10-19T01:49:58.594552+08:00
-- End: 2026-10-20T01:49:58.594552+08:00
+- Start: 2026-10-19T23:53:44.705042+08:00
+- End: 2026-10-20T23:53:44.705042+08:00
 - Repo: `openclaw/openclaw`
 
 ## At A Glance
 
-- Commits in window: 974
-- Releases in window: 2
-- Stable releases in window: 1
-- Beta releases in window: 1
-- Repo stars at scan time: 392464
-- Repo forks at scan time: 82501
+- Commits in window: 737
+- Releases in window: 0
+- Stable releases in window: 0
+- Beta releases in window: 0
+- Repo stars at scan time: 392945
+- Repo forks at scan time: 82551
 
 ## New Capability Signals
 
-- **Worker-local inference:** add a native worker inference runtime with Gateway dispatch, client placement, required worker policy and destination checks before local inference, and clear setup-failure explanations. (#158902, #163645, #163646, #163647, #166611, #166613, #165960) Thanks @RomneyDa. [v2026.10.5]
-- **X channel:** add the X (Twitter) mentions channel plugin with Activity API streaming and backfill, repository-question guest mode with hidden same-agent helpers, GitHub-verified repository writers, and daily and monthly X API cost limits. (#165138, #165337, #165376, #165354, #165543, #168071, #165351) Thanks @obviyus. [v2026.10.5]
-- **Channel progress:** show useful Telegram and Discord progress by default, add per-tool glyphs to Discord progress drafts, restore per-tool emoji on Telegram tool rows, and hide routine Slack reaction rows. (#166861, #168032, #167392, #166880) Thanks @obviyus, @keshavbotagent, and @notmnp. [v2026.10.5]
-- **Google:** add Gemini 4 Argon and Gemini 3.8 Flash, and make Gemini 4 Argon the default Google model. (#171852, #172339) [v2026.10.5]
-- **OpenAI:** support custom realtime voice endpoints, show account chat models missing from the manifest, surface new ChatGPT-login models without a release, and stop offering ChatGPT-only or bundled-Codex-rejected models that would fail. (#165632, #162563, #167387, #167633, #167975) Thanks @jacobtomlinson, @obviyus, and @RomneyDa. [v2026.10.5]
-- **Voice calls:** add per-call briefs, call reports, live steering, callbacks, and voicemail detection to voice calls. (#165716) Thanks @mbelinky and @jacobtomlinson. [v2026.10.5]
-- **Control UI customization:** let themes customize Control UI branding, use agent avatars or unlocked Lobsterdex icons for browser tabs, choose favicon shapes, and add seven Lobsterdex character variants. (#168027, #165201, #166325, #167809, #159815) Thanks @vyctorbrzezowski, @jacobtomlinson, and @hannesrudolph. [v2026.10.5]
-- **Terminal:** add configurable terminal fonts with built-in Nerd Font icons. (#166180) Thanks @jacobtomlinson. [v2026.10.5]
-- **Plugins:** pick the newest official plugin release the running OpenClaw supports and keep a working plugin when its matching release is unavailable. (#167485, #166588) Thanks @charlesBerg-ux. [v2026.10.5]
-- **GitHub:** support asynchronous PR merges and compact the Publish PR card. (#163579, #165219) Thanks @vincentkoc. [v2026.10.5]
-- feat(maturity): distinguish regional channel capability claims (#177116)
-- feat: add native Levanto Sage decision provider (#157433)
-- feat: localize public conversation controls (#173800)
-- feat(bench): measure Decision transport reuse across revisions (#177051)
-- feat(mcp): prepare private context-bound server views (#176864)
+- feat: compact at useful task boundaries and before cache expiry (#178021)
+- feat(cron): run persistent streams in their authorized sandbox (#177942)
+- feat(cron): authorize persistent host streams with informed approval (#177941)
+- feat(ios): add bounded release resource diagnostics (#178285)
+- feat(ui): create Claws in the agent main chat (#173377)
+- feat(claws): review selected private packages before publishing (#173346)
+- feat(claws): feature curated Claws and rank categories by installs (#178047)
+- feat(claws): discover and add community Claws (#173345)
+- feat(typesafe): support prepared Decision V2 batches (#158565)
+- feat(memory): support evergreen extra paths (#151915)
+- feat(nextcloud-talk): send native outbound attachments (#174306)
+- feat: expose gateway health to the system agent (#172001)
+- feat(plugins): expose requester-bound native delegation (#175276)
+- feat(agents): expose system overview as a read action for the system agent (#177314)
+- feat(subagents): carry a machine-readable reason on a registry-settled yielded collector (#165797)
 
 ## Important Fixes And Hardening
 
-- fix(feishu): bind normalized account aliases to exact configured keys (#174809)
-- fix: preserve native prompt annotations for cron runs (#177516)
-- fix(nodes): keep paired-node photos and screenshots private by default (#174814)
-- fix(worker): use monotonic admission deadlines (#175040)
-- fix(worker): retry unresolved orphan workspace cleanup (#169223)
-- fix(node): preserve saved TLS pins for blank values (#125646)
-- fix(process): keep native cleanup pending after resource failure (#177526)
-- perf(gateway): reuse native session model choices after activity (#177475)
-- fix(agents): acquire CLI prompt workspace inside execution lifetime (#177493)
-- fix(gateway): preserve public reads and repair suppression ratchet (#177371)
-- perf(ui): skip grapheme segmentation for fitting strings (#177478)
-- fix(nodes): fall back to configured auth when role policies reject stored device auth (#164480)
-- fix(acp): wait for pending acpx startup probes (#177499)
-- fix(gateway): isolate cold placement results from later reads (#177489)
-- perf(presence): compact repeated roster identities (#177471)
+- fix: shorten mention lookup errors (#178494)
+- fix: allow guest mentions in new conversations (#178039)
+- fix(signal): honor paragraph chunking for formatted messages (#176258)
+- fix(media): auto-detected whisper.cpp transcribes as English when an audio language is configured (#176662)
+- fix: skills appear ready when a PATH directory matches a required binary (#176850)
+- fix(acp): run new sessions in the requested directory (#176852)
+- fix(android): open and share chat file attachments (#178443)
+- fix(agents): tree listing omits routing rules with --bindings (#176860)
+- fix: stopped, disabled Linux gateway service restarts after configure or onboard (#175680)
+- fix: deliver mentions to guest inboxes (#178157)
+- fix(web-fetch): preserve table cells and preformatted code in Markdown output (#176263)
+- fix(ui): arrow keys do not move between Ask OpenClaw question choices (#178211)
+- perf(control-ui): start cached dashboard apps before the board round trip (#178113)
+- fix(cron): clear failure alert target when edit flags are blank (#177681)
+- fix(android): find setup codes among unrelated QR codes
 
 ## Releases This Week
 
-- `v2026.10.5` | stable | 2026-10-18T21:47:25Z | openclaw 2026.10.5
-- `v2026.10.10-beta.2` | beta | 2026-10-19T12:23:09Z | openclaw 2026.10.10-beta.2
+- No GitHub releases were published in this window.
 
 ## Most Active Change Scopes
 
-- `ui`: 181
-- `gateway`: 75
-- `fix`: 64
-- `refactor`: 52
-- `agents`: 47
-- `sessions`: 39
-- `plugins`: 34
-- `test`: 34
-- `ci`: 22
-- `cli`: 19
-- `state`: 19
-- `update`: 13
+- `ui`: 172
+- `refactor`: 68
+- `gateway`: 50
+- `agents`: 45
+- `fix`: 32
+- `plugins`: 26
+- `update`: 20
+- `ci`: 13
+- `sessions`: 12
+- `doctor`: 12
+- `release`: 10
+- `infra`: 9
 
 ## Recent Commit Headlines
 
-- 2026-10-19T17:47:46Z | refactor(ui): simplify appearance display derivations (#177522)
-- 2026-10-19T17:46:33Z | fix(feishu): bind normalized account aliases to exact configured keys (#174809)
-- 2026-10-19T17:46:13Z | refactor: fold single-consumer CLI and reply surfaces (#177514)
-- 2026-10-19T17:45:40Z | fix: preserve native prompt annotations for cron runs (#177516)
-- 2026-10-19T17:39:28Z | test(acpx): prune retired registry mock baseline
-- 2026-10-19T17:41:19Z | fix(nodes): keep paired-node photos and screenshots private by default (#174814)
-- 2026-10-19T17:40:34Z | fix(worker): use monotonic admission deadlines (#175040)
-- 2026-10-19T17:39:33Z | fix(worker): retry unresolved orphan workspace cleanup (#169223)
-- 2026-10-19T17:39:25Z | refactor: trim private browser channel and UI arguments (#177399)
-- 2026-10-19T17:36:41Z | refactor(agents): trust admitted runner facts (#177504)
-- 2026-10-19T17:34:29Z | refactor(ui): use direct reads for chat display values (#177490)
-- 2026-10-19T17:28:01Z | fix(node): preserve saved TLS pins for blank values (#125646)
-- 2026-10-19T17:27:45Z | refactor(ui): fold private page rendering surfaces (#177511)
-- 2026-10-19T17:27:08Z | fix(process): keep native cleanup pending after resource failure (#177526)
-- 2026-10-19T17:27:01Z | refactor(chat): consume canonical owner facts (#177512)
-- 2026-10-19T17:24:59Z | test(doctor): trim plugin work from legacy state-dir proof
-- 2026-10-19T17:24:34Z | refactor(ui): project plugin component properties (#177513)
-- 2026-10-19T17:23:16Z | refactor(gateway): bind private notifications to their owner (#177507)
-- 2026-10-19T17:22:30Z | test(runtime): align built-CLI recovery e2e with launcher-bound respawns (#177503)
-- 2026-10-19T17:20:38Z | refactor(ui): simplify chat rendering ownership and derivations (#177461)
+- 2026-10-20T15:38:04Z | chore(i18n): refresh native locales (#178520)
+- 2026-10-20T15:34:59Z | fix: shorten mention lookup errors (#178494)
+- 2026-10-20T15:33:04Z | fix: allow guest mentions in new conversations (#178039)
+- 2026-10-20T15:16:10Z | refactor(ui): share route change listener collections (#178482)
+- 2026-10-20T15:13:52Z | fix(signal): honor paragraph chunking for formatted messages (#176258)
+- 2026-10-20T15:13:15Z | fix(media): auto-detected whisper.cpp transcribes as English when an audio language is configured (#176662)
+- 2026-10-20T15:11:16Z | refactor: keep private core operations with their consumers (#178465)
+- 2026-10-20T15:11:13Z | fix: skills appear ready when a PATH directory matches a required binary (#176850)
+- 2026-10-20T15:10:39Z | fix(acp): run new sessions in the requested directory (#176852)
+- 2026-10-20T15:08:03Z | test(core): remove low-value tests (batch d325) (#178456)
+- 2026-10-20T15:06:07Z | refactor(extensions): remove unread result bookkeeping (#178428)
+- 2026-10-20T15:04:01Z | test(chat,gateway,ios): remove low-value tests (batch d324) (#178448)
+- 2026-10-20T15:03:44Z | refactor(agents): narrow private runtime call contracts (#178459)
+- 2026-10-20T15:01:08Z | fix(android): open and share chat file attachments (#178443)
+- 2026-10-20T14:55:41Z | fix(agents): tree listing omits routing rules with --bindings (#176860)
+- 2026-10-20T14:55:01Z | fix: stopped, disabled Linux gateway service restarts after configure or onboard (#175680)
+- 2026-10-20T14:51:04Z | refactor(plugins): consolidate existing owners and unused bookkeeping (#178464)
+- 2026-10-20T14:45:13Z | fix: deliver mentions to guest inboxes (#178157)
+- 2026-10-20T14:42:58Z | test(gateway,plugins,ui): remove low-value tests (batch d323) (#178446)
+- 2026-10-20T14:42:36Z | fix(web-fetch): preserve table cells and preformatted code in Markdown output (#176263)
 
 ## Sources
 

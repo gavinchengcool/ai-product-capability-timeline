@@ -1,6 +1,6 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-10-20T01:50:19+08:00
+- Generated at: 2026-10-20T23:54:02+08:00
 - Requested window: 2026-10-19 to 2026-10-20
 - Coverage: 6 products
 - Live 24h feeds: 1
@@ -11,30 +11,30 @@
 
 - Freshness: live_24h
 - Window: 2026-10-19 to 2026-10-20
-- Generated at: 2026-10-20T01:49:58.594552+08:00
+- Generated at: 2026-10-20T23:53:44.705042+08:00
 - 窗口: 2026-10-19 至 2026-10-20
-- GitHub 增量: 974 commits / 2 releases
-- 最近 push: 2026-10-19
+- GitHub 增量: 737 commits / 0 releases
+- 最近 push: 2026-10-20
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - **Worker-local inference:** add a native worker inference runtime with Gateway dispatch, client placement, required worker policy and destination checks before local inference, and clear setup-failure explanations. (#158902, #163645, #163646, #163647, #166611, #166613, #165960) Thanks @RomneyDa. [v2026.10.5]
-  - **X channel:** add the X (Twitter) mentions channel plugin with Activity API streaming and backfill, repository-question guest mode with hidden same-agent helpers, GitHub-verified repository writers, and daily and monthly X API cost limits. (#165138, #165337, #165376, #165354, #165543, #168071, #165351) Thanks @obviyus. [v2026.10.5]
-  - **Channel progress:** show useful Telegram and Discord progress by default, add per-tool glyphs to Discord progress drafts, restore per-tool emoji on Telegram tool rows, and hide routine Slack reaction rows. (#166861, #168032, #167392, #166880) Thanks @obviyus, @keshavbotagent, and @notmnp. [v2026.10.5]
-  - **Google:** add Gemini 4 Argon and Gemini 3.8 Flash, and make Gemini 4 Argon the default Google model. (#171852, #172339) [v2026.10.5]
-  - **OpenAI:** support custom realtime voice endpoints, show account chat models missing from the manifest, surface new ChatGPT-login models without a release, and stop offering ChatGPT-only or bundled-Codex-rejected models that would fail. (#165632, #162563, #167387, #167633, #167975) Thanks @jacobtomlinson, @obviyus, and @RomneyDa. [v2026.10.5]
-  - **Voice calls:** add per-call briefs, call reports, live steering, callbacks, and voicemail detection to voice calls. (#165716) Thanks @mbelinky and @jacobtomlinson. [v2026.10.5]
-  - **Control UI customization:** let themes customize Control UI branding, use agent avatars or unlocked Lobsterdex icons for browser tabs, choose favicon shapes, and add seven Lobsterdex character variants. (#168027, #165201, #166325, #167809, #159815) Thanks @vyctorbrzezowski, @jacobtomlinson, and @hannesrudolph. [v2026.10.5]
-  - **Terminal:** add configurable terminal fonts with built-in Nerd Font icons. (#166180) Thanks @jacobtomlinson. [v2026.10.5]
+  - feat: compact at useful task boundaries and before cache expiry (#178021)
+  - feat(cron): run persistent streams in their authorized sandbox (#177942)
+  - feat(cron): authorize persistent host streams with informed approval (#177941)
+  - feat(ios): add bounded release resource diagnostics (#178285)
+  - feat(ui): create Claws in the agent main chat (#173377)
+  - feat(claws): review selected private packages before publishing (#173346)
+  - feat(claws): feature curated Claws and rank categories by installs (#178047)
+  - feat(claws): discover and add community Claws (#173345)
 - Fixes and constraints:
-  - fix(feishu): bind normalized account aliases to exact configured keys (#174809)
-  - fix: preserve native prompt annotations for cron runs (#177516)
-  - fix(nodes): keep paired-node photos and screenshots private by default (#174814)
-  - fix(worker): use monotonic admission deadlines (#175040)
-  - fix(worker): retry unresolved orphan workspace cleanup (#169223)
-  - fix(node): preserve saved TLS pins for blank values (#125646)
-  - fix(process): keep native cleanup pending after resource failure (#177526)
-  - perf(gateway): reuse native session model choices after activity (#177475)
+  - fix: shorten mention lookup errors (#178494)
+  - fix: allow guest mentions in new conversations (#178039)
+  - fix(signal): honor paragraph chunking for formatted messages (#176258)
+  - fix(media): auto-detected whisper.cpp transcribes as English when an audio language is configured (#176662)
+  - fix: skills appear ready when a PATH directory matches a required binary (#176850)
+  - fix(acp): run new sessions in the requested directory (#176852)
+  - fix(android): open and share chat file attachments (#178443)
+  - fix(agents): tree listing omits routing rules with --bindings (#176860)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

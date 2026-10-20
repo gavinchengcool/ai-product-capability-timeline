@@ -1,106 +1,91 @@
 {
-  "generatedAt": "2026-10-20T01:49:58.594552+08:00",
+  "generatedAt": "2026-10-20T23:53:44.705042+08:00",
   "window": {
-    "start_local": "2026-10-19T01:49:58.594552+08:00",
-    "end_local": "2026-10-20T01:49:58.594552+08:00",
-    "start_utc": "2026-10-18T17:49:58Z",
-    "end_utc": "2026-10-19T17:49:58Z"
+    "start_local": "2026-10-19T23:53:44.705042+08:00",
+    "end_local": "2026-10-20T23:53:44.705042+08:00",
+    "start_utc": "2026-10-19T15:53:44Z",
+    "end_utc": "2026-10-20T15:53:44Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 392464,
-    "forks": 82501,
-    "open_issues": 9526,
-    "pushed_at": "2026-10-19T17:49:51Z"
+    "stars": 392945,
+    "forks": 82551,
+    "open_issues": 9674,
+    "pushed_at": "2026-10-20T15:52:54Z"
   },
   "summary": {
-    "commitCount": 974,
-    "releaseCount": 2,
-    "stableReleaseCount": 1,
-    "betaReleaseCount": 1,
-    "stars": 392464,
-    "forks": 82501,
-    "openIssues": 9526
+    "commitCount": 737,
+    "releaseCount": 0,
+    "stableReleaseCount": 0,
+    "betaReleaseCount": 0,
+    "stars": 392945,
+    "forks": 82551,
+    "openIssues": 9674
   },
-  "releases": [
-    {
-      "tag_name": "v2026.10.5",
-      "published_at": "2026-10-18T21:47:25Z",
-      "name": "openclaw 2026.10.5",
-      "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.5"
-    },
-    {
-      "tag_name": "v2026.10.10-beta.2",
-      "published_at": "2026-10-19T12:23:09Z",
-      "name": "openclaw 2026.10.10-beta.2",
-      "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.10-beta.2"
-    }
-  ],
+  "releases": [],
   "featureItems": [
-    "**Worker-local inference:** add a native worker inference runtime with Gateway dispatch, client placement, required worker policy and destination checks before local inference, and clear setup-failure explanations. (#158902, #163645, #163646, #163647, #166611, #166613, #165960) Thanks @RomneyDa. [v2026.10.5]",
-    "**X channel:** add the X (Twitter) mentions channel plugin with Activity API streaming and backfill, repository-question guest mode with hidden same-agent helpers, GitHub-verified repository writers, and daily and monthly X API cost limits. (#165138, #165337, #165376, #165354, #165543, #168071, #165351) Thanks @obviyus. [v2026.10.5]",
-    "**Channel progress:** show useful Telegram and Discord progress by default, add per-tool glyphs to Discord progress drafts, restore per-tool emoji on Telegram tool rows, and hide routine Slack reaction rows. (#166861, #168032, #167392, #166880) Thanks @obviyus, @keshavbotagent, and @notmnp. [v2026.10.5]",
-    "**Google:** add Gemini 4 Argon and Gemini 3.8 Flash, and make Gemini 4 Argon the default Google model. (#171852, #172339) [v2026.10.5]",
-    "**OpenAI:** support custom realtime voice endpoints, show account chat models missing from the manifest, surface new ChatGPT-login models without a release, and stop offering ChatGPT-only or bundled-Codex-rejected models that would fail. (#165632, #162563, #167387, #167633, #167975) Thanks @jacobtomlinson, @obviyus, and @RomneyDa. [v2026.10.5]",
-    "**Voice calls:** add per-call briefs, call reports, live steering, callbacks, and voicemail detection to voice calls. (#165716) Thanks @mbelinky and @jacobtomlinson. [v2026.10.5]",
-    "**Control UI customization:** let themes customize Control UI branding, use agent avatars or unlocked Lobsterdex icons for browser tabs, choose favicon shapes, and add seven Lobsterdex character variants. (#168027, #165201, #166325, #167809, #159815) Thanks @vyctorbrzezowski, @jacobtomlinson, and @hannesrudolph. [v2026.10.5]",
-    "**Terminal:** add configurable terminal fonts with built-in Nerd Font icons. (#166180) Thanks @jacobtomlinson. [v2026.10.5]"
+    "feat: compact at useful task boundaries and before cache expiry (#178021)",
+    "feat(cron): run persistent streams in their authorized sandbox (#177942)",
+    "feat(cron): authorize persistent host streams with informed approval (#177941)",
+    "feat(ios): add bounded release resource diagnostics (#178285)",
+    "feat(ui): create Claws in the agent main chat (#173377)",
+    "feat(claws): review selected private packages before publishing (#173346)",
+    "feat(claws): feature curated Claws and rank categories by installs (#178047)",
+    "feat(claws): discover and add community Claws (#173345)"
   ],
   "fixItems": [
-    "fix(feishu): bind normalized account aliases to exact configured keys (#174809)",
-    "fix: preserve native prompt annotations for cron runs (#177516)",
-    "fix(nodes): keep paired-node photos and screenshots private by default (#174814)",
-    "fix(worker): use monotonic admission deadlines (#175040)",
-    "fix(worker): retry unresolved orphan workspace cleanup (#169223)",
-    "fix(node): preserve saved TLS pins for blank values (#125646)",
-    "fix(process): keep native cleanup pending after resource failure (#177526)",
-    "perf(gateway): reuse native session model choices after activity (#177475)"
+    "fix: shorten mention lookup errors (#178494)",
+    "fix: allow guest mentions in new conversations (#178039)",
+    "fix(signal): honor paragraph chunking for formatted messages (#176258)",
+    "fix(media): auto-detected whisper.cpp transcribes as English when an audio language is configured (#176662)",
+    "fix: skills appear ready when a PATH directory matches a required binary (#176850)",
+    "fix(acp): run new sessions in the requested directory (#176852)",
+    "fix(android): open and share chat file attachments (#178443)",
+    "fix(agents): tree listing omits routing rules with --bindings (#176860)"
   ],
   "topScopes": [
     {
       "scope": "ui",
-      "count": 181
-    },
-    {
-      "scope": "gateway",
-      "count": 75
-    },
-    {
-      "scope": "fix",
-      "count": 64
+      "count": 172
     },
     {
       "scope": "refactor",
-      "count": 52
+      "count": 68
+    },
+    {
+      "scope": "gateway",
+      "count": 50
     },
     {
       "scope": "agents",
-      "count": 47
+      "count": 45
     },
     {
-      "scope": "sessions",
-      "count": 39
+      "scope": "fix",
+      "count": 32
     },
     {
       "scope": "plugins",
-      "count": 34
+      "count": 26
     },
     {
-      "scope": "test",
-      "count": 34
+      "scope": "update",
+      "count": 20
+    },
+    {
+      "scope": "ci",
+      "count": 13
     }
   ],
   "headlineCommits": [
-    "refactor(ui): simplify appearance display derivations (#177522)",
-    "fix(feishu): bind normalized account aliases to exact configured keys (#174809)",
-    "refactor: fold single-consumer CLI and reply surfaces (#177514)",
-    "fix: preserve native prompt annotations for cron runs (#177516)",
-    "test(acpx): prune retired registry mock baseline",
-    "fix(nodes): keep paired-node photos and screenshots private by default (#174814)",
-    "fix(worker): use monotonic admission deadlines (#175040)",
-    "fix(worker): retry unresolved orphan workspace cleanup (#169223)"
+    "chore(i18n): refresh native locales (#178520)",
+    "fix: shorten mention lookup errors (#178494)",
+    "fix: allow guest mentions in new conversations (#178039)",
+    "refactor(ui): share route change listener collections (#178482)",
+    "fix(signal): honor paragraph chunking for formatted messages (#176258)",
+    "fix(media): auto-detected whisper.cpp transcribes as English when an audio language is configured (#176662)",
+    "refactor: keep private core operations with their consumers (#178465)",
+    "fix: skills appear ready when a PATH directory matches a required binary (#176850)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 }
