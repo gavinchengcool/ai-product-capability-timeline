@@ -1,99 +1,99 @@
 # OpenClaw Weekly Update
 
-生成时间：2026-10-20T23:53:44.705042+08:00
+生成时间：2026-10-22T00:10:52.197515+08:00
 
 ## Window
 
-- Start: 2026-10-19T23:53:44.705042+08:00
-- End: 2026-10-20T23:53:44.705042+08:00
+- Start: 2026-10-21T00:10:52.197515+08:00
+- End: 2026-10-22T00:10:52.197515+08:00
 - Repo: `openclaw/openclaw`
 
 ## At A Glance
 
-- Commits in window: 737
-- Releases in window: 0
+- Commits in window: 833
+- Releases in window: 1
 - Stable releases in window: 0
-- Beta releases in window: 0
-- Repo stars at scan time: 392945
-- Repo forks at scan time: 82551
+- Beta releases in window: 1
+- Repo stars at scan time: 392663
+- Repo forks at scan time: 82540
 
 ## New Capability Signals
 
-- feat: compact at useful task boundaries and before cache expiry (#178021)
-- feat(cron): run persistent streams in their authorized sandbox (#177942)
-- feat(cron): authorize persistent host streams with informed approval (#177941)
-- feat(ios): add bounded release resource diagnostics (#178285)
-- feat(ui): create Claws in the agent main chat (#173377)
-- feat(claws): review selected private packages before publishing (#173346)
-- feat(claws): feature curated Claws and rank categories by installs (#178047)
-- feat(claws): discover and add community Claws (#173345)
-- feat(typesafe): support prepared Decision V2 batches (#158565)
-- feat(memory): support evergreen extra paths (#151915)
-- feat(nextcloud-talk): send native outbound attachments (#174306)
-- feat: expose gateway health to the system agent (#172001)
-- feat(plugins): expose requester-bound native delegation (#175276)
-- feat(agents): expose system overview as a read action for the system agent (#177314)
-- feat(subagents): carry a machine-readable reason on a registry-settled yielded collector (#165797)
+- feat: support actions on imported pull requests (#178281)
+- feat(gateway): export Control UI document handler stage latency (#179449)
+- feat: show original pull requests in guest conversations (#178312)
+- feat: prepare existing PR source in a managed workspace (#178233)
+- feat(automations): migrate heartbeat jobs through Doctor (#179387)
+- feat: inspect existing own pull requests (#178055)
+- improve(ui): speed up theme contrast checks (#179117)
+- feat(ui): show processes in desktop Details (#178969)
+- feat(ui): preview hex colors in chat messages (#179039)
+- Add shared enterprise-managed authorization for MCP (#178726)
+- feat(clawrouter): add entitled native image generation (#178876)
+- feat(clawrouter): add native tts-1 speech provider (#178860)
+- feat: show published Claw artwork in the catalog (#178857)
+- feat(ui): add responsive session headers and detail panels (#176653)
+- feat(ui): expose subagent stop in composer notices (#176582)
 
 ## Important Fixes And Hardening
 
-- fix: shorten mention lookup errors (#178494)
-- fix: allow guest mentions in new conversations (#178039)
-- fix(signal): honor paragraph chunking for formatted messages (#176258)
-- fix(media): auto-detected whisper.cpp transcribes as English when an audio language is configured (#176662)
-- fix: skills appear ready when a PATH directory matches a required binary (#176850)
-- fix(acp): run new sessions in the requested directory (#176852)
-- fix(android): open and share chat file attachments (#178443)
-- fix(agents): tree listing omits routing rules with --bindings (#176860)
-- fix: stopped, disabled Linux gateway service restarts after configure or onboard (#175680)
-- fix: deliver mentions to guest inboxes (#178157)
-- fix(web-fetch): preserve table cells and preformatted code in Markdown output (#176263)
-- fix(ui): arrow keys do not move between Ask OpenClaw question choices (#178211)
-- perf(control-ui): start cached dashboard apps before the board round trip (#178113)
-- fix(cron): clear failure alert target when edit flags are blank (#177681)
-- fix(android): find setup codes among unrelated QR codes
+- fix: remove underlines from chat attachment actions (#179641)
+- perf(gateway): reuse verified Cloudflare Access identity per assertion (#179571)
+- perf(models): retain settled catalogs after unchanged discovery (#179651)
+- fix(memory-wiki): keep Notes when OKF concepts disappear (#179657)
+- fix(ui): refresh prompt recall after returning to the draft (#147371)
+- fix(ui): hide empty Environment and steady Details startup (#179560)
+- fix(voice-call): resolve per-number TTS SecretRefs (#128319)
+- fix(ui): capture stream identity before effect application (#179585)
+- fix(ci): remove orphaned heartbeat and fixture exports
+- fix(telegram): return approval results to the originating topic (#137438)
+- fix(ui): show the ordinary title for connected new conversations (#168876)
+- fix(google): bound inline video before decoding (#117413)
+- perf(state): reuse resolved database paths (#179276)
+- fix(codex): count rejected tool attempts (#168830)
+- fix: restore incognito reconciliation test (#179613)
 
 ## Releases This Week
 
-- No GitHub releases were published in this window.
+- `v2026.10.10-beta.3` | beta | 2026-10-21T07:00:49Z | openclaw 2026.10.10-beta.3
 
 ## Most Active Change Scopes
 
-- `ui`: 172
-- `refactor`: 68
-- `gateway`: 50
-- `agents`: 45
-- `fix`: 32
-- `plugins`: 26
-- `update`: 20
-- `ci`: 13
-- `sessions`: 12
-- `doctor`: 12
-- `release`: 10
-- `infra`: 9
+- `ui`: 224
+- `fix`: 78
+- `refactor`: 30
+- `gateway`: 29
+- `test`: 29
+- `plugins`: 28
+- `sessions`: 21
+- `doctor`: 19
+- `update`: 19
+- `agents`: 18
+- `runtime`: 12
+- `ci`: 10
 
 ## Recent Commit Headlines
 
-- 2026-10-20T15:38:04Z | chore(i18n): refresh native locales (#178520)
-- 2026-10-20T15:34:59Z | fix: shorten mention lookup errors (#178494)
-- 2026-10-20T15:33:04Z | fix: allow guest mentions in new conversations (#178039)
-- 2026-10-20T15:16:10Z | refactor(ui): share route change listener collections (#178482)
-- 2026-10-20T15:13:52Z | fix(signal): honor paragraph chunking for formatted messages (#176258)
-- 2026-10-20T15:13:15Z | fix(media): auto-detected whisper.cpp transcribes as English when an audio language is configured (#176662)
-- 2026-10-20T15:11:16Z | refactor: keep private core operations with their consumers (#178465)
-- 2026-10-20T15:11:13Z | fix: skills appear ready when a PATH directory matches a required binary (#176850)
-- 2026-10-20T15:10:39Z | fix(acp): run new sessions in the requested directory (#176852)
-- 2026-10-20T15:08:03Z | test(core): remove low-value tests (batch d325) (#178456)
-- 2026-10-20T15:06:07Z | refactor(extensions): remove unread result bookkeeping (#178428)
-- 2026-10-20T15:04:01Z | test(chat,gateway,ios): remove low-value tests (batch d324) (#178448)
-- 2026-10-20T15:03:44Z | refactor(agents): narrow private runtime call contracts (#178459)
-- 2026-10-20T15:01:08Z | fix(android): open and share chat file attachments (#178443)
-- 2026-10-20T14:55:41Z | fix(agents): tree listing omits routing rules with --bindings (#176860)
-- 2026-10-20T14:55:01Z | fix: stopped, disabled Linux gateway service restarts after configure or onboard (#175680)
-- 2026-10-20T14:51:04Z | refactor(plugins): consolidate existing owners and unused bookkeeping (#178464)
-- 2026-10-20T14:45:13Z | fix: deliver mentions to guest inboxes (#178157)
-- 2026-10-20T14:42:58Z | test(gateway,plugins,ui): remove low-value tests (batch d323) (#178446)
-- 2026-10-20T14:42:36Z | fix(web-fetch): preserve table cells and preformatted code in Markdown output (#176263)
+- 2026-10-21T16:10:03Z | fix: remove underlines from chat attachment actions (#179641)
+- 2026-10-21T16:07:22Z | perf(gateway): reuse verified Cloudflare Access identity per assertion (#179571)
+- 2026-10-21T16:06:47Z | perf(models): retain settled catalogs after unchanged discovery (#179651)
+- 2026-10-21T16:06:17Z | fix(memory-wiki): keep Notes when OKF concepts disappear (#179657)
+- 2026-10-21T16:05:55Z | fix(ui): refresh prompt recall after returning to the draft (#147371)
+- 2026-10-21T16:04:41Z | fix(ui): hide empty Environment and steady Details startup (#179560)
+- 2026-10-21T16:03:58Z | refactor: keep private request phases with their owners (#179646)
+- 2026-10-21T16:03:45Z | fix(voice-call): resolve per-number TTS SecretRefs (#128319)
+- 2026-10-21T16:03:20Z | fix(ui): capture stream identity before effect application (#179585)
+- 2026-10-21T15:59:38Z | refactor(ui): use Solid loading and actions for provider review (#179521)
+- 2026-10-21T15:56:17Z | fix(ci): remove orphaned heartbeat and fixture exports
+- 2026-10-21T15:56:29Z | fix(telegram): return approval results to the originating topic (#137438)
+- 2026-10-21T15:55:16Z | fix(ui): show the ordinary title for connected new conversations (#168876)
+- 2026-10-21T15:54:10Z | improve: soften the chat Stop symbol corners (#179636)
+- 2026-10-21T15:53:38Z | fix(google): bound inline video before decoding (#117413)
+- 2026-10-21T15:53:01Z | perf(state): reuse resolved database paths (#179276)
+- 2026-10-21T15:48:59Z | fix(codex): count rejected tool attempts (#168830)
+- 2026-10-21T15:47:37Z | fix: restore incognito reconciliation test (#179613)
+- 2026-10-21T15:45:13Z | test(cli,config,gateway,infra,state): remove low-value tests (batch d396) (#179568)
+- 2026-10-21T15:44:52Z | fix(telegram): deliver custom emoji reaction notifications (#83611)
 
 ## Sources
 

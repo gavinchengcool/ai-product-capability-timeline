@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-20T23:54:02+08:00",
+  "generatedAt": "2026-10-22T00:11:10+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-10-19T23:54:02+08:00",
-    "end_local": "2026-10-20T23:54:02+08:00"
+    "start_local": "2026-10-21T00:11:10+08:00",
+    "end_local": "2026-10-22T00:11:10+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-10-20T23:53:44.705042+08:00",
+      "generatedAt": "2026-10-22T00:10:52.197515+08:00",
       "window": {
-        "start_local": "2026-10-19T23:53:44.705042+08:00",
-        "end_local": "2026-10-20T23:53:44.705042+08:00",
-        "start_utc": "2026-10-19T15:53:44Z",
-        "end_utc": "2026-10-20T15:53:44Z"
+        "start_local": "2026-10-21T00:10:52.197515+08:00",
+        "end_local": "2026-10-22T00:10:52.197515+08:00",
+        "start_utc": "2026-10-20T16:10:52Z",
+        "end_utc": "2026-10-21T16:10:52Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-10-19 至 2026-10-20"
+          "value": "2026-10-21 至 2026-10-22"
         },
         {
           "label": "GitHub 增量",
-          "value": "737 commits / 0 releases"
+          "value": "833 commits / 1 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-10-20"
+          "value": "2026-10-21"
         },
         {
           "label": "来源",
@@ -52,58 +52,66 @@
         }
       ],
       "featureItems": [
-        "feat: compact at useful task boundaries and before cache expiry (#178021)",
-        "feat(cron): run persistent streams in their authorized sandbox (#177942)",
-        "feat(cron): authorize persistent host streams with informed approval (#177941)",
-        "feat(ios): add bounded release resource diagnostics (#178285)",
-        "feat(ui): create Claws in the agent main chat (#173377)",
-        "feat(claws): review selected private packages before publishing (#173346)",
-        "feat(claws): feature curated Claws and rank categories by installs (#178047)",
-        "feat(claws): discover and add community Claws (#173345)"
+        "feat: support actions on imported pull requests (#178281)",
+        "feat(gateway): export Control UI document handler stage latency (#179449)",
+        "feat: show original pull requests in guest conversations (#178312)",
+        "feat: prepare existing PR source in a managed workspace (#178233)",
+        "feat(automations): migrate heartbeat jobs through Doctor (#179387)",
+        "feat: inspect existing own pull requests (#178055)",
+        "improve(ui): speed up theme contrast checks (#179117)",
+        "feat(ui): show processes in desktop Details (#178969)"
       ],
       "fixItems": [
-        "fix: shorten mention lookup errors (#178494)",
-        "fix: allow guest mentions in new conversations (#178039)",
-        "fix(signal): honor paragraph chunking for formatted messages (#176258)",
-        "fix(media): auto-detected whisper.cpp transcribes as English when an audio language is configured (#176662)",
-        "fix: skills appear ready when a PATH directory matches a required binary (#176850)",
-        "fix(acp): run new sessions in the requested directory (#176852)",
-        "fix(android): open and share chat file attachments (#178443)",
-        "fix(agents): tree listing omits routing rules with --bindings (#176860)"
+        "fix: remove underlines from chat attachment actions (#179641)",
+        "perf(gateway): reuse verified Cloudflare Access identity per assertion (#179571)",
+        "perf(models): retain settled catalogs after unchanged discovery (#179651)",
+        "fix(memory-wiki): keep Notes when OKF concepts disappear (#179657)",
+        "fix(ui): refresh prompt recall after returning to the draft (#147371)",
+        "fix(ui): hide empty Environment and steady Details startup (#179560)",
+        "fix(voice-call): resolve per-number TTS SecretRefs (#128319)",
+        "fix(ui): capture stream identity before effect application (#179585)"
       ],
-      "releases": [],
+      "releases": [
+        {
+          "tag_name": "v2026.10.10-beta.3",
+          "published_at": "2026-10-21T07:00:49Z",
+          "name": "openclaw 2026.10.10-beta.3",
+          "prerelease": true,
+          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.10-beta.3"
+        }
+      ],
       "topScopes": [
         {
           "scope": "ui",
-          "count": 172
-        },
-        {
-          "scope": "refactor",
-          "count": 68
-        },
-        {
-          "scope": "gateway",
-          "count": 50
-        },
-        {
-          "scope": "agents",
-          "count": 45
+          "count": 224
         },
         {
           "scope": "fix",
-          "count": 32
+          "count": 78
+        },
+        {
+          "scope": "refactor",
+          "count": 30
+        },
+        {
+          "scope": "gateway",
+          "count": 29
+        },
+        {
+          "scope": "test",
+          "count": 29
         },
         {
           "scope": "plugins",
-          "count": 26
+          "count": 28
         },
         {
-          "scope": "update",
-          "count": 20
+          "scope": "sessions",
+          "count": 21
         },
         {
-          "scope": "ci",
-          "count": 13
+          "scope": "doctor",
+          "count": 19
         }
       ],
       "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"

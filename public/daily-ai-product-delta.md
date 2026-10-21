@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-10-20T23:54:02+08:00
-- Requested window: 2026-10-19 to 2026-10-20
+- Generated at: 2026-10-22T00:11:10+08:00
+- Requested window: 2026-10-21 to 2026-10-22
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-10-19 to 2026-10-20
-- Generated at: 2026-10-20T23:53:44.705042+08:00
-- 窗口: 2026-10-19 至 2026-10-20
-- GitHub 增量: 737 commits / 0 releases
-- 最近 push: 2026-10-20
+- Window: 2026-10-21 to 2026-10-22
+- Generated at: 2026-10-22T00:10:52.197515+08:00
+- 窗口: 2026-10-21 至 2026-10-22
+- GitHub 增量: 833 commits / 1 releases
+- 最近 push: 2026-10-21
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat: compact at useful task boundaries and before cache expiry (#178021)
-  - feat(cron): run persistent streams in their authorized sandbox (#177942)
-  - feat(cron): authorize persistent host streams with informed approval (#177941)
-  - feat(ios): add bounded release resource diagnostics (#178285)
-  - feat(ui): create Claws in the agent main chat (#173377)
-  - feat(claws): review selected private packages before publishing (#173346)
-  - feat(claws): feature curated Claws and rank categories by installs (#178047)
-  - feat(claws): discover and add community Claws (#173345)
+  - feat: support actions on imported pull requests (#178281)
+  - feat(gateway): export Control UI document handler stage latency (#179449)
+  - feat: show original pull requests in guest conversations (#178312)
+  - feat: prepare existing PR source in a managed workspace (#178233)
+  - feat(automations): migrate heartbeat jobs through Doctor (#179387)
+  - feat: inspect existing own pull requests (#178055)
+  - improve(ui): speed up theme contrast checks (#179117)
+  - feat(ui): show processes in desktop Details (#178969)
 - Fixes and constraints:
-  - fix: shorten mention lookup errors (#178494)
-  - fix: allow guest mentions in new conversations (#178039)
-  - fix(signal): honor paragraph chunking for formatted messages (#176258)
-  - fix(media): auto-detected whisper.cpp transcribes as English when an audio language is configured (#176662)
-  - fix: skills appear ready when a PATH directory matches a required binary (#176850)
-  - fix(acp): run new sessions in the requested directory (#176852)
-  - fix(android): open and share chat file attachments (#178443)
-  - fix(agents): tree listing omits routing rules with --bindings (#176860)
+  - fix: remove underlines from chat attachment actions (#179641)
+  - perf(gateway): reuse verified Cloudflare Access identity per assertion (#179571)
+  - perf(models): retain settled catalogs after unchanged discovery (#179651)
+  - fix(memory-wiki): keep Notes when OKF concepts disappear (#179657)
+  - fix(ui): refresh prompt recall after returning to the draft (#147371)
+  - fix(ui): hide empty Environment and steady Details startup (#179560)
+  - fix(voice-call): resolve per-number TTS SecretRefs (#128319)
+  - fix(ui): capture stream identity before effect application (#179585)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

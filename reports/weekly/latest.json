@@ -1,185 +1,204 @@
 {
-  "generated_at": "2026-10-20T23:53:44.705042+08:00",
+  "generated_at": "2026-10-22T00:10:52.197515+08:00",
   "window": {
-    "start_local": "2026-10-19T23:53:44.705042+08:00",
-    "end_local": "2026-10-20T23:53:44.705042+08:00",
-    "start_utc": "2026-10-19T15:53:44Z",
-    "end_utc": "2026-10-20T15:53:44Z"
+    "start_local": "2026-10-21T00:10:52.197515+08:00",
+    "end_local": "2026-10-22T00:10:52.197515+08:00",
+    "start_utc": "2026-10-20T16:10:52Z",
+    "end_utc": "2026-10-21T16:10:52Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 392945,
-    "forks": 82551,
-    "open_issues": 9674,
-    "pushed_at": "2026-10-20T15:52:54Z"
+    "stars": 392663,
+    "forks": 82540,
+    "open_issues": 9590,
+    "pushed_at": "2026-10-21T16:10:06Z"
   },
-  "releases_in_window": [],
-  "commit_count": 737,
+  "releases_in_window": [
+    {
+      "tag_name": "v2026.10.10-beta.3",
+      "published_at": "2026-10-21T07:00:49Z",
+      "name": "openclaw 2026.10.10-beta.3",
+      "prerelease": true,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.10-beta.3"
+    }
+  ],
+  "commit_count": 833,
   "commit_headlines": [
-    "chore(i18n): refresh native locales (#178520)",
-    "fix: shorten mention lookup errors (#178494)",
-    "fix: allow guest mentions in new conversations (#178039)",
-    "refactor(ui): share route change listener collections (#178482)",
-    "fix(signal): honor paragraph chunking for formatted messages (#176258)",
-    "fix(media): auto-detected whisper.cpp transcribes as English when an audio language is configured (#176662)",
-    "refactor: keep private core operations with their consumers (#178465)",
-    "fix: skills appear ready when a PATH directory matches a required binary (#176850)",
-    "fix(acp): run new sessions in the requested directory (#176852)",
-    "test(core): remove low-value tests (batch d325) (#178456)",
-    "refactor(extensions): remove unread result bookkeeping (#178428)",
-    "test(chat,gateway,ios): remove low-value tests (batch d324) (#178448)",
-    "refactor(agents): narrow private runtime call contracts (#178459)",
-    "fix(android): open and share chat file attachments (#178443)",
-    "fix(agents): tree listing omits routing rules with --bindings (#176860)",
-    "fix: stopped, disabled Linux gateway service restarts after configure or onboard (#175680)",
-    "refactor(plugins): consolidate existing owners and unused bookkeeping (#178464)",
-    "fix: deliver mentions to guest inboxes (#178157)",
-    "test(gateway,plugins,ui): remove low-value tests (batch d323) (#178446)",
-    "fix(web-fetch): preserve table cells and preformatted code in Markdown output (#176263)",
-    "fix(ui): arrow keys do not move between Ask OpenClaw question choices (#178211)",
-    "refactor(qa-lab): remove discarded transport result metadata (#178466)",
-    "perf(control-ui): start cached dashboard apps before the board round trip (#178113)",
-    "fix(cron): clear failure alert target when edit flags are blank (#177681)",
-    "refactor(ui): share creation and sidebar change listeners (#178457)",
-    "test(suites): remove low-value tests (batch d322) (#178431)",
-    "refactor: consolidate cancellation and teardown ownership (#178419)",
-    "fix(android): find setup codes among unrelated QR codes",
-    "fix(android): keep nested chat lists readable",
-    "fix(sandbox): avoid redundant startup recovery work (#178434)",
-    "fix(android): keep file and provider list endings above system navigation (#178440)",
-    "refactor(qa-lab): remove discarded Matrix scenario artifacts (#178453)",
-    "fix(plugins): keep reused results scoped to connection credentials (#178444)",
-    "chore(ui): refresh control ui locales (#178458)",
-    "refactor(ui): share chat change listener collections (#178447)",
-    "fix(ui): keep the mobile model picker above the composer (#177946)",
-    "fix(android): announce settings toggles as one labeled switch (#178429)",
-    "fix(android): prevent Wear chat crashes on repeated messages (#172354)",
-    "test(agents): spread real config io in compaction test support (#178439)",
-    "fix(mcp): carry server instructions into embedded agent prompts (#174342)",
-    "refactor(promos): remove unread claim annotations (#178435)",
-    "refactor(ui): remove unused projections and icon factory (#178436)",
-    "refactor(agents): narrow private runtime contracts",
-    "test(agents,gateway,ui): remove low-value tests (batch d319) (#178401)",
-    "test(ui,reply,gateway): remove low-value tests (batch d321) (#178406)",
-    "refactor(gateway): select observer utility models from config",
-    "test(ui): keep cold-load trace type private",
-    "fix(discord): keep queued reads and bound heartbeat accounting (#178427)",
-    "test(agents,daemon,memory,telegram,ui,update): remove low-value tests (batch d320) (#178403)",
-    "refactor: retire unused internal and test helper exports"
+    "fix: remove underlines from chat attachment actions (#179641)",
+    "perf(gateway): reuse verified Cloudflare Access identity per assertion (#179571)",
+    "perf(models): retain settled catalogs after unchanged discovery (#179651)",
+    "fix(memory-wiki): keep Notes when OKF concepts disappear (#179657)",
+    "fix(ui): refresh prompt recall after returning to the draft (#147371)",
+    "fix(ui): hide empty Environment and steady Details startup (#179560)",
+    "refactor: keep private request phases with their owners (#179646)",
+    "fix(voice-call): resolve per-number TTS SecretRefs (#128319)",
+    "fix(ui): capture stream identity before effect application (#179585)",
+    "refactor(ui): use Solid loading and actions for provider review (#179521)",
+    "fix(ci): remove orphaned heartbeat and fixture exports",
+    "fix(telegram): return approval results to the originating topic (#137438)",
+    "fix(ui): show the ordinary title for connected new conversations (#168876)",
+    "improve: soften the chat Stop symbol corners (#179636)",
+    "fix(google): bound inline video before decoding (#117413)",
+    "perf(state): reuse resolved database paths (#179276)",
+    "fix(codex): count rejected tool attempts (#168830)",
+    "fix: restore incognito reconciliation test (#179613)",
+    "test(cli,config,gateway,infra,state): remove low-value tests (batch d396) (#179568)",
+    "fix(telegram): deliver custom emoji reaction notifications (#83611)",
+    "fix: surface provider stream errors without waiting for clones (#117397)",
+    "refactor(ui): present Dreaming confirmation with Solid actions (#179500)",
+    "fix: remove unused sandbox facade exports (#179637)",
+    "test: align Doctor and roster fixtures with heartbeat retirement",
+    "test(cli): retain canonical roster ownership in fixtures",
+    "test(doctor): align fixtures with heartbeat retirement",
+    "fix: unblock CLI auth Gateway scenarios (#179619)",
+    "test(ui): remove retired heartbeat settings from Gateway fixtures (#179534)",
+    "test: remove retired heartbeat mention fixture (#179612)",
+    "test: repair sessions send recovery fixture (#179614)",
+    "test: remove retired subagent heartbeat fixture (#179600)",
+    "test: restore first-turn binding coverage (#179592)",
+    "fix(memory): search misses new files after indexing completes (#179524)",
+    "fix: expect current PR provisioning schema (#179634)",
+    "test: repair Codex recovery fixture (#179606)",
+    "fix(agents): propagate client tool cancellation (#117352)",
+    "fix: keep Code Mode wait helper private (#179615)",
+    "test: remove retired placement heartbeat fixture (#179616)",
+    "fix: preserve active replies when another input is acknowledged (#168824)",
+    "fix: restore TUI PTY Gateway fixture startup (#179610)",
+    "fix: unblock model worker recovery scenario (#179599)",
+    "test: remove retired dashboard heartbeat fixture (#179591)",
+    "test: update continuation bootstrap fixture (#179593)",
+    "fix: restore visible yield Gateway scenarios (#179607)",
+    "fix: restore CLI watchdog fixture startup (#179588)",
+    "test: remove retired heartbeat fixture (#179598)",
+    "fix: restore worktree readiness fixture (#179597)",
+    "fix(plugins): replace dangling dependency junctions instead of refusing plugin migration (#179549)",
+    "fix: restore concurrent stream fixture startup (#179594)",
+    "test: restore cleanup workspace guard coverage (#179605)"
   ],
   "feature_items": [
-    "feat: compact at useful task boundaries and before cache expiry (#178021)",
-    "feat(cron): run persistent streams in their authorized sandbox (#177942)",
-    "feat(cron): authorize persistent host streams with informed approval (#177941)",
-    "feat(ios): add bounded release resource diagnostics (#178285)",
-    "feat(ui): create Claws in the agent main chat (#173377)",
-    "feat(claws): review selected private packages before publishing (#173346)",
-    "feat(claws): feature curated Claws and rank categories by installs (#178047)",
-    "feat(claws): discover and add community Claws (#173345)",
-    "feat(typesafe): support prepared Decision V2 batches (#158565)",
-    "feat(memory): support evergreen extra paths (#151915)",
-    "feat(nextcloud-talk): send native outbound attachments (#174306)",
-    "feat: expose gateway health to the system agent (#172001)",
-    "feat(plugins): expose requester-bound native delegation (#175276)",
-    "feat(agents): expose system overview as a read action for the system agent (#177314)",
-    "feat(subagents): carry a machine-readable reason on a registry-settled yielded collector (#165797)",
-    "feat(subagents): show how long a continuable yielded leaf has been paused (#165798)",
-    "feat: inventory bundled plugin SDK usage without executing plugins (#175216)",
-    "feat(state): local client credential cutover (R0 PR1b) (#174599)",
-    "feat(ui): queue session renames and reactions while the Gateway reconnects (#177558)"
+    "feat: support actions on imported pull requests (#178281)",
+    "feat(gateway): export Control UI document handler stage latency (#179449)",
+    "feat: show original pull requests in guest conversations (#178312)",
+    "feat: prepare existing PR source in a managed workspace (#178233)",
+    "feat(automations): migrate heartbeat jobs through Doctor (#179387)",
+    "feat: inspect existing own pull requests (#178055)",
+    "improve(ui): speed up theme contrast checks (#179117)",
+    "feat(ui): show processes in desktop Details (#178969)",
+    "feat(ui): preview hex colors in chat messages (#179039)",
+    "Add shared enterprise-managed authorization for MCP (#178726)",
+    "feat(clawrouter): add entitled native image generation (#178876)",
+    "feat(clawrouter): add native tts-1 speech provider (#178860)",
+    "feat: show published Claw artwork in the catalog (#178857)",
+    "feat(ui): add responsive session headers and detail panels (#176653)",
+    "feat(ui): expose subagent stop in composer notices (#176582)",
+    "feat(ui): align the desktop discussion fallback (#176579)",
+    "feat(ui): simplify side chat and align panel actions (#176575)",
+    "feat(ui): align link reader controls with session rails (#176571)",
+    "feat(ui): refine browser navigation and recovery (#176564)",
+    "feat(ui): add embedded portal controls and recovery views (#176557)",
+    "feat(ui): fit remote desktops to either viewport axis (#176552)",
+    "feat(ui): refine remote desktop controls and connection states (#176546)",
+    "feat(ui): add terminal panel navigation and staged input (#176540)",
+    "feat(ui): organize mobile Details content and navigation (#176527)",
+    "feat(ui): refine process panels and mobile summary (#176524)",
+    "feat(ui): add mobile Goal details and recovery (#176519)",
+    "feat(ui): add mobile Sharing and Session access views (#176515)",
+    "feat(ui): add mobile People view and native mentions (#176505)",
+    "feat(ui): retain mobile composer editing across controls (#176498)",
+    "feat(ui): show session automations in Details (#176490)"
   ],
   "fix_items": [
-    "fix: shorten mention lookup errors (#178494)",
-    "fix: allow guest mentions in new conversations (#178039)",
-    "fix(signal): honor paragraph chunking for formatted messages (#176258)",
-    "fix(media): auto-detected whisper.cpp transcribes as English when an audio language is configured (#176662)",
-    "fix: skills appear ready when a PATH directory matches a required binary (#176850)",
-    "fix(acp): run new sessions in the requested directory (#176852)",
-    "fix(android): open and share chat file attachments (#178443)",
-    "fix(agents): tree listing omits routing rules with --bindings (#176860)",
-    "fix: stopped, disabled Linux gateway service restarts after configure or onboard (#175680)",
-    "fix: deliver mentions to guest inboxes (#178157)",
-    "fix(web-fetch): preserve table cells and preformatted code in Markdown output (#176263)",
-    "fix(ui): arrow keys do not move between Ask OpenClaw question choices (#178211)",
-    "perf(control-ui): start cached dashboard apps before the board round trip (#178113)",
-    "fix(cron): clear failure alert target when edit flags are blank (#177681)",
-    "fix(android): find setup codes among unrelated QR codes",
-    "fix(android): keep nested chat lists readable",
-    "fix(sandbox): avoid redundant startup recovery work (#178434)",
-    "fix(android): keep file and provider list endings above system navigation (#178440)",
-    "fix(plugins): keep reused results scoped to connection credentials (#178444)",
-    "fix(ui): keep the mobile model picker above the composer (#177946)",
-    "fix(android): announce settings toggles as one labeled switch (#178429)",
-    "fix(android): prevent Wear chat crashes on repeated messages (#172354)",
-    "fix(mcp): carry server instructions into embedded agent prompts (#174342)",
-    "fix(discord): keep queued reads and bound heartbeat accounting (#178427)",
-    "fix(claude-cli): stop cache-prefix churn after child completion (#172026)",
-    "fix(codex): return upstream seeds to joined Continue requests (#178414)",
-    "fix(outbound): respect request-scoped target normalizers (#178385)",
-    "perf(sessions): reuse diffs with nested repositories and external ignores (#178400)",
-    "fix(agents): preserve safe inspection and outcomes during recovery (#177943)",
-    "perf(sessions): reduce startup maintenance and catalog reads (#178369)"
+    "fix: remove underlines from chat attachment actions (#179641)",
+    "perf(gateway): reuse verified Cloudflare Access identity per assertion (#179571)",
+    "perf(models): retain settled catalogs after unchanged discovery (#179651)",
+    "fix(memory-wiki): keep Notes when OKF concepts disappear (#179657)",
+    "fix(ui): refresh prompt recall after returning to the draft (#147371)",
+    "fix(ui): hide empty Environment and steady Details startup (#179560)",
+    "fix(voice-call): resolve per-number TTS SecretRefs (#128319)",
+    "fix(ui): capture stream identity before effect application (#179585)",
+    "fix(ci): remove orphaned heartbeat and fixture exports",
+    "fix(telegram): return approval results to the originating topic (#137438)",
+    "fix(ui): show the ordinary title for connected new conversations (#168876)",
+    "fix(google): bound inline video before decoding (#117413)",
+    "perf(state): reuse resolved database paths (#179276)",
+    "fix(codex): count rejected tool attempts (#168830)",
+    "fix: restore incognito reconciliation test (#179613)",
+    "fix(telegram): deliver custom emoji reaction notifications (#83611)",
+    "fix: surface provider stream errors without waiting for clones (#117397)",
+    "fix: remove unused sandbox facade exports (#179637)",
+    "fix: unblock CLI auth Gateway scenarios (#179619)",
+    "fix(memory): search misses new files after indexing completes (#179524)",
+    "fix: expect current PR provisioning schema (#179634)",
+    "fix(agents): propagate client tool cancellation (#117352)",
+    "fix: keep Code Mode wait helper private (#179615)",
+    "fix: preserve active replies when another input is acknowledged (#168824)",
+    "fix: restore TUI PTY Gateway fixture startup (#179610)",
+    "fix: unblock model worker recovery scenario (#179599)",
+    "fix: restore visible yield Gateway scenarios (#179607)",
+    "fix: restore CLI watchdog fixture startup (#179588)",
+    "fix: restore worktree readiness fixture (#179597)",
+    "fix(plugins): replace dangling dependency junctions instead of refusing plugin migration (#179549)"
   ],
   "top_scopes": [
     {
       "scope": "ui",
-      "count": 172
-    },
-    {
-      "scope": "refactor",
-      "count": 68
-    },
-    {
-      "scope": "gateway",
-      "count": 50
-    },
-    {
-      "scope": "agents",
-      "count": 45
+      "count": 224
     },
     {
       "scope": "fix",
-      "count": 32
+      "count": 78
     },
     {
-      "scope": "plugins",
-      "count": 26
+      "scope": "refactor",
+      "count": 30
     },
     {
-      "scope": "update",
-      "count": 20
-    },
-    {
-      "scope": "ci",
-      "count": 13
-    },
-    {
-      "scope": "sessions",
-      "count": 12
-    },
-    {
-      "scope": "doctor",
-      "count": 12
-    },
-    {
-      "scope": "release",
-      "count": 10
-    },
-    {
-      "scope": "infra",
-      "count": 9
-    },
-    {
-      "scope": "android",
-      "count": 8
+      "scope": "gateway",
+      "count": 29
     },
     {
       "scope": "test",
-      "count": 8
+      "count": 29
     },
     {
-      "scope": "perf",
-      "count": 8
+      "scope": "plugins",
+      "count": 28
+    },
+    {
+      "scope": "sessions",
+      "count": 21
+    },
+    {
+      "scope": "doctor",
+      "count": 19
+    },
+    {
+      "scope": "update",
+      "count": 19
+    },
+    {
+      "scope": "agents",
+      "count": 18
+    },
+    {
+      "scope": "runtime",
+      "count": 12
+    },
+    {
+      "scope": "ci",
+      "count": 10
+    },
+    {
+      "scope": "memory",
+      "count": 9
+    },
+    {
+      "scope": "core,plugins,ui",
+      "count": 9
+    },
+    {
+      "scope": "release",
+      "count": 9
     }
   ]
 }
