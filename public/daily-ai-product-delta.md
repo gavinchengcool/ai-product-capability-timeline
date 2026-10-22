@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-10-22T00:11:10+08:00
-- Requested window: 2026-10-21 to 2026-10-22
+- Generated at: 2026-10-23T00:09:11+08:00
+- Requested window: 2026-10-22 to 2026-10-23
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-10-21 to 2026-10-22
-- Generated at: 2026-10-22T00:10:52.197515+08:00
-- 窗口: 2026-10-21 至 2026-10-22
-- GitHub 增量: 833 commits / 1 releases
-- 最近 push: 2026-10-21
+- Window: 2026-10-22 to 2026-10-23
+- Generated at: 2026-10-23T00:08:50.515419+08:00
+- 窗口: 2026-10-22 至 2026-10-23
+- GitHub 增量: 803 commits / 1 releases
+- 最近 push: 2026-10-22
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat: support actions on imported pull requests (#178281)
-  - feat(gateway): export Control UI document handler stage latency (#179449)
-  - feat: show original pull requests in guest conversations (#178312)
-  - feat: prepare existing PR source in a managed workspace (#178233)
-  - feat(automations): migrate heartbeat jobs through Doctor (#179387)
-  - feat: inspect existing own pull requests (#178055)
-  - improve(ui): speed up theme contrast checks (#179117)
-  - feat(ui): show processes in desktop Details (#178969)
+  - This patch release contains focused reliability fixes only; it does not introduce new user-facing features. [v2026.10.6]
+  - feat(commands): accept /fast ultra as ultrafast shorthand (#180509)
+  - feat(cron): add the scheduled-run execution context (no behavior change) (#178933)
+  - feat(plugins): let requester commands schedule bounded follow-up turns (#180282)
+  - feat(plugin-sdk): let plugins recover their native children (#180274)
+  - feat(slack): create public channels from message actions (#163783)
+  - feat(plugins): expose requester-scoped model catalogs (#180283)
+  - feat(plugins): let authenticated commands launch native subagents (#180173)
 - Fixes and constraints:
-  - fix: remove underlines from chat attachment actions (#179641)
-  - perf(gateway): reuse verified Cloudflare Access identity per assertion (#179571)
-  - perf(models): retain settled catalogs after unchanged discovery (#179651)
-  - fix(memory-wiki): keep Notes when OKF concepts disappear (#179657)
-  - fix(ui): refresh prompt recall after returning to the draft (#147371)
-  - fix(ui): hide empty Environment and steady Details startup (#179560)
-  - fix(voice-call): resolve per-number TTS SecretRefs (#128319)
-  - fix(ui): capture stream identity before effect application (#179585)
+  - fix(agentsapi): cron job stops right after sending to its own delivery target (#177518)
+  - fix(ui): keep chat actions and draft restores with current panes (#180623)
+  - fix(matrix): tag only control commands with command source (#179506)
+  - fix: browser inspect validation leaves JSON output empty (#176013)
+  - fix(skills): accept mixed-case --agent ids in skills commands (#180055)
+  - fix(web-fetch): extract HTML bodies served without a Content-Type (#180064)
+  - fix(oc-path): resolve and edit quoted Markdown paths (#179821)
+  - fix(decisions): allow OpenAI batches up to 400 questions (#180210)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

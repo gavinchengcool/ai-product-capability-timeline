@@ -1,99 +1,99 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-10-22T00:10:52.197515+08:00",
+  "generatedAt": "2026-10-23T00:08:50.515419+08:00",
   "window": {
-    "start_local": "2026-10-21T00:10:52.197515+08:00",
-    "end_local": "2026-10-22T00:10:52.197515+08:00",
-    "start_utc": "2026-10-20T16:10:52Z",
-    "end_utc": "2026-10-21T16:10:52Z"
+    "start_local": "2026-10-22T00:08:50.515419+08:00",
+    "end_local": "2026-10-23T00:08:50.515419+08:00",
+    "start_utc": "2026-10-21T16:08:50Z",
+    "end_utc": "2026-10-22T16:08:50Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 392663,
-    "forks": 82540,
-    "open_issues": 9590,
-    "pushed_at": "2026-10-21T16:10:06Z"
+    "stars": 392755,
+    "forks": 82554,
+    "open_issues": 9374,
+    "pushed_at": "2026-10-22T16:08:44Z"
   },
   "summary": {
-    "commitCount": 833,
+    "commitCount": 803,
     "releaseCount": 1,
-    "stableReleaseCount": 0,
-    "betaReleaseCount": 1,
-    "stars": 392663,
-    "forks": 82540,
-    "openIssues": 9590
+    "stableReleaseCount": 1,
+    "betaReleaseCount": 0,
+    "stars": 392755,
+    "forks": 82554,
+    "openIssues": 9374
   },
   "releases": [
     {
-      "tag_name": "v2026.10.10-beta.3",
-      "published_at": "2026-10-21T07:00:49Z",
-      "name": "openclaw 2026.10.10-beta.3",
-      "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.10-beta.3"
+      "tag_name": "v2026.10.6",
+      "published_at": "2026-10-22T12:53:10Z",
+      "name": "openclaw 2026.10.6",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.6"
     }
   ],
   "featureItems": [
-    "feat: support actions on imported pull requests (#178281)",
-    "feat(gateway): export Control UI document handler stage latency (#179449)",
-    "feat: show original pull requests in guest conversations (#178312)",
-    "feat: prepare existing PR source in a managed workspace (#178233)",
-    "feat(automations): migrate heartbeat jobs through Doctor (#179387)",
-    "feat: inspect existing own pull requests (#178055)",
-    "improve(ui): speed up theme contrast checks (#179117)",
-    "feat(ui): show processes in desktop Details (#178969)"
+    "This patch release contains focused reliability fixes only; it does not introduce new user-facing features. [v2026.10.6]",
+    "feat(commands): accept /fast ultra as ultrafast shorthand (#180509)",
+    "feat(cron): add the scheduled-run execution context (no behavior change) (#178933)",
+    "feat(plugins): let requester commands schedule bounded follow-up turns (#180282)",
+    "feat(plugin-sdk): let plugins recover their native children (#180274)",
+    "feat(slack): create public channels from message actions (#163783)",
+    "feat(plugins): expose requester-scoped model catalogs (#180283)",
+    "feat(plugins): let authenticated commands launch native subagents (#180173)"
   ],
   "fixItems": [
-    "fix: remove underlines from chat attachment actions (#179641)",
-    "perf(gateway): reuse verified Cloudflare Access identity per assertion (#179571)",
-    "perf(models): retain settled catalogs after unchanged discovery (#179651)",
-    "fix(memory-wiki): keep Notes when OKF concepts disappear (#179657)",
-    "fix(ui): refresh prompt recall after returning to the draft (#147371)",
-    "fix(ui): hide empty Environment and steady Details startup (#179560)",
-    "fix(voice-call): resolve per-number TTS SecretRefs (#128319)",
-    "fix(ui): capture stream identity before effect application (#179585)"
+    "fix(agentsapi): cron job stops right after sending to its own delivery target (#177518)",
+    "fix(ui): keep chat actions and draft restores with current panes (#180623)",
+    "fix(matrix): tag only control commands with command source (#179506)",
+    "fix: browser inspect validation leaves JSON output empty (#176013)",
+    "fix(skills): accept mixed-case --agent ids in skills commands (#180055)",
+    "fix(web-fetch): extract HTML bodies served without a Content-Type (#180064)",
+    "fix(oc-path): resolve and edit quoted Markdown paths (#179821)",
+    "fix(decisions): allow OpenAI batches up to 400 questions (#180210)"
   ],
   "topScopes": [
     {
       "scope": "ui",
-      "count": 224
+      "count": 358
     },
     {
       "scope": "fix",
-      "count": 78
+      "count": 76
     },
     {
       "scope": "refactor",
-      "count": 30
-    },
-    {
-      "scope": "gateway",
-      "count": 29
-    },
-    {
-      "scope": "test",
-      "count": 29
+      "count": 44
     },
     {
       "scope": "plugins",
-      "count": 28
-    },
-    {
-      "scope": "sessions",
-      "count": 21
+      "count": 23
     },
     {
       "scope": "doctor",
-      "count": 19
+      "count": 21
+    },
+    {
+      "scope": "gateway",
+      "count": 16
+    },
+    {
+      "scope": "release",
+      "count": 16
+    },
+    {
+      "scope": "update",
+      "count": 13
     }
   ],
   "headlineCommits": [
-    "fix: remove underlines from chat attachment actions (#179641)",
-    "perf(gateway): reuse verified Cloudflare Access identity per assertion (#179571)",
-    "perf(models): retain settled catalogs after unchanged discovery (#179651)",
-    "fix(memory-wiki): keep Notes when OKF concepts disappear (#179657)",
-    "fix(ui): refresh prompt recall after returning to the draft (#147371)",
-    "fix(ui): hide empty Environment and steady Details startup (#179560)",
-    "refactor: keep private request phases with their owners (#179646)",
-    "fix(voice-call): resolve per-number TTS SecretRefs (#128319)"
+    "refactor(ui): use Solid cancellation feedback for sign-in wizards (#180726)",
+    "fix(agentsapi): cron job stops right after sending to its own delivery target (#177518)",
+    "refactor(ui): share ordinary link activation across navigation (#180691)",
+    "fix(ui): keep chat actions and draft restores with current panes (#180623)",
+    "refactor(ui): separate chat grouping and recovery owners (#180724)",
+    "fix(matrix): tag only control commands with command source (#179506)",
+    "fix: browser inspect validation leaves JSON output empty (#176013)",
+    "fix(skills): accept mixed-case --agent ids in skills commands (#180055)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

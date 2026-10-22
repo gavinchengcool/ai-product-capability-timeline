@@ -1,204 +1,198 @@
 {
-  "generated_at": "2026-10-22T00:10:52.197515+08:00",
+  "generated_at": "2026-10-23T00:08:50.515419+08:00",
   "window": {
-    "start_local": "2026-10-21T00:10:52.197515+08:00",
-    "end_local": "2026-10-22T00:10:52.197515+08:00",
-    "start_utc": "2026-10-20T16:10:52Z",
-    "end_utc": "2026-10-21T16:10:52Z"
+    "start_local": "2026-10-22T00:08:50.515419+08:00",
+    "end_local": "2026-10-23T00:08:50.515419+08:00",
+    "start_utc": "2026-10-21T16:08:50Z",
+    "end_utc": "2026-10-22T16:08:50Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 392663,
-    "forks": 82540,
-    "open_issues": 9590,
-    "pushed_at": "2026-10-21T16:10:06Z"
+    "stars": 392755,
+    "forks": 82554,
+    "open_issues": 9374,
+    "pushed_at": "2026-10-22T16:08:44Z"
   },
   "releases_in_window": [
     {
-      "tag_name": "v2026.10.10-beta.3",
-      "published_at": "2026-10-21T07:00:49Z",
-      "name": "openclaw 2026.10.10-beta.3",
-      "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.10-beta.3"
+      "tag_name": "v2026.10.6",
+      "published_at": "2026-10-22T12:53:10Z",
+      "name": "openclaw 2026.10.6",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.6"
     }
   ],
-  "commit_count": 833,
+  "commit_count": 803,
   "commit_headlines": [
-    "fix: remove underlines from chat attachment actions (#179641)",
-    "perf(gateway): reuse verified Cloudflare Access identity per assertion (#179571)",
-    "perf(models): retain settled catalogs after unchanged discovery (#179651)",
-    "fix(memory-wiki): keep Notes when OKF concepts disappear (#179657)",
-    "fix(ui): refresh prompt recall after returning to the draft (#147371)",
-    "fix(ui): hide empty Environment and steady Details startup (#179560)",
-    "refactor: keep private request phases with their owners (#179646)",
-    "fix(voice-call): resolve per-number TTS SecretRefs (#128319)",
-    "fix(ui): capture stream identity before effect application (#179585)",
-    "refactor(ui): use Solid loading and actions for provider review (#179521)",
-    "fix(ci): remove orphaned heartbeat and fixture exports",
-    "fix(telegram): return approval results to the originating topic (#137438)",
-    "fix(ui): show the ordinary title for connected new conversations (#168876)",
-    "improve: soften the chat Stop symbol corners (#179636)",
-    "fix(google): bound inline video before decoding (#117413)",
-    "perf(state): reuse resolved database paths (#179276)",
-    "fix(codex): count rejected tool attempts (#168830)",
-    "fix: restore incognito reconciliation test (#179613)",
-    "test(cli,config,gateway,infra,state): remove low-value tests (batch d396) (#179568)",
-    "fix(telegram): deliver custom emoji reaction notifications (#83611)",
-    "fix: surface provider stream errors without waiting for clones (#117397)",
-    "refactor(ui): present Dreaming confirmation with Solid actions (#179500)",
-    "fix: remove unused sandbox facade exports (#179637)",
-    "test: align Doctor and roster fixtures with heartbeat retirement",
-    "test(cli): retain canonical roster ownership in fixtures",
-    "test(doctor): align fixtures with heartbeat retirement",
-    "fix: unblock CLI auth Gateway scenarios (#179619)",
-    "test(ui): remove retired heartbeat settings from Gateway fixtures (#179534)",
-    "test: remove retired heartbeat mention fixture (#179612)",
-    "test: repair sessions send recovery fixture (#179614)",
-    "test: remove retired subagent heartbeat fixture (#179600)",
-    "test: restore first-turn binding coverage (#179592)",
-    "fix(memory): search misses new files after indexing completes (#179524)",
-    "fix: expect current PR provisioning schema (#179634)",
-    "test: repair Codex recovery fixture (#179606)",
-    "fix(agents): propagate client tool cancellation (#117352)",
-    "fix: keep Code Mode wait helper private (#179615)",
-    "test: remove retired placement heartbeat fixture (#179616)",
-    "fix: preserve active replies when another input is acknowledged (#168824)",
-    "fix: restore TUI PTY Gateway fixture startup (#179610)",
-    "fix: unblock model worker recovery scenario (#179599)",
-    "test: remove retired dashboard heartbeat fixture (#179591)",
-    "test: update continuation bootstrap fixture (#179593)",
-    "fix: restore visible yield Gateway scenarios (#179607)",
-    "fix: restore CLI watchdog fixture startup (#179588)",
-    "test: remove retired heartbeat fixture (#179598)",
-    "fix: restore worktree readiness fixture (#179597)",
-    "fix(plugins): replace dangling dependency junctions instead of refusing plugin migration (#179549)",
-    "fix: restore concurrent stream fixture startup (#179594)",
-    "test: restore cleanup workspace guard coverage (#179605)"
+    "refactor(ui): use Solid cancellation feedback for sign-in wizards (#180726)",
+    "fix(agentsapi): cron job stops right after sending to its own delivery target (#177518)",
+    "refactor(ui): share ordinary link activation across navigation (#180691)",
+    "fix(ui): keep chat actions and draft restores with current panes (#180623)",
+    "refactor(ui): separate chat grouping and recovery owners (#180724)",
+    "fix(matrix): tag only control commands with command source (#179506)",
+    "fix: browser inspect validation leaves JSON output empty (#176013)",
+    "fix(skills): accept mixed-case --agent ids in skills commands (#180055)",
+    "fix(web-fetch): extract HTML bodies served without a Content-Type (#180064)",
+    "fix(oc-path): resolve and edit quoted Markdown paths (#179821)",
+    "refactor: consolidate single-consumer core surfaces (#180711)",
+    "fix(decisions): allow OpenAI batches up to 400 questions (#180210)",
+    "fix(update): restart Gateway after ordinary post-update Doctor failure (#180668)",
+    "refactor(ui): use async boundaries for memory overview (#180660)",
+    "fix(x): retire stale snapshots and scope command errors (#180656)",
+    "refactor: consolidate single-consumer plugin surfaces (#180713)",
+    "refactor(ui): consume preferences from their existing owner (#180684)",
+    "fix: path JSON refusals leave redirected output empty (#176018)",
+    "fix(oc-path): resolve and edit empty string keys (#175754)",
+    "refactor(ui): route context report errors through Solid boundary (#180718)",
+    "refactor(ui): share prepared avatar and request presentation owners (#180714)",
+    "refactor(ui): read agent rosters from their owner (#180696)",
+    "refactor(ui): unify cron scratchpad request feedback (#180659)",
+    "fix(ui): preserve session loading across catalog scope changes (#180716)",
+    "fix(diagnostics): avoid premature recovery during repeated provider requests (#177557)",
+    "refactor(ui): consolidate agent file panel ownership (#180681)",
+    "refactor(ui): centralize session query normalization (#180689)",
+    "fix(ui): retire bootstrap config reads with the runtime (#180634)",
+    "refactor(ui): use async boundaries for memory search (#180645)",
+    "refactor(ui): consolidate media device discovery ownership (#180675)",
+    "refactor(ui): consolidate shared control and Chat styling (#180685)",
+    "fix(ui): require explicit destinations for GitHub references (#177773)",
+    "fix: unblock the script unused-export gate (#180672)",
+    "fix(ui): show loading on automation retries and scope chat action errors (#180615)",
+    "refactor(ui): own transcript search outside session page state (#180683)",
+    "fix: keep retry controls when lazy recovery views fail (#180646)",
+    "fix(cron): bind forwarded CLI accounts for scheduled runs (#180492)",
+    "refactor: consolidate single-consumer internal surfaces (#180641)",
+    "test(twitch): repair outbound target assertions",
+    "test(ui): select spawned sidebar sessions by identity (#180666)",
+    "fix(ui): release plugin reload after reconnect (#180642)",
+    "fix(ui): route attachment download errors through Solid boundary (#180650)",
+    "test(ui): preserve Logbook shared keyframe proof (#180649)",
+    "fix(agents): reject malformed UTF-8 identity files (#171611)",
+    "fix(tui): forward /reset soft to the gateway instead of hard-resetting the session (#172431)",
+    "fix(twitch): normalize channel targets on outbound sends (#178480)",
+    "fix(auto-reply): keep runtime-specific regular label recovery in dedup key (#174164)",
+    "refactor(ui): use Solid action feedback for Workboard deletion (#180644)",
+    "test(ui): expect the current all-boards heading (#180653)",
+    "chore(ui): refresh control ui locales (#180665)"
   ],
   "feature_items": [
-    "feat: support actions on imported pull requests (#178281)",
-    "feat(gateway): export Control UI document handler stage latency (#179449)",
-    "feat: show original pull requests in guest conversations (#178312)",
-    "feat: prepare existing PR source in a managed workspace (#178233)",
-    "feat(automations): migrate heartbeat jobs through Doctor (#179387)",
-    "feat: inspect existing own pull requests (#178055)",
-    "improve(ui): speed up theme contrast checks (#179117)",
-    "feat(ui): show processes in desktop Details (#178969)",
-    "feat(ui): preview hex colors in chat messages (#179039)",
-    "Add shared enterprise-managed authorization for MCP (#178726)",
-    "feat(clawrouter): add entitled native image generation (#178876)",
-    "feat(clawrouter): add native tts-1 speech provider (#178860)",
-    "feat: show published Claw artwork in the catalog (#178857)",
-    "feat(ui): add responsive session headers and detail panels (#176653)",
-    "feat(ui): expose subagent stop in composer notices (#176582)",
-    "feat(ui): align the desktop discussion fallback (#176579)",
-    "feat(ui): simplify side chat and align panel actions (#176575)",
-    "feat(ui): align link reader controls with session rails (#176571)",
-    "feat(ui): refine browser navigation and recovery (#176564)",
-    "feat(ui): add embedded portal controls and recovery views (#176557)",
-    "feat(ui): fit remote desktops to either viewport axis (#176552)",
-    "feat(ui): refine remote desktop controls and connection states (#176546)",
-    "feat(ui): add terminal panel navigation and staged input (#176540)",
-    "feat(ui): organize mobile Details content and navigation (#176527)",
-    "feat(ui): refine process panels and mobile summary (#176524)",
-    "feat(ui): add mobile Goal details and recovery (#176519)",
-    "feat(ui): add mobile Sharing and Session access views (#176515)",
-    "feat(ui): add mobile People view and native mentions (#176505)",
-    "feat(ui): retain mobile composer editing across controls (#176498)",
-    "feat(ui): show session automations in Details (#176490)"
+    "This patch release contains focused reliability fixes only; it does not introduce new user-facing features. [v2026.10.6]",
+    "feat(commands): accept /fast ultra as ultrafast shorthand (#180509)",
+    "feat(cron): add the scheduled-run execution context (no behavior change) (#178933)",
+    "feat(plugins): let requester commands schedule bounded follow-up turns (#180282)",
+    "feat(plugin-sdk): let plugins recover their native children (#180274)",
+    "feat(slack): create public channels from message actions (#163783)",
+    "feat(plugins): expose requester-scoped model catalogs (#180283)",
+    "feat(plugins): let authenticated commands launch native subagents (#180173)",
+    "feat(codex): support read-only plugin tools (#180030)",
+    "feat(plugins): warn when providers close tool dictionaries (#180041)",
+    "feat(release): fetch compatibility inputs from registry (#179093)",
+    "feat(ui): expand Mermaid diagrams with a click (#180048)",
+    "improve: make official support discoverable across OpenClaw (#178816)",
+    "feat: restrict Gateway-local terminals and automation host execution (#177855)",
+    "feat(release): add fast backport conflict probe (#179104)",
+    "feat(clawrouter): support batch audio transcription (#178920)",
+    "feat(diagnostics): retain compute worker heap and GC metrics (#179872)",
+    "feat: prepare existing PRs from ordinary chats (#178756)",
+    "feat(codex): enforce Gateway tool policy for model callbacks (#174565)",
+    "feat: restrict model automation administration through Gateway policy (#174580)",
+    "feat: update a guest's original pull request (#178318)",
+    "feat: refresh imported pull request source (#178298)",
+    "feat: attach open files to the session draft (#179609)",
+    "feat: open new agent chats instantly and simplify agent selection (#175291)"
   ],
   "fix_items": [
-    "fix: remove underlines from chat attachment actions (#179641)",
-    "perf(gateway): reuse verified Cloudflare Access identity per assertion (#179571)",
-    "perf(models): retain settled catalogs after unchanged discovery (#179651)",
-    "fix(memory-wiki): keep Notes when OKF concepts disappear (#179657)",
-    "fix(ui): refresh prompt recall after returning to the draft (#147371)",
-    "fix(ui): hide empty Environment and steady Details startup (#179560)",
-    "fix(voice-call): resolve per-number TTS SecretRefs (#128319)",
-    "fix(ui): capture stream identity before effect application (#179585)",
-    "fix(ci): remove orphaned heartbeat and fixture exports",
-    "fix(telegram): return approval results to the originating topic (#137438)",
-    "fix(ui): show the ordinary title for connected new conversations (#168876)",
-    "fix(google): bound inline video before decoding (#117413)",
-    "perf(state): reuse resolved database paths (#179276)",
-    "fix(codex): count rejected tool attempts (#168830)",
-    "fix: restore incognito reconciliation test (#179613)",
-    "fix(telegram): deliver custom emoji reaction notifications (#83611)",
-    "fix: surface provider stream errors without waiting for clones (#117397)",
-    "fix: remove unused sandbox facade exports (#179637)",
-    "fix: unblock CLI auth Gateway scenarios (#179619)",
-    "fix(memory): search misses new files after indexing completes (#179524)",
-    "fix: expect current PR provisioning schema (#179634)",
-    "fix(agents): propagate client tool cancellation (#117352)",
-    "fix: keep Code Mode wait helper private (#179615)",
-    "fix: preserve active replies when another input is acknowledged (#168824)",
-    "fix: restore TUI PTY Gateway fixture startup (#179610)",
-    "fix: unblock model worker recovery scenario (#179599)",
-    "fix: restore visible yield Gateway scenarios (#179607)",
-    "fix: restore CLI watchdog fixture startup (#179588)",
-    "fix: restore worktree readiness fixture (#179597)",
-    "fix(plugins): replace dangling dependency junctions instead of refusing plugin migration (#179549)"
+    "fix(agentsapi): cron job stops right after sending to its own delivery target (#177518)",
+    "fix(ui): keep chat actions and draft restores with current panes (#180623)",
+    "fix(matrix): tag only control commands with command source (#179506)",
+    "fix: browser inspect validation leaves JSON output empty (#176013)",
+    "fix(skills): accept mixed-case --agent ids in skills commands (#180055)",
+    "fix(web-fetch): extract HTML bodies served without a Content-Type (#180064)",
+    "fix(oc-path): resolve and edit quoted Markdown paths (#179821)",
+    "fix(decisions): allow OpenAI batches up to 400 questions (#180210)",
+    "fix(update): restart Gateway after ordinary post-update Doctor failure (#180668)",
+    "fix(x): retire stale snapshots and scope command errors (#180656)",
+    "fix: path JSON refusals leave redirected output empty (#176018)",
+    "fix(oc-path): resolve and edit empty string keys (#175754)",
+    "fix(ui): preserve session loading across catalog scope changes (#180716)",
+    "fix(diagnostics): avoid premature recovery during repeated provider requests (#177557)",
+    "fix(ui): retire bootstrap config reads with the runtime (#180634)",
+    "fix(ui): require explicit destinations for GitHub references (#177773)",
+    "fix: unblock the script unused-export gate (#180672)",
+    "fix(ui): show loading on automation retries and scope chat action errors (#180615)",
+    "fix: keep retry controls when lazy recovery views fail (#180646)",
+    "fix(cron): bind forwarded CLI accounts for scheduled runs (#180492)",
+    "fix(ui): release plugin reload after reconnect (#180642)",
+    "fix(ui): route attachment download errors through Solid boundary (#180650)",
+    "fix(agents): reject malformed UTF-8 identity files (#171611)",
+    "fix(tui): forward /reset soft to the gateway instead of hard-resetting the session (#172431)",
+    "fix(twitch): normalize channel targets on outbound sends (#178480)",
+    "fix(auto-reply): keep runtime-specific regular label recovery in dedup key (#174164)",
+    "fix(ui): Enter that confirms IME input runs a search test or opens a folder (#177545)",
+    "fix(ui): show queued automation runs as a status notice, not an error (#177543)",
+    "fix(ui): pairing decisions resend on double click and lack device names (#177571)",
+    "perf(ui): count header subagents without projecting transcript (#180627)"
   ],
   "top_scopes": [
     {
       "scope": "ui",
-      "count": 224
+      "count": 358
     },
     {
       "scope": "fix",
-      "count": 78
+      "count": 76
     },
     {
       "scope": "refactor",
-      "count": 30
-    },
-    {
-      "scope": "gateway",
-      "count": 29
-    },
-    {
-      "scope": "test",
-      "count": 29
+      "count": 44
     },
     {
       "scope": "plugins",
-      "count": 28
-    },
-    {
-      "scope": "sessions",
-      "count": 21
+      "count": 23
     },
     {
       "scope": "doctor",
-      "count": 19
+      "count": 21
     },
     {
-      "scope": "update",
-      "count": 19
-    },
-    {
-      "scope": "agents",
-      "count": 18
-    },
-    {
-      "scope": "runtime",
-      "count": 12
-    },
-    {
-      "scope": "ci",
-      "count": 10
-    },
-    {
-      "scope": "memory",
-      "count": 9
-    },
-    {
-      "scope": "core,plugins,ui",
-      "count": 9
+      "scope": "gateway",
+      "count": 16
     },
     {
       "scope": "release",
-      "count": 9
+      "count": 16
+    },
+    {
+      "scope": "update",
+      "count": 13
+    },
+    {
+      "scope": "agents",
+      "count": 13
+    },
+    {
+      "scope": "test",
+      "count": 11
+    },
+    {
+      "scope": "feat",
+      "count": 7
+    },
+    {
+      "scope": "sessions",
+      "count": 6
+    },
+    {
+      "scope": "chore",
+      "count": 6
+    },
+    {
+      "scope": "codex",
+      "count": 6
+    },
+    {
+      "scope": "core",
+      "count": 5
     }
   ]
 }
