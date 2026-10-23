@@ -1,198 +1,176 @@
 {
-  "generated_at": "2026-10-23T00:08:50.515419+08:00",
+  "generated_at": "2026-10-23T23:59:12.755041+08:00",
   "window": {
-    "start_local": "2026-10-22T00:08:50.515419+08:00",
-    "end_local": "2026-10-23T00:08:50.515419+08:00",
-    "start_utc": "2026-10-21T16:08:50Z",
-    "end_utc": "2026-10-22T16:08:50Z"
+    "start_local": "2026-10-22T23:59:12.755041+08:00",
+    "end_local": "2026-10-23T23:59:12.755041+08:00",
+    "start_utc": "2026-10-22T15:59:12Z",
+    "end_utc": "2026-10-23T15:59:12Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 392755,
-    "forks": 82554,
-    "open_issues": 9374,
-    "pushed_at": "2026-10-22T16:08:44Z"
+    "stars": 392852,
+    "forks": 82570,
+    "open_issues": 8883,
+    "pushed_at": "2026-10-23T15:59:00Z"
   },
-  "releases_in_window": [
-    {
-      "tag_name": "v2026.10.6",
-      "published_at": "2026-10-22T12:53:10Z",
-      "name": "openclaw 2026.10.6",
-      "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.6"
-    }
-  ],
-  "commit_count": 803,
+  "releases_in_window": [],
+  "commit_count": 716,
   "commit_headlines": [
-    "refactor(ui): use Solid cancellation feedback for sign-in wizards (#180726)",
-    "fix(agentsapi): cron job stops right after sending to its own delivery target (#177518)",
-    "refactor(ui): share ordinary link activation across navigation (#180691)",
-    "fix(ui): keep chat actions and draft restores with current panes (#180623)",
-    "refactor(ui): separate chat grouping and recovery owners (#180724)",
-    "fix(matrix): tag only control commands with command source (#179506)",
-    "fix: browser inspect validation leaves JSON output empty (#176013)",
-    "fix(skills): accept mixed-case --agent ids in skills commands (#180055)",
-    "fix(web-fetch): extract HTML bodies served without a Content-Type (#180064)",
-    "fix(oc-path): resolve and edit quoted Markdown paths (#179821)",
-    "refactor: consolidate single-consumer core surfaces (#180711)",
-    "fix(decisions): allow OpenAI batches up to 400 questions (#180210)",
-    "fix(update): restart Gateway after ordinary post-update Doctor failure (#180668)",
-    "refactor(ui): use async boundaries for memory overview (#180660)",
-    "fix(x): retire stale snapshots and scope command errors (#180656)",
-    "refactor: consolidate single-consumer plugin surfaces (#180713)",
-    "refactor(ui): consume preferences from their existing owner (#180684)",
-    "fix: path JSON refusals leave redirected output empty (#176018)",
-    "fix(oc-path): resolve and edit empty string keys (#175754)",
-    "refactor(ui): route context report errors through Solid boundary (#180718)",
-    "refactor(ui): share prepared avatar and request presentation owners (#180714)",
-    "refactor(ui): read agent rosters from their owner (#180696)",
-    "refactor(ui): unify cron scratchpad request feedback (#180659)",
-    "fix(ui): preserve session loading across catalog scope changes (#180716)",
-    "fix(diagnostics): avoid premature recovery during repeated provider requests (#177557)",
-    "refactor(ui): consolidate agent file panel ownership (#180681)",
-    "refactor(ui): centralize session query normalization (#180689)",
-    "fix(ui): retire bootstrap config reads with the runtime (#180634)",
-    "refactor(ui): use async boundaries for memory search (#180645)",
-    "refactor(ui): consolidate media device discovery ownership (#180675)",
-    "refactor(ui): consolidate shared control and Chat styling (#180685)",
-    "fix(ui): require explicit destinations for GitHub references (#177773)",
-    "fix: unblock the script unused-export gate (#180672)",
-    "fix(ui): show loading on automation retries and scope chat action errors (#180615)",
-    "refactor(ui): own transcript search outside session page state (#180683)",
-    "fix: keep retry controls when lazy recovery views fail (#180646)",
-    "fix(cron): bind forwarded CLI accounts for scheduled runs (#180492)",
-    "refactor: consolidate single-consumer internal surfaces (#180641)",
-    "test(twitch): repair outbound target assertions",
-    "test(ui): select spawned sidebar sessions by identity (#180666)",
-    "fix(ui): release plugin reload after reconnect (#180642)",
-    "fix(ui): route attachment download errors through Solid boundary (#180650)",
-    "test(ui): preserve Logbook shared keyframe proof (#180649)",
-    "fix(agents): reject malformed UTF-8 identity files (#171611)",
-    "fix(tui): forward /reset soft to the gateway instead of hard-resetting the session (#172431)",
-    "fix(twitch): normalize channel targets on outbound sends (#178480)",
-    "fix(auto-reply): keep runtime-specific regular label recovery in dedup key (#174164)",
-    "refactor(ui): use Solid action feedback for Workboard deletion (#180644)",
-    "test(ui): expect the current all-boards heading (#180653)",
-    "chore(ui): refresh control ui locales (#180665)"
+    "fix(update): avoid staging Git targets that require newer Node (#181715)",
+    "refactor: consolidate ranked request and UI clone owners (#181709)",
+    "fix(ui): remove unused thinking level type re-export (#181733)",
+    "refactor: narrow private runtime arguments and results (#181714)",
+    "perf(ui): load sidebar Pages and Roster on demand (#181497)",
+    "chore: align remaining update recovery expectations (#181717)",
+    "fix: recover Node from quoted Windows PATH entries (#181678)",
+    "fix: wait for managed child close before completion (#181720)",
+    "refactor: localize single-consumer implementation frames (#181702)",
+    "perf(ui): rebalance E2E shards with recent CI timings (#181712)",
+    "fix(memory): memory tools fail for owner sessions started by sessions_send and cross-agent subagents (#181359)",
+    "fix: hide inline image controls on mobile (#180734)",
+    "fix: improve Inbox badge contrast across themes (#181689)",
+    "fix: retain subagent wake after silent settle (#181699)",
+    "fix: wait for Gateway readiness in plugin tests (#181700)",
+    "perf(ui): reuse compiled assets in update lifecycle tests (#181477)",
+    "test(update): align Windows triage expectations with recorded recovery observation (#181698)",
+    "fix(telegram): keep personal topic titles in sync after agent replies (#166011)",
+    "fix(update): recover offline state after an update executor dies (#181695)",
+    "refactor: localize single-consumer runtime details (#181691)",
+    "fix: recognize documented performance scripts (#181693)",
+    "fix(doctor): keep disabled heartbeats disabled during migration (#181659)",
+    "refactor: remove unused private helper inputs and results (#181681)",
+    "fix(reef): share delivery admission and ordering (#181654)",
+    "refactor: keep Slack reconnect policy private (#181690)",
+    "improve(ui): download about 3.3% less JavaScript over gzip (#181047)",
+    "fix(database): prevent stuck chats after connection loss (#181661)",
+    "fix: restore iOS screenshot evidence packaging (#181637)",
+    "refactor: inline single-consumer private frames (#181671)",
+    "perf(ui): defer camera code and Details copy to their consumers (#181626)",
+    "refactor: narrow private Codex Matrix and setup contracts (#181648)",
+    "fix(ui): remove unused sidebar route type alias (#181667)",
+    "fix: record desktop setup state before timeout cleanup (#181650)",
+    "chore(browser): update Lightpanda deployment to 1.0.2 (#181666)",
+    "refactor: fold single-consumer frames into their owners (#181653)",
+    "test: complete custodian overlay fixture (#181656)",
+    "test: preserve cron restart source identity (#181647)",
+    "fix: avoid false failures during node session discovery (#171870)",
+    "fix(telegram): route private topic reactions to topic sessions (#175946)",
+    "docs: propose personal identity for native local connections (#167429)",
+    "fix(test): drop registration for deleted steering test (#181639)",
+    "fix: skip unavailable video links during keyboard navigation (#180763)",
+    "perf(test): overlap desktop and serial real-Gateway UI proof (#181558)",
+    "perf(gateway): reuse unchanged idle health summaries (#181625)",
+    "fix(agents): collect complete swarm child answers and explain one-shot collector follow-ups (#181622)",
+    "fix(qa): unblock Linux Code Mode matrix Gateway startup (#181621)",
+    "fix: retire deleted test from worker registry (#181644)",
+    "refactor: keep single-consumer implementations with their owners (#181628)",
+    "refactor: inline single-consumer implementation frames (#181633)",
+    "refactor: consolidate transcript query and local clone owners (#181629)"
   ],
   "feature_items": [
-    "This patch release contains focused reliability fixes only; it does not introduce new user-facing features. [v2026.10.6]",
-    "feat(commands): accept /fast ultra as ultrafast shorthand (#180509)",
-    "feat(cron): add the scheduled-run execution context (no behavior change) (#178933)",
-    "feat(plugins): let requester commands schedule bounded follow-up turns (#180282)",
-    "feat(plugin-sdk): let plugins recover their native children (#180274)",
-    "feat(slack): create public channels from message actions (#163783)",
-    "feat(plugins): expose requester-scoped model catalogs (#180283)",
-    "feat(plugins): let authenticated commands launch native subagents (#180173)",
-    "feat(codex): support read-only plugin tools (#180030)",
-    "feat(plugins): warn when providers close tool dictionaries (#180041)",
-    "feat(release): fetch compatibility inputs from registry (#179093)",
-    "feat(ui): expand Mermaid diagrams with a click (#180048)",
-    "improve: make official support discoverable across OpenClaw (#178816)",
-    "feat: restrict Gateway-local terminals and automation host execution (#177855)",
-    "feat(release): add fast backport conflict probe (#179104)",
-    "feat(clawrouter): support batch audio transcription (#178920)",
-    "feat(diagnostics): retain compute worker heap and GC metrics (#179872)",
-    "feat: prepare existing PRs from ordinary chats (#178756)",
-    "feat(codex): enforce Gateway tool policy for model callbacks (#174565)",
-    "feat: restrict model automation administration through Gateway policy (#174580)",
-    "feat: update a guest's original pull request (#178318)",
-    "feat: refresh imported pull request source (#178298)",
-    "feat: attach open files to the session draft (#179609)",
-    "feat: open new agent chats instantly and simplify agent selection (#175291)"
+    "feat(release): validate Windows-node releases and main (#119762)",
+    "feat: choose which tools are deferred behind Tool Search (#170071)",
+    "feat(plugins): keep core-bundled command schedules across restarts on the same build (#181331)",
+    "feat(plugins): enforce narrow-only native subagent profiles (#181292)",
+    "feat: notify Windows monitoring after Gateway package publication (#173567)",
+    "feat(plugins): support pre-storage channel ingress sanitization (#181039)",
+    "feat(vercel): pick the onboarding default from catalog recommendations (#180905)",
+    "feat: drop files into new sessions from the command palette (#178842)",
+    "feat(plugins): keep requester command schedules across Gateway restarts (#180844)",
+    "feat(cron): pause automations whose parent conversation is gone (#178965)"
   ],
   "fix_items": [
-    "fix(agentsapi): cron job stops right after sending to its own delivery target (#177518)",
-    "fix(ui): keep chat actions and draft restores with current panes (#180623)",
-    "fix(matrix): tag only control commands with command source (#179506)",
-    "fix: browser inspect validation leaves JSON output empty (#176013)",
-    "fix(skills): accept mixed-case --agent ids in skills commands (#180055)",
-    "fix(web-fetch): extract HTML bodies served without a Content-Type (#180064)",
-    "fix(oc-path): resolve and edit quoted Markdown paths (#179821)",
-    "fix(decisions): allow OpenAI batches up to 400 questions (#180210)",
-    "fix(update): restart Gateway after ordinary post-update Doctor failure (#180668)",
-    "fix(x): retire stale snapshots and scope command errors (#180656)",
-    "fix: path JSON refusals leave redirected output empty (#176018)",
-    "fix(oc-path): resolve and edit empty string keys (#175754)",
-    "fix(ui): preserve session loading across catalog scope changes (#180716)",
-    "fix(diagnostics): avoid premature recovery during repeated provider requests (#177557)",
-    "fix(ui): retire bootstrap config reads with the runtime (#180634)",
-    "fix(ui): require explicit destinations for GitHub references (#177773)",
-    "fix: unblock the script unused-export gate (#180672)",
-    "fix(ui): show loading on automation retries and scope chat action errors (#180615)",
-    "fix: keep retry controls when lazy recovery views fail (#180646)",
-    "fix(cron): bind forwarded CLI accounts for scheduled runs (#180492)",
-    "fix(ui): release plugin reload after reconnect (#180642)",
-    "fix(ui): route attachment download errors through Solid boundary (#180650)",
-    "fix(agents): reject malformed UTF-8 identity files (#171611)",
-    "fix(tui): forward /reset soft to the gateway instead of hard-resetting the session (#172431)",
-    "fix(twitch): normalize channel targets on outbound sends (#178480)",
-    "fix(auto-reply): keep runtime-specific regular label recovery in dedup key (#174164)",
-    "fix(ui): Enter that confirms IME input runs a search test or opens a folder (#177545)",
-    "fix(ui): show queued automation runs as a status notice, not an error (#177543)",
-    "fix(ui): pairing decisions resend on double click and lack device names (#177571)",
-    "perf(ui): count header subagents without projecting transcript (#180627)"
+    "fix(update): avoid staging Git targets that require newer Node (#181715)",
+    "fix(ui): remove unused thinking level type re-export (#181733)",
+    "perf(ui): load sidebar Pages and Roster on demand (#181497)",
+    "fix: recover Node from quoted Windows PATH entries (#181678)",
+    "fix: wait for managed child close before completion (#181720)",
+    "perf(ui): rebalance E2E shards with recent CI timings (#181712)",
+    "fix(memory): memory tools fail for owner sessions started by sessions_send and cross-agent subagents (#181359)",
+    "fix: hide inline image controls on mobile (#180734)",
+    "fix: improve Inbox badge contrast across themes (#181689)",
+    "fix: retain subagent wake after silent settle (#181699)",
+    "fix: wait for Gateway readiness in plugin tests (#181700)",
+    "perf(ui): reuse compiled assets in update lifecycle tests (#181477)",
+    "fix(telegram): keep personal topic titles in sync after agent replies (#166011)",
+    "fix(update): recover offline state after an update executor dies (#181695)",
+    "fix: recognize documented performance scripts (#181693)",
+    "fix(doctor): keep disabled heartbeats disabled during migration (#181659)",
+    "fix(reef): share delivery admission and ordering (#181654)",
+    "fix(database): prevent stuck chats after connection loss (#181661)",
+    "fix: restore iOS screenshot evidence packaging (#181637)",
+    "perf(ui): defer camera code and Details copy to their consumers (#181626)",
+    "fix(ui): remove unused sidebar route type alias (#181667)",
+    "fix: record desktop setup state before timeout cleanup (#181650)",
+    "fix: avoid false failures during node session discovery (#171870)",
+    "fix(telegram): route private topic reactions to topic sessions (#175946)",
+    "fix(test): drop registration for deleted steering test (#181639)",
+    "fix: skip unavailable video links during keyboard navigation (#180763)",
+    "perf(test): overlap desktop and serial real-Gateway UI proof (#181558)",
+    "perf(gateway): reuse unchanged idle health summaries (#181625)",
+    "fix(agents): collect complete swarm child answers and explain one-shot collector follow-ups (#181622)",
+    "fix(qa): unblock Linux Code Mode matrix Gateway startup (#181621)"
   ],
   "top_scopes": [
     {
       "scope": "ui",
-      "count": 358
+      "count": 200
     },
     {
       "scope": "fix",
-      "count": 76
+      "count": 111
     },
     {
       "scope": "refactor",
-      "count": 44
+      "count": 78
     },
     {
-      "scope": "plugins",
-      "count": 23
-    },
-    {
-      "scope": "doctor",
-      "count": 21
+      "scope": "agents",
+      "count": 26
     },
     {
       "scope": "gateway",
+      "count": 23
+    },
+    {
+      "scope": "plugins",
+      "count": 22
+    },
+    {
+      "scope": "update",
       "count": 16
     },
     {
       "scope": "release",
-      "count": 16
+      "count": 12
     },
     {
-      "scope": "update",
-      "count": 13
-    },
-    {
-      "scope": "agents",
-      "count": 13
+      "scope": "cron",
+      "count": 12
     },
     {
       "scope": "test",
-      "count": 11
+      "count": 10
     },
     {
-      "scope": "feat",
-      "count": 7
-    },
-    {
-      "scope": "sessions",
-      "count": 6
+      "scope": "cli",
+      "count": 8
     },
     {
       "scope": "chore",
-      "count": 6
+      "count": 7
+    },
+    {
+      "scope": "doctor",
+      "count": 7
     },
     {
       "scope": "codex",
-      "count": 6
+      "count": 7
     },
     {
-      "scope": "core",
-      "count": 5
+      "scope": "improve(ui)",
+      "count": 6
     }
   ]
 }

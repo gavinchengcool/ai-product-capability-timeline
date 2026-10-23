@@ -1,99 +1,94 @@
 # OpenClaw Weekly Update
 
-生成时间：2026-10-23T00:08:50.515419+08:00
+生成时间：2026-10-23T23:59:12.755041+08:00
 
 ## Window
 
-- Start: 2026-10-22T00:08:50.515419+08:00
-- End: 2026-10-23T00:08:50.515419+08:00
+- Start: 2026-10-22T23:59:12.755041+08:00
+- End: 2026-10-23T23:59:12.755041+08:00
 - Repo: `openclaw/openclaw`
 
 ## At A Glance
 
-- Commits in window: 803
-- Releases in window: 1
-- Stable releases in window: 1
+- Commits in window: 716
+- Releases in window: 0
+- Stable releases in window: 0
 - Beta releases in window: 0
-- Repo stars at scan time: 392755
-- Repo forks at scan time: 82554
+- Repo stars at scan time: 392852
+- Repo forks at scan time: 82570
 
 ## New Capability Signals
 
-- This patch release contains focused reliability fixes only; it does not introduce new user-facing features. [v2026.10.6]
-- feat(commands): accept /fast ultra as ultrafast shorthand (#180509)
-- feat(cron): add the scheduled-run execution context (no behavior change) (#178933)
-- feat(plugins): let requester commands schedule bounded follow-up turns (#180282)
-- feat(plugin-sdk): let plugins recover their native children (#180274)
-- feat(slack): create public channels from message actions (#163783)
-- feat(plugins): expose requester-scoped model catalogs (#180283)
-- feat(plugins): let authenticated commands launch native subagents (#180173)
-- feat(codex): support read-only plugin tools (#180030)
-- feat(plugins): warn when providers close tool dictionaries (#180041)
-- feat(release): fetch compatibility inputs from registry (#179093)
-- feat(ui): expand Mermaid diagrams with a click (#180048)
-- improve: make official support discoverable across OpenClaw (#178816)
-- feat: restrict Gateway-local terminals and automation host execution (#177855)
-- feat(release): add fast backport conflict probe (#179104)
+- feat(release): validate Windows-node releases and main (#119762)
+- feat: choose which tools are deferred behind Tool Search (#170071)
+- feat(plugins): keep core-bundled command schedules across restarts on the same build (#181331)
+- feat(plugins): enforce narrow-only native subagent profiles (#181292)
+- feat: notify Windows monitoring after Gateway package publication (#173567)
+- feat(plugins): support pre-storage channel ingress sanitization (#181039)
+- feat(vercel): pick the onboarding default from catalog recommendations (#180905)
+- feat: drop files into new sessions from the command palette (#178842)
+- feat(plugins): keep requester command schedules across Gateway restarts (#180844)
+- feat(cron): pause automations whose parent conversation is gone (#178965)
 
 ## Important Fixes And Hardening
 
-- fix(agentsapi): cron job stops right after sending to its own delivery target (#177518)
-- fix(ui): keep chat actions and draft restores with current panes (#180623)
-- fix(matrix): tag only control commands with command source (#179506)
-- fix: browser inspect validation leaves JSON output empty (#176013)
-- fix(skills): accept mixed-case --agent ids in skills commands (#180055)
-- fix(web-fetch): extract HTML bodies served without a Content-Type (#180064)
-- fix(oc-path): resolve and edit quoted Markdown paths (#179821)
-- fix(decisions): allow OpenAI batches up to 400 questions (#180210)
-- fix(update): restart Gateway after ordinary post-update Doctor failure (#180668)
-- fix(x): retire stale snapshots and scope command errors (#180656)
-- fix: path JSON refusals leave redirected output empty (#176018)
-- fix(oc-path): resolve and edit empty string keys (#175754)
-- fix(ui): preserve session loading across catalog scope changes (#180716)
-- fix(diagnostics): avoid premature recovery during repeated provider requests (#177557)
-- fix(ui): retire bootstrap config reads with the runtime (#180634)
+- fix(update): avoid staging Git targets that require newer Node (#181715)
+- fix(ui): remove unused thinking level type re-export (#181733)
+- perf(ui): load sidebar Pages and Roster on demand (#181497)
+- fix: recover Node from quoted Windows PATH entries (#181678)
+- fix: wait for managed child close before completion (#181720)
+- perf(ui): rebalance E2E shards with recent CI timings (#181712)
+- fix(memory): memory tools fail for owner sessions started by sessions_send and cross-agent subagents (#181359)
+- fix: hide inline image controls on mobile (#180734)
+- fix: improve Inbox badge contrast across themes (#181689)
+- fix: retain subagent wake after silent settle (#181699)
+- fix: wait for Gateway readiness in plugin tests (#181700)
+- perf(ui): reuse compiled assets in update lifecycle tests (#181477)
+- fix(telegram): keep personal topic titles in sync after agent replies (#166011)
+- fix(update): recover offline state after an update executor dies (#181695)
+- fix: recognize documented performance scripts (#181693)
 
 ## Releases This Week
 
-- `v2026.10.6` | stable | 2026-10-22T12:53:10Z | openclaw 2026.10.6
+- No GitHub releases were published in this window.
 
 ## Most Active Change Scopes
 
-- `ui`: 358
-- `fix`: 76
-- `refactor`: 44
-- `plugins`: 23
-- `doctor`: 21
-- `gateway`: 16
-- `release`: 16
-- `update`: 13
-- `agents`: 13
-- `test`: 11
-- `feat`: 7
-- `sessions`: 6
+- `ui`: 200
+- `fix`: 111
+- `refactor`: 78
+- `agents`: 26
+- `gateway`: 23
+- `plugins`: 22
+- `update`: 16
+- `release`: 12
+- `cron`: 12
+- `test`: 10
+- `cli`: 8
+- `chore`: 7
 
 ## Recent Commit Headlines
 
-- 2026-10-22T16:03:08Z | refactor(ui): use Solid cancellation feedback for sign-in wizards (#180726)
-- 2026-10-22T16:01:58Z | fix(agentsapi): cron job stops right after sending to its own delivery target (#177518)
-- 2026-10-22T16:00:14Z | refactor(ui): share ordinary link activation across navigation (#180691)
-- 2026-10-22T15:59:06Z | fix(ui): keep chat actions and draft restores with current panes (#180623)
-- 2026-10-22T15:57:30Z | refactor(ui): separate chat grouping and recovery owners (#180724)
-- 2026-10-22T15:56:25Z | fix(matrix): tag only control commands with command source (#179506)
-- 2026-10-22T15:53:06Z | fix: browser inspect validation leaves JSON output empty (#176013)
-- 2026-10-22T15:52:36Z | fix(skills): accept mixed-case --agent ids in skills commands (#180055)
-- 2026-10-22T15:52:04Z | fix(web-fetch): extract HTML bodies served without a Content-Type (#180064)
-- 2026-10-22T15:50:55Z | fix(oc-path): resolve and edit quoted Markdown paths (#179821)
-- 2026-10-22T15:50:28Z | refactor: consolidate single-consumer core surfaces (#180711)
-- 2026-10-22T15:45:57Z | fix(decisions): allow OpenAI batches up to 400 questions (#180210)
-- 2026-10-22T15:45:32Z | fix(update): restart Gateway after ordinary post-update Doctor failure (#180668)
-- 2026-10-22T15:41:25Z | refactor(ui): use async boundaries for memory overview (#180660)
-- 2026-10-22T15:40:00Z | fix(x): retire stale snapshots and scope command errors (#180656)
-- 2026-10-22T15:39:40Z | refactor: consolidate single-consumer plugin surfaces (#180713)
-- 2026-10-22T15:39:27Z | refactor(ui): consume preferences from their existing owner (#180684)
-- 2026-10-22T15:36:35Z | fix: path JSON refusals leave redirected output empty (#176018)
-- 2026-10-22T15:35:43Z | fix(oc-path): resolve and edit empty string keys (#175754)
-- 2026-10-22T15:35:18Z | refactor(ui): route context report errors through Solid boundary (#180718)
+- 2026-10-23T15:56:11Z | fix(update): avoid staging Git targets that require newer Node (#181715)
+- 2026-10-23T15:54:28Z | refactor: consolidate ranked request and UI clone owners (#181709)
+- 2026-10-23T15:53:25Z | fix(ui): remove unused thinking level type re-export (#181733)
+- 2026-10-23T15:44:47Z | refactor: narrow private runtime arguments and results (#181714)
+- 2026-10-23T15:44:41Z | perf(ui): load sidebar Pages and Roster on demand (#181497)
+- 2026-10-23T15:36:30Z | chore: align remaining update recovery expectations (#181717)
+- 2026-10-23T15:32:55Z | fix: recover Node from quoted Windows PATH entries (#181678)
+- 2026-10-23T15:31:38Z | fix: wait for managed child close before completion (#181720)
+- 2026-10-23T15:30:07Z | refactor: localize single-consumer implementation frames (#181702)
+- 2026-10-23T15:25:15Z | perf(ui): rebalance E2E shards with recent CI timings (#181712)
+- 2026-10-23T15:19:06Z | fix(memory): memory tools fail for owner sessions started by sessions_send and cross-agent subagents (#181359)
+- 2026-10-23T15:12:56Z | fix: hide inline image controls on mobile (#180734)
+- 2026-10-23T15:07:44Z | fix: improve Inbox badge contrast across themes (#181689)
+- 2026-10-23T15:07:34Z | fix: retain subagent wake after silent settle (#181699)
+- 2026-10-23T15:06:17Z | fix: wait for Gateway readiness in plugin tests (#181700)
+- 2026-10-23T14:59:54Z | perf(ui): reuse compiled assets in update lifecycle tests (#181477)
+- 2026-10-23T14:55:51Z | test(update): align Windows triage expectations with recorded recovery observation (#181698)
+- 2026-10-23T14:55:18Z | fix(telegram): keep personal topic titles in sync after agent replies (#166011)
+- 2026-10-23T14:54:08Z | fix(update): recover offline state after an update executor dies (#181695)
+- 2026-10-23T14:44:40Z | refactor: localize single-consumer runtime details (#181691)
 
 ## Sources
 

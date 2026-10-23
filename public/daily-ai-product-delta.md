@@ -1,6 +1,6 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-10-23T00:09:11+08:00
+- Generated at: 2026-10-23T23:59:32+08:00
 - Requested window: 2026-10-22 to 2026-10-23
 - Coverage: 6 products
 - Live 24h feeds: 1
@@ -11,30 +11,30 @@
 
 - Freshness: live_24h
 - Window: 2026-10-22 to 2026-10-23
-- Generated at: 2026-10-23T00:08:50.515419+08:00
+- Generated at: 2026-10-23T23:59:12.755041+08:00
 - 窗口: 2026-10-22 至 2026-10-23
-- GitHub 增量: 803 commits / 1 releases
-- 最近 push: 2026-10-22
+- GitHub 增量: 716 commits / 0 releases
+- 最近 push: 2026-10-23
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - This patch release contains focused reliability fixes only; it does not introduce new user-facing features. [v2026.10.6]
-  - feat(commands): accept /fast ultra as ultrafast shorthand (#180509)
-  - feat(cron): add the scheduled-run execution context (no behavior change) (#178933)
-  - feat(plugins): let requester commands schedule bounded follow-up turns (#180282)
-  - feat(plugin-sdk): let plugins recover their native children (#180274)
-  - feat(slack): create public channels from message actions (#163783)
-  - feat(plugins): expose requester-scoped model catalogs (#180283)
-  - feat(plugins): let authenticated commands launch native subagents (#180173)
+  - feat(release): validate Windows-node releases and main (#119762)
+  - feat: choose which tools are deferred behind Tool Search (#170071)
+  - feat(plugins): keep core-bundled command schedules across restarts on the same build (#181331)
+  - feat(plugins): enforce narrow-only native subagent profiles (#181292)
+  - feat: notify Windows monitoring after Gateway package publication (#173567)
+  - feat(plugins): support pre-storage channel ingress sanitization (#181039)
+  - feat(vercel): pick the onboarding default from catalog recommendations (#180905)
+  - feat: drop files into new sessions from the command palette (#178842)
 - Fixes and constraints:
-  - fix(agentsapi): cron job stops right after sending to its own delivery target (#177518)
-  - fix(ui): keep chat actions and draft restores with current panes (#180623)
-  - fix(matrix): tag only control commands with command source (#179506)
-  - fix: browser inspect validation leaves JSON output empty (#176013)
-  - fix(skills): accept mixed-case --agent ids in skills commands (#180055)
-  - fix(web-fetch): extract HTML bodies served without a Content-Type (#180064)
-  - fix(oc-path): resolve and edit quoted Markdown paths (#179821)
-  - fix(decisions): allow OpenAI batches up to 400 questions (#180210)
+  - fix(update): avoid staging Git targets that require newer Node (#181715)
+  - fix(ui): remove unused thinking level type re-export (#181733)
+  - perf(ui): load sidebar Pages and Roster on demand (#181497)
+  - fix: recover Node from quoted Windows PATH entries (#181678)
+  - fix: wait for managed child close before completion (#181720)
+  - perf(ui): rebalance E2E shards with recent CI timings (#181712)
+  - fix(memory): memory tools fail for owner sessions started by sessions_send and cross-agent subagents (#181359)
+  - fix: hide inline image controls on mobile (#180734)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

@@ -1,99 +1,91 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-10-23T00:08:50.515419+08:00",
+  "generatedAt": "2026-10-23T23:59:12.755041+08:00",
   "window": {
-    "start_local": "2026-10-22T00:08:50.515419+08:00",
-    "end_local": "2026-10-23T00:08:50.515419+08:00",
-    "start_utc": "2026-10-21T16:08:50Z",
-    "end_utc": "2026-10-22T16:08:50Z"
+    "start_local": "2026-10-22T23:59:12.755041+08:00",
+    "end_local": "2026-10-23T23:59:12.755041+08:00",
+    "start_utc": "2026-10-22T15:59:12Z",
+    "end_utc": "2026-10-23T15:59:12Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 392755,
-    "forks": 82554,
-    "open_issues": 9374,
-    "pushed_at": "2026-10-22T16:08:44Z"
+    "stars": 392852,
+    "forks": 82570,
+    "open_issues": 8883,
+    "pushed_at": "2026-10-23T15:59:00Z"
   },
   "summary": {
-    "commitCount": 803,
-    "releaseCount": 1,
-    "stableReleaseCount": 1,
+    "commitCount": 716,
+    "releaseCount": 0,
+    "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 392755,
-    "forks": 82554,
-    "openIssues": 9374
+    "stars": 392852,
+    "forks": 82570,
+    "openIssues": 8883
   },
-  "releases": [
-    {
-      "tag_name": "v2026.10.6",
-      "published_at": "2026-10-22T12:53:10Z",
-      "name": "openclaw 2026.10.6",
-      "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.6"
-    }
-  ],
+  "releases": [],
   "featureItems": [
-    "This patch release contains focused reliability fixes only; it does not introduce new user-facing features. [v2026.10.6]",
-    "feat(commands): accept /fast ultra as ultrafast shorthand (#180509)",
-    "feat(cron): add the scheduled-run execution context (no behavior change) (#178933)",
-    "feat(plugins): let requester commands schedule bounded follow-up turns (#180282)",
-    "feat(plugin-sdk): let plugins recover their native children (#180274)",
-    "feat(slack): create public channels from message actions (#163783)",
-    "feat(plugins): expose requester-scoped model catalogs (#180283)",
-    "feat(plugins): let authenticated commands launch native subagents (#180173)"
+    "feat(release): validate Windows-node releases and main (#119762)",
+    "feat: choose which tools are deferred behind Tool Search (#170071)",
+    "feat(plugins): keep core-bundled command schedules across restarts on the same build (#181331)",
+    "feat(plugins): enforce narrow-only native subagent profiles (#181292)",
+    "feat: notify Windows monitoring after Gateway package publication (#173567)",
+    "feat(plugins): support pre-storage channel ingress sanitization (#181039)",
+    "feat(vercel): pick the onboarding default from catalog recommendations (#180905)",
+    "feat: drop files into new sessions from the command palette (#178842)"
   ],
   "fixItems": [
-    "fix(agentsapi): cron job stops right after sending to its own delivery target (#177518)",
-    "fix(ui): keep chat actions and draft restores with current panes (#180623)",
-    "fix(matrix): tag only control commands with command source (#179506)",
-    "fix: browser inspect validation leaves JSON output empty (#176013)",
-    "fix(skills): accept mixed-case --agent ids in skills commands (#180055)",
-    "fix(web-fetch): extract HTML bodies served without a Content-Type (#180064)",
-    "fix(oc-path): resolve and edit quoted Markdown paths (#179821)",
-    "fix(decisions): allow OpenAI batches up to 400 questions (#180210)"
+    "fix(update): avoid staging Git targets that require newer Node (#181715)",
+    "fix(ui): remove unused thinking level type re-export (#181733)",
+    "perf(ui): load sidebar Pages and Roster on demand (#181497)",
+    "fix: recover Node from quoted Windows PATH entries (#181678)",
+    "fix: wait for managed child close before completion (#181720)",
+    "perf(ui): rebalance E2E shards with recent CI timings (#181712)",
+    "fix(memory): memory tools fail for owner sessions started by sessions_send and cross-agent subagents (#181359)",
+    "fix: hide inline image controls on mobile (#180734)"
   ],
   "topScopes": [
     {
       "scope": "ui",
-      "count": 358
+      "count": 200
     },
     {
       "scope": "fix",
-      "count": 76
+      "count": 111
     },
     {
       "scope": "refactor",
-      "count": 44
+      "count": 78
     },
     {
-      "scope": "plugins",
-      "count": 23
-    },
-    {
-      "scope": "doctor",
-      "count": 21
+      "scope": "agents",
+      "count": 26
     },
     {
       "scope": "gateway",
+      "count": 23
+    },
+    {
+      "scope": "plugins",
+      "count": 22
+    },
+    {
+      "scope": "update",
       "count": 16
     },
     {
       "scope": "release",
-      "count": 16
-    },
-    {
-      "scope": "update",
-      "count": 13
+      "count": 12
     }
   ],
   "headlineCommits": [
-    "refactor(ui): use Solid cancellation feedback for sign-in wizards (#180726)",
-    "fix(agentsapi): cron job stops right after sending to its own delivery target (#177518)",
-    "refactor(ui): share ordinary link activation across navigation (#180691)",
-    "fix(ui): keep chat actions and draft restores with current panes (#180623)",
-    "refactor(ui): separate chat grouping and recovery owners (#180724)",
-    "fix(matrix): tag only control commands with command source (#179506)",
-    "fix: browser inspect validation leaves JSON output empty (#176013)",
-    "fix(skills): accept mixed-case --agent ids in skills commands (#180055)"
+    "fix(update): avoid staging Git targets that require newer Node (#181715)",
+    "refactor: consolidate ranked request and UI clone owners (#181709)",
+    "fix(ui): remove unused thinking level type re-export (#181733)",
+    "refactor: narrow private runtime arguments and results (#181714)",
+    "perf(ui): load sidebar Pages and Roster on demand (#181497)",
+    "chore: align remaining update recovery expectations (#181717)",
+    "fix: recover Node from quoted Windows PATH entries (#181678)",
+    "fix: wait for managed child close before completion (#181720)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
