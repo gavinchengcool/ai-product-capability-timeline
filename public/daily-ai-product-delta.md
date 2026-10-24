@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-10-23T23:59:32+08:00
-- Requested window: 2026-10-22 to 2026-10-23
+- Generated at: 2026-10-24T22:56:56+08:00
+- Requested window: 2026-10-23 to 2026-10-24
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-10-22 to 2026-10-23
-- Generated at: 2026-10-23T23:59:12.755041+08:00
-- 窗口: 2026-10-22 至 2026-10-23
-- GitHub 增量: 716 commits / 0 releases
-- 最近 push: 2026-10-23
+- Window: 2026-10-23 to 2026-10-24
+- Generated at: 2026-10-24T22:56:38.126853+08:00
+- 窗口: 2026-10-23 至 2026-10-24
+- GitHub 增量: 632 commits / 2 releases
+- 最近 push: 2026-10-24
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(release): validate Windows-node releases and main (#119762)
-  - feat: choose which tools are deferred behind Tool Search (#170071)
-  - feat(plugins): keep core-bundled command schedules across restarts on the same build (#181331)
-  - feat(plugins): enforce narrow-only native subagent profiles (#181292)
-  - feat: notify Windows monitoring after Gateway package publication (#173567)
-  - feat(plugins): support pre-storage channel ingress sanitization (#181039)
-  - feat(vercel): pick the onboarding default from catalog recommendations (#180905)
-  - feat: drop files into new sessions from the command palette (#178842)
+  - **Google models:** add Gemini 4 Argon support. (#171852) Thanks @RomneyDa. [v2026.10.7]
+  - feat: expand panels and allow managed local previews (#165153)
+  - feat(ui): archive and delete sessions while the Gateway reconnects (#182292)
+  - feat(plugins): inspect runtime compatibility before activation (#182419)
+  - feat(visitor-access): give invited guests a welcome session from their invitation
+  - feat: support mobile Control UI cold-load measurements (#182492)
+  - feat(diagnostics): report runtime capabilities (#182379)
+  - feat(ui): land invited guests on their welcome session
 - Fixes and constraints:
-  - fix(update): avoid staging Git targets that require newer Node (#181715)
-  - fix(ui): remove unused thinking level type re-export (#181733)
-  - perf(ui): load sidebar Pages and Roster on demand (#181497)
-  - fix: recover Node from quoted Windows PATH entries (#181678)
-  - fix: wait for managed child close before completion (#181720)
-  - perf(ui): rebalance E2E shards with recent CI timings (#181712)
-  - fix(memory): memory tools fail for owner sessions started by sessions_send and cross-agent subagents (#181359)
-  - fix: hide inline image controls on mobile (#180734)
+  - fix(ui): restore mobile header controls and refine compact layouts (#182599)
+  - fix(update): fence readiness credentials at transport send (#182343)
+  - fix(zalouser): stop reusing stale sessions across plugin reloads (#182619)
+  - fix(apple): a realtime Talk failure no longer cancels the agent answer in progress (#180571)
+  - perf(agents): compact immutable prompt history fingerprints (#182580)
+  - fix(exec): report unavailable sandbox PTY requests (#182380)
+  - fix(ui): remove stale e2e helper exports (#182646)
+  - fix: verify selected Google Meet microphone and speaker menus (#179010)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

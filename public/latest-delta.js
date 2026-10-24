@@ -1,91 +1,106 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-10-23T23:59:12.755041+08:00",
+  "generatedAt": "2026-10-24T22:56:38.126853+08:00",
   "window": {
-    "start_local": "2026-10-22T23:59:12.755041+08:00",
-    "end_local": "2026-10-23T23:59:12.755041+08:00",
-    "start_utc": "2026-10-22T15:59:12Z",
-    "end_utc": "2026-10-23T15:59:12Z"
+    "start_local": "2026-10-23T22:56:38.126853+08:00",
+    "end_local": "2026-10-24T22:56:38.126853+08:00",
+    "start_utc": "2026-10-23T14:56:38Z",
+    "end_utc": "2026-10-24T14:56:38Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 392852,
-    "forks": 82570,
-    "open_issues": 8883,
-    "pushed_at": "2026-10-23T15:59:00Z"
+    "stars": 392926,
+    "forks": 82586,
+    "open_issues": 7805,
+    "pushed_at": "2026-10-24T14:56:11Z"
   },
   "summary": {
-    "commitCount": 716,
-    "releaseCount": 0,
-    "stableReleaseCount": 0,
+    "commitCount": 632,
+    "releaseCount": 2,
+    "stableReleaseCount": 2,
     "betaReleaseCount": 0,
-    "stars": 392852,
-    "forks": 82570,
-    "openIssues": 8883
+    "stars": 392926,
+    "forks": 82586,
+    "openIssues": 7805
   },
-  "releases": [],
+  "releases": [
+    {
+      "tag_name": "v2026.10.7",
+      "published_at": "2026-10-24T09:53:46Z",
+      "name": "openclaw 2026.10.7",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.7"
+    },
+    {
+      "tag_name": "v2026.9.34",
+      "published_at": "2026-10-24T11:38:56Z",
+      "name": "openclaw 2026.9.34",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.34"
+    }
+  ],
   "featureItems": [
-    "feat(release): validate Windows-node releases and main (#119762)",
-    "feat: choose which tools are deferred behind Tool Search (#170071)",
-    "feat(plugins): keep core-bundled command schedules across restarts on the same build (#181331)",
-    "feat(plugins): enforce narrow-only native subagent profiles (#181292)",
-    "feat: notify Windows monitoring after Gateway package publication (#173567)",
-    "feat(plugins): support pre-storage channel ingress sanitization (#181039)",
-    "feat(vercel): pick the onboarding default from catalog recommendations (#180905)",
-    "feat: drop files into new sessions from the command palette (#178842)"
+    "**Google models:** add Gemini 4 Argon support. (#171852) Thanks @RomneyDa. [v2026.10.7]",
+    "feat: expand panels and allow managed local previews (#165153)",
+    "feat(ui): archive and delete sessions while the Gateway reconnects (#182292)",
+    "feat(plugins): inspect runtime compatibility before activation (#182419)",
+    "feat(visitor-access): give invited guests a welcome session from their invitation",
+    "feat: support mobile Control UI cold-load measurements (#182492)",
+    "feat(diagnostics): report runtime capabilities (#182379)",
+    "feat(ui): land invited guests on their welcome session"
   ],
   "fixItems": [
-    "fix(update): avoid staging Git targets that require newer Node (#181715)",
-    "fix(ui): remove unused thinking level type re-export (#181733)",
-    "perf(ui): load sidebar Pages and Roster on demand (#181497)",
-    "fix: recover Node from quoted Windows PATH entries (#181678)",
-    "fix: wait for managed child close before completion (#181720)",
-    "perf(ui): rebalance E2E shards with recent CI timings (#181712)",
-    "fix(memory): memory tools fail for owner sessions started by sessions_send and cross-agent subagents (#181359)",
-    "fix: hide inline image controls on mobile (#180734)"
+    "fix(ui): restore mobile header controls and refine compact layouts (#182599)",
+    "fix(update): fence readiness credentials at transport send (#182343)",
+    "fix(zalouser): stop reusing stale sessions across plugin reloads (#182619)",
+    "fix(apple): a realtime Talk failure no longer cancels the agent answer in progress (#180571)",
+    "perf(agents): compact immutable prompt history fingerprints (#182580)",
+    "fix(exec): report unavailable sandbox PTY requests (#182380)",
+    "fix(ui): remove stale e2e helper exports (#182646)",
+    "fix: verify selected Google Meet microphone and speaker menus (#179010)"
   ],
   "topScopes": [
     {
       "scope": "ui",
-      "count": 200
+      "count": 98
     },
     {
       "scope": "fix",
-      "count": 111
+      "count": 87
     },
     {
       "scope": "refactor",
-      "count": 78
+      "count": 59
     },
     {
       "scope": "agents",
-      "count": 26
+      "count": 34
     },
     {
       "scope": "gateway",
-      "count": 23
+      "count": 26
     },
     {
-      "scope": "plugins",
-      "count": 22
-    },
-    {
-      "scope": "update",
+      "scope": "sessions",
       "count": 16
     },
     {
-      "scope": "release",
-      "count": 12
+      "scope": "test",
+      "count": 15
+    },
+    {
+      "scope": "plugins",
+      "count": 14
     }
   ],
   "headlineCommits": [
-    "fix(update): avoid staging Git targets that require newer Node (#181715)",
-    "refactor: consolidate ranked request and UI clone owners (#181709)",
-    "fix(ui): remove unused thinking level type re-export (#181733)",
-    "refactor: narrow private runtime arguments and results (#181714)",
-    "perf(ui): load sidebar Pages and Roster on demand (#181497)",
-    "chore: align remaining update recovery expectations (#181717)",
-    "fix: recover Node from quoted Windows PATH entries (#181678)",
-    "fix: wait for managed child close before completion (#181720)"
+    "fix(ui): restore mobile header controls and refine compact layouts (#182599)",
+    "fix(update): fence readiness credentials at transport send (#182343)",
+    "fix(zalouser): stop reusing stale sessions across plugin reloads (#182619)",
+    "fix(apple): a realtime Talk failure no longer cancels the agent answer in progress (#180571)",
+    "refactor: deslop messages, plugin config and transport fixtures (#182633)",
+    "perf(agents): compact immutable prompt history fingerprints (#182580)",
+    "test(gateway): control the ack-yield timer in the /stop reason test (#182651)",
+    "fix(exec): report unavailable sandbox PTY requests (#182380)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

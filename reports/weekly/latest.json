@@ -1,176 +1,211 @@
 {
-  "generated_at": "2026-10-23T23:59:12.755041+08:00",
+  "generated_at": "2026-10-24T22:56:38.126853+08:00",
   "window": {
-    "start_local": "2026-10-22T23:59:12.755041+08:00",
-    "end_local": "2026-10-23T23:59:12.755041+08:00",
-    "start_utc": "2026-10-22T15:59:12Z",
-    "end_utc": "2026-10-23T15:59:12Z"
+    "start_local": "2026-10-23T22:56:38.126853+08:00",
+    "end_local": "2026-10-24T22:56:38.126853+08:00",
+    "start_utc": "2026-10-23T14:56:38Z",
+    "end_utc": "2026-10-24T14:56:38Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 392852,
-    "forks": 82570,
-    "open_issues": 8883,
-    "pushed_at": "2026-10-23T15:59:00Z"
+    "stars": 392926,
+    "forks": 82586,
+    "open_issues": 7805,
+    "pushed_at": "2026-10-24T14:56:11Z"
   },
-  "releases_in_window": [],
-  "commit_count": 716,
+  "releases_in_window": [
+    {
+      "tag_name": "v2026.10.7",
+      "published_at": "2026-10-24T09:53:46Z",
+      "name": "openclaw 2026.10.7",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.7"
+    },
+    {
+      "tag_name": "v2026.9.34",
+      "published_at": "2026-10-24T11:38:56Z",
+      "name": "openclaw 2026.9.34",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.34"
+    }
+  ],
+  "commit_count": 632,
   "commit_headlines": [
-    "fix(update): avoid staging Git targets that require newer Node (#181715)",
-    "refactor: consolidate ranked request and UI clone owners (#181709)",
-    "fix(ui): remove unused thinking level type re-export (#181733)",
-    "refactor: narrow private runtime arguments and results (#181714)",
-    "perf(ui): load sidebar Pages and Roster on demand (#181497)",
-    "chore: align remaining update recovery expectations (#181717)",
-    "fix: recover Node from quoted Windows PATH entries (#181678)",
-    "fix: wait for managed child close before completion (#181720)",
-    "refactor: localize single-consumer implementation frames (#181702)",
-    "perf(ui): rebalance E2E shards with recent CI timings (#181712)",
-    "fix(memory): memory tools fail for owner sessions started by sessions_send and cross-agent subagents (#181359)",
-    "fix: hide inline image controls on mobile (#180734)",
-    "fix: improve Inbox badge contrast across themes (#181689)",
-    "fix: retain subagent wake after silent settle (#181699)",
-    "fix: wait for Gateway readiness in plugin tests (#181700)",
-    "perf(ui): reuse compiled assets in update lifecycle tests (#181477)",
-    "test(update): align Windows triage expectations with recorded recovery observation (#181698)",
-    "fix(telegram): keep personal topic titles in sync after agent replies (#166011)",
-    "fix(update): recover offline state after an update executor dies (#181695)",
-    "refactor: localize single-consumer runtime details (#181691)",
-    "fix: recognize documented performance scripts (#181693)",
-    "fix(doctor): keep disabled heartbeats disabled during migration (#181659)",
-    "refactor: remove unused private helper inputs and results (#181681)",
-    "fix(reef): share delivery admission and ordering (#181654)",
-    "refactor: keep Slack reconnect policy private (#181690)",
-    "improve(ui): download about 3.3% less JavaScript over gzip (#181047)",
-    "fix(database): prevent stuck chats after connection loss (#181661)",
-    "fix: restore iOS screenshot evidence packaging (#181637)",
-    "refactor: inline single-consumer private frames (#181671)",
-    "perf(ui): defer camera code and Details copy to their consumers (#181626)",
-    "refactor: narrow private Codex Matrix and setup contracts (#181648)",
-    "fix(ui): remove unused sidebar route type alias (#181667)",
-    "fix: record desktop setup state before timeout cleanup (#181650)",
-    "chore(browser): update Lightpanda deployment to 1.0.2 (#181666)",
-    "refactor: fold single-consumer frames into their owners (#181653)",
-    "test: complete custodian overlay fixture (#181656)",
-    "test: preserve cron restart source identity (#181647)",
-    "fix: avoid false failures during node session discovery (#171870)",
-    "fix(telegram): route private topic reactions to topic sessions (#175946)",
-    "docs: propose personal identity for native local connections (#167429)",
-    "fix(test): drop registration for deleted steering test (#181639)",
-    "fix: skip unavailable video links during keyboard navigation (#180763)",
-    "perf(test): overlap desktop and serial real-Gateway UI proof (#181558)",
-    "perf(gateway): reuse unchanged idle health summaries (#181625)",
-    "fix(agents): collect complete swarm child answers and explain one-shot collector follow-ups (#181622)",
-    "fix(qa): unblock Linux Code Mode matrix Gateway startup (#181621)",
-    "fix: retire deleted test from worker registry (#181644)",
-    "refactor: keep single-consumer implementations with their owners (#181628)",
-    "refactor: inline single-consumer implementation frames (#181633)",
-    "refactor: consolidate transcript query and local clone owners (#181629)"
+    "fix(ui): restore mobile header controls and refine compact layouts (#182599)",
+    "fix(update): fence readiness credentials at transport send (#182343)",
+    "fix(zalouser): stop reusing stale sessions across plugin reloads (#182619)",
+    "fix(apple): a realtime Talk failure no longer cancels the agent answer in progress (#180571)",
+    "refactor: deslop messages, plugin config and transport fixtures (#182633)",
+    "perf(agents): compact immutable prompt history fingerprints (#182580)",
+    "test(gateway): control the ack-yield timer in the /stop reason test (#182651)",
+    "fix(exec): report unavailable sandbox PTY requests (#182380)",
+    "test(scripts,ui,qa-lab): remove low-value tests (batch d463) (#182539)",
+    "refactor: deslop billing fixtures, retry corpus and catalog projection (#182589)",
+    "refactor(ui): remove unused chat receipt reader (#182645)",
+    "fix(ui): remove stale e2e helper exports (#182646)",
+    "fix: verify selected Google Meet microphone and speaker menus (#179010)",
+    "fix(workboard): clearing card selection loses keyboard focus (#182020)",
+    "fix(ui): preserve Shift+Enter newlines with composer suggestions (#181999)",
+    "fix(channels): retain Nextcloud Talk and Zalo default account secrets (#182608)",
+    "refactor: deslop agents, CLI and reply fixtures (#182610)",
+    "test: remove low-value tests (batch d469) (#182595)",
+    "fix(ui): keep gallery image transitions anchored (#182611)",
+    "fix(agents): delayed sessions_send replies are cut off at 4,096 characters (#178271)",
+    "improve(memory): speed up PostgreSQL keyword search (#182617)",
+    "fix(sessions): retain child results while a parent awaits Resume (#182587)",
+    "fix(validators): validate fixed schemas without runtime code generation (#182575)",
+    "perf(sessions): bound transcript size memoization to row payloads (#182577)",
+    "test(ui,qa): remove low-value tests (batch d471) (#182620)",
+    "refactor: deslop channel, catalog and QA fixtures (#182606)",
+    "test(agents, gateway, plugins): remove low-value tests (batch d470) (#182596)",
+    "refactor: deslop plugin fixtures, provider transports and UI harnesses (#182594)",
+    "improve(plugins): reduce memory used by package capture workers (#182613)",
+    "perf(config): reuse published snapshots for ACP reads (#182582)",
+    "fix(codex): prefer the callable OpenClaw question tool (#159678)",
+    "feat: expand panels and allow managed local previews (#165153)",
+    "fix(meetings): long talk-back replies lose most of their audio (#178254)",
+    "fix: describe the overall update timeout in CLI help (#182601)",
+    "fix(ui): remove the scrollbar track from long Cmd+K prompts (#182600)",
+    "fix(agents): resolve POSIX drive aliases on native Windows (#182400)",
+    "refactor: deslop auth fixtures, transport fixtures and structured fixtures (#182592)",
+    "fix(plugins): isolate cached validator evaluation state (#182514)",
+    "test(ui,gateway,scripts,cron): remove low-value tests (batch d468) (#182588)",
+    "fix(tlon): bot stops answering for minutes after a silent network drop (#178358)",
+    "fix(mcp): align CLI cleanup with best-effort session DELETE (#182584)",
+    "fix(auth): concurrent automations fail on unchanged accounts (#179333)",
+    "fix(reply): prevent silent turns from sending private media (#129244)",
+    "fix(slack): render authored presentation text once across sends and edits (#133136)",
+    "fix(cli): sanitize terminal escape sequences in skills library output (#178313)",
+    "perf(skills): reduce retained text resource payloads (#182525)",
+    "test(ui,scripts,cli,telegram): remove low-value tests (batch d464) (#182552)",
+    "fix(talk): keep transport runtime for realtime voice callbacks (#179462)",
+    "fix(channels): respect room boundaries for join introductions (#130699)",
+    "fix(secrets): keep Google Chat and X default account credentials active (#180450)"
   ],
   "feature_items": [
-    "feat(release): validate Windows-node releases and main (#119762)",
-    "feat: choose which tools are deferred behind Tool Search (#170071)",
-    "feat(plugins): keep core-bundled command schedules across restarts on the same build (#181331)",
-    "feat(plugins): enforce narrow-only native subagent profiles (#181292)",
-    "feat: notify Windows monitoring after Gateway package publication (#173567)",
-    "feat(plugins): support pre-storage channel ingress sanitization (#181039)",
-    "feat(vercel): pick the onboarding default from catalog recommendations (#180905)",
-    "feat: drop files into new sessions from the command palette (#178842)",
-    "feat(plugins): keep requester command schedules across Gateway restarts (#180844)",
-    "feat(cron): pause automations whose parent conversation is gone (#178965)"
+    "**Google models:** add Gemini 4 Argon support. (#171852) Thanks @RomneyDa. [v2026.10.7]",
+    "feat: expand panels and allow managed local previews (#165153)",
+    "feat(ui): archive and delete sessions while the Gateway reconnects (#182292)",
+    "feat(plugins): inspect runtime compatibility before activation (#182419)",
+    "feat(visitor-access): give invited guests a welcome session from their invitation",
+    "feat: support mobile Control UI cold-load measurements (#182492)",
+    "feat(diagnostics): report runtime capabilities (#182379)",
+    "feat(ui): land invited guests on their welcome session",
+    "feat: add animated public link previews with a static fallback",
+    "feat(perf): attribute duplicate heap strings to safe retainer labels (#182367)",
+    "feat(standalone): produce matched JIT support artifacts (#182309)",
+    "feat(browser): support lightweight Docker browser installs (#154608)",
+    "feat(perf): summarize retained heap without exporting snapshot contents (#182333)",
+    "feat: optionally attribute pull requests to OpenClaw (#176647)",
+    "feat(providers): add Abliteration model provider (#182248)",
+    "feat(ui): start guests on the Involving me session filter",
+    "feat(baseten): support elephant-1 and mammoth-1 decisions",
+    "feat(visitor-access): add invite note and copyable invitation text",
+    "feat: expose final worker prompts to admission hooks (#182142)",
+    "feat(visitor-access): retain invitation onboarding metadata",
+    "feat(gateway): let Gateway-authored agent messages mention people",
+    "feat(nodes): prefetch the worker bundle onto connected persistent nodes (#182115)",
+    "feat(cron): run scheduled children in their parent conversation's workspace and sandbox (#179669)",
+    "feat(providers): add Requesty provider (#180788)",
+    "feat(ui): dismiss completed processes from Details (#181848)",
+    "feat(cron): give scheduled runs their parent conversation's memory audience (#179062)",
+    "feat(learn): /learn can save lessons to the selected memory plugin (#181879)",
+    "feat(update): show recovery disk use and retire selected untracked copies (#181195)",
+    "feat(models): expose canonical model family in models.list and the requester catalog (#181685)",
+    "feat(cron): route scheduled child board and widget tools to the parent conversation (#179011)"
   ],
   "fix_items": [
-    "fix(update): avoid staging Git targets that require newer Node (#181715)",
-    "fix(ui): remove unused thinking level type re-export (#181733)",
-    "perf(ui): load sidebar Pages and Roster on demand (#181497)",
-    "fix: recover Node from quoted Windows PATH entries (#181678)",
-    "fix: wait for managed child close before completion (#181720)",
-    "perf(ui): rebalance E2E shards with recent CI timings (#181712)",
-    "fix(memory): memory tools fail for owner sessions started by sessions_send and cross-agent subagents (#181359)",
-    "fix: hide inline image controls on mobile (#180734)",
-    "fix: improve Inbox badge contrast across themes (#181689)",
-    "fix: retain subagent wake after silent settle (#181699)",
-    "fix: wait for Gateway readiness in plugin tests (#181700)",
-    "perf(ui): reuse compiled assets in update lifecycle tests (#181477)",
-    "fix(telegram): keep personal topic titles in sync after agent replies (#166011)",
-    "fix(update): recover offline state after an update executor dies (#181695)",
-    "fix: recognize documented performance scripts (#181693)",
-    "fix(doctor): keep disabled heartbeats disabled during migration (#181659)",
-    "fix(reef): share delivery admission and ordering (#181654)",
-    "fix(database): prevent stuck chats after connection loss (#181661)",
-    "fix: restore iOS screenshot evidence packaging (#181637)",
-    "perf(ui): defer camera code and Details copy to their consumers (#181626)",
-    "fix(ui): remove unused sidebar route type alias (#181667)",
-    "fix: record desktop setup state before timeout cleanup (#181650)",
-    "fix: avoid false failures during node session discovery (#171870)",
-    "fix(telegram): route private topic reactions to topic sessions (#175946)",
-    "fix(test): drop registration for deleted steering test (#181639)",
-    "fix: skip unavailable video links during keyboard navigation (#180763)",
-    "perf(test): overlap desktop and serial real-Gateway UI proof (#181558)",
-    "perf(gateway): reuse unchanged idle health summaries (#181625)",
-    "fix(agents): collect complete swarm child answers and explain one-shot collector follow-ups (#181622)",
-    "fix(qa): unblock Linux Code Mode matrix Gateway startup (#181621)"
+    "fix(ui): restore mobile header controls and refine compact layouts (#182599)",
+    "fix(update): fence readiness credentials at transport send (#182343)",
+    "fix(zalouser): stop reusing stale sessions across plugin reloads (#182619)",
+    "fix(apple): a realtime Talk failure no longer cancels the agent answer in progress (#180571)",
+    "perf(agents): compact immutable prompt history fingerprints (#182580)",
+    "fix(exec): report unavailable sandbox PTY requests (#182380)",
+    "fix(ui): remove stale e2e helper exports (#182646)",
+    "fix: verify selected Google Meet microphone and speaker menus (#179010)",
+    "fix(workboard): clearing card selection loses keyboard focus (#182020)",
+    "fix(ui): preserve Shift+Enter newlines with composer suggestions (#181999)",
+    "fix(channels): retain Nextcloud Talk and Zalo default account secrets (#182608)",
+    "fix(ui): keep gallery image transitions anchored (#182611)",
+    "fix(agents): delayed sessions_send replies are cut off at 4,096 characters (#178271)",
+    "fix(sessions): retain child results while a parent awaits Resume (#182587)",
+    "fix(validators): validate fixed schemas without runtime code generation (#182575)",
+    "perf(sessions): bound transcript size memoization to row payloads (#182577)",
+    "perf(config): reuse published snapshots for ACP reads (#182582)",
+    "fix(codex): prefer the callable OpenClaw question tool (#159678)",
+    "fix(meetings): long talk-back replies lose most of their audio (#178254)",
+    "fix: describe the overall update timeout in CLI help (#182601)",
+    "fix(ui): remove the scrollbar track from long Cmd+K prompts (#182600)",
+    "fix(agents): resolve POSIX drive aliases on native Windows (#182400)",
+    "fix(plugins): isolate cached validator evaluation state (#182514)",
+    "fix(tlon): bot stops answering for minutes after a silent network drop (#178358)",
+    "fix(mcp): align CLI cleanup with best-effort session DELETE (#182584)",
+    "fix(auth): concurrent automations fail on unchanged accounts (#179333)",
+    "fix(reply): prevent silent turns from sending private media (#129244)",
+    "fix(slack): render authored presentation text once across sends and edits (#133136)",
+    "fix(cli): sanitize terminal escape sequences in skills library output (#178313)",
+    "perf(skills): reduce retained text resource payloads (#182525)"
   ],
   "top_scopes": [
     {
       "scope": "ui",
-      "count": 200
+      "count": 98
     },
     {
       "scope": "fix",
-      "count": 111
+      "count": 87
     },
     {
       "scope": "refactor",
-      "count": 78
+      "count": 59
     },
     {
       "scope": "agents",
-      "count": 26
+      "count": 34
     },
     {
       "scope": "gateway",
-      "count": 23
+      "count": 26
     },
     {
-      "scope": "plugins",
-      "count": 22
-    },
-    {
-      "scope": "update",
+      "scope": "sessions",
       "count": 16
     },
     {
-      "scope": "release",
-      "count": 12
-    },
-    {
-      "scope": "cron",
-      "count": 12
-    },
-    {
       "scope": "test",
-      "count": 10
+      "count": 15
     },
     {
-      "scope": "cli",
-      "count": 8
+      "scope": "plugins",
+      "count": 14
     },
     {
-      "scope": "chore",
-      "count": 7
+      "scope": "ci",
+      "count": 13
     },
     {
-      "scope": "doctor",
-      "count": 7
+      "scope": "perf",
+      "count": 12
+    },
+    {
+      "scope": "update",
+      "count": 11
+    },
+    {
+      "scope": "memory",
+      "count": 11
     },
     {
       "scope": "codex",
-      "count": 7
+      "count": 9
     },
     {
-      "scope": "improve(ui)",
-      "count": 6
+      "scope": "cron",
+      "count": 9
+    },
+    {
+      "scope": "doctor",
+      "count": 9
     }
   ]
 }
