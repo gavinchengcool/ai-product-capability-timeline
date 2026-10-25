@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-10-24T22:56:56+08:00
-- Requested window: 2026-10-23 to 2026-10-24
+- Generated at: 2026-10-25T23:07:16+08:00
+- Requested window: 2026-10-24 to 2026-10-25
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-10-23 to 2026-10-24
-- Generated at: 2026-10-24T22:56:38.126853+08:00
-- 窗口: 2026-10-23 至 2026-10-24
-- GitHub 增量: 632 commits / 2 releases
-- 最近 push: 2026-10-24
+- Window: 2026-10-24 to 2026-10-25
+- Generated at: 2026-10-25T23:06:56.873490+08:00
+- 窗口: 2026-10-24 至 2026-10-25
+- GitHub 增量: 765 commits / 0 releases
+- 最近 push: 2026-10-25
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - **Google models:** add Gemini 4 Argon support. (#171852) Thanks @RomneyDa. [v2026.10.7]
-  - feat: expand panels and allow managed local previews (#165153)
-  - feat(ui): archive and delete sessions while the Gateway reconnects (#182292)
-  - feat(plugins): inspect runtime compatibility before activation (#182419)
-  - feat(visitor-access): give invited guests a welcome session from their invitation
-  - feat: support mobile Control UI cold-load measurements (#182492)
-  - feat(diagnostics): report runtime capabilities (#182379)
-  - feat(ui): land invited guests on their welcome session
+  - feat(android): show gateway session groups in the sidebar (#164857)
+  - feat(inworld): add speakingRate and deliveryMode options, list TTS-2 models (#167951)
+  - feat(ios): hide automation sessions from ordinary session lists (#178620)
+  - feat(nextcloud-talk): send native voice replies (#178521)
+  - feat(cli): show approval scopes on pending node pairing requests (#178455)
+  - feat(nextcloud-talk): preserve quoted message context (#178077)
+  - feat(cli): show plugin trust status in plugins list output (#178483)
+  - feat(standalone): experimental AOT build modes (#183224)
 - Fixes and constraints:
-  - fix(ui): restore mobile header controls and refine compact layouts (#182599)
-  - fix(update): fence readiness credentials at transport send (#182343)
-  - fix(zalouser): stop reusing stale sessions across plugin reloads (#182619)
-  - fix(apple): a realtime Talk failure no longer cancels the agent answer in progress (#180571)
-  - perf(agents): compact immutable prompt history fingerprints (#182580)
-  - fix(exec): report unavailable sandbox PTY requests (#182380)
-  - fix(ui): remove stale e2e helper exports (#182646)
-  - fix: verify selected Google Meet microphone and speaker menus (#179010)
+  - fix(ui): scope streaming benchmarks to the workload (#183650)
+  - fix(standalone): unblock source AOT builds with shared chunks (#183654)
+  - fix: avoid sorts on non-null PostgreSQL partial indexes (#183443)
+  - fix(plugins): plugin session actions, hooks, and subagent-end notifications fail during a plugin reload (#182310)
+  - perf(gateway): renew publication leases off the main thread (#183596)
+  - perf: reduce unrelated work during chat streaming (#183643)
+  - fix(sessions): reuse prepared sharing facts during publication (#183609)
+  - fix(gateway): interrupt worker teardown during shutdown (#183579)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

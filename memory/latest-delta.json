@@ -1,106 +1,91 @@
 {
-  "generatedAt": "2026-10-24T22:56:38.126853+08:00",
+  "generatedAt": "2026-10-25T23:06:56.873490+08:00",
   "window": {
-    "start_local": "2026-10-23T22:56:38.126853+08:00",
-    "end_local": "2026-10-24T22:56:38.126853+08:00",
-    "start_utc": "2026-10-23T14:56:38Z",
-    "end_utc": "2026-10-24T14:56:38Z"
+    "start_local": "2026-10-24T23:06:56.873490+08:00",
+    "end_local": "2026-10-25T23:06:56.873490+08:00",
+    "start_utc": "2026-10-24T15:06:56Z",
+    "end_utc": "2026-10-25T15:06:56Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 392926,
-    "forks": 82586,
-    "open_issues": 7805,
-    "pushed_at": "2026-10-24T14:56:11Z"
+    "stars": 393016,
+    "forks": 82607,
+    "open_issues": 7843,
+    "pushed_at": "2026-10-25T15:05:25Z"
   },
   "summary": {
-    "commitCount": 632,
-    "releaseCount": 2,
-    "stableReleaseCount": 2,
+    "commitCount": 765,
+    "releaseCount": 0,
+    "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 392926,
-    "forks": 82586,
-    "openIssues": 7805
+    "stars": 393016,
+    "forks": 82607,
+    "openIssues": 7843
   },
-  "releases": [
-    {
-      "tag_name": "v2026.10.7",
-      "published_at": "2026-10-24T09:53:46Z",
-      "name": "openclaw 2026.10.7",
-      "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.7"
-    },
-    {
-      "tag_name": "v2026.9.34",
-      "published_at": "2026-10-24T11:38:56Z",
-      "name": "openclaw 2026.9.34",
-      "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.34"
-    }
-  ],
+  "releases": [],
   "featureItems": [
-    "**Google models:** add Gemini 4 Argon support. (#171852) Thanks @RomneyDa. [v2026.10.7]",
-    "feat: expand panels and allow managed local previews (#165153)",
-    "feat(ui): archive and delete sessions while the Gateway reconnects (#182292)",
-    "feat(plugins): inspect runtime compatibility before activation (#182419)",
-    "feat(visitor-access): give invited guests a welcome session from their invitation",
-    "feat: support mobile Control UI cold-load measurements (#182492)",
-    "feat(diagnostics): report runtime capabilities (#182379)",
-    "feat(ui): land invited guests on their welcome session"
+    "feat(android): show gateway session groups in the sidebar (#164857)",
+    "feat(inworld): add speakingRate and deliveryMode options, list TTS-2 models (#167951)",
+    "feat(ios): hide automation sessions from ordinary session lists (#178620)",
+    "feat(nextcloud-talk): send native voice replies (#178521)",
+    "feat(cli): show approval scopes on pending node pairing requests (#178455)",
+    "feat(nextcloud-talk): preserve quoted message context (#178077)",
+    "feat(cli): show plugin trust status in plugins list output (#178483)",
+    "feat(standalone): experimental AOT build modes (#183224)"
   ],
   "fixItems": [
-    "fix(ui): restore mobile header controls and refine compact layouts (#182599)",
-    "fix(update): fence readiness credentials at transport send (#182343)",
-    "fix(zalouser): stop reusing stale sessions across plugin reloads (#182619)",
-    "fix(apple): a realtime Talk failure no longer cancels the agent answer in progress (#180571)",
-    "perf(agents): compact immutable prompt history fingerprints (#182580)",
-    "fix(exec): report unavailable sandbox PTY requests (#182380)",
-    "fix(ui): remove stale e2e helper exports (#182646)",
-    "fix: verify selected Google Meet microphone and speaker menus (#179010)"
+    "fix(ui): scope streaming benchmarks to the workload (#183650)",
+    "fix(standalone): unblock source AOT builds with shared chunks (#183654)",
+    "fix: avoid sorts on non-null PostgreSQL partial indexes (#183443)",
+    "fix(plugins): plugin session actions, hooks, and subagent-end notifications fail during a plugin reload (#182310)",
+    "perf(gateway): renew publication leases off the main thread (#183596)",
+    "perf: reduce unrelated work during chat streaming (#183643)",
+    "fix(sessions): reuse prepared sharing facts during publication (#183609)",
+    "fix(gateway): interrupt worker teardown during shutdown (#183579)"
   ],
   "topScopes": [
     {
-      "scope": "ui",
-      "count": 98
+      "scope": "refactor",
+      "count": 108
     },
     {
       "scope": "fix",
-      "count": 87
+      "count": 81
     },
     {
-      "scope": "refactor",
-      "count": 59
-    },
-    {
-      "scope": "agents",
-      "count": 34
+      "scope": "ui",
+      "count": 53
     },
     {
       "scope": "gateway",
-      "count": 26
+      "count": 45
     },
     {
-      "scope": "sessions",
-      "count": 16
+      "scope": "agents",
+      "count": 38
     },
     {
       "scope": "test",
-      "count": 15
+      "count": 36
     },
     {
-      "scope": "plugins",
-      "count": 14
+      "scope": "sessions",
+      "count": 35
+    },
+    {
+      "scope": "perf",
+      "count": 22
     }
   ],
   "headlineCommits": [
-    "fix(ui): restore mobile header controls and refine compact layouts (#182599)",
-    "fix(update): fence readiness credentials at transport send (#182343)",
-    "fix(zalouser): stop reusing stale sessions across plugin reloads (#182619)",
-    "fix(apple): a realtime Talk failure no longer cancels the agent answer in progress (#180571)",
-    "refactor: deslop messages, plugin config and transport fixtures (#182633)",
-    "perf(agents): compact immutable prompt history fingerprints (#182580)",
-    "test(gateway): control the ack-yield timer in the /stop reason test (#182651)",
-    "fix(exec): report unavailable sandbox PTY requests (#182380)"
+    "test(core): remove low-value tests (batch d540) (#183631)",
+    "fix(ui): scope streaming benchmarks to the workload (#183650)",
+    "fix(standalone): unblock source AOT builds with shared chunks (#183654)",
+    "test(browser,channels,runtime): remove low-value tests (batch d539) (#183633)",
+    "test: remove low-value tests (batch d537) (#183619)",
+    "refactor: deslop media, backup and transport fixtures (#183640)",
+    "fix: avoid sorts on non-null PostgreSQL partial indexes (#183443)",
+    "fix(plugins): plugin session actions, hooks, and subagent-end notifications fail during a plugin reload (#182310)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 }
