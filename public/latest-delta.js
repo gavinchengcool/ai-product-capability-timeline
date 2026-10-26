@@ -1,91 +1,90 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-10-25T23:06:56.873490+08:00",
+  "generatedAt": "2026-10-27T01:43:42.967760+08:00",
   "window": {
-    "start_local": "2026-10-24T23:06:56.873490+08:00",
-    "end_local": "2026-10-25T23:06:56.873490+08:00",
-    "start_utc": "2026-10-24T15:06:56Z",
-    "end_utc": "2026-10-25T15:06:56Z"
+    "start_local": "2026-10-26T01:43:42.967760+08:00",
+    "end_local": "2026-10-27T01:43:42.967760+08:00",
+    "start_utc": "2026-10-25T17:43:42Z",
+    "end_utc": "2026-10-26T17:43:42Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 393016,
-    "forks": 82607,
-    "open_issues": 7843,
-    "pushed_at": "2026-10-25T15:05:25Z"
+    "stars": 393138,
+    "forks": 82647,
+    "open_issues": 7956,
+    "pushed_at": "2026-10-26T17:43:23Z"
   },
   "summary": {
-    "commitCount": 765,
+    "commitCount": 835,
     "releaseCount": 0,
     "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 393016,
-    "forks": 82607,
-    "openIssues": 7843
+    "stars": 393138,
+    "forks": 82647,
+    "openIssues": 7956
   },
   "releases": [],
   "featureItems": [
-    "feat(android): show gateway session groups in the sidebar (#164857)",
-    "feat(inworld): add speakingRate and deliveryMode options, list TTS-2 models (#167951)",
-    "feat(ios): hide automation sessions from ordinary session lists (#178620)",
-    "feat(nextcloud-talk): send native voice replies (#178521)",
-    "feat(cli): show approval scopes on pending node pairing requests (#178455)",
-    "feat(nextcloud-talk): preserve quoted message context (#178077)",
-    "feat(cli): show plugin trust status in plugins list output (#178483)",
-    "feat(standalone): experimental AOT build modes (#183224)"
+    "feat: report update outcomes by default without identifiers (#154067)",
+    "feat(talk): let connected clients speak short results (#184546)",
+    "feat(sessions): archive oversized transcripts as bounded cold chunks (#183827)",
+    "feat(subagents): let spawners request blind children that omit model identity and workspace (#182272)",
+    "feat(gateway): run managed services from standalone artifacts (#183838)",
+    "improve(ui): refine Absolutely theme contrast and surfaces (#183405)",
+    "feat(acpx): let operators keep Gateway env out of ACP agents (#179899)"
   ],
   "fixItems": [
-    "fix(ui): scope streaming benchmarks to the workload (#183650)",
-    "fix(standalone): unblock source AOT builds with shared chunks (#183654)",
-    "fix: avoid sorts on non-null PostgreSQL partial indexes (#183443)",
-    "fix(plugins): plugin session actions, hooks, and subagent-end notifications fail during a plugin reload (#182310)",
-    "perf(gateway): renew publication leases off the main thread (#183596)",
-    "perf: reduce unrelated work during chat streaming (#183643)",
-    "fix(sessions): reuse prepared sharing facts during publication (#183609)",
-    "fix(gateway): interrupt worker teardown during shutdown (#183579)"
+    "fix(agents): keep watched-session changes after conversation history (#182354)",
+    "fix: scope Workboard benchmark controls to the toolbar (#184825)",
+    "perf(control-ui): restore composer controls from the cached snapshot (#184383)",
+    "fix(ui): wait for committed post-deploy navigation",
+    "fix(gateway): silent exec-completion prompts show as user messages in imported Claude CLI history (#174780)",
+    "perf(gateway): reuse session event envelope scratch tuples (#184729)",
+    "fix: renew OAuth credentials during long custom transport attempts (#184791)",
+    "perf(test): reuse native update builds and remove duplicate flows (#184706)"
   ],
   "topScopes": [
     {
-      "scope": "refactor",
-      "count": 108
-    },
-    {
-      "scope": "fix",
-      "count": 81
-    },
-    {
-      "scope": "ui",
-      "count": 53
-    },
-    {
       "scope": "gateway",
-      "count": 45
+      "count": 99
     },
     {
       "scope": "agents",
-      "count": 38
+      "count": 90
+    },
+    {
+      "scope": "fix",
+      "count": 75
+    },
+    {
+      "scope": "ui",
+      "count": 60
+    },
+    {
+      "scope": "refactor",
+      "count": 50
     },
     {
       "scope": "test",
-      "count": 36
+      "count": 37
+    },
+    {
+      "scope": "plugins",
+      "count": 32
     },
     {
       "scope": "sessions",
-      "count": 35
-    },
-    {
-      "scope": "perf",
-      "count": 22
+      "count": 25
     }
   ],
   "headlineCommits": [
-    "test(core): remove low-value tests (batch d540) (#183631)",
-    "fix(ui): scope streaming benchmarks to the workload (#183650)",
-    "fix(standalone): unblock source AOT builds with shared chunks (#183654)",
-    "test(browser,channels,runtime): remove low-value tests (batch d539) (#183633)",
-    "test: remove low-value tests (batch d537) (#183619)",
-    "refactor: deslop media, backup and transport fixtures (#183640)",
-    "fix: avoid sorts on non-null PostgreSQL partial indexes (#183443)",
-    "fix(plugins): plugin session actions, hooks, and subagent-end notifications fail during a plugin reload (#182310)"
+    "fix(agents): keep watched-session changes after conversation history (#182354)",
+    "fix: scope Workboard benchmark controls to the toolbar (#184825)",
+    "test: track the pinned Codex version in native hook pressure (#184817)",
+    "chore: merge main for post-deploy readiness repair",
+    "perf(control-ui): restore composer controls from the cached snapshot (#184383)",
+    "fix(ui): wait for committed post-deploy navigation",
+    "fix(gateway): silent exec-completion prompts show as user messages in imported Claude CLI history (#174780)",
+    "chore: keep CLI config patch predicate module-local (#184824)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

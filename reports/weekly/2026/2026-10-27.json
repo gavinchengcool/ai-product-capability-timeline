@@ -1,0 +1,173 @@
+{
+  "generated_at": "2026-10-27T01:43:42.967760+08:00",
+  "window": {
+    "start_local": "2026-10-26T01:43:42.967760+08:00",
+    "end_local": "2026-10-27T01:43:42.967760+08:00",
+    "start_utc": "2026-10-25T17:43:42Z",
+    "end_utc": "2026-10-26T17:43:42Z"
+  },
+  "repo": {
+    "slug": "openclaw/openclaw",
+    "stars": 393138,
+    "forks": 82647,
+    "open_issues": 7956,
+    "pushed_at": "2026-10-26T17:43:23Z"
+  },
+  "releases_in_window": [],
+  "commit_count": 835,
+  "commit_headlines": [
+    "fix(agents): keep watched-session changes after conversation history (#182354)",
+    "fix: scope Workboard benchmark controls to the toolbar (#184825)",
+    "test: track the pinned Codex version in native hook pressure (#184817)",
+    "chore: merge main for post-deploy readiness repair",
+    "perf(control-ui): restore composer controls from the cached snapshot (#184383)",
+    "fix(ui): wait for committed post-deploy navigation",
+    "fix(gateway): silent exec-completion prompts show as user messages in imported Claude CLI history (#174780)",
+    "chore: keep CLI config patch predicate module-local (#184824)",
+    "perf(gateway): reuse session event envelope scratch tuples (#184729)",
+    "feat: report update outcomes by default without identifiers (#154067)",
+    "fix: renew OAuth credentials during long custom transport attempts (#184791)",
+    "perf(test): reuse native update builds and remove duplicate flows (#184706)",
+    "perf(plugins): avoid redundant memory prompt array copies (#184779)",
+    "fix: stop model fallback on transcript admission conflicts (#177956)",
+    "fix: wait for expired MCP HTTP session recovery on explicit retry (#177427)",
+    "perf(nodes): reuse the committed device index for discovery (#184783)",
+    "fix(codex): recover tool summaries after unfinished earlier work (#181718)",
+    "fix: internalize sqlite commit receipt helper (#184808)",
+    "fix: retain SQLite lease measurement root (#184800)",
+    "perf(ui): speed up filtering large agent skills lists (#184701)",
+    "chore: internalize unused test support helpers (#184806)",
+    "perf(state): reuse frozen entries in transcript receipts (#184322)",
+    "perf(agents): reuse document tokens across tool search views (#184778)",
+    "perf(gateway): reuse prepared sidebar fact candidates (#184782)",
+    "perf(knowledge): release database locks during Git checkpoints (#184789)",
+    "perf(agents): make Code Mode replay accounting linear (#184752)",
+    "test(core,plugins,ui): remove low-value tests (batch d616) (#184734)",
+    "refactor: deslop channel owners, runtime frames and public-boundary tests (#184382)",
+    "refactor: deslop gateway, worker and lifecycle fixtures (#184781)",
+    "refactor(plugins): consolidate discovery input tests (#184766)",
+    "test: await hook terminal event producer (#184795)",
+    "fix(memory): complete shutdown without new cache writes (#184616)",
+    "fix: recover worktree preparation after shared fetch cancellation (#184121)",
+    "fix(gateway): acknowledge CLI-routed config writes accepted for restart (#184532)",
+    "fix(sessions): match canonical Unicode forms in title search (#184374)",
+    "fix(agents): run cost becomes unavailable after Responses endpoint compaction (#184719)",
+    "perf(sqlite): prevent runtime lease checks from stalling Gateway requests (#184586)",
+    "fix(tests): stabilize gateway heap-profile allocation fixtures (#184741)",
+    "fix: settle stopped restart recovery (#184761)",
+    "fix(cron): native completion waits on its own session cleanup (#180877)",
+    "fix(heartbeat): periodic-task heartbeat prompts are shown as user messages (#174815)",
+    "perf(agents): reduce stream transform continuation allocation (#184742)",
+    "refactor: deslop agent, gateway and plugin fixture inputs (#184740)",
+    "test(runtime): remove low-value tests (batch d614) (#184682)",
+    "test: remove low-value tests (batch d615) (#184691)",
+    "refactor: move cron test composition to test helpers (#184739)",
+    "fix(usage): Usage page totals miss most sessions on large Gateways (#184066)",
+    "improve: reduce Workboard card-move rendering work (#184721)",
+    "test(core,ui): remove low-value tests (batch d612) (#184646)",
+    "refactor(test): remove unused hook traversal archive (#184745)"
+  ],
+  "feature_items": [
+    "feat: report update outcomes by default without identifiers (#154067)",
+    "feat(talk): let connected clients speak short results (#184546)",
+    "feat(sessions): archive oversized transcripts as bounded cold chunks (#183827)",
+    "feat(subagents): let spawners request blind children that omit model identity and workspace (#182272)",
+    "feat(gateway): run managed services from standalone artifacts (#183838)",
+    "improve(ui): refine Absolutely theme contrast and surfaces (#183405)",
+    "feat(acpx): let operators keep Gateway env out of ACP agents (#179899)"
+  ],
+  "fix_items": [
+    "fix(agents): keep watched-session changes after conversation history (#182354)",
+    "fix: scope Workboard benchmark controls to the toolbar (#184825)",
+    "perf(control-ui): restore composer controls from the cached snapshot (#184383)",
+    "fix(ui): wait for committed post-deploy navigation",
+    "fix(gateway): silent exec-completion prompts show as user messages in imported Claude CLI history (#174780)",
+    "perf(gateway): reuse session event envelope scratch tuples (#184729)",
+    "fix: renew OAuth credentials during long custom transport attempts (#184791)",
+    "perf(test): reuse native update builds and remove duplicate flows (#184706)",
+    "perf(plugins): avoid redundant memory prompt array copies (#184779)",
+    "fix: stop model fallback on transcript admission conflicts (#177956)",
+    "fix: wait for expired MCP HTTP session recovery on explicit retry (#177427)",
+    "perf(nodes): reuse the committed device index for discovery (#184783)",
+    "fix(codex): recover tool summaries after unfinished earlier work (#181718)",
+    "fix: internalize sqlite commit receipt helper (#184808)",
+    "fix: retain SQLite lease measurement root (#184800)",
+    "perf(ui): speed up filtering large agent skills lists (#184701)",
+    "perf(state): reuse frozen entries in transcript receipts (#184322)",
+    "perf(agents): reuse document tokens across tool search views (#184778)",
+    "perf(gateway): reuse prepared sidebar fact candidates (#184782)",
+    "perf(knowledge): release database locks during Git checkpoints (#184789)",
+    "perf(agents): make Code Mode replay accounting linear (#184752)",
+    "fix(memory): complete shutdown without new cache writes (#184616)",
+    "fix: recover worktree preparation after shared fetch cancellation (#184121)",
+    "fix(gateway): acknowledge CLI-routed config writes accepted for restart (#184532)",
+    "fix(sessions): match canonical Unicode forms in title search (#184374)",
+    "fix(agents): run cost becomes unavailable after Responses endpoint compaction (#184719)",
+    "perf(sqlite): prevent runtime lease checks from stalling Gateway requests (#184586)",
+    "fix(tests): stabilize gateway heap-profile allocation fixtures (#184741)",
+    "fix: settle stopped restart recovery (#184761)",
+    "fix(cron): native completion waits on its own session cleanup (#180877)"
+  ],
+  "top_scopes": [
+    {
+      "scope": "gateway",
+      "count": 99
+    },
+    {
+      "scope": "agents",
+      "count": 90
+    },
+    {
+      "scope": "fix",
+      "count": 75
+    },
+    {
+      "scope": "ui",
+      "count": 60
+    },
+    {
+      "scope": "refactor",
+      "count": 50
+    },
+    {
+      "scope": "test",
+      "count": 37
+    },
+    {
+      "scope": "plugins",
+      "count": 32
+    },
+    {
+      "scope": "sessions",
+      "count": 25
+    },
+    {
+      "scope": "state",
+      "count": 19
+    },
+    {
+      "scope": "core,plugins,ui",
+      "count": 13
+    },
+    {
+      "scope": "infra",
+      "count": 12
+    },
+    {
+      "scope": "codex",
+      "count": 10
+    },
+    {
+      "scope": "cron",
+      "count": 10
+    },
+    {
+      "scope": "ci",
+      "count": 10
+    },
+    {
+      "scope": "core",
+      "count": 10
+    }
+  ]
+}

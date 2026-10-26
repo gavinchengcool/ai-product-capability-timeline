@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-10-25T23:07:16+08:00
-- Requested window: 2026-10-24 to 2026-10-25
+- Generated at: 2026-10-27T01:44:01+08:00
+- Requested window: 2026-10-26 to 2026-10-27
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,30 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-10-24 to 2026-10-25
-- Generated at: 2026-10-25T23:06:56.873490+08:00
-- 窗口: 2026-10-24 至 2026-10-25
-- GitHub 增量: 765 commits / 0 releases
-- 最近 push: 2026-10-25
+- Window: 2026-10-26 to 2026-10-27
+- Generated at: 2026-10-27T01:43:42.967760+08:00
+- 窗口: 2026-10-26 至 2026-10-27
+- GitHub 增量: 835 commits / 0 releases
+- 最近 push: 2026-10-26
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(android): show gateway session groups in the sidebar (#164857)
-  - feat(inworld): add speakingRate and deliveryMode options, list TTS-2 models (#167951)
-  - feat(ios): hide automation sessions from ordinary session lists (#178620)
-  - feat(nextcloud-talk): send native voice replies (#178521)
-  - feat(cli): show approval scopes on pending node pairing requests (#178455)
-  - feat(nextcloud-talk): preserve quoted message context (#178077)
-  - feat(cli): show plugin trust status in plugins list output (#178483)
-  - feat(standalone): experimental AOT build modes (#183224)
+  - feat: report update outcomes by default without identifiers (#154067)
+  - feat(talk): let connected clients speak short results (#184546)
+  - feat(sessions): archive oversized transcripts as bounded cold chunks (#183827)
+  - feat(subagents): let spawners request blind children that omit model identity and workspace (#182272)
+  - feat(gateway): run managed services from standalone artifacts (#183838)
+  - improve(ui): refine Absolutely theme contrast and surfaces (#183405)
+  - feat(acpx): let operators keep Gateway env out of ACP agents (#179899)
 - Fixes and constraints:
-  - fix(ui): scope streaming benchmarks to the workload (#183650)
-  - fix(standalone): unblock source AOT builds with shared chunks (#183654)
-  - fix: avoid sorts on non-null PostgreSQL partial indexes (#183443)
-  - fix(plugins): plugin session actions, hooks, and subagent-end notifications fail during a plugin reload (#182310)
-  - perf(gateway): renew publication leases off the main thread (#183596)
-  - perf: reduce unrelated work during chat streaming (#183643)
-  - fix(sessions): reuse prepared sharing facts during publication (#183609)
-  - fix(gateway): interrupt worker teardown during shutdown (#183579)
+  - fix(agents): keep watched-session changes after conversation history (#182354)
+  - fix: scope Workboard benchmark controls to the toolbar (#184825)
+  - perf(control-ui): restore composer controls from the cached snapshot (#184383)
+  - fix(ui): wait for committed post-deploy navigation
+  - fix(gateway): silent exec-completion prompts show as user messages in imported Claude CLI history (#174780)
+  - perf(gateway): reuse session event envelope scratch tuples (#184729)
+  - fix: renew OAuth credentials during long custom transport attempts (#184791)
+  - perf(test): reuse native update builds and remove duplicate flows (#184706)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
