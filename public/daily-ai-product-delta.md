@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-10-27T01:44:01+08:00
-- Requested window: 2026-10-26 to 2026-10-27
+- Generated at: 2026-10-28T00:55:30+08:00
+- Requested window: 2026-10-27 to 2026-10-28
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,30 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-10-26 to 2026-10-27
-- Generated at: 2026-10-27T01:43:42.967760+08:00
-- 窗口: 2026-10-26 至 2026-10-27
-- GitHub 增量: 835 commits / 0 releases
-- 最近 push: 2026-10-26
+- Window: 2026-10-27 to 2026-10-28
+- Generated at: 2026-10-28T00:55:10.468459+08:00
+- 窗口: 2026-10-27 至 2026-10-28
+- GitHub 增量: 1034 commits / 3 releases
+- 最近 push: 2026-10-27
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat: report update outcomes by default without identifiers (#154067)
-  - feat(talk): let connected clients speak short results (#184546)
-  - feat(sessions): archive oversized transcripts as bounded cold chunks (#183827)
-  - feat(subagents): let spawners request blind children that omit model identity and workspace (#182272)
-  - feat(gateway): run managed services from standalone artifacts (#183838)
-  - improve(ui): refine Absolutely theme contrast and surfaces (#183405)
-  - feat(acpx): let operators keep Gateway env out of ACP agents (#179899)
+  - feat(knowledge): readable scribe prompts the operator can edit (#185974)
+  - feat(ui): show yield acknowledgments as agent text and list waited-on sessions
+  - feat(android): adapt flat large-screen navigation (#143466)
+  - feat(session-share): filter shared groups by person (#182286)
+  - feat(knowledge): Scribes tab to start and control knowledge scribes (#185637)
+  - feat(standalone): expose AOT compiler analysis opt-outs (#185769)
+  - feat(liquid-ai): add native Decision model provider (#177369)
+  - feat(knowledge): scribes set themselves up and maintenance finds the review scribe (#185583)
 - Fixes and constraints:
-  - fix(agents): keep watched-session changes after conversation history (#182354)
-  - fix: scope Workboard benchmark controls to the toolbar (#184825)
-  - perf(control-ui): restore composer controls from the cached snapshot (#184383)
-  - fix(ui): wait for committed post-deploy navigation
-  - fix(gateway): silent exec-completion prompts show as user messages in imported Claude CLI history (#174780)
-  - perf(gateway): reuse session event envelope scratch tuples (#184729)
-  - fix: renew OAuth credentials during long custom transport attempts (#184791)
-  - perf(test): reuse native update builds and remove duplicate flows (#184706)
+  - fix(node): exit when startup is cancelled (#186106)
+  - perf(gateway): skip redundant fresh-input custody reads (#186087)
+  - perf(state): skip checkpoint leases for absent projections (#186115)
+  - perf(agents): keep recent Code Mode burst capacity warm (#186053)
+  - fix: run discovered models outside the agent workspace (#185829)
+  - fix(ui): release obsolete history held by widget layouts (#186007)
+  - fix(cron): spawn-only cron runs deliver a subagent's long answer cut at 4,096 characters (#185985)
+  - fix(claws): roll back an MCP server whose write committed before the failure (#185854)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

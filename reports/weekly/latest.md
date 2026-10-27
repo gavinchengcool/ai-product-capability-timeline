@@ -1,91 +1,101 @@
 # OpenClaw Weekly Update
 
-生成时间：2026-10-27T01:43:42.967760+08:00
+生成时间：2026-10-28T00:55:10.468459+08:00
 
 ## Window
 
-- Start: 2026-10-26T01:43:42.967760+08:00
-- End: 2026-10-27T01:43:42.967760+08:00
+- Start: 2026-10-27T00:55:10.468459+08:00
+- End: 2026-10-28T00:55:10.468459+08:00
 - Repo: `openclaw/openclaw`
 
 ## At A Glance
 
-- Commits in window: 835
-- Releases in window: 0
-- Stable releases in window: 0
-- Beta releases in window: 0
-- Repo stars at scan time: 393138
-- Repo forks at scan time: 82647
+- Commits in window: 1034
+- Releases in window: 3
+- Stable releases in window: 2
+- Beta releases in window: 1
+- Repo stars at scan time: 393205
+- Repo forks at scan time: 82661
 
 ## New Capability Signals
 
-- feat: report update outcomes by default without identifiers (#154067)
-- feat(talk): let connected clients speak short results (#184546)
-- feat(sessions): archive oversized transcripts as bounded cold chunks (#183827)
-- feat(subagents): let spawners request blind children that omit model identity and workspace (#182272)
-- feat(gateway): run managed services from standalone artifacts (#183838)
-- improve(ui): refine Absolutely theme contrast and surfaces (#183405)
-- feat(acpx): let operators keep Gateway env out of ACP agents (#179899)
+- feat(knowledge): readable scribe prompts the operator can edit (#185974)
+- feat(ui): show yield acknowledgments as agent text and list waited-on sessions
+- feat(android): adapt flat large-screen navigation (#143466)
+- feat(session-share): filter shared groups by person (#182286)
+- feat(knowledge): Scribes tab to start and control knowledge scribes (#185637)
+- feat(standalone): expose AOT compiler analysis opt-outs (#185769)
+- feat(liquid-ai): add native Decision model provider (#177369)
+- feat(knowledge): scribes set themselves up and maintenance finds the review scribe (#185583)
+- feat(plugins): plugins can hand running turns to their reloaded version (#185315)
+- improve(ui): unify theme surfaces and interaction states (#184991)
+- feat(knowledge): include Knowledge tools in coding profile (#185516)
+- feat(browser): judge page blockers with Decision models (#179362)
+- feat(agents): let sessions_spawn select cyber Access for children (#185230)
+- feat(skills): review background learning as drafts with Skill Workshop propose mode (#181747)
+- feat: show third-party plugin logos in tool previews (#185172)
 
 ## Important Fixes And Hardening
 
-- fix(agents): keep watched-session changes after conversation history (#182354)
-- fix: scope Workboard benchmark controls to the toolbar (#184825)
-- perf(control-ui): restore composer controls from the cached snapshot (#184383)
-- fix(ui): wait for committed post-deploy navigation
-- fix(gateway): silent exec-completion prompts show as user messages in imported Claude CLI history (#174780)
-- perf(gateway): reuse session event envelope scratch tuples (#184729)
-- fix: renew OAuth credentials during long custom transport attempts (#184791)
-- perf(test): reuse native update builds and remove duplicate flows (#184706)
-- perf(plugins): avoid redundant memory prompt array copies (#184779)
-- fix: stop model fallback on transcript admission conflicts (#177956)
-- fix: wait for expired MCP HTTP session recovery on explicit retry (#177427)
-- perf(nodes): reuse the committed device index for discovery (#184783)
-- fix(codex): recover tool summaries after unfinished earlier work (#181718)
-- fix: internalize sqlite commit receipt helper (#184808)
-- fix: retain SQLite lease measurement root (#184800)
+- fix(node): exit when startup is cancelled (#186106)
+- perf(gateway): skip redundant fresh-input custody reads (#186087)
+- perf(state): skip checkpoint leases for absent projections (#186115)
+- perf(agents): keep recent Code Mode burst capacity warm (#186053)
+- fix: run discovered models outside the agent workspace (#185829)
+- fix(ui): release obsolete history held by widget layouts (#186007)
+- fix(cron): spawn-only cron runs deliver a subagent's long answer cut at 4,096 characters (#185985)
+- fix(claws): roll back an MCP server whose write committed before the failure (#185854)
+- fix: plugin activation reports fail in native apps (#184341)
+- fix(gateway-client): hold requests until hello so connect is always the first frame (#185886)
+- fix(agents): identify changed facts behind prompt-cache drops (#186095)
+- perf(state): release cached evidence error stack retainers (#186100)
+- perf(workspace): check selected authority once per effect (#186091)
+- fix(update): preserve cron selection through released upgrades (#185723)
+- perf(gateway): transfer chat history activity as JSON bytes (#186071)
 
 ## Releases This Week
 
-- No GitHub releases were published in this window.
+- `v2026.10.10-beta.4` | beta | 2026-10-27T05:39:34Z | openclaw 2026.10.10-beta.4
+- `v2026.10.8` | stable | 2026-10-27T11:56:59Z | openclaw 2026.10.8
+- `v2026.9.35` | stable | 2026-10-27T02:20:41Z | openclaw 2026.9.35
 
 ## Most Active Change Scopes
 
-- `gateway`: 99
-- `agents`: 90
-- `fix`: 75
-- `ui`: 60
-- `refactor`: 50
-- `test`: 37
-- `plugins`: 32
-- `sessions`: 25
-- `state`: 19
-- `core,plugins,ui`: 13
-- `infra`: 12
-- `codex`: 10
+- `ui`: 126
+- `fix`: 124
+- `gateway`: 94
+- `agents`: 92
+- `test`: 71
+- `sessions`: 38
+- `refactor`: 32
+- `state`: 30
+- `ci`: 22
+- `plugins`: 21
+- `infra`: 19
+- `update`: 18
 
 ## Recent Commit Headlines
 
-- 2026-10-26T17:42:58Z | fix(agents): keep watched-session changes after conversation history (#182354)
-- 2026-10-26T17:41:49Z | fix: scope Workboard benchmark controls to the toolbar (#184825)
-- 2026-10-26T17:41:09Z | test: track the pinned Codex version in native hook pressure (#184817)
-- 2026-10-26T17:30:51Z | chore: merge main for post-deploy readiness repair
-- 2026-10-26T17:28:08Z | perf(control-ui): restore composer controls from the cached snapshot (#184383)
-- 2026-10-26T17:21:50Z | fix(ui): wait for committed post-deploy navigation
-- 2026-10-26T17:09:37Z | fix(gateway): silent exec-completion prompts show as user messages in imported Claude CLI history (#174780)
-- 2026-10-26T17:08:10Z | chore: keep CLI config patch predicate module-local (#184824)
-- 2026-10-26T17:07:25Z | perf(gateway): reuse session event envelope scratch tuples (#184729)
-- 2026-10-26T17:06:00Z | feat: report update outcomes by default without identifiers (#154067)
-- 2026-10-26T17:02:28Z | fix: renew OAuth credentials during long custom transport attempts (#184791)
-- 2026-10-26T16:59:54Z | perf(test): reuse native update builds and remove duplicate flows (#184706)
-- 2026-10-26T16:59:13Z | perf(plugins): avoid redundant memory prompt array copies (#184779)
-- 2026-10-26T16:58:29Z | fix: stop model fallback on transcript admission conflicts (#177956)
-- 2026-10-26T16:56:05Z | fix: wait for expired MCP HTTP session recovery on explicit retry (#177427)
-- 2026-10-26T16:55:30Z | perf(nodes): reuse the committed device index for discovery (#184783)
-- 2026-10-26T16:54:05Z | fix(codex): recover tool summaries after unfinished earlier work (#181718)
-- 2026-10-26T16:51:41Z | fix: internalize sqlite commit receipt helper (#184808)
-- 2026-10-26T16:50:20Z | fix: retain SQLite lease measurement root (#184800)
-- 2026-10-26T16:48:48Z | perf(ui): speed up filtering large agent skills lists (#184701)
+- 2026-10-27T16:54:46Z | refactor: use test lifetime for private MCP cleanup (#186119)
+- 2026-10-27T16:53:40Z | fix(node): exit when startup is cancelled (#186106)
+- 2026-10-27T16:50:48Z | refactor(tests): use real IRC formatter (#186122)
+- 2026-10-27T16:45:21Z | perf(gateway): skip redundant fresh-input custody reads (#186087)
+- 2026-10-27T16:43:39Z | perf(state): skip checkpoint leases for absent projections (#186115)
+- 2026-10-27T16:42:10Z | perf(agents): keep recent Code Mode burst capacity warm (#186053)
+- 2026-10-27T16:40:05Z | fix: run discovered models outside the agent workspace (#185829)
+- 2026-10-27T16:38:22Z | test: consolidate duplicate fixtures and assertions (#186084)
+- 2026-10-27T16:38:00Z | test(ui): await current post-navigation readiness (#186112)
+- 2026-10-27T16:37:05Z | fix(ui): release obsolete history held by widget layouts (#186007)
+- 2026-10-27T16:36:32Z | fix(cron): spawn-only cron runs deliver a subagent's long answer cut at 4,096 characters (#185985)
+- 2026-10-27T16:35:44Z | fix(claws): roll back an MCP server whose write committed before the failure (#185854)
+- 2026-10-27T16:32:29Z | fix: plugin activation reports fail in native apps (#184341)
+- 2026-10-27T16:31:41Z | fix(gateway-client): hold requests until hello so connect is always the first frame (#185886)
+- 2026-10-27T16:30:22Z | fix(agents): identify changed facts behind prompt-cache drops (#186095)
+- 2026-10-27T16:29:59Z | test(ui): hold older history through reconnect refreshes (#186111)
+- 2026-10-27T16:29:11Z | refactor(test): share device re-pairing setup (#185979)
+- 2026-10-27T16:29:07Z | chore(tests): align runtime fixtures and worker inventory (#185780)
+- 2026-10-27T16:27:24Z | perf(state): release cached evidence error stack retainers (#186100)
+- 2026-10-27T16:25:05Z | perf(workspace): check selected authority once per effect (#186091)
 
 ## Sources
 

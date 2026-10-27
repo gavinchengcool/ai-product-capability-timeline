@@ -1,0 +1,207 @@
+{
+  "generated_at": "2026-10-28T00:55:10.468459+08:00",
+  "window": {
+    "start_local": "2026-10-27T00:55:10.468459+08:00",
+    "end_local": "2026-10-28T00:55:10.468459+08:00",
+    "start_utc": "2026-10-26T16:55:10Z",
+    "end_utc": "2026-10-27T16:55:10Z"
+  },
+  "repo": {
+    "slug": "openclaw/openclaw",
+    "stars": 393205,
+    "forks": 82661,
+    "open_issues": 7758,
+    "pushed_at": "2026-10-27T16:54:51Z"
+  },
+  "releases_in_window": [
+    {
+      "tag_name": "v2026.10.10-beta.4",
+      "published_at": "2026-10-27T05:39:34Z",
+      "name": "openclaw 2026.10.10-beta.4",
+      "prerelease": true,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.10-beta.4"
+    },
+    {
+      "tag_name": "v2026.10.8",
+      "published_at": "2026-10-27T11:56:59Z",
+      "name": "openclaw 2026.10.8",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.8"
+    },
+    {
+      "tag_name": "v2026.9.35",
+      "published_at": "2026-10-27T02:20:41Z",
+      "name": "openclaw 2026.9.35",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.35"
+    }
+  ],
+  "commit_count": 1034,
+  "commit_headlines": [
+    "refactor: use test lifetime for private MCP cleanup (#186119)",
+    "fix(node): exit when startup is cancelled (#186106)",
+    "refactor(tests): use real IRC formatter (#186122)",
+    "perf(gateway): skip redundant fresh-input custody reads (#186087)",
+    "perf(state): skip checkpoint leases for absent projections (#186115)",
+    "perf(agents): keep recent Code Mode burst capacity warm (#186053)",
+    "fix: run discovered models outside the agent workspace (#185829)",
+    "test: consolidate duplicate fixtures and assertions (#186084)",
+    "test(ui): await current post-navigation readiness (#186112)",
+    "fix(ui): release obsolete history held by widget layouts (#186007)",
+    "fix(cron): spawn-only cron runs deliver a subagent's long answer cut at 4,096 characters (#185985)",
+    "fix(claws): roll back an MCP server whose write committed before the failure (#185854)",
+    "fix: plugin activation reports fail in native apps (#184341)",
+    "fix(gateway-client): hold requests until hello so connect is always the first frame (#185886)",
+    "fix(agents): identify changed facts behind prompt-cache drops (#186095)",
+    "test(ui): hold older history through reconnect refreshes (#186111)",
+    "refactor(test): share device re-pairing setup (#185979)",
+    "chore(tests): align runtime fixtures and worker inventory (#185780)",
+    "perf(state): release cached evidence error stack retainers (#186100)",
+    "perf(workspace): check selected authority once per effect (#186091)",
+    "fix(update): preserve cron selection through released upgrades (#185723)",
+    "refactor(tests): remove obsolete Slack event helper mock (#186102)",
+    "perf(gateway): transfer chat history activity as JSON bytes (#186071)",
+    "fix(code-mode): report constructed imports as catchable module errors (#186076)",
+    "perf(agents): isolate Code Mode worker cold-start graph (#186099)",
+    "perf(ui): retain agent selector rows and retire selection routes (#185990)",
+    "perf: yield Activity Live bodies and coalesce auto-follow (#186101)",
+    "improve: render chat diagrams with Pele (#184482)",
+    "fix(ui): update recovery buttons overlap on phone-width screens (#185980)",
+    "perf(ui): shorten Usage date-range rendering tasks (#186094)",
+    "fix(ui): preserve canonical transcript image geometry (#185970)",
+    "perf(state): compact changed append receipts (#186086)",
+    "perf(code-mode): reuse trusted controller bytecode per worker (#185904)",
+    "fix(gateway): Gateway ignores a stop that arrives during an in-place restart (#186055)",
+    "perf(gateway): avoid disposable sharing and trajectory allocations (#186074)",
+    "perf(ui): avoid repeated work while filtering agent skills (#186079)",
+    "fix(ci): reuse the canonical UI build in Node compatibility checks (#185862)",
+    "fix(agents): keep computer and yield tool prefixes stable (#185894)",
+    "perf(agents): seal completed and restored assistant history (#186046)",
+    "perf(state): reduce worker registry retention (#186064)",
+    "perf(sessions): share frozen nested patch results internally (#186051)",
+    "fix(ci): avoid redundant source capsule filesystem work (#185871)",
+    "perf(state): keep workspace manifest scans off shared readers (#185806)",
+    "refactor: use test lifetime for relay output wait (#186078)",
+    "test: update worker pre-turn recovery fixtures (#186090)",
+    "perf(state): release completed payloads from idle reclamation workers (#186060)",
+    "refactor(tests): use real Teams send helpers (#186075)",
+    "perf(infra): isolate small worker startup graphs (#186042)",
+    "refactor(tests): share and settle OpenCode provider fixtures (#157628)",
+    "fix(code-mode): resume ready required replies without checkpoints (#185903)"
+  ],
+  "feature_items": [
+    "feat(knowledge): readable scribe prompts the operator can edit (#185974)",
+    "feat(ui): show yield acknowledgments as agent text and list waited-on sessions",
+    "feat(android): adapt flat large-screen navigation (#143466)",
+    "feat(session-share): filter shared groups by person (#182286)",
+    "feat(knowledge): Scribes tab to start and control knowledge scribes (#185637)",
+    "feat(standalone): expose AOT compiler analysis opt-outs (#185769)",
+    "feat(liquid-ai): add native Decision model provider (#177369)",
+    "feat(knowledge): scribes set themselves up and maintenance finds the review scribe (#185583)",
+    "feat(plugins): plugins can hand running turns to their reloaded version (#185315)",
+    "improve(ui): unify theme surfaces and interaction states (#184991)",
+    "feat(knowledge): include Knowledge tools in coding profile (#185516)",
+    "feat(browser): judge page blockers with Decision models (#179362)",
+    "feat(agents): let sessions_spawn select cyber Access for children (#185230)",
+    "feat(skills): review background learning as drafts with Skill Workshop propose mode (#181747)",
+    "feat: show third-party plugin logos in tool previews (#185172)",
+    "feat: add personal session groups (#181680)",
+    "feat(typesafe): judge V2 image state with hosted Jev (#177636)",
+    "feat(ui): confirm before archiving or deleting conversations with automations (#184818)",
+    "feat: report update outcomes by default without identifiers (#154067)"
+  ],
+  "fix_items": [
+    "fix(node): exit when startup is cancelled (#186106)",
+    "perf(gateway): skip redundant fresh-input custody reads (#186087)",
+    "perf(state): skip checkpoint leases for absent projections (#186115)",
+    "perf(agents): keep recent Code Mode burst capacity warm (#186053)",
+    "fix: run discovered models outside the agent workspace (#185829)",
+    "fix(ui): release obsolete history held by widget layouts (#186007)",
+    "fix(cron): spawn-only cron runs deliver a subagent's long answer cut at 4,096 characters (#185985)",
+    "fix(claws): roll back an MCP server whose write committed before the failure (#185854)",
+    "fix: plugin activation reports fail in native apps (#184341)",
+    "fix(gateway-client): hold requests until hello so connect is always the first frame (#185886)",
+    "fix(agents): identify changed facts behind prompt-cache drops (#186095)",
+    "perf(state): release cached evidence error stack retainers (#186100)",
+    "perf(workspace): check selected authority once per effect (#186091)",
+    "fix(update): preserve cron selection through released upgrades (#185723)",
+    "perf(gateway): transfer chat history activity as JSON bytes (#186071)",
+    "fix(code-mode): report constructed imports as catchable module errors (#186076)",
+    "perf(agents): isolate Code Mode worker cold-start graph (#186099)",
+    "perf(ui): retain agent selector rows and retire selection routes (#185990)",
+    "perf: yield Activity Live bodies and coalesce auto-follow (#186101)",
+    "fix(ui): update recovery buttons overlap on phone-width screens (#185980)",
+    "perf(ui): shorten Usage date-range rendering tasks (#186094)",
+    "fix(ui): preserve canonical transcript image geometry (#185970)",
+    "perf(state): compact changed append receipts (#186086)",
+    "perf(code-mode): reuse trusted controller bytecode per worker (#185904)",
+    "fix(gateway): Gateway ignores a stop that arrives during an in-place restart (#186055)",
+    "perf(gateway): avoid disposable sharing and trajectory allocations (#186074)",
+    "perf(ui): avoid repeated work while filtering agent skills (#186079)",
+    "fix(ci): reuse the canonical UI build in Node compatibility checks (#185862)",
+    "fix(agents): keep computer and yield tool prefixes stable (#185894)",
+    "perf(agents): seal completed and restored assistant history (#186046)"
+  ],
+  "top_scopes": [
+    {
+      "scope": "ui",
+      "count": 126
+    },
+    {
+      "scope": "fix",
+      "count": 124
+    },
+    {
+      "scope": "gateway",
+      "count": 94
+    },
+    {
+      "scope": "agents",
+      "count": 92
+    },
+    {
+      "scope": "test",
+      "count": 71
+    },
+    {
+      "scope": "sessions",
+      "count": 38
+    },
+    {
+      "scope": "refactor",
+      "count": 32
+    },
+    {
+      "scope": "state",
+      "count": 30
+    },
+    {
+      "scope": "ci",
+      "count": 22
+    },
+    {
+      "scope": "plugins",
+      "count": 21
+    },
+    {
+      "scope": "infra",
+      "count": 19
+    },
+    {
+      "scope": "update",
+      "count": 18
+    },
+    {
+      "scope": "control-ui",
+      "count": 16
+    },
+    {
+      "scope": "knowledge",
+      "count": 13
+    },
+    {
+      "scope": "chore",
+      "count": 12
+    }
+  ]
+}
