@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-28T00:55:30+08:00",
+  "generatedAt": "2026-10-29T01:29:18+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-10-27T00:55:30+08:00",
-    "end_local": "2026-10-28T00:55:30+08:00"
+    "start_local": "2026-10-28T01:29:18+08:00",
+    "end_local": "2026-10-29T01:29:18+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-10-28T00:55:10.468459+08:00",
+      "generatedAt": "2026-10-29T01:28:59.304912+08:00",
       "window": {
-        "start_local": "2026-10-27T00:55:10.468459+08:00",
-        "end_local": "2026-10-28T00:55:10.468459+08:00",
-        "start_utc": "2026-10-26T16:55:10Z",
-        "end_utc": "2026-10-27T16:55:10Z"
+        "start_local": "2026-10-28T01:28:59.304912+08:00",
+        "end_local": "2026-10-29T01:28:59.304912+08:00",
+        "start_utc": "2026-10-27T17:28:59Z",
+        "end_utc": "2026-10-28T17:28:59Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-10-27 至 2026-10-28"
+          "value": "2026-10-28 至 2026-10-29"
         },
         {
           "label": "GitHub 增量",
-          "value": "1034 commits / 3 releases"
+          "value": "520 commits / 0 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-10-27"
+          "value": "2026-10-28"
         },
         {
           "label": "来源",
@@ -52,80 +52,58 @@
         }
       ],
       "featureItems": [
-        "feat(knowledge): readable scribe prompts the operator can edit (#185974)",
-        "feat(ui): show yield acknowledgments as agent text and list waited-on sessions",
-        "feat(android): adapt flat large-screen navigation (#143466)",
-        "feat(session-share): filter shared groups by person (#182286)",
-        "feat(knowledge): Scribes tab to start and control knowledge scribes (#185637)",
-        "feat(standalone): expose AOT compiler analysis opt-outs (#185769)",
-        "feat(liquid-ai): add native Decision model provider (#177369)",
-        "feat(knowledge): scribes set themselves up and maintenance finds the review scribe (#185583)"
+        "feat(workers): dispatch own sessions to role-granted cloud profiles",
+        "feat(knowledge): owners can grant group chats access to private knowledge (#186455)",
+        "feat(telemetry): count reporting installations without identifiers (#186569)",
+        "feat(ui): show paused child sessions in the handoff wait line",
+        "feat(knowledge): agents can no longer grow pages past a read-sized budget, and can extract sections instead",
+        "feat(qa): report terminal-aware logical model accounting (#186462)",
+        "feat(memory-lancedb): report health and serve search through the memory provider runtime (#165756)",
+        "feat: enable native plugin UI without a Labs opt-in"
       ],
       "fixItems": [
-        "fix(node): exit when startup is cancelled (#186106)",
-        "perf(gateway): skip redundant fresh-input custody reads (#186087)",
-        "perf(state): skip checkpoint leases for absent projections (#186115)",
-        "perf(agents): keep recent Code Mode burst capacity warm (#186053)",
-        "fix: run discovered models outside the agent workspace (#185829)",
-        "fix(ui): release obsolete history held by widget layouts (#186007)",
-        "fix(cron): spawn-only cron runs deliver a subagent's long answer cut at 4,096 characters (#185985)",
-        "fix(claws): roll back an MCP server whose write committed before the failure (#185854)"
+        "fix: distinguish owned processes in native Windows task tests (#186806)",
+        "fix(native): retain messages refused during agent startup (#186860)",
+        "fix: restart notices missing from conversation history (#186547)",
+        "perf(ai): reuse frozen Anthropic HTTP request bytes (#186872)",
+        "fix: avoid cold compilation timing out Windows lifecycle proof (#186868)",
+        "fix: preserve agent creation dialog state during avatar selection (#186899)",
+        "fix: preserve Draft when copying conversations (#186828)",
+        "fix: unblock the mobile link-preview browser test (#186894)"
       ],
-      "releases": [
-        {
-          "tag_name": "v2026.10.10-beta.4",
-          "published_at": "2026-10-27T05:39:34Z",
-          "name": "openclaw 2026.10.10-beta.4",
-          "prerelease": true,
-          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.10-beta.4"
-        },
-        {
-          "tag_name": "v2026.10.8",
-          "published_at": "2026-10-27T11:56:59Z",
-          "name": "openclaw 2026.10.8",
-          "prerelease": false,
-          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.8"
-        },
-        {
-          "tag_name": "v2026.9.35",
-          "published_at": "2026-10-27T02:20:41Z",
-          "name": "openclaw 2026.9.35",
-          "prerelease": false,
-          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.35"
-        }
-      ],
+      "releases": [],
       "topScopes": [
         {
-          "scope": "ui",
-          "count": 126
-        },
-        {
           "scope": "fix",
-          "count": 124
-        },
-        {
-          "scope": "gateway",
           "count": 94
         },
         {
-          "scope": "agents",
-          "count": 92
+          "scope": "ui",
+          "count": 77
         },
         {
-          "scope": "test",
-          "count": 71
+          "scope": "gateway",
+          "count": 41
+        },
+        {
+          "scope": "agents",
+          "count": 25
+        },
+        {
+          "scope": "update",
+          "count": 24
         },
         {
           "scope": "sessions",
-          "count": 38
+          "count": 22
         },
         {
-          "scope": "refactor",
-          "count": 32
+          "scope": "test",
+          "count": 21
         },
         {
-          "scope": "state",
-          "count": 30
+          "scope": "ci",
+          "count": 15
         }
       ],
       "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"

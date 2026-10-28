@@ -1,0 +1,183 @@
+{
+  "generated_at": "2026-10-29T01:28:59.304912+08:00",
+  "window": {
+    "start_local": "2026-10-28T01:28:59.304912+08:00",
+    "end_local": "2026-10-29T01:28:59.304912+08:00",
+    "start_utc": "2026-10-27T17:28:59Z",
+    "end_utc": "2026-10-28T17:28:59Z"
+  },
+  "repo": {
+    "slug": "openclaw/openclaw",
+    "stars": 393271,
+    "forks": 82668,
+    "open_issues": 7751,
+    "pushed_at": "2026-10-28T17:28:02Z"
+  },
+  "releases_in_window": [],
+  "commit_count": 520,
+  "commit_headlines": [
+    "fix: distinguish owned processes in native Windows task tests (#186806)",
+    "fix(native): retain messages refused during agent startup (#186860)",
+    "fix: restart notices missing from conversation history (#186547)",
+    "perf(ai): reuse frozen Anthropic HTTP request bytes (#186872)",
+    "refactor(nextcloud-talk): share media diagnostic context (#186911)",
+    "fix: avoid cold compilation timing out Windows lifecycle proof (#186868)",
+    "fix: preserve agent creation dialog state during avatar selection (#186899)",
+    "fix: preserve Draft when copying conversations (#186828)",
+    "fix: unblock the mobile link-preview browser test (#186894)",
+    "fix(cron): stop waiting for run completion when interrupted (#186750)",
+    "perf(gateway): reuse full session row encoding across event recipients (#186900)",
+    "fix: recover accepted guest workspace inventory (#186819)",
+    "fix(doctor): recover upgrades with unfinished shared-state columns",
+    "docs(tools): use registered MCP tool names in the Tool Search examples (#186865)",
+    "fix(scripts): preserve PR tooling across process handoffs (#185964)",
+    "refactor(tests): share Doctor peer-link fixture (#186878)",
+    "fix: recover interrupted updates after the original PR closes (#186717)",
+    "perf(doctor): parse session migration manifests once per run (#186880)",
+    "fix(agents): allow bounded recovery after repeated identical tool errors",
+    "fix(update): finish updates when native process ancestry is unavailable (#186871)",
+    "fix(team-reports): keep the deferred tick retry on the elapsed clock (#186534)",
+    "fix(codex): unbindable command approvals are declined with no log or reason (#186876)",
+    "improve(a2a): verify notification dispatch completion (#156508)",
+    "fix(qa): read evidence reports from source checkouts (#186747)",
+    "perf(trajectory): reuse prepared arrays during diagnostic projection (#186848)",
+    "perf(update): reuse stopped backups for engine inspection (#186867)",
+    "fix(update): probe absent system package managers once and quietly (#186839)",
+    "fix(cron): normalize NFC in automation list search (#186794)",
+    "chore(ui): refresh control ui locales (#186877)",
+    "fix(perf): release Code Mode probe resources after failures (#186823)",
+    "feat(workers): dispatch own sessions to role-granted cloud profiles",
+    "test(telegram): advance the durable retry deadline on a fake clock (#186841)",
+    "fix: ClawRouter primaries get no utility model when utilityModel is unset (#186327)",
+    "perf(gateway): reuse encoded sidebar row prefixes across pages (#186840)",
+    "fix(ci): avoid repeated callback symbol queries (#186846)",
+    "fix: keep workspace baselines readable after file deletion (#186815)",
+    "fix(gateway): finish shutdown when an agent database lock was replaced (#186811)",
+    "fix(apple): realtime voice replies play too quietly (#166056)",
+    "refactor(test): simplify PostgreSQL recovery row assertions (#186673)",
+    "fix(team-reports): keep the worker response budget on the monotonic clock (#186531)",
+    "fix(test): stabilize launcher observation deadline checks (#186827)",
+    "fix(plugins): allow partial provider auth config patches (#181606)",
+    "fix(update): bound service stop and report the serving version when managed activation fails (#186792)",
+    "fix: open sandbox file references from their workspace (#186727)",
+    "docs: macOS VM 24/7 steps miss lid-close sleep (#186801)",
+    "perf(update): reduce schema-crossing downtime (#186797)",
+    "fix: recover sessions blocked by aggregate workspace size limits",
+    "fix(claude-cli): avoid loading every tool definition upfront (#186776)",
+    "fix(backup): preserve literal archive paths (#186746)",
+    "perf(sessions): skip unused transcript array key copies (#186800)"
+  ],
+  "feature_items": [
+    "feat(workers): dispatch own sessions to role-granted cloud profiles",
+    "feat(knowledge): owners can grant group chats access to private knowledge (#186455)",
+    "feat(telemetry): count reporting installations without identifiers (#186569)",
+    "feat(ui): show paused child sessions in the handoff wait line",
+    "feat(knowledge): agents can no longer grow pages past a read-sized budget, and can extract sections instead",
+    "feat(qa): report terminal-aware logical model accounting (#186462)",
+    "feat(memory-lancedb): report health and serve search through the memory provider runtime (#165756)",
+    "feat: enable native plugin UI without a Labs opt-in",
+    "feat(knowledge): consolidate claims by scope and supersede snapshots by their outcome",
+    "feat(mattermost): stop bot-to-bot reply loops and add allowBots (#183239)",
+    "feat(notifications): identify completed sessions by explicit labels (#144862)",
+    "feat(models): let a provider behind a local relay keep the hosted idle timeout (#183637)",
+    "feat(agent): read piped messages in ordinary agent turns (#167122)",
+    "feat: make busy-session messages automatic with coherent security presets (#185477)",
+    "feat(knowledge): reloading Knowledge no longer waits for running agent turns (#186267)",
+    "feat(gateway): report yielded subagent children as paused on session rows",
+    "feat(desktop): choose JIT or AOT for Tauri builds (#185885)"
+  ],
+  "fix_items": [
+    "fix: distinguish owned processes in native Windows task tests (#186806)",
+    "fix(native): retain messages refused during agent startup (#186860)",
+    "fix: restart notices missing from conversation history (#186547)",
+    "perf(ai): reuse frozen Anthropic HTTP request bytes (#186872)",
+    "fix: avoid cold compilation timing out Windows lifecycle proof (#186868)",
+    "fix: preserve agent creation dialog state during avatar selection (#186899)",
+    "fix: preserve Draft when copying conversations (#186828)",
+    "fix: unblock the mobile link-preview browser test (#186894)",
+    "fix(cron): stop waiting for run completion when interrupted (#186750)",
+    "perf(gateway): reuse full session row encoding across event recipients (#186900)",
+    "fix: recover accepted guest workspace inventory (#186819)",
+    "fix(doctor): recover upgrades with unfinished shared-state columns",
+    "fix(scripts): preserve PR tooling across process handoffs (#185964)",
+    "fix: recover interrupted updates after the original PR closes (#186717)",
+    "perf(doctor): parse session migration manifests once per run (#186880)",
+    "fix(agents): allow bounded recovery after repeated identical tool errors",
+    "fix(update): finish updates when native process ancestry is unavailable (#186871)",
+    "fix(team-reports): keep the deferred tick retry on the elapsed clock (#186534)",
+    "fix(codex): unbindable command approvals are declined with no log or reason (#186876)",
+    "fix(qa): read evidence reports from source checkouts (#186747)",
+    "perf(trajectory): reuse prepared arrays during diagnostic projection (#186848)",
+    "perf(update): reuse stopped backups for engine inspection (#186867)",
+    "fix(update): probe absent system package managers once and quietly (#186839)",
+    "fix(cron): normalize NFC in automation list search (#186794)",
+    "fix(perf): release Code Mode probe resources after failures (#186823)",
+    "fix: ClawRouter primaries get no utility model when utilityModel is unset (#186327)",
+    "perf(gateway): reuse encoded sidebar row prefixes across pages (#186840)",
+    "fix(ci): avoid repeated callback symbol queries (#186846)",
+    "fix: keep workspace baselines readable after file deletion (#186815)",
+    "fix(gateway): finish shutdown when an agent database lock was replaced (#186811)"
+  ],
+  "top_scopes": [
+    {
+      "scope": "fix",
+      "count": 94
+    },
+    {
+      "scope": "ui",
+      "count": 77
+    },
+    {
+      "scope": "gateway",
+      "count": 41
+    },
+    {
+      "scope": "agents",
+      "count": 25
+    },
+    {
+      "scope": "update",
+      "count": 24
+    },
+    {
+      "scope": "sessions",
+      "count": 22
+    },
+    {
+      "scope": "test",
+      "count": 21
+    },
+    {
+      "scope": "ci",
+      "count": 15
+    },
+    {
+      "scope": "docs",
+      "count": 11
+    },
+    {
+      "scope": "state",
+      "count": 11
+    },
+    {
+      "scope": "knowledge",
+      "count": 8
+    },
+    {
+      "scope": "cron",
+      "count": 7
+    },
+    {
+      "scope": "doctor",
+      "count": 7
+    },
+    {
+      "scope": "cli",
+      "count": 7
+    },
+    {
+      "scope": "telegram",
+      "count": 5
+    }
+  ]
+}

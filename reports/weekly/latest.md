@@ -1,101 +1,99 @@
 # OpenClaw Weekly Update
 
-生成时间：2026-10-28T00:55:10.468459+08:00
+生成时间：2026-10-29T01:28:59.304912+08:00
 
 ## Window
 
-- Start: 2026-10-27T00:55:10.468459+08:00
-- End: 2026-10-28T00:55:10.468459+08:00
+- Start: 2026-10-28T01:28:59.304912+08:00
+- End: 2026-10-29T01:28:59.304912+08:00
 - Repo: `openclaw/openclaw`
 
 ## At A Glance
 
-- Commits in window: 1034
-- Releases in window: 3
-- Stable releases in window: 2
-- Beta releases in window: 1
-- Repo stars at scan time: 393205
-- Repo forks at scan time: 82661
+- Commits in window: 520
+- Releases in window: 0
+- Stable releases in window: 0
+- Beta releases in window: 0
+- Repo stars at scan time: 393271
+- Repo forks at scan time: 82668
 
 ## New Capability Signals
 
-- feat(knowledge): readable scribe prompts the operator can edit (#185974)
-- feat(ui): show yield acknowledgments as agent text and list waited-on sessions
-- feat(android): adapt flat large-screen navigation (#143466)
-- feat(session-share): filter shared groups by person (#182286)
-- feat(knowledge): Scribes tab to start and control knowledge scribes (#185637)
-- feat(standalone): expose AOT compiler analysis opt-outs (#185769)
-- feat(liquid-ai): add native Decision model provider (#177369)
-- feat(knowledge): scribes set themselves up and maintenance finds the review scribe (#185583)
-- feat(plugins): plugins can hand running turns to their reloaded version (#185315)
-- improve(ui): unify theme surfaces and interaction states (#184991)
-- feat(knowledge): include Knowledge tools in coding profile (#185516)
-- feat(browser): judge page blockers with Decision models (#179362)
-- feat(agents): let sessions_spawn select cyber Access for children (#185230)
-- feat(skills): review background learning as drafts with Skill Workshop propose mode (#181747)
-- feat: show third-party plugin logos in tool previews (#185172)
+- feat(workers): dispatch own sessions to role-granted cloud profiles
+- feat(knowledge): owners can grant group chats access to private knowledge (#186455)
+- feat(telemetry): count reporting installations without identifiers (#186569)
+- feat(ui): show paused child sessions in the handoff wait line
+- feat(knowledge): agents can no longer grow pages past a read-sized budget, and can extract sections instead
+- feat(qa): report terminal-aware logical model accounting (#186462)
+- feat(memory-lancedb): report health and serve search through the memory provider runtime (#165756)
+- feat: enable native plugin UI without a Labs opt-in
+- feat(knowledge): consolidate claims by scope and supersede snapshots by their outcome
+- feat(mattermost): stop bot-to-bot reply loops and add allowBots (#183239)
+- feat(notifications): identify completed sessions by explicit labels (#144862)
+- feat(models): let a provider behind a local relay keep the hosted idle timeout (#183637)
+- feat(agent): read piped messages in ordinary agent turns (#167122)
+- feat: make busy-session messages automatic with coherent security presets (#185477)
+- feat(knowledge): reloading Knowledge no longer waits for running agent turns (#186267)
 
 ## Important Fixes And Hardening
 
-- fix(node): exit when startup is cancelled (#186106)
-- perf(gateway): skip redundant fresh-input custody reads (#186087)
-- perf(state): skip checkpoint leases for absent projections (#186115)
-- perf(agents): keep recent Code Mode burst capacity warm (#186053)
-- fix: run discovered models outside the agent workspace (#185829)
-- fix(ui): release obsolete history held by widget layouts (#186007)
-- fix(cron): spawn-only cron runs deliver a subagent's long answer cut at 4,096 characters (#185985)
-- fix(claws): roll back an MCP server whose write committed before the failure (#185854)
-- fix: plugin activation reports fail in native apps (#184341)
-- fix(gateway-client): hold requests until hello so connect is always the first frame (#185886)
-- fix(agents): identify changed facts behind prompt-cache drops (#186095)
-- perf(state): release cached evidence error stack retainers (#186100)
-- perf(workspace): check selected authority once per effect (#186091)
-- fix(update): preserve cron selection through released upgrades (#185723)
-- perf(gateway): transfer chat history activity as JSON bytes (#186071)
+- fix: distinguish owned processes in native Windows task tests (#186806)
+- fix(native): retain messages refused during agent startup (#186860)
+- fix: restart notices missing from conversation history (#186547)
+- perf(ai): reuse frozen Anthropic HTTP request bytes (#186872)
+- fix: avoid cold compilation timing out Windows lifecycle proof (#186868)
+- fix: preserve agent creation dialog state during avatar selection (#186899)
+- fix: preserve Draft when copying conversations (#186828)
+- fix: unblock the mobile link-preview browser test (#186894)
+- fix(cron): stop waiting for run completion when interrupted (#186750)
+- perf(gateway): reuse full session row encoding across event recipients (#186900)
+- fix: recover accepted guest workspace inventory (#186819)
+- fix(doctor): recover upgrades with unfinished shared-state columns
+- fix(scripts): preserve PR tooling across process handoffs (#185964)
+- fix: recover interrupted updates after the original PR closes (#186717)
+- perf(doctor): parse session migration manifests once per run (#186880)
 
 ## Releases This Week
 
-- `v2026.10.10-beta.4` | beta | 2026-10-27T05:39:34Z | openclaw 2026.10.10-beta.4
-- `v2026.10.8` | stable | 2026-10-27T11:56:59Z | openclaw 2026.10.8
-- `v2026.9.35` | stable | 2026-10-27T02:20:41Z | openclaw 2026.9.35
+- No GitHub releases were published in this window.
 
 ## Most Active Change Scopes
 
-- `ui`: 126
-- `fix`: 124
-- `gateway`: 94
-- `agents`: 92
-- `test`: 71
-- `sessions`: 38
-- `refactor`: 32
-- `state`: 30
-- `ci`: 22
-- `plugins`: 21
-- `infra`: 19
-- `update`: 18
+- `fix`: 94
+- `ui`: 77
+- `gateway`: 41
+- `agents`: 25
+- `update`: 24
+- `sessions`: 22
+- `test`: 21
+- `ci`: 15
+- `docs`: 11
+- `state`: 11
+- `knowledge`: 8
+- `cron`: 7
 
 ## Recent Commit Headlines
 
-- 2026-10-27T16:54:46Z | refactor: use test lifetime for private MCP cleanup (#186119)
-- 2026-10-27T16:53:40Z | fix(node): exit when startup is cancelled (#186106)
-- 2026-10-27T16:50:48Z | refactor(tests): use real IRC formatter (#186122)
-- 2026-10-27T16:45:21Z | perf(gateway): skip redundant fresh-input custody reads (#186087)
-- 2026-10-27T16:43:39Z | perf(state): skip checkpoint leases for absent projections (#186115)
-- 2026-10-27T16:42:10Z | perf(agents): keep recent Code Mode burst capacity warm (#186053)
-- 2026-10-27T16:40:05Z | fix: run discovered models outside the agent workspace (#185829)
-- 2026-10-27T16:38:22Z | test: consolidate duplicate fixtures and assertions (#186084)
-- 2026-10-27T16:38:00Z | test(ui): await current post-navigation readiness (#186112)
-- 2026-10-27T16:37:05Z | fix(ui): release obsolete history held by widget layouts (#186007)
-- 2026-10-27T16:36:32Z | fix(cron): spawn-only cron runs deliver a subagent's long answer cut at 4,096 characters (#185985)
-- 2026-10-27T16:35:44Z | fix(claws): roll back an MCP server whose write committed before the failure (#185854)
-- 2026-10-27T16:32:29Z | fix: plugin activation reports fail in native apps (#184341)
-- 2026-10-27T16:31:41Z | fix(gateway-client): hold requests until hello so connect is always the first frame (#185886)
-- 2026-10-27T16:30:22Z | fix(agents): identify changed facts behind prompt-cache drops (#186095)
-- 2026-10-27T16:29:59Z | test(ui): hold older history through reconnect refreshes (#186111)
-- 2026-10-27T16:29:11Z | refactor(test): share device re-pairing setup (#185979)
-- 2026-10-27T16:29:07Z | chore(tests): align runtime fixtures and worker inventory (#185780)
-- 2026-10-27T16:27:24Z | perf(state): release cached evidence error stack retainers (#186100)
-- 2026-10-27T16:25:05Z | perf(workspace): check selected authority once per effect (#186091)
+- 2026-10-28T17:26:34Z | fix: distinguish owned processes in native Windows task tests (#186806)
+- 2026-10-28T17:19:59Z | fix(native): retain messages refused during agent startup (#186860)
+- 2026-10-28T17:14:04Z | fix: restart notices missing from conversation history (#186547)
+- 2026-10-28T17:11:46Z | perf(ai): reuse frozen Anthropic HTTP request bytes (#186872)
+- 2026-10-28T17:08:30Z | refactor(nextcloud-talk): share media diagnostic context (#186911)
+- 2026-10-28T17:08:08Z | fix: avoid cold compilation timing out Windows lifecycle proof (#186868)
+- 2026-10-28T17:06:12Z | fix: preserve agent creation dialog state during avatar selection (#186899)
+- 2026-10-28T16:58:21Z | fix: preserve Draft when copying conversations (#186828)
+- 2026-10-28T16:56:55Z | fix: unblock the mobile link-preview browser test (#186894)
+- 2026-10-28T16:54:45Z | fix(cron): stop waiting for run completion when interrupted (#186750)
+- 2026-10-28T16:54:19Z | perf(gateway): reuse full session row encoding across event recipients (#186900)
+- 2026-10-28T16:53:51Z | fix: recover accepted guest workspace inventory (#186819)
+- 2026-10-28T16:49:54Z | fix(doctor): recover upgrades with unfinished shared-state columns
+- 2026-10-28T16:44:23Z | docs(tools): use registered MCP tool names in the Tool Search examples (#186865)
+- 2026-10-28T16:35:15Z | fix(scripts): preserve PR tooling across process handoffs (#185964)
+- 2026-10-28T16:33:44Z | refactor(tests): share Doctor peer-link fixture (#186878)
+- 2026-10-28T16:30:09Z | fix: recover interrupted updates after the original PR closes (#186717)
+- 2026-10-28T16:22:23Z | perf(doctor): parse session migration manifests once per run (#186880)
+- 2026-10-28T16:22:08Z | fix(agents): allow bounded recovery after repeated identical tool errors
+- 2026-10-28T16:21:30Z | fix(update): finish updates when native process ancestry is unavailable (#186871)
 
 ## Sources
 

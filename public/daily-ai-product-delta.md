@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-10-28T00:55:30+08:00
-- Requested window: 2026-10-27 to 2026-10-28
+- Generated at: 2026-10-29T01:29:18+08:00
+- Requested window: 2026-10-28 to 2026-10-29
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-10-27 to 2026-10-28
-- Generated at: 2026-10-28T00:55:10.468459+08:00
-- 窗口: 2026-10-27 至 2026-10-28
-- GitHub 增量: 1034 commits / 3 releases
-- 最近 push: 2026-10-27
+- Window: 2026-10-28 to 2026-10-29
+- Generated at: 2026-10-29T01:28:59.304912+08:00
+- 窗口: 2026-10-28 至 2026-10-29
+- GitHub 增量: 520 commits / 0 releases
+- 最近 push: 2026-10-28
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(knowledge): readable scribe prompts the operator can edit (#185974)
-  - feat(ui): show yield acknowledgments as agent text and list waited-on sessions
-  - feat(android): adapt flat large-screen navigation (#143466)
-  - feat(session-share): filter shared groups by person (#182286)
-  - feat(knowledge): Scribes tab to start and control knowledge scribes (#185637)
-  - feat(standalone): expose AOT compiler analysis opt-outs (#185769)
-  - feat(liquid-ai): add native Decision model provider (#177369)
-  - feat(knowledge): scribes set themselves up and maintenance finds the review scribe (#185583)
+  - feat(workers): dispatch own sessions to role-granted cloud profiles
+  - feat(knowledge): owners can grant group chats access to private knowledge (#186455)
+  - feat(telemetry): count reporting installations without identifiers (#186569)
+  - feat(ui): show paused child sessions in the handoff wait line
+  - feat(knowledge): agents can no longer grow pages past a read-sized budget, and can extract sections instead
+  - feat(qa): report terminal-aware logical model accounting (#186462)
+  - feat(memory-lancedb): report health and serve search through the memory provider runtime (#165756)
+  - feat: enable native plugin UI without a Labs opt-in
 - Fixes and constraints:
-  - fix(node): exit when startup is cancelled (#186106)
-  - perf(gateway): skip redundant fresh-input custody reads (#186087)
-  - perf(state): skip checkpoint leases for absent projections (#186115)
-  - perf(agents): keep recent Code Mode burst capacity warm (#186053)
-  - fix: run discovered models outside the agent workspace (#185829)
-  - fix(ui): release obsolete history held by widget layouts (#186007)
-  - fix(cron): spawn-only cron runs deliver a subagent's long answer cut at 4,096 characters (#185985)
-  - fix(claws): roll back an MCP server whose write committed before the failure (#185854)
+  - fix: distinguish owned processes in native Windows task tests (#186806)
+  - fix(native): retain messages refused during agent startup (#186860)
+  - fix: restart notices missing from conversation history (#186547)
+  - perf(ai): reuse frozen Anthropic HTTP request bytes (#186872)
+  - fix: avoid cold compilation timing out Windows lifecycle proof (#186868)
+  - fix: preserve agent creation dialog state during avatar selection (#186899)
+  - fix: preserve Draft when copying conversations (#186828)
+  - fix: unblock the mobile link-preview browser test (#186894)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
