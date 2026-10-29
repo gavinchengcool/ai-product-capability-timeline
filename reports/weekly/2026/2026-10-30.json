@@ -1,0 +1,181 @@
+{
+  "generated_at": "2026-10-30T01:39:52.872870+08:00",
+  "window": {
+    "start_local": "2026-10-29T01:39:52.872870+08:00",
+    "end_local": "2026-10-30T01:39:52.872870+08:00",
+    "start_utc": "2026-10-28T17:39:52Z",
+    "end_utc": "2026-10-29T17:39:52Z"
+  },
+  "repo": {
+    "slug": "openclaw/openclaw",
+    "stars": 393358,
+    "forks": 82689,
+    "open_issues": 7866,
+    "pushed_at": "2026-10-29T17:38:29Z"
+  },
+  "releases_in_window": [
+    {
+      "tag_name": "v2026.10.9",
+      "published_at": "2026-10-29T15:54:35Z",
+      "name": "openclaw 2026.10.9",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.9"
+    }
+  ],
+  "commit_count": 413,
+  "commit_headlines": [
+    "feat(github): expose observational publication readiness",
+    "fix(ui): preserve IME navigation in the worktree picker (#187732)",
+    "feat(pr): publish signed candidates for pending package proof (#187764)",
+    "chore(release): close out 2026.10.9 on main (#187791)",
+    "test(doctor): reuse bundled channel metadata fixture (#187794)",
+    "fix(pr): avoid argument-limit failures on large squash merges (#187775)",
+    "fix(signal): stop skipping inbound messages after reconnects (#187667)",
+    "chore(release): update appcast for 2026.10.9 (#187789)",
+    "refactor(perf): share duration distribution summaries (#187784)",
+    "fix: streamed replies with a literal [[ in prose no longer re-parse the whole answer (#187656)",
+    "refactor(sms): join held test work before cleanup (#156630)",
+    "test(agents): freeze monotonic timeout forwarding clock (#187763)",
+    "fix(ci): skip npm-lock setup for unrelated root scripts (#187743)",
+    "fix(qa): correlate unthreaded Telegram recovery fallbacks (#187759)",
+    "fix(templates): sanitize remote identity fields in CLI human-readable output (#187666)",
+    "refactor(ui): keep tool catalog descriptions off chat boot path (#187708)",
+    "fix: remove unused chat-run fixture export (#187755)",
+    "fix(update): use a private workspace when the system temp directory is unsafe (#187737)",
+    "fix: enable diagnostics for explicit Node test children (#187749)",
+    "fix: stop exporting the private QA poll cursor helper (#187752)",
+    "feat: stop your own work across devices (#187408)",
+    "fix: remove unused queued input target export (#187746)",
+    "chore(ui): refresh control ui locales (#187747)",
+    "fix(ui): release Markdown workers in hidden tabs (#187691)",
+    "chore(android): update libraries with compatible Gradle (#187719)",
+    "test(scripts): reuse package-lock registry fixtures (#187725)",
+    "fix: recover Markdown attachment file links through Files (#187662)",
+    "fix: GitHub publication failure notices hide the real reason",
+    "feat(knowledge): Learn from Granola scribe that ingests meetings through the Granola plugin (#187659)",
+    "fix: retire unused active-run predicate (#187715)",
+    "fix(ci): batch timeout-race compiler snapshots (#187692)",
+    "fix: allow the UI dev server to finish shutdown (#187713)",
+    "fix(ui): pause Updates countdown in hidden tabs (#187693)",
+    "test(providers): advance monotonic deadline clocks (#187697)",
+    "test(qa): reuse fixture plugin config for MCP transports (#187706)",
+    "improve(raft): drain gateway test scenarios before teardown (#156616)",
+    "fix(update): avoid recopying admitted rollback images (#186510)",
+    "fix: retire unused worker bundle test factory (#187705)",
+    "fix: retire unused provisioning placement alias (#187704)",
+    "fix(ui): pause Logbook polling in hidden tabs (#187686)",
+    "fix(ui): pause hidden storage maintenance polling (#187687)",
+    "fix(doctor): do not let migrated models.json keys shadow valid shared auth profiles (#187698)",
+    "fix: keep catalog flattening helper private (#187702)",
+    "fix(install): stop when the Homebrew bootstrap fails instead of reporting success (#187688)",
+    "fix(agents): keep command maintenance budget on the monotonic clock (#187643)",
+    "fix: retire unused RPC execution-start test helper (#187673)",
+    "refactor(test): share channel health account fixtures (#187685)",
+    "fix(memory-wiki): refuse special files during ingest (#187621)",
+    "fix: keep the operator recovery byte limit private (#187671)",
+    "fix: owned checkout publication incorrectly requires admin"
+  ],
+  "feature_items": [
+    "feat(github): expose observational publication readiness",
+    "feat(pr): publish signed candidates for pending package proof (#187764)",
+    "feat: stop your own work across devices (#187408)",
+    "feat(knowledge): Learn from Granola scribe that ingests meetings through the Granola plugin (#187659)",
+    "feat(scripts): compare candidate catalogs against released readers (#187517)",
+    "feat(skills): diet oversized learned skills in daily Workshop maintenance (#186861)",
+    "feat(control-ui): show where to edit read-only Gateway configuration (#187015)"
+  ],
+  "fix_items": [
+    "fix(ui): preserve IME navigation in the worktree picker (#187732)",
+    "fix(pr): avoid argument-limit failures on large squash merges (#187775)",
+    "fix(signal): stop skipping inbound messages after reconnects (#187667)",
+    "fix: streamed replies with a literal [[ in prose no longer re-parse the whole answer (#187656)",
+    "fix(ci): skip npm-lock setup for unrelated root scripts (#187743)",
+    "fix(qa): correlate unthreaded Telegram recovery fallbacks (#187759)",
+    "fix(templates): sanitize remote identity fields in CLI human-readable output (#187666)",
+    "fix: remove unused chat-run fixture export (#187755)",
+    "fix(update): use a private workspace when the system temp directory is unsafe (#187737)",
+    "fix: enable diagnostics for explicit Node test children (#187749)",
+    "fix: stop exporting the private QA poll cursor helper (#187752)",
+    "fix: remove unused queued input target export (#187746)",
+    "fix(ui): release Markdown workers in hidden tabs (#187691)",
+    "fix: recover Markdown attachment file links through Files (#187662)",
+    "fix: GitHub publication failure notices hide the real reason",
+    "fix: retire unused active-run predicate (#187715)",
+    "fix(ci): batch timeout-race compiler snapshots (#187692)",
+    "fix: allow the UI dev server to finish shutdown (#187713)",
+    "fix(ui): pause Updates countdown in hidden tabs (#187693)",
+    "fix(update): avoid recopying admitted rollback images (#186510)",
+    "fix: retire unused worker bundle test factory (#187705)",
+    "fix: retire unused provisioning placement alias (#187704)",
+    "fix(ui): pause Logbook polling in hidden tabs (#187686)",
+    "fix(ui): pause hidden storage maintenance polling (#187687)",
+    "fix(doctor): do not let migrated models.json keys shadow valid shared auth profiles (#187698)",
+    "fix: keep catalog flattening helper private (#187702)",
+    "fix(install): stop when the Homebrew bootstrap fails instead of reporting success (#187688)",
+    "fix(agents): keep command maintenance budget on the monotonic clock (#187643)",
+    "fix: retire unused RPC execution-start test helper (#187673)",
+    "fix(memory-wiki): refuse special files during ingest (#187621)"
+  ],
+  "top_scopes": [
+    {
+      "scope": "fix",
+      "count": 110
+    },
+    {
+      "scope": "ui",
+      "count": 28
+    },
+    {
+      "scope": "agents",
+      "count": 22
+    },
+    {
+      "scope": "update",
+      "count": 19
+    },
+    {
+      "scope": "gateway",
+      "count": 18
+    },
+    {
+      "scope": "ci",
+      "count": 12
+    },
+    {
+      "scope": "release",
+      "count": 11
+    },
+    {
+      "scope": "doctor",
+      "count": 11
+    },
+    {
+      "scope": "qa",
+      "count": 10
+    },
+    {
+      "scope": "refactor",
+      "count": 10
+    },
+    {
+      "scope": "test",
+      "count": 8
+    },
+    {
+      "scope": "cli",
+      "count": 7
+    },
+    {
+      "scope": "pr",
+      "count": 6
+    },
+    {
+      "scope": "perf",
+      "count": 6
+    },
+    {
+      "scope": "plugins",
+      "count": 6
+    }
+  ]
+}

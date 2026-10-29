@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-10-29T01:29:18+08:00
-- Requested window: 2026-10-28 to 2026-10-29
+- Generated at: 2026-10-30T01:40:09+08:00
+- Requested window: 2026-10-29 to 2026-10-30
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,30 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-10-28 to 2026-10-29
-- Generated at: 2026-10-29T01:28:59.304912+08:00
-- 窗口: 2026-10-28 至 2026-10-29
-- GitHub 增量: 520 commits / 0 releases
-- 最近 push: 2026-10-28
+- Window: 2026-10-29 to 2026-10-30
+- Generated at: 2026-10-30T01:39:52.872870+08:00
+- 窗口: 2026-10-29 至 2026-10-30
+- GitHub 增量: 413 commits / 1 releases
+- 最近 push: 2026-10-29
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(workers): dispatch own sessions to role-granted cloud profiles
-  - feat(knowledge): owners can grant group chats access to private knowledge (#186455)
-  - feat(telemetry): count reporting installations without identifiers (#186569)
-  - feat(ui): show paused child sessions in the handoff wait line
-  - feat(knowledge): agents can no longer grow pages past a read-sized budget, and can extract sections instead
-  - feat(qa): report terminal-aware logical model accounting (#186462)
-  - feat(memory-lancedb): report health and serve search through the memory provider runtime (#165756)
-  - feat: enable native plugin UI without a Labs opt-in
+  - feat(github): expose observational publication readiness
+  - feat(pr): publish signed candidates for pending package proof (#187764)
+  - feat: stop your own work across devices (#187408)
+  - feat(knowledge): Learn from Granola scribe that ingests meetings through the Granola plugin (#187659)
+  - feat(scripts): compare candidate catalogs against released readers (#187517)
+  - feat(skills): diet oversized learned skills in daily Workshop maintenance (#186861)
+  - feat(control-ui): show where to edit read-only Gateway configuration (#187015)
 - Fixes and constraints:
-  - fix: distinguish owned processes in native Windows task tests (#186806)
-  - fix(native): retain messages refused during agent startup (#186860)
-  - fix: restart notices missing from conversation history (#186547)
-  - perf(ai): reuse frozen Anthropic HTTP request bytes (#186872)
-  - fix: avoid cold compilation timing out Windows lifecycle proof (#186868)
-  - fix: preserve agent creation dialog state during avatar selection (#186899)
-  - fix: preserve Draft when copying conversations (#186828)
-  - fix: unblock the mobile link-preview browser test (#186894)
+  - fix(ui): preserve IME navigation in the worktree picker (#187732)
+  - fix(pr): avoid argument-limit failures on large squash merges (#187775)
+  - fix(signal): stop skipping inbound messages after reconnects (#187667)
+  - fix: streamed replies with a literal [[ in prose no longer re-parse the whole answer (#187656)
+  - fix(ci): skip npm-lock setup for unrelated root scripts (#187743)
+  - fix(qa): correlate unthreaded Telegram recovery fallbacks (#187759)
+  - fix(templates): sanitize remote identity fields in CLI human-readable output (#187666)
+  - fix: remove unused chat-run fixture export (#187755)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

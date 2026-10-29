@@ -1,99 +1,91 @@
 # OpenClaw Weekly Update
 
-生成时间：2026-10-29T01:28:59.304912+08:00
+生成时间：2026-10-30T01:39:52.872870+08:00
 
 ## Window
 
-- Start: 2026-10-28T01:28:59.304912+08:00
-- End: 2026-10-29T01:28:59.304912+08:00
+- Start: 2026-10-29T01:39:52.872870+08:00
+- End: 2026-10-30T01:39:52.872870+08:00
 - Repo: `openclaw/openclaw`
 
 ## At A Glance
 
-- Commits in window: 520
-- Releases in window: 0
-- Stable releases in window: 0
+- Commits in window: 413
+- Releases in window: 1
+- Stable releases in window: 1
 - Beta releases in window: 0
-- Repo stars at scan time: 393271
-- Repo forks at scan time: 82668
+- Repo stars at scan time: 393358
+- Repo forks at scan time: 82689
 
 ## New Capability Signals
 
-- feat(workers): dispatch own sessions to role-granted cloud profiles
-- feat(knowledge): owners can grant group chats access to private knowledge (#186455)
-- feat(telemetry): count reporting installations without identifiers (#186569)
-- feat(ui): show paused child sessions in the handoff wait line
-- feat(knowledge): agents can no longer grow pages past a read-sized budget, and can extract sections instead
-- feat(qa): report terminal-aware logical model accounting (#186462)
-- feat(memory-lancedb): report health and serve search through the memory provider runtime (#165756)
-- feat: enable native plugin UI without a Labs opt-in
-- feat(knowledge): consolidate claims by scope and supersede snapshots by their outcome
-- feat(mattermost): stop bot-to-bot reply loops and add allowBots (#183239)
-- feat(notifications): identify completed sessions by explicit labels (#144862)
-- feat(models): let a provider behind a local relay keep the hosted idle timeout (#183637)
-- feat(agent): read piped messages in ordinary agent turns (#167122)
-- feat: make busy-session messages automatic with coherent security presets (#185477)
-- feat(knowledge): reloading Knowledge no longer waits for running agent turns (#186267)
+- feat(github): expose observational publication readiness
+- feat(pr): publish signed candidates for pending package proof (#187764)
+- feat: stop your own work across devices (#187408)
+- feat(knowledge): Learn from Granola scribe that ingests meetings through the Granola plugin (#187659)
+- feat(scripts): compare candidate catalogs against released readers (#187517)
+- feat(skills): diet oversized learned skills in daily Workshop maintenance (#186861)
+- feat(control-ui): show where to edit read-only Gateway configuration (#187015)
 
 ## Important Fixes And Hardening
 
-- fix: distinguish owned processes in native Windows task tests (#186806)
-- fix(native): retain messages refused during agent startup (#186860)
-- fix: restart notices missing from conversation history (#186547)
-- perf(ai): reuse frozen Anthropic HTTP request bytes (#186872)
-- fix: avoid cold compilation timing out Windows lifecycle proof (#186868)
-- fix: preserve agent creation dialog state during avatar selection (#186899)
-- fix: preserve Draft when copying conversations (#186828)
-- fix: unblock the mobile link-preview browser test (#186894)
-- fix(cron): stop waiting for run completion when interrupted (#186750)
-- perf(gateway): reuse full session row encoding across event recipients (#186900)
-- fix: recover accepted guest workspace inventory (#186819)
-- fix(doctor): recover upgrades with unfinished shared-state columns
-- fix(scripts): preserve PR tooling across process handoffs (#185964)
-- fix: recover interrupted updates after the original PR closes (#186717)
-- perf(doctor): parse session migration manifests once per run (#186880)
+- fix(ui): preserve IME navigation in the worktree picker (#187732)
+- fix(pr): avoid argument-limit failures on large squash merges (#187775)
+- fix(signal): stop skipping inbound messages after reconnects (#187667)
+- fix: streamed replies with a literal [[ in prose no longer re-parse the whole answer (#187656)
+- fix(ci): skip npm-lock setup for unrelated root scripts (#187743)
+- fix(qa): correlate unthreaded Telegram recovery fallbacks (#187759)
+- fix(templates): sanitize remote identity fields in CLI human-readable output (#187666)
+- fix: remove unused chat-run fixture export (#187755)
+- fix(update): use a private workspace when the system temp directory is unsafe (#187737)
+- fix: enable diagnostics for explicit Node test children (#187749)
+- fix: stop exporting the private QA poll cursor helper (#187752)
+- fix: remove unused queued input target export (#187746)
+- fix(ui): release Markdown workers in hidden tabs (#187691)
+- fix: recover Markdown attachment file links through Files (#187662)
+- fix: GitHub publication failure notices hide the real reason
 
 ## Releases This Week
 
-- No GitHub releases were published in this window.
+- `v2026.10.9` | stable | 2026-10-29T15:54:35Z | openclaw 2026.10.9
 
 ## Most Active Change Scopes
 
-- `fix`: 94
-- `ui`: 77
-- `gateway`: 41
-- `agents`: 25
-- `update`: 24
-- `sessions`: 22
-- `test`: 21
-- `ci`: 15
-- `docs`: 11
-- `state`: 11
-- `knowledge`: 8
-- `cron`: 7
+- `fix`: 110
+- `ui`: 28
+- `agents`: 22
+- `update`: 19
+- `gateway`: 18
+- `ci`: 12
+- `release`: 11
+- `doctor`: 11
+- `qa`: 10
+- `refactor`: 10
+- `test`: 8
+- `cli`: 7
 
 ## Recent Commit Headlines
 
-- 2026-10-28T17:26:34Z | fix: distinguish owned processes in native Windows task tests (#186806)
-- 2026-10-28T17:19:59Z | fix(native): retain messages refused during agent startup (#186860)
-- 2026-10-28T17:14:04Z | fix: restart notices missing from conversation history (#186547)
-- 2026-10-28T17:11:46Z | perf(ai): reuse frozen Anthropic HTTP request bytes (#186872)
-- 2026-10-28T17:08:30Z | refactor(nextcloud-talk): share media diagnostic context (#186911)
-- 2026-10-28T17:08:08Z | fix: avoid cold compilation timing out Windows lifecycle proof (#186868)
-- 2026-10-28T17:06:12Z | fix: preserve agent creation dialog state during avatar selection (#186899)
-- 2026-10-28T16:58:21Z | fix: preserve Draft when copying conversations (#186828)
-- 2026-10-28T16:56:55Z | fix: unblock the mobile link-preview browser test (#186894)
-- 2026-10-28T16:54:45Z | fix(cron): stop waiting for run completion when interrupted (#186750)
-- 2026-10-28T16:54:19Z | perf(gateway): reuse full session row encoding across event recipients (#186900)
-- 2026-10-28T16:53:51Z | fix: recover accepted guest workspace inventory (#186819)
-- 2026-10-28T16:49:54Z | fix(doctor): recover upgrades with unfinished shared-state columns
-- 2026-10-28T16:44:23Z | docs(tools): use registered MCP tool names in the Tool Search examples (#186865)
-- 2026-10-28T16:35:15Z | fix(scripts): preserve PR tooling across process handoffs (#185964)
-- 2026-10-28T16:33:44Z | refactor(tests): share Doctor peer-link fixture (#186878)
-- 2026-10-28T16:30:09Z | fix: recover interrupted updates after the original PR closes (#186717)
-- 2026-10-28T16:22:23Z | perf(doctor): parse session migration manifests once per run (#186880)
-- 2026-10-28T16:22:08Z | fix(agents): allow bounded recovery after repeated identical tool errors
-- 2026-10-28T16:21:30Z | fix(update): finish updates when native process ancestry is unavailable (#186871)
+- 2026-10-29T17:38:25Z | feat(github): expose observational publication readiness
+- 2026-10-29T17:36:22Z | fix(ui): preserve IME navigation in the worktree picker (#187732)
+- 2026-10-29T17:27:19Z | feat(pr): publish signed candidates for pending package proof (#187764)
+- 2026-10-29T17:19:25Z | chore(release): close out 2026.10.9 on main (#187791)
+- 2026-10-29T17:14:11Z | test(doctor): reuse bundled channel metadata fixture (#187794)
+- 2026-10-29T17:08:55Z | fix(pr): avoid argument-limit failures on large squash merges (#187775)
+- 2026-10-29T16:44:09Z | fix(signal): stop skipping inbound messages after reconnects (#187667)
+- 2026-10-29T16:42:42Z | chore(release): update appcast for 2026.10.9 (#187789)
+- 2026-10-29T16:42:00Z | refactor(perf): share duration distribution summaries (#187784)
+- 2026-10-29T16:26:27Z | fix: streamed replies with a literal [[ in prose no longer re-parse the whole answer (#187656)
+- 2026-10-29T16:03:31Z | refactor(sms): join held test work before cleanup (#156630)
+- 2026-10-29T16:01:42Z | test(agents): freeze monotonic timeout forwarding clock (#187763)
+- 2026-10-29T15:59:10Z | fix(ci): skip npm-lock setup for unrelated root scripts (#187743)
+- 2026-10-29T15:57:30Z | fix(qa): correlate unthreaded Telegram recovery fallbacks (#187759)
+- 2026-10-29T15:57:12Z | fix(templates): sanitize remote identity fields in CLI human-readable output (#187666)
+- 2026-10-29T15:46:43Z | refactor(ui): keep tool catalog descriptions off chat boot path (#187708)
+- 2026-10-29T15:29:16Z | fix: remove unused chat-run fixture export (#187755)
+- 2026-10-29T15:26:58Z | fix(update): use a private workspace when the system temp directory is unsafe (#187737)
+- 2026-10-29T15:24:11Z | fix: enable diagnostics for explicit Node test children (#187749)
+- 2026-10-29T15:21:27Z | fix: stop exporting the private QA poll cursor helper (#187752)
 
 ## Sources
 

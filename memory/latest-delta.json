@@ -1,91 +1,98 @@
 {
-  "generatedAt": "2026-10-29T01:28:59.304912+08:00",
+  "generatedAt": "2026-10-30T01:39:52.872870+08:00",
   "window": {
-    "start_local": "2026-10-28T01:28:59.304912+08:00",
-    "end_local": "2026-10-29T01:28:59.304912+08:00",
-    "start_utc": "2026-10-27T17:28:59Z",
-    "end_utc": "2026-10-28T17:28:59Z"
+    "start_local": "2026-10-29T01:39:52.872870+08:00",
+    "end_local": "2026-10-30T01:39:52.872870+08:00",
+    "start_utc": "2026-10-28T17:39:52Z",
+    "end_utc": "2026-10-29T17:39:52Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 393271,
-    "forks": 82668,
-    "open_issues": 7751,
-    "pushed_at": "2026-10-28T17:28:02Z"
+    "stars": 393358,
+    "forks": 82689,
+    "open_issues": 7866,
+    "pushed_at": "2026-10-29T17:38:29Z"
   },
   "summary": {
-    "commitCount": 520,
-    "releaseCount": 0,
-    "stableReleaseCount": 0,
+    "commitCount": 413,
+    "releaseCount": 1,
+    "stableReleaseCount": 1,
     "betaReleaseCount": 0,
-    "stars": 393271,
-    "forks": 82668,
-    "openIssues": 7751
+    "stars": 393358,
+    "forks": 82689,
+    "openIssues": 7866
   },
-  "releases": [],
+  "releases": [
+    {
+      "tag_name": "v2026.10.9",
+      "published_at": "2026-10-29T15:54:35Z",
+      "name": "openclaw 2026.10.9",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.9"
+    }
+  ],
   "featureItems": [
-    "feat(workers): dispatch own sessions to role-granted cloud profiles",
-    "feat(knowledge): owners can grant group chats access to private knowledge (#186455)",
-    "feat(telemetry): count reporting installations without identifiers (#186569)",
-    "feat(ui): show paused child sessions in the handoff wait line",
-    "feat(knowledge): agents can no longer grow pages past a read-sized budget, and can extract sections instead",
-    "feat(qa): report terminal-aware logical model accounting (#186462)",
-    "feat(memory-lancedb): report health and serve search through the memory provider runtime (#165756)",
-    "feat: enable native plugin UI without a Labs opt-in"
+    "feat(github): expose observational publication readiness",
+    "feat(pr): publish signed candidates for pending package proof (#187764)",
+    "feat: stop your own work across devices (#187408)",
+    "feat(knowledge): Learn from Granola scribe that ingests meetings through the Granola plugin (#187659)",
+    "feat(scripts): compare candidate catalogs against released readers (#187517)",
+    "feat(skills): diet oversized learned skills in daily Workshop maintenance (#186861)",
+    "feat(control-ui): show where to edit read-only Gateway configuration (#187015)"
   ],
   "fixItems": [
-    "fix: distinguish owned processes in native Windows task tests (#186806)",
-    "fix(native): retain messages refused during agent startup (#186860)",
-    "fix: restart notices missing from conversation history (#186547)",
-    "perf(ai): reuse frozen Anthropic HTTP request bytes (#186872)",
-    "fix: avoid cold compilation timing out Windows lifecycle proof (#186868)",
-    "fix: preserve agent creation dialog state during avatar selection (#186899)",
-    "fix: preserve Draft when copying conversations (#186828)",
-    "fix: unblock the mobile link-preview browser test (#186894)"
+    "fix(ui): preserve IME navigation in the worktree picker (#187732)",
+    "fix(pr): avoid argument-limit failures on large squash merges (#187775)",
+    "fix(signal): stop skipping inbound messages after reconnects (#187667)",
+    "fix: streamed replies with a literal [[ in prose no longer re-parse the whole answer (#187656)",
+    "fix(ci): skip npm-lock setup for unrelated root scripts (#187743)",
+    "fix(qa): correlate unthreaded Telegram recovery fallbacks (#187759)",
+    "fix(templates): sanitize remote identity fields in CLI human-readable output (#187666)",
+    "fix: remove unused chat-run fixture export (#187755)"
   ],
   "topScopes": [
     {
       "scope": "fix",
-      "count": 94
+      "count": 110
     },
     {
       "scope": "ui",
-      "count": 77
-    },
-    {
-      "scope": "gateway",
-      "count": 41
+      "count": 28
     },
     {
       "scope": "agents",
-      "count": 25
-    },
-    {
-      "scope": "update",
-      "count": 24
-    },
-    {
-      "scope": "sessions",
       "count": 22
     },
     {
-      "scope": "test",
-      "count": 21
+      "scope": "update",
+      "count": 19
+    },
+    {
+      "scope": "gateway",
+      "count": 18
     },
     {
       "scope": "ci",
-      "count": 15
+      "count": 12
+    },
+    {
+      "scope": "release",
+      "count": 11
+    },
+    {
+      "scope": "doctor",
+      "count": 11
     }
   ],
   "headlineCommits": [
-    "fix: distinguish owned processes in native Windows task tests (#186806)",
-    "fix(native): retain messages refused during agent startup (#186860)",
-    "fix: restart notices missing from conversation history (#186547)",
-    "perf(ai): reuse frozen Anthropic HTTP request bytes (#186872)",
-    "refactor(nextcloud-talk): share media diagnostic context (#186911)",
-    "fix: avoid cold compilation timing out Windows lifecycle proof (#186868)",
-    "fix: preserve agent creation dialog state during avatar selection (#186899)",
-    "fix: preserve Draft when copying conversations (#186828)"
+    "feat(github): expose observational publication readiness",
+    "fix(ui): preserve IME navigation in the worktree picker (#187732)",
+    "feat(pr): publish signed candidates for pending package proof (#187764)",
+    "chore(release): close out 2026.10.9 on main (#187791)",
+    "test(doctor): reuse bundled channel metadata fixture (#187794)",
+    "fix(pr): avoid argument-limit failures on large squash merges (#187775)",
+    "fix(signal): stop skipping inbound messages after reconnects (#187667)",
+    "chore(release): update appcast for 2026.10.9 (#187789)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 }

@@ -1,183 +1,181 @@
 {
-  "generated_at": "2026-10-29T01:28:59.304912+08:00",
+  "generated_at": "2026-10-30T01:39:52.872870+08:00",
   "window": {
-    "start_local": "2026-10-28T01:28:59.304912+08:00",
-    "end_local": "2026-10-29T01:28:59.304912+08:00",
-    "start_utc": "2026-10-27T17:28:59Z",
-    "end_utc": "2026-10-28T17:28:59Z"
+    "start_local": "2026-10-29T01:39:52.872870+08:00",
+    "end_local": "2026-10-30T01:39:52.872870+08:00",
+    "start_utc": "2026-10-28T17:39:52Z",
+    "end_utc": "2026-10-29T17:39:52Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 393271,
-    "forks": 82668,
-    "open_issues": 7751,
-    "pushed_at": "2026-10-28T17:28:02Z"
+    "stars": 393358,
+    "forks": 82689,
+    "open_issues": 7866,
+    "pushed_at": "2026-10-29T17:38:29Z"
   },
-  "releases_in_window": [],
-  "commit_count": 520,
+  "releases_in_window": [
+    {
+      "tag_name": "v2026.10.9",
+      "published_at": "2026-10-29T15:54:35Z",
+      "name": "openclaw 2026.10.9",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.9"
+    }
+  ],
+  "commit_count": 413,
   "commit_headlines": [
-    "fix: distinguish owned processes in native Windows task tests (#186806)",
-    "fix(native): retain messages refused during agent startup (#186860)",
-    "fix: restart notices missing from conversation history (#186547)",
-    "perf(ai): reuse frozen Anthropic HTTP request bytes (#186872)",
-    "refactor(nextcloud-talk): share media diagnostic context (#186911)",
-    "fix: avoid cold compilation timing out Windows lifecycle proof (#186868)",
-    "fix: preserve agent creation dialog state during avatar selection (#186899)",
-    "fix: preserve Draft when copying conversations (#186828)",
-    "fix: unblock the mobile link-preview browser test (#186894)",
-    "fix(cron): stop waiting for run completion when interrupted (#186750)",
-    "perf(gateway): reuse full session row encoding across event recipients (#186900)",
-    "fix: recover accepted guest workspace inventory (#186819)",
-    "fix(doctor): recover upgrades with unfinished shared-state columns",
-    "docs(tools): use registered MCP tool names in the Tool Search examples (#186865)",
-    "fix(scripts): preserve PR tooling across process handoffs (#185964)",
-    "refactor(tests): share Doctor peer-link fixture (#186878)",
-    "fix: recover interrupted updates after the original PR closes (#186717)",
-    "perf(doctor): parse session migration manifests once per run (#186880)",
-    "fix(agents): allow bounded recovery after repeated identical tool errors",
-    "fix(update): finish updates when native process ancestry is unavailable (#186871)",
-    "fix(team-reports): keep the deferred tick retry on the elapsed clock (#186534)",
-    "fix(codex): unbindable command approvals are declined with no log or reason (#186876)",
-    "improve(a2a): verify notification dispatch completion (#156508)",
-    "fix(qa): read evidence reports from source checkouts (#186747)",
-    "perf(trajectory): reuse prepared arrays during diagnostic projection (#186848)",
-    "perf(update): reuse stopped backups for engine inspection (#186867)",
-    "fix(update): probe absent system package managers once and quietly (#186839)",
-    "fix(cron): normalize NFC in automation list search (#186794)",
-    "chore(ui): refresh control ui locales (#186877)",
-    "fix(perf): release Code Mode probe resources after failures (#186823)",
-    "feat(workers): dispatch own sessions to role-granted cloud profiles",
-    "test(telegram): advance the durable retry deadline on a fake clock (#186841)",
-    "fix: ClawRouter primaries get no utility model when utilityModel is unset (#186327)",
-    "perf(gateway): reuse encoded sidebar row prefixes across pages (#186840)",
-    "fix(ci): avoid repeated callback symbol queries (#186846)",
-    "fix: keep workspace baselines readable after file deletion (#186815)",
-    "fix(gateway): finish shutdown when an agent database lock was replaced (#186811)",
-    "fix(apple): realtime voice replies play too quietly (#166056)",
-    "refactor(test): simplify PostgreSQL recovery row assertions (#186673)",
-    "fix(team-reports): keep the worker response budget on the monotonic clock (#186531)",
-    "fix(test): stabilize launcher observation deadline checks (#186827)",
-    "fix(plugins): allow partial provider auth config patches (#181606)",
-    "fix(update): bound service stop and report the serving version when managed activation fails (#186792)",
-    "fix: open sandbox file references from their workspace (#186727)",
-    "docs: macOS VM 24/7 steps miss lid-close sleep (#186801)",
-    "perf(update): reduce schema-crossing downtime (#186797)",
-    "fix: recover sessions blocked by aggregate workspace size limits",
-    "fix(claude-cli): avoid loading every tool definition upfront (#186776)",
-    "fix(backup): preserve literal archive paths (#186746)",
-    "perf(sessions): skip unused transcript array key copies (#186800)"
+    "feat(github): expose observational publication readiness",
+    "fix(ui): preserve IME navigation in the worktree picker (#187732)",
+    "feat(pr): publish signed candidates for pending package proof (#187764)",
+    "chore(release): close out 2026.10.9 on main (#187791)",
+    "test(doctor): reuse bundled channel metadata fixture (#187794)",
+    "fix(pr): avoid argument-limit failures on large squash merges (#187775)",
+    "fix(signal): stop skipping inbound messages after reconnects (#187667)",
+    "chore(release): update appcast for 2026.10.9 (#187789)",
+    "refactor(perf): share duration distribution summaries (#187784)",
+    "fix: streamed replies with a literal [[ in prose no longer re-parse the whole answer (#187656)",
+    "refactor(sms): join held test work before cleanup (#156630)",
+    "test(agents): freeze monotonic timeout forwarding clock (#187763)",
+    "fix(ci): skip npm-lock setup for unrelated root scripts (#187743)",
+    "fix(qa): correlate unthreaded Telegram recovery fallbacks (#187759)",
+    "fix(templates): sanitize remote identity fields in CLI human-readable output (#187666)",
+    "refactor(ui): keep tool catalog descriptions off chat boot path (#187708)",
+    "fix: remove unused chat-run fixture export (#187755)",
+    "fix(update): use a private workspace when the system temp directory is unsafe (#187737)",
+    "fix: enable diagnostics for explicit Node test children (#187749)",
+    "fix: stop exporting the private QA poll cursor helper (#187752)",
+    "feat: stop your own work across devices (#187408)",
+    "fix: remove unused queued input target export (#187746)",
+    "chore(ui): refresh control ui locales (#187747)",
+    "fix(ui): release Markdown workers in hidden tabs (#187691)",
+    "chore(android): update libraries with compatible Gradle (#187719)",
+    "test(scripts): reuse package-lock registry fixtures (#187725)",
+    "fix: recover Markdown attachment file links through Files (#187662)",
+    "fix: GitHub publication failure notices hide the real reason",
+    "feat(knowledge): Learn from Granola scribe that ingests meetings through the Granola plugin (#187659)",
+    "fix: retire unused active-run predicate (#187715)",
+    "fix(ci): batch timeout-race compiler snapshots (#187692)",
+    "fix: allow the UI dev server to finish shutdown (#187713)",
+    "fix(ui): pause Updates countdown in hidden tabs (#187693)",
+    "test(providers): advance monotonic deadline clocks (#187697)",
+    "test(qa): reuse fixture plugin config for MCP transports (#187706)",
+    "improve(raft): drain gateway test scenarios before teardown (#156616)",
+    "fix(update): avoid recopying admitted rollback images (#186510)",
+    "fix: retire unused worker bundle test factory (#187705)",
+    "fix: retire unused provisioning placement alias (#187704)",
+    "fix(ui): pause Logbook polling in hidden tabs (#187686)",
+    "fix(ui): pause hidden storage maintenance polling (#187687)",
+    "fix(doctor): do not let migrated models.json keys shadow valid shared auth profiles (#187698)",
+    "fix: keep catalog flattening helper private (#187702)",
+    "fix(install): stop when the Homebrew bootstrap fails instead of reporting success (#187688)",
+    "fix(agents): keep command maintenance budget on the monotonic clock (#187643)",
+    "fix: retire unused RPC execution-start test helper (#187673)",
+    "refactor(test): share channel health account fixtures (#187685)",
+    "fix(memory-wiki): refuse special files during ingest (#187621)",
+    "fix: keep the operator recovery byte limit private (#187671)",
+    "fix: owned checkout publication incorrectly requires admin"
   ],
   "feature_items": [
-    "feat(workers): dispatch own sessions to role-granted cloud profiles",
-    "feat(knowledge): owners can grant group chats access to private knowledge (#186455)",
-    "feat(telemetry): count reporting installations without identifiers (#186569)",
-    "feat(ui): show paused child sessions in the handoff wait line",
-    "feat(knowledge): agents can no longer grow pages past a read-sized budget, and can extract sections instead",
-    "feat(qa): report terminal-aware logical model accounting (#186462)",
-    "feat(memory-lancedb): report health and serve search through the memory provider runtime (#165756)",
-    "feat: enable native plugin UI without a Labs opt-in",
-    "feat(knowledge): consolidate claims by scope and supersede snapshots by their outcome",
-    "feat(mattermost): stop bot-to-bot reply loops and add allowBots (#183239)",
-    "feat(notifications): identify completed sessions by explicit labels (#144862)",
-    "feat(models): let a provider behind a local relay keep the hosted idle timeout (#183637)",
-    "feat(agent): read piped messages in ordinary agent turns (#167122)",
-    "feat: make busy-session messages automatic with coherent security presets (#185477)",
-    "feat(knowledge): reloading Knowledge no longer waits for running agent turns (#186267)",
-    "feat(gateway): report yielded subagent children as paused on session rows",
-    "feat(desktop): choose JIT or AOT for Tauri builds (#185885)"
+    "feat(github): expose observational publication readiness",
+    "feat(pr): publish signed candidates for pending package proof (#187764)",
+    "feat: stop your own work across devices (#187408)",
+    "feat(knowledge): Learn from Granola scribe that ingests meetings through the Granola plugin (#187659)",
+    "feat(scripts): compare candidate catalogs against released readers (#187517)",
+    "feat(skills): diet oversized learned skills in daily Workshop maintenance (#186861)",
+    "feat(control-ui): show where to edit read-only Gateway configuration (#187015)"
   ],
   "fix_items": [
-    "fix: distinguish owned processes in native Windows task tests (#186806)",
-    "fix(native): retain messages refused during agent startup (#186860)",
-    "fix: restart notices missing from conversation history (#186547)",
-    "perf(ai): reuse frozen Anthropic HTTP request bytes (#186872)",
-    "fix: avoid cold compilation timing out Windows lifecycle proof (#186868)",
-    "fix: preserve agent creation dialog state during avatar selection (#186899)",
-    "fix: preserve Draft when copying conversations (#186828)",
-    "fix: unblock the mobile link-preview browser test (#186894)",
-    "fix(cron): stop waiting for run completion when interrupted (#186750)",
-    "perf(gateway): reuse full session row encoding across event recipients (#186900)",
-    "fix: recover accepted guest workspace inventory (#186819)",
-    "fix(doctor): recover upgrades with unfinished shared-state columns",
-    "fix(scripts): preserve PR tooling across process handoffs (#185964)",
-    "fix: recover interrupted updates after the original PR closes (#186717)",
-    "perf(doctor): parse session migration manifests once per run (#186880)",
-    "fix(agents): allow bounded recovery after repeated identical tool errors",
-    "fix(update): finish updates when native process ancestry is unavailable (#186871)",
-    "fix(team-reports): keep the deferred tick retry on the elapsed clock (#186534)",
-    "fix(codex): unbindable command approvals are declined with no log or reason (#186876)",
-    "fix(qa): read evidence reports from source checkouts (#186747)",
-    "perf(trajectory): reuse prepared arrays during diagnostic projection (#186848)",
-    "perf(update): reuse stopped backups for engine inspection (#186867)",
-    "fix(update): probe absent system package managers once and quietly (#186839)",
-    "fix(cron): normalize NFC in automation list search (#186794)",
-    "fix(perf): release Code Mode probe resources after failures (#186823)",
-    "fix: ClawRouter primaries get no utility model when utilityModel is unset (#186327)",
-    "perf(gateway): reuse encoded sidebar row prefixes across pages (#186840)",
-    "fix(ci): avoid repeated callback symbol queries (#186846)",
-    "fix: keep workspace baselines readable after file deletion (#186815)",
-    "fix(gateway): finish shutdown when an agent database lock was replaced (#186811)"
+    "fix(ui): preserve IME navigation in the worktree picker (#187732)",
+    "fix(pr): avoid argument-limit failures on large squash merges (#187775)",
+    "fix(signal): stop skipping inbound messages after reconnects (#187667)",
+    "fix: streamed replies with a literal [[ in prose no longer re-parse the whole answer (#187656)",
+    "fix(ci): skip npm-lock setup for unrelated root scripts (#187743)",
+    "fix(qa): correlate unthreaded Telegram recovery fallbacks (#187759)",
+    "fix(templates): sanitize remote identity fields in CLI human-readable output (#187666)",
+    "fix: remove unused chat-run fixture export (#187755)",
+    "fix(update): use a private workspace when the system temp directory is unsafe (#187737)",
+    "fix: enable diagnostics for explicit Node test children (#187749)",
+    "fix: stop exporting the private QA poll cursor helper (#187752)",
+    "fix: remove unused queued input target export (#187746)",
+    "fix(ui): release Markdown workers in hidden tabs (#187691)",
+    "fix: recover Markdown attachment file links through Files (#187662)",
+    "fix: GitHub publication failure notices hide the real reason",
+    "fix: retire unused active-run predicate (#187715)",
+    "fix(ci): batch timeout-race compiler snapshots (#187692)",
+    "fix: allow the UI dev server to finish shutdown (#187713)",
+    "fix(ui): pause Updates countdown in hidden tabs (#187693)",
+    "fix(update): avoid recopying admitted rollback images (#186510)",
+    "fix: retire unused worker bundle test factory (#187705)",
+    "fix: retire unused provisioning placement alias (#187704)",
+    "fix(ui): pause Logbook polling in hidden tabs (#187686)",
+    "fix(ui): pause hidden storage maintenance polling (#187687)",
+    "fix(doctor): do not let migrated models.json keys shadow valid shared auth profiles (#187698)",
+    "fix: keep catalog flattening helper private (#187702)",
+    "fix(install): stop when the Homebrew bootstrap fails instead of reporting success (#187688)",
+    "fix(agents): keep command maintenance budget on the monotonic clock (#187643)",
+    "fix: retire unused RPC execution-start test helper (#187673)",
+    "fix(memory-wiki): refuse special files during ingest (#187621)"
   ],
   "top_scopes": [
     {
       "scope": "fix",
-      "count": 94
+      "count": 110
     },
     {
       "scope": "ui",
-      "count": 77
-    },
-    {
-      "scope": "gateway",
-      "count": 41
+      "count": 28
     },
     {
       "scope": "agents",
-      "count": 25
-    },
-    {
-      "scope": "update",
-      "count": 24
-    },
-    {
-      "scope": "sessions",
       "count": 22
     },
     {
-      "scope": "test",
-      "count": 21
+      "scope": "update",
+      "count": 19
+    },
+    {
+      "scope": "gateway",
+      "count": 18
     },
     {
       "scope": "ci",
-      "count": 15
+      "count": 12
     },
     {
-      "scope": "docs",
+      "scope": "release",
       "count": 11
-    },
-    {
-      "scope": "state",
-      "count": 11
-    },
-    {
-      "scope": "knowledge",
-      "count": 8
-    },
-    {
-      "scope": "cron",
-      "count": 7
     },
     {
       "scope": "doctor",
-      "count": 7
+      "count": 11
+    },
+    {
+      "scope": "qa",
+      "count": 10
+    },
+    {
+      "scope": "refactor",
+      "count": 10
+    },
+    {
+      "scope": "test",
+      "count": 8
     },
     {
       "scope": "cli",
       "count": 7
     },
     {
-      "scope": "telegram",
-      "count": 5
+      "scope": "pr",
+      "count": 6
+    },
+    {
+      "scope": "perf",
+      "count": 6
+    },
+    {
+      "scope": "plugins",
+      "count": 6
     }
   ]
 }
