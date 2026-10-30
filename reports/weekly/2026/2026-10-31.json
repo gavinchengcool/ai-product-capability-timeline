@@ -1,0 +1,198 @@
+{
+  "generated_at": "2026-10-31T01:18:18.934591+08:00",
+  "window": {
+    "start_local": "2026-10-30T01:18:18.934591+08:00",
+    "end_local": "2026-10-31T01:18:18.934591+08:00",
+    "start_utc": "2026-10-29T17:18:18Z",
+    "end_utc": "2026-10-30T17:18:18Z"
+  },
+  "repo": {
+    "slug": "openclaw/openclaw",
+    "stars": 393458,
+    "forks": 82700,
+    "open_issues": 7892,
+    "pushed_at": "2026-10-30T17:18:08Z"
+  },
+  "releases_in_window": [
+    {
+      "tag_name": "v2026.10.10-beta.5",
+      "published_at": "2026-10-30T03:57:14Z",
+      "name": "openclaw 2026.10.10-beta.5",
+      "prerelease": true,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.10-beta.5"
+    },
+    {
+      "tag_name": "v2026.9.36",
+      "published_at": "2026-10-29T20:19:38Z",
+      "name": "openclaw 2026.9.36",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.36"
+    }
+  ],
+  "commit_count": 454,
+  "commit_headlines": [
+    "fix(crabbox): require bounded Testbox stop verification (#188539)",
+    "fix(memory): preserve native read permission errors (#188531)",
+    "docs(postgres): align supported workflows and recovery guidance (#188537)",
+    "perf(process): isolate agent exec IO in delegated cgroups (#188379)",
+    "improve(test): reuse native baseline signing setup (#188533)",
+    "fix: find canonically equivalent skills and changed files (#188528)",
+    "feat(ui): compact context from the composer usage popover",
+    "feat(exec): keep durable session processes across Gateway restarts (#188465)",
+    "chore(ui): refresh control ui locales (#188536)",
+    "test(release): flush large child output before exit (#188532)",
+    "fix(cron): start same-session forced runs after the requesting turn (#188513)",
+    "fix(ui): mobile composer sits too close to the bottom of the screen",
+    "refactor(tts): remove obsolete audio cleanup mock (#188493)",
+    "fix(startup): keep webhook decisions startup recorded for channels Doctor left pending (#169778)",
+    "fix: verify backup archives in one streamed pass (#188518)",
+    "refactor(openai): share speech request header resolution (#188482)",
+    "fix(ui): composer pickers and buttons look disabled in dark themes (#188515)",
+    "test(usage): prepare journal admission before refresh clocks (#188529)",
+    "fix: initialize private stores under Linux setgid parents (#188464)",
+    "improve(ios): separate screenshot boot and inventory timings (#188456)",
+    "improve(test): reduce PR main refresh fixture startup (#188505)",
+    "refactor(minimax): read music JSON responses without cloning (#188478)",
+    "fix(queue): let owners steer active automation turns (#188514)",
+    "improve(test): share Vitest startup across worker lifetime faults (#188506)",
+    "fix: remove redundant iOS message actions button (#181316)",
+    "test(ui): sample composer bounds in one frame (#188512)",
+    "perf(sessions): prepare field patches from committed metadata (#188455)",
+    "fix(ci): align Knip entry ownership with maintained scripts (#188516)",
+    "feat: show background work in the sidebar (#188433)",
+    "fix(ui): apply development edits promptly on macOS (#188466)",
+    "improve(test): reduce Vitest project config discovery work (#188507)",
+    "fix(macos): get_window_state fails with invalid snapshot reference on Peekaboo (#172116)",
+    "fix: keep the newest Gateway logs reachable (#188476)",
+    "fix(signal,imessage): show the Homebrew error when setup install fails after warnings (#188453)",
+    "test(ui): assert context data waits for demand instead of chunk loading (#188500)",
+    "refactor: avoid repeated image data URL validation (#188396)",
+    "fix(ci): emit resource receipts for Windows tests (#188460)",
+    "fix: honor the native read line cap at blank boundaries (#188499)",
+    "fix(ci): preserve artifact expiry verification failures (#188473)",
+    "fix(ui): prevent resize errors when scrolling chat images (#188470)",
+    "fix(update): retry Windows pnpm/bun project moves instead of copying a held tree (#188498)",
+    "perf(state): retain lease and quarantine admission facts (#188448)",
+    "fix(agents): stop private subagent completions streaming into chat",
+    "fix(sessions): page oversized transcript history in both directions (#188483)",
+    "refactor(ollama): simplify embedding destination selection (#188480)",
+    "fix(ci): skip unused package manager setup in macOS Cargo tests (#186151)",
+    "fix(logging): identify sampled work beneath stall callers (#188474)",
+    "fix(update): let chat-update requester checks borrow Doctor's maintenance owner (#188472)",
+    "improve(ui): stop updating inactive session lists in roster mode (#188447)",
+    "test(media): remove synthetic HTTP from image tool replies (#188454)"
+  ],
+  "feature_items": [
+    "feat(ui): compact context from the composer usage popover",
+    "feat(exec): keep durable session processes across Gateway restarts (#188465)",
+    "feat: show background work in the sidebar (#188433)",
+    "feat(baseten): support joey-1 decision model",
+    "feat(backup): create PostgreSQL archives while the Gateway runs (#185236)",
+    "feat(model-catalog): rows can state their offered thinking levels; xAI rows own their profiles (#188158)",
+    "feat(codex): host cloud inference on enrolled workers",
+    "feat: add Particle model provider (#187135)",
+    "feat(codex): support command-auth custom Responses providers",
+    "improve(ui): strengthen own-message colors in four dark themes (#188114)",
+    "feat(agents): routes inherit the vendor row's reasoning replay (#187754)",
+    "feat(wear): let OpenClaw be the watch's default assistant (#187587)",
+    "feat(model-catalog): catalog rows own their thinking profile; DeepSeek, Mistral, Moonshot, Kimi move (#187730)",
+    "feat(knowledge): derive entity Timelines from records instead of page prose (#187676)",
+    "feat(cron): apply configured default tools before approval (#187798)",
+    "feat(github): expose observational publication readiness",
+    "feat(pr): publish signed candidates for pending package proof (#187764)"
+  ],
+  "fix_items": [
+    "Security boundaries: require approval for `test`/`[ -v` operands in exec allowlist mode, refuse browser proxy commands sent through generic node invoke, fail closed when sandboxed spawned children resolve CLI-backed models, carry `workspaceOnly` into Gateway-built delegate and media tools, keep unresolved Microsoft Teams allowlists restrictive, stop crafted Teams HTML from stalling the Gateway before sender checks, refuse embedded Control UI auth on pinned Android Gateway connections, and audit symlinked workspace skill roots. (#180880, #179880, #178742, #185094, #184989, #183438, #180843, #182384; related #111797) Thanks @eleqtrizit, @RomneyDa, @LeizhenZhang, and @dineshsuthar123. [v2026.10.10-beta.5]",
+    "Security: keep browser pairing credentials out of opener process arguments, mask Google OAuth client secrets in logs, redact credentials from MCP CLI inspection, omit credentials from rejected search endpoint errors, and keep malformed piped input from corrupting model credentials. (#170289, #183193, #180321, #182534, #167251; related #180308) Thanks @eleqtrizit, @LeizhenZhang, @RomneyDa, @brandon-julio-t, @wr-web, and @Alix-007. [v2026.10.10-beta.5]",
+    "Performance: bound retained session-fork snapshots, release skill catalogs held by prompt reports, coalesce plugin stream transforms, avoid quadratic native reasoning rescans, reduce memory in retrieval, shell analysis, package capture, and history workers, cut stream dispatch copies and unused node event parsing, stop retention work during shutdown, keep cold catalog waits off `plugins.list`, skip settled subagent rechecks and unused activity roster planning, keep large usage reports and incognito transcripts from exhausting workers, and defer dormant Chat streaming code. (#182544, #183010, #185083, #123120, #172392, #183312, #182613, #181936, #183552, #183931, #185859, #179213, #184539, #184921, #181560, #182182, #183407, #156673, #183198) Thanks @RomneyDa, @nierob-cmd, @vincentkoc, @HerbertHuerto, @AmelioMansour, @yy19971996, and @shakkernerd. [v2026.10.10-beta.5]",
+    "fix(crabbox): require bounded Testbox stop verification (#188539)",
+    "fix(memory): preserve native read permission errors (#188531)",
+    "perf(process): isolate agent exec IO in delegated cgroups (#188379)",
+    "fix: find canonically equivalent skills and changed files (#188528)",
+    "fix(cron): start same-session forced runs after the requesting turn (#188513)",
+    "fix(ui): mobile composer sits too close to the bottom of the screen",
+    "fix(startup): keep webhook decisions startup recorded for channels Doctor left pending (#169778)",
+    "fix: verify backup archives in one streamed pass (#188518)",
+    "fix(ui): composer pickers and buttons look disabled in dark themes (#188515)",
+    "fix: initialize private stores under Linux setgid parents (#188464)",
+    "fix(queue): let owners steer active automation turns (#188514)",
+    "fix: remove redundant iOS message actions button (#181316)",
+    "perf(sessions): prepare field patches from committed metadata (#188455)",
+    "fix(ci): align Knip entry ownership with maintained scripts (#188516)",
+    "fix(ui): apply development edits promptly on macOS (#188466)",
+    "fix(macos): get_window_state fails with invalid snapshot reference on Peekaboo (#172116)",
+    "fix: keep the newest Gateway logs reachable (#188476)",
+    "fix(signal,imessage): show the Homebrew error when setup install fails after warnings (#188453)",
+    "fix(ci): emit resource receipts for Windows tests (#188460)",
+    "fix: honor the native read line cap at blank boundaries (#188499)",
+    "fix(ci): preserve artifact expiry verification failures (#188473)",
+    "fix(ui): prevent resize errors when scrolling chat images (#188470)",
+    "fix(update): retry Windows pnpm/bun project moves instead of copying a held tree (#188498)",
+    "perf(state): retain lease and quarantine admission facts (#188448)",
+    "fix(agents): stop private subagent completions streaming into chat",
+    "fix(sessions): page oversized transcript history in both directions (#188483)",
+    "fix(ci): skip unused package manager setup in macOS Cargo tests (#186151)"
+  ],
+  "top_scopes": [
+    {
+      "scope": "fix",
+      "count": 91
+    },
+    {
+      "scope": "ui",
+      "count": 65
+    },
+    {
+      "scope": "test",
+      "count": 29
+    },
+    {
+      "scope": "update",
+      "count": 21
+    },
+    {
+      "scope": "ci",
+      "count": 15
+    },
+    {
+      "scope": "plugins",
+      "count": 11
+    },
+    {
+      "scope": "gateway",
+      "count": 10
+    },
+    {
+      "scope": "release",
+      "count": 9
+    },
+    {
+      "scope": "improve(ui)",
+      "count": 8
+    },
+    {
+      "scope": "tts",
+      "count": 7
+    },
+    {
+      "scope": "sessions",
+      "count": 7
+    },
+    {
+      "scope": "memory",
+      "count": 6
+    },
+    {
+      "scope": "decisions",
+      "count": 6
+    },
+    {
+      "scope": "state",
+      "count": 5
+    },
+    {
+      "scope": "agents",
+      "count": 5
+    }
+  ]
+}

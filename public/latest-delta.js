@@ -1,98 +1,106 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-10-30T01:39:52.872870+08:00",
+  "generatedAt": "2026-10-31T01:18:18.934591+08:00",
   "window": {
-    "start_local": "2026-10-29T01:39:52.872870+08:00",
-    "end_local": "2026-10-30T01:39:52.872870+08:00",
-    "start_utc": "2026-10-28T17:39:52Z",
-    "end_utc": "2026-10-29T17:39:52Z"
+    "start_local": "2026-10-30T01:18:18.934591+08:00",
+    "end_local": "2026-10-31T01:18:18.934591+08:00",
+    "start_utc": "2026-10-29T17:18:18Z",
+    "end_utc": "2026-10-30T17:18:18Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 393358,
-    "forks": 82689,
-    "open_issues": 7866,
-    "pushed_at": "2026-10-29T17:38:29Z"
+    "stars": 393458,
+    "forks": 82700,
+    "open_issues": 7892,
+    "pushed_at": "2026-10-30T17:18:08Z"
   },
   "summary": {
-    "commitCount": 413,
-    "releaseCount": 1,
+    "commitCount": 454,
+    "releaseCount": 2,
     "stableReleaseCount": 1,
-    "betaReleaseCount": 0,
-    "stars": 393358,
-    "forks": 82689,
-    "openIssues": 7866
+    "betaReleaseCount": 1,
+    "stars": 393458,
+    "forks": 82700,
+    "openIssues": 7892
   },
   "releases": [
     {
-      "tag_name": "v2026.10.9",
-      "published_at": "2026-10-29T15:54:35Z",
-      "name": "openclaw 2026.10.9",
+      "tag_name": "v2026.10.10-beta.5",
+      "published_at": "2026-10-30T03:57:14Z",
+      "name": "openclaw 2026.10.10-beta.5",
+      "prerelease": true,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.10-beta.5"
+    },
+    {
+      "tag_name": "v2026.9.36",
+      "published_at": "2026-10-29T20:19:38Z",
+      "name": "openclaw 2026.9.36",
       "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.9"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.36"
     }
   ],
   "featureItems": [
-    "feat(github): expose observational publication readiness",
-    "feat(pr): publish signed candidates for pending package proof (#187764)",
-    "feat: stop your own work across devices (#187408)",
-    "feat(knowledge): Learn from Granola scribe that ingests meetings through the Granola plugin (#187659)",
-    "feat(scripts): compare candidate catalogs against released readers (#187517)",
-    "feat(skills): diet oversized learned skills in daily Workshop maintenance (#186861)",
-    "feat(control-ui): show where to edit read-only Gateway configuration (#187015)"
+    "feat(ui): compact context from the composer usage popover",
+    "feat(exec): keep durable session processes across Gateway restarts (#188465)",
+    "feat: show background work in the sidebar (#188433)",
+    "feat(baseten): support joey-1 decision model",
+    "feat(backup): create PostgreSQL archives while the Gateway runs (#185236)",
+    "feat(model-catalog): rows can state their offered thinking levels; xAI rows own their profiles (#188158)",
+    "feat(codex): host cloud inference on enrolled workers",
+    "feat: add Particle model provider (#187135)"
   ],
   "fixItems": [
-    "fix(ui): preserve IME navigation in the worktree picker (#187732)",
-    "fix(pr): avoid argument-limit failures on large squash merges (#187775)",
-    "fix(signal): stop skipping inbound messages after reconnects (#187667)",
-    "fix: streamed replies with a literal [[ in prose no longer re-parse the whole answer (#187656)",
-    "fix(ci): skip npm-lock setup for unrelated root scripts (#187743)",
-    "fix(qa): correlate unthreaded Telegram recovery fallbacks (#187759)",
-    "fix(templates): sanitize remote identity fields in CLI human-readable output (#187666)",
-    "fix: remove unused chat-run fixture export (#187755)"
+    "Security boundaries: require approval for `test`/`[ -v` operands in exec allowlist mode, refuse browser proxy commands sent through generic node invoke, fail closed when sandboxed spawned children resolve CLI-backed models, carry `workspaceOnly` into Gateway-built delegate and media tools, keep unresolved Microsoft Teams allowlists restrictive, stop crafted Teams HTML from stalling the Gateway before sender checks, refuse embedded Control UI auth on pinned Android Gateway connections, and audit symlinked workspace skill roots. (#180880, #179880, #178742, #185094, #184989, #183438, #180843, #182384; related #111797) Thanks @eleqtrizit, @RomneyDa, @LeizhenZhang, and @dineshsuthar123. [v2026.10.10-beta.5]",
+    "Security: keep browser pairing credentials out of opener process arguments, mask Google OAuth client secrets in logs, redact credentials from MCP CLI inspection, omit credentials from rejected search endpoint errors, and keep malformed piped input from corrupting model credentials. (#170289, #183193, #180321, #182534, #167251; related #180308) Thanks @eleqtrizit, @LeizhenZhang, @RomneyDa, @brandon-julio-t, @wr-web, and @Alix-007. [v2026.10.10-beta.5]",
+    "Performance: bound retained session-fork snapshots, release skill catalogs held by prompt reports, coalesce plugin stream transforms, avoid quadratic native reasoning rescans, reduce memory in retrieval, shell analysis, package capture, and history workers, cut stream dispatch copies and unused node event parsing, stop retention work during shutdown, keep cold catalog waits off `plugins.list`, skip settled subagent rechecks and unused activity roster planning, keep large usage reports and incognito transcripts from exhausting workers, and defer dormant Chat streaming code. (#182544, #183010, #185083, #123120, #172392, #183312, #182613, #181936, #183552, #183931, #185859, #179213, #184539, #184921, #181560, #182182, #183407, #156673, #183198) Thanks @RomneyDa, @nierob-cmd, @vincentkoc, @HerbertHuerto, @AmelioMansour, @yy19971996, and @shakkernerd. [v2026.10.10-beta.5]",
+    "fix(crabbox): require bounded Testbox stop verification (#188539)",
+    "fix(memory): preserve native read permission errors (#188531)",
+    "perf(process): isolate agent exec IO in delegated cgroups (#188379)",
+    "fix: find canonically equivalent skills and changed files (#188528)",
+    "fix(cron): start same-session forced runs after the requesting turn (#188513)"
   ],
   "topScopes": [
     {
       "scope": "fix",
-      "count": 110
+      "count": 91
     },
     {
       "scope": "ui",
-      "count": 28
+      "count": 65
     },
     {
-      "scope": "agents",
-      "count": 22
+      "scope": "test",
+      "count": 29
     },
     {
       "scope": "update",
-      "count": 19
-    },
-    {
-      "scope": "gateway",
-      "count": 18
+      "count": 21
     },
     {
       "scope": "ci",
-      "count": 12
+      "count": 15
+    },
+    {
+      "scope": "plugins",
+      "count": 11
+    },
+    {
+      "scope": "gateway",
+      "count": 10
     },
     {
       "scope": "release",
-      "count": 11
-    },
-    {
-      "scope": "doctor",
-      "count": 11
+      "count": 9
     }
   ],
   "headlineCommits": [
-    "feat(github): expose observational publication readiness",
-    "fix(ui): preserve IME navigation in the worktree picker (#187732)",
-    "feat(pr): publish signed candidates for pending package proof (#187764)",
-    "chore(release): close out 2026.10.9 on main (#187791)",
-    "test(doctor): reuse bundled channel metadata fixture (#187794)",
-    "fix(pr): avoid argument-limit failures on large squash merges (#187775)",
-    "fix(signal): stop skipping inbound messages after reconnects (#187667)",
-    "chore(release): update appcast for 2026.10.9 (#187789)"
+    "fix(crabbox): require bounded Testbox stop verification (#188539)",
+    "fix(memory): preserve native read permission errors (#188531)",
+    "docs(postgres): align supported workflows and recovery guidance (#188537)",
+    "perf(process): isolate agent exec IO in delegated cgroups (#188379)",
+    "improve(test): reuse native baseline signing setup (#188533)",
+    "fix: find canonically equivalent skills and changed files (#188528)",
+    "feat(ui): compact context from the composer usage popover",
+    "feat(exec): keep durable session processes across Gateway restarts (#188465)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

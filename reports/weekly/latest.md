@@ -1,91 +1,100 @@
 # OpenClaw Weekly Update
 
-生成时间：2026-10-30T01:39:52.872870+08:00
+生成时间：2026-10-31T01:18:18.934591+08:00
 
 ## Window
 
-- Start: 2026-10-29T01:39:52.872870+08:00
-- End: 2026-10-30T01:39:52.872870+08:00
+- Start: 2026-10-30T01:18:18.934591+08:00
+- End: 2026-10-31T01:18:18.934591+08:00
 - Repo: `openclaw/openclaw`
 
 ## At A Glance
 
-- Commits in window: 413
-- Releases in window: 1
+- Commits in window: 454
+- Releases in window: 2
 - Stable releases in window: 1
-- Beta releases in window: 0
-- Repo stars at scan time: 393358
-- Repo forks at scan time: 82689
+- Beta releases in window: 1
+- Repo stars at scan time: 393458
+- Repo forks at scan time: 82700
 
 ## New Capability Signals
 
-- feat(github): expose observational publication readiness
-- feat(pr): publish signed candidates for pending package proof (#187764)
-- feat: stop your own work across devices (#187408)
-- feat(knowledge): Learn from Granola scribe that ingests meetings through the Granola plugin (#187659)
-- feat(scripts): compare candidate catalogs against released readers (#187517)
-- feat(skills): diet oversized learned skills in daily Workshop maintenance (#186861)
-- feat(control-ui): show where to edit read-only Gateway configuration (#187015)
+- feat(ui): compact context from the composer usage popover
+- feat(exec): keep durable session processes across Gateway restarts (#188465)
+- feat: show background work in the sidebar (#188433)
+- feat(baseten): support joey-1 decision model
+- feat(backup): create PostgreSQL archives while the Gateway runs (#185236)
+- feat(model-catalog): rows can state their offered thinking levels; xAI rows own their profiles (#188158)
+- feat(codex): host cloud inference on enrolled workers
+- feat: add Particle model provider (#187135)
+- feat(codex): support command-auth custom Responses providers
+- improve(ui): strengthen own-message colors in four dark themes (#188114)
+- feat(agents): routes inherit the vendor row's reasoning replay (#187754)
+- feat(wear): let OpenClaw be the watch's default assistant (#187587)
+- feat(model-catalog): catalog rows own their thinking profile; DeepSeek, Mistral, Moonshot, Kimi move (#187730)
+- feat(knowledge): derive entity Timelines from records instead of page prose (#187676)
+- feat(cron): apply configured default tools before approval (#187798)
 
 ## Important Fixes And Hardening
 
-- fix(ui): preserve IME navigation in the worktree picker (#187732)
-- fix(pr): avoid argument-limit failures on large squash merges (#187775)
-- fix(signal): stop skipping inbound messages after reconnects (#187667)
-- fix: streamed replies with a literal [[ in prose no longer re-parse the whole answer (#187656)
-- fix(ci): skip npm-lock setup for unrelated root scripts (#187743)
-- fix(qa): correlate unthreaded Telegram recovery fallbacks (#187759)
-- fix(templates): sanitize remote identity fields in CLI human-readable output (#187666)
-- fix: remove unused chat-run fixture export (#187755)
-- fix(update): use a private workspace when the system temp directory is unsafe (#187737)
-- fix: enable diagnostics for explicit Node test children (#187749)
-- fix: stop exporting the private QA poll cursor helper (#187752)
-- fix: remove unused queued input target export (#187746)
-- fix(ui): release Markdown workers in hidden tabs (#187691)
-- fix: recover Markdown attachment file links through Files (#187662)
-- fix: GitHub publication failure notices hide the real reason
+- Security boundaries: require approval for `test`/`[ -v` operands in exec allowlist mode, refuse browser proxy commands sent through generic node invoke, fail closed when sandboxed spawned children resolve CLI-backed models, carry `workspaceOnly` into Gateway-built delegate and media tools, keep unresolved Microsoft Teams allowlists restrictive, stop crafted Teams HTML from stalling the Gateway before sender checks, refuse embedded Control UI auth on pinned Android Gateway connections, and audit symlinked workspace skill roots. (#180880, #179880, #178742, #185094, #184989, #183438, #180843, #182384; related #111797) Thanks @eleqtrizit, @RomneyDa, @LeizhenZhang, and @dineshsuthar123. [v2026.10.10-beta.5]
+- Security: keep browser pairing credentials out of opener process arguments, mask Google OAuth client secrets in logs, redact credentials from MCP CLI inspection, omit credentials from rejected search endpoint errors, and keep malformed piped input from corrupting model credentials. (#170289, #183193, #180321, #182534, #167251; related #180308) Thanks @eleqtrizit, @LeizhenZhang, @RomneyDa, @brandon-julio-t, @wr-web, and @Alix-007. [v2026.10.10-beta.5]
+- Performance: bound retained session-fork snapshots, release skill catalogs held by prompt reports, coalesce plugin stream transforms, avoid quadratic native reasoning rescans, reduce memory in retrieval, shell analysis, package capture, and history workers, cut stream dispatch copies and unused node event parsing, stop retention work during shutdown, keep cold catalog waits off `plugins.list`, skip settled subagent rechecks and unused activity roster planning, keep large usage reports and incognito transcripts from exhausting workers, and defer dormant Chat streaming code. (#182544, #183010, #185083, #123120, #172392, #183312, #182613, #181936, #183552, #183931, #185859, #179213, #184539, #184921, #181560, #182182, #183407, #156673, #183198) Thanks @RomneyDa, @nierob-cmd, @vincentkoc, @HerbertHuerto, @AmelioMansour, @yy19971996, and @shakkernerd. [v2026.10.10-beta.5]
+- fix(crabbox): require bounded Testbox stop verification (#188539)
+- fix(memory): preserve native read permission errors (#188531)
+- perf(process): isolate agent exec IO in delegated cgroups (#188379)
+- fix: find canonically equivalent skills and changed files (#188528)
+- fix(cron): start same-session forced runs after the requesting turn (#188513)
+- fix(ui): mobile composer sits too close to the bottom of the screen
+- fix(startup): keep webhook decisions startup recorded for channels Doctor left pending (#169778)
+- fix: verify backup archives in one streamed pass (#188518)
+- fix(ui): composer pickers and buttons look disabled in dark themes (#188515)
+- fix: initialize private stores under Linux setgid parents (#188464)
+- fix(queue): let owners steer active automation turns (#188514)
+- fix: remove redundant iOS message actions button (#181316)
 
 ## Releases This Week
 
-- `v2026.10.9` | stable | 2026-10-29T15:54:35Z | openclaw 2026.10.9
+- `v2026.10.10-beta.5` | beta | 2026-10-30T03:57:14Z | openclaw 2026.10.10-beta.5
+- `v2026.9.36` | stable | 2026-10-29T20:19:38Z | openclaw 2026.9.36
 
 ## Most Active Change Scopes
 
-- `fix`: 110
-- `ui`: 28
-- `agents`: 22
-- `update`: 19
-- `gateway`: 18
-- `ci`: 12
-- `release`: 11
-- `doctor`: 11
-- `qa`: 10
-- `refactor`: 10
-- `test`: 8
-- `cli`: 7
+- `fix`: 91
+- `ui`: 65
+- `test`: 29
+- `update`: 21
+- `ci`: 15
+- `plugins`: 11
+- `gateway`: 10
+- `release`: 9
+- `improve(ui)`: 8
+- `tts`: 7
+- `sessions`: 7
+- `memory`: 6
 
 ## Recent Commit Headlines
 
-- 2026-10-29T17:38:25Z | feat(github): expose observational publication readiness
-- 2026-10-29T17:36:22Z | fix(ui): preserve IME navigation in the worktree picker (#187732)
-- 2026-10-29T17:27:19Z | feat(pr): publish signed candidates for pending package proof (#187764)
-- 2026-10-29T17:19:25Z | chore(release): close out 2026.10.9 on main (#187791)
-- 2026-10-29T17:14:11Z | test(doctor): reuse bundled channel metadata fixture (#187794)
-- 2026-10-29T17:08:55Z | fix(pr): avoid argument-limit failures on large squash merges (#187775)
-- 2026-10-29T16:44:09Z | fix(signal): stop skipping inbound messages after reconnects (#187667)
-- 2026-10-29T16:42:42Z | chore(release): update appcast for 2026.10.9 (#187789)
-- 2026-10-29T16:42:00Z | refactor(perf): share duration distribution summaries (#187784)
-- 2026-10-29T16:26:27Z | fix: streamed replies with a literal [[ in prose no longer re-parse the whole answer (#187656)
-- 2026-10-29T16:03:31Z | refactor(sms): join held test work before cleanup (#156630)
-- 2026-10-29T16:01:42Z | test(agents): freeze monotonic timeout forwarding clock (#187763)
-- 2026-10-29T15:59:10Z | fix(ci): skip npm-lock setup for unrelated root scripts (#187743)
-- 2026-10-29T15:57:30Z | fix(qa): correlate unthreaded Telegram recovery fallbacks (#187759)
-- 2026-10-29T15:57:12Z | fix(templates): sanitize remote identity fields in CLI human-readable output (#187666)
-- 2026-10-29T15:46:43Z | refactor(ui): keep tool catalog descriptions off chat boot path (#187708)
-- 2026-10-29T15:29:16Z | fix: remove unused chat-run fixture export (#187755)
-- 2026-10-29T15:26:58Z | fix(update): use a private workspace when the system temp directory is unsafe (#187737)
-- 2026-10-29T15:24:11Z | fix: enable diagnostics for explicit Node test children (#187749)
-- 2026-10-29T15:21:27Z | fix: stop exporting the private QA poll cursor helper (#187752)
+- 2026-10-30T17:15:51Z | fix(crabbox): require bounded Testbox stop verification (#188539)
+- 2026-10-30T17:11:13Z | fix(memory): preserve native read permission errors (#188531)
+- 2026-10-30T17:10:26Z | docs(postgres): align supported workflows and recovery guidance (#188537)
+- 2026-10-30T17:08:17Z | perf(process): isolate agent exec IO in delegated cgroups (#188379)
+- 2026-10-30T17:06:46Z | improve(test): reuse native baseline signing setup (#188533)
+- 2026-10-30T17:05:42Z | fix: find canonically equivalent skills and changed files (#188528)
+- 2026-10-30T17:04:43Z | feat(ui): compact context from the composer usage popover
+- 2026-10-30T17:03:11Z | feat(exec): keep durable session processes across Gateway restarts (#188465)
+- 2026-10-30T17:01:31Z | chore(ui): refresh control ui locales (#188536)
+- 2026-10-30T17:00:41Z | test(release): flush large child output before exit (#188532)
+- 2026-10-30T16:56:32Z | fix(cron): start same-session forced runs after the requesting turn (#188513)
+- 2026-10-30T16:55:39Z | fix(ui): mobile composer sits too close to the bottom of the screen
+- 2026-10-30T16:55:04Z | refactor(tts): remove obsolete audio cleanup mock (#188493)
+- 2026-10-30T16:53:41Z | fix(startup): keep webhook decisions startup recorded for channels Doctor left pending (#169778)
+- 2026-10-30T16:52:46Z | fix: verify backup archives in one streamed pass (#188518)
+- 2026-10-30T16:48:46Z | refactor(openai): share speech request header resolution (#188482)
+- 2026-10-30T16:48:10Z | fix(ui): composer pickers and buttons look disabled in dark themes (#188515)
+- 2026-10-30T16:48:04Z | test(usage): prepare journal admission before refresh clocks (#188529)
+- 2026-10-30T16:47:35Z | fix: initialize private stores under Linux setgid parents (#188464)
+- 2026-10-30T16:45:33Z | improve(ios): separate screenshot boot and inventory timings (#188456)
 
 ## Sources
 
