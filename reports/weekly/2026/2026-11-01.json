@@ -1,0 +1,186 @@
+{
+  "generated_at": "2026-11-01T00:23:30.231297+08:00",
+  "window": {
+    "start_local": "2026-10-31T00:23:30.231297+08:00",
+    "end_local": "2026-11-01T00:23:30.231297+08:00",
+    "start_utc": "2026-10-30T16:23:30Z",
+    "end_utc": "2026-10-31T16:23:30Z"
+  },
+  "repo": {
+    "slug": "openclaw/openclaw",
+    "stars": 393542,
+    "forks": 82716,
+    "open_issues": 7903,
+    "pushed_at": "2026-10-31T16:22:42Z"
+  },
+  "releases_in_window": [],
+  "commit_count": 732,
+  "commit_headlines": [
+    "fix(control-ui): decode link-preview pages with their declared charset (#189323)",
+    "fix(knowledge): name slow SQLite transaction owners (#189534)",
+    "refactor(test): reuse runtime fixture cleanup owner (#189466)",
+    "fix(ci): migrate OpenShell E2E gateway config to schema v2 (#189529)",
+    "refactor(tts): isolate streaming directive text from provider discovery (#189504)",
+    "chore: remove obsolete plugin test controls (#189510)",
+    "fix: release retired plugin graphs after hot reload (#189513)",
+    "fix(qa): verify settled handoffs on the visible transcript branch (#189514)",
+    "perf(test): build updater archives without tar children (#189465)",
+    "refactor(decisions): give shared evidence types a version-neutral owner (03/14) (#189092)",
+    "refactor(decisions): narrow input eligibility to admission facts (02/14) (#189091)",
+    "refactor(decisions): separate answer semantics from model routes (#189090)",
+    "perf(test): keep lock CLI fixtures on routing sources (#189441)",
+    "refactor: consolidate duplicate helpers within existing owners (#189495)",
+    "refactor(provider-http): prepare diagnostic credentials once (#189458)",
+    "fix: Doctor leaves literal quotes in macOS service credentials (#189482)",
+    "fix(acp): resume bridge sessions after process restart (#189500)",
+    "perf(exec): wake process polls on output and completion (#189491)",
+    "perf(test): resolve node toolchain fixture tools in process (#189435)",
+    "fix(anthropic): hide the no-op Fast speed control for Claude CLI agents (#174333)",
+    "fix(diagnostics): retain app callers in heap and stall profiles (#189485)",
+    "chore: remove abandoned core test hooks (#189460)",
+    "fix(ui): match logs filter against NFC queries (#189473)",
+    "perf(skills): reduce sandbox sync custody checks (#189487)",
+    "fix(workers): recover interrupted stops without a Gateway restart (#188805)",
+    "fix(update): record package backup retirement time on success (#189472)",
+    "perf(ai): reuse encoded bodies and prepared system blocks (#189476)",
+    "fix(cron): prevent overlapping retries after execution timeouts (#189469)",
+    "perf(gateway): retain audience keys across session row updates (#189475)",
+    "improve: reuse accepted repository checkpoints between worker turns (#188807)",
+    "fix(ui): optically center the Ultrafast bolt in the mobile gauge",
+    "improve(ui): tighten mobile side rail (#189470)",
+    "fix(plugins): Windows plugin updates fail when a scanner holds a plugin file (#189451)",
+    "fix(ui): keep the mobile composer open while a draft waits",
+    "fix(test): finish revoked child cleanup before fixture teardown (#189481)",
+    "fix(ui): close mobile session sheets when switching sessions",
+    "fix(test): wait for harness and recovery diagnostics (#189478)",
+    "fix(ui): match chat transcript search against NFC queries (#189430)",
+    "fix(ui): match mobile browser chrome to the session chat surface",
+    "fix(workers): refresh platform certificates before Linux enrollment (#188802)",
+    "perf(test): acquire receipt broadcasts on worker demand (#189424)",
+    "fix(ci): prepare public types for published-driver packages (#189228)",
+    "refactor(gateway): reuse weak owner map allocation (#189461)",
+    "fix: avoid full agent database scans after derived index upgrades (#189446)",
+    "fix(memory): preserve publication restart integrity coverage (#189449)",
+    "improve(ci): isolate installed recovery checks (#187568)",
+    "fix: stop reporting verified updates as abandoned (#189452)",
+    "fix(plugins): plugin commands that return suppressReply still get a reply outside Telegram and Discord native commands (#189370)",
+    "fix(update): show new releases without waiting for a second daily check (#181949)",
+    "perf(test): build installer Bun archives without ZIP subprocesses (#189389)"
+  ],
+  "feature_items": [
+    "feat: request re-review for verified pull requests (#189006)",
+    "feat(memory-wiki): allow owner-scoped bridge reads in shared vaults (#189336)",
+    "feat(cli): read bounded model prompts from files (#189301)",
+    "feat(skills): read bounded local skill companions (#189165)",
+    "feat(workers): keep runtime image reserves ready without browser presence (#188686)",
+    "feat(workers): start repository sessions from runtime image reserves (#188679)",
+    "feat: edit verified pull requests without preparing source (#188904)",
+    "feat: verify warm worker runtime caches without modifying them (#188671)",
+    "feat(workers): preserve repository authority during dispatch and recovery (#188656)",
+    "feat: export and install offline worker runtime artifacts (#188659)",
+    "feat: allow scoped operators to manage their automations (#188090)",
+    "feat(plugins): expose source preparation work in startup diagnostics (#188735)",
+    "feat: build Linux images from offline runtime packages (#188661)",
+    "feat(memory): configure shared workspace output modes (#188763)",
+    "feat: provision cloud worker runtimes without registry access (#188651)",
+    "feat: configure remote repository session branch prefixes (#188648)",
+    "feat: prepare selected Linux Sandbox disks without snapshots (#188644)",
+    "feat(ui): compact context from the composer usage popover",
+    "feat(exec): keep durable session processes across Gateway restarts (#188465)",
+    "feat: show background work in the sidebar (#188433)"
+  ],
+  "fix_items": [
+    "fix(control-ui): decode link-preview pages with their declared charset (#189323)",
+    "fix(knowledge): name slow SQLite transaction owners (#189534)",
+    "fix(ci): migrate OpenShell E2E gateway config to schema v2 (#189529)",
+    "fix: release retired plugin graphs after hot reload (#189513)",
+    "fix(qa): verify settled handoffs on the visible transcript branch (#189514)",
+    "perf(test): build updater archives without tar children (#189465)",
+    "perf(test): keep lock CLI fixtures on routing sources (#189441)",
+    "fix: Doctor leaves literal quotes in macOS service credentials (#189482)",
+    "fix(acp): resume bridge sessions after process restart (#189500)",
+    "perf(exec): wake process polls on output and completion (#189491)",
+    "perf(test): resolve node toolchain fixture tools in process (#189435)",
+    "fix(anthropic): hide the no-op Fast speed control for Claude CLI agents (#174333)",
+    "fix(diagnostics): retain app callers in heap and stall profiles (#189485)",
+    "fix(ui): match logs filter against NFC queries (#189473)",
+    "perf(skills): reduce sandbox sync custody checks (#189487)",
+    "fix(workers): recover interrupted stops without a Gateway restart (#188805)",
+    "fix(update): record package backup retirement time on success (#189472)",
+    "perf(ai): reuse encoded bodies and prepared system blocks (#189476)",
+    "fix(cron): prevent overlapping retries after execution timeouts (#189469)",
+    "perf(gateway): retain audience keys across session row updates (#189475)",
+    "fix(ui): optically center the Ultrafast bolt in the mobile gauge",
+    "fix(plugins): Windows plugin updates fail when a scanner holds a plugin file (#189451)",
+    "fix(ui): keep the mobile composer open while a draft waits",
+    "fix(test): finish revoked child cleanup before fixture teardown (#189481)",
+    "fix(ui): close mobile session sheets when switching sessions",
+    "fix(test): wait for harness and recovery diagnostics (#189478)",
+    "fix(ui): match chat transcript search against NFC queries (#189430)",
+    "fix(ui): match mobile browser chrome to the session chat surface",
+    "fix(workers): refresh platform certificates before Linux enrollment (#188802)",
+    "perf(test): acquire receipt broadcasts on worker demand (#189424)"
+  ],
+  "top_scopes": [
+    {
+      "scope": "fix",
+      "count": 90
+    },
+    {
+      "scope": "ui",
+      "count": 86
+    },
+    {
+      "scope": "ci",
+      "count": 46
+    },
+    {
+      "scope": "test",
+      "count": 37
+    },
+    {
+      "scope": "improve(test)",
+      "count": 29
+    },
+    {
+      "scope": "gateway",
+      "count": 24
+    },
+    {
+      "scope": "improve",
+      "count": 21
+    },
+    {
+      "scope": "release",
+      "count": 21
+    },
+    {
+      "scope": "plugins",
+      "count": 20
+    },
+    {
+      "scope": "tests",
+      "count": 18
+    },
+    {
+      "scope": "decisions",
+      "count": 13
+    },
+    {
+      "scope": "sessions",
+      "count": 13
+    },
+    {
+      "scope": "update",
+      "count": 12
+    },
+    {
+      "scope": "cron",
+      "count": 11
+    },
+    {
+      "scope": "improve(ci)",
+      "count": 10
+    }
+  ]
+}

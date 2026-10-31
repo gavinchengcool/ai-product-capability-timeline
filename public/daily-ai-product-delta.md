@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-10-31T01:18:37+08:00
-- Requested window: 2026-10-30 to 2026-10-31
+- Generated at: 2026-11-01T00:23:49+08:00
+- Requested window: 2026-10-31 to 2026-11-01
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-10-30 to 2026-10-31
-- Generated at: 2026-10-31T01:18:18.934591+08:00
-- 窗口: 2026-10-30 至 2026-10-31
-- GitHub 增量: 454 commits / 2 releases
-- 最近 push: 2026-10-30
+- Window: 2026-10-31 to 2026-11-01
+- Generated at: 2026-11-01T00:23:30.231297+08:00
+- 窗口: 2026-10-31 至 2026-11-01
+- GitHub 增量: 732 commits / 0 releases
+- 最近 push: 2026-10-31
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(ui): compact context from the composer usage popover
-  - feat(exec): keep durable session processes across Gateway restarts (#188465)
-  - feat: show background work in the sidebar (#188433)
-  - feat(baseten): support joey-1 decision model
-  - feat(backup): create PostgreSQL archives while the Gateway runs (#185236)
-  - feat(model-catalog): rows can state their offered thinking levels; xAI rows own their profiles (#188158)
-  - feat(codex): host cloud inference on enrolled workers
-  - feat: add Particle model provider (#187135)
+  - feat: request re-review for verified pull requests (#189006)
+  - feat(memory-wiki): allow owner-scoped bridge reads in shared vaults (#189336)
+  - feat(cli): read bounded model prompts from files (#189301)
+  - feat(skills): read bounded local skill companions (#189165)
+  - feat(workers): keep runtime image reserves ready without browser presence (#188686)
+  - feat(workers): start repository sessions from runtime image reserves (#188679)
+  - feat: edit verified pull requests without preparing source (#188904)
+  - feat: verify warm worker runtime caches without modifying them (#188671)
 - Fixes and constraints:
-  - Security boundaries: require approval for `test`/`[ -v` operands in exec allowlist mode, refuse browser proxy commands sent through generic node invoke, fail closed when sandboxed spawned children resolve CLI-backed models, carry `workspaceOnly` into Gateway-built delegate and media tools, keep unresolved Microsoft Teams allowlists restrictive, stop crafted Teams HTML from stalling the Gateway before sender checks, refuse embedded Control UI auth on pinned Android Gateway connections, and audit symlinked workspace skill roots. (#180880, #179880, #178742, #185094, #184989, #183438, #180843, #182384; related #111797) Thanks @eleqtrizit, @RomneyDa, @LeizhenZhang, and @dineshsuthar123. [v2026.10.10-beta.5]
-  - Security: keep browser pairing credentials out of opener process arguments, mask Google OAuth client secrets in logs, redact credentials from MCP CLI inspection, omit credentials from rejected search endpoint errors, and keep malformed piped input from corrupting model credentials. (#170289, #183193, #180321, #182534, #167251; related #180308) Thanks @eleqtrizit, @LeizhenZhang, @RomneyDa, @brandon-julio-t, @wr-web, and @Alix-007. [v2026.10.10-beta.5]
-  - Performance: bound retained session-fork snapshots, release skill catalogs held by prompt reports, coalesce plugin stream transforms, avoid quadratic native reasoning rescans, reduce memory in retrieval, shell analysis, package capture, and history workers, cut stream dispatch copies and unused node event parsing, stop retention work during shutdown, keep cold catalog waits off `plugins.list`, skip settled subagent rechecks and unused activity roster planning, keep large usage reports and incognito transcripts from exhausting workers, and defer dormant Chat streaming code. (#182544, #183010, #185083, #123120, #172392, #183312, #182613, #181936, #183552, #183931, #185859, #179213, #184539, #184921, #181560, #182182, #183407, #156673, #183198) Thanks @RomneyDa, @nierob-cmd, @vincentkoc, @HerbertHuerto, @AmelioMansour, @yy19971996, and @shakkernerd. [v2026.10.10-beta.5]
-  - fix(crabbox): require bounded Testbox stop verification (#188539)
-  - fix(memory): preserve native read permission errors (#188531)
-  - perf(process): isolate agent exec IO in delegated cgroups (#188379)
-  - fix: find canonically equivalent skills and changed files (#188528)
-  - fix(cron): start same-session forced runs after the requesting turn (#188513)
+  - fix(control-ui): decode link-preview pages with their declared charset (#189323)
+  - fix(knowledge): name slow SQLite transaction owners (#189534)
+  - fix(ci): migrate OpenShell E2E gateway config to schema v2 (#189529)
+  - fix: release retired plugin graphs after hot reload (#189513)
+  - fix(qa): verify settled handoffs on the visible transcript branch (#189514)
+  - perf(test): build updater archives without tar children (#189465)
+  - perf(test): keep lock CLI fixtures on routing sources (#189441)
+  - fix: Doctor leaves literal quotes in macOS service credentials (#189482)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

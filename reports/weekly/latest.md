@@ -1,100 +1,99 @@
 # OpenClaw Weekly Update
 
-生成时间：2026-10-31T01:18:18.934591+08:00
+生成时间：2026-11-01T00:23:30.231297+08:00
 
 ## Window
 
-- Start: 2026-10-30T01:18:18.934591+08:00
-- End: 2026-10-31T01:18:18.934591+08:00
+- Start: 2026-10-31T00:23:30.231297+08:00
+- End: 2026-11-01T00:23:30.231297+08:00
 - Repo: `openclaw/openclaw`
 
 ## At A Glance
 
-- Commits in window: 454
-- Releases in window: 2
-- Stable releases in window: 1
-- Beta releases in window: 1
-- Repo stars at scan time: 393458
-- Repo forks at scan time: 82700
+- Commits in window: 732
+- Releases in window: 0
+- Stable releases in window: 0
+- Beta releases in window: 0
+- Repo stars at scan time: 393542
+- Repo forks at scan time: 82716
 
 ## New Capability Signals
 
-- feat(ui): compact context from the composer usage popover
-- feat(exec): keep durable session processes across Gateway restarts (#188465)
-- feat: show background work in the sidebar (#188433)
-- feat(baseten): support joey-1 decision model
-- feat(backup): create PostgreSQL archives while the Gateway runs (#185236)
-- feat(model-catalog): rows can state their offered thinking levels; xAI rows own their profiles (#188158)
-- feat(codex): host cloud inference on enrolled workers
-- feat: add Particle model provider (#187135)
-- feat(codex): support command-auth custom Responses providers
-- improve(ui): strengthen own-message colors in four dark themes (#188114)
-- feat(agents): routes inherit the vendor row's reasoning replay (#187754)
-- feat(wear): let OpenClaw be the watch's default assistant (#187587)
-- feat(model-catalog): catalog rows own their thinking profile; DeepSeek, Mistral, Moonshot, Kimi move (#187730)
-- feat(knowledge): derive entity Timelines from records instead of page prose (#187676)
-- feat(cron): apply configured default tools before approval (#187798)
+- feat: request re-review for verified pull requests (#189006)
+- feat(memory-wiki): allow owner-scoped bridge reads in shared vaults (#189336)
+- feat(cli): read bounded model prompts from files (#189301)
+- feat(skills): read bounded local skill companions (#189165)
+- feat(workers): keep runtime image reserves ready without browser presence (#188686)
+- feat(workers): start repository sessions from runtime image reserves (#188679)
+- feat: edit verified pull requests without preparing source (#188904)
+- feat: verify warm worker runtime caches without modifying them (#188671)
+- feat(workers): preserve repository authority during dispatch and recovery (#188656)
+- feat: export and install offline worker runtime artifacts (#188659)
+- feat: allow scoped operators to manage their automations (#188090)
+- feat(plugins): expose source preparation work in startup diagnostics (#188735)
+- feat: build Linux images from offline runtime packages (#188661)
+- feat(memory): configure shared workspace output modes (#188763)
+- feat: provision cloud worker runtimes without registry access (#188651)
 
 ## Important Fixes And Hardening
 
-- Security boundaries: require approval for `test`/`[ -v` operands in exec allowlist mode, refuse browser proxy commands sent through generic node invoke, fail closed when sandboxed spawned children resolve CLI-backed models, carry `workspaceOnly` into Gateway-built delegate and media tools, keep unresolved Microsoft Teams allowlists restrictive, stop crafted Teams HTML from stalling the Gateway before sender checks, refuse embedded Control UI auth on pinned Android Gateway connections, and audit symlinked workspace skill roots. (#180880, #179880, #178742, #185094, #184989, #183438, #180843, #182384; related #111797) Thanks @eleqtrizit, @RomneyDa, @LeizhenZhang, and @dineshsuthar123. [v2026.10.10-beta.5]
-- Security: keep browser pairing credentials out of opener process arguments, mask Google OAuth client secrets in logs, redact credentials from MCP CLI inspection, omit credentials from rejected search endpoint errors, and keep malformed piped input from corrupting model credentials. (#170289, #183193, #180321, #182534, #167251; related #180308) Thanks @eleqtrizit, @LeizhenZhang, @RomneyDa, @brandon-julio-t, @wr-web, and @Alix-007. [v2026.10.10-beta.5]
-- Performance: bound retained session-fork snapshots, release skill catalogs held by prompt reports, coalesce plugin stream transforms, avoid quadratic native reasoning rescans, reduce memory in retrieval, shell analysis, package capture, and history workers, cut stream dispatch copies and unused node event parsing, stop retention work during shutdown, keep cold catalog waits off `plugins.list`, skip settled subagent rechecks and unused activity roster planning, keep large usage reports and incognito transcripts from exhausting workers, and defer dormant Chat streaming code. (#182544, #183010, #185083, #123120, #172392, #183312, #182613, #181936, #183552, #183931, #185859, #179213, #184539, #184921, #181560, #182182, #183407, #156673, #183198) Thanks @RomneyDa, @nierob-cmd, @vincentkoc, @HerbertHuerto, @AmelioMansour, @yy19971996, and @shakkernerd. [v2026.10.10-beta.5]
-- fix(crabbox): require bounded Testbox stop verification (#188539)
-- fix(memory): preserve native read permission errors (#188531)
-- perf(process): isolate agent exec IO in delegated cgroups (#188379)
-- fix: find canonically equivalent skills and changed files (#188528)
-- fix(cron): start same-session forced runs after the requesting turn (#188513)
-- fix(ui): mobile composer sits too close to the bottom of the screen
-- fix(startup): keep webhook decisions startup recorded for channels Doctor left pending (#169778)
-- fix: verify backup archives in one streamed pass (#188518)
-- fix(ui): composer pickers and buttons look disabled in dark themes (#188515)
-- fix: initialize private stores under Linux setgid parents (#188464)
-- fix(queue): let owners steer active automation turns (#188514)
-- fix: remove redundant iOS message actions button (#181316)
+- fix(control-ui): decode link-preview pages with their declared charset (#189323)
+- fix(knowledge): name slow SQLite transaction owners (#189534)
+- fix(ci): migrate OpenShell E2E gateway config to schema v2 (#189529)
+- fix: release retired plugin graphs after hot reload (#189513)
+- fix(qa): verify settled handoffs on the visible transcript branch (#189514)
+- perf(test): build updater archives without tar children (#189465)
+- perf(test): keep lock CLI fixtures on routing sources (#189441)
+- fix: Doctor leaves literal quotes in macOS service credentials (#189482)
+- fix(acp): resume bridge sessions after process restart (#189500)
+- perf(exec): wake process polls on output and completion (#189491)
+- perf(test): resolve node toolchain fixture tools in process (#189435)
+- fix(anthropic): hide the no-op Fast speed control for Claude CLI agents (#174333)
+- fix(diagnostics): retain app callers in heap and stall profiles (#189485)
+- fix(ui): match logs filter against NFC queries (#189473)
+- perf(skills): reduce sandbox sync custody checks (#189487)
 
 ## Releases This Week
 
-- `v2026.10.10-beta.5` | beta | 2026-10-30T03:57:14Z | openclaw 2026.10.10-beta.5
-- `v2026.9.36` | stable | 2026-10-29T20:19:38Z | openclaw 2026.9.36
+- No GitHub releases were published in this window.
 
 ## Most Active Change Scopes
 
-- `fix`: 91
-- `ui`: 65
-- `test`: 29
-- `update`: 21
-- `ci`: 15
-- `plugins`: 11
-- `gateway`: 10
-- `release`: 9
-- `improve(ui)`: 8
-- `tts`: 7
-- `sessions`: 7
-- `memory`: 6
+- `fix`: 90
+- `ui`: 86
+- `ci`: 46
+- `test`: 37
+- `improve(test)`: 29
+- `gateway`: 24
+- `improve`: 21
+- `release`: 21
+- `plugins`: 20
+- `tests`: 18
+- `decisions`: 13
+- `sessions`: 13
 
 ## Recent Commit Headlines
 
-- 2026-10-30T17:15:51Z | fix(crabbox): require bounded Testbox stop verification (#188539)
-- 2026-10-30T17:11:13Z | fix(memory): preserve native read permission errors (#188531)
-- 2026-10-30T17:10:26Z | docs(postgres): align supported workflows and recovery guidance (#188537)
-- 2026-10-30T17:08:17Z | perf(process): isolate agent exec IO in delegated cgroups (#188379)
-- 2026-10-30T17:06:46Z | improve(test): reuse native baseline signing setup (#188533)
-- 2026-10-30T17:05:42Z | fix: find canonically equivalent skills and changed files (#188528)
-- 2026-10-30T17:04:43Z | feat(ui): compact context from the composer usage popover
-- 2026-10-30T17:03:11Z | feat(exec): keep durable session processes across Gateway restarts (#188465)
-- 2026-10-30T17:01:31Z | chore(ui): refresh control ui locales (#188536)
-- 2026-10-30T17:00:41Z | test(release): flush large child output before exit (#188532)
-- 2026-10-30T16:56:32Z | fix(cron): start same-session forced runs after the requesting turn (#188513)
-- 2026-10-30T16:55:39Z | fix(ui): mobile composer sits too close to the bottom of the screen
-- 2026-10-30T16:55:04Z | refactor(tts): remove obsolete audio cleanup mock (#188493)
-- 2026-10-30T16:53:41Z | fix(startup): keep webhook decisions startup recorded for channels Doctor left pending (#169778)
-- 2026-10-30T16:52:46Z | fix: verify backup archives in one streamed pass (#188518)
-- 2026-10-30T16:48:46Z | refactor(openai): share speech request header resolution (#188482)
-- 2026-10-30T16:48:10Z | fix(ui): composer pickers and buttons look disabled in dark themes (#188515)
-- 2026-10-30T16:48:04Z | test(usage): prepare journal admission before refresh clocks (#188529)
-- 2026-10-30T16:47:35Z | fix: initialize private stores under Linux setgid parents (#188464)
-- 2026-10-30T16:45:33Z | improve(ios): separate screenshot boot and inventory timings (#188456)
+- 2026-10-31T16:22:41Z | fix(control-ui): decode link-preview pages with their declared charset (#189323)
+- 2026-10-31T16:20:51Z | fix(knowledge): name slow SQLite transaction owners (#189534)
+- 2026-10-31T16:17:14Z | refactor(test): reuse runtime fixture cleanup owner (#189466)
+- 2026-10-31T16:16:19Z | fix(ci): migrate OpenShell E2E gateway config to schema v2 (#189529)
+- 2026-10-31T16:15:01Z | refactor(tts): isolate streaming directive text from provider discovery (#189504)
+- 2026-10-31T16:13:02Z | chore: remove obsolete plugin test controls (#189510)
+- 2026-10-31T16:04:18Z | fix: release retired plugin graphs after hot reload (#189513)
+- 2026-10-31T16:02:49Z | fix(qa): verify settled handoffs on the visible transcript branch (#189514)
+- 2026-10-31T16:00:25Z | perf(test): build updater archives without tar children (#189465)
+- 2026-10-31T15:59:46Z | refactor(decisions): give shared evidence types a version-neutral owner (03/14) (#189092)
+- 2026-10-31T15:56:08Z | refactor(decisions): narrow input eligibility to admission facts (02/14) (#189091)
+- 2026-10-31T15:50:55Z | refactor(decisions): separate answer semantics from model routes (#189090)
+- 2026-10-31T15:45:34Z | perf(test): keep lock CLI fixtures on routing sources (#189441)
+- 2026-10-31T15:42:38Z | refactor: consolidate duplicate helpers within existing owners (#189495)
+- 2026-10-31T15:37:14Z | refactor(provider-http): prepare diagnostic credentials once (#189458)
+- 2026-10-31T15:32:53Z | fix: Doctor leaves literal quotes in macOS service credentials (#189482)
+- 2026-10-31T15:32:41Z | fix(acp): resume bridge sessions after process restart (#189500)
+- 2026-10-31T15:30:52Z | perf(exec): wake process polls on output and completion (#189491)
+- 2026-10-31T15:30:21Z | perf(test): resolve node toolchain fixture tools in process (#189435)
+- 2026-10-31T15:29:44Z | fix(anthropic): hide the no-op Fast speed control for Claude CLI agents (#174333)
 
 ## Sources
 
