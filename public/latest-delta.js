@@ -1,91 +1,91 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-11-01T00:23:30.231297+08:00",
+  "generatedAt": "2026-11-02T01:17:27.696497+08:00",
   "window": {
-    "start_local": "2026-10-31T00:23:30.231297+08:00",
-    "end_local": "2026-11-01T00:23:30.231297+08:00",
-    "start_utc": "2026-10-30T16:23:30Z",
-    "end_utc": "2026-10-31T16:23:30Z"
+    "start_local": "2026-11-01T01:17:27.696497+08:00",
+    "end_local": "2026-11-02T01:17:27.696497+08:00",
+    "start_utc": "2026-10-31T17:17:27Z",
+    "end_utc": "2026-11-01T17:17:27Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 393542,
-    "forks": 82716,
-    "open_issues": 7903,
-    "pushed_at": "2026-10-31T16:22:42Z"
+    "stars": 393628,
+    "forks": 82732,
+    "open_issues": 7809,
+    "pushed_at": "2026-11-01T17:14:58Z"
   },
   "summary": {
-    "commitCount": 732,
+    "commitCount": 645,
     "releaseCount": 0,
     "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 393542,
-    "forks": 82716,
-    "openIssues": 7903
+    "stars": 393628,
+    "forks": 82732,
+    "openIssues": 7809
   },
   "releases": [],
   "featureItems": [
-    "feat: request re-review for verified pull requests (#189006)",
-    "feat(memory-wiki): allow owner-scoped bridge reads in shared vaults (#189336)",
-    "feat(cli): read bounded model prompts from files (#189301)",
-    "feat(skills): read bounded local skill companions (#189165)",
-    "feat(workers): keep runtime image reserves ready without browser presence (#188686)",
-    "feat(workers): start repository sessions from runtime image reserves (#188679)",
-    "feat: edit verified pull requests without preparing source (#188904)",
-    "feat: verify warm worker runtime caches without modifying them (#188671)"
+    "feat: opt in to disk-authoritative repository workspaces (#189668)",
+    "feat: prepare retained repository disks for explicit operations (#189437)",
+    "feat(sqlite): identify worker operations with heavy disk reads (#190445)",
+    "feat(ui): preview background session starts on their route",
+    "feat(ui): start Cmd+K sessions concurrently",
+    "feat(update): check candidate readiness before external cutover (#190414)",
+    "feat(ui): release Cmd+K launcher as soon as a background start is sent",
+    "feat(workers): recover retained disks through exact lifecycle intent (#189346)"
   ],
   "fixItems": [
-    "fix(control-ui): decode link-preview pages with their declared charset (#189323)",
-    "fix(knowledge): name slow SQLite transaction owners (#189534)",
-    "fix(ci): migrate OpenShell E2E gateway config to schema v2 (#189529)",
-    "fix: release retired plugin graphs after hot reload (#189513)",
-    "fix(qa): verify settled handoffs on the visible transcript branch (#189514)",
-    "perf(test): build updater archives without tar children (#189465)",
-    "perf(test): keep lock CLI fixtures on routing sources (#189441)",
-    "fix: Doctor leaves literal quotes in macOS service credentials (#189482)"
+    "fix: video gallery tests lose the first clip during entry (#190539)",
+    "fix: wait for cached sidebar toggle readiness (#190537)",
+    "perf(control-ui): retain warm pane chrome display facts (#190251)",
+    "fix(codex): identify failed RPC in thread recovery logs (#190533)",
+    "fix(cli): preserve version-suffixed command hints (#190534)",
+    "fix(test): remove timing race from MCP reconnect shutdown test (#190532)",
+    "fix(feishu): restore reactions when chat type is missing (#190515)",
+    "fix(gateway): keep verified PR states on passive sidebar rows"
   ],
   "topScopes": [
     {
-      "scope": "fix",
-      "count": 90
-    },
-    {
       "scope": "ui",
-      "count": 86
-    },
-    {
-      "scope": "ci",
-      "count": 46
+      "count": 99
     },
     {
       "scope": "test",
-      "count": 37
+      "count": 75
     },
     {
-      "scope": "improve(test)",
-      "count": 29
+      "scope": "fix",
+      "count": 49
+    },
+    {
+      "scope": "ci",
+      "count": 34
+    },
+    {
+      "scope": "improve(ui)",
+      "count": 28
+    },
+    {
+      "scope": "agents",
+      "count": 23
+    },
+    {
+      "scope": "update",
+      "count": 19
     },
     {
       "scope": "gateway",
-      "count": 24
-    },
-    {
-      "scope": "improve",
-      "count": 21
-    },
-    {
-      "scope": "release",
-      "count": 21
+      "count": 17
     }
   ],
   "headlineCommits": [
-    "fix(control-ui): decode link-preview pages with their declared charset (#189323)",
-    "fix(knowledge): name slow SQLite transaction owners (#189534)",
-    "refactor(test): reuse runtime fixture cleanup owner (#189466)",
-    "fix(ci): migrate OpenShell E2E gateway config to schema v2 (#189529)",
-    "refactor(tts): isolate streaming directive text from provider discovery (#189504)",
-    "chore: remove obsolete plugin test controls (#189510)",
-    "fix: release retired plugin graphs after hot reload (#189513)",
-    "fix(qa): verify settled handoffs on the visible transcript branch (#189514)"
+    "fix: video gallery tests lose the first clip during entry (#190539)",
+    "fix: wait for cached sidebar toggle readiness (#190537)",
+    "test(auto-reply): reuse worker workspace reconciliation fixture (#190531)",
+    "chore(test): remove unused memory search manager mocks (#190492)",
+    "refactor: share cloud placement runtime compatibility (#190529)",
+    "feat: opt in to disk-authoritative repository workspaces (#189668)",
+    "perf(control-ui): retain warm pane chrome display facts (#190251)",
+    "fix(codex): identify failed RPC in thread recovery logs (#190533)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

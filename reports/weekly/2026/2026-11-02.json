@@ -1,0 +1,196 @@
+{
+  "generated_at": "2026-11-02T01:17:27.696497+08:00",
+  "window": {
+    "start_local": "2026-11-01T01:17:27.696497+08:00",
+    "end_local": "2026-11-02T01:17:27.696497+08:00",
+    "start_utc": "2026-10-31T17:17:27Z",
+    "end_utc": "2026-11-01T17:17:27Z"
+  },
+  "repo": {
+    "slug": "openclaw/openclaw",
+    "stars": 393628,
+    "forks": 82732,
+    "open_issues": 7809,
+    "pushed_at": "2026-11-01T17:14:58Z"
+  },
+  "releases_in_window": [],
+  "commit_count": 645,
+  "commit_headlines": [
+    "fix: video gallery tests lose the first clip during entry (#190539)",
+    "fix: wait for cached sidebar toggle readiness (#190537)",
+    "test(auto-reply): reuse worker workspace reconciliation fixture (#190531)",
+    "chore(test): remove unused memory search manager mocks (#190492)",
+    "refactor: share cloud placement runtime compatibility (#190529)",
+    "feat: opt in to disk-authoritative repository workspaces (#189668)",
+    "perf(control-ui): retain warm pane chrome display facts (#190251)",
+    "fix(codex): identify failed RPC in thread recovery logs (#190533)",
+    "fix(cli): preserve version-suffixed command hints (#190534)",
+    "fix(test): remove timing race from MCP reconnect shutdown test (#190532)",
+    "test(gateway): share media authority file-open gate (#190511)",
+    "fix(feishu): restore reactions when chat type is missing (#190515)",
+    "fix(gateway): keep verified PR states on passive sidebar rows",
+    "fix(x): bound oversized API and media responses (#190526)",
+    "refactor(test): share Vitest project inclusion rules (#190501)",
+    "fix: preserve MEMORY.md when Doctor merges fail (#190497)",
+    "fix(tui): keep multiline local side questions ephemeral (#190524)",
+    "fix(memory-wiki): preserve synthesis status on refresh (#190520)",
+    "fix(ci): reconcile accepted retention SDK types (#190517)",
+    "fix(telegram): keep bound private topics on their ACP session (#190516)",
+    "refactor(tts): isolate speech synthesis result contracts (#190317)",
+    "refactor(auth): share session auth-pin snapshot comparison (#190495)",
+    "improve(test): remove mobile sheet gesture pacing (#190508)",
+    "fix(talk): keep finalized voice conversations in interaction order (#190489)",
+    "fix(workers): keep retention schemas private (#190506)",
+    "fix(ai): honor Azure Responses cache-key opt-out (#190498)",
+    "chore(ui): refresh control ui locales (#190503)",
+    "feat: prepare retained repository disks for explicit operations (#189437)",
+    "feat(sqlite): identify worker operations with heavy disk reads (#190445)",
+    "feat(ui): preview background session starts on their route",
+    "fix(ci): show ClawHub HTTP status in FRV admission failures (#190458)",
+    "test(browser): consolidate pointer-error interaction case (#190471)",
+    "fix(talk): retain readiness during relay startup (#190466)",
+    "fix(ui): prevent comment lifecycle browser test response timeouts (#190437)",
+    "fix(test): detect fulfilled credentialed browser requests (#190455)",
+    "fix(auto-reply): allow silence for optional bot messages (#190467)",
+    "fix(ui): mobile New Session composer floats mid-screen and shows a redundant + action",
+    "refactor(cron): share current-run assertion across executors (#190462)",
+    "fix(windows): keep task inspection available when PowerShell launch is denied (#190464)",
+    "fix: clear no-op migration warnings for disabled plugins (#190441)",
+    "fix(update): recover unpublished activations after lease database loss (#190436)",
+    "chore(ui): refresh control ui locales (#190463)",
+    "fix(ui): keep stopped routes from restarting (#190456)",
+    "refactor(image): isolate generation asset types (#190297)",
+    "fix(release): extend ClawHub read recovery window (#190452)",
+    "feat(ui): start Cmd+K sessions concurrently",
+    "test(sms): consolidate inbound media URL rejections (#190444)",
+    "fix(imap): retry temporary DKIM verification failures (#190439)",
+    "feat(update): check candidate readiness before external cutover (#190414)",
+    "perf(ui): speed up large slash-command menus (#190398)"
+  ],
+  "feature_items": [
+    "feat: opt in to disk-authoritative repository workspaces (#189668)",
+    "feat: prepare retained repository disks for explicit operations (#189437)",
+    "feat(sqlite): identify worker operations with heavy disk reads (#190445)",
+    "feat(ui): preview background session starts on their route",
+    "feat(ui): start Cmd+K sessions concurrently",
+    "feat(update): check candidate readiness before external cutover (#190414)",
+    "feat(ui): release Cmd+K launcher as soon as a background start is sent",
+    "feat(workers): recover retained disks through exact lifecycle intent (#189346)",
+    "improve(ui): drop the divider under the composer add tiles (#190306)",
+    "feat(ui): show GitHub avatars in the publication account picker (#190241)",
+    "feat(plugins): report tool names, skills used and model iterations on agent_end (#190108)",
+    "feat(android): start new chats from Overview (#190119)",
+    "feat: hand repository disk custody to Gateway worktrees (#189350)",
+    "feat(doctor): offer provider wildcards for copied model allowlists (#190031)",
+    "feat: capture explicit repository disk snapshots (#189263)",
+    "feat(plugins): let plugins post transcript-only chat notices (#189964)",
+    "feat(release): add bound gate approval helper (#189715)",
+    "feat(models): use prepared Decision capabilities in the picker (#189688)",
+    "feat(models): preserve inference capabilities in opt-in catalog v3 (#189678)",
+    "feat(google): use the Interactions API for all Gemini text models (#189942)",
+    "feat(release): add publication watcher (#187994)",
+    "feat: retain repository disk authority through recovery (#189106)",
+    "feat(google): use the Interactions API for Gemini Flash models (#189395)",
+    "feat(skills): bundle Skill Workshop as a plugin that owns learned skill folders (#189388)",
+    "feat(cron): let human owners manage and transfer automations",
+    "feat: link Discord accounts from personal profiles (#188910)",
+    "feat(database): capture externally quiesced SQLite migrations",
+    "feat(database): capture exact SQLite migration capsules",
+    "feat(release): add FRV job log reader (#189718)",
+    "feat(backup): add PostgreSQL local companion checkpoints"
+  ],
+  "fix_items": [
+    "fix: video gallery tests lose the first clip during entry (#190539)",
+    "fix: wait for cached sidebar toggle readiness (#190537)",
+    "perf(control-ui): retain warm pane chrome display facts (#190251)",
+    "fix(codex): identify failed RPC in thread recovery logs (#190533)",
+    "fix(cli): preserve version-suffixed command hints (#190534)",
+    "fix(test): remove timing race from MCP reconnect shutdown test (#190532)",
+    "fix(feishu): restore reactions when chat type is missing (#190515)",
+    "fix(gateway): keep verified PR states on passive sidebar rows",
+    "fix(x): bound oversized API and media responses (#190526)",
+    "fix: preserve MEMORY.md when Doctor merges fail (#190497)",
+    "fix(tui): keep multiline local side questions ephemeral (#190524)",
+    "fix(memory-wiki): preserve synthesis status on refresh (#190520)",
+    "fix(ci): reconcile accepted retention SDK types (#190517)",
+    "fix(telegram): keep bound private topics on their ACP session (#190516)",
+    "fix(talk): keep finalized voice conversations in interaction order (#190489)",
+    "fix(workers): keep retention schemas private (#190506)",
+    "fix(ai): honor Azure Responses cache-key opt-out (#190498)",
+    "fix(ci): show ClawHub HTTP status in FRV admission failures (#190458)",
+    "fix(talk): retain readiness during relay startup (#190466)",
+    "fix(ui): prevent comment lifecycle browser test response timeouts (#190437)",
+    "fix(test): detect fulfilled credentialed browser requests (#190455)",
+    "fix(auto-reply): allow silence for optional bot messages (#190467)",
+    "fix(ui): mobile New Session composer floats mid-screen and shows a redundant + action",
+    "fix(windows): keep task inspection available when PowerShell launch is denied (#190464)",
+    "fix: clear no-op migration warnings for disabled plugins (#190441)",
+    "fix(update): recover unpublished activations after lease database loss (#190436)",
+    "fix(ui): keep stopped routes from restarting (#190456)",
+    "fix(release): extend ClawHub read recovery window (#190452)",
+    "fix(imap): retry temporary DKIM verification failures (#190439)",
+    "perf(ui): speed up large slash-command menus (#190398)"
+  ],
+  "top_scopes": [
+    {
+      "scope": "ui",
+      "count": 99
+    },
+    {
+      "scope": "test",
+      "count": 75
+    },
+    {
+      "scope": "fix",
+      "count": 49
+    },
+    {
+      "scope": "ci",
+      "count": 34
+    },
+    {
+      "scope": "improve(ui)",
+      "count": 28
+    },
+    {
+      "scope": "agents",
+      "count": 23
+    },
+    {
+      "scope": "update",
+      "count": 19
+    },
+    {
+      "scope": "gateway",
+      "count": 17
+    },
+    {
+      "scope": "release",
+      "count": 17
+    },
+    {
+      "scope": "control-ui",
+      "count": 14
+    },
+    {
+      "scope": "sessions",
+      "count": 13
+    },
+    {
+      "scope": "plugins",
+      "count": 13
+    },
+    {
+      "scope": "cron",
+      "count": 9
+    },
+    {
+      "scope": "models",
+      "count": 9
+    },
+    {
+      "scope": "docs",
+      "count": 8
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-11-01T00:23:49+08:00
-- Requested window: 2026-10-31 to 2026-11-01
+- Generated at: 2026-11-02T01:17:48+08:00
+- Requested window: 2026-11-01 to 2026-11-02
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-10-31 to 2026-11-01
-- Generated at: 2026-11-01T00:23:30.231297+08:00
-- 窗口: 2026-10-31 至 2026-11-01
-- GitHub 增量: 732 commits / 0 releases
-- 最近 push: 2026-10-31
+- Window: 2026-11-01 to 2026-11-02
+- Generated at: 2026-11-02T01:17:27.696497+08:00
+- 窗口: 2026-11-01 至 2026-11-02
+- GitHub 增量: 645 commits / 0 releases
+- 最近 push: 2026-11-01
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat: request re-review for verified pull requests (#189006)
-  - feat(memory-wiki): allow owner-scoped bridge reads in shared vaults (#189336)
-  - feat(cli): read bounded model prompts from files (#189301)
-  - feat(skills): read bounded local skill companions (#189165)
-  - feat(workers): keep runtime image reserves ready without browser presence (#188686)
-  - feat(workers): start repository sessions from runtime image reserves (#188679)
-  - feat: edit verified pull requests without preparing source (#188904)
-  - feat: verify warm worker runtime caches without modifying them (#188671)
+  - feat: opt in to disk-authoritative repository workspaces (#189668)
+  - feat: prepare retained repository disks for explicit operations (#189437)
+  - feat(sqlite): identify worker operations with heavy disk reads (#190445)
+  - feat(ui): preview background session starts on their route
+  - feat(ui): start Cmd+K sessions concurrently
+  - feat(update): check candidate readiness before external cutover (#190414)
+  - feat(ui): release Cmd+K launcher as soon as a background start is sent
+  - feat(workers): recover retained disks through exact lifecycle intent (#189346)
 - Fixes and constraints:
-  - fix(control-ui): decode link-preview pages with their declared charset (#189323)
-  - fix(knowledge): name slow SQLite transaction owners (#189534)
-  - fix(ci): migrate OpenShell E2E gateway config to schema v2 (#189529)
-  - fix: release retired plugin graphs after hot reload (#189513)
-  - fix(qa): verify settled handoffs on the visible transcript branch (#189514)
-  - perf(test): build updater archives without tar children (#189465)
-  - perf(test): keep lock CLI fixtures on routing sources (#189441)
-  - fix: Doctor leaves literal quotes in macOS service credentials (#189482)
+  - fix: video gallery tests lose the first clip during entry (#190539)
+  - fix: wait for cached sidebar toggle readiness (#190537)
+  - perf(control-ui): retain warm pane chrome display facts (#190251)
+  - fix(codex): identify failed RPC in thread recovery logs (#190533)
+  - fix(cli): preserve version-suffixed command hints (#190534)
+  - fix(test): remove timing race from MCP reconnect shutdown test (#190532)
+  - fix(feishu): restore reactions when chat type is missing (#190515)
+  - fix(gateway): keep verified PR states on passive sidebar rows
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

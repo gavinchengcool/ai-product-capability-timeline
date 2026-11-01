@@ -1,57 +1,57 @@
 # OpenClaw Weekly Update
 
-生成时间：2026-11-01T00:23:30.231297+08:00
+生成时间：2026-11-02T01:17:27.696497+08:00
 
 ## Window
 
-- Start: 2026-10-31T00:23:30.231297+08:00
-- End: 2026-11-01T00:23:30.231297+08:00
+- Start: 2026-11-01T01:17:27.696497+08:00
+- End: 2026-11-02T01:17:27.696497+08:00
 - Repo: `openclaw/openclaw`
 
 ## At A Glance
 
-- Commits in window: 732
+- Commits in window: 645
 - Releases in window: 0
 - Stable releases in window: 0
 - Beta releases in window: 0
-- Repo stars at scan time: 393542
-- Repo forks at scan time: 82716
+- Repo stars at scan time: 393628
+- Repo forks at scan time: 82732
 
 ## New Capability Signals
 
-- feat: request re-review for verified pull requests (#189006)
-- feat(memory-wiki): allow owner-scoped bridge reads in shared vaults (#189336)
-- feat(cli): read bounded model prompts from files (#189301)
-- feat(skills): read bounded local skill companions (#189165)
-- feat(workers): keep runtime image reserves ready without browser presence (#188686)
-- feat(workers): start repository sessions from runtime image reserves (#188679)
-- feat: edit verified pull requests without preparing source (#188904)
-- feat: verify warm worker runtime caches without modifying them (#188671)
-- feat(workers): preserve repository authority during dispatch and recovery (#188656)
-- feat: export and install offline worker runtime artifacts (#188659)
-- feat: allow scoped operators to manage their automations (#188090)
-- feat(plugins): expose source preparation work in startup diagnostics (#188735)
-- feat: build Linux images from offline runtime packages (#188661)
-- feat(memory): configure shared workspace output modes (#188763)
-- feat: provision cloud worker runtimes without registry access (#188651)
+- feat: opt in to disk-authoritative repository workspaces (#189668)
+- feat: prepare retained repository disks for explicit operations (#189437)
+- feat(sqlite): identify worker operations with heavy disk reads (#190445)
+- feat(ui): preview background session starts on their route
+- feat(ui): start Cmd+K sessions concurrently
+- feat(update): check candidate readiness before external cutover (#190414)
+- feat(ui): release Cmd+K launcher as soon as a background start is sent
+- feat(workers): recover retained disks through exact lifecycle intent (#189346)
+- improve(ui): drop the divider under the composer add tiles (#190306)
+- feat(ui): show GitHub avatars in the publication account picker (#190241)
+- feat(plugins): report tool names, skills used and model iterations on agent_end (#190108)
+- feat(android): start new chats from Overview (#190119)
+- feat: hand repository disk custody to Gateway worktrees (#189350)
+- feat(doctor): offer provider wildcards for copied model allowlists (#190031)
+- feat: capture explicit repository disk snapshots (#189263)
 
 ## Important Fixes And Hardening
 
-- fix(control-ui): decode link-preview pages with their declared charset (#189323)
-- fix(knowledge): name slow SQLite transaction owners (#189534)
-- fix(ci): migrate OpenShell E2E gateway config to schema v2 (#189529)
-- fix: release retired plugin graphs after hot reload (#189513)
-- fix(qa): verify settled handoffs on the visible transcript branch (#189514)
-- perf(test): build updater archives without tar children (#189465)
-- perf(test): keep lock CLI fixtures on routing sources (#189441)
-- fix: Doctor leaves literal quotes in macOS service credentials (#189482)
-- fix(acp): resume bridge sessions after process restart (#189500)
-- perf(exec): wake process polls on output and completion (#189491)
-- perf(test): resolve node toolchain fixture tools in process (#189435)
-- fix(anthropic): hide the no-op Fast speed control for Claude CLI agents (#174333)
-- fix(diagnostics): retain app callers in heap and stall profiles (#189485)
-- fix(ui): match logs filter against NFC queries (#189473)
-- perf(skills): reduce sandbox sync custody checks (#189487)
+- fix: video gallery tests lose the first clip during entry (#190539)
+- fix: wait for cached sidebar toggle readiness (#190537)
+- perf(control-ui): retain warm pane chrome display facts (#190251)
+- fix(codex): identify failed RPC in thread recovery logs (#190533)
+- fix(cli): preserve version-suffixed command hints (#190534)
+- fix(test): remove timing race from MCP reconnect shutdown test (#190532)
+- fix(feishu): restore reactions when chat type is missing (#190515)
+- fix(gateway): keep verified PR states on passive sidebar rows
+- fix(x): bound oversized API and media responses (#190526)
+- fix: preserve MEMORY.md when Doctor merges fail (#190497)
+- fix(tui): keep multiline local side questions ephemeral (#190524)
+- fix(memory-wiki): preserve synthesis status on refresh (#190520)
+- fix(ci): reconcile accepted retention SDK types (#190517)
+- fix(telegram): keep bound private topics on their ACP session (#190516)
+- fix(talk): keep finalized voice conversations in interaction order (#190489)
 
 ## Releases This Week
 
@@ -59,41 +59,41 @@
 
 ## Most Active Change Scopes
 
-- `fix`: 90
-- `ui`: 86
-- `ci`: 46
-- `test`: 37
-- `improve(test)`: 29
-- `gateway`: 24
-- `improve`: 21
-- `release`: 21
-- `plugins`: 20
-- `tests`: 18
-- `decisions`: 13
+- `ui`: 99
+- `test`: 75
+- `fix`: 49
+- `ci`: 34
+- `improve(ui)`: 28
+- `agents`: 23
+- `update`: 19
+- `gateway`: 17
+- `release`: 17
+- `control-ui`: 14
 - `sessions`: 13
+- `plugins`: 13
 
 ## Recent Commit Headlines
 
-- 2026-10-31T16:22:41Z | fix(control-ui): decode link-preview pages with their declared charset (#189323)
-- 2026-10-31T16:20:51Z | fix(knowledge): name slow SQLite transaction owners (#189534)
-- 2026-10-31T16:17:14Z | refactor(test): reuse runtime fixture cleanup owner (#189466)
-- 2026-10-31T16:16:19Z | fix(ci): migrate OpenShell E2E gateway config to schema v2 (#189529)
-- 2026-10-31T16:15:01Z | refactor(tts): isolate streaming directive text from provider discovery (#189504)
-- 2026-10-31T16:13:02Z | chore: remove obsolete plugin test controls (#189510)
-- 2026-10-31T16:04:18Z | fix: release retired plugin graphs after hot reload (#189513)
-- 2026-10-31T16:02:49Z | fix(qa): verify settled handoffs on the visible transcript branch (#189514)
-- 2026-10-31T16:00:25Z | perf(test): build updater archives without tar children (#189465)
-- 2026-10-31T15:59:46Z | refactor(decisions): give shared evidence types a version-neutral owner (03/14) (#189092)
-- 2026-10-31T15:56:08Z | refactor(decisions): narrow input eligibility to admission facts (02/14) (#189091)
-- 2026-10-31T15:50:55Z | refactor(decisions): separate answer semantics from model routes (#189090)
-- 2026-10-31T15:45:34Z | perf(test): keep lock CLI fixtures on routing sources (#189441)
-- 2026-10-31T15:42:38Z | refactor: consolidate duplicate helpers within existing owners (#189495)
-- 2026-10-31T15:37:14Z | refactor(provider-http): prepare diagnostic credentials once (#189458)
-- 2026-10-31T15:32:53Z | fix: Doctor leaves literal quotes in macOS service credentials (#189482)
-- 2026-10-31T15:32:41Z | fix(acp): resume bridge sessions after process restart (#189500)
-- 2026-10-31T15:30:52Z | perf(exec): wake process polls on output and completion (#189491)
-- 2026-10-31T15:30:21Z | perf(test): resolve node toolchain fixture tools in process (#189435)
-- 2026-10-31T15:29:44Z | fix(anthropic): hide the no-op Fast speed control for Claude CLI agents (#174333)
+- 2026-11-01T17:14:54Z | fix: video gallery tests lose the first clip during entry (#190539)
+- 2026-11-01T17:13:12Z | fix: wait for cached sidebar toggle readiness (#190537)
+- 2026-11-01T17:12:07Z | test(auto-reply): reuse worker workspace reconciliation fixture (#190531)
+- 2026-11-01T17:11:40Z | chore(test): remove unused memory search manager mocks (#190492)
+- 2026-11-01T17:10:57Z | refactor: share cloud placement runtime compatibility (#190529)
+- 2026-11-01T17:08:42Z | feat: opt in to disk-authoritative repository workspaces (#189668)
+- 2026-11-01T17:07:26Z | perf(control-ui): retain warm pane chrome display facts (#190251)
+- 2026-11-01T17:05:21Z | fix(codex): identify failed RPC in thread recovery logs (#190533)
+- 2026-11-01T17:04:35Z | fix(cli): preserve version-suffixed command hints (#190534)
+- 2026-11-01T17:03:46Z | fix(test): remove timing race from MCP reconnect shutdown test (#190532)
+- 2026-11-01T16:58:25Z | test(gateway): share media authority file-open gate (#190511)
+- 2026-11-01T16:53:39Z | fix(feishu): restore reactions when chat type is missing (#190515)
+- 2026-11-01T16:52:31Z | fix(gateway): keep verified PR states on passive sidebar rows
+- 2026-11-01T16:48:45Z | fix(x): bound oversized API and media responses (#190526)
+- 2026-11-01T16:46:01Z | refactor(test): share Vitest project inclusion rules (#190501)
+- 2026-11-01T16:44:32Z | fix: preserve MEMORY.md when Doctor merges fail (#190497)
+- 2026-11-01T16:42:32Z | fix(tui): keep multiline local side questions ephemeral (#190524)
+- 2026-11-01T16:39:48Z | fix(memory-wiki): preserve synthesis status on refresh (#190520)
+- 2026-11-01T16:38:35Z | fix(ci): reconcile accepted retention SDK types (#190517)
+- 2026-11-01T16:36:46Z | fix(telegram): keep bound private topics on their ACP session (#190516)
 
 ## Sources
 
