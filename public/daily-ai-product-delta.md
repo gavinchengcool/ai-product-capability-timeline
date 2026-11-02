@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-11-02T01:17:48+08:00
-- Requested window: 2026-11-01 to 2026-11-02
+- Generated at: 2026-11-03T04:55:58+08:00
+- Requested window: 2026-11-02 to 2026-11-03
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-11-01 to 2026-11-02
-- Generated at: 2026-11-02T01:17:27.696497+08:00
-- 窗口: 2026-11-01 至 2026-11-02
-- GitHub 增量: 645 commits / 0 releases
-- 最近 push: 2026-11-01
+- Window: 2026-11-02 to 2026-11-03
+- Generated at: 2026-11-03T04:55:39.362381+08:00
+- 窗口: 2026-11-02 至 2026-11-03
+- GitHub 增量: 453 commits / 0 releases
+- 最近 push: 2026-11-02
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat: opt in to disk-authoritative repository workspaces (#189668)
-  - feat: prepare retained repository disks for explicit operations (#189437)
-  - feat(sqlite): identify worker operations with heavy disk reads (#190445)
-  - feat(ui): preview background session starts on their route
-  - feat(ui): start Cmd+K sessions concurrently
-  - feat(update): check candidate readiness before external cutover (#190414)
-  - feat(ui): release Cmd+K launcher as soon as a background start is sent
-  - feat(workers): recover retained disks through exact lifecycle intent (#189346)
+  - feat(database): recover retained workspace owners without waking workers (#190842)
+  - feat: fork threaded conversations with Telegram support (#190783)
+  - feat(plugins): plugins can run a hidden forked turn of a session with their own tools (#190950)
+  - feat(plugins): skill authoring runtime for plugins that own an agent skills folder (#190983)
+  - feat(plugins): plugins can post background notices to the session generation they observed (#190893)
+  - feat(agents): explain why a tool is or isn't available, for doctor, /learn and plugins (#190919)
+  - feat(plugins): plugin commands can continue the agent with a replacement prompt, on every channel (#190908)
+  - feat(cron): expose selected agent failure observations to plugins (#190727)
 - Fixes and constraints:
-  - fix: video gallery tests lose the first clip during entry (#190539)
-  - fix: wait for cached sidebar toggle readiness (#190537)
-  - perf(control-ui): retain warm pane chrome display facts (#190251)
-  - fix(codex): identify failed RPC in thread recovery logs (#190533)
-  - fix(cli): preserve version-suffixed command hints (#190534)
-  - fix(test): remove timing race from MCP reconnect shutdown test (#190532)
-  - fix(feishu): restore reactions when chat type is missing (#190515)
-  - fix(gateway): keep verified PR states on passive sidebar rows
+  - fix(cron): scheduler fails to start after a long-running job is interrupted (#191422)
+  - fix(doctor): explain workspace imports blocked by earlier refusals (#191442)
+  - fix: X activity stream memory grows without bound when mentions are slow (#191161)
+  - fix(ui): keep PDF readers open when file metadata refreshes (#189828)
+  - fix(agents): Gateway freezes for seconds when an ingress agent run loads plugins (#191404)
+  - fix(codex): refresh inherited workspace instructions on the next turn (#191439)
+  - fix(macos): iMessage replies stop after app updates until Automation is re-granted (#186107)
+  - fix: environment-selected dev profiles target the wrong Gateway port (#191428)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

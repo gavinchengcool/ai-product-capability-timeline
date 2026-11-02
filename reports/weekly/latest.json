@@ -1,196 +1,182 @@
 {
-  "generated_at": "2026-11-02T01:17:27.696497+08:00",
+  "generated_at": "2026-11-03T04:55:39.362381+08:00",
   "window": {
-    "start_local": "2026-11-01T01:17:27.696497+08:00",
-    "end_local": "2026-11-02T01:17:27.696497+08:00",
-    "start_utc": "2026-10-31T17:17:27Z",
-    "end_utc": "2026-11-01T17:17:27Z"
+    "start_local": "2026-11-02T04:55:39.362381+08:00",
+    "end_local": "2026-11-03T04:55:39.362381+08:00",
+    "start_utc": "2026-11-01T20:55:39Z",
+    "end_utc": "2026-11-02T20:55:39Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 393628,
-    "forks": 82732,
-    "open_issues": 7809,
-    "pushed_at": "2026-11-01T17:14:58Z"
+    "stars": 393749,
+    "forks": 82757,
+    "open_issues": 7721,
+    "pushed_at": "2026-11-02T20:55:27Z"
   },
   "releases_in_window": [],
-  "commit_count": 645,
+  "commit_count": 453,
   "commit_headlines": [
-    "fix: video gallery tests lose the first clip during entry (#190539)",
-    "fix: wait for cached sidebar toggle readiness (#190537)",
-    "test(auto-reply): reuse worker workspace reconciliation fixture (#190531)",
-    "chore(test): remove unused memory search manager mocks (#190492)",
-    "refactor: share cloud placement runtime compatibility (#190529)",
-    "feat: opt in to disk-authoritative repository workspaces (#189668)",
-    "perf(control-ui): retain warm pane chrome display facts (#190251)",
-    "fix(codex): identify failed RPC in thread recovery logs (#190533)",
-    "fix(cli): preserve version-suffixed command hints (#190534)",
-    "fix(test): remove timing race from MCP reconnect shutdown test (#190532)",
-    "test(gateway): share media authority file-open gate (#190511)",
-    "fix(feishu): restore reactions when chat type is missing (#190515)",
-    "fix(gateway): keep verified PR states on passive sidebar rows",
-    "fix(x): bound oversized API and media responses (#190526)",
-    "refactor(test): share Vitest project inclusion rules (#190501)",
-    "fix: preserve MEMORY.md when Doctor merges fail (#190497)",
-    "fix(tui): keep multiline local side questions ephemeral (#190524)",
-    "fix(memory-wiki): preserve synthesis status on refresh (#190520)",
-    "fix(ci): reconcile accepted retention SDK types (#190517)",
-    "fix(telegram): keep bound private topics on their ACP session (#190516)",
-    "refactor(tts): isolate speech synthesis result contracts (#190317)",
-    "refactor(auth): share session auth-pin snapshot comparison (#190495)",
-    "improve(test): remove mobile sheet gesture pacing (#190508)",
-    "fix(talk): keep finalized voice conversations in interaction order (#190489)",
-    "fix(workers): keep retention schemas private (#190506)",
-    "fix(ai): honor Azure Responses cache-key opt-out (#190498)",
-    "chore(ui): refresh control ui locales (#190503)",
-    "feat: prepare retained repository disks for explicit operations (#189437)",
-    "feat(sqlite): identify worker operations with heavy disk reads (#190445)",
-    "feat(ui): preview background session starts on their route",
-    "fix(ci): show ClawHub HTTP status in FRV admission failures (#190458)",
-    "test(browser): consolidate pointer-error interaction case (#190471)",
-    "fix(talk): retain readiness during relay startup (#190466)",
-    "fix(ui): prevent comment lifecycle browser test response timeouts (#190437)",
-    "fix(test): detect fulfilled credentialed browser requests (#190455)",
-    "fix(auto-reply): allow silence for optional bot messages (#190467)",
-    "fix(ui): mobile New Session composer floats mid-screen and shows a redundant + action",
-    "refactor(cron): share current-run assertion across executors (#190462)",
-    "fix(windows): keep task inspection available when PowerShell launch is denied (#190464)",
-    "fix: clear no-op migration warnings for disabled plugins (#190441)",
-    "fix(update): recover unpublished activations after lease database loss (#190436)",
-    "chore(ui): refresh control ui locales (#190463)",
-    "fix(ui): keep stopped routes from restarting (#190456)",
-    "refactor(image): isolate generation asset types (#190297)",
-    "fix(release): extend ClawHub read recovery window (#190452)",
-    "feat(ui): start Cmd+K sessions concurrently",
-    "test(sms): consolidate inbound media URL rejections (#190444)",
-    "fix(imap): retry temporary DKIM verification failures (#190439)",
-    "feat(update): check candidate readiness before external cutover (#190414)",
-    "perf(ui): speed up large slash-command menus (#190398)"
+    "fix(cron): scheduler fails to start after a long-running job is interrupted (#191422)",
+    "fix(doctor): explain workspace imports blocked by earlier refusals (#191442)",
+    "fix: X activity stream memory grows without bound when mentions are slow (#191161)",
+    "fix(ui): keep PDF readers open when file metadata refreshes (#189828)",
+    "fix(agents): Gateway freezes for seconds when an ingress agent run loads plugins (#191404)",
+    "improve: reduce repeated tool preparation and expose prompt timings (#191437)",
+    "fix(codex): refresh inherited workspace instructions on the next turn (#191439)",
+    "test(telegram): require the pending poll vote before ordering (#191431)",
+    "test(muse): expire settlement timeout after turn admission",
+    "fix(macos): iMessage replies stop after app updates until Automation is re-granted (#186107)",
+    "fix: environment-selected dev profiles target the wrong Gateway port (#191428)",
+    "feat(database): recover retained workspace owners without waking workers (#190842)",
+    "fix(agents): reject FIFO native-hook credentials without blocking (#191423)",
+    "refactor(music): separate provider host contracts (#190549)",
+    "fix(ai): keep the Responses request builder private",
+    "test: trim implied fallback assertions (#191393)",
+    "fix(ios): parallel tool calls show no result after their outputs arrive (#171976)",
+    "fix(gateway): public sessions resend unchanged bodies for matching validators (#191101)",
+    "chore(ui): refresh control ui locales (#191410)",
+    "fix: skip command catalog requests for disabled shared sessions (#191402)",
+    "test(build): copy entities from its installed package root",
+    "fix(auto-reply): keep system events off channel binding owners during init (#191370)",
+    "fix(state): trust the published header over a stale deferred admission (#191357)",
+    "fix(database): refuse non-regular recovery manifests before reading (#191347)",
+    "fix(ci): queue locale refresh after extension changes",
+    "fix(ui): keep narrow phone titles clear of page actions (#191371)",
+    "fix(compaction): deliver native CLI compaction notices (#189548)",
+    "docs(ios): require Xcode 27.1 to build the iOS app (#189968)",
+    "fix(cli): reject reserved keys in provider and MCP assignments (#191389)",
+    "fix: realtime transcription bypasses configured environment proxies (#187369)",
+    "fix: cancel Doctor cron and daemon snapshot preparation (#190874)",
+    "test(telegram): trim unused answer stream option (#191351)",
+    "fix(active-memory): English object questions skip deep recall (#191384)",
+    "fix(doctor): reclaim updater runtimes while a Gateway runs (#191284)",
+    "test(trajectory): exercise rollback without schema drift",
+    "test(ui): freeze connect clock before page boot (#191379)",
+    "fix(database): load Workboard port SQL from its API (#191340)",
+    "fix(agents): preserve old tool-result projections during truncation (#191378)",
+    "fix(update): a damaged npm plugin no longer rolls back core updates (#191348)",
+    "fix(ai): cancel provider calls during payload hooks on every adapter (#191261)",
+    "fix(models): list Claude CLI models when no Anthropic model is pinned to Claude CLI (#191148)",
+    "fix(backup): let scheduled backups run past ten minutes (#191346)",
+    "fix: let Visitor publishers open their own Beam links",
+    "test: isolate cancellation proofs from native startup time (#191341)",
+    "test(cli): accept settled native signal outcomes",
+    "refactor(test): use canonical provider fixture owners (#189995)",
+    "fix: await native credential migration observations (#190873)",
+    "fix(memory-wiki): untitled pages are named after a code comment (#191263)",
+    "feat: fork threaded conversations with Telegram support (#190783)",
+    "test(telegram): trim unused variants and redundant assertion (#191300)"
   ],
   "feature_items": [
-    "feat: opt in to disk-authoritative repository workspaces (#189668)",
-    "feat: prepare retained repository disks for explicit operations (#189437)",
-    "feat(sqlite): identify worker operations with heavy disk reads (#190445)",
-    "feat(ui): preview background session starts on their route",
-    "feat(ui): start Cmd+K sessions concurrently",
-    "feat(update): check candidate readiness before external cutover (#190414)",
-    "feat(ui): release Cmd+K launcher as soon as a background start is sent",
-    "feat(workers): recover retained disks through exact lifecycle intent (#189346)",
-    "improve(ui): drop the divider under the composer add tiles (#190306)",
-    "feat(ui): show GitHub avatars in the publication account picker (#190241)",
-    "feat(plugins): report tool names, skills used and model iterations on agent_end (#190108)",
-    "feat(android): start new chats from Overview (#190119)",
-    "feat: hand repository disk custody to Gateway worktrees (#189350)",
-    "feat(doctor): offer provider wildcards for copied model allowlists (#190031)",
-    "feat: capture explicit repository disk snapshots (#189263)",
-    "feat(plugins): let plugins post transcript-only chat notices (#189964)",
-    "feat(release): add bound gate approval helper (#189715)",
-    "feat(models): use prepared Decision capabilities in the picker (#189688)",
-    "feat(models): preserve inference capabilities in opt-in catalog v3 (#189678)",
-    "feat(google): use the Interactions API for all Gemini text models (#189942)",
-    "feat(release): add publication watcher (#187994)",
-    "feat: retain repository disk authority through recovery (#189106)",
-    "feat(google): use the Interactions API for Gemini Flash models (#189395)",
-    "feat(skills): bundle Skill Workshop as a plugin that owns learned skill folders (#189388)",
-    "feat(cron): let human owners manage and transfer automations",
-    "feat: link Discord accounts from personal profiles (#188910)",
-    "feat(database): capture externally quiesced SQLite migrations",
-    "feat(database): capture exact SQLite migration capsules",
-    "feat(release): add FRV job log reader (#189718)",
-    "feat(backup): add PostgreSQL local companion checkpoints"
+    "feat(database): recover retained workspace owners without waking workers (#190842)",
+    "feat: fork threaded conversations with Telegram support (#190783)",
+    "feat(plugins): plugins can run a hidden forked turn of a session with their own tools (#190950)",
+    "feat(plugins): skill authoring runtime for plugins that own an agent skills folder (#190983)",
+    "feat(plugins): plugins can post background notices to the session generation they observed (#190893)",
+    "feat(agents): explain why a tool is or isn't available, for doctor, /learn and plugins (#190919)",
+    "feat(plugins): plugin commands can continue the agent with a replacement prompt, on every channel (#190908)",
+    "feat(cron): expose selected agent failure observations to plugins (#190727)",
+    "feat(database): recover selected session skill and workspace dependencies (#190833)",
+    "feat(backup): exclude registered worktree templates on request (#190822)",
+    "feat(database): prepare an exact PostgreSQL state namespace (#190832)",
+    "feat(beam): allow owned publication by restricted guests (#190912)",
+    "feat(plugins): run_stopped hook for confirmed user stops (#190906)",
+    "feat(diagnostics): account for SQLite reads below the heavy-read threshold (#190907)",
+    "ci: support empty admission args on Bash 3.2 (#190747)",
+    "ci: add base scheduled upgrade survivor (#190746)"
   ],
   "fix_items": [
-    "fix: video gallery tests lose the first clip during entry (#190539)",
-    "fix: wait for cached sidebar toggle readiness (#190537)",
-    "perf(control-ui): retain warm pane chrome display facts (#190251)",
-    "fix(codex): identify failed RPC in thread recovery logs (#190533)",
-    "fix(cli): preserve version-suffixed command hints (#190534)",
-    "fix(test): remove timing race from MCP reconnect shutdown test (#190532)",
-    "fix(feishu): restore reactions when chat type is missing (#190515)",
-    "fix(gateway): keep verified PR states on passive sidebar rows",
-    "fix(x): bound oversized API and media responses (#190526)",
-    "fix: preserve MEMORY.md when Doctor merges fail (#190497)",
-    "fix(tui): keep multiline local side questions ephemeral (#190524)",
-    "fix(memory-wiki): preserve synthesis status on refresh (#190520)",
-    "fix(ci): reconcile accepted retention SDK types (#190517)",
-    "fix(telegram): keep bound private topics on their ACP session (#190516)",
-    "fix(talk): keep finalized voice conversations in interaction order (#190489)",
-    "fix(workers): keep retention schemas private (#190506)",
-    "fix(ai): honor Azure Responses cache-key opt-out (#190498)",
-    "fix(ci): show ClawHub HTTP status in FRV admission failures (#190458)",
-    "fix(talk): retain readiness during relay startup (#190466)",
-    "fix(ui): prevent comment lifecycle browser test response timeouts (#190437)",
-    "fix(test): detect fulfilled credentialed browser requests (#190455)",
-    "fix(auto-reply): allow silence for optional bot messages (#190467)",
-    "fix(ui): mobile New Session composer floats mid-screen and shows a redundant + action",
-    "fix(windows): keep task inspection available when PowerShell launch is denied (#190464)",
-    "fix: clear no-op migration warnings for disabled plugins (#190441)",
-    "fix(update): recover unpublished activations after lease database loss (#190436)",
-    "fix(ui): keep stopped routes from restarting (#190456)",
-    "fix(release): extend ClawHub read recovery window (#190452)",
-    "fix(imap): retry temporary DKIM verification failures (#190439)",
-    "perf(ui): speed up large slash-command menus (#190398)"
+    "fix(cron): scheduler fails to start after a long-running job is interrupted (#191422)",
+    "fix(doctor): explain workspace imports blocked by earlier refusals (#191442)",
+    "fix: X activity stream memory grows without bound when mentions are slow (#191161)",
+    "fix(ui): keep PDF readers open when file metadata refreshes (#189828)",
+    "fix(agents): Gateway freezes for seconds when an ingress agent run loads plugins (#191404)",
+    "fix(codex): refresh inherited workspace instructions on the next turn (#191439)",
+    "fix(macos): iMessage replies stop after app updates until Automation is re-granted (#186107)",
+    "fix: environment-selected dev profiles target the wrong Gateway port (#191428)",
+    "fix(agents): reject FIFO native-hook credentials without blocking (#191423)",
+    "fix(ai): keep the Responses request builder private",
+    "fix(ios): parallel tool calls show no result after their outputs arrive (#171976)",
+    "fix(gateway): public sessions resend unchanged bodies for matching validators (#191101)",
+    "fix: skip command catalog requests for disabled shared sessions (#191402)",
+    "fix(auto-reply): keep system events off channel binding owners during init (#191370)",
+    "fix(state): trust the published header over a stale deferred admission (#191357)",
+    "fix(database): refuse non-regular recovery manifests before reading (#191347)",
+    "fix(ci): queue locale refresh after extension changes",
+    "fix(ui): keep narrow phone titles clear of page actions (#191371)",
+    "fix(compaction): deliver native CLI compaction notices (#189548)",
+    "fix(cli): reject reserved keys in provider and MCP assignments (#191389)",
+    "fix: realtime transcription bypasses configured environment proxies (#187369)",
+    "fix: cancel Doctor cron and daemon snapshot preparation (#190874)",
+    "fix(active-memory): English object questions skip deep recall (#191384)",
+    "fix(doctor): reclaim updater runtimes while a Gateway runs (#191284)",
+    "fix(database): load Workboard port SQL from its API (#191340)",
+    "fix(agents): preserve old tool-result projections during truncation (#191378)",
+    "fix(update): a damaged npm plugin no longer rolls back core updates (#191348)",
+    "fix(ai): cancel provider calls during payload hooks on every adapter (#191261)",
+    "fix(models): list Claude CLI models when no Anthropic model is pinned to Claude CLI (#191148)",
+    "fix(backup): let scheduled backups run past ten minutes (#191346)"
   ],
   "top_scopes": [
     {
-      "scope": "ui",
-      "count": 99
-    },
-    {
-      "scope": "test",
-      "count": 75
-    },
-    {
       "scope": "fix",
-      "count": 49
-    },
-    {
-      "scope": "ci",
-      "count": 34
+      "count": 61
     },
     {
       "scope": "improve(ui)",
-      "count": 28
+      "count": 49
+    },
+    {
+      "scope": "ui",
+      "count": 44
+    },
+    {
+      "scope": "test",
+      "count": 27
+    },
+    {
+      "scope": "ci",
+      "count": 27
     },
     {
       "scope": "agents",
-      "count": 23
-    },
-    {
-      "scope": "update",
-      "count": 19
-    },
-    {
-      "scope": "gateway",
       "count": 17
-    },
-    {
-      "scope": "release",
-      "count": 17
-    },
-    {
-      "scope": "control-ui",
-      "count": 14
-    },
-    {
-      "scope": "sessions",
-      "count": 13
     },
     {
       "scope": "plugins",
       "count": 13
     },
     {
-      "scope": "cron",
-      "count": 9
+      "scope": "gateway",
+      "count": 12
     },
     {
-      "scope": "models",
-      "count": 9
+      "scope": "cli",
+      "count": 11
     },
     {
-      "scope": "docs",
+      "scope": "update",
+      "count": 11
+    },
+    {
+      "scope": "doctor",
       "count": 8
+    },
+    {
+      "scope": "database",
+      "count": 7
+    },
+    {
+      "scope": "sessions",
+      "count": 7
+    },
+    {
+      "scope": "qa",
+      "count": 7
+    },
+    {
+      "scope": "telegram",
+      "count": 6
     }
   ]
 }

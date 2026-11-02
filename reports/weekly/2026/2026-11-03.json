@@ -1,0 +1,182 @@
+{
+  "generated_at": "2026-11-03T04:55:39.362381+08:00",
+  "window": {
+    "start_local": "2026-11-02T04:55:39.362381+08:00",
+    "end_local": "2026-11-03T04:55:39.362381+08:00",
+    "start_utc": "2026-11-01T20:55:39Z",
+    "end_utc": "2026-11-02T20:55:39Z"
+  },
+  "repo": {
+    "slug": "openclaw/openclaw",
+    "stars": 393749,
+    "forks": 82757,
+    "open_issues": 7721,
+    "pushed_at": "2026-11-02T20:55:27Z"
+  },
+  "releases_in_window": [],
+  "commit_count": 453,
+  "commit_headlines": [
+    "fix(cron): scheduler fails to start after a long-running job is interrupted (#191422)",
+    "fix(doctor): explain workspace imports blocked by earlier refusals (#191442)",
+    "fix: X activity stream memory grows without bound when mentions are slow (#191161)",
+    "fix(ui): keep PDF readers open when file metadata refreshes (#189828)",
+    "fix(agents): Gateway freezes for seconds when an ingress agent run loads plugins (#191404)",
+    "improve: reduce repeated tool preparation and expose prompt timings (#191437)",
+    "fix(codex): refresh inherited workspace instructions on the next turn (#191439)",
+    "test(telegram): require the pending poll vote before ordering (#191431)",
+    "test(muse): expire settlement timeout after turn admission",
+    "fix(macos): iMessage replies stop after app updates until Automation is re-granted (#186107)",
+    "fix: environment-selected dev profiles target the wrong Gateway port (#191428)",
+    "feat(database): recover retained workspace owners without waking workers (#190842)",
+    "fix(agents): reject FIFO native-hook credentials without blocking (#191423)",
+    "refactor(music): separate provider host contracts (#190549)",
+    "fix(ai): keep the Responses request builder private",
+    "test: trim implied fallback assertions (#191393)",
+    "fix(ios): parallel tool calls show no result after their outputs arrive (#171976)",
+    "fix(gateway): public sessions resend unchanged bodies for matching validators (#191101)",
+    "chore(ui): refresh control ui locales (#191410)",
+    "fix: skip command catalog requests for disabled shared sessions (#191402)",
+    "test(build): copy entities from its installed package root",
+    "fix(auto-reply): keep system events off channel binding owners during init (#191370)",
+    "fix(state): trust the published header over a stale deferred admission (#191357)",
+    "fix(database): refuse non-regular recovery manifests before reading (#191347)",
+    "fix(ci): queue locale refresh after extension changes",
+    "fix(ui): keep narrow phone titles clear of page actions (#191371)",
+    "fix(compaction): deliver native CLI compaction notices (#189548)",
+    "docs(ios): require Xcode 27.1 to build the iOS app (#189968)",
+    "fix(cli): reject reserved keys in provider and MCP assignments (#191389)",
+    "fix: realtime transcription bypasses configured environment proxies (#187369)",
+    "fix: cancel Doctor cron and daemon snapshot preparation (#190874)",
+    "test(telegram): trim unused answer stream option (#191351)",
+    "fix(active-memory): English object questions skip deep recall (#191384)",
+    "fix(doctor): reclaim updater runtimes while a Gateway runs (#191284)",
+    "test(trajectory): exercise rollback without schema drift",
+    "test(ui): freeze connect clock before page boot (#191379)",
+    "fix(database): load Workboard port SQL from its API (#191340)",
+    "fix(agents): preserve old tool-result projections during truncation (#191378)",
+    "fix(update): a damaged npm plugin no longer rolls back core updates (#191348)",
+    "fix(ai): cancel provider calls during payload hooks on every adapter (#191261)",
+    "fix(models): list Claude CLI models when no Anthropic model is pinned to Claude CLI (#191148)",
+    "fix(backup): let scheduled backups run past ten minutes (#191346)",
+    "fix: let Visitor publishers open their own Beam links",
+    "test: isolate cancellation proofs from native startup time (#191341)",
+    "test(cli): accept settled native signal outcomes",
+    "refactor(test): use canonical provider fixture owners (#189995)",
+    "fix: await native credential migration observations (#190873)",
+    "fix(memory-wiki): untitled pages are named after a code comment (#191263)",
+    "feat: fork threaded conversations with Telegram support (#190783)",
+    "test(telegram): trim unused variants and redundant assertion (#191300)"
+  ],
+  "feature_items": [
+    "feat(database): recover retained workspace owners without waking workers (#190842)",
+    "feat: fork threaded conversations with Telegram support (#190783)",
+    "feat(plugins): plugins can run a hidden forked turn of a session with their own tools (#190950)",
+    "feat(plugins): skill authoring runtime for plugins that own an agent skills folder (#190983)",
+    "feat(plugins): plugins can post background notices to the session generation they observed (#190893)",
+    "feat(agents): explain why a tool is or isn't available, for doctor, /learn and plugins (#190919)",
+    "feat(plugins): plugin commands can continue the agent with a replacement prompt, on every channel (#190908)",
+    "feat(cron): expose selected agent failure observations to plugins (#190727)",
+    "feat(database): recover selected session skill and workspace dependencies (#190833)",
+    "feat(backup): exclude registered worktree templates on request (#190822)",
+    "feat(database): prepare an exact PostgreSQL state namespace (#190832)",
+    "feat(beam): allow owned publication by restricted guests (#190912)",
+    "feat(plugins): run_stopped hook for confirmed user stops (#190906)",
+    "feat(diagnostics): account for SQLite reads below the heavy-read threshold (#190907)",
+    "ci: support empty admission args on Bash 3.2 (#190747)",
+    "ci: add base scheduled upgrade survivor (#190746)"
+  ],
+  "fix_items": [
+    "fix(cron): scheduler fails to start after a long-running job is interrupted (#191422)",
+    "fix(doctor): explain workspace imports blocked by earlier refusals (#191442)",
+    "fix: X activity stream memory grows without bound when mentions are slow (#191161)",
+    "fix(ui): keep PDF readers open when file metadata refreshes (#189828)",
+    "fix(agents): Gateway freezes for seconds when an ingress agent run loads plugins (#191404)",
+    "fix(codex): refresh inherited workspace instructions on the next turn (#191439)",
+    "fix(macos): iMessage replies stop after app updates until Automation is re-granted (#186107)",
+    "fix: environment-selected dev profiles target the wrong Gateway port (#191428)",
+    "fix(agents): reject FIFO native-hook credentials without blocking (#191423)",
+    "fix(ai): keep the Responses request builder private",
+    "fix(ios): parallel tool calls show no result after their outputs arrive (#171976)",
+    "fix(gateway): public sessions resend unchanged bodies for matching validators (#191101)",
+    "fix: skip command catalog requests for disabled shared sessions (#191402)",
+    "fix(auto-reply): keep system events off channel binding owners during init (#191370)",
+    "fix(state): trust the published header over a stale deferred admission (#191357)",
+    "fix(database): refuse non-regular recovery manifests before reading (#191347)",
+    "fix(ci): queue locale refresh after extension changes",
+    "fix(ui): keep narrow phone titles clear of page actions (#191371)",
+    "fix(compaction): deliver native CLI compaction notices (#189548)",
+    "fix(cli): reject reserved keys in provider and MCP assignments (#191389)",
+    "fix: realtime transcription bypasses configured environment proxies (#187369)",
+    "fix: cancel Doctor cron and daemon snapshot preparation (#190874)",
+    "fix(active-memory): English object questions skip deep recall (#191384)",
+    "fix(doctor): reclaim updater runtimes while a Gateway runs (#191284)",
+    "fix(database): load Workboard port SQL from its API (#191340)",
+    "fix(agents): preserve old tool-result projections during truncation (#191378)",
+    "fix(update): a damaged npm plugin no longer rolls back core updates (#191348)",
+    "fix(ai): cancel provider calls during payload hooks on every adapter (#191261)",
+    "fix(models): list Claude CLI models when no Anthropic model is pinned to Claude CLI (#191148)",
+    "fix(backup): let scheduled backups run past ten minutes (#191346)"
+  ],
+  "top_scopes": [
+    {
+      "scope": "fix",
+      "count": 61
+    },
+    {
+      "scope": "improve(ui)",
+      "count": 49
+    },
+    {
+      "scope": "ui",
+      "count": 44
+    },
+    {
+      "scope": "test",
+      "count": 27
+    },
+    {
+      "scope": "ci",
+      "count": 27
+    },
+    {
+      "scope": "agents",
+      "count": 17
+    },
+    {
+      "scope": "plugins",
+      "count": 13
+    },
+    {
+      "scope": "gateway",
+      "count": 12
+    },
+    {
+      "scope": "cli",
+      "count": 11
+    },
+    {
+      "scope": "update",
+      "count": 11
+    },
+    {
+      "scope": "doctor",
+      "count": 8
+    },
+    {
+      "scope": "database",
+      "count": 7
+    },
+    {
+      "scope": "sessions",
+      "count": 7
+    },
+    {
+      "scope": "qa",
+      "count": 7
+    },
+    {
+      "scope": "telegram",
+      "count": 6
+    }
+  ]
+}

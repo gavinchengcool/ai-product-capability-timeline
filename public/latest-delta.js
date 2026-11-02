@@ -1,91 +1,91 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-11-02T01:17:27.696497+08:00",
+  "generatedAt": "2026-11-03T04:55:39.362381+08:00",
   "window": {
-    "start_local": "2026-11-01T01:17:27.696497+08:00",
-    "end_local": "2026-11-02T01:17:27.696497+08:00",
-    "start_utc": "2026-10-31T17:17:27Z",
-    "end_utc": "2026-11-01T17:17:27Z"
+    "start_local": "2026-11-02T04:55:39.362381+08:00",
+    "end_local": "2026-11-03T04:55:39.362381+08:00",
+    "start_utc": "2026-11-01T20:55:39Z",
+    "end_utc": "2026-11-02T20:55:39Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 393628,
-    "forks": 82732,
-    "open_issues": 7809,
-    "pushed_at": "2026-11-01T17:14:58Z"
+    "stars": 393749,
+    "forks": 82757,
+    "open_issues": 7721,
+    "pushed_at": "2026-11-02T20:55:27Z"
   },
   "summary": {
-    "commitCount": 645,
+    "commitCount": 453,
     "releaseCount": 0,
     "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 393628,
-    "forks": 82732,
-    "openIssues": 7809
+    "stars": 393749,
+    "forks": 82757,
+    "openIssues": 7721
   },
   "releases": [],
   "featureItems": [
-    "feat: opt in to disk-authoritative repository workspaces (#189668)",
-    "feat: prepare retained repository disks for explicit operations (#189437)",
-    "feat(sqlite): identify worker operations with heavy disk reads (#190445)",
-    "feat(ui): preview background session starts on their route",
-    "feat(ui): start Cmd+K sessions concurrently",
-    "feat(update): check candidate readiness before external cutover (#190414)",
-    "feat(ui): release Cmd+K launcher as soon as a background start is sent",
-    "feat(workers): recover retained disks through exact lifecycle intent (#189346)"
+    "feat(database): recover retained workspace owners without waking workers (#190842)",
+    "feat: fork threaded conversations with Telegram support (#190783)",
+    "feat(plugins): plugins can run a hidden forked turn of a session with their own tools (#190950)",
+    "feat(plugins): skill authoring runtime for plugins that own an agent skills folder (#190983)",
+    "feat(plugins): plugins can post background notices to the session generation they observed (#190893)",
+    "feat(agents): explain why a tool is or isn't available, for doctor, /learn and plugins (#190919)",
+    "feat(plugins): plugin commands can continue the agent with a replacement prompt, on every channel (#190908)",
+    "feat(cron): expose selected agent failure observations to plugins (#190727)"
   ],
   "fixItems": [
-    "fix: video gallery tests lose the first clip during entry (#190539)",
-    "fix: wait for cached sidebar toggle readiness (#190537)",
-    "perf(control-ui): retain warm pane chrome display facts (#190251)",
-    "fix(codex): identify failed RPC in thread recovery logs (#190533)",
-    "fix(cli): preserve version-suffixed command hints (#190534)",
-    "fix(test): remove timing race from MCP reconnect shutdown test (#190532)",
-    "fix(feishu): restore reactions when chat type is missing (#190515)",
-    "fix(gateway): keep verified PR states on passive sidebar rows"
+    "fix(cron): scheduler fails to start after a long-running job is interrupted (#191422)",
+    "fix(doctor): explain workspace imports blocked by earlier refusals (#191442)",
+    "fix: X activity stream memory grows without bound when mentions are slow (#191161)",
+    "fix(ui): keep PDF readers open when file metadata refreshes (#189828)",
+    "fix(agents): Gateway freezes for seconds when an ingress agent run loads plugins (#191404)",
+    "fix(codex): refresh inherited workspace instructions on the next turn (#191439)",
+    "fix(macos): iMessage replies stop after app updates until Automation is re-granted (#186107)",
+    "fix: environment-selected dev profiles target the wrong Gateway port (#191428)"
   ],
   "topScopes": [
     {
-      "scope": "ui",
-      "count": 99
-    },
-    {
-      "scope": "test",
-      "count": 75
-    },
-    {
       "scope": "fix",
-      "count": 49
-    },
-    {
-      "scope": "ci",
-      "count": 34
+      "count": 61
     },
     {
       "scope": "improve(ui)",
-      "count": 28
+      "count": 49
+    },
+    {
+      "scope": "ui",
+      "count": 44
+    },
+    {
+      "scope": "test",
+      "count": 27
+    },
+    {
+      "scope": "ci",
+      "count": 27
     },
     {
       "scope": "agents",
-      "count": 23
+      "count": 17
     },
     {
-      "scope": "update",
-      "count": 19
+      "scope": "plugins",
+      "count": 13
     },
     {
       "scope": "gateway",
-      "count": 17
+      "count": 12
     }
   ],
   "headlineCommits": [
-    "fix: video gallery tests lose the first clip during entry (#190539)",
-    "fix: wait for cached sidebar toggle readiness (#190537)",
-    "test(auto-reply): reuse worker workspace reconciliation fixture (#190531)",
-    "chore(test): remove unused memory search manager mocks (#190492)",
-    "refactor: share cloud placement runtime compatibility (#190529)",
-    "feat: opt in to disk-authoritative repository workspaces (#189668)",
-    "perf(control-ui): retain warm pane chrome display facts (#190251)",
-    "fix(codex): identify failed RPC in thread recovery logs (#190533)"
+    "fix(cron): scheduler fails to start after a long-running job is interrupted (#191422)",
+    "fix(doctor): explain workspace imports blocked by earlier refusals (#191442)",
+    "fix: X activity stream memory grows without bound when mentions are slow (#191161)",
+    "fix(ui): keep PDF readers open when file metadata refreshes (#189828)",
+    "fix(agents): Gateway freezes for seconds when an ingress agent run loads plugins (#191404)",
+    "improve: reduce repeated tool preparation and expose prompt timings (#191437)",
+    "fix(codex): refresh inherited workspace instructions on the next turn (#191439)",
+    "test(telegram): require the pending poll vote before ordering (#191431)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
