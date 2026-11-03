@@ -1,99 +1,99 @@
 # OpenClaw Weekly Update
 
-生成时间：2026-11-03T04:55:39.362381+08:00
+生成时间：2026-11-04T02:42:55.469734+08:00
 
 ## Window
 
-- Start: 2026-11-02T04:55:39.362381+08:00
-- End: 2026-11-03T04:55:39.362381+08:00
+- Start: 2026-11-03T02:42:55.469734+08:00
+- End: 2026-11-04T02:42:55.469734+08:00
 - Repo: `openclaw/openclaw`
 
 ## At A Glance
 
-- Commits in window: 453
-- Releases in window: 0
-- Stable releases in window: 0
+- Commits in window: 549
+- Releases in window: 1
+- Stable releases in window: 1
 - Beta releases in window: 0
-- Repo stars at scan time: 393749
-- Repo forks at scan time: 82757
+- Repo stars at scan time: 393844
+- Repo forks at scan time: 82788
 
 ## New Capability Signals
 
-- feat(database): recover retained workspace owners without waking workers (#190842)
-- feat: fork threaded conversations with Telegram support (#190783)
-- feat(plugins): plugins can run a hidden forked turn of a session with their own tools (#190950)
-- feat(plugins): skill authoring runtime for plugins that own an agent skills folder (#190983)
-- feat(plugins): plugins can post background notices to the session generation they observed (#190893)
-- feat(agents): explain why a tool is or isn't available, for doctor, /learn and plugins (#190919)
-- feat(plugins): plugin commands can continue the agent with a replacement prompt, on every channel (#190908)
-- feat(cron): expose selected agent failure observations to plugins (#190727)
-- feat(database): recover selected session skill and workspace dependencies (#190833)
-- feat(backup): exclude registered worktree templates on request (#190822)
-- feat(database): prepare an exact PostgreSQL state namespace (#190832)
-- feat(beam): allow owned publication by restricted guests (#190912)
-- feat(plugins): run_stopped hook for confirmed user stops (#190906)
-- feat(diagnostics): account for SQLite reads below the heavy-read threshold (#190907)
-- ci: support empty admission args on Bash 3.2 (#190747)
+- feat(openclaw-id): add protocol contracts package (#191469)
+- improve(ui): redesign the Appearance theme picker (#191304)
+- improve(ui): redesign the About page around version facts and links (#191289)
+- feat(gateway): let tools.invoke run configured MCP tools (#187699)
+- feat(ui): move conversation versions into the session menu
+- feat(plugins): reload edited bundled plugin code in development with OPENCLAW_DEV_RELOAD_BUNDLED_PLUGINS
+- feat(clawrouter): honor catalog-selected speech routes (#191863)
+- feat(ci): record comparable graph inputs (#191896)
+- feat(clawrouter): search through declared native catalog offers (#191792)
+- feat(clawrouter): use catalog offers for memory embeddings (#191809)
+- feat(acpx): select Qoder models in native chat (#189150)
+- feat(ci): retain pre-execution observation snapshots (#191827)
+- feat(acpx): select Grok Build models in native chat (#189146)
+- feat(ios): configure ESP devices from native Settings (#191750)
+- feat(slack): fork channel threads into independent conversations (#190786)
 
 ## Important Fixes And Hardening
 
-- fix(cron): scheduler fails to start after a long-running job is interrupted (#191422)
-- fix(doctor): explain workspace imports blocked by earlier refusals (#191442)
-- fix: X activity stream memory grows without bound when mentions are slow (#191161)
-- fix(ui): keep PDF readers open when file metadata refreshes (#189828)
-- fix(agents): Gateway freezes for seconds when an ingress agent run loads plugins (#191404)
-- fix(codex): refresh inherited workspace instructions on the next turn (#191439)
-- fix(macos): iMessage replies stop after app updates until Automation is re-granted (#186107)
-- fix: environment-selected dev profiles target the wrong Gateway port (#191428)
-- fix(agents): reject FIFO native-hook credentials without blocking (#191423)
-- fix(ai): keep the Responses request builder private
-- fix(ios): parallel tool calls show no result after their outputs arrive (#171976)
-- fix(gateway): public sessions resend unchanged bodies for matching validators (#191101)
-- fix: skip command catalog requests for disabled shared sessions (#191402)
-- fix(auto-reply): keep system events off channel binding owners during init (#191370)
-- fix(state): trust the published header over a stale deferred admission (#191357)
+- fix(ui): name the device page the same in the phone header and the page (#191395)
+- fix(doctor): treat failed unsealed update capture as unavailable (#192155)
+- fix(ci): use public identities in gateway fixtures
+- fix(update): keep compatibility-skipped global plugins in update candidates (#192042)
+- fix(ui): reduce Sessions and Cron first-visit delay (#192075)
+- fix(ci): update session skill reader fixture
+- fix: keep CI preparation from changing Git hooks (#192138)
+- fix(doctor): preserve unpinned API and CLI fallback routes
+- fix(ci): remove unused long duration formatter
+- fix(ci): keep native update fixtures on selected Node (#192132)
+- fix(update): reclaim retained updater runtimes on Windows (#192129)
+- fix(ui): keep session branch PR cache windows on elapsed time (#191576)
+- fix(ui): keep collapsed Details sections collapsed for the session (#192121)
+- fix(ci): follow current UI dialog and list selectors
+- fix(ui): keep spaces between joined settings strings (#191358)
 
 ## Releases This Week
 
-- No GitHub releases were published in this window.
+- `v2026.10.10` | stable | 2026-11-03T03:22:35Z | openclaw 2026.10.10
 
 ## Most Active Change Scopes
 
-- `fix`: 61
-- `improve(ui)`: 49
-- `ui`: 44
-- `test`: 27
-- `ci`: 27
-- `agents`: 17
-- `plugins`: 13
-- `gateway`: 12
-- `cli`: 11
-- `update`: 11
+- `improve(ui)`: 105
+- `ui`: 54
+- `ci`: 39
+- `fix`: 32
+- `gateway`: 26
+- `test`: 23
+- `update`: 16
+- `ios`: 13
+- `agents`: 13
+- `plugins`: 12
+- `clawrouter`: 9
 - `doctor`: 8
-- `database`: 7
 
 ## Recent Commit Headlines
 
-- 2026-11-02T20:50:05Z | fix(cron): scheduler fails to start after a long-running job is interrupted (#191422)
-- 2026-11-02T20:49:37Z | fix(doctor): explain workspace imports blocked by earlier refusals (#191442)
-- 2026-11-02T20:47:39Z | fix: X activity stream memory grows without bound when mentions are slow (#191161)
-- 2026-11-02T20:45:55Z | fix(ui): keep PDF readers open when file metadata refreshes (#189828)
-- 2026-11-02T20:40:52Z | fix(agents): Gateway freezes for seconds when an ingress agent run loads plugins (#191404)
-- 2026-11-02T20:34:50Z | improve: reduce repeated tool preparation and expose prompt timings (#191437)
-- 2026-11-02T20:32:02Z | fix(codex): refresh inherited workspace instructions on the next turn (#191439)
-- 2026-11-02T20:28:57Z | test(telegram): require the pending poll vote before ordering (#191431)
-- 2026-11-02T20:21:34Z | test(muse): expire settlement timeout after turn admission
-- 2026-11-02T20:22:57Z | fix(macos): iMessage replies stop after app updates until Automation is re-granted (#186107)
-- 2026-11-02T20:20:01Z | fix: environment-selected dev profiles target the wrong Gateway port (#191428)
-- 2026-11-02T20:14:01Z | feat(database): recover retained workspace owners without waking workers (#190842)
-- 2026-11-02T20:11:09Z | fix(agents): reject FIFO native-hook credentials without blocking (#191423)
-- 2026-11-02T20:09:08Z | refactor(music): separate provider host contracts (#190549)
-- 2026-11-02T19:48:14Z | fix(ai): keep the Responses request builder private
-- 2026-11-02T19:49:55Z | test: trim implied fallback assertions (#191393)
-- 2026-11-02T19:49:27Z | fix(ios): parallel tool calls show no result after their outputs arrive (#171976)
-- 2026-11-02T19:46:00Z | fix(gateway): public sessions resend unchanged bodies for matching validators (#191101)
-- 2026-11-02T19:41:48Z | chore(ui): refresh control ui locales (#191410)
-- 2026-11-02T19:34:46Z | fix: skip command catalog requests for disabled shared sessions (#191402)
+- 2026-11-03T18:42:36Z | improve(ui): make Memories a search box and what it found (#191396)
+- 2026-11-03T18:42:17Z | fix(ui): name the device page the same in the phone header and the page (#191395)
+- 2026-11-03T18:41:45Z | improve(ui): put the Plugins title at the height of other settings pages (#191392)
+- 2026-11-03T18:38:34Z | fix(doctor): treat failed unsealed update capture as unavailable (#192155)
+- 2026-11-03T18:34:29Z | improve(ui): keep settings pages still when their state changes (#191388)
+- 2026-11-03T18:23:09Z | fix(ci): use public identities in gateway fixtures
+- 2026-11-03T18:27:51Z | improve(ui): show generated lists without counts or numbered rows (#191383)
+- 2026-11-03T18:26:47Z | fix(update): keep compatibility-skipped global plugins in update candidates (#192042)
+- 2026-11-03T18:23:29Z | fix(ui): reduce Sessions and Cron first-visit delay (#192075)
+- 2026-11-03T18:21:10Z | improve(ui): rethink the open model provider (#191381)
+- 2026-11-03T18:12:40Z | fix(ci): update session skill reader fixture
+- 2026-11-03T18:16:14Z | fix: keep CI preparation from changing Git hooks (#192138)
+- 2026-11-03T18:13:21Z | improve(ui): read the model defaults as one row list (#191380)
+- 2026-11-03T18:11:48Z | fix(doctor): preserve unpinned API and CLI fallback routes
+- 2026-11-03T18:10:47Z | docs: align skill scope and prototype refresh guidance (#192148)
+- 2026-11-03T18:09:49Z | improve(ui): clarify cloud snapshot lifecycle copy
+- 2026-11-03T18:06:49Z | improve(ui): use one spinner in settings and say Saving when saving skills (#191376)
+- 2026-11-03T18:04:37Z | chore(i18n): refresh native locales (#192133)
+- 2026-11-03T17:58:45Z | fix(ci): remove unused long duration formatter
+- 2026-11-03T17:59:47Z | improve(ui): answer Memory Overview at a glance (#191374)
 
 ## Sources
 

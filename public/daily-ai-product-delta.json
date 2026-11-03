@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-03T04:55:58+08:00",
+  "generatedAt": "2026-11-04T02:43:14+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-11-02T04:55:58+08:00",
-    "end_local": "2026-11-03T04:55:58+08:00"
+    "start_local": "2026-11-03T02:43:14+08:00",
+    "end_local": "2026-11-04T02:43:14+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-11-03T04:55:39.362381+08:00",
+      "generatedAt": "2026-11-04T02:42:55.469734+08:00",
       "window": {
-        "start_local": "2026-11-02T04:55:39.362381+08:00",
-        "end_local": "2026-11-03T04:55:39.362381+08:00",
-        "start_utc": "2026-11-01T20:55:39Z",
-        "end_utc": "2026-11-02T20:55:39Z"
+        "start_local": "2026-11-03T02:42:55.469734+08:00",
+        "end_local": "2026-11-04T02:42:55.469734+08:00",
+        "start_utc": "2026-11-02T18:42:55Z",
+        "end_utc": "2026-11-03T18:42:55Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-11-02 至 2026-11-03"
+          "value": "2026-11-03 至 2026-11-04"
         },
         {
           "label": "GitHub 增量",
-          "value": "453 commits / 0 releases"
+          "value": "549 commits / 1 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-11-02"
+          "value": "2026-11-03"
         },
         {
           "label": "来源",
@@ -52,58 +52,66 @@
         }
       ],
       "featureItems": [
-        "feat(database): recover retained workspace owners without waking workers (#190842)",
-        "feat: fork threaded conversations with Telegram support (#190783)",
-        "feat(plugins): plugins can run a hidden forked turn of a session with their own tools (#190950)",
-        "feat(plugins): skill authoring runtime for plugins that own an agent skills folder (#190983)",
-        "feat(plugins): plugins can post background notices to the session generation they observed (#190893)",
-        "feat(agents): explain why a tool is or isn't available, for doctor, /learn and plugins (#190919)",
-        "feat(plugins): plugin commands can continue the agent with a replacement prompt, on every channel (#190908)",
-        "feat(cron): expose selected agent failure observations to plugins (#190727)"
+        "feat(openclaw-id): add protocol contracts package (#191469)",
+        "improve(ui): redesign the Appearance theme picker (#191304)",
+        "improve(ui): redesign the About page around version facts and links (#191289)",
+        "feat(gateway): let tools.invoke run configured MCP tools (#187699)",
+        "feat(ui): move conversation versions into the session menu",
+        "feat(plugins): reload edited bundled plugin code in development with OPENCLAW_DEV_RELOAD_BUNDLED_PLUGINS",
+        "feat(clawrouter): honor catalog-selected speech routes (#191863)",
+        "feat(ci): record comparable graph inputs (#191896)"
       ],
       "fixItems": [
-        "fix(cron): scheduler fails to start after a long-running job is interrupted (#191422)",
-        "fix(doctor): explain workspace imports blocked by earlier refusals (#191442)",
-        "fix: X activity stream memory grows without bound when mentions are slow (#191161)",
-        "fix(ui): keep PDF readers open when file metadata refreshes (#189828)",
-        "fix(agents): Gateway freezes for seconds when an ingress agent run loads plugins (#191404)",
-        "fix(codex): refresh inherited workspace instructions on the next turn (#191439)",
-        "fix(macos): iMessage replies stop after app updates until Automation is re-granted (#186107)",
-        "fix: environment-selected dev profiles target the wrong Gateway port (#191428)"
+        "fix(ui): name the device page the same in the phone header and the page (#191395)",
+        "fix(doctor): treat failed unsealed update capture as unavailable (#192155)",
+        "fix(ci): use public identities in gateway fixtures",
+        "fix(update): keep compatibility-skipped global plugins in update candidates (#192042)",
+        "fix(ui): reduce Sessions and Cron first-visit delay (#192075)",
+        "fix(ci): update session skill reader fixture",
+        "fix: keep CI preparation from changing Git hooks (#192138)",
+        "fix(doctor): preserve unpinned API and CLI fallback routes"
       ],
-      "releases": [],
+      "releases": [
+        {
+          "tag_name": "v2026.10.10",
+          "published_at": "2026-11-03T03:22:35Z",
+          "name": "openclaw 2026.10.10",
+          "prerelease": false,
+          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.10"
+        }
+      ],
       "topScopes": [
         {
-          "scope": "fix",
-          "count": 61
-        },
-        {
           "scope": "improve(ui)",
-          "count": 49
+          "count": 105
         },
         {
           "scope": "ui",
-          "count": 44
-        },
-        {
-          "scope": "test",
-          "count": 27
+          "count": 54
         },
         {
           "scope": "ci",
-          "count": 27
+          "count": 39
         },
         {
-          "scope": "agents",
-          "count": 17
-        },
-        {
-          "scope": "plugins",
-          "count": 13
+          "scope": "fix",
+          "count": 32
         },
         {
           "scope": "gateway",
-          "count": 12
+          "count": 26
+        },
+        {
+          "scope": "test",
+          "count": 23
+        },
+        {
+          "scope": "update",
+          "count": 16
+        },
+        {
+          "scope": "ios",
+          "count": 13
         }
       ],
       "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"

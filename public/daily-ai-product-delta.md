@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-11-03T04:55:58+08:00
-- Requested window: 2026-11-02 to 2026-11-03
+- Generated at: 2026-11-04T02:43:14+08:00
+- Requested window: 2026-11-03 to 2026-11-04
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-11-02 to 2026-11-03
-- Generated at: 2026-11-03T04:55:39.362381+08:00
-- 窗口: 2026-11-02 至 2026-11-03
-- GitHub 增量: 453 commits / 0 releases
-- 最近 push: 2026-11-02
+- Window: 2026-11-03 to 2026-11-04
+- Generated at: 2026-11-04T02:42:55.469734+08:00
+- 窗口: 2026-11-03 至 2026-11-04
+- GitHub 增量: 549 commits / 1 releases
+- 最近 push: 2026-11-03
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(database): recover retained workspace owners without waking workers (#190842)
-  - feat: fork threaded conversations with Telegram support (#190783)
-  - feat(plugins): plugins can run a hidden forked turn of a session with their own tools (#190950)
-  - feat(plugins): skill authoring runtime for plugins that own an agent skills folder (#190983)
-  - feat(plugins): plugins can post background notices to the session generation they observed (#190893)
-  - feat(agents): explain why a tool is or isn't available, for doctor, /learn and plugins (#190919)
-  - feat(plugins): plugin commands can continue the agent with a replacement prompt, on every channel (#190908)
-  - feat(cron): expose selected agent failure observations to plugins (#190727)
+  - feat(openclaw-id): add protocol contracts package (#191469)
+  - improve(ui): redesign the Appearance theme picker (#191304)
+  - improve(ui): redesign the About page around version facts and links (#191289)
+  - feat(gateway): let tools.invoke run configured MCP tools (#187699)
+  - feat(ui): move conversation versions into the session menu
+  - feat(plugins): reload edited bundled plugin code in development with OPENCLAW_DEV_RELOAD_BUNDLED_PLUGINS
+  - feat(clawrouter): honor catalog-selected speech routes (#191863)
+  - feat(ci): record comparable graph inputs (#191896)
 - Fixes and constraints:
-  - fix(cron): scheduler fails to start after a long-running job is interrupted (#191422)
-  - fix(doctor): explain workspace imports blocked by earlier refusals (#191442)
-  - fix: X activity stream memory grows without bound when mentions are slow (#191161)
-  - fix(ui): keep PDF readers open when file metadata refreshes (#189828)
-  - fix(agents): Gateway freezes for seconds when an ingress agent run loads plugins (#191404)
-  - fix(codex): refresh inherited workspace instructions on the next turn (#191439)
-  - fix(macos): iMessage replies stop after app updates until Automation is re-granted (#186107)
-  - fix: environment-selected dev profiles target the wrong Gateway port (#191428)
+  - fix(ui): name the device page the same in the phone header and the page (#191395)
+  - fix(doctor): treat failed unsealed update capture as unavailable (#192155)
+  - fix(ci): use public identities in gateway fixtures
+  - fix(update): keep compatibility-skipped global plugins in update candidates (#192042)
+  - fix(ui): reduce Sessions and Cron first-visit delay (#192075)
+  - fix(ci): update session skill reader fixture
+  - fix: keep CI preparation from changing Git hooks (#192138)
+  - fix(doctor): preserve unpinned API and CLI fallback routes
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

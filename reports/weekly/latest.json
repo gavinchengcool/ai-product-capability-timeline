@@ -1,182 +1,204 @@
 {
-  "generated_at": "2026-11-03T04:55:39.362381+08:00",
+  "generated_at": "2026-11-04T02:42:55.469734+08:00",
   "window": {
-    "start_local": "2026-11-02T04:55:39.362381+08:00",
-    "end_local": "2026-11-03T04:55:39.362381+08:00",
-    "start_utc": "2026-11-01T20:55:39Z",
-    "end_utc": "2026-11-02T20:55:39Z"
+    "start_local": "2026-11-03T02:42:55.469734+08:00",
+    "end_local": "2026-11-04T02:42:55.469734+08:00",
+    "start_utc": "2026-11-02T18:42:55Z",
+    "end_utc": "2026-11-03T18:42:55Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 393749,
-    "forks": 82757,
-    "open_issues": 7721,
-    "pushed_at": "2026-11-02T20:55:27Z"
+    "stars": 393844,
+    "forks": 82788,
+    "open_issues": 7670,
+    "pushed_at": "2026-11-03T18:42:43Z"
   },
-  "releases_in_window": [],
-  "commit_count": 453,
+  "releases_in_window": [
+    {
+      "tag_name": "v2026.10.10",
+      "published_at": "2026-11-03T03:22:35Z",
+      "name": "openclaw 2026.10.10",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.10"
+    }
+  ],
+  "commit_count": 549,
   "commit_headlines": [
-    "fix(cron): scheduler fails to start after a long-running job is interrupted (#191422)",
-    "fix(doctor): explain workspace imports blocked by earlier refusals (#191442)",
-    "fix: X activity stream memory grows without bound when mentions are slow (#191161)",
-    "fix(ui): keep PDF readers open when file metadata refreshes (#189828)",
-    "fix(agents): Gateway freezes for seconds when an ingress agent run loads plugins (#191404)",
-    "improve: reduce repeated tool preparation and expose prompt timings (#191437)",
-    "fix(codex): refresh inherited workspace instructions on the next turn (#191439)",
-    "test(telegram): require the pending poll vote before ordering (#191431)",
-    "test(muse): expire settlement timeout after turn admission",
-    "fix(macos): iMessage replies stop after app updates until Automation is re-granted (#186107)",
-    "fix: environment-selected dev profiles target the wrong Gateway port (#191428)",
-    "feat(database): recover retained workspace owners without waking workers (#190842)",
-    "fix(agents): reject FIFO native-hook credentials without blocking (#191423)",
-    "refactor(music): separate provider host contracts (#190549)",
-    "fix(ai): keep the Responses request builder private",
-    "test: trim implied fallback assertions (#191393)",
-    "fix(ios): parallel tool calls show no result after their outputs arrive (#171976)",
-    "fix(gateway): public sessions resend unchanged bodies for matching validators (#191101)",
-    "chore(ui): refresh control ui locales (#191410)",
-    "fix: skip command catalog requests for disabled shared sessions (#191402)",
-    "test(build): copy entities from its installed package root",
-    "fix(auto-reply): keep system events off channel binding owners during init (#191370)",
-    "fix(state): trust the published header over a stale deferred admission (#191357)",
-    "fix(database): refuse non-regular recovery manifests before reading (#191347)",
-    "fix(ci): queue locale refresh after extension changes",
-    "fix(ui): keep narrow phone titles clear of page actions (#191371)",
-    "fix(compaction): deliver native CLI compaction notices (#189548)",
-    "docs(ios): require Xcode 27.1 to build the iOS app (#189968)",
-    "fix(cli): reject reserved keys in provider and MCP assignments (#191389)",
-    "fix: realtime transcription bypasses configured environment proxies (#187369)",
-    "fix: cancel Doctor cron and daemon snapshot preparation (#190874)",
-    "test(telegram): trim unused answer stream option (#191351)",
-    "fix(active-memory): English object questions skip deep recall (#191384)",
-    "fix(doctor): reclaim updater runtimes while a Gateway runs (#191284)",
-    "test(trajectory): exercise rollback without schema drift",
-    "test(ui): freeze connect clock before page boot (#191379)",
-    "fix(database): load Workboard port SQL from its API (#191340)",
-    "fix(agents): preserve old tool-result projections during truncation (#191378)",
-    "fix(update): a damaged npm plugin no longer rolls back core updates (#191348)",
-    "fix(ai): cancel provider calls during payload hooks on every adapter (#191261)",
-    "fix(models): list Claude CLI models when no Anthropic model is pinned to Claude CLI (#191148)",
-    "fix(backup): let scheduled backups run past ten minutes (#191346)",
-    "fix: let Visitor publishers open their own Beam links",
-    "test: isolate cancellation proofs from native startup time (#191341)",
-    "test(cli): accept settled native signal outcomes",
-    "refactor(test): use canonical provider fixture owners (#189995)",
-    "fix: await native credential migration observations (#190873)",
-    "fix(memory-wiki): untitled pages are named after a code comment (#191263)",
-    "feat: fork threaded conversations with Telegram support (#190783)",
-    "test(telegram): trim unused variants and redundant assertion (#191300)"
+    "improve(ui): make Memories a search box and what it found (#191396)",
+    "fix(ui): name the device page the same in the phone header and the page (#191395)",
+    "improve(ui): put the Plugins title at the height of other settings pages (#191392)",
+    "fix(doctor): treat failed unsealed update capture as unavailable (#192155)",
+    "improve(ui): keep settings pages still when their state changes (#191388)",
+    "fix(ci): use public identities in gateway fixtures",
+    "improve(ui): show generated lists without counts or numbered rows (#191383)",
+    "fix(update): keep compatibility-skipped global plugins in update candidates (#192042)",
+    "fix(ui): reduce Sessions and Cron first-visit delay (#192075)",
+    "improve(ui): rethink the open model provider (#191381)",
+    "fix(ci): update session skill reader fixture",
+    "fix: keep CI preparation from changing Git hooks (#192138)",
+    "improve(ui): read the model defaults as one row list (#191380)",
+    "fix(doctor): preserve unpinned API and CLI fallback routes",
+    "docs: align skill scope and prototype refresh guidance (#192148)",
+    "improve(ui): clarify cloud snapshot lifecycle copy",
+    "improve(ui): use one spinner in settings and say Saving when saving skills (#191376)",
+    "chore(i18n): refresh native locales (#192133)",
+    "fix(ci): remove unused long duration formatter",
+    "improve(ui): answer Memory Overview at a glance (#191374)",
+    "improve(ui): use the settings empty state for raw empties (#191369)",
+    "fix(ci): keep native update fixtures on selected Node (#192132)",
+    "fix(update): reclaim retained updater runtimes on Windows (#192129)",
+    "improve(ui): place generated setting controls by control type (#191368)",
+    "fix(ui): keep session branch PR cache windows on elapsed time (#191576)",
+    "fix(ui): keep collapsed Details sections collapsed for the session (#192121)",
+    "fix(ci): follow current UI dialog and list selectors",
+    "test(cron): share synthetic operator-source fixture (#192125)",
+    "improve(ui): make the number stepper one control (#191366)",
+    "improve(ui): use one unavailable state across settings (#191365)",
+    "improve(ui): clarify cloud device profiles and capacity",
+    "improve(ui): use consistent transcript and session labels",
+    "test(ui): detect ignored thinking override clearing (#192103)",
+    "improve(ui): clarify Systems devices and backup access",
+    "improve(ui): clarify devices and command approval copy",
+    "docs: align QA skill recipes with current harnesses (#192087)",
+    "improve(ui): render generated selects with SettingsSelect and offer their default (#191363)",
+    "refactor(gateway): consolidate voice wake routing tests (#192104)",
+    "improve(ui): start settings input values at the left edge (#191361)",
+    "fix(ui): keep spaces between joined settings strings (#191358)",
+    "improve(ui): show config section descriptions only in the help popover (#191353)",
+    "improve(test): speed up config save browser tests (#192116)",
+    "improve(ui): use sentence case for schema labels and enum values (#191352)",
+    "fix(security): require accurate secret alert resolution reasons (#192004)",
+    "fix(update): reject mixed-case main package targets (#191994)",
+    "fix(update): preserve global plugins during candidate checks (#191999)",
+    "fix(ci): confirm settings discard before reload checks",
+    "fix(ci): align settings browser fixtures with field saves",
+    "refactor(gateway): settle chat handoff fixture work before teardown (#156862)",
+    "test(ui): add a mock fixture with the full config schema (#191350)"
   ],
   "feature_items": [
-    "feat(database): recover retained workspace owners without waking workers (#190842)",
-    "feat: fork threaded conversations with Telegram support (#190783)",
-    "feat(plugins): plugins can run a hidden forked turn of a session with their own tools (#190950)",
-    "feat(plugins): skill authoring runtime for plugins that own an agent skills folder (#190983)",
-    "feat(plugins): plugins can post background notices to the session generation they observed (#190893)",
-    "feat(agents): explain why a tool is or isn't available, for doctor, /learn and plugins (#190919)",
-    "feat(plugins): plugin commands can continue the agent with a replacement prompt, on every channel (#190908)",
-    "feat(cron): expose selected agent failure observations to plugins (#190727)",
-    "feat(database): recover selected session skill and workspace dependencies (#190833)",
-    "feat(backup): exclude registered worktree templates on request (#190822)",
-    "feat(database): prepare an exact PostgreSQL state namespace (#190832)",
-    "feat(beam): allow owned publication by restricted guests (#190912)",
-    "feat(plugins): run_stopped hook for confirmed user stops (#190906)",
-    "feat(diagnostics): account for SQLite reads below the heavy-read threshold (#190907)",
-    "ci: support empty admission args on Bash 3.2 (#190747)",
-    "ci: add base scheduled upgrade survivor (#190746)"
+    "feat(openclaw-id): add protocol contracts package (#191469)",
+    "improve(ui): redesign the Appearance theme picker (#191304)",
+    "improve(ui): redesign the About page around version facts and links (#191289)",
+    "feat(gateway): let tools.invoke run configured MCP tools (#187699)",
+    "feat(ui): move conversation versions into the session menu",
+    "feat(plugins): reload edited bundled plugin code in development with OPENCLAW_DEV_RELOAD_BUNDLED_PLUGINS",
+    "feat(clawrouter): honor catalog-selected speech routes (#191863)",
+    "feat(ci): record comparable graph inputs (#191896)",
+    "feat(clawrouter): search through declared native catalog offers (#191792)",
+    "feat(clawrouter): use catalog offers for memory embeddings (#191809)",
+    "feat(acpx): select Qoder models in native chat (#189150)",
+    "feat(ci): retain pre-execution observation snapshots (#191827)",
+    "feat(acpx): select Grok Build models in native chat (#189146)",
+    "feat(ios): configure ESP devices from native Settings (#191750)",
+    "feat(slack): fork channel threads into independent conversations (#190786)",
+    "feat(ui): fork conversations from the chat composer (#190787)",
+    "feat(discord): fork threads into independent sibling conversations (#190785)",
+    "feat(ci): collect sampled unit-fast observations (#191759)",
+    "feat(plugins): add skill usage runtime for plugins (#191661)",
+    "feat(ios): add secure ESP setup sessions (#191640)",
+    "feat(onboarding): keep the Gateway running after Quick Start (#191454)",
+    "feat(ios): prepare secure ESP device provisioning (#191625)",
+    "feat(plugins): add manifest-backed recommended prompts (#186593)",
+    "feat(ci): estimate test selection savings and model costs (#191229)",
+    "feat(ci): compare adaptive test plans without skipping tests (#191228)",
+    "feat(ci): collect test observations for adaptive CI experiments (#191226)",
+    "feat(plugins): agent_end hooks receive the completed turn to fork (#191599)",
+    "feat: custom SVG icons for plugin side-chat panels (#191573)",
+    "feat: support attended-session permission defaults (#190859)",
+    "feat(gateway): advertise chat input custody contract (#180651)"
   ],
   "fix_items": [
-    "fix(cron): scheduler fails to start after a long-running job is interrupted (#191422)",
-    "fix(doctor): explain workspace imports blocked by earlier refusals (#191442)",
-    "fix: X activity stream memory grows without bound when mentions are slow (#191161)",
-    "fix(ui): keep PDF readers open when file metadata refreshes (#189828)",
-    "fix(agents): Gateway freezes for seconds when an ingress agent run loads plugins (#191404)",
-    "fix(codex): refresh inherited workspace instructions on the next turn (#191439)",
-    "fix(macos): iMessage replies stop after app updates until Automation is re-granted (#186107)",
-    "fix: environment-selected dev profiles target the wrong Gateway port (#191428)",
-    "fix(agents): reject FIFO native-hook credentials without blocking (#191423)",
-    "fix(ai): keep the Responses request builder private",
-    "fix(ios): parallel tool calls show no result after their outputs arrive (#171976)",
-    "fix(gateway): public sessions resend unchanged bodies for matching validators (#191101)",
-    "fix: skip command catalog requests for disabled shared sessions (#191402)",
-    "fix(auto-reply): keep system events off channel binding owners during init (#191370)",
-    "fix(state): trust the published header over a stale deferred admission (#191357)",
-    "fix(database): refuse non-regular recovery manifests before reading (#191347)",
-    "fix(ci): queue locale refresh after extension changes",
-    "fix(ui): keep narrow phone titles clear of page actions (#191371)",
-    "fix(compaction): deliver native CLI compaction notices (#189548)",
-    "fix(cli): reject reserved keys in provider and MCP assignments (#191389)",
-    "fix: realtime transcription bypasses configured environment proxies (#187369)",
-    "fix: cancel Doctor cron and daemon snapshot preparation (#190874)",
-    "fix(active-memory): English object questions skip deep recall (#191384)",
-    "fix(doctor): reclaim updater runtimes while a Gateway runs (#191284)",
-    "fix(database): load Workboard port SQL from its API (#191340)",
-    "fix(agents): preserve old tool-result projections during truncation (#191378)",
-    "fix(update): a damaged npm plugin no longer rolls back core updates (#191348)",
-    "fix(ai): cancel provider calls during payload hooks on every adapter (#191261)",
-    "fix(models): list Claude CLI models when no Anthropic model is pinned to Claude CLI (#191148)",
-    "fix(backup): let scheduled backups run past ten minutes (#191346)"
+    "fix(ui): name the device page the same in the phone header and the page (#191395)",
+    "fix(doctor): treat failed unsealed update capture as unavailable (#192155)",
+    "fix(ci): use public identities in gateway fixtures",
+    "fix(update): keep compatibility-skipped global plugins in update candidates (#192042)",
+    "fix(ui): reduce Sessions and Cron first-visit delay (#192075)",
+    "fix(ci): update session skill reader fixture",
+    "fix: keep CI preparation from changing Git hooks (#192138)",
+    "fix(doctor): preserve unpinned API and CLI fallback routes",
+    "fix(ci): remove unused long duration formatter",
+    "fix(ci): keep native update fixtures on selected Node (#192132)",
+    "fix(update): reclaim retained updater runtimes on Windows (#192129)",
+    "fix(ui): keep session branch PR cache windows on elapsed time (#191576)",
+    "fix(ui): keep collapsed Details sections collapsed for the session (#192121)",
+    "fix(ci): follow current UI dialog and list selectors",
+    "fix(ui): keep spaces between joined settings strings (#191358)",
+    "fix(security): require accurate secret alert resolution reasons (#192004)",
+    "fix(update): reject mixed-case main package targets (#191994)",
+    "fix(update): preserve global plugins during candidate checks (#191999)",
+    "fix(ci): confirm settings discard before reload checks",
+    "fix(ci): align settings browser fixtures with field saves",
+    "fix(doctor): avoid snapshot copies for safe SQLite size reads (#191835)",
+    "fix(ui): restore Unicode build identity coverage (#192069)",
+    "fix: keep person activity timelines private from guests (#191978)",
+    "perf(ci): batch database worker reference queries (#192018)",
+    "fix(ui): drop the \"Done in\" recap line from chat (#192058)",
+    "fix(ci): provision ripgrep for database guards",
+    "fix(ci): remove duplicate settings disclosure rules",
+    "fix(proxy): serialize IPv6 debug proxy listener URLs (#192029)",
+    "fix(test): prepare startup fixture graphs before child deadlines (#192078)",
+    "fix(release): keep stable closeout independent of macOS (#192036)"
   ],
   "top_scopes": [
     {
-      "scope": "fix",
-      "count": 61
-    },
-    {
       "scope": "improve(ui)",
-      "count": 49
+      "count": 105
     },
     {
       "scope": "ui",
-      "count": 44
-    },
-    {
-      "scope": "test",
-      "count": 27
+      "count": 54
     },
     {
       "scope": "ci",
-      "count": 27
+      "count": 39
     },
     {
-      "scope": "agents",
-      "count": 17
-    },
-    {
-      "scope": "plugins",
-      "count": 13
+      "scope": "fix",
+      "count": 32
     },
     {
       "scope": "gateway",
-      "count": 12
+      "count": 26
     },
     {
-      "scope": "cli",
-      "count": 11
+      "scope": "test",
+      "count": 23
     },
     {
       "scope": "update",
-      "count": 11
+      "count": 16
+    },
+    {
+      "scope": "ios",
+      "count": 13
+    },
+    {
+      "scope": "agents",
+      "count": 13
+    },
+    {
+      "scope": "plugins",
+      "count": 12
+    },
+    {
+      "scope": "clawrouter",
+      "count": 9
     },
     {
       "scope": "doctor",
       "count": 8
     },
     {
-      "scope": "database",
+      "scope": "codex",
+      "count": 8
+    },
+    {
+      "scope": "release",
       "count": 7
     },
     {
-      "scope": "sessions",
+      "scope": "discord",
       "count": 7
-    },
-    {
-      "scope": "qa",
-      "count": 7
-    },
-    {
-      "scope": "telegram",
-      "count": 6
     }
   ]
 }
