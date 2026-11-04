@@ -1,0 +1,196 @@
+{
+  "generated_at": "2026-11-05T02:55:50.455366+08:00",
+  "window": {
+    "start_local": "2026-11-04T02:55:50.455366+08:00",
+    "end_local": "2026-11-05T02:55:50.455366+08:00",
+    "start_utc": "2026-11-03T18:55:50Z",
+    "end_utc": "2026-11-04T18:55:50Z"
+  },
+  "repo": {
+    "slug": "openclaw/openclaw",
+    "stars": 393906,
+    "forks": 82788,
+    "open_issues": 7752,
+    "pushed_at": "2026-11-04T18:55:38Z"
+  },
+  "releases_in_window": [
+    {
+      "tag_name": "v2026.11.5-beta.1",
+      "published_at": "2026-11-04T04:51:56Z",
+      "name": "openclaw 2026.11.5-beta.1",
+      "prerelease": true,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.5-beta.1"
+    }
+  ],
+  "commit_count": 456,
+  "commit_headlines": [
+    "chore(ui): refresh control ui locales (#192950)",
+    "fix(release): waive 2026.11.1 OpenRouter billing failure (#192936)",
+    "fix(ci): route Windows checks to hosted runners (#192805)",
+    "fix(discord): release voice recordings when speaking-end events are lost (#192932)",
+    "fix(plugins): accepted plugin reload handoffs can keep the old turn running (#192892)",
+    "fix(update): show the first failure behind an unfinished recovery refusal (#192919)",
+    "fix(ui): Skill Workshop off state hides errors and loses focus (#192931)",
+    "fix(ui): prevent nested session archive controls from overlapping (#192777)",
+    "fix(ci): exercise native consumers during Boat qualification (#192798)",
+    "fix(ci): remove unused PostgreSQL fingerprint export (#192929)",
+    "fix(workers): honor profile setup-script opt-out (#192538)",
+    "fix(ci): keep plugin scaffold validation on hosted Ubuntu (#192898)",
+    "refactor(agents): separate command data from execution context (#192834)",
+    "fix(doctor): keep the cause when a transcript archive migration refuses (#192918)",
+    "fix(ci): reconcile audited 191-line test budget debt (#192905)",
+    "fix(doctor): report supervised launch risk when native reaping is unavailable (#191915)",
+    "chore(ui): refresh control ui locales (#192923)",
+    "fix(cli): show gateway restart flag-conflict reasons (#192478)",
+    "fix(gateway): recover remote workers without blocking readiness (#192542)",
+    "fix(knowledge): report real write access for a never-written store (#192073)",
+    "fix(worker): preserve MCP results for Gateway-routed Code Mode calls (#192401)",
+    "fix(ui): scope model setup readiness to its owner (#192903)",
+    "fix(ci): retain adaptive priors across large diffs (#192887)",
+    "fix(ui): turn Skill Workshop on from its page when its plugin is off (#192766)",
+    "fix(ui): restore browser panel type checks (#192868)",
+    "fix(update): finish 2026.9.2 updates when the Gateway publishes the deferred schema mid-update (#192140)",
+    "fix(infer): cancel model and embedding requests on interrupt (#192896)",
+    "improve(ios): reuse built test specification for screenshots (#191282)",
+    "fix(ui): match quota summaries to the selected account (#192418)",
+    "fix(sandbox): avoid cleanup stalls during repeated container startup (#192872)",
+    "fix(codex): keep native shell for hidden subagents by disabling native delegation (#192599)",
+    "fix(agents): start MCP failure cooldown after requests settle (#192870)",
+    "fix(memory): continue turns when automatic project recall stalls (#192815)",
+    "perf(chat): keep follow state out of the transcript body (#165948)",
+    "fix(plugins): show existing scaffold input errors (#192857)",
+    "improve(sessions): bound PostgreSQL maintenance age reads (#192849)",
+    "fix(ci): keep scheduled lifecycle on hosted runners (#192821)",
+    "fix(ci): restore main mock and static checks (#192850)",
+    "fix(ios): unblock local builds with smaller fixture functions (#191296)",
+    "feat(storage): support read-only PostgreSQL standby inspection (#192645)",
+    "fix(ui): align compact sharing labels with their icons (#192797)",
+    "fix(ui): tighten space before sidebar session icons (#192185)",
+    "fix(ui): keep accent hover and focus states readable (#192421)",
+    "fix(ui): require explicit toast severity (#192453)",
+    "fix(ui): preserve error identity at presentation boundaries (#192438)",
+    "test(ui): align compact keyboard shortcut expectations (#192827)",
+    "fix(ui): follow the Activity page scroll owner on phones (#192354)",
+    "fix(ui): restore sidebar sizing and semantic process status (#192340)",
+    "fix(ui): share location-aware settings parent navigation (#192324)",
+    "improve(ui): clarify remaining action errors and session wording (#192720)"
+  ],
+  "feature_items": [
+    "**Automations:** add persistent streams and richer execution context for durable scheduled work. (#177941, #177942, #179011, #179062, #179669, #182561) Thanks @joshavant, @eleqtrizit, and @jalehman. [v2026.11.5-beta.1]",
+    "**Providers:** add and refine provider integrations, authentication, and model discovery. (#175509, #175729, #180788, #182248; related #175543) Authored by @steipete. Thanks @midhunvnadh, @obviyus, @lavicosa, and @hannesrudolph. [v2026.11.5-beta.1]",
+    "**Memory maintenance:** add safer memory cleanup and maintenance flows. (#182530; fixes #157280) Authored by @steipete. Thanks @islandpreneur007. [v2026.11.5-beta.1]",
+    "feat(storage): support read-only PostgreSQL standby inspection (#192645)",
+    "improve(ui): clarify first-run welcome and memory import (#192209)",
+    "ci(release): add qualified package smoke (#191654)",
+    "improve(ui): clarify new session devices and workspaces (#192044)",
+    "feat(tencent): add hy4 to TokenHub and TokenPlan (#191662)",
+    "feat(beam): preserve live logical conversation handoff (#192513)",
+    "feat(ci): capture owned tree rankings before test execution (#192574)",
+    "feat(ui): add distinct icons for plugin capabilities (#192338)",
+    "feat(ci): freeze prospective graph selection decisions (#192515)",
+    "feat(ci): restore bounded prior test observations (#192514)",
+    "feat(ui): auto-load older sidebar sessions on scroll (#192154)",
+    "feat(ci): capture prospective test launch inputs (#192403)",
+    "feat: run admitted MCP tools on the worker node that hosts them (#191387)",
+    "feat(clawrouter): consume catalog-scoped native Gradium speech (#192052)",
+    "feat(ui): show plugin UI contributions as extensions (#192274)",
+    "feat: let node-hosted MCP tools ask questions through the Gateway (#191589)",
+    "improve(ui): redesign MCP settings around each server (#191459)",
+    "improve(ui): give Settings one gutter and no new session from 641 to 900 (#191433)",
+    "feat(openclaw-id): add iroh Node binding crate (#191470)"
+  ],
+  "fix_items": [
+    "fix(release): waive 2026.11.1 OpenRouter billing failure (#192936)",
+    "fix(ci): route Windows checks to hosted runners (#192805)",
+    "fix(discord): release voice recordings when speaking-end events are lost (#192932)",
+    "fix(plugins): accepted plugin reload handoffs can keep the old turn running (#192892)",
+    "fix(update): show the first failure behind an unfinished recovery refusal (#192919)",
+    "fix(ui): Skill Workshop off state hides errors and loses focus (#192931)",
+    "fix(ui): prevent nested session archive controls from overlapping (#192777)",
+    "fix(ci): exercise native consumers during Boat qualification (#192798)",
+    "fix(ci): remove unused PostgreSQL fingerprint export (#192929)",
+    "fix(workers): honor profile setup-script opt-out (#192538)",
+    "fix(ci): keep plugin scaffold validation on hosted Ubuntu (#192898)",
+    "fix(doctor): keep the cause when a transcript archive migration refuses (#192918)",
+    "fix(ci): reconcile audited 191-line test budget debt (#192905)",
+    "fix(doctor): report supervised launch risk when native reaping is unavailable (#191915)",
+    "fix(cli): show gateway restart flag-conflict reasons (#192478)",
+    "fix(gateway): recover remote workers without blocking readiness (#192542)",
+    "fix(knowledge): report real write access for a never-written store (#192073)",
+    "fix(worker): preserve MCP results for Gateway-routed Code Mode calls (#192401)",
+    "fix(ui): scope model setup readiness to its owner (#192903)",
+    "fix(ci): retain adaptive priors across large diffs (#192887)",
+    "fix(ui): turn Skill Workshop on from its page when its plugin is off (#192766)",
+    "fix(ui): restore browser panel type checks (#192868)",
+    "fix(update): finish 2026.9.2 updates when the Gateway publishes the deferred schema mid-update (#192140)",
+    "fix(infer): cancel model and embedding requests on interrupt (#192896)",
+    "fix(ui): match quota summaries to the selected account (#192418)",
+    "fix(sandbox): avoid cleanup stalls during repeated container startup (#192872)",
+    "fix(codex): keep native shell for hidden subagents by disabling native delegation (#192599)",
+    "fix(agents): start MCP failure cooldown after requests settle (#192870)",
+    "fix(memory): continue turns when automatic project recall stalls (#192815)",
+    "perf(chat): keep follow state out of the transcript body (#165948)"
+  ],
+  "top_scopes": [
+    {
+      "scope": "ui",
+      "count": 103
+    },
+    {
+      "scope": "improve(ui)",
+      "count": 74
+    },
+    {
+      "scope": "ci",
+      "count": 48
+    },
+    {
+      "scope": "fix",
+      "count": 30
+    },
+    {
+      "scope": "test",
+      "count": 19
+    },
+    {
+      "scope": "agents",
+      "count": 13
+    },
+    {
+      "scope": "gateway",
+      "count": 13
+    },
+    {
+      "scope": "codex",
+      "count": 8
+    },
+    {
+      "scope": "release",
+      "count": 7
+    },
+    {
+      "scope": "cron",
+      "count": 6
+    },
+    {
+      "scope": "worktrees",
+      "count": 6
+    },
+    {
+      "scope": "update",
+      "count": 5
+    },
+    {
+      "scope": "doctor",
+      "count": 5
+    },
+    {
+      "scope": "sandbox",
+      "count": 5
+    },
+    {
+      "scope": "plugins",
+      "count": 4
+    }
+  ]
+}

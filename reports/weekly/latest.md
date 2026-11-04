@@ -1,99 +1,99 @@
 # OpenClaw Weekly Update
 
-生成时间：2026-11-04T02:42:55.469734+08:00
+生成时间：2026-11-05T02:55:50.455366+08:00
 
 ## Window
 
-- Start: 2026-11-03T02:42:55.469734+08:00
-- End: 2026-11-04T02:42:55.469734+08:00
+- Start: 2026-11-04T02:55:50.455366+08:00
+- End: 2026-11-05T02:55:50.455366+08:00
 - Repo: `openclaw/openclaw`
 
 ## At A Glance
 
-- Commits in window: 549
+- Commits in window: 456
 - Releases in window: 1
-- Stable releases in window: 1
-- Beta releases in window: 0
-- Repo stars at scan time: 393844
+- Stable releases in window: 0
+- Beta releases in window: 1
+- Repo stars at scan time: 393906
 - Repo forks at scan time: 82788
 
 ## New Capability Signals
 
-- feat(openclaw-id): add protocol contracts package (#191469)
-- improve(ui): redesign the Appearance theme picker (#191304)
-- improve(ui): redesign the About page around version facts and links (#191289)
-- feat(gateway): let tools.invoke run configured MCP tools (#187699)
-- feat(ui): move conversation versions into the session menu
-- feat(plugins): reload edited bundled plugin code in development with OPENCLAW_DEV_RELOAD_BUNDLED_PLUGINS
-- feat(clawrouter): honor catalog-selected speech routes (#191863)
-- feat(ci): record comparable graph inputs (#191896)
-- feat(clawrouter): search through declared native catalog offers (#191792)
-- feat(clawrouter): use catalog offers for memory embeddings (#191809)
-- feat(acpx): select Qoder models in native chat (#189150)
-- feat(ci): retain pre-execution observation snapshots (#191827)
-- feat(acpx): select Grok Build models in native chat (#189146)
-- feat(ios): configure ESP devices from native Settings (#191750)
-- feat(slack): fork channel threads into independent conversations (#190786)
+- **Automations:** add persistent streams and richer execution context for durable scheduled work. (#177941, #177942, #179011, #179062, #179669, #182561) Thanks @joshavant, @eleqtrizit, and @jalehman. [v2026.11.5-beta.1]
+- **Providers:** add and refine provider integrations, authentication, and model discovery. (#175509, #175729, #180788, #182248; related #175543) Authored by @steipete. Thanks @midhunvnadh, @obviyus, @lavicosa, and @hannesrudolph. [v2026.11.5-beta.1]
+- **Memory maintenance:** add safer memory cleanup and maintenance flows. (#182530; fixes #157280) Authored by @steipete. Thanks @islandpreneur007. [v2026.11.5-beta.1]
+- feat(storage): support read-only PostgreSQL standby inspection (#192645)
+- improve(ui): clarify first-run welcome and memory import (#192209)
+- ci(release): add qualified package smoke (#191654)
+- improve(ui): clarify new session devices and workspaces (#192044)
+- feat(tencent): add hy4 to TokenHub and TokenPlan (#191662)
+- feat(beam): preserve live logical conversation handoff (#192513)
+- feat(ci): capture owned tree rankings before test execution (#192574)
+- feat(ui): add distinct icons for plugin capabilities (#192338)
+- feat(ci): freeze prospective graph selection decisions (#192515)
+- feat(ci): restore bounded prior test observations (#192514)
+- feat(ui): auto-load older sidebar sessions on scroll (#192154)
+- feat(ci): capture prospective test launch inputs (#192403)
 
 ## Important Fixes And Hardening
 
-- fix(ui): name the device page the same in the phone header and the page (#191395)
-- fix(doctor): treat failed unsealed update capture as unavailable (#192155)
-- fix(ci): use public identities in gateway fixtures
-- fix(update): keep compatibility-skipped global plugins in update candidates (#192042)
-- fix(ui): reduce Sessions and Cron first-visit delay (#192075)
-- fix(ci): update session skill reader fixture
-- fix: keep CI preparation from changing Git hooks (#192138)
-- fix(doctor): preserve unpinned API and CLI fallback routes
-- fix(ci): remove unused long duration formatter
-- fix(ci): keep native update fixtures on selected Node (#192132)
-- fix(update): reclaim retained updater runtimes on Windows (#192129)
-- fix(ui): keep session branch PR cache windows on elapsed time (#191576)
-- fix(ui): keep collapsed Details sections collapsed for the session (#192121)
-- fix(ci): follow current UI dialog and list selectors
-- fix(ui): keep spaces between joined settings strings (#191358)
+- fix(release): waive 2026.11.1 OpenRouter billing failure (#192936)
+- fix(ci): route Windows checks to hosted runners (#192805)
+- fix(discord): release voice recordings when speaking-end events are lost (#192932)
+- fix(plugins): accepted plugin reload handoffs can keep the old turn running (#192892)
+- fix(update): show the first failure behind an unfinished recovery refusal (#192919)
+- fix(ui): Skill Workshop off state hides errors and loses focus (#192931)
+- fix(ui): prevent nested session archive controls from overlapping (#192777)
+- fix(ci): exercise native consumers during Boat qualification (#192798)
+- fix(ci): remove unused PostgreSQL fingerprint export (#192929)
+- fix(workers): honor profile setup-script opt-out (#192538)
+- fix(ci): keep plugin scaffold validation on hosted Ubuntu (#192898)
+- fix(doctor): keep the cause when a transcript archive migration refuses (#192918)
+- fix(ci): reconcile audited 191-line test budget debt (#192905)
+- fix(doctor): report supervised launch risk when native reaping is unavailable (#191915)
+- fix(cli): show gateway restart flag-conflict reasons (#192478)
 
 ## Releases This Week
 
-- `v2026.10.10` | stable | 2026-11-03T03:22:35Z | openclaw 2026.10.10
+- `v2026.11.5-beta.1` | beta | 2026-11-04T04:51:56Z | openclaw 2026.11.5-beta.1
 
 ## Most Active Change Scopes
 
-- `improve(ui)`: 105
-- `ui`: 54
-- `ci`: 39
-- `fix`: 32
-- `gateway`: 26
-- `test`: 23
-- `update`: 16
-- `ios`: 13
+- `ui`: 103
+- `improve(ui)`: 74
+- `ci`: 48
+- `fix`: 30
+- `test`: 19
 - `agents`: 13
-- `plugins`: 12
-- `clawrouter`: 9
-- `doctor`: 8
+- `gateway`: 13
+- `codex`: 8
+- `release`: 7
+- `cron`: 6
+- `worktrees`: 6
+- `update`: 5
 
 ## Recent Commit Headlines
 
-- 2026-11-03T18:42:36Z | improve(ui): make Memories a search box and what it found (#191396)
-- 2026-11-03T18:42:17Z | fix(ui): name the device page the same in the phone header and the page (#191395)
-- 2026-11-03T18:41:45Z | improve(ui): put the Plugins title at the height of other settings pages (#191392)
-- 2026-11-03T18:38:34Z | fix(doctor): treat failed unsealed update capture as unavailable (#192155)
-- 2026-11-03T18:34:29Z | improve(ui): keep settings pages still when their state changes (#191388)
-- 2026-11-03T18:23:09Z | fix(ci): use public identities in gateway fixtures
-- 2026-11-03T18:27:51Z | improve(ui): show generated lists without counts or numbered rows (#191383)
-- 2026-11-03T18:26:47Z | fix(update): keep compatibility-skipped global plugins in update candidates (#192042)
-- 2026-11-03T18:23:29Z | fix(ui): reduce Sessions and Cron first-visit delay (#192075)
-- 2026-11-03T18:21:10Z | improve(ui): rethink the open model provider (#191381)
-- 2026-11-03T18:12:40Z | fix(ci): update session skill reader fixture
-- 2026-11-03T18:16:14Z | fix: keep CI preparation from changing Git hooks (#192138)
-- 2026-11-03T18:13:21Z | improve(ui): read the model defaults as one row list (#191380)
-- 2026-11-03T18:11:48Z | fix(doctor): preserve unpinned API and CLI fallback routes
-- 2026-11-03T18:10:47Z | docs: align skill scope and prototype refresh guidance (#192148)
-- 2026-11-03T18:09:49Z | improve(ui): clarify cloud snapshot lifecycle copy
-- 2026-11-03T18:06:49Z | improve(ui): use one spinner in settings and say Saving when saving skills (#191376)
-- 2026-11-03T18:04:37Z | chore(i18n): refresh native locales (#192133)
-- 2026-11-03T17:58:45Z | fix(ci): remove unused long duration formatter
-- 2026-11-03T17:59:47Z | improve(ui): answer Memory Overview at a glance (#191374)
+- 2026-11-04T18:54:16Z | chore(ui): refresh control ui locales (#192950)
+- 2026-11-04T18:51:38Z | fix(release): waive 2026.11.1 OpenRouter billing failure (#192936)
+- 2026-11-04T18:47:51Z | fix(ci): route Windows checks to hosted runners (#192805)
+- 2026-11-04T18:45:50Z | fix(discord): release voice recordings when speaking-end events are lost (#192932)
+- 2026-11-04T18:39:08Z | fix(plugins): accepted plugin reload handoffs can keep the old turn running (#192892)
+- 2026-11-04T18:31:58Z | fix(update): show the first failure behind an unfinished recovery refusal (#192919)
+- 2026-11-04T18:29:27Z | fix(ui): Skill Workshop off state hides errors and loses focus (#192931)
+- 2026-11-04T18:25:33Z | fix(ui): prevent nested session archive controls from overlapping (#192777)
+- 2026-11-04T18:23:44Z | fix(ci): exercise native consumers during Boat qualification (#192798)
+- 2026-11-04T18:22:47Z | fix(ci): remove unused PostgreSQL fingerprint export (#192929)
+- 2026-11-04T18:14:28Z | fix(workers): honor profile setup-script opt-out (#192538)
+- 2026-11-04T18:02:41Z | fix(ci): keep plugin scaffold validation on hosted Ubuntu (#192898)
+- 2026-11-04T17:59:15Z | refactor(agents): separate command data from execution context (#192834)
+- 2026-11-04T17:55:37Z | fix(doctor): keep the cause when a transcript archive migration refuses (#192918)
+- 2026-11-04T17:53:11Z | fix(ci): reconcile audited 191-line test budget debt (#192905)
+- 2026-11-04T17:51:15Z | fix(doctor): report supervised launch risk when native reaping is unavailable (#191915)
+- 2026-11-04T17:50:03Z | chore(ui): refresh control ui locales (#192923)
+- 2026-11-04T17:49:58Z | fix(cli): show gateway restart flag-conflict reasons (#192478)
+- 2026-11-04T17:28:23Z | fix(gateway): recover remote workers without blocking readiness (#192542)
+- 2026-11-04T17:27:04Z | fix(knowledge): report real write access for a never-written store (#192073)
 
 ## Sources
 
