@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-11-05T02:56:10+08:00
-- Requested window: 2026-11-04 to 2026-11-05
+- Generated at: 2026-11-06T03:07:43+08:00
+- Requested window: 2026-11-05 to 2026-11-06
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-11-04 to 2026-11-05
-- Generated at: 2026-11-05T02:55:50.455366+08:00
-- 窗口: 2026-11-04 至 2026-11-05
-- GitHub 增量: 456 commits / 1 releases
-- 最近 push: 2026-11-04
+- Window: 2026-11-05 to 2026-11-06
+- Generated at: 2026-11-06T03:07:24.653961+08:00
+- 窗口: 2026-11-05 至 2026-11-06
+- GitHub 增量: 477 commits / 1 releases
+- 最近 push: 2026-11-05
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - **Automations:** add persistent streams and richer execution context for durable scheduled work. (#177941, #177942, #179011, #179062, #179669, #182561) Thanks @joshavant, @eleqtrizit, and @jalehman. [v2026.11.5-beta.1]
-  - **Providers:** add and refine provider integrations, authentication, and model discovery. (#175509, #175729, #180788, #182248; related #175543) Authored by @steipete. Thanks @midhunvnadh, @obviyus, @lavicosa, and @hannesrudolph. [v2026.11.5-beta.1]
-  - **Memory maintenance:** add safer memory cleanup and maintenance flows. (#182530; fixes #157280) Authored by @steipete. Thanks @islandpreneur007. [v2026.11.5-beta.1]
-  - feat(storage): support read-only PostgreSQL standby inspection (#192645)
-  - improve(ui): clarify first-run welcome and memory import (#192209)
-  - ci(release): add qualified package smoke (#191654)
-  - improve(ui): clarify new session devices and workspaces (#192044)
-  - feat(tencent): add hy4 to TokenHub and TokenPlan (#191662)
+  - feat(ci): reuse qualified Markdown tests across mixed source changes (#193634)
+  - feat(models): check an API key when it is saved (#193507)
+  - feat(tools): cap exec mode per provider or model (#193566)
+  - feat(cron): configurable default delivery and failure destinations (#185848)
+  - feat(gemini): support fast mode for Google AI Studio models (#193341)
+  - feat(ci): skip qualified unchanged Markdown tests (#193105)
+  - feat(ui): stack the Team agent header identity (#193160)
+  - feat(release): add read-only release:watch for any publish parent (#192607)
 - Fixes and constraints:
-  - fix(release): waive 2026.11.1 OpenRouter billing failure (#192936)
-  - fix(ci): route Windows checks to hosted runners (#192805)
-  - fix(discord): release voice recordings when speaking-end events are lost (#192932)
-  - fix(plugins): accepted plugin reload handoffs can keep the old turn running (#192892)
-  - fix(update): show the first failure behind an unfinished recovery refusal (#192919)
-  - fix(ui): Skill Workshop off state hides errors and loses focus (#192931)
-  - fix(ui): prevent nested session archive controls from overlapping (#192777)
-  - fix(ci): exercise native consumers during Boat qualification (#192798)
+  - fix: leftover SQLite snapshot copies from Doctor and triage are never reclaimed (#193229)
+  - fix(ui): stop WebKit resize errors while scrolling transcripts (#193646)
+  - fix(chat): retain actionable messages when model requests fail
+  - fix(models): close the key form when its check can't finish (#193655)
+  - fix(update): repair refuses forever after a verified update fails a later step (#193132)
+  - fix(team-controller): reconcile installed recovery and lock admission (#193647)
+  - fix(test): restore shared chat inheritance expectations (#193651)
+  - fix(ios): return to the selected chat after reconnecting or relaunching (#190408)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
