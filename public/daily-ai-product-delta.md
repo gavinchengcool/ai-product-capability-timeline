@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-11-06T03:07:43+08:00
-- Requested window: 2026-11-05 to 2026-11-06
+- Generated at: 2026-11-07T02:35:09+08:00
+- Requested window: 2026-11-06 to 2026-11-07
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-11-05 to 2026-11-06
-- Generated at: 2026-11-06T03:07:24.653961+08:00
-- 窗口: 2026-11-05 至 2026-11-06
-- GitHub 增量: 477 commits / 1 releases
-- 最近 push: 2026-11-05
+- Window: 2026-11-06 to 2026-11-07
+- Generated at: 2026-11-07T02:34:54.320814+08:00
+- 窗口: 2026-11-06 至 2026-11-07
+- GitHub 增量: 350 commits / 0 releases
+- 最近 push: 2026-11-06
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(ci): reuse qualified Markdown tests across mixed source changes (#193634)
-  - feat(models): check an API key when it is saved (#193507)
-  - feat(tools): cap exec mode per provider or model (#193566)
-  - feat(cron): configurable default delivery and failure destinations (#185848)
-  - feat(gemini): support fast mode for Google AI Studio models (#193341)
-  - feat(ci): skip qualified unchanged Markdown tests (#193105)
-  - feat(ui): stack the Team agent header identity (#193160)
-  - feat(release): add read-only release:watch for any publish parent (#192607)
+  - feat(ui): shared InlineAlert for inline errors, warnings and notes (#194124)
+  - feat(research): add native session research pane (#177232)
+  - feat(research): retain authorized browser research state (#177231)
+  - feat(codex): use OpenClaw's base prompt for ordinary threads (#191344)
+  - feat(research): expose authorized retained job views (#177230)
+  - feat(updates): configure automatic update schedules (#193713)
+  - feat(openclaw-id): add the tunnel transport, OpenClaw ID sign-in and relayed-device Gateway auth (#192345)
+  - feat(research): preserve native execution and selected search accounts (#177228)
 - Fixes and constraints:
-  - fix: leftover SQLite snapshot copies from Doctor and triage are never reclaimed (#193229)
-  - fix(ui): stop WebKit resize errors while scrolling transcripts (#193646)
-  - fix(chat): retain actionable messages when model requests fail
-  - fix(models): close the key form when its check can't finish (#193655)
-  - fix(update): repair refuses forever after a verified update fails a later step (#193132)
-  - fix(team-controller): reconcile installed recovery and lock admission (#193647)
-  - fix(test): restore shared chat inheritance expectations (#193651)
-  - fix(ios): return to the selected chat after reconnecting or relaunching (#190408)
+  - fix(ui): make Goal shorthand composer reversible (#193472)
+  - fix(infer): cancel interrupted video description requests (#194251)
+  - fix(ui): wait for quota metrics in account identity e2e (#194258)
+  - fix(ci): keep valid timings when sibling jobs fail (#194255)
+  - fix(ci): retire unused research browser client
+  - fix: do not block local work on publication readiness
+  - fix(ci): restore measured Blacksmith runner allocations (#194237)
+  - fix(ui): one scrollbar behaviour for every scroll container (#194153)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

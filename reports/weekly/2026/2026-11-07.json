@@ -1,0 +1,194 @@
+{
+  "generated_at": "2026-11-07T02:34:54.320814+08:00",
+  "window": {
+    "start_local": "2026-11-06T02:34:54.320814+08:00",
+    "end_local": "2026-11-07T02:34:54.320814+08:00",
+    "start_utc": "2026-11-05T18:34:54Z",
+    "end_utc": "2026-11-06T18:34:54Z"
+  },
+  "repo": {
+    "slug": "openclaw/openclaw",
+    "stars": 394046,
+    "forks": 82810,
+    "open_issues": 7654,
+    "pushed_at": "2026-11-06T18:33:17Z"
+  },
+  "releases_in_window": [],
+  "commit_count": 350,
+  "commit_headlines": [
+    "fix(ui): make Goal shorthand composer reversible (#193472)",
+    "fix(infer): cancel interrupted video description requests (#194251)",
+    "fix(ui): wait for quota metrics in account identity e2e (#194258)",
+    "feat(ui): shared InlineAlert for inline errors, warnings and notes (#194124)",
+    "feat(research): add native session research pane (#177232)",
+    "ui: shared IconButton for composer, refresh and Sessions toolbar (#194140)",
+    "fix(ci): keep valid timings when sibling jobs fail (#194255)",
+    "refactor(ui): share one menu and popover section heading (#194132)",
+    "fix(ci): retire unused research browser client",
+    "improve: reuse prepared provider descriptors for live model reads (#194221)",
+    "fix: do not block local work on publication readiness",
+    "ui: share one accent checkbox across the Control UI (#194127)",
+    "fix(ci): restore measured Blacksmith runner allocations (#194237)",
+    "improve(ui): stop loading unused CJK tables during boot (#194241)",
+    "refactor(update): share handoff outcome policy (#192505)",
+    "fix(ui): one scrollbar behaviour for every scroll container (#194153)",
+    "fix(backup): backups and updates fail on slow storage when a header probe batch misses its deadline (#194239)",
+    "fix(gateway): keep auth policy snapshot reads independent of config IO",
+    "chore: repair main checks after Codex base prompt and copy removal (#194215)",
+    "fix(ci): refresh stale Bun planner file costs (#194246)",
+    "fix(agents): run non-OpenAI turns as Standard when Daybreak is saved (#193775)",
+    "perf(ui): prepare saved locale and preload compact Chat catalogs (#194070)",
+    "chore(ui): refresh control ui locales (#194244)",
+    "fix(doctor): finished Doctor and update repair hang on a leaked handle (#194229)",
+    "perf(ui): avoid unchanged sidebar projections on session switches (#194171)",
+    "improve(ci): defer unused assertion scope analysis (#194231)",
+    "fix(test): observe registry contention and reuse CLI mocks (#194211)",
+    "perf(ui): restore Chat byte budgets with browser-floor cleanup (#194203)",
+    "fix(browser): preserve command outcomes on interruption (#194232)",
+    "perf(control-ui): retain cached child activity in Details (#193913)",
+    "improve(ci): avoid repeated Darwin tooling startup (#194207)",
+    "feat(research): retain authorized browser research state (#177231)",
+    "fix(ci): report nested runner cgroup memory peaks (#194210)",
+    "docs: name the escape when 2026.9.7 and 2026.9.8 updates refuse at package-swap (#194225)",
+    "fix(ci): remove unused update and research exports",
+    "fix(update): skip --no-lazy-fetch on Git versions without it (#194198)",
+    "refactor(matrix): simplify send and shutdown test fixtures (#156383)",
+    "fix(openai): ChatGPT sign-in fails when port 8080 is already in use (#191508)",
+    "perf(ui): load Cron without the transcript runtime (#194165)",
+    "fix(sandbox): keep sandboxed turns working after the default image changes (#193986)",
+    "fix(install): preserve Node runtime when install method is invalid (#194162)",
+    "perf(ci): share SDK declarations with selected lint (#194192)",
+    "chore(ui): refresh control ui locales (#194199)",
+    "refactor(agents): separate tool outcome observation types (#194175)",
+    "feat(codex): use OpenClaw's base prompt for ordinary threads (#191344)",
+    "fix(models): replies truncate at 8192 output tokens when a model has no known output limit (#193899)",
+    "test(agents): tolerate unrelated WAL ticks in memory worktree policy test (#194188)",
+    "perf(ui): reclaim Chat boot bytes and lower budgets (#194135)",
+    "fix(macos): Dashboard widgets fail to load over Remote over SSH (#193854)",
+    "perf: avoid unnecessary transcript viewport reads (#194131)"
+  ],
+  "feature_items": [
+    "feat(ui): shared InlineAlert for inline errors, warnings and notes (#194124)",
+    "feat(research): add native session research pane (#177232)",
+    "feat(research): retain authorized browser research state (#177231)",
+    "feat(codex): use OpenClaw's base prompt for ordinary threads (#191344)",
+    "feat(research): expose authorized retained job views (#177230)",
+    "feat(updates): configure automatic update schedules (#193713)",
+    "feat(openclaw-id): add the tunnel transport, OpenClaw ID sign-in and relayed-device Gateway auth (#192345)",
+    "feat(research): preserve native execution and selected search accounts (#177228)",
+    "feat(research): enable lazy bundled research with opt-out (#173974)",
+    "feat(research): resume accepted jobs from durable wakes (#176887)",
+    "feat(research): retain and explicitly resume research jobs (#173969)",
+    "feat(google): expose owned managed-research interactions (#173966)",
+    "feat(codex): execute isolated completions through native runtime (#177227)",
+    "feat(models): customize provider names and artwork (#193952)",
+    "feat(plugins): reauthorize accepted session work (#176886)",
+    "feat(openclaw-id): add Gateway membership authority and publication behind the Labs flag (#192335)",
+    "feat(models): end the first provider add in a working chat (#193892)",
+    "feat: preview recommended templates in a compact dialog (#193778)",
+    "feat(ci): select independent Android test owners (#193834)",
+    "feat(ci): select Python skill suites by changed owner (#193830)",
+    "feat(knowledge): add decision-model recall gate (#188057)",
+    "feat(openclaw-id): protocol for owner reset vouched for by the Gateway key (#193777)",
+    "feat(knowledge): keyword search finds current records through superseded wording (#193742)",
+    "feat(openclaw-id): advertise accepted protocol versions in the signed snapshot (#193728)",
+    "feat(chat): send pending steers now without stopping the run (#193665)",
+    "feat(plugins): add short starter prompts with activation confirmation (#193694)",
+    "feat: expire disposable agent scratch after 24 hours (#193677)",
+    "feat(openclaw-id): version-specific protocol validation and versioning rules"
+  ],
+  "fix_items": [
+    "fix(ui): make Goal shorthand composer reversible (#193472)",
+    "fix(infer): cancel interrupted video description requests (#194251)",
+    "fix(ui): wait for quota metrics in account identity e2e (#194258)",
+    "fix(ci): keep valid timings when sibling jobs fail (#194255)",
+    "fix(ci): retire unused research browser client",
+    "fix: do not block local work on publication readiness",
+    "fix(ci): restore measured Blacksmith runner allocations (#194237)",
+    "fix(ui): one scrollbar behaviour for every scroll container (#194153)",
+    "fix(backup): backups and updates fail on slow storage when a header probe batch misses its deadline (#194239)",
+    "fix(gateway): keep auth policy snapshot reads independent of config IO",
+    "fix(ci): refresh stale Bun planner file costs (#194246)",
+    "fix(agents): run non-OpenAI turns as Standard when Daybreak is saved (#193775)",
+    "perf(ui): prepare saved locale and preload compact Chat catalogs (#194070)",
+    "fix(doctor): finished Doctor and update repair hang on a leaked handle (#194229)",
+    "perf(ui): avoid unchanged sidebar projections on session switches (#194171)",
+    "fix(test): observe registry contention and reuse CLI mocks (#194211)",
+    "perf(ui): restore Chat byte budgets with browser-floor cleanup (#194203)",
+    "fix(browser): preserve command outcomes on interruption (#194232)",
+    "perf(control-ui): retain cached child activity in Details (#193913)",
+    "fix(ci): report nested runner cgroup memory peaks (#194210)",
+    "fix(ci): remove unused update and research exports",
+    "fix(update): skip --no-lazy-fetch on Git versions without it (#194198)",
+    "fix(openai): ChatGPT sign-in fails when port 8080 is already in use (#191508)",
+    "perf(ui): load Cron without the transcript runtime (#194165)",
+    "fix(sandbox): keep sandboxed turns working after the default image changes (#193986)",
+    "fix(install): preserve Node runtime when install method is invalid (#194162)",
+    "perf(ci): share SDK declarations with selected lint (#194192)",
+    "fix(models): replies truncate at 8192 output tokens when a model has no known output limit (#193899)",
+    "perf(ui): reclaim Chat boot bytes and lower budgets (#194135)",
+    "fix(macos): Dashboard widgets fail to load over Remote over SSH (#193854)"
+  ],
+  "top_scopes": [
+    {
+      "scope": "ui",
+      "count": 82
+    },
+    {
+      "scope": "ci",
+      "count": 39
+    },
+    {
+      "scope": "fix",
+      "count": 24
+    },
+    {
+      "scope": "test",
+      "count": 19
+    },
+    {
+      "scope": "update",
+      "count": 15
+    },
+    {
+      "scope": "gateway",
+      "count": 10
+    },
+    {
+      "scope": "research",
+      "count": 8
+    },
+    {
+      "scope": "agents",
+      "count": 7
+    },
+    {
+      "scope": "plugins",
+      "count": 7
+    },
+    {
+      "scope": "knowledge",
+      "count": 7
+    },
+    {
+      "scope": "openclaw-id",
+      "count": 6
+    },
+    {
+      "scope": "workers",
+      "count": 6
+    },
+    {
+      "scope": "improve(ui)",
+      "count": 5
+    },
+    {
+      "scope": "browser",
+      "count": 5
+    },
+    {
+      "scope": "perf",
+      "count": 5
+    }
+  ]
+}
