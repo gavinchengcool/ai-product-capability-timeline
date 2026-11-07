@@ -1,194 +1,171 @@
 {
-  "generated_at": "2026-11-07T02:34:54.320814+08:00",
+  "generated_at": "2026-11-08T01:02:44.487775+08:00",
   "window": {
-    "start_local": "2026-11-06T02:34:54.320814+08:00",
-    "end_local": "2026-11-07T02:34:54.320814+08:00",
-    "start_utc": "2026-11-05T18:34:54Z",
-    "end_utc": "2026-11-06T18:34:54Z"
+    "start_local": "2026-11-07T01:02:44.487775+08:00",
+    "end_local": "2026-11-08T01:02:44.487775+08:00",
+    "start_utc": "2026-11-06T17:02:44Z",
+    "end_utc": "2026-11-07T17:02:44Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 394046,
-    "forks": 82810,
-    "open_issues": 7654,
-    "pushed_at": "2026-11-06T18:33:17Z"
+    "stars": 394117,
+    "forks": 82817,
+    "open_issues": 7643,
+    "pushed_at": "2026-11-07T16:59:02Z"
   },
   "releases_in_window": [],
-  "commit_count": 350,
+  "commit_count": 271,
   "commit_headlines": [
-    "fix(ui): make Goal shorthand composer reversible (#193472)",
-    "fix(infer): cancel interrupted video description requests (#194251)",
-    "fix(ui): wait for quota metrics in account identity e2e (#194258)",
-    "feat(ui): shared InlineAlert for inline errors, warnings and notes (#194124)",
-    "feat(research): add native session research pane (#177232)",
-    "ui: shared IconButton for composer, refresh and Sessions toolbar (#194140)",
-    "fix(ci): keep valid timings when sibling jobs fail (#194255)",
-    "refactor(ui): share one menu and popover section heading (#194132)",
-    "fix(ci): retire unused research browser client",
-    "improve: reuse prepared provider descriptors for live model reads (#194221)",
-    "fix: do not block local work on publication readiness",
-    "ui: share one accent checkbox across the Control UI (#194127)",
-    "fix(ci): restore measured Blacksmith runner allocations (#194237)",
-    "improve(ui): stop loading unused CJK tables during boot (#194241)",
-    "refactor(update): share handoff outcome policy (#192505)",
-    "fix(ui): one scrollbar behaviour for every scroll container (#194153)",
-    "fix(backup): backups and updates fail on slow storage when a header probe batch misses its deadline (#194239)",
-    "fix(gateway): keep auth policy snapshot reads independent of config IO",
-    "chore: repair main checks after Codex base prompt and copy removal (#194215)",
-    "fix(ci): refresh stale Bun planner file costs (#194246)",
-    "fix(agents): run non-OpenAI turns as Standard when Daybreak is saved (#193775)",
-    "perf(ui): prepare saved locale and preload compact Chat catalogs (#194070)",
-    "chore(ui): refresh control ui locales (#194244)",
-    "fix(doctor): finished Doctor and update repair hang on a leaked handle (#194229)",
-    "perf(ui): avoid unchanged sidebar projections on session switches (#194171)",
-    "improve(ci): defer unused assertion scope analysis (#194231)",
-    "fix(test): observe registry contention and reuse CLI mocks (#194211)",
-    "perf(ui): restore Chat byte budgets with browser-floor cleanup (#194203)",
-    "fix(browser): preserve command outcomes on interruption (#194232)",
-    "perf(control-ui): retain cached child activity in Details (#193913)",
-    "improve(ci): avoid repeated Darwin tooling startup (#194207)",
-    "feat(research): retain authorized browser research state (#177231)",
-    "fix(ci): report nested runner cgroup memory peaks (#194210)",
-    "docs: name the escape when 2026.9.7 and 2026.9.8 updates refuse at package-swap (#194225)",
-    "fix(ci): remove unused update and research exports",
-    "fix(update): skip --no-lazy-fetch on Git versions without it (#194198)",
-    "refactor(matrix): simplify send and shutdown test fixtures (#156383)",
-    "fix(openai): ChatGPT sign-in fails when port 8080 is already in use (#191508)",
-    "perf(ui): load Cron without the transcript runtime (#194165)",
-    "fix(sandbox): keep sandboxed turns working after the default image changes (#193986)",
-    "fix(install): preserve Node runtime when install method is invalid (#194162)",
-    "perf(ci): share SDK declarations with selected lint (#194192)",
-    "chore(ui): refresh control ui locales (#194199)",
-    "refactor(agents): separate tool outcome observation types (#194175)",
-    "feat(codex): use OpenClaw's base prompt for ordinary threads (#191344)",
-    "fix(models): replies truncate at 8192 output tokens when a model has no known output limit (#193899)",
-    "test(agents): tolerate unrelated WAL ticks in memory worktree policy test (#194188)",
-    "perf(ui): reclaim Chat boot bytes and lower budgets (#194135)",
-    "fix(macos): Dashboard widgets fail to load over Remote over SSH (#193854)",
-    "perf: avoid unnecessary transcript viewport reads (#194131)"
+    "fix(ui): discard composer draft when a session is archived",
+    "fix(gateway): avoid unused workspace fingerprint reads (#194693)",
+    "test(ui): measure active accessibility in the engine harness (#194691)",
+    "fix(update): update summary drops warnings and understates total time on long runs (#194242)",
+    "fix(control-ui): reveal cached Details with the first chat frame (#194639)",
+    "improve(ci): cut Node overhead in wrapper fault tests (#194686)",
+    "fix(llama-cpp): keep concurrent chats alive when recovery is canceled (#194687)",
+    "test(update): accept ClawHub install records in the legacy operator verifier (#194677)",
+    "chore: sync main for avatar test fix",
+    "test(ui): wait for the painted avatar fallback",
+    "fix(build): avoid compiler setup when copying plugin assets (#194680)",
+    "fix(skills): accept inline frontmatter comments without PyYAML (#194653)",
+    "test(ui): sample shared mobile settings insets (#194679)",
+    "fix(doctor): retained updater runtimes are never reclaimed (#194660)",
+    "improve(ci): cover Gateway cron completion on PostgreSQL 16 (#194482)",
+    "fix(ci): recognize the Mantis subprocess test fixture (#194388)",
+    "perf(chat): consolidate retained message derivations (#194675)",
+    "perf(ui): retain device warnings across inventory refreshes (#194668)",
+    "chore: reduce repeated UI CI lifecycle work (#194631)",
+    "fix(knowledge): make manifest hashes independent of locale (#194646)",
+    "fix(knowledge): include headers in transcript byte limits (#194640)",
+    "perf(ui): reuse syntax highlighting when heavy transcript rows return (#194658)",
+    "fix(ui): preserve New Session during model setup redirects (#194652)",
+    "perf(ui): separate picker and sidebar benchmark phases (#194623)",
+    "fix(control-ui): keep cached Subagents stable through live adoption (#194371)",
+    "fix: prevent Usage detail benchmark timeouts (#194661)",
+    "perf(ui): finish Advanced settings sooner (#194656)",
+    "test(ui): track current composer alert in corner fixture",
+    "fix(test): stabilize context prewarm responsiveness checks (#194317)",
+    "fix(doctor): rewrite failure-report paths once per target (#194636)",
+    "fix(ui): avoid the extra remount when opening General settings (#194624)",
+    "perf(ui): reuse prepared Search field hints (#194643)",
+    "fix(worktrees): stop retrying quarantined idle results (#194642)",
+    "fix(ui): measure complete Search advanced settings (#194633)",
+    "fix(knowledge): clean scratch databases after gzip input errors (#194615)",
+    "fix(codex): count Codex base instructions and confirm native AGENTS.md in the context report (#193151)",
+    "improve: trim duplicated UI CI checks (#194616)",
+    "fix(ui): keep composer visible with round corners (#193621)",
+    "fix(macos): await readiness in gateway command routing test (#194619)",
+    "fix(agents): gate cron panel empty state on a settled jobs read (#194514)",
+    "fix(gateway): park the service on older agent database schemas (#194599)",
+    "fix(skills): avoid packaging a skill without its linked entry (#194609)",
+    "fix(skills): validate folded descriptions without PyYAML (#194611)",
+    "fix(ui): keep Settings navigation responsive and stable (#194598)",
+    "test(ui): add retained heap ownership census (#194618)",
+    "fix(test): restore stale-head preparation fixture dependencies (#194613)",
+    "fix(ios): gateway shows Offline while a TLS certificate is checked or awaiting trust (#194606)",
+    "fix(gateway): validate run flags before the startup config guard (#192745)",
+    "fix(ui): preserve appearance drafts during translation updates (#194610)",
+    "perf(ui): compact the self-contained startup document (#194604)"
   ],
   "feature_items": [
+    "feat(parallel): support Decisions natively and through OpenRouter",
+    "feat(ui): show the next automation run on hover (#194501)",
+    "feat(openclaw-id): add the Control UI account menu, linking dialogs and the Access page (#192352)",
     "feat(ui): shared InlineAlert for inline errors, warnings and notes (#194124)",
-    "feat(research): add native session research pane (#177232)",
-    "feat(research): retain authorized browser research state (#177231)",
-    "feat(codex): use OpenClaw's base prompt for ordinary threads (#191344)",
-    "feat(research): expose authorized retained job views (#177230)",
-    "feat(updates): configure automatic update schedules (#193713)",
-    "feat(openclaw-id): add the tunnel transport, OpenClaw ID sign-in and relayed-device Gateway auth (#192345)",
-    "feat(research): preserve native execution and selected search accounts (#177228)",
-    "feat(research): enable lazy bundled research with opt-out (#173974)",
-    "feat(research): resume accepted jobs from durable wakes (#176887)",
-    "feat(research): retain and explicitly resume research jobs (#173969)",
-    "feat(google): expose owned managed-research interactions (#173966)",
-    "feat(codex): execute isolated completions through native runtime (#177227)",
-    "feat(models): customize provider names and artwork (#193952)",
-    "feat(plugins): reauthorize accepted session work (#176886)",
-    "feat(openclaw-id): add Gateway membership authority and publication behind the Labs flag (#192335)",
-    "feat(models): end the first provider add in a working chat (#193892)",
-    "feat: preview recommended templates in a compact dialog (#193778)",
-    "feat(ci): select independent Android test owners (#193834)",
-    "feat(ci): select Python skill suites by changed owner (#193830)",
-    "feat(knowledge): add decision-model recall gate (#188057)",
-    "feat(openclaw-id): protocol for owner reset vouched for by the Gateway key (#193777)",
-    "feat(knowledge): keyword search finds current records through superseded wording (#193742)",
-    "feat(openclaw-id): advertise accepted protocol versions in the signed snapshot (#193728)",
-    "feat(chat): send pending steers now without stopping the run (#193665)",
-    "feat(plugins): add short starter prompts with activation confirmation (#193694)",
-    "feat: expire disposable agent scratch after 24 hours (#193677)",
-    "feat(openclaw-id): version-specific protocol validation and versioning rules"
+    "feat(research): add native session research pane (#177232)"
   ],
   "fix_items": [
-    "fix(ui): make Goal shorthand composer reversible (#193472)",
-    "fix(infer): cancel interrupted video description requests (#194251)",
-    "fix(ui): wait for quota metrics in account identity e2e (#194258)",
-    "fix(ci): keep valid timings when sibling jobs fail (#194255)",
-    "fix(ci): retire unused research browser client",
-    "fix: do not block local work on publication readiness",
-    "fix(ci): restore measured Blacksmith runner allocations (#194237)",
-    "fix(ui): one scrollbar behaviour for every scroll container (#194153)",
-    "fix(backup): backups and updates fail on slow storage when a header probe batch misses its deadline (#194239)",
-    "fix(gateway): keep auth policy snapshot reads independent of config IO",
-    "fix(ci): refresh stale Bun planner file costs (#194246)",
-    "fix(agents): run non-OpenAI turns as Standard when Daybreak is saved (#193775)",
-    "perf(ui): prepare saved locale and preload compact Chat catalogs (#194070)",
-    "fix(doctor): finished Doctor and update repair hang on a leaked handle (#194229)",
-    "perf(ui): avoid unchanged sidebar projections on session switches (#194171)",
-    "fix(test): observe registry contention and reuse CLI mocks (#194211)",
-    "perf(ui): restore Chat byte budgets with browser-floor cleanup (#194203)",
-    "fix(browser): preserve command outcomes on interruption (#194232)",
-    "perf(control-ui): retain cached child activity in Details (#193913)",
-    "fix(ci): report nested runner cgroup memory peaks (#194210)",
-    "fix(ci): remove unused update and research exports",
-    "fix(update): skip --no-lazy-fetch on Git versions without it (#194198)",
-    "fix(openai): ChatGPT sign-in fails when port 8080 is already in use (#191508)",
-    "perf(ui): load Cron without the transcript runtime (#194165)",
-    "fix(sandbox): keep sandboxed turns working after the default image changes (#193986)",
-    "fix(install): preserve Node runtime when install method is invalid (#194162)",
-    "perf(ci): share SDK declarations with selected lint (#194192)",
-    "fix(models): replies truncate at 8192 output tokens when a model has no known output limit (#193899)",
-    "perf(ui): reclaim Chat boot bytes and lower budgets (#194135)",
-    "fix(macos): Dashboard widgets fail to load over Remote over SSH (#193854)"
+    "fix(ui): discard composer draft when a session is archived",
+    "fix(gateway): avoid unused workspace fingerprint reads (#194693)",
+    "fix(update): update summary drops warnings and understates total time on long runs (#194242)",
+    "fix(control-ui): reveal cached Details with the first chat frame (#194639)",
+    "fix(llama-cpp): keep concurrent chats alive when recovery is canceled (#194687)",
+    "fix(build): avoid compiler setup when copying plugin assets (#194680)",
+    "fix(skills): accept inline frontmatter comments without PyYAML (#194653)",
+    "fix(doctor): retained updater runtimes are never reclaimed (#194660)",
+    "fix(ci): recognize the Mantis subprocess test fixture (#194388)",
+    "perf(chat): consolidate retained message derivations (#194675)",
+    "perf(ui): retain device warnings across inventory refreshes (#194668)",
+    "fix(knowledge): make manifest hashes independent of locale (#194646)",
+    "fix(knowledge): include headers in transcript byte limits (#194640)",
+    "perf(ui): reuse syntax highlighting when heavy transcript rows return (#194658)",
+    "fix(ui): preserve New Session during model setup redirects (#194652)",
+    "perf(ui): separate picker and sidebar benchmark phases (#194623)",
+    "fix(control-ui): keep cached Subagents stable through live adoption (#194371)",
+    "fix: prevent Usage detail benchmark timeouts (#194661)",
+    "perf(ui): finish Advanced settings sooner (#194656)",
+    "fix(test): stabilize context prewarm responsiveness checks (#194317)",
+    "fix(doctor): rewrite failure-report paths once per target (#194636)",
+    "fix(ui): avoid the extra remount when opening General settings (#194624)",
+    "perf(ui): reuse prepared Search field hints (#194643)",
+    "fix(worktrees): stop retrying quarantined idle results (#194642)",
+    "fix(ui): measure complete Search advanced settings (#194633)",
+    "fix(knowledge): clean scratch databases after gzip input errors (#194615)",
+    "fix(codex): count Codex base instructions and confirm native AGENTS.md in the context report (#193151)",
+    "fix(ui): keep composer visible with round corners (#193621)",
+    "fix(macos): await readiness in gateway command routing test (#194619)",
+    "fix(agents): gate cron panel empty state on a settled jobs read (#194514)"
   ],
   "top_scopes": [
     {
       "scope": "ui",
-      "count": 82
+      "count": 79
     },
     {
       "scope": "ci",
-      "count": 39
-    },
-    {
-      "scope": "fix",
-      "count": 24
+      "count": 20
     },
     {
       "scope": "test",
-      "count": 19
-    },
-    {
-      "scope": "update",
-      "count": 15
+      "count": 14
     },
     {
       "scope": "gateway",
+      "count": 13
+    },
+    {
+      "scope": "fix",
+      "count": 12
+    },
+    {
+      "scope": "improve(ci)",
       "count": 10
     },
     {
-      "scope": "research",
+      "scope": "ios",
+      "count": 10
+    },
+    {
+      "scope": "update",
       "count": 8
     },
     {
+      "scope": "improve",
+      "count": 6
+    },
+    {
+      "scope": "release",
+      "count": 6
+    },
+    {
+      "scope": "control-ui",
+      "count": 5
+    },
+    {
+      "scope": "doctor",
+      "count": 5
+    },
+    {
       "scope": "agents",
-      "count": 7
-    },
-    {
-      "scope": "plugins",
-      "count": 7
-    },
-    {
-      "scope": "knowledge",
-      "count": 7
-    },
-    {
-      "scope": "openclaw-id",
-      "count": 6
-    },
-    {
-      "scope": "workers",
-      "count": 6
-    },
-    {
-      "scope": "improve(ui)",
       "count": 5
     },
     {
-      "scope": "browser",
+      "scope": "tmux",
       "count": 5
     },
     {
-      "scope": "perf",
-      "count": 5
+      "scope": "chore",
+      "count": 4
     }
   ]
 }

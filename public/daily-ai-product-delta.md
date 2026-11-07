@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-11-07T02:35:09+08:00
-- Requested window: 2026-11-06 to 2026-11-07
+- Generated at: 2026-11-08T01:03:01+08:00
+- Requested window: 2026-11-07 to 2026-11-08
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,28 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-11-06 to 2026-11-07
-- Generated at: 2026-11-07T02:34:54.320814+08:00
-- 窗口: 2026-11-06 至 2026-11-07
-- GitHub 增量: 350 commits / 0 releases
-- 最近 push: 2026-11-06
+- Window: 2026-11-07 to 2026-11-08
+- Generated at: 2026-11-08T01:02:44.487775+08:00
+- 窗口: 2026-11-07 至 2026-11-08
+- GitHub 增量: 271 commits / 0 releases
+- 最近 push: 2026-11-07
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
+  - feat(parallel): support Decisions natively and through OpenRouter
+  - feat(ui): show the next automation run on hover (#194501)
+  - feat(openclaw-id): add the Control UI account menu, linking dialogs and the Access page (#192352)
   - feat(ui): shared InlineAlert for inline errors, warnings and notes (#194124)
   - feat(research): add native session research pane (#177232)
-  - feat(research): retain authorized browser research state (#177231)
-  - feat(codex): use OpenClaw's base prompt for ordinary threads (#191344)
-  - feat(research): expose authorized retained job views (#177230)
-  - feat(updates): configure automatic update schedules (#193713)
-  - feat(openclaw-id): add the tunnel transport, OpenClaw ID sign-in and relayed-device Gateway auth (#192345)
-  - feat(research): preserve native execution and selected search accounts (#177228)
 - Fixes and constraints:
-  - fix(ui): make Goal shorthand composer reversible (#193472)
-  - fix(infer): cancel interrupted video description requests (#194251)
-  - fix(ui): wait for quota metrics in account identity e2e (#194258)
-  - fix(ci): keep valid timings when sibling jobs fail (#194255)
-  - fix(ci): retire unused research browser client
-  - fix: do not block local work on publication readiness
-  - fix(ci): restore measured Blacksmith runner allocations (#194237)
-  - fix(ui): one scrollbar behaviour for every scroll container (#194153)
+  - fix(ui): discard composer draft when a session is archived
+  - fix(gateway): avoid unused workspace fingerprint reads (#194693)
+  - fix(update): update summary drops warnings and understates total time on long runs (#194242)
+  - fix(control-ui): reveal cached Details with the first chat frame (#194639)
+  - fix(llama-cpp): keep concurrent chats alive when recovery is canceled (#194687)
+  - fix(build): avoid compiler setup when copying plugin assets (#194680)
+  - fix(skills): accept inline frontmatter comments without PyYAML (#194653)
+  - fix(doctor): retained updater runtimes are never reclaimed (#194660)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
