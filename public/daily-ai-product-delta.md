@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-11-08T01:03:01+08:00
-- Requested window: 2026-11-07 to 2026-11-08
+- Generated at: 2026-11-09T01:17:40+08:00
+- Requested window: 2026-11-08 to 2026-11-09
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,28 +10,27 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-11-07 to 2026-11-08
-- Generated at: 2026-11-08T01:02:44.487775+08:00
-- 窗口: 2026-11-07 至 2026-11-08
-- GitHub 增量: 271 commits / 0 releases
-- 最近 push: 2026-11-07
+- Window: 2026-11-08 to 2026-11-09
+- Generated at: 2026-11-09T01:17:22.164205+08:00
+- 窗口: 2026-11-08 至 2026-11-09
+- GitHub 增量: 324 commits / 0 releases
+- 最近 push: 2026-11-08
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(parallel): support Decisions natively and through OpenRouter
-  - feat(ui): show the next automation run on hover (#194501)
-  - feat(openclaw-id): add the Control UI account menu, linking dialogs and the Access page (#192352)
-  - feat(ui): shared InlineAlert for inline errors, warnings and notes (#194124)
-  - feat(research): add native session research pane (#177232)
+  - feat(openclaw-id): define accountless node enrollment (#193980)
+  - feat(openai): add GPT Image 2.6 Sunburst and Flare models
+  - feat(pr): release dependency cache holds left behind by dead wrappers (#194546)
+  - feat(ui): ask about a selection in a new session
 - Fixes and constraints:
-  - fix(ui): discard composer draft when a session is archived
-  - fix(gateway): avoid unused workspace fingerprint reads (#194693)
-  - fix(update): update summary drops warnings and understates total time on long runs (#194242)
-  - fix(control-ui): reveal cached Details with the first chat frame (#194639)
-  - fix(llama-cpp): keep concurrent chats alive when recovery is canceled (#194687)
-  - fix(build): avoid compiler setup when copying plugin assets (#194680)
-  - fix(skills): accept inline frontmatter comments without PyYAML (#194653)
-  - fix(doctor): retained updater runtimes are never reclaimed (#194660)
+  - fix(ios): reload composer capabilities when chat health recovers (#195314)
+  - fix(gateway): restarts defer every agent when unsealed databases are first in startup order (#195291)
+  - fix(ios): Talk start uses stale provider, transport or voice after Talk settings change (#192876)
+  - fix(ui): size and center OpenClaw ID sign-in popup (#194397)
+  - fix(ios): share to gateways using approved TLS pins and service headers (#191525)
+  - fix(sandbox): retain spawn broker in detached housekeeping (#195303)
+  - fix(ci): avoid legacy inventory in current recovery tests (#195302)
+  - fix(ui): keep reload explanation when toast assets retire (#194927)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

@@ -1,146 +1,149 @@
 {
-  "generated_at": "2026-11-08T01:02:44.487775+08:00",
+  "generated_at": "2026-11-09T01:17:22.164205+08:00",
   "window": {
-    "start_local": "2026-11-07T01:02:44.487775+08:00",
-    "end_local": "2026-11-08T01:02:44.487775+08:00",
-    "start_utc": "2026-11-06T17:02:44Z",
-    "end_utc": "2026-11-07T17:02:44Z"
+    "start_local": "2026-11-08T01:17:22.164205+08:00",
+    "end_local": "2026-11-09T01:17:22.164205+08:00",
+    "start_utc": "2026-11-07T17:17:22Z",
+    "end_utc": "2026-11-08T17:17:22Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 394117,
-    "forks": 82817,
-    "open_issues": 7643,
-    "pushed_at": "2026-11-07T16:59:02Z"
+    "stars": 394189,
+    "forks": 82839,
+    "open_issues": 7788,
+    "pushed_at": "2026-11-08T17:17:19Z"
   },
   "releases_in_window": [],
-  "commit_count": 271,
+  "commit_count": 324,
   "commit_headlines": [
-    "fix(ui): discard composer draft when a session is archived",
-    "fix(gateway): avoid unused workspace fingerprint reads (#194693)",
-    "test(ui): measure active accessibility in the engine harness (#194691)",
-    "fix(update): update summary drops warnings and understates total time on long runs (#194242)",
-    "fix(control-ui): reveal cached Details with the first chat frame (#194639)",
-    "improve(ci): cut Node overhead in wrapper fault tests (#194686)",
-    "fix(llama-cpp): keep concurrent chats alive when recovery is canceled (#194687)",
-    "test(update): accept ClawHub install records in the legacy operator verifier (#194677)",
-    "chore: sync main for avatar test fix",
-    "test(ui): wait for the painted avatar fallback",
-    "fix(build): avoid compiler setup when copying plugin assets (#194680)",
-    "fix(skills): accept inline frontmatter comments without PyYAML (#194653)",
-    "test(ui): sample shared mobile settings insets (#194679)",
-    "fix(doctor): retained updater runtimes are never reclaimed (#194660)",
-    "improve(ci): cover Gateway cron completion on PostgreSQL 16 (#194482)",
-    "fix(ci): recognize the Mantis subprocess test fixture (#194388)",
-    "perf(chat): consolidate retained message derivations (#194675)",
-    "perf(ui): retain device warnings across inventory refreshes (#194668)",
-    "chore: reduce repeated UI CI lifecycle work (#194631)",
-    "fix(knowledge): make manifest hashes independent of locale (#194646)",
-    "fix(knowledge): include headers in transcript byte limits (#194640)",
-    "perf(ui): reuse syntax highlighting when heavy transcript rows return (#194658)",
-    "fix(ui): preserve New Session during model setup redirects (#194652)",
-    "perf(ui): separate picker and sidebar benchmark phases (#194623)",
-    "fix(control-ui): keep cached Subagents stable through live adoption (#194371)",
-    "fix: prevent Usage detail benchmark timeouts (#194661)",
-    "perf(ui): finish Advanced settings sooner (#194656)",
-    "test(ui): track current composer alert in corner fixture",
-    "fix(test): stabilize context prewarm responsiveness checks (#194317)",
-    "fix(doctor): rewrite failure-report paths once per target (#194636)",
-    "fix(ui): avoid the extra remount when opening General settings (#194624)",
-    "perf(ui): reuse prepared Search field hints (#194643)",
-    "fix(worktrees): stop retrying quarantined idle results (#194642)",
-    "fix(ui): measure complete Search advanced settings (#194633)",
-    "fix(knowledge): clean scratch databases after gzip input errors (#194615)",
-    "fix(codex): count Codex base instructions and confirm native AGENTS.md in the context report (#193151)",
-    "improve: trim duplicated UI CI checks (#194616)",
-    "fix(ui): keep composer visible with round corners (#193621)",
-    "fix(macos): await readiness in gateway command routing test (#194619)",
-    "fix(agents): gate cron panel empty state on a settled jobs read (#194514)",
-    "fix(gateway): park the service on older agent database schemas (#194599)",
-    "fix(skills): avoid packaging a skill without its linked entry (#194609)",
-    "fix(skills): validate folded descriptions without PyYAML (#194611)",
-    "fix(ui): keep Settings navigation responsive and stable (#194598)",
-    "test(ui): add retained heap ownership census (#194618)",
-    "fix(test): restore stale-head preparation fixture dependencies (#194613)",
-    "fix(ios): gateway shows Offline while a TLS certificate is checked or awaiting trust (#194606)",
-    "fix(gateway): validate run flags before the startup config guard (#192745)",
-    "fix(ui): preserve appearance drafts during translation updates (#194610)",
-    "perf(ui): compact the self-contained startup document (#194604)"
+    "fix(ios): reload composer capabilities when chat health recovers (#195314)",
+    "fix(gateway): restarts defer every agent when unsealed databases are first in startup order (#195291)",
+    "fix(ios): Talk start uses stale provider, transport or voice after Talk settings change (#192876)",
+    "fix(ui): size and center OpenClaw ID sign-in popup (#194397)",
+    "fix(ios): share to gateways using approved TLS pins and service headers (#191525)",
+    "fix(sandbox): retain spawn broker in detached housekeeping (#195303)",
+    "feat(openclaw-id): define accountless node enrollment (#193980)",
+    "fix(ci): avoid legacy inventory in current recovery tests (#195302)",
+    "fix(ui): keep reload explanation when toast assets retire (#194927)",
+    "fix(ci): avoid a redundant runtime build in repair tests (#195288)",
+    "fix(worktrees): preserve warm checkouts across session modes (#195293)",
+    "fix(ios): reduce chat stalls while typing and receiving events (#187610)",
+    "fix(agents): release completed capability read state (#195297)",
+    "fix(hooks): reuse unchanged transform modules across reloads (#195286)",
+    "fix(agents): keep an empty resolved external profile set out of auth catalog identity (#195278)",
+    "fix(openclaw-id): publish membership changes that arrive while a publication finishes",
+    "fix(daemon): consult native coalition reader when launchctl omits the header (#194106)",
+    "fix(ui): stop claiming an empty desktop inventory before the read settles (#195086)",
+    "fix(agents): process log claims no output for negative limit (#195065)",
+    "fix(ci): avoid legacy inventory scans in current-runtime tests (#195268)",
+    "fix(x): deliver direct replies and flush stream headers (#195273)",
+    "fix(worktrees): warn about re-shallowed managed project history (#195234)",
+    "fix(cli): cancel interrupted tts gateway RPCs (#195206)",
+    "fix(ci): destructure runtime selection import for dead-export tracking",
+    "fix(ui): align composer menu focus check with attachment order (#195262)",
+    "fix(plugins): admit exact host/runtime pairs below the floor (#195255)",
+    "fix(apps): scope global usage across configured agents (#192646)",
+    "fix(connect): connect prints only \"Could not fetch the Gateway join payload securely.\" when the join link cannot be reached (#195248)",
+    "fix: match Sessions online indicators to Users (#195254)",
+    "fix: stop completion retries for archived requester sessions (#195258)",
+    "improve(worktrees): speed up default refreshes in busy repositories (#195252)",
+    "fix(x): avoid long stream outages after disconnects and local stalls (#195251)",
+    "fix(skills): avoid repeated indexing during skill searches (#195232)",
+    "fix(ci): skip test-only compilation for selected reply tests (#195250)",
+    "test: make exit status resets portable across runtimes (#195245)",
+    "chore(i18n): refresh native locales (#195150)",
+    "fix(update): classify package-update failures instead of unexpected-error (#195233)",
+    "chore(release): update appcast for 2026.11.2 (#195240)",
+    "fix(gateway): deliver queued runs' lifecycle start after the run links its chat (#195193)",
+    "improve(worktrees): speed up hydration in repositories with many branches (#195228)",
+    "fix(ci): select compiler consumers for source companions (#195237)",
+    "fix(muse): run receipts never list the tools Muse used (#195219)",
+    "fix(muse): turns hang until timeout when Muse asks a question (#195084)",
+    "fix(compaction): finished turn re-summarized as split after bootstrap marker",
+    "test(windows): give published-update installed-package commands a 600 s budget (#195235)",
+    "improve(telegram): render quiet work status with the tool log's icon row (#195225)",
+    "fix(workers): reclaim idle worker heaps on stock Bun (#195229)",
+    "improve(ci): skip unnecessary UI E2E requirement discovery (#195227)",
+    "fix(test): include guest typing in UI Gateway inventory (#195226)",
+    "fix(ui): keep attachment pickers near the add button (#184801)"
   ],
   "feature_items": [
-    "feat(parallel): support Decisions natively and through OpenRouter",
-    "feat(ui): show the next automation run on hover (#194501)",
-    "feat(openclaw-id): add the Control UI account menu, linking dialogs and the Access page (#192352)",
-    "feat(ui): shared InlineAlert for inline errors, warnings and notes (#194124)",
-    "feat(research): add native session research pane (#177232)"
+    "feat(openclaw-id): define accountless node enrollment (#193980)",
+    "feat(openai): add GPT Image 2.6 Sunburst and Flare models",
+    "feat(pr): release dependency cache holds left behind by dead wrappers (#194546)",
+    "feat(ui): ask about a selection in a new session"
   ],
   "fix_items": [
-    "fix(ui): discard composer draft when a session is archived",
-    "fix(gateway): avoid unused workspace fingerprint reads (#194693)",
-    "fix(update): update summary drops warnings and understates total time on long runs (#194242)",
-    "fix(control-ui): reveal cached Details with the first chat frame (#194639)",
-    "fix(llama-cpp): keep concurrent chats alive when recovery is canceled (#194687)",
-    "fix(build): avoid compiler setup when copying plugin assets (#194680)",
-    "fix(skills): accept inline frontmatter comments without PyYAML (#194653)",
-    "fix(doctor): retained updater runtimes are never reclaimed (#194660)",
-    "fix(ci): recognize the Mantis subprocess test fixture (#194388)",
-    "perf(chat): consolidate retained message derivations (#194675)",
-    "perf(ui): retain device warnings across inventory refreshes (#194668)",
-    "fix(knowledge): make manifest hashes independent of locale (#194646)",
-    "fix(knowledge): include headers in transcript byte limits (#194640)",
-    "perf(ui): reuse syntax highlighting when heavy transcript rows return (#194658)",
-    "fix(ui): preserve New Session during model setup redirects (#194652)",
-    "perf(ui): separate picker and sidebar benchmark phases (#194623)",
-    "fix(control-ui): keep cached Subagents stable through live adoption (#194371)",
-    "fix: prevent Usage detail benchmark timeouts (#194661)",
-    "perf(ui): finish Advanced settings sooner (#194656)",
-    "fix(test): stabilize context prewarm responsiveness checks (#194317)",
-    "fix(doctor): rewrite failure-report paths once per target (#194636)",
-    "fix(ui): avoid the extra remount when opening General settings (#194624)",
-    "perf(ui): reuse prepared Search field hints (#194643)",
-    "fix(worktrees): stop retrying quarantined idle results (#194642)",
-    "fix(ui): measure complete Search advanced settings (#194633)",
-    "fix(knowledge): clean scratch databases after gzip input errors (#194615)",
-    "fix(codex): count Codex base instructions and confirm native AGENTS.md in the context report (#193151)",
-    "fix(ui): keep composer visible with round corners (#193621)",
-    "fix(macos): await readiness in gateway command routing test (#194619)",
-    "fix(agents): gate cron panel empty state on a settled jobs read (#194514)"
+    "fix(ios): reload composer capabilities when chat health recovers (#195314)",
+    "fix(gateway): restarts defer every agent when unsealed databases are first in startup order (#195291)",
+    "fix(ios): Talk start uses stale provider, transport or voice after Talk settings change (#192876)",
+    "fix(ui): size and center OpenClaw ID sign-in popup (#194397)",
+    "fix(ios): share to gateways using approved TLS pins and service headers (#191525)",
+    "fix(sandbox): retain spawn broker in detached housekeeping (#195303)",
+    "fix(ci): avoid legacy inventory in current recovery tests (#195302)",
+    "fix(ui): keep reload explanation when toast assets retire (#194927)",
+    "fix(ci): avoid a redundant runtime build in repair tests (#195288)",
+    "fix(worktrees): preserve warm checkouts across session modes (#195293)",
+    "fix(ios): reduce chat stalls while typing and receiving events (#187610)",
+    "fix(agents): release completed capability read state (#195297)",
+    "fix(hooks): reuse unchanged transform modules across reloads (#195286)",
+    "fix(agents): keep an empty resolved external profile set out of auth catalog identity (#195278)",
+    "fix(openclaw-id): publish membership changes that arrive while a publication finishes",
+    "fix(daemon): consult native coalition reader when launchctl omits the header (#194106)",
+    "fix(ui): stop claiming an empty desktop inventory before the read settles (#195086)",
+    "fix(agents): process log claims no output for negative limit (#195065)",
+    "fix(ci): avoid legacy inventory scans in current-runtime tests (#195268)",
+    "fix(x): deliver direct replies and flush stream headers (#195273)",
+    "fix(worktrees): warn about re-shallowed managed project history (#195234)",
+    "fix(cli): cancel interrupted tts gateway RPCs (#195206)",
+    "fix(ci): destructure runtime selection import for dead-export tracking",
+    "fix(ui): align composer menu focus check with attachment order (#195262)",
+    "fix(plugins): admit exact host/runtime pairs below the floor (#195255)",
+    "fix(apps): scope global usage across configured agents (#192646)",
+    "fix(connect): connect prints only \"Could not fetch the Gateway join payload securely.\" when the join link cannot be reached (#195248)",
+    "fix: match Sessions online indicators to Users (#195254)",
+    "fix: stop completion retries for archived requester sessions (#195258)",
+    "fix(x): avoid long stream outages after disconnects and local stalls (#195251)"
   ],
   "top_scopes": [
     {
       "scope": "ui",
-      "count": 79
-    },
-    {
-      "scope": "ci",
-      "count": 20
-    },
-    {
-      "scope": "test",
-      "count": 14
-    },
-    {
-      "scope": "gateway",
-      "count": 13
+      "count": 60
     },
     {
       "scope": "fix",
-      "count": 12
+      "count": 47
     },
     {
-      "scope": "improve(ci)",
-      "count": 10
+      "scope": "ci",
+      "count": 29
     },
     {
       "scope": "ios",
-      "count": 10
+      "count": 24
     },
     {
-      "scope": "update",
+      "scope": "test",
+      "count": 18
+    },
+    {
+      "scope": "gateway",
+      "count": 11
+    },
+    {
+      "scope": "agents",
+      "count": 11
+    },
+    {
+      "scope": "knowledge",
       "count": 8
     },
     {
-      "scope": "improve",
+      "scope": "skills",
+      "count": 6
+    },
+    {
+      "scope": "update",
       "count": 6
     },
     {
@@ -148,23 +151,19 @@
       "count": 6
     },
     {
-      "scope": "control-ui",
+      "scope": "android",
+      "count": 6
+    },
+    {
+      "scope": "perf",
       "count": 5
     },
     {
-      "scope": "doctor",
-      "count": 5
+      "scope": "worktrees",
+      "count": 4
     },
     {
-      "scope": "agents",
-      "count": 5
-    },
-    {
-      "scope": "tmux",
-      "count": 5
-    },
-    {
-      "scope": "chore",
+      "scope": "muse",
       "count": 4
     }
   ]

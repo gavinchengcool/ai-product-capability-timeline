@@ -1,47 +1,46 @@
 # OpenClaw Weekly Update
 
-生成时间：2026-11-08T01:02:44.487775+08:00
+生成时间：2026-11-09T01:17:22.164205+08:00
 
 ## Window
 
-- Start: 2026-11-07T01:02:44.487775+08:00
-- End: 2026-11-08T01:02:44.487775+08:00
+- Start: 2026-11-08T01:17:22.164205+08:00
+- End: 2026-11-09T01:17:22.164205+08:00
 - Repo: `openclaw/openclaw`
 
 ## At A Glance
 
-- Commits in window: 271
+- Commits in window: 324
 - Releases in window: 0
 - Stable releases in window: 0
 - Beta releases in window: 0
-- Repo stars at scan time: 394117
-- Repo forks at scan time: 82817
+- Repo stars at scan time: 394189
+- Repo forks at scan time: 82839
 
 ## New Capability Signals
 
-- feat(parallel): support Decisions natively and through OpenRouter
-- feat(ui): show the next automation run on hover (#194501)
-- feat(openclaw-id): add the Control UI account menu, linking dialogs and the Access page (#192352)
-- feat(ui): shared InlineAlert for inline errors, warnings and notes (#194124)
-- feat(research): add native session research pane (#177232)
+- feat(openclaw-id): define accountless node enrollment (#193980)
+- feat(openai): add GPT Image 2.6 Sunburst and Flare models
+- feat(pr): release dependency cache holds left behind by dead wrappers (#194546)
+- feat(ui): ask about a selection in a new session
 
 ## Important Fixes And Hardening
 
-- fix(ui): discard composer draft when a session is archived
-- fix(gateway): avoid unused workspace fingerprint reads (#194693)
-- fix(update): update summary drops warnings and understates total time on long runs (#194242)
-- fix(control-ui): reveal cached Details with the first chat frame (#194639)
-- fix(llama-cpp): keep concurrent chats alive when recovery is canceled (#194687)
-- fix(build): avoid compiler setup when copying plugin assets (#194680)
-- fix(skills): accept inline frontmatter comments without PyYAML (#194653)
-- fix(doctor): retained updater runtimes are never reclaimed (#194660)
-- fix(ci): recognize the Mantis subprocess test fixture (#194388)
-- perf(chat): consolidate retained message derivations (#194675)
-- perf(ui): retain device warnings across inventory refreshes (#194668)
-- fix(knowledge): make manifest hashes independent of locale (#194646)
-- fix(knowledge): include headers in transcript byte limits (#194640)
-- perf(ui): reuse syntax highlighting when heavy transcript rows return (#194658)
-- fix(ui): preserve New Session during model setup redirects (#194652)
+- fix(ios): reload composer capabilities when chat health recovers (#195314)
+- fix(gateway): restarts defer every agent when unsealed databases are first in startup order (#195291)
+- fix(ios): Talk start uses stale provider, transport or voice after Talk settings change (#192876)
+- fix(ui): size and center OpenClaw ID sign-in popup (#194397)
+- fix(ios): share to gateways using approved TLS pins and service headers (#191525)
+- fix(sandbox): retain spawn broker in detached housekeeping (#195303)
+- fix(ci): avoid legacy inventory in current recovery tests (#195302)
+- fix(ui): keep reload explanation when toast assets retire (#194927)
+- fix(ci): avoid a redundant runtime build in repair tests (#195288)
+- fix(worktrees): preserve warm checkouts across session modes (#195293)
+- fix(ios): reduce chat stalls while typing and receiving events (#187610)
+- fix(agents): release completed capability read state (#195297)
+- fix(hooks): reuse unchanged transform modules across reloads (#195286)
+- fix(agents): keep an empty resolved external profile set out of auth catalog identity (#195278)
+- fix(openclaw-id): publish membership changes that arrive while a publication finishes
 
 ## Releases This Week
 
@@ -49,41 +48,41 @@
 
 ## Most Active Change Scopes
 
-- `ui`: 79
-- `ci`: 20
-- `test`: 14
-- `gateway`: 13
-- `fix`: 12
-- `improve(ci)`: 10
-- `ios`: 10
-- `update`: 8
-- `improve`: 6
+- `ui`: 60
+- `fix`: 47
+- `ci`: 29
+- `ios`: 24
+- `test`: 18
+- `gateway`: 11
+- `agents`: 11
+- `knowledge`: 8
+- `skills`: 6
+- `update`: 6
 - `release`: 6
-- `control-ui`: 5
-- `doctor`: 5
+- `android`: 6
 
 ## Recent Commit Headlines
 
-- 2026-11-07T16:58:59Z | fix(ui): discard composer draft when a session is archived
-- 2026-11-07T16:55:04Z | fix(gateway): avoid unused workspace fingerprint reads (#194693)
-- 2026-11-07T16:48:47Z | test(ui): measure active accessibility in the engine harness (#194691)
-- 2026-11-07T16:46:44Z | fix(update): update summary drops warnings and understates total time on long runs (#194242)
-- 2026-11-07T16:43:01Z | fix(control-ui): reveal cached Details with the first chat frame (#194639)
-- 2026-11-07T16:39:23Z | improve(ci): cut Node overhead in wrapper fault tests (#194686)
-- 2026-11-07T16:38:45Z | fix(llama-cpp): keep concurrent chats alive when recovery is canceled (#194687)
-- 2026-11-07T16:37:25Z | test(update): accept ClawHub install records in the legacy operator verifier (#194677)
-- 2026-11-07T16:30:18Z | chore: sync main for avatar test fix
-- 2026-11-07T16:30:11Z | test(ui): wait for the painted avatar fallback
-- 2026-11-07T16:26:49Z | fix(build): avoid compiler setup when copying plugin assets (#194680)
-- 2026-11-07T16:24:28Z | fix(skills): accept inline frontmatter comments without PyYAML (#194653)
-- 2026-11-07T16:20:36Z | test(ui): sample shared mobile settings insets (#194679)
-- 2026-11-07T16:19:24Z | fix(doctor): retained updater runtimes are never reclaimed (#194660)
-- 2026-11-07T16:17:30Z | improve(ci): cover Gateway cron completion on PostgreSQL 16 (#194482)
-- 2026-11-07T16:16:54Z | fix(ci): recognize the Mantis subprocess test fixture (#194388)
-- 2026-11-07T16:13:15Z | perf(chat): consolidate retained message derivations (#194675)
-- 2026-11-07T16:09:24Z | perf(ui): retain device warnings across inventory refreshes (#194668)
-- 2026-11-07T16:07:49Z | chore: reduce repeated UI CI lifecycle work (#194631)
-- 2026-11-07T16:00:32Z | fix(knowledge): make manifest hashes independent of locale (#194646)
+- 2026-11-08T17:17:16Z | fix(ios): reload composer capabilities when chat health recovers (#195314)
+- 2026-11-08T17:14:41Z | fix(gateway): restarts defer every agent when unsealed databases are first in startup order (#195291)
+- 2026-11-08T17:13:53Z | fix(ios): Talk start uses stale provider, transport or voice after Talk settings change (#192876)
+- 2026-11-08T17:10:37Z | fix(ui): size and center OpenClaw ID sign-in popup (#194397)
+- 2026-11-08T17:06:14Z | fix(ios): share to gateways using approved TLS pins and service headers (#191525)
+- 2026-11-08T16:51:00Z | fix(sandbox): retain spawn broker in detached housekeeping (#195303)
+- 2026-11-08T16:46:49Z | feat(openclaw-id): define accountless node enrollment (#193980)
+- 2026-11-08T16:39:18Z | fix(ci): avoid legacy inventory in current recovery tests (#195302)
+- 2026-11-08T16:28:50Z | fix(ui): keep reload explanation when toast assets retire (#194927)
+- 2026-11-08T16:26:33Z | fix(ci): avoid a redundant runtime build in repair tests (#195288)
+- 2026-11-08T16:25:32Z | fix(worktrees): preserve warm checkouts across session modes (#195293)
+- 2026-11-08T16:25:29Z | fix(ios): reduce chat stalls while typing and receiving events (#187610)
+- 2026-11-08T16:19:54Z | fix(agents): release completed capability read state (#195297)
+- 2026-11-08T16:19:50Z | fix(hooks): reuse unchanged transform modules across reloads (#195286)
+- 2026-11-08T16:16:01Z | fix(agents): keep an empty resolved external profile set out of auth catalog identity (#195278)
+- 2026-11-08T15:56:47Z | fix(openclaw-id): publish membership changes that arrive while a publication finishes
+- 2026-11-08T15:50:10Z | fix(daemon): consult native coalition reader when launchctl omits the header (#194106)
+- 2026-11-08T15:38:16Z | fix(ui): stop claiming an empty desktop inventory before the read settles (#195086)
+- 2026-11-08T15:37:25Z | fix(agents): process log claims no output for negative limit (#195065)
+- 2026-11-08T15:33:28Z | fix(ci): avoid legacy inventory scans in current-runtime tests (#195268)
 
 ## Sources
 
