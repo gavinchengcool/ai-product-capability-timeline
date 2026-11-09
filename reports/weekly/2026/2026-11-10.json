@@ -1,0 +1,172 @@
+{
+  "generated_at": "2026-11-10T05:40:13.146364+08:00",
+  "window": {
+    "start_local": "2026-11-09T05:40:13.146364+08:00",
+    "end_local": "2026-11-10T05:40:13.146364+08:00",
+    "start_utc": "2026-11-08T21:40:13Z",
+    "end_utc": "2026-11-09T21:40:13Z"
+  },
+  "repo": {
+    "slug": "openclaw/openclaw",
+    "stars": 394252,
+    "forks": 82854,
+    "open_issues": 8085,
+    "pushed_at": "2026-11-09T21:40:00Z"
+  },
+  "releases_in_window": [],
+  "commit_count": 263,
+  "commit_headlines": [
+    "fix(android): recover SMS sends denied by carrier lookup (#194422)",
+    "fix(ui): admit chat transcripts after the first paint (#196198)",
+    "fix(ui): Templates page icon looks too faint",
+    "fix(ui): Mac app packaging fails when hoisted installs nest duplicate packages (#196107)",
+    "refactor(memory-lancedb): move query contracts to schema owner (#196227)",
+    "fix(gateway): keep assistant image response policies consistent (#196141)",
+    "fix(talk): stop voice claiming cancelled consult work finished (#191950)",
+    "fix(gateway): shared-session runs lose access after session list updates",
+    "fix(ci): repair human mention fixtures and missing test allocations (#196234)",
+    "fix(memory): large session exports exhaust workers (#196158)",
+    "fix(mcp): fenced MCP sign-in offers only Sign out in plugin settings (#196133)",
+    "fix(templates): use automations in portable manifests (#196218)",
+    "chore(ui): refresh control ui locales (#196184)",
+    "fix: keep project sessions out of shared clones (#196206)",
+    "improve(ui): align settings sidebar and row controls on one rhythm (#196129)",
+    "improve(config): probe agentDir case only for case-variant paths (#193841)",
+    "fix(android): stop reconnecting to a Gateway that never connected (#194782)",
+    "fix(anthropic): idle macOS node worker polls Claude session folders every second (#193880)",
+    "fix(ui): keep touch session links clear of row actions (#194840)",
+    "improve(ui): give the shell top band one control size and radius (#196131)",
+    "refactor(tests): type speech synthesis fixtures (#195933)",
+    "perf(sqlite): confirm local APFS before forking mount on macOS (#193859)",
+    "fix: prevent compaction worker OOM on large session histories (#194536)",
+    "fix: memory plugin hooks skip CLI-backed turns because they get no memory audience (#194454)",
+    "fix(matrix): a long reply with a code block arrives split into broken blocks (#196167)",
+    "fix(ui): stop spinners from keeping WebKit busy every frame (#193930)",
+    "improve(ui): align sidebar rail pitch and panel row insets (#196135)",
+    "fix(agents): Claude CLI turns hit output limits on discarded stream frames (#185404)",
+    "fix(gateway): agent replies to Team chat messages addressed only to other people",
+    "fix(ui): file search skips the first match when Enter confirms IME input in Safari (#196151)",
+    "fix(config): config writes switch models to API-key billing without a warning (#191326)",
+    "refactor(pdf): consolidate model policy ownership (#196096)",
+    "improve(ui): align chat transcript, composer and new-session chip rhythm",
+    "fix: show queued chat input during reply initialization (#196153)",
+    "fix(gateway): exit promptly after clean shutdown (#196067)",
+    "improve(ui): align page toolbar controls on one height and treatment",
+    "fix(memory): expire the memory search failure pause on elapsed time (#196093)",
+    "fix: github_publish refuses to publish after a background command was stopped or finished (#196077)",
+    "fix(release): retry transient child evidence reads (#196095)",
+    "improve(ui): tile and sort session files in the Files panel",
+    "fix(gateway): serve startup reads while sessions resume (#195987)",
+    "refactor(agents): move client tool conflicts to allowlist owner (#196144)",
+    "fix(skills): reuse search indexes after companion-only updates (#196147)",
+    "fix(cli): show the --probe/--plain option conflict in models status (#196094)",
+    "fix(clawrouter): send strict=false for every OpenAI Responses request (#196083)",
+    "test(postgres): cover pending-final receipts after ACK reply loss (#196111)",
+    "fix(sms): preserve callback capacity across upload sources (#194352)",
+    "docs: clarify agent-wide idle-only admission",
+    "fix(ci): remove automation credits from release records (#195811)",
+    "refactor(auth): isolate provider auth data contracts (#190544)"
+  ],
+  "feature_items": [
+    "feat(iroh-ffi): add uniffi bindings for the OpenClaw ID tunnel (#194174)",
+    "feat(node): enroll with owner-approved OpenClaw ID invitations (#193993)",
+    "feat: custom registry icons for plugin panel tabs (#195435)",
+    "feat(android): mute the Talk microphone without ending the conversation (#187722)",
+    "feat(ios): add a Talk microphone mute button (#192648)",
+    "feat(templates): add agents directly from ClawHub packages (#195707)"
+  ],
+  "fix_items": [
+    "fix(android): recover SMS sends denied by carrier lookup (#194422)",
+    "fix(ui): admit chat transcripts after the first paint (#196198)",
+    "fix(ui): Templates page icon looks too faint",
+    "fix(ui): Mac app packaging fails when hoisted installs nest duplicate packages (#196107)",
+    "fix(gateway): keep assistant image response policies consistent (#196141)",
+    "fix(talk): stop voice claiming cancelled consult work finished (#191950)",
+    "fix(gateway): shared-session runs lose access after session list updates",
+    "fix(ci): repair human mention fixtures and missing test allocations (#196234)",
+    "fix(memory): large session exports exhaust workers (#196158)",
+    "fix(mcp): fenced MCP sign-in offers only Sign out in plugin settings (#196133)",
+    "fix(templates): use automations in portable manifests (#196218)",
+    "fix: keep project sessions out of shared clones (#196206)",
+    "fix(android): stop reconnecting to a Gateway that never connected (#194782)",
+    "fix(anthropic): idle macOS node worker polls Claude session folders every second (#193880)",
+    "fix(ui): keep touch session links clear of row actions (#194840)",
+    "perf(sqlite): confirm local APFS before forking mount on macOS (#193859)",
+    "fix: prevent compaction worker OOM on large session histories (#194536)",
+    "fix: memory plugin hooks skip CLI-backed turns because they get no memory audience (#194454)",
+    "fix(matrix): a long reply with a code block arrives split into broken blocks (#196167)",
+    "fix(ui): stop spinners from keeping WebKit busy every frame (#193930)",
+    "fix(agents): Claude CLI turns hit output limits on discarded stream frames (#185404)",
+    "fix(gateway): agent replies to Team chat messages addressed only to other people",
+    "fix(ui): file search skips the first match when Enter confirms IME input in Safari (#196151)",
+    "fix(config): config writes switch models to API-key billing without a warning (#191326)",
+    "fix: show queued chat input during reply initialization (#196153)",
+    "fix(gateway): exit promptly after clean shutdown (#196067)",
+    "fix(memory): expire the memory search failure pause on elapsed time (#196093)",
+    "fix: github_publish refuses to publish after a background command was stopped or finished (#196077)",
+    "fix(release): retry transient child evidence reads (#196095)",
+    "fix(gateway): serve startup reads while sessions resume (#195987)"
+  ],
+  "top_scopes": [
+    {
+      "scope": "fix",
+      "count": 38
+    },
+    {
+      "scope": "ui",
+      "count": 29
+    },
+    {
+      "scope": "ci",
+      "count": 13
+    },
+    {
+      "scope": "improve(ci)",
+      "count": 12
+    },
+    {
+      "scope": "gateway",
+      "count": 11
+    },
+    {
+      "scope": "improve(ui)",
+      "count": 10
+    },
+    {
+      "scope": "test",
+      "count": 7
+    },
+    {
+      "scope": "sandbox",
+      "count": 7
+    },
+    {
+      "scope": "android",
+      "count": 5
+    },
+    {
+      "scope": "memory",
+      "count": 5
+    },
+    {
+      "scope": "agents",
+      "count": 5
+    },
+    {
+      "scope": "doctor",
+      "count": 5
+    },
+    {
+      "scope": "sessions",
+      "count": 5
+    },
+    {
+      "scope": "tests",
+      "count": 4
+    },
+    {
+      "scope": "improve(test)",
+      "count": 4
+    }
+  ]
+}

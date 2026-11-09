@@ -3219,5 +3219,18 @@
     },
     "source": "daily-incremental",
     "generatedAt": "2026-11-09T01:17:22.164205+08:00"
+  },
+  {
+    "date": "2026-11-10",
+    "stage": "openclaw",
+    "summary": "移动端入口、gateway / 会话控制面继续增强，最近一天的增量也并入主矩阵。",
+    "axisEntries": {
+      "models": "",
+      "devices": "Android settings UI、dark theme 和扫码体验继续迭代。 iOS onboarding welcome pager 进入主线。 macOS canvas actions 被进一步限制到 trusted surfaces。",
+      "control": "Gateway health monitor、pairing 与 watch 链路继续打磨。 Compaction timeout、计数持久化和 sanity check 继续加固。 Session / plugin 路由与配置基线继续收敛。",
+      "security": ""
+    },
+    "source": "daily-incremental",
+    "generatedAt": "2026-11-10T05:40:13.146364+08:00"
   }
 ]

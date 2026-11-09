@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-11-09T01:17:40+08:00
-- Requested window: 2026-11-08 to 2026-11-09
+- Generated at: 2026-11-10T05:40:30+08:00
+- Requested window: 2026-11-09 to 2026-11-10
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,27 +10,29 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-11-08 to 2026-11-09
-- Generated at: 2026-11-09T01:17:22.164205+08:00
-- 窗口: 2026-11-08 至 2026-11-09
-- GitHub 增量: 324 commits / 0 releases
-- 最近 push: 2026-11-08
+- Window: 2026-11-09 to 2026-11-10
+- Generated at: 2026-11-10T05:40:13.146364+08:00
+- 窗口: 2026-11-09 至 2026-11-10
+- GitHub 增量: 263 commits / 0 releases
+- 最近 push: 2026-11-09
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(openclaw-id): define accountless node enrollment (#193980)
-  - feat(openai): add GPT Image 2.6 Sunburst and Flare models
-  - feat(pr): release dependency cache holds left behind by dead wrappers (#194546)
-  - feat(ui): ask about a selection in a new session
+  - feat(iroh-ffi): add uniffi bindings for the OpenClaw ID tunnel (#194174)
+  - feat(node): enroll with owner-approved OpenClaw ID invitations (#193993)
+  - feat: custom registry icons for plugin panel tabs (#195435)
+  - feat(android): mute the Talk microphone without ending the conversation (#187722)
+  - feat(ios): add a Talk microphone mute button (#192648)
+  - feat(templates): add agents directly from ClawHub packages (#195707)
 - Fixes and constraints:
-  - fix(ios): reload composer capabilities when chat health recovers (#195314)
-  - fix(gateway): restarts defer every agent when unsealed databases are first in startup order (#195291)
-  - fix(ios): Talk start uses stale provider, transport or voice after Talk settings change (#192876)
-  - fix(ui): size and center OpenClaw ID sign-in popup (#194397)
-  - fix(ios): share to gateways using approved TLS pins and service headers (#191525)
-  - fix(sandbox): retain spawn broker in detached housekeeping (#195303)
-  - fix(ci): avoid legacy inventory in current recovery tests (#195302)
-  - fix(ui): keep reload explanation when toast assets retire (#194927)
+  - fix(android): recover SMS sends denied by carrier lookup (#194422)
+  - fix(ui): admit chat transcripts after the first paint (#196198)
+  - fix(ui): Templates page icon looks too faint
+  - fix(ui): Mac app packaging fails when hoisted installs nest duplicate packages (#196107)
+  - fix(gateway): keep assistant image response policies consistent (#196141)
+  - fix(talk): stop voice claiming cancelled consult work finished (#191950)
+  - fix(gateway): shared-session runs lose access after session list updates
+  - fix(ci): repair human mention fixtures and missing test allocations (#196234)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

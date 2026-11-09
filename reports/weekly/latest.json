@@ -1,169 +1,171 @@
 {
-  "generated_at": "2026-11-09T01:17:22.164205+08:00",
+  "generated_at": "2026-11-10T05:40:13.146364+08:00",
   "window": {
-    "start_local": "2026-11-08T01:17:22.164205+08:00",
-    "end_local": "2026-11-09T01:17:22.164205+08:00",
-    "start_utc": "2026-11-07T17:17:22Z",
-    "end_utc": "2026-11-08T17:17:22Z"
+    "start_local": "2026-11-09T05:40:13.146364+08:00",
+    "end_local": "2026-11-10T05:40:13.146364+08:00",
+    "start_utc": "2026-11-08T21:40:13Z",
+    "end_utc": "2026-11-09T21:40:13Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 394189,
-    "forks": 82839,
-    "open_issues": 7788,
-    "pushed_at": "2026-11-08T17:17:19Z"
+    "stars": 394252,
+    "forks": 82854,
+    "open_issues": 8085,
+    "pushed_at": "2026-11-09T21:40:00Z"
   },
   "releases_in_window": [],
-  "commit_count": 324,
+  "commit_count": 263,
   "commit_headlines": [
-    "fix(ios): reload composer capabilities when chat health recovers (#195314)",
-    "fix(gateway): restarts defer every agent when unsealed databases are first in startup order (#195291)",
-    "fix(ios): Talk start uses stale provider, transport or voice after Talk settings change (#192876)",
-    "fix(ui): size and center OpenClaw ID sign-in popup (#194397)",
-    "fix(ios): share to gateways using approved TLS pins and service headers (#191525)",
-    "fix(sandbox): retain spawn broker in detached housekeeping (#195303)",
-    "feat(openclaw-id): define accountless node enrollment (#193980)",
-    "fix(ci): avoid legacy inventory in current recovery tests (#195302)",
-    "fix(ui): keep reload explanation when toast assets retire (#194927)",
-    "fix(ci): avoid a redundant runtime build in repair tests (#195288)",
-    "fix(worktrees): preserve warm checkouts across session modes (#195293)",
-    "fix(ios): reduce chat stalls while typing and receiving events (#187610)",
-    "fix(agents): release completed capability read state (#195297)",
-    "fix(hooks): reuse unchanged transform modules across reloads (#195286)",
-    "fix(agents): keep an empty resolved external profile set out of auth catalog identity (#195278)",
-    "fix(openclaw-id): publish membership changes that arrive while a publication finishes",
-    "fix(daemon): consult native coalition reader when launchctl omits the header (#194106)",
-    "fix(ui): stop claiming an empty desktop inventory before the read settles (#195086)",
-    "fix(agents): process log claims no output for negative limit (#195065)",
-    "fix(ci): avoid legacy inventory scans in current-runtime tests (#195268)",
-    "fix(x): deliver direct replies and flush stream headers (#195273)",
-    "fix(worktrees): warn about re-shallowed managed project history (#195234)",
-    "fix(cli): cancel interrupted tts gateway RPCs (#195206)",
-    "fix(ci): destructure runtime selection import for dead-export tracking",
-    "fix(ui): align composer menu focus check with attachment order (#195262)",
-    "fix(plugins): admit exact host/runtime pairs below the floor (#195255)",
-    "fix(apps): scope global usage across configured agents (#192646)",
-    "fix(connect): connect prints only \"Could not fetch the Gateway join payload securely.\" when the join link cannot be reached (#195248)",
-    "fix: match Sessions online indicators to Users (#195254)",
-    "fix: stop completion retries for archived requester sessions (#195258)",
-    "improve(worktrees): speed up default refreshes in busy repositories (#195252)",
-    "fix(x): avoid long stream outages after disconnects and local stalls (#195251)",
-    "fix(skills): avoid repeated indexing during skill searches (#195232)",
-    "fix(ci): skip test-only compilation for selected reply tests (#195250)",
-    "test: make exit status resets portable across runtimes (#195245)",
-    "chore(i18n): refresh native locales (#195150)",
-    "fix(update): classify package-update failures instead of unexpected-error (#195233)",
-    "chore(release): update appcast for 2026.11.2 (#195240)",
-    "fix(gateway): deliver queued runs' lifecycle start after the run links its chat (#195193)",
-    "improve(worktrees): speed up hydration in repositories with many branches (#195228)",
-    "fix(ci): select compiler consumers for source companions (#195237)",
-    "fix(muse): run receipts never list the tools Muse used (#195219)",
-    "fix(muse): turns hang until timeout when Muse asks a question (#195084)",
-    "fix(compaction): finished turn re-summarized as split after bootstrap marker",
-    "test(windows): give published-update installed-package commands a 600 s budget (#195235)",
-    "improve(telegram): render quiet work status with the tool log's icon row (#195225)",
-    "fix(workers): reclaim idle worker heaps on stock Bun (#195229)",
-    "improve(ci): skip unnecessary UI E2E requirement discovery (#195227)",
-    "fix(test): include guest typing in UI Gateway inventory (#195226)",
-    "fix(ui): keep attachment pickers near the add button (#184801)"
+    "fix(android): recover SMS sends denied by carrier lookup (#194422)",
+    "fix(ui): admit chat transcripts after the first paint (#196198)",
+    "fix(ui): Templates page icon looks too faint",
+    "fix(ui): Mac app packaging fails when hoisted installs nest duplicate packages (#196107)",
+    "refactor(memory-lancedb): move query contracts to schema owner (#196227)",
+    "fix(gateway): keep assistant image response policies consistent (#196141)",
+    "fix(talk): stop voice claiming cancelled consult work finished (#191950)",
+    "fix(gateway): shared-session runs lose access after session list updates",
+    "fix(ci): repair human mention fixtures and missing test allocations (#196234)",
+    "fix(memory): large session exports exhaust workers (#196158)",
+    "fix(mcp): fenced MCP sign-in offers only Sign out in plugin settings (#196133)",
+    "fix(templates): use automations in portable manifests (#196218)",
+    "chore(ui): refresh control ui locales (#196184)",
+    "fix: keep project sessions out of shared clones (#196206)",
+    "improve(ui): align settings sidebar and row controls on one rhythm (#196129)",
+    "improve(config): probe agentDir case only for case-variant paths (#193841)",
+    "fix(android): stop reconnecting to a Gateway that never connected (#194782)",
+    "fix(anthropic): idle macOS node worker polls Claude session folders every second (#193880)",
+    "fix(ui): keep touch session links clear of row actions (#194840)",
+    "improve(ui): give the shell top band one control size and radius (#196131)",
+    "refactor(tests): type speech synthesis fixtures (#195933)",
+    "perf(sqlite): confirm local APFS before forking mount on macOS (#193859)",
+    "fix: prevent compaction worker OOM on large session histories (#194536)",
+    "fix: memory plugin hooks skip CLI-backed turns because they get no memory audience (#194454)",
+    "fix(matrix): a long reply with a code block arrives split into broken blocks (#196167)",
+    "fix(ui): stop spinners from keeping WebKit busy every frame (#193930)",
+    "improve(ui): align sidebar rail pitch and panel row insets (#196135)",
+    "fix(agents): Claude CLI turns hit output limits on discarded stream frames (#185404)",
+    "fix(gateway): agent replies to Team chat messages addressed only to other people",
+    "fix(ui): file search skips the first match when Enter confirms IME input in Safari (#196151)",
+    "fix(config): config writes switch models to API-key billing without a warning (#191326)",
+    "refactor(pdf): consolidate model policy ownership (#196096)",
+    "improve(ui): align chat transcript, composer and new-session chip rhythm",
+    "fix: show queued chat input during reply initialization (#196153)",
+    "fix(gateway): exit promptly after clean shutdown (#196067)",
+    "improve(ui): align page toolbar controls on one height and treatment",
+    "fix(memory): expire the memory search failure pause on elapsed time (#196093)",
+    "fix: github_publish refuses to publish after a background command was stopped or finished (#196077)",
+    "fix(release): retry transient child evidence reads (#196095)",
+    "improve(ui): tile and sort session files in the Files panel",
+    "fix(gateway): serve startup reads while sessions resume (#195987)",
+    "refactor(agents): move client tool conflicts to allowlist owner (#196144)",
+    "fix(skills): reuse search indexes after companion-only updates (#196147)",
+    "fix(cli): show the --probe/--plain option conflict in models status (#196094)",
+    "fix(clawrouter): send strict=false for every OpenAI Responses request (#196083)",
+    "test(postgres): cover pending-final receipts after ACK reply loss (#196111)",
+    "fix(sms): preserve callback capacity across upload sources (#194352)",
+    "docs: clarify agent-wide idle-only admission",
+    "fix(ci): remove automation credits from release records (#195811)",
+    "refactor(auth): isolate provider auth data contracts (#190544)"
   ],
   "feature_items": [
-    "feat(openclaw-id): define accountless node enrollment (#193980)",
-    "feat(openai): add GPT Image 2.6 Sunburst and Flare models",
-    "feat(pr): release dependency cache holds left behind by dead wrappers (#194546)",
-    "feat(ui): ask about a selection in a new session"
+    "feat(iroh-ffi): add uniffi bindings for the OpenClaw ID tunnel (#194174)",
+    "feat(node): enroll with owner-approved OpenClaw ID invitations (#193993)",
+    "feat: custom registry icons for plugin panel tabs (#195435)",
+    "feat(android): mute the Talk microphone without ending the conversation (#187722)",
+    "feat(ios): add a Talk microphone mute button (#192648)",
+    "feat(templates): add agents directly from ClawHub packages (#195707)"
   ],
   "fix_items": [
-    "fix(ios): reload composer capabilities when chat health recovers (#195314)",
-    "fix(gateway): restarts defer every agent when unsealed databases are first in startup order (#195291)",
-    "fix(ios): Talk start uses stale provider, transport or voice after Talk settings change (#192876)",
-    "fix(ui): size and center OpenClaw ID sign-in popup (#194397)",
-    "fix(ios): share to gateways using approved TLS pins and service headers (#191525)",
-    "fix(sandbox): retain spawn broker in detached housekeeping (#195303)",
-    "fix(ci): avoid legacy inventory in current recovery tests (#195302)",
-    "fix(ui): keep reload explanation when toast assets retire (#194927)",
-    "fix(ci): avoid a redundant runtime build in repair tests (#195288)",
-    "fix(worktrees): preserve warm checkouts across session modes (#195293)",
-    "fix(ios): reduce chat stalls while typing and receiving events (#187610)",
-    "fix(agents): release completed capability read state (#195297)",
-    "fix(hooks): reuse unchanged transform modules across reloads (#195286)",
-    "fix(agents): keep an empty resolved external profile set out of auth catalog identity (#195278)",
-    "fix(openclaw-id): publish membership changes that arrive while a publication finishes",
-    "fix(daemon): consult native coalition reader when launchctl omits the header (#194106)",
-    "fix(ui): stop claiming an empty desktop inventory before the read settles (#195086)",
-    "fix(agents): process log claims no output for negative limit (#195065)",
-    "fix(ci): avoid legacy inventory scans in current-runtime tests (#195268)",
-    "fix(x): deliver direct replies and flush stream headers (#195273)",
-    "fix(worktrees): warn about re-shallowed managed project history (#195234)",
-    "fix(cli): cancel interrupted tts gateway RPCs (#195206)",
-    "fix(ci): destructure runtime selection import for dead-export tracking",
-    "fix(ui): align composer menu focus check with attachment order (#195262)",
-    "fix(plugins): admit exact host/runtime pairs below the floor (#195255)",
-    "fix(apps): scope global usage across configured agents (#192646)",
-    "fix(connect): connect prints only \"Could not fetch the Gateway join payload securely.\" when the join link cannot be reached (#195248)",
-    "fix: match Sessions online indicators to Users (#195254)",
-    "fix: stop completion retries for archived requester sessions (#195258)",
-    "fix(x): avoid long stream outages after disconnects and local stalls (#195251)"
+    "fix(android): recover SMS sends denied by carrier lookup (#194422)",
+    "fix(ui): admit chat transcripts after the first paint (#196198)",
+    "fix(ui): Templates page icon looks too faint",
+    "fix(ui): Mac app packaging fails when hoisted installs nest duplicate packages (#196107)",
+    "fix(gateway): keep assistant image response policies consistent (#196141)",
+    "fix(talk): stop voice claiming cancelled consult work finished (#191950)",
+    "fix(gateway): shared-session runs lose access after session list updates",
+    "fix(ci): repair human mention fixtures and missing test allocations (#196234)",
+    "fix(memory): large session exports exhaust workers (#196158)",
+    "fix(mcp): fenced MCP sign-in offers only Sign out in plugin settings (#196133)",
+    "fix(templates): use automations in portable manifests (#196218)",
+    "fix: keep project sessions out of shared clones (#196206)",
+    "fix(android): stop reconnecting to a Gateway that never connected (#194782)",
+    "fix(anthropic): idle macOS node worker polls Claude session folders every second (#193880)",
+    "fix(ui): keep touch session links clear of row actions (#194840)",
+    "perf(sqlite): confirm local APFS before forking mount on macOS (#193859)",
+    "fix: prevent compaction worker OOM on large session histories (#194536)",
+    "fix: memory plugin hooks skip CLI-backed turns because they get no memory audience (#194454)",
+    "fix(matrix): a long reply with a code block arrives split into broken blocks (#196167)",
+    "fix(ui): stop spinners from keeping WebKit busy every frame (#193930)",
+    "fix(agents): Claude CLI turns hit output limits on discarded stream frames (#185404)",
+    "fix(gateway): agent replies to Team chat messages addressed only to other people",
+    "fix(ui): file search skips the first match when Enter confirms IME input in Safari (#196151)",
+    "fix(config): config writes switch models to API-key billing without a warning (#191326)",
+    "fix: show queued chat input during reply initialization (#196153)",
+    "fix(gateway): exit promptly after clean shutdown (#196067)",
+    "fix(memory): expire the memory search failure pause on elapsed time (#196093)",
+    "fix: github_publish refuses to publish after a background command was stopped or finished (#196077)",
+    "fix(release): retry transient child evidence reads (#196095)",
+    "fix(gateway): serve startup reads while sessions resume (#195987)"
   ],
   "top_scopes": [
     {
-      "scope": "ui",
-      "count": 60
-    },
-    {
       "scope": "fix",
-      "count": 47
+      "count": 38
     },
     {
-      "scope": "ci",
+      "scope": "ui",
       "count": 29
     },
     {
-      "scope": "ios",
-      "count": 24
+      "scope": "ci",
+      "count": 13
     },
     {
-      "scope": "test",
-      "count": 18
+      "scope": "improve(ci)",
+      "count": 12
     },
     {
       "scope": "gateway",
       "count": 11
     },
     {
-      "scope": "agents",
-      "count": 11
+      "scope": "improve(ui)",
+      "count": 10
     },
     {
-      "scope": "knowledge",
-      "count": 8
+      "scope": "test",
+      "count": 7
     },
     {
-      "scope": "skills",
-      "count": 6
-    },
-    {
-      "scope": "update",
-      "count": 6
-    },
-    {
-      "scope": "release",
-      "count": 6
+      "scope": "sandbox",
+      "count": 7
     },
     {
       "scope": "android",
-      "count": 6
-    },
-    {
-      "scope": "perf",
       "count": 5
     },
     {
-      "scope": "worktrees",
+      "scope": "memory",
+      "count": 5
+    },
+    {
+      "scope": "agents",
+      "count": 5
+    },
+    {
+      "scope": "doctor",
+      "count": 5
+    },
+    {
+      "scope": "sessions",
+      "count": 5
+    },
+    {
+      "scope": "tests",
       "count": 4
     },
     {
-      "scope": "muse",
+      "scope": "improve(test)",
       "count": 4
     }
   ]
