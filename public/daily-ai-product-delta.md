@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-11-10T05:40:30+08:00
-- Requested window: 2026-11-09 to 2026-11-10
+- Generated at: 2026-11-11T02:57:24+08:00
+- Requested window: 2026-11-10 to 2026-11-11
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,29 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-11-09 to 2026-11-10
-- Generated at: 2026-11-10T05:40:13.146364+08:00
-- 窗口: 2026-11-09 至 2026-11-10
-- GitHub 增量: 263 commits / 0 releases
-- 最近 push: 2026-11-09
+- Window: 2026-11-10 to 2026-11-11
+- Generated at: 2026-11-11T02:57:04.103110+08:00
+- 窗口: 2026-11-10 至 2026-11-11
+- GitHub 增量: 328 commits / 1 releases
+- 最近 push: 2026-11-10
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(iroh-ffi): add uniffi bindings for the OpenClaw ID tunnel (#194174)
-  - feat(node): enroll with owner-approved OpenClaw ID invitations (#193993)
-  - feat: custom registry icons for plugin panel tabs (#195435)
-  - feat(android): mute the Talk microphone without ending the conversation (#187722)
-  - feat(ios): add a Talk microphone mute button (#192648)
-  - feat(templates): add agents directly from ClawHub packages (#195707)
+  - feat(diagnostics-otel): opt-in session ids on OTel spans for conversation grouping (#193700)
+  - feat(ui): add halftone QR previews for public shares (#194559)
+  - feat(native): expose Systems dashboard route (#164462)
+  - feat(ui): show a QR code next to the public session link (#180292)
+  - feat(control-ui): add privacy-safe GitHub feedback links (#194607)
+  - feat(compaction): make compaction summary char cap configurable via maxSummaryChars (#196207)
+  - feat: create templates directly from chat (#195730)
+  - feat(pairing): pair a browser with a short code approved on the host (#191513)
 - Fixes and constraints:
-  - fix(android): recover SMS sends denied by carrier lookup (#194422)
-  - fix(ui): admit chat transcripts after the first paint (#196198)
-  - fix(ui): Templates page icon looks too faint
-  - fix(ui): Mac app packaging fails when hoisted installs nest duplicate packages (#196107)
-  - fix(gateway): keep assistant image response policies consistent (#196141)
-  - fix(talk): stop voice claiming cancelled consult work finished (#191950)
-  - fix(gateway): shared-session runs lose access after session list updates
-  - fix(ci): repair human mention fixtures and missing test allocations (#196234)
+  - fix(ios): stop node retries while the Gateway rate-limits auth (#196796)
+  - fix(ui): activate shared Markdown preview code controls (#194233)
+  - perf(ci): share UI inventories across ownership lookups (#195160)
+  - fix(worktrees): keep dependency copies fast in large gateways (#196768)
+  - fix(release): accept bare active-parent workflow paths
+  - fix(bedrock): preserve system separators across cache checkpoints (#196538)
+  - fix(ui): show empty repository search feedback after loading (#196783)
+  - fix: resumed database port reports success for a copy that owner admission rejects (#194595)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

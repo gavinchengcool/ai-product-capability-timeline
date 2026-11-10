@@ -1,90 +1,92 @@
 # OpenClaw Weekly Update
 
-生成时间：2026-11-10T05:40:13.146364+08:00
+生成时间：2026-11-11T02:57:04.103110+08:00
 
 ## Window
 
-- Start: 2026-11-09T05:40:13.146364+08:00
-- End: 2026-11-10T05:40:13.146364+08:00
+- Start: 2026-11-10T02:57:04.103110+08:00
+- End: 2026-11-11T02:57:04.103110+08:00
 - Repo: `openclaw/openclaw`
 
 ## At A Glance
 
-- Commits in window: 263
-- Releases in window: 0
-- Stable releases in window: 0
+- Commits in window: 328
+- Releases in window: 1
+- Stable releases in window: 1
 - Beta releases in window: 0
-- Repo stars at scan time: 394252
-- Repo forks at scan time: 82854
+- Repo stars at scan time: 394300
+- Repo forks at scan time: 82857
 
 ## New Capability Signals
 
-- feat(iroh-ffi): add uniffi bindings for the OpenClaw ID tunnel (#194174)
-- feat(node): enroll with owner-approved OpenClaw ID invitations (#193993)
-- feat: custom registry icons for plugin panel tabs (#195435)
-- feat(android): mute the Talk microphone without ending the conversation (#187722)
-- feat(ios): add a Talk microphone mute button (#192648)
-- feat(templates): add agents directly from ClawHub packages (#195707)
+- feat(diagnostics-otel): opt-in session ids on OTel spans for conversation grouping (#193700)
+- feat(ui): add halftone QR previews for public shares (#194559)
+- feat(native): expose Systems dashboard route (#164462)
+- feat(ui): show a QR code next to the public session link (#180292)
+- feat(control-ui): add privacy-safe GitHub feedback links (#194607)
+- feat(compaction): make compaction summary char cap configurable via maxSummaryChars (#196207)
+- feat: create templates directly from chat (#195730)
+- feat(pairing): pair a browser with a short code approved on the host (#191513)
 
 ## Important Fixes And Hardening
 
-- fix(android): recover SMS sends denied by carrier lookup (#194422)
-- fix(ui): admit chat transcripts after the first paint (#196198)
-- fix(ui): Templates page icon looks too faint
-- fix(ui): Mac app packaging fails when hoisted installs nest duplicate packages (#196107)
-- fix(gateway): keep assistant image response policies consistent (#196141)
-- fix(talk): stop voice claiming cancelled consult work finished (#191950)
-- fix(gateway): shared-session runs lose access after session list updates
-- fix(ci): repair human mention fixtures and missing test allocations (#196234)
-- fix(memory): large session exports exhaust workers (#196158)
-- fix(mcp): fenced MCP sign-in offers only Sign out in plugin settings (#196133)
-- fix(templates): use automations in portable manifests (#196218)
-- fix: keep project sessions out of shared clones (#196206)
-- fix(android): stop reconnecting to a Gateway that never connected (#194782)
-- fix(anthropic): idle macOS node worker polls Claude session folders every second (#193880)
-- fix(ui): keep touch session links clear of row actions (#194840)
+- fix(ios): stop node retries while the Gateway rate-limits auth (#196796)
+- fix(ui): activate shared Markdown preview code controls (#194233)
+- perf(ci): share UI inventories across ownership lookups (#195160)
+- fix(worktrees): keep dependency copies fast in large gateways (#196768)
+- fix(release): accept bare active-parent workflow paths
+- fix(bedrock): preserve system separators across cache checkpoints (#196538)
+- fix(ui): show empty repository search feedback after loading (#196783)
+- fix: resumed database port reports success for a copy that owner admission rejects (#194595)
+- fix(ci): preserve prepared package caches in Testbox installs (#196771)
+- fix(cli): install PowerShell completion in UTF-16 profiles on Unix (#196755)
+- fix(process): disable core dumps for agent commands (#196772)
+- fix(sandbox): avoid snapshot overhead for fast checkpoints (#196727)
+- fix(browser): start Chromium with long Linux temp paths (#196778)
+- fix(telegram): sent-message cache writes fail with "Telegram runtime not initialized" during replies (#193829)
+- fix(mcp): mcp add and configure print a literal "\n" before "Configuration was not saved." when the server check fails (#196711)
 
 ## Releases This Week
 
-- No GitHub releases were published in this window.
+- `v2026.11.3` | stable | 2026-11-10T18:53:07Z | openclaw 2026.11.3
 
 ## Most Active Change Scopes
 
-- `fix`: 38
-- `ui`: 29
+- `ui`: 68
+- `fix`: 53
+- `release`: 14
 - `ci`: 13
-- `improve(ci)`: 12
-- `gateway`: 11
-- `improve(ui)`: 10
+- `ios`: 12
+- `gateway`: 9
+- `improve(ci)`: 8
+- `improve(ui)`: 8
+- `knowledge`: 8
+- `agents`: 8
+- `sessions`: 7
 - `test`: 7
-- `sandbox`: 7
-- `android`: 5
-- `memory`: 5
-- `agents`: 5
-- `doctor`: 5
 
 ## Recent Commit Headlines
 
-- 2026-11-09T21:36:27Z | fix(android): recover SMS sends denied by carrier lookup (#194422)
-- 2026-11-09T21:35:17Z | fix(ui): admit chat transcripts after the first paint (#196198)
-- 2026-11-09T21:31:26Z | fix(ui): Templates page icon looks too faint
-- 2026-11-09T21:21:04Z | fix(ui): Mac app packaging fails when hoisted installs nest duplicate packages (#196107)
-- 2026-11-09T21:03:00Z | refactor(memory-lancedb): move query contracts to schema owner (#196227)
-- 2026-11-09T20:57:19Z | fix(gateway): keep assistant image response policies consistent (#196141)
-- 2026-11-09T20:56:45Z | fix(talk): stop voice claiming cancelled consult work finished (#191950)
-- 2026-11-09T20:44:00Z | fix(gateway): shared-session runs lose access after session list updates
-- 2026-11-09T20:33:29Z | fix(ci): repair human mention fixtures and missing test allocations (#196234)
-- 2026-11-09T20:20:20Z | fix(memory): large session exports exhaust workers (#196158)
-- 2026-11-09T20:09:06Z | fix(mcp): fenced MCP sign-in offers only Sign out in plugin settings (#196133)
-- 2026-11-09T20:06:27Z | fix(templates): use automations in portable manifests (#196218)
-- 2026-11-09T19:55:19Z | chore(ui): refresh control ui locales (#196184)
-- 2026-11-09T19:53:01Z | fix: keep project sessions out of shared clones (#196206)
-- 2026-11-09T19:49:40Z | improve(ui): align settings sidebar and row controls on one rhythm (#196129)
-- 2026-11-09T19:44:23Z | improve(config): probe agentDir case only for case-variant paths (#193841)
-- 2026-11-09T19:42:51Z | fix(android): stop reconnecting to a Gateway that never connected (#194782)
-- 2026-11-09T19:42:48Z | fix(anthropic): idle macOS node worker polls Claude session folders every second (#193880)
-- 2026-11-09T19:42:02Z | fix(ui): keep touch session links clear of row actions (#194840)
-- 2026-11-09T19:41:33Z | improve(ui): give the shell top band one control size and radius (#196131)
+- 2026-11-10T18:56:42Z | fix(ios): stop node retries while the Gateway rate-limits auth (#196796)
+- 2026-11-10T18:53:43Z | refactor(update): remove redundant preflight worktree prune (#196791)
+- 2026-11-10T18:43:10Z | fix(ui): activate shared Markdown preview code controls (#194233)
+- 2026-11-10T18:39:46Z | perf(ci): share UI inventories across ownership lookups (#195160)
+- 2026-11-10T18:39:19Z | fix(worktrees): keep dependency copies fast in large gateways (#196768)
+- 2026-11-10T18:37:40Z | fix(release): accept bare active-parent workflow paths
+- 2026-11-10T18:35:38Z | fix(bedrock): preserve system separators across cache checkpoints (#196538)
+- 2026-11-10T18:32:36Z | fix(ui): show empty repository search feedback after loading (#196783)
+- 2026-11-10T18:32:19Z | fix: resumed database port reports success for a copy that owner admission rejects (#194595)
+- 2026-11-10T18:31:15Z | fix(ci): preserve prepared package caches in Testbox installs (#196771)
+- 2026-11-10T18:30:05Z | fix(cli): install PowerShell completion in UTF-16 profiles on Unix (#196755)
+- 2026-11-10T18:24:47Z | chore(sessions): add bounded delivery generation refusal diagnostics
+- 2026-11-10T18:23:19Z | improve(exec): reduce CPU spent on streamed command output (#196780)
+- 2026-11-10T18:21:23Z | fix(process): disable core dumps for agent commands (#196772)
+- 2026-11-10T18:17:48Z | improve(ci): reduce compilation for subagent tests (#196786)
+- 2026-11-10T18:17:08Z | fix(sandbox): avoid snapshot overhead for fast checkpoints (#196727)
+- 2026-11-10T18:12:39Z | fix(browser): start Chromium with long Linux temp paths (#196778)
+- 2026-11-10T18:06:50Z | fix(telegram): sent-message cache writes fail with "Telegram runtime not initialized" during replies (#193829)
+- 2026-11-10T18:06:08Z | refactor(test): share attachment session-change regression setup (#196764)
+- 2026-11-10T18:04:30Z | fix(mcp): mcp add and configure print a literal "\n" before "Configuration was not saved." when the server check fails (#196711)
 
 ## Sources
 

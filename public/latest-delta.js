@@ -1,89 +1,99 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-11-10T05:40:13.146364+08:00",
+  "generatedAt": "2026-11-11T02:57:04.103110+08:00",
   "window": {
-    "start_local": "2026-11-09T05:40:13.146364+08:00",
-    "end_local": "2026-11-10T05:40:13.146364+08:00",
-    "start_utc": "2026-11-08T21:40:13Z",
-    "end_utc": "2026-11-09T21:40:13Z"
+    "start_local": "2026-11-10T02:57:04.103110+08:00",
+    "end_local": "2026-11-11T02:57:04.103110+08:00",
+    "start_utc": "2026-11-09T18:57:04Z",
+    "end_utc": "2026-11-10T18:57:04Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 394252,
-    "forks": 82854,
-    "open_issues": 8085,
-    "pushed_at": "2026-11-09T21:40:00Z"
+    "stars": 394300,
+    "forks": 82857,
+    "open_issues": 8133,
+    "pushed_at": "2026-11-10T18:56:45Z"
   },
   "summary": {
-    "commitCount": 263,
-    "releaseCount": 0,
-    "stableReleaseCount": 0,
+    "commitCount": 328,
+    "releaseCount": 1,
+    "stableReleaseCount": 1,
     "betaReleaseCount": 0,
-    "stars": 394252,
-    "forks": 82854,
-    "openIssues": 8085
+    "stars": 394300,
+    "forks": 82857,
+    "openIssues": 8133
   },
-  "releases": [],
+  "releases": [
+    {
+      "tag_name": "v2026.11.3",
+      "published_at": "2026-11-10T18:53:07Z",
+      "name": "openclaw 2026.11.3",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.3"
+    }
+  ],
   "featureItems": [
-    "feat(iroh-ffi): add uniffi bindings for the OpenClaw ID tunnel (#194174)",
-    "feat(node): enroll with owner-approved OpenClaw ID invitations (#193993)",
-    "feat: custom registry icons for plugin panel tabs (#195435)",
-    "feat(android): mute the Talk microphone without ending the conversation (#187722)",
-    "feat(ios): add a Talk microphone mute button (#192648)",
-    "feat(templates): add agents directly from ClawHub packages (#195707)"
+    "feat(diagnostics-otel): opt-in session ids on OTel spans for conversation grouping (#193700)",
+    "feat(ui): add halftone QR previews for public shares (#194559)",
+    "feat(native): expose Systems dashboard route (#164462)",
+    "feat(ui): show a QR code next to the public session link (#180292)",
+    "feat(control-ui): add privacy-safe GitHub feedback links (#194607)",
+    "feat(compaction): make compaction summary char cap configurable via maxSummaryChars (#196207)",
+    "feat: create templates directly from chat (#195730)",
+    "feat(pairing): pair a browser with a short code approved on the host (#191513)"
   ],
   "fixItems": [
-    "fix(android): recover SMS sends denied by carrier lookup (#194422)",
-    "fix(ui): admit chat transcripts after the first paint (#196198)",
-    "fix(ui): Templates page icon looks too faint",
-    "fix(ui): Mac app packaging fails when hoisted installs nest duplicate packages (#196107)",
-    "fix(gateway): keep assistant image response policies consistent (#196141)",
-    "fix(talk): stop voice claiming cancelled consult work finished (#191950)",
-    "fix(gateway): shared-session runs lose access after session list updates",
-    "fix(ci): repair human mention fixtures and missing test allocations (#196234)"
+    "fix(ios): stop node retries while the Gateway rate-limits auth (#196796)",
+    "fix(ui): activate shared Markdown preview code controls (#194233)",
+    "perf(ci): share UI inventories across ownership lookups (#195160)",
+    "fix(worktrees): keep dependency copies fast in large gateways (#196768)",
+    "fix(release): accept bare active-parent workflow paths",
+    "fix(bedrock): preserve system separators across cache checkpoints (#196538)",
+    "fix(ui): show empty repository search feedback after loading (#196783)",
+    "fix: resumed database port reports success for a copy that owner admission rejects (#194595)"
   ],
   "topScopes": [
     {
-      "scope": "fix",
-      "count": 38
+      "scope": "ui",
+      "count": 68
     },
     {
-      "scope": "ui",
-      "count": 29
+      "scope": "fix",
+      "count": 53
+    },
+    {
+      "scope": "release",
+      "count": 14
     },
     {
       "scope": "ci",
       "count": 13
     },
     {
-      "scope": "improve(ci)",
+      "scope": "ios",
       "count": 12
     },
     {
       "scope": "gateway",
-      "count": 11
+      "count": 9
+    },
+    {
+      "scope": "improve(ci)",
+      "count": 8
     },
     {
       "scope": "improve(ui)",
-      "count": 10
-    },
-    {
-      "scope": "test",
-      "count": 7
-    },
-    {
-      "scope": "sandbox",
-      "count": 7
+      "count": 8
     }
   ],
   "headlineCommits": [
-    "fix(android): recover SMS sends denied by carrier lookup (#194422)",
-    "fix(ui): admit chat transcripts after the first paint (#196198)",
-    "fix(ui): Templates page icon looks too faint",
-    "fix(ui): Mac app packaging fails when hoisted installs nest duplicate packages (#196107)",
-    "refactor(memory-lancedb): move query contracts to schema owner (#196227)",
-    "fix(gateway): keep assistant image response policies consistent (#196141)",
-    "fix(talk): stop voice claiming cancelled consult work finished (#191950)",
-    "fix(gateway): shared-session runs lose access after session list updates"
+    "fix(ios): stop node retries while the Gateway rate-limits auth (#196796)",
+    "refactor(update): remove redundant preflight worktree prune (#196791)",
+    "fix(ui): activate shared Markdown preview code controls (#194233)",
+    "perf(ci): share UI inventories across ownership lookups (#195160)",
+    "fix(worktrees): keep dependency copies fast in large gateways (#196768)",
+    "fix(release): accept bare active-parent workflow paths",
+    "fix(bedrock): preserve system separators across cache checkpoints (#196538)",
+    "fix(ui): show empty repository search feedback after loading (#196783)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };
