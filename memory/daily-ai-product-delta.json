@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-11T02:57:24+08:00",
+  "generatedAt": "2026-11-12T02:55:26+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-11-10T02:57:24+08:00",
-    "end_local": "2026-11-11T02:57:24+08:00"
+    "start_local": "2026-11-11T02:55:26+08:00",
+    "end_local": "2026-11-12T02:55:26+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-11-11T02:57:04.103110+08:00",
+      "generatedAt": "2026-11-12T02:55:08.520495+08:00",
       "window": {
-        "start_local": "2026-11-10T02:57:04.103110+08:00",
-        "end_local": "2026-11-11T02:57:04.103110+08:00",
-        "start_utc": "2026-11-09T18:57:04Z",
-        "end_utc": "2026-11-10T18:57:04Z"
+        "start_local": "2026-11-11T02:55:08.520495+08:00",
+        "end_local": "2026-11-12T02:55:08.520495+08:00",
+        "start_utc": "2026-11-10T18:55:08Z",
+        "end_utc": "2026-11-11T18:55:08Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-11-10 至 2026-11-11"
+          "value": "2026-11-11 至 2026-11-12"
         },
         {
           "label": "GitHub 增量",
-          "value": "328 commits / 1 releases"
+          "value": "330 commits / 1 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-11-10"
+          "value": "2026-11-11"
         },
         {
           "label": "来源",
@@ -52,66 +52,66 @@
         }
       ],
       "featureItems": [
-        "feat(diagnostics-otel): opt-in session ids on OTel spans for conversation grouping (#193700)",
-        "feat(ui): add halftone QR previews for public shares (#194559)",
-        "feat(native): expose Systems dashboard route (#164462)",
-        "feat(ui): show a QR code next to the public session link (#180292)",
-        "feat(control-ui): add privacy-safe GitHub feedback links (#194607)",
-        "feat(compaction): make compaction summary char cap configurable via maxSummaryChars (#196207)",
-        "feat: create templates directly from chat (#195730)",
-        "feat(pairing): pair a browser with a short code approved on the host (#191513)"
+        "feat(auth): preserve delegated OCE user profiles and permissions (#196856)",
+        "feat: review template packages inline before publishing (#196427)",
+        "feat(plugins): report session continuity to authorized prompt enrichment (#197220)",
+        "improve(google): pull new Gemini models from models.dev (#197178)",
+        "feat(templates): install bundled plugins through native management (#196349)",
+        "feat(templates): bundle complete skill folders with native trust checks (#196348)",
+        "feat: let Template automations start paused for onboarding (#196323)",
+        "feat: configure Templates in one CLAW.md manifest (#196322)"
       ],
       "fixItems": [
-        "fix(ios): stop node retries while the Gateway rate-limits auth (#196796)",
-        "fix(ui): activate shared Markdown preview code controls (#194233)",
-        "perf(ci): share UI inventories across ownership lookups (#195160)",
-        "fix(worktrees): keep dependency copies fast in large gateways (#196768)",
-        "fix(release): accept bare active-parent workflow paths",
-        "fix(bedrock): preserve system separators across cache checkpoints (#196538)",
-        "fix(ui): show empty repository search feedback after loading (#196783)",
-        "fix: resumed database port reports success for a copy that owner admission rejects (#194595)"
+        "fix(compaction): record failed compaction attempts; commit the floor when preflight requires it",
+        "fix(compaction): budget the summary floor with the tools the session sends",
+        "fix(gateway): device-worker turns fail with \"plugin generation was superseded\" for plugin-provider models (#197314)",
+        "fix(control-ui): audio and video replies show a download card when playback metadata is missing (#197290)",
+        "fix(plugin-sdk): surface feature operation errors to callers (#197265)",
+        "fix: stop reconnect loops after Gateway access is revoked (#197299)",
+        "fix(ci): prepare Git Bash workers before test admission (#197303)",
+        "fix(templates): templates add and dev default a new agent's workspace to ~/.openclaw when a profile or state dir is set (#195448)"
       ],
       "releases": [
         {
-          "tag_name": "v2026.11.3",
-          "published_at": "2026-11-10T18:53:07Z",
-          "name": "openclaw 2026.11.3",
+          "tag_name": "v2026.9.37",
+          "published_at": "2026-11-10T20:42:54Z",
+          "name": "openclaw 2026.9.37",
           "prerelease": false,
-          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.3"
+          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.37"
         }
       ],
       "topScopes": [
         {
-          "scope": "ui",
-          "count": 68
-        },
-        {
           "scope": "fix",
-          "count": 53
+          "count": 48
         },
         {
-          "scope": "release",
-          "count": 14
+          "scope": "ui",
+          "count": 39
         },
         {
           "scope": "ci",
-          "count": 13
+          "count": 29
         },
         {
-          "scope": "ios",
-          "count": 12
+          "scope": "test",
+          "count": 18
         },
         {
           "scope": "gateway",
-          "count": 9
+          "count": 16
         },
         {
-          "scope": "improve(ci)",
-          "count": 8
+          "scope": "templates",
+          "count": 11
         },
         {
-          "scope": "improve(ui)",
-          "count": 8
+          "scope": "agents",
+          "count": 10
+        },
+        {
+          "scope": "release",
+          "count": 10
         }
       ],
       "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"

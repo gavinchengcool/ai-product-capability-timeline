@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-11-11T02:57:24+08:00
-- Requested window: 2026-11-10 to 2026-11-11
+- Generated at: 2026-11-12T02:55:26+08:00
+- Requested window: 2026-11-11 to 2026-11-12
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-11-10 to 2026-11-11
-- Generated at: 2026-11-11T02:57:04.103110+08:00
-- 窗口: 2026-11-10 至 2026-11-11
-- GitHub 增量: 328 commits / 1 releases
-- 最近 push: 2026-11-10
+- Window: 2026-11-11 to 2026-11-12
+- Generated at: 2026-11-12T02:55:08.520495+08:00
+- 窗口: 2026-11-11 至 2026-11-12
+- GitHub 增量: 330 commits / 1 releases
+- 最近 push: 2026-11-11
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(diagnostics-otel): opt-in session ids on OTel spans for conversation grouping (#193700)
-  - feat(ui): add halftone QR previews for public shares (#194559)
-  - feat(native): expose Systems dashboard route (#164462)
-  - feat(ui): show a QR code next to the public session link (#180292)
-  - feat(control-ui): add privacy-safe GitHub feedback links (#194607)
-  - feat(compaction): make compaction summary char cap configurable via maxSummaryChars (#196207)
-  - feat: create templates directly from chat (#195730)
-  - feat(pairing): pair a browser with a short code approved on the host (#191513)
+  - feat(auth): preserve delegated OCE user profiles and permissions (#196856)
+  - feat: review template packages inline before publishing (#196427)
+  - feat(plugins): report session continuity to authorized prompt enrichment (#197220)
+  - improve(google): pull new Gemini models from models.dev (#197178)
+  - feat(templates): install bundled plugins through native management (#196349)
+  - feat(templates): bundle complete skill folders with native trust checks (#196348)
+  - feat: let Template automations start paused for onboarding (#196323)
+  - feat: configure Templates in one CLAW.md manifest (#196322)
 - Fixes and constraints:
-  - fix(ios): stop node retries while the Gateway rate-limits auth (#196796)
-  - fix(ui): activate shared Markdown preview code controls (#194233)
-  - perf(ci): share UI inventories across ownership lookups (#195160)
-  - fix(worktrees): keep dependency copies fast in large gateways (#196768)
-  - fix(release): accept bare active-parent workflow paths
-  - fix(bedrock): preserve system separators across cache checkpoints (#196538)
-  - fix(ui): show empty repository search feedback after loading (#196783)
-  - fix: resumed database port reports success for a copy that owner admission rejects (#194595)
+  - fix(compaction): record failed compaction attempts; commit the floor when preflight requires it
+  - fix(compaction): budget the summary floor with the tools the session sends
+  - fix(gateway): device-worker turns fail with "plugin generation was superseded" for plugin-provider models (#197314)
+  - fix(control-ui): audio and video replies show a download card when playback metadata is missing (#197290)
+  - fix(plugin-sdk): surface feature operation errors to callers (#197265)
+  - fix: stop reconnect loops after Gateway access is revoked (#197299)
+  - fix(ci): prepare Git Bash workers before test admission (#197303)
+  - fix(templates): templates add and dev default a new agent's workspace to ~/.openclaw when a profile or state dir is set (#195448)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

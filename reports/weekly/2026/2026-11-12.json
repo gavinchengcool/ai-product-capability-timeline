@@ -1,0 +1,192 @@
+{
+  "generated_at": "2026-11-12T02:55:08.520495+08:00",
+  "window": {
+    "start_local": "2026-11-11T02:55:08.520495+08:00",
+    "end_local": "2026-11-12T02:55:08.520495+08:00",
+    "start_utc": "2026-11-10T18:55:08Z",
+    "end_utc": "2026-11-11T18:55:08Z"
+  },
+  "repo": {
+    "slug": "openclaw/openclaw",
+    "stars": 394352,
+    "forks": 82861,
+    "open_issues": 8108,
+    "pushed_at": "2026-11-11T18:54:34Z"
+  },
+  "releases_in_window": [
+    {
+      "tag_name": "v2026.9.37",
+      "published_at": "2026-11-10T20:42:54Z",
+      "name": "openclaw 2026.9.37",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.37"
+    }
+  ],
+  "commit_count": 330,
+  "commit_headlines": [
+    "fix(compaction): record failed compaction attempts; commit the floor when preflight requires it",
+    "fix(compaction): budget the summary floor with the tools the session sends",
+    "feat(auth): preserve delegated OCE user profiles and permissions (#196856)",
+    "chore(ui): refresh control ui locales (#197332)",
+    "test(ui): wait for chat connection state before warm reload (#197318)",
+    "fix(gateway): device-worker turns fail with \"plugin generation was superseded\" for plugin-provider models (#197314)",
+    "fix(control-ui): audio and video replies show a download card when playback metadata is missing (#197290)",
+    "docs(update): name the header-probe string-length failure and its stable fix (#197325)",
+    "improve(ui): polish the remote access setup dialog (#196684)",
+    "improve(ui): tidy the account menu (#196688)",
+    "fix(plugin-sdk): surface feature operation errors to callers (#197265)",
+    "fix: stop reconnect loops after Gateway access is revoked (#197299)",
+    "improve(ui): polish the Remote access people page (#196686)",
+    "fix(ci): prepare Git Bash workers before test admission (#197303)",
+    "feat: review template packages inline before publishing (#196427)",
+    "fix(templates): templates add and dev default a new agent's workspace to ~/.openclaw when a profile or state dir is set (#195448)",
+    "fix(ci): stabilize session row fingerprint checks across garbage collection (#197302)",
+    "fix(gateway): gateway start, stop and uninstall print only \"The CLI command failed.\" when service management is refused (#197292)",
+    "fix(sessions): claude-cli fallback fails with a transcript-store fence error (#197295)",
+    "fix(agents): list audience-gated memory tools on Claude CLI turns (#197274)",
+    "fix(normalization): keep code spans with embedded backticks whole in plain-text previews (#196690)",
+    "fix(workspace): keep sandbox-written files out of Gateway readiness (#197248)",
+    "fix(gateway): preserve selected context for recorder-owned worker turns (#196487)",
+    "fix(ui): keep Firefox reply footers above the composer",
+    "fix(worktrees): keep pack maintenance running during cleanup (#197287)",
+    "improve(doctor): stop copying each database twice to classify its engine (#197277)",
+    "fix(agents): OpenAI session forks reuse the parent's prompt cache (#197226)",
+    "fix: remove stale internal export paths (#196862)",
+    "fix(ci): remove unused implementation exports (#197271)",
+    "fix: label conversation behavior and tool binding sections (#197165)",
+    "fix(ios): drop the unexposed unattended deep-link key (#197172)",
+    "test(gateway): isolate startup refusal SQL assertions (#197261)",
+    "refactor(agents): share one Gateway inventory rule between admission and catalog reads (#197276)",
+    "fix(macos): preserve MLX model config cache reuse (#187742)",
+    "fix(approvals): approvals get prints literal \"\\n\" inside the Effective Policy table (#197257)",
+    "fix(ci): recognize host tools and native build artifacts (#197264)",
+    "ci(update): fail main when the installed package exceeds the updater entry budget (#197269)",
+    "fix: prevent tiny-pack storms during agent history reads (#197259)",
+    "fix(codex): clarify installed skill discovery guidance (#189525)",
+    "fix(knowledge): keep result projection helpers private (#197260)",
+    "fix(sandbox): keep guests running during GitHub source fetches (#197243)",
+    "fix(android): disclose target device identity in pairing confirmation dialogs (#195997)",
+    "fix(sessions): sessions import prints literal \"\\n\" in multi-line Gateway failures (#197255)",
+    "fix(state): avoid host SQL during worker-owned database close (#197258)",
+    "fix(usage): chat and session costs show $0 for new Claude models and Claude CLI turns (#197246)",
+    "fix: stop downloading completed workspace content batches again (#197251)",
+    "fix(compaction): retry a refused summary once on the next fallback route",
+    "fix(plugins): re-run authorized prompt enrichment for every attempt (#197249)",
+    "fix(agents): stop Anthropic session forks from caching their own suffix (#197224)",
+    "fix(agents): read published catalog for project-session model lookups (#197238)"
+  ],
+  "feature_items": [
+    "feat(auth): preserve delegated OCE user profiles and permissions (#196856)",
+    "feat: review template packages inline before publishing (#196427)",
+    "feat(plugins): report session continuity to authorized prompt enrichment (#197220)",
+    "improve(google): pull new Gemini models from models.dev (#197178)",
+    "feat(templates): install bundled plugins through native management (#196349)",
+    "feat(templates): bundle complete skill folders with native trust checks (#196348)",
+    "feat: let Template automations start paused for onboarding (#196323)",
+    "feat: configure Templates in one CLAW.md manifest (#196322)",
+    "feat(telegram): show widgets as interactive Telegram message widgets (#196991)",
+    "feat(update): offer to remove retirable recovery copies when space is short (#196873)",
+    "feat(claude-cli): managed turns can keep Claude Code's native WebSearch (#197051)",
+    "feat(ci): route eligible Linux jobs through Boat (#193038)",
+    "feat(openclaw-id): Move to new keys and key warnings in the Control UI (#196456)",
+    "feat(openclaw-id): move a claw to new keys with its recovery kit (openclaw id rebind) (#196388)",
+    "feat(ci): add a bounded managed runner canary (#196931)",
+    "feat(templates): add directly into an editable pending chat (#196395)",
+    "feat(templates): open durable chat before verified setup (#196392)",
+    "feat(knowledge): lean agent tool results and hash-prefix write fences (#196767)"
+  ],
+  "fix_items": [
+    "fix(compaction): record failed compaction attempts; commit the floor when preflight requires it",
+    "fix(compaction): budget the summary floor with the tools the session sends",
+    "fix(gateway): device-worker turns fail with \"plugin generation was superseded\" for plugin-provider models (#197314)",
+    "fix(control-ui): audio and video replies show a download card when playback metadata is missing (#197290)",
+    "fix(plugin-sdk): surface feature operation errors to callers (#197265)",
+    "fix: stop reconnect loops after Gateway access is revoked (#197299)",
+    "fix(ci): prepare Git Bash workers before test admission (#197303)",
+    "fix(templates): templates add and dev default a new agent's workspace to ~/.openclaw when a profile or state dir is set (#195448)",
+    "fix(ci): stabilize session row fingerprint checks across garbage collection (#197302)",
+    "fix(gateway): gateway start, stop and uninstall print only \"The CLI command failed.\" when service management is refused (#197292)",
+    "fix(sessions): claude-cli fallback fails with a transcript-store fence error (#197295)",
+    "fix(agents): list audience-gated memory tools on Claude CLI turns (#197274)",
+    "fix(normalization): keep code spans with embedded backticks whole in plain-text previews (#196690)",
+    "fix(workspace): keep sandbox-written files out of Gateway readiness (#197248)",
+    "fix(gateway): preserve selected context for recorder-owned worker turns (#196487)",
+    "fix(ui): keep Firefox reply footers above the composer",
+    "fix(worktrees): keep pack maintenance running during cleanup (#197287)",
+    "fix(agents): OpenAI session forks reuse the parent's prompt cache (#197226)",
+    "fix: remove stale internal export paths (#196862)",
+    "fix(ci): remove unused implementation exports (#197271)",
+    "fix: label conversation behavior and tool binding sections (#197165)",
+    "fix(ios): drop the unexposed unattended deep-link key (#197172)",
+    "fix(macos): preserve MLX model config cache reuse (#187742)",
+    "fix(approvals): approvals get prints literal \"\\n\" inside the Effective Policy table (#197257)",
+    "fix(ci): recognize host tools and native build artifacts (#197264)",
+    "fix: prevent tiny-pack storms during agent history reads (#197259)",
+    "fix(codex): clarify installed skill discovery guidance (#189525)",
+    "fix(knowledge): keep result projection helpers private (#197260)",
+    "fix(sandbox): keep guests running during GitHub source fetches (#197243)",
+    "fix(android): disclose target device identity in pairing confirmation dialogs (#195997)"
+  ],
+  "top_scopes": [
+    {
+      "scope": "fix",
+      "count": 48
+    },
+    {
+      "scope": "ui",
+      "count": 39
+    },
+    {
+      "scope": "ci",
+      "count": 29
+    },
+    {
+      "scope": "test",
+      "count": 18
+    },
+    {
+      "scope": "gateway",
+      "count": 16
+    },
+    {
+      "scope": "templates",
+      "count": 11
+    },
+    {
+      "scope": "agents",
+      "count": 10
+    },
+    {
+      "scope": "release",
+      "count": 10
+    },
+    {
+      "scope": "ios",
+      "count": 9
+    },
+    {
+      "scope": "skills",
+      "count": 7
+    },
+    {
+      "scope": "compaction",
+      "count": 5
+    },
+    {
+      "scope": "update",
+      "count": 5
+    },
+    {
+      "scope": "improve(ui)",
+      "count": 5
+    },
+    {
+      "scope": "android",
+      "count": 5
+    },
+    {
+      "scope": "plugins",
+      "count": 5
+    }
+  ]
+}
