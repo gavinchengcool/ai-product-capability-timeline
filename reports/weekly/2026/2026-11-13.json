@@ -1,0 +1,186 @@
+{
+  "generated_at": "2026-11-13T03:14:22.622999+08:00",
+  "window": {
+    "start_local": "2026-11-12T03:14:22.622999+08:00",
+    "end_local": "2026-11-13T03:14:22.622999+08:00",
+    "start_utc": "2026-11-11T19:14:22Z",
+    "end_utc": "2026-11-12T19:14:22Z"
+  },
+  "repo": {
+    "slug": "openclaw/openclaw",
+    "stars": 394405,
+    "forks": 82884,
+    "open_issues": 8048,
+    "pushed_at": "2026-11-12T19:13:35Z"
+  },
+  "releases_in_window": [
+    {
+      "tag_name": "v2026.11.5-beta.2",
+      "published_at": "2026-11-12T00:43:25Z",
+      "name": "openclaw 2026.11.5-beta.2",
+      "prerelease": true,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.5-beta.2"
+    }
+  ],
+  "commit_count": 303,
+  "commit_headlines": [
+    "fix(sessions): remove unused pending-input invitation path (#197839)",
+    "fix(update): reclaim retained runtimes while the Gateway watches directories (#197833)",
+    "perf: reduce Responses continuation comparison allocations (#197579)",
+    "feat(google): add Gemini 4 Hydrogen to the catalog",
+    "fix(agents): let healthy proxy streams exceed 16 MiB (#197842)",
+    "refactor(plugins): migrate binding and approval reads to async owners (#192623)",
+    "fix(agents): keep the session system prompt stable across completion wakes (#197835)",
+    "fix(ui): keep Template review file rows visible on phones (#197848)",
+    "refactor(agents): isolate CLI model capabilities (#192613)",
+    "fix(channels): cancel pending status read in channels list on Ctrl+C (#197815)",
+    "fix(pr): preserve cache replacement refusal during metadata handoff (#197841)",
+    "perf(gateway): follow publication facts for passive PR subscriptions (#197840)",
+    "chore(update): record 2026.11.5-beta.2 in the update compat inventory (#197844)",
+    "fix(sessions): preserve transcript authority across runtime adapters (#184513)",
+    "fix(memory-wiki): cancel interrupted wiki status and doctor reads (#197749)",
+    "fix(pr): refresh bound baselines for pending proof (#196028)",
+    "feat(ui): toggle wrapping on code blocks in your own messages (#197804)",
+    "test(update): keep cancellation fixture heartbeat on real time (#197831)",
+    "chore(ui): refresh control ui locales (#197834)",
+    "fix(cron): one-shot details omit seconds and milliseconds (#197791)",
+    "fix(models): discovered models become \"Unknown model\" after restart or an ended sign-in (#197784)",
+    "refactor(auth): isolate OpenAI route availability projection (#192615)",
+    "fix(plugin-state): guarded calls fail until Gateway restart after an unknown write outcome (#197790)",
+    "fix(browser): exclude partitioned cookies from explicit standalone acquisition",
+    "improve(ui): cap long session menus and search groups (#197653)",
+    "fix: plugin packaging fails on deduplicated dependency files (#197819)",
+    "chore(i18n): refresh native locales (#197826)",
+    "fix(backup): snapshot the runtime pin store instead of archiving opaque bytes (#197809)",
+    "fix(cli): let interrupted session listings exit promptly (#197758)",
+    "fix(cron): stop automation runs failing after sessions_yield on a spawned helper (#197667)",
+    "fix(chat): hide untrusted frames in continue-imported Beam history (#197788)",
+    "perf(ci): trim plugin reload fixture compilation (#197783)",
+    "test(postgres): qualify remote acceptance crash windows (#197780)",
+    "fix(test): assert tool-result fidelity at each output (#197771)",
+    "fix(ci): right-size serial central type checks (#197786)",
+    "fix(cli): let interrupted ID status checks exit promptly (#197747)",
+    "docs: explain Python stdio bundle setup (#193561)",
+    "fix(cron): wait for busy session before source-less checks (#197774)",
+    "fix(codex): stop interrupted session catalog reads (#197750)",
+    "fix(ci): retain Docker seed npm failure diagnostics",
+    "fix(logging): avoid main-thread stalls when resolving default log files (#197742)",
+    "fix(sessions): commit selected invitations with original messages (#184512)",
+    "improve: make Telegram tool progress easier to scan (#197523)",
+    "fix(test): keep queued Stop cleanup on real timers (#197734)",
+    "fix: keep usage pricing from blocking the Gateway on filesystem lookups (#197599)",
+    "fix(agents): context-engine prompt additions never reach claude-cli turns (#197733)",
+    "fix(pack): retain npm failure diagnostics (#197727)",
+    "refactor(ios): one meaning for the runtime reconnect flag (#197757)",
+    "feat(macos): enroll Mac nodes through OpenClaw ID invitations, with native hosting onboarding (#196759)",
+    "fix(agents): keep exec declarations stable across CLI completion turns (#197759)"
+  ],
+  "feature_items": [
+    "feat(google): add Gemini 4 Hydrogen to the catalog",
+    "feat(ui): toggle wrapping on code blocks in your own messages (#197804)",
+    "feat(macos): enroll Mac nodes through OpenClaw ID invitations, with native hosting onboarding (#196759)",
+    "feat(apple): add opt-in OpenClaw ID node foundation (#194201)",
+    "feat(knowledge): route skills by task and keep subject pages current (#197018)",
+    "feat(ui): start New Session in the background with Cmd/Ctrl+Enter (#197481)",
+    "feat(agents): let sessions_spawn target a paired device (#197469)",
+    "feat(google): support Gemini Decision models (#197501)",
+    "feat(advisor): log cancelled in-flight reviews (#197506)",
+    "feat: add native Celeris, Fastino, Nace and Perplexity decisions (#195641)",
+    "feat(advisor): move Advisor out of Labs (still off by default) (#197029)",
+    "feat(claude-cli): managed turns can search the web by default with Claude Code's native WebSearch (#197291)"
+  ],
+  "fix_items": [
+    "Security: reject malformed URI identifiers using fast-uri 4.2.3 while preserving valid relative references. (#187284) Thanks @RomneyDa and @shakkernerd. [v2026.11.5-beta.2]",
+    "Security: reject oversized bounded collections early in the Discord SDK and its transitive Zod 3 parser without restoring the retired A2UI integration. (#187296 #187303) Thanks @RomneyDa and @shakkernerd. [v2026.11.5-beta.2]",
+    "fix(sessions): remove unused pending-input invitation path (#197839)",
+    "fix(update): reclaim retained runtimes while the Gateway watches directories (#197833)",
+    "perf: reduce Responses continuation comparison allocations (#197579)",
+    "fix(agents): let healthy proxy streams exceed 16 MiB (#197842)",
+    "fix(agents): keep the session system prompt stable across completion wakes (#197835)",
+    "fix(ui): keep Template review file rows visible on phones (#197848)",
+    "fix(channels): cancel pending status read in channels list on Ctrl+C (#197815)",
+    "fix(pr): preserve cache replacement refusal during metadata handoff (#197841)",
+    "perf(gateway): follow publication facts for passive PR subscriptions (#197840)",
+    "fix(sessions): preserve transcript authority across runtime adapters (#184513)",
+    "fix(memory-wiki): cancel interrupted wiki status and doctor reads (#197749)",
+    "fix(pr): refresh bound baselines for pending proof (#196028)",
+    "fix(cron): one-shot details omit seconds and milliseconds (#197791)",
+    "fix(models): discovered models become \"Unknown model\" after restart or an ended sign-in (#197784)",
+    "fix(plugin-state): guarded calls fail until Gateway restart after an unknown write outcome (#197790)",
+    "fix(browser): exclude partitioned cookies from explicit standalone acquisition",
+    "fix: plugin packaging fails on deduplicated dependency files (#197819)",
+    "fix(backup): snapshot the runtime pin store instead of archiving opaque bytes (#197809)",
+    "fix(cli): let interrupted session listings exit promptly (#197758)",
+    "fix(cron): stop automation runs failing after sessions_yield on a spawned helper (#197667)",
+    "fix(chat): hide untrusted frames in continue-imported Beam history (#197788)",
+    "perf(ci): trim plugin reload fixture compilation (#197783)",
+    "fix(test): assert tool-result fidelity at each output (#197771)",
+    "fix(ci): right-size serial central type checks (#197786)",
+    "fix(cli): let interrupted ID status checks exit promptly (#197747)",
+    "fix(cron): wait for busy session before source-less checks (#197774)",
+    "fix(codex): stop interrupted session catalog reads (#197750)",
+    "fix(ci): retain Docker seed npm failure diagnostics"
+  ],
+  "top_scopes": [
+    {
+      "scope": "fix",
+      "count": 53
+    },
+    {
+      "scope": "ui",
+      "count": 35
+    },
+    {
+      "scope": "ci",
+      "count": 26
+    },
+    {
+      "scope": "test",
+      "count": 21
+    },
+    {
+      "scope": "agents",
+      "count": 13
+    },
+    {
+      "scope": "cron",
+      "count": 11
+    },
+    {
+      "scope": "gateway",
+      "count": 10
+    },
+    {
+      "scope": "update",
+      "count": 9
+    },
+    {
+      "scope": "sessions",
+      "count": 7
+    },
+    {
+      "scope": "cli",
+      "count": 7
+    },
+    {
+      "scope": "claude-cli",
+      "count": 5
+    },
+    {
+      "scope": "perf",
+      "count": 4
+    },
+    {
+      "scope": "plugins",
+      "count": 4
+    },
+    {
+      "scope": "android",
+      "count": 4
+    },
+    {
+      "scope": "pr",
+      "count": 3
+    }
+  ]
+}

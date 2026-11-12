@@ -1,99 +1,99 @@
 {
-  "generatedAt": "2026-11-12T02:55:08.520495+08:00",
+  "generatedAt": "2026-11-13T03:14:22.622999+08:00",
   "window": {
-    "start_local": "2026-11-11T02:55:08.520495+08:00",
-    "end_local": "2026-11-12T02:55:08.520495+08:00",
-    "start_utc": "2026-11-10T18:55:08Z",
-    "end_utc": "2026-11-11T18:55:08Z"
+    "start_local": "2026-11-12T03:14:22.622999+08:00",
+    "end_local": "2026-11-13T03:14:22.622999+08:00",
+    "start_utc": "2026-11-11T19:14:22Z",
+    "end_utc": "2026-11-12T19:14:22Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 394352,
-    "forks": 82861,
-    "open_issues": 8108,
-    "pushed_at": "2026-11-11T18:54:34Z"
+    "stars": 394405,
+    "forks": 82884,
+    "open_issues": 8048,
+    "pushed_at": "2026-11-12T19:13:35Z"
   },
   "summary": {
-    "commitCount": 330,
+    "commitCount": 303,
     "releaseCount": 1,
-    "stableReleaseCount": 1,
-    "betaReleaseCount": 0,
-    "stars": 394352,
-    "forks": 82861,
-    "openIssues": 8108
+    "stableReleaseCount": 0,
+    "betaReleaseCount": 1,
+    "stars": 394405,
+    "forks": 82884,
+    "openIssues": 8048
   },
   "releases": [
     {
-      "tag_name": "v2026.9.37",
-      "published_at": "2026-11-10T20:42:54Z",
-      "name": "openclaw 2026.9.37",
-      "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.37"
+      "tag_name": "v2026.11.5-beta.2",
+      "published_at": "2026-11-12T00:43:25Z",
+      "name": "openclaw 2026.11.5-beta.2",
+      "prerelease": true,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.5-beta.2"
     }
   ],
   "featureItems": [
-    "feat(auth): preserve delegated OCE user profiles and permissions (#196856)",
-    "feat: review template packages inline before publishing (#196427)",
-    "feat(plugins): report session continuity to authorized prompt enrichment (#197220)",
-    "improve(google): pull new Gemini models from models.dev (#197178)",
-    "feat(templates): install bundled plugins through native management (#196349)",
-    "feat(templates): bundle complete skill folders with native trust checks (#196348)",
-    "feat: let Template automations start paused for onboarding (#196323)",
-    "feat: configure Templates in one CLAW.md manifest (#196322)"
+    "feat(google): add Gemini 4 Hydrogen to the catalog",
+    "feat(ui): toggle wrapping on code blocks in your own messages (#197804)",
+    "feat(macos): enroll Mac nodes through OpenClaw ID invitations, with native hosting onboarding (#196759)",
+    "feat(apple): add opt-in OpenClaw ID node foundation (#194201)",
+    "feat(knowledge): route skills by task and keep subject pages current (#197018)",
+    "feat(ui): start New Session in the background with Cmd/Ctrl+Enter (#197481)",
+    "feat(agents): let sessions_spawn target a paired device (#197469)",
+    "feat(google): support Gemini Decision models (#197501)"
   ],
   "fixItems": [
-    "fix(compaction): record failed compaction attempts; commit the floor when preflight requires it",
-    "fix(compaction): budget the summary floor with the tools the session sends",
-    "fix(gateway): device-worker turns fail with \"plugin generation was superseded\" for plugin-provider models (#197314)",
-    "fix(control-ui): audio and video replies show a download card when playback metadata is missing (#197290)",
-    "fix(plugin-sdk): surface feature operation errors to callers (#197265)",
-    "fix: stop reconnect loops after Gateway access is revoked (#197299)",
-    "fix(ci): prepare Git Bash workers before test admission (#197303)",
-    "fix(templates): templates add and dev default a new agent's workspace to ~/.openclaw when a profile or state dir is set (#195448)"
+    "Security: reject malformed URI identifiers using fast-uri 4.2.3 while preserving valid relative references. (#187284) Thanks @RomneyDa and @shakkernerd. [v2026.11.5-beta.2]",
+    "Security: reject oversized bounded collections early in the Discord SDK and its transitive Zod 3 parser without restoring the retired A2UI integration. (#187296 #187303) Thanks @RomneyDa and @shakkernerd. [v2026.11.5-beta.2]",
+    "fix(sessions): remove unused pending-input invitation path (#197839)",
+    "fix(update): reclaim retained runtimes while the Gateway watches directories (#197833)",
+    "perf: reduce Responses continuation comparison allocations (#197579)",
+    "fix(agents): let healthy proxy streams exceed 16 MiB (#197842)",
+    "fix(agents): keep the session system prompt stable across completion wakes (#197835)",
+    "fix(ui): keep Template review file rows visible on phones (#197848)"
   ],
   "topScopes": [
     {
       "scope": "fix",
-      "count": 48
+      "count": 53
     },
     {
       "scope": "ui",
-      "count": 39
+      "count": 35
     },
     {
       "scope": "ci",
-      "count": 29
+      "count": 26
     },
     {
       "scope": "test",
-      "count": 18
-    },
-    {
-      "scope": "gateway",
-      "count": 16
-    },
-    {
-      "scope": "templates",
-      "count": 11
+      "count": 21
     },
     {
       "scope": "agents",
+      "count": 13
+    },
+    {
+      "scope": "cron",
+      "count": 11
+    },
+    {
+      "scope": "gateway",
       "count": 10
     },
     {
-      "scope": "release",
-      "count": 10
+      "scope": "update",
+      "count": 9
     }
   ],
   "headlineCommits": [
-    "fix(compaction): record failed compaction attempts; commit the floor when preflight requires it",
-    "fix(compaction): budget the summary floor with the tools the session sends",
-    "feat(auth): preserve delegated OCE user profiles and permissions (#196856)",
-    "chore(ui): refresh control ui locales (#197332)",
-    "test(ui): wait for chat connection state before warm reload (#197318)",
-    "fix(gateway): device-worker turns fail with \"plugin generation was superseded\" for plugin-provider models (#197314)",
-    "fix(control-ui): audio and video replies show a download card when playback metadata is missing (#197290)",
-    "docs(update): name the header-probe string-length failure and its stable fix (#197325)"
+    "fix(sessions): remove unused pending-input invitation path (#197839)",
+    "fix(update): reclaim retained runtimes while the Gateway watches directories (#197833)",
+    "perf: reduce Responses continuation comparison allocations (#197579)",
+    "feat(google): add Gemini 4 Hydrogen to the catalog",
+    "fix(agents): let healthy proxy streams exceed 16 MiB (#197842)",
+    "refactor(plugins): migrate binding and approval reads to async owners (#192623)",
+    "fix(agents): keep the session system prompt stable across completion wakes (#197835)",
+    "fix(ui): keep Template review file rows visible on phones (#197848)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 }

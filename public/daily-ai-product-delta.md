@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-11-12T02:55:26+08:00
-- Requested window: 2026-11-11 to 2026-11-12
+- Generated at: 2026-11-13T03:14:41+08:00
+- Requested window: 2026-11-12 to 2026-11-13
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-11-11 to 2026-11-12
-- Generated at: 2026-11-12T02:55:08.520495+08:00
-- 窗口: 2026-11-11 至 2026-11-12
-- GitHub 增量: 330 commits / 1 releases
-- 最近 push: 2026-11-11
+- Window: 2026-11-12 to 2026-11-13
+- Generated at: 2026-11-13T03:14:22.622999+08:00
+- 窗口: 2026-11-12 至 2026-11-13
+- GitHub 增量: 303 commits / 1 releases
+- 最近 push: 2026-11-12
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(auth): preserve delegated OCE user profiles and permissions (#196856)
-  - feat: review template packages inline before publishing (#196427)
-  - feat(plugins): report session continuity to authorized prompt enrichment (#197220)
-  - improve(google): pull new Gemini models from models.dev (#197178)
-  - feat(templates): install bundled plugins through native management (#196349)
-  - feat(templates): bundle complete skill folders with native trust checks (#196348)
-  - feat: let Template automations start paused for onboarding (#196323)
-  - feat: configure Templates in one CLAW.md manifest (#196322)
+  - feat(google): add Gemini 4 Hydrogen to the catalog
+  - feat(ui): toggle wrapping on code blocks in your own messages (#197804)
+  - feat(macos): enroll Mac nodes through OpenClaw ID invitations, with native hosting onboarding (#196759)
+  - feat(apple): add opt-in OpenClaw ID node foundation (#194201)
+  - feat(knowledge): route skills by task and keep subject pages current (#197018)
+  - feat(ui): start New Session in the background with Cmd/Ctrl+Enter (#197481)
+  - feat(agents): let sessions_spawn target a paired device (#197469)
+  - feat(google): support Gemini Decision models (#197501)
 - Fixes and constraints:
-  - fix(compaction): record failed compaction attempts; commit the floor when preflight requires it
-  - fix(compaction): budget the summary floor with the tools the session sends
-  - fix(gateway): device-worker turns fail with "plugin generation was superseded" for plugin-provider models (#197314)
-  - fix(control-ui): audio and video replies show a download card when playback metadata is missing (#197290)
-  - fix(plugin-sdk): surface feature operation errors to callers (#197265)
-  - fix: stop reconnect loops after Gateway access is revoked (#197299)
-  - fix(ci): prepare Git Bash workers before test admission (#197303)
-  - fix(templates): templates add and dev default a new agent's workspace to ~/.openclaw when a profile or state dir is set (#195448)
+  - Security: reject malformed URI identifiers using fast-uri 4.2.3 while preserving valid relative references. (#187284) Thanks @RomneyDa and @shakkernerd. [v2026.11.5-beta.2]
+  - Security: reject oversized bounded collections early in the Discord SDK and its transitive Zod 3 parser without restoring the retired A2UI integration. (#187296 #187303) Thanks @RomneyDa and @shakkernerd. [v2026.11.5-beta.2]
+  - fix(sessions): remove unused pending-input invitation path (#197839)
+  - fix(update): reclaim retained runtimes while the Gateway watches directories (#197833)
+  - perf: reduce Responses continuation comparison allocations (#197579)
+  - fix(agents): let healthy proxy streams exceed 16 MiB (#197842)
+  - fix(agents): keep the session system prompt stable across completion wakes (#197835)
+  - fix(ui): keep Template review file rows visible on phones (#197848)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

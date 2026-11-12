@@ -1,99 +1,96 @@
 # OpenClaw Weekly Update
 
-生成时间：2026-11-12T02:55:08.520495+08:00
+生成时间：2026-11-13T03:14:22.622999+08:00
 
 ## Window
 
-- Start: 2026-11-11T02:55:08.520495+08:00
-- End: 2026-11-12T02:55:08.520495+08:00
+- Start: 2026-11-12T03:14:22.622999+08:00
+- End: 2026-11-13T03:14:22.622999+08:00
 - Repo: `openclaw/openclaw`
 
 ## At A Glance
 
-- Commits in window: 330
+- Commits in window: 303
 - Releases in window: 1
-- Stable releases in window: 1
-- Beta releases in window: 0
-- Repo stars at scan time: 394352
-- Repo forks at scan time: 82861
+- Stable releases in window: 0
+- Beta releases in window: 1
+- Repo stars at scan time: 394405
+- Repo forks at scan time: 82884
 
 ## New Capability Signals
 
-- feat(auth): preserve delegated OCE user profiles and permissions (#196856)
-- feat: review template packages inline before publishing (#196427)
-- feat(plugins): report session continuity to authorized prompt enrichment (#197220)
-- improve(google): pull new Gemini models from models.dev (#197178)
-- feat(templates): install bundled plugins through native management (#196349)
-- feat(templates): bundle complete skill folders with native trust checks (#196348)
-- feat: let Template automations start paused for onboarding (#196323)
-- feat: configure Templates in one CLAW.md manifest (#196322)
-- feat(telegram): show widgets as interactive Telegram message widgets (#196991)
-- feat(update): offer to remove retirable recovery copies when space is short (#196873)
-- feat(claude-cli): managed turns can keep Claude Code's native WebSearch (#197051)
-- feat(ci): route eligible Linux jobs through Boat (#193038)
-- feat(openclaw-id): Move to new keys and key warnings in the Control UI (#196456)
-- feat(openclaw-id): move a claw to new keys with its recovery kit (openclaw id rebind) (#196388)
-- feat(ci): add a bounded managed runner canary (#196931)
+- feat(google): add Gemini 4 Hydrogen to the catalog
+- feat(ui): toggle wrapping on code blocks in your own messages (#197804)
+- feat(macos): enroll Mac nodes through OpenClaw ID invitations, with native hosting onboarding (#196759)
+- feat(apple): add opt-in OpenClaw ID node foundation (#194201)
+- feat(knowledge): route skills by task and keep subject pages current (#197018)
+- feat(ui): start New Session in the background with Cmd/Ctrl+Enter (#197481)
+- feat(agents): let sessions_spawn target a paired device (#197469)
+- feat(google): support Gemini Decision models (#197501)
+- feat(advisor): log cancelled in-flight reviews (#197506)
+- feat: add native Celeris, Fastino, Nace and Perplexity decisions (#195641)
+- feat(advisor): move Advisor out of Labs (still off by default) (#197029)
+- feat(claude-cli): managed turns can search the web by default with Claude Code's native WebSearch (#197291)
 
 ## Important Fixes And Hardening
 
-- fix(compaction): record failed compaction attempts; commit the floor when preflight requires it
-- fix(compaction): budget the summary floor with the tools the session sends
-- fix(gateway): device-worker turns fail with "plugin generation was superseded" for plugin-provider models (#197314)
-- fix(control-ui): audio and video replies show a download card when playback metadata is missing (#197290)
-- fix(plugin-sdk): surface feature operation errors to callers (#197265)
-- fix: stop reconnect loops after Gateway access is revoked (#197299)
-- fix(ci): prepare Git Bash workers before test admission (#197303)
-- fix(templates): templates add and dev default a new agent's workspace to ~/.openclaw when a profile or state dir is set (#195448)
-- fix(ci): stabilize session row fingerprint checks across garbage collection (#197302)
-- fix(gateway): gateway start, stop and uninstall print only "The CLI command failed." when service management is refused (#197292)
-- fix(sessions): claude-cli fallback fails with a transcript-store fence error (#197295)
-- fix(agents): list audience-gated memory tools on Claude CLI turns (#197274)
-- fix(normalization): keep code spans with embedded backticks whole in plain-text previews (#196690)
-- fix(workspace): keep sandbox-written files out of Gateway readiness (#197248)
-- fix(gateway): preserve selected context for recorder-owned worker turns (#196487)
+- Security: reject malformed URI identifiers using fast-uri 4.2.3 while preserving valid relative references. (#187284) Thanks @RomneyDa and @shakkernerd. [v2026.11.5-beta.2]
+- Security: reject oversized bounded collections early in the Discord SDK and its transitive Zod 3 parser without restoring the retired A2UI integration. (#187296 #187303) Thanks @RomneyDa and @shakkernerd. [v2026.11.5-beta.2]
+- fix(sessions): remove unused pending-input invitation path (#197839)
+- fix(update): reclaim retained runtimes while the Gateway watches directories (#197833)
+- perf: reduce Responses continuation comparison allocations (#197579)
+- fix(agents): let healthy proxy streams exceed 16 MiB (#197842)
+- fix(agents): keep the session system prompt stable across completion wakes (#197835)
+- fix(ui): keep Template review file rows visible on phones (#197848)
+- fix(channels): cancel pending status read in channels list on Ctrl+C (#197815)
+- fix(pr): preserve cache replacement refusal during metadata handoff (#197841)
+- perf(gateway): follow publication facts for passive PR subscriptions (#197840)
+- fix(sessions): preserve transcript authority across runtime adapters (#184513)
+- fix(memory-wiki): cancel interrupted wiki status and doctor reads (#197749)
+- fix(pr): refresh bound baselines for pending proof (#196028)
+- fix(cron): one-shot details omit seconds and milliseconds (#197791)
 
 ## Releases This Week
 
-- `v2026.9.37` | stable | 2026-11-10T20:42:54Z | openclaw 2026.9.37
+- `v2026.11.5-beta.2` | beta | 2026-11-12T00:43:25Z | openclaw 2026.11.5-beta.2
 
 ## Most Active Change Scopes
 
-- `fix`: 48
-- `ui`: 39
-- `ci`: 29
-- `test`: 18
-- `gateway`: 16
-- `templates`: 11
-- `agents`: 10
-- `release`: 10
-- `ios`: 9
-- `skills`: 7
-- `compaction`: 5
-- `update`: 5
+- `fix`: 53
+- `ui`: 35
+- `ci`: 26
+- `test`: 21
+- `agents`: 13
+- `cron`: 11
+- `gateway`: 10
+- `update`: 9
+- `sessions`: 7
+- `cli`: 7
+- `claude-cli`: 5
+- `perf`: 4
 
 ## Recent Commit Headlines
 
-- 2026-11-11T18:48:27Z | fix(compaction): record failed compaction attempts; commit the floor when preflight requires it
-- 2026-11-11T18:47:36Z | fix(compaction): budget the summary floor with the tools the session sends
-- 2026-11-11T18:40:27Z | feat(auth): preserve delegated OCE user profiles and permissions (#196856)
-- 2026-11-11T18:39:56Z | chore(ui): refresh control ui locales (#197332)
-- 2026-11-11T18:38:35Z | test(ui): wait for chat connection state before warm reload (#197318)
-- 2026-11-11T18:38:07Z | fix(gateway): device-worker turns fail with "plugin generation was superseded" for plugin-provider models (#197314)
-- 2026-11-11T18:34:42Z | fix(control-ui): audio and video replies show a download card when playback metadata is missing (#197290)
-- 2026-11-11T18:34:04Z | docs(update): name the header-probe string-length failure and its stable fix (#197325)
-- 2026-11-11T18:32:32Z | improve(ui): polish the remote access setup dialog (#196684)
-- 2026-11-11T18:31:43Z | improve(ui): tidy the account menu (#196688)
-- 2026-11-11T18:30:55Z | fix(plugin-sdk): surface feature operation errors to callers (#197265)
-- 2026-11-11T18:15:41Z | fix: stop reconnect loops after Gateway access is revoked (#197299)
-- 2026-11-11T18:15:00Z | improve(ui): polish the Remote access people page (#196686)
-- 2026-11-11T18:13:54Z | fix(ci): prepare Git Bash workers before test admission (#197303)
-- 2026-11-11T18:12:57Z | feat: review template packages inline before publishing (#196427)
-- 2026-11-11T18:01:28Z | fix(templates): templates add and dev default a new agent's workspace to ~/.openclaw when a profile or state dir is set (#195448)
-- 2026-11-11T17:49:02Z | fix(ci): stabilize session row fingerprint checks across garbage collection (#197302)
-- 2026-11-11T17:44:04Z | fix(gateway): gateway start, stop and uninstall print only "The CLI command failed." when service management is refused (#197292)
-- 2026-11-11T17:38:19Z | fix(sessions): claude-cli fallback fails with a transcript-store fence error (#197295)
-- 2026-11-11T17:37:01Z | fix(agents): list audience-gated memory tools on Claude CLI turns (#197274)
+- 2026-11-12T19:03:52Z | fix(sessions): remove unused pending-input invitation path (#197839)
+- 2026-11-12T18:58:38Z | fix(update): reclaim retained runtimes while the Gateway watches directories (#197833)
+- 2026-11-12T18:56:01Z | perf: reduce Responses continuation comparison allocations (#197579)
+- 2026-11-12T18:47:55Z | feat(google): add Gemini 4 Hydrogen to the catalog
+- 2026-11-12T18:40:13Z | fix(agents): let healthy proxy streams exceed 16 MiB (#197842)
+- 2026-11-12T18:39:57Z | refactor(plugins): migrate binding and approval reads to async owners (#192623)
+- 2026-11-12T18:12:24Z | fix(agents): keep the session system prompt stable across completion wakes (#197835)
+- 2026-11-12T18:06:41Z | fix(ui): keep Template review file rows visible on phones (#197848)
+- 2026-11-12T17:59:31Z | refactor(agents): isolate CLI model capabilities (#192613)
+- 2026-11-12T17:57:24Z | fix(channels): cancel pending status read in channels list on Ctrl+C (#197815)
+- 2026-11-12T17:56:42Z | fix(pr): preserve cache replacement refusal during metadata handoff (#197841)
+- 2026-11-12T17:51:05Z | perf(gateway): follow publication facts for passive PR subscriptions (#197840)
+- 2026-11-12T17:46:05Z | chore(update): record 2026.11.5-beta.2 in the update compat inventory (#197844)
+- 2026-11-12T17:40:51Z | fix(sessions): preserve transcript authority across runtime adapters (#184513)
+- 2026-11-12T17:29:02Z | fix(memory-wiki): cancel interrupted wiki status and doctor reads (#197749)
+- 2026-11-12T17:17:06Z | fix(pr): refresh bound baselines for pending proof (#196028)
+- 2026-11-12T17:03:07Z | feat(ui): toggle wrapping on code blocks in your own messages (#197804)
+- 2026-11-12T16:56:51Z | test(update): keep cancellation fixture heartbeat on real time (#197831)
+- 2026-11-12T16:53:34Z | chore(ui): refresh control ui locales (#197834)
+- 2026-11-12T16:44:54Z | fix(cron): one-shot details omit seconds and milliseconds (#197791)
 
 ## Sources
 
