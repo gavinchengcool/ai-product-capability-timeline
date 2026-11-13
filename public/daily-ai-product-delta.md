@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-11-13T03:14:41+08:00
-- Requested window: 2026-11-12 to 2026-11-13
+- Generated at: 2026-11-14T02:50:53+08:00
+- Requested window: 2026-11-13 to 2026-11-14
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-11-12 to 2026-11-13
-- Generated at: 2026-11-13T03:14:22.622999+08:00
-- 窗口: 2026-11-12 至 2026-11-13
-- GitHub 增量: 303 commits / 1 releases
-- 最近 push: 2026-11-12
+- Window: 2026-11-13 to 2026-11-14
+- Generated at: 2026-11-14T02:50:35.139775+08:00
+- 窗口: 2026-11-13 至 2026-11-14
+- GitHub 增量: 305 commits / 0 releases
+- 最近 push: 2026-11-13
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(google): add Gemini 4 Hydrogen to the catalog
-  - feat(ui): toggle wrapping on code blocks in your own messages (#197804)
-  - feat(macos): enroll Mac nodes through OpenClaw ID invitations, with native hosting onboarding (#196759)
-  - feat(apple): add opt-in OpenClaw ID node foundation (#194201)
-  - feat(knowledge): route skills by task and keep subject pages current (#197018)
-  - feat(ui): start New Session in the background with Cmd/Ctrl+Enter (#197481)
-  - feat(agents): let sessions_spawn target a paired device (#197469)
-  - feat(google): support Gemini Decision models (#197501)
+  - feat(openclaw-id): admins turn on remote access over a verified personal sign-in (#198349)
+  - feat(ui): show and edit each agent's utility model on the Agents page (#197894)
+  - feat(openclaw-id): Link reuses a still-valid OpenClaw ID sign-in instead of a second device code (#198323)
+  - feat: show ClawHub finalization status (#195011)
+  - feat(ui): switch command palette between Search and Compose (#186059)
+  - feat(database): hold Gateway state ownership in PostgreSQL on all-PostgreSQL installs (#196237)
+  - feat: keep creative projects grounded in their visual references (#198229)
+  - feat(database): keep PostgreSQL rollback captures in PostgreSQL (#196236)
 - Fixes and constraints:
-  - Security: reject malformed URI identifiers using fast-uri 4.2.3 while preserving valid relative references. (#187284) Thanks @RomneyDa and @shakkernerd. [v2026.11.5-beta.2]
-  - Security: reject oversized bounded collections early in the Discord SDK and its transitive Zod 3 parser without restoring the retired A2UI integration. (#187296 #187303) Thanks @RomneyDa and @shakkernerd. [v2026.11.5-beta.2]
-  - fix(sessions): remove unused pending-input invitation path (#197839)
-  - fix(update): reclaim retained runtimes while the Gateway watches directories (#197833)
-  - perf: reduce Responses continuation comparison allocations (#197579)
-  - fix(agents): let healthy proxy streams exceed 16 MiB (#197842)
-  - fix(agents): keep the session system prompt stable across completion wakes (#197835)
-  - fix(ui): keep Template review file rows visible on phones (#197848)
+  - fix(android): update password semantics between provider sign-in steps (#195674)
+  - fix(android): wrap chat swarm header label and summary counts cleanly (#196042)
+  - fix(android): disclose automation name and ID in deletion confirmation dialog (#196040)
+  - fix(android): render full dream diary entry text in Dreaming settings (#195999)
+  - fix(acp): relay exec approvals when Claude CLI and MCP tool call IDs differ (#197853)
+  - perf(gateway): share policy decisions across session lineage (#198338)
+  - fix(ui): automations listener throws on Gateway events while Details props are pending (#198380)
+  - fix: PR auto-fix stops following review and CI feedback
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
