@@ -1,91 +1,91 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-11-14T02:50:35.139775+08:00",
+  "generatedAt": "2026-11-15T01:22:48.536462+08:00",
   "window": {
-    "start_local": "2026-11-13T02:50:35.139775+08:00",
-    "end_local": "2026-11-14T02:50:35.139775+08:00",
-    "start_utc": "2026-11-12T18:50:35Z",
-    "end_utc": "2026-11-13T18:50:35Z"
+    "start_local": "2026-11-14T01:22:48.536462+08:00",
+    "end_local": "2026-11-15T01:22:48.536462+08:00",
+    "start_utc": "2026-11-13T17:22:48Z",
+    "end_utc": "2026-11-14T17:22:48Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 394378,
-    "forks": 82883,
-    "open_issues": 8133,
-    "pushed_at": "2026-11-13T18:49:06Z"
+    "stars": 394446,
+    "forks": 82889,
+    "open_issues": 8325,
+    "pushed_at": "2026-11-14T17:22:41Z"
   },
   "summary": {
-    "commitCount": 305,
+    "commitCount": 328,
     "releaseCount": 0,
     "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 394378,
-    "forks": 82883,
-    "openIssues": 8133
+    "stars": 394446,
+    "forks": 82889,
+    "openIssues": 8325
   },
   "releases": [],
   "featureItems": [
-    "feat(openclaw-id): admins turn on remote access over a verified personal sign-in (#198349)",
-    "feat(ui): show and edit each agent's utility model on the Agents page (#197894)",
-    "feat(openclaw-id): Link reuses a still-valid OpenClaw ID sign-in instead of a second device code (#198323)",
-    "feat: show ClawHub finalization status (#195011)",
-    "feat(ui): switch command palette between Search and Compose (#186059)",
-    "feat(database): hold Gateway state ownership in PostgreSQL on all-PostgreSQL installs (#196237)",
-    "feat: keep creative projects grounded in their visual references (#198229)",
-    "feat(database): keep PostgreSQL rollback captures in PostgreSQL (#196236)"
+    "feat: invite members as existing people on a claw (#198773)",
+    "feat(browser): support experimental Kitesurf browsing (#198833)",
+    "feat: let plugins attach presentation to embedded final replies (#179763)",
+    "feat(backup): report stage and byte progress (#198675)",
+    "feat: let agents review generated images before delivery (#198227)",
+    "feat(message): recommend one exact ClawHub plugin in chat (#198065)",
+    "feat(openclaw-id): member roles come from gateway.roles.definitions (#197739)",
+    "feat(openclaw-id): members add and approve their own devices (#198575)"
   ],
   "fixItems": [
-    "fix(android): update password semantics between provider sign-in steps (#195674)",
-    "fix(android): wrap chat swarm header label and summary counts cleanly (#196042)",
-    "fix(android): disclose automation name and ID in deletion confirmation dialog (#196040)",
-    "fix(android): render full dream diary entry text in Dreaming settings (#195999)",
-    "fix(acp): relay exec approvals when Claude CLI and MCP tool call IDs differ (#197853)",
-    "perf(gateway): share policy decisions across session lineage (#198338)",
-    "fix(ui): automations listener throws on Gateway events while Details props are pending (#198380)",
-    "fix: PR auto-fix stops following review and CI feedback"
+    "fix(release): retain adopted child origins during receipt recovery (#199036)",
+    "fix(workers): name the worker loop state behind slow SQLite deliveries (#199034)",
+    "fix: recover qualification receipts with approved release waivers (#199021)",
+    "fix(gateway): bound publication recovery countdown",
+    "fix(diagnostics): attribute slow trajectory, audit and knowledge holds (#199026)",
+    "fix(test): keep recreated Gateway state directories private (#199007)",
+    "fix(ui): restore agent avatars beside streamed responses (#199015)",
+    "perf(ci): reuse relative declaration path resolution (#198774)"
   ],
   "topScopes": [
     {
       "scope": "ui",
-      "count": 50
-    },
-    {
-      "scope": "fix",
-      "count": 29
+      "count": 51
     },
     {
       "scope": "ci",
-      "count": 23
+      "count": 33
     },
     {
-      "scope": "gateway",
-      "count": 14
+      "scope": "fix",
+      "count": 32
+    },
+    {
+      "scope": "sessions",
+      "count": 20
     },
     {
       "scope": "test",
-      "count": 14
+      "count": 15
     },
     {
-      "scope": "telegram",
+      "scope": "gateway",
       "count": 13
     },
     {
       "scope": "agents",
-      "count": 13
+      "count": 12
     },
     {
-      "scope": "cli",
-      "count": 9
+      "scope": "telegram",
+      "count": 11
     }
   ],
   "headlineCommits": [
-    "fix(android): update password semantics between provider sign-in steps (#195674)",
-    "fix(android): wrap chat swarm header label and summary counts cleanly (#196042)",
-    "fix(android): disclose automation name and ID in deletion confirmation dialog (#196040)",
-    "fix(android): render full dream diary entry text in Dreaming settings (#195999)",
-    "chore(ui): refresh control ui locales (#198408)",
-    "fix(acp): relay exec approvals when Claude CLI and MCP tool call IDs differ (#197853)",
-    "perf(gateway): share policy decisions across session lineage (#198338)",
-    "fix(ui): automations listener throws on Gateway events while Details props are pending (#198380)"
+    "test(ui): await lazy cron editor before draft assertions (#199024)",
+    "fix(release): retain adopted child origins during receipt recovery (#199036)",
+    "fix(workers): name the worker loop state behind slow SQLite deliveries (#199034)",
+    "fix: recover qualification receipts with approved release waivers (#199021)",
+    "fix(gateway): bound publication recovery countdown",
+    "fix(diagnostics): attribute slow trajectory, audit and knowledge holds (#199026)",
+    "test: restore fixture environments after native workers (#198998)",
+    "fix(test): keep recreated Gateway state directories private (#199007)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

@@ -1,186 +1,192 @@
 {
-  "generated_at": "2026-11-14T02:50:35.139775+08:00",
+  "generated_at": "2026-11-15T01:22:48.536462+08:00",
   "window": {
-    "start_local": "2026-11-13T02:50:35.139775+08:00",
-    "end_local": "2026-11-14T02:50:35.139775+08:00",
-    "start_utc": "2026-11-12T18:50:35Z",
-    "end_utc": "2026-11-13T18:50:35Z"
+    "start_local": "2026-11-14T01:22:48.536462+08:00",
+    "end_local": "2026-11-15T01:22:48.536462+08:00",
+    "start_utc": "2026-11-13T17:22:48Z",
+    "end_utc": "2026-11-14T17:22:48Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 394378,
-    "forks": 82883,
-    "open_issues": 8133,
-    "pushed_at": "2026-11-13T18:49:06Z"
+    "stars": 394446,
+    "forks": 82889,
+    "open_issues": 8325,
+    "pushed_at": "2026-11-14T17:22:41Z"
   },
   "releases_in_window": [],
-  "commit_count": 305,
+  "commit_count": 328,
   "commit_headlines": [
-    "fix(android): update password semantics between provider sign-in steps (#195674)",
-    "fix(android): wrap chat swarm header label and summary counts cleanly (#196042)",
-    "fix(android): disclose automation name and ID in deletion confirmation dialog (#196040)",
-    "fix(android): render full dream diary entry text in Dreaming settings (#195999)",
-    "chore(ui): refresh control ui locales (#198408)",
-    "fix(acp): relay exec approvals when Claude CLI and MCP tool call IDs differ (#197853)",
-    "perf(gateway): share policy decisions across session lineage (#198338)",
-    "fix(ui): automations listener throws on Gateway events while Details props are pending (#198380)",
-    "fix: PR auto-fix stops following review and CI feedback",
-    "fix(telegram): keep DM topic approvals in their conversation (#198038)",
-    "fix(gateway): cancel in-flight MCP listener work when shutdown starts (openclaw-jci6) (#197119)",
-    "test(ui): deduplicate Home real-Gateway registration (#198391)",
-    "fix(agents): allow authorized non-disruptive component work (#198396)",
-    "feat(openclaw-id): admins turn on remote access over a verified personal sign-in (#198349)",
-    "fix(ios): keep streaming replies in view and stop the jump when they finish (#198326)",
-    "fix(google-meet): cancel interrupted status, transcript and doctor reads (#198372)",
-    "fix(ci): new PostgreSQL suites are omitted from conformance (#198390)",
-    "fix(test): pin direct tools for cron allowlist probe (#198397)",
-    "fix(telegram): first DM message lands in root chat when the client creates the topic separately (#169444)",
-    "fix(telegram): steered answers quote the wrong input (#178124)",
-    "fix: hide non-chat models from chat selection (#198288)",
-    "chore(ui): refresh control ui locales (#198384)",
-    "chore(ios): measure chat scroll and streaming stability on the simulator (#198293)",
-    "fix: recover OpenAI sessions after compaction item conflicts (#198357)",
-    "fix(worktrees): coalesce archives and skip unchanged manifest sweeps (#198362)",
-    "fix(process): Doctor and spawn-broker cleanup fail when the host denies process-group signals (#198132)",
-    "fix(telegram): large media sends time out after 30 seconds (#151923)",
-    "feat(ui): show and edit each agent's utility model on the Agents page (#197894)",
-    "test(gateway): align policy outage handshake fixture (#198366)",
-    "fix(android): workspace previews stay unavailable after reconnect (#195672)",
-    "fix(ui): wait for profile editor before avatar upload (#198369)",
-    "fix(android): preserve multiline system.notify body when expanded via BigTextStyle (#195979)",
-    "improve(ci): capture bounded CLI outcomes for regression audits (#198330)",
-    "chore(ui): refresh control ui locales (#198359)",
-    "fix(gateway): show Claude CLI tool activity in history when CLAUDE_CONFIG_DIR is set (#198337)",
-    "test(goals): align Stop fixture with neutral interruption note (#198336)",
-    "fix: binary attachments are pasted into the prompt as text (#198309)",
-    "fix(delivery): resend routed Telegram finals after an ambiguous network failure (#192779)",
-    "fix(ui): match owner search across NFC and NFD name forms (#198263)",
-    "test(ui): prepare fresh-visit compiled workers at collection (#198341)",
-    "fix: show provider reset times for long rate limits (#198324)",
-    "perf(ci): reuse compiler during package boundary preparation (#198335)",
-    "feat(openclaw-id): Link reuses a still-valid OpenClaw ID sign-in instead of a second device code (#198323)",
-    "fix(ci): include PostgreSQL Gateway ownership conformance (#198325)",
-    "fix(worktrees): finish retention of empty retired checkouts (#198319)",
-    "fix(audit): stop interrupted audit reads when the CLI is cancelled (#198254)",
-    "fix(cli): cancel interrupted skills status reports (#198298)",
-    "fix(telegram): typing held back by a flood wait is logged as an error (#191687)",
-    "fix(auth): keep shared OAuth settlement helper private (#198318)",
-    "fix(compaction): /compact fails for sandboxed Claude CLI sessions with a selected skill (#198286)"
+    "test(ui): await lazy cron editor before draft assertions (#199024)",
+    "fix(release): retain adopted child origins during receipt recovery (#199036)",
+    "fix(workers): name the worker loop state behind slow SQLite deliveries (#199034)",
+    "fix: recover qualification receipts with approved release waivers (#199021)",
+    "fix(gateway): bound publication recovery countdown",
+    "fix(diagnostics): attribute slow trajectory, audit and knowledge holds (#199026)",
+    "test: restore fixture environments after native workers (#198998)",
+    "fix(test): keep recreated Gateway state directories private (#199007)",
+    "chore(i18n): refresh native locales (#198522)",
+    "fix(ui): restore agent avatars beside streamed responses (#199015)",
+    "perf(ci): reuse relative declaration path resolution (#198774)",
+    "fix(agents): correct cron background completion guidance (#199003)",
+    "fix(sessions): prevent slow transcript tails with partial SQLite statistics (#198991)",
+    "fix(ci): bound main runtime and agent-support test groups (#198992)",
+    "improve(ui): keep the desktop Inbox more compact (#198647)",
+    "perf(ui): skip the empty initial operator accent projection (#198911)",
+    "fix(build): keep size budgets from failing update builds (#199002)",
+    "fix(file-transfer): recognize UTF-8 across the text sniff boundary (#198931)",
+    "perf(ci): avoid rereading validated SDK outputs (#198883)",
+    "fix(models): surface --agent blank-guard remedy on the routed fast path (#198975)",
+    "improve(ci): overlap macOS release compilation with Linux verification (#198989)",
+    "improve(ci): reuse production UI in full-release deployment tests (#198990)",
+    "fix(cli): surface blank --account/--channel remedies in both lanes (#198965)",
+    "fix(geolocation): load gzip URLs with query parameters (#198954)",
+    "fix(compaction): concurrent sessions wait for each other's summaries during compaction (#196550)",
+    "fix(bench): wait for settings fonts in completion timing (#198887)",
+    "fix(sessions): attribute statements for slow transcript and metadata holds (#199005)",
+    "fix(ci): prepare directly selected declaration producers (#198973)",
+    "test(worktrees): recreate the retention symlink parent",
+    "chore(ui): refresh control ui locales (#198982)",
+    "fix(test): use platform search shortcut in talk transcript e2e",
+    "fix(test): keep plugin browser e2es in the control ui project",
+    "fix(ci): reject invalid mocks before release fanout (#198976)",
+    "fix(agents): stop agents polling background waits that will wake them (#198908)",
+    "fix(models): offer Sign in again for failed OAuth refreshes (#198907)",
+    "fix(ci): select QA replay and native input owners (#198974)",
+    "fix(plugins): restore bundled catalog artwork and validation (#198972)",
+    "fix(ios): refused Gateway connections name the address and stop suggesting Tailscale setup (#198945)",
+    "fix: preserve Access choices in code-mode and plugin sub-agents (#197494)",
+    "test(update): create source roots for dry-run previews",
+    "test(agents): assert typed unsupported-chat rejections",
+    "fix(test): derive native declaration fixture sources",
+    "fix(sessions): cancel interrupted cleanup reads before local fallback (#198886)",
+    "fix(sessions): attribute slow transcript maintenance and context reads (#198971)",
+    "fix(ci): avoid rebuilding full iOS validation tests (#198926)",
+    "fix(ui): busy chats never finish loading when opened during an active run (#198859)",
+    "fix(ui): keep chat source-link footers compact (#198291)",
+    "fix(sessions): probe the append parent through max(seq) (#198962)",
+    "improve(ui): show reasoning as quiet one-line steps (#198858)",
+    "chore(ui): refresh control ui locales (#198949)"
   ],
   "feature_items": [
-    "feat(openclaw-id): admins turn on remote access over a verified personal sign-in (#198349)",
-    "feat(ui): show and edit each agent's utility model on the Agents page (#197894)",
-    "feat(openclaw-id): Link reuses a still-valid OpenClaw ID sign-in instead of a second device code (#198323)",
-    "feat: show ClawHub finalization status (#195011)",
-    "feat(ui): switch command palette between Search and Compose (#186059)",
-    "feat(database): hold Gateway state ownership in PostgreSQL on all-PostgreSQL installs (#196237)",
-    "feat: keep creative projects grounded in their visual references (#198229)",
-    "feat(database): keep PostgreSQL rollback captures in PostgreSQL (#196236)",
-    "feat(backup): restore PostgreSQL stores into a staging database for restore drills (#194808)",
-    "feat(ui): choose the speech-to-text model from Settings → Talk (#197906)",
-    "feat(browser): open Chrome settings pages from the Control UI Browser panel (#197904)",
-    "feat(ios): manage session groups directly from the group header (#167173)",
-    "feat(ui): search Google from the Browser panel address bar (#197901)",
-    "feat: add an opt-in usage-ranked tool index (#197128)",
-    "feat(ui): add optional inline command trail (#197466)",
-    "feat(openclaw-id): member roles are opaque names in the protocol (#197697)",
-    "feat(identity): accept co-author credit from trusted-proxy headers (#196867)",
-    "feat(chat): edit queued messages and get rejected sends back in the composer (#197908)",
-    "feat(openclaw-id): link your OpenClaw ID so your owner devices connect as you (#197628)",
-    "feat(chat): keep composer drafts across app restarts (#197846)",
-    "feat(openclaw-id): sign in with OpenClaw ID over a verified personal sign-in (#197559)"
+    "feat: invite members as existing people on a claw (#198773)",
+    "feat(browser): support experimental Kitesurf browsing (#198833)",
+    "feat: let plugins attach presentation to embedded final replies (#179763)",
+    "feat(backup): report stage and byte progress (#198675)",
+    "feat: let agents review generated images before delivery (#198227)",
+    "feat(message): recommend one exact ClawHub plugin in chat (#198065)",
+    "feat(openclaw-id): member roles come from gateway.roles.definitions (#197739)",
+    "feat(openclaw-id): members add and approve their own devices (#198575)",
+    "feat(workboard): record optional claims, observations, and verification (#197471)",
+    "feat(exec): keep durable background commands running across Gateway restarts on macOS (#197474)",
+    "feat(update): new releases run their own pre-update rehearsal (#197922)",
+    "feat(agents): support required manual-step handoffs in chat (#196951)",
+    "improve(ui): add a model picker to Cmd+K Compose and regroup its settings (#198316)",
+    "feat: rank MCP tools in the usage-ranked tool index (#198348)",
+    "feat(ui): save personal model picker favorites (#180824)",
+    "feat(ui): show model picker cooldown status (#192145)",
+    "feat(ui): refine model picker states and phone sheet (#192142)",
+    "feat(templates): add a ClawHub Template by @publisher/slug (#198479)",
+    "feat(macos): sign in with OpenClaw ID and approve this Mac as your device (#197630)",
+    "feat(ui): group model picker runtime and account settings (#192137)",
+    "feat(openclaw-id): approve an app's node together with its owner device (#197573)",
+    "feat(macos): OpenClaw ID primary connection + dashboard proxy (#197585)",
+    "feat(ui): add a stable provider rail to the model picker (#192135)",
+    "feat(workboard): per-board limit on active cards per owner (#198358)",
+    "feat(browser): let users take over the agent's browser from the Browser panel (#197928)",
+    "feat(gateway): role definitions no longer turn on named-role enforcement without a default (#197712)",
+    "feat(openclaw-id): admins turn on remote access over a verified personal sign-in (#198349)"
   ],
   "fix_items": [
-    "fix(android): update password semantics between provider sign-in steps (#195674)",
-    "fix(android): wrap chat swarm header label and summary counts cleanly (#196042)",
-    "fix(android): disclose automation name and ID in deletion confirmation dialog (#196040)",
-    "fix(android): render full dream diary entry text in Dreaming settings (#195999)",
-    "fix(acp): relay exec approvals when Claude CLI and MCP tool call IDs differ (#197853)",
-    "perf(gateway): share policy decisions across session lineage (#198338)",
-    "fix(ui): automations listener throws on Gateway events while Details props are pending (#198380)",
-    "fix: PR auto-fix stops following review and CI feedback",
-    "fix(telegram): keep DM topic approvals in their conversation (#198038)",
-    "fix(gateway): cancel in-flight MCP listener work when shutdown starts (openclaw-jci6) (#197119)",
-    "fix(agents): allow authorized non-disruptive component work (#198396)",
-    "fix(ios): keep streaming replies in view and stop the jump when they finish (#198326)",
-    "fix(google-meet): cancel interrupted status, transcript and doctor reads (#198372)",
-    "fix(ci): new PostgreSQL suites are omitted from conformance (#198390)",
-    "fix(test): pin direct tools for cron allowlist probe (#198397)",
-    "fix(telegram): first DM message lands in root chat when the client creates the topic separately (#169444)",
-    "fix(telegram): steered answers quote the wrong input (#178124)",
-    "fix: hide non-chat models from chat selection (#198288)",
-    "fix: recover OpenAI sessions after compaction item conflicts (#198357)",
-    "fix(worktrees): coalesce archives and skip unchanged manifest sweeps (#198362)",
-    "fix(process): Doctor and spawn-broker cleanup fail when the host denies process-group signals (#198132)",
-    "fix(telegram): large media sends time out after 30 seconds (#151923)",
-    "fix(android): workspace previews stay unavailable after reconnect (#195672)",
-    "fix(ui): wait for profile editor before avatar upload (#198369)",
-    "fix(android): preserve multiline system.notify body when expanded via BigTextStyle (#195979)",
-    "fix(gateway): show Claude CLI tool activity in history when CLAUDE_CONFIG_DIR is set (#198337)",
-    "fix: binary attachments are pasted into the prompt as text (#198309)",
-    "fix(delivery): resend routed Telegram finals after an ambiguous network failure (#192779)",
-    "fix(ui): match owner search across NFC and NFD name forms (#198263)",
-    "fix: show provider reset times for long rate limits (#198324)"
+    "fix(release): retain adopted child origins during receipt recovery (#199036)",
+    "fix(workers): name the worker loop state behind slow SQLite deliveries (#199034)",
+    "fix: recover qualification receipts with approved release waivers (#199021)",
+    "fix(gateway): bound publication recovery countdown",
+    "fix(diagnostics): attribute slow trajectory, audit and knowledge holds (#199026)",
+    "fix(test): keep recreated Gateway state directories private (#199007)",
+    "fix(ui): restore agent avatars beside streamed responses (#199015)",
+    "perf(ci): reuse relative declaration path resolution (#198774)",
+    "fix(agents): correct cron background completion guidance (#199003)",
+    "fix(sessions): prevent slow transcript tails with partial SQLite statistics (#198991)",
+    "fix(ci): bound main runtime and agent-support test groups (#198992)",
+    "perf(ui): skip the empty initial operator accent projection (#198911)",
+    "fix(build): keep size budgets from failing update builds (#199002)",
+    "fix(file-transfer): recognize UTF-8 across the text sniff boundary (#198931)",
+    "perf(ci): avoid rereading validated SDK outputs (#198883)",
+    "fix(models): surface --agent blank-guard remedy on the routed fast path (#198975)",
+    "fix(cli): surface blank --account/--channel remedies in both lanes (#198965)",
+    "fix(geolocation): load gzip URLs with query parameters (#198954)",
+    "fix(compaction): concurrent sessions wait for each other's summaries during compaction (#196550)",
+    "fix(bench): wait for settings fonts in completion timing (#198887)",
+    "fix(sessions): attribute statements for slow transcript and metadata holds (#199005)",
+    "fix(ci): prepare directly selected declaration producers (#198973)",
+    "fix(test): use platform search shortcut in talk transcript e2e",
+    "fix(test): keep plugin browser e2es in the control ui project",
+    "fix(ci): reject invalid mocks before release fanout (#198976)",
+    "fix(agents): stop agents polling background waits that will wake them (#198908)",
+    "fix(models): offer Sign in again for failed OAuth refreshes (#198907)",
+    "fix(ci): select QA replay and native input owners (#198974)",
+    "fix(plugins): restore bundled catalog artwork and validation (#198972)",
+    "fix(ios): refused Gateway connections name the address and stop suggesting Tailscale setup (#198945)"
   ],
   "top_scopes": [
     {
       "scope": "ui",
-      "count": 50
-    },
-    {
-      "scope": "fix",
-      "count": 29
+      "count": 51
     },
     {
       "scope": "ci",
-      "count": 23
+      "count": 33
     },
     {
-      "scope": "gateway",
-      "count": 14
+      "scope": "fix",
+      "count": 32
+    },
+    {
+      "scope": "sessions",
+      "count": 20
     },
     {
       "scope": "test",
-      "count": 14
+      "count": 15
     },
     {
-      "scope": "telegram",
+      "scope": "gateway",
       "count": 13
     },
     {
       "scope": "agents",
-      "count": 13
+      "count": 12
     },
     {
-      "scope": "cli",
-      "count": 9
-    },
-    {
-      "scope": "android",
-      "count": 8
-    },
-    {
-      "scope": "worktrees",
-      "count": 8
-    },
-    {
-      "scope": "cron",
-      "count": 7
-    },
-    {
-      "scope": "ios",
-      "count": 6
-    },
-    {
-      "scope": "improve(ci)",
-      "count": 6
-    },
-    {
-      "scope": "openclaw-id",
-      "count": 5
+      "scope": "telegram",
+      "count": 11
     },
     {
       "scope": "improve(ui)",
+      "count": 8
+    },
+    {
+      "scope": "cli",
+      "count": 7
+    },
+    {
+      "scope": "plugins",
+      "count": 7
+    },
+    {
+      "scope": "openclaw-id",
+      "count": 6
+    },
+    {
+      "scope": "android",
+      "count": 6
+    },
+    {
+      "scope": "release",
+      "count": 5
+    },
+    {
+      "scope": "models",
       "count": 5
     }
   ]

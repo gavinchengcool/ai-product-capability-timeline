@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-11-14T02:50:53+08:00
-- Requested window: 2026-11-13 to 2026-11-14
+- Generated at: 2026-11-15T01:23:06+08:00
+- Requested window: 2026-11-14 to 2026-11-15
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-11-13 to 2026-11-14
-- Generated at: 2026-11-14T02:50:35.139775+08:00
-- 窗口: 2026-11-13 至 2026-11-14
-- GitHub 增量: 305 commits / 0 releases
-- 最近 push: 2026-11-13
+- Window: 2026-11-14 to 2026-11-15
+- Generated at: 2026-11-15T01:22:48.536462+08:00
+- 窗口: 2026-11-14 至 2026-11-15
+- GitHub 增量: 328 commits / 0 releases
+- 最近 push: 2026-11-14
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(openclaw-id): admins turn on remote access over a verified personal sign-in (#198349)
-  - feat(ui): show and edit each agent's utility model on the Agents page (#197894)
-  - feat(openclaw-id): Link reuses a still-valid OpenClaw ID sign-in instead of a second device code (#198323)
-  - feat: show ClawHub finalization status (#195011)
-  - feat(ui): switch command palette between Search and Compose (#186059)
-  - feat(database): hold Gateway state ownership in PostgreSQL on all-PostgreSQL installs (#196237)
-  - feat: keep creative projects grounded in their visual references (#198229)
-  - feat(database): keep PostgreSQL rollback captures in PostgreSQL (#196236)
+  - feat: invite members as existing people on a claw (#198773)
+  - feat(browser): support experimental Kitesurf browsing (#198833)
+  - feat: let plugins attach presentation to embedded final replies (#179763)
+  - feat(backup): report stage and byte progress (#198675)
+  - feat: let agents review generated images before delivery (#198227)
+  - feat(message): recommend one exact ClawHub plugin in chat (#198065)
+  - feat(openclaw-id): member roles come from gateway.roles.definitions (#197739)
+  - feat(openclaw-id): members add and approve their own devices (#198575)
 - Fixes and constraints:
-  - fix(android): update password semantics between provider sign-in steps (#195674)
-  - fix(android): wrap chat swarm header label and summary counts cleanly (#196042)
-  - fix(android): disclose automation name and ID in deletion confirmation dialog (#196040)
-  - fix(android): render full dream diary entry text in Dreaming settings (#195999)
-  - fix(acp): relay exec approvals when Claude CLI and MCP tool call IDs differ (#197853)
-  - perf(gateway): share policy decisions across session lineage (#198338)
-  - fix(ui): automations listener throws on Gateway events while Details props are pending (#198380)
-  - fix: PR auto-fix stops following review and CI feedback
+  - fix(release): retain adopted child origins during receipt recovery (#199036)
+  - fix(workers): name the worker loop state behind slow SQLite deliveries (#199034)
+  - fix: recover qualification receipts with approved release waivers (#199021)
+  - fix(gateway): bound publication recovery countdown
+  - fix(diagnostics): attribute slow trajectory, audit and knowledge holds (#199026)
+  - fix(test): keep recreated Gateway state directories private (#199007)
+  - fix(ui): restore agent avatars beside streamed responses (#199015)
+  - perf(ci): reuse relative declaration path resolution (#198774)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

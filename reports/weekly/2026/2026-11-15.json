@@ -1,0 +1,193 @@
+{
+  "generated_at": "2026-11-15T01:22:48.536462+08:00",
+  "window": {
+    "start_local": "2026-11-14T01:22:48.536462+08:00",
+    "end_local": "2026-11-15T01:22:48.536462+08:00",
+    "start_utc": "2026-11-13T17:22:48Z",
+    "end_utc": "2026-11-14T17:22:48Z"
+  },
+  "repo": {
+    "slug": "openclaw/openclaw",
+    "stars": 394446,
+    "forks": 82889,
+    "open_issues": 8325,
+    "pushed_at": "2026-11-14T17:22:41Z"
+  },
+  "releases_in_window": [],
+  "commit_count": 328,
+  "commit_headlines": [
+    "test(ui): await lazy cron editor before draft assertions (#199024)",
+    "fix(release): retain adopted child origins during receipt recovery (#199036)",
+    "fix(workers): name the worker loop state behind slow SQLite deliveries (#199034)",
+    "fix: recover qualification receipts with approved release waivers (#199021)",
+    "fix(gateway): bound publication recovery countdown",
+    "fix(diagnostics): attribute slow trajectory, audit and knowledge holds (#199026)",
+    "test: restore fixture environments after native workers (#198998)",
+    "fix(test): keep recreated Gateway state directories private (#199007)",
+    "chore(i18n): refresh native locales (#198522)",
+    "fix(ui): restore agent avatars beside streamed responses (#199015)",
+    "perf(ci): reuse relative declaration path resolution (#198774)",
+    "fix(agents): correct cron background completion guidance (#199003)",
+    "fix(sessions): prevent slow transcript tails with partial SQLite statistics (#198991)",
+    "fix(ci): bound main runtime and agent-support test groups (#198992)",
+    "improve(ui): keep the desktop Inbox more compact (#198647)",
+    "perf(ui): skip the empty initial operator accent projection (#198911)",
+    "fix(build): keep size budgets from failing update builds (#199002)",
+    "fix(file-transfer): recognize UTF-8 across the text sniff boundary (#198931)",
+    "perf(ci): avoid rereading validated SDK outputs (#198883)",
+    "fix(models): surface --agent blank-guard remedy on the routed fast path (#198975)",
+    "improve(ci): overlap macOS release compilation with Linux verification (#198989)",
+    "improve(ci): reuse production UI in full-release deployment tests (#198990)",
+    "fix(cli): surface blank --account/--channel remedies in both lanes (#198965)",
+    "fix(geolocation): load gzip URLs with query parameters (#198954)",
+    "fix(compaction): concurrent sessions wait for each other's summaries during compaction (#196550)",
+    "fix(bench): wait for settings fonts in completion timing (#198887)",
+    "fix(sessions): attribute statements for slow transcript and metadata holds (#199005)",
+    "fix(ci): prepare directly selected declaration producers (#198973)",
+    "test(worktrees): recreate the retention symlink parent",
+    "chore(ui): refresh control ui locales (#198982)",
+    "fix(test): use platform search shortcut in talk transcript e2e",
+    "fix(test): keep plugin browser e2es in the control ui project",
+    "fix(ci): reject invalid mocks before release fanout (#198976)",
+    "fix(agents): stop agents polling background waits that will wake them (#198908)",
+    "fix(models): offer Sign in again for failed OAuth refreshes (#198907)",
+    "fix(ci): select QA replay and native input owners (#198974)",
+    "fix(plugins): restore bundled catalog artwork and validation (#198972)",
+    "fix(ios): refused Gateway connections name the address and stop suggesting Tailscale setup (#198945)",
+    "fix: preserve Access choices in code-mode and plugin sub-agents (#197494)",
+    "test(update): create source roots for dry-run previews",
+    "test(agents): assert typed unsupported-chat rejections",
+    "fix(test): derive native declaration fixture sources",
+    "fix(sessions): cancel interrupted cleanup reads before local fallback (#198886)",
+    "fix(sessions): attribute slow transcript maintenance and context reads (#198971)",
+    "fix(ci): avoid rebuilding full iOS validation tests (#198926)",
+    "fix(ui): busy chats never finish loading when opened during an active run (#198859)",
+    "fix(ui): keep chat source-link footers compact (#198291)",
+    "fix(sessions): probe the append parent through max(seq) (#198962)",
+    "improve(ui): show reasoning as quiet one-line steps (#198858)",
+    "chore(ui): refresh control ui locales (#198949)"
+  ],
+  "feature_items": [
+    "feat: invite members as existing people on a claw (#198773)",
+    "feat(browser): support experimental Kitesurf browsing (#198833)",
+    "feat: let plugins attach presentation to embedded final replies (#179763)",
+    "feat(backup): report stage and byte progress (#198675)",
+    "feat: let agents review generated images before delivery (#198227)",
+    "feat(message): recommend one exact ClawHub plugin in chat (#198065)",
+    "feat(openclaw-id): member roles come from gateway.roles.definitions (#197739)",
+    "feat(openclaw-id): members add and approve their own devices (#198575)",
+    "feat(workboard): record optional claims, observations, and verification (#197471)",
+    "feat(exec): keep durable background commands running across Gateway restarts on macOS (#197474)",
+    "feat(update): new releases run their own pre-update rehearsal (#197922)",
+    "feat(agents): support required manual-step handoffs in chat (#196951)",
+    "improve(ui): add a model picker to Cmd+K Compose and regroup its settings (#198316)",
+    "feat: rank MCP tools in the usage-ranked tool index (#198348)",
+    "feat(ui): save personal model picker favorites (#180824)",
+    "feat(ui): show model picker cooldown status (#192145)",
+    "feat(ui): refine model picker states and phone sheet (#192142)",
+    "feat(templates): add a ClawHub Template by @publisher/slug (#198479)",
+    "feat(macos): sign in with OpenClaw ID and approve this Mac as your device (#197630)",
+    "feat(ui): group model picker runtime and account settings (#192137)",
+    "feat(openclaw-id): approve an app's node together with its owner device (#197573)",
+    "feat(macos): OpenClaw ID primary connection + dashboard proxy (#197585)",
+    "feat(ui): add a stable provider rail to the model picker (#192135)",
+    "feat(workboard): per-board limit on active cards per owner (#198358)",
+    "feat(browser): let users take over the agent's browser from the Browser panel (#197928)",
+    "feat(gateway): role definitions no longer turn on named-role enforcement without a default (#197712)",
+    "feat(openclaw-id): admins turn on remote access over a verified personal sign-in (#198349)"
+  ],
+  "fix_items": [
+    "fix(release): retain adopted child origins during receipt recovery (#199036)",
+    "fix(workers): name the worker loop state behind slow SQLite deliveries (#199034)",
+    "fix: recover qualification receipts with approved release waivers (#199021)",
+    "fix(gateway): bound publication recovery countdown",
+    "fix(diagnostics): attribute slow trajectory, audit and knowledge holds (#199026)",
+    "fix(test): keep recreated Gateway state directories private (#199007)",
+    "fix(ui): restore agent avatars beside streamed responses (#199015)",
+    "perf(ci): reuse relative declaration path resolution (#198774)",
+    "fix(agents): correct cron background completion guidance (#199003)",
+    "fix(sessions): prevent slow transcript tails with partial SQLite statistics (#198991)",
+    "fix(ci): bound main runtime and agent-support test groups (#198992)",
+    "perf(ui): skip the empty initial operator accent projection (#198911)",
+    "fix(build): keep size budgets from failing update builds (#199002)",
+    "fix(file-transfer): recognize UTF-8 across the text sniff boundary (#198931)",
+    "perf(ci): avoid rereading validated SDK outputs (#198883)",
+    "fix(models): surface --agent blank-guard remedy on the routed fast path (#198975)",
+    "fix(cli): surface blank --account/--channel remedies in both lanes (#198965)",
+    "fix(geolocation): load gzip URLs with query parameters (#198954)",
+    "fix(compaction): concurrent sessions wait for each other's summaries during compaction (#196550)",
+    "fix(bench): wait for settings fonts in completion timing (#198887)",
+    "fix(sessions): attribute statements for slow transcript and metadata holds (#199005)",
+    "fix(ci): prepare directly selected declaration producers (#198973)",
+    "fix(test): use platform search shortcut in talk transcript e2e",
+    "fix(test): keep plugin browser e2es in the control ui project",
+    "fix(ci): reject invalid mocks before release fanout (#198976)",
+    "fix(agents): stop agents polling background waits that will wake them (#198908)",
+    "fix(models): offer Sign in again for failed OAuth refreshes (#198907)",
+    "fix(ci): select QA replay and native input owners (#198974)",
+    "fix(plugins): restore bundled catalog artwork and validation (#198972)",
+    "fix(ios): refused Gateway connections name the address and stop suggesting Tailscale setup (#198945)"
+  ],
+  "top_scopes": [
+    {
+      "scope": "ui",
+      "count": 51
+    },
+    {
+      "scope": "ci",
+      "count": 33
+    },
+    {
+      "scope": "fix",
+      "count": 32
+    },
+    {
+      "scope": "sessions",
+      "count": 20
+    },
+    {
+      "scope": "test",
+      "count": 15
+    },
+    {
+      "scope": "gateway",
+      "count": 13
+    },
+    {
+      "scope": "agents",
+      "count": 12
+    },
+    {
+      "scope": "telegram",
+      "count": 11
+    },
+    {
+      "scope": "improve(ui)",
+      "count": 8
+    },
+    {
+      "scope": "cli",
+      "count": 7
+    },
+    {
+      "scope": "plugins",
+      "count": 7
+    },
+    {
+      "scope": "openclaw-id",
+      "count": 6
+    },
+    {
+      "scope": "android",
+      "count": 6
+    },
+    {
+      "scope": "release",
+      "count": 5
+    },
+    {
+      "scope": "models",
+      "count": 5
+    }
+  ]
+}
