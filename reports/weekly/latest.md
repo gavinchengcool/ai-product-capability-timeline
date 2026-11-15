@@ -1,99 +1,91 @@
 # OpenClaw Weekly Update
 
-生成时间：2026-11-15T01:22:48.536462+08:00
+生成时间：2026-11-16T02:02:59.099996+08:00
 
 ## Window
 
-- Start: 2026-11-14T01:22:48.536462+08:00
-- End: 2026-11-15T01:22:48.536462+08:00
+- Start: 2026-11-15T02:02:59.099996+08:00
+- End: 2026-11-16T02:02:59.099996+08:00
 - Repo: `openclaw/openclaw`
 
 ## At A Glance
 
-- Commits in window: 328
-- Releases in window: 0
+- Commits in window: 345
+- Releases in window: 1
 - Stable releases in window: 0
-- Beta releases in window: 0
-- Repo stars at scan time: 394446
-- Repo forks at scan time: 82889
+- Beta releases in window: 1
+- Repo stars at scan time: 394515
+- Repo forks at scan time: 82892
 
 ## New Capability Signals
 
-- feat: invite members as existing people on a claw (#198773)
-- feat(browser): support experimental Kitesurf browsing (#198833)
-- feat: let plugins attach presentation to embedded final replies (#179763)
-- feat(backup): report stage and byte progress (#198675)
-- feat: let agents review generated images before delivery (#198227)
-- feat(message): recommend one exact ClawHub plugin in chat (#198065)
-- feat(openclaw-id): member roles come from gateway.roles.definitions (#197739)
-- feat(openclaw-id): members add and approve their own devices (#198575)
-- feat(workboard): record optional claims, observations, and verification (#197471)
-- feat(exec): keep durable background commands running across Gateway restarts on macOS (#197474)
-- feat(update): new releases run their own pre-update rehearsal (#197922)
-- feat(agents): support required manual-step handoffs in chat (#196951)
-- improve(ui): add a model picker to Cmd+K Compose and regroup its settings (#198316)
-- feat: rank MCP tools in the usage-ranked tool index (#198348)
-- feat(ui): save personal model picker favorites (#180824)
+- **Compaction:** support a configurable summary-character limit while retaining foreground request-budget constraints and redacting credentials in quoted summary content. (#196207, #197349) Thanks @aniruddhaadak80, @RomneyDa, @garrytan, @obviyus. [v2026.11.5-beta.3]
+- feat(advisor): review subagent runs too
+- feat(gateway): identify the serving process in local startup probes (#199356)
+- feat(backup): omit Doctor migration originals from archives on request (#194823)
+- feat(cron): persist per-job Access selection (#197704)
+- feat(ui): show what an idle chat is waiting on (#198891)
+- improve(ui): soften New Session composer and tray shadows (#199066)
 
 ## Important Fixes And Hardening
 
-- fix(release): retain adopted child origins during receipt recovery (#199036)
-- fix(workers): name the worker loop state behind slow SQLite deliveries (#199034)
-- fix: recover qualification receipts with approved release waivers (#199021)
-- fix(gateway): bound publication recovery countdown
-- fix(diagnostics): attribute slow trajectory, audit and knowledge holds (#199026)
-- fix(test): keep recreated Gateway state directories private (#199007)
-- fix(ui): restore agent avatars beside streamed responses (#199015)
-- perf(ci): reuse relative declaration path resolution (#198774)
-- fix(agents): correct cron background completion guidance (#199003)
-- fix(sessions): prevent slow transcript tails with partial SQLite statistics (#198991)
-- fix(ci): bound main runtime and agent-support test groups (#198992)
-- perf(ui): skip the empty initial operator accent projection (#198911)
-- fix(build): keep size budgets from failing update builds (#199002)
-- fix(file-transfer): recognize UTF-8 across the text sniff boundary (#198931)
-- perf(ci): avoid rereading validated SDK outputs (#198883)
+- fix: uploaded videos open outside chat instead of playing inline (#197589)
+- fix: avoid rehashing unchanged workspaces on first sandbox reuse (#199687)
+- fix(cli): show actionable QR pairing failures alongside JSON (#199650)
+- fix(cli): show system event remedies alongside JSON (#199670)
+- perf(memory): avoid detaching short transcript strings (#199686)
+- fix(ui): keep the chat reader's text still while scrolling and while content renders late (#199080)
+- fix(channels): keep dead-letter selector remedies in --json errors (#199658)
+- perf(sandbox): reuse saved workspace fingerprints during acceptance (#199683)
+- fix(cli): show actionable inference preflight errors with JSON (#199639)
+- perf(sessions): compact append receipts after replica eviction (#199673)
+- fix(ci): restore unused-export checks for QA cron fixtures (#199679)
+- fix(skills): Ctrl-C leaves verification requests running (#195342)
+- fix(memory-wiki): keep imported Markdown links pointing to generated pages (#199626)
+- fix(cli): preserve Gmail setup remedies in JSON failures (#199642)
+- fix(cli): keep agent selector guard remedies on JSON failures (#199641)
 
 ## Releases This Week
 
-- No GitHub releases were published in this window.
+- `v2026.11.5-beta.3` | beta | 2026-11-15T00:31:00Z | openclaw 2026.11.5-beta.3
 
 ## Most Active Change Scopes
 
-- `ui`: 51
-- `ci`: 33
-- `fix`: 32
-- `sessions`: 20
-- `test`: 15
-- `gateway`: 13
-- `agents`: 12
-- `telegram`: 11
-- `improve(ui)`: 8
-- `cli`: 7
-- `plugins`: 7
-- `openclaw-id`: 6
+- `ui`: 93
+- `fix`: 25
+- `improve(ui)`: 17
+- `sessions`: 15
+- `cli`: 14
+- `ci`: 14
+- `gateway`: 12
+- `test`: 10
+- `cron`: 8
+- `update`: 8
+- `exec`: 7
+- `skills`: 5
 
 ## Recent Commit Headlines
 
-- 2026-11-14T17:14:34Z | test(ui): await lazy cron editor before draft assertions (#199024)
-- 2026-11-14T17:08:48Z | fix(release): retain adopted child origins during receipt recovery (#199036)
-- 2026-11-14T17:05:40Z | fix(workers): name the worker loop state behind slow SQLite deliveries (#199034)
-- 2026-11-14T17:03:06Z | fix: recover qualification receipts with approved release waivers (#199021)
-- 2026-11-14T16:22:40Z | fix(gateway): bound publication recovery countdown
-- 2026-11-14T16:59:46Z | fix(diagnostics): attribute slow trajectory, audit and knowledge holds (#199026)
-- 2026-11-14T16:58:53Z | test: restore fixture environments after native workers (#198998)
-- 2026-11-14T16:57:47Z | fix(test): keep recreated Gateway state directories private (#199007)
-- 2026-11-14T16:51:49Z | chore(i18n): refresh native locales (#198522)
-- 2026-11-14T16:50:54Z | fix(ui): restore agent avatars beside streamed responses (#199015)
-- 2026-11-14T16:47:42Z | perf(ci): reuse relative declaration path resolution (#198774)
-- 2026-11-14T16:44:21Z | fix(agents): correct cron background completion guidance (#199003)
-- 2026-11-14T16:42:51Z | fix(sessions): prevent slow transcript tails with partial SQLite statistics (#198991)
-- 2026-11-14T16:41:28Z | fix(ci): bound main runtime and agent-support test groups (#198992)
-- 2026-11-14T16:41:04Z | improve(ui): keep the desktop Inbox more compact (#198647)
-- 2026-11-14T16:40:01Z | perf(ui): skip the empty initial operator accent projection (#198911)
-- 2026-11-14T16:39:05Z | fix(build): keep size budgets from failing update builds (#199002)
-- 2026-11-14T16:38:23Z | fix(file-transfer): recognize UTF-8 across the text sniff boundary (#198931)
-- 2026-11-14T16:36:20Z | perf(ci): avoid rereading validated SDK outputs (#198883)
-- 2026-11-14T16:36:01Z | fix(models): surface --agent blank-guard remedy on the routed fast path (#198975)
+- 2026-11-15T17:55:06Z | fix: uploaded videos open outside chat instead of playing inline (#197589)
+- 2026-11-15T17:54:36Z | fix: avoid rehashing unchanged workspaces on first sandbox reuse (#199687)
+- 2026-11-15T17:53:10Z | fix(cli): show actionable QR pairing failures alongside JSON (#199650)
+- 2026-11-15T17:50:07Z | fix(cli): show system event remedies alongside JSON (#199670)
+- 2026-11-15T17:37:08Z | perf(memory): avoid detaching short transcript strings (#199686)
+- 2026-11-15T17:24:19Z | fix(ui): keep the chat reader's text still while scrolling and while content renders late (#199080)
+- 2026-11-15T17:23:57Z | fix(channels): keep dead-letter selector remedies in --json errors (#199658)
+- 2026-11-15T17:06:26Z | perf(sandbox): reuse saved workspace fingerprints during acceptance (#199683)
+- 2026-11-15T17:05:45Z | feat(advisor): review subagent runs too
+- 2026-11-15T17:04:41Z | fix(cli): show actionable inference preflight errors with JSON (#199639)
+- 2026-11-15T17:02:41Z | perf(sessions): compact append receipts after replica eviction (#199673)
+- 2026-11-15T16:50:48Z | fix(ci): restore unused-export checks for QA cron fixtures (#199679)
+- 2026-11-15T16:49:42Z | fix(skills): Ctrl-C leaves verification requests running (#195342)
+- 2026-11-15T16:28:28Z | fix(memory-wiki): keep imported Markdown links pointing to generated pages (#199626)
+- 2026-11-15T16:24:05Z | fix(cli): preserve Gmail setup remedies in JSON failures (#199642)
+- 2026-11-15T16:21:14Z | fix(cli): keep agent selector guard remedies on JSON failures (#199641)
+- 2026-11-15T16:17:14Z | fix(ci): retained tooling subsets exceed hosted push capacity (#199662)
+- 2026-11-15T16:12:55Z | fix(ci): bind adaptive test volumes to scheduled profiles (#199592)
+- 2026-11-15T16:09:49Z | fix(doctor): capture declared SQLite sidecar roots through their database (#199654)
+- 2026-11-15T16:06:57Z | fix(agents): stop divergent mid-turn overflow recovery (#199636)
 
 ## Sources
 

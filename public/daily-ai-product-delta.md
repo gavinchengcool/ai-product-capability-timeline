@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-11-15T01:23:06+08:00
-- Requested window: 2026-11-14 to 2026-11-15
+- Generated at: 2026-11-16T02:03:16+08:00
+- Requested window: 2026-11-15 to 2026-11-16
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,30 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-11-14 to 2026-11-15
-- Generated at: 2026-11-15T01:22:48.536462+08:00
-- 窗口: 2026-11-14 至 2026-11-15
-- GitHub 增量: 328 commits / 0 releases
-- 最近 push: 2026-11-14
+- Window: 2026-11-15 to 2026-11-16
+- Generated at: 2026-11-16T02:02:59.099996+08:00
+- 窗口: 2026-11-15 至 2026-11-16
+- GitHub 增量: 345 commits / 1 releases
+- 最近 push: 2026-11-15
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat: invite members as existing people on a claw (#198773)
-  - feat(browser): support experimental Kitesurf browsing (#198833)
-  - feat: let plugins attach presentation to embedded final replies (#179763)
-  - feat(backup): report stage and byte progress (#198675)
-  - feat: let agents review generated images before delivery (#198227)
-  - feat(message): recommend one exact ClawHub plugin in chat (#198065)
-  - feat(openclaw-id): member roles come from gateway.roles.definitions (#197739)
-  - feat(openclaw-id): members add and approve their own devices (#198575)
+  - **Compaction:** support a configurable summary-character limit while retaining foreground request-budget constraints and redacting credentials in quoted summary content. (#196207, #197349) Thanks @aniruddhaadak80, @RomneyDa, @garrytan, @obviyus. [v2026.11.5-beta.3]
+  - feat(advisor): review subagent runs too
+  - feat(gateway): identify the serving process in local startup probes (#199356)
+  - feat(backup): omit Doctor migration originals from archives on request (#194823)
+  - feat(cron): persist per-job Access selection (#197704)
+  - feat(ui): show what an idle chat is waiting on (#198891)
+  - improve(ui): soften New Session composer and tray shadows (#199066)
 - Fixes and constraints:
-  - fix(release): retain adopted child origins during receipt recovery (#199036)
-  - fix(workers): name the worker loop state behind slow SQLite deliveries (#199034)
-  - fix: recover qualification receipts with approved release waivers (#199021)
-  - fix(gateway): bound publication recovery countdown
-  - fix(diagnostics): attribute slow trajectory, audit and knowledge holds (#199026)
-  - fix(test): keep recreated Gateway state directories private (#199007)
-  - fix(ui): restore agent avatars beside streamed responses (#199015)
-  - perf(ci): reuse relative declaration path resolution (#198774)
+  - fix: uploaded videos open outside chat instead of playing inline (#197589)
+  - fix: avoid rehashing unchanged workspaces on first sandbox reuse (#199687)
+  - fix(cli): show actionable QR pairing failures alongside JSON (#199650)
+  - fix(cli): show system event remedies alongside JSON (#199670)
+  - perf(memory): avoid detaching short transcript strings (#199686)
+  - fix(ui): keep the chat reader's text still while scrolling and while content renders late (#199080)
+  - fix(channels): keep dead-letter selector remedies in --json errors (#199658)
+  - perf(sandbox): reuse saved workspace fingerprints during acceptance (#199683)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
