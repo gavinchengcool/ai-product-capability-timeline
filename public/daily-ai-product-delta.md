@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-11-16T02:03:16+08:00
-- Requested window: 2026-11-15 to 2026-11-16
+- Generated at: 2026-11-17T05:19:24+08:00
+- Requested window: 2026-11-16 to 2026-11-17
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,30 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-11-15 to 2026-11-16
-- Generated at: 2026-11-16T02:02:59.099996+08:00
-- 窗口: 2026-11-15 至 2026-11-16
-- GitHub 增量: 345 commits / 1 releases
-- 最近 push: 2026-11-15
+- Window: 2026-11-16 to 2026-11-17
+- Generated at: 2026-11-17T05:19:08.390000+08:00
+- 窗口: 2026-11-16 至 2026-11-17
+- GitHub 增量: 320 commits / 2 releases
+- 最近 push: 2026-11-16
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - **Compaction:** support a configurable summary-character limit while retaining foreground request-budget constraints and redacting credentials in quoted summary content. (#196207, #197349) Thanks @aniruddhaadak80, @RomneyDa, @garrytan, @obviyus. [v2026.11.5-beta.3]
-  - feat(advisor): review subagent runs too
-  - feat(gateway): identify the serving process in local startup probes (#199356)
-  - feat(backup): omit Doctor migration originals from archives on request (#194823)
-  - feat(cron): persist per-job Access selection (#197704)
-  - feat(ui): show what an idle chat is waiting on (#198891)
-  - improve(ui): soften New Session composer and tray shadows (#199066)
+  - **Telegram widgets:** Render interactive widgets as Telegram messages (#196991) Thanks @obviyus. [v2026.11.5-beta.4]
+  - feat(update): keep each release in its own directory on OpenClaw-owned installs (#198835)
+  - feat(ui): redesign tool-call rendering, grouping, and lifecycle narration (#198133)
+  - feat(tencent): add Hy4 Flash to TokenHub and TokenPlan (#199957)
+  - feat(ui): show skills used in conversation details (#196065)
+  - feat(minimax): add MiniMax-H3-Image support (#196627)
+  - feat(openclaw-id): choose and change member roles on the Access page (#197770)
+  - feat(exec): write background exec output to a file named in the exit wake (#199992)
 - Fixes and constraints:
-  - fix: uploaded videos open outside chat instead of playing inline (#197589)
-  - fix: avoid rehashing unchanged workspaces on first sandbox reuse (#199687)
-  - fix(cli): show actionable QR pairing failures alongside JSON (#199650)
-  - fix(cli): show system event remedies alongside JSON (#199670)
-  - perf(memory): avoid detaching short transcript strings (#199686)
-  - fix(ui): keep the chat reader's text still while scrolling and while content renders late (#199080)
-  - fix(channels): keep dead-letter selector remedies in --json errors (#199658)
-  - perf(sandbox): reuse saved workspace fingerprints during acceptance (#199683)
+  - fix(exec): count only real services against the exec service cap (#200250)
+  - fix: keep credential diagnostics responsive on slow filesystems (#200222)
+  - fix(web): honor OpenClaw ID permissions in browser notifications (#200205)
+  - fix(onboard): import memories through the running Gateway
+  - fix(signal): links with non-English characters are shown twice (#199109)
+  - fix(auth): main does not build after the identity path lookup moved (#200242)
+  - fix(plugins): reuse captured package metadata during reconstruction (#200229)
+  - fix: restore hourly catalog, continuation, and replay checks (#200183)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

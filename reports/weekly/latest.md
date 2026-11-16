@@ -1,91 +1,100 @@
 # OpenClaw Weekly Update
 
-生成时间：2026-11-16T02:02:59.099996+08:00
+生成时间：2026-11-17T05:19:08.390000+08:00
 
 ## Window
 
-- Start: 2026-11-15T02:02:59.099996+08:00
-- End: 2026-11-16T02:02:59.099996+08:00
+- Start: 2026-11-16T05:19:08.390000+08:00
+- End: 2026-11-17T05:19:08.390000+08:00
 - Repo: `openclaw/openclaw`
 
 ## At A Glance
 
-- Commits in window: 345
-- Releases in window: 1
-- Stable releases in window: 0
+- Commits in window: 320
+- Releases in window: 2
+- Stable releases in window: 1
 - Beta releases in window: 1
-- Repo stars at scan time: 394515
-- Repo forks at scan time: 82892
+- Repo stars at scan time: 394596
+- Repo forks at scan time: 82907
 
 ## New Capability Signals
 
-- **Compaction:** support a configurable summary-character limit while retaining foreground request-budget constraints and redacting credentials in quoted summary content. (#196207, #197349) Thanks @aniruddhaadak80, @RomneyDa, @garrytan, @obviyus. [v2026.11.5-beta.3]
-- feat(advisor): review subagent runs too
-- feat(gateway): identify the serving process in local startup probes (#199356)
-- feat(backup): omit Doctor migration originals from archives on request (#194823)
-- feat(cron): persist per-job Access selection (#197704)
-- feat(ui): show what an idle chat is waiting on (#198891)
-- improve(ui): soften New Session composer and tray shadows (#199066)
+- **Telegram widgets:** Render interactive widgets as Telegram messages (#196991) Thanks @obviyus. [v2026.11.5-beta.4]
+- feat(update): keep each release in its own directory on OpenClaw-owned installs (#198835)
+- feat(ui): redesign tool-call rendering, grouping, and lifecycle narration (#198133)
+- feat(tencent): add Hy4 Flash to TokenHub and TokenPlan (#199957)
+- feat(ui): show skills used in conversation details (#196065)
+- feat(minimax): add MiniMax-H3-Image support (#196627)
+- feat(openclaw-id): choose and change member roles on the Access page (#197770)
+- feat(exec): write background exec output to a file named in the exit wake (#199992)
+- feat(ci): measure inclusive Node compile-cache treatments (#199987)
+- feat(skills): add bundled create-blobster skill and CLI renderer
+- feat(templates): finish Add in a retryable setup conversation (#198603)
+- feat(templates): open Control UI chat and create the agent without a plan (#198070)
+- feat: open ClawHub catalog reviews in desktop apps (#198571)
+- feat(diagnostics): attribute session actor authority payload bytes (#199767)
+- feat(openclaw-id): carry the Discovery origin in node join links (#197538)
 
 ## Important Fixes And Hardening
 
-- fix: uploaded videos open outside chat instead of playing inline (#197589)
-- fix: avoid rehashing unchanged workspaces on first sandbox reuse (#199687)
-- fix(cli): show actionable QR pairing failures alongside JSON (#199650)
-- fix(cli): show system event remedies alongside JSON (#199670)
-- perf(memory): avoid detaching short transcript strings (#199686)
-- fix(ui): keep the chat reader's text still while scrolling and while content renders late (#199080)
-- fix(channels): keep dead-letter selector remedies in --json errors (#199658)
-- perf(sandbox): reuse saved workspace fingerprints during acceptance (#199683)
-- fix(cli): show actionable inference preflight errors with JSON (#199639)
-- perf(sessions): compact append receipts after replica eviction (#199673)
-- fix(ci): restore unused-export checks for QA cron fixtures (#199679)
-- fix(skills): Ctrl-C leaves verification requests running (#195342)
-- fix(memory-wiki): keep imported Markdown links pointing to generated pages (#199626)
-- fix(cli): preserve Gmail setup remedies in JSON failures (#199642)
-- fix(cli): keep agent selector guard remedies on JSON failures (#199641)
+- fix(exec): count only real services against the exec service cap (#200250)
+- fix: keep credential diagnostics responsive on slow filesystems (#200222)
+- fix(web): honor OpenClaw ID permissions in browser notifications (#200205)
+- fix(onboard): import memories through the running Gateway
+- fix(signal): links with non-English characters are shown twice (#199109)
+- fix(auth): main does not build after the identity path lookup moved (#200242)
+- fix(plugins): reuse captured package metadata during reconstruction (#200229)
+- fix: restore hourly catalog, continuation, and replay checks (#200183)
+- fix(sessions): stop self-only recall from scanning unrelated sessions (#200202)
+- fix(update): --no-restart update fails when the Gateway restarts itself during Doctor's stop (#200181)
+- fix(test): retain source scan fixtures after cleanup failure (#200103)
+- fix(release): honor scoped 2026.11.5 Telegram waiver (#200206)
+- fix(auto-reply): show revoked queued input as a withheld failure instead of a silent cancel (#200213)
+- fix(ci): recover stalled release ancestry hydration (#200225)
+- fix(release): honor 2026.11.5 performance waiver (#200204)
 
 ## Releases This Week
 
-- `v2026.11.5-beta.3` | beta | 2026-11-15T00:31:00Z | openclaw 2026.11.5-beta.3
+- `v2026.11.4` | stable | 2026-11-16T04:17:42Z | openclaw 2026.11.4
+- `v2026.11.5-beta.4` | beta | 2026-11-16T03:12:26Z | openclaw 2026.11.5-beta.4
 
 ## Most Active Change Scopes
 
-- `ui`: 93
-- `fix`: 25
-- `improve(ui)`: 17
-- `sessions`: 15
-- `cli`: 14
-- `ci`: 14
-- `gateway`: 12
-- `test`: 10
-- `cron`: 8
-- `update`: 8
-- `exec`: 7
-- `skills`: 5
+- `fix`: 57
+- `ui`: 45
+- `ci`: 23
+- `templates`: 23
+- `agents`: 16
+- `test`: 11
+- `release`: 11
+- `cli`: 11
+- `gateway`: 10
+- `update`: 9
+- `plugins`: 8
+- `sessions`: 5
 
 ## Recent Commit Headlines
 
-- 2026-11-15T17:55:06Z | fix: uploaded videos open outside chat instead of playing inline (#197589)
-- 2026-11-15T17:54:36Z | fix: avoid rehashing unchanged workspaces on first sandbox reuse (#199687)
-- 2026-11-15T17:53:10Z | fix(cli): show actionable QR pairing failures alongside JSON (#199650)
-- 2026-11-15T17:50:07Z | fix(cli): show system event remedies alongside JSON (#199670)
-- 2026-11-15T17:37:08Z | perf(memory): avoid detaching short transcript strings (#199686)
-- 2026-11-15T17:24:19Z | fix(ui): keep the chat reader's text still while scrolling and while content renders late (#199080)
-- 2026-11-15T17:23:57Z | fix(channels): keep dead-letter selector remedies in --json errors (#199658)
-- 2026-11-15T17:06:26Z | perf(sandbox): reuse saved workspace fingerprints during acceptance (#199683)
-- 2026-11-15T17:05:45Z | feat(advisor): review subagent runs too
-- 2026-11-15T17:04:41Z | fix(cli): show actionable inference preflight errors with JSON (#199639)
-- 2026-11-15T17:02:41Z | perf(sessions): compact append receipts after replica eviction (#199673)
-- 2026-11-15T16:50:48Z | fix(ci): restore unused-export checks for QA cron fixtures (#199679)
-- 2026-11-15T16:49:42Z | fix(skills): Ctrl-C leaves verification requests running (#195342)
-- 2026-11-15T16:28:28Z | fix(memory-wiki): keep imported Markdown links pointing to generated pages (#199626)
-- 2026-11-15T16:24:05Z | fix(cli): preserve Gmail setup remedies in JSON failures (#199642)
-- 2026-11-15T16:21:14Z | fix(cli): keep agent selector guard remedies on JSON failures (#199641)
-- 2026-11-15T16:17:14Z | fix(ci): retained tooling subsets exceed hosted push capacity (#199662)
-- 2026-11-15T16:12:55Z | fix(ci): bind adaptive test volumes to scheduled profiles (#199592)
-- 2026-11-15T16:09:49Z | fix(doctor): capture declared SQLite sidecar roots through their database (#199654)
-- 2026-11-15T16:06:57Z | fix(agents): stop divergent mid-turn overflow recovery (#199636)
+- 2026-11-16T21:16:36Z | fix(exec): count only real services against the exec service cap (#200250)
+- 2026-11-16T21:11:12Z | fix: keep credential diagnostics responsive on slow filesystems (#200222)
+- 2026-11-16T21:10:54Z | fix(web): honor OpenClaw ID permissions in browser notifications (#200205)
+- 2026-11-16T20:52:54Z | fix(onboard): import memories through the running Gateway
+- 2026-11-16T20:23:43Z | fix(signal): links with non-English characters are shown twice (#199109)
+- 2026-11-16T20:22:48Z | fix(auth): main does not build after the identity path lookup moved (#200242)
+- 2026-11-16T20:00:54Z | fix(plugins): reuse captured package metadata during reconstruction (#200229)
+- 2026-11-16T19:59:44Z | fix: restore hourly catalog, continuation, and replay checks (#200183)
+- 2026-11-16T19:56:39Z | fix(sessions): stop self-only recall from scanning unrelated sessions (#200202)
+- 2026-11-16T19:55:55Z | fix(update): --no-restart update fails when the Gateway restarts itself during Doctor's stop (#200181)
+- 2026-11-16T19:41:39Z | refactor(paths): keep identity lookup imports passive (#200203)
+- 2026-11-16T19:34:15Z | fix(test): retain source scan fixtures after cleanup failure (#200103)
+- 2026-11-16T19:29:59Z | fix(release): honor scoped 2026.11.5 Telegram waiver (#200206)
+- 2026-11-16T19:27:56Z | fix(auto-reply): show revoked queued input as a withheld failure instead of a silent cancel (#200213)
+- 2026-11-16T19:26:21Z | fix(ci): recover stalled release ancestry hydration (#200225)
+- 2026-11-16T19:15:47Z | fix(release): honor 2026.11.5 performance waiver (#200204)
+- 2026-11-16T19:13:06Z | fix: isolate transport policy between shared-worker test files (#200101)
+- 2026-11-16T19:10:44Z | fix: reduce Gateway stalls during session GitHub actions (#200211)
+- 2026-11-16T19:08:43Z | fix: keep native resource startup responsive on slow filesystems (#200216)
+- 2026-11-16T19:02:18Z | fix(ai): keep provider checkpoints across model switches (#200208)
 
 ## Sources
 

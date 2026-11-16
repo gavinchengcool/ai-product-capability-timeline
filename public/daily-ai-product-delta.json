@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-16T02:03:16+08:00",
+  "generatedAt": "2026-11-17T05:19:24+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-11-15T02:03:16+08:00",
-    "end_local": "2026-11-16T02:03:16+08:00"
+    "start_local": "2026-11-16T05:19:24+08:00",
+    "end_local": "2026-11-17T05:19:24+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-11-16T02:02:59.099996+08:00",
+      "generatedAt": "2026-11-17T05:19:08.390000+08:00",
       "window": {
-        "start_local": "2026-11-15T02:02:59.099996+08:00",
-        "end_local": "2026-11-16T02:02:59.099996+08:00",
-        "start_utc": "2026-11-14T18:02:59Z",
-        "end_utc": "2026-11-15T18:02:59Z"
+        "start_local": "2026-11-16T05:19:08.390000+08:00",
+        "end_local": "2026-11-17T05:19:08.390000+08:00",
+        "start_utc": "2026-11-15T21:19:08Z",
+        "end_utc": "2026-11-16T21:19:08Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-11-15 至 2026-11-16"
+          "value": "2026-11-16 至 2026-11-17"
         },
         {
           "label": "GitHub 增量",
-          "value": "345 commits / 1 releases"
+          "value": "320 commits / 2 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-11-15"
+          "value": "2026-11-16"
         },
         {
           "label": "来源",
@@ -52,65 +52,73 @@
         }
       ],
       "featureItems": [
-        "**Compaction:** support a configurable summary-character limit while retaining foreground request-budget constraints and redacting credentials in quoted summary content. (#196207, #197349) Thanks @aniruddhaadak80, @RomneyDa, @garrytan, @obviyus. [v2026.11.5-beta.3]",
-        "feat(advisor): review subagent runs too",
-        "feat(gateway): identify the serving process in local startup probes (#199356)",
-        "feat(backup): omit Doctor migration originals from archives on request (#194823)",
-        "feat(cron): persist per-job Access selection (#197704)",
-        "feat(ui): show what an idle chat is waiting on (#198891)",
-        "improve(ui): soften New Session composer and tray shadows (#199066)"
+        "**Telegram widgets:** Render interactive widgets as Telegram messages (#196991) Thanks @obviyus. [v2026.11.5-beta.4]",
+        "feat(update): keep each release in its own directory on OpenClaw-owned installs (#198835)",
+        "feat(ui): redesign tool-call rendering, grouping, and lifecycle narration (#198133)",
+        "feat(tencent): add Hy4 Flash to TokenHub and TokenPlan (#199957)",
+        "feat(ui): show skills used in conversation details (#196065)",
+        "feat(minimax): add MiniMax-H3-Image support (#196627)",
+        "feat(openclaw-id): choose and change member roles on the Access page (#197770)",
+        "feat(exec): write background exec output to a file named in the exit wake (#199992)"
       ],
       "fixItems": [
-        "fix: uploaded videos open outside chat instead of playing inline (#197589)",
-        "fix: avoid rehashing unchanged workspaces on first sandbox reuse (#199687)",
-        "fix(cli): show actionable QR pairing failures alongside JSON (#199650)",
-        "fix(cli): show system event remedies alongside JSON (#199670)",
-        "perf(memory): avoid detaching short transcript strings (#199686)",
-        "fix(ui): keep the chat reader's text still while scrolling and while content renders late (#199080)",
-        "fix(channels): keep dead-letter selector remedies in --json errors (#199658)",
-        "perf(sandbox): reuse saved workspace fingerprints during acceptance (#199683)"
+        "fix(exec): count only real services against the exec service cap (#200250)",
+        "fix: keep credential diagnostics responsive on slow filesystems (#200222)",
+        "fix(web): honor OpenClaw ID permissions in browser notifications (#200205)",
+        "fix(onboard): import memories through the running Gateway",
+        "fix(signal): links with non-English characters are shown twice (#199109)",
+        "fix(auth): main does not build after the identity path lookup moved (#200242)",
+        "fix(plugins): reuse captured package metadata during reconstruction (#200229)",
+        "fix: restore hourly catalog, continuation, and replay checks (#200183)"
       ],
       "releases": [
         {
-          "tag_name": "v2026.11.5-beta.3",
-          "published_at": "2026-11-15T00:31:00Z",
-          "name": "openclaw 2026.11.5-beta.3",
+          "tag_name": "v2026.11.4",
+          "published_at": "2026-11-16T04:17:42Z",
+          "name": "openclaw 2026.11.4",
+          "prerelease": false,
+          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.4"
+        },
+        {
+          "tag_name": "v2026.11.5-beta.4",
+          "published_at": "2026-11-16T03:12:26Z",
+          "name": "openclaw 2026.11.5-beta.4",
           "prerelease": true,
-          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.5-beta.3"
+          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.5-beta.4"
         }
       ],
       "topScopes": [
         {
-          "scope": "ui",
-          "count": 93
-        },
-        {
           "scope": "fix",
-          "count": 25
+          "count": 57
         },
         {
-          "scope": "improve(ui)",
-          "count": 17
-        },
-        {
-          "scope": "sessions",
-          "count": 15
-        },
-        {
-          "scope": "cli",
-          "count": 14
+          "scope": "ui",
+          "count": 45
         },
         {
           "scope": "ci",
-          "count": 14
+          "count": 23
         },
         {
-          "scope": "gateway",
-          "count": 12
+          "scope": "templates",
+          "count": 23
+        },
+        {
+          "scope": "agents",
+          "count": 16
         },
         {
           "scope": "test",
-          "count": 10
+          "count": 11
+        },
+        {
+          "scope": "release",
+          "count": 11
+        },
+        {
+          "scope": "cli",
+          "count": 11
         }
       ],
       "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
