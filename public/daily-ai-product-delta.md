@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-11-17T05:19:24+08:00
-- Requested window: 2026-11-16 to 2026-11-17
+- Generated at: 2026-11-18T04:07:20+08:00
+- Requested window: 2026-11-17 to 2026-11-18
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-11-16 to 2026-11-17
-- Generated at: 2026-11-17T05:19:08.390000+08:00
-- 窗口: 2026-11-16 至 2026-11-17
-- GitHub 增量: 320 commits / 2 releases
-- 最近 push: 2026-11-16
+- Window: 2026-11-17 to 2026-11-18
+- Generated at: 2026-11-18T04:07:01.165839+08:00
+- 窗口: 2026-11-17 至 2026-11-18
+- GitHub 增量: 316 commits / 1 releases
+- 最近 push: 2026-11-17
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - **Telegram widgets:** Render interactive widgets as Telegram messages (#196991) Thanks @obviyus. [v2026.11.5-beta.4]
-  - feat(update): keep each release in its own directory on OpenClaw-owned installs (#198835)
-  - feat(ui): redesign tool-call rendering, grouping, and lifecycle narration (#198133)
-  - feat(tencent): add Hy4 Flash to TokenHub and TokenPlan (#199957)
-  - feat(ui): show skills used in conversation details (#196065)
-  - feat(minimax): add MiniMax-H3-Image support (#196627)
-  - feat(openclaw-id): choose and change member roles on the Access page (#197770)
-  - feat(exec): write background exec output to a file named in the exit wake (#199992)
+  - feat(plugins): let plugin forks read, ls and run owner exec under the session's policy (#200636)
+  - feat(ui): edit an agent's thinking default from its Overview (#198399)
+  - feat(ui): read Activity in the standard wide page column (#199834)
+  - feat: connect OpenClaw to GBrain with one plugin install (#200625)
+  - feat(control-ui): give composer actions the pane draft (#200467)
+  - feat(ui): let plugins offer feedback on failed replies
+  - feat(update): run Git checkout installs from releases behind the release link (#199706)
+  - feat(ui): show prompt cache hit rate in the context popover (#200223)
 - Fixes and constraints:
-  - fix(exec): count only real services against the exec service cap (#200250)
-  - fix: keep credential diagnostics responsive on slow filesystems (#200222)
-  - fix(web): honor OpenClaw ID permissions in browser notifications (#200205)
-  - fix(onboard): import memories through the running Gateway
-  - fix(signal): links with non-English characters are shown twice (#199109)
-  - fix(auth): main does not build after the identity path lookup moved (#200242)
-  - fix(plugins): reuse captured package metadata during reconstruction (#200229)
-  - fix: restore hourly catalog, continuation, and replay checks (#200183)
+  - fix(acp): keep a configured binding online when the adapter rejects an inherited thinking level (#199377)
+  - fix(active-memory): warn once when the provider lacks private transcript recall (#198438)
+  - fix: keep quiet Auto Review calls alive (#200743)
+  - fix: keep mobile chat drafts above composer actions (#200737)
+  - fix: keep the dictation border visible in new sessions (#200770)
+  - fix(daemon): recognize completed runtime-pin source aliases
+  - fix: highlight the message box when dropping images into a new session (#200758)
+  - fix: keep one missing archived transcript from blocking every update (#200733)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

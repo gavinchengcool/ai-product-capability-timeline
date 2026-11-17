@@ -1,0 +1,192 @@
+{
+  "generated_at": "2026-11-18T04:07:01.165839+08:00",
+  "window": {
+    "start_local": "2026-11-17T04:07:01.165839+08:00",
+    "end_local": "2026-11-18T04:07:01.165839+08:00",
+    "start_utc": "2026-11-16T20:07:01Z",
+    "end_utc": "2026-11-17T20:07:01Z"
+  },
+  "repo": {
+    "slug": "openclaw/openclaw",
+    "stars": 394671,
+    "forks": 82920,
+    "open_issues": 8274,
+    "pushed_at": "2026-11-17T20:06:32Z"
+  },
+  "releases_in_window": [
+    {
+      "tag_name": "v2026.11.5",
+      "published_at": "2026-11-17T10:47:56Z",
+      "name": "openclaw 2026.11.5",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.5"
+    }
+  ],
+  "commit_count": 316,
+  "commit_headlines": [
+    "fix(acp): keep a configured binding online when the adapter rejects an inherited thinking level (#199377)",
+    "fix(active-memory): warn once when the provider lacks private transcript recall (#198438)",
+    "fix: keep quiet Auto Review calls alive (#200743)",
+    "test(ios): report held probe wait state (#200767)",
+    "fix: keep mobile chat drafts above composer actions (#200737)",
+    "fix: keep the dictation border visible in new sessions (#200770)",
+    "improve(ui): fill the current navigation item's icon (#199822)",
+    "fix(daemon): recognize completed runtime-pin source aliases",
+    "chore(ui): capture missing Dashboard menu click evidence (#200763)",
+    "fix: highlight the message box when dropping images into a new session (#200758)",
+    "fix: keep one missing archived transcript from blocking every update (#200733)",
+    "fix(codex): attach a request over the turn cap instead of losing its middle (#200735)",
+    "fix(ci): keep context maintenance state query private (#200754)",
+    "fix(ci): complete GBrain plugin integration metadata (#200752)",
+    "fix(gateway): channel setup stays busy after a disconnect",
+    "feat(plugins): let plugin forks read, ls and run owner exec under the session's policy (#200636)",
+    "fix: use the release predecessor in staged upgrade checks (#200751)",
+    "chore(build): report memory on admission refusal (#200736)",
+    "chore(ui): refresh control ui locales (#200750)",
+    "improve(ui): read Portals in the standard page column (#199835)",
+    "fix(macos): audit direct sleep tail continuations (#200740)",
+    "improve(ui): read Apps in the standard page column (#200014)",
+    "feat(ui): edit an agent's thinking default from its Overview (#198399)",
+    "fix(update): tell include users to consolidate config instead of deleting retired heartbeat settings (#200721)",
+    "fix(ui): a connection that died during an app switch recovers late after switching back (#199887)",
+    "feat(ui): read Activity in the standard wide page column (#199834)",
+    "fix: stop blank messages appearing in the chat queue",
+    "fix(ci): provision Bun for retained-runtime process tests (#200731)",
+    "fix(agents): only a request that cannot fit may fail a turn (#200714)",
+    "perf(agents): reduce allocations for limited UTF-8 file reads (#200725)",
+    "feat: connect OpenClaw to GBrain with one plugin install (#200625)",
+    "fix(ui): fill the model picker Favorites star (#200730)",
+    "fix(ci): target swarm lifecycle disclosure toggles (#200723)",
+    "fix(update): allow explicit targets on extended-stable (#200726)",
+    "fix: prevent queued agent failures after the sending turn ends (#177296)",
+    "fix(tests): initialize logging before catalog directory capture (#200727)",
+    "fix(sessions): probe a hydrated history root's frozen state once (#200718)",
+    "perf(ai): reuse compacted Responses input identities (#200715)",
+    "fix(ios): open and close the sidebar drawer without a pause or chat scrolling (#200677)",
+    "fix(release): qualify published extended-stable updates through selector (#200708)",
+    "fix: keep openclaw update status fast and from copying the state database repeatedly (#200687)",
+    "chore(ui): capture model picker alignment failure context (#200702)",
+    "fix: Windows cleanup commands from updates and Doctor now remove long paths (#200686)",
+    "fix: avoid Gateway stalls during GitHub session actions (#200554)",
+    "fix: start gateway after upgrading provider configuration (#200596)",
+    "chore(ui): refresh control ui locales (#200709)",
+    "fix(update): keep valid cold archives from blocking updates (#200659)",
+    "fix: explain removed session worktrees before sandbox preparation (#200691)",
+    "fix: let the next update continue after a killed update when nothing is left to repair (#200680)",
+    "fix: let Doctor publish unchanged plugin migrations in any order (#200658)"
+  ],
+  "feature_items": [
+    "feat(plugins): let plugin forks read, ls and run owner exec under the session's policy (#200636)",
+    "feat(ui): edit an agent's thinking default from its Overview (#198399)",
+    "feat(ui): read Activity in the standard wide page column (#199834)",
+    "feat: connect OpenClaw to GBrain with one plugin install (#200625)",
+    "feat(control-ui): give composer actions the pane draft (#200467)",
+    "feat(ui): let plugins offer feedback on failed replies",
+    "feat(update): run Git checkout installs from releases behind the release link (#199706)",
+    "feat(ui): show prompt cache hit rate in the context popover (#200223)",
+    "feat(ui): add the Clawlombian to the Lobsterdex (#199458)",
+    "feat(ui): add the Clawnadian to the Lobsterdex (#199443)",
+    "feat(ui): add Santa Claws to the Lobsterdex (#199470)",
+    "feat(auth): enable guests to access sessions through selected mentions (#184515)",
+    "feat(slack): show streamed reasoning as task rows and roll long native streams into continuation messages",
+    "feat(openclaw-id): members can recover access with a recovery kit (#200145)",
+    "feat(release): request stable and beta Gateway Store delivery (#181446)",
+    "feat(templates): honor optional preferred models on Add (#199988)",
+    "feat(openclaw-id): owners can approve a member's new browser (#200088)",
+    "feat(openclaw-id): members with an admin role are administrators (#197782)"
+  ],
+  "fix_items": [
+    "fix(acp): keep a configured binding online when the adapter rejects an inherited thinking level (#199377)",
+    "fix(active-memory): warn once when the provider lacks private transcript recall (#198438)",
+    "fix: keep quiet Auto Review calls alive (#200743)",
+    "fix: keep mobile chat drafts above composer actions (#200737)",
+    "fix: keep the dictation border visible in new sessions (#200770)",
+    "fix(daemon): recognize completed runtime-pin source aliases",
+    "fix: highlight the message box when dropping images into a new session (#200758)",
+    "fix: keep one missing archived transcript from blocking every update (#200733)",
+    "fix(codex): attach a request over the turn cap instead of losing its middle (#200735)",
+    "fix(ci): keep context maintenance state query private (#200754)",
+    "fix(ci): complete GBrain plugin integration metadata (#200752)",
+    "fix(gateway): channel setup stays busy after a disconnect",
+    "fix: use the release predecessor in staged upgrade checks (#200751)",
+    "fix(macos): audit direct sleep tail continuations (#200740)",
+    "fix(update): tell include users to consolidate config instead of deleting retired heartbeat settings (#200721)",
+    "fix(ui): a connection that died during an app switch recovers late after switching back (#199887)",
+    "fix: stop blank messages appearing in the chat queue",
+    "fix(ci): provision Bun for retained-runtime process tests (#200731)",
+    "fix(agents): only a request that cannot fit may fail a turn (#200714)",
+    "perf(agents): reduce allocations for limited UTF-8 file reads (#200725)",
+    "fix(ui): fill the model picker Favorites star (#200730)",
+    "fix(ci): target swarm lifecycle disclosure toggles (#200723)",
+    "fix(update): allow explicit targets on extended-stable (#200726)",
+    "fix: prevent queued agent failures after the sending turn ends (#177296)",
+    "fix(tests): initialize logging before catalog directory capture (#200727)",
+    "fix(sessions): probe a hydrated history root's frozen state once (#200718)",
+    "perf(ai): reuse compacted Responses input identities (#200715)",
+    "fix(ios): open and close the sidebar drawer without a pause or chat scrolling (#200677)",
+    "fix(release): qualify published extended-stable updates through selector (#200708)",
+    "fix: keep openclaw update status fast and from copying the state database repeatedly (#200687)"
+  ],
+  "top_scopes": [
+    {
+      "scope": "fix",
+      "count": 82
+    },
+    {
+      "scope": "ci",
+      "count": 37
+    },
+    {
+      "scope": "ui",
+      "count": 31
+    },
+    {
+      "scope": "update",
+      "count": 20
+    },
+    {
+      "scope": "test",
+      "count": 13
+    },
+    {
+      "scope": "release",
+      "count": 11
+    },
+    {
+      "scope": "ios",
+      "count": 6
+    },
+    {
+      "scope": "improve(ci)",
+      "count": 6
+    },
+    {
+      "scope": "gateway",
+      "count": 5
+    },
+    {
+      "scope": "agents",
+      "count": 5
+    },
+    {
+      "scope": "sessions",
+      "count": 5
+    },
+    {
+      "scope": "refactor",
+      "count": 5
+    },
+    {
+      "scope": "improve(ui)",
+      "count": 4
+    },
+    {
+      "scope": "codex",
+      "count": 4
+    },
+    {
+      "scope": "plugins",
+      "count": 4
+    }
+  ]
+}

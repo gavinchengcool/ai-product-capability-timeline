@@ -3333,5 +3333,20 @@ window.OPENCLAW_HEATMAP_INCREMENTAL_ROWS = [
     },
     "source": "daily-incremental",
     "generatedAt": "2026-11-17T05:19:08.390000+08:00"
+  },
+  {
+    "date": "2026-11-18",
+    "stage": "openclaw",
+    "summary": "移动端入口、渠道互动、gateway / 会话控制面、Docker / 运维继续增强，最近一天的增量也并入主矩阵。",
+    "axisEntries": {
+      "channels": "Slack interactive replies 与 DM block 保留继续增强。",
+      "models": "",
+      "tools": "Browser existing-session / MCP attach 模式继续简化并加固。",
+      "devices": "iOS onboarding welcome pager 进入主线。 macOS canvas actions 被进一步限制到 trusted surfaces。 Windows 重启与清理过程的可见控制台问题被压下去。",
+      "control": "Gateway health monitor、pairing 与 watch 链路继续打磨。 Heartbeat 增加 isolatedSession，运行隔离更明确。 Session / plugin 路由与配置基线继续收敛。",
+      "ops": "服务重装、重启与 cleanup 路径继续修补。 构建内存回归与 cron 死锁等运行期问题继续收敛。"
+    },
+    "source": "daily-incremental",
+    "generatedAt": "2026-11-18T04:07:01.165839+08:00"
   }
 ];
