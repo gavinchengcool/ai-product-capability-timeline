@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-18T04:07:20+08:00",
+  "generatedAt": "2026-11-19T03:40:03+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-11-17T04:07:20+08:00",
-    "end_local": "2026-11-18T04:07:20+08:00"
+    "start_local": "2026-11-18T03:40:03+08:00",
+    "end_local": "2026-11-19T03:40:03+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-11-18T04:07:01.165839+08:00",
+      "generatedAt": "2026-11-19T03:39:43.190367+08:00",
       "window": {
-        "start_local": "2026-11-17T04:07:01.165839+08:00",
-        "end_local": "2026-11-18T04:07:01.165839+08:00",
-        "start_utc": "2026-11-16T20:07:01Z",
-        "end_utc": "2026-11-17T20:07:01Z"
+        "start_local": "2026-11-18T03:39:43.190367+08:00",
+        "end_local": "2026-11-19T03:39:43.190367+08:00",
+        "start_utc": "2026-11-17T19:39:43Z",
+        "end_utc": "2026-11-18T19:39:43Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-11-17 至 2026-11-18"
+          "value": "2026-11-18 至 2026-11-19"
         },
         {
           "label": "GitHub 增量",
-          "value": "316 commits / 1 releases"
+          "value": "402 commits / 1 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-11-17"
+          "value": "2026-11-18"
         },
         {
           "label": "来源",
@@ -52,66 +52,66 @@
         }
       ],
       "featureItems": [
-        "feat(plugins): let plugin forks read, ls and run owner exec under the session's policy (#200636)",
-        "feat(ui): edit an agent's thinking default from its Overview (#198399)",
-        "feat(ui): read Activity in the standard wide page column (#199834)",
-        "feat: connect OpenClaw to GBrain with one plugin install (#200625)",
-        "feat(control-ui): give composer actions the pane draft (#200467)",
-        "feat(ui): let plugins offer feedback on failed replies",
-        "feat(update): run Git checkout installs from releases behind the release link (#199706)",
-        "feat(ui): show prompt cache hit rate in the context popover (#200223)"
+        "Shared conversations: add emoji reactions to prompts and replies and configure when sessions may send or receive messages. (#161053, #162316) Authored by @steipete. [v2026.10.33]",
+        "Model setup: support endpoint-resolved custom aliases, show provider recommendations first, and display active authentication subscription blocks. (#170009, #167370, #133087) Authored by @steipete. Thanks @RomneyDa, @ceckert, @obviyus, @xyrolle, @Leon-SK668, and @vincentkoc. [v2026.10.33]",
+        "Provider integrations: add Particle and Muse Code runtime support, including Muse sign-in through Model Setup. (#187135, #170487, #171526) Authored by @steipete. Thanks @RomneyDa and @obviyus. [v2026.10.33]",
+        "Voice calls: add per-call briefs, reports, live steering, callbacks, and voicemail detection; OpenAI realtime voice can use a custom endpoint. (#165716, #165632) Authored by @steipete. Thanks @jacobtomlinson and @mbelinky. [v2026.10.33]",
+        "Microsoft Teams: support multiple bot accounts. (#112811) Authored by @steipete. Thanks @jimmypuckett. [v2026.10.33]",
+        "X integration: add mentions, GitHub-verified repository writers, guest repository questions, and daily/monthly API cost limits. (#165138, #168071, #165354, #165351) Authored by @steipete. [v2026.10.33]",
+        "Backups: support external-disk and Cloudflare R2 destinations and preserve PostgreSQL-backed stores through backups and updates. (#161913, #170828) Authored by @steipete. Thanks @joshavant and @RomneyDa. [v2026.10.33]",
+        "Database administration: add verified offline database-port operations with interrupted-port protection and replacement verification. (#170518, #171265, #171368) Authored by @steipete. [v2026.10.33]"
       ],
       "fixItems": [
-        "fix(acp): keep a configured binding online when the adapter rejects an inherited thinking level (#199377)",
-        "fix(active-memory): warn once when the provider lacks private transcript recall (#198438)",
-        "fix: keep quiet Auto Review calls alive (#200743)",
-        "fix: keep mobile chat drafts above composer actions (#200737)",
-        "fix: keep the dictation border visible in new sessions (#200770)",
-        "fix(daemon): recognize completed runtime-pin source aliases",
-        "fix: highlight the message box when dropping images into a new session (#200758)",
-        "fix: keep one missing archived transcript from blocking every update (#200733)"
+        "fix(agents): name the profile path and alsoAllow fix in session capabilities (#200936)",
+        "fix(discord): show busy notices on session initialization conflicts (#201363)",
+        "fix: recognize image input for GPT-6.2 models routed through ClawRouter",
+        "fix(ui): guide Chat to setup when no model is connected",
+        "fix: deliver scheduled reports to unchanged Discord threads",
+        "fix(gateway-protocol): point pairing remediation at the Gateway host (#200905)",
+        "fix: keep the Automations sidebar list after returning to a background tab (#201316)",
+        "fix: drop the generic hint under the agent name on new sessions (#201187)"
       ],
       "releases": [
         {
-          "tag_name": "v2026.11.5",
-          "published_at": "2026-11-17T10:47:56Z",
-          "name": "openclaw 2026.11.5",
+          "tag_name": "v2026.10.33",
+          "published_at": "2026-11-18T04:15:53Z",
+          "name": "openclaw 2026.10.33",
           "prerelease": false,
-          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.5"
+          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.33"
         }
       ],
       "topScopes": [
         {
           "scope": "fix",
-          "count": 82
-        },
-        {
-          "scope": "ci",
-          "count": 37
+          "count": 126
         },
         {
           "scope": "ui",
-          "count": 31
+          "count": 43
         },
         {
-          "scope": "update",
-          "count": 20
+          "scope": "ci",
+          "count": 25
         },
         {
           "scope": "test",
-          "count": 13
+          "count": 23
         },
         {
-          "scope": "release",
-          "count": 11
+          "scope": "improve",
+          "count": 21
         },
         {
-          "scope": "ios",
-          "count": 6
+          "scope": "improve(ui)",
+          "count": 15
         },
         {
-          "scope": "improve(ci)",
-          "count": 6
+          "scope": "agents",
+          "count": 12
+        },
+        {
+          "scope": "gateway",
+          "count": 12
         }
       ],
       "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"

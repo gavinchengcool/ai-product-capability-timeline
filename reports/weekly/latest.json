@@ -1,191 +1,203 @@
 {
-  "generated_at": "2026-11-18T04:07:01.165839+08:00",
+  "generated_at": "2026-11-19T03:39:43.190367+08:00",
   "window": {
-    "start_local": "2026-11-17T04:07:01.165839+08:00",
-    "end_local": "2026-11-18T04:07:01.165839+08:00",
-    "start_utc": "2026-11-16T20:07:01Z",
-    "end_utc": "2026-11-17T20:07:01Z"
+    "start_local": "2026-11-18T03:39:43.190367+08:00",
+    "end_local": "2026-11-19T03:39:43.190367+08:00",
+    "start_utc": "2026-11-17T19:39:43Z",
+    "end_utc": "2026-11-18T19:39:43Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 394671,
-    "forks": 82920,
-    "open_issues": 8274,
-    "pushed_at": "2026-11-17T20:06:32Z"
+    "stars": 394755,
+    "forks": 82923,
+    "open_issues": 8379,
+    "pushed_at": "2026-11-18T19:38:34Z"
   },
   "releases_in_window": [
     {
-      "tag_name": "v2026.11.5",
-      "published_at": "2026-11-17T10:47:56Z",
-      "name": "openclaw 2026.11.5",
+      "tag_name": "v2026.10.33",
+      "published_at": "2026-11-18T04:15:53Z",
+      "name": "openclaw 2026.10.33",
       "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.5"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.33"
     }
   ],
-  "commit_count": 316,
+  "commit_count": 402,
   "commit_headlines": [
-    "fix(acp): keep a configured binding online when the adapter rejects an inherited thinking level (#199377)",
-    "fix(active-memory): warn once when the provider lacks private transcript recall (#198438)",
-    "fix: keep quiet Auto Review calls alive (#200743)",
-    "test(ios): report held probe wait state (#200767)",
-    "fix: keep mobile chat drafts above composer actions (#200737)",
-    "fix: keep the dictation border visible in new sessions (#200770)",
-    "improve(ui): fill the current navigation item's icon (#199822)",
-    "fix(daemon): recognize completed runtime-pin source aliases",
-    "chore(ui): capture missing Dashboard menu click evidence (#200763)",
-    "fix: highlight the message box when dropping images into a new session (#200758)",
-    "fix: keep one missing archived transcript from blocking every update (#200733)",
-    "fix(codex): attach a request over the turn cap instead of losing its middle (#200735)",
-    "fix(ci): keep context maintenance state query private (#200754)",
-    "fix(ci): complete GBrain plugin integration metadata (#200752)",
-    "fix(gateway): channel setup stays busy after a disconnect",
-    "feat(plugins): let plugin forks read, ls and run owner exec under the session's policy (#200636)",
-    "fix: use the release predecessor in staged upgrade checks (#200751)",
-    "chore(build): report memory on admission refusal (#200736)",
-    "chore(ui): refresh control ui locales (#200750)",
-    "improve(ui): read Portals in the standard page column (#199835)",
-    "fix(macos): audit direct sleep tail continuations (#200740)",
-    "improve(ui): read Apps in the standard page column (#200014)",
-    "feat(ui): edit an agent's thinking default from its Overview (#198399)",
-    "fix(update): tell include users to consolidate config instead of deleting retired heartbeat settings (#200721)",
-    "fix(ui): a connection that died during an app switch recovers late after switching back (#199887)",
-    "feat(ui): read Activity in the standard wide page column (#199834)",
-    "fix: stop blank messages appearing in the chat queue",
-    "fix(ci): provision Bun for retained-runtime process tests (#200731)",
-    "fix(agents): only a request that cannot fit may fail a turn (#200714)",
-    "perf(agents): reduce allocations for limited UTF-8 file reads (#200725)",
-    "feat: connect OpenClaw to GBrain with one plugin install (#200625)",
-    "fix(ui): fill the model picker Favorites star (#200730)",
-    "fix(ci): target swarm lifecycle disclosure toggles (#200723)",
-    "fix(update): allow explicit targets on extended-stable (#200726)",
-    "fix: prevent queued agent failures after the sending turn ends (#177296)",
-    "fix(tests): initialize logging before catalog directory capture (#200727)",
-    "fix(sessions): probe a hydrated history root's frozen state once (#200718)",
-    "perf(ai): reuse compacted Responses input identities (#200715)",
-    "fix(ios): open and close the sidebar drawer without a pause or chat scrolling (#200677)",
-    "fix(release): qualify published extended-stable updates through selector (#200708)",
-    "fix: keep openclaw update status fast and from copying the state database repeatedly (#200687)",
-    "chore(ui): capture model picker alignment failure context (#200702)",
-    "fix: Windows cleanup commands from updates and Doctor now remove long paths (#200686)",
-    "fix: avoid Gateway stalls during GitHub session actions (#200554)",
-    "fix: start gateway after upgrading provider configuration (#200596)",
-    "chore(ui): refresh control ui locales (#200709)",
-    "fix(update): keep valid cold archives from blocking updates (#200659)",
-    "fix: explain removed session worktrees before sandbox preparation (#200691)",
-    "fix: let the next update continue after a killed update when nothing is left to repair (#200680)",
-    "fix: let Doctor publish unchanged plugin migrations in any order (#200658)"
+    "fix(agents): name the profile path and alsoAllow fix in session capabilities (#200936)",
+    "refactor(workboard): drop the unused claim and observation records",
+    "test(ui): diagnose required human action timeouts (#201386)",
+    "improve: ship less JavaScript for sidebar previews in Chat and New Session",
+    "fix(discord): show busy notices on session initialization conflicts (#201363)",
+    "test(memory): cover remote notes added after indexing (#200976)",
+    "fix: recognize image input for GPT-6.2 models routed through ClawRouter",
+    "fix(ui): guide Chat to setup when no model is connected",
+    "improve: ship less CSS when opening Chat or New Session",
+    "fix: deliver scheduled reports to unchanged Discord threads",
+    "improve(ui): keep image inspection labels short (#201375)",
+    "chore(ui): refresh control ui locales (#201379)",
+    "fix(gateway-protocol): point pairing remediation at the Gateway host (#200905)",
+    "improve(ui): keep inspected image previews compact (#201259)",
+    "fix: keep the Automations sidebar list after returning to a background tab (#201316)",
+    "fix: drop the generic hint under the agent name on new sessions (#201187)",
+    "improve(ui): summarize file edits and writes together (#201261)",
+    "improve(ui): separate chat activity groups and indent expanded operations (#201258)",
+    "fix: keep the Slack question when someone who may not answer presses its button (#201371)",
+    "fix(talk): load conversation history when starting a fresh call (#201352)",
+    "style(macos): wrap discovery identity host tokens",
+    "chore(ui): refresh control ui locales (#201372)",
+    "improve: stop shipping the full Gateway capability list to the browser",
+    "improve: shrink the JavaScript loaded for chat Markdown",
+    "fix(gateway): config changes no longer exhaust session discovery with GitHub publication refreshes (#195679)",
+    "fix: keep the chat composer width steady on reload (#201346)",
+    "fix: make the OpenClaw update notice easy to see above the composer (#201303)",
+    "feat: show installed plugins in the Customize sidebar (#201220)",
+    "refactor(gateway): keep operator authority fixed per request (#201334)",
+    "test(gateway): expose auth removal refresh warnings (#201353)",
+    "fix: reflect failed access checks in provider status",
+    "fix: keep setup diagnostics separate from progress output (#200859)",
+    "fix(macos): defer Local Network permission until discovery starts (#201004)",
+    "fix(sessions): keep the running turn when a command is delivered mid-turn (#201271)",
+    "fix: show onboarding completion only once (#200858)",
+    "fix(macos): show full icon captions in the DMG installer (#200836)",
+    "perf(gateway): skip lease-only startup workspace scans (#201347)",
+    "fix: keep recently used session worktrees from idle cleanup (#201333)",
+    "fix(release): accept only exact low-risk beta test failures (#201343)",
+    "fix: remove unused agent watcher and Codex version exports",
+    "fix: keep startup alive when model preparation is superseded (#201312)",
+    "fix(release): show the active step while FRV is running (#201196)",
+    "fix(release): allow release push audits from shallow clones (#201197)",
+    "fix(test): retain direct consumers alongside conventional owners (#201200)",
+    "fix(release): retain npm registry failure diagnostics (#201201)",
+    "fix(qa): match the canonical restart recovery prompt (#201202)",
+    "fix: honor approved 2026.11.6 validation exceptions (#201341)",
+    "fix(test): model Codex version discovery in worker fixture (#201325)",
+    "fix(codex): retire native assignments from an earlier session lifecycle (#201306)",
+    "fix: let updates from 2026.11.4 and older finish when the old Gateway left a plugin lease behind (#201314)"
   ],
   "feature_items": [
-    "feat(plugins): let plugin forks read, ls and run owner exec under the session's policy (#200636)",
-    "feat(ui): edit an agent's thinking default from its Overview (#198399)",
-    "feat(ui): read Activity in the standard wide page column (#199834)",
-    "feat: connect OpenClaw to GBrain with one plugin install (#200625)",
-    "feat(control-ui): give composer actions the pane draft (#200467)",
-    "feat(ui): let plugins offer feedback on failed replies",
-    "feat(update): run Git checkout installs from releases behind the release link (#199706)",
-    "feat(ui): show prompt cache hit rate in the context popover (#200223)",
-    "feat(ui): add the Clawlombian to the Lobsterdex (#199458)",
-    "feat(ui): add the Clawnadian to the Lobsterdex (#199443)",
-    "feat(ui): add Santa Claws to the Lobsterdex (#199470)",
-    "feat(auth): enable guests to access sessions through selected mentions (#184515)",
-    "feat(slack): show streamed reasoning as task rows and roll long native streams into continuation messages",
-    "feat(openclaw-id): members can recover access with a recovery kit (#200145)",
-    "feat(release): request stable and beta Gateway Store delivery (#181446)",
-    "feat(templates): honor optional preferred models on Add (#199988)",
-    "feat(openclaw-id): owners can approve a member's new browser (#200088)",
-    "feat(openclaw-id): members with an admin role are administrators (#197782)"
+    "Shared conversations: add emoji reactions to prompts and replies and configure when sessions may send or receive messages. (#161053, #162316) Authored by @steipete. [v2026.10.33]",
+    "Model setup: support endpoint-resolved custom aliases, show provider recommendations first, and display active authentication subscription blocks. (#170009, #167370, #133087) Authored by @steipete. Thanks @RomneyDa, @ceckert, @obviyus, @xyrolle, @Leon-SK668, and @vincentkoc. [v2026.10.33]",
+    "Provider integrations: add Particle and Muse Code runtime support, including Muse sign-in through Model Setup. (#187135, #170487, #171526) Authored by @steipete. Thanks @RomneyDa and @obviyus. [v2026.10.33]",
+    "Voice calls: add per-call briefs, reports, live steering, callbacks, and voicemail detection; OpenAI realtime voice can use a custom endpoint. (#165716, #165632) Authored by @steipete. Thanks @jacobtomlinson and @mbelinky. [v2026.10.33]",
+    "Microsoft Teams: support multiple bot accounts. (#112811) Authored by @steipete. Thanks @jimmypuckett. [v2026.10.33]",
+    "X integration: add mentions, GitHub-verified repository writers, guest repository questions, and daily/monthly API cost limits. (#165138, #168071, #165354, #165351) Authored by @steipete. [v2026.10.33]",
+    "Backups: support external-disk and Cloudflare R2 destinations and preserve PostgreSQL-backed stores through backups and updates. (#161913, #170828) Authored by @steipete. Thanks @joshavant and @RomneyDa. [v2026.10.33]",
+    "Database administration: add verified offline database-port operations with interrupted-port protection and replacement verification. (#170518, #171265, #171368) Authored by @steipete. [v2026.10.33]",
+    "improve: ship less JavaScript for sidebar previews in Chat and New Session",
+    "improve: ship less CSS when opening Chat or New Session",
+    "feat: show installed plugins in the Customize sidebar (#201220)",
+    "feat: open Sessions from its own rail icon and keep the avatar for switching agents (#201208)",
+    "improve(ui): show project icons in the New Session project picker (#197607)",
+    "improve: shrink sidebar inbox code loaded with Chat and New Session",
+    "feat: reorder favorites in the model picker (#201141)",
+    "improve: shrink sidebar code loaded with Chat and New Session",
+    "improve: ship less hashing code when opening Chat or New Session",
+    "feat: pick an automation's agent from a list with avatars (#201213)",
+    "improve: ship less JavaScript when opening New Session",
+    "feat(session-share): pull shared sessions over outbound WSS (#201075)",
+    "feat(session-share): authorize device-granted session reads (#201074)",
+    "feat: support narrowly scoped Gateway publication readers (#201073)",
+    "feat(plugins): grant conversation access through the capability review (#200961)",
+    "feat(templates): install local projects through live Gateway",
+    "feat: install GBrain without Bun on Apple Silicon Macs and x86-64 Linux (#200987)",
+    "feat(plugins): tell agent hooks when the turn read network content (#197964)",
+    "feat(plugins): let plugins gate the final model provider request (#193550)",
+    "feat(ui): describe automation schedules as a sentence (#200817)",
+    "feat(diagnostics-prometheus): let plugins add metric families to the scrape route (#198455)",
+    "feat: recommend GPT-6.2 and Qwen4 successors (#200945)"
   ],
   "fix_items": [
-    "fix(acp): keep a configured binding online when the adapter rejects an inherited thinking level (#199377)",
-    "fix(active-memory): warn once when the provider lacks private transcript recall (#198438)",
-    "fix: keep quiet Auto Review calls alive (#200743)",
-    "fix: keep mobile chat drafts above composer actions (#200737)",
-    "fix: keep the dictation border visible in new sessions (#200770)",
-    "fix(daemon): recognize completed runtime-pin source aliases",
-    "fix: highlight the message box when dropping images into a new session (#200758)",
-    "fix: keep one missing archived transcript from blocking every update (#200733)",
-    "fix(codex): attach a request over the turn cap instead of losing its middle (#200735)",
-    "fix(ci): keep context maintenance state query private (#200754)",
-    "fix(ci): complete GBrain plugin integration metadata (#200752)",
-    "fix(gateway): channel setup stays busy after a disconnect",
-    "fix: use the release predecessor in staged upgrade checks (#200751)",
-    "fix(macos): audit direct sleep tail continuations (#200740)",
-    "fix(update): tell include users to consolidate config instead of deleting retired heartbeat settings (#200721)",
-    "fix(ui): a connection that died during an app switch recovers late after switching back (#199887)",
-    "fix: stop blank messages appearing in the chat queue",
-    "fix(ci): provision Bun for retained-runtime process tests (#200731)",
-    "fix(agents): only a request that cannot fit may fail a turn (#200714)",
-    "perf(agents): reduce allocations for limited UTF-8 file reads (#200725)",
-    "fix(ui): fill the model picker Favorites star (#200730)",
-    "fix(ci): target swarm lifecycle disclosure toggles (#200723)",
-    "fix(update): allow explicit targets on extended-stable (#200726)",
-    "fix: prevent queued agent failures after the sending turn ends (#177296)",
-    "fix(tests): initialize logging before catalog directory capture (#200727)",
-    "fix(sessions): probe a hydrated history root's frozen state once (#200718)",
-    "perf(ai): reuse compacted Responses input identities (#200715)",
-    "fix(ios): open and close the sidebar drawer without a pause or chat scrolling (#200677)",
-    "fix(release): qualify published extended-stable updates through selector (#200708)",
-    "fix: keep openclaw update status fast and from copying the state database repeatedly (#200687)"
+    "fix(agents): name the profile path and alsoAllow fix in session capabilities (#200936)",
+    "fix(discord): show busy notices on session initialization conflicts (#201363)",
+    "fix: recognize image input for GPT-6.2 models routed through ClawRouter",
+    "fix(ui): guide Chat to setup when no model is connected",
+    "fix: deliver scheduled reports to unchanged Discord threads",
+    "fix(gateway-protocol): point pairing remediation at the Gateway host (#200905)",
+    "fix: keep the Automations sidebar list after returning to a background tab (#201316)",
+    "fix: drop the generic hint under the agent name on new sessions (#201187)",
+    "fix: keep the Slack question when someone who may not answer presses its button (#201371)",
+    "fix(talk): load conversation history when starting a fresh call (#201352)",
+    "fix(gateway): config changes no longer exhaust session discovery with GitHub publication refreshes (#195679)",
+    "fix: keep the chat composer width steady on reload (#201346)",
+    "fix: make the OpenClaw update notice easy to see above the composer (#201303)",
+    "fix: reflect failed access checks in provider status",
+    "fix: keep setup diagnostics separate from progress output (#200859)",
+    "fix(macos): defer Local Network permission until discovery starts (#201004)",
+    "fix(sessions): keep the running turn when a command is delivered mid-turn (#201271)",
+    "fix: show onboarding completion only once (#200858)",
+    "fix(macos): show full icon captions in the DMG installer (#200836)",
+    "perf(gateway): skip lease-only startup workspace scans (#201347)",
+    "fix: keep recently used session worktrees from idle cleanup (#201333)",
+    "fix(release): accept only exact low-risk beta test failures (#201343)",
+    "fix: remove unused agent watcher and Codex version exports",
+    "fix: keep startup alive when model preparation is superseded (#201312)",
+    "fix(release): show the active step while FRV is running (#201196)",
+    "fix(release): allow release push audits from shallow clones (#201197)",
+    "fix(test): retain direct consumers alongside conventional owners (#201200)",
+    "fix(release): retain npm registry failure diagnostics (#201201)",
+    "fix(qa): match the canonical restart recovery prompt (#201202)",
+    "fix: honor approved 2026.11.6 validation exceptions (#201341)"
   ],
   "top_scopes": [
     {
       "scope": "fix",
-      "count": 82
-    },
-    {
-      "scope": "ci",
-      "count": 37
+      "count": 126
     },
     {
       "scope": "ui",
-      "count": 31
+      "count": 43
     },
     {
-      "scope": "update",
-      "count": 20
+      "scope": "ci",
+      "count": 25
     },
     {
       "scope": "test",
-      "count": 13
+      "count": 23
     },
     {
-      "scope": "release",
-      "count": 11
-    },
-    {
-      "scope": "ios",
-      "count": 6
-    },
-    {
-      "scope": "improve(ci)",
-      "count": 6
-    },
-    {
-      "scope": "gateway",
-      "count": 5
-    },
-    {
-      "scope": "agents",
-      "count": 5
-    },
-    {
-      "scope": "sessions",
-      "count": 5
-    },
-    {
-      "scope": "refactor",
-      "count": 5
+      "scope": "improve",
+      "count": 21
     },
     {
       "scope": "improve(ui)",
-      "count": 4
+      "count": 15
+    },
+    {
+      "scope": "agents",
+      "count": 12
+    },
+    {
+      "scope": "gateway",
+      "count": 12
+    },
+    {
+      "scope": "feat",
+      "count": 9
+    },
+    {
+      "scope": "release",
+      "count": 9
     },
     {
       "scope": "codex",
-      "count": 4
+      "count": 7
+    },
+    {
+      "scope": "sessions",
+      "count": 6
     },
     {
       "scope": "plugins",
+      "count": 6
+    },
+    {
+      "scope": "docs",
+      "count": 5
+    },
+    {
+      "scope": "memory",
       "count": 4
     }
   ]

@@ -1,99 +1,99 @@
 # OpenClaw Weekly Update
 
-生成时间：2026-11-18T04:07:01.165839+08:00
+生成时间：2026-11-19T03:39:43.190367+08:00
 
 ## Window
 
-- Start: 2026-11-17T04:07:01.165839+08:00
-- End: 2026-11-18T04:07:01.165839+08:00
+- Start: 2026-11-18T03:39:43.190367+08:00
+- End: 2026-11-19T03:39:43.190367+08:00
 - Repo: `openclaw/openclaw`
 
 ## At A Glance
 
-- Commits in window: 316
+- Commits in window: 402
 - Releases in window: 1
 - Stable releases in window: 1
 - Beta releases in window: 0
-- Repo stars at scan time: 394671
-- Repo forks at scan time: 82920
+- Repo stars at scan time: 394755
+- Repo forks at scan time: 82923
 
 ## New Capability Signals
 
-- feat(plugins): let plugin forks read, ls and run owner exec under the session's policy (#200636)
-- feat(ui): edit an agent's thinking default from its Overview (#198399)
-- feat(ui): read Activity in the standard wide page column (#199834)
-- feat: connect OpenClaw to GBrain with one plugin install (#200625)
-- feat(control-ui): give composer actions the pane draft (#200467)
-- feat(ui): let plugins offer feedback on failed replies
-- feat(update): run Git checkout installs from releases behind the release link (#199706)
-- feat(ui): show prompt cache hit rate in the context popover (#200223)
-- feat(ui): add the Clawlombian to the Lobsterdex (#199458)
-- feat(ui): add the Clawnadian to the Lobsterdex (#199443)
-- feat(ui): add Santa Claws to the Lobsterdex (#199470)
-- feat(auth): enable guests to access sessions through selected mentions (#184515)
-- feat(slack): show streamed reasoning as task rows and roll long native streams into continuation messages
-- feat(openclaw-id): members can recover access with a recovery kit (#200145)
-- feat(release): request stable and beta Gateway Store delivery (#181446)
+- Shared conversations: add emoji reactions to prompts and replies and configure when sessions may send or receive messages. (#161053, #162316) Authored by @steipete. [v2026.10.33]
+- Model setup: support endpoint-resolved custom aliases, show provider recommendations first, and display active authentication subscription blocks. (#170009, #167370, #133087) Authored by @steipete. Thanks @RomneyDa, @ceckert, @obviyus, @xyrolle, @Leon-SK668, and @vincentkoc. [v2026.10.33]
+- Provider integrations: add Particle and Muse Code runtime support, including Muse sign-in through Model Setup. (#187135, #170487, #171526) Authored by @steipete. Thanks @RomneyDa and @obviyus. [v2026.10.33]
+- Voice calls: add per-call briefs, reports, live steering, callbacks, and voicemail detection; OpenAI realtime voice can use a custom endpoint. (#165716, #165632) Authored by @steipete. Thanks @jacobtomlinson and @mbelinky. [v2026.10.33]
+- Microsoft Teams: support multiple bot accounts. (#112811) Authored by @steipete. Thanks @jimmypuckett. [v2026.10.33]
+- X integration: add mentions, GitHub-verified repository writers, guest repository questions, and daily/monthly API cost limits. (#165138, #168071, #165354, #165351) Authored by @steipete. [v2026.10.33]
+- Backups: support external-disk and Cloudflare R2 destinations and preserve PostgreSQL-backed stores through backups and updates. (#161913, #170828) Authored by @steipete. Thanks @joshavant and @RomneyDa. [v2026.10.33]
+- Database administration: add verified offline database-port operations with interrupted-port protection and replacement verification. (#170518, #171265, #171368) Authored by @steipete. [v2026.10.33]
+- improve: ship less JavaScript for sidebar previews in Chat and New Session
+- improve: ship less CSS when opening Chat or New Session
+- feat: show installed plugins in the Customize sidebar (#201220)
+- feat: open Sessions from its own rail icon and keep the avatar for switching agents (#201208)
+- improve(ui): show project icons in the New Session project picker (#197607)
+- improve: shrink sidebar inbox code loaded with Chat and New Session
+- feat: reorder favorites in the model picker (#201141)
 
 ## Important Fixes And Hardening
 
-- fix(acp): keep a configured binding online when the adapter rejects an inherited thinking level (#199377)
-- fix(active-memory): warn once when the provider lacks private transcript recall (#198438)
-- fix: keep quiet Auto Review calls alive (#200743)
-- fix: keep mobile chat drafts above composer actions (#200737)
-- fix: keep the dictation border visible in new sessions (#200770)
-- fix(daemon): recognize completed runtime-pin source aliases
-- fix: highlight the message box when dropping images into a new session (#200758)
-- fix: keep one missing archived transcript from blocking every update (#200733)
-- fix(codex): attach a request over the turn cap instead of losing its middle (#200735)
-- fix(ci): keep context maintenance state query private (#200754)
-- fix(ci): complete GBrain plugin integration metadata (#200752)
-- fix(gateway): channel setup stays busy after a disconnect
-- fix: use the release predecessor in staged upgrade checks (#200751)
-- fix(macos): audit direct sleep tail continuations (#200740)
-- fix(update): tell include users to consolidate config instead of deleting retired heartbeat settings (#200721)
+- fix(agents): name the profile path and alsoAllow fix in session capabilities (#200936)
+- fix(discord): show busy notices on session initialization conflicts (#201363)
+- fix: recognize image input for GPT-6.2 models routed through ClawRouter
+- fix(ui): guide Chat to setup when no model is connected
+- fix: deliver scheduled reports to unchanged Discord threads
+- fix(gateway-protocol): point pairing remediation at the Gateway host (#200905)
+- fix: keep the Automations sidebar list after returning to a background tab (#201316)
+- fix: drop the generic hint under the agent name on new sessions (#201187)
+- fix: keep the Slack question when someone who may not answer presses its button (#201371)
+- fix(talk): load conversation history when starting a fresh call (#201352)
+- fix(gateway): config changes no longer exhaust session discovery with GitHub publication refreshes (#195679)
+- fix: keep the chat composer width steady on reload (#201346)
+- fix: make the OpenClaw update notice easy to see above the composer (#201303)
+- fix: reflect failed access checks in provider status
+- fix: keep setup diagnostics separate from progress output (#200859)
 
 ## Releases This Week
 
-- `v2026.11.5` | stable | 2026-11-17T10:47:56Z | openclaw 2026.11.5
+- `v2026.10.33` | stable | 2026-11-18T04:15:53Z | openclaw 2026.10.33
 
 ## Most Active Change Scopes
 
-- `fix`: 82
-- `ci`: 37
-- `ui`: 31
-- `update`: 20
-- `test`: 13
-- `release`: 11
-- `ios`: 6
-- `improve(ci)`: 6
-- `gateway`: 5
-- `agents`: 5
-- `sessions`: 5
-- `refactor`: 5
+- `fix`: 126
+- `ui`: 43
+- `ci`: 25
+- `test`: 23
+- `improve`: 21
+- `improve(ui)`: 15
+- `agents`: 12
+- `gateway`: 12
+- `feat`: 9
+- `release`: 9
+- `codex`: 7
+- `sessions`: 6
 
 ## Recent Commit Headlines
 
-- 2026-11-17T20:02:36Z | fix(acp): keep a configured binding online when the adapter rejects an inherited thinking level (#199377)
-- 2026-11-17T19:54:56Z | fix(active-memory): warn once when the provider lacks private transcript recall (#198438)
-- 2026-11-17T19:53:50Z | fix: keep quiet Auto Review calls alive (#200743)
-- 2026-11-17T19:52:02Z | test(ios): report held probe wait state (#200767)
-- 2026-11-17T19:49:56Z | fix: keep mobile chat drafts above composer actions (#200737)
-- 2026-11-17T19:47:00Z | fix: keep the dictation border visible in new sessions (#200770)
-- 2026-11-17T19:46:46Z | improve(ui): fill the current navigation item's icon (#199822)
-- 2026-11-17T19:45:25Z | fix(daemon): recognize completed runtime-pin source aliases
-- 2026-11-17T19:44:53Z | chore(ui): capture missing Dashboard menu click evidence (#200763)
-- 2026-11-17T19:31:40Z | fix: highlight the message box when dropping images into a new session (#200758)
-- 2026-11-17T19:25:05Z | fix: keep one missing archived transcript from blocking every update (#200733)
-- 2026-11-17T19:24:39Z | fix(codex): attach a request over the turn cap instead of losing its middle (#200735)
-- 2026-11-17T19:20:28Z | fix(ci): keep context maintenance state query private (#200754)
-- 2026-11-17T19:18:56Z | fix(ci): complete GBrain plugin integration metadata (#200752)
-- 2026-11-17T19:11:30Z | fix(gateway): channel setup stays busy after a disconnect
-- 2026-11-17T19:00:38Z | feat(plugins): let plugin forks read, ls and run owner exec under the session's policy (#200636)
-- 2026-11-17T19:00:12Z | fix: use the release predecessor in staged upgrade checks (#200751)
-- 2026-11-17T18:54:05Z | chore(build): report memory on admission refusal (#200736)
-- 2026-11-17T18:51:15Z | chore(ui): refresh control ui locales (#200750)
-- 2026-11-17T18:47:27Z | improve(ui): read Portals in the standard page column (#199835)
+- 2026-11-18T19:38:33Z | fix(agents): name the profile path and alsoAllow fix in session capabilities (#200936)
+- 2026-11-18T19:31:21Z | refactor(workboard): drop the unused claim and observation records
+- 2026-11-18T19:28:53Z | test(ui): diagnose required human action timeouts (#201386)
+- 2026-11-18T19:28:44Z | improve: ship less JavaScript for sidebar previews in Chat and New Session
+- 2026-11-18T19:19:22Z | fix(discord): show busy notices on session initialization conflicts (#201363)
+- 2026-11-18T19:18:53Z | test(memory): cover remote notes added after indexing (#200976)
+- 2026-11-18T19:10:23Z | fix: recognize image input for GPT-6.2 models routed through ClawRouter
+- 2026-11-18T19:09:48Z | fix(ui): guide Chat to setup when no model is connected
+- 2026-11-18T19:07:44Z | improve: ship less CSS when opening Chat or New Session
+- 2026-11-18T19:03:35Z | fix: deliver scheduled reports to unchanged Discord threads
+- 2026-11-18T18:55:19Z | improve(ui): keep image inspection labels short (#201375)
+- 2026-11-18T18:47:59Z | chore(ui): refresh control ui locales (#201379)
+- 2026-11-18T18:47:15Z | fix(gateway-protocol): point pairing remediation at the Gateway host (#200905)
+- 2026-11-18T18:37:24Z | improve(ui): keep inspected image previews compact (#201259)
+- 2026-11-18T18:35:32Z | fix: keep the Automations sidebar list after returning to a background tab (#201316)
+- 2026-11-18T18:33:49Z | fix: drop the generic hint under the agent name on new sessions (#201187)
+- 2026-11-18T18:32:39Z | improve(ui): summarize file edits and writes together (#201261)
+- 2026-11-18T18:31:42Z | improve(ui): separate chat activity groups and indent expanded operations (#201258)
+- 2026-11-18T18:30:31Z | fix: keep the Slack question when someone who may not answer presses its button (#201371)
+- 2026-11-18T18:28:28Z | fix(talk): load conversation history when starting a fresh call (#201352)
 
 ## Sources
 

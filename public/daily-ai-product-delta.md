@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-11-18T04:07:20+08:00
-- Requested window: 2026-11-17 to 2026-11-18
+- Generated at: 2026-11-19T03:40:03+08:00
+- Requested window: 2026-11-18 to 2026-11-19
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-11-17 to 2026-11-18
-- Generated at: 2026-11-18T04:07:01.165839+08:00
-- 窗口: 2026-11-17 至 2026-11-18
-- GitHub 增量: 316 commits / 1 releases
-- 最近 push: 2026-11-17
+- Window: 2026-11-18 to 2026-11-19
+- Generated at: 2026-11-19T03:39:43.190367+08:00
+- 窗口: 2026-11-18 至 2026-11-19
+- GitHub 增量: 402 commits / 1 releases
+- 最近 push: 2026-11-18
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(plugins): let plugin forks read, ls and run owner exec under the session's policy (#200636)
-  - feat(ui): edit an agent's thinking default from its Overview (#198399)
-  - feat(ui): read Activity in the standard wide page column (#199834)
-  - feat: connect OpenClaw to GBrain with one plugin install (#200625)
-  - feat(control-ui): give composer actions the pane draft (#200467)
-  - feat(ui): let plugins offer feedback on failed replies
-  - feat(update): run Git checkout installs from releases behind the release link (#199706)
-  - feat(ui): show prompt cache hit rate in the context popover (#200223)
+  - Shared conversations: add emoji reactions to prompts and replies and configure when sessions may send or receive messages. (#161053, #162316) Authored by @steipete. [v2026.10.33]
+  - Model setup: support endpoint-resolved custom aliases, show provider recommendations first, and display active authentication subscription blocks. (#170009, #167370, #133087) Authored by @steipete. Thanks @RomneyDa, @ceckert, @obviyus, @xyrolle, @Leon-SK668, and @vincentkoc. [v2026.10.33]
+  - Provider integrations: add Particle and Muse Code runtime support, including Muse sign-in through Model Setup. (#187135, #170487, #171526) Authored by @steipete. Thanks @RomneyDa and @obviyus. [v2026.10.33]
+  - Voice calls: add per-call briefs, reports, live steering, callbacks, and voicemail detection; OpenAI realtime voice can use a custom endpoint. (#165716, #165632) Authored by @steipete. Thanks @jacobtomlinson and @mbelinky. [v2026.10.33]
+  - Microsoft Teams: support multiple bot accounts. (#112811) Authored by @steipete. Thanks @jimmypuckett. [v2026.10.33]
+  - X integration: add mentions, GitHub-verified repository writers, guest repository questions, and daily/monthly API cost limits. (#165138, #168071, #165354, #165351) Authored by @steipete. [v2026.10.33]
+  - Backups: support external-disk and Cloudflare R2 destinations and preserve PostgreSQL-backed stores through backups and updates. (#161913, #170828) Authored by @steipete. Thanks @joshavant and @RomneyDa. [v2026.10.33]
+  - Database administration: add verified offline database-port operations with interrupted-port protection and replacement verification. (#170518, #171265, #171368) Authored by @steipete. [v2026.10.33]
 - Fixes and constraints:
-  - fix(acp): keep a configured binding online when the adapter rejects an inherited thinking level (#199377)
-  - fix(active-memory): warn once when the provider lacks private transcript recall (#198438)
-  - fix: keep quiet Auto Review calls alive (#200743)
-  - fix: keep mobile chat drafts above composer actions (#200737)
-  - fix: keep the dictation border visible in new sessions (#200770)
-  - fix(daemon): recognize completed runtime-pin source aliases
-  - fix: highlight the message box when dropping images into a new session (#200758)
-  - fix: keep one missing archived transcript from blocking every update (#200733)
+  - fix(agents): name the profile path and alsoAllow fix in session capabilities (#200936)
+  - fix(discord): show busy notices on session initialization conflicts (#201363)
+  - fix: recognize image input for GPT-6.2 models routed through ClawRouter
+  - fix(ui): guide Chat to setup when no model is connected
+  - fix: deliver scheduled reports to unchanged Discord threads
+  - fix(gateway-protocol): point pairing remediation at the Gateway host (#200905)
+  - fix: keep the Automations sidebar list after returning to a background tab (#201316)
+  - fix: drop the generic hint under the agent name on new sessions (#201187)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
