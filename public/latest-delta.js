@@ -1,99 +1,91 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-11-19T03:39:43.190367+08:00",
+  "generatedAt": "2026-11-21T03:18:15.200782+08:00",
   "window": {
-    "start_local": "2026-11-18T03:39:43.190367+08:00",
-    "end_local": "2026-11-19T03:39:43.190367+08:00",
-    "start_utc": "2026-11-17T19:39:43Z",
-    "end_utc": "2026-11-18T19:39:43Z"
+    "start_local": "2026-11-20T03:18:15.200782+08:00",
+    "end_local": "2026-11-21T03:18:15.200782+08:00",
+    "start_utc": "2026-11-19T19:18:15Z",
+    "end_utc": "2026-11-20T19:18:15Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 394755,
-    "forks": 82923,
-    "open_issues": 8379,
-    "pushed_at": "2026-11-18T19:38:34Z"
+    "stars": 394919,
+    "forks": 82945,
+    "open_issues": 8638,
+    "pushed_at": "2026-11-20T19:17:39Z"
   },
   "summary": {
-    "commitCount": 402,
-    "releaseCount": 1,
-    "stableReleaseCount": 1,
+    "commitCount": 335,
+    "releaseCount": 0,
+    "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 394755,
-    "forks": 82923,
-    "openIssues": 8379
+    "stars": 394919,
+    "forks": 82945,
+    "openIssues": 8638
   },
-  "releases": [
-    {
-      "tag_name": "v2026.10.33",
-      "published_at": "2026-11-18T04:15:53Z",
-      "name": "openclaw 2026.10.33",
-      "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.33"
-    }
-  ],
+  "releases": [],
   "featureItems": [
-    "Shared conversations: add emoji reactions to prompts and replies and configure when sessions may send or receive messages. (#161053, #162316) Authored by @steipete. [v2026.10.33]",
-    "Model setup: support endpoint-resolved custom aliases, show provider recommendations first, and display active authentication subscription blocks. (#170009, #167370, #133087) Authored by @steipete. Thanks @RomneyDa, @ceckert, @obviyus, @xyrolle, @Leon-SK668, and @vincentkoc. [v2026.10.33]",
-    "Provider integrations: add Particle and Muse Code runtime support, including Muse sign-in through Model Setup. (#187135, #170487, #171526) Authored by @steipete. Thanks @RomneyDa and @obviyus. [v2026.10.33]",
-    "Voice calls: add per-call briefs, reports, live steering, callbacks, and voicemail detection; OpenAI realtime voice can use a custom endpoint. (#165716, #165632) Authored by @steipete. Thanks @jacobtomlinson and @mbelinky. [v2026.10.33]",
-    "Microsoft Teams: support multiple bot accounts. (#112811) Authored by @steipete. Thanks @jimmypuckett. [v2026.10.33]",
-    "X integration: add mentions, GitHub-verified repository writers, guest repository questions, and daily/monthly API cost limits. (#165138, #168071, #165354, #165351) Authored by @steipete. [v2026.10.33]",
-    "Backups: support external-disk and Cloudflare R2 destinations and preserve PostgreSQL-backed stores through backups and updates. (#161913, #170828) Authored by @steipete. Thanks @joshavant and @RomneyDa. [v2026.10.33]",
-    "Database administration: add verified offline database-port operations with interrupted-port protection and replacement verification. (#170518, #171265, #171368) Authored by @steipete. [v2026.10.33]"
+    "feat(ui): skill workshop start page with Drafts, History and Learned skills (#202572)",
+    "feat: steer an active conversation without starting another run, off by default (#202397)",
+    "feat: show new iPhone users how to set up OpenClaw",
+    "feat(ci): run manual PR gates on Boat (#202560)",
+    "feat: change a Knowledge scribe's schedule from its detail (#202416)",
+    "feat: archive all sessions in a sidebar group",
+    "feat: let administrators assign profile roles from chat (#202315)",
+    "feat: block guest invites until the role's sandbox can start (#202230)"
   ],
   "fixItems": [
-    "fix(agents): name the profile path and alsoAllow fix in session capabilities (#200936)",
-    "fix(discord): show busy notices on session initialization conflicts (#201363)",
-    "fix: recognize image input for GPT-6.2 models routed through ClawRouter",
-    "fix(ui): guide Chat to setup when no model is connected",
-    "fix: deliver scheduled reports to unchanged Discord threads",
-    "fix(gateway-protocol): point pairing remediation at the Gateway host (#200905)",
-    "fix: keep the Automations sidebar list after returning to a background tab (#201316)",
-    "fix: drop the generic hint under the agent name on new sessions (#201187)"
+    "fix: show publisher logos on chat cards without a plugin icon",
+    "fix(channels): stop resending replayed session turns as channel history (#202637)",
+    "fix: align CI tests with admitted tool calls (#202655)",
+    "fix(ui): read the skill card when its dialog opens; show the switch after Add (#202548)",
+    "fix(ui): open template automations in place and read the whole SOUL.md on Show more (#202535)",
+    "fix: ACP clients get the whole reply when a prompt waits behind other work (#202658)",
+    "fix(release): authenticate receipt recovery during stable closeout (#202660)",
+    "fix(macos): complete OpenClaw ID sign-in inside the app"
   ],
   "topScopes": [
     {
       "scope": "fix",
-      "count": 126
+      "count": 89
     },
     {
       "scope": "ui",
-      "count": 43
+      "count": 31
     },
     {
       "scope": "ci",
-      "count": 25
-    },
-    {
-      "scope": "test",
-      "count": 23
-    },
-    {
-      "scope": "improve",
-      "count": 21
-    },
-    {
-      "scope": "improve(ui)",
-      "count": 15
-    },
-    {
-      "scope": "agents",
-      "count": 12
+      "count": 29
     },
     {
       "scope": "gateway",
-      "count": 12
+      "count": 20
+    },
+    {
+      "scope": "test",
+      "count": 20
+    },
+    {
+      "scope": "docs",
+      "count": 11
+    },
+    {
+      "scope": "improve",
+      "count": 10
+    },
+    {
+      "scope": "agents",
+      "count": 10
     }
   ],
   "headlineCommits": [
-    "fix(agents): name the profile path and alsoAllow fix in session capabilities (#200936)",
-    "refactor(workboard): drop the unused claim and observation records",
-    "test(ui): diagnose required human action timeouts (#201386)",
-    "improve: ship less JavaScript for sidebar previews in Chat and New Session",
-    "fix(discord): show busy notices on session initialization conflicts (#201363)",
-    "test(memory): cover remote notes added after indexing (#200976)",
-    "fix: recognize image input for GPT-6.2 models routed through ClawRouter",
-    "fix(ui): guide Chat to setup when no model is connected"
+    "test(prompt-cache): extend the prefix journey with cron, steer, overflow and a concurrent chat on five transports (#201723)",
+    "fix: show publisher logos on chat cards without a plugin icon",
+    "chore: separate managed playback test coverage (#195850)",
+    "fix(channels): stop resending replayed session turns as channel history (#202637)",
+    "fix: align CI tests with admitted tool calls (#202655)",
+    "fix(ui): read the skill card when its dialog opens; show the switch after Add (#202548)",
+    "fix(ui): open template automations in place and read the whole SOUL.md on Show more (#202535)",
+    "fix: ACP clients get the whole reply when a prompt waits behind other work (#202658)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

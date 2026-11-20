@@ -1,0 +1,178 @@
+{
+  "generated_at": "2026-11-21T03:18:15.200782+08:00",
+  "window": {
+    "start_local": "2026-11-20T03:18:15.200782+08:00",
+    "end_local": "2026-11-21T03:18:15.200782+08:00",
+    "start_utc": "2026-11-19T19:18:15Z",
+    "end_utc": "2026-11-20T19:18:15Z"
+  },
+  "repo": {
+    "slug": "openclaw/openclaw",
+    "stars": 394919,
+    "forks": 82945,
+    "open_issues": 8638,
+    "pushed_at": "2026-11-20T19:17:39Z"
+  },
+  "releases_in_window": [],
+  "commit_count": 335,
+  "commit_headlines": [
+    "test(prompt-cache): extend the prefix journey with cron, steer, overflow and a concurrent chat on five transports (#201723)",
+    "fix: show publisher logos on chat cards without a plugin icon",
+    "chore: separate managed playback test coverage (#195850)",
+    "fix(channels): stop resending replayed session turns as channel history (#202637)",
+    "fix: align CI tests with admitted tool calls (#202655)",
+    "fix(ui): read the skill card when its dialog opens; show the switch after Add (#202548)",
+    "fix(ui): open template automations in place and read the whole SOUL.md on Show more (#202535)",
+    "fix: ACP clients get the whole reply when a prompt waits behind other work (#202658)",
+    "fix(release): authenticate receipt recovery during stable closeout (#202660)",
+    "improve(ui): templates catalog as rows and template page with a facts column (#202532)",
+    "fix(macos): complete OpenClaw ID sign-in inside the app",
+    "fix: resume model catalog publishing when a release ships minified code (#202656)",
+    "fix: retain requester follow-up authority across lifecycle changes (#202647)",
+    "feat(ui): skill workshop start page with Drafts, History and Learned skills (#202572)",
+    "fix: reuse prepared plugin configuration during agent runs (#202628)",
+    "improve(ui): skills list as rows and skill details laid out like plugin pages (#202531)",
+    "chore(release): close out 2026.11.6 on main (#202624)",
+    "improve(ui): keep Skill Workshop navigation on skill and draft pages (#202545)",
+    "chore(ui): refresh control ui locales (#202649)",
+    "fix: let updates finish when another tool briefly reads OpenClaw's databases (#202541)",
+    "fix(config): reject reserved PostgreSQL schema prefixes (#202097)",
+    "improve(ui): plugins catalog lists only plugins you have not installed (#202527)",
+    "improve(ui): skill workshop as a start page with skill and draft pages (#202537)",
+    "fix(database-port): treat SQLite zero sequence high-water as uncalled (#201583)",
+    "fix(ui): keep Settings links on their routes as permissions load",
+    "fix: keep interrupted child results visible after restart (#202592)",
+    "chore(ui): refresh control ui locales (#202640)",
+    "fix(gateway): keep a worker session's system prompt pinned across instruction changes (#202568)",
+    "fix: avoid copying live state during read-only inspection (#202608)",
+    "fix(models): never list a model the provider's listing omits, including on the Gateway's first read (#202618)",
+    "fix(models): apply a changed catalog source at once without breaking turns (#202583)",
+    "fix(database): report PostgreSQL shared-state ownership (#202110)",
+    "improve(ui): plugins catalog as rows and plugin page with a facts column (#202515)",
+    "fix(ci): restore PostgreSQL conformance coverage (#202089)",
+    "fix: catch incompatible ownership before porting to SQLite (#202101)",
+    "fix: speed up compaction for PostgreSQL-backed chats (#202104)",
+    "fix(cli): refuse saved history only when another CLI account ran the session (#202428)",
+    "fix(worktrees): yield long removals during slow filesystem commits (#202607)",
+    "fix(memory): rebuild indexes after model or tokenizer changes (#201871)",
+    "chore(i18n): refresh native locales (#202619)",
+    "fix(database): allow porting and backing up large plugin blobs (#201862)",
+    "fix: keep scheduled Git backups current on PostgreSQL (#201870)",
+    "fix: show menus and tooltips in the Linux app (#202500)",
+    "fix: allow fresh PostgreSQL installs to port back to SQLite (#201867)",
+    "fix(ci): publish performance reports through pull requests (#202582)",
+    "fix(ci): remove unused settings and spawn exports (#202605)",
+    "fix(ui): keep assistant answers out of the collapsed Worked fold (#197429)",
+    "docs: show the Patch badge beside v2026.11.6 in the releases menu (#202604)",
+    "chore(ui): refresh control ui locales (#202606)",
+    "fix: show update repairs as repairs and keep the failed update visible (#202558)"
+  ],
+  "feature_items": [
+    "feat(ui): skill workshop start page with Drafts, History and Learned skills (#202572)",
+    "feat: steer an active conversation without starting another run, off by default (#202397)",
+    "feat: show new iPhone users how to set up OpenClaw",
+    "feat(ci): run manual PR gates on Boat (#202560)",
+    "feat: change a Knowledge scribe's schedule from its detail (#202416)",
+    "feat: archive all sessions in a sidebar group",
+    "feat: let administrators assign profile roles from chat (#202315)",
+    "feat: block guest invites until the role's sandbox can start (#202230)",
+    "feat: let /codex review target a branch, commit or custom instructions (#202114)",
+    "feat(plugins): composer tasks can send their result and resume in a returning chat (#202243)",
+    "feat: show planned automations and their controls in chat",
+    "feat: show what a template automation will do when you open its row"
+  ],
+  "fix_items": [
+    "fix: show publisher logos on chat cards without a plugin icon",
+    "fix(channels): stop resending replayed session turns as channel history (#202637)",
+    "fix: align CI tests with admitted tool calls (#202655)",
+    "fix(ui): read the skill card when its dialog opens; show the switch after Add (#202548)",
+    "fix(ui): open template automations in place and read the whole SOUL.md on Show more (#202535)",
+    "fix: ACP clients get the whole reply when a prompt waits behind other work (#202658)",
+    "fix(release): authenticate receipt recovery during stable closeout (#202660)",
+    "fix(macos): complete OpenClaw ID sign-in inside the app",
+    "fix: resume model catalog publishing when a release ships minified code (#202656)",
+    "fix: retain requester follow-up authority across lifecycle changes (#202647)",
+    "fix: reuse prepared plugin configuration during agent runs (#202628)",
+    "fix: let updates finish when another tool briefly reads OpenClaw's databases (#202541)",
+    "fix(config): reject reserved PostgreSQL schema prefixes (#202097)",
+    "fix(database-port): treat SQLite zero sequence high-water as uncalled (#201583)",
+    "fix(ui): keep Settings links on their routes as permissions load",
+    "fix: keep interrupted child results visible after restart (#202592)",
+    "fix(gateway): keep a worker session's system prompt pinned across instruction changes (#202568)",
+    "fix: avoid copying live state during read-only inspection (#202608)",
+    "fix(models): never list a model the provider's listing omits, including on the Gateway's first read (#202618)",
+    "fix(models): apply a changed catalog source at once without breaking turns (#202583)",
+    "fix(database): report PostgreSQL shared-state ownership (#202110)",
+    "fix(ci): restore PostgreSQL conformance coverage (#202089)",
+    "fix: catch incompatible ownership before porting to SQLite (#202101)",
+    "fix: speed up compaction for PostgreSQL-backed chats (#202104)",
+    "fix(cli): refuse saved history only when another CLI account ran the session (#202428)",
+    "fix(worktrees): yield long removals during slow filesystem commits (#202607)",
+    "fix(memory): rebuild indexes after model or tokenizer changes (#201871)",
+    "fix(database): allow porting and backing up large plugin blobs (#201862)",
+    "fix: keep scheduled Git backups current on PostgreSQL (#201870)",
+    "fix: show menus and tooltips in the Linux app (#202500)"
+  ],
+  "top_scopes": [
+    {
+      "scope": "fix",
+      "count": 89
+    },
+    {
+      "scope": "ui",
+      "count": 31
+    },
+    {
+      "scope": "ci",
+      "count": 29
+    },
+    {
+      "scope": "gateway",
+      "count": 20
+    },
+    {
+      "scope": "test",
+      "count": 20
+    },
+    {
+      "scope": "docs",
+      "count": 11
+    },
+    {
+      "scope": "improve",
+      "count": 10
+    },
+    {
+      "scope": "agents",
+      "count": 10
+    },
+    {
+      "scope": "feat",
+      "count": 9
+    },
+    {
+      "scope": "improve(ui)",
+      "count": 7
+    },
+    {
+      "scope": "worktrees",
+      "count": 6
+    },
+    {
+      "scope": "sessions",
+      "count": 5
+    },
+    {
+      "scope": "update",
+      "count": 4
+    },
+    {
+      "scope": "perf",
+      "count": 4
+    },
+    {
+      "scope": "discord",
+      "count": 4
+    }
+  ]
+}
