@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-11-21T03:18:32+08:00
-- Requested window: 2026-11-20 to 2026-11-21
+- Generated at: 2026-11-22T02:20:24+08:00
+- Requested window: 2026-11-21 to 2026-11-22
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-11-20 to 2026-11-21
-- Generated at: 2026-11-21T03:18:15.200782+08:00
-- 窗口: 2026-11-20 至 2026-11-21
-- GitHub 增量: 335 commits / 0 releases
-- 最近 push: 2026-11-20
+- Window: 2026-11-21 to 2026-11-22
+- Generated at: 2026-11-22T02:20:07.754901+08:00
+- 窗口: 2026-11-21 至 2026-11-22
+- GitHub 增量: 337 commits / 0 releases
+- 最近 push: 2026-11-21
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(ui): skill workshop start page with Drafts, History and Learned skills (#202572)
-  - feat: steer an active conversation without starting another run, off by default (#202397)
-  - feat: show new iPhone users how to set up OpenClaw
-  - feat(ci): run manual PR gates on Boat (#202560)
-  - feat: change a Knowledge scribe's schedule from its detail (#202416)
-  - feat: archive all sessions in a sidebar group
-  - feat: let administrators assign profile roles from chat (#202315)
-  - feat: block guest invites until the role's sandbox can start (#202230)
+  - feat(gateway): connect approved trusted-proxy CLI and TUI devices within their grant
+  - feat: move Code Mode, Tool Search and Templates out of Labs (#203096)
+  - feat: open shared sessions in their source Control UI (#203044)
+  - feat(sessions): mark forwarded channel messages in the transcript (#202053)
+  - feat(update): run every Git install from releases and delete the in-place Git runner (#200578)
+  - feat(opencode): sign in to OpenCode Console and OpenCode Go in the browser (#202949)
+  - feat(gateway): opt-in Cloudflare Access JWT verification for trusted-proxy auth
+  - feat(plugins): serve legacy memory runtimes as backends and add optional provider store (#202838)
 - Fixes and constraints:
-  - fix: show publisher logos on chat cards without a plugin icon
-  - fix(channels): stop resending replayed session turns as channel history (#202637)
-  - fix: align CI tests with admitted tool calls (#202655)
-  - fix(ui): read the skill card when its dialog opens; show the switch after Add (#202548)
-  - fix(ui): open template automations in place and read the whole SOUL.md on Show more (#202535)
-  - fix: ACP clients get the whole reply when a prompt waits behind other work (#202658)
-  - fix(release): authenticate receipt recovery during stable closeout (#202660)
-  - fix(macos): complete OpenClaw ID sign-in inside the app
+  - fix: let updates stop a Gateway that OpenClaw reran under a compatible Node (#203152)
+  - fix(pr): reuse captured evidence hashes during baseline validation (#203218)
+  - fix: interrupted sessions still resume after a running Gateway's package is replaced in place (#203185)
+  - fix(update): let Doctor finish after a package rollback
+  - fix: keep internal publication records out of Activity (#203199)
+  - perf(ci): avoid duplicate declaration path checks (#203181)
+  - fix: retain child results behind live requester turns (#203198)
+  - fix(perf): activate remote catalog benchmark fixtures (#203196)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

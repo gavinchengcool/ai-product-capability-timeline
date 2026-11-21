@@ -1,54 +1,57 @@
 # OpenClaw Weekly Update
 
-生成时间：2026-11-21T03:18:15.200782+08:00
+生成时间：2026-11-22T02:20:07.754901+08:00
 
 ## Window
 
-- Start: 2026-11-20T03:18:15.200782+08:00
-- End: 2026-11-21T03:18:15.200782+08:00
+- Start: 2026-11-21T02:20:07.754901+08:00
+- End: 2026-11-22T02:20:07.754901+08:00
 - Repo: `openclaw/openclaw`
 
 ## At A Glance
 
-- Commits in window: 335
+- Commits in window: 337
 - Releases in window: 0
 - Stable releases in window: 0
 - Beta releases in window: 0
-- Repo stars at scan time: 394919
-- Repo forks at scan time: 82945
+- Repo stars at scan time: 394972
+- Repo forks at scan time: 82943
 
 ## New Capability Signals
 
-- feat(ui): skill workshop start page with Drafts, History and Learned skills (#202572)
-- feat: steer an active conversation without starting another run, off by default (#202397)
-- feat: show new iPhone users how to set up OpenClaw
-- feat(ci): run manual PR gates on Boat (#202560)
-- feat: change a Knowledge scribe's schedule from its detail (#202416)
-- feat: archive all sessions in a sidebar group
-- feat: let administrators assign profile roles from chat (#202315)
-- feat: block guest invites until the role's sandbox can start (#202230)
-- feat: let /codex review target a branch, commit or custom instructions (#202114)
-- feat(plugins): composer tasks can send their result and resume in a returning chat (#202243)
-- feat: show planned automations and their controls in chat
-- feat: show what a template automation will do when you open its row
+- feat(gateway): connect approved trusted-proxy CLI and TUI devices within their grant
+- feat: move Code Mode, Tool Search and Templates out of Labs (#203096)
+- feat: open shared sessions in their source Control UI (#203044)
+- feat(sessions): mark forwarded channel messages in the transcript (#202053)
+- feat(update): run every Git install from releases and delete the in-place Git runner (#200578)
+- feat(opencode): sign in to OpenCode Console and OpenCode Go in the browser (#202949)
+- feat(gateway): opt-in Cloudflare Access JWT verification for trusted-proxy auth
+- feat(plugins): serve legacy memory runtimes as backends and add optional provider store (#202838)
+- feat: prepare restricted connections for Session Share steering (#202654)
+- feat: keep unused Knowledge workers asleep in lean mode (#202478)
+- feat: only link file paths that open in chat (#202534)
+- feat(plugins): let the memory slot owner query passive memory backends (#201340)
+- feat: show Gateway resource profiles and live worker memory (#202422)
+- feat(ui): open skills as pages instead of dialogs (#202581)
+- feat: let Knowledge learn from Slack (#202411)
 
 ## Important Fixes And Hardening
 
-- fix: show publisher logos on chat cards without a plugin icon
-- fix(channels): stop resending replayed session turns as channel history (#202637)
-- fix: align CI tests with admitted tool calls (#202655)
-- fix(ui): read the skill card when its dialog opens; show the switch after Add (#202548)
-- fix(ui): open template automations in place and read the whole SOUL.md on Show more (#202535)
-- fix: ACP clients get the whole reply when a prompt waits behind other work (#202658)
-- fix(release): authenticate receipt recovery during stable closeout (#202660)
-- fix(macos): complete OpenClaw ID sign-in inside the app
-- fix: resume model catalog publishing when a release ships minified code (#202656)
-- fix: retain requester follow-up authority across lifecycle changes (#202647)
-- fix: reuse prepared plugin configuration during agent runs (#202628)
-- fix: let updates finish when another tool briefly reads OpenClaw's databases (#202541)
-- fix(config): reject reserved PostgreSQL schema prefixes (#202097)
-- fix(database-port): treat SQLite zero sequence high-water as uncalled (#201583)
-- fix(ui): keep Settings links on their routes as permissions load
+- fix: let updates stop a Gateway that OpenClaw reran under a compatible Node (#203152)
+- fix(pr): reuse captured evidence hashes during baseline validation (#203218)
+- fix: interrupted sessions still resume after a running Gateway's package is replaced in place (#203185)
+- fix(update): let Doctor finish after a package rollback
+- fix: keep internal publication records out of Activity (#203199)
+- perf(ci): avoid duplicate declaration path checks (#203181)
+- fix: retain child results behind live requester turns (#203198)
+- fix(perf): activate remote catalog benchmark fixtures (#203196)
+- fix(worktrees): explain cold template refresh decisions (#193214)
+- fix(ci): accept native preparation and nested project labels (#203197)
+- fix: unblock changed checks after channel module splits (#203186)
+- fix(update): keep settled warnings out of failure reports (#203173)
+- fix(plugins): admit Windows host links by physical identity (#201589) (#203147)
+- fix: keep Gemini NO_REPLY replies silent when the signature arrives on its own part (#203174)
+- fix(github): release unused reader response bodies (#203158)
 
 ## Releases This Week
 
@@ -56,41 +59,41 @@
 
 ## Most Active Change Scopes
 
-- `fix`: 89
-- `ui`: 31
-- `ci`: 29
-- `gateway`: 20
-- `test`: 20
-- `docs`: 11
-- `improve`: 10
-- `agents`: 10
-- `feat`: 9
-- `improve(ui)`: 7
-- `worktrees`: 6
-- `sessions`: 5
+- `fix`: 93
+- `ui`: 33
+- `test`: 32
+- `ci`: 25
+- `ios`: 10
+- `improve`: 8
+- `feat`: 8
+- `agents`: 7
+- `cli`: 7
+- `update`: 6
+- `gateway`: 5
+- `cron`: 5
 
 ## Recent Commit Headlines
 
-- 2026-11-20T19:14:13Z | test(prompt-cache): extend the prefix journey with cron, steer, overflow and a concurrent chat on five transports (#201723)
-- 2026-11-20T19:10:38Z | fix: show publisher logos on chat cards without a plugin icon
-- 2026-11-20T19:09:17Z | chore: separate managed playback test coverage (#195850)
-- 2026-11-20T19:01:10Z | fix(channels): stop resending replayed session turns as channel history (#202637)
-- 2026-11-20T19:00:30Z | fix: align CI tests with admitted tool calls (#202655)
-- 2026-11-20T19:00:26Z | fix(ui): read the skill card when its dialog opens; show the switch after Add (#202548)
-- 2026-11-20T18:59:37Z | fix(ui): open template automations in place and read the whole SOUL.md on Show more (#202535)
-- 2026-11-20T18:56:36Z | fix: ACP clients get the whole reply when a prompt waits behind other work (#202658)
-- 2026-11-20T18:48:25Z | fix(release): authenticate receipt recovery during stable closeout (#202660)
-- 2026-11-20T18:46:44Z | improve(ui): templates catalog as rows and template page with a facts column (#202532)
-- 2026-11-20T18:45:50Z | fix(macos): complete OpenClaw ID sign-in inside the app
-- 2026-11-20T18:42:05Z | fix: resume model catalog publishing when a release ships minified code (#202656)
-- 2026-11-20T18:40:15Z | fix: retain requester follow-up authority across lifecycle changes (#202647)
-- 2026-11-20T18:37:11Z | feat(ui): skill workshop start page with Drafts, History and Learned skills (#202572)
-- 2026-11-20T18:34:39Z | fix: reuse prepared plugin configuration during agent runs (#202628)
-- 2026-11-20T18:33:08Z | improve(ui): skills list as rows and skill details laid out like plugin pages (#202531)
-- 2026-11-20T18:26:52Z | chore(release): close out 2026.11.6 on main (#202624)
-- 2026-11-20T18:24:13Z | improve(ui): keep Skill Workshop navigation on skill and draft pages (#202545)
-- 2026-11-20T18:22:59Z | chore(ui): refresh control ui locales (#202649)
-- 2026-11-20T18:20:34Z | fix: let updates finish when another tool briefly reads OpenClaw's databases (#202541)
+- 2026-11-21T18:12:45Z | fix: let updates stop a Gateway that OpenClaw reran under a compatible Node (#203152)
+- 2026-11-21T18:08:53Z | fix(pr): reuse captured evidence hashes during baseline validation (#203218)
+- 2026-11-21T18:08:07Z | fix: interrupted sessions still resume after a running Gateway's package is replaced in place (#203185)
+- 2026-11-21T17:55:07Z | fix(update): let Doctor finish after a package rollback
+- 2026-11-21T17:48:47Z | fix: keep internal publication records out of Activity (#203199)
+- 2026-11-21T17:44:44Z | perf(ci): avoid duplicate declaration path checks (#203181)
+- 2026-11-21T17:44:33Z | refactor(test): remove unused Tailscale fixture mode (#203212)
+- 2026-11-21T17:38:49Z | fix: retain child results behind live requester turns (#203198)
+- 2026-11-21T17:37:31Z | fix(perf): activate remote catalog benchmark fixtures (#203196)
+- 2026-11-21T17:27:32Z | fix(worktrees): explain cold template refresh decisions (#193214)
+- 2026-11-21T17:27:02Z | fix(ci): accept native preparation and nested project labels (#203197)
+- 2026-11-21T17:26:21Z | improve: reduce session sidebar work during streaming bursts (#202883)
+- 2026-11-21T17:22:58Z | chore(ui): refresh control ui locales (#203205)
+- 2026-11-21T17:09:47Z | test(gateway): observe preparation failure waiter rejections (#203190)
+- 2026-11-21T17:07:52Z | refactor(line): keep message constructors with templates (#203171)
+- 2026-11-21T17:06:08Z | refactor(test): remove unused QA replay controls (#203193)
+- 2026-11-21T16:56:35Z | feat(gateway): connect approved trusted-proxy CLI and TUI devices within their grant
+- 2026-11-21T16:56:08Z | fix: unblock changed checks after channel module splits (#203186)
+- 2026-11-21T16:50:58Z | fix(update): keep settled warnings out of failure reports (#203173)
+- 2026-11-21T16:50:56Z | test(cron): await native recovery starts without a polling deadline (#203169)
 
 ## Sources
 

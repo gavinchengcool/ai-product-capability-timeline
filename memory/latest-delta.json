@@ -1,91 +1,91 @@
 {
-  "generatedAt": "2026-11-21T03:18:15.200782+08:00",
+  "generatedAt": "2026-11-22T02:20:07.754901+08:00",
   "window": {
-    "start_local": "2026-11-20T03:18:15.200782+08:00",
-    "end_local": "2026-11-21T03:18:15.200782+08:00",
-    "start_utc": "2026-11-19T19:18:15Z",
-    "end_utc": "2026-11-20T19:18:15Z"
+    "start_local": "2026-11-21T02:20:07.754901+08:00",
+    "end_local": "2026-11-22T02:20:07.754901+08:00",
+    "start_utc": "2026-11-20T18:20:07Z",
+    "end_utc": "2026-11-21T18:20:07Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 394919,
-    "forks": 82945,
-    "open_issues": 8638,
-    "pushed_at": "2026-11-20T19:17:39Z"
+    "stars": 394972,
+    "forks": 82943,
+    "open_issues": 8729,
+    "pushed_at": "2026-11-21T18:17:56Z"
   },
   "summary": {
-    "commitCount": 335,
+    "commitCount": 337,
     "releaseCount": 0,
     "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 394919,
-    "forks": 82945,
-    "openIssues": 8638
+    "stars": 394972,
+    "forks": 82943,
+    "openIssues": 8729
   },
   "releases": [],
   "featureItems": [
-    "feat(ui): skill workshop start page with Drafts, History and Learned skills (#202572)",
-    "feat: steer an active conversation without starting another run, off by default (#202397)",
-    "feat: show new iPhone users how to set up OpenClaw",
-    "feat(ci): run manual PR gates on Boat (#202560)",
-    "feat: change a Knowledge scribe's schedule from its detail (#202416)",
-    "feat: archive all sessions in a sidebar group",
-    "feat: let administrators assign profile roles from chat (#202315)",
-    "feat: block guest invites until the role's sandbox can start (#202230)"
+    "feat(gateway): connect approved trusted-proxy CLI and TUI devices within their grant",
+    "feat: move Code Mode, Tool Search and Templates out of Labs (#203096)",
+    "feat: open shared sessions in their source Control UI (#203044)",
+    "feat(sessions): mark forwarded channel messages in the transcript (#202053)",
+    "feat(update): run every Git install from releases and delete the in-place Git runner (#200578)",
+    "feat(opencode): sign in to OpenCode Console and OpenCode Go in the browser (#202949)",
+    "feat(gateway): opt-in Cloudflare Access JWT verification for trusted-proxy auth",
+    "feat(plugins): serve legacy memory runtimes as backends and add optional provider store (#202838)"
   ],
   "fixItems": [
-    "fix: show publisher logos on chat cards without a plugin icon",
-    "fix(channels): stop resending replayed session turns as channel history (#202637)",
-    "fix: align CI tests with admitted tool calls (#202655)",
-    "fix(ui): read the skill card when its dialog opens; show the switch after Add (#202548)",
-    "fix(ui): open template automations in place and read the whole SOUL.md on Show more (#202535)",
-    "fix: ACP clients get the whole reply when a prompt waits behind other work (#202658)",
-    "fix(release): authenticate receipt recovery during stable closeout (#202660)",
-    "fix(macos): complete OpenClaw ID sign-in inside the app"
+    "fix: let updates stop a Gateway that OpenClaw reran under a compatible Node (#203152)",
+    "fix(pr): reuse captured evidence hashes during baseline validation (#203218)",
+    "fix: interrupted sessions still resume after a running Gateway's package is replaced in place (#203185)",
+    "fix(update): let Doctor finish after a package rollback",
+    "fix: keep internal publication records out of Activity (#203199)",
+    "perf(ci): avoid duplicate declaration path checks (#203181)",
+    "fix: retain child results behind live requester turns (#203198)",
+    "fix(perf): activate remote catalog benchmark fixtures (#203196)"
   ],
   "topScopes": [
     {
       "scope": "fix",
-      "count": 89
+      "count": 93
     },
     {
       "scope": "ui",
-      "count": 31
-    },
-    {
-      "scope": "ci",
-      "count": 29
-    },
-    {
-      "scope": "gateway",
-      "count": 20
+      "count": 33
     },
     {
       "scope": "test",
-      "count": 20
+      "count": 32
     },
     {
-      "scope": "docs",
-      "count": 11
+      "scope": "ci",
+      "count": 25
+    },
+    {
+      "scope": "ios",
+      "count": 10
     },
     {
       "scope": "improve",
-      "count": 10
+      "count": 8
+    },
+    {
+      "scope": "feat",
+      "count": 8
     },
     {
       "scope": "agents",
-      "count": 10
+      "count": 7
     }
   ],
   "headlineCommits": [
-    "test(prompt-cache): extend the prefix journey with cron, steer, overflow and a concurrent chat on five transports (#201723)",
-    "fix: show publisher logos on chat cards without a plugin icon",
-    "chore: separate managed playback test coverage (#195850)",
-    "fix(channels): stop resending replayed session turns as channel history (#202637)",
-    "fix: align CI tests with admitted tool calls (#202655)",
-    "fix(ui): read the skill card when its dialog opens; show the switch after Add (#202548)",
-    "fix(ui): open template automations in place and read the whole SOUL.md on Show more (#202535)",
-    "fix: ACP clients get the whole reply when a prompt waits behind other work (#202658)"
+    "fix: let updates stop a Gateway that OpenClaw reran under a compatible Node (#203152)",
+    "fix(pr): reuse captured evidence hashes during baseline validation (#203218)",
+    "fix: interrupted sessions still resume after a running Gateway's package is replaced in place (#203185)",
+    "fix(update): let Doctor finish after a package rollback",
+    "fix: keep internal publication records out of Activity (#203199)",
+    "perf(ci): avoid duplicate declaration path checks (#203181)",
+    "refactor(test): remove unused Tailscale fixture mode (#203212)",
+    "fix: retain child results behind live requester turns (#203198)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 }

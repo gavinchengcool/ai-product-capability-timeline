@@ -1,177 +1,182 @@
 {
-  "generated_at": "2026-11-21T03:18:15.200782+08:00",
+  "generated_at": "2026-11-22T02:20:07.754901+08:00",
   "window": {
-    "start_local": "2026-11-20T03:18:15.200782+08:00",
-    "end_local": "2026-11-21T03:18:15.200782+08:00",
-    "start_utc": "2026-11-19T19:18:15Z",
-    "end_utc": "2026-11-20T19:18:15Z"
+    "start_local": "2026-11-21T02:20:07.754901+08:00",
+    "end_local": "2026-11-22T02:20:07.754901+08:00",
+    "start_utc": "2026-11-20T18:20:07Z",
+    "end_utc": "2026-11-21T18:20:07Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 394919,
-    "forks": 82945,
-    "open_issues": 8638,
-    "pushed_at": "2026-11-20T19:17:39Z"
+    "stars": 394972,
+    "forks": 82943,
+    "open_issues": 8729,
+    "pushed_at": "2026-11-21T18:17:56Z"
   },
   "releases_in_window": [],
-  "commit_count": 335,
+  "commit_count": 337,
   "commit_headlines": [
-    "test(prompt-cache): extend the prefix journey with cron, steer, overflow and a concurrent chat on five transports (#201723)",
-    "fix: show publisher logos on chat cards without a plugin icon",
-    "chore: separate managed playback test coverage (#195850)",
-    "fix(channels): stop resending replayed session turns as channel history (#202637)",
-    "fix: align CI tests with admitted tool calls (#202655)",
-    "fix(ui): read the skill card when its dialog opens; show the switch after Add (#202548)",
-    "fix(ui): open template automations in place and read the whole SOUL.md on Show more (#202535)",
-    "fix: ACP clients get the whole reply when a prompt waits behind other work (#202658)",
-    "fix(release): authenticate receipt recovery during stable closeout (#202660)",
-    "improve(ui): templates catalog as rows and template page with a facts column (#202532)",
-    "fix(macos): complete OpenClaw ID sign-in inside the app",
-    "fix: resume model catalog publishing when a release ships minified code (#202656)",
-    "fix: retain requester follow-up authority across lifecycle changes (#202647)",
-    "feat(ui): skill workshop start page with Drafts, History and Learned skills (#202572)",
-    "fix: reuse prepared plugin configuration during agent runs (#202628)",
-    "improve(ui): skills list as rows and skill details laid out like plugin pages (#202531)",
-    "chore(release): close out 2026.11.6 on main (#202624)",
-    "improve(ui): keep Skill Workshop navigation on skill and draft pages (#202545)",
-    "chore(ui): refresh control ui locales (#202649)",
-    "fix: let updates finish when another tool briefly reads OpenClaw's databases (#202541)",
-    "fix(config): reject reserved PostgreSQL schema prefixes (#202097)",
-    "improve(ui): plugins catalog lists only plugins you have not installed (#202527)",
-    "improve(ui): skill workshop as a start page with skill and draft pages (#202537)",
-    "fix(database-port): treat SQLite zero sequence high-water as uncalled (#201583)",
-    "fix(ui): keep Settings links on their routes as permissions load",
-    "fix: keep interrupted child results visible after restart (#202592)",
-    "chore(ui): refresh control ui locales (#202640)",
-    "fix(gateway): keep a worker session's system prompt pinned across instruction changes (#202568)",
-    "fix: avoid copying live state during read-only inspection (#202608)",
-    "fix(models): never list a model the provider's listing omits, including on the Gateway's first read (#202618)",
-    "fix(models): apply a changed catalog source at once without breaking turns (#202583)",
-    "fix(database): report PostgreSQL shared-state ownership (#202110)",
-    "improve(ui): plugins catalog as rows and plugin page with a facts column (#202515)",
-    "fix(ci): restore PostgreSQL conformance coverage (#202089)",
-    "fix: catch incompatible ownership before porting to SQLite (#202101)",
-    "fix: speed up compaction for PostgreSQL-backed chats (#202104)",
-    "fix(cli): refuse saved history only when another CLI account ran the session (#202428)",
-    "fix(worktrees): yield long removals during slow filesystem commits (#202607)",
-    "fix(memory): rebuild indexes after model or tokenizer changes (#201871)",
-    "chore(i18n): refresh native locales (#202619)",
-    "fix(database): allow porting and backing up large plugin blobs (#201862)",
-    "fix: keep scheduled Git backups current on PostgreSQL (#201870)",
-    "fix: show menus and tooltips in the Linux app (#202500)",
-    "fix: allow fresh PostgreSQL installs to port back to SQLite (#201867)",
-    "fix(ci): publish performance reports through pull requests (#202582)",
-    "fix(ci): remove unused settings and spawn exports (#202605)",
-    "fix(ui): keep assistant answers out of the collapsed Worked fold (#197429)",
-    "docs: show the Patch badge beside v2026.11.6 in the releases menu (#202604)",
-    "chore(ui): refresh control ui locales (#202606)",
-    "fix: show update repairs as repairs and keep the failed update visible (#202558)"
+    "fix: let updates stop a Gateway that OpenClaw reran under a compatible Node (#203152)",
+    "fix(pr): reuse captured evidence hashes during baseline validation (#203218)",
+    "fix: interrupted sessions still resume after a running Gateway's package is replaced in place (#203185)",
+    "fix(update): let Doctor finish after a package rollback",
+    "fix: keep internal publication records out of Activity (#203199)",
+    "perf(ci): avoid duplicate declaration path checks (#203181)",
+    "refactor(test): remove unused Tailscale fixture mode (#203212)",
+    "fix: retain child results behind live requester turns (#203198)",
+    "fix(perf): activate remote catalog benchmark fixtures (#203196)",
+    "fix(worktrees): explain cold template refresh decisions (#193214)",
+    "fix(ci): accept native preparation and nested project labels (#203197)",
+    "improve: reduce session sidebar work during streaming bursts (#202883)",
+    "chore(ui): refresh control ui locales (#203205)",
+    "test(gateway): observe preparation failure waiter rejections (#203190)",
+    "refactor(line): keep message constructors with templates (#203171)",
+    "refactor(test): remove unused QA replay controls (#203193)",
+    "feat(gateway): connect approved trusted-proxy CLI and TUI devices within their grant",
+    "fix: unblock changed checks after channel module splits (#203186)",
+    "fix(update): keep settled warnings out of failure reports (#203173)",
+    "test(cron): await native recovery starts without a polling deadline (#203169)",
+    "refactor(perf): reuse heap helpers in connection benchmarks (#203166)",
+    "chore(ui): refresh control ui locales (#203182)",
+    "fix(plugins): admit Windows host links by physical identity (#201589) (#203147)",
+    "fix: keep Gemini NO_REPLY replies silent when the signature arrives on its own part (#203174)",
+    "fix(github): release unused reader response bodies (#203158)",
+    "refactor(qa-lab): centralize mock compaction summary selection (#203146)",
+    "fix: preserve private child results during restart (#203156)",
+    "feat: move Code Mode, Tool Search and Templates out of Labs (#203096)",
+    "test(twitch): drop redundant settled assertion (#203161)",
+    "chore(ui): refresh control ui locales (#203164)",
+    "fix(models): read the published owner inventory for picker menus after a config republish (#202781)",
+    "fix(models): select a first model when a browser sign-in finds none (#203118)",
+    "fix: stop clean updates warning about skipped agent database path repair (#203023)",
+    "fix: show how to set up secure access when Connect a device can't make a code (#202071)",
+    "fix(update): name the Gateway stop step in the unmanifested cleanup hint (#203139)",
+    "fix(test): check queued hook accounts against refreshed config (#203138)",
+    "test: share oversized response stream construction (#203122)",
+    "fix: retain child results when restart aborts delivery (#203132)",
+    "fix(state): keep large agent databases registered across startup upgrades (#203130)",
+    "refactor(discord): keep reference helpers with target parsing (#203116)",
+    "refactor(feishu): separate message parsing from bot runtime (#203108)",
+    "refactor(agents): separate pure model references from runtime normalization (#203095)",
+    "fix(test): exercise invalid CPU ticks without topology changes (#203127)",
+    "chore(ui): refresh control ui locales (#203123)",
+    "fix(session-events): wake yielded worktree turns after their first turn ends (#203113)",
+    "fix: plain ChatGPT sign-in on the Mac setup screen",
+    "fix(ci): stabilize saved config retry coverage (#203117)",
+    "refactor(msteams): separate attachment content from fetching (#203084)",
+    "refactor(test): remove duplicate send preview cases (#203114)",
+    "improve: reduce Gateway forwarding overhead during file bursts (#203080)"
   ],
   "feature_items": [
-    "feat(ui): skill workshop start page with Drafts, History and Learned skills (#202572)",
-    "feat: steer an active conversation without starting another run, off by default (#202397)",
-    "feat: show new iPhone users how to set up OpenClaw",
-    "feat(ci): run manual PR gates on Boat (#202560)",
-    "feat: change a Knowledge scribe's schedule from its detail (#202416)",
-    "feat: archive all sessions in a sidebar group",
-    "feat: let administrators assign profile roles from chat (#202315)",
-    "feat: block guest invites until the role's sandbox can start (#202230)",
-    "feat: let /codex review target a branch, commit or custom instructions (#202114)",
-    "feat(plugins): composer tasks can send their result and resume in a returning chat (#202243)",
-    "feat: show planned automations and their controls in chat",
-    "feat: show what a template automation will do when you open its row"
+    "feat(gateway): connect approved trusted-proxy CLI and TUI devices within their grant",
+    "feat: move Code Mode, Tool Search and Templates out of Labs (#203096)",
+    "feat: open shared sessions in their source Control UI (#203044)",
+    "feat(sessions): mark forwarded channel messages in the transcript (#202053)",
+    "feat(update): run every Git install from releases and delete the in-place Git runner (#200578)",
+    "feat(opencode): sign in to OpenCode Console and OpenCode Go in the browser (#202949)",
+    "feat(gateway): opt-in Cloudflare Access JWT verification for trusted-proxy auth",
+    "feat(plugins): serve legacy memory runtimes as backends and add optional provider store (#202838)",
+    "feat: prepare restricted connections for Session Share steering (#202654)",
+    "feat: keep unused Knowledge workers asleep in lean mode (#202478)",
+    "feat: only link file paths that open in chat (#202534)",
+    "feat(plugins): let the memory slot owner query passive memory backends (#201340)",
+    "feat: show Gateway resource profiles and live worker memory (#202422)",
+    "feat(ui): open skills as pages instead of dialogs (#202581)",
+    "feat: let Knowledge learn from Slack (#202411)",
+    "feat: let agents list Slack channels and choose which token reads them (#202410)",
+    "feat(ui): skill workshop start page with Drafts, History and Learned skills (#202572)"
   ],
   "fix_items": [
-    "fix: show publisher logos on chat cards without a plugin icon",
-    "fix(channels): stop resending replayed session turns as channel history (#202637)",
-    "fix: align CI tests with admitted tool calls (#202655)",
-    "fix(ui): read the skill card when its dialog opens; show the switch after Add (#202548)",
-    "fix(ui): open template automations in place and read the whole SOUL.md on Show more (#202535)",
-    "fix: ACP clients get the whole reply when a prompt waits behind other work (#202658)",
-    "fix(release): authenticate receipt recovery during stable closeout (#202660)",
-    "fix(macos): complete OpenClaw ID sign-in inside the app",
-    "fix: resume model catalog publishing when a release ships minified code (#202656)",
-    "fix: retain requester follow-up authority across lifecycle changes (#202647)",
-    "fix: reuse prepared plugin configuration during agent runs (#202628)",
-    "fix: let updates finish when another tool briefly reads OpenClaw's databases (#202541)",
-    "fix(config): reject reserved PostgreSQL schema prefixes (#202097)",
-    "fix(database-port): treat SQLite zero sequence high-water as uncalled (#201583)",
-    "fix(ui): keep Settings links on their routes as permissions load",
-    "fix: keep interrupted child results visible after restart (#202592)",
-    "fix(gateway): keep a worker session's system prompt pinned across instruction changes (#202568)",
-    "fix: avoid copying live state during read-only inspection (#202608)",
-    "fix(models): never list a model the provider's listing omits, including on the Gateway's first read (#202618)",
-    "fix(models): apply a changed catalog source at once without breaking turns (#202583)",
-    "fix(database): report PostgreSQL shared-state ownership (#202110)",
-    "fix(ci): restore PostgreSQL conformance coverage (#202089)",
-    "fix: catch incompatible ownership before porting to SQLite (#202101)",
-    "fix: speed up compaction for PostgreSQL-backed chats (#202104)",
-    "fix(cli): refuse saved history only when another CLI account ran the session (#202428)",
-    "fix(worktrees): yield long removals during slow filesystem commits (#202607)",
-    "fix(memory): rebuild indexes after model or tokenizer changes (#201871)",
-    "fix(database): allow porting and backing up large plugin blobs (#201862)",
-    "fix: keep scheduled Git backups current on PostgreSQL (#201870)",
-    "fix: show menus and tooltips in the Linux app (#202500)"
+    "fix: let updates stop a Gateway that OpenClaw reran under a compatible Node (#203152)",
+    "fix(pr): reuse captured evidence hashes during baseline validation (#203218)",
+    "fix: interrupted sessions still resume after a running Gateway's package is replaced in place (#203185)",
+    "fix(update): let Doctor finish after a package rollback",
+    "fix: keep internal publication records out of Activity (#203199)",
+    "perf(ci): avoid duplicate declaration path checks (#203181)",
+    "fix: retain child results behind live requester turns (#203198)",
+    "fix(perf): activate remote catalog benchmark fixtures (#203196)",
+    "fix(worktrees): explain cold template refresh decisions (#193214)",
+    "fix(ci): accept native preparation and nested project labels (#203197)",
+    "fix: unblock changed checks after channel module splits (#203186)",
+    "fix(update): keep settled warnings out of failure reports (#203173)",
+    "fix(plugins): admit Windows host links by physical identity (#201589) (#203147)",
+    "fix: keep Gemini NO_REPLY replies silent when the signature arrives on its own part (#203174)",
+    "fix(github): release unused reader response bodies (#203158)",
+    "fix: preserve private child results during restart (#203156)",
+    "fix(models): read the published owner inventory for picker menus after a config republish (#202781)",
+    "fix(models): select a first model when a browser sign-in finds none (#203118)",
+    "fix: stop clean updates warning about skipped agent database path repair (#203023)",
+    "fix: show how to set up secure access when Connect a device can't make a code (#202071)",
+    "fix(update): name the Gateway stop step in the unmanifested cleanup hint (#203139)",
+    "fix(test): check queued hook accounts against refreshed config (#203138)",
+    "fix: retain child results when restart aborts delivery (#203132)",
+    "fix(state): keep large agent databases registered across startup upgrades (#203130)",
+    "fix(test): exercise invalid CPU ticks without topology changes (#203127)",
+    "fix(session-events): wake yielded worktree turns after their first turn ends (#203113)",
+    "fix: plain ChatGPT sign-in on the Mac setup screen",
+    "fix(ci): stabilize saved config retry coverage (#203117)",
+    "fix(agents): finish deletion when personal pins change (#203076)",
+    "fix: deliver child results before older descendant cleanup finishes (#203102)"
   ],
   "top_scopes": [
     {
       "scope": "fix",
-      "count": 89
+      "count": 93
     },
     {
       "scope": "ui",
-      "count": 31
-    },
-    {
-      "scope": "ci",
-      "count": 29
-    },
-    {
-      "scope": "gateway",
-      "count": 20
+      "count": 33
     },
     {
       "scope": "test",
-      "count": 20
+      "count": 32
     },
     {
-      "scope": "docs",
-      "count": 11
+      "scope": "ci",
+      "count": 25
+    },
+    {
+      "scope": "ios",
+      "count": 10
     },
     {
       "scope": "improve",
-      "count": 10
-    },
-    {
-      "scope": "agents",
-      "count": 10
+      "count": 8
     },
     {
       "scope": "feat",
-      "count": 9
+      "count": 8
     },
     {
-      "scope": "improve(ui)",
+      "scope": "agents",
       "count": 7
     },
     {
-      "scope": "worktrees",
-      "count": 6
-    },
-    {
-      "scope": "sessions",
-      "count": 5
+      "scope": "cli",
+      "count": 7
     },
     {
       "scope": "update",
-      "count": 4
+      "count": 6
+    },
+    {
+      "scope": "gateway",
+      "count": 5
+    },
+    {
+      "scope": "cron",
+      "count": 5
+    },
+    {
+      "scope": "plugins",
+      "count": 5
+    },
+    {
+      "scope": "doctor",
+      "count": 5
     },
     {
       "scope": "perf",
-      "count": 4
-    },
-    {
-      "scope": "discord",
       "count": 4
     }
   ]
