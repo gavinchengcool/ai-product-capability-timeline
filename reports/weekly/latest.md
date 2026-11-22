@@ -1,57 +1,54 @@
 # OpenClaw Weekly Update
 
-生成时间：2026-11-22T02:20:07.754901+08:00
+生成时间：2026-11-23T02:44:20.819913+08:00
 
 ## Window
 
-- Start: 2026-11-21T02:20:07.754901+08:00
-- End: 2026-11-22T02:20:07.754901+08:00
+- Start: 2026-11-22T02:44:20.819913+08:00
+- End: 2026-11-23T02:44:20.819913+08:00
 - Repo: `openclaw/openclaw`
 
 ## At A Glance
 
-- Commits in window: 337
+- Commits in window: 197
 - Releases in window: 0
 - Stable releases in window: 0
 - Beta releases in window: 0
-- Repo stars at scan time: 394972
-- Repo forks at scan time: 82943
+- Repo stars at scan time: 395046
+- Repo forks at scan time: 82952
 
 ## New Capability Signals
 
-- feat(gateway): connect approved trusted-proxy CLI and TUI devices within their grant
-- feat: move Code Mode, Tool Search and Templates out of Labs (#203096)
-- feat: open shared sessions in their source Control UI (#203044)
-- feat(sessions): mark forwarded channel messages in the transcript (#202053)
-- feat(update): run every Git install from releases and delete the in-place Git runner (#200578)
-- feat(opencode): sign in to OpenCode Console and OpenCode Go in the browser (#202949)
-- feat(gateway): opt-in Cloudflare Access JWT verification for trusted-proxy auth
-- feat(plugins): serve legacy memory runtimes as backends and add optional provider store (#202838)
-- feat: prepare restricted connections for Session Share steering (#202654)
-- feat: keep unused Knowledge workers asleep in lean mode (#202478)
-- feat: only link file paths that open in chat (#202534)
-- feat(plugins): let the memory slot owner query passive memory backends (#201340)
-- feat: show Gateway resource profiles and live worker memory (#202422)
-- feat(ui): open skills as pages instead of dialogs (#202581)
-- feat: let Knowledge learn from Slack (#202411)
+- feat(cron): back automation off when a provider pushes back (#197395)
+- feat: keep lean Gateway worker growth inside a memory budget (#202507)
+- feat(update): Git installs update through prepared releases and a resident launcher (#203194)
+- feat: run lean core workers in one shared host to cut small-machine memory (#202495)
+- feat: unlink an OpenClaw ID claw from its own computer (#201779)
+- feat: choose a harness for primary and fallback models in Settings (#203358)
+- improve: open a new session from the mobile web rail (#203301)
+- feat: browse and search Skills by ClawHub category in the Control UI (#202756)
+- improve: make the sidebar divider easier to see in light themes (#203287)
+- improve: keep selected device folders compact in new sessions (#203269)
+- feat: OpenClaw ID protocol for unlinking a claw from its own computer (#201750)
+- ci: add fixed Linux Gateway cold-turn calibration (#203239)
 
 ## Important Fixes And Hardening
 
-- fix: let updates stop a Gateway that OpenClaw reran under a compatible Node (#203152)
-- fix(pr): reuse captured evidence hashes during baseline validation (#203218)
-- fix: interrupted sessions still resume after a running Gateway's package is replaced in place (#203185)
-- fix(update): let Doctor finish after a package rollback
-- fix: keep internal publication records out of Activity (#203199)
-- perf(ci): avoid duplicate declaration path checks (#203181)
-- fix: retain child results behind live requester turns (#203198)
-- fix(perf): activate remote catalog benchmark fixtures (#203196)
-- fix(worktrees): explain cold template refresh decisions (#193214)
-- fix(ci): accept native preparation and nested project labels (#203197)
-- fix: unblock changed checks after channel module splits (#203186)
-- fix(update): keep settled warnings out of failure reports (#203173)
-- fix(plugins): admit Windows host links by physical identity (#201589) (#203147)
-- fix: keep Gemini NO_REPLY replies silent when the signature arrives on its own part (#203174)
-- fix(github): release unused reader response bodies (#203158)
+- fix: connect AI without being asked about conversation history or memory (#202601)
+- fix: stop an update before it starts while a node service holds the state database (#203578)
+- fix(cli): report host live-session refusals as host limits, not provider rate limits (#202602)
+- fix: let a pnpm install update again after an update died after activating (#203486)
+- fix: stop asking for Local Network access when setting up OpenClaw on this Mac (#202614)
+- fix(config): validate raw configs with the implicit main agent (#203583)
+- fix: keep a conversation's OpenAI Responses continuation across background runs (#203568)
+- fix: chat-requested updates no longer leave the Gateway stopped (#203555)
+- fix(ui): keep first use free of automatic panels (#202599)
+- fix: yield progress refresh during native process polling (#203580)
+- fix: prioritize recommended models in picker search
+- fix(agents): harness history moves only at compaction (#203559)
+- fix(agents): count a yield-armed exec wake as continuation evidence (#203554)
+- fix(update): load check-release only when it runs (#203533)
+- fix: keep a Gateway restart during startup from failing with a state database error (#203530)
 
 ## Releases This Week
 
@@ -59,41 +56,41 @@
 
 ## Most Active Change Scopes
 
-- `fix`: 93
-- `ui`: 33
-- `test`: 32
-- `ci`: 25
-- `ios`: 10
+- `fix`: 103
+- `ui`: 23
+- `update`: 12
 - `improve`: 8
-- `feat`: 8
-- `agents`: 7
-- `cli`: 7
-- `update`: 6
+- `feat`: 6
+- `agents`: 5
 - `gateway`: 5
-- `cron`: 5
+- `refactor`: 3
+- `ci`: 3
+- `cli`: 2
+- `config`: 2
+- `cron`: 2
 
 ## Recent Commit Headlines
 
-- 2026-11-21T18:12:45Z | fix: let updates stop a Gateway that OpenClaw reran under a compatible Node (#203152)
-- 2026-11-21T18:08:53Z | fix(pr): reuse captured evidence hashes during baseline validation (#203218)
-- 2026-11-21T18:08:07Z | fix: interrupted sessions still resume after a running Gateway's package is replaced in place (#203185)
-- 2026-11-21T17:55:07Z | fix(update): let Doctor finish after a package rollback
-- 2026-11-21T17:48:47Z | fix: keep internal publication records out of Activity (#203199)
-- 2026-11-21T17:44:44Z | perf(ci): avoid duplicate declaration path checks (#203181)
-- 2026-11-21T17:44:33Z | refactor(test): remove unused Tailscale fixture mode (#203212)
-- 2026-11-21T17:38:49Z | fix: retain child results behind live requester turns (#203198)
-- 2026-11-21T17:37:31Z | fix(perf): activate remote catalog benchmark fixtures (#203196)
-- 2026-11-21T17:27:32Z | fix(worktrees): explain cold template refresh decisions (#193214)
-- 2026-11-21T17:27:02Z | fix(ci): accept native preparation and nested project labels (#203197)
-- 2026-11-21T17:26:21Z | improve: reduce session sidebar work during streaming bursts (#202883)
-- 2026-11-21T17:22:58Z | chore(ui): refresh control ui locales (#203205)
-- 2026-11-21T17:09:47Z | test(gateway): observe preparation failure waiter rejections (#203190)
-- 2026-11-21T17:07:52Z | refactor(line): keep message constructors with templates (#203171)
-- 2026-11-21T17:06:08Z | refactor(test): remove unused QA replay controls (#203193)
-- 2026-11-21T16:56:35Z | feat(gateway): connect approved trusted-proxy CLI and TUI devices within their grant
-- 2026-11-21T16:56:08Z | fix: unblock changed checks after channel module splits (#203186)
-- 2026-11-21T16:50:58Z | fix(update): keep settled warnings out of failure reports (#203173)
-- 2026-11-21T16:50:56Z | test(cron): await native recovery starts without a polling deadline (#203169)
+- 2026-11-22T18:30:02Z | fix: connect AI without being asked about conversation history or memory (#202601)
+- 2026-11-22T18:23:58Z | fix: stop an update before it starts while a node service holds the state database (#203578)
+- 2026-11-22T18:23:46Z | fix(cli): report host live-session refusals as host limits, not provider rate limits (#202602)
+- 2026-11-22T18:23:25Z | fix: let a pnpm install update again after an update died after activating (#203486)
+- 2026-11-22T18:20:49Z | fix: stop asking for Local Network access when setting up OpenClaw on this Mac (#202614)
+- 2026-11-22T18:20:45Z | fix(config): validate raw configs with the implicit main agent (#203583)
+- 2026-11-22T18:12:45Z | fix: keep a conversation's OpenAI Responses continuation across background runs (#203568)
+- 2026-11-22T18:10:15Z | fix: chat-requested updates no longer leave the Gateway stopped (#203555)
+- 2026-11-22T18:00:38Z | fix(ui): keep first use free of automatic panels (#202599)
+- 2026-11-22T17:59:42Z | fix: yield progress refresh during native process polling (#203580)
+- 2026-11-22T17:50:17Z | fix: prioritize recommended models in picker search
+- 2026-11-22T17:47:10Z | refactor(infra): check exec approvals once at commit (#203572)
+- 2026-11-22T17:42:49Z | fix(agents): harness history moves only at compaction (#203559)
+- 2026-11-22T17:36:10Z | fix(agents): count a yield-armed exec wake as continuation evidence (#203554)
+- 2026-11-22T17:18:43Z | test(update): drop the OCM mid-request authority refusal retired by one-time admission (#203534)
+- 2026-11-22T17:15:48Z | fix(update): load check-release only when it runs (#203533)
+- 2026-11-22T17:12:06Z | feat(cron): back automation off when a provider pushes back (#197395)
+- 2026-11-22T17:11:29Z | refactor(agents): drop tool-caller re-checks from agent tool callers (#203561)
+- 2026-11-22T16:58:26Z | fix: keep a Gateway restart during startup from failing with a state database error (#203530)
+- 2026-11-22T16:54:27Z | fix: bound the whole Auto Review call to its timeoutSeconds budget (#203433)
 
 ## Sources
 

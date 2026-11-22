@@ -1,68 +1,60 @@
 {
-  "generatedAt": "2026-11-22T02:20:07.754901+08:00",
+  "generatedAt": "2026-11-23T02:44:20.819913+08:00",
   "window": {
-    "start_local": "2026-11-21T02:20:07.754901+08:00",
-    "end_local": "2026-11-22T02:20:07.754901+08:00",
-    "start_utc": "2026-11-20T18:20:07Z",
-    "end_utc": "2026-11-21T18:20:07Z"
+    "start_local": "2026-11-22T02:44:20.819913+08:00",
+    "end_local": "2026-11-23T02:44:20.819913+08:00",
+    "start_utc": "2026-11-21T18:44:20Z",
+    "end_utc": "2026-11-22T18:44:20Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 394972,
-    "forks": 82943,
-    "open_issues": 8729,
-    "pushed_at": "2026-11-21T18:17:56Z"
+    "stars": 395046,
+    "forks": 82952,
+    "open_issues": 8803,
+    "pushed_at": "2026-11-22T18:37:40Z"
   },
   "summary": {
-    "commitCount": 337,
+    "commitCount": 197,
     "releaseCount": 0,
     "stableReleaseCount": 0,
     "betaReleaseCount": 0,
-    "stars": 394972,
-    "forks": 82943,
-    "openIssues": 8729
+    "stars": 395046,
+    "forks": 82952,
+    "openIssues": 8803
   },
   "releases": [],
   "featureItems": [
-    "feat(gateway): connect approved trusted-proxy CLI and TUI devices within their grant",
-    "feat: move Code Mode, Tool Search and Templates out of Labs (#203096)",
-    "feat: open shared sessions in their source Control UI (#203044)",
-    "feat(sessions): mark forwarded channel messages in the transcript (#202053)",
-    "feat(update): run every Git install from releases and delete the in-place Git runner (#200578)",
-    "feat(opencode): sign in to OpenCode Console and OpenCode Go in the browser (#202949)",
-    "feat(gateway): opt-in Cloudflare Access JWT verification for trusted-proxy auth",
-    "feat(plugins): serve legacy memory runtimes as backends and add optional provider store (#202838)"
+    "feat(cron): back automation off when a provider pushes back (#197395)",
+    "feat: keep lean Gateway worker growth inside a memory budget (#202507)",
+    "feat(update): Git installs update through prepared releases and a resident launcher (#203194)",
+    "feat: run lean core workers in one shared host to cut small-machine memory (#202495)",
+    "feat: unlink an OpenClaw ID claw from its own computer (#201779)",
+    "feat: choose a harness for primary and fallback models in Settings (#203358)",
+    "improve: open a new session from the mobile web rail (#203301)",
+    "feat: browse and search Skills by ClawHub category in the Control UI (#202756)"
   ],
   "fixItems": [
-    "fix: let updates stop a Gateway that OpenClaw reran under a compatible Node (#203152)",
-    "fix(pr): reuse captured evidence hashes during baseline validation (#203218)",
-    "fix: interrupted sessions still resume after a running Gateway's package is replaced in place (#203185)",
-    "fix(update): let Doctor finish after a package rollback",
-    "fix: keep internal publication records out of Activity (#203199)",
-    "perf(ci): avoid duplicate declaration path checks (#203181)",
-    "fix: retain child results behind live requester turns (#203198)",
-    "fix(perf): activate remote catalog benchmark fixtures (#203196)"
+    "fix: connect AI without being asked about conversation history or memory (#202601)",
+    "fix: stop an update before it starts while a node service holds the state database (#203578)",
+    "fix(cli): report host live-session refusals as host limits, not provider rate limits (#202602)",
+    "fix: let a pnpm install update again after an update died after activating (#203486)",
+    "fix: stop asking for Local Network access when setting up OpenClaw on this Mac (#202614)",
+    "fix(config): validate raw configs with the implicit main agent (#203583)",
+    "fix: keep a conversation's OpenAI Responses continuation across background runs (#203568)",
+    "fix: chat-requested updates no longer leave the Gateway stopped (#203555)"
   ],
   "topScopes": [
     {
       "scope": "fix",
-      "count": 93
+      "count": 103
     },
     {
       "scope": "ui",
-      "count": 33
+      "count": 23
     },
     {
-      "scope": "test",
-      "count": 32
-    },
-    {
-      "scope": "ci",
-      "count": 25
-    },
-    {
-      "scope": "ios",
-      "count": 10
+      "scope": "update",
+      "count": 12
     },
     {
       "scope": "improve",
@@ -70,22 +62,30 @@
     },
     {
       "scope": "feat",
-      "count": 8
+      "count": 6
     },
     {
       "scope": "agents",
-      "count": 7
+      "count": 5
+    },
+    {
+      "scope": "gateway",
+      "count": 5
+    },
+    {
+      "scope": "refactor",
+      "count": 3
     }
   ],
   "headlineCommits": [
-    "fix: let updates stop a Gateway that OpenClaw reran under a compatible Node (#203152)",
-    "fix(pr): reuse captured evidence hashes during baseline validation (#203218)",
-    "fix: interrupted sessions still resume after a running Gateway's package is replaced in place (#203185)",
-    "fix(update): let Doctor finish after a package rollback",
-    "fix: keep internal publication records out of Activity (#203199)",
-    "perf(ci): avoid duplicate declaration path checks (#203181)",
-    "refactor(test): remove unused Tailscale fixture mode (#203212)",
-    "fix: retain child results behind live requester turns (#203198)"
+    "fix: connect AI without being asked about conversation history or memory (#202601)",
+    "fix: stop an update before it starts while a node service holds the state database (#203578)",
+    "fix(cli): report host live-session refusals as host limits, not provider rate limits (#202602)",
+    "fix: let a pnpm install update again after an update died after activating (#203486)",
+    "fix: stop asking for Local Network access when setting up OpenClaw on this Mac (#202614)",
+    "fix(config): validate raw configs with the implicit main agent (#203583)",
+    "fix: keep a conversation's OpenAI Responses continuation across background runs (#203568)",
+    "fix: chat-requested updates no longer leave the Gateway stopped (#203555)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 }
