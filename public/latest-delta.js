@@ -1,91 +1,106 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-11-23T02:44:20.819913+08:00",
+  "generatedAt": "2026-11-24T06:57:52.005473+08:00",
   "window": {
-    "start_local": "2026-11-22T02:44:20.819913+08:00",
-    "end_local": "2026-11-23T02:44:20.819913+08:00",
-    "start_utc": "2026-11-21T18:44:20Z",
-    "end_utc": "2026-11-22T18:44:20Z"
+    "start_local": "2026-11-23T06:57:52.005473+08:00",
+    "end_local": "2026-11-24T06:57:52.005473+08:00",
+    "start_utc": "2026-11-22T22:57:52Z",
+    "end_utc": "2026-11-23T22:57:52Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 395046,
-    "forks": 82952,
-    "open_issues": 8803,
-    "pushed_at": "2026-11-22T18:37:40Z"
+    "stars": 395113,
+    "forks": 82967,
+    "open_issues": 8930,
+    "pushed_at": "2026-11-23T22:51:33Z"
   },
   "summary": {
-    "commitCount": 197,
-    "releaseCount": 0,
-    "stableReleaseCount": 0,
-    "betaReleaseCount": 0,
-    "stars": 395046,
-    "forks": 82952,
-    "openIssues": 8803
+    "commitCount": 231,
+    "releaseCount": 2,
+    "stableReleaseCount": 1,
+    "betaReleaseCount": 1,
+    "stars": 395113,
+    "forks": 82967,
+    "openIssues": 8930
   },
-  "releases": [],
+  "releases": [
+    {
+      "tag_name": "v2026.11.10-beta.2",
+      "published_at": "2026-11-23T12:48:59Z",
+      "name": "openclaw 2026.11.10-beta.2",
+      "prerelease": true,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.10-beta.2"
+    },
+    {
+      "tag_name": "v2026.11.7",
+      "published_at": "2026-11-23T01:33:51Z",
+      "name": "openclaw 2026.11.7",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.7"
+    }
+  ],
   "featureItems": [
-    "feat(cron): back automation off when a provider pushes back (#197395)",
-    "feat: keep lean Gateway worker growth inside a memory budget (#202507)",
-    "feat(update): Git installs update through prepared releases and a resident launcher (#203194)",
-    "feat: run lean core workers in one shared host to cut small-machine memory (#202495)",
-    "feat: unlink an OpenClaw ID claw from its own computer (#201779)",
-    "feat: choose a harness for primary and fallback models in Settings (#203358)",
-    "improve: open a new session from the mobile web rail (#203301)",
-    "feat: browse and search Skills by ClawHub category in the Control UI (#202756)"
+    "Webhooks: accept bodies up to 1 MiB, report rejected requests, and fan out batched Gmail notifications. (#200514, #130002) Authored by @steipete. Thanks @garrytan and @obviyus. [v2026.11.10-beta.2]",
+    "feat(agents): keep idle prompt caches warm with read-only prewarms (#204219)",
+    "feat(diagnostics): identify in-process spawn fallbacks (#204217)",
+    "feat: let admins share specific projects with restricted roles (#203470)",
+    "feat(agents): compact from the warm prompt cache on every route (#204111)",
+    "feat: filter shared sessions by owner or involvement (#203063)",
+    "improve(ui): make theme background artwork opt-in (#203308)",
+    "feat(release): release fast-track system (#201080)"
   ],
   "fixItems": [
-    "fix: connect AI without being asked about conversation history or memory (#202601)",
-    "fix: stop an update before it starts while a node service holds the state database (#203578)",
-    "fix(cli): report host live-session refusals as host limits, not provider rate limits (#202602)",
-    "fix: let a pnpm install update again after an update died after activating (#203486)",
-    "fix: stop asking for Local Network access when setting up OpenClaw on this Mac (#202614)",
-    "fix(config): validate raw configs with the implicit main agent (#203583)",
-    "fix: keep a conversation's OpenAI Responses continuation across background runs (#203568)",
-    "fix: chat-requested updates no longer leave the Gateway stopped (#203555)"
+    "fix(openai): embed system prompt in input on ChatGPT Responses when uncached (#202372) (#202720)",
+    "fix: preserve managed GitHub exec on packaged Windows (#201712)",
+    "fix: remove repeated details after an update rolls back (#204253)",
+    "fix(release): retry immutable ClawHub recovery transfers (#204254)",
+    "fix(ci): remove mobile qualification from Gateway validation (#200555)",
+    "fix: schedule Template automations in the adding device’s time zone",
+    "fix: unblock local checks by removing dead exports (#204246)",
+    "fix(models): show provider plugin labels in the Control UI (#204230)"
   ],
   "topScopes": [
     {
       "scope": "fix",
-      "count": 103
+      "count": 72
     },
     {
       "scope": "ui",
-      "count": 23
-    },
-    {
-      "scope": "update",
-      "count": 12
-    },
-    {
-      "scope": "improve",
-      "count": 8
-    },
-    {
-      "scope": "feat",
-      "count": 6
+      "count": 27
     },
     {
       "scope": "agents",
-      "count": 5
+      "count": 16
     },
     {
       "scope": "gateway",
-      "count": 5
+      "count": 15
     },
     {
-      "scope": "refactor",
-      "count": 3
+      "scope": "update",
+      "count": 14
+    },
+    {
+      "scope": "ci",
+      "count": 12
+    },
+    {
+      "scope": "test",
+      "count": 12
+    },
+    {
+      "scope": "release",
+      "count": 9
     }
   ],
   "headlineCommits": [
-    "fix: connect AI without being asked about conversation history or memory (#202601)",
-    "fix: stop an update before it starts while a node service holds the state database (#203578)",
-    "fix(cli): report host live-session refusals as host limits, not provider rate limits (#202602)",
-    "fix: let a pnpm install update again after an update died after activating (#203486)",
-    "fix: stop asking for Local Network access when setting up OpenClaw on this Mac (#202614)",
-    "fix(config): validate raw configs with the implicit main agent (#203583)",
-    "fix: keep a conversation's OpenAI Responses continuation across background runs (#203568)",
-    "fix: chat-requested updates no longer leave the Gateway stopped (#203555)"
+    "fix(openai): embed system prompt in input on ChatGPT Responses when uncached (#202372) (#202720)",
+    "test(gateway): drop the stale mid-turn revocation step from screen routing",
+    "fix: preserve managed GitHub exec on packaged Windows (#201712)",
+    "fix: remove repeated details after an update rolls back (#204253)",
+    "test(gateway): assert the structured denial for revoked session history (#204255)",
+    "fix(release): retry immutable ClawHub recovery transfers (#204254)",
+    "fix(ci): remove mobile qualification from Gateway validation (#200555)",
+    "feat(agents): keep idle prompt caches warm with read-only prewarms (#204219)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

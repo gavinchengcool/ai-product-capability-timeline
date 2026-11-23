@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-11-23T02:44:36+08:00
-- Requested window: 2026-11-22 to 2026-11-23
+- Generated at: 2026-11-24T06:58:10+08:00
+- Requested window: 2026-11-23 to 2026-11-24
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-11-22 to 2026-11-23
-- Generated at: 2026-11-23T02:44:20.819913+08:00
-- 窗口: 2026-11-22 至 2026-11-23
-- GitHub 增量: 197 commits / 0 releases
-- 最近 push: 2026-11-22
+- Window: 2026-11-23 to 2026-11-24
+- Generated at: 2026-11-24T06:57:52.005473+08:00
+- 窗口: 2026-11-23 至 2026-11-24
+- GitHub 增量: 231 commits / 2 releases
+- 最近 push: 2026-11-23
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(cron): back automation off when a provider pushes back (#197395)
-  - feat: keep lean Gateway worker growth inside a memory budget (#202507)
-  - feat(update): Git installs update through prepared releases and a resident launcher (#203194)
-  - feat: run lean core workers in one shared host to cut small-machine memory (#202495)
-  - feat: unlink an OpenClaw ID claw from its own computer (#201779)
-  - feat: choose a harness for primary and fallback models in Settings (#203358)
-  - improve: open a new session from the mobile web rail (#203301)
-  - feat: browse and search Skills by ClawHub category in the Control UI (#202756)
+  - Webhooks: accept bodies up to 1 MiB, report rejected requests, and fan out batched Gmail notifications. (#200514, #130002) Authored by @steipete. Thanks @garrytan and @obviyus. [v2026.11.10-beta.2]
+  - feat(agents): keep idle prompt caches warm with read-only prewarms (#204219)
+  - feat(diagnostics): identify in-process spawn fallbacks (#204217)
+  - feat: let admins share specific projects with restricted roles (#203470)
+  - feat(agents): compact from the warm prompt cache on every route (#204111)
+  - feat: filter shared sessions by owner or involvement (#203063)
+  - improve(ui): make theme background artwork opt-in (#203308)
+  - feat(release): release fast-track system (#201080)
 - Fixes and constraints:
-  - fix: connect AI without being asked about conversation history or memory (#202601)
-  - fix: stop an update before it starts while a node service holds the state database (#203578)
-  - fix(cli): report host live-session refusals as host limits, not provider rate limits (#202602)
-  - fix: let a pnpm install update again after an update died after activating (#203486)
-  - fix: stop asking for Local Network access when setting up OpenClaw on this Mac (#202614)
-  - fix(config): validate raw configs with the implicit main agent (#203583)
-  - fix: keep a conversation's OpenAI Responses continuation across background runs (#203568)
-  - fix: chat-requested updates no longer leave the Gateway stopped (#203555)
+  - fix(openai): embed system prompt in input on ChatGPT Responses when uncached (#202372) (#202720)
+  - fix: preserve managed GitHub exec on packaged Windows (#201712)
+  - fix: remove repeated details after an update rolls back (#204253)
+  - fix(release): retry immutable ClawHub recovery transfers (#204254)
+  - fix(ci): remove mobile qualification from Gateway validation (#200555)
+  - fix: schedule Template automations in the adding device’s time zone
+  - fix: unblock local checks by removing dead exports (#204246)
+  - fix(models): show provider plugin labels in the Control UI (#204230)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

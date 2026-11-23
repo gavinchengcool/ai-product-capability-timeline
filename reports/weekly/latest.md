@@ -1,96 +1,93 @@
 # OpenClaw Weekly Update
 
-生成时间：2026-11-23T02:44:20.819913+08:00
+生成时间：2026-11-24T06:57:52.005473+08:00
 
 ## Window
 
-- Start: 2026-11-22T02:44:20.819913+08:00
-- End: 2026-11-23T02:44:20.819913+08:00
+- Start: 2026-11-23T06:57:52.005473+08:00
+- End: 2026-11-24T06:57:52.005473+08:00
 - Repo: `openclaw/openclaw`
 
 ## At A Glance
 
-- Commits in window: 197
-- Releases in window: 0
-- Stable releases in window: 0
-- Beta releases in window: 0
-- Repo stars at scan time: 395046
-- Repo forks at scan time: 82952
+- Commits in window: 231
+- Releases in window: 2
+- Stable releases in window: 1
+- Beta releases in window: 1
+- Repo stars at scan time: 395113
+- Repo forks at scan time: 82967
 
 ## New Capability Signals
 
-- feat(cron): back automation off when a provider pushes back (#197395)
-- feat: keep lean Gateway worker growth inside a memory budget (#202507)
-- feat(update): Git installs update through prepared releases and a resident launcher (#203194)
-- feat: run lean core workers in one shared host to cut small-machine memory (#202495)
-- feat: unlink an OpenClaw ID claw from its own computer (#201779)
-- feat: choose a harness for primary and fallback models in Settings (#203358)
-- improve: open a new session from the mobile web rail (#203301)
-- feat: browse and search Skills by ClawHub category in the Control UI (#202756)
-- improve: make the sidebar divider easier to see in light themes (#203287)
-- improve: keep selected device folders compact in new sessions (#203269)
-- feat: OpenClaw ID protocol for unlinking a claw from its own computer (#201750)
-- ci: add fixed Linux Gateway cold-turn calibration (#203239)
+- Webhooks: accept bodies up to 1 MiB, report rejected requests, and fan out batched Gmail notifications. (#200514, #130002) Authored by @steipete. Thanks @garrytan and @obviyus. [v2026.11.10-beta.2]
+- feat(agents): keep idle prompt caches warm with read-only prewarms (#204219)
+- feat(diagnostics): identify in-process spawn fallbacks (#204217)
+- feat: let admins share specific projects with restricted roles (#203470)
+- feat(agents): compact from the warm prompt cache on every route (#204111)
+- feat: filter shared sessions by owner or involvement (#203063)
+- improve(ui): make theme background artwork opt-in (#203308)
+- feat(release): release fast-track system (#201080)
 
 ## Important Fixes And Hardening
 
-- fix: connect AI without being asked about conversation history or memory (#202601)
-- fix: stop an update before it starts while a node service holds the state database (#203578)
-- fix(cli): report host live-session refusals as host limits, not provider rate limits (#202602)
-- fix: let a pnpm install update again after an update died after activating (#203486)
-- fix: stop asking for Local Network access when setting up OpenClaw on this Mac (#202614)
-- fix(config): validate raw configs with the implicit main agent (#203583)
-- fix: keep a conversation's OpenAI Responses continuation across background runs (#203568)
-- fix: chat-requested updates no longer leave the Gateway stopped (#203555)
-- fix(ui): keep first use free of automatic panels (#202599)
-- fix: yield progress refresh during native process polling (#203580)
-- fix: prioritize recommended models in picker search
-- fix(agents): harness history moves only at compaction (#203559)
-- fix(agents): count a yield-armed exec wake as continuation evidence (#203554)
-- fix(update): load check-release only when it runs (#203533)
-- fix: keep a Gateway restart during startup from failing with a state database error (#203530)
+- fix(openai): embed system prompt in input on ChatGPT Responses when uncached (#202372) (#202720)
+- fix: preserve managed GitHub exec on packaged Windows (#201712)
+- fix: remove repeated details after an update rolls back (#204253)
+- fix(release): retry immutable ClawHub recovery transfers (#204254)
+- fix(ci): remove mobile qualification from Gateway validation (#200555)
+- fix: schedule Template automations in the adding device’s time zone
+- fix: unblock local checks by removing dead exports (#204246)
+- fix(models): show provider plugin labels in the Control UI (#204230)
+- fix(ui): resume Logs auto-follow when WebKit delivers a wheel's scroll late (#204247)
+- fix: let Windows updates restart after a rollback (#204224)
+- fix(update): keep a Gateway's own update running when it first reports ready (#204215)
+- fix(subagents): preserve yield settlement after child cleanup (#203222)
+- fix: open the submission view for pending Templates (#202791)
+- fix(ui): keep a reader who reaches the top of a chat at the top (#204220)
+- fix: update plugins after the new Gateway starts (#204127)
 
 ## Releases This Week
 
-- No GitHub releases were published in this window.
+- `v2026.11.10-beta.2` | beta | 2026-11-23T12:48:59Z | openclaw 2026.11.10-beta.2
+- `v2026.11.7` | stable | 2026-11-23T01:33:51Z | openclaw 2026.11.7
 
 ## Most Active Change Scopes
 
-- `fix`: 103
-- `ui`: 23
-- `update`: 12
-- `improve`: 8
-- `feat`: 6
-- `agents`: 5
-- `gateway`: 5
-- `refactor`: 3
-- `ci`: 3
-- `cli`: 2
-- `config`: 2
-- `cron`: 2
+- `fix`: 72
+- `ui`: 27
+- `agents`: 16
+- `gateway`: 15
+- `update`: 14
+- `ci`: 12
+- `test`: 12
+- `release`: 9
+- `refactor`: 4
+- `improve`: 4
+- `tlon`: 3
+- `docs`: 3
 
 ## Recent Commit Headlines
 
-- 2026-11-22T18:30:02Z | fix: connect AI without being asked about conversation history or memory (#202601)
-- 2026-11-22T18:23:58Z | fix: stop an update before it starts while a node service holds the state database (#203578)
-- 2026-11-22T18:23:46Z | fix(cli): report host live-session refusals as host limits, not provider rate limits (#202602)
-- 2026-11-22T18:23:25Z | fix: let a pnpm install update again after an update died after activating (#203486)
-- 2026-11-22T18:20:49Z | fix: stop asking for Local Network access when setting up OpenClaw on this Mac (#202614)
-- 2026-11-22T18:20:45Z | fix(config): validate raw configs with the implicit main agent (#203583)
-- 2026-11-22T18:12:45Z | fix: keep a conversation's OpenAI Responses continuation across background runs (#203568)
-- 2026-11-22T18:10:15Z | fix: chat-requested updates no longer leave the Gateway stopped (#203555)
-- 2026-11-22T18:00:38Z | fix(ui): keep first use free of automatic panels (#202599)
-- 2026-11-22T17:59:42Z | fix: yield progress refresh during native process polling (#203580)
-- 2026-11-22T17:50:17Z | fix: prioritize recommended models in picker search
-- 2026-11-22T17:47:10Z | refactor(infra): check exec approvals once at commit (#203572)
-- 2026-11-22T17:42:49Z | fix(agents): harness history moves only at compaction (#203559)
-- 2026-11-22T17:36:10Z | fix(agents): count a yield-armed exec wake as continuation evidence (#203554)
-- 2026-11-22T17:18:43Z | test(update): drop the OCM mid-request authority refusal retired by one-time admission (#203534)
-- 2026-11-22T17:15:48Z | fix(update): load check-release only when it runs (#203533)
-- 2026-11-22T17:12:06Z | feat(cron): back automation off when a provider pushes back (#197395)
-- 2026-11-22T17:11:29Z | refactor(agents): drop tool-caller re-checks from agent tool callers (#203561)
-- 2026-11-22T16:58:26Z | fix: keep a Gateway restart during startup from failing with a state database error (#203530)
-- 2026-11-22T16:54:27Z | fix: bound the whole Auto Review call to its timeoutSeconds budget (#203433)
+- 2026-11-23T22:48:03Z | fix(openai): embed system prompt in input on ChatGPT Responses when uncached (#202372) (#202720)
+- 2026-11-23T22:45:47Z | test(gateway): drop the stale mid-turn revocation step from screen routing
+- 2026-11-23T22:32:26Z | fix: preserve managed GitHub exec on packaged Windows (#201712)
+- 2026-11-23T22:31:55Z | fix: remove repeated details after an update rolls back (#204253)
+- 2026-11-23T22:23:49Z | test(gateway): assert the structured denial for revoked session history (#204255)
+- 2026-11-23T22:14:13Z | fix(release): retry immutable ClawHub recovery transfers (#204254)
+- 2026-11-23T22:07:01Z | fix(ci): remove mobile qualification from Gateway validation (#200555)
+- 2026-11-23T21:55:33Z | feat(agents): keep idle prompt caches warm with read-only prewarms (#204219)
+- 2026-11-23T21:54:23Z | fix: schedule Template automations in the adding device’s time zone
+- 2026-11-23T21:50:19Z | fix: unblock local checks by removing dead exports (#204246)
+- 2026-11-23T21:47:16Z | fix(models): show provider plugin labels in the Control UI (#204230)
+- 2026-11-23T21:39:52Z | fix(ui): resume Logs auto-follow when WebKit delivers a wheel's scroll late (#204247)
+- 2026-11-23T21:23:54Z | fix: let Windows updates restart after a rollback (#204224)
+- 2026-11-23T21:19:41Z | feat(diagnostics): identify in-process spawn fallbacks (#204217)
+- 2026-11-23T21:16:04Z | refactor: drop mid-request authority re-checks in the last gateway, session and node-host refusals (R6d part 4) (#204191)
+- 2026-11-23T21:09:22Z | fix(update): keep a Gateway's own update running when it first reports ready (#204215)
+- 2026-11-23T21:02:08Z | fix(subagents): preserve yield settlement after child cleanup (#203222)
+- 2026-11-23T20:58:15Z | fix: open the submission view for pending Templates (#202791)
+- 2026-11-23T20:55:45Z | fix(ui): keep a reader who reaches the top of a chat at the top (#204220)
+- 2026-11-23T20:53:27Z | improve: start automatic compaction at 85% of the window on every route (#204210)
 
 ## Sources
 
