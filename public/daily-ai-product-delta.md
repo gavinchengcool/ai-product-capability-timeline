@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-11-24T06:58:10+08:00
-- Requested window: 2026-11-23 to 2026-11-24
+- Generated at: 2026-11-25T05:37:11+08:00
+- Requested window: 2026-11-24 to 2026-11-25
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-11-23 to 2026-11-24
-- Generated at: 2026-11-24T06:57:52.005473+08:00
-- 窗口: 2026-11-23 至 2026-11-24
-- GitHub 增量: 231 commits / 2 releases
-- 最近 push: 2026-11-23
+- Window: 2026-11-24 to 2026-11-25
+- Generated at: 2026-11-25T05:36:52.220556+08:00
+- 窗口: 2026-11-24 至 2026-11-25
+- GitHub 增量: 337 commits / 2 releases
+- 最近 push: 2026-11-24
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - Webhooks: accept bodies up to 1 MiB, report rejected requests, and fan out batched Gmail notifications. (#200514, #130002) Authored by @steipete. Thanks @garrytan and @obviyus. [v2026.11.10-beta.2]
-  - feat(agents): keep idle prompt caches warm with read-only prewarms (#204219)
-  - feat(diagnostics): identify in-process spawn fallbacks (#204217)
-  - feat: let admins share specific projects with restricted roles (#203470)
-  - feat(agents): compact from the warm prompt cache on every route (#204111)
-  - feat: filter shared sessions by owner or involvement (#203063)
-  - improve(ui): make theme background artwork opt-in (#203308)
-  - feat(release): release fast-track system (#201080)
+  - **Templates:** Open a durable chat before completing verified template setup, and allow a previously deleted template agent to be added again. (#196392) (#200628) Related #198475 Thanks @Patrick-Erichsen, @DonnieFi, and @vincentkoc. [v2026.11.10-beta.3]
+  - **Hooks:** Accept hook bodies up to 1 MiB, report rejected bodies, and handle batched Gmail pushes. (#200514) (#130002) Authored by @steipete. Thanks @garrytan and @obviyus. [v2026.11.10-beta.3]
+  - feat: let plugin services page through local session catalogs (#204796)
+  - feat(beam): route scoped continuation and request status (#204580)
+  - feat(beam): prevent duplicate turns when a Team handoff is retried (#204581)
+  - feat(beam): clean and enroll source-bound mirror publications (#204586)
+  - feat(beam): release a publication and resolve its destination (#204575)
+  - feat(ui): open catalog share links with the current reader’s permissions (#204590)
 - Fixes and constraints:
-  - fix(openai): embed system prompt in input on ChatGPT Responses when uncached (#202372) (#202720)
-  - fix: preserve managed GitHub exec on packaged Windows (#201712)
-  - fix: remove repeated details after an update rolls back (#204253)
-  - fix(release): retry immutable ClawHub recovery transfers (#204254)
-  - fix(ci): remove mobile qualification from Gateway validation (#200555)
-  - fix: schedule Template automations in the adding device’s time zone
-  - fix: unblock local checks by removing dead exports (#204246)
-  - fix(models): show provider plugin labels in the Control UI (#204230)
+  - fix(ci): stabilize Gateway timing planner fixture (#204894)
+  - fix(test): reject missing Slack select placeholders (#204886)
+  - fix(release): pass admitted coverage to build-only publication budget
+  - fix(release): disable evidence reuse for build-only validation (#204879)
+  - fix(macos): explain how to connect a named profile to a foreground Gateway (#203723)
+  - fix(release): trust published waiver verdict in stable closeout
+  - fix(release): approve fast-track only through GitHub (#204820)
+  - Fix SQLite fixture lifetimes in startup inspection and rerank tests
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

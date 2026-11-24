@@ -1,106 +1,106 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-11-24T06:57:52.005473+08:00",
+  "generatedAt": "2026-11-25T05:36:52.220556+08:00",
   "window": {
-    "start_local": "2026-11-23T06:57:52.005473+08:00",
-    "end_local": "2026-11-24T06:57:52.005473+08:00",
-    "start_utc": "2026-11-22T22:57:52Z",
-    "end_utc": "2026-11-23T22:57:52Z"
+    "start_local": "2026-11-24T05:36:52.220556+08:00",
+    "end_local": "2026-11-25T05:36:52.220556+08:00",
+    "start_utc": "2026-11-23T21:36:52Z",
+    "end_utc": "2026-11-24T21:36:52Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 395113,
-    "forks": 82967,
-    "open_issues": 8930,
-    "pushed_at": "2026-11-23T22:51:33Z"
+    "stars": 395158,
+    "forks": 82963,
+    "open_issues": 9124,
+    "pushed_at": "2026-11-24T21:35:04Z"
   },
   "summary": {
-    "commitCount": 231,
+    "commitCount": 337,
     "releaseCount": 2,
     "stableReleaseCount": 1,
     "betaReleaseCount": 1,
-    "stars": 395113,
-    "forks": 82967,
-    "openIssues": 8930
+    "stars": 395158,
+    "forks": 82963,
+    "openIssues": 9124
   },
   "releases": [
     {
-      "tag_name": "v2026.11.10-beta.2",
-      "published_at": "2026-11-23T12:48:59Z",
-      "name": "openclaw 2026.11.10-beta.2",
+      "tag_name": "v2026.11.10-beta.3",
+      "published_at": "2026-11-24T03:28:03Z",
+      "name": "openclaw 2026.11.10-beta.3",
       "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.10-beta.2"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.10-beta.3"
     },
     {
-      "tag_name": "v2026.11.7",
-      "published_at": "2026-11-23T01:33:51Z",
-      "name": "openclaw 2026.11.7",
+      "tag_name": "v2026.11.8",
+      "published_at": "2026-11-24T11:54:30Z",
+      "name": "openclaw 2026.11.8",
       "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.7"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.8"
     }
   ],
   "featureItems": [
-    "Webhooks: accept bodies up to 1 MiB, report rejected requests, and fan out batched Gmail notifications. (#200514, #130002) Authored by @steipete. Thanks @garrytan and @obviyus. [v2026.11.10-beta.2]",
-    "feat(agents): keep idle prompt caches warm with read-only prewarms (#204219)",
-    "feat(diagnostics): identify in-process spawn fallbacks (#204217)",
-    "feat: let admins share specific projects with restricted roles (#203470)",
-    "feat(agents): compact from the warm prompt cache on every route (#204111)",
-    "feat: filter shared sessions by owner or involvement (#203063)",
-    "improve(ui): make theme background artwork opt-in (#203308)",
-    "feat(release): release fast-track system (#201080)"
+    "**Templates:** Open a durable chat before completing verified template setup, and allow a previously deleted template agent to be added again. (#196392) (#200628) Related #198475 Thanks @Patrick-Erichsen, @DonnieFi, and @vincentkoc. [v2026.11.10-beta.3]",
+    "**Hooks:** Accept hook bodies up to 1 MiB, report rejected bodies, and handle batched Gmail pushes. (#200514) (#130002) Authored by @steipete. Thanks @garrytan and @obviyus. [v2026.11.10-beta.3]",
+    "feat: let plugin services page through local session catalogs (#204796)",
+    "feat(beam): route scoped continuation and request status (#204580)",
+    "feat(beam): prevent duplicate turns when a Team handoff is retried (#204581)",
+    "feat(beam): clean and enroll source-bound mirror publications (#204586)",
+    "feat(beam): release a publication and resolve its destination (#204575)",
+    "feat(ui): open catalog share links with the current reader’s permissions (#204590)"
   ],
   "fixItems": [
-    "fix(openai): embed system prompt in input on ChatGPT Responses when uncached (#202372) (#202720)",
-    "fix: preserve managed GitHub exec on packaged Windows (#201712)",
-    "fix: remove repeated details after an update rolls back (#204253)",
-    "fix(release): retry immutable ClawHub recovery transfers (#204254)",
-    "fix(ci): remove mobile qualification from Gateway validation (#200555)",
-    "fix: schedule Template automations in the adding device’s time zone",
-    "fix: unblock local checks by removing dead exports (#204246)",
-    "fix(models): show provider plugin labels in the Control UI (#204230)"
+    "fix(ci): stabilize Gateway timing planner fixture (#204894)",
+    "fix(test): reject missing Slack select placeholders (#204886)",
+    "fix(release): pass admitted coverage to build-only publication budget",
+    "fix(release): disable evidence reuse for build-only validation (#204879)",
+    "fix(macos): explain how to connect a named profile to a foreground Gateway (#203723)",
+    "fix(release): trust published waiver verdict in stable closeout",
+    "fix(release): approve fast-track only through GitHub (#204820)",
+    "Fix SQLite fixture lifetimes in startup inspection and rerank tests"
   ],
   "topScopes": [
     {
       "scope": "fix",
-      "count": 72
-    },
-    {
-      "scope": "ui",
-      "count": 27
-    },
-    {
-      "scope": "agents",
-      "count": 16
-    },
-    {
-      "scope": "gateway",
-      "count": 15
-    },
-    {
-      "scope": "update",
-      "count": 14
+      "count": 67
     },
     {
       "scope": "ci",
-      "count": 12
-    },
-    {
-      "scope": "test",
-      "count": 12
+      "count": 35
     },
     {
       "scope": "release",
-      "count": 9
+      "count": 27
+    },
+    {
+      "scope": "gateway",
+      "count": 27
+    },
+    {
+      "scope": "test",
+      "count": 26
+    },
+    {
+      "scope": "ui",
+      "count": 26
+    },
+    {
+      "scope": "beam",
+      "count": 16
+    },
+    {
+      "scope": "agents",
+      "count": 13
     }
   ],
   "headlineCommits": [
-    "fix(openai): embed system prompt in input on ChatGPT Responses when uncached (#202372) (#202720)",
-    "test(gateway): drop the stale mid-turn revocation step from screen routing",
-    "fix: preserve managed GitHub exec on packaged Windows (#201712)",
-    "fix: remove repeated details after an update rolls back (#204253)",
-    "test(gateway): assert the structured denial for revoked session history (#204255)",
-    "fix(release): retry immutable ClawHub recovery transfers (#204254)",
-    "fix(ci): remove mobile qualification from Gateway validation (#200555)",
-    "feat(agents): keep idle prompt caches warm with read-only prewarms (#204219)"
+    "fix(ci): stabilize Gateway timing planner fixture (#204894)",
+    "fix(test): reject missing Slack select placeholders (#204886)",
+    "fix(release): pass admitted coverage to build-only publication budget",
+    "fix(release): disable evidence reuse for build-only validation (#204879)",
+    "test(ai): give continuation fixtures writer scope (#204876)",
+    "fix(macos): explain how to connect a named profile to a foreground Gateway (#203723)",
+    "test(agents): remove the compaction test facade (#204872)",
+    "ci(update): prove schema trials and rollback on owner PRs (#204685)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

@@ -1,93 +1,100 @@
 # OpenClaw Weekly Update
 
-生成时间：2026-11-24T06:57:52.005473+08:00
+生成时间：2026-11-25T05:36:52.220556+08:00
 
 ## Window
 
-- Start: 2026-11-23T06:57:52.005473+08:00
-- End: 2026-11-24T06:57:52.005473+08:00
+- Start: 2026-11-24T05:36:52.220556+08:00
+- End: 2026-11-25T05:36:52.220556+08:00
 - Repo: `openclaw/openclaw`
 
 ## At A Glance
 
-- Commits in window: 231
+- Commits in window: 337
 - Releases in window: 2
 - Stable releases in window: 1
 - Beta releases in window: 1
-- Repo stars at scan time: 395113
-- Repo forks at scan time: 82967
+- Repo stars at scan time: 395158
+- Repo forks at scan time: 82963
 
 ## New Capability Signals
 
-- Webhooks: accept bodies up to 1 MiB, report rejected requests, and fan out batched Gmail notifications. (#200514, #130002) Authored by @steipete. Thanks @garrytan and @obviyus. [v2026.11.10-beta.2]
-- feat(agents): keep idle prompt caches warm with read-only prewarms (#204219)
-- feat(diagnostics): identify in-process spawn fallbacks (#204217)
-- feat: let admins share specific projects with restricted roles (#203470)
-- feat(agents): compact from the warm prompt cache on every route (#204111)
-- feat: filter shared sessions by owner or involvement (#203063)
-- improve(ui): make theme background artwork opt-in (#203308)
-- feat(release): release fast-track system (#201080)
+- **Templates:** Open a durable chat before completing verified template setup, and allow a previously deleted template agent to be added again. (#196392) (#200628) Related #198475 Thanks @Patrick-Erichsen, @DonnieFi, and @vincentkoc. [v2026.11.10-beta.3]
+- **Hooks:** Accept hook bodies up to 1 MiB, report rejected bodies, and handle batched Gmail pushes. (#200514) (#130002) Authored by @steipete. Thanks @garrytan and @obviyus. [v2026.11.10-beta.3]
+- feat: let plugin services page through local session catalogs (#204796)
+- feat(beam): route scoped continuation and request status (#204580)
+- feat(beam): prevent duplicate turns when a Team handoff is retried (#204581)
+- feat(beam): clean and enroll source-bound mirror publications (#204586)
+- feat(beam): release a publication and resolve its destination (#204575)
+- feat(ui): open catalog share links with the current reader’s permissions (#204590)
+- feat(beam): publish reviewed packets with conditional receipts (#204567)
+- feat(plugins): bind background catalog exports to service ownership (#204577)
+- feat(beam): let publishers discover their private catalog operations (#204589)
+- feat(plugin-sdk): send a message to the resolved session (#204638)
+- feat(beam): read a published snapshot by generation (#204555)
+- feat(beam): package a verified native cleaner for offline Gateways (#204593)
+- feat(gateway): keep conditional sends on the selected conversation (#204587)
 
 ## Important Fixes And Hardening
 
-- fix(openai): embed system prompt in input on ChatGPT Responses when uncached (#202372) (#202720)
-- fix: preserve managed GitHub exec on packaged Windows (#201712)
-- fix: remove repeated details after an update rolls back (#204253)
-- fix(release): retry immutable ClawHub recovery transfers (#204254)
-- fix(ci): remove mobile qualification from Gateway validation (#200555)
-- fix: schedule Template automations in the adding device’s time zone
-- fix: unblock local checks by removing dead exports (#204246)
-- fix(models): show provider plugin labels in the Control UI (#204230)
-- fix(ui): resume Logs auto-follow when WebKit delivers a wheel's scroll late (#204247)
-- fix: let Windows updates restart after a rollback (#204224)
-- fix(update): keep a Gateway's own update running when it first reports ready (#204215)
-- fix(subagents): preserve yield settlement after child cleanup (#203222)
-- fix: open the submission view for pending Templates (#202791)
-- fix(ui): keep a reader who reaches the top of a chat at the top (#204220)
-- fix: update plugins after the new Gateway starts (#204127)
+- fix(ci): stabilize Gateway timing planner fixture (#204894)
+- fix(test): reject missing Slack select placeholders (#204886)
+- fix(release): pass admitted coverage to build-only publication budget
+- fix(release): disable evidence reuse for build-only validation (#204879)
+- fix(macos): explain how to connect a named profile to a foreground Gateway (#203723)
+- fix(release): trust published waiver verdict in stable closeout
+- fix(release): approve fast-track only through GitHub (#204820)
+- Fix SQLite fixture lifetimes in startup inspection and rerank tests
+- fix(release): prepare fast-track artifacts without validation (#204807)
+- fix(scripts): let released catalog readers reach their native resource broker (#204528)
+- fix: isolate immutable Gateway service tests from host PIDs
+- fix: check update database safety before stopping the Gateway (#204752)
+- fix: let a Git install switch back to the npm package (#204835)
+- fix(plugins): run session-scoped plugin forks in the admitted session (#204411)
+- fix: keep a chat's client capabilities when queued messages resume after a restart (#204787)
 
 ## Releases This Week
 
-- `v2026.11.10-beta.2` | beta | 2026-11-23T12:48:59Z | openclaw 2026.11.10-beta.2
-- `v2026.11.7` | stable | 2026-11-23T01:33:51Z | openclaw 2026.11.7
+- `v2026.11.10-beta.3` | beta | 2026-11-24T03:28:03Z | openclaw 2026.11.10-beta.3
+- `v2026.11.8` | stable | 2026-11-24T11:54:30Z | openclaw 2026.11.8
 
 ## Most Active Change Scopes
 
-- `fix`: 72
-- `ui`: 27
-- `agents`: 16
-- `gateway`: 15
-- `update`: 14
-- `ci`: 12
-- `test`: 12
-- `release`: 9
-- `refactor`: 4
-- `improve`: 4
-- `tlon`: 3
-- `docs`: 3
+- `fix`: 67
+- `ci`: 35
+- `release`: 27
+- `gateway`: 27
+- `test`: 26
+- `ui`: 26
+- `beam`: 16
+- `agents`: 13
+- `update`: 12
+- `refactor`: 6
+- `macos`: 4
+- `plugins`: 4
 
 ## Recent Commit Headlines
 
-- 2026-11-23T22:48:03Z | fix(openai): embed system prompt in input on ChatGPT Responses when uncached (#202372) (#202720)
-- 2026-11-23T22:45:47Z | test(gateway): drop the stale mid-turn revocation step from screen routing
-- 2026-11-23T22:32:26Z | fix: preserve managed GitHub exec on packaged Windows (#201712)
-- 2026-11-23T22:31:55Z | fix: remove repeated details after an update rolls back (#204253)
-- 2026-11-23T22:23:49Z | test(gateway): assert the structured denial for revoked session history (#204255)
-- 2026-11-23T22:14:13Z | fix(release): retry immutable ClawHub recovery transfers (#204254)
-- 2026-11-23T22:07:01Z | fix(ci): remove mobile qualification from Gateway validation (#200555)
-- 2026-11-23T21:55:33Z | feat(agents): keep idle prompt caches warm with read-only prewarms (#204219)
-- 2026-11-23T21:54:23Z | fix: schedule Template automations in the adding device’s time zone
-- 2026-11-23T21:50:19Z | fix: unblock local checks by removing dead exports (#204246)
-- 2026-11-23T21:47:16Z | fix(models): show provider plugin labels in the Control UI (#204230)
-- 2026-11-23T21:39:52Z | fix(ui): resume Logs auto-follow when WebKit delivers a wheel's scroll late (#204247)
-- 2026-11-23T21:23:54Z | fix: let Windows updates restart after a rollback (#204224)
-- 2026-11-23T21:19:41Z | feat(diagnostics): identify in-process spawn fallbacks (#204217)
-- 2026-11-23T21:16:04Z | refactor: drop mid-request authority re-checks in the last gateway, session and node-host refusals (R6d part 4) (#204191)
-- 2026-11-23T21:09:22Z | fix(update): keep a Gateway's own update running when it first reports ready (#204215)
-- 2026-11-23T21:02:08Z | fix(subagents): preserve yield settlement after child cleanup (#203222)
-- 2026-11-23T20:58:15Z | fix: open the submission view for pending Templates (#202791)
-- 2026-11-23T20:55:45Z | fix(ui): keep a reader who reaches the top of a chat at the top (#204220)
-- 2026-11-23T20:53:27Z | improve: start automatic compaction at 85% of the window on every route (#204210)
+- 2026-11-24T21:12:18Z | fix(ci): stabilize Gateway timing planner fixture (#204894)
+- 2026-11-24T21:06:36Z | fix(test): reject missing Slack select placeholders (#204886)
+- 2026-11-24T20:59:07Z | fix(release): pass admitted coverage to build-only publication budget
+- 2026-11-24T20:42:17Z | fix(release): disable evidence reuse for build-only validation (#204879)
+- 2026-11-24T20:40:00Z | test(ai): give continuation fixtures writer scope (#204876)
+- 2026-11-24T20:32:14Z | fix(macos): explain how to connect a named profile to a foreground Gateway (#203723)
+- 2026-11-24T20:31:18Z | test(agents): remove the compaction test facade (#204872)
+- 2026-11-24T20:25:50Z | ci(update): prove schema trials and rollback on owner PRs (#204685)
+- 2026-11-24T20:24:18Z | fix(release): trust published waiver verdict in stable closeout
+- 2026-11-24T20:20:13Z | test(ui): align read-only Home owner scopes (#204871)
+- 2026-11-24T20:18:58Z | refactor(gateway): decide what a turn may do once, as a turn grant (#204756)
+- 2026-11-24T20:08:22Z | fix(release): approve fast-track only through GitHub (#204820)
+- 2026-11-24T20:02:18Z | Fix SQLite fixture lifetimes in startup inspection and rerank tests
+- 2026-11-24T20:00:02Z | test: check JSON exports by behavior (#204865)
+- 2026-11-24T19:58:09Z | fix(release): prepare fast-track artifacts without validation (#204807)
+- 2026-11-24T19:55:24Z | test(ui): preserve pairing error guidance metadata (#204863)
+- 2026-11-24T19:51:53Z | fix(scripts): let released catalog readers reach their native resource broker (#204528)
+- 2026-11-24T19:50:34Z | fix: isolate immutable Gateway service tests from host PIDs
+- 2026-11-24T19:44:32Z | chore: store session member access levels and add the Participate protocol (#204783)
+- 2026-11-24T19:43:47Z | fix: check update database safety before stopping the Gateway (#204752)
 
 ## Sources
 
