@@ -1,206 +1,200 @@
 {
-  "generated_at": "2026-11-25T05:36:52.220556+08:00",
+  "generated_at": "2026-11-26T04:44:56.665694+08:00",
   "window": {
-    "start_local": "2026-11-24T05:36:52.220556+08:00",
-    "end_local": "2026-11-25T05:36:52.220556+08:00",
-    "start_utc": "2026-11-23T21:36:52Z",
-    "end_utc": "2026-11-24T21:36:52Z"
+    "start_local": "2026-11-25T04:44:56.665694+08:00",
+    "end_local": "2026-11-26T04:44:56.665694+08:00",
+    "start_utc": "2026-11-24T20:44:56Z",
+    "end_utc": "2026-11-25T20:44:56Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 395158,
-    "forks": 82963,
-    "open_issues": 9124,
-    "pushed_at": "2026-11-24T21:35:04Z"
+    "stars": 395203,
+    "forks": 82976,
+    "open_issues": 9198,
+    "pushed_at": "2026-11-25T20:44:22Z"
   },
   "releases_in_window": [
     {
-      "tag_name": "v2026.11.10-beta.3",
-      "published_at": "2026-11-24T03:28:03Z",
-      "name": "openclaw 2026.11.10-beta.3",
-      "prerelease": true,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.10-beta.3"
+      "tag_name": "v2026.11.10",
+      "published_at": "2026-11-25T05:42:47Z",
+      "name": "openclaw 2026.11.10",
+      "prerelease": false,
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.10"
     },
     {
-      "tag_name": "v2026.11.8",
-      "published_at": "2026-11-24T11:54:30Z",
-      "name": "openclaw 2026.11.8",
+      "tag_name": "v2026.11.9",
+      "published_at": "2026-11-25T00:47:32Z",
+      "name": "openclaw 2026.11.9",
       "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.8"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.9"
     }
   ],
-  "commit_count": 337,
+  "commit_count": 427,
   "commit_headlines": [
-    "fix(ci): stabilize Gateway timing planner fixture (#204894)",
-    "fix(test): reject missing Slack select placeholders (#204886)",
-    "fix(release): pass admitted coverage to build-only publication budget",
-    "fix(release): disable evidence reuse for build-only validation (#204879)",
-    "test(ai): give continuation fixtures writer scope (#204876)",
-    "fix(macos): explain how to connect a named profile to a foreground Gateway (#203723)",
-    "test(agents): remove the compaction test facade (#204872)",
-    "ci(update): prove schema trials and rollback on owner PRs (#204685)",
-    "fix(release): trust published waiver verdict in stable closeout",
-    "test(ui): align read-only Home owner scopes (#204871)",
-    "refactor(gateway): decide what a turn may do once, as a turn grant (#204756)",
-    "fix(release): approve fast-track only through GitHub (#204820)",
-    "Fix SQLite fixture lifetimes in startup inspection and rerank tests",
-    "test: check JSON exports by behavior (#204865)",
-    "fix(release): prepare fast-track artifacts without validation (#204807)",
-    "test(ui): preserve pairing error guidance metadata (#204863)",
-    "fix(scripts): let released catalog readers reach their native resource broker (#204528)",
-    "fix: isolate immutable Gateway service tests from host PIDs",
-    "chore: store session member access levels and add the Participate protocol (#204783)",
-    "fix: check update database safety before stopping the Gateway (#204752)",
-    "chore(release): update appcast for 2026.11.8 (#204859)",
-    "fix: let a Git install switch back to the npm package (#204835)",
-    "test(onboarding): share entrypoint fixture setup (#204856)",
-    "fix(plugins): run session-scoped plugin forks in the admitted session (#204411)",
-    "test(gateway): answer warm summary requests in the restart resume fixture (#204857)",
-    "fix: keep a chat's client capabilities when queued messages resume after a restart (#204787)",
-    "test(shared): cover fences longer than three backticks (#204851)",
-    "fix(sessions): keep acknowledged inputs queued across a graceful restart (#204848)",
-    "fix: stop the Control UI reconnect test from failing on slow runs (#204849)",
-    "test(agent-guidance): assert configuration rejection reasons (#204845)",
-    "test(ui): settle tool cards before checking catalog locales (#204841)",
-    "test(macos): share synchronous process cleanup waits (#204833)",
-    "test(advisor): select the registered reply hook (#204844)",
-    "ci(test): run Git release contracts on Node (#204830)",
-    "fix: stop replaying Claude progress updates in active chats (#203970)",
-    "fix: report update outcomes from the Gateway that is serving (#204700)",
-    "fix(beam): resume confirmed mirrors across restarts (#204831)",
-    "test(bootstrap): make negative CA path checks deterministic (#204832)",
-    "test(lint): fail turn-kind reads and owner production outside admission (#204823)",
-    "fix: keep typing working in the Mac app's chat composer (#204705)",
-    "test(identity): prune duplicate protocol coverage (#204827)",
-    "test(memory): prune duplicate coverage and check retained values (#204825)",
-    "fix: show Claude CLI document uploads only once in chat (#203866)",
-    "fix(plugins): resolve selected Claude and Pi export sources exactly (#204809)",
-    "fix: clarify CLI completion after skipping AI (#202182)",
-    "fix(beam): preserve attributed assistant replies during mirror export (#204810)",
-    "fix(build): remove empty files from generated packages (#204800)",
-    "improve(gateway): speed up session lists for invited viewers (#204813)",
-    "test(agent): require results after repeat reset (#204815)",
-    "test(llm): drop duplicate fast-mode capability rows (#204781)"
+    "test(agents): trim redundant recovery and catalog cases (#205536)",
+    "fix(chat): keep repeated messages when loading older Apple chat history (#205508)",
+    "fix(agents): let plugins retry model calls after a dropped connection (#205174)",
+    "fix: keep section help from covering approval settings on phones (#203700)",
+    "fix(onboard): preserve profiles when Linux service install is unavailable (#204378)",
+    "chore(ui): refresh control ui locales (#205546)",
+    "fix(gateway): handle skipped start dates in trailing usage reports (#205347)",
+    "fix(ui): play Talk replies after a stalled unlock clip (#204393)",
+    "refactor(state): migrate in place and remove copy-and-swap (#205165)",
+    "docs: explain where to find audit evidence (#205125)",
+    "docs: link multiplayer shared secrets to Gateway auth settings (#202753)",
+    "fix(sessions): use requester pin order in Gateway tools and web (#204436)",
+    "fix: idle Gateway burns CPU scanning folders a shallow memory extraPaths pattern can never match (#205478)",
+    "fix: fit PDF previews to the available pane width",
+    "fix(agents): age usage-ranked newcomers from the agent's first sighting",
+    "fix: recognize Parallels preflight helpers in dead-code checks (#205481)",
+    "test: trim redundant state and Cron fixture metadata (#205522)",
+    "fix: stop the session sharing panel from freezing after you change someone's access",
+    "test(ui): stop waiting for the retired cron.status startup read (#205530)",
+    "fix(test): align role admission refusals (#205526)",
+    "fix: discard Matrix poll votes that include an unknown choice (#205345)",
+    "fix: keep keyboard scrolling after jumping to the latest chat message (#205463)",
+    "fix: send the desktop and GitHub tools only after a chat first uses them (#204805)",
+    "perf(gateway): reduce presence broadcast allocations (#205509)",
+    "fix: let an agent on a dedicated worker wait for its subagents (#205476)",
+    "fix(chat): restore your reading position after an empty search (#205494)",
+    "chore(ui): refresh control ui locales (#205524)",
+    "fix(diagnostics-prometheus): export plugin counter label sets at 0 (#202817)",
+    "perf(ci): reuse complete runtime for Mac recovery validation (#197489)",
+    "fix(macos): keep speech authorization callback nonisolated (#198869)",
+    "fix(cron): report undelivered native-only WebChat results (#198871)",
+    "fix: keep selected-day usage in the correct timeline (#205384)",
+    "fix(release): compare changelogs with the previous shipped release (#200958)",
+    "fix(ui): move automation notices out of the Inbox (#202921)",
+    "test(qa): catalog memory dreaming provenance (#154562)",
+    "perf(prometheus): reduce scrape and memory sample allocations (#205515)",
+    "feat: let Talk and Discord request GPT-Live-1.1 with ChatGPT sign-in",
+    "refactor(plugins): plugin tools take the turn's owner bit; delete the requester-owner continuation (OA2 PR 6j) (#205483)",
+    "fix(lobster): avoid skipped skill warnings during discovery (#195179)",
+    "test: trim redundant Node tests (#205403)",
+    "fix(test): observe background work history subscriptions (#205503)",
+    "fix: stop reporting intentionally excluded MCP tools as failures (#205473)",
+    "fix: keep device status and retry visible in the Portal panel (#203809)",
+    "test(tavily): require extracted image retention (#205499)",
+    "fix: open Knowledge previews in view and return to the selected activity (#203762)",
+    "fix: stop browser test previews from reporting false plugin activation errors (#203738)",
+    "feat: manage projects and who they are shared with from the Control UI (#203472)",
+    "fix(test): expect interrupted inline commands after Stop (#205488)",
+    "improve: reduce Gateway diagnostics and scheduler allocation (#205464)",
+    "fix(test): use current warm-boot projection version (#205474)"
   ],
   "feature_items": [
-    "**Templates:** Open a durable chat before completing verified template setup, and allow a previously deleted template agent to be added again. (#196392) (#200628) Related #198475 Thanks @Patrick-Erichsen, @DonnieFi, and @vincentkoc. [v2026.11.10-beta.3]",
-    "**Hooks:** Accept hook bodies up to 1 MiB, report rejected bodies, and handle batched Gmail pushes. (#200514) (#130002) Authored by @steipete. Thanks @garrytan and @obviyus. [v2026.11.10-beta.3]",
-    "feat: let plugin services page through local session catalogs (#204796)",
-    "feat(beam): route scoped continuation and request status (#204580)",
-    "feat(beam): prevent duplicate turns when a Team handoff is retried (#204581)",
-    "feat(beam): clean and enroll source-bound mirror publications (#204586)",
-    "feat(beam): release a publication and resolve its destination (#204575)",
-    "feat(ui): open catalog share links with the current reader’s permissions (#204590)",
-    "feat(beam): publish reviewed packets with conditional receipts (#204567)",
-    "feat(plugins): bind background catalog exports to service ownership (#204577)",
-    "feat(beam): let publishers discover their private catalog operations (#204589)",
-    "feat(plugin-sdk): send a message to the resolved session (#204638)",
-    "feat(beam): read a published snapshot by generation (#204555)",
-    "feat(beam): package a verified native cleaner for offline Gateways (#204593)",
-    "feat(gateway): keep conditional sends on the selected conversation (#204587)",
-    "feat(gateway): discover shared catalog links with guest permissions (#204574)",
-    "feat(plugins): expose verified caller identity for gateway requests (#204563)",
-    "feat(catalog): identify local sources for automatic session exports (#204558)",
-    "feat(release): publish explicitly approved fast-track releases (#204520)",
-    "feat(gateway): return the session ID when resolving catalog links (#204576)",
-    "feat(zai): add GLM-5.4 as the Coding Plan default (#204522)",
-    "improve: welcome guests in the agent's own voice",
-    "feat: comment on live elements in inline widgets (#201028)",
-    "feat(templates): sign in to ClawHub from a private draft",
-    "feat(agents): keep idle prompt caches warm with read-only prewarms (#204219)"
+    "feat: let Talk and Discord request GPT-Live-1.1 with ChatGPT sign-in",
+    "feat: manage projects and who they are shared with from the Control UI (#203472)",
+    "feat: invitation, sharing and participant controls in the Control UI (#204920)",
+    "feat(ci): measure qualified Node cache workloads (#205325)",
+    "feat: let participants publish through the session's shared GitHub account (#204914)",
+    "feat(ci): run qualified Node cache measurements (#205308)",
+    "feat(ci): validate Node cache qualification receipts (#205283)",
+    "feat(release): wait for npm preflight before FRV fanout on request (#205276)",
+    "feat(beam): open a reviewed screenshot from a shared snapshot (#205257)",
+    "feat: let invited people read, suggest or send in your session within role limits (#204899)",
+    "feat(ci): run prepared Node cache controls in CI (#205248)",
+    "feat(ci): qualify prepared Node cache workloads (#205230)",
+    "feat(ci): qualify disabled-cache workload controls (#205161)",
+    "feat: allow rollback across compatible database changes (#204956)",
+    "feat: send participant exec approvals to the session creator (#204858)",
+    "feat(ci): verify Node cache evidence before benchmarks (#204579)",
+    "feat(state): publish candidate-owned restore manifests (#204915)",
+    "feat: prepare worker placements for recovery after restart (#202711)",
+    "feat(ui): align per-agent model settings with global Models"
   ],
   "fix_items": [
-    "fix(ci): stabilize Gateway timing planner fixture (#204894)",
-    "fix(test): reject missing Slack select placeholders (#204886)",
-    "fix(release): pass admitted coverage to build-only publication budget",
-    "fix(release): disable evidence reuse for build-only validation (#204879)",
-    "fix(macos): explain how to connect a named profile to a foreground Gateway (#203723)",
-    "fix(release): trust published waiver verdict in stable closeout",
-    "fix(release): approve fast-track only through GitHub (#204820)",
-    "Fix SQLite fixture lifetimes in startup inspection and rerank tests",
-    "fix(release): prepare fast-track artifacts without validation (#204807)",
-    "fix(scripts): let released catalog readers reach their native resource broker (#204528)",
-    "fix: isolate immutable Gateway service tests from host PIDs",
-    "fix: check update database safety before stopping the Gateway (#204752)",
-    "fix: let a Git install switch back to the npm package (#204835)",
-    "fix(plugins): run session-scoped plugin forks in the admitted session (#204411)",
-    "fix: keep a chat's client capabilities when queued messages resume after a restart (#204787)",
-    "fix(sessions): keep acknowledged inputs queued across a graceful restart (#204848)",
-    "fix: stop the Control UI reconnect test from failing on slow runs (#204849)",
-    "fix: stop replaying Claude progress updates in active chats (#203970)",
-    "fix: report update outcomes from the Gateway that is serving (#204700)",
-    "fix(beam): resume confirmed mirrors across restarts (#204831)",
-    "fix: keep typing working in the Mac app's chat composer (#204705)",
-    "fix: show Claude CLI document uploads only once in chat (#203866)",
-    "fix(plugins): resolve selected Claude and Pi export sources exactly (#204809)",
-    "fix: clarify CLI completion after skipping AI (#202182)",
-    "fix(beam): preserve attributed assistant replies during mirror export (#204810)",
-    "fix(build): remove empty files from generated packages (#204800)",
-    "fix(gateway): honor explicit session scopes during device pairing (#204802)",
-    "fix: open dashboard links from chat without reloading (#203949)",
-    "fix: open a browser side tab with Command-T on Mac (#203848)",
-    "fix(macos): find text in the focused browser tab (#203873)"
+    "fix(chat): keep repeated messages when loading older Apple chat history (#205508)",
+    "fix(agents): let plugins retry model calls after a dropped connection (#205174)",
+    "fix: keep section help from covering approval settings on phones (#203700)",
+    "fix(onboard): preserve profiles when Linux service install is unavailable (#204378)",
+    "fix(gateway): handle skipped start dates in trailing usage reports (#205347)",
+    "fix(ui): play Talk replies after a stalled unlock clip (#204393)",
+    "fix(sessions): use requester pin order in Gateway tools and web (#204436)",
+    "fix: idle Gateway burns CPU scanning folders a shallow memory extraPaths pattern can never match (#205478)",
+    "fix: fit PDF previews to the available pane width",
+    "fix(agents): age usage-ranked newcomers from the agent's first sighting",
+    "fix: recognize Parallels preflight helpers in dead-code checks (#205481)",
+    "fix: stop the session sharing panel from freezing after you change someone's access",
+    "fix(test): align role admission refusals (#205526)",
+    "fix: discard Matrix poll votes that include an unknown choice (#205345)",
+    "fix: keep keyboard scrolling after jumping to the latest chat message (#205463)",
+    "fix: send the desktop and GitHub tools only after a chat first uses them (#204805)",
+    "perf(gateway): reduce presence broadcast allocations (#205509)",
+    "fix: let an agent on a dedicated worker wait for its subagents (#205476)",
+    "fix(chat): restore your reading position after an empty search (#205494)",
+    "fix(diagnostics-prometheus): export plugin counter label sets at 0 (#202817)",
+    "perf(ci): reuse complete runtime for Mac recovery validation (#197489)",
+    "fix(macos): keep speech authorization callback nonisolated (#198869)",
+    "fix(cron): report undelivered native-only WebChat results (#198871)",
+    "fix: keep selected-day usage in the correct timeline (#205384)",
+    "fix(release): compare changelogs with the previous shipped release (#200958)",
+    "fix(ui): move automation notices out of the Inbox (#202921)",
+    "perf(prometheus): reduce scrape and memory sample allocations (#205515)",
+    "fix(lobster): avoid skipped skill warnings during discovery (#195179)",
+    "fix(test): observe background work history subscriptions (#205503)",
+    "fix: stop reporting intentionally excluded MCP tools as failures (#205473)"
   ],
   "top_scopes": [
     {
       "scope": "fix",
-      "count": 67
+      "count": 96
+    },
+    {
+      "scope": "test",
+      "count": 44
     },
     {
       "scope": "ci",
       "count": 35
     },
     {
+      "scope": "ui",
+      "count": 34
+    },
+    {
       "scope": "release",
-      "count": 27
+      "count": 25
     },
     {
       "scope": "gateway",
-      "count": 27
-    },
-    {
-      "scope": "test",
-      "count": 26
-    },
-    {
-      "scope": "ui",
-      "count": 26
-    },
-    {
-      "scope": "beam",
-      "count": 16
-    },
-    {
-      "scope": "agents",
-      "count": 13
-    },
-    {
-      "scope": "update",
-      "count": 12
-    },
-    {
-      "scope": "refactor",
-      "count": 6
-    },
-    {
-      "scope": "macos",
-      "count": 4
-    },
-    {
-      "scope": "plugins",
-      "count": 4
-    },
-    {
-      "scope": "ai",
-      "count": 3
-    },
-    {
-      "scope": "docs",
-      "count": 3
+      "count": 19
     },
     {
       "scope": "improve",
-      "count": 3
+      "count": 11
+    },
+    {
+      "scope": "docs",
+      "count": 9
+    },
+    {
+      "scope": "feat",
+      "count": 8
+    },
+    {
+      "scope": "agents",
+      "count": 7
+    },
+    {
+      "scope": "cron",
+      "count": 6
+    },
+    {
+      "scope": "update",
+      "count": 6
+    },
+    {
+      "scope": "cli",
+      "count": 6
+    },
+    {
+      "scope": "chat",
+      "count": 5
+    },
+    {
+      "scope": "whatsapp",
+      "count": 5
     }
   ]
 }
