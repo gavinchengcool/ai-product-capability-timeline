@@ -1,106 +1,99 @@
 window.OPENCLAW_LATEST_DELTA = {
-  "generatedAt": "2026-11-26T04:44:56.665694+08:00",
+  "generatedAt": "2026-11-27T04:36:34.799279+08:00",
   "window": {
-    "start_local": "2026-11-25T04:44:56.665694+08:00",
-    "end_local": "2026-11-26T04:44:56.665694+08:00",
-    "start_utc": "2026-11-24T20:44:56Z",
-    "end_utc": "2026-11-25T20:44:56Z"
+    "start_local": "2026-11-26T04:36:34.799279+08:00",
+    "end_local": "2026-11-27T04:36:34.799279+08:00",
+    "start_utc": "2026-11-25T20:36:34Z",
+    "end_utc": "2026-11-26T20:36:34Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 395203,
-    "forks": 82976,
-    "open_issues": 9198,
-    "pushed_at": "2026-11-25T20:44:22Z"
+    "stars": 395290,
+    "forks": 82997,
+    "open_issues": 9262,
+    "pushed_at": "2026-11-26T20:35:22Z"
   },
   "summary": {
-    "commitCount": 427,
-    "releaseCount": 2,
-    "stableReleaseCount": 2,
+    "commitCount": 380,
+    "releaseCount": 1,
+    "stableReleaseCount": 1,
     "betaReleaseCount": 0,
-    "stars": 395203,
-    "forks": 82976,
-    "openIssues": 9198
+    "stars": 395290,
+    "forks": 82997,
+    "openIssues": 9262
   },
   "releases": [
     {
-      "tag_name": "v2026.11.10",
-      "published_at": "2026-11-25T05:42:47Z",
-      "name": "openclaw 2026.11.10",
+      "tag_name": "v2026.10.34",
+      "published_at": "2026-11-26T01:37:32Z",
+      "name": "openclaw 2026.10.34",
       "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.10"
-    },
-    {
-      "tag_name": "v2026.11.9",
-      "published_at": "2026-11-25T00:47:32Z",
-      "name": "openclaw 2026.11.9",
-      "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.9"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.34"
     }
   ],
   "featureItems": [
-    "feat: let Talk and Discord request GPT-Live-1.1 with ChatGPT sign-in",
-    "feat: manage projects and who they are shared with from the Control UI (#203472)",
-    "feat: invitation, sharing and participant controls in the Control UI (#204920)",
-    "feat(ci): measure qualified Node cache workloads (#205325)",
-    "feat: let participants publish through the session's shared GitHub account (#204914)",
-    "feat(ci): run qualified Node cache measurements (#205308)",
-    "feat(ci): validate Node cache qualification receipts (#205283)",
-    "feat(release): wait for npm preflight before FRV fanout on request (#205276)"
+    "feat(ui): group automations that need attention (#206111)",
+    "feat(signal): include recent group photos when mentioned (#202586)",
+    "feat(agents): let agents opt into a shared USER.md directory",
+    "feat(signal): let a group reply to the bot count as a mention (#201148)",
+    "feat(gateway): add opt-in supervisor-verified lock recovery (#205888)",
+    "feat: let agents snooze a conversation after replying",
+    "feat: let OpenClaw find and set up the Llama app (#205323)",
+    "feat(release): allow unbounded fast-track for beta prereleases (#205228)"
   ],
   "fixItems": [
-    "fix(chat): keep repeated messages when loading older Apple chat history (#205508)",
-    "fix(agents): let plugins retry model calls after a dropped connection (#205174)",
-    "fix: keep section help from covering approval settings on phones (#203700)",
-    "fix(onboard): preserve profiles when Linux service install is unavailable (#204378)",
-    "fix(gateway): handle skipped start dates in trailing usage reports (#205347)",
-    "fix(ui): play Talk replies after a stalled unlock clip (#204393)",
-    "fix(sessions): use requester pin order in Gateway tools and web (#204436)",
-    "fix: idle Gateway burns CPU scanning folders a shallow memory extraPaths pattern can never match (#205478)"
+    "fix(android): honor Markdown table column alignment (#205575)",
+    "perf(gateway): reuse session event envelopes across delivery histories (#206144)",
+    "fix(ui): preserve spaces and the caret in Activity session search (#206123)",
+    "fix: remove updater runtimes that shipped releases leave after the installation moves (#206124)",
+    "fix(codex): release the gateway hold when a resumed worker finishes (#206137)",
+    "fix(chat): preserve edited recall stashes after send acceptance (#206117)",
+    "fix: sessions_send recipient's NO_REPLY fails as empty_response and runs model fallback (#206058)",
+    "fix(android): keep the turn recap when returning to a conversation (#205528)"
   ],
   "topScopes": [
     {
       "scope": "fix",
-      "count": 96
-    },
-    {
-      "scope": "test",
-      "count": 44
-    },
-    {
-      "scope": "ci",
-      "count": 35
+      "count": 119
     },
     {
       "scope": "ui",
-      "count": 34
+      "count": 37
     },
     {
-      "scope": "release",
-      "count": 25
+      "scope": "android",
+      "count": 27
+    },
+    {
+      "scope": "ci",
+      "count": 18
     },
     {
       "scope": "gateway",
-      "count": 19
+      "count": 16
+    },
+    {
+      "scope": "test",
+      "count": 15
     },
     {
       "scope": "improve",
       "count": 11
     },
     {
-      "scope": "docs",
+      "scope": "codex",
       "count": 9
     }
   ],
   "headlineCommits": [
-    "test(agents): trim redundant recovery and catalog cases (#205536)",
-    "fix(chat): keep repeated messages when loading older Apple chat history (#205508)",
-    "fix(agents): let plugins retry model calls after a dropped connection (#205174)",
-    "fix: keep section help from covering approval settings on phones (#203700)",
-    "fix(onboard): preserve profiles when Linux service install is unavailable (#204378)",
-    "chore(ui): refresh control ui locales (#205546)",
-    "fix(gateway): handle skipped start dates in trailing usage reports (#205347)",
-    "fix(ui): play Talk replies after a stalled unlock clip (#204393)"
+    "fix(android): honor Markdown table column alignment (#205575)",
+    "improve: reduce broker memory when loading plugin and SQLite resources (#206142)",
+    "perf(gateway): reuse session event envelopes across delivery histories (#206144)",
+    "fix(ui): preserve spaces and the caret in Activity session search (#206123)",
+    "feat(ui): group automations that need attention (#206111)",
+    "feat(signal): include recent group photos when mentioned (#202586)",
+    "fix: remove updater runtimes that shipped releases leave after the installation moves (#206124)",
+    "fix(codex): release the gateway hold when a resumed worker finishes (#206137)"
   ],
   "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"
 };

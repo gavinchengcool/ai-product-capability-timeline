@@ -1,200 +1,191 @@
 {
-  "generated_at": "2026-11-26T04:44:56.665694+08:00",
+  "generated_at": "2026-11-27T04:36:34.799279+08:00",
   "window": {
-    "start_local": "2026-11-25T04:44:56.665694+08:00",
-    "end_local": "2026-11-26T04:44:56.665694+08:00",
-    "start_utc": "2026-11-24T20:44:56Z",
-    "end_utc": "2026-11-25T20:44:56Z"
+    "start_local": "2026-11-26T04:36:34.799279+08:00",
+    "end_local": "2026-11-27T04:36:34.799279+08:00",
+    "start_utc": "2026-11-25T20:36:34Z",
+    "end_utc": "2026-11-26T20:36:34Z"
   },
   "repo": {
     "slug": "openclaw/openclaw",
-    "stars": 395203,
-    "forks": 82976,
-    "open_issues": 9198,
-    "pushed_at": "2026-11-25T20:44:22Z"
+    "stars": 395290,
+    "forks": 82997,
+    "open_issues": 9262,
+    "pushed_at": "2026-11-26T20:35:22Z"
   },
   "releases_in_window": [
     {
-      "tag_name": "v2026.11.10",
-      "published_at": "2026-11-25T05:42:47Z",
-      "name": "openclaw 2026.11.10",
+      "tag_name": "v2026.10.34",
+      "published_at": "2026-11-26T01:37:32Z",
+      "name": "openclaw 2026.10.34",
       "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.10"
-    },
-    {
-      "tag_name": "v2026.11.9",
-      "published_at": "2026-11-25T00:47:32Z",
-      "name": "openclaw 2026.11.9",
-      "prerelease": false,
-      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.9"
+      "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.34"
     }
   ],
-  "commit_count": 427,
+  "commit_count": 380,
   "commit_headlines": [
-    "test(agents): trim redundant recovery and catalog cases (#205536)",
-    "fix(chat): keep repeated messages when loading older Apple chat history (#205508)",
-    "fix(agents): let plugins retry model calls after a dropped connection (#205174)",
-    "fix: keep section help from covering approval settings on phones (#203700)",
-    "fix(onboard): preserve profiles when Linux service install is unavailable (#204378)",
-    "chore(ui): refresh control ui locales (#205546)",
-    "fix(gateway): handle skipped start dates in trailing usage reports (#205347)",
-    "fix(ui): play Talk replies after a stalled unlock clip (#204393)",
-    "refactor(state): migrate in place and remove copy-and-swap (#205165)",
-    "docs: explain where to find audit evidence (#205125)",
-    "docs: link multiplayer shared secrets to Gateway auth settings (#202753)",
-    "fix(sessions): use requester pin order in Gateway tools and web (#204436)",
-    "fix: idle Gateway burns CPU scanning folders a shallow memory extraPaths pattern can never match (#205478)",
-    "fix: fit PDF previews to the available pane width",
-    "fix(agents): age usage-ranked newcomers from the agent's first sighting",
-    "fix: recognize Parallels preflight helpers in dead-code checks (#205481)",
-    "test: trim redundant state and Cron fixture metadata (#205522)",
-    "fix: stop the session sharing panel from freezing after you change someone's access",
-    "test(ui): stop waiting for the retired cron.status startup read (#205530)",
-    "fix(test): align role admission refusals (#205526)",
-    "fix: discard Matrix poll votes that include an unknown choice (#205345)",
-    "fix: keep keyboard scrolling after jumping to the latest chat message (#205463)",
-    "fix: send the desktop and GitHub tools only after a chat first uses them (#204805)",
-    "perf(gateway): reduce presence broadcast allocations (#205509)",
-    "fix: let an agent on a dedicated worker wait for its subagents (#205476)",
-    "fix(chat): restore your reading position after an empty search (#205494)",
-    "chore(ui): refresh control ui locales (#205524)",
-    "fix(diagnostics-prometheus): export plugin counter label sets at 0 (#202817)",
-    "perf(ci): reuse complete runtime for Mac recovery validation (#197489)",
-    "fix(macos): keep speech authorization callback nonisolated (#198869)",
-    "fix(cron): report undelivered native-only WebChat results (#198871)",
-    "fix: keep selected-day usage in the correct timeline (#205384)",
-    "fix(release): compare changelogs with the previous shipped release (#200958)",
-    "fix(ui): move automation notices out of the Inbox (#202921)",
-    "test(qa): catalog memory dreaming provenance (#154562)",
-    "perf(prometheus): reduce scrape and memory sample allocations (#205515)",
-    "feat: let Talk and Discord request GPT-Live-1.1 with ChatGPT sign-in",
-    "refactor(plugins): plugin tools take the turn's owner bit; delete the requester-owner continuation (OA2 PR 6j) (#205483)",
-    "fix(lobster): avoid skipped skill warnings during discovery (#195179)",
-    "test: trim redundant Node tests (#205403)",
-    "fix(test): observe background work history subscriptions (#205503)",
-    "fix: stop reporting intentionally excluded MCP tools as failures (#205473)",
-    "fix: keep device status and retry visible in the Portal panel (#203809)",
-    "test(tavily): require extracted image retention (#205499)",
-    "fix: open Knowledge previews in view and return to the selected activity (#203762)",
-    "fix: stop browser test previews from reporting false plugin activation errors (#203738)",
-    "feat: manage projects and who they are shared with from the Control UI (#203472)",
-    "fix(test): expect interrupted inline commands after Stop (#205488)",
-    "improve: reduce Gateway diagnostics and scheduler allocation (#205464)",
-    "fix(test): use current warm-boot projection version (#205474)"
+    "fix(android): honor Markdown table column alignment (#205575)",
+    "improve: reduce broker memory when loading plugin and SQLite resources (#206142)",
+    "perf(gateway): reuse session event envelopes across delivery histories (#206144)",
+    "fix(ui): preserve spaces and the caret in Activity session search (#206123)",
+    "feat(ui): group automations that need attention (#206111)",
+    "feat(signal): include recent group photos when mentioned (#202586)",
+    "fix: remove updater runtimes that shipped releases leave after the installation moves (#206124)",
+    "fix(codex): release the gateway hold when a resumed worker finishes (#206137)",
+    "fix(chat): preserve edited recall stashes after send acceptance (#206117)",
+    "test(prompts): remove duplicate message schema snapshots (#206127)",
+    "fix: sessions_send recipient's NO_REPLY fails as empty_response and runs model fallback (#206058)",
+    "fix(android): keep the turn recap when returning to a conversation (#205528)",
+    "improve: reduce Gateway broker memory at startup (#206104)",
+    "fix(macos): keep Up in multiline composer drafts (#205434)",
+    "chore(ui): refresh control ui locales (#206130)",
+    "fix(workshop): normalize changes limits before choosing a route (#206091)",
+    "perf(gateway): avoid list projection for transcript recall (#206110)",
+    "test(presentation): trim redundant formatting permutations (#206105)",
+    "fix(codex): explain when a resumed worker has a different parent (#206114)",
+    "fix: reuse prepared middleware for agent tool results (#206108)",
+    "fix(ios): keep shared link captions when the title is blank (#205525)",
+    "feat(agents): let agents opt into a shared USER.md directory",
+    "fix(gateway): wait for transient SQLite schema custody at startup",
+    "fix(chat): preserve the latest Unicode spelling of Apple composer drafts (#205436)",
+    "perf(config): decode bundled channel schemas on demand (#206098)",
+    "fix: keep a newer Apple chat draft when a send finishes after reconnect (#205389)",
+    "fix(chat): restore the native draft after paging older messages (#205429)",
+    "fix: show the correct hour for Activity peaks across half-hour clock changes (#205644)",
+    "fix(ui): include the first day of Activity charts after spring forward (#205523)",
+    "fix(codex): keep late worker notices from completing a newer task (#206080)",
+    "improve: skip building the Feishu settings form during startup checks (#206072)",
+    "perf(gateway): reuse unchanged session child links (#206070)",
+    "perf(process): reuse encoded resource owner messages (#206069)",
+    "fix(workshop): preserve the default archived version when undoing a restore (#206036)",
+    "perf(sessions): isolate archive metadata from transcript rendering (#206065)",
+    "fix(tui): clarify how to dismiss a BTW reply (#205616)",
+    "fix: pause optional Gateway work under parent memory pressure (#206041)",
+    "chore(ui): refresh control ui locales (#206066)",
+    "test(gateway): retire latency benchmark suites (#205911)",
+    "fix(state): keep agent schema steps from scanning the whole database offline (#205977)",
+    "fix(apple): use the selected session title for chat exports (#205957)",
+    "fix: keep OpenClaw ID remote access after Git updates (#205900)",
+    "fix: respect launcher file ownership during root maintenance (#206026)",
+    "test(gateway): read recovery health from the shared auth owner",
+    "fix(gateway): retain Linux foreground installation identity",
+    "fix: report already-undone learned skill reviews (#206029)",
+    "fix: preserve independent context-window options for model aliases (#206049)",
+    "fix(update): keep following updates through Gateway restarts (#205898)",
+    "fix: wait for transcript policy when starting a meeting plugin (#206001)",
+    "fix(ui): count carriage returns in chat previews (#205997)"
   ],
   "feature_items": [
-    "feat: let Talk and Discord request GPT-Live-1.1 with ChatGPT sign-in",
-    "feat: manage projects and who they are shared with from the Control UI (#203472)",
-    "feat: invitation, sharing and participant controls in the Control UI (#204920)",
-    "feat(ci): measure qualified Node cache workloads (#205325)",
-    "feat: let participants publish through the session's shared GitHub account (#204914)",
-    "feat(ci): run qualified Node cache measurements (#205308)",
-    "feat(ci): validate Node cache qualification receipts (#205283)",
-    "feat(release): wait for npm preflight before FRV fanout on request (#205276)",
-    "feat(beam): open a reviewed screenshot from a shared snapshot (#205257)",
-    "feat: let invited people read, suggest or send in your session within role limits (#204899)",
-    "feat(ci): run prepared Node cache controls in CI (#205248)",
-    "feat(ci): qualify prepared Node cache workloads (#205230)",
-    "feat(ci): qualify disabled-cache workload controls (#205161)",
-    "feat: allow rollback across compatible database changes (#204956)",
-    "feat: send participant exec approvals to the session creator (#204858)",
-    "feat(ci): verify Node cache evidence before benchmarks (#204579)",
-    "feat(state): publish candidate-owned restore manifests (#204915)",
-    "feat: prepare worker placements for recovery after restart (#202711)",
-    "feat(ui): align per-agent model settings with global Models"
+    "feat(ui): group automations that need attention (#206111)",
+    "feat(signal): include recent group photos when mentioned (#202586)",
+    "feat(agents): let agents opt into a shared USER.md directory",
+    "feat(signal): let a group reply to the bot count as a mention (#201148)",
+    "feat(gateway): add opt-in supervisor-verified lock recovery (#205888)",
+    "feat: let agents snooze a conversation after replying",
+    "feat: let OpenClaw find and set up the Llama app (#205323)",
+    "feat(release): allow unbounded fast-track for beta prereleases (#205228)",
+    "feat(context): show prompt budget card for /context on every channel (#205780)",
+    "feat(models): split sign out on this device from disconnect account (#205759)",
+    "feat: define exec settings for Dedicated workers (#205571)",
+    "feat: let plugins explain provider errors in chat",
+    "feat: confine native node worker filesystem access (#193823)",
+    "feat: let agents post approved GitHub comments (#204301)",
+    "feat(macos): use the signed-in person's saved session pins",
+    "feat: let administrators manage roles in Settings → Team → Roles (#203453)",
+    "feat(android): use the signed-in person's saved session pins"
   ],
   "fix_items": [
-    "fix(chat): keep repeated messages when loading older Apple chat history (#205508)",
-    "fix(agents): let plugins retry model calls after a dropped connection (#205174)",
-    "fix: keep section help from covering approval settings on phones (#203700)",
-    "fix(onboard): preserve profiles when Linux service install is unavailable (#204378)",
-    "fix(gateway): handle skipped start dates in trailing usage reports (#205347)",
-    "fix(ui): play Talk replies after a stalled unlock clip (#204393)",
-    "fix(sessions): use requester pin order in Gateway tools and web (#204436)",
-    "fix: idle Gateway burns CPU scanning folders a shallow memory extraPaths pattern can never match (#205478)",
-    "fix: fit PDF previews to the available pane width",
-    "fix(agents): age usage-ranked newcomers from the agent's first sighting",
-    "fix: recognize Parallels preflight helpers in dead-code checks (#205481)",
-    "fix: stop the session sharing panel from freezing after you change someone's access",
-    "fix(test): align role admission refusals (#205526)",
-    "fix: discard Matrix poll votes that include an unknown choice (#205345)",
-    "fix: keep keyboard scrolling after jumping to the latest chat message (#205463)",
-    "fix: send the desktop and GitHub tools only after a chat first uses them (#204805)",
-    "perf(gateway): reduce presence broadcast allocations (#205509)",
-    "fix: let an agent on a dedicated worker wait for its subagents (#205476)",
-    "fix(chat): restore your reading position after an empty search (#205494)",
-    "fix(diagnostics-prometheus): export plugin counter label sets at 0 (#202817)",
-    "perf(ci): reuse complete runtime for Mac recovery validation (#197489)",
-    "fix(macos): keep speech authorization callback nonisolated (#198869)",
-    "fix(cron): report undelivered native-only WebChat results (#198871)",
-    "fix: keep selected-day usage in the correct timeline (#205384)",
-    "fix(release): compare changelogs with the previous shipped release (#200958)",
-    "fix(ui): move automation notices out of the Inbox (#202921)",
-    "perf(prometheus): reduce scrape and memory sample allocations (#205515)",
-    "fix(lobster): avoid skipped skill warnings during discovery (#195179)",
-    "fix(test): observe background work history subscriptions (#205503)",
-    "fix: stop reporting intentionally excluded MCP tools as failures (#205473)"
+    "fix(android): honor Markdown table column alignment (#205575)",
+    "perf(gateway): reuse session event envelopes across delivery histories (#206144)",
+    "fix(ui): preserve spaces and the caret in Activity session search (#206123)",
+    "fix: remove updater runtimes that shipped releases leave after the installation moves (#206124)",
+    "fix(codex): release the gateway hold when a resumed worker finishes (#206137)",
+    "fix(chat): preserve edited recall stashes after send acceptance (#206117)",
+    "fix: sessions_send recipient's NO_REPLY fails as empty_response and runs model fallback (#206058)",
+    "fix(android): keep the turn recap when returning to a conversation (#205528)",
+    "fix(macos): keep Up in multiline composer drafts (#205434)",
+    "fix(workshop): normalize changes limits before choosing a route (#206091)",
+    "perf(gateway): avoid list projection for transcript recall (#206110)",
+    "fix(codex): explain when a resumed worker has a different parent (#206114)",
+    "fix: reuse prepared middleware for agent tool results (#206108)",
+    "fix(ios): keep shared link captions when the title is blank (#205525)",
+    "fix(gateway): wait for transient SQLite schema custody at startup",
+    "fix(chat): preserve the latest Unicode spelling of Apple composer drafts (#205436)",
+    "perf(config): decode bundled channel schemas on demand (#206098)",
+    "fix: keep a newer Apple chat draft when a send finishes after reconnect (#205389)",
+    "fix(chat): restore the native draft after paging older messages (#205429)",
+    "fix: show the correct hour for Activity peaks across half-hour clock changes (#205644)",
+    "fix(ui): include the first day of Activity charts after spring forward (#205523)",
+    "fix(codex): keep late worker notices from completing a newer task (#206080)",
+    "perf(gateway): reuse unchanged session child links (#206070)",
+    "perf(process): reuse encoded resource owner messages (#206069)",
+    "fix(workshop): preserve the default archived version when undoing a restore (#206036)",
+    "perf(sessions): isolate archive metadata from transcript rendering (#206065)",
+    "fix(tui): clarify how to dismiss a BTW reply (#205616)",
+    "fix: pause optional Gateway work under parent memory pressure (#206041)",
+    "fix(state): keep agent schema steps from scanning the whole database offline (#205977)",
+    "fix(apple): use the selected session title for chat exports (#205957)"
   ],
   "top_scopes": [
     {
       "scope": "fix",
-      "count": 96
-    },
-    {
-      "scope": "test",
-      "count": 44
-    },
-    {
-      "scope": "ci",
-      "count": 35
+      "count": 119
     },
     {
       "scope": "ui",
-      "count": 34
+      "count": 37
     },
     {
-      "scope": "release",
-      "count": 25
+      "scope": "android",
+      "count": 27
+    },
+    {
+      "scope": "ci",
+      "count": 18
     },
     {
       "scope": "gateway",
-      "count": 19
+      "count": 16
+    },
+    {
+      "scope": "test",
+      "count": 15
     },
     {
       "scope": "improve",
       "count": 11
     },
     {
-      "scope": "docs",
+      "scope": "codex",
+      "count": 9
+    },
+    {
+      "scope": "update",
       "count": 9
     },
     {
       "scope": "feat",
-      "count": 8
-    },
-    {
-      "scope": "agents",
       "count": 7
     },
     {
-      "scope": "cron",
-      "count": 6
+      "scope": "agents",
+      "count": 5
     },
     {
-      "scope": "update",
-      "count": 6
+      "scope": "signal",
+      "count": 4
+    },
+    {
+      "scope": "macos",
+      "count": 4
     },
     {
       "scope": "cli",
-      "count": 6
+      "count": 4
     },
     {
-      "scope": "chat",
-      "count": 5
-    },
-    {
-      "scope": "whatsapp",
-      "count": 5
+      "scope": "copilot",
+      "count": 4
     }
   ]
 }

@@ -1,100 +1,99 @@
 # OpenClaw Weekly Update
 
-生成时间：2026-11-26T04:44:56.665694+08:00
+生成时间：2026-11-27T04:36:34.799279+08:00
 
 ## Window
 
-- Start: 2026-11-25T04:44:56.665694+08:00
-- End: 2026-11-26T04:44:56.665694+08:00
+- Start: 2026-11-26T04:36:34.799279+08:00
+- End: 2026-11-27T04:36:34.799279+08:00
 - Repo: `openclaw/openclaw`
 
 ## At A Glance
 
-- Commits in window: 427
-- Releases in window: 2
-- Stable releases in window: 2
+- Commits in window: 380
+- Releases in window: 1
+- Stable releases in window: 1
 - Beta releases in window: 0
-- Repo stars at scan time: 395203
-- Repo forks at scan time: 82976
+- Repo stars at scan time: 395290
+- Repo forks at scan time: 82997
 
 ## New Capability Signals
 
-- feat: let Talk and Discord request GPT-Live-1.1 with ChatGPT sign-in
-- feat: manage projects and who they are shared with from the Control UI (#203472)
-- feat: invitation, sharing and participant controls in the Control UI (#204920)
-- feat(ci): measure qualified Node cache workloads (#205325)
-- feat: let participants publish through the session's shared GitHub account (#204914)
-- feat(ci): run qualified Node cache measurements (#205308)
-- feat(ci): validate Node cache qualification receipts (#205283)
-- feat(release): wait for npm preflight before FRV fanout on request (#205276)
-- feat(beam): open a reviewed screenshot from a shared snapshot (#205257)
-- feat: let invited people read, suggest or send in your session within role limits (#204899)
-- feat(ci): run prepared Node cache controls in CI (#205248)
-- feat(ci): qualify prepared Node cache workloads (#205230)
-- feat(ci): qualify disabled-cache workload controls (#205161)
-- feat: allow rollback across compatible database changes (#204956)
-- feat: send participant exec approvals to the session creator (#204858)
+- feat(ui): group automations that need attention (#206111)
+- feat(signal): include recent group photos when mentioned (#202586)
+- feat(agents): let agents opt into a shared USER.md directory
+- feat(signal): let a group reply to the bot count as a mention (#201148)
+- feat(gateway): add opt-in supervisor-verified lock recovery (#205888)
+- feat: let agents snooze a conversation after replying
+- feat: let OpenClaw find and set up the Llama app (#205323)
+- feat(release): allow unbounded fast-track for beta prereleases (#205228)
+- feat(context): show prompt budget card for /context on every channel (#205780)
+- feat(models): split sign out on this device from disconnect account (#205759)
+- feat: define exec settings for Dedicated workers (#205571)
+- feat: let plugins explain provider errors in chat
+- feat: confine native node worker filesystem access (#193823)
+- feat: let agents post approved GitHub comments (#204301)
+- feat(macos): use the signed-in person's saved session pins
 
 ## Important Fixes And Hardening
 
-- fix(chat): keep repeated messages when loading older Apple chat history (#205508)
-- fix(agents): let plugins retry model calls after a dropped connection (#205174)
-- fix: keep section help from covering approval settings on phones (#203700)
-- fix(onboard): preserve profiles when Linux service install is unavailable (#204378)
-- fix(gateway): handle skipped start dates in trailing usage reports (#205347)
-- fix(ui): play Talk replies after a stalled unlock clip (#204393)
-- fix(sessions): use requester pin order in Gateway tools and web (#204436)
-- fix: idle Gateway burns CPU scanning folders a shallow memory extraPaths pattern can never match (#205478)
-- fix: fit PDF previews to the available pane width
-- fix(agents): age usage-ranked newcomers from the agent's first sighting
-- fix: recognize Parallels preflight helpers in dead-code checks (#205481)
-- fix: stop the session sharing panel from freezing after you change someone's access
-- fix(test): align role admission refusals (#205526)
-- fix: discard Matrix poll votes that include an unknown choice (#205345)
-- fix: keep keyboard scrolling after jumping to the latest chat message (#205463)
+- fix(android): honor Markdown table column alignment (#205575)
+- perf(gateway): reuse session event envelopes across delivery histories (#206144)
+- fix(ui): preserve spaces and the caret in Activity session search (#206123)
+- fix: remove updater runtimes that shipped releases leave after the installation moves (#206124)
+- fix(codex): release the gateway hold when a resumed worker finishes (#206137)
+- fix(chat): preserve edited recall stashes after send acceptance (#206117)
+- fix: sessions_send recipient's NO_REPLY fails as empty_response and runs model fallback (#206058)
+- fix(android): keep the turn recap when returning to a conversation (#205528)
+- fix(macos): keep Up in multiline composer drafts (#205434)
+- fix(workshop): normalize changes limits before choosing a route (#206091)
+- perf(gateway): avoid list projection for transcript recall (#206110)
+- fix(codex): explain when a resumed worker has a different parent (#206114)
+- fix: reuse prepared middleware for agent tool results (#206108)
+- fix(ios): keep shared link captions when the title is blank (#205525)
+- fix(gateway): wait for transient SQLite schema custody at startup
 
 ## Releases This Week
 
-- `v2026.11.10` | stable | 2026-11-25T05:42:47Z | openclaw 2026.11.10
-- `v2026.11.9` | stable | 2026-11-25T00:47:32Z | openclaw 2026.11.9
+- `v2026.10.34` | stable | 2026-11-26T01:37:32Z | openclaw 2026.10.34
 
 ## Most Active Change Scopes
 
-- `fix`: 96
-- `test`: 44
-- `ci`: 35
-- `ui`: 34
-- `release`: 25
-- `gateway`: 19
+- `fix`: 119
+- `ui`: 37
+- `android`: 27
+- `ci`: 18
+- `gateway`: 16
+- `test`: 15
 - `improve`: 11
-- `docs`: 9
-- `feat`: 8
-- `agents`: 7
-- `cron`: 6
-- `update`: 6
+- `codex`: 9
+- `update`: 9
+- `feat`: 7
+- `agents`: 5
+- `signal`: 4
 
 ## Recent Commit Headlines
 
-- 2026-11-25T20:44:17Z | test(agents): trim redundant recovery and catalog cases (#205536)
-- 2026-11-25T20:35:38Z | fix(chat): keep repeated messages when loading older Apple chat history (#205508)
-- 2026-11-25T20:32:04Z | fix(agents): let plugins retry model calls after a dropped connection (#205174)
-- 2026-11-25T20:31:12Z | fix: keep section help from covering approval settings on phones (#203700)
-- 2026-11-25T20:30:18Z | fix(onboard): preserve profiles when Linux service install is unavailable (#204378)
-- 2026-11-25T20:29:05Z | chore(ui): refresh control ui locales (#205546)
-- 2026-11-25T20:21:06Z | fix(gateway): handle skipped start dates in trailing usage reports (#205347)
-- 2026-11-25T20:19:57Z | fix(ui): play Talk replies after a stalled unlock clip (#204393)
-- 2026-11-25T20:19:14Z | refactor(state): migrate in place and remove copy-and-swap (#205165)
-- 2026-11-25T20:18:53Z | docs: explain where to find audit evidence (#205125)
-- 2026-11-25T20:18:06Z | docs: link multiplayer shared secrets to Gateway auth settings (#202753)
-- 2026-11-25T20:16:05Z | fix(sessions): use requester pin order in Gateway tools and web (#204436)
-- 2026-11-25T20:14:43Z | fix: idle Gateway burns CPU scanning folders a shallow memory extraPaths pattern can never match (#205478)
-- 2026-11-25T20:08:31Z | fix: fit PDF previews to the available pane width
-- 2026-11-25T20:08:23Z | fix(agents): age usage-ranked newcomers from the agent's first sighting
-- 2026-11-25T20:06:12Z | fix: recognize Parallels preflight helpers in dead-code checks (#205481)
-- 2026-11-25T20:00:47Z | test: trim redundant state and Cron fixture metadata (#205522)
-- 2026-11-25T20:00:08Z | fix: stop the session sharing panel from freezing after you change someone's access
-- 2026-11-25T19:56:58Z | test(ui): stop waiting for the retired cron.status startup read (#205530)
-- 2026-11-25T19:53:28Z | fix(test): align role admission refusals (#205526)
+- 2026-11-26T20:30:26Z | fix(android): honor Markdown table column alignment (#205575)
+- 2026-11-26T20:21:01Z | improve: reduce broker memory when loading plugin and SQLite resources (#206142)
+- 2026-11-26T20:19:14Z | perf(gateway): reuse session event envelopes across delivery histories (#206144)
+- 2026-11-26T20:18:36Z | fix(ui): preserve spaces and the caret in Activity session search (#206123)
+- 2026-11-26T20:11:46Z | feat(ui): group automations that need attention (#206111)
+- 2026-11-26T20:11:38Z | feat(signal): include recent group photos when mentioned (#202586)
+- 2026-11-26T20:10:26Z | fix: remove updater runtimes that shipped releases leave after the installation moves (#206124)
+- 2026-11-26T20:07:21Z | fix(codex): release the gateway hold when a resumed worker finishes (#206137)
+- 2026-11-26T20:05:45Z | fix(chat): preserve edited recall stashes after send acceptance (#206117)
+- 2026-11-26T20:04:48Z | test(prompts): remove duplicate message schema snapshots (#206127)
+- 2026-11-26T20:00:01Z | fix: sessions_send recipient's NO_REPLY fails as empty_response and runs model fallback (#206058)
+- 2026-11-26T19:55:59Z | fix(android): keep the turn recap when returning to a conversation (#205528)
+- 2026-11-26T19:54:47Z | improve: reduce Gateway broker memory at startup (#206104)
+- 2026-11-26T19:42:41Z | fix(macos): keep Up in multiline composer drafts (#205434)
+- 2026-11-26T19:42:12Z | chore(ui): refresh control ui locales (#206130)
+- 2026-11-26T19:26:25Z | fix(workshop): normalize changes limits before choosing a route (#206091)
+- 2026-11-26T19:22:45Z | perf(gateway): avoid list projection for transcript recall (#206110)
+- 2026-11-26T19:22:28Z | test(presentation): trim redundant formatting permutations (#206105)
+- 2026-11-26T19:21:12Z | fix(codex): explain when a resumed worker has a different parent (#206114)
+- 2026-11-26T19:20:51Z | fix: reuse prepared middleware for agent tool results (#206108)
 
 ## Sources
 

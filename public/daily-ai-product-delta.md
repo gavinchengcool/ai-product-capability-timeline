@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-11-26T04:45:14+08:00
-- Requested window: 2026-11-25 to 2026-11-26
+- Generated at: 2026-11-27T04:36:51+08:00
+- Requested window: 2026-11-26 to 2026-11-27
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-11-25 to 2026-11-26
-- Generated at: 2026-11-26T04:44:56.665694+08:00
-- 窗口: 2026-11-25 至 2026-11-26
-- GitHub 增量: 427 commits / 2 releases
-- 最近 push: 2026-11-25
+- Window: 2026-11-26 to 2026-11-27
+- Generated at: 2026-11-27T04:36:34.799279+08:00
+- 窗口: 2026-11-26 至 2026-11-27
+- GitHub 增量: 380 commits / 1 releases
+- 最近 push: 2026-11-26
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat: let Talk and Discord request GPT-Live-1.1 with ChatGPT sign-in
-  - feat: manage projects and who they are shared with from the Control UI (#203472)
-  - feat: invitation, sharing and participant controls in the Control UI (#204920)
-  - feat(ci): measure qualified Node cache workloads (#205325)
-  - feat: let participants publish through the session's shared GitHub account (#204914)
-  - feat(ci): run qualified Node cache measurements (#205308)
-  - feat(ci): validate Node cache qualification receipts (#205283)
-  - feat(release): wait for npm preflight before FRV fanout on request (#205276)
+  - feat(ui): group automations that need attention (#206111)
+  - feat(signal): include recent group photos when mentioned (#202586)
+  - feat(agents): let agents opt into a shared USER.md directory
+  - feat(signal): let a group reply to the bot count as a mention (#201148)
+  - feat(gateway): add opt-in supervisor-verified lock recovery (#205888)
+  - feat: let agents snooze a conversation after replying
+  - feat: let OpenClaw find and set up the Llama app (#205323)
+  - feat(release): allow unbounded fast-track for beta prereleases (#205228)
 - Fixes and constraints:
-  - fix(chat): keep repeated messages when loading older Apple chat history (#205508)
-  - fix(agents): let plugins retry model calls after a dropped connection (#205174)
-  - fix: keep section help from covering approval settings on phones (#203700)
-  - fix(onboard): preserve profiles when Linux service install is unavailable (#204378)
-  - fix(gateway): handle skipped start dates in trailing usage reports (#205347)
-  - fix(ui): play Talk replies after a stalled unlock clip (#204393)
-  - fix(sessions): use requester pin order in Gateway tools and web (#204436)
-  - fix: idle Gateway burns CPU scanning folders a shallow memory extraPaths pattern can never match (#205478)
+  - fix(android): honor Markdown table column alignment (#205575)
+  - perf(gateway): reuse session event envelopes across delivery histories (#206144)
+  - fix(ui): preserve spaces and the caret in Activity session search (#206123)
+  - fix: remove updater runtimes that shipped releases leave after the installation moves (#206124)
+  - fix(codex): release the gateway hold when a resumed worker finishes (#206137)
+  - fix(chat): preserve edited recall stashes after send acceptance (#206117)
+  - fix: sessions_send recipient's NO_REPLY fails as empty_response and runs model fallback (#206058)
+  - fix(android): keep the turn recap when returning to a conversation (#205528)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT
