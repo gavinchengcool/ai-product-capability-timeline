@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-27T04:36:51+08:00",
+  "generatedAt": "2026-11-28T04:23:13+08:00",
   "timezone": "Asia/Shanghai",
   "requestedWindow": {
-    "start_local": "2026-11-26T04:36:51+08:00",
-    "end_local": "2026-11-27T04:36:51+08:00"
+    "start_local": "2026-11-27T04:23:13+08:00",
+    "end_local": "2026-11-28T04:23:13+08:00"
   },
   "note": "OpenClaw is currently the only true daily 24-hour feed. The other five products still expose the latest official dated update window until their collectors are automated.",
   "summary": {
@@ -22,25 +22,25 @@
         "is_live_24h": true,
         "note": "True rolling 24-hour delta refreshed daily at 20:00 Asia/Shanghai."
       },
-      "generatedAt": "2026-11-27T04:36:34.799279+08:00",
+      "generatedAt": "2026-11-28T04:22:53.494977+08:00",
       "window": {
-        "start_local": "2026-11-26T04:36:34.799279+08:00",
-        "end_local": "2026-11-27T04:36:34.799279+08:00",
-        "start_utc": "2026-11-25T20:36:34Z",
-        "end_utc": "2026-11-26T20:36:34Z"
+        "start_local": "2026-11-27T04:22:53.494977+08:00",
+        "end_local": "2026-11-28T04:22:53.494977+08:00",
+        "start_utc": "2026-11-26T20:22:53Z",
+        "end_utc": "2026-11-27T20:22:53Z"
       },
       "meta": [
         {
           "label": "窗口",
-          "value": "2026-11-26 至 2026-11-27"
+          "value": "2026-11-27 至 2026-11-28"
         },
         {
           "label": "GitHub 增量",
-          "value": "380 commits / 1 releases"
+          "value": "531 commits / 0 releases"
         },
         {
           "label": "最近 push",
-          "value": "2026-11-26"
+          "value": "2026-11-27"
         },
         {
           "label": "来源",
@@ -52,66 +52,58 @@
         }
       ],
       "featureItems": [
-        "feat(ui): group automations that need attention (#206111)",
-        "feat(signal): include recent group photos when mentioned (#202586)",
-        "feat(agents): let agents opt into a shared USER.md directory",
-        "feat(signal): let a group reply to the bot count as a mention (#201148)",
-        "feat(gateway): add opt-in supervisor-verified lock recovery (#205888)",
-        "feat: let agents snooze a conversation after replying",
-        "feat: let OpenClaw find and set up the Llama app (#205323)",
-        "feat(release): allow unbounded fast-track for beta prereleases (#205228)"
+        "feat(linux): add desktop-managed shortcut sessions (#158554)",
+        "feat: let Learn from Memory imports continue where they stopped (#206325)",
+        "feat(ios): add the Control UI's wording for tool calls (#206463)",
+        "feat(ios): new app icons for iPhone and Apple Watch, release and debug (#206450)",
+        "feat(gateway): stop a person's started work when a writer removes or lowers their access (#206813)",
+        "feat: let nine more doctor --fix steps tell when they have nothing to do (#206557)",
+        "feat(clawrouter): consume qualified native Google image offers (#192223)",
+        "feat(android): add smaller architecture-specific APKs (#154942)"
       ],
       "fixItems": [
-        "fix(android): honor Markdown table column alignment (#205575)",
-        "perf(gateway): reuse session event envelopes across delivery histories (#206144)",
-        "fix(ui): preserve spaces and the caret in Activity session search (#206123)",
-        "fix: remove updater runtimes that shipped releases leave after the installation moves (#206124)",
-        "fix(codex): release the gateway hold when a resumed worker finishes (#206137)",
-        "fix(chat): preserve edited recall stashes after send acceptance (#206117)",
-        "fix: sessions_send recipient's NO_REPLY fails as empty_response and runs model fallback (#206058)",
-        "fix(android): keep the turn recap when returning to a conversation (#205528)"
+        "fix(telegram): tell users when a reply will resume after restart (#206839)",
+        "fix: label conversation data in system updates",
+        "fix(agents): watch every model for repetitive output (#206896)",
+        "fix: tell context engines when you run /compact and explain no-op results (#206909)",
+        "fix(infra): join the shared worker host at terminal native close (#206930)",
+        "fix: check that gateway turns stop when a member loses access (#206923)",
+        "fix(browser): restore AI snapshot query coverage (#191685)",
+        "fix(ui): calculate usage throughput from timed turns (#200699)"
       ],
-      "releases": [
-        {
-          "tag_name": "v2026.10.34",
-          "published_at": "2026-11-26T01:37:32Z",
-          "name": "openclaw 2026.10.34",
-          "prerelease": false,
-          "html_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.34"
-        }
-      ],
+      "releases": [],
       "topScopes": [
         {
           "scope": "fix",
-          "count": 119
+          "count": 98
         },
         {
           "scope": "ui",
-          "count": 37
+          "count": 61
         },
         {
-          "scope": "android",
-          "count": 27
+          "scope": "test",
+          "count": 41
         },
         {
           "scope": "ci",
-          "count": 18
+          "count": 34
+        },
+        {
+          "scope": "improve",
+          "count": 27
+        },
+        {
+          "scope": "agents",
+          "count": 20
+        },
+        {
+          "scope": "subagents",
+          "count": 17
         },
         {
           "scope": "gateway",
           "count": 16
-        },
-        {
-          "scope": "test",
-          "count": 15
-        },
-        {
-          "scope": "improve",
-          "count": 11
-        },
-        {
-          "scope": "codex",
-          "count": 9
         }
       ],
       "note": "每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。"

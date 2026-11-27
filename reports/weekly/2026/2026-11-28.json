@@ -1,0 +1,183 @@
+{
+  "generated_at": "2026-11-28T04:22:53.494977+08:00",
+  "window": {
+    "start_local": "2026-11-27T04:22:53.494977+08:00",
+    "end_local": "2026-11-28T04:22:53.494977+08:00",
+    "start_utc": "2026-11-26T20:22:53Z",
+    "end_utc": "2026-11-27T20:22:53Z"
+  },
+  "repo": {
+    "slug": "openclaw/openclaw",
+    "stars": 395351,
+    "forks": 83020,
+    "open_issues": 9323,
+    "pushed_at": "2026-11-27T20:22:26Z"
+  },
+  "releases_in_window": [],
+  "commit_count": 531,
+  "commit_headlines": [
+    "fix(telegram): tell users when a reply will resume after restart (#206839)",
+    "refactor(openai): decide strict per tool on declared routes; drop the URL strict helper (#206735)",
+    "chore(ui): refresh control ui locales (#206935)",
+    "fix: label conversation data in system updates",
+    "fix(agents): watch every model for repetitive output (#206896)",
+    "feat(linux): add desktop-managed shortcut sessions (#158554)",
+    "fix: tell context engines when you run /compact and explain no-op results (#206909)",
+    "fix(infra): join the shared worker host at terminal native close (#206930)",
+    "fix: check that gateway turns stop when a member loses access (#206923)",
+    "chore(test): remove stale SDK fixture scanner (#206922)",
+    "fix(browser): restore AI snapshot query coverage (#191685)",
+    "fix(ui): calculate usage throughput from timed turns (#200699)",
+    "fix: explain why OAuth client registration failed during MCP login (#206910)",
+    "fix(ci): restore clean dependency checks (#206924)",
+    "fix(test): detect missing web provider artifacts (#206920)",
+    "chore(i18n): refresh native locales (#206919)",
+    "chore(test): remove redundant plugin checks (#206912)",
+    "refactor(tests): remove duplicate macOS onboarding page checks (#174996)",
+    "fix(gateway): defer optional session warming on lean hosts (#206904)",
+    "test(plugins): remove ineffective retention case (#206908)",
+    "fix: distinguish queued and completed cards on Polish Workboards (#206885)",
+    "fix(test): detect premature background disposal (#206903)",
+    "improve: avoid rewriting saved skills on prompt report updates (#206893)",
+    "fix(linux): preserve Quick Chat keyboard focus during setup (#206889)",
+    "improve(cli): keep YAML parsing off text-only model startup (#206906)",
+    "fix(knowledge): honor agents.defaults.systemAgent as the operator default under explicit ownership (#205394)",
+    "fix(test): assert retained memory sidecar contributions (#206895)",
+    "fix(agents): list each deferred MCP tool's input so it is called right the first time (#206891)",
+    "fix(ui): avoid false failures in smooth-scroll retarget tests (#202340)",
+    "refactor: report update failures from recorded runs (#206700)",
+    "fix(test): require retired session reads to reject (#206882)",
+    "fix(lmstudio): count Messages cache reads once in usage (#206543)",
+    "refactor: simplify command palette category grouping (#206887)",
+    "fix(gateway): check cron alert status after delivery settles (#206855)",
+    "fix: stabilize the Goal composer keyboard test on cold runs (#206892)",
+    "fix: keep PostgreSQL Git backup tests working with umask 0002 (#206862)",
+    "fix: keep early Enter presses in the Settings agent picker (#206828)",
+    "fix: allow for slow audio startup in the inline playback test (#206876)",
+    "fix: let a fallback model finish after a GitHub read or search (#206858)",
+    "fix(gateway): keep cron alerts out of participation admission test runs (#206854)",
+    "fix: show early PostgreSQL finalizer test failures (#206872)",
+    "chore(ios): bundle the Control UI's chat icons and provider marks (#206457)",
+    "fix(telegram): send attachments from the selected agent (#202868)",
+    "fix(codex): honor thinking off in bounded API-key turns (#206881)",
+    "fix: check the clean recovery ref after worktree removal (#206830)",
+    "fix(test): cover SIGBREAK during pending update recovery (#206860)",
+    "fix(test): exercise mixed-participant ingress rejection (#206874)",
+    "feat: let Learn from Memory imports continue where they stopped (#206325)",
+    "fix: finish Linux upgrades after a legacy Gateway crashes (#206530)",
+    "fix(doctor): restore cold session archives before session reimport (#205011)"
+  ],
+  "feature_items": [
+    "feat(linux): add desktop-managed shortcut sessions (#158554)",
+    "feat: let Learn from Memory imports continue where they stopped (#206325)",
+    "feat(ios): add the Control UI's wording for tool calls (#206463)",
+    "feat(ios): new app icons for iPhone and Apple Watch, release and debug (#206450)",
+    "feat(gateway): stop a person's started work when a writer removes or lowers their access (#206813)",
+    "feat: let nine more doctor --fix steps tell when they have nothing to do (#206557)",
+    "feat(clawrouter): consume qualified native Google image offers (#192223)",
+    "feat(android): add smaller architecture-specific APKs (#154942)",
+    "feat: let doctor --fix tell when its config writers have nothing to save (#206420)",
+    "feat: let four more doctor --fix repairs tell when they have nothing to do (#206348)",
+    "feat: show each subagent's model in the Subagents panel (#205696)",
+    "feat: let doctor --fix tell when its startup repairs have nothing to do (#206246)",
+    "feat: ship the llama.cpp provider with OpenClaw (#205986)",
+    "feat(ui): preview CSV chat attachments as tables (#206148)",
+    "feat: let each Doctor repair say whether it has work before the Gateway stops (#206247)",
+    "feat: show mentioned people by name when an agent reads Slack",
+    "feat: change what a started Knowledge scribe reads from the Scribes page"
+  ],
+  "fix_items": [
+    "fix(telegram): tell users when a reply will resume after restart (#206839)",
+    "fix: label conversation data in system updates",
+    "fix(agents): watch every model for repetitive output (#206896)",
+    "fix: tell context engines when you run /compact and explain no-op results (#206909)",
+    "fix(infra): join the shared worker host at terminal native close (#206930)",
+    "fix: check that gateway turns stop when a member loses access (#206923)",
+    "fix(browser): restore AI snapshot query coverage (#191685)",
+    "fix(ui): calculate usage throughput from timed turns (#200699)",
+    "fix: explain why OAuth client registration failed during MCP login (#206910)",
+    "fix(ci): restore clean dependency checks (#206924)",
+    "fix(test): detect missing web provider artifacts (#206920)",
+    "fix(gateway): defer optional session warming on lean hosts (#206904)",
+    "fix: distinguish queued and completed cards on Polish Workboards (#206885)",
+    "fix(test): detect premature background disposal (#206903)",
+    "fix(linux): preserve Quick Chat keyboard focus during setup (#206889)",
+    "fix(knowledge): honor agents.defaults.systemAgent as the operator default under explicit ownership (#205394)",
+    "fix(test): assert retained memory sidecar contributions (#206895)",
+    "fix(agents): list each deferred MCP tool's input so it is called right the first time (#206891)",
+    "fix(ui): avoid false failures in smooth-scroll retarget tests (#202340)",
+    "fix(test): require retired session reads to reject (#206882)",
+    "fix(lmstudio): count Messages cache reads once in usage (#206543)",
+    "fix(gateway): check cron alert status after delivery settles (#206855)",
+    "fix: stabilize the Goal composer keyboard test on cold runs (#206892)",
+    "fix: keep PostgreSQL Git backup tests working with umask 0002 (#206862)",
+    "fix: keep early Enter presses in the Settings agent picker (#206828)",
+    "fix: allow for slow audio startup in the inline playback test (#206876)",
+    "fix: let a fallback model finish after a GitHub read or search (#206858)",
+    "fix(gateway): keep cron alerts out of participation admission test runs (#206854)",
+    "fix: show early PostgreSQL finalizer test failures (#206872)",
+    "fix(telegram): send attachments from the selected agent (#202868)"
+  ],
+  "top_scopes": [
+    {
+      "scope": "fix",
+      "count": 98
+    },
+    {
+      "scope": "ui",
+      "count": 61
+    },
+    {
+      "scope": "test",
+      "count": 41
+    },
+    {
+      "scope": "ci",
+      "count": 34
+    },
+    {
+      "scope": "improve",
+      "count": 27
+    },
+    {
+      "scope": "agents",
+      "count": 20
+    },
+    {
+      "scope": "subagents",
+      "count": 17
+    },
+    {
+      "scope": "gateway",
+      "count": 16
+    },
+    {
+      "scope": "plugins",
+      "count": 16
+    },
+    {
+      "scope": "android",
+      "count": 13
+    },
+    {
+      "scope": "refactor",
+      "count": 10
+    },
+    {
+      "scope": "feat",
+      "count": 10
+    },
+    {
+      "scope": "cli",
+      "count": 9
+    },
+    {
+      "scope": "update",
+      "count": 9
+    },
+    {
+      "scope": "tests",
+      "count": 7
+    }
+  ]
+}

@@ -1,99 +1,99 @@
 # OpenClaw Weekly Update
 
-生成时间：2026-11-27T04:36:34.799279+08:00
+生成时间：2026-11-28T04:22:53.494977+08:00
 
 ## Window
 
-- Start: 2026-11-26T04:36:34.799279+08:00
-- End: 2026-11-27T04:36:34.799279+08:00
+- Start: 2026-11-27T04:22:53.494977+08:00
+- End: 2026-11-28T04:22:53.494977+08:00
 - Repo: `openclaw/openclaw`
 
 ## At A Glance
 
-- Commits in window: 380
-- Releases in window: 1
-- Stable releases in window: 1
+- Commits in window: 531
+- Releases in window: 0
+- Stable releases in window: 0
 - Beta releases in window: 0
-- Repo stars at scan time: 395290
-- Repo forks at scan time: 82997
+- Repo stars at scan time: 395351
+- Repo forks at scan time: 83020
 
 ## New Capability Signals
 
-- feat(ui): group automations that need attention (#206111)
-- feat(signal): include recent group photos when mentioned (#202586)
-- feat(agents): let agents opt into a shared USER.md directory
-- feat(signal): let a group reply to the bot count as a mention (#201148)
-- feat(gateway): add opt-in supervisor-verified lock recovery (#205888)
-- feat: let agents snooze a conversation after replying
-- feat: let OpenClaw find and set up the Llama app (#205323)
-- feat(release): allow unbounded fast-track for beta prereleases (#205228)
-- feat(context): show prompt budget card for /context on every channel (#205780)
-- feat(models): split sign out on this device from disconnect account (#205759)
-- feat: define exec settings for Dedicated workers (#205571)
-- feat: let plugins explain provider errors in chat
-- feat: confine native node worker filesystem access (#193823)
-- feat: let agents post approved GitHub comments (#204301)
-- feat(macos): use the signed-in person's saved session pins
+- feat(linux): add desktop-managed shortcut sessions (#158554)
+- feat: let Learn from Memory imports continue where they stopped (#206325)
+- feat(ios): add the Control UI's wording for tool calls (#206463)
+- feat(ios): new app icons for iPhone and Apple Watch, release and debug (#206450)
+- feat(gateway): stop a person's started work when a writer removes or lowers their access (#206813)
+- feat: let nine more doctor --fix steps tell when they have nothing to do (#206557)
+- feat(clawrouter): consume qualified native Google image offers (#192223)
+- feat(android): add smaller architecture-specific APKs (#154942)
+- feat: let doctor --fix tell when its config writers have nothing to save (#206420)
+- feat: let four more doctor --fix repairs tell when they have nothing to do (#206348)
+- feat: show each subagent's model in the Subagents panel (#205696)
+- feat: let doctor --fix tell when its startup repairs have nothing to do (#206246)
+- feat: ship the llama.cpp provider with OpenClaw (#205986)
+- feat(ui): preview CSV chat attachments as tables (#206148)
+- feat: let each Doctor repair say whether it has work before the Gateway stops (#206247)
 
 ## Important Fixes And Hardening
 
-- fix(android): honor Markdown table column alignment (#205575)
-- perf(gateway): reuse session event envelopes across delivery histories (#206144)
-- fix(ui): preserve spaces and the caret in Activity session search (#206123)
-- fix: remove updater runtimes that shipped releases leave after the installation moves (#206124)
-- fix(codex): release the gateway hold when a resumed worker finishes (#206137)
-- fix(chat): preserve edited recall stashes after send acceptance (#206117)
-- fix: sessions_send recipient's NO_REPLY fails as empty_response and runs model fallback (#206058)
-- fix(android): keep the turn recap when returning to a conversation (#205528)
-- fix(macos): keep Up in multiline composer drafts (#205434)
-- fix(workshop): normalize changes limits before choosing a route (#206091)
-- perf(gateway): avoid list projection for transcript recall (#206110)
-- fix(codex): explain when a resumed worker has a different parent (#206114)
-- fix: reuse prepared middleware for agent tool results (#206108)
-- fix(ios): keep shared link captions when the title is blank (#205525)
-- fix(gateway): wait for transient SQLite schema custody at startup
+- fix(telegram): tell users when a reply will resume after restart (#206839)
+- fix: label conversation data in system updates
+- fix(agents): watch every model for repetitive output (#206896)
+- fix: tell context engines when you run /compact and explain no-op results (#206909)
+- fix(infra): join the shared worker host at terminal native close (#206930)
+- fix: check that gateway turns stop when a member loses access (#206923)
+- fix(browser): restore AI snapshot query coverage (#191685)
+- fix(ui): calculate usage throughput from timed turns (#200699)
+- fix: explain why OAuth client registration failed during MCP login (#206910)
+- fix(ci): restore clean dependency checks (#206924)
+- fix(test): detect missing web provider artifacts (#206920)
+- fix(gateway): defer optional session warming on lean hosts (#206904)
+- fix: distinguish queued and completed cards on Polish Workboards (#206885)
+- fix(test): detect premature background disposal (#206903)
+- fix(linux): preserve Quick Chat keyboard focus during setup (#206889)
 
 ## Releases This Week
 
-- `v2026.10.34` | stable | 2026-11-26T01:37:32Z | openclaw 2026.10.34
+- No GitHub releases were published in this window.
 
 ## Most Active Change Scopes
 
-- `fix`: 119
-- `ui`: 37
-- `android`: 27
-- `ci`: 18
+- `fix`: 98
+- `ui`: 61
+- `test`: 41
+- `ci`: 34
+- `improve`: 27
+- `agents`: 20
+- `subagents`: 17
 - `gateway`: 16
-- `test`: 15
-- `improve`: 11
-- `codex`: 9
-- `update`: 9
-- `feat`: 7
-- `agents`: 5
-- `signal`: 4
+- `plugins`: 16
+- `android`: 13
+- `refactor`: 10
+- `feat`: 10
 
 ## Recent Commit Headlines
 
-- 2026-11-26T20:30:26Z | fix(android): honor Markdown table column alignment (#205575)
-- 2026-11-26T20:21:01Z | improve: reduce broker memory when loading plugin and SQLite resources (#206142)
-- 2026-11-26T20:19:14Z | perf(gateway): reuse session event envelopes across delivery histories (#206144)
-- 2026-11-26T20:18:36Z | fix(ui): preserve spaces and the caret in Activity session search (#206123)
-- 2026-11-26T20:11:46Z | feat(ui): group automations that need attention (#206111)
-- 2026-11-26T20:11:38Z | feat(signal): include recent group photos when mentioned (#202586)
-- 2026-11-26T20:10:26Z | fix: remove updater runtimes that shipped releases leave after the installation moves (#206124)
-- 2026-11-26T20:07:21Z | fix(codex): release the gateway hold when a resumed worker finishes (#206137)
-- 2026-11-26T20:05:45Z | fix(chat): preserve edited recall stashes after send acceptance (#206117)
-- 2026-11-26T20:04:48Z | test(prompts): remove duplicate message schema snapshots (#206127)
-- 2026-11-26T20:00:01Z | fix: sessions_send recipient's NO_REPLY fails as empty_response and runs model fallback (#206058)
-- 2026-11-26T19:55:59Z | fix(android): keep the turn recap when returning to a conversation (#205528)
-- 2026-11-26T19:54:47Z | improve: reduce Gateway broker memory at startup (#206104)
-- 2026-11-26T19:42:41Z | fix(macos): keep Up in multiline composer drafts (#205434)
-- 2026-11-26T19:42:12Z | chore(ui): refresh control ui locales (#206130)
-- 2026-11-26T19:26:25Z | fix(workshop): normalize changes limits before choosing a route (#206091)
-- 2026-11-26T19:22:45Z | perf(gateway): avoid list projection for transcript recall (#206110)
-- 2026-11-26T19:22:28Z | test(presentation): trim redundant formatting permutations (#206105)
-- 2026-11-26T19:21:12Z | fix(codex): explain when a resumed worker has a different parent (#206114)
-- 2026-11-26T19:20:51Z | fix: reuse prepared middleware for agent tool results (#206108)
+- 2026-11-27T20:22:24Z | fix(telegram): tell users when a reply will resume after restart (#206839)
+- 2026-11-27T20:21:47Z | refactor(openai): decide strict per tool on declared routes; drop the URL strict helper (#206735)
+- 2026-11-27T20:20:20Z | chore(ui): refresh control ui locales (#206935)
+- 2026-11-27T20:19:25Z | fix: label conversation data in system updates
+- 2026-11-27T20:18:34Z | fix(agents): watch every model for repetitive output (#206896)
+- 2026-11-27T20:16:02Z | feat(linux): add desktop-managed shortcut sessions (#158554)
+- 2026-11-27T20:15:33Z | fix: tell context engines when you run /compact and explain no-op results (#206909)
+- 2026-11-27T20:14:44Z | fix(infra): join the shared worker host at terminal native close (#206930)
+- 2026-11-27T20:12:18Z | fix: check that gateway turns stop when a member loses access (#206923)
+- 2026-11-27T20:11:15Z | chore(test): remove stale SDK fixture scanner (#206922)
+- 2026-11-27T20:09:54Z | fix(browser): restore AI snapshot query coverage (#191685)
+- 2026-11-27T20:08:40Z | fix(ui): calculate usage throughput from timed turns (#200699)
+- 2026-11-27T20:04:22Z | fix: explain why OAuth client registration failed during MCP login (#206910)
+- 2026-11-27T20:03:31Z | fix(ci): restore clean dependency checks (#206924)
+- 2026-11-27T20:02:48Z | fix(test): detect missing web provider artifacts (#206920)
+- 2026-11-27T19:54:07Z | chore(i18n): refresh native locales (#206919)
+- 2026-11-27T19:53:17Z | chore(test): remove redundant plugin checks (#206912)
+- 2026-11-27T19:50:52Z | refactor(tests): remove duplicate macOS onboarding page checks (#174996)
+- 2026-11-27T19:38:56Z | fix(gateway): defer optional session warming on lean hosts (#206904)
+- 2026-11-27T19:35:12Z | test(plugins): remove ineffective retention case (#206908)
 
 ## Sources
 

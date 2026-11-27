@@ -1,7 +1,7 @@
 # Daily AI Product Delta
 
-- Generated at: 2026-11-27T04:36:51+08:00
-- Requested window: 2026-11-26 to 2026-11-27
+- Generated at: 2026-11-28T04:23:13+08:00
+- Requested window: 2026-11-27 to 2026-11-28
 - Coverage: 6 products
 - Live 24h feeds: 1
 - Latest official wave snapshots: 5
@@ -10,31 +10,31 @@
 ## OpenClaw
 
 - Freshness: live_24h
-- Window: 2026-11-26 to 2026-11-27
-- Generated at: 2026-11-27T04:36:34.799279+08:00
-- 窗口: 2026-11-26 至 2026-11-27
-- GitHub 增量: 380 commits / 1 releases
-- 最近 push: 2026-11-26
+- Window: 2026-11-27 to 2026-11-28
+- Generated at: 2026-11-28T04:22:53.494977+08:00
+- 窗口: 2026-11-27 至 2026-11-28
+- GitHub 增量: 531 commits / 0 releases
+- 最近 push: 2026-11-27
 - 来源: GitHub releases / commits / merged PR
 - 自动化状态: 已接每天 20:00 自动刷新
 - Feature signals:
-  - feat(ui): group automations that need attention (#206111)
-  - feat(signal): include recent group photos when mentioned (#202586)
-  - feat(agents): let agents opt into a shared USER.md directory
-  - feat(signal): let a group reply to the bot count as a mention (#201148)
-  - feat(gateway): add opt-in supervisor-verified lock recovery (#205888)
-  - feat: let agents snooze a conversation after replying
-  - feat: let OpenClaw find and set up the Llama app (#205323)
-  - feat(release): allow unbounded fast-track for beta prereleases (#205228)
+  - feat(linux): add desktop-managed shortcut sessions (#158554)
+  - feat: let Learn from Memory imports continue where they stopped (#206325)
+  - feat(ios): add the Control UI's wording for tool calls (#206463)
+  - feat(ios): new app icons for iPhone and Apple Watch, release and debug (#206450)
+  - feat(gateway): stop a person's started work when a writer removes or lowers their access (#206813)
+  - feat: let nine more doctor --fix steps tell when they have nothing to do (#206557)
+  - feat(clawrouter): consume qualified native Google image offers (#192223)
+  - feat(android): add smaller architecture-specific APKs (#154942)
 - Fixes and constraints:
-  - fix(android): honor Markdown table column alignment (#205575)
-  - perf(gateway): reuse session event envelopes across delivery histories (#206144)
-  - fix(ui): preserve spaces and the caret in Activity session search (#206123)
-  - fix: remove updater runtimes that shipped releases leave after the installation moves (#206124)
-  - fix(codex): release the gateway hold when a resumed worker finishes (#206137)
-  - fix(chat): preserve edited recall stashes after send acceptance (#206117)
-  - fix: sessions_send recipient's NO_REPLY fails as empty_response and runs model fallback (#206058)
-  - fix(android): keep the turn recap when returning to a conversation (#205528)
+  - fix(telegram): tell users when a reply will resume after restart (#206839)
+  - fix: label conversation data in system updates
+  - fix(agents): watch every model for repetitive output (#206896)
+  - fix: tell context engines when you run /compact and explain no-op results (#206909)
+  - fix(infra): join the shared worker host at terminal native close (#206930)
+  - fix: check that gateway turns stop when a member loses access (#206923)
+  - fix(browser): restore AI snapshot query coverage (#191685)
+  - fix(ui): calculate usage throughput from timed turns (#200699)
 - Note: 每天 20:00（Asia/Shanghai）自动刷新，展示最近 24 小时 GitHub 增量。
 
 ## ChatGPT

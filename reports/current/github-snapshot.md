@@ -1,15 +1,15 @@
 # OpenClaw GitHub Snapshot
 
-生成时间：2026-11-27T04:36:34.799279+08:00
+生成时间：2026-11-28T04:22:53.494977+08:00
 
 ## Repo Snapshot
 
 - Repo: `openclaw/openclaw`
 - Created at: 2025-11-24T10:16:47Z
-- Last pushed at: 2026-11-26T20:35:22Z
-- Stars: 395290
-- Forks: 82997
-- Open issues: 9262
+- Last pushed at: 2026-11-27T20:22:26Z
+- Stars: 395351
+- Forks: 83020
+- Open issues: 9323
 - Default branch: `main`
 - Description: The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 
 
